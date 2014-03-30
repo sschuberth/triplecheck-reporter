@@ -1,0 +1,2544 @@
+##-------------------------
+## SPDX Document Information
+##-------------------------
+
+SPDXVersion: SPDX-1.2
+DataLicense: CC-BY-4.0
+
+##-------------------------
+## Creation Information
+##-------------------------
+
+Creator: Nuno Brito
+Creator: Tool: TripleCheck 0.3
+Created: 2014-02-19T17:11:32Z
+
+##-------------------------
+## Package Information
+##-------------------------
+
+PackageName: rawreg
+PackageFileName: rawreg
+PackageDownloadLocation: NOASSERTION
+PackageLicenseConcluded: NOASSERTION
+
+##-------------------------
+## File Information
+##-------------------------
+
+
+## File
+
+FileName: all-wcprops
+FilePath: ./.svn/
+FileType: OTHER
+FileChecksum: SHA1: 308207b9e7fbcf8d60e1367734be192ecb7ff9ac
+FileChecksum: SHA256: 20a5db8e422d80c16f9d942acdb246d588c3c3c4cb0e8cd4cef5d94679d572aa
+FileChecksum: MD5: 6d4d59668dac24ab26d8a53696f1dc5e
+FileChecksum: SSDEEP: 3:KKWTRs7AbdQVmBoTnxFVvQTqLXTRs7AbdQVzSUoTnxGKQEuqFr5:KKqhbomB2nxF39hboInxxr5
+FileSize: 157 bytes
+
+## File
+
+FileName: entries
+FilePath: ./.svn/
+FileType: OTHER
+FileChecksum: SHA1: f1296b8d820403e15b47b6f73dd87366ed28b45c
+FileChecksum: SHA256: 5ef5d25306fb1a86d06e617ede31a1c19ae287bd6a87581c764427fbb1a2683a
+FileChecksum: MD5: 5b9679155480153d5170a1258bba459f
+FileChecksum: SSDEEP: 12:MYZIeCwreChzlTWQE1vqh8kTveoAVHgj3jtlchM0B:MAaahzlbqG85VHgnrU
+FileSize: 385 bytes
+
+## File
+
+FileName: readme.textile.svn-base
+FilePath: ./.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: e40a66d2e007fe826eddc14c50b91dc6278cf8dc
+FileChecksum: SHA256: 9b4c3627dbd3a6839ea2a0e19218935e02afab37f7c98d7c50c21fdaeadefcb7
+FileChecksum: MD5: b9e5c704ae810d7df16b6f2778a6d1cb
+FileChecksum: SSDEEP: 6:FBgQhTIgKcUtrUTKc+4UTKckerEQrAVDj0c5VKebPae024:7ko2iruRZ8VX0cbv/024
+FileSize: 340 bytes
+
+## File
+
+FileName: bcd
+FilePath: ./netbeans/
+FileType: OTHER
+FileChecksum: SHA1: da5916363fccbbabe2b325f58fbeff91e1fb5bf4
+FileChecksum: SHA256: feb933da4e73c80c5c9e6a312bb1ccadd365a2562906bbdaa99e9fea25e79dbb
+FileChecksum: MD5: 6c82e76dcadaa4979997fee7d38992e3
+FileChecksum: SSDEEP: 384:/1AQOjkCZiDosUX/mR2NbbghxcRhsFZbwNW+Eoa0bVSGg19SPBT33XqZq2D3Sbi:/1nU0UsUX/mYbFXNmkHLh
+FileSize: 256 Kb (262144 bytes)
+
+## File
+
+FileName: bcd.LOG1
+FilePath: ./netbeans/
+FileType: OTHER
+FileChecksum: SHA1: 3ccac001c883b789d18d6c6f34df21f8834b42c5
+FileChecksum: SHA256: ddbea264007883e4b0cf7e96202d2d91cc1990624c89e366450e050e2639db51
+FileChecksum: MD5: ff04898f5cc018b3be024ff3f5212263
+FileChecksum: SSDEEP: 384:dC+C2AQOjkCZiDos32NbbghxcRhsFZbwNW+Eoa0bVSGg19SPBT33XqZq2D3SbiN:M52nU0UsSbFXNmkHLh
+FileSize: 21 Kb (21504 bytes)
+
+## File
+
+FileName: bcd.LOG2
+FilePath: ./netbeans/
+FileType: OTHER
+FileChecksum: SHA1: da39a3ee5e6b4b0d3255bfef95601890afd80709
+FileChecksum: SHA256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+FileChecksum: MD5: d41d8cd98f00b204e9800998ecf8427e
+FileChecksum: SSDEEP: 3::
+FileSize: 0 bytes
+
+## File
+
+FileName: bcd{395e7b02-6e18-11e2-9269-8143a260ffd3}.TM.blf
+FilePath: ./netbeans/
+FileType: OTHER
+FileChecksum: SHA1: 13d91476224f2d3f5b721d4db5888657af86a29d
+FileChecksum: SHA256: caad17f675ed9d563fc49a7ba2386544b00e409db7196ad47383ca9be44b05e4
+FileChecksum: MD5: c31be74eaaf883b2f97315b4f2732750
+FileChecksum: SSDEEP: 96:PCa/+t02ceWcQVrCLcQVvCa/+t22ceWcQVrCLcQV:PCa2ueb0CoYCa2Ueb0Co
+FileSize: 64 Kb (65536 bytes)
+
+## File
+
+FileName: bcd{395e7b02-6e18-11e2-9269-8143a260ffd3}.TMContainer00000000000000000001.regtrans-ms
+FilePath: ./netbeans/
+FileType: OTHER
+FileChecksum: SHA1: 01636a61b1707dc61c99df93eacd404b33d1e080
+FileChecksum: SHA256: 5e20526037bd2651d1d21dfc5e2c1d2f30475b990f6dd0db2b4ad05dfbe74d53
+FileChecksum: MD5: 2e12238a11c83442ba13358d45dc010e
+FileChecksum: SSDEEP: 3:pl0l9lXlls/lZRt1UFHltS:LcE/B2
+FileSize: 512 Kb (524288 bytes)
+
+## File
+
+FileName: bcd{395e7b02-6e18-11e2-9269-8143a260ffd3}.TMContainer00000000000000000002.regtrans-ms
+FilePath: ./netbeans/
+FileType: OTHER
+FileChecksum: SHA1: 6a521e1d2a632c26e53b83d2cc4b0edecfc1e68c
+FileChecksum: SHA256: 07854d2fef297a06ba81685e660c332de36d5d18d546927d30daad6d7fda1541
+FileChecksum: MD5: 59071590099d21dd439896592338bf95
+FileChecksum: SSDEEP: 3::
+FileSize: 512 Kb (524288 bytes)
+
+## File
+
+FileName: bcd~
+FilePath: ./netbeans/
+FileType: OTHER
+FileChecksum: SHA1: 9777ea5c54407762a44b3ec8d7617368b2bac96c
+FileChecksum: SHA256: e54fbc2f44c6392ae6c3234b8f30cefcd769eeba1f2e82989d52f6ed8538e1d1
+FileChecksum: MD5: fd1f63ff553535d267f3f316b5f06b79
+FileChecksum: SSDEEP: 6:jSIdkTTjElaos181q//qIEFz7Etm5Rxj1AWtHOlKE4GlgCYv/llRt/sQlsr:fkTTjEvsb+Fstu9tqKE4Ggvtl7/swsr
+FileSize: 256 Kb (262144 bytes)
+
+## File
+
+FileName: bcd~.LOG1
+FilePath: ./netbeans/
+FileType: OTHER
+FileChecksum: SHA1: 466717dd5c766880c78b937ccf9409cd20b9da92
+FileChecksum: SHA256: 4413dce9daca91245a37336ca802c31ba351425b85dfe10b4733fd025e192625
+FileChecksum: MD5: 1b3d820eb85f8eb8c2f72f7bad223eab
+FileChecksum: SSDEEP: 12:MkTTjEvsBX9AkTTjEvsBeOtu9tqKE4Ggvtl7/swsr:vTTQEXpTTQEeaaelgvtl4wsr
+FileSize: 5 Kb (5120 bytes)
+
+## File
+
+FileName: bcd~.LOG2
+FilePath: ./netbeans/
+FileType: OTHER
+FileChecksum: SHA1: da39a3ee5e6b4b0d3255bfef95601890afd80709
+FileChecksum: SHA256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+FileChecksum: MD5: d41d8cd98f00b204e9800998ecf8427e
+FileChecksum: SSDEEP: 3::
+FileSize: 0 bytes
+
+## File
+
+FileName: bcd~{395e7b09-6e18-11e2-9269-8143a260ffd3}.TM.blf
+FilePath: ./netbeans/
+FileType: OTHER
+FileChecksum: SHA1: 5e61e20234bfb1c4e0ccb14b5a464d90684f12ac
+FileChecksum: SHA256: 5908e8439177ad7143fb50767bb0f6fec23d213bc0d308c87cdf69b3daef1311
+FileChecksum: MD5: ba009acd52e8fe63a7ce162e81f8af06
+FileChecksum: SSDEEP: 96:aCc1M1t0MSce5ScQVb3wScQVqCc1M1t2MSce5ScQVb3wScQV:aCy0TeBs3aFCy0JeBs3a
+FileSize: 64 Kb (65536 bytes)
+
+## File
+
+FileName: bcd~{395e7b09-6e18-11e2-9269-8143a260ffd3}.TMContainer00000000000000000001.regtrans-ms
+FilePath: ./netbeans/
+FileType: OTHER
+FileChecksum: SHA1: 908f1b49a66379000846ad703b025fa85b9725ed
+FileChecksum: SHA256: 46fb16204ac687ec9d2690a60242dae47021f2a877914f851b7e40f8097d727b
+FileChecksum: MD5: 8a32003a34936f30aceb7911fd343f00
+FileChecksum: SSDEEP: 3:pl0l9lXlls/lZRt1UQtS:LcE/BZ
+FileSize: 512 Kb (524288 bytes)
+
+## File
+
+FileName: bcd~{395e7b09-6e18-11e2-9269-8143a260ffd3}.TMContainer00000000000000000002.regtrans-ms
+FilePath: ./netbeans/
+FileType: OTHER
+FileChecksum: SHA1: 6a521e1d2a632c26e53b83d2cc4b0edecfc1e68c
+FileChecksum: SHA256: 07854d2fef297a06ba81685e660c332de36d5d18d546927d30daad6d7fda1541
+FileChecksum: MD5: 59071590099d21dd439896592338bf95
+FileChecksum: SSDEEP: 3::
+FileSize: 512 Kb (524288 bytes)
+
+## File
+
+FileName: .netbeans_automatic_build
+FilePath: ./netbeans/build/classes/
+FileType: OTHER
+FileChecksum: SHA1: da39a3ee5e6b4b0d3255bfef95601890afd80709
+FileChecksum: SHA256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+FileChecksum: MD5: d41d8cd98f00b204e9800998ecf8427e
+FileChecksum: SSDEEP: 3::
+FileSize: 0 bytes
+
+## File
+
+FileName: .netbeans_update_resources
+FilePath: ./netbeans/build/classes/
+FileType: OTHER
+FileChecksum: SHA1: da39a3ee5e6b4b0d3255bfef95601890afd80709
+FileChecksum: SHA256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+FileChecksum: MD5: d41d8cd98f00b204e9800998ecf8427e
+FileChecksum: SSDEEP: 3::
+FileSize: 0 bytes
+
+## File
+
+FileName: RegGUI$1.class
+FilePath: ./netbeans/build/classes/com/reghive/gui/
+FileType: OTHER
+FileChecksum: SHA1: 8916bdbc099d2e20d6355a7f0231705946b521a2
+FileChecksum: SHA256: c09d8eef719c7194ed3dfc41d1a7cb7753280f707401d891dd61614d1b4aea42
+FileChecksum: MD5: 09e4df5112dc4b9c8bdbe15ff7c0890b
+FileChecksum: SSDEEP: 24:sQryQulj23jxIBYxpZ91zoRUBqtkPp3aShxJR466J:ZryFlC39IBKJ1zlBqvcu
+FileSize: 1 Kb (1501 bytes)
+
+## File
+
+FileName: RegGUI$2.class
+FilePath: ./netbeans/build/classes/com/reghive/gui/
+FileType: OTHER
+FileChecksum: SHA1: e19b81bde498ef31d5148a47f11e238807634b45
+FileChecksum: SHA256: 52031b068e4eabcaca5f94f1ee88e5cb3c271b4c7a3fbafda784367d5c616a0d
+FileChecksum: MD5: 225585899d1e5b000463fec3377f5eeb
+FileChecksum: SSDEEP: 24:alwInVwLUg1ulj2tGg6eYes223q68whPHeEppgg+CjY3:alwewYg0lCtG1eYes2sq6wE3X+Cc
+FileSize: 1 Kb (1389 bytes)
+
+## File
+
+FileName: RegGUI$3.class
+FilePath: ./netbeans/build/classes/com/reghive/gui/
+FileType: OTHER
+FileChecksum: SHA1: 99a94b4d8b7ef74e0281ce6aafd1c1b27b131083
+FileChecksum: SHA256: ac2d5259a8594fb08680b555ead6a4bb57802a7ee2ffd19fc1a991c165eab1b1
+FileChecksum: MD5: 8b33359489f2e50996905572ec4099c4
+FileChecksum: SSDEEP: 12:Un5G4XlUYGA1ulPsoxhSAnVRISiSNVl/6JllkIyiUWObqWOdagzod5lRh6RZ2Xvy:M7Wg1ulj2O2XflJfAxBwxHKmb
+FileSize: 933 bytes
+
+## File
+
+FileName: RegGUI.class
+FilePath: ./netbeans/build/classes/com/reghive/gui/
+FileType: OTHER
+FileChecksum: SHA1: 68810dba5ab7929bf9aded2b37903f858948ddf6
+FileChecksum: SHA256: 59592fd913c896491e2faaea7c1a2dc3d349981aae17fbb2e3f468673889c0da
+FileChecksum: MD5: 287a742512a150031b16997617ddb376
+FileChecksum: SSDEEP: 48:8qb6cT1luawG2vLGttEnOE+KhTjo75WFKNI:8qlB2vyvEnOE+Kho5WFKy
+FileSize: 2 Kb (2563 bytes)
+
+## File
+
+FileName: RegBin.class
+FilePath: ./netbeans/build/classes/com/reghive/
+FileType: OTHER
+FileChecksum: SHA1: 79580d467229564aa2c6b2fced0e61f2dc7e9369
+FileChecksum: SHA256: f491e7e1bed8e0907fffcab61a3cda01afd8080e14f5d77d13f342dbb7f0cf46
+FileChecksum: MD5: e9d0052c28babf53c4fb8b215623559d
+FileChecksum: SSDEEP: 96:fwb6nlLmdxdZuK3JKtSo/BUu2uWnXOM52d2ORK:f06nlLmdnJbo/BUu7AeM52cV
+FileSize: 3 Kb (3997 bytes)
+
+## File
+
+FileName: RegCell.class
+FilePath: ./netbeans/build/classes/com/reghive/
+FileType: OTHER
+FileChecksum: SHA1: af70e38e3dc9972ddcde40b0bc76d28707554acd
+FileChecksum: SHA256: 87cf18779a8ea0cffd41ce5e33973a666853df0075b2568ec9601236e4d07992
+FileChecksum: MD5: 8af628e4a97ca37780fd019f37c25b2e
+FileChecksum: SSDEEP: 24:ExXzhyQuljG3sKcXRPvOeivbdGPBAtaieMvvVy3aty+Zd+kQ+:ExXzhyFlyGmeU4pAtaieUyqty+Zd5
+FileSize: 1 Kb (1339 bytes)
+
+## File
+
+FileName: RegData.class
+FilePath: ./netbeans/build/classes/com/reghive/
+FileType: OTHER
+FileChecksum: SHA1: ff1cbd98633a759f99e6c910c635e276490b8780
+FileChecksum: SHA256: f6db09d662b6ae3d8227c87c7e0c15ec8195656d16b5efade719f097b52adbf2
+FileChecksum: MD5: 5ff5f5926dc73d25981930bf8a6affd2
+FileChecksum: SSDEEP: 48:5lPP3lhwzG+EPmC9jY4jgzL5rrL3q1ooMYLUbhzNWMBSckOarHYTLHj:jPlhoEPmIaL5HjUoWUzkOiY3Hj
+FileSize: 3 Kb (3139 bytes)
+
+## File
+
+FileName: RegEntity.class
+FilePath: ./netbeans/build/classes/com/reghive/
+FileType: OTHER
+FileChecksum: SHA1: f447297a7150da2c88f01091b6d76337baf493f6
+FileChecksum: SHA256: dd4f57d63781d6c653aef69ad79b4c2da58e5b1527edbec36306f740c7534e0a
+FileChecksum: MD5: d823bf371af53e538adf8b7f68fb921c
+FileChecksum: SSDEEP: 24:I9j/LKZmyQulj7uugvHY+4+/kIyQRBWRjWfZ8hiRs+H:eHKZmyFlXuJvH4ukjQRZb6Y
+FileSize: 1 Kb (1384 bytes)
+
+## File
+
+FileName: RegHeader.class
+FilePath: ./netbeans/build/classes/com/reghive/
+FileType: OTHER
+FileChecksum: SHA1: 1129f377d594150fc0568915763a442cdb8cb58b
+FileChecksum: SHA256: 87a8fa05f5386675ccd094bf4594d7c42ac7bb1d1656f38eaf1db53f205af9b9
+FileChecksum: MD5: 7936cdbb3d5a25776c596ff7ffb16bb0
+FileChecksum: SSDEEP: 192:0xNlEm8tXGrezmpZkZyN4hsjp+Pu6yjAG8+EiFR+:6uLa9N4o8+EiFU
+FileSize: 8 Kb (8507 bytes)
+
+## File
+
+FileName: RegKey.class
+FilePath: ./netbeans/build/classes/com/reghive/
+FileType: OTHER
+FileChecksum: SHA1: 6196b455c97a7267717f8a473d684611b5d2d94c
+FileChecksum: SHA256: 3a6538d38ea6c5bf30efe5c4a5dfafcef4d41cded923d307f6f42e49b154506f
+FileChecksum: MD5: eef2b8d00e0eecdef7755e64b378f9a0
+FileChecksum: SSDEEP: 192:wG8YUClDmOOYoxjeIzD4yln59J+wKf4AjQgwVUXCzpiQbXEl:woJVO/tJpKfhjQFVE8piQbXS
+FileSize: 8 Kb (8645 bytes)
+
+## File
+
+FileName: RegKeyList.class
+FilePath: ./netbeans/build/classes/com/reghive/
+FileType: OTHER
+FileChecksum: SHA1: d777f0bb5302f2c303b9a62a3c9977346b710bc8
+FileChecksum: SHA256: a207e2bdfaa294b1dfebd78452e724f3a4c1e0f57a0988808b3e4ec55a54315c
+FileChecksum: MD5: 350c56eeea20a27fb9233111c97a4918
+FileChecksum: SSDEEP: 24:tPCuljTmvOBjriB4s/z4uNLbUNqtaKJypBEqQavEj2Fa4kWtwZ:13lXmmhrirzcwtxypCqQaMjSaNZ
+FileSize: 1 Kb (1322 bytes)
+
+## File
+
+FileName: RegKeyListLF.class
+FilePath: ./netbeans/build/classes/com/reghive/
+FileType: OTHER
+FileChecksum: SHA1: aa0600b41126021986f1281d4f633a425ca700bf
+FileChecksum: SHA256: d5f22a9f0827d132dc51852e909fb5a508a040fe609401dca382df9bcbc2820e
+FileChecksum: MD5: f1ee9f478beadcadce7d63c22c172750
+FileChecksum: SSDEEP: 96:vN6mltKm2CB1ls6fMS6cxK7K2d8zoQfW+Ht/hO:vN6mltKm3fls6fMS6gKFCzo4I
+FileSize: 4 Kb (4323 bytes)
+
+## File
+
+FileName: RegKeyListLH.class
+FilePath: ./netbeans/build/classes/com/reghive/
+FileType: OTHER
+FileChecksum: SHA1: baad4408a6f1b33dd0ed014aa88d8a51c239f363
+FileChecksum: SHA256: a690e989879cbd13b604895f8b7ea453815f8ed3f62cc82abd16224d12ef26c0
+FileChecksum: MD5: a39c2a17af001de750a4ffdcfcd21a5f
+FileChecksum: SSDEEP: 96:stUkltgm2PBhtkofYyqW6/VQnK7qecjwoxcmYJHI+k0x0Flm:sakltgmklXfYyqW6NQnKqwoxcmYJHvH5
+FileSize: 4 Kb (4354 bytes)
+
+## File
+
+FileName: RegKeyListLI.class
+FilePath: ./netbeans/build/classes/com/reghive/
+FileType: OTHER
+FileChecksum: SHA1: e14e9c1fc22473fc3a7685a0e275ba1bb24c6241
+FileChecksum: SHA256: aa9326b675925905047ba9faaf2cbbe49136aceac2a4820d556c0e321eaf2536
+FileChecksum: MD5: 1ea043e050efe8ce3059211fdca4b371
+FileChecksum: SSDEEP: 48:fp20XKdwt0lQa6LGJEm8XHDZOBKDAqpAiI5rqYbwUpk0N8mbyVWgQQDX88nIQNKd:BJ0ltqm0lAWAqp5I5Tsv3KYs3WKzh
+FileSize: 3 Kb (3544 bytes)
+
+## File
+
+FileName: RegKeyListRI.class
+FilePath: ./netbeans/build/classes/com/reghive/
+FileType: OTHER
+FileChecksum: SHA1: b6a526038d2a7d06881c8d2163fb5621856f65ff
+FileChecksum: SHA256: 0bb949fe3bd7ae52879fa3a8ec761faa481b3bd6dedef7302909acc99b12af30
+FileChecksum: MD5: 0d3e1f7653ea2827b13c4084faf53eb4
+FileChecksum: SSDEEP: 96:WtVb0ldWm5JluasIYgb4Brwz0mrP2eZNuf2e/:WtVoldWm5JlvsI9GrOP2eZgp
+FileSize: 3 Kb (3882 bytes)
+
+## File
+
+FileName: RegVal.class
+FilePath: ./netbeans/build/classes/com/reghive/
+FileType: OTHER
+FileChecksum: SHA1: c4db17436d76f046135287e00554b9000b8406d1
+FileChecksum: SHA256: f1f55fef65400b46c555360ab6164633ca36f8a79a9126fa4154b5e6eeff3c1b
+FileChecksum: MD5: f59db2b7923f6e2dca8c683bafd6c018
+FileChecksum: SSDEEP: 96:n2GlzZlFZmV41/NqBEqw+5quclayMUr5V3BF6LSXn57:nDlFZmCbqBEqNvcpTL/6LSXJ
+FileSize: 5 Kb (5128 bytes)
+
+## File
+
+FileName: RegValList.class
+FilePath: ./netbeans/build/classes/com/reghive/
+FileType: OTHER
+FileChecksum: SHA1: 680842831a0490fc5d927421bbc78887fde11672
+FileChecksum: SHA256: 91741ac5af46a427525797e234dd66d0dbbcc6c2d631e5e49e32820866b4ef91
+FileChecksum: MD5: 34df983ff0f97048ceb34dec3140d708
+FileChecksum: SSDEEP: 48:kg70Pjd+DRlphmbR49HC4oVIR2TA9urjyCRoATn6ws8tCkoKsmbyclmh4aEPABhJ:kgA6lrmMFoVIR2TA8yCLm/J
+FileSize: 3 Kb (3318 bytes)
+
+## File
+
+FileName: Converter.class
+FilePath: ./netbeans/build/classes/com/reghive/util/
+FileType: OTHER
+FileChecksum: SHA1: 78f7f108e3ab98d74092bc5d4b43943f707d4eff
+FileChecksum: SHA256: 854dbde02180c4338c32222668d49b128c0b0aa92d469c4e992bac965ef70d5c
+FileChecksum: MD5: 19584c551a1383b1ad7baaebbb03f2eb
+FileChecksum: SSDEEP: 48:+aZU2hyFlQjVX1x/ri5jXdaieRZIOGmGyT4Uv5gjC8Lw3D6vUg75YaU:iNFluXbmXdaiKZIOGmGypyAOsu5YF
+FileSize: 3 Kb (3372 bytes)
+
+## File
+
+FileName: build.xml
+FilePath: ./netbeans/
+FileType: OTHER
+FileChecksum: SHA1: 18f6ac5bcd825b0500c9e44154a473ca9eba7787
+FileChecksum: SHA256: a53c332648f011dadd7c571560caaeb0a49990451a9f16fccb109ff82bbf6e27
+FileChecksum: MD5: 7181624d73ab069fd21562ed1ccb5273
+FileChecksum: SSDEEP: 48:chzasZEdKEMFeJu6FetDofU+QdO6wT0FEgmm19vquZoT7f2:VsDmJ7floVwA/vqB7u
+FileSize: 3 Kb (3713 bytes)
+
+## File
+
+FileName: manifest.mf
+FilePath: ./netbeans/
+FileType: OTHER
+FileChecksum: SHA1: 07e1cd7a8a5f80d8670f91c0742fa4584f899174
+FileChecksum: SHA256: 002650a80750fb398111bf2f80872787b29ebc6b4abbfb459b2e9f5e9762e26d
+FileChecksum: MD5: 1a85ea4420d859b3aab3af09fc398382
+FileChecksum: SSDEEP: 3:ZLCAWIzBEnkfSRImKuMAF5qMGM5wMPr:1KItqI8FUs5Rr
+FileSize: 85 bytes
+
+## File
+
+FileName: build-impl.xml
+FilePath: ./netbeans/nbproject/
+FileType: OTHER
+FileChecksum: SHA1: 7291377ce25c1dbd0b4dc11442fd94c5182a2bd8
+FileChecksum: SHA256: fcf5e7c06fa660dd80101bef70f7f72ef5c112ab4e3d9d956eb7fbd84bdf0237
+FileChecksum: MD5: e7e55056644abf1095dd9e73b1282e45
+FileChecksum: SSDEEP: 384:5KnP/MkAdgVcdgVjY317fRfLyLvDumrxopH573RZ16Yu1y9dLj:qP/MkAEccEnLyLmZ61Ed/
+FileSize: 54 Kb (56231 bytes)
+
+## File
+
+FileName: genfiles.properties
+FilePath: ./netbeans/nbproject/
+FileType: OTHER
+FileChecksum: SHA1: 15835d7440afa1d450d2dd6635c74cb7252a989f
+FileChecksum: SHA256: 4a33b5e2b0c5f0f188ae943811c88ea2f9ff37c173c22623ea46f537ff477f0d
+FileChecksum: MD5: 88fd4bbd870dfbf925067f284ac1a50f
+FileChecksum: SSDEEP: 12:comQ/xCWjl4N1oZpWkOFxEOiMrtpI4U/pP5PwdKl4I5mQdl4IRWy8ol4Il1ov:BLjlW1iWnYO1bOPyKOYOTy8oOO1y
+FileSize: 475 bytes
+
+## File
+
+FileName: private.properties
+FilePath: ./netbeans/nbproject/private/
+FileType: OTHER
+FileChecksum: SHA1: 8c93c1533d7ca01f512c237ac74e0b36f270eb33
+FileChecksum: SHA256: b8b916f260d445049ae6b7163104e3e43e04304d74adb1681ec608166aabff72
+FileChecksum: MD5: 6d46c95af0c2b9d1926681c0fc435958
+FileChecksum: SSDEEP: 3:OMO+LnUcb9B7ER5jAX+1eaviWnS4w8BKqBdn:fLtb9wZDjSz8BKq7
+FileSize: 102 bytes
+
+## File
+
+FileName: private.xml
+FilePath: ./netbeans/nbproject/private/
+FileType: OTHER
+FileChecksum: SHA1: 4e616ef2ce25bfec3815cc2afc7676dd57902843
+FileChecksum: SHA256: 3bb4af1df2278bf3ce88223a73c6812a91214a97bfa6d49fe2bc11e791b66042
+FileChecksum: MD5: 8db5aa1af9a60c837ae0c674b2111063
+FileChecksum: SSDEEP: 6:TMVBd/vAGXhFKJ3mc40heFXh/KNoYqnXk7mc40hebBQJqnXgu9tXhbyn:TMHdHAGXhFKAFXh/KNTqXk7AbBAqXgkm
+FileSize: 211 bytes
+
+## File
+
+FileName: project.properties
+FilePath: ./netbeans/nbproject/
+FileType: OTHER
+FileChecksum: SHA1: 18058ac05234b7777970fc920338139f03c6ceb2
+FileChecksum: SHA256: 543d43d4a6dd608c22df87bf92ae28c7ec3f6aef503b77cf5478165084225561
+FileChecksum: MD5: b20dc73eb4c4074f96c6a7cf17c9a32d
+FileChecksum: SSDEEP: 48:jiyOgwF2Pqhu2CfziLPdQfAVX/YcTgziLH157GTg/VXGVIonFgIs:WgwsSMiLPd7XEoH1tNXGWv
+FileSize: 2 Kb (2384 bytes)
+
+## File
+
+FileName: project.xml
+FilePath: ./netbeans/nbproject/
+FileType: OTHER
+FileChecksum: SHA1: 8ffa142c934e682cb51e4afc0a5b4557e3beca07
+FileChecksum: SHA256: f8b282476ff083228b9222666c75a03c1af6c6fc1b08582c17620b5a6d064539
+FileChecksum: MD5: dad235d61f654049252223fb6fbbfd5d
+FileChecksum: SSDEEP: 12:TMHdHAG4AFyN2z6nKSdGhy7AaRgXl2GMDW3GWNZiOuxctu:2dHAdqf4JTGOjh
+FileSize: 445 bytes
+
+## File
+
+FileName: all-wcprops
+FilePath: ./rawreg2/.svn/
+FileType: OTHER
+FileChecksum: SHA1: 17ed3e6040817061cb03bbd85e23142db0799b04
+FileChecksum: SHA256: 6af2d776e204f2fedcdd5f4356a79381388d93303853b38eff72b5858ca190ca
+FileChecksum: MD5: 592e116ceead1fe7fa9f27c23dc02155
+FileChecksum: SSDEEP: 3:KKWTRs7AbdQV0iTnxDMTACGv:KKqhbo0knxDMTACGv
+FileSize: 71 bytes
+
+## File
+
+FileName: dir-prop-base
+FilePath: ./rawreg2/.svn/
+FileType: OTHER
+FileChecksum: SHA1: 08127c31e3ec8e196e55e1627da91a1d7d515bcb
+FileChecksum: SHA256: d1b21974304f51866b060abdb8733ac54abeb122aad760ad8353476266523649
+FileChecksum: MD5: 51b13b90436716cd3161e64fbe2a81d7
+FileChecksum: SSDEEP: 3:KuUlrHGJfrvLVa4GfWuvn:Kt4JTZa4GfWgn
+FileSize: 50 bytes
+
+## File
+
+FileName: entries
+FilePath: ./rawreg2/.svn/
+FileType: OTHER
+FileChecksum: SHA1: 48975ca377f751b9a75baec59da5b0d3ea8171f0
+FileChecksum: SHA256: 86bd77ee5850ccda097a7c3dd50fce71e20a826ded96cb96c7e6248e42350f59
+FileChecksum: MD5: 1825d01718ae2c518d65213e57d8bcbf
+FileChecksum: SSDEEP: 6:MMPZIe/62nmOIe/62nHuFOzw9Rc1yIRdpnS0JBTEp:MYZIeCBeCDmSRY1vTEp
+FileSize: 219 bytes
+
+## File
+
+FileName: all-wcprops
+FilePath: ./rawreg2/src/.svn/
+FileType: OTHER
+FileChecksum: SHA1: faa50baba8812262253aabcc3abc12458f2ca72d
+FileChecksum: SHA256: a0e5c6746835f9cbf168884610858a6b73796071bd87606c71fe07b30b81c1c8
+FileChecksum: MD5: f0a03beb3e8943b63a2ff3ebae743e3a
+FileChecksum: SSDEEP: 3:KKWTRs7AbdQVwSUoTnxDMTACV4gr5:KKqhbowknxDMTACT5
+FileSize: 75 bytes
+
+## File
+
+FileName: entries
+FilePath: ./rawreg2/src/.svn/
+FileType: OTHER
+FileChecksum: SHA1: b83cf8a2dc7909aaad6ae1d2c75288baec932a62
+FileChecksum: SHA256: 75438f67be08272fc25241123fce524d934e265de0211099323b59e0d4b72904
+FileChecksum: MD5: dc9d379ac9c6bb5eea67be00cba5dbb9
+FileChecksum: SSDEEP: 6:MMPZIe/62nmiMIe/62nHuFOz1f01yIRdpnS0JB4oB:MYZIeCcMIeCDm1fg1v5B
+FileSize: 214 bytes
+
+## File
+
+FileName: all-wcprops
+FilePath: ./rawreg2/src/com/.svn/
+FileType: OTHER
+FileChecksum: SHA1: b5a810ea616fceb13ae4f525d1d7f0dd0f5deb1d
+FileChecksum: SHA256: 3f6ffc4e879492d2bc84ad4137f5b4b8519c9a1eb87ff558d677464f700783fb
+FileChecksum: MD5: f6db36c5f8f8f181cc550ea66aacba75
+FileChecksum: SSDEEP: 3:KKWTRs7AbdQV8lHKXTnxDMTACVEahvn:KKqhbo8FKnxDMTACSahv
+FileSize: 79 bytes
+
+## File
+
+FileName: entries
+FilePath: ./rawreg2/src/com/.svn/
+FileType: OTHER
+FileChecksum: SHA1: df96d065c6c1fdd81344c5f32557008747d70851
+FileChecksum: SHA256: 41df077fb519ed0bd92b751d892480db2b3c8e47b34353abae7aa15be2dd9b90
+FileChecksum: MD5: 6da8779b7f4529cda39fe2efeb5bbf88
+FileChecksum: SSDEEP: 6:MMPZIe/62nmSqIe/62nHuFOz1f01yIRdpnS0JBK:MYZIeCtIeCDm1fg1vK
+FileSize: 223 bytes
+
+## File
+
+FileName: all-wcprops
+FilePath: ./rawreg2/src/com/guujiang/.svn/
+FileType: OTHER
+FileChecksum: SHA1: 8e8b8c4418c842fea512d78deb1d0a077a34f710
+FileChecksum: SHA256: 88584209b878734f8c020cc9f5faee0822106088e90a25dba1b3cff4744a77c5
+FileChecksum: MD5: a79cecb7655a9f1bbde516e0bbee9897
+FileChecksum: SSDEEP: 3:KKWTRs7AbdQV2ToTnxDMTACVE70EPv:KKqhbo2T2nxDMTACS4i
+FileSize: 88 bytes
+
+## File
+
+FileName: entries
+FilePath: ./rawreg2/src/com/guujiang/.svn/
+FileType: OTHER
+FileChecksum: SHA1: c28e12814019e2b760fab68065dcf1e2f7cb981b
+FileChecksum: SHA256: 751159694d45a9be09fa31441947411960c996ccbe1e2a062dfe80275e47c1d7
+FileChecksum: MD5: 08ea36c0c61ee45b4e9d0655098b278c
+FileChecksum: SSDEEP: 6:MMPZIe/62nmS4de/62nHuFOz1f01yIRdpnS0JBjA:MYZIeCxeCDm1fg1vjA
+FileSize: 231 bytes
+
+## File
+
+FileName: all-wcprops
+FilePath: ./rawreg2/src/com/guujiang/rawreg2/.svn/
+FileType: OTHER
+FileChecksum: SHA1: 8cd95b59c5b699249cb63b643e8e6320a1ec94b7
+FileChecksum: SHA256: 9eece8e791f81dae737cb9447169d9fda8fd8b6f0a394a1f5223088d91faf597
+FileChecksum: MD5: 607c26b3694d7173ed752065e814e33d
+FileChecksum: SSDEEP: 6:KKqhbognxDMTACS4AGpOGHKqhboh8nxDMTACS4ABGbrA2KqhboKknxDMTACS4Aad:chrDbcThJDbrGbrTh6Db4mC5
+FileSize: 354 bytes
+
+## File
+
+FileName: entries
+FilePath: ./rawreg2/src/com/guujiang/rawreg2/.svn/
+FileType: OTHER
+FileChecksum: SHA1: dc14f11c2a31d4563130b95cc0314c3c4f13ae7b
+FileChecksum: SHA256: 67dc664984a5e48b95a657ed46c41848bed492d78d6238e3c0bb64aa1410475a
+FileChecksum: MD5: 27e3e18e07ad90ec62c334eee7a09d5a
+FileChecksum: SSDEEP: 12:MYZIeCceCDm1fg1vqlcVS/THeDFm1fM/cVmp7y2Fm1fa:MAa2ilOecVS/L5lM/cVmp22Yla
+FileSize: 564 bytes
+
+## File
+
+FileName: CellManager.java.svn-base
+FilePath: ./rawreg2/src/com/guujiang/rawreg2/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: 5e738833e86ae117038f1d6793884ac5c8984331
+FileChecksum: SHA256: ffc6b0e7990ea8194856eed7df0f61d515c0bfa84de4ef86f59809ba5d074b7a
+FileChecksum: MD5: 5425718259a164c0110f59934162f2d8
+FileChecksum: SSDEEP: 48:cafmlZHlZxr4ypDYgxesKSRs9Sg7b04L566:cLXHX5S/sHJg7d
+FileSize: 2 Kb (2147 bytes)
+
+## File
+
+FileName: HiveParser.java.svn-base
+FilePath: ./rawreg2/src/com/guujiang/rawreg2/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: e5a7811df8c2d8c9ddf587be6e7c5f88532d5d2e
+FileChecksum: SHA256: 2d4a375f74bd1fa6e13519045f5373755216b803511dc8c22616bcc33c408397
+FileChecksum: MD5: 3d896c60f176b3dd775981f06e8196d1
+FileChecksum: SSDEEP: 24:CHcsUMuCr0XrQLpCyBsKZsQwZs+ZstZs8cBF1FSFLdUKQ9IIDUXcDVSUusS96q0p:cl0bQYAnyhKWn4cDYsy6TuBPgbO/dCf
+FileSize: 1 Kb (1949 bytes)
+
+## File
+
+FileName: CellManager.java
+FilePath: ./rawreg2/src/com/guujiang/rawreg2/
+FileType: OTHER
+FileChecksum: SHA1: 5e738833e86ae117038f1d6793884ac5c8984331
+FileChecksum: SHA256: ffc6b0e7990ea8194856eed7df0f61d515c0bfa84de4ef86f59809ba5d074b7a
+FileChecksum: MD5: 5425718259a164c0110f59934162f2d8
+FileChecksum: SSDEEP: 48:cafmlZHlZxr4ypDYgxesKSRs9Sg7b04L566:cLXHX5S/sHJg7d
+FileSize: 2 Kb (2147 bytes)
+FileLOC: 64
+
+## File
+
+FileName: all-wcprops
+FilePath: ./rawreg2/src/com/guujiang/rawreg2/cli/.svn/
+FileType: OTHER
+FileChecksum: SHA1: a641cbd3a91b812e0296ebafff22656ae4ef2171
+FileChecksum: SHA256: 0392aeeb6f95ac677ce2fbf043313b03a6089b7c1e21c9e51f43fc7ab93621c3
+FileChecksum: MD5: 6b53ca6ae8fc36f6959f8ed5e8df0a39
+FileChecksum: SSDEEP: 6:KKqhboknxDMTACS4A5nmKqhboh8nxDMTACS4AEsE:ch3DbDnwhJDb2
+FileSize: 224 bytes
+
+## File
+
+FileName: entries
+FilePath: ./rawreg2/src/com/guujiang/rawreg2/cli/.svn/
+FileType: OTHER
+FileChecksum: SHA1: 0fd597c7bbe0fbcd07a0448344063754eeb68d4c
+FileChecksum: SHA256: 1732359d2ed375859c8e06a44db40d13ff19442ac771a22aca4040189c442b5d
+FileChecksum: MD5: 073a36c084d331ef9eeadc5ccbbffc06
+FileChecksum: SSDEEP: 6:MMPZIe/62nmS4AelXe/62nHuFOz1f01yIRdpnS0JBTlu2Vb5zTVRZESOz1flpv:MYZIeCxXeCDm1fg1vTrVbVVR7m1flpv
+FileSize: 378 bytes
+
+## File
+
+FileName: RawReg.java.svn-base
+FilePath: ./rawreg2/src/com/guujiang/rawreg2/cli/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: 87ca61cae2cc21b7b0b4934541de526aaf762ad2
+FileChecksum: SHA256: d391f182baae411d17cd290d3db27f040933ddce6a383db8c65720dfd3b61a6e
+FileChecksum: MD5: 0e5ee8a7bea08a50206828f23a832de3
+FileChecksum: SSDEEP: 24:CHcsoDVubMs19ZstZs5FsWF32m8RoyddfMhJEwyCgBWLEU4bEUT/wXPPFb2NIEl5:c+oB2XoydAPgBWwjASiGJlXWBOj9
+FileSize: 1 Kb (1449 bytes)
+
+## File
+
+FileName: RawReg.java
+FilePath: ./rawreg2/src/com/guujiang/rawreg2/cli/
+FileType: OTHER
+FileChecksum: SHA1: 87ca61cae2cc21b7b0b4934541de526aaf762ad2
+FileChecksum: SHA256: d391f182baae411d17cd290d3db27f040933ddce6a383db8c65720dfd3b61a6e
+FileChecksum: MD5: 0e5ee8a7bea08a50206828f23a832de3
+FileChecksum: SSDEEP: 24:CHcsoDVubMs19ZstZs5FsWF32m8RoyddfMhJEwyCgBWLEU4bEUT/wXPPFb2NIEl5:c+oB2XoydAPgBWwjASiGJlXWBOj9
+FileSize: 1 Kb (1449 bytes)
+FileLOC: 61
+
+## File
+
+FileName: all-wcprops
+FilePath: ./rawreg2/src/com/guujiang/rawreg2/core/.svn/
+FileType: OTHER
+FileChecksum: SHA1: e9d90fb1d1930c5c1239a03fd41f6328a0b4af35
+FileChecksum: SHA256: d80df60cda604d36398f3862c1e7f0f05703f224b25e92b9007cda5a2bd9de0c
+FileChecksum: MD5: 692ea77929932dd713b2901bad982053
+FileChecksum: SSDEEP: 24:Gj24TpBM2eT1Sb2pN25Q2v22s2tN2l1N2rb1sNS27hp1Sb2bsBM2Kx28I:G641BleJlpY5Bv22FtYl1Yrb1OljlABv
+FileSize: 1 Kb (1482 bytes)
+
+## File
+
+FileName: entries
+FilePath: ./rawreg2/src/com/guujiang/rawreg2/core/.svn/
+FileType: OTHER
+FileChecksum: SHA1: 6221740bc149515e63443bb167519f45dd33752c
+FileChecksum: SHA256: 46bcc0ea25f1c5b2cb6e928c1a539b0b66e91ab133d0e25867a1570a9693122e
+FileChecksum: MD5: 122b6a3ecfd2192f0adc085dcb0d57e5
+FileChecksum: SSDEEP: 48:yPIxXeX2LY1QQtYJDcaskuJkHU3f3l6G4PeklWDQ:yPkpM6eEIaUJ2M4fPsQ
+FileSize: 1 Kb (1867 bytes)
+
+## File
+
+FileName: Bin.java.svn-base
+FilePath: ./rawreg2/src/com/guujiang/rawreg2/core/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: 90acf296827e1cb9ec9dbe51073095bcd74ad6d1
+FileChecksum: SHA256: 22798965ab1a1eeb28e2ad375024a67a76dfc6a321b5e1978991d733233463a8
+FileChecksum: MD5: ede96e41feceb9a3a135f67318ef1cb9
+FileChecksum: SSDEEP: 24:CHcsW+VGFMFEFeFRQFCmC6fUd3BXhEsZlFxdS0+:cM+2CmPfUd3hvbk0+
+FileSize: 1 Kb (1095 bytes)
+
+## File
+
+FileName: Cell.java.svn-base
+FilePath: ./rawreg2/src/com/guujiang/rawreg2/core/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: 08397884111165ad4d8672e34b71f643d0ba8a64
+FileChecksum: SHA256: a9ce693f916471914faf57a3061e624e76922fdc8de6cd7183c46a150ec9fd5c
+FileChecksum: MD5: e8d7b540709838c216a5b2a535b745e9
+FileChecksum: SSDEEP: 24:CHcsW+MGFEFeFVF0QWrWIyhW4kxEHxCdwy:cM+rwWDW4H+wy
+FileSize: 1 Kb (1135 bytes)
+
+## File
+
+FileName: Header.java.svn-base
+FilePath: ./rawreg2/src/com/guujiang/rawreg2/core/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: b4e154075b7b6a392247ae42480c5107b9fb1bf1
+FileChecksum: SHA256: e7e9d8a794a6fc3e491b7821531b33561813e25141a47ce051feb9e08f0ffb57
+FileChecksum: MD5: 33d2787c78007788c4f4b80c86c7df9e
+FileChecksum: SSDEEP: 48:cM0jUQF+CQQkj87XKMmRXICAsZe3AUWWw72T5fAA+:cM+tF+CQQkj87XKMSIMQ3ApWw72TpAL
+FileSize: 2 Kb (2541 bytes)
+
+## File
+
+FileName: Hive.java.svn-base
+FilePath: ./rawreg2/src/com/guujiang/rawreg2/core/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: a36d52b60379e15f430537d0d7e364cc7667a5f0
+FileChecksum: SHA256: 6201b25c912c6528cf9bc433b77fa249150747e3956ca68a89fe6c69cdc141ed
+FileChecksum: MD5: 9df5d8b5a2252d140028e28c60be9270
+FileChecksum: SSDEEP: 12:CHcskBslrXv9WFGTkFhdF9qBGHG3vFCWeM11/PHiSN9vcQRNiqtnbG:CHcs2slrXv9WFtFhdF9qoHmvb1/PiG9A
+FileSize: 670 bytes
+
+## File
+
+FileName: Key.java.svn-base
+FilePath: ./rawreg2/src/com/guujiang/rawreg2/core/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: d9b90fb04ee31dcda975a329899c4b4ea9c3198c
+FileChecksum: SHA256: c643c3e45d32112f683f84fe787d38674bdebae74ff117ee0ffe4818f9afcf93
+FileChecksum: MD5: 384888e3be4799cac4bb7f3139379319
+FileChecksum: SSDEEP: 96:cMc59tL8UI5YJ+l+X7UKd3SIfUu2wWSW2:cMc5ICUnT2
+FileSize: 3 Kb (3389 bytes)
+
+## File
+
+FileName: KeyType.java.svn-base
+FilePath: ./rawreg2/src/com/guujiang/rawreg2/core/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: 4988e5a09f16d1dd5d86ec9fb1069f46e88c9941
+FileChecksum: SHA256: c7d1bbac6f650887dcb23b5d0bb848a74a2fc3d249a2577daeff677202d3a381
+FileChecksum: MD5: d03133368ee1692d06a8fb35512fbbd4
+FileChecksum: SSDEEP: 6:hZGHcskTActP6KzfJYk02SkxLyAJyPbEQrPbA+irKAdCcDRIEELIrLD:CHcskMOTi5A+OhdCmRIer
+FileSize: 386 bytes
+
+## File
+
+FileName: SubKeyList.java.svn-base
+FilePath: ./rawreg2/src/com/guujiang/rawreg2/core/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: 2bca7c4c8cbcf45ae35d3471c3a2cc258da518d1
+FileChecksum: SHA256: cfd24aeca32dd6b476e178e0fa166c07738c1334deddb6586ec08138dc929e48
+FileChecksum: MD5: ecef7833ee996366c7715d45b2b274bf
+FileChecksum: SSDEEP: 12:CHcskzX+XWFlEfFWWU7tFQad9F0oGeGyZJ0UNZgoVmoB9IDt:CHcsW+XWFlEfFWWuQ00oGgBQofBI
+FileSize: 654 bytes
+
+## File
+
+FileName: Value.java.svn-base
+FilePath: ./rawreg2/src/com/guujiang/rawreg2/core/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: ff5baa1d077b89c2beaee48ab59348a0ceaee0a5
+FileChecksum: SHA256: 92f5da9e9e43b464554f8fd0ac0629b334df3510a86cb0fd31c8791573531882
+FileChecksum: MD5: ea912fc0720b1632401b75ac2fe33eda
+FileChecksum: SSDEEP: 48:cM08rHFMk4qtCjKSgVxRXICmr8Sv9DMPVpHkT3Ke:cMTHFDHCjKSgVHIb4S1DMPTEzKe
+FileSize: 1 Kb (1911 bytes)
+
+## File
+
+FileName: ValueData.java.svn-base
+FilePath: ./rawreg2/src/com/guujiang/rawreg2/core/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: f0d9a9b02bdeb48a028017588a15d342ff59525c
+FileChecksum: SHA256: 697cb2d11d2a77f3af8da1ed5c2143079cba439f0896b248169716e871184dcb
+FileChecksum: MD5: b007aa6857f80ac9011a9464452b3523
+FileChecksum: SSDEEP: 24:CHcsmr0XJE6+GFf0FVXFVFCxCjHQ14Qoi4FzzOSzZj6pz/pOWgz6pnNfzYpZ3gB4:cW0AEwV6dlTTcbwZjgThBJtMZJMG7Rg
+FileSize: 2 Kb (3059 bytes)
+
+## File
+
+FileName: ValueList.java.svn-base
+FilePath: ./rawreg2/src/com/guujiang/rawreg2/core/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: f23304bd4e8d9d79e01c5e070bf36a936c8bf46e
+FileChecksum: SHA256: 3a817bb4d1f3b53ff4b7b96cac38615bf48f9617a48fa730716b6953820ef584
+FileChecksum: MD5: 1978d83d3a5d011afdc13a019c013ca3
+FileChecksum: SSDEEP: 24:CHcsW0XJd2hJkFnFQpQ14HWjaWll4tsshRMA:cM0KJVwmhj
+FileSize: 812 bytes
+
+## File
+
+FileName: ValueType.java.svn-base
+FilePath: ./rawreg2/src/com/guujiang/rawreg2/core/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: c9734b2abbd67f85ebc88d7a4c4a046f871bf45d
+FileChecksum: SHA256: 22760e03106b2877b353264e3993ebfd1cd65aca067778c3cf4031cbc5e4fe2e
+FileChecksum: MD5: 77e1dede87bb7bab0ecbea08d5bc0e21
+FileChecksum: SSDEEP: 6:hZGHcskVQ0IPaF3Z+JAQwpqdB8653Mt9yT:CHcski0ICFJ44pAB8653P
+FileSize: 274 bytes
+
+## File
+
+FileName: Bin.java
+FilePath: ./rawreg2/src/com/guujiang/rawreg2/core/
+FileType: OTHER
+FileChecksum: SHA1: 90acf296827e1cb9ec9dbe51073095bcd74ad6d1
+FileChecksum: SHA256: 22798965ab1a1eeb28e2ad375024a67a76dfc6a321b5e1978991d733233463a8
+FileChecksum: MD5: ede96e41feceb9a3a135f67318ef1cb9
+FileChecksum: SSDEEP: 24:CHcsW+VGFMFEFeFRQFCmC6fUd3BXhEsZlFxdS0+:cM+2CmPfUd3hvbk0+
+FileSize: 1 Kb (1095 bytes)
+FileLOC: 45
+
+## File
+
+FileName: Cell.java
+FilePath: ./rawreg2/src/com/guujiang/rawreg2/core/
+FileType: OTHER
+FileChecksum: SHA1: 08397884111165ad4d8672e34b71f643d0ba8a64
+FileChecksum: SHA256: a9ce693f916471914faf57a3061e624e76922fdc8de6cd7183c46a150ec9fd5c
+FileChecksum: MD5: e8d7b540709838c216a5b2a535b745e9
+FileChecksum: SSDEEP: 24:CHcsW+MGFEFeFVF0QWrWIyhW4kxEHxCdwy:cM+rwWDW4H+wy
+FileSize: 1 Kb (1135 bytes)
+FileLOC: 56
+
+## File
+
+FileName: Header.java
+FilePath: ./rawreg2/src/com/guujiang/rawreg2/core/
+FileType: OTHER
+FileChecksum: SHA1: b4e154075b7b6a392247ae42480c5107b9fb1bf1
+FileChecksum: SHA256: e7e9d8a794a6fc3e491b7821531b33561813e25141a47ce051feb9e08f0ffb57
+FileChecksum: MD5: 33d2787c78007788c4f4b80c86c7df9e
+FileChecksum: SSDEEP: 48:cM0jUQF+CQQkj87XKMmRXICAsZe3AUWWw72T5fAA+:cM+tF+CQQkj87XKMSIMQ3ApWw72TpAL
+FileSize: 2 Kb (2541 bytes)
+FileLOC: 75
+
+## File
+
+FileName: Hive.java
+FilePath: ./rawreg2/src/com/guujiang/rawreg2/core/
+FileType: OTHER
+FileChecksum: SHA1: a36d52b60379e15f430537d0d7e364cc7667a5f0
+FileChecksum: SHA256: 6201b25c912c6528cf9bc433b77fa249150747e3956ca68a89fe6c69cdc141ed
+FileChecksum: MD5: 9df5d8b5a2252d140028e28c60be9270
+FileChecksum: SSDEEP: 12:CHcskBslrXv9WFGTkFhdF9qBGHG3vFCWeM11/PHiSN9vcQRNiqtnbG:CHcs2slrXv9WFtFhdF9qoHmvb1/PiG9A
+FileSize: 670 bytes
+FileLOC: 37
+
+## File
+
+FileName: Key.java
+FilePath: ./rawreg2/src/com/guujiang/rawreg2/core/
+FileType: OTHER
+FileChecksum: SHA1: d9b90fb04ee31dcda975a329899c4b4ea9c3198c
+FileChecksum: SHA256: c643c3e45d32112f683f84fe787d38674bdebae74ff117ee0ffe4818f9afcf93
+FileChecksum: MD5: 384888e3be4799cac4bb7f3139379319
+FileChecksum: SSDEEP: 96:cMc59tL8UI5YJ+l+X7UKd3SIfUu2wWSW2:cMc5ICUnT2
+FileSize: 3 Kb (3389 bytes)
+FileLOC: 121
+
+## File
+
+FileName: KeyType.java
+FilePath: ./rawreg2/src/com/guujiang/rawreg2/core/
+FileType: OTHER
+FileChecksum: SHA1: 4988e5a09f16d1dd5d86ec9fb1069f46e88c9941
+FileChecksum: SHA256: c7d1bbac6f650887dcb23b5d0bb848a74a2fc3d249a2577daeff677202d3a381
+FileChecksum: MD5: d03133368ee1692d06a8fb35512fbbd4
+FileChecksum: SSDEEP: 6:hZGHcskTActP6KzfJYk02SkxLyAJyPbEQrPbA+irKAdCcDRIEELIrLD:CHcskMOTi5A+OhdCmRIer
+FileSize: 386 bytes
+FileLOC: 18
+
+## File
+
+FileName: SubKeyList.java
+FilePath: ./rawreg2/src/com/guujiang/rawreg2/core/
+FileType: OTHER
+FileChecksum: SHA1: 2bca7c4c8cbcf45ae35d3471c3a2cc258da518d1
+FileChecksum: SHA256: cfd24aeca32dd6b476e178e0fa166c07738c1334deddb6586ec08138dc929e48
+FileChecksum: MD5: ecef7833ee996366c7715d45b2b274bf
+FileChecksum: SSDEEP: 12:CHcskzX+XWFlEfFWWU7tFQad9F0oGeGyZJ0UNZgoVmoB9IDt:CHcsW+XWFlEfFWWuQ00oGgBQofBI
+FileSize: 654 bytes
+FileLOC: 31
+
+## File
+
+FileName: Value.java
+FilePath: ./rawreg2/src/com/guujiang/rawreg2/core/
+FileType: OTHER
+FileChecksum: SHA1: ff5baa1d077b89c2beaee48ab59348a0ceaee0a5
+FileChecksum: SHA256: 92f5da9e9e43b464554f8fd0ac0629b334df3510a86cb0fd31c8791573531882
+FileChecksum: MD5: ea912fc0720b1632401b75ac2fe33eda
+FileChecksum: SSDEEP: 48:cM08rHFMk4qtCjKSgVxRXICmr8Sv9DMPVpHkT3Ke:cMTHFDHCjKSgVHIb4S1DMPTEzKe
+FileSize: 1 Kb (1911 bytes)
+FileLOC: 65
+
+## File
+
+FileName: ValueData.java
+FilePath: ./rawreg2/src/com/guujiang/rawreg2/core/
+FileType: OTHER
+FileChecksum: SHA1: f0d9a9b02bdeb48a028017588a15d342ff59525c
+FileChecksum: SHA256: 697cb2d11d2a77f3af8da1ed5c2143079cba439f0896b248169716e871184dcb
+FileChecksum: MD5: b007aa6857f80ac9011a9464452b3523
+FileChecksum: SSDEEP: 24:CHcsmr0XJE6+GFf0FVXFVFCxCjHQ14Qoi4FzzOSzZj6pz/pOWgz6pnNfzYpZ3gB4:cW0AEwV6dlTTcbwZjgThBJtMZJMG7Rg
+FileSize: 2 Kb (3059 bytes)
+FileLOC: 99
+
+## File
+
+FileName: ValueList.java
+FilePath: ./rawreg2/src/com/guujiang/rawreg2/core/
+FileType: OTHER
+FileChecksum: SHA1: f23304bd4e8d9d79e01c5e070bf36a936c8bf46e
+FileChecksum: SHA256: 3a817bb4d1f3b53ff4b7b96cac38615bf48f9617a48fa730716b6953820ef584
+FileChecksum: MD5: 1978d83d3a5d011afdc13a019c013ca3
+FileChecksum: SSDEEP: 24:CHcsW0XJd2hJkFnFQpQ14HWjaWll4tsshRMA:cM0KJVwmhj
+FileSize: 812 bytes
+FileLOC: 31
+
+## File
+
+FileName: ValueType.java
+FilePath: ./rawreg2/src/com/guujiang/rawreg2/core/
+FileType: OTHER
+FileChecksum: SHA1: c9734b2abbd67f85ebc88d7a4c4a046f871bf45d
+FileChecksum: SHA256: 22760e03106b2877b353264e3993ebfd1cd65aca067778c3cf4031cbc5e4fe2e
+FileChecksum: MD5: 77e1dede87bb7bab0ecbea08d5bc0e21
+FileChecksum: SSDEEP: 6:hZGHcskVQ0IPaF3Z+JAQwpqdB8653Mt9yT:CHcski0ICFJ44pAB8653P
+FileSize: 274 bytes
+FileLOC: 7
+
+## File
+
+FileName: HiveParser.java
+FilePath: ./rawreg2/src/com/guujiang/rawreg2/
+FileType: OTHER
+FileChecksum: SHA1: e5a7811df8c2d8c9ddf587be6e7c5f88532d5d2e
+FileChecksum: SHA256: 2d4a375f74bd1fa6e13519045f5373755216b803511dc8c22616bcc33c408397
+FileChecksum: MD5: 3d896c60f176b3dd775981f06e8196d1
+FileChecksum: SSDEEP: 24:CHcsUMuCr0XrQLpCyBsKZsQwZs+ZstZs8cBF1FSFLdUKQ9IIDUXcDVSUusS96q0p:cl0bQYAnyhKWn4cDYsy6TuBPgbO/dCf
+FileSize: 1 Kb (1949 bytes)
+FileLOC: 58
+
+## File
+
+FileName: all-wcprops
+FilePath: ./rawreg2/src/com/guujiang/rawreg2/util/.svn/
+FileType: OTHER
+FileChecksum: SHA1: 69bed85020be4cfc454c9ff8359ed759608c0db5
+FileChecksum: SHA256: 540f40ef96912d025054771a62ae71b2c50b33d41070d67304d05b0032374ffe
+FileChecksum: MD5: a7971124506fa87f90ebbeaf0d04a407
+FileChecksum: SSDEEP: 6:KKqhboeSKnxDMTACS4AGhgKLHiKqhboAknxDMTACS4AGZAx6LHo:ch7Db1hJGDbVn
+FileSize: 238 bytes
+
+## File
+
+FileName: entries
+FilePath: ./rawreg2/src/com/guujiang/rawreg2/util/.svn/
+FileType: OTHER
+FileChecksum: SHA1: 0039b501c88f4f244e178baac13d30c5828e2155
+FileChecksum: SHA256: ed8eb79abde0ab07ca8c1a05b91e520c0c9d40755984826d23f037c5ff16c922
+FileChecksum: MD5: c2ac9ca3bbc48066ac43c0fa86427095
+FileChecksum: SSDEEP: 6:MMPZIe/62nmS4AGh2Ie/62nHuFOz1f01yIRdpnS0JB8A4LHxu2VfDznPOz1fHBn:MYZIeCteCDm1fg1v87VHm1fhn
+FileSize: 384 bytes
+
+## File
+
+FileName: FileTimeUtil.java.svn-base
+FilePath: ./rawreg2/src/com/guujiang/rawreg2/util/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: 68df55af28d38495111359c5f06dfea448740572
+FileChecksum: SHA256: e4efdc66acfd8a1c0858f03d292a93cb134e140817ade64224f91b84733ce668
+FileChecksum: MD5: c7032ddf802f02d89d9ad938d3bc05a9
+FileChecksum: SSDEEP: 12:CHcsyGWFKdJf73bKvIVSptOdJfJ9Ms4hxHog5dJfBD:CHcsPWFmzbm7Ch9lgm+9
+FileSize: 411 bytes
+
+## File
+
+FileName: FileTimeUtil.java
+FilePath: ./rawreg2/src/com/guujiang/rawreg2/util/
+FileType: OTHER
+FileChecksum: SHA1: 68df55af28d38495111359c5f06dfea448740572
+FileChecksum: SHA256: e4efdc66acfd8a1c0858f03d292a93cb134e140817ade64224f91b84733ce668
+FileChecksum: MD5: c7032ddf802f02d89d9ad938d3bc05a9
+FileChecksum: SSDEEP: 12:CHcsyGWFKdJf73bKvIVSptOdJfJ9Ms4hxHog5dJfBD:CHcsPWFmzbm7Ch9lgm+9
+FileSize: 411 bytes
+FileLOC: 14
+
+## File
+
+FileName: readme.textile
+FilePath: ./
+FileType: OTHER
+FileChecksum: SHA1: e40a66d2e007fe826eddc14c50b91dc6278cf8dc
+FileChecksum: SHA256: 9b4c3627dbd3a6839ea2a0e19218935e02afab37f7c98d7c50c21fdaeadefcb7
+FileChecksum: MD5: b9e5c704ae810d7df16b6f2778a6d1cb
+FileChecksum: SSDEEP: 6:FBgQhTIgKcUtrUTKc+4UTKckerEQrAVDj0c5VKebPae024:7ko2iruRZ8VX0cbv/024
+FileSize: 340 bytes
+
+## File
+
+FileName: .classpath
+FilePath: ./reghive/
+FileType: OTHER
+FileChecksum: SHA1: b871a406b31b850f5e1d7251f9c8e368fe6972be
+FileChecksum: SHA256: 811cf267d05dc128b57c5ed9893b4eb2b66a194358ea95ccc27f90827a0aeaa6
+FileChecksum: MD5: 52066c574fbd09ed317a73ebe8ef2d0b
+FileChecksum: SSDEEP: 6:TMVBd/LTM1ANaaJKMvs6ANalO0J5RLWL44+sa5R46OBSqdLANaUs5lAMv:TMHdTN0kJhLWQh4zSqeEl/
+FileSize: 301 bytes
+
+## File
+
+FileName: .project
+FilePath: ./reghive/
+FileType: OTHER
+FileChecksum: SHA1: f9a114bd3060ca72a40e685942a4d85130fe8d3b
+FileChecksum: SHA256: 6b3d33d7e23230cee227ed60fe0f6bbcf2310bf75b26fa25c0fbfac7f217068c
+FileChecksum: MD5: 4b6e704360a26b56b85c48fea926511e
+FileChecksum: SSDEEP: 6:TMVBd/vAGY4cg1ElJqqfPoLlJdIw5RyMA4fu+6pQI9GLliP4w5RyMAIRCcw/s0kQ:TMHdHAG9F12JqQS7IqpI9I2/pz8k0ZXZ
+FileSize: 383 bytes
+
+## File
+
+FileName: all-wcprops
+FilePath: ./reghive/.settings/.svn/
+FileType: OTHER
+FileChecksum: SHA1: bd25fbe907368a3eec2f3de8c160f7778a6e2efc
+FileChecksum: SHA256: 1b17afee9166af4c50ea2047a32b16fb11b817758b842ebbeec68b6f11cec91e
+FileChecksum: MD5: 290db0d90d70cc62312725beb1d4c56a
+FileChecksum: SSDEEP: 6:KKqhbowT2nxVLHYdJ5RyMagiyhbo12nxVLHYiw5RyMaul:chToV0vpagiyhDV0Fpay
+FileSize: 218 bytes
+
+## File
+
+FileName: entries
+FilePath: ./reghive/.settings/.svn/
+FileType: OTHER
+FileChecksum: SHA1: 7b3efab84b150af2a908eaf64d36f02b9ccd0b0d
+FileChecksum: SHA256: b5a82459c52854cde44079edc4b3655e09016cc6d6371bbf74e26031a3b32085
+FileChecksum: MD5: 5445dbcaf3b069fc4bee759397628c0c
+FileChecksum: SSDEEP: 6:MMPZIe/62n1/HYPe/62nHusv0wWQr81yIRdpnS0JBg5RyMaeou2VF5oQ8GQFHRDL:MYZIeCUwPeCJwWQE1vapatVsQleHRDGu
+FileSize: 377 bytes
+
+## File
+
+FileName: org.eclipse.jdt.core.prefs.svn-base
+FilePath: ./reghive/.settings/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: af7fe7fb2d26f84718d29a6c151fe0b5395a6b9b
+FileChecksum: SHA256: b8dd1c670b785885365ecaf14cdee4184535fbaae7d21c11df444d4a68abfa73
+FileChecksum: MD5: ef561c8a6f314527ba85565c7b496f01
+FileChecksum: SSDEEP: 12:r+pREMSmHpRE4J2pREQnGHPpypcXapFoA0apl0ap6pEMp1:qbEZqbE4MbEQGHPMyqYq/cmML
+FileSize: 598 bytes
+
+## File
+
+FileName: org.eclipse.jdt.core.prefs
+FilePath: ./reghive/.settings/
+FileType: OTHER
+FileChecksum: SHA1: af7fe7fb2d26f84718d29a6c151fe0b5395a6b9b
+FileChecksum: SHA256: b8dd1c670b785885365ecaf14cdee4184535fbaae7d21c11df444d4a68abfa73
+FileChecksum: MD5: ef561c8a6f314527ba85565c7b496f01
+FileChecksum: SSDEEP: 12:r+pREMSmHpRE4J2pREQnGHPpypcXapFoA0apl0ap6pEMp1:qbEZqbE4MbEQGHPMyqYq/cmML
+FileSize: 598 bytes
+
+## File
+
+FileName: all-wcprops
+FilePath: ./reghive/.svn/
+FileType: OTHER
+FileChecksum: SHA1: eed9320ca1572fab3278abdf8f6c5165542450ab
+FileChecksum: SHA256: a5b6f311d4ce8c4a3232a39ce30e72630010be6673baeb8fe1a16846c65066b3
+FileChecksum: MD5: bb865c402274362ed6a0c70c47b7ee63
+FileChecksum: SSDEEP: 6:KKqhboenxFVTUhbomZnxVLIo84GUhbo/KnxVL9co:ch9ghzDV18lUhBVeo
+FileSize: 256 bytes
+
+## File
+
+FileName: entries
+FilePath: ./reghive/.svn/
+FileType: OTHER
+FileChecksum: SHA1: d01a9f3f6512297275100d8b43d59693076d5ef9
+FileChecksum: SHA256: c073ac5e2f5b55d5210cae6a0ec4b3d110a463330d1564e6acbb822c3181b96b
+FileChecksum: MD5: d26fc256458778b893fdc4fa90461415
+FileChecksum: SSDEEP: 12:MYZIeCUOeChzlTWQE1vuzVwIEBetrwwWQgbjVBQDSwwWQYiCmQ:MAaU4hzlbquzVby2rkVBiATCT
+FileSize: 534 bytes
+
+## File
+
+FileName: .classpath.svn-base
+FilePath: ./reghive/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: b871a406b31b850f5e1d7251f9c8e368fe6972be
+FileChecksum: SHA256: 811cf267d05dc128b57c5ed9893b4eb2b66a194358ea95ccc27f90827a0aeaa6
+FileChecksum: MD5: 52066c574fbd09ed317a73ebe8ef2d0b
+FileChecksum: SSDEEP: 6:TMVBd/LTM1ANaaJKMvs6ANalO0J5RLWL44+sa5R46OBSqdLANaUs5lAMv:TMHdTN0kJhLWQh4zSqeEl/
+FileSize: 301 bytes
+
+## File
+
+FileName: .project.svn-base
+FilePath: ./reghive/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: f9a114bd3060ca72a40e685942a4d85130fe8d3b
+FileChecksum: SHA256: 6b3d33d7e23230cee227ed60fe0f6bbcf2310bf75b26fa25c0fbfac7f217068c
+FileChecksum: MD5: 4b6e704360a26b56b85c48fea926511e
+FileChecksum: SSDEEP: 6:TMVBd/vAGY4cg1ElJqqfPoLlJdIw5RyMA4fu+6pQI9GLliP4w5RyMAIRCcw/s0kQ:TMHdHAG9F12JqQS7IqpI9I2/pz8k0ZXZ
+FileSize: 383 bytes
+
+## File
+
+FileName: all-wcprops
+FilePath: ./reghive/bin/.svn/
+FileType: OTHER
+FileChecksum: SHA1: 2cb8446e54b86280dcba2acdb4d90edf4ef51472
+FileChecksum: SHA256: 6d4068a04d03c1112b4471711e12a52a721a35d25432333979b603bb122fa13b
+FileChecksum: MD5: f4f6d19772f5db608d084cf5607a9f84
+FileChecksum: SSDEEP: 3:KKWTRs7AbdQVxlHMTnxGWKd5buv:KKqhbofqnx8buv
+FileSize: 76 bytes
+
+## File
+
+FileName: entries
+FilePath: ./reghive/bin/.svn/
+FileType: OTHER
+FileChecksum: SHA1: 89803dd68fc721fffbb77992ef72466547036c60
+FileChecksum: SHA256: 68f31fa748640f595dc98a3b4b5f457f768d24c0ad8fac3f640bb4ba028b9feb
+FileChecksum: MD5: 936755e85fd43f5313acfaa2f4bf2edc
+FileChecksum: SSDEEP: 6:MMPZIe/62n1gb2Ie/62nHu1TVeEWQr81yIRdpnS0JBn:MYZIeCUA3eC3JWQE1vn
+FileSize: 206 bytes
+
+## File
+
+FileName: all-wcprops
+FilePath: ./reghive/src/.svn/
+FileType: OTHER
+FileChecksum: SHA1: 0a6b4a4c64e197e963d1e8de58c55bb0bd9a6869
+FileChecksum: SHA256: fcc8c7c36b4b1cf04a0faf6119d0090060bef1d0f7c74554ce8c46bd1ed78e8d
+FileChecksum: MD5: b4b5e63803fede9b1860677202f7fcde
+FileChecksum: SSDEEP: 3:KKWTRs7AbdQVxlHMTnxFTG4r5:KKqhbofqnxFN5
+FileSize: 76 bytes
+
+## File
+
+FileName: entries
+FilePath: ./reghive/src/.svn/
+FileType: OTHER
+FileChecksum: SHA1: 77f4c08030671bdd126fd2930e5cba19cdfb7ace
+FileChecksum: SHA256: b0649fa41afb20e4d0607580e1947513cc5af1a0ded668c7e69b74e6bb1b6c90
+FileChecksum: MD5: e6763d61abc6238269f60630b0b0c537
+FileChecksum: SSDEEP: 6:MMPZIe/62n1NMIe/62nHu3IM93EvkWQr81yIRdpnS0JB4oB:MYZIeCU2IeChzlTWQE1v5B
+FileSize: 216 bytes
+
+## File
+
+FileName: all-wcprops
+FilePath: ./reghive/src/com/.svn/
+FileType: OTHER
+FileChecksum: SHA1: 384d253289116d647f6bb01e2d8b6d4fa8bf6553
+FileChecksum: SHA256: 39b3d3e26188d934b157a5329666f9f53ce809bd2609c9508d9cb2cc97192a40
+FileChecksum: MD5: 1aa62fa733ffe9a818a1475470991bc2
+FileChecksum: SSDEEP: 3:KKWTRs7AbdQV9wXTnxFTGdahvn:KKqhboGnxFYahv
+FileSize: 80 bytes
+
+## File
+
+FileName: entries
+FilePath: ./reghive/src/com/.svn/
+FileType: OTHER
+FileChecksum: SHA1: d1e57378fa101137db111d8181860b2a1b1f67dd
+FileChecksum: SHA256: 530e12a3e66ae85cc28a1724b3d334b0120428de25a1de116266b0ba1396c697
+FileChecksum: MD5: 2cd128f5bede788b3c9096565beae818
+FileChecksum: SSDEEP: 6:MMPZIe/62n1FqIe/62nHu3IM93EvkWQr81yIRdpnS0JBJ8p:MYZIeCUFqIeChzlTWQE1vup
+FileSize: 224 bytes
+
+## File
+
+FileName: all-wcprops
+FilePath: ./reghive/src/com/reghive/.svn/
+FileType: OTHER
+FileChecksum: SHA1: 554e5faede240f5d3d709705bffb01e2c324c51a
+FileChecksum: SHA256: 2fafe2e0fe82f878220785fd4049a0df66d1b96da1ea5d9ce8d74b1136e42cb1
+FileChecksum: MD5: 7a304f080374ba77acd73a38c519d29a
+FileChecksum: SSDEEP: 24:GdTRa3Jd/b02E0W/lE3aHnWM+D/GpJdj8D/Xi:GdTRcJtbXEz/lE38nl+bGpJR8bXi
+FileSize: 1 Kb (1624 bytes)
+
+## File
+
+FileName: entries
+FilePath: ./reghive/src/com/reghive/.svn/
+FileType: OTHER
+FileChecksum: SHA1: 94f982ed802847dccbbab5d92d1215d0412a2861
+FileChecksum: SHA256: 6f7180450c6e279765c541a7ba2b7d93dc28be900f1c169327742e5412c3b83f
+FileChecksum: MD5: 847567112aa3de5ad242c6c2ac62b1e5
+FileChecksum: SSDEEP: 48:lQ2f3uTlk7EeWVvt6zkaD5ch6iqSzTz7qUBr6CHpc4eb3d:LuTlkQeWZv+SHOdt
+FileSize: 2 Kb (2241 bytes)
+
+## File
+
+FileName: RegBin.java.svn-base
+FilePath: ./reghive/src/com/reghive/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: 2400ff90e2268e7fac048e5da64623ca93ed08c5
+FileChecksum: SHA256: 46cb5eb18ad99bee80bf8165221d1cf00541cc15111a53c397f12213f006b80a
+FileChecksum: MD5: 94d5b5e8e4f545f75c4490443dc1b362
+FileChecksum: SSDEEP: 96:cXyzONq7sqOHfhWCsq0NLZ3noYyc+hG3nDWdSlVCe0lFh9h3tCohPXpRN:ci4RHfsCsq0NLZ3noYyc+hG3nDWd4J0v
+FileSize: 4 Kb (4799 bytes)
+
+## File
+
+FileName: RegCell.java.svn-base
+FilePath: ./reghive/src/com/reghive/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: a2f98c08f5ca8a5fed9b86c61174825e5ac29e7e
+FileChecksum: SHA256: 825305f907b9ea6c6c4eeb577d8679301d3e6f8c2b1f296f86db978db1d04e99
+FileChecksum: MD5: b85cf48382cb20fb5263b64b42de33e3
+FileChecksum: SSDEEP: 12:CHkFOjZNcopM3eNgl9IgAb7bKegKSNVkU29p4eVLyt0cvw79TasGV:CHkFOj4+NgbIg0OegjV89zV5u8TkV
+FileSize: 973 bytes
+
+## File
+
+FileName: RegData.java.netbeans-base
+FilePath: ./reghive/src/com/reghive/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: 44bfd7f2fa535a1e969a28688521626fc203ba87
+FileChecksum: SHA256: c15c3371f4b817c30e16038068b9e1dfd20482c35ad6e09852d1461f35ad826d
+FileChecksum: MD5: 2193c361970ae463a8c6214775711f9b
+FileChecksum: SSDEEP: 96:cZy+EZOfID2wUM4c1HQnk4ZhWN69/MIDND85sqib:ck+En6BgCFZNp6sd
+FileSize: 3 Kb (3073 bytes)
+
+## File
+
+FileName: RegData.java.svn-base
+FilePath: ./reghive/src/com/reghive/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: 44bfd7f2fa535a1e969a28688521626fc203ba87
+FileChecksum: SHA256: c15c3371f4b817c30e16038068b9e1dfd20482c35ad6e09852d1461f35ad826d
+FileChecksum: MD5: 2193c361970ae463a8c6214775711f9b
+FileChecksum: SSDEEP: 96:cZy+EZOfID2wUM4c1HQnk4ZhWN69/MIDND85sqib:ck+En6BgCFZNp6sd
+FileSize: 3 Kb (3073 bytes)
+
+## File
+
+FileName: RegEntity.java.svn-base
+FilePath: ./reghive/src/com/reghive/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: 221caec65063d5de13f871490abcef200217e18c
+FileChecksum: SHA256: 7e3a10c09a544f03257cf38d126f9ef82a14ac7d889cf372cb03fef46042ad09
+FileChecksum: MD5: b7a89c773251e8abe54c772477a8dabd
+FileChecksum: SSDEEP: 12:CHkyStsjAyky3I6a7kU3Nk7X+7II27xV6M0EW0rF5XA+LY0N6eD:CHky+sZkD4U90CmnXF5XAMYu
+FileSize: 1 Kb (1143 bytes)
+
+## File
+
+FileName: RegHeader.java.netbeans-base
+FilePath: ./reghive/src/com/reghive/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: 9c017ecce469a4d744d937760aff81229754c5a3
+FileChecksum: SHA256: bdeb2168350cf3c6a3d74240c2507dc618f10ec5b5a17f905888b39f2d69c2a6
+FileChecksum: MD5: ffff6474ec0f8d6e986e702c6d9f53d3
+FileChecksum: SSDEEP: 192:c5+9y+CYB+Kx3e2XvW6FV30JC4ITLfSJuzksb:cG/7+Kx3e2X+6Fl0J1sd
+FileSize: 8 Kb (8727 bytes)
+
+## File
+
+FileName: RegHeader.java.svn-base
+FilePath: ./reghive/src/com/reghive/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: 5c4fea203ebf66ea60d5a1476b3d5eaaac120b81
+FileChecksum: SHA256: c54950518559816e9fe32679f41b89ef90f7d0d581d0d5f1526fe3d55003203e
+FileChecksum: MD5: d3ec5e2acf77bce0f2783415ce495e32
+FileChecksum: SSDEEP: 192:c5+9y+CYB+Kx3e2XvWVK53XC4ITLfSJuzksb:cG/7+Kx3e2X+VKZX1sd
+FileSize: 8 Kb (8946 bytes)
+
+## File
+
+FileName: RegKey.java.netbeans-base
+FilePath: ./reghive/src/com/reghive/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: 8f40a10d5e2ce5fc0738ef9fea82c5802ec53a8f
+FileChecksum: SHA256: 7c61391ead6079a85a18d6f24ec8c2a13a81d4c1df34baf213e9bd4ebd864c6a
+FileChecksum: MD5: de73bb5bb08d50ccc6fe23dc0a600191
+FileChecksum: SSDEEP: 192:cgOnXzRmDoqAas0QuCwmmBXoLl8mCDExiQEz2I:cbdas0QuCwmmBXoLl8mC8ibzv
+FileSize: 8 Kb (9201 bytes)
+
+## File
+
+FileName: RegKey.java.svn-base
+FilePath: ./reghive/src/com/reghive/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: 6e10cb57a6c019fbfe9a9d33f06ae7ddde2f5069
+FileChecksum: SHA256: 5a9f02cd23d41508b1e3f37292c6c7a8e943586edbd8551fcdc7cc5bdcd4f337
+FileChecksum: MD5: 7bafbb5978e9f7d358e79e8577b88ada
+FileChecksum: SSDEEP: 192:cgOnXzPmDoqAaH50QuCAwmvmxBXoL24jCmC+Ex+REz2I:cbHaH50QuCAwmvmxBXoL24jCmCr+Szv
+FileSize: 9 Kb (10080 bytes)
+
+## File
+
+FileName: RegKeyList.java.svn-base
+FilePath: ./reghive/src/com/reghive/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: cdcffd18b2a180922951a8d1189d198659d91c42
+FileChecksum: SHA256: ff0eefd6f125809f0c083ace475dbe0970c389639dd87a7d9524829d0557637a
+FileChecksum: MD5: 2758db61f46fe9af7d31632aad3cb787
+FileChecksum: SSDEEP: 12:CHBfDx7HF7ou8v7bOrI8V7t0MzwTY79YFe0II2TUCkmCs9yYcOQciU+7Oe:CHXjF7ou8zWI8cmw45012wOF9yBNUSd
+FileSize: 928 bytes
+
+## File
+
+FileName: RegKeyListLF.java.svn-base
+FilePath: ./reghive/src/com/reghive/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: b841e6af64663b8dce22b7fc285d4f71e7788d2d
+FileChecksum: SHA256: 5d7c6a6b37bbd89842cedbca86f16732a1a40aa1032a2220f8351e4141cc6f48
+FileChecksum: MD5: f35b98357c42f0a37790670a0856fd22
+FileChecksum: SSDEEP: 48:cXy4LRXwxNxlqktje50KqtGIYqOozoOCSBiriESuehIdIKYIZoIZowtD:cXy4Lx2Nxcd50KSkfSBiriESdKtD
+FileSize: 3 Kb (3094 bytes)
+
+## File
+
+FileName: RegKeyListLH.java.svn-base
+FilePath: ./reghive/src/com/reghive/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: 39354acedc41d982eac80559cc4f45f8e7f2faaf
+FileChecksum: SHA256: 5d513c2a1438ffde473760db724832e3108c8539369e5728948b84d462e3d752
+FileChecksum: MD5: b2f7c5e8b73de779e8bb626f57e3e5d8
+FileChecksum: SSDEEP: 96:cXy4JE2jx3pB50ESkVsGXBirzESWrjtD:ci4JE2NJ0ESkVsGXBJljtD
+FileSize: 3 Kb (3396 bytes)
+
+## File
+
+FileName: RegKeyListLI.java.svn-base
+FilePath: ./reghive/src/com/reghive/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: 9d7c555ca2e62241281092803ef3eb65eac62204
+FileChecksum: SHA256: 6b6a8c932fb3b95a1502e539eebb46eb5cc4e59f4e2cb9d238170af67d6a80c4
+FileChecksum: MD5: fe216b0528e4cfacf171104253e19051
+FileChecksum: SSDEEP: 48:cXy4eR3QoxlSf0a0tNHKug50fqfqOWboGoBirz5K:cXy4e9QoxMf0BtpKB50fJ0GoBirz5K
+FileSize: 2 Kb (2589 bytes)
+
+## File
+
+FileName: RegKeyListRI.java.svn-base
+FilePath: ./reghive/src/com/reghive/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: d46b2c56a5fbe76950d307a2c5c3065662a1bc1c
+FileChecksum: SHA256: 6f83a4e2fa94c6cc2a47c8b77312b92d5b08244ffda32d9fb357bb5bf533665e
+FileChecksum: MD5: f6d187eb6669c3319f2fedc783aef4d6
+FileChecksum: SSDEEP: 48:cXy4sRrzW5w0ZdV/dOOdDJo1ug50JqBvCCmZqQchPARogdirzz2:cXy4sNzW5p7VlO2UB50JaHhP/6irzi
+FileSize: 2 Kb (3043 bytes)
+
+## File
+
+FileName: RegVal.java.svn-base
+FilePath: ./reghive/src/com/reghive/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: 06426d8f9d96c318481c7e57745acbd89a06387b
+FileChecksum: SHA256: b47b3bdb51cc858ac9c062271dafed419e8b9173f01fe0e9952766bafbed1f48
+FileChecksum: MD5: ccd08190841236cc514981b6eda490c4
+FileChecksum: SSDEEP: 96:crMaCoroVvGOFqSiKHud850IB3wJk07mmNPv1NBPZIbQp4oC9:crVPoT2Uj0IB3wJXpN1Lxm
+FileSize: 4 Kb (4668 bytes)
+
+## File
+
+FileName: RegValList.java.svn-base
+FilePath: ./reghive/src/com/reghive/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: 2fe8c802d37928a27957dfdaada7645b911259fc
+FileChecksum: SHA256: 7e3714e07a7d7c93cc1ae6b3ef37c56a8ce67b41e658ef345a4a075d3369d000
+FileChecksum: MD5: 41fea14424918a7b5513faf45dda789c
+FileChecksum: SSDEEP: 24:CHXyynFr+F6FRbxlvjx8b9u8EPe5pl3bLALkQYpMEBoUQbtvwzuQbkR+gUrDP5S8:cXyIp5Gb9W25nnrppMPYzzro8
+FileSize: 2 Kb (2353 bytes)
+
+## File
+
+FileName: all-wcprops
+FilePath: ./reghive/src/com/reghive/gui/.svn/
+FileType: OTHER
+FileChecksum: SHA1: 4dd159a3cc277c9a3356937e0c5088c3b36d7fd1
+FileChecksum: SHA256: 7a82d5b7bc6f35192059e1239ccae2b9fdc7f75cd370c31a349071084b5a5e6b
+FileChecksum: MD5: 81e128317a740bb035ef14e2c01776fc
+FileChecksum: SSDEEP: 3:KKWTRs7AbdQVvlHMTnxFTGd73AbTKKWTRs7AbdQVpWHMTnxFTGdxwbTgn:KKqhbo9qnxFY0mKqhbopWqnxFYGbE
+FileSize: 208 bytes
+
+## File
+
+FileName: entries
+FilePath: ./reghive/src/com/reghive/gui/.svn/
+FileType: OTHER
+FileChecksum: SHA1: 0ac29db4c2fd81e6937098a4082e7d8089bcf275
+FileChecksum: SHA256: 6d5278606b65224328f375df7b8d4c17b28c4df11a28dd7b34c181e5611638f7
+FileChecksum: MD5: 5624430cff46de2c0d4db6f959baccaa
+FileChecksum: SSDEEP: 6:MMPZIe/62n1Fsxe/62nHu3IM93EvkWQr81yIRdpnS0JBwlunTmbmsGrJuteIM93G:MYZIeCUFsxeChzlTWQE1vwwTbOezlTWr
+FileSize: 373 bytes
+
+## File
+
+FileName: RegGUI.java.netbeans-base
+FilePath: ./reghive/src/com/reghive/gui/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: e31c76aa00bbc3bb936d1a756c526b8a6e391e80
+FileChecksum: SHA256: 9e084fc48c257cff79bc315eb356511744efb3f3075dc2ccf9e66311ecc842d3
+FileChecksum: MD5: 9c7f7b3c812ea35965fae54c8a3e7d0d
+FileChecksum: SSDEEP: 48:cNji7YDrUPDo3ENBLrnTJUrvimLXwSU1wXLpNBZKebBwsM/foRJmSzwT6HnVRL7a:c+0ITJUrENHAR4Dow9
+FileSize: 3 Kb (3747 bytes)
+
+## File
+
+FileName: RegGUI.java.svn-base
+FilePath: ./reghive/src/com/reghive/gui/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: e31c76aa00bbc3bb936d1a756c526b8a6e391e80
+FileChecksum: SHA256: 9e084fc48c257cff79bc315eb356511744efb3f3075dc2ccf9e66311ecc842d3
+FileChecksum: MD5: 9c7f7b3c812ea35965fae54c8a3e7d0d
+FileChecksum: SSDEEP: 48:cNji7YDrUPDo3ENBLrnTJUrvimLXwSU1wXLpNBZKebBwsM/foRJmSzwT6HnVRL7a:c+0ITJUrENHAR4Dow9
+FileSize: 3 Kb (3747 bytes)
+
+## File
+
+FileName: RegGUI.java.2.tmp
+FilePath: ./reghive/src/com/reghive/gui/.svn/tmp/
+FileType: OTHER
+FileChecksum: SHA1: ac0d2fa2c09d0a58da4aa22b291d06065f557dc0
+FileChecksum: SHA256: 926b3ff76db6747c6545b2edb5f27e40b0b07fda3f3d284a04fb656185f4aa54
+FileChecksum: MD5: 68b62a6dc6ceef41bfc5388f9e32cd44
+FileChecksum: SSDEEP: 48:cNji7YDrUP83ENBLrnwmJU5qIw2vipTLwIwSU1wXLpNBZKebBwsM/foRJmSzwT6S:c+0cJJU8AnNHAR4Dow9
+FileSize: 3 Kb (3978 bytes)
+
+## File
+
+FileName: RegGUI.java.3.tmp
+FilePath: ./reghive/src/com/reghive/gui/.svn/tmp/
+FileType: OTHER
+FileChecksum: SHA1: 1d3d2a6f7ab163579982ad0ed4b985b04ae3f60b
+FileChecksum: SHA256: fe99e983f37399ebcaf90ff74b1e70da3bc70fdf65138cf2b5a40439c6f85f35
+FileChecksum: MD5: c394b274a4cc58e78bbc3cf90bf47b06
+FileChecksum: SSDEEP: 48:cNji7tDrSnSPDg3ENBLrnTJUrvimLXwSU1M1p1wXLsNZKumwsM/foRJmSzwT6Hny:c+BzTJUrEqPlHAR4Dow9
+FileSize: 4 Kb (4214 bytes)
+
+## File
+
+FileName: RegGUI.java.tmp
+FilePath: ./reghive/src/com/reghive/gui/.svn/tmp/
+FileType: OTHER
+FileChecksum: SHA1: 34b2b282b37085ee52b6af414db7f1c4c4835d19
+FileChecksum: SHA256: 41e3d7203da7fc21e67d066674a51514c0e71cf263a7b0aa604b9955e3408f2b
+FileChecksum: MD5: 07a34401e7aee194903ae10816baf63b
+FileChecksum: SSDEEP: 48:cNji7YDKUPDo3ENnw7NqtwanLcnTJUrqIlLpNBmKKwQkr/bewsM/foRJm9zwT6HN:c+DiCTJUOAZHAR4qoj9
+FileSize: 3 Kb (4095 bytes)
+
+## File
+
+FileName: RegGUI.java
+FilePath: ./reghive/src/com/reghive/gui/
+FileType: OTHER
+FileChecksum: SHA1: 5be56acd3e35e63baf341b76a820926202590f93
+FileChecksum: SHA256: 161b227452921c9954700c4817a6ed733123fbbf1aca8337494e113f8fdeec44
+FileChecksum: MD5: 0ccb9c21983b767c112b3d02c2cc4f5d
+FileChecksum: SSDEEP: 48:cNji7YDrUho3ENBLrnTJUrvimLXwSU1wXLpNBZKebBwsM/foRJmSzwT6HnVRL7V8:c+0WTJUrENHAR4Dow9
+FileSize: 3 Kb (3737 bytes)
+FileLOC: 115
+
+## File
+
+FileName: RegBin.java
+FilePath: ./reghive/src/com/reghive/
+FileType: OTHER
+FileChecksum: SHA1: 2400ff90e2268e7fac048e5da64623ca93ed08c5
+FileChecksum: SHA256: 46cb5eb18ad99bee80bf8165221d1cf00541cc15111a53c397f12213f006b80a
+FileChecksum: MD5: 94d5b5e8e4f545f75c4490443dc1b362
+FileChecksum: SSDEEP: 96:cXyzONq7sqOHfhWCsq0NLZ3noYyc+hG3nDWdSlVCe0lFh9h3tCohPXpRN:ci4RHfsCsq0NLZ3noYyc+hG3nDWd4J0v
+FileSize: 4 Kb (4799 bytes)
+FileLOC: 180
+
+## File
+
+FileName: RegCell.java
+FilePath: ./reghive/src/com/reghive/
+FileType: OTHER
+FileChecksum: SHA1: a2f98c08f5ca8a5fed9b86c61174825e5ac29e7e
+FileChecksum: SHA256: 825305f907b9ea6c6c4eeb577d8679301d3e6f8c2b1f296f86db978db1d04e99
+FileChecksum: MD5: b85cf48382cb20fb5263b64b42de33e3
+FileChecksum: SSDEEP: 12:CHkFOjZNcopM3eNgl9IgAb7bKegKSNVkU29p4eVLyt0cvw79TasGV:CHkFOj4+NgbIg0OegjV89zV5u8TkV
+FileSize: 973 bytes
+FileLOC: 52
+
+## File
+
+FileName: RegData.java
+FilePath: ./reghive/src/com/reghive/
+FileType: OTHER
+FileChecksum: SHA1: 44bfd7f2fa535a1e969a28688521626fc203ba87
+FileChecksum: SHA256: c15c3371f4b817c30e16038068b9e1dfd20482c35ad6e09852d1461f35ad826d
+FileChecksum: MD5: 2193c361970ae463a8c6214775711f9b
+FileChecksum: SSDEEP: 96:cZy+EZOfID2wUM4c1HQnk4ZhWN69/MIDND85sqib:ck+En6BgCFZNp6sd
+FileSize: 3 Kb (3073 bytes)
+FileLOC: 124
+
+## File
+
+FileName: RegEntity.java
+FilePath: ./reghive/src/com/reghive/
+FileType: OTHER
+FileChecksum: SHA1: 221caec65063d5de13f871490abcef200217e18c
+FileChecksum: SHA256: 7e3a10c09a544f03257cf38d126f9ef82a14ac7d889cf372cb03fef46042ad09
+FileChecksum: MD5: b7a89c773251e8abe54c772477a8dabd
+FileChecksum: SSDEEP: 12:CHkyStsjAyky3I6a7kU3Nk7X+7II27xV6M0EW0rF5XA+LY0N6eD:CHky+sZkD4U90CmnXF5XAMYu
+FileSize: 1 Kb (1143 bytes)
+FileLOC: 53
+
+## File
+
+FileName: RegHeader.java
+FilePath: ./reghive/src/com/reghive/
+FileType: OTHER
+FileChecksum: SHA1: 5c4fea203ebf66ea60d5a1476b3d5eaaac120b81
+FileChecksum: SHA256: c54950518559816e9fe32679f41b89ef90f7d0d581d0d5f1526fe3d55003203e
+FileChecksum: MD5: d3ec5e2acf77bce0f2783415ce495e32
+FileChecksum: SSDEEP: 192:c5+9y+CYB+Kx3e2XvWVK53XC4ITLfSJuzksb:cG/7+Kx3e2X+VKZX1sd
+FileSize: 8 Kb (8946 bytes)
+FileLOC: 303
+
+## File
+
+FileName: RegKey.java
+FilePath: ./reghive/src/com/reghive/
+FileType: OTHER
+FileChecksum: SHA1: 6e10cb57a6c019fbfe9a9d33f06ae7ddde2f5069
+FileChecksum: SHA256: 5a9f02cd23d41508b1e3f37292c6c7a8e943586edbd8551fcdc7cc5bdcd4f337
+FileChecksum: MD5: 7bafbb5978e9f7d358e79e8577b88ada
+FileChecksum: SSDEEP: 192:cgOnXzPmDoqAaH50QuCAwmvmxBXoL24jCmC+Ex+REz2I:cbHaH50QuCAwmvmxBXoL24jCmCr+Szv
+FileSize: 9 Kb (10080 bytes)
+FileLOC: 333
+
+## File
+
+FileName: RegKeyList.java
+FilePath: ./reghive/src/com/reghive/
+FileType: OTHER
+FileChecksum: SHA1: cdcffd18b2a180922951a8d1189d198659d91c42
+FileChecksum: SHA256: ff0eefd6f125809f0c083ace475dbe0970c389639dd87a7d9524829d0557637a
+FileChecksum: MD5: 2758db61f46fe9af7d31632aad3cb787
+FileChecksum: SSDEEP: 12:CHBfDx7HF7ou8v7bOrI8V7t0MzwTY79YFe0II2TUCkmCs9yYcOQciU+7Oe:CHXjF7ou8zWI8cmw45012wOF9yBNUSd
+FileSize: 928 bytes
+FileLOC: 41
+
+## File
+
+FileName: RegKeyListLF.java
+FilePath: ./reghive/src/com/reghive/
+FileType: OTHER
+FileChecksum: SHA1: b841e6af64663b8dce22b7fc285d4f71e7788d2d
+FileChecksum: SHA256: 5d7c6a6b37bbd89842cedbca86f16732a1a40aa1032a2220f8351e4141cc6f48
+FileChecksum: MD5: f35b98357c42f0a37790670a0856fd22
+FileChecksum: SSDEEP: 48:cXy4LRXwxNxlqktje50KqtGIYqOozoOCSBiriESuehIdIKYIZoIZowtD:cXy4Lx2Nxcd50KSkfSBiriESdKtD
+FileSize: 3 Kb (3094 bytes)
+FileLOC: 122
+
+## File
+
+FileName: RegKeyListLH.java
+FilePath: ./reghive/src/com/reghive/
+FileType: OTHER
+FileChecksum: SHA1: 39354acedc41d982eac80559cc4f45f8e7f2faaf
+FileChecksum: SHA256: 5d513c2a1438ffde473760db724832e3108c8539369e5728948b84d462e3d752
+FileChecksum: MD5: b2f7c5e8b73de779e8bb626f57e3e5d8
+FileChecksum: SSDEEP: 96:cXy4JE2jx3pB50ESkVsGXBirzESWrjtD:ci4JE2NJ0ESkVsGXBJljtD
+FileSize: 3 Kb (3396 bytes)
+FileLOC: 133
+
+## File
+
+FileName: RegKeyListLI.java
+FilePath: ./reghive/src/com/reghive/
+FileType: OTHER
+FileChecksum: SHA1: 9d7c555ca2e62241281092803ef3eb65eac62204
+FileChecksum: SHA256: 6b6a8c932fb3b95a1502e539eebb46eb5cc4e59f4e2cb9d238170af67d6a80c4
+FileChecksum: MD5: fe216b0528e4cfacf171104253e19051
+FileChecksum: SSDEEP: 48:cXy4eR3QoxlSf0a0tNHKug50fqfqOWboGoBirz5K:cXy4e9QoxMf0BtpKB50fJ0GoBirz5K
+FileSize: 2 Kb (2589 bytes)
+FileLOC: 109
+
+## File
+
+FileName: RegKeyListRI.java
+FilePath: ./reghive/src/com/reghive/
+FileType: OTHER
+FileChecksum: SHA1: d46b2c56a5fbe76950d307a2c5c3065662a1bc1c
+FileChecksum: SHA256: 6f83a4e2fa94c6cc2a47c8b77312b92d5b08244ffda32d9fb357bb5bf533665e
+FileChecksum: MD5: f6d187eb6669c3319f2fedc783aef4d6
+FileChecksum: SSDEEP: 48:cXy4sRrzW5w0ZdV/dOOdDJo1ug50JqBvCCmZqQchPARogdirzz2:cXy4sNzW5p7VlO2UB50JaHhP/6irzi
+FileSize: 2 Kb (3043 bytes)
+FileLOC: 114
+
+## File
+
+FileName: RegVal.java
+FilePath: ./reghive/src/com/reghive/
+FileType: OTHER
+FileChecksum: SHA1: 06426d8f9d96c318481c7e57745acbd89a06387b
+FileChecksum: SHA256: b47b3bdb51cc858ac9c062271dafed419e8b9173f01fe0e9952766bafbed1f48
+FileChecksum: MD5: ccd08190841236cc514981b6eda490c4
+FileChecksum: SSDEEP: 96:crMaCoroVvGOFqSiKHud850IB3wJk07mmNPv1NBPZIbQp4oC9:crVPoT2Uj0IB3wJXpN1Lxm
+FileSize: 4 Kb (4668 bytes)
+FileLOC: 176
+
+## File
+
+FileName: RegValList.java
+FilePath: ./reghive/src/com/reghive/
+FileType: OTHER
+FileChecksum: SHA1: 2fe8c802d37928a27957dfdaada7645b911259fc
+FileChecksum: SHA256: 7e3714e07a7d7c93cc1ae6b3ef37c56a8ce67b41e658ef345a4a075d3369d000
+FileChecksum: MD5: 41fea14424918a7b5513faf45dda789c
+FileChecksum: SSDEEP: 24:CHXyynFr+F6FRbxlvjx8b9u8EPe5pl3bLALkQYpMEBoUQbtvwzuQbkR+gUrDP5S8:cXyIp5Gb9W25nnrppMPYzzro8
+FileSize: 2 Kb (2353 bytes)
+FileLOC: 99
+
+## File
+
+FileName: all-wcprops
+FilePath: ./reghive/src/com/reghive/util/.svn/
+FileType: OTHER
+FileChecksum: SHA1: 3818c82024421f8cb1ee441f8febd8b7adf32f9f
+FileChecksum: SHA256: 2d40962ec7e3eb740f4a3de4733a59d7aa499addedad90b7b82a186f2de37784
+FileChecksum: MD5: 2d263f134baac243feda62aafd099583
+FileChecksum: SSDEEP: 6:KKqhbosknxFCMFlg9CnHKqhboznxFCMFVn5:ch5G/lVhM/T
+FileSize: 216 bytes
+
+## File
+
+FileName: entries
+FilePath: ./reghive/src/com/reghive/util/.svn/
+FileType: OTHER
+FileChecksum: SHA1: 4f2fef18a2b333f8c29eafe217d766cdf06f7adb
+FileChecksum: SHA256: 412befb94ac2e84d65f85d87f93e3312cc10f84f514a1aab86ddcbc7d8c438e4
+FileChecksum: MD5: 65f4d0d8bfc6642458f122442118f664
+FileChecksum: SSDEEP: 6:MMPZIe/62n1Fl2Ie/62nHu5VWQr81yIRdpnS0JBoniu0baD+OVWQriv:MYZIeCUFl3eCQQE1vbbaOQw
+FileSize: 377 bytes
+
+## File
+
+FileName: Converter.java.svn-base
+FilePath: ./reghive/src/com/reghive/util/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: 1c8424d5e94b7fa642d89799f04da4701d60ff51
+FileChecksum: SHA256: 4dc8efd9476fe74a56e5cd6abf8c5169af2c61f00f806d4a780ded2fb65da0e7
+FileChecksum: MD5: 89157a79575adb9db88ea73d513fe4e1
+FileChecksum: SSDEEP: 48:cMTp9Pprh/ItvNtaIwNja/IsJTNU/IqNNvANiQd4UhnT9:cM3ZhyNFwNmJxNUpN4NiQdnT9
+FileSize: 3 Kb (3147 bytes)
+
+## File
+
+FileName: Converter.java
+FilePath: ./reghive/src/com/reghive/util/
+FileType: OTHER
+FileChecksum: SHA1: 1c8424d5e94b7fa642d89799f04da4701d60ff51
+FileChecksum: SHA256: 4dc8efd9476fe74a56e5cd6abf8c5169af2c61f00f806d4a780ded2fb65da0e7
+FileChecksum: MD5: 89157a79575adb9db88ea73d513fe4e1
+FileChecksum: SSDEEP: 48:cMTp9Pprh/ItvNtaIwNja/IsJTNU/IqNNvANiQd4UhnT9:cM3ZhyNFwNmJxNUpN4NiQdnT9
+FileSize: 3 Kb (3147 bytes)
+FileLOC: 125
+
+## File
+
+FileName: all-wcprops
+FilePath: ./trunk/.svn/
+FileType: OTHER
+FileChecksum: SHA1: 408682a27d7a4cd798afa5cceb52cf9dbf797a25
+FileChecksum: SHA256: 2d0526c933dd09922bf0ed7228ea72dc9fc20c5a468577dd9ec2c340698e470b
+FileChecksum: MD5: 928c057e49ba448cd9b5d47f5b173c43
+FileChecksum: SSDEEP: 48:GtL/s0s/yb6ramYG5s0pstrkGM7hVoYkIxeCdsVVMjB9GGKEsxvGdTocOK07dVRq:G1/s0sGFmp5sMsdkGM7hV3kIxxdsVVMZ
+FileSize: 2 Kb (2895 bytes)
+
+## File
+
+FileName: entries
+FilePath: ./trunk/.svn/
+FileType: OTHER
+FileChecksum: SHA1: 981131f300a5f4f29b38097b0ecc43351740f48c
+FileChecksum: SHA256: 897837ab83bdc3e59ca3644f313970d1bcb405a91868023975646d4bcb4b85ce
+FileChecksum: MD5: dbfa1ed39636b1b2c04da7be58ee3822
+FileChecksum: SSDEEP: 96:t+zP67PCvBLtjA8mxemT/Liab2/1I0pai1jYuhy2Bmh6UjEgm7WkFnPyoxyn++n:A/xavijtr4+54n
+FileSize: 4 Kb (4850 bytes)
+
+## File
+
+FileName: bcd.svn-base
+FilePath: ./trunk/.svn/prop-base/
+FileType: OTHER
+FileChecksum: SHA1: a0284943f8ddfe69ceec90833e66d96bdf4a97f0
+FileChecksum: SHA256: ebbf7e8800c3446bc3a195fa53573bde1073b0bf7581a614372f1391a9286d02
+FileChecksum: MD5: 113136892f2137aa0116093a524ade0b
+FileChecksum: SSDEEP: 3:KXU79V6RkVuMQRGARthIvu5:KXU9V6koG0XIm5
+FileSize: 53 bytes
+
+## File
+
+FileName: binary_ops.dcu.svn-base
+FilePath: ./trunk/.svn/prop-base/
+FileType: OTHER
+FileChecksum: SHA1: a0284943f8ddfe69ceec90833e66d96bdf4a97f0
+FileChecksum: SHA256: ebbf7e8800c3446bc3a195fa53573bde1073b0bf7581a614372f1391a9286d02
+FileChecksum: MD5: 113136892f2137aa0116093a524ade0b
+FileChecksum: SSDEEP: 3:KXU79V6RkVuMQRGARthIvu5:KXU9V6koG0XIm5
+FileSize: 53 bytes
+
+## File
+
+FileName: CoderDeCoder.dcu.svn-base
+FilePath: ./trunk/.svn/prop-base/
+FileType: OTHER
+FileChecksum: SHA1: a0284943f8ddfe69ceec90833e66d96bdf4a97f0
+FileChecksum: SHA256: ebbf7e8800c3446bc3a195fa53573bde1073b0bf7581a614372f1391a9286d02
+FileChecksum: MD5: 113136892f2137aa0116093a524ade0b
+FileChecksum: SSDEEP: 3:KXU79V6RkVuMQRGARthIvu5:KXU9V6koG0XIm5
+FileSize: 53 bytes
+
+## File
+
+FileName: Main.dcu.svn-base
+FilePath: ./trunk/.svn/prop-base/
+FileType: OTHER
+FileChecksum: SHA1: a0284943f8ddfe69ceec90833e66d96bdf4a97f0
+FileChecksum: SHA256: ebbf7e8800c3446bc3a195fa53573bde1073b0bf7581a614372f1391a9286d02
+FileChecksum: MD5: 113136892f2137aa0116093a524ade0b
+FileChecksum: SSDEEP: 3:KXU79V6RkVuMQRGARthIvu5:KXU9V6koG0XIm5
+FileSize: 53 bytes
+
+## File
+
+FileName: RawReg.exe.svn-base
+FilePath: ./trunk/.svn/prop-base/
+FileType: OTHER
+FileChecksum: SHA1: a0284943f8ddfe69ceec90833e66d96bdf4a97f0
+FileChecksum: SHA256: ebbf7e8800c3446bc3a195fa53573bde1073b0bf7581a614372f1391a9286d02
+FileChecksum: MD5: 113136892f2137aa0116093a524ade0b
+FileChecksum: SSDEEP: 3:KXU79V6RkVuMQRGARthIvu5:KXU9V6koG0XIm5
+FileSize: 53 bytes
+
+## File
+
+FileName: RawReg.identcache.svn-base
+FilePath: ./trunk/.svn/prop-base/
+FileType: OTHER
+FileChecksum: SHA1: a0284943f8ddfe69ceec90833e66d96bdf4a97f0
+FileChecksum: SHA256: ebbf7e8800c3446bc3a195fa53573bde1073b0bf7581a614372f1391a9286d02
+FileChecksum: MD5: 113136892f2137aa0116093a524ade0b
+FileChecksum: SSDEEP: 3:KXU79V6RkVuMQRGARthIvu5:KXU9V6koG0XIm5
+FileSize: 53 bytes
+
+## File
+
+FileName: RawReg.res.svn-base
+FilePath: ./trunk/.svn/prop-base/
+FileType: OTHER
+FileChecksum: SHA1: a0284943f8ddfe69ceec90833e66d96bdf4a97f0
+FileChecksum: SHA256: ebbf7e8800c3446bc3a195fa53573bde1073b0bf7581a614372f1391a9286d02
+FileChecksum: MD5: 113136892f2137aa0116093a524ade0b
+FileChecksum: SSDEEP: 3:KXU79V6RkVuMQRGARthIvu5:KXU9V6koG0XIm5
+FileSize: 53 bytes
+
+## File
+
+FileName: raw_reg.dcu.svn-base
+FilePath: ./trunk/.svn/prop-base/
+FileType: OTHER
+FileChecksum: SHA1: a0284943f8ddfe69ceec90833e66d96bdf4a97f0
+FileChecksum: SHA256: ebbf7e8800c3446bc3a195fa53573bde1073b0bf7581a614372f1391a9286d02
+FileChecksum: MD5: 113136892f2137aa0116093a524ade0b
+FileChecksum: SSDEEP: 3:KXU79V6RkVuMQRGARthIvu5:KXU9V6koG0XIm5
+FileSize: 53 bytes
+
+## File
+
+FileName: raw_reg_gui.dcu.svn-base
+FilePath: ./trunk/.svn/prop-base/
+FileType: OTHER
+FileChecksum: SHA1: a0284943f8ddfe69ceec90833e66d96bdf4a97f0
+FileChecksum: SHA256: ebbf7e8800c3446bc3a195fa53573bde1073b0bf7581a614372f1391a9286d02
+FileChecksum: MD5: 113136892f2137aa0116093a524ade0b
+FileChecksum: SSDEEP: 3:KXU79V6RkVuMQRGARthIvu5:KXU9V6koG0XIm5
+FileSize: 53 bytes
+
+## File
+
+FileName: raw_reg_gui.ddp.svn-base
+FilePath: ./trunk/.svn/prop-base/
+FileType: OTHER
+FileChecksum: SHA1: a0284943f8ddfe69ceec90833e66d96bdf4a97f0
+FileChecksum: SHA256: ebbf7e8800c3446bc3a195fa53573bde1073b0bf7581a614372f1391a9286d02
+FileChecksum: MD5: 113136892f2137aa0116093a524ade0b
+FileChecksum: SSDEEP: 3:KXU79V6RkVuMQRGARthIvu5:KXU9V6koG0XIm5
+FileSize: 53 bytes
+
+## File
+
+FileName: SETUPREG.HIV.svn-base
+FilePath: ./trunk/.svn/prop-base/
+FileType: OTHER
+FileChecksum: SHA1: a0284943f8ddfe69ceec90833e66d96bdf4a97f0
+FileChecksum: SHA256: ebbf7e8800c3446bc3a195fa53573bde1073b0bf7581a614372f1391a9286d02
+FileChecksum: MD5: 113136892f2137aa0116093a524ade0b
+FileChecksum: SSDEEP: 3:KXU79V6RkVuMQRGARthIvu5:KXU9V6koG0XIm5
+FileSize: 53 bytes
+
+## File
+
+FileName: Unit1.dcu.svn-base
+FilePath: ./trunk/.svn/prop-base/
+FileType: OTHER
+FileChecksum: SHA1: a0284943f8ddfe69ceec90833e66d96bdf4a97f0
+FileChecksum: SHA256: ebbf7e8800c3446bc3a195fa53573bde1073b0bf7581a614372f1391a9286d02
+FileChecksum: MD5: 113136892f2137aa0116093a524ade0b
+FileChecksum: SSDEEP: 3:KXU79V6RkVuMQRGARthIvu5:KXU9V6koG0XIm5
+FileSize: 53 bytes
+
+## File
+
+FileName: Unit1.ddp.svn-base
+FilePath: ./trunk/.svn/prop-base/
+FileType: OTHER
+FileChecksum: SHA1: a0284943f8ddfe69ceec90833e66d96bdf4a97f0
+FileChecksum: SHA256: ebbf7e8800c3446bc3a195fa53573bde1073b0bf7581a614372f1391a9286d02
+FileChecksum: MD5: 113136892f2137aa0116093a524ade0b
+FileChecksum: SSDEEP: 3:KXU79V6RkVuMQRGARthIvu5:KXU9V6koG0XIm5
+FileSize: 53 bytes
+
+## File
+
+FileName: xorcheck.exe.svn-base
+FilePath: ./trunk/.svn/prop-base/
+FileType: OTHER
+FileChecksum: SHA1: a0284943f8ddfe69ceec90833e66d96bdf4a97f0
+FileChecksum: SHA256: ebbf7e8800c3446bc3a195fa53573bde1073b0bf7581a614372f1391a9286d02
+FileChecksum: MD5: 113136892f2137aa0116093a524ade0b
+FileChecksum: SSDEEP: 3:KXU79V6RkVuMQRGARthIvu5:KXU9V6koG0XIm5
+FileSize: 53 bytes
+
+## File
+
+FileName: bcd.svn-base
+FilePath: ./trunk/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: 1369e1ca8b65121168228b718162179eb3a2e3cb
+FileChecksum: SHA256: 39537f25ac51349aaedd0f0fa2040ceead4e4e92c7d728189f60e22fbca3bf9a
+FileChecksum: MD5: dabe7e690b59fc877a42858f85e6b5dd
+FileChecksum: SSDEEP: 384:dkJQgTNcNUDseUX/mLeoRteJRxspduHVs+EoaOzRYug19ahBkF95GE2D6wbi6j5:dkixOYeUX/mTMzV4VDxU
+FileSize: 256 Kb (262144 bytes)
+
+## File
+
+FileName: binary_ops.dcu.svn-base
+FilePath: ./trunk/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: c68301f92b2059b26a883b99e647601fa98b19e7
+FileChecksum: SHA256: 861d35765bf7cfc3eb87313cb4c61aded9222f37214cb50a3b38f30632754218
+FileChecksum: MD5: eb46b01f8a03af9b26778bd5878b1029
+FileChecksum: SSDEEP: 96:/ohvjhPqdGwGSszRziHj8rEX51wihKTOomgl/:/6vjhCGwGnzBCXwAKComS/
+FileSize: 3 Kb (3409 bytes)
+
+## File
+
+FileName: binary_ops.pas.svn-base
+FilePath: ./trunk/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: 16da49ff67d7bc9813e4d27b345dffc95572fe8d
+FileChecksum: SHA256: cdc0f316f15400b6565e4bf02b32065c91d18751f2269f6a89cdecab1777dcf1
+FileChecksum: MD5: dc669414f04add9259d91e07f94d59ea
+FileChecksum: SSDEEP: 192:SUSzDzDhewOiA324lO/QTzM/mFmgmSLurun:SUS3zdnOi425/HOUZSLurun
+FileSize: 6 Kb (6666 bytes)
+
+## File
+
+FileName: CoderDeCoder.dcu.svn-base
+FilePath: ./trunk/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: bcf8248f0fb928896129af4ca0b6c91c5eb384db
+FileChecksum: SHA256: ba1ed04b2aefef948fa814f9131778aa6801b14dbeece740c253aa6e8d95fcdf
+FileChecksum: MD5: c6ed29ba21abdf8cbb7b7dec18ebd84b
+FileChecksum: SSDEEP: 96:ZLOJe9dsXy3R/P236c2Pwu7WMwit2HJKhKTeF7iuXWIt58zQGOzWCzD5b:pOJadsXy3R/PDc2ouyM9miKaFGUWIjWy
+FileSize: 5 Kb (5557 bytes)
+
+## File
+
+FileName: coderDecoder.pas.svn-base
+FilePath: ./trunk/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: 09f8c292327b0cdfb6845951d47a844f6eb07683
+FileChecksum: SHA256: 36d5bd2e914f4c4d93b7fb18536e9dde0b99a9fbf0c58b70fd8ee0eed72ec3ce
+FileChecksum: MD5: 5f3cefa7141c0096f430eda29c7e0620
+FileChecksum: SSDEEP: 192:UjEWTTalca/W5wEMhIjdla9ZKkFlCkiqX31xvxOQHH+JC6naMBzF27:yRTWlcae5xMh4UFPf3D+Q6naMBzK
+FileSize: 8 Kb (8410 bytes)
+
+## File
+
+FileName: comp.bat.svn-base
+FilePath: ./trunk/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: 7413658f0a3c3a28cfb60c05604f48671673e8b2
+FileChecksum: SHA256: 56cdc1dd754ba59f6ddd3086e6f454b38f0d52375e81ac367d7db1673ff5045e
+FileChecksum: MD5: 1f9fc020632235a8a10b98fc169500c5
+FileChecksum: SSDEEP: 3:mKDDD1IcV7ACTQIv:hycVEzIv
+FileSize: 37 bytes
+
+## File
+
+FileName: Main.dcu.svn-base
+FilePath: ./trunk/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: cb6ad72f2514451323af686c84e6aa5710528eba
+FileChecksum: SHA256: 848e12df2134e7e5b02d6ff6534e60321fd03cf31beec0dda87838821bc8c859
+FileChecksum: MD5: 9cf7f2b2f47745eb7d9a355dec928eb1
+FileChecksum: SSDEEP: 1536:7iEYyGYW+LHhq7UALbTHha4yLAf98Y3qriej6U/xLMpUGg51hxaaQ:7xDZW+LHhIbg4yLA+iemU/xLuk5laaQ
+FileSize: 130 Kb (133356 bytes)
+
+## File
+
+FileName: RawReg.cfg.svn-base
+FilePath: ./trunk/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: 08bfbca9ab7f320b0bf5cd5bf8b309fe827b25cc
+FileChecksum: SHA256: 871c853c4a4f20e6807125f0d2a96e08c29c4694b8c81791a204b665cf965458
+FileChecksum: MD5: ca2ac42f4d053cc7056fe85a499f548b
+FileChecksum: SSDEEP: 12:8Ingv+ozgbbIY4r9U19JOIQJOISMbBarCg:8InizgXxR1LETbAeg
+FileSize: 476 bytes
+
+## File
+
+FileName: RawReg.dof.svn-base
+FilePath: ./trunk/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: b47165203e670fa041451710082135bdeead3be1
+FileChecksum: SHA256: 8c86020c81fc51a2237b9dd2ff5552abaaa4f33e5ddc42909c4b78d4ebd0bc3e
+FileChecksum: MD5: fc2fc7395f95dadfaf5aae57ee750d7d
+FileChecksum: SSDEEP: 48:ANZOxc5UGfBBm7KTW1qsolSbZOWri2oG47IgG9aX7Jhta/f:DsUqBBm7u6FbXrCGNgG9aXtK
+FileSize: 2 Kb (2230 bytes)
+
+## File
+
+FileName: RawReg.dpr.svn-base
+FilePath: ./trunk/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: be8b02501cb8072d73c64d015319c8ed81e5eec2
+FileChecksum: SHA256: d3ec5860c82424bd5987ff87073f09e24ea950be1cff107e33c12e445c5dea91
+FileChecksum: MD5: f0c5611a967a3a9a07cf95858fd53622
+FileChecksum: SSDEEP: 6:oKo8QcdEeU7fKD+ywBE6sSURexoHAGsBUoWw9wSRKkoTPI5Oov5:W8QcdEVrI6PUMxvyVw9wiKk8Ix5
+FileSize: 309 bytes
+
+## File
+
+FileName: RawReg.dproj.local.svn-base
+FilePath: ./trunk/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: 7ad198f5e4453e0dd0cd620581343a138c4029c1
+FileChecksum: SHA256: 31c1c103b8fe83597117e3a522cd6549a6ce8b7a533ef35a83b9a2af2f77a4ca
+FileChecksum: MD5: dd7437fccfcba74a8ae5efd64fd520f3
+FileChecksum: SSDEEP: 3:JLWMNHU8LdgCG/XKHv:JiMVBdga
+FileSize: 62 bytes
+
+## File
+
+FileName: RawReg.dproj.svn-base
+FilePath: ./trunk/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: aa190acb9d9813af786826d09161efe5b8f1c691
+FileChecksum: SHA256: c38c9a4b4fe8a2eb45fe0034da3593ba64e210a2a65fbee06a339e49a7d7e4be
+FileChecksum: MD5: 4bc98349469db359a190fc8453ed79a1
+FileChecksum: SSDEEP: 96:6lvnIl8xc2Q/V4VMNqK4fVfII4rmNgHu8e2Q/V4VMNqK4fVfIIKrmNgHu8xCaBva:sIGX7I7WEh3LIxdShnpDV
+FileSize: 4 Kb (4428 bytes)
+
+## File
+
+FileName: RawReg.dsk.svn-base
+FilePath: ./trunk/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: ff18843aa662ff415069dbc64e1691d0b08601f1
+FileChecksum: SHA256: bef34dc5fbc0fdaf38111a66fd4054a0693dd76c7903a0bd6490978252be152b
+FileChecksum: MD5: 05ccd58655001a94c12d516b22d559c3
+FileChecksum: SSDEEP: 192:XCW5uW9JgJzpkMnH9noM2L1bsfOG6Z2TQebVPjPK:XeHBcbsfOVM8eZPK
+FileSize: 7 Kb (8148 bytes)
+
+## File
+
+FileName: RawReg.exe.svn-base
+FilePath: ./trunk/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: ad665704c36a2baaf598e8017e2acf8a62b99452
+FileChecksum: SHA256: c3eb6f78754a69a5b284b02edfd48a0a5369f6bbfaa74f3caf9af3bba2aa6abf
+FileChecksum: MD5: 78f9252b6f420d270bd4b7f5ac219132
+FileChecksum: SSDEEP: 3072:LN0Rpu5HNbZ/Zl/kL85cF2dVtJnaINYH6A7TeAB4AitgQbYUxnNpu0HTQUTKUN:LL5tZ/kMcIJg6zJ/5u0HUU7
+FileSize: 237 Kb (242688 bytes)
+
+## File
+
+FileName: RawReg.identcache.svn-base
+FilePath: ./trunk/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: 57b778d23e4c6dc862b82ede31d5b6924df734f6
+FileChecksum: SHA256: 1d5aa08dc6662a94beba9b676ded2372c22f22cc1898c017e57af40e41f83d7b
+FileChecksum: MD5: 859536a7146f1d4c9b8e7fa98d7a017c
+FileChecksum: SSDEEP: 6:gRu+VMdX5rvySRu+VMdX5OlnRu+VMdX5OOKB/GdRu+VMdX5SUv:EJVMLtJVMmlRJVMmOS/GLJVMaUv
+FileSize: 314 bytes
+
+## File
+
+FileName: RawReg.ini.svn-base
+FilePath: ./trunk/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: df1460d2b9140036348aa6f070a3ad1cdd71e657
+FileChecksum: SHA256: 2e7f0afc327f717f2dd95079682499699a3752192dd83568e1b5c8c29e659b5e
+FileChecksum: MD5: fcbf3024c7100d29a7e7ef8bd65a9bfb
+FileChecksum: SSDEEP: 3:1Wj//zdQ9lTuMvFUgMLoMMW5y3SGSl1xv:E/bERu+VMdX5TTp
+FileSize: 103 bytes
+
+## File
+
+FileName: RawReg.res.svn-base
+FilePath: ./trunk/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: fede72122f8dc1204c1dc28175040a59ebc0cc5e
+FileChecksum: SHA256: 13a8a294d79a9b14af0c115811fbd1e66b346d405a95afd456f241a3e2e5c037
+FileChecksum: MD5: dd47fa50e70cf7788bde2402d6eb8067
+FileChecksum: SSDEEP: 192:CiBJ69mb2fngpGqDcfi8+cQxW33SPVWn:sBIk7CC3pn
+FileSize: 9 Kb (9772 bytes)
+
+## File
+
+FileName: raw_reg.dcu.svn-base
+FilePath: ./trunk/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: 070878f0df29d0bfacd53b0f3466d2124e356099
+FileChecksum: SHA256: 561ccfaed7037f8de2ddba06448d7cf043a120730c92c0a3e21c8801d236738a
+FileChecksum: MD5: 0b2e14c003810d36eee93ff09edcc514
+FileChecksum: SSDEEP: 768:jZHhUCt9yrIMwfVEWbcXteNU9oEZN1ZZZZZZZZZZezX:tqCryEM2EZN1ZZZZZZZZZZm
+FileSize: 26 Kb (26988 bytes)
+
+## File
+
+FileName: raw_reg.pas.svn-base
+FilePath: ./trunk/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: da1d6312b8cb97233ee717193716cb24262667b3
+FileChecksum: SHA256: baa96b3ecb9a81ffedbae1e7323c67c7b853d9f02ee43b6779d3a3ddd42e957f
+FileChecksum: MD5: dbca337d962bcb6df56eda8df64303c5
+FileChecksum: SSDEEP: 768:GskAN3eyf8ZVdu6EbONT7hhvDY+JIkRWTiE8haPpc9au:IAN3eyEJTwONT3DYwIcWTChaPpc9au
+FileSize: 67 Kb (69424 bytes)
+
+## File
+
+FileName: raw_reg_gui.dcu.svn-base
+FilePath: ./trunk/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: 5d722fed8632acd4707ab001a5af762e7268a9f3
+FileChecksum: SHA256: e1ccc99812c94ba83ad5ac1dce02adbf585b80fa3b61fdad6ed104045b293774
+FileChecksum: MD5: eb70a76cc206c29c6ccc99e9299e49b2
+FileChecksum: SSDEEP: 384:G1iGHogEuaNO6imwOhBjccRssbgZQLi2njqRULyJY7xA3OS:aUKG1BjccRssb5LigjLuJgA3n
+FileSize: 14 Kb (15114 bytes)
+
+## File
+
+FileName: raw_reg_gui.ddp.svn-base
+FilePath: ./trunk/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: b307792a846c82c81a8d62cb7b5527a487021085
+FileChecksum: SHA256: 20ac805af79a08a2cc7242a00e2d0800154136013a9503a7a817b59ada3fac1f
+FileChecksum: MD5: 75484304a2ccecc6f66e3410e37a039a
+FileChecksum: SSDEEP: 3:uinq3wk5swWvAB6lHn:ttk5ROk+
+FileSize: 51 bytes
+
+## File
+
+FileName: raw_reg_gui.dfm.svn-base
+FilePath: ./trunk/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: 1e2fa2bfe70689755a8eeb9512cd0ff2378d2458
+FileChecksum: SHA256: 30c715637f475c6e3de33f6c6dcaada0f426d8a412065f8e93138c253a7dd490
+FileChecksum: MD5: 8a64803b927370a85f34f920396eeb7d
+FileChecksum: SSDEEP: 192:yQCVj/W/h/dKAY/e/t/b/B/3QJKBBk7fRig4wKdma11bdBnmlAh/ZN/Q:wVwxBBWigB1abxVX1Q
+FileSize: 35 Kb (36306 bytes)
+
+## File
+
+FileName: raw_reg_gui.pas.svn-base
+FilePath: ./trunk/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: fcbb97686e72b581d0c67e6ef4a76ad83c5f85e6
+FileChecksum: SHA256: c38eb83e824c064c2a340d1ea5ad5fd9b484fc3ac7b4af595ad958339c9347d8
+FileChecksum: MD5: 4c0180a4ef8cc2a8a5b13d4664d69def
+FileChecksum: SSDEEP: 192:2XfKyLyk9+vU78/lkh6rayr6XXsCbmI6HxsNKAF1qxZBEOJtMzVKwfowuNgA5B34:606/XPqx4nBTQJ5TuAfWAGTV
+FileSize: 14 Kb (14818 bytes)
+
+## File
+
+FileName: script.pas.svn-base
+FilePath: ./trunk/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: db842a921639dbaa76d3a5a0b38b78da2ca5f6e5
+FileChecksum: SHA256: 666488a020245099d30c0ddcdd1e853c74fa7d99809adca1b85f740d62d0e5b3
+FileChecksum: MD5: 17cc6ca4262d3b65fd7b76976386b52f
+FileChecksum: SSDEEP: 3072:vAh6mwgldyn4RvSX0X/rUk3Kk2ApBAkn778lP3CHlA74u7hlk4:WlDUk3K1Ymdhlk4
+FileSize: 390 Kb (400118 bytes)
+
+## File
+
+FileName: SETUPREG.HIV.svn-base
+FilePath: ./trunk/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: f12d320c9111bd69ab32e93a9db6f66ca6dd03f7
+FileChecksum: SHA256: 623cd08bb3e9805f44a1a665d0f3fd362fff5f7273b478d5dfc76de1df540b59
+FileChecksum: MD5: 657eb3270a1a6f37285c9592e058a0a3
+FileChecksum: SSDEEP: 1536:lyZ0Osiuc5K7uFwHqhp0rg3Te11qo1TSm:8nStV
+FileSize: 256 Kb (262144 bytes)
+
+## File
+
+FileName: Unit1.dcu.svn-base
+FilePath: ./trunk/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: 38a7f3b5ca2ecb7d31d9b6ecabbd42184f9879f7
+FileChecksum: SHA256: a4d24aa4dc1a04a23594e2dfb58380a55e4a602193862d98ba8297e4b2b62825
+FileChecksum: MD5: 468acd9f834eee82ffafcb951ed33016
+FileChecksum: SSDEEP: 768:qFJSYD8SAbmpE4HJfMbOkCCvuGdRgiZJNvhXwCO0N4XG1:GhEbSgJNv9
+FileSize: 24 Kb (25562 bytes)
+
+## File
+
+FileName: Unit1.ddp.svn-base
+FilePath: ./trunk/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: b307792a846c82c81a8d62cb7b5527a487021085
+FileChecksum: SHA256: 20ac805af79a08a2cc7242a00e2d0800154136013a9503a7a817b59ada3fac1f
+FileChecksum: MD5: 75484304a2ccecc6f66e3410e37a039a
+FileChecksum: SSDEEP: 3:uinq3wk5swWvAB6lHn:ttk5ROk+
+FileSize: 51 bytes
+
+## File
+
+FileName: Unit1.dfm.svn-base
+FilePath: ./trunk/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: b2af7395e180886f82dc068beaf8fc7ecd4ad5b7
+FileChecksum: SHA256: 48fcb759d22bded046b1951c597366c2c1713b41b17767872fc81070c39ffe17
+FileChecksum: MD5: 2822a91df8a1329b14aa96dd38f4f677
+FileChecksum: SSDEEP: 384:ehfIONHXPd2QjVe3/xcDolXPd2L4UabsvgOr9Z:YPd27hd2LNfnZ
+FileSize: 22 Kb (22762 bytes)
+
+## File
+
+FileName: Unit1.pas.svn-base
+FilePath: ./trunk/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: e8ae0d71becc7db678688b0a9d5fe7aafe3a0933
+FileChecksum: SHA256: a2b527f6c0aa3fdbea9e6ef6a0f7dd4c73cb592e6b1b2b8dd443958607f8f01e
+FileChecksum: MD5: 8b98dbb7e4ce7a15d17aedf2e5514dad
+FileChecksum: SSDEEP: 768:Jvr1uSKTUUUsn1cZZbl8PwiWZ7OIMq6DKFx:JvpuHT/UsnqZ/8PwiqVMq6WFx
+FileSize: 52 Kb (53408 bytes)
+
+## File
+
+FileName: xorcheck.exe.svn-base
+FilePath: ./trunk/.svn/text-base/
+FileType: OTHER
+FileChecksum: SHA1: 66c6d932f2a1b06f52cd002e2492ecccb0fecb3b
+FileChecksum: SHA256: d14fb247b9bfa4f2f84633f9bd3d6a1456c7c773fc315849481d177041e0cb27
+FileChecksum: MD5: 3643039cb84075a6287db6fbbbcd7c59
+FileChecksum: SSDEEP: 384:VGlTW2SLqXsN80rhuPSMwml3XJs67sygqYt9iX20lgoZdH:8NW2zcN80rRMtQNWllgoD
+FileSize: 32 Kb (32768 bytes)
+
+## File
+
+FileName: bcd
+FilePath: ./trunk/
+FileType: OTHER
+FileChecksum: SHA1: 1369e1ca8b65121168228b718162179eb3a2e3cb
+FileChecksum: SHA256: 39537f25ac51349aaedd0f0fa2040ceead4e4e92c7d728189f60e22fbca3bf9a
+FileChecksum: MD5: dabe7e690b59fc877a42858f85e6b5dd
+FileChecksum: SSDEEP: 384:dkJQgTNcNUDseUX/mLeoRteJRxspduHVs+EoaOzRYug19ahBkF95GE2D6wbi6j5:dkixOYeUX/mTMzV4VDxU
+FileSize: 256 Kb (262144 bytes)
+
+## File
+
+FileName: binary_ops.dcu
+FilePath: ./trunk/
+FileType: OTHER
+FileChecksum: SHA1: c68301f92b2059b26a883b99e647601fa98b19e7
+FileChecksum: SHA256: 861d35765bf7cfc3eb87313cb4c61aded9222f37214cb50a3b38f30632754218
+FileChecksum: MD5: eb46b01f8a03af9b26778bd5878b1029
+FileChecksum: SSDEEP: 96:/ohvjhPqdGwGSszRziHj8rEX51wihKTOomgl/:/6vjhCGwGnzBCXwAKComS/
+FileSize: 3 Kb (3409 bytes)
+
+## File
+
+FileName: binary_ops.pas
+FilePath: ./trunk/
+FileType: OTHER
+FileChecksum: SHA1: 16da49ff67d7bc9813e4d27b345dffc95572fe8d
+FileChecksum: SHA256: cdc0f316f15400b6565e4bf02b32065c91d18751f2269f6a89cdecab1777dcf1
+FileChecksum: MD5: dc669414f04add9259d91e07f94d59ea
+FileChecksum: SSDEEP: 192:SUSzDzDhewOiA324lO/QTzM/mFmgmSLurun:SUS3zdnOi425/HOUZSLurun
+FileSize: 6 Kb (6666 bytes)
+
+## File
+
+FileName: CoderDeCoder.dcu
+FilePath: ./trunk/
+FileType: OTHER
+FileChecksum: SHA1: bcf8248f0fb928896129af4ca0b6c91c5eb384db
+FileChecksum: SHA256: ba1ed04b2aefef948fa814f9131778aa6801b14dbeece740c253aa6e8d95fcdf
+FileChecksum: MD5: c6ed29ba21abdf8cbb7b7dec18ebd84b
+FileChecksum: SSDEEP: 96:ZLOJe9dsXy3R/P236c2Pwu7WMwit2HJKhKTeF7iuXWIt58zQGOzWCzD5b:pOJadsXy3R/PDc2ouyM9miKaFGUWIjWy
+FileSize: 5 Kb (5557 bytes)
+
+## File
+
+FileName: coderDecoder.pas
+FilePath: ./trunk/
+FileType: OTHER
+FileChecksum: SHA1: 09f8c292327b0cdfb6845951d47a844f6eb07683
+FileChecksum: SHA256: 36d5bd2e914f4c4d93b7fb18536e9dde0b99a9fbf0c58b70fd8ee0eed72ec3ce
+FileChecksum: MD5: 5f3cefa7141c0096f430eda29c7e0620
+FileChecksum: SSDEEP: 192:UjEWTTalca/W5wEMhIjdla9ZKkFlCkiqX31xvxOQHH+JC6naMBzF27:yRTWlcae5xMh4UFPf3D+Q6naMBzK
+FileSize: 8 Kb (8410 bytes)
+
+## File
+
+FileName: comp.bat
+FilePath: ./trunk/
+FileType: OTHER
+FileChecksum: SHA1: 7413658f0a3c3a28cfb60c05604f48671673e8b2
+FileChecksum: SHA256: 56cdc1dd754ba59f6ddd3086e6f454b38f0d52375e81ac367d7db1673ff5045e
+FileChecksum: MD5: 1f9fc020632235a8a10b98fc169500c5
+FileChecksum: SSDEEP: 3:mKDDD1IcV7ACTQIv:hycVEzIv
+FileSize: 37 bytes
+
+## File
+
+FileName: Main.dcu
+FilePath: ./trunk/
+FileType: OTHER
+FileChecksum: SHA1: cb6ad72f2514451323af686c84e6aa5710528eba
+FileChecksum: SHA256: 848e12df2134e7e5b02d6ff6534e60321fd03cf31beec0dda87838821bc8c859
+FileChecksum: MD5: 9cf7f2b2f47745eb7d9a355dec928eb1
+FileChecksum: SSDEEP: 1536:7iEYyGYW+LHhq7UALbTHha4yLAf98Y3qriej6U/xLMpUGg51hxaaQ:7xDZW+LHhIbg4yLA+iemU/xLuk5laaQ
+FileSize: 130 Kb (133356 bytes)
+
+## File
+
+FileName: RawReg.cfg
+FilePath: ./trunk/
+FileType: OTHER
+FileChecksum: SHA1: 08bfbca9ab7f320b0bf5cd5bf8b309fe827b25cc
+FileChecksum: SHA256: 871c853c4a4f20e6807125f0d2a96e08c29c4694b8c81791a204b665cf965458
+FileChecksum: MD5: ca2ac42f4d053cc7056fe85a499f548b
+FileChecksum: SSDEEP: 12:8Ingv+ozgbbIY4r9U19JOIQJOISMbBarCg:8InizgXxR1LETbAeg
+FileSize: 476 bytes
+
+## File
+
+FileName: RawReg.dof
+FilePath: ./trunk/
+FileType: OTHER
+FileChecksum: SHA1: b47165203e670fa041451710082135bdeead3be1
+FileChecksum: SHA256: 8c86020c81fc51a2237b9dd2ff5552abaaa4f33e5ddc42909c4b78d4ebd0bc3e
+FileChecksum: MD5: fc2fc7395f95dadfaf5aae57ee750d7d
+FileChecksum: SSDEEP: 48:ANZOxc5UGfBBm7KTW1qsolSbZOWri2oG47IgG9aX7Jhta/f:DsUqBBm7u6FbXrCGNgG9aXtK
+FileSize: 2 Kb (2230 bytes)
+
+## File
+
+FileName: RawReg.dpr
+FilePath: ./trunk/
+FileType: OTHER
+FileChecksum: SHA1: be8b02501cb8072d73c64d015319c8ed81e5eec2
+FileChecksum: SHA256: d3ec5860c82424bd5987ff87073f09e24ea950be1cff107e33c12e445c5dea91
+FileChecksum: MD5: f0c5611a967a3a9a07cf95858fd53622
+FileChecksum: SSDEEP: 6:oKo8QcdEeU7fKD+ywBE6sSURexoHAGsBUoWw9wSRKkoTPI5Oov5:W8QcdEVrI6PUMxvyVw9wiKk8Ix5
+FileSize: 309 bytes
+
+## File
+
+FileName: RawReg.dproj
+FilePath: ./trunk/
+FileType: OTHER
+FileChecksum: SHA1: aa190acb9d9813af786826d09161efe5b8f1c691
+FileChecksum: SHA256: c38c9a4b4fe8a2eb45fe0034da3593ba64e210a2a65fbee06a339e49a7d7e4be
+FileChecksum: MD5: 4bc98349469db359a190fc8453ed79a1
+FileChecksum: SSDEEP: 96:6lvnIl8xc2Q/V4VMNqK4fVfII4rmNgHu8e2Q/V4VMNqK4fVfIIKrmNgHu8xCaBva:sIGX7I7WEh3LIxdShnpDV
+FileSize: 4 Kb (4428 bytes)
+
+## File
+
+FileName: RawReg.dproj.local
+FilePath: ./trunk/
+FileType: OTHER
+FileChecksum: SHA1: 7ad198f5e4453e0dd0cd620581343a138c4029c1
+FileChecksum: SHA256: 31c1c103b8fe83597117e3a522cd6549a6ce8b7a533ef35a83b9a2af2f77a4ca
+FileChecksum: MD5: dd7437fccfcba74a8ae5efd64fd520f3
+FileChecksum: SSDEEP: 3:JLWMNHU8LdgCG/XKHv:JiMVBdga
+FileSize: 62 bytes
+
+## File
+
+FileName: RawReg.dsk
+FilePath: ./trunk/
+FileType: OTHER
+FileChecksum: SHA1: ff18843aa662ff415069dbc64e1691d0b08601f1
+FileChecksum: SHA256: bef34dc5fbc0fdaf38111a66fd4054a0693dd76c7903a0bd6490978252be152b
+FileChecksum: MD5: 05ccd58655001a94c12d516b22d559c3
+FileChecksum: SSDEEP: 192:XCW5uW9JgJzpkMnH9noM2L1bsfOG6Z2TQebVPjPK:XeHBcbsfOVM8eZPK
+FileSize: 7 Kb (8148 bytes)
+
+## File
+
+FileName: RawReg.exe
+FilePath: ./trunk/
+FileType: OTHER
+FileChecksum: SHA1: ad665704c36a2baaf598e8017e2acf8a62b99452
+FileChecksum: SHA256: c3eb6f78754a69a5b284b02edfd48a0a5369f6bbfaa74f3caf9af3bba2aa6abf
+FileChecksum: MD5: 78f9252b6f420d270bd4b7f5ac219132
+FileChecksum: SSDEEP: 3072:LN0Rpu5HNbZ/Zl/kL85cF2dVtJnaINYH6A7TeAB4AitgQbYUxnNpu0HTQUTKUN:LL5tZ/kMcIJg6zJ/5u0HUU7
+FileSize: 237 Kb (242688 bytes)
+
+## File
+
+FileName: RawReg.identcache
+FilePath: ./trunk/
+FileType: OTHER
+FileChecksum: SHA1: 57b778d23e4c6dc862b82ede31d5b6924df734f6
+FileChecksum: SHA256: 1d5aa08dc6662a94beba9b676ded2372c22f22cc1898c017e57af40e41f83d7b
+FileChecksum: MD5: 859536a7146f1d4c9b8e7fa98d7a017c
+FileChecksum: SSDEEP: 6:gRu+VMdX5rvySRu+VMdX5OlnRu+VMdX5OOKB/GdRu+VMdX5SUv:EJVMLtJVMmlRJVMmOS/GLJVMaUv
+FileSize: 314 bytes
+
+## File
+
+FileName: RawReg.ini
+FilePath: ./trunk/
+FileType: OTHER
+FileChecksum: SHA1: df1460d2b9140036348aa6f070a3ad1cdd71e657
+FileChecksum: SHA256: 2e7f0afc327f717f2dd95079682499699a3752192dd83568e1b5c8c29e659b5e
+FileChecksum: MD5: fcbf3024c7100d29a7e7ef8bd65a9bfb
+FileChecksum: SSDEEP: 3:1Wj//zdQ9lTuMvFUgMLoMMW5y3SGSl1xv:E/bERu+VMdX5TTp
+FileSize: 103 bytes
+
+## File
+
+FileName: RawReg.res
+FilePath: ./trunk/
+FileType: OTHER
+FileChecksum: SHA1: fede72122f8dc1204c1dc28175040a59ebc0cc5e
+FileChecksum: SHA256: 13a8a294d79a9b14af0c115811fbd1e66b346d405a95afd456f241a3e2e5c037
+FileChecksum: MD5: dd47fa50e70cf7788bde2402d6eb8067
+FileChecksum: SSDEEP: 192:CiBJ69mb2fngpGqDcfi8+cQxW33SPVWn:sBIk7CC3pn
+FileSize: 9 Kb (9772 bytes)
+
+## File
+
+FileName: raw_reg.dcu
+FilePath: ./trunk/
+FileType: OTHER
+FileChecksum: SHA1: 070878f0df29d0bfacd53b0f3466d2124e356099
+FileChecksum: SHA256: 561ccfaed7037f8de2ddba06448d7cf043a120730c92c0a3e21c8801d236738a
+FileChecksum: MD5: 0b2e14c003810d36eee93ff09edcc514
+FileChecksum: SSDEEP: 768:jZHhUCt9yrIMwfVEWbcXteNU9oEZN1ZZZZZZZZZZezX:tqCryEM2EZN1ZZZZZZZZZZm
+FileSize: 26 Kb (26988 bytes)
+
+## File
+
+FileName: raw_reg.pas
+FilePath: ./trunk/
+FileType: OTHER
+FileChecksum: SHA1: da1d6312b8cb97233ee717193716cb24262667b3
+FileChecksum: SHA256: baa96b3ecb9a81ffedbae1e7323c67c7b853d9f02ee43b6779d3a3ddd42e957f
+FileChecksum: MD5: dbca337d962bcb6df56eda8df64303c5
+FileChecksum: SSDEEP: 768:GskAN3eyf8ZVdu6EbONT7hhvDY+JIkRWTiE8haPpc9au:IAN3eyEJTwONT3DYwIcWTChaPpc9au
+FileSize: 67 Kb (69424 bytes)
+
+## File
+
+FileName: raw_reg_gui.dcu
+FilePath: ./trunk/
+FileType: OTHER
+FileChecksum: SHA1: 5d722fed8632acd4707ab001a5af762e7268a9f3
+FileChecksum: SHA256: e1ccc99812c94ba83ad5ac1dce02adbf585b80fa3b61fdad6ed104045b293774
+FileChecksum: MD5: eb70a76cc206c29c6ccc99e9299e49b2
+FileChecksum: SSDEEP: 384:G1iGHogEuaNO6imwOhBjccRssbgZQLi2njqRULyJY7xA3OS:aUKG1BjccRssb5LigjLuJgA3n
+FileSize: 14 Kb (15114 bytes)
+
+## File
+
+FileName: raw_reg_gui.ddp
+FilePath: ./trunk/
+FileType: OTHER
+FileChecksum: SHA1: b307792a846c82c81a8d62cb7b5527a487021085
+FileChecksum: SHA256: 20ac805af79a08a2cc7242a00e2d0800154136013a9503a7a817b59ada3fac1f
+FileChecksum: MD5: 75484304a2ccecc6f66e3410e37a039a
+FileChecksum: SSDEEP: 3:uinq3wk5swWvAB6lHn:ttk5ROk+
+FileSize: 51 bytes
+
+## File
+
+FileName: raw_reg_gui.dfm
+FilePath: ./trunk/
+FileType: OTHER
+FileChecksum: SHA1: 1e2fa2bfe70689755a8eeb9512cd0ff2378d2458
+FileChecksum: SHA256: 30c715637f475c6e3de33f6c6dcaada0f426d8a412065f8e93138c253a7dd490
+FileChecksum: MD5: 8a64803b927370a85f34f920396eeb7d
+FileChecksum: SSDEEP: 192:yQCVj/W/h/dKAY/e/t/b/B/3QJKBBk7fRig4wKdma11bdBnmlAh/ZN/Q:wVwxBBWigB1abxVX1Q
+FileSize: 35 Kb (36306 bytes)
+
+## File
+
+FileName: raw_reg_gui.pas
+FilePath: ./trunk/
+FileType: OTHER
+FileChecksum: SHA1: fcbb97686e72b581d0c67e6ef4a76ad83c5f85e6
+FileChecksum: SHA256: c38eb83e824c064c2a340d1ea5ad5fd9b484fc3ac7b4af595ad958339c9347d8
+FileChecksum: MD5: 4c0180a4ef8cc2a8a5b13d4664d69def
+FileChecksum: SSDEEP: 192:2XfKyLyk9+vU78/lkh6rayr6XXsCbmI6HxsNKAF1qxZBEOJtMzVKwfowuNgA5B34:606/XPqx4nBTQJ5TuAfWAGTV
+FileSize: 14 Kb (14818 bytes)
+
+## File
+
+FileName: script.pas
+FilePath: ./trunk/
+FileType: OTHER
+FileChecksum: SHA1: db842a921639dbaa76d3a5a0b38b78da2ca5f6e5
+FileChecksum: SHA256: 666488a020245099d30c0ddcdd1e853c74fa7d99809adca1b85f740d62d0e5b3
+FileChecksum: MD5: 17cc6ca4262d3b65fd7b76976386b52f
+FileChecksum: SSDEEP: 3072:vAh6mwgldyn4RvSX0X/rUk3Kk2ApBAkn778lP3CHlA74u7hlk4:WlDUk3K1Ymdhlk4
+FileSize: 390 Kb (400118 bytes)
+
+## File
+
+FileName: SETUPREG.HIV
+FilePath: ./trunk/
+FileType: OTHER
+FileChecksum: SHA1: f12d320c9111bd69ab32e93a9db6f66ca6dd03f7
+FileChecksum: SHA256: 623cd08bb3e9805f44a1a665d0f3fd362fff5f7273b478d5dfc76de1df540b59
+FileChecksum: MD5: 657eb3270a1a6f37285c9592e058a0a3
+FileChecksum: SSDEEP: 1536:lyZ0Osiuc5K7uFwHqhp0rg3Te11qo1TSm:8nStV
+FileSize: 256 Kb (262144 bytes)
+
+## File
+
+FileName: Unit1.dcu
+FilePath: ./trunk/
+FileType: OTHER
+FileChecksum: SHA1: 38a7f3b5ca2ecb7d31d9b6ecabbd42184f9879f7
+FileChecksum: SHA256: a4d24aa4dc1a04a23594e2dfb58380a55e4a602193862d98ba8297e4b2b62825
+FileChecksum: MD5: 468acd9f834eee82ffafcb951ed33016
+FileChecksum: SSDEEP: 768:qFJSYD8SAbmpE4HJfMbOkCCvuGdRgiZJNvhXwCO0N4XG1:GhEbSgJNv9
+FileSize: 24 Kb (25562 bytes)
+
+## File
+
+FileName: Unit1.ddp
+FilePath: ./trunk/
+FileType: OTHER
+FileChecksum: SHA1: b307792a846c82c81a8d62cb7b5527a487021085
+FileChecksum: SHA256: 20ac805af79a08a2cc7242a00e2d0800154136013a9503a7a817b59ada3fac1f
+FileChecksum: MD5: 75484304a2ccecc6f66e3410e37a039a
+FileChecksum: SSDEEP: 3:uinq3wk5swWvAB6lHn:ttk5ROk+
+FileSize: 51 bytes
+
+## File
+
+FileName: Unit1.dfm
+FilePath: ./trunk/
+FileType: OTHER
+FileChecksum: SHA1: b2af7395e180886f82dc068beaf8fc7ecd4ad5b7
+FileChecksum: SHA256: 48fcb759d22bded046b1951c597366c2c1713b41b17767872fc81070c39ffe17
+FileChecksum: MD5: 2822a91df8a1329b14aa96dd38f4f677
+FileChecksum: SSDEEP: 384:ehfIONHXPd2QjVe3/xcDolXPd2L4UabsvgOr9Z:YPd27hd2LNfnZ
+FileSize: 22 Kb (22762 bytes)
+
+## File
+
+FileName: Unit1.pas
+FilePath: ./trunk/
+FileType: OTHER
+FileChecksum: SHA1: e8ae0d71becc7db678688b0a9d5fe7aafe3a0933
+FileChecksum: SHA256: a2b527f6c0aa3fdbea9e6ef6a0f7dd4c73cb592e6b1b2b8dd443958607f8f01e
+FileChecksum: MD5: 8b98dbb7e4ce7a15d17aedf2e5514dad
+FileChecksum: SSDEEP: 768:Jvr1uSKTUUUsn1cZZbl8PwiWZ7OIMq6DKFx:JvpuHT/UsnqZ/8PwiqVMq6WFx
+FileSize: 52 Kb (53408 bytes)
+
+## File
+
+FileName: xorcheck.exe
+FilePath: ./trunk/
+FileType: OTHER
+FileChecksum: SHA1: 66c6d932f2a1b06f52cd002e2492ecccb0fecb3b
+FileChecksum: SHA256: d14fb247b9bfa4f2f84633f9bd3d6a1456c7c773fc315849481d177041e0cb27
+FileChecksum: MD5: 3643039cb84075a6287db6fbbbcd7c59
+FileChecksum: SSDEEP: 384:VGlTW2SLqXsN80rhuPSMwml3XJs67sygqYt9iX20lgoZdH:8NW2zcN80rRMtQNWllgoD
+FileSize: 32 Kb (32768 bytes)

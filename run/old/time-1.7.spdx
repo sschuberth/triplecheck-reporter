@@ -1,0 +1,337 @@
+##-------------------------
+##SPDX Document Information
+##-------------------------
+
+SPDXVersion: SPDX-1.1
+DataLicense: CC0-1.0
+DocumentComment: <text>This file contains High Definition SPDX data. 
+
+DISCLAIMER: This document is provided "as is" without any warranty whatsoever. This documentation may not be referenced or relied upon for its accuracy or comprehensiveness, or to determine legal obligations with respect to open source code contained in the software package it represents. Such determinations should be based upon recipient's independent legal analysis and by reference to the notices and licenses contained within the open source code itself. Wind River may change the contents of this document at any time at its sole discretion, and Wind River shall have no liability whatsoever arising from recipient's use of this information. [High Def, Doc Version 1.3] </text>
+
+##-------------------------
+## Creation Information
+##-------------------------
+
+Creator: Wind River
+Created: 2012-09-03T13:32:12Z
+CreatorComment: <text> DISCLAIMER: This document is provided "as is" without any warranty whatsoever. This documentation may not be referenced or relied upon for its accuracy or comprehensiveness, or to determine legal obligations with respect to open source code contained in the software package it represents. Such determinations should be based upon recipient's independent legal analysis and by reference to the notices and licenses contained within the open source code itself. Wind River may change the contents of this document at any time at its sole discretion, and Wind River shall have no liability whatsoever arising from recipient's use of this information. </text>
+
+
+##-------------------------
+## Package Information
+##-------------------------
+
+PackageName: time-1.7.tar.gz
+PackageFileName: time-1.7.tar.gz
+PackageDownloadLocation: NOASSERTION
+PackageVerificationCode: dd5cf0b17bfef4284c6c22471b277de7beac407c
+PackageChecksum: SHA1: dde0c28c7426960736933f3e763320680356cc6a
+PackageLicenseConcluded: GPL-2.0+
+PackageLicenseDeclared: GPL-2.0+
+PackageLicenseInfoFromFiles: GPL-2.0
+PackageLicenseInfoFromFiles: GPL-2.0+
+PackageLicenseInfoFromFiles: MIT
+PackageLicenseInfoFromFiles: LicenseRef-1
+PackageLicenseInfoFromFiles: LicenseRef-2
+PackageLicenseInfoFromFiles: LicenseRef-3
+PackageCopyrightText: NOASSERTION
+
+##--------------------------
+## Other License Information
+##--------------------------
+
+## License Information
+LicenseID: LicenseRef-1
+ExtractedText: <text>  Copyright @copyright{} 1991, 92, 93, 96 Free Software Foundation, Inc.  Permission is granted to make and distribute verbatim copies of this manual provided the copyright notice and this permission notice are preserved on all copies. @ignore Permission is granted to process this file through TeX and print the results, provided the printed document carries copying permission notice identical to this one except for the removal of this paragraph (this paragraph not being relevant to the printed manual).  @end ignore Permission is granted to copy and distribute modified versions of this manual under the conditions for verbatim copying, provided that the entire resulting derived work is distributed under the terms of a permission notice identical to this one.  Permission is granted to copy and distribute translations of this manual into another language, under the above conditions for modified versions, except that this permission notice may be stated in a translation approved by the Foundation.
+</text>
+LicenseName: NOASSERTION
+
+## License Information
+LicenseID: LicenseRef-2
+ExtractedText: <text> # Makefile.in generated automatically by automake 1.0 from Makefile.am
+# Copyright (C) 1994, 1995, 1996 Free Software Foundation, Inc.
+# This Makefile.in is free software; the Free Software Foundation
+# gives unlimited permission to copy, distribute and modify it.
+ </text>
+LicenseName: NOASSERTION
+
+## License Information
+LicenseID: LicenseRef-3
+ExtractedText: <text>  # This configure script is free software; the Free Software Foundation # gives unlimited permission to copy, distribute and modify it.
+</text>
+LicenseName: NOASSERTION
+
+
+
+##--------------------------
+## File Information
+##--------------------------
+
+FileName: time-1.7\AUTHORS
+FileType: OTHER
+FileChecksum: SHA1: 7951f4ceffdb030ec617eddf7bba22523cc1a67f
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NONE
+FileCopyrightText: NONE
+
+##File
+
+FileName: time-1.7\ChangeLog
+FileType: OTHER
+FileChecksum: SHA1: 4a972ee2c972e38b502b22837c2513ecc2647339
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NONE
+FileCopyrightText: NONE
+
+##File
+
+FileName: time-1.7\configure
+FileType: OTHER
+FileChecksum: SHA1: a54a5e0a7321967322e7e71a5f0e23b59f2bbb15
+LicenseConcluded: LicenseRef-3
+LicenseInfoInFile: LicenseRef-3
+FileCopyrightText: <text> copyright (c) 1992, 93, 94, 95, 96 free software foundation, inc. </text>
+
+##File
+
+FileName: time-1.7\configure.in
+FileType: OTHER
+FileChecksum: SHA1: 63f77f68e8e90b3e6fdde4be3b585b72a0635bbf
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NONE
+FileCopyrightText: NONE
+
+##File
+
+FileName: time-1.7\COPYING
+FileType: OTHER
+FileChecksum: SHA1: 075d599585584bb0e4b526f5c40cb6b17e0da35a
+LicenseConcluded: GPL-2.0
+LicenseInfoInFile: GPL-2.0
+FileCopyrightText: <text> copyright (c) 1989, 1991 free software foundation, inc. </text>
+
+##File
+
+FileName: time-1.7\error.c
+FileType: SOURCE
+FileChecksum: SHA1: 97bfd964aae09d71b7fa89bd48b2110cb8d3e12d
+LicenseConcluded: GPL-2.0+
+LicenseInfoInFile: GPL-2.0+
+FileCopyrightText: <text> copyright (c) 1990, 91, 92, 93, 94, 95, 96 free software foundation, inc. </text>
+
+##File
+
+FileName: time-1.7\getopt.c
+FileType: SOURCE
+FileChecksum: SHA1: 4eec2f371cdea3fa5f96a37b44b200445609bc75
+LicenseConcluded: GPL-2.0+
+LicenseInfoInFile: GPL-2.0+
+FileCopyrightText: <text> copyright (c) 1987, 88, 89, 90, 91, 92, 93, 94, 95, 1996 </text>
+
+##File
+
+FileName: time-1.7\getopt.h
+FileType: SOURCE
+FileChecksum: SHA1: 512169aaccccc1c0fe20de76af4a5ff347aacc05
+LicenseConcluded: GPL-2.0+
+LicenseInfoInFile: GPL-2.0+
+FileCopyrightText: <text> copyright (c) 1989, 90, 91, 92, 93, 94 free software foundation, inc. </text>
+
+##File
+
+FileName: time-1.7\getopt1.c
+FileType: SOURCE
+FileChecksum: SHA1: 177c2f08aad7203fa875ae63c0ec92fbb3c9f600
+LicenseConcluded: GPL-2.0+
+LicenseInfoInFile: GPL-2.0+
+FileCopyrightText: <text> copyright (c) 1987, 88, 89, 90, 91, 92, 1993, 1994 </text>
+
+##File
+
+FileName: time-1.7\getpagesize.h
+FileType: SOURCE
+FileChecksum: SHA1: 1ef18700b72387bf6322695bb1aec2ca5e18cb00
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NONE
+FileCopyrightText: NONE
+
+##File
+
+FileName: time-1.7\INSTALL
+FileType: OTHER
+FileChecksum: SHA1: bd0ce8678f58293afc2069e6ba9ab42a6c3e23bc
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NONE
+FileCopyrightText: NONE
+
+##File
+
+FileName: time-1.7\install-sh
+FileType: OTHER
+FileChecksum: SHA1: c5c249a2dd763530ae65d28bc1c64bb754cd0750
+LicenseConcluded: MIT
+LicenseInfoInFile: MIT
+FileCopyrightText: <text> copyright 1991 by the massachusetts institute of technology </text>
+
+##File
+
+FileName: time-1.7\Makefile.am
+FileType: OTHER
+FileChecksum: SHA1: 013f7d712aefd2409a2310714257ad77e62ca205
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NONE
+FileCopyrightText: NONE
+
+##File
+
+FileName: time-1.7\Makefile.in
+FileType: OTHER
+FileChecksum: SHA1: 8b548f3a4c3719b30e0a5db65dd53adbda180db0
+LicenseConcluded: LicenseRef-2
+LicenseInfoInFile: LicenseRef-2
+FileCopyrightText: <text> copyright (c) 1994, 1995, 1996 free software foundation, inc. </text>
+
+##File
+
+FileName: time-1.7\mdate-sh
+FileType: OTHER
+FileChecksum: SHA1: 7a4fcb88fd92b03e9dd69f04dba7ed442b33086c
+LicenseConcluded: GPL-2.0+
+LicenseInfoInFile: GPL-2.0+
+FileCopyrightText: <text> copyright (c) 1995 software foundation, inc. </text>
+
+##File
+
+FileName: time-1.7\mkinstalldirs
+FileType: OTHER
+FileChecksum: SHA1: 8bc81b299f7f9a483a21ae36c7a5661d832974ef
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NOASSERTION
+FileCopyrightText: <text> author: noah friedman <friedman@prep.ai.mit.edu> </text>
+LicenseComments: <text> The file states public domain.
+</text>
+
+
+##File
+
+FileName: time-1.7\NEWS
+FileType: OTHER
+FileChecksum: SHA1: 9a94d3fd8be03e1947b8c43de83211fe4f8ea38c
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NONE
+FileCopyrightText: NONE
+
+##File
+
+FileName: time-1.7\port.h
+FileType: SOURCE
+FileChecksum: SHA1: 966e3dc7bae8b140bedc52d8f3ab3a87f1815656
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NONE
+FileCopyrightText: NONE
+
+##File
+
+FileName: time-1.7\README
+FileType: OTHER
+FileChecksum: SHA1: 69cfac803ed960fb0d24dc39afa095e408fb845f
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NONE
+FileCopyrightText: NONE
+
+##File
+
+FileName: time-1.7\resuse.c
+FileType: SOURCE
+FileChecksum: SHA1: 3860d431a5dba8146b119952e4262a4a3eb4b8c6
+LicenseConcluded: GPL-2.0+
+LicenseInfoInFile: GPL-2.0+
+FileCopyrightText: <text> copyright (c) 1993, 1996 free software foundation, inc. </text>
+
+##File
+
+FileName: time-1.7\resuse.h
+FileType: SOURCE
+FileChecksum: SHA1: fcf57d1f09b29d241d462e044a671e25bbee4173
+LicenseConcluded: GPL-2.0+
+LicenseInfoInFile: GPL-2.0+
+FileCopyrightText: <text> copyright (c) 1993, 1996 free software foundation, inc. </text>
+
+##File
+
+FileName: time-1.7\stamp-vti
+FileType: OTHER
+FileChecksum: SHA1: 8e5113f6f47ce34e0437c2105441dbb70f01491a
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NONE
+FileCopyrightText: NONE
+
+##File
+
+FileName: time-1.7\texinfo.tex
+FileType: OTHER
+FileChecksum: SHA1: e3a7d7a426d5b970f53561f73df9929f8d35cc7f
+LicenseConcluded: GPL-2.0+
+LicenseInfoInFile: GPL-2.0+
+FileCopyrightText: <text> Copyright (C) 1985, 86, 88, 90, 91, 92, 93, 94, 95, 1996 Free Software Foundation, Inc. </text>
+
+##File
+
+FileName: time-1.7\time.c
+FileType: SOURCE
+FileChecksum: SHA1: 712d7f9dfde674283596ae2088550e3ff23ae1ba
+LicenseConcluded: GPL-2.0+
+LicenseInfoInFile: GPL-2.0+
+FileCopyrightText: <text> copyright (c) 1990, 91, 92, 93, 96 free software foundation, inc. </text>
+
+##File
+
+FileName: time-1.7\time.info
+FileType: OTHER
+FileChecksum: SHA1: f4373161d4e5c152c970000e5cad9e6316060e5f
+LicenseConcluded: LicenseRef-1
+LicenseInfoInFile: LicenseRef-1
+FileCopyrightText: <text> copyright (c) 1991, 92, 93, 96 free software foundation, inc. </text>
+
+##File
+
+FileName:time-1.7\time.texi
+FileType: OTHER
+FileChecksum: SHA1: 4c27ef0f772256fe13d386358a5eb6c924536803
+LicenseConcluded: LicenseRef-3
+LicenseInfoInFile: LicenseRef-3
+FileCopyrightText: <text> copyright @copyright{} 1991, 92, 93, 96 free software foundation, inc. </text>
+
+##File
+
+FileName: time-1.7\version.c
+FileType: SOURCE
+FileChecksum: SHA1: 8093e0e529387817b260523cf90a392fe9d0c209
+LicenseConcluded: NONE
+LicenseInfoInFile: NONE
+FileCopyrightText: NONE
+
+##File
+
+FileName: time-1.7\version.texi
+FileType: OTHER
+FileChecksum: SHA1: 73bee64bd2b02dcf6978ec14d8dba9d4e74e2ca7
+LicenseConcluded: NOASSERTION
+LicenseInfoInFile: NONE
+FileCopyrightText: NONE
+
+##File
+
+FileName: time-1.7\wait.h
+FileType: SOURCE
+FileChecksum: SHA1: 821331ad27b49e2c341d7761bccfd77152b1031d
+LicenseConcluded: GPL-2.0+
+LicenseInfoInFile: GPL-2.0+
+FileCopyrightText: <text> copyright (c) 1990 free software foundation, inc. </text>
+
+##--------------------
+## Review Information
+##--------------------
+
+PackageDependency: opencsv-2.3-src-with-libs.tar.gz.spdx
+PackageDependency: busybox-1.20.2.spdx

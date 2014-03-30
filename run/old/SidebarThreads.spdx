@@ -1,0 +1,39 @@
+##-------------------------
+## SPDX Document Information
+##-------------------------
+
+SPDXVersion: SPDX-1.1
+DataLicense: CC-BY-3.0
+
+##-------------------------
+## Creation Information
+##-------------------------
+
+Creator: Nuno Brito
+Creator: Tool: TripleCheck Studio 0.1
+Created: 2013-11-07T10:45:35Z
+
+##-------------------------
+## Package Information
+##-------------------------
+
+PackageName: SidebarThreads
+PackageFileName: SidebarThreads
+PackageDownloadLocation: NOASSERTION
+PackageLicenseConcluded: 
+
+##-------------------------
+## File Information
+##-------------------------
+
+
+## File
+
+FileName: sidebarthreads.php
+FilePath: /inc/plugins/
+FileType: OTHER
+FileChecksum: SHA1: 66b04c0577cb728ce925b807dad9960d411b3d48
+FileChecksum: SHA256: c76e16540ee7470fd7560c9ee38b548aebc6b083ba85e1bbc39398f7d2e40b9f
+FileChecksum: MD5: 9c01674d1aeff2abee9a056745121c1f
+FileChecksum: SSDEEP: 96:xfOeLQ2Z/Y49zP93GbAiRUJiBPcGKRpW2ewpOkR8x09HjAucH+LQ10TtoMV5x8K3:xff06t9zYxUiBP4RpAkRZ35xII8BVm0Q
+FileSize: 5 Kb (5819 bytes)

@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<meta content="text/html; charset=UTF-8" http-equiv="content-type"><title>No Tasks (yet)</title>
+
+</head><body>
+<br>
+<span style="color: rgb(32, 64, 160);">&nbsp;&nbsp;&nbsp;
+/**
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;* This page shows the status of&nbsp;tasks that are running
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;<b>@param</b>&nbsp;request&nbsp;The&nbsp;request&nbsp;from&nbsp;the&nbsp;end-user
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*/</span>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<b><span style="color: rgb(127, 0, 85);">public</span></b>&nbsp;<b><span style="color: rgb(127, 0, 85);">void</span></b>&nbsp;showTasks(WebRequest&nbsp;request){&nbsp;
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(63, 127, 95);">// explain that no tasks are running right now
+</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String&nbsp;result&nbsp;= "<span style="font-weight: bold;">404 - No tasks were found running</span>"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(63, 127, 95);">//&nbsp;write&nbsp;everything&nbsp;for&nbsp;the&nbsp;user&nbsp;to&nbsp;read
+</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;request.setAnswer(result);
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}
+</body></html>
