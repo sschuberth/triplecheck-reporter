@@ -110,7 +110,6 @@ public class StudioUI4 extends javax.swing.JFrame {
         text = new javax.swing.JEditorPane();
         button = new javax.swing.JButton();
         search = new javax.swing.JTextField();
-        button1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("TripleCheck");
@@ -215,15 +214,6 @@ public class StudioUI4 extends javax.swing.JFrame {
             }
         });
 
-        button1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Home.png"))); // NOI18N
-        button1.setBorder(null);
-        button1.setBorderPainted(false);
-        button1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button1ActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout panelEastLayout = new javax.swing.GroupLayout(panelEast);
         panelEast.setLayout(panelEastLayout);
         panelEastLayout.setHorizontalGroup(
@@ -234,20 +224,16 @@ public class StudioUI4 extends javax.swing.JFrame {
                 .addComponent(button, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(search)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(button1, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
         panelEastLayout.setVerticalGroup(
             panelEastLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelEastLayout.createSequentialGroup()
                 .addGap(5, 5, 5)
-                .addGroup(panelEastLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panelEastLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(button, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(search, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 34, Short.MAX_VALUE))
-                    .addComponent(button1, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(panelEastLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(button, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(search, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 34, Short.MAX_VALUE))
+                .addGap(11, 11, 11)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 440, Short.MAX_VALUE))
         );
 
@@ -269,10 +255,6 @@ public class StudioUI4 extends javax.swing.JFrame {
 
     private void frameKeypressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_frameKeypressed
     }//GEN-LAST:event_frameKeypressed
-
-    private void button1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button1ActionPerformed
-       callFrontScreen();
-    }//GEN-LAST:event_button1ActionPerformed
 
     private void treeeventTreeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_treeeventTreeMouseClicked
         doTreeNodeChanged();
@@ -328,7 +310,6 @@ public class StudioUI4 extends javax.swing.JFrame {
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton button;
-    private javax.swing.JButton button1;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JSplitPane jSplitPane1;
