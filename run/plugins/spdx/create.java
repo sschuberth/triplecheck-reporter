@@ -7,7 +7,7 @@
  * FileName: pluginCreateSPDX.java  
  * FileType: SOURCE
  * FileCopyrightText: <text> Copyright 2013 Nuno Brito, TripleCheck </text>
- * FileComment: <text> Add the node of tools inside the tree view. </text> 
+ * FileComment: <text> This is the class that creates SPDX documents </text> 
  */
 
 package spdx;
@@ -128,31 +128,9 @@ public class create extends Plugin{
         // add the value of our directory
         request.changeTemplate("none-template", selectedFolder);
         // all done
-        request.close();
+        request.closeTemplate();
         
-//        
-//        String result = 
-//                  html.div()
-//                + html.h2("Create a new SPDX from folder on disk")
-//                + "Use this page to choose a folder and create an SPDX document"
-//                + html.br
-//                + html.br
-//                + html.h3("Selected Folder")
-//                + selectedFolder
-//                + html.br
-//                
-//                + html.br
-//                + html.link("Choose a folder", "create?x=folder")
-//                
-//                + html.br
-//                + html.br
-//                + html.link("Start", "create?x=foldercreate")
-//                
-//                
-//                + html._div
-//                ;
-//        
-//        request.setAnswer(result);
+        
     }
 
     
@@ -183,7 +161,7 @@ public class create extends Plugin{
         RunningTask task = new RunningTask(){
             @Override
             public void doTask(){
-                setTitle("Creating SPDX from source folder");
+                setTitle("Creating report");
                
 
                   // start the SPDX class
@@ -214,11 +192,11 @@ public class create extends Plugin{
                
                // all done here, explain where the SPDX document can be found
                nextStep = 
-                         html.link("SPDX summary", 
+                         html.link("See report", 
                         "/spdx/show?x=summary&"
                         + param.spdx + "=" + result)
                        + " | " +
-                       html.link("Show full text", 
+                       html.link("Show in text mode", 
                         "/spdx/show?x=full&"
                         + param.spdx + "=" + result)
                        ;
@@ -254,15 +232,16 @@ public class create extends Plugin{
         
         // show the dialog
         File result = swingUtils.chooseFolder(new File(selectedFolder));
-        log.write(is.ACCEPTED, "Chose folder %1 as source for the SPDX "
-                + "document", result.getAbsolutePath());
         
         // place the result in our settings
         if(result != null){
             settings.write(LastFolderNewSPDX, result.getAbsolutePath());
+            log.write(is.ACCEPTED, "Folder %1 was chosen as source for the SPDX "
+                + "document", result.getAbsolutePath());
         }
-        
-        String output = html.redirect("/spdx/create?x=mainFolder", 2, 
+
+        // all done, let's go back
+        String output = html.redirect("/spdx/create?x=mainFolder", 0, 
                        " Returning to previous page..");
         
         request.setAnswer(output);
@@ -342,8 +321,8 @@ public class create extends Plugin{
         }
         
         // all done
-        task.setStatus("All done!");
         task.setPercentageComplete(100);
+        task.setStatus("All done!");
         
         
         // all done here, explain where the SPDX document can be found

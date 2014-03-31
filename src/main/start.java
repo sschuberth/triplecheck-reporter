@@ -41,20 +41,11 @@ public class start {
                 // now add the known file extensions
                 core.extensions.addExtensions();
                 
-                // find all components inside our common library
-//                File baseFolder = new File(".");
-//                core.components = actions.findSPDX(new File(baseFolder, 
-//                        is.library));
-                
-                // now find our products
-//                core.products = actions.findSPDX(new File(baseFolder, 
-//                        is.products));
-                
                 // do the startup
                 Thread thread = new Thread(){
                 @Override
                 public void run(){
-                     doStartup();
+                    // doStartup();
                      
                     }};
                 thread.start();

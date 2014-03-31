@@ -850,7 +850,11 @@ public class StudioUI4 extends javax.swing.JFrame {
      */
     private void processFormSubmit(WebRequest request, 
             HyperlinkEvent e) {
-        String data = ((FormSubmitEvent) e).getData();
+        
+        FormSubmitEvent form = (FormSubmitEvent) e;
+        
+        String data = form.getData();
+        
         // add parameters to our web request object
         ArrayList<String[]> parameters = html.cleanParameters(data);
         for(String[] parameter : parameters){

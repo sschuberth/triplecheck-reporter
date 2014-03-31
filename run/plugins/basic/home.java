@@ -61,9 +61,9 @@ public class home extends Plugin{
         
         String navigationMain = ""
                 + html.div()
-                + html.link("Create new report", "/spdx/create")
-                //+ html.br
-                //+ html.link("View SPDX files", "/spdx/show")
+                + html.link("Create a new report", "/spdx/create?x=mainFolder")
+                //+ html.link("Create new report", "/spdx/create")
+                
                 + html._div
                 + "";
         

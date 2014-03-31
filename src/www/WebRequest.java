@@ -191,6 +191,18 @@ public class WebRequest {
         setAnswer(templateText);
     }
     
+    
+    /**
+     * No further changes to the template are possible
+     */
+    public void closeTemplate(){
+        File file = new File(BaseFolder, "temp.html");
+        utils.files.SaveStringToFile(file, templateText);
+        setPage(file);
+    }
+    
+    
+    
     /**
      * If there is a page available, give it back
      * @return The URL object with the respective Page object

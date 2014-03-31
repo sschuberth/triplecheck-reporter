@@ -72,7 +72,7 @@ public class show extends Plugin{
                 ;
         
         // no products found..
-        if(core.products.isEmpty()){
+        if(core.products==null){
             String result = ""
                     + html.div()
                     + html.br
