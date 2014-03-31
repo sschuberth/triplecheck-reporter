@@ -61,27 +61,29 @@ public class home extends Plugin{
         
         String navigationMain = ""
                 + html.div()
-                + html.link("Create new SPDX", "/spdx/create")
-                + html.br
-                + html.link("View SPDX files", "/spdx/show")
+                + html.link("Create new report", "/spdx/create")
+                //+ html.br
+                //+ html.link("View SPDX files", "/spdx/show")
                 + html._div
                 + "";
         
                 String navigationSub = ""
 //                + html.h2("Actions")
-                + html.br
+//                + html.br
                 //+ html.br        
                 + html.div()
-                + "Other actions: "        
+                + "Other actions: "   
+                + html.link("View reports", "/spdx/show")        
+                + html.divider
                 + html.link("Log", "/basic/ToolsLog.java?x=showPage")
                 + html.divider
                 + html.link("Status", "/basic/status")
-                + html.divider
-                + html.link("Server", "/webserver/server")
+//                + html.divider
+//                + html.link("Server", "/webserver/server")
                 + html.divider
                 + html.link("Forum", "http://triplecheck.de/forum")
                 + html._div
-//                + html.br
+                + html.br
 //                + html.br
 //                + html.br
                 + "";
@@ -96,16 +98,17 @@ public class home extends Plugin{
                 , navigationMain
         };
         
-        int[] size = new int[]{40, 200};
+        int[] size = new int[]{60, 250};
         
         String result = ""
                 + html.div()
                 + html.br
                 + Table.alignedTable(params, size)
                 //+ navigation
+                + html.br
+                + "<hr>"
+                + html.br
                 + navigationSub
-                + html.br
-                + html.br
                 + timeLine
                 
                 + html._div

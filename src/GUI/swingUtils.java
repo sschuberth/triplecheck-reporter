@@ -417,7 +417,7 @@ public class swingUtils {
       */
      
      static public void moveToLine(int lineNumber, JEditorPane text,
-             StudioUI2 frame){
+             StudioUI4 frame){
          
          // do the selection part 
             Element selectedLine = text.getDocument()  

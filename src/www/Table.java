@@ -120,7 +120,7 @@ public class Table {
     public static String alignedTable(String[] params, int[] size){
         // add the header
         String result = "<table style=\"text-align: left;\" border=\"0\"\n" +
-" cellpadding=\"0\" cellspacing=\"0\"><tbody><tr>";
+" cellpadding=\"1\" cellspacing=\"1\"><tbody><tr>";
         int i = -1;
         for(String param : params){
             i++;

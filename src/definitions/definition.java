@@ -23,7 +23,7 @@ public class definition {
             port = "port",
             portDefault = "10101",
             searchList = "SearchList",
-            nodeSoftware = "SPDX",
+            nodeSoftware = "Reports",
             nodeReviewerSPDX = "Reviewer",
             nodeReviewersSPDX = "Reviewers";
 }

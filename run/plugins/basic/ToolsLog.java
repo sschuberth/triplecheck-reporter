@@ -13,9 +13,11 @@
 package basic;
 
 import definitions.Messages;
+import main.core;
 import script.Plugin;
 import script.log;
 import utils.html;
+import www.RequestOrigin;
 import www.WebRequest;
 
 
@@ -53,6 +55,12 @@ public class ToolsLog extends Plugin{
                + "</body></html>";
        // write everything for the user to read
        request.setAnswer(result);
+       
+       // move down to the bottom of the log window when looking through the GUI
+       if((request.requestOrigin == RequestOrigin.GUI)
+               ||(request.requestOrigin == RequestOrigin.GUI_tree)){
+           core.studio.textMoveToBottom();
+       }
     }
 
 }

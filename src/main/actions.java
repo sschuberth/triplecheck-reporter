@@ -113,6 +113,12 @@ public class actions {
         softwareNode.id = definition.nodeSoftware;
         softwareNode.setIcon("box-label.png");
         
+        // set here what we want to happen when the user clicks on it
+              File scriptFile = new File(core.getPluginsFolder(), "/basic/home.java");
+              softwareNode.scriptFile = scriptFile;
+              softwareNode.scriptFolder = scriptFile.getParentFile();
+              softwareNode.scriptMethod = "main";
+        
         // create a tree based on folder tree on disk
         findFolders(core.getProductsFolder(), 25, softwareNode);
         

@@ -14,7 +14,10 @@ package GUI;
 import definitions.Messages;
 import definitions.is;
 import java.awt.Cursor;
+import java.awt.Rectangle;
 import java.awt.Toolkit;
+import java.awt.event.AdjustmentEvent;
+import java.awt.event.AdjustmentListener;
 import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.IOException;
@@ -475,6 +478,19 @@ public class StudioUI4 extends javax.swing.JFrame {
     }
 
    
+    /**
+     * Moves the text box to the last line
+     */
+    public void textMoveToBottom(){
+        // doesn't work.
+        try{
+        text.setCaretPosition(text.getText().length() - 1);
+        }catch (Exception e){
+        
+        }
+    }
+    
+    
     /**
      * This method is helpful to centralise the control of the
      * JEditorTextPane that has a prominent action in our tool.

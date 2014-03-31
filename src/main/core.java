@@ -47,7 +47,7 @@ public class core {
     public static HashMap
             temp = new HashMap<String, Object>();
     
-    public static StudioUI2 studio2 = null;
+    //public static StudioUI2 studio2 = null;
     public static StudioUI4 studio = null;
     
     public static utils.KeyStroke key = 

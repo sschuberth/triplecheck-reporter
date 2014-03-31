@@ -134,7 +134,7 @@ public class show extends Plugin{
         
         String summary = 
                 "<h2>"
-                + "SPDX summary"
+                + "Summary"
                 + "</h2>"
                 + html._div
                 + html.div(20)
