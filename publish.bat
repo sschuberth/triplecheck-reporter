@@ -1,6 +1,6 @@
 @echo off
 
-set zipfile=triplecheck-0.0.zip
+set zipfile=triplecheck-0.5.zip
 
 echo building the new executable
 "c:\Program Files (x86)\Launch4j\launch4jc.exe" .\docs\launch4j-triplecheck.xml

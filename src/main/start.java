@@ -45,7 +45,7 @@ public class start {
                 Thread thread = new Thread(){
                 @Override
                 public void run(){
-                    // doStartup();
+                     doStartup();
                      
                     }};
                 thread.start();

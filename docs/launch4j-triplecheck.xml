@@ -1,7 +1,7 @@
 <launch4jConfig>
   <dontWrapJar>false</dontWrapJar>
   <headerType>gui</headerType>
-  <jar>D:\triplechecksoftware\tool\store\studio.jar</jar>
+  <jar>D:\triplechecksoftware\reporter\store\studio.jar</jar>
   <outfile>D:\triplechecksoftware\publish\triplecheck.exe</outfile>
   <errTitle></errTitle>
   <cmdLine></cmdLine>
@@ -12,7 +12,7 @@
   <customProcName>false</customProcName>
   <stayAlive>false</stayAlive>
   <manifest></manifest>
-  <icon>D:\triplechecksoftware\tool\docs\validation3check.ico</icon>
+  <icon>D:\triplechecksoftware\reporter\docs\validation3check.ico</icon>
   <singleInstance>
     <mutexName>triplecheck</mutexName>
     <windowTitle>TripleCheck</windowTitle>
