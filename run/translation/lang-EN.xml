@@ -29,6 +29,7 @@
 <entry key="Task &quot;Creating an SPDX document&quot; (1386781354988): 100% complete">Task "Creating an SPDX document" (1386781354988): 100% complete</entry>
 <entry key="Task &quot;Creating an SPDX document&quot; (1386533105356): File was downloaded as &quot;%1&quot; with an approximate size of %2">Task "Creating an SPDX document" (1386533105356): File was downloaded as "%1" with an approximate size of %2</entry>
 <entry key="Task &quot;Creating an SPDX document&quot; (1386603140441): All files from %1 have been extracted">Task "Creating an SPDX document" (1386603140441): All files from %1 have been extracted</entry>
+<entry key="Task &quot;Creating report&quot; (1396368989063): Creating the SPDX document">Task "Creating report" (1396368989063): Creating the SPDX document</entry>
 <entry key="Task &quot;Creating an SPDX document&quot; (1386756794701): File was downloaded as &quot;%1&quot; with an approximate size of %2">Task "Creating an SPDX document" (1386756794701): File was downloaded as "%1" with an approximate size of %2</entry>
 <entry key="Task &quot;Creating an SPDX document&quot; (1389888724148): 20% complete">Task "Creating an SPDX document" (1389888724148): 20% complete</entry>
 <entry key="Task &quot;Creating an SPDX document&quot; (1390385509790): All files from %1 have been extracted">Task "Creating an SPDX document" (1390385509790): All files from %1 have been extracted</entry>
@@ -684,6 +685,7 @@
 <entry key="Task &quot;Creating report&quot; (1396285230255): %1 files processed out of %1">Task "Creating report" (1396285230255): %1 files processed out of %1</entry>
 <entry key="Task &quot;Creating an SPDX document&quot; (1386537206029): Creating the SPDX document">Task "Creating an SPDX document" (1386537206029): Creating the SPDX document</entry>
 <entry key="Task &quot;Creating an SPDX document&quot; (1386460354498): All files from %1 have been extracted">Task "Creating an SPDX document" (1386460354498): All files from %1 have been extracted</entry>
+<entry key="Task &quot;Creating report&quot; (1396369306945): Creating the SPDX document">Task "Creating report" (1396369306945): Creating the SPDX document</entry>
 <entry key="Task &quot;Creating an SPDX document&quot; (1386698102403): 10% complete">Task "Creating an SPDX document" (1386698102403): 10% complete</entry>
 <entry key="Task &quot;Creating an SPDX document&quot; (1386598036628): Extracting files from %1">Task "Creating an SPDX document" (1386598036628): Extracting files from %1</entry>
 <entry key="Task &quot;Creating an SPDX document&quot; (1386521658298): Creating the SPDX document">Task "Creating an SPDX document" (1386521658298): Creating the SPDX document</entry>
@@ -738,6 +740,7 @@
 <entry key="Task &quot;Creating an SPDX document&quot; (1386432531487): Downloading the file from %1">Task "Creating an SPDX document" (1386432531487): Downloading the file from %1</entry>
 <entry key="Task 1386427302385, Creating an SPDX document: Downloading the file from %1">Task 1386427302385, Creating an SPDX document: Downloading the file from %1</entry>
 <entry key="Task &quot;Creating an SPDX document&quot; (1386768017569): File was downloaded as &quot;%1&quot; with an approximate size of %2">Task "Creating an SPDX document" (1386768017569): File was downloaded as "%1" with an approximate size of %2</entry>
+<entry key="Task &quot;Creating report&quot; (1396369306945): All done!">Task "Creating report" (1396369306945): All done!</entry>
 <entry key="Task &quot;Creating an SPDX document&quot; (1390385372257): Downloading the file from %1">Task "Creating an SPDX document" (1390385372257): Downloading the file from %1</entry>
 <entry key="Task &quot;Creating report&quot; (1396285148970): 100% complete">Task "Creating report" (1396285148970): 100% complete</entry>
 <entry key="Task &quot;Creating an SPDX document&quot; (1386536003867): All done!">Task "Creating an SPDX document" (1386536003867): All done!</entry>
@@ -1040,6 +1043,7 @@
 <entry key="Task &quot;Creating an SPDX document&quot; (1386453935375): 100% complete">Task "Creating an SPDX document" (1386453935375): 100% complete</entry>
 <entry key="Task &quot;Creating SPDX from source folder&quot; (1390689592121): Creating the SPDX document">Task "Creating SPDX from source folder" (1390689592121): Creating the SPDX document</entry>
 <entry key="Task &quot;Creating an SPDX document&quot; (1386537062768): 20% complete">Task "Creating an SPDX document" (1386537062768): 20% complete</entry>
+<entry key="Task &quot;Creating report&quot; (1396369306945): 4 seconds were necessary to complete this task">Task "Creating report" (1396369306945): 4 seconds were necessary to complete this task</entry>
 <entry key="Task &quot;Creating an SPDX document&quot; (1386770144553): 10% complete">Task "Creating an SPDX document" (1386770144553): 10% complete</entry>
 <entry key="Task &quot;Creating an SPDX document&quot; (1386538075189): Extracting files from %1">Task "Creating an SPDX document" (1386538075189): Extracting files from %1</entry>
 <entry key="Task &quot;Creating an SPDX document&quot; (1386697189401): All done!">Task "Creating an SPDX document" (1386697189401): All done!</entry>
@@ -1076,14 +1080,15 @@
 <entry key="Task &quot;Creating an SPDX document&quot; (1386601370703): Creating the SPDX document">Task "Creating an SPDX document" (1386601370703): Creating the SPDX document</entry>
 <entry key="Task &quot;Creating an SPDX document&quot; (1386715027168): File was downloaded as &quot;%1&quot; with an approximate size of %2">Task "Creating an SPDX document" (1386715027168): File was downloaded as "%1" with an approximate size of %2</entry>
 <entry key="Task &quot;Creating an SPDX document&quot; (1386432412420): Extracting all files from %1">Task "Creating an SPDX document" (1386432412420): Extracting all files from %1</entry>
-<entry key="Task &quot;Creating report&quot; (1396285619073): 4 seconds were necessary to complete this task">Task "Creating report" (1396285619073): 4 seconds were necessary to complete this task</entry>
 <entry key="Task &quot;Creating an SPDX document&quot; (1386511688574): All files from %1 have been extracted">Task "Creating an SPDX document" (1386511688574): All files from %1 have been extracted</entry>
+<entry key="Task &quot;Creating report&quot; (1396285619073): 4 seconds were necessary to complete this task">Task "Creating report" (1396285619073): 4 seconds were necessary to complete this task</entry>
 <entry key="Task &quot;Creating an SPDX document&quot; (1386714517349): 100% complete">Task "Creating an SPDX document" (1386714517349): 100% complete</entry>
 <entry key="Task &quot;Creating an SPDX document&quot; (1386714324450): 100% complete">Task "Creating an SPDX document" (1386714324450): 100% complete</entry>
 <entry key="Task &quot;Creating an SPDX document&quot; (1386537234552): 100% complete">Task "Creating an SPDX document" (1386537234552): 100% complete</entry>
 <entry key="Task &quot;Creating an SPDX document&quot; (1386602950397): Extracting files from %1">Task "Creating an SPDX document" (1386602950397): Extracting files from %1</entry>
 <entry key="Task &quot;Creating an SPDX document&quot; (1386872108539): Extracting files from %1">Task "Creating an SPDX document" (1386872108539): Extracting files from %1</entry>
 <entry key="Task &quot;Creating an SPDX document&quot; (1390384670541): All files from %1 have been extracted">Task "Creating an SPDX document" (1390384670541): All files from %1 have been extracted</entry>
+<entry key="Task &quot;Creating report&quot; (1396368989063): %1 files processed out of %1">Task "Creating report" (1396368989063): %1 files processed out of %1</entry>
 <entry key="Task &quot;Creating an SPDX document&quot; (1386610333825): Extracting files from %1">Task "Creating an SPDX document" (1386610333825): Extracting files from %1</entry>
 <entry key="Task &quot;Creating an SPDX document&quot; (1386538108724): Downloading the file from %1">Task "Creating an SPDX document" (1386538108724): Downloading the file from %1</entry>
 <entry key="Task &quot;Creating an SPDX document&quot; (1389888724148): All done!">Task "Creating an SPDX document" (1389888724148): All done!</entry>
@@ -1110,6 +1115,7 @@
 <entry key="Task &quot;Creating report&quot; (1396285444156): 4 seconds were necessary to complete this task">Task "Creating report" (1396285444156): 4 seconds were necessary to complete this task</entry>
 <entry key="Task &quot;Creating an SPDX document&quot; (1386770070025): Creating the SPDX document">Task "Creating an SPDX document" (1386770070025): Creating the SPDX document</entry>
 <entry key="Task &quot;Creating an SPDX document&quot; (1386536003867): 10% complete">Task "Creating an SPDX document" (1386536003867): 10% complete</entry>
+<entry key="Task &quot;Creating report&quot; (1396369306945): 100% complete">Task "Creating report" (1396369306945): 100% complete</entry>
 <entry key="Task &quot;Creating an SPDX document&quot; (1386888597769): Downloading the file from %1">Task "Creating an SPDX document" (1386888597769): Downloading the file from %1</entry>
 <entry key="Selected product is &quot;%1&quot;">Selected product is "%1"</entry>
 <entry key="Checking things up! &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;">Checking things up! &gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;&gt;</entry>
@@ -1219,6 +1225,7 @@
 <entry key="Task &quot;Creating SPDX from source folder&quot; (1395666719114): 100% complete">Task "Creating SPDX from source folder" (1395666719114): 100% complete</entry>
 <entry key="Task &quot;Creating an SPDX document&quot; (1386714629107): All files from %1 have been extracted">Task "Creating an SPDX document" (1386714629107): All files from %1 have been extracted</entry>
 <entry key="Task &quot;Creating an SPDX document&quot; (1386872108539): File was downloaded as &quot;%1&quot; with an approximate size of %2">Task "Creating an SPDX document" (1386872108539): File was downloaded as "%1" with an approximate size of %2</entry>
+<entry key="Task &quot;Creating report&quot; (1396369306945): %1 files processed out of %1">Task "Creating report" (1396369306945): %1 files processed out of %1</entry>
 <entry key="Task &quot;Creating an SPDX document&quot; (1386698597417): File was downloaded as &quot;%1&quot; with an approximate size of %2">Task "Creating an SPDX document" (1386698597417): File was downloaded as "%1" with an approximate size of %2</entry>
 <entry key="Task &quot;Creating an SPDX document&quot; (1389888724148): Creating the SPDX document">Task "Creating an SPDX document" (1389888724148): Creating the SPDX document</entry>
 <entry key="Task &quot;Creating an SPDX document&quot; (1386698388694): Extracting files from %1">Task "Creating an SPDX document" (1386698388694): Extracting files from %1</entry>
@@ -1461,6 +1468,7 @@
 <entry key="Task &quot;Creating an SPDX document&quot; (1387106847304): Extracting files from %1">Task "Creating an SPDX document" (1387106847304): Extracting files from %1</entry>
 <entry key="Task &quot;Creating an SPDX document&quot; (1386540259699): All files from %1 have been extracted">Task "Creating an SPDX document" (1386540259699): All files from %1 have been extracted</entry>
 <entry key="Task &quot;Creating an SPDX document&quot; (1386697200601): All files from %1 have been extracted">Task "Creating an SPDX document" (1386697200601): All files from %1 have been extracted</entry>
+<entry key="Task &quot;Creating report&quot; (1396368989063): 100% complete">Task "Creating report" (1396368989063): 100% complete</entry>
 <entry key="Task &quot;Creating an SPDX document&quot; (1390385154480): All files from %1 have been extracted">Task "Creating an SPDX document" (1390385154480): All files from %1 have been extracted</entry>
 <entry key="Task &quot;Creating SPDX from source folder&quot; (1390689592121): %1 files processed out of %1">Task "Creating SPDX from source folder" (1390689592121): %1 files processed out of %1</entry>
 <entry key="Task &quot;Creating an SPDX document&quot; (1386697942208): File was downloaded as &quot;%1&quot; with an approximate size of %2">Task "Creating an SPDX document" (1386697942208): File was downloaded as "%1" with an approximate size of %2</entry>
@@ -1483,6 +1491,7 @@
 <entry key="Task &quot;Creating an SPDX document&quot; (1386537894875): All files from %1 have been extracted">Task "Creating an SPDX document" (1386537894875): All files from %1 have been extracted</entry>
 <entry key="Task &quot;Creating an SPDX document&quot; (1386781638531): All done!">Task "Creating an SPDX document" (1386781638531): All done!</entry>
 <entry key="Task &quot;Creating an SPDX document&quot; (1386459953770): Downloading the file from %1">Task "Creating an SPDX document" (1386459953770): Downloading the file from %1</entry>
+<entry key="Task &quot;Creating report&quot; (1396368989063): 5 seconds were necessary to complete this task">Task "Creating report" (1396368989063): 5 seconds were necessary to complete this task</entry>
 <entry key="Task &quot;Creating an SPDX document&quot; (1386610791091): Creating the SPDX document">Task "Creating an SPDX document" (1386610791091): Creating the SPDX document</entry>
 <entry key="Task &quot;Creating an SPDX document&quot; (1386698251251): 100% complete">Task "Creating an SPDX document" (1386698251251): 100% complete</entry>
 <entry key="Task 1386429107320, Creating an SPDX document: Downloading the file from %1">Task 1386429107320, Creating an SPDX document: Downloading the file from %1</entry>
@@ -1543,6 +1552,7 @@
 <entry key="Task &quot;Creating an SPDX document&quot; (1386889945349): Creating the SPDX document">Task "Creating an SPDX document" (1386889945349): Creating the SPDX document</entry>
 <entry key="Task &quot;Creating an SPDX document&quot; (1386756896341): 10% complete">Task "Creating an SPDX document" (1386756896341): 10% complete</entry>
 <entry key="Task &quot;Creating an SPDX document&quot; (1386535968878): Downloading the file from %1">Task "Creating an SPDX document" (1386535968878): Downloading the file from %1</entry>
+<entry key="Task &quot;Creating report&quot; (1396368989063): All done!">Task "Creating report" (1396368989063): All done!</entry>
 <entry key="Task &quot;Creating an SPDX document&quot; (1386610809017): Creating the SPDX document">Task "Creating an SPDX document" (1386610809017): Creating the SPDX document</entry>
 <entry key="Task &quot;Creating an SPDX document&quot; (1386865036740): 3 seconds were necessary to complete this task">Task "Creating an SPDX document" (1386865036740): 3 seconds were necessary to complete this task</entry>
 <entry key="Task &quot;Creating an SPDX document&quot; (1386864089864): 100% complete">Task "Creating an SPDX document" (1386864089864): 100% complete</entry>

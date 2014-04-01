@@ -472,7 +472,12 @@ public class swingUtils {
             TreePath path;
             
             // we first select one of the children to ensure it gets expanded
-            TreeNodeSPDX child = (TreeNodeSPDX) selectedNode.getFirstChild();
+            TreeNodeSPDX child = null;
+            try{
+            child = (TreeNodeSPDX) selectedNode.getFirstChild();
+            } catch (Exception except){
+                System.err.println("SU479 - No reports available");
+            }
             if(child != null){
             path = new TreePath(child.getPath());
             // now out tree will expand the first child
