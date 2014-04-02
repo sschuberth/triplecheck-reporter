@@ -48,17 +48,17 @@ public class GPL implements License {
 //    private String fullName = "GNU General Public License";
     
     
-    LicenseID gplv2_only = new LicenseID();
+    LicenseID gplv2_only = new LicenseID(){
+    };
     LicenseID gplv2_plus = new LicenseID();
     
     // set the default ID when asked
     LicenseID defaultLicense; 
     
     
-    LicenseID[] pool = {
-        gplv2_only, 
-        gplv2_plus
-    };
+    LicenseID[] pool;
+    
+    
     
     /**
      * Constructor
@@ -69,7 +69,7 @@ public class GPL implements License {
         gplv2_only.shortID = "GPL-2.0";
         gplv2_only.longID = "GNU General Public License v2.0 only";
         gplv2_only.URL = "http://spdx.org/licenses/GPL-2.0";
-        gplv2_plus.datePublished = time.getDate(1991, 6, 01);
+        gplv2_only.datePublished = time.getDate(1991, 6, 01);
         
         gplv2_plus.shortID = "GPL-2.0+";
         gplv2_plus.longID = "GNU General Public License v2.0 or later";
@@ -80,6 +80,14 @@ public class GPL implements License {
             "Version 2, June 1991"
             };
         
+        
+       
+        
+        // define our pool
+        pool = new LicenseID[]{
+        gplv2_only, 
+        gplv2_plus
+        };
         
          // set the default ID when asked
         defaultLicense = gplv2_only;
@@ -111,6 +119,8 @@ public class GPL implements License {
 
     @Override
     public String getShortIdentifier() {
+        //if()
+        
         return defaultLicense.shortID;
     }
 
@@ -160,6 +170,7 @@ public class GPL implements License {
     private void investigateLicense(String text) {
         for(LicenseID thisId: pool){
             if(thisId.hasId(text)){
+                System.out.println("Match with " + thisId.shortID);
                 defaultLicense = thisId;
                 return;
             }
