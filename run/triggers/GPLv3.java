@@ -34,7 +34,7 @@ public class GPLv3 implements License {
     
     // the list of id's that we can use to identify a license
     String[] list = {
-        "under the terms of the GNU General Public License version 3".toLowerCase()
+        "under the terms of the GNU General Public License version 3"
     };
     
     /**

@@ -169,9 +169,9 @@ public class DocumentCreate {
             // do the file identification
             String LOC = "";
             FileId fileId = new FileId();
-            Boolean resulted = fileId.analyze(thisFile);
+            Boolean fileWasAnalysed = fileId.analyze(thisFile);
             // get the value for lines of COD
-            if(resulted){
+            if(fileWasAnalysed){
                 if(fileId.LOC > 0){
                     LOC = "FileLOC: " + fileId.LOC;
                 }else{
@@ -180,12 +180,13 @@ public class DocumentCreate {
             }
             
             // add the licenseInfoInFile information in file
-            String licenseInfoInFile = "";
-            if((resulted)&&(fileId.licenseInfoInFile.size()>0)){
-                for(License licenseInfo : fileId.licenseInfoInFile)
-                licenseInfoInFile += addText(""
-                        + "LicenseInfoInFile: " 
-                        + licenseInfo.getShortIdentifier()
+            String triggerInfoInFile = "";
+            if((fileWasAnalysed)&&(fileId.licenseInfoInFile.size()>0)){
+
+                // iterate through each license or any other trigger needed
+                for(License triggerInfo : fileId.licenseInfoInFile)
+                triggerInfoInFile += addText(""
+                        + triggerInfo.getResult()
                         );
             }
             
@@ -216,7 +217,7 @@ public class DocumentCreate {
                     
                     + addText(LOC)
                     //+ addText("FileLastModified: " + fileModified)
-                    + licenseInfoInFile
+                    + triggerInfoInFile
                     //+ "\nLicenseConcluded: NOASSERTION"
                     //+ "\nLicenseInfoInFile: NONE"
                     //+ "\nFileCopyrightText: NONE"

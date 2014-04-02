@@ -269,10 +269,10 @@ public class FileId {
         }
         
         // try to identify some of the most common licenses
-        String lowerCaseContent = content.toLowerCase();
-        for(License thisLicense: core.licenses){
-            if(thisLicense.isApplicable(lowerCaseContent )){
-                licenseInfoInFile.add(thisLicense);
+        //String lowerCaseContent = content.toLowerCase();
+        for(License thisTrigger: core.licenses){
+            if(thisTrigger.isApplicable(content)){
+                licenseInfoInFile.add(thisTrigger);
             }
         }
         

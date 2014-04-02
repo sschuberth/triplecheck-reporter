@@ -14,7 +14,6 @@ package create;
 
 import java.io.File;
 import main.actions;
-import org.jfree.util.StringUtils;
 import org.junit.*;
 import spdxlib.DocumentCreate;
 
@@ -62,9 +61,16 @@ public class TestCreateSPDX {
          spdx.create(thisFolder);
 
          String text = spdx.output;
-         String keyword = "GPL-3";
-         int counter = (text.length() - text.replace(keyword, "").length())/keyword.length();
          
-         System.out.println("Matches found: " + counter);
+         // get all the items that have a license declared
+         String keyword = "LicenseInfoInFile:";
+         int counterLicenses = (text.length() - text.replace(keyword, "").length())/keyword.length();
+         
+         // now do the same but just for copyright
+         keyword = "FileCopyrightText:";
+         int counterCopyright = (text.length() - text.replace(keyword, "").length())/keyword.length();
+         
+         System.out.println("Files with licenses: " + counterLicenses);
+         System.out.println("Files with copyright: " + counterCopyright);
      }
 }
