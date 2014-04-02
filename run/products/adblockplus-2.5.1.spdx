@@ -11,7 +11,7 @@ DataLicense: CC-BY-4.0
 
 Creator: Nuno Brito
 Creator: Tool: TripleCheck 0.4
-Created: 2014-04-02T12:10:24Z
+Created: 2014-04-02T12:14:27Z
 
 ##-------------------------
 ## Package Information
@@ -125,6 +125,7 @@ FileChecksum: SHA256: a7a52a9ac8f9b6458f33a6e84da097c0ba06e32c49a76e8c89c33d6d07
 FileChecksum: MD5: 1e4171cb51b624817b5eb1f5f32c9bee
 FileChecksum: SSDEEP: 48:HDmyUjH4odAkClYttTMwN47MJNGVM7fawoVlTKCaZg19:jOTAbYbTjkMzzfjod2g19
 FileSize: 2 Kb (2767 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -191,6 +192,7 @@ FileChecksum: SHA256: 6df937b1d8ceadc188ac6575cf8dce0e46c175af366765bac98f321248
 FileChecksum: MD5: d748f66547b46ff82f07a8a0a9cff12f
 FileChecksum: SSDEEP: 48:YDmyUjH1aTnhuyf8sIodXILJ4FMlFknTFZ9FREqE4FECFf8FTtFPlF8S9FREqaRG:QOMTnhuyf81W44FMlFkTFZH2D4FECFfu
 FileSize: 2 Kb (2468 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -202,6 +204,7 @@ FileChecksum: SHA256: fee5c73cd82006a9247b1929a14e4b9b1b17701669485ec86d4f8594d1
 FileChecksum: MD5: 9dc51c336eece6e5709f7bfd162c9a14
 FileChecksum: SSDEEP: 48:YDmyUjHhmExOGmzsIL13HuqXE+iL/Tsf0s:QOUExOPsIx3tUpLrsfv
 FileSize: 1 Kb (1695 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -213,6 +216,7 @@ FileChecksum: SHA256: f8043bb0c3a1967dfc4099a05fa2904ed5a7a28b7eaf4e6652ce554a0c
 FileChecksum: MD5: 5ff2467b60fccb782c88120dbf3b6248
 FileChecksum: SSDEEP: 96:QO5DyfdrJUTOQ7P5i8ti0nto8qFQSQPpSdsC5NnyY:95DQp+OQ7LUoSt
 FileSize: 6 Kb (6242 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -224,6 +228,7 @@ FileChecksum: SHA256: 8133382376a7e1fda9454e859f6ec940e81a2c8e6a9c2e2c1d2fb1e143
 FileChecksum: MD5: 22befebca93ffc31d227ae2daf53a5f2
 FileChecksum: SSDEEP: 96:jOK6eVBIjF9+OtR4t6RIL/vz0gzhzTtJ6S8C++CP5jP/WV0aaqF+Mq3:SK68IjFQKpet+PP/WBF+f3
 FileSize: 7 Kb (8137 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -235,6 +240,7 @@ FileChecksum: SHA256: 8d8014877659d4448774e0227a545fb4aa117566a6823901ad13003e18
 FileChecksum: MD5: c2c8a7a9eedbe3aef05365fb75af1e9e
 FileChecksum: SSDEEP: 48:HDmyUjH4oUSpYttspHZwNkKiV75NGVM7fawoVlTKCal2:jODYb6H+k5JDzfjodc2
 FileSize: 2 Kb (2887 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -335,6 +341,7 @@ FileChecksum: SHA256: 5caea4e29ca329e90f27884e18be480eb5b525218dd94f964245205903
 FileChecksum: MD5: 4719a5e1ddab11e31b32a2673489e02c
 FileChecksum: SSDEEP: 96:EitOS5Wn8mq1eeF5XnPMQHYN5Sa1Ph9Mkqhk:EIOgWnZIeeF5XPMQ4GatMrk
 FileSize: 5 Kb (5611 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -346,6 +353,7 @@ FileChecksum: SHA256: d739f6ee5c338d23a63f6f0249b50d3a195e817c4f143dd2f297fc6fa6
 FileChecksum: MD5: f4869c215c0d8a4ecafcfc1618f14cc6
 FileChecksum: SSDEEP: 384:IAGBSjckPJLAM3HGCzC39paW7PUmsy/dNjOOrWJqMt5v3sDk8X:IAGBnkhLAM3HG+CD7PTsy/dNjlreqM3Y
 FileSize: 20 Kb (21445 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -357,6 +365,7 @@ FileChecksum: SHA256: 7bda35661ae6c89cb3bd6d079e8a7924df7671231102deaa591d5d0a31
 FileChecksum: MD5: 2b4abe3f3518ee0d37d931e5db6e42b6
 FileChecksum: SSDEEP: 96:1O4DfycdWQU4Cvpr0CCahwUiNJzIGHhd+lHXWqxcWD8YlhASZ:I4DacdWQivpr5mzIGBMl35GWDNjXZ
 FileSize: 4 Kb (4485 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -368,6 +377,7 @@ FileChecksum: SHA256: 7a0b20f1b84b70fa7219b7d284c1764d255fb624d231d75df25307e873
 FileChecksum: MD5: 4c294b0667035e6ed028c965b952c5f2
 FileChecksum: SSDEEP: 24:IsMn70XyXOkHm2TbVoRNqowQFoPmPwt+W1xOoCXAgPLADXK:sYyxH26eA+voyJjA2
 FileSize: 1 Kb (1376 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -379,6 +389,7 @@ FileChecksum: SHA256: 6bf2e1ed2763ae04bbdf803b5f2edcc27889edea8069aefef79243bf2b
 FileChecksum: MD5: da304094e87d29629409c2a97fbde471
 FileChecksum: SSDEEP: 24:IsMn70XyXOkHm2TbVoR7WGECIlDBmgxooQ2rAqzZ8ooQ2F:sYyxH2hELlmNoQfqLoQ2
 FileSize: 1 Kb (1311 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -390,6 +401,7 @@ FileChecksum: SHA256: 06e3192cca0c47ab6d4a35449feecd7f7bea372fa17ae283a7f36e2fff
 FileChecksum: MD5: b32c258ed7b407d49a4786c81e557b5c
 FileChecksum: SSDEEP: 96:1Of8+IgY281uOudUXhXMtcpltm/1PsjXSYT0+:ITYx1vud0l6/1S9
 FileSize: 3 Kb (4017 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -412,6 +424,7 @@ FileChecksum: SHA256: 1563663f889d04e3a315860b495578b8990be5ec171e332b28d1fd16ff
 FileChecksum: MD5: af2b0aca4d8bb5b32f8a9bebfa88ea29
 FileChecksum: SSDEEP: 96:DZ2XByzjnI6NqI8ab06ZCkxGEexfEU4kLk7lFCeacjn:DEq0p6+4+yYeaU
 FileSize: 4 Kb (4582 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -423,6 +436,7 @@ FileChecksum: SHA256: cbd946052fd68c70e3b5333240186be6d03f174a8ebc0a7d9b2c1275b3
 FileChecksum: MD5: 972ce1049115dab09b6e34e715ebe33f
 FileChecksum: SSDEEP: 192:dWKg7trNurfi0SfqyYi3qd+RSyaA6V4fewsCQUhrrZyd6aZcin/L0g3lL:dWKcZqAHeLdyrrZi3
 FileSize: 8 Kb (8999 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -434,6 +448,7 @@ FileChecksum: SHA256: cca7066acc97ce29d22176dd81bb5b4bfb99a72ebc5b6d51c64f7a9853
 FileChecksum: MD5: 7d7c3f7017625aad24fc2b8efaddcd39
 FileChecksum: SSDEEP: 384:IzBO6cTnglrfhMrTj2rwOgf5FdckrcyV4i:IzPggliSk0krcyCi
 FileSize: 14 Kb (14830 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -445,6 +460,7 @@ FileChecksum: SHA256: dff7a2d03884e989417301177832fb659b357ebacc35e8257d86a22bcf
 FileChecksum: MD5: 554d95d22f9f6c07703c00e7562d9ab1
 FileChecksum: SSDEEP: 48:sYyxH2S0F/TXkmG54hoF1uGNlEZCf+2ReLt7I:ER0F/TOVFIGNlEZCIp8
 FileSize: 2 Kb (2514 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -456,6 +472,7 @@ FileChecksum: SHA256: 3d678258d36ef44dc866800b55598df1516048298e2b07db0782e62dac
 FileChecksum: MD5: 1b31eb8f1956cc5221050c90ef24e06f
 FileChecksum: SSDEEP: 96:1O4Gibn6Q9DtPNtCi8JvA8a8JBw4oaa0ptUWHvHMG0KBN0oCylu:I4GiNfPNtkvPlIF2phHvDN0uu
 FileSize: 4 Kb (4601 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -467,6 +484,7 @@ FileChecksum: SHA256: f77ada4150d2a7f5bff6a7b8219e76fe492e212ac01633704d76d0cec8
 FileChecksum: MD5: cecfc23de2de7d88f42863818430da56
 FileChecksum: SSDEEP: 384:IKA7NAzjKqh/vfxhd2LNQ2YZcxEPzfli:IKA7N2fxha+Q
 FileSize: 12 Kb (13052 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -478,6 +496,7 @@ FileChecksum: SHA256: a6fbbef1cca2520b68dddb6bf33dc5420faeb00659fa9227f6c30a6dda
 FileChecksum: MD5: f93d0ff8cf085aeaeb603b9591ebbee0
 FileChecksum: SSDEEP: 384:IoYFYG6v26qcNo1EOL+eoMz6oeS56XVnU:IoSt6v26tNo1EOLcNTU
 FileSize: 12 Kb (12708 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -489,6 +508,7 @@ FileChecksum: SHA256: a2d54a8f9f59b2975814ad25d84ea3da117d6a0ce6bcf3b16520ffe0bc
 FileChecksum: MD5: 43179f5dfcc515d746b27d4788d891bb
 FileChecksum: SSDEEP: 96:1O+0g9RBQC6P6KkoIQSmTR4FQ8iP4xEUMUf2XSgoRr4V7o23STeHt0TlAQPW:I+/9J6CysQ8zWCJ47DeeQu
 FileSize: 7 Kb (7957 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -500,6 +520,7 @@ FileChecksum: SHA256: fbd64818ad762759828ef448e26f6efa4d720d76a85f1381bc0bc8eb99
 FileChecksum: MD5: ea2c272f4326370421dbc13eac4f8da9
 FileChecksum: SSDEEP: 48:pDmyUjHDuahzNUvhW/ERFDxHUqUq6qOXc:1OCah24ujzV6qH
 FileSize: 1 Kb (1979 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -511,6 +532,7 @@ FileChecksum: SHA256: 56de537b2ecfdacd6a2a02f3de79562e3234cb34601cbd946aaa1ec8ab
 FileChecksum: MD5: e1ed408c50b5b32fe95921b585c5be70
 FileChecksum: SSDEEP: 96:1OWAr5Uc0AJ0VM7eo8BKCX7eo8lKCE89KC783KCB0uWJb1:IWKSVmgnC00uW3
 FileSize: 4 Kb (4583 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -522,6 +544,7 @@ FileChecksum: SHA256: b77472ef76413ee4e8f9bd496f54d31677a152b5205e22c2db0797c9c3
 FileChecksum: MD5: c02fea5c31a09a5058d02ac8c01a8d4b
 FileChecksum: SSDEEP: 12:UxSFVMQ477X0kkp4McGTyOUhOkHmlfwTbVZ7d8w6xNDhGhKHwK7xu3OSp+/XFhir:IsMn70XyXOkHm2TbVoR719HD7x0OjX+
 FileSize: 1 Kb (1049 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -555,6 +578,7 @@ FileChecksum: SHA256: 5caea4e29ca329e90f27884e18be480eb5b525218dd94f964245205903
 FileChecksum: MD5: 4719a5e1ddab11e31b32a2673489e02c
 FileChecksum: SSDEEP: 96:EitOS5Wn8mq1eeF5XnPMQHYN5Sa1Ph9Mkqhk:EIOgWnZIeeF5XPMQ4GatMrk
 FileSize: 5 Kb (5611 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -590,6 +614,7 @@ FileChecksum: SHA256: 7a0b20f1b84b70fa7219b7d284c1764d255fb624d231d75df25307e873
 FileChecksum: MD5: 4c294b0667035e6ed028c965b952c5f2
 FileChecksum: SSDEEP: 24:IsMn70XyXOkHm2TbVoRNqowQFoPmPwt+W1xOoCXAgPLADXK:sYyxH26eA+voyJjA2
 FileSize: 1 Kb (1376 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -601,6 +626,7 @@ FileChecksum: SHA256: 6bf2e1ed2763ae04bbdf803b5f2edcc27889edea8069aefef79243bf2b
 FileChecksum: MD5: da304094e87d29629409c2a97fbde471
 FileChecksum: SSDEEP: 24:IsMn70XyXOkHm2TbVoR7WGECIlDBmgxooQ2rAqzZ8ooQ2F:sYyxH2hELlmNoQfqLoQ2
 FileSize: 1 Kb (1311 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -635,6 +661,7 @@ FileChecksum: SHA256: 1563663f889d04e3a315860b495578b8990be5ec171e332b28d1fd16ff
 FileChecksum: MD5: af2b0aca4d8bb5b32f8a9bebfa88ea29
 FileChecksum: SSDEEP: 96:DZ2XByzjnI6NqI8ab06ZCkxGEexfEU4kLk7lFCeacjn:DEq0p6+4+yYeaU
 FileSize: 4 Kb (4582 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -778,6 +805,7 @@ FileChecksum: SHA256: dc21d2f96c1b7ecde69e5ee9388b2b2792bdfbc293a2048d5ee1c0ca4e
 FileChecksum: MD5: b6930c37dd7e0927467eb2597a02ce96
 FileChecksum: SSDEEP: 48:GayWHQR4ebjIfQ/2SFFw97d0ZeZUytgWMilYBy+DeT+DeR:hQR4enz/xM9ZweZUnW9jR
 FileSize: 2 Kb (2603 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -800,6 +828,7 @@ FileChecksum: SHA256: a5aa230ab58331153a5a4664b13601671e1af95e8ec31e517a976cbdb4
 FileChecksum: MD5: af619b2b9def517eb159b4616037ead9
 FileChecksum: SSDEEP: 48:GayWHQRtedVph44/RzkOq9OS0ZQNGgWufxLGDKiQn9+wRB9+wRj:hQRtedF7/x89BwMFWerRVRj
 FileSize: 2 Kb (2902 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -910,6 +939,7 @@ FileChecksum: SHA256: dc21d2f96c1b7ecde69e5ee9388b2b2792bdfbc293a2048d5ee1c0ca4e
 FileChecksum: MD5: b6930c37dd7e0927467eb2597a02ce96
 FileChecksum: SSDEEP: 48:GayWHQR4ebjIfQ/2SFFw97d0ZeZUytgWMilYBy+DeT+DeR:hQR4enz/xM9ZweZUnW9jR
 FileSize: 2 Kb (2603 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -932,6 +962,7 @@ FileChecksum: SHA256: a5aa230ab58331153a5a4664b13601671e1af95e8ec31e517a976cbdb4
 FileChecksum: MD5: af619b2b9def517eb159b4616037ead9
 FileChecksum: SSDEEP: 48:GayWHQRtedVph44/RzkOq9OS0ZQNGgWufxLGDKiQn9+wRB9+wRj:hQRtedF7/x89BwMFWerRVRj
 FileSize: 2 Kb (2902 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -1064,6 +1095,7 @@ FileChecksum: SHA256: 28ce4833b244bc4ce45cb481a09a7d599bc38d6db16fca3a4a118965d2
 FileChecksum: MD5: cad9466b6182a7ff3286433a8b0cf4a9
 FileChecksum: SSDEEP: 192:xwCgkD9irKwgf1tBSZDTqoyafLyfkru5pyyvtAZxf6Gi6/sA0bmykn0LaRkTbQUE:xwCgoAyB8LykKzyytY9hRsYzOWpRZdB
 FileSize: 13 Kb (13385 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -1163,6 +1195,7 @@ FileChecksum: SHA256: 28ce4833b244bc4ce45cb481a09a7d599bc38d6db16fca3a4a118965d2
 FileChecksum: MD5: cad9466b6182a7ff3286433a8b0cf4a9
 FileChecksum: SSDEEP: 192:xwCgkD9irKwgf1tBSZDTqoyafLyfkru5pyyvtAZxf6Gi6/sA0bmykn0LaRkTbQUE:xwCgoAyB8LykKzyytY9hRsYzOWpRZdB
 FileSize: 13 Kb (13385 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -1460,6 +1493,7 @@ FileChecksum: SHA256: bc47a69a4ff2adad1ae8a4145a0fb0fdc8b6b1d613d1b4627af3ff5f49
 FileChecksum: MD5: 7aad86e94df5b41334a202be756d3290
 FileChecksum: SSDEEP: 48:sYyxH2QFlKgjUH6mD8QXcGhPGhPDYu8ta/GlAGwR4v:EH5gai86bcJ+ta+lAGk4v
 FileSize: 1 Kb (1990 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -1471,6 +1505,7 @@ FileChecksum: SHA256: 8dfcee1ccf63fac7bb6b3a6ecc8748c6552bb03148bd953ec0519af43c
 FileChecksum: MD5: dc03ef126310f4d41a981f83270ac662
 FileChecksum: SSDEEP: 192:ECs2jwkM/kbB3oJV8CbEqETSpOxWxBvAW7NB:E6wZ/Xr8CbER+bL
 FileSize: 6 Kb (6163 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -1482,6 +1517,7 @@ FileChecksum: SHA256: 7cd859b687692c584d8c96ffe3e94ab94615d0daa4e540246750bdf33a
 FileChecksum: MD5: 07789f551fd4343409e0819bb0794628
 FileChecksum: SSDEEP: 96:Ekebq/+qf9iFjZqMr65E79QtF5MYybFwFvZMxAsUKq+TKFbFoGhE:EoXf49ZTr65E79Qt7yyBZGAsdTKFbFoJ
 FileSize: 5 Kb (5411 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -1493,6 +1529,7 @@ FileChecksum: SHA256: aa9f3b101a05eae44c8b6855d79b063431cb4759e996251fcedf69b3de
 FileChecksum: MD5: c7ca39f0fdf60717c1a8af825fd0581b
 FileChecksum: SSDEEP: 48:sYyxH2DMBt0HISr2MsAJABnIAq/HrRI2sK6Aym+SLaI:E4ozSr2MTJABIRVI2NjF/
 FileSize: 3 Kb (3550 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -1504,6 +1541,7 @@ FileChecksum: SHA256: bc47a69a4ff2adad1ae8a4145a0fb0fdc8b6b1d613d1b4627af3ff5f49
 FileChecksum: MD5: 7aad86e94df5b41334a202be756d3290
 FileChecksum: SSDEEP: 48:sYyxH2QFlKgjUH6mD8QXcGhPGhPDYu8ta/GlAGwR4v:EH5gai86bcJ+ta+lAGk4v
 FileSize: 1 Kb (1990 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -1515,6 +1553,7 @@ FileChecksum: SHA256: 8dfcee1ccf63fac7bb6b3a6ecc8748c6552bb03148bd953ec0519af43c
 FileChecksum: MD5: dc03ef126310f4d41a981f83270ac662
 FileChecksum: SSDEEP: 192:ECs2jwkM/kbB3oJV8CbEqETSpOxWxBvAW7NB:E6wZ/Xr8CbER+bL
 FileSize: 6 Kb (6163 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -1526,6 +1565,7 @@ FileChecksum: SHA256: 7cd859b687692c584d8c96ffe3e94ab94615d0daa4e540246750bdf33a
 FileChecksum: MD5: 07789f551fd4343409e0819bb0794628
 FileChecksum: SSDEEP: 96:Ekebq/+qf9iFjZqMr65E79QtF5MYybFwFvZMxAsUKq+TKFbFoGhE:EoXf49ZTr65E79Qt7yyBZGAsdTKFbFoJ
 FileSize: 5 Kb (5411 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -1537,6 +1577,7 @@ FileChecksum: SHA256: aa9f3b101a05eae44c8b6855d79b063431cb4759e996251fcedf69b3de
 FileChecksum: MD5: c7ca39f0fdf60717c1a8af825fd0581b
 FileChecksum: SSDEEP: 48:sYyxH2DMBt0HISr2MsAJABnIAq/HrRI2sK6Aym+SLaI:E4ozSr2MTJABIRVI2NjF/
 FileSize: 3 Kb (3550 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -1548,6 +1589,7 @@ FileChecksum: SHA256: cbd946052fd68c70e3b5333240186be6d03f174a8ebc0a7d9b2c1275b3
 FileChecksum: MD5: 972ce1049115dab09b6e34e715ebe33f
 FileChecksum: SSDEEP: 192:dWKg7trNurfi0SfqyYi3qd+RSyaA6V4fewsCQUhrrZyd6aZcin/L0g3lL:dWKcZqAHeLdyrrZi3
 FileSize: 8 Kb (8999 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -1571,6 +1613,7 @@ FileChecksum: SHA256: dff7a2d03884e989417301177832fb659b357ebacc35e8257d86a22bcf
 FileChecksum: MD5: 554d95d22f9f6c07703c00e7562d9ab1
 FileChecksum: SSDEEP: 48:sYyxH2S0F/TXkmG54hoF1uGNlEZCf+2ReLt7I:ER0F/TOVFIGNlEZCIp8
 FileSize: 2 Kb (2514 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -1654,6 +1697,7 @@ FileChecksum: SHA256: b77472ef76413ee4e8f9bd496f54d31677a152b5205e22c2db0797c9c3
 FileChecksum: MD5: c02fea5c31a09a5058d02ac8c01a8d4b
 FileChecksum: SSDEEP: 12:UxSFVMQ477X0kkp4McGTyOUhOkHmlfwTbVZ7d8w6xNDhGhKHwK7xu3OSp+/XFhir:IsMn70XyXOkHm2TbVoR719HD7x0OjX+
 FileSize: 1 Kb (1049 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -1731,6 +1775,7 @@ FileChecksum: SHA256: a2ab7802a13849fa2aa576757e2f194ef599c029ad01988af412eb3d61
 FileChecksum: MD5: 7e14688f6f5980c0d10dc00810718742
 FileChecksum: SSDEEP: 24:IMYOn70XyXOkHm2TbVoRG8S1QGNldnr0ZTBz+X4Y5nPYFIAvRTiHS1tjCS1jQL:gkYyxH2qdNeTBM4jOAvReyd6
 FileSize: 2 Kb (2473 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -1753,6 +1798,7 @@ FileChecksum: SHA256: a2ab7802a13849fa2aa576757e2f194ef599c029ad01988af412eb3d61
 FileChecksum: MD5: 7e14688f6f5980c0d10dc00810718742
 FileChecksum: SSDEEP: 24:IMYOn70XyXOkHm2TbVoRG8S1QGNldnr0ZTBz+X4Y5nPYFIAvRTiHS1tjCS1jQL:gkYyxH2qdNeTBM4jOAvReyd6
 FileSize: 2 Kb (2473 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -1786,6 +1832,7 @@ FileChecksum: SHA256: 76d2b339531e29fc209fbaea7632cc5c57ae7de83b66752875d7d91a94
 FileChecksum: MD5: 51e9f60699b8b22efef253b1f4409d68
 FileChecksum: SSDEEP: 192:gce9A0uF0tUZLaikHmeijpeypMd2e8lt35HotfKIrHY+KySWUwui0pdDfrQE65gi:gcLJNi2ktfj5v0Aeh8
 FileSize: 12 Kb (12881 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -1797,6 +1844,7 @@ FileChecksum: SHA256: 7da31b59da865688712cddc9f8305412df42f9badf6f2e21edc2a3c8f8
 FileChecksum: MD5: 53643e00379edff146cae71fc876c97a
 FileChecksum: SSDEEP: 96:CZhymMiMHMHM5WWdxOC16A6JTzrIvTWe5ISMNriE:CPsKmuSuv
 FileSize: 5 Kb (5395 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -1808,6 +1856,7 @@ FileChecksum: SHA256: 10f18e011443593f0f69efd7e40fc8405e403dd3139feb1d37f893e948
 FileChecksum: MD5: 2d5ad98ab2edb279a8223174b8620f54
 FileChecksum: SSDEEP: 24:5c0B12VyWOkHLCTbVuStFYeaqX7L+OI1gFkvMpjysXqioqorayNJd8fqcVkXqio1:7BGyGHZDM60ppoLra4JmRVkoLraIL
 FileSize: 1 Kb (1877 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -1819,6 +1868,7 @@ FileChecksum: SHA256: 151d3e3e0ba611302cddf6352e81b5bead60b3a9ab16a00dd5a3242d3f
 FileChecksum: MD5: cca745da483a320f39390fc7d63f92b8
 FileChecksum: SSDEEP: 192:gc2snNbnaMX5SzZg0auZ8aDoaZxlrLXPYEvF6Cyz92bKwwyanKJerdjzFEpioDC:gc2ObnjX5S3Z8Dalnfzze9zqk
 FileSize: 10 Kb (11036 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -1830,6 +1880,7 @@ FileChecksum: SHA256: 7e41ff3370ab801117eacc2db1575a2cec15dc3e187c1816299cddbc22
 FileChecksum: MD5: 989ae201be629e2a32d5bb36b5b69062
 FileChecksum: SSDEEP: 192:gcFWYDTEVcAOQN1W3u69PEPML1t/iVa9wfvqwRHuZU1/6T3doj3Qb8WvyaTK6Q:gcFWNBS9sPML1KfpQUVQb6
 FileSize: 16 Kb (17153 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -1841,6 +1892,7 @@ FileChecksum: SHA256: ca3545f867c5ef4aa174ecd1eb7441372168d5cfa623f50d5d0400de20
 FileChecksum: MD5: bb4147ce2e3a695686b9fbdc5be48473
 FileChecksum: SSDEEP: 384:gc72LCz42SH+M4A/7TP/6lsH7FjCzMS+BDMHzTFxL:gc72LjZTalSFjFL5MTDL
 FileSize: 22 Kb (23384 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -1852,6 +1904,7 @@ FileChecksum: SHA256: e82d0f9b68b574b2db261ca860d19a926f94bde6a51d0c67779f18d78d
 FileChecksum: MD5: e4cc82962ac884ff68a1c2a656711b5a
 FileChecksum: SSDEEP: 96:gcFjCtpfBzcP+VDanNWgzPVpwCQXgpJanZgeTHB:gcF2zpzcKan1P3wCQw3anZgeHB
 FileSize: 5 Kb (5803 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -1863,6 +1916,7 @@ FileChecksum: SHA256: 58bb5d1d404d15faf9bf0a2cd1f4f734fa825696878f6745c56fc36243
 FileChecksum: MD5: 722c104d07b917d474a466e835bb276a
 FileChecksum: SSDEEP: 384:gcFsJfY5PChZR+VG0GZckQcJ721kHiB9Km4zjdlqbTKKm3:gcuJfY5PChZR+PGZckbJ7xiB9Km4zjdx
 FileSize: 18 Kb (18454 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -1874,6 +1928,7 @@ FileChecksum: SHA256: 3be390d9f8c72e7a320919a6e185781b02c2ca9b3c9d825165b95a3bac
 FileChecksum: MD5: 664688263c22df19380105c2273738f7
 FileChecksum: SSDEEP: 192:gc1TT7r0jnRm7EgBV36HY8aXDpxrF7TRQuGQIomy9rz6oStuqGu/J7RRZJBbo0+L:gc1TT7rWR5g17SzbIL
 FileSize: 10 Kb (10338 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -1885,6 +1940,7 @@ FileChecksum: SHA256: 91df8534231c98ecc306afb30e216c002befc44616efd9ed1b300f0ad0
 FileChecksum: MD5: 4769a62165cfd3d699fcfcb614181903
 FileChecksum: SSDEEP: 192:gc/FRBMWVz437VzQYCx6J23Ys/22Y663gCzg3fmPnhkQbPkE1Mrz:gc/jBMWVz437VzcU2rI9TMv
 FileSize: 6 Kb (6391 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -1896,6 +1952,7 @@ FileChecksum: SHA256: e1d6878065e4077aca84280c1a6591fa43faff4ba698c1fda5445c98e5
 FileChecksum: MD5: 3fcefb4ffb7897766ba619cf6c49362a
 FileChecksum: SSDEEP: 192:C0zrWgS1HXgIZd38NNCxNOWqlp+2WuLe7g3UmJSNEWqKfGbKIQuqPFPeU:C0zVC3gIZlxACuL2rmEC4GbGPFGU
 FileSize: 24 Kb (24983 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -1907,6 +1964,7 @@ FileChecksum: SHA256: e06f3d31e3bc2c3ff7b35660bd22b8de2196577fe4df9501fce9a3bdc7
 FileChecksum: MD5: d4ef6d0e7dd9d17d39a8c5c0a49df815
 FileChecksum: SSDEEP: 48:+BGyGHZal3iJW4yPhrVAmvbGk5JmnJ9Xg3ZGkMvFa00I:1ZlypBRDGmJmJxg3ZpI
 FileSize: 5 Kb (5596 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -1918,6 +1976,7 @@ FileChecksum: SHA256: dcc34da66bb5cef328524b6a4457c96f65f08cdcde736c957c0256a90f
 FileChecksum: MD5: d0fef2f8b95dafc38c6788c614236f83
 FileChecksum: SSDEEP: 192:gc194f3YPNq27AaYaifFGRVy5b2U6N8Hzwqo8NSChW1sgtNL37:gc1mvYPI27AagQRVy5b25NSz/o8NbcsA
 FileSize: 7 Kb (7565 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -1929,6 +1988,7 @@ FileChecksum: SHA256: 47f901851d6b88f7e00d764ec1d01329162fa59a3aea3fb2596f0f7af0
 FileChecksum: MD5: 8398a48f644e702f9a34647f79e9d56c
 FileChecksum: SSDEEP: 48:gkYyxH236CHPB2YSGuruaG/HVpXsX+X+:gc5UcLrxGvzs9
 FileSize: 2 Kb (2474 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -1940,6 +2000,7 @@ FileChecksum: SHA256: db97b4ff7f4b6306ce05e3fd2b43ccbd48a9b13c2766c1c47bf19d7ccd
 FileChecksum: MD5: 0780c526acef41a80b583a83886579b2
 FileChecksum: SSDEEP: 96:gc4lylxDwlT71+ydpLBaQzpgnPzaaJS/jDWHU30gv:gcmQVwlIydpLBaQ6aaIjDWH20gv
 FileSize: 4 Kb (4169 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -1951,6 +2012,7 @@ FileChecksum: SHA256: 0e2044d18455f29ce2ba61a2dec0e11d5c1bfe71aaf5f46b183adf2935
 FileChecksum: MD5: 3191a70ccaf60f7e56a749f9a599f640
 FileChecksum: SSDEEP: 96:CZ+cuAp5scB6nOXCHYMhbmQUeRzx32x8RTL:C/uAp57Qs2
 FileSize: 7 Kb (7285 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -1962,6 +2024,7 @@ FileChecksum: SHA256: 8b3836da4ece11b239ead63783db31f600b36264a63f633cf758950c06
 FileChecksum: MD5: 5e8cdd3fce7efa836de40c3a0afa17de
 FileChecksum: SSDEEP: 96:gc/H0w3+qUh1LhjcECYInfeUweQHdTyptIP3++8/:gc/UJDh1LhjcECYuQByfIPY/
 FileSize: 4 Kb (4758 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -1973,6 +2036,7 @@ FileChecksum: SHA256: 72e661f341baedfe2572eb0c189a06ad51c580865881bd1046ab5467db
 FileChecksum: MD5: 8d4607bbeac8c297d730cd9a4830e4a9
 FileChecksum: SSDEEP: 24:5c0B12VyWOkHLCTbVuStavr2X7LlMzosf5hHD03c:7BGyGHZJvrkMzoshhj0s
 FileSize: 1 Kb (1112 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -1984,6 +2048,7 @@ FileChecksum: SHA256: 94546703a1240ccb5ee8d6e5f115fff9714594c277d4e62d6e4cc118bd
 FileChecksum: MD5: 96f440695ef70d428633875d6b06c0ab
 FileChecksum: SSDEEP: 768:gccN5wMf0+4Jyc/oNmpyYxIz1clA0wjWZxo8zzqBV9bybpsaS:gV+ANyucrwyZUEbuaS
 FileSize: 48 Kb (49376 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -1995,6 +2060,7 @@ FileChecksum: SHA256: c6601fe0332655422dc01668ed9ef6f0e87aac27c987c8e0e021fd7a53
 FileChecksum: MD5: 66fb6f3137f4aa348a3b83f228c4abc8
 FileChecksum: SSDEEP: 96:CZR+0eKybf4Tp8Ysd0r+G0eqdPVBrDRrHlw0XgGNRAr9kBfQlvbIxgxKJlhorPp4:CAY+NxHSGNCkCsDWQM1IaLnHDpY
 FileSize: 12 Kb (12463 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -2006,6 +2072,7 @@ FileChecksum: SHA256: 35bf6fd17b3d85ad87539812594b380089637058d9ca74319e1d336a66
 FileChecksum: MD5: 7b809435c3b41a3cdc4df2643259e851
 FileChecksum: SSDEEP: 24:5c0B12VyWOkHLCTbVuStJQX7Lim5Rk0RkOI1gFNxNFNJd12zFnbFqcVyFQLy0/FQ:7BGyGHZl5O0qMjHjJ6zdzVyC7hU
 FileSize: 1 Kb (1807 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -2017,6 +2084,7 @@ FileChecksum: SHA256: ce5e445a2af2988e63284082d876472e2349bc8654fb0dc02fbed6db34
 FileChecksum: MD5: 354df6121d97168b5aafc2f76f67954a
 FileChecksum: SSDEEP: 768:gcKJyXpXN66mLqSycpjTi3oz4tUDr9TGoeRXx8z28FOEX0oZYhEm3nI:g5p/WtUDr9TGfo+nI
 FileSize: 35 Kb (36774 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -2028,6 +2096,7 @@ FileChecksum: SHA256: e77212fb70362a9c6f2069ea1a2457239d2c869440f825b38598235469
 FileChecksum: MD5: 7f33f722565b0ce56c5d0a9f646ad937
 FileChecksum: SSDEEP: 96:CZ9eAs8WvMEE/uJjxUnWhq/4yC4YdQ5zXjDXTsP7P74c+b:CiAXPnWhXo/D64co
 FileSize: 6 Kb (6910 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -2039,6 +2108,7 @@ FileChecksum: SHA256: 18ea95e910ff369f547aeee69d14e074e49139dd0cad5df2a0662d5737
 FileChecksum: MD5: f426ac7115597fcc0a0e4b1382ac4c50
 FileChecksum: SSDEEP: 24:5c0B12VyWOkHLCTbVuStYXi94X7LW6svIVwWRRVM51mH8k/3kok4RIB+zrMT2pRd:7BGyGHZ3WwVwW5fGmKpa
 FileSize: 1 Kb (1886 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -2050,6 +2120,7 @@ FileChecksum: SHA256: 7d77da0d4a9df8c10668dfd0db71ea8e62e66e19c74a5202189dd68bec
 FileChecksum: MD5: b537d7f33874f6e22a2c819dd5f4ddfb
 FileChecksum: SSDEEP: 48:jBGyGHZNkM7XkHkZkdB2hkKGRSkMbWfkhnq7kKPE1mkPtXkuskqiik8R3+5kcYon:qZ/M8WeqogQI/C
 FileSize: 5 Kb (5420 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -2061,6 +2132,7 @@ FileChecksum: SHA256: 630a09f5d0074bbb0d39f889fad6fb414003b4d0724e3347fa30c3691f
 FileChecksum: MD5: 2575eb8ecfbb0092fcab0e8a0399cb86
 FileChecksum: SSDEEP: 192:gc7LxaPGBHFuIa86Gq15MQQVlE5J4OCX5KTJxvkvPH1NOMORBghXYp0cYUNsW:gcPxaPGdFt6cQQVh7X5KTDvEH14a6N3
 FileSize: 9 Kb (9577 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -2072,6 +2144,7 @@ FileChecksum: SHA256: a8bcba4afe81e44854e4cd9c0bc1270ced1cb95aac44b51aa35a4d25ff
 FileChecksum: MD5: 6e445e22298d6ef877432a90799fe79f
 FileChecksum: SSDEEP: 48:7BGyGHZ3zFfMZMjER3KUe1wHnMrWDWaDVd1+KIY:CZjFfW5hxe1wHnMAthd1ZZ
 FileSize: 3 Kb (3103 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -2083,6 +2156,7 @@ FileChecksum: SHA256: 13073feaa56712ceef23807018e3abb4ca931b1a9e86b7b1ea760fd56f
 FileChecksum: MD5: b7d89f2f3a46767e7a86265b4a3847bc
 FileChecksum: SSDEEP: 48:gkYyxH2fw0F5BMA1FQhDEdHOLzgKNao8HL980Ms9n:gcAF5BDn6/fPNaxKC
 FileSize: 2 Kb (2277 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -2094,6 +2168,7 @@ FileChecksum: SHA256: 76d2b339531e29fc209fbaea7632cc5c57ae7de83b66752875d7d91a94
 FileChecksum: MD5: 51e9f60699b8b22efef253b1f4409d68
 FileChecksum: SSDEEP: 192:gce9A0uF0tUZLaikHmeijpeypMd2e8lt35HotfKIrHY+KySWUwui0pdDfrQE65gi:gcLJNi2ktfj5v0Aeh8
 FileSize: 12 Kb (12881 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -2105,6 +2180,7 @@ FileChecksum: SHA256: 7da31b59da865688712cddc9f8305412df42f9badf6f2e21edc2a3c8f8
 FileChecksum: MD5: 53643e00379edff146cae71fc876c97a
 FileChecksum: SSDEEP: 96:CZhymMiMHMHM5WWdxOC16A6JTzrIvTWe5ISMNriE:CPsKmuSuv
 FileSize: 5 Kb (5395 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -2116,6 +2192,7 @@ FileChecksum: SHA256: 10f18e011443593f0f69efd7e40fc8405e403dd3139feb1d37f893e948
 FileChecksum: MD5: 2d5ad98ab2edb279a8223174b8620f54
 FileChecksum: SSDEEP: 24:5c0B12VyWOkHLCTbVuStFYeaqX7L+OI1gFkvMpjysXqioqorayNJd8fqcVkXqio1:7BGyGHZDM60ppoLra4JmRVkoLraIL
 FileSize: 1 Kb (1877 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -2127,6 +2204,7 @@ FileChecksum: SHA256: 151d3e3e0ba611302cddf6352e81b5bead60b3a9ab16a00dd5a3242d3f
 FileChecksum: MD5: cca745da483a320f39390fc7d63f92b8
 FileChecksum: SSDEEP: 192:gc2snNbnaMX5SzZg0auZ8aDoaZxlrLXPYEvF6Cyz92bKwwyanKJerdjzFEpioDC:gc2ObnjX5S3Z8Dalnfzze9zqk
 FileSize: 10 Kb (11036 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -2138,6 +2216,7 @@ FileChecksum: SHA256: 7e41ff3370ab801117eacc2db1575a2cec15dc3e187c1816299cddbc22
 FileChecksum: MD5: 989ae201be629e2a32d5bb36b5b69062
 FileChecksum: SSDEEP: 192:gcFWYDTEVcAOQN1W3u69PEPML1t/iVa9wfvqwRHuZU1/6T3doj3Qb8WvyaTK6Q:gcFWNBS9sPML1KfpQUVQb6
 FileSize: 16 Kb (17153 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -2149,6 +2228,7 @@ FileChecksum: SHA256: ca3545f867c5ef4aa174ecd1eb7441372168d5cfa623f50d5d0400de20
 FileChecksum: MD5: bb4147ce2e3a695686b9fbdc5be48473
 FileChecksum: SSDEEP: 384:gc72LCz42SH+M4A/7TP/6lsH7FjCzMS+BDMHzTFxL:gc72LjZTalSFjFL5MTDL
 FileSize: 22 Kb (23384 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -2160,6 +2240,7 @@ FileChecksum: SHA256: e82d0f9b68b574b2db261ca860d19a926f94bde6a51d0c67779f18d78d
 FileChecksum: MD5: e4cc82962ac884ff68a1c2a656711b5a
 FileChecksum: SSDEEP: 96:gcFjCtpfBzcP+VDanNWgzPVpwCQXgpJanZgeTHB:gcF2zpzcKan1P3wCQw3anZgeHB
 FileSize: 5 Kb (5803 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -2171,6 +2252,7 @@ FileChecksum: SHA256: 58bb5d1d404d15faf9bf0a2cd1f4f734fa825696878f6745c56fc36243
 FileChecksum: MD5: 722c104d07b917d474a466e835bb276a
 FileChecksum: SSDEEP: 384:gcFsJfY5PChZR+VG0GZckQcJ721kHiB9Km4zjdlqbTKKm3:gcuJfY5PChZR+PGZckbJ7xiB9Km4zjdx
 FileSize: 18 Kb (18454 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -2182,6 +2264,7 @@ FileChecksum: SHA256: 3be390d9f8c72e7a320919a6e185781b02c2ca9b3c9d825165b95a3bac
 FileChecksum: MD5: 664688263c22df19380105c2273738f7
 FileChecksum: SSDEEP: 192:gc1TT7r0jnRm7EgBV36HY8aXDpxrF7TRQuGQIomy9rz6oStuqGu/J7RRZJBbo0+L:gc1TT7rWR5g17SzbIL
 FileSize: 10 Kb (10338 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -2193,6 +2276,7 @@ FileChecksum: SHA256: 91df8534231c98ecc306afb30e216c002befc44616efd9ed1b300f0ad0
 FileChecksum: MD5: 4769a62165cfd3d699fcfcb614181903
 FileChecksum: SSDEEP: 192:gc/FRBMWVz437VzQYCx6J23Ys/22Y663gCzg3fmPnhkQbPkE1Mrz:gc/jBMWVz437VzcU2rI9TMv
 FileSize: 6 Kb (6391 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -2204,6 +2288,7 @@ FileChecksum: SHA256: e1d6878065e4077aca84280c1a6591fa43faff4ba698c1fda5445c98e5
 FileChecksum: MD5: 3fcefb4ffb7897766ba619cf6c49362a
 FileChecksum: SSDEEP: 192:C0zrWgS1HXgIZd38NNCxNOWqlp+2WuLe7g3UmJSNEWqKfGbKIQuqPFPeU:C0zVC3gIZlxACuL2rmEC4GbGPFGU
 FileSize: 24 Kb (24983 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -2227,6 +2312,7 @@ FileChecksum: SHA256: dcc34da66bb5cef328524b6a4457c96f65f08cdcde736c957c0256a90f
 FileChecksum: MD5: d0fef2f8b95dafc38c6788c614236f83
 FileChecksum: SSDEEP: 192:gc194f3YPNq27AaYaifFGRVy5b2U6N8Hzwqo8NSChW1sgtNL37:gc1mvYPI27AagQRVy5b25NSz/o8NbcsA
 FileSize: 7 Kb (7565 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -2238,6 +2324,7 @@ FileChecksum: SHA256: 47f901851d6b88f7e00d764ec1d01329162fa59a3aea3fb2596f0f7af0
 FileChecksum: MD5: 8398a48f644e702f9a34647f79e9d56c
 FileChecksum: SSDEEP: 48:gkYyxH236CHPB2YSGuruaG/HVpXsX+X+:gc5UcLrxGvzs9
 FileSize: 2 Kb (2474 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -2249,6 +2336,7 @@ FileChecksum: SHA256: db97b4ff7f4b6306ce05e3fd2b43ccbd48a9b13c2766c1c47bf19d7ccd
 FileChecksum: MD5: 0780c526acef41a80b583a83886579b2
 FileChecksum: SSDEEP: 96:gc4lylxDwlT71+ydpLBaQzpgnPzaaJS/jDWHU30gv:gcmQVwlIydpLBaQ6aaIjDWH20gv
 FileSize: 4 Kb (4169 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -2260,6 +2348,7 @@ FileChecksum: SHA256: 0e2044d18455f29ce2ba61a2dec0e11d5c1bfe71aaf5f46b183adf2935
 FileChecksum: MD5: 3191a70ccaf60f7e56a749f9a599f640
 FileChecksum: SSDEEP: 96:CZ+cuAp5scB6nOXCHYMhbmQUeRzx32x8RTL:C/uAp57Qs2
 FileSize: 7 Kb (7285 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -2271,6 +2360,7 @@ FileChecksum: SHA256: 8b3836da4ece11b239ead63783db31f600b36264a63f633cf758950c06
 FileChecksum: MD5: 5e8cdd3fce7efa836de40c3a0afa17de
 FileChecksum: SSDEEP: 96:gc/H0w3+qUh1LhjcECYInfeUweQHdTyptIP3++8/:gc/UJDh1LhjcECYuQByfIPY/
 FileSize: 4 Kb (4758 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -2282,6 +2372,7 @@ FileChecksum: SHA256: 72e661f341baedfe2572eb0c189a06ad51c580865881bd1046ab5467db
 FileChecksum: MD5: 8d4607bbeac8c297d730cd9a4830e4a9
 FileChecksum: SSDEEP: 24:5c0B12VyWOkHLCTbVuStavr2X7LlMzosf5hHD03c:7BGyGHZJvrkMzoshhj0s
 FileSize: 1 Kb (1112 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -2293,6 +2384,7 @@ FileChecksum: SHA256: 94546703a1240ccb5ee8d6e5f115fff9714594c277d4e62d6e4cc118bd
 FileChecksum: MD5: 96f440695ef70d428633875d6b06c0ab
 FileChecksum: SSDEEP: 768:gccN5wMf0+4Jyc/oNmpyYxIz1clA0wjWZxo8zzqBV9bybpsaS:gV+ANyucrwyZUEbuaS
 FileSize: 48 Kb (49376 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -2304,6 +2396,7 @@ FileChecksum: SHA256: c6601fe0332655422dc01668ed9ef6f0e87aac27c987c8e0e021fd7a53
 FileChecksum: MD5: 66fb6f3137f4aa348a3b83f228c4abc8
 FileChecksum: SSDEEP: 96:CZR+0eKybf4Tp8Ysd0r+G0eqdPVBrDRrHlw0XgGNRAr9kBfQlvbIxgxKJlhorPp4:CAY+NxHSGNCkCsDWQM1IaLnHDpY
 FileSize: 12 Kb (12463 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -2315,6 +2408,7 @@ FileChecksum: SHA256: 35bf6fd17b3d85ad87539812594b380089637058d9ca74319e1d336a66
 FileChecksum: MD5: 7b809435c3b41a3cdc4df2643259e851
 FileChecksum: SSDEEP: 24:5c0B12VyWOkHLCTbVuStJQX7Lim5Rk0RkOI1gFNxNFNJd12zFnbFqcVyFQLy0/FQ:7BGyGHZl5O0qMjHjJ6zdzVyC7hU
 FileSize: 1 Kb (1807 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -2326,6 +2420,7 @@ FileChecksum: SHA256: ce5e445a2af2988e63284082d876472e2349bc8654fb0dc02fbed6db34
 FileChecksum: MD5: 354df6121d97168b5aafc2f76f67954a
 FileChecksum: SSDEEP: 768:gcKJyXpXN66mLqSycpjTi3oz4tUDr9TGoeRXx8z28FOEX0oZYhEm3nI:g5p/WtUDr9TGfo+nI
 FileSize: 35 Kb (36774 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -2337,6 +2432,7 @@ FileChecksum: SHA256: e77212fb70362a9c6f2069ea1a2457239d2c869440f825b38598235469
 FileChecksum: MD5: 7f33f722565b0ce56c5d0a9f646ad937
 FileChecksum: SSDEEP: 96:CZ9eAs8WvMEE/uJjxUnWhq/4yC4YdQ5zXjDXTsP7P74c+b:CiAXPnWhXo/D64co
 FileSize: 6 Kb (6910 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -2348,6 +2444,7 @@ FileChecksum: SHA256: 18ea95e910ff369f547aeee69d14e074e49139dd0cad5df2a0662d5737
 FileChecksum: MD5: f426ac7115597fcc0a0e4b1382ac4c50
 FileChecksum: SSDEEP: 24:5c0B12VyWOkHLCTbVuStYXi94X7LW6svIVwWRRVM51mH8k/3kok4RIB+zrMT2pRd:7BGyGHZ3WwVwW5fGmKpa
 FileSize: 1 Kb (1886 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -2371,6 +2468,7 @@ FileChecksum: SHA256: 630a09f5d0074bbb0d39f889fad6fb414003b4d0724e3347fa30c3691f
 FileChecksum: MD5: 2575eb8ecfbb0092fcab0e8a0399cb86
 FileChecksum: SSDEEP: 192:gc7LxaPGBHFuIa86Gq15MQQVlE5J4OCX5KTJxvkvPH1NOMORBghXYp0cYUNsW:gcPxaPGdFt6cQQVh7X5KTDvEH14a6N3
 FileSize: 9 Kb (9577 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -2382,6 +2480,7 @@ FileChecksum: SHA256: a8bcba4afe81e44854e4cd9c0bc1270ced1cb95aac44b51aa35a4d25ff
 FileChecksum: MD5: 6e445e22298d6ef877432a90799fe79f
 FileChecksum: SSDEEP: 48:7BGyGHZ3zFfMZMjER3KUe1wHnMrWDWaDVd1+KIY:CZjFfW5hxe1wHnMAthd1ZZ
 FileSize: 3 Kb (3103 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -2393,6 +2492,7 @@ FileChecksum: SHA256: 13073feaa56712ceef23807018e3abb4ca931b1a9e86b7b1ea760fd56f
 FileChecksum: MD5: b7d89f2f3a46767e7a86265b4a3847bc
 FileChecksum: SSDEEP: 48:gkYyxH2fw0F5BMA1FQhDEdHOLzgKNao8HL980Ms9n:gcAF5BDn6/fPNaxKC
 FileSize: 2 Kb (2277 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -17309,6 +17409,7 @@ FileChecksum: SHA256: b74096252086a2a24c5e58032da422a166f48e721e79cfea72fff4b614
 FileChecksum: MD5: f20485bfbf494e6eb13494f17a978e5b
 FileChecksum: SSDEEP: 24:IMYOn70XyXOkHm2TbVoRG47LPgyMworHIPhxgsf+soPv4VDE/z1ML73dnsi0uK:gkYyxH20oIH4zmPv4m/zI73d7K
 FileSize: 1 Kb (1748 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -17331,6 +17432,7 @@ FileChecksum: SHA256: 780e3c013490b06b665857de4f7851c1e40486b4fff692d18e91955a93
 FileChecksum: MD5: 30ce530c21386cdd9d67269934590f57
 FileChecksum: SSDEEP: 96:gcEN9FtKN/BDxUu88Y++sVYIhS4l4AO4vO+W4g4jZA4:gcENjtY/NCu8ZsZX5
 FileSize: 3 Kb (3954 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -17342,6 +17444,7 @@ FileChecksum: SHA256: cab5c7f0966dfbbc26c221fa2d11ebdc4241e6b233acf36e054350687e
 FileChecksum: MD5: 0ab2fa5bed2df6e4b1cc27f5fbd201e2
 FileChecksum: SSDEEP: 192:gcB25/AUQbKpTNEInvdIJknnFTDsnbF1mO16/4:gcKG2XqcFTDsnbFMt/4
 FileSize: 9 Kb (9625 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -17364,6 +17467,7 @@ FileChecksum: SHA256: 046d5f8e3966ea18751ff3b4c54bf7a75cd66d590d00b2f3bb0cbbb1e7
 FileChecksum: MD5: c96f4974250596eecf6179e03da3a004
 FileChecksum: SSDEEP: 96:gc7OvsXsZs0swpsfszsAe2ILtHDSsZxx/FJgJhMxgRJ:gc7OUcy9wCEwAe7LcCxtGoxgj
 FileSize: 5 Kb (5564 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -17375,6 +17479,7 @@ FileChecksum: SHA256: 0c96c2bdb41dffd9dd292cd4f99436ee6a96ee6281f20da95e94960b57
 FileChecksum: MD5: 9665d5857027cead6968140c139b8bda
 FileChecksum: SSDEEP: 48:gkYyxH2TgbtFD4UYzTULz/uN8wbKDpLDzOFboegb5Rn:gc/lgTUvUDbKD1DzO2HtRn
 FileSize: 1 Kb (2022 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -17386,6 +17491,7 @@ FileChecksum: SHA256: 8a191c4d6179670b9287897af7b6f07bbf9439004320d971aae0dfdf07
 FileChecksum: MD5: 7fae248eda7a7a2da1c91a980b58b4f1
 FileChecksum: SSDEEP: 48:gkYyxH2ib5S3zqwNEfoxi+8SiLVhQwGsBQoQDnaAII:gc/9QOwuQx38Si5hQwGsBQ/DnaAII
 FileSize: 2 Kb (2865 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -17408,6 +17514,7 @@ FileChecksum: SHA256: 5d47884d5dee1ceb5060abeeff4f5685a823ca3309d6f331783195575f
 FileChecksum: MD5: 7704b435b00fe406a1f9384d0de46da4
 FileChecksum: SSDEEP: 24:IMYOn70XyXOkHm2TbVoRG47Lkx02ISZiT23sI/JhJLQqJLQ7m6sTMDt:gkYyxH2wx02IBT3tiDwB
 FileSize: 1 Kb (1437 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -17529,6 +17636,7 @@ FileChecksum: SHA256: b74096252086a2a24c5e58032da422a166f48e721e79cfea72fff4b614
 FileChecksum: MD5: f20485bfbf494e6eb13494f17a978e5b
 FileChecksum: SSDEEP: 24:IMYOn70XyXOkHm2TbVoRG47LPgyMworHIPhxgsf+soPv4VDE/z1ML73dnsi0uK:gkYyxH20oIH4zmPv4m/zI73d7K
 FileSize: 1 Kb (1748 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -17672,6 +17780,7 @@ FileChecksum: SHA256: 780e3c013490b06b665857de4f7851c1e40486b4fff692d18e91955a93
 FileChecksum: MD5: 30ce530c21386cdd9d67269934590f57
 FileChecksum: SSDEEP: 96:gcEN9FtKN/BDxUu88Y++sVYIhS4l4AO4vO+W4g4jZA4:gcENjtY/NCu8ZsZX5
 FileSize: 3 Kb (3954 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -17683,6 +17792,7 @@ FileChecksum: SHA256: cab5c7f0966dfbbc26c221fa2d11ebdc4241e6b233acf36e054350687e
 FileChecksum: MD5: 0ab2fa5bed2df6e4b1cc27f5fbd201e2
 FileChecksum: SSDEEP: 192:gcB25/AUQbKpTNEInvdIJknnFTDsnbF1mO16/4:gcKG2XqcFTDsnbFMt/4
 FileSize: 9 Kb (9625 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -17793,6 +17903,7 @@ FileChecksum: SHA256: 046d5f8e3966ea18751ff3b4c54bf7a75cd66d590d00b2f3bb0cbbb1e7
 FileChecksum: MD5: c96f4974250596eecf6179e03da3a004
 FileChecksum: SSDEEP: 96:gc7OvsXsZs0swpsfszsAe2ILtHDSsZxx/FJgJhMxgRJ:gc7OUcy9wCEwAe7LcCxtGoxgj
 FileSize: 5 Kb (5564 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -17804,6 +17915,7 @@ FileChecksum: SHA256: 0c96c2bdb41dffd9dd292cd4f99436ee6a96ee6281f20da95e94960b57
 FileChecksum: MD5: 9665d5857027cead6968140c139b8bda
 FileChecksum: SSDEEP: 48:gkYyxH2TgbtFD4UYzTULz/uN8wbKDpLDzOFboegb5Rn:gc/lgTUvUDbKD1DzO2HtRn
 FileSize: 1 Kb (2022 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -17815,6 +17927,7 @@ FileChecksum: SHA256: 8a191c4d6179670b9287897af7b6f07bbf9439004320d971aae0dfdf07
 FileChecksum: MD5: 7fae248eda7a7a2da1c91a980b58b4f1
 FileChecksum: SSDEEP: 48:gkYyxH2ib5S3zqwNEfoxi+8SiLVhQwGsBQoQDnaAII:gc/9QOwuQx38Si5hQwGsBQ/DnaAII
 FileSize: 2 Kb (2865 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -18024,6 +18137,7 @@ FileChecksum: SHA256: 5d47884d5dee1ceb5060abeeff4f5685a823ca3309d6f331783195575f
 FileChecksum: MD5: 7704b435b00fe406a1f9384d0de46da4
 FileChecksum: SSDEEP: 24:IMYOn70XyXOkHm2TbVoRG47Lkx02ISZiT23sI/JhJLQqJLQ7m6sTMDt:gkYyxH2wx02IBT3tiDwB
 FileSize: 1 Kb (1437 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -18156,6 +18270,7 @@ FileChecksum: SHA256: 7a550da12456d04409c11b1c2582b92d2eec8054f613a06b333b0063c0
 FileChecksum: MD5: aa8cdad38499f2f7cd97e3182c6333c2
 FileChecksum: SSDEEP: 384:gciK+T/FrxjueKRMi890bhxGr32R/yHw4lC33hUY84Di+Jr0HHLhTZ09DlCbcOEY:gciKG/FrxjueC89MoPO2Ea5fd
 FileSize: 26 Kb (27175 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -18167,6 +18282,7 @@ FileChecksum: SHA256: 1c836f3c6704255a127301d90350e23811a7937b5cb3414c104dab9bb1
 FileChecksum: MD5: d7b7fd7b4a21abc062ce7dd55273d806
 FileChecksum: SSDEEP: 384:gcmFMDVLQ285Hx+eJQ2MD1nTBJhzv9qj4Ovlm6Z53L0wwEUm8JYMW75K:gcm0Ly5R+eJQ2MD1djUj4Ovlb3Lxw5NT
 FileSize: 23 Kb (23930 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -18178,6 +18294,7 @@ FileChecksum: SHA256: df3b6d52ac0482afbb100349a0d1575e8b57fb383c9dd6417d57f5824b
 FileChecksum: MD5: add3702a0cea4d5cab001a197fb0086c
 FileChecksum: SSDEEP: 192:gczq/h9rl9sPgUJY5EK2HaikrPuHjPv5W/AgmdC6/3kyHVxCJhxj9r7Su/BV/0:gcsuKInoAgmjUYWf8
 FileSize: 8 Kb (8971 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -18189,6 +18306,7 @@ FileChecksum: SHA256: fba12223674aceb737137e41456f0f7f5124b5d4cb854c858bb7a8525b
 FileChecksum: MD5: 4da7090c56bcbb33ac3dbb1ce194854a
 FileChecksum: SSDEEP: 192:gcehVcOIHcY+LfJ0PUcofnDIgHa7sPggRSjD3Ppk/0TnzMt7:gcehVrdLx164PmOD7
 FileSize: 10 Kb (10947 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -18200,6 +18318,7 @@ FileChecksum: SHA256: f96b57ba8364fc79399818fd995af66fb542737f1ad0ec2b192078e3ca
 FileChecksum: MD5: 66c83abe38d5057eb67fc4cf7a5fcb04
 FileChecksum: SSDEEP: 192:gcznMMYr46BgupavaBaLmM/DLVBtTw/NKtzBrDJBJV0yPeVzlnNu9Q7:gc1Yr46BwabGDLV0YCNuq
 FileSize: 9 Kb (10046 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -18211,6 +18330,7 @@ FileChecksum: SHA256: 875323b334437c9a1dc9bda47e6975d68458478db8dd80d5b77c479f9d
 FileChecksum: MD5: 5ef52aa2d8f63effcc1b815d022557d7
 FileChecksum: SSDEEP: 96:gcqFmrrGQ0ekaeqwfLcNAezcYz/d/ACGae45FFsgV4z:gcLXGBeBeqOcNzck/d95TD4z
 FileSize: 3 Kb (4090 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -18222,6 +18342,7 @@ FileChecksum: SHA256: 3c60b8da487617cd020aba9ea4ed501c1124454bca8563079f6e9b52b4
 FileChecksum: MD5: 6c6d7a21f8d08691be80fb5ece9f70a5
 FileChecksum: SSDEEP: 384:gci2ou7sVZ5A1MRryA+eYwCLfTorkCXWlPtF2mCpR22jmSKqaSQkSmakVgaSKgya:gcis7sZ5A2ReA+eYwCL8rkgw2mA/CSKb
 FileSize: 23 Kb (24080 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -18233,6 +18354,7 @@ FileChecksum: SHA256: 95477644e833649a54c0576e9d3570e6ff369f11ae4f1727b097891e20
 FileChecksum: MD5: 04014a9dbbbe167637fa7806a72748ac
 FileChecksum: SSDEEP: 192:gcyYjh/hlMy/Q5rlQtkP//NcsLd24r36IDb/5/rhSfElfjgE/rz6/S:gcPZd/mD/NjbL/dR/rm/S
 FileSize: 7 Kb (7263 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -18244,6 +18366,7 @@ FileChecksum: SHA256: b56ea2b0074cdb0d96c5d053d6ec82d10017b06276a07ad416ad21c86a
 FileChecksum: MD5: e6a10d2762f161f2dc3b746ad99498f8
 FileChecksum: SSDEEP: 48:gkYyxH2QhnvFrAFIfCiZJ433Fdl98VzxoG:gcjhNAefLA3FWVz2G
 FileSize: 2 Kb (2367 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -18255,6 +18378,7 @@ FileChecksum: SHA256: c8e93d92f2c8a3dc9be325a74ceb907b3c393de81154cc7d4c8a9bd413
 FileChecksum: MD5: 77ea910df18054b6245bc277700a93ef
 FileChecksum: SSDEEP: 192:gchnQksZcQRiQwvJvHQBlogsMLv7op94K8l7yaKxT5ykRhXymwaLua0LLKaVabwq:gchBx/4T4SCFipqud5YkwyD5SiI
 FileSize: 26 Kb (26723 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -18266,6 +18390,7 @@ FileChecksum: SHA256: 70dfc761da16f94c422598cac5b321fb7d5e883c8dab96dba814463337
 FileChecksum: MD5: 33f301dfbc58cf5a2f9f6fe94d5a83fd
 FileChecksum: SSDEEP: 192:gcJf8HJ9hRARQhK4FRLng+rHI+FgYtYsI3uybwyuMuX6y6LqorrYsVr0gvWKTprC:gc98HJ9hCRyJn1HlDu3N1rYCvN9wpRgO
 FileSize: 9 Kb (9481 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -18277,6 +18402,7 @@ FileChecksum: SHA256: f01d3256c55e851e6e689c5ba5d3c90a1581a654ed31520c05a69eb82d
 FileChecksum: MD5: f00bacb7b740e2980a007b0a6ba7d253
 FileChecksum: SSDEEP: 48:gkYyxH23dqEIm35JjZt/UqTGbohkgdrL9paJXSDJJlA:gcDEIe5pZt/9pfLiVSDG
 FileSize: 2 Kb (2300 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -18288,6 +18414,7 @@ FileChecksum: SHA256: 165216e5f1a54fb45ebffb3f951398215be7c02656efdc1a6cfec80b64
 FileChecksum: MD5: 5571fe366b8e12fe2fd4f3db7efacfc4
 FileChecksum: SSDEEP: 192:gcrGxO13Juv1TgyniQZjrPKeQoScnobuOFCQaeICtaTY+DI9nBrnJX8jQHHxQY8A:gcrHZYxgyDzSp6ObaKBHxQFytfr
 FileSize: 10 Kb (11100 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -18299,6 +18426,7 @@ FileChecksum: SHA256: 6042098487de156f1299867aca79cdc3d4739e9516d9353af39053cb57
 FileChecksum: MD5: 5ed61720c375b52f0e298e069852b931
 FileChecksum: SSDEEP: 192:gcIcRnNC9NC/dn4qJaFRA3L+3NJtQ3KyM3yg7cwRIzvyiQJItIiGtTaxT:gctnKgC93FA3GtTaZ
 FileSize: 10 Kb (10520 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -18310,6 +18438,7 @@ FileChecksum: SHA256: f633c78357f71f1d935d87d67d1b99c1e7179dfb0e09e71e0f64aab172
 FileChecksum: MD5: 0f71efa4fe7594f835b217913ff7a813
 FileChecksum: SSDEEP: 192:gcI0a9SMK2hQ2qpOkuoWVtA8dg80PMmaXTOlZbAgI5fP8SUumVUsLTRSbdjnpulL:gcI9SMKalo0KAgIx7UumVUsLUbdKy4
 FileSize: 14 Kb (14683 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -18321,6 +18450,7 @@ FileChecksum: SHA256: 0545594b74d7159c26f3739b94026942580e51bdfb02b25323e5355a9c
 FileChecksum: MD5: 8dd334db8d2ab7896cc1c1e9c1b42ed3
 FileChecksum: SSDEEP: 96:gcBntD1aF9IL7uF1FGXx1KVFfnbYF8gXFXKVmKbFXKVpSFDqD9f+/dGZMku:gcBtpaYLyrgXxAns5XobHDqDJap
 FileSize: 5 Kb (5614 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -18332,6 +18462,7 @@ FileChecksum: SHA256: dd177ae97ea6a225db438d475ad64dc2c73ff7d2e0bc3df3f588ebf7b7
 FileChecksum: MD5: bca742b7496f18ecc1eabb752021b057
 FileChecksum: SSDEEP: 192:gcxOCnPvqGIezIt+oAaUPsSx0GxIaQ44wagEeoDLettagZDkx6raKEkagvp77IwB:gcDy0+L4NoDLmDcavtkLA
 FileSize: 10 Kb (10969 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -18343,6 +18474,7 @@ FileChecksum: SHA256: bc56101e44b7e33208de30ddd35fec7cb2fd8d3eddf724526d0c08725c
 FileChecksum: MD5: 31261e0e5a7cb28ef4592a3c2c1f0fe9
 FileChecksum: SSDEEP: 192:gc2mDUX2Q+3MQ8z8QMEJsQ93EscORqTCDViQ6ngsnF1DeS22LwQLHgQGrMpboQwc:gcfUIsgxP1y/G5eS22jqUj/z
 FileSize: 14 Kb (14983 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -18354,6 +18486,7 @@ FileChecksum: SHA256: 7388f8f269ca1c6779e42b689bc13891d701cd0bbe411aaa750f4f3e64
 FileChecksum: MD5: e65ef39c7a081e9723cec9828527faed
 FileChecksum: SSDEEP: 384:gcnOI3IK241PZW2UgcLv02eBpSofdBtq:gcZIP41PZW2UgcLv02eBpSofdBtq
 FileSize: 12 Kb (12532 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -18365,6 +18498,7 @@ FileChecksum: SHA256: 4c777f5cd8d81d252b236642db8fd0e9588694943bcff58b5f91249cbd
 FileChecksum: MD5: 0a90c9f6978e7ca2aeb2819656b03e96
 FileChecksum: SSDEEP: 192:gcfkZ79Y9W3QWm9qoqpaU72ybmaGqLi9Yab+TW8k0T5zYJCegS:gcUwW3QMF7S4i96lzY9
 FileSize: 10 Kb (11138 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -18376,6 +18510,7 @@ FileChecksum: SHA256: 529f30bca3be38616b3774a1cbcdc6b32fa52fe7669e176aa4da722863
 FileChecksum: MD5: 4ea25587be26f5421d4e6754f341aeb8
 FileChecksum: SSDEEP: 96:gc9NnByF3I53EMw2FWHDr+z2UwEFihMaHt5ENFi4S8Cvx0aHt5SFi49j1EMbaHt+:gc9NnByOhbCDr+z2jEuMaHMNnCvKaHq3
 FileSize: 4 Kb (4864 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -18387,6 +18522,7 @@ FileChecksum: SHA256: 404bf02b50820d24663780be91240d0305972595b826c807bbae54ab8b
 FileChecksum: MD5: 7ed5a36b955ba8e230b5a8618f163942
 FileChecksum: SSDEEP: 1536:gr6XwNRjHYf5eHNjX8ZdMFy5iUmQXzBC1:+FYhemoA5iUmQXNC1
 FileSize: 63 Kb (64716 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -18398,6 +18534,7 @@ FileChecksum: SHA256: 8a7f8292e8b4342aee10b76366af30db31dc701fbf97a709fe56829aa7
 FileChecksum: MD5: 3c7c07a3213a1ed8d94d5a1a60e7ff9a
 FileChecksum: SSDEEP: 384:gcgryRUWpqqFBp6Re/RfCx/vW9cxqQP+VsKCGeiozZG4uTVSRheyeEED:gceyRUWpqK8mk+OKA9G4uTVSRheyeEED
 FileSize: 22 Kb (23157 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -18409,6 +18546,7 @@ FileChecksum: SHA256: 7a550da12456d04409c11b1c2582b92d2eec8054f613a06b333b0063c0
 FileChecksum: MD5: aa8cdad38499f2f7cd97e3182c6333c2
 FileChecksum: SSDEEP: 384:gciK+T/FrxjueKRMi890bhxGr32R/yHw4lC33hUY84Di+Jr0HHLhTZ09DlCbcOEY:gciKG/FrxjueC89MoPO2Ea5fd
 FileSize: 26 Kb (27175 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -18420,6 +18558,7 @@ FileChecksum: SHA256: 1c836f3c6704255a127301d90350e23811a7937b5cb3414c104dab9bb1
 FileChecksum: MD5: d7b7fd7b4a21abc062ce7dd55273d806
 FileChecksum: SSDEEP: 384:gcmFMDVLQ285Hx+eJQ2MD1nTBJhzv9qj4Ovlm6Z53L0wwEUm8JYMW75K:gcm0Ly5R+eJQ2MD1djUj4Ovlb3Lxw5NT
 FileSize: 23 Kb (23930 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -18431,6 +18570,7 @@ FileChecksum: SHA256: df3b6d52ac0482afbb100349a0d1575e8b57fb383c9dd6417d57f5824b
 FileChecksum: MD5: add3702a0cea4d5cab001a197fb0086c
 FileChecksum: SSDEEP: 192:gczq/h9rl9sPgUJY5EK2HaikrPuHjPv5W/AgmdC6/3kyHVxCJhxj9r7Su/BV/0:gcsuKInoAgmjUYWf8
 FileSize: 8 Kb (8971 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -18442,6 +18582,7 @@ FileChecksum: SHA256: fba12223674aceb737137e41456f0f7f5124b5d4cb854c858bb7a8525b
 FileChecksum: MD5: 4da7090c56bcbb33ac3dbb1ce194854a
 FileChecksum: SSDEEP: 192:gcehVcOIHcY+LfJ0PUcofnDIgHa7sPggRSjD3Ppk/0TnzMt7:gcehVrdLx164PmOD7
 FileSize: 10 Kb (10947 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -18453,6 +18594,7 @@ FileChecksum: SHA256: f96b57ba8364fc79399818fd995af66fb542737f1ad0ec2b192078e3ca
 FileChecksum: MD5: 66c83abe38d5057eb67fc4cf7a5fcb04
 FileChecksum: SSDEEP: 192:gcznMMYr46BgupavaBaLmM/DLVBtTw/NKtzBrDJBJV0yPeVzlnNu9Q7:gc1Yr46BwabGDLV0YCNuq
 FileSize: 9 Kb (10046 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -18464,6 +18606,7 @@ FileChecksum: SHA256: 875323b334437c9a1dc9bda47e6975d68458478db8dd80d5b77c479f9d
 FileChecksum: MD5: 5ef52aa2d8f63effcc1b815d022557d7
 FileChecksum: SSDEEP: 96:gcqFmrrGQ0ekaeqwfLcNAezcYz/d/ACGae45FFsgV4z:gcLXGBeBeqOcNzck/d95TD4z
 FileSize: 3 Kb (4090 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -18475,6 +18618,7 @@ FileChecksum: SHA256: 3c60b8da487617cd020aba9ea4ed501c1124454bca8563079f6e9b52b4
 FileChecksum: MD5: 6c6d7a21f8d08691be80fb5ece9f70a5
 FileChecksum: SSDEEP: 384:gci2ou7sVZ5A1MRryA+eYwCLfTorkCXWlPtF2mCpR22jmSKqaSQkSmakVgaSKgya:gcis7sZ5A2ReA+eYwCL8rkgw2mA/CSKb
 FileSize: 23 Kb (24080 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -18486,6 +18630,7 @@ FileChecksum: SHA256: 95477644e833649a54c0576e9d3570e6ff369f11ae4f1727b097891e20
 FileChecksum: MD5: 04014a9dbbbe167637fa7806a72748ac
 FileChecksum: SSDEEP: 192:gcyYjh/hlMy/Q5rlQtkP//NcsLd24r36IDb/5/rhSfElfjgE/rz6/S:gcPZd/mD/NjbL/dR/rm/S
 FileSize: 7 Kb (7263 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -18497,6 +18642,7 @@ FileChecksum: SHA256: b56ea2b0074cdb0d96c5d053d6ec82d10017b06276a07ad416ad21c86a
 FileChecksum: MD5: e6a10d2762f161f2dc3b746ad99498f8
 FileChecksum: SSDEEP: 48:gkYyxH2QhnvFrAFIfCiZJ433Fdl98VzxoG:gcjhNAefLA3FWVz2G
 FileSize: 2 Kb (2367 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -18508,6 +18654,7 @@ FileChecksum: SHA256: c8e93d92f2c8a3dc9be325a74ceb907b3c393de81154cc7d4c8a9bd413
 FileChecksum: MD5: 77ea910df18054b6245bc277700a93ef
 FileChecksum: SSDEEP: 192:gchnQksZcQRiQwvJvHQBlogsMLv7op94K8l7yaKxT5ykRhXymwaLua0LLKaVabwq:gchBx/4T4SCFipqud5YkwyD5SiI
 FileSize: 26 Kb (26723 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -18519,6 +18666,7 @@ FileChecksum: SHA256: 70dfc761da16f94c422598cac5b321fb7d5e883c8dab96dba814463337
 FileChecksum: MD5: 33f301dfbc58cf5a2f9f6fe94d5a83fd
 FileChecksum: SSDEEP: 192:gcJf8HJ9hRARQhK4FRLng+rHI+FgYtYsI3uybwyuMuX6y6LqorrYsVr0gvWKTprC:gc98HJ9hCRyJn1HlDu3N1rYCvN9wpRgO
 FileSize: 9 Kb (9481 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -18530,6 +18678,7 @@ FileChecksum: SHA256: f01d3256c55e851e6e689c5ba5d3c90a1581a654ed31520c05a69eb82d
 FileChecksum: MD5: f00bacb7b740e2980a007b0a6ba7d253
 FileChecksum: SSDEEP: 48:gkYyxH23dqEIm35JjZt/UqTGbohkgdrL9paJXSDJJlA:gcDEIe5pZt/9pfLiVSDG
 FileSize: 2 Kb (2300 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -18541,6 +18690,7 @@ FileChecksum: SHA256: 165216e5f1a54fb45ebffb3f951398215be7c02656efdc1a6cfec80b64
 FileChecksum: MD5: 5571fe366b8e12fe2fd4f3db7efacfc4
 FileChecksum: SSDEEP: 192:gcrGxO13Juv1TgyniQZjrPKeQoScnobuOFCQaeICtaTY+DI9nBrnJX8jQHHxQY8A:gcrHZYxgyDzSp6ObaKBHxQFytfr
 FileSize: 10 Kb (11100 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -18552,6 +18702,7 @@ FileChecksum: SHA256: 6042098487de156f1299867aca79cdc3d4739e9516d9353af39053cb57
 FileChecksum: MD5: 5ed61720c375b52f0e298e069852b931
 FileChecksum: SSDEEP: 192:gcIcRnNC9NC/dn4qJaFRA3L+3NJtQ3KyM3yg7cwRIzvyiQJItIiGtTaxT:gctnKgC93FA3GtTaZ
 FileSize: 10 Kb (10520 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -18563,6 +18714,7 @@ FileChecksum: SHA256: f633c78357f71f1d935d87d67d1b99c1e7179dfb0e09e71e0f64aab172
 FileChecksum: MD5: 0f71efa4fe7594f835b217913ff7a813
 FileChecksum: SSDEEP: 192:gcI0a9SMK2hQ2qpOkuoWVtA8dg80PMmaXTOlZbAgI5fP8SUumVUsLTRSbdjnpulL:gcI9SMKalo0KAgIx7UumVUsLUbdKy4
 FileSize: 14 Kb (14683 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -18574,6 +18726,7 @@ FileChecksum: SHA256: 0545594b74d7159c26f3739b94026942580e51bdfb02b25323e5355a9c
 FileChecksum: MD5: 8dd334db8d2ab7896cc1c1e9c1b42ed3
 FileChecksum: SSDEEP: 96:gcBntD1aF9IL7uF1FGXx1KVFfnbYF8gXFXKVmKbFXKVpSFDqD9f+/dGZMku:gcBtpaYLyrgXxAns5XobHDqDJap
 FileSize: 5 Kb (5614 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -18585,6 +18738,7 @@ FileChecksum: SHA256: dd177ae97ea6a225db438d475ad64dc2c73ff7d2e0bc3df3f588ebf7b7
 FileChecksum: MD5: bca742b7496f18ecc1eabb752021b057
 FileChecksum: SSDEEP: 192:gcxOCnPvqGIezIt+oAaUPsSx0GxIaQ44wagEeoDLettagZDkx6raKEkagvp77IwB:gcDy0+L4NoDLmDcavtkLA
 FileSize: 10 Kb (10969 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -18596,6 +18750,7 @@ FileChecksum: SHA256: bc56101e44b7e33208de30ddd35fec7cb2fd8d3eddf724526d0c08725c
 FileChecksum: MD5: 31261e0e5a7cb28ef4592a3c2c1f0fe9
 FileChecksum: SSDEEP: 192:gc2mDUX2Q+3MQ8z8QMEJsQ93EscORqTCDViQ6ngsnF1DeS22LwQLHgQGrMpboQwc:gcfUIsgxP1y/G5eS22jqUj/z
 FileSize: 14 Kb (14983 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -18607,6 +18762,7 @@ FileChecksum: SHA256: 7388f8f269ca1c6779e42b689bc13891d701cd0bbe411aaa750f4f3e64
 FileChecksum: MD5: e65ef39c7a081e9723cec9828527faed
 FileChecksum: SSDEEP: 384:gcnOI3IK241PZW2UgcLv02eBpSofdBtq:gcZIP41PZW2UgcLv02eBpSofdBtq
 FileSize: 12 Kb (12532 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -18618,6 +18774,7 @@ FileChecksum: SHA256: 4c777f5cd8d81d252b236642db8fd0e9588694943bcff58b5f91249cbd
 FileChecksum: MD5: 0a90c9f6978e7ca2aeb2819656b03e96
 FileChecksum: SSDEEP: 192:gcfkZ79Y9W3QWm9qoqpaU72ybmaGqLi9Yab+TW8k0T5zYJCegS:gcUwW3QMF7S4i96lzY9
 FileSize: 10 Kb (11138 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -18629,6 +18786,7 @@ FileChecksum: SHA256: 529f30bca3be38616b3774a1cbcdc6b32fa52fe7669e176aa4da722863
 FileChecksum: MD5: 4ea25587be26f5421d4e6754f341aeb8
 FileChecksum: SSDEEP: 96:gc9NnByF3I53EMw2FWHDr+z2UwEFihMaHt5ENFi4S8Cvx0aHt5SFi49j1EMbaHt+:gc9NnByOhbCDr+z2jEuMaHMNnCvKaHq3
 FileSize: 4 Kb (4864 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -18640,6 +18798,7 @@ FileChecksum: SHA256: 404bf02b50820d24663780be91240d0305972595b826c807bbae54ab8b
 FileChecksum: MD5: 7ed5a36b955ba8e230b5a8618f163942
 FileChecksum: SSDEEP: 1536:gr6XwNRjHYf5eHNjX8ZdMFy5iUmQXzBC1:+FYhemoA5iUmQXNC1
 FileSize: 63 Kb (64716 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -18651,6 +18810,7 @@ FileChecksum: SHA256: 8a7f8292e8b4342aee10b76366af30db31dc701fbf97a709fe56829aa7
 FileChecksum: MD5: 3c7c07a3213a1ed8d94d5a1a60e7ff9a
 FileChecksum: SSDEEP: 384:gcgryRUWpqqFBp6Re/RfCx/vW9cxqQP+VsKCGeiozZG4uTVSRheyeEED:gceyRUWpqK8mk+OKA9G4uTVSRheyeEED
 FileSize: 22 Kb (23157 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -18673,6 +18833,7 @@ FileChecksum: SHA256: 6df937b1d8ceadc188ac6575cf8dce0e46c175af366765bac98f321248
 FileChecksum: MD5: d748f66547b46ff82f07a8a0a9cff12f
 FileChecksum: SSDEEP: 48:YDmyUjH1aTnhuyf8sIodXILJ4FMlFknTFZ9FREqE4FECFf8FTtFPlF8S9FREqaRG:QOMTnhuyf81W44FMlFkTFZH2D4FECFfu
 FileSize: 2 Kb (2468 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -18684,6 +18845,7 @@ FileChecksum: SHA256: fee5c73cd82006a9247b1929a14e4b9b1b17701669485ec86d4f8594d1
 FileChecksum: MD5: 9dc51c336eece6e5709f7bfd162c9a14
 FileChecksum: SSDEEP: 48:YDmyUjHhmExOGmzsIL13HuqXE+iL/Tsf0s:QOUExOPsIx3tUpLrsfv
 FileSize: 1 Kb (1695 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 
@@ -18695,6 +18857,7 @@ FileChecksum: SHA256: f8043bb0c3a1967dfc4099a05fa2904ed5a7a28b7eaf4e6652ce554a0c
 FileChecksum: MD5: 5ff2467b60fccb782c88120dbf3b6248
 FileChecksum: SSDEEP: 96:QO5DyfdrJUTOQ7P5i8ti0nto8qFQSQPpSdsC5NnyY:95DQp+OQ7LUoSt
 FileSize: 6 Kb (6242 bytes)
+LicenseInfoInFile: GPL-3.0
 
 ## File
 

@@ -38,7 +38,7 @@ public class py extends FileExtension{
      */
     @Override
     public Boolean isApplicable(File binaryFile) {
-        return true;
+        return false;
     }
   
     /**
@@ -61,7 +61,7 @@ public class py extends FileExtension{
      */
     @Override
     public String getDescription() {
-        return null; // file type description
+        return "Python scripts"; // file type description
     }
     
     /**
@@ -148,7 +148,7 @@ public class py extends FileExtension{
      */
     @Override
     public FileCategory getCategory() {
-        return FileCategory.UNKNOWN; // does it group under a category?
+        return FileCategory.SOURCE; // does it group under a category?
     }
 
     /**

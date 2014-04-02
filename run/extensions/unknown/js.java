@@ -138,7 +138,7 @@ public class js extends FileExtension{
      */
     @Override
     public ContentType getContentType() {
-        return ContentType.UNKNOWN; // is it a binary or text file?
+        return ContentType.TEXT; // is it a binary or text file?
     }
 
     /**
