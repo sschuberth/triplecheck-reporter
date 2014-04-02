@@ -41,6 +41,13 @@ public class actions {
         for(File file : files){
             core.script.runJava(file, null, is.license);
         }
+        
+         // worry about the case when there is no folder nor licenses to include
+        if(core.licenses.isEmpty()){
+            log.write(is.WARNING, "No licenses were added, "
+                    + "license detection is disabled.");
+        }
+        
     }
 
     /**

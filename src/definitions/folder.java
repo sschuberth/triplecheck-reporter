@@ -19,6 +19,6 @@ package definitions;
 public class folder {
 
         public static final String
-            licenses = "licenses",
+            licenses = "triggers",
             products = "products";
 }

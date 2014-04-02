@@ -16,9 +16,9 @@ package spdxlib;
 import FileExtension.ExtensionCreate;
 import java.io.File;
 import java.util.ArrayList;
+import main.core;
 import script.FileExtension;
 import script.License;
-import main.core;
 
 
 /**

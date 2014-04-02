@@ -1,4 +1,4 @@
-package triggers;
+package trigger;
 
 /**
  * SPDXVersion: SPDX-1.1
@@ -61,9 +61,9 @@ public class TestTriggerGPL3 {
          
          String lowerCaseContent = content.toLowerCase();
          for(License thisLicense: core.licenses){
-             if(thisLicense == null){
-                 continue;
-             }
+//             if(thisLicense == null){
+//                 continue;
+//             }
             // System.out.println(thisLicense.getShortIdentifier());
             if(thisLicense.isApplicable(lowerCaseContent )){
                 //licenseInfoInFile.add(thisLicense);

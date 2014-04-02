@@ -12,13 +12,10 @@ package create;
  * FileComment: <text> Test the creation of an SPDX document </text> 
  */
 
-import triggers.*;
-import java.util.ArrayList;
+import java.io.File;
 import main.actions;
-import main.core;
 import org.junit.*;
-import static org.junit.Assert.*;
-import script.License;
+import spdxlib.DocumentCreate;
 
 /**
  *
@@ -27,12 +24,6 @@ import script.License;
 public class TestCreateSPDX {
     
     
-    String content = " * Adblock Plus is free software: you can redistribute it and/or modify"
-        + "* it under the terms of the GNU General Public License version 3 as"
-        + "* published by the Free Software Foundation.";
-    
-    //public ArrayList<License> licenseInfoInFile = new ArrayList(); // just one for the moment, single source can have multiple
-   
     
     public TestCreateSPDX() {
     }
@@ -59,19 +50,12 @@ public class TestCreateSPDX {
          // add up all the licenses from our folder
          actions.addLicenses();
          
+         File thisFolder = new File("tools/source", "adblockplus-2.5.1");
          
-         String lowerCaseContent = content.toLowerCase();
-         for(License thisLicense: core.licenses){
-             if(thisLicense == null){
-                 continue;
-             }
-            // System.out.println(thisLicense.getShortIdentifier());
-            if(thisLicense.isApplicable(lowerCaseContent )){
-                //licenseInfoInFile.add(thisLicense);
-                System.out.println(thisLicense.getShortIdentifier());
-                //System.out.println("Found GPL v3 license");
-            }
-        }
-     
+         System.out.println(thisFolder.getAbsolutePath());
+        
+         DocumentCreate spdx = new DocumentCreate();
+         spdx.create(thisFolder);
+        
      }
 }
