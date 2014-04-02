@@ -1,4 +1,4 @@
-package unknown;
+package archive;
 
 import java.io.File;
 import java.util.Date;
@@ -61,7 +61,7 @@ public class cab extends FileExtension{
      */
     @Override
     public String getDescription() {
-        return null; // file type description
+        return "Microsoft compressed archive"; // file type description
     }
     
     /**
@@ -138,7 +138,7 @@ public class cab extends FileExtension{
      */
     @Override
     public ContentType getContentType() {
-        return ContentType.TEXT; // is it a binary or text file?
+        return ContentType.BINARY; // is it a binary or text file?
     }
 
     /**
@@ -148,7 +148,7 @@ public class cab extends FileExtension{
      */
     @Override
     public FileCategory getCategory() {
-        return FileCategory.UNKNOWN; // does it group under a category?
+        return FileCategory.ARCHIVE; // does it group under a category?
     }
 
     /**
