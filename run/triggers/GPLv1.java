@@ -9,7 +9,7 @@ import script.License;
  * Creator: Organization: TripleCheck (contact@triplecheck.de)
  * Created: 2014-04-02T00:00:00Z
  * LicenseName: NOASSERTION
- * FileName: GPLv3.java  
+ * FileName: GPLv1.java  
  * FileType: SOURCE
  * FileCopyrightText: <text> Copyright 2014 Nuno Brito, TripleCheck </text>
  * FileComment: <text> Given a text file, try to identify portions of text
@@ -30,11 +30,11 @@ import script.License;
  * @author Nuno Brito, 2nd of April 2014 in Darmstadt, Germany.
  *  nuno.brito@triplecheck.de | http://nunobrito.eu
  */
-public class GPLv3 implements License {
+public class GPLv1 implements License {
     
     // the list of id's that we can use to identify a license
     String[] list = {
-        "under the terms of the GNU General Public License version 3".toLowerCase()
+        "under the terms of the GNU General Public License version as".toLowerCase()
     };
     
     /**

@@ -283,7 +283,9 @@ public class Script {
                 // get the object
                 FileExtension extension = (FileExtension) runScript.get("plugin");
                 // add it up
-                core.extensions.add(extension);
+                if(core.extensions.has(extension.getIdentifierShort())==false){
+                    core.extensions.add(extension);
+                }
                 
             }
             
