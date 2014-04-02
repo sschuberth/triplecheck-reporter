@@ -14,6 +14,7 @@ package create;
 
 import java.io.File;
 import main.actions;
+import org.jfree.util.StringUtils;
 import org.junit.*;
 import spdxlib.DocumentCreate;
 
@@ -50,12 +51,20 @@ public class TestCreateSPDX {
          // add up all the licenses from our folder
          actions.addLicenses();
          
-         File thisFolder = new File("tools/source", "adblockplus-2.5.1");
+         File baseFolder = new File("..", "/tools/source");
+         File thisFolder = new File(baseFolder, "adblockplus-2.5.1");
          
-         System.out.println(thisFolder.getAbsolutePath());
-        
          DocumentCreate spdx = new DocumentCreate();
+         
+         // show all messages to let us know what is happening
+         spdx.showDebugMessages = true;
+         
          spdx.create(thisFolder);
-        
+
+         String text = spdx.output;
+         String keyword = "GPL-3";
+         int counter = (text.length() - text.replace(keyword, "").length())/keyword.length();
+         
+         System.out.println("Matches found: " + counter);
      }
 }

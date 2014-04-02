@@ -19,10 +19,10 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-import script.License;
-import ssdeep.ssdeep;
 import main.core;
+import script.License;
 import script.log;
+import ssdeep.ssdeep;
 
 
 /**
@@ -32,6 +32,8 @@ import script.log;
  */
 public class DocumentCreate {
 
+    public boolean showDebugMessages = false;
+    
     // settings to be changed when necessary
     public String 
             versionSPDX = "SPDX-1.2",
@@ -84,16 +86,22 @@ public class DocumentCreate {
             isProcessing = false;
             return null;
         }
+        
+        debug("Folder to use: " + folderSourceCode.getAbsolutePath());
+        
         // get the files from the target source code folder
         files = utils.files.findFiles(folderSourceCode);
         // no need to continue if no files were found
         if((files == null) || (files.isEmpty())){
-            System.err.println("ND02 - No files were found for creating SPDX");
+            System.err.println("ND96 - No files were found for creating SPDX");
             isProcessing = false;
             return null;
         }  
         // update our counter
         filesToProcess = files.size();
+        
+        debug("Number of files to process: " + files.size());
+        
         
         // where we shall store this SPDX document 
         File folderProduct = core.getProductsFolder();
@@ -222,10 +230,14 @@ public class DocumentCreate {
         // create the file pointer
         File document = new File(folderProduct, filename);
         utils.files.SaveStringToFile(document, output);
+        
+        debug("Saved result to file: " + document.getAbsolutePath());
+        
         file = document; // keep this around for future reference
         // done
         isProcessing = false;
         isOk = true;
+        debug("Done!");
         return filename;
     }
     
@@ -292,5 +304,15 @@ public class DocumentCreate {
         return textDate.replace(" ", "T") + "Z";
     }
     
+    
+    
+    void debug(String message){
+        // shall we show messages or not?
+        if(showDebugMessages == false){
+            return;
+        }
+        // output the message
+        System.out.println(message);
+    }
     
 }
