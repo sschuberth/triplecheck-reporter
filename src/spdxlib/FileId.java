@@ -220,7 +220,7 @@ public class FileId {
         if(core.extensions.has(extension) == false){
             ExtensionCreate ext = new ExtensionCreate();
             ext.automatically(extension, false);
-            System.err.println("FI004 - Adding extension: " + extension);
+            //System.err.println("FI223 - Adding extension: " + extension);
 //            core.extensions.ignoreList += ">" + extension + ">";
 //            core.extensions.fullList += ">" + extension + ">";
             core.extensions.addExtensions();
@@ -228,7 +228,7 @@ public class FileId {
         
         FileExtension ext = core.extensions.get(extension);
         
-        // at this point, we only accept text files
+        // at this point, we only process text files
         if(ext.getContentType() != ContentType.TEXT){
             return false;
         }
@@ -246,7 +246,7 @@ public class FileId {
         
         // we are going to count Lines Of Code, need to avoid very large files
         if(file.length()>1000000){
-            System.err.println("FI01 - File too large for LOC: " 
+            System.err.println("FI249 - File too large for LOC: " 
                     + file.getAbsolutePath());
             return false;
         }
@@ -279,7 +279,7 @@ public class FileId {
 
         }catch(Exception e){
             // something went wrong
-            System.err.println("FI03 - Failed to process: "
+            System.err.println("FI282 - Failed to process: "
                     + file.getAbsolutePath());
             return false;
         }

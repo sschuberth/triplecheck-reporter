@@ -16,6 +16,7 @@ package FileExtension;
 
 import java.io.File;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import spdxlib.DocumentCreate;
 import main.core;
@@ -59,10 +60,22 @@ public class ExtensionCreate {
         File newExtension = new File(core.getExtensionsUnknown(), 
                 safeExt + ".java");
         // don't overwrite already existent unknown files
-        if(overWrite == false)
+        if(overWrite == false){
+           
+            // don't add a registered extension
+            ArrayList<File> existingFiles = utils.files.findFiles(core.getExtensionsFolder());
+            for(File thisFile : existingFiles){
+                String filename = thisFile.getName();
+                if(newExtension.getName().equalsIgnoreCase(filename)){
+                    return;
+                }
+            }
+            
+            // don't overwrite files in "unknown" folder
             if(newExtension.exists()){
                 return;
-            }     
+            }
+        }     
         // we can't proceed without a template
         if(template.exists() == false){
             System.err.println("FI005 - Cannot find template.java to cre"
@@ -86,7 +99,7 @@ public class ExtensionCreate {
         Date date = new Date();
         SimpleDateFormat simpleDateformat=new SimpleDateFormat("yyyy");
         String year = simpleDateformat.format(date);
-        text = text.replace("#COPYRIGHT#", "Copyright © "
+        text = text.replace("#COPYRIGHT#", "Copyright (c) "
                 + year
                 + ", "
                 + person);
@@ -118,6 +131,7 @@ public class ExtensionCreate {
         // now save it automatically new file
         utils.files.SaveStringToFile(newExtension, text);
    
+        System.out.println("EC134 - Added extension: " + safeExt);
     }
 
     
