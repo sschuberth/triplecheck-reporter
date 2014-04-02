@@ -192,7 +192,7 @@ public class TreeNodeDetails extends Plugin{
             nodeFile.nodeType = NodeType.file;
             nodeFile.setUserObject(fileInfo);
             // set a specific icon for this item
-            nodeFile.icon = setIcon(fileInfo);
+            nodeFile.icon = swingUtils.setIcon(fileInfo);
             
             // add this file to the parent path
             pathNode.add(nodeFile);
@@ -399,24 +399,6 @@ public class TreeNodeDetails extends Plugin{
        
     } 
     
-    // get a specific icon from our own library
-    private Icon getIcon(String what){
-        return new ImageIcon(core.getIcon(what).getAbsolutePath());
-    }
-
-    /**
-     * given a specific type of file extension, output an appropriate icon
-     * @param fileInfo
-     * @return 
-     */
-    private Icon setIcon(FileInfo fileInfo) {
-       Icon result = getIcon("document-number.png");
-       
-       if(fileInfo.fileCategory == FileCategory.IMAGE){
-           result = getIcon("document-number.png");
-       }
-       
-       return result;
-    }
+   
     
 }

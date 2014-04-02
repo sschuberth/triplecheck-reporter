@@ -26,10 +26,7 @@ import main.core;
 import net.htmlparser.jericho.HTMLElementName;
 import net.htmlparser.jericho.Source;
 import script.log;
-import spdxlib.FileInfo;
-import spdxlib.Person;
-import spdxlib.SPDXfile;
-import spdxlib.TagValue;
+import spdxlib.*;
 import utils.html;
 
 
@@ -775,5 +772,78 @@ public class swingUtils {
         TreeNodeSPDX nodeRoot = (TreeNodeSPDX) tree.getModel().getRoot();
     return nodeRoot;
     }
+    
+    
+     // get a specific icon from our own library
+    private static Icon getIcon(String what){
+        return new ImageIcon(core.getIcon(what).getAbsolutePath());
+    }
+
+    
+    /**
+     * given a specific type of file extension, output an appropriate icon
+     * @param fileInfo
+     * @return 
+     */
+    public static Icon setIcon(FileInfo fileInfo) {
+
+       if(fileInfo.fileCategory == FileCategory.IMAGE){
+           return getIcon("document-image.png");
+       }
+       
+       if(fileInfo.fileCategory == FileCategory.DOCUMENT){
+           return getIcon("document-word.png");
+       }
+       
+       if(fileInfo.fileCategory == FileCategory.SOURCE){
+           return getIcon("document-code.png");
+       }
+       
+       if(fileInfo.fileCategory == FileCategory.ARCHIVE){
+           return getIcon("box.png");
+       }
+       
+       if(fileInfo.fileCategory == FileCategory.SCRIPT){
+           return getIcon("script-code.png");
+       }
+       
+       if(fileInfo.fileCategory == FileCategory.VIDEO){
+           return getIcon("document-film.png");
+       }
+      
+       if(fileInfo.fileCategory == FileCategory.TEXT){
+           return getIcon("document-list.png");
+       }
+      
+       if(fileInfo.fileCategory == FileCategory.DATABASE){
+           return getIcon("database.png");
+       }
+      
+       if(fileInfo.fileCategory == FileCategory.CONFIG){
+           return getIcon("document--pencil.png");
+       }
+      
+       if(fileInfo.fileCategory == FileCategory.INTERNET){
+           return getIcon("document-globe.png");
+       }
+       
+       if(fileInfo.fileCategory == FileCategory.VERSIONING){
+           return getIcon("document-clock.png");
+       }
+      
+       
+       if((fileInfo.fileCategory == FileCategory.SCHEMA)
+               || ((fileInfo.fileCategory == FileCategory.OTHER))
+               ){
+           return getIcon("document-xaml.png");
+           
+       }
+       
+       
+       
+         
+       return getIcon("document.png");
+    }
+    
     
 }

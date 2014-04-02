@@ -148,7 +148,7 @@ public class hgsub extends FileExtension{
      */
     @Override
     public FileCategory getCategory() {
-        return FileCategory.UNKNOWN; // does it group under a category?
+        return FileCategory.VERSIONING; // does it group under a category?
     }
 
     /**

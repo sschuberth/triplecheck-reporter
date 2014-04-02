@@ -1,4 +1,4 @@
-package unknown;
+package internet;
 
 import java.io.File;
 import java.util.Date;
@@ -148,7 +148,7 @@ public class css extends FileExtension{
      */
     @Override
     public FileCategory getCategory() {
-        return FileCategory.UNKNOWN; // does it group under a category?
+        return FileCategory.INTERNET; // does it group under a category?
     }
 
     /**

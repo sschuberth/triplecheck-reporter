@@ -1,4 +1,4 @@
-package unknown;
+package schema;
 
 import java.io.File;
 import java.util.Date;
@@ -148,7 +148,7 @@ public class xsl extends FileExtension{
      */
     @Override
     public FileCategory getCategory() {
-        return FileCategory.UNKNOWN; // does it group under a category?
+        return FileCategory.SCHEMA; // does it group under a category?
     }
 
     /**

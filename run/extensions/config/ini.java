@@ -1,4 +1,4 @@
-package unknown;
+package config;
 
 import java.io.File;
 import java.util.Date;
@@ -148,7 +148,7 @@ public class ini extends FileExtension{
      */
     @Override
     public FileCategory getCategory() {
-        return FileCategory.UNKNOWN; // does it group under a category?
+        return FileCategory.CONFIG; // does it group under a category?
     }
 
     /**
