@@ -15,7 +15,6 @@
 package main;
 
 import FileExtension.ExtensionControl;
-import GUI.StudioUI2;
 import GUI.StudioUI4;
 import definitions.Messages;
 import definitions.is;

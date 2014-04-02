@@ -57,8 +57,7 @@ public class start {
                     core.studio.setVisible(true);
                     core.studio.hasFocus();
                 }catch (Exception e){
-                    System.err.println("ST001 - Exception occurred");
-                    e.printStackTrace();
+                    System.err.println("ST60 - Exception occurred");
 //                    log.write(is.ERROR,
 //                            e.getMessage());
                     System.exit(-1981);

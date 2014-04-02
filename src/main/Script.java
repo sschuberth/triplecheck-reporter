@@ -220,26 +220,15 @@ public class Script {
 //            runScript.set("thisFile", scriptFile);
 //            runScript.set("thisDir", scriptFile.getParentFile());
             
-            // do the intrepertation of our script
+            // do the interpretation of our script
             doInterpretation
                     (codeText, className, scriptFile, methodName, runScript);
-//            // run our modified text
-//            runScript.eval(codeText);
-//            
-//            Plugin plugin = (Plugin) runScript.get("plugin");
-//            
-//            // if no method is specified, run the initial method
-//            if(methodName == null){
-//                plugin.startup();
-//            }else{
-//            // otherwise, run the requested method
-//                runScript.eval("plugin." + methodName + "();");
-//            }
+
             } catch (Exception e){
                 script.log.write(is.ERROR, "Error while interpreting %1, the "
                         + "error message is: %2"
                         , scriptFile.getAbsolutePath(), e.getLocalizedMessage());
-                e.printStackTrace();
+                //e.printStackTrace();
             }
             // all done.
     }

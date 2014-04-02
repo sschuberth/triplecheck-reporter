@@ -18,6 +18,7 @@ import GUI.TreeNodeSPDX;
 import GUI.swingUtils;
 import static GUI.swingUtils.nodeCreate;
 import definitions.definition;
+import definitions.folder;
 import definitions.is;
 import java.io.File;
 import java.io.IOException;
@@ -25,8 +26,6 @@ import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JTree;
-import javax.swing.tree.DefaultMutableTreeNode;
-import javax.swing.tree.TreePath;
 import script.log;
 import spdxlib.SPDXfile;
 
@@ -37,8 +36,8 @@ public class actions {
      * This method adds up all the licenses found on the licenses folder
      */
     public static void addLicenses(){
-        File folder = new File(core.getWorkFolder(), "licenses");
-        ArrayList<File> files = utils.files.findFilesFiltered(folder, ".java", 2);
+        File folderLicense = new File(core.getWorkFolder(), folder.licenses);
+        ArrayList<File> files = utils.files.findFilesFiltered(folderLicense, ".java", 2);
         for(File file : files){
             core.script.runJava(file, null, is.license);
         }
