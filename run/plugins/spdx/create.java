@@ -153,6 +153,8 @@ public class create extends Plugin{
             // we have a problem, exit here
             log.write(is.ERROR, "SPDX create - Source folder doesn't exist: %1",
                     source.getAbsolutePath());
+            request.setAnswer("<br>Sorry but the source folder doesn't exist: <br>" 
+                    + source.getAbsolutePath());
             return;
         }
         
