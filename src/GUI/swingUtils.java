@@ -20,19 +20,16 @@ import java.util.List;
 import javax.swing.*;
 import javax.swing.text.Element;
 import javax.swing.tree.DefaultTreeModel;
-import javax.swing.tree.TreeNode;
 import javax.swing.tree.TreePath;
 import javax.swing.tree.TreeSelectionModel;
-import script.RunPlugins;
+import main.core;
+import net.htmlparser.jericho.HTMLElementName;
+import net.htmlparser.jericho.Source;
 import script.log;
 import spdxlib.FileInfo;
 import spdxlib.Person;
 import spdxlib.SPDXfile;
 import spdxlib.TagValue;
-import main.actions;
-import main.core;
-import net.htmlparser.jericho.HTMLElementName;
-import net.htmlparser.jericho.Source;
 import utils.html;
 
 

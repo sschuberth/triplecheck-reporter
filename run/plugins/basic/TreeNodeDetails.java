@@ -100,6 +100,7 @@ public class TreeNodeDetails extends Plugin{
      * Add the files inside this SPDX document
      */
     private void addFiles(SPDXfile spdx, TreeNodeSPDX spdxNode){
+        // this code below avoids that we add too many times the Files node
         Enumeration list = spdxNode.children();
         while(list.hasMoreElements()){
             TreeNodeSPDX child = (TreeNodeSPDX) list.nextElement();
@@ -148,37 +149,41 @@ public class TreeNodeDetails extends Plugin{
      */
     private void doTreeStructure(TreeNodeSPDX root, SPDXfile spdx){
         
+        // where we store all the nodes of our tree
         HashMap nodeList = new HashMap();
+        
+        // add up the root as node as initial part
+        nodeList.put(".", root);
         
         // go through all the files inside the SPDX 
         for(FileInfo fileInfo : spdx.fileSection.files){
             // get the path for this file bit
             String path = getFilePath(fileInfo);
+            
+            // don't add the root node
+            if(path.equals(".")){
+                continue;
+            }
+            
             //String parentFolder = getParentFolder(path);
             // add it up to our list
             TreeNodeSPDX folderNode = addNodeFolder(root, path);
             // put in our cached list
-            path = path.substring(0, path.length() -1);
+            //path = path.substring(0, path.length() -1);
             nodeList.put(path, folderNode);
             // ./jfreechart-1.0.17/lib/
-            //System.err.println(path);
+            //System.err.println("Placing path: " + path);
         }
         
-        // now add only the files
-         for(FileInfo fileInfo : spdx.fileSection.files){
+        
+        
+        // add all the files from the SPDX to our treeview folders
+        for(FileInfo fileInfo : spdx.fileSection.files){
             // get the path for this file bit
             String path = getFilePath(fileInfo);
-           
-            // get the cached location of its parent node
-            String parentFolder = getParentFolder(path);
-            // ./jfreechart-1.0.17/lib
-            TreeNodeSPDX pathNode = (TreeNodeSPDX) nodeList.get(parentFolder);
             
-            if(pathNode == null){
-                System.err.println("TreeNodeDetails.java - pathNode is null");
-                return;
-            }
-            
+            //System.out.println("Looking for -->" + path);
+            TreeNodeSPDX pathNode = (TreeNodeSPDX) nodeList.get(path);
             TreeNodeSPDX nodeFile = new TreeNodeSPDX(fileInfo.toString());
             nodeFile.id = fileInfo.getName();
             nodeFile.nodeType = NodeType.file;
@@ -186,7 +191,6 @@ public class TreeNodeDetails extends Plugin{
             // add this file to the parent path
             pathNode.add(nodeFile);
         }
-       
         
     }
 
@@ -316,18 +320,24 @@ public class TreeNodeDetails extends Plugin{
      * @return 
      */
     private String getFilePath(FileInfo fileInfo){
-        // if we have a FilePath tag available, use it as default
-        if(fileInfo.tagFilePath != null){
-            return fileInfo.tagFilePath.getValue();
-        }
+        
         // or else, the path is found inside the FileName tag
         String fileName = fileInfo.tagFileName.getValue();
+        
+        // if we have a FilePath tag available, use it as default
+        if(fileInfo.tagFilePath != null){
+            String filePath = fileInfo.tagFilePath.getValue();
+            fileName = filePath + fileName;
+        }
+        
         // if no path is available, just mention it as root
         if(fileName.contains("/")==false){
             return "./";
         }
         // there is a path available, let's get it
-        return fileName.substring(0, fileName.lastIndexOf("/"));
+        String result = fileName.substring(0, fileName.lastIndexOf("/"));
+        
+        return result;
     }
     
     
