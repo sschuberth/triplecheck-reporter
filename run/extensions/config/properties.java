@@ -1,6 +1,7 @@
-package config;
+package unknown;
 
 import java.io.File;
+import java.util.Date;
 import script.FileExtension;
 import spdxlib.ContentType;
 import spdxlib.FileCategory;
@@ -8,28 +9,25 @@ import spdxlib.FileCategory;
 /*
  * SPDXVersion: SPDX-1.1
  * Creator: Person: Nuno Brito
- * Created: 2013-11-16T14:49:00Z
+ * Created: 2014-03-31T19:03:30Z
  * LicenseName: CC-BY-3.0
+ * TemplateVersion: TC-2013-11-16
  * FileName: properties.java  
  * FileCategory: SOURCE
- * FileCopyrightText: <text> Copyright © 2013, Nuno Brito </text>
- * FileComment: <text> This class provides details about files that have
- * the extension of type properties. Extensions tend to represent a specific type
- * of file structure from where we can extract information. In some cases, the
- * same type of file is used for representing different types of data from 
- * different types of applications. We make no specific arrangement to handle
- * these cases, albeit this class should be able of distinguishing each one of
- * them and then provide a suited answer. For example, NFO files are both used
- * as text files with information or used as binay files by a different tool.
- * 
- * The extension handler should be able of distinguishing these cases.
+ * FileCopyrightText: <text> Copyright © 2014, Nuno Brito </text>
+ * FileComment: <text> This class provides details about the files that make 
+ * use of the "properties" extension. When possible, the file provenance author
+ * includes details such as date when this extension first began to be used.
+ * There are cases where different data structures use the same file extension,
+ * when this happens then the author needs to accomodate code to accurately
+ * detect which type of file is being analysed.
  * </text> 
  */
 
 
 /**
  *
- * @author Nuno Brito
+ * @file provenance by Nuno Brito
  */
 public class properties extends FileExtension{
     /**
@@ -93,8 +91,8 @@ public class properties extends FileExtension{
     }
     
     /**
-     * Who has the copyright over this file? Sometimes this is information that
-     * can be extracted from the meta-data inside the data contents. When
+     * Who has the copyright over this extension? This is information that
+     * might be extracted from the meta-data inside the data contents. When
      * available, this information is available using this method.
      * @return A string with with copyright text extracted from the file
      */
@@ -114,6 +112,23 @@ public class properties extends FileExtension{
         return null;
     }
 
+    /**
+     * How old is the oldest file that we have found of this kind?
+     */
+    @Override
+    public Date earliestKnownRecord(){
+        // syntax example that you can use for recording the date
+        // Date result = utils.time.getDate(1999, 01, 01);
+        return null;
+    }
+    
+    /**
+     * What are the MIME types registered for this file?
+     */
+    @Override
+    public String getMIME(){
+        return null;
+    }
     
     /**
      * Returns information is this file has a binary or text based structure.
@@ -123,7 +138,7 @@ public class properties extends FileExtension{
      */
     @Override
     public ContentType getContentType() {
-        return ContentType.TEXT;
+        return ContentType.TEXT; // is it a binary or text file?
     }
 
     /**
@@ -133,9 +148,16 @@ public class properties extends FileExtension{
      */
     @Override
     public FileCategory getCategory() {
-        return FileCategory.CONFIG;
+        return FileCategory.UNKNOWN; // does it group under a category?
     }
 
- 
+    /**
+     * The normal designation for these kind of files.
+     */
+    @Override
+    public String getIdentifierLong(){
+        return null; // how is this file
+    }
+
     
 }
