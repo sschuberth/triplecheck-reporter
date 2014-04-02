@@ -23,6 +23,7 @@ public enum FileCategory {
     EXECUTABLE,
     FONT,
     ARCHIVE,
+    BINARY,
     DATABASE,
     IMAGE,
     VIDEO,

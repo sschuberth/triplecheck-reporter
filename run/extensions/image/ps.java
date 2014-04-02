@@ -1,4 +1,4 @@
-package unknown;
+package image;
 
 import java.io.File;
 import java.util.Date;
@@ -138,7 +138,7 @@ public class ps extends FileExtension{
      */
     @Override
     public ContentType getContentType() {
-        return ContentType.TEXT; // is it a binary or text file?
+        return ContentType.BINARY; // is it a binary or text file?
     }
 
     /**
@@ -148,7 +148,7 @@ public class ps extends FileExtension{
      */
     @Override
     public FileCategory getCategory() {
-        return FileCategory.UNKNOWN; // does it group under a category?
+        return FileCategory.IMAGE; // does it group under a category?
     }
 
     /**
