@@ -34,6 +34,9 @@ public interface License {
             thisFile = null, // pointer to this beanshell file being executed
             thisDir = null; // pointer to the beanshell directory on disk
     
+    
+    final String LicenseInfoInFile = "LicenseInfoInFile: ";
+    
     /**
      * Verifies if the provided text applies to the triggers that
      * included on this license.
@@ -77,6 +80,7 @@ public interface License {
     public String getQuickSummary();
     public String getQuickSummaryLink();
     
-    
+    // what should be given as result?
+    public String getResult();
     
 }

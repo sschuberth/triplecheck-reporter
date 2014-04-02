@@ -119,5 +119,9 @@ public class Apache implements License {
     public String getFullName() {
         return "Apache License 2.0";
     }
-
+    
+    @Override
+    public String getResult() {
+        return LicenseInfoInFile + getShortIdentifier();
+    }
 }

@@ -116,4 +116,9 @@ public class PublicDomain implements License {
         return "Apache License 2.0";
     }
 
+    @Override
+    public String getResult() {
+        return LicenseInfoInFile + getShortIdentifier();
+    }
+    
 }

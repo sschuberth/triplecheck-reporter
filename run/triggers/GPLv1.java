@@ -102,4 +102,9 @@ public class GPLv1 implements License {
         return "GNU General Public License v3.0 only";
     }
 
+    @Override
+    public String getResult() {
+        return LicenseInfoInFile + getShortIdentifier();
+    }
+    
 }

@@ -18,8 +18,8 @@ import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-import spdxlib.DocumentCreate;
 import main.core;
+import spdxlib.DocumentCreate;
 
 
 /**

@@ -105,4 +105,9 @@ public class LGPL implements License {
         return "GNU Library General Public License v2.1 only";
     }
 
+    @Override
+    public String getResult() {
+        return LicenseInfoInFile + getShortIdentifier();
+    }
+    
 }
