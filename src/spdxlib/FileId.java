@@ -226,6 +226,7 @@ public class FileId {
             core.extensions.addExtensions();
         }
         
+        // get the extension that we need
         FileExtension ext = core.extensions.get(extension);
         
         // at this point, we only process text files

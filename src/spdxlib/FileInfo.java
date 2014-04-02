@@ -47,6 +47,9 @@ public class FileInfo {
             tagFileChecksumMD5;
     
    
+     // non tag related
+     public FileCategory fileCategory = FileCategory.UNKNOWN;
+     
      /**
       * Prints the data from this object for debugging the result
       */

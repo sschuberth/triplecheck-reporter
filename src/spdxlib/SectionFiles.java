@@ -22,6 +22,8 @@
 package spdxlib;
 
 import java.util.ArrayList;
+import main.core;
+import script.FileExtension;
 
 
 public class SectionFiles {
@@ -42,6 +44,10 @@ public class SectionFiles {
         if(tag.title.equalsIgnoreCase("FileName")){
             FileInfo file = new FileInfo();
             file.tagFileName = tag;
+            
+            // what kind of file do we have here?
+            file.fileCategory = getCategory(tag.getValue());
+            
             files.add(file);
             return true;
         }
@@ -181,6 +187,39 @@ public class SectionFiles {
         System.out.println("<files> Unknown tag: "
                 + tag.title + " = " + tag.getValue());
         unknown.add(tag);
+    }
+    
+    
+    /**
+     * When given a file name, discover the type of file that we have here
+     * @param fileName a normal 8.3 file name
+     * @return a type of category
+     */
+    FileCategory getCategory(String fileName){
+        // assign a default value
+        FileCategory result = FileCategory.UNKNOWN;
+        
+        // first test, needs to have a dot as separator
+        String extension = fileName;
+        if(extension.contains(".")==false){
+            return result;
+        }
+        
+        // we have an extension, get it here
+        extension = extension.substring(extension.lastIndexOf(".")+1).toLowerCase();
+        
+        // extension is not recognized, let's just go away
+        if(core.extensions.has(extension) == false){
+            return result;
+        }
+        
+        // get the extension that we need
+        FileExtension ext = core.extensions.get(extension);
+        
+        // define the new type of extension for this specific file
+        result = ext.getCategory();
+        
+    return result;
     }
     
 }

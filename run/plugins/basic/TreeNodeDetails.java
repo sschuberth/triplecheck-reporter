@@ -23,10 +23,13 @@ import java.awt.Cursor;
 import java.io.File;
 import java.util.Enumeration;
 import java.util.HashMap;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
 import main.core;
 import main.param;
 import script.Plugin;
 import script.log;
+import spdxlib.FileCategory;
 import spdxlib.FileInfo;
 import spdxlib.Person;
 import spdxlib.SPDXfile;
@@ -188,10 +191,12 @@ public class TreeNodeDetails extends Plugin{
             nodeFile.id = fileInfo.getName();
             nodeFile.nodeType = NodeType.file;
             nodeFile.setUserObject(fileInfo);
+            // set a specific icon for this item
+            nodeFile.icon = setIcon(fileInfo);
+            
             // add this file to the parent path
             pathNode.add(nodeFile);
         }
-        
     }
 
     
@@ -394,6 +399,24 @@ public class TreeNodeDetails extends Plugin{
        
     } 
     
-    
+    // get a specific icon from our own library
+    private Icon getIcon(String what){
+        return new ImageIcon(core.getIcon(what).getAbsolutePath());
+    }
+
+    /**
+     * given a specific type of file extension, output an appropriate icon
+     * @param fileInfo
+     * @return 
+     */
+    private Icon setIcon(FileInfo fileInfo) {
+       Icon result = getIcon("document-number.png");
+       
+       if(fileInfo.fileCategory == FileCategory.IMAGE){
+           result = getIcon("document-number.png");
+       }
+       
+       return result;
+    }
     
 }
