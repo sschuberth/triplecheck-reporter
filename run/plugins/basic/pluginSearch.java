@@ -128,6 +128,18 @@ public class pluginSearch extends Plugin{
             // start by looking at the components
 //            String matchComponentName =
 //                searchListSPDX(core.components, searchTerm, "Library");
+            
+            // add the grey text with a short summary
+            output = 
+                      html.div() 
+                    + html.br
+                    + html.textGrey("Looking for \"" + searchTerm +"\"..") 
+                    + html._div
+                    + output;
+        // do the final output, everything done
+        core.studio.editorPane(is.contentHTML, false, 0, output);
+            
+            
             // look in products now
             String matchProductName =
                 searchListSPDX(core.products, searchTerm, definition.nodeSoftware);
@@ -139,23 +151,24 @@ public class pluginSearch extends Plugin{
        
 
         
+        String lastMessage = "No results for \"" + searchTerm + "\"";
+        
         if(resultCounter > 1){
+            lastMessage = resultCounter + " results found";
+        }
 //            long timeFinish = System.currentTimeMillis();
 //            long timeElapsed = timeFinish - timeStart;
+            
+            
             
             // add the grey text with a short summary
             output = 
                       html.div() 
                     + html.br
-                    + html.textGrey(resultCounter + " results found") 
-//                    + utils.time.timeNumberToHumanReadable(timeElapsed)
-                    //+ html.br 
-                    //+ html.br
+                    + html.textGrey(lastMessage) 
                     + html._div
                     + output;
-        }
-        
-//        // do the final output, everything done
+        // do the final output, everything done
         core.studio.editorPane(is.contentHTML, false, 0, output);
     }
     
