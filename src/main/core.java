@@ -17,6 +17,7 @@ package main;
 import FileExtension.ExtensionControl;
 import GUI.StudioUI4;
 import definitions.Messages;
+import definitions.folder;
 import definitions.is;
 import java.io.File;
 import java.util.ArrayList;
@@ -104,11 +105,11 @@ public class core {
     }
     
     public static File getProductsFolder(){
-        return new File(getWorkFolder(), "products");
+        return new File(getWorkFolder(), folder.products);
     }
     
     public static File getExtensionsFolder(){
-        return new File(getWorkFolder(), "extensions");
+        return new File(getWorkFolder(), folder.extensions);
     }
     
     public static File getExtensionsUnknown(){

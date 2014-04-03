@@ -20,5 +20,6 @@ public class folder {
 
         public static final String
             licenses = "triggers",
-            products = "products";
+            products = "reports",
+            extensions = "extensions";
 }

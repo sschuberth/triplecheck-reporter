@@ -57,7 +57,7 @@ public class showProductDetails extends Plugin{
             return;
         }
         // now we want to know if this is either:
-        // a) a root node called "Products" or "Library"
+        // a) a root node called "Reports"
         // b) a components inside one of the nodes from a)
         
         String nodeUID = node.getUID();

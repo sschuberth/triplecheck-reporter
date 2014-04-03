@@ -12,6 +12,7 @@
 package GUI;
 
 import definitions.Messages;
+import definitions.folder;
 import definitions.is;
 import java.io.File;
 import java.util.ArrayList;
@@ -248,7 +249,7 @@ public class swingUtils {
         TreeNodeSPDX productNode = nodeCreate(
                 "Products (" + core.products.size() + ")"
                 , NodeType.other, nodeRoot);
-        productNode.id = "Products";
+        productNode.id = folder.products;
         
         // add all SPDX documents that were found
             for(SPDXfile spdx : core.products){
