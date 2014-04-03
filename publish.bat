@@ -23,11 +23,12 @@ xcopy /s/y run\plugins ..\%publish%\plugins\
 xcopy /s/y run\icons ..\%publish%\icons\
 xcopy /s/y run\extensions ..\%publish%\extensions\
 xcopy /s/y run\triggers ..\%publish%\triggers\
+xcopy /s/y run\java ..\%publish%\java\
 
-:: creating the products folder
+:: creating the reports folder
 cd ..\%publish%
-mkdir products
-echo This folder contains the generated reports > .\products\reports.txt
+mkdir reports
+echo This folder contains the generated reports > .\reports\readme.txt
 
 ::pause
 
@@ -39,16 +40,6 @@ del ..\%zipfile%
 cd ..\%publish%
 ..\%build%\tools\7z.exe a -r ..\%zipfile% 
 
-
-::echo deleting the test folder
-::cd..
-::rd /s /q test
-::
-::
-::echo extracting files for testing there
-::mkdir test
-::cd test
-::.\%build%\tools\7z.exe x ..\%zipfile%
 
 
 echo opening explorer

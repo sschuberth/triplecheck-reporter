@@ -18,9 +18,9 @@
     <windowTitle>TripleCheck</windowTitle>
   </singleInstance>
   <jre>
-    <path></path>
-    <minVersion>1.6.0_1</minVersion>
-    <maxVersion></maxVersion>
+    <path>java\jre-8u20</path>
+    <minVersion>1.6.0_0</minVersion>
+    <maxVersion>1.9.0_0</maxVersion>
     <jdkPreference>jdkOnly</jdkPreference>
   </jre>
 </launch4jConfig>
