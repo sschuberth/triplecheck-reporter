@@ -499,7 +499,13 @@ public class swingUtils {
       * @param tree 
       */
     public static void refreshAll(JTree tree, String UID){
-          
+        
+        // something went wrong, perhaps we want to output an error message
+        if(UID == null){
+            log.write(is.ERROR, "SU505 - UID for selected node is null");
+            return;
+        }
+        
         core.studio.doSettings();
         
         // get back to the previoulsy selected node

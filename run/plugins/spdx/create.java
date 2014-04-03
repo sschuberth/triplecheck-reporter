@@ -122,7 +122,7 @@ public class create extends Plugin{
         
         // if nothign is chosen, just show it as "none"
         if(selectedFolder.isEmpty()){
-            selectedFolder = "NONE";
+            selectedFolder = "";
         }
         
         // add the value of our directory
@@ -178,7 +178,7 @@ public class create extends Plugin{
                        // keep repearing while things are being processed
                        while(newSPDX.isProcessing){
                             utils.time.wait(4);
-                            setStatus("%1 files processed out of %1", 
+                            setStatus("%1 files processed out of %2", 
                                     "" + newSPDX.filesProcessed, 
                                     "" + newSPDX.files.size());
                        }
@@ -230,10 +230,15 @@ public class create extends Plugin{
         
         // do we want an older located defined?
         String selectedFolder = settings.read(LastFolderNewSPDX);
-        
+
+        // do we want to use the default location or do we have an older choice?
+        File startFolder = core.getWorkFolder();
+        if(selectedFolder != null){
+            startFolder = new File(selectedFolder);
+        }
         
         // show the dialog
-        File result = swingUtils.chooseFolder(new File(selectedFolder));
+        File result = swingUtils.chooseFolder(startFolder);
         
         // place the result in our settings
         if(result != null){
@@ -299,7 +304,7 @@ public class create extends Plugin{
      */
     private String createDocument(File extractedFolder, RunningTask task, 
             DocumentCreate newSPDX){
-        task.setStatus("Creating the SPDX document");
+        task.setStatus("Creating SPDX report");
         
         String result = "";
         
@@ -307,7 +312,7 @@ public class create extends Plugin{
         // do all the heavy work
         result = newSPDX.create(extractedFolder);
         }catch (Exception e){
-            log.write(is.ERROR, "CR01- Exception occurred when creating SPDX");
+            log.write(is.ERROR, "CR315- Exception occurred when creating SPDX");
         }
         // count the time it took to run this task
         long time = System.currentTimeMillis() - task.getUID();
@@ -377,7 +382,6 @@ public class create extends Plugin{
         try {
             // do the extraction of this file
             archiver.extract(downloadedFile, destination);
-            archiver = null;
         } catch (IOException ex) {
             Logger.getLogger(create.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -458,7 +462,7 @@ public class create extends Plugin{
  * updating the tree view
  */
 private void concludeCreation(DocumentCreate newSPDX){
-    String UID = newSPDX.UID;
+    String UID = newSPDX.getUID();
     // refresh the tree
     swingUtils.refreshAll(core.studio.getTree(), UID);
 }

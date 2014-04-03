@@ -12,6 +12,7 @@
 
 package spdxlib;
 
+import definitions.definition;
 import definitions.is;
 import java.io.File;
 import java.io.IOException;
@@ -47,9 +48,10 @@ public class DocumentCreate {
             PackageLicenseConcluded = "NOASSERTION",
             packageDownloadLocation = "NOASSERTION",
             // other things
-            output, // where we store the content written to a text file
-            UID
+            output // where we store the content written to a text file
             ;
+    
+    
     
     boolean isOk = false;
    
@@ -306,7 +308,9 @@ public class DocumentCreate {
     }
     
     
-    
+    /**
+     * A simple way of knowing in detail what is happening
+     */
     void debug(String message){
         // shall we show messages or not?
         if(showDebugMessages == false){
@@ -314,6 +318,17 @@ public class DocumentCreate {
         }
         // output the message
         System.out.println(message);
+    }
+    
+    /**
+     * Provide the UID that will be listed for this document
+     * @return 
+     */
+    public String getUID(){
+        return ">> "
+                + file.getName()
+                + " >> "
+                + definition.nodeSoftware + " ";
     }
     
 }

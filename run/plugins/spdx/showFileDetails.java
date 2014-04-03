@@ -264,7 +264,7 @@ public class showFileDetails extends Plugin{
                         // only possible when we have SHA256 hashes available
                         + html.linkSearch("Find similar files", "SSDEEP: "
                             + text)
-                        + html.link("Find similar files111", text)    
+                        //+ html.link("Find similar files111", text)    
                         + html._div;
         }
         

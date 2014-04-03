@@ -102,11 +102,7 @@ public class actions {
         ArrayList<File> fileList = utils.files
                 .findFilesFiltered(core.getProductsFolder(), ".spdx", 25);
         
-        if(fileList.isEmpty()){
-            // no need to continue, just leave here
-            return;
-        }
-    
+       
         // get the root node where we have our treeview
         TreeNodeSPDX rootNode = swingUtils.getRootNode(tree);
         
@@ -125,6 +121,12 @@ public class actions {
               softwareNode.scriptFolder = scriptFile.getParentFile();
               softwareNode.scriptMethod = "main";
         
+        // no need to continue if no SPDX reports were found, just leave here
+        if(fileList.isEmpty()){
+            return;
+        }
+    
+              
         // create a tree based on folder tree on disk
         findFolders(core.getProductsFolder(), 25, softwareNode);
         
