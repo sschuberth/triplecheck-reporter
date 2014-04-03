@@ -42,7 +42,7 @@ public class search extends Plugin{
      * Add our toolbox node to the treeview.
      */
     public void addNode(){
-        addTreeNode(id, "magnifier-left.png", "main");
+        //addTreeNode(id, "magnifier-left.png", "main");
     }
     
      

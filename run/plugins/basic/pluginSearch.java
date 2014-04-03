@@ -15,6 +15,7 @@ package basic;
 
 import definitions.Messages;
 import definitions.definition;
+import definitions.folder;
 import definitions.is;
 import java.io.File;
 import java.util.ArrayList;
@@ -242,15 +243,19 @@ public class pluginSearch extends Plugin{
                        
                    // the internal hyperlink to read more details
                    String linkFileUID = 
-                             ">> "
+                           ">> "
                            + file.tagFileName.toString()
                            + " >> "
-                           + "Files"
+                           + file.tagFilePath.toString()
+                           + " >> "
+                           + "./"
                            + " >> "
                            + spdx.getId()
                            + " >> "
-                           + title
-                           + " ";
+                           + folder.products
+                           + " "
+                           ;
+                   
                    
                    String filePath = "";
                    if(file.tagFilePath != null){
@@ -292,12 +297,14 @@ public class pluginSearch extends Plugin{
                
                // the internal hyperlink to read more details
                    String linkPackageUID = 
-                           html.linkNode(spdx.getId(),
+                           html.linkNode(
+                           spdx.getId(),
                              ">> "
                            + spdx.getId()
                            + " >> "
                            + title
-                           + " ");
+                           + " "
+                           );
                
                // write out the text for the files
                result = result.concat(
