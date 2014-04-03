@@ -21,6 +21,7 @@ import definitions.is;
 import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import main.core;
 import main.param;
@@ -389,21 +390,34 @@ public class show extends Plugin{
         
         // get the lines of code (LOC)
         int countLOC = 0;
+        long overallSize = 0;
         for(FileInfo fileInfo : spdx.fileSection.files){
             countLOC += fileInfo.getLOC();
+            overallSize += fileInfo.getSize();
         }
+        
+        // add the thousands separator
+        
+        DecimalFormat myFormatter = new DecimalFormat("###,###");
+        
+        String textLOC = myFormatter.format(countLOC);
+        String textOverallSize = utils.files.humanReadableSize(overallSize);
+        
         
         // the header when showing summary about a specific SPDX file
         String summary = 
                 html.h2(
                        // html.getIcon("wooden-box-label.png", request)
                         spdx.getId())
-                + counterFiles + " files inside the package" 
+                + textLOC + " lines of code (LOC)"
+                + html.br
+                + counterFiles + " files" 
+                + html.br
+                + textOverallSize + " in overall size"
                 + html.br
                 //+ html.getCommonFolderIcon("calculator.png")
                 + counterLicensesDeclared + " files with declared licenses"
                 + html.br
-                + countLOC + " lines of code (LOC)"
                 //+ percentage
                 + warnings
                 + evaluation

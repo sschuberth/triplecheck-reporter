@@ -13,7 +13,9 @@
 
 package spdxlib;
 
+import definitions.is;
 import java.util.ArrayList;
+import script.log;
 
 
 public class FileInfo {
@@ -241,6 +243,29 @@ public class FileInfo {
     
     
     
+    public long getSize(){
+        long result = 0;
+        
+        // add the file size on the details
+        if(tagFileSize != null){
+            String fileSize = tagFileSize.getValue().replace(" bytes", "");
+            if(fileSize.contains("(")){
+                int pos1 = fileSize.indexOf("(") +1;
+                int pos2 = fileSize.indexOf(")") ;
+                fileSize = fileSize.substring(pos1, pos2);
+            }
+
+            // convert the string onto a valid number that we can use
+                try{
+                    result = Long.parseLong(fileSize);
+                }catch (Exception e){
+                    log.write(is.ERROR, "FI259 - Error while trying to parse the "
+                        + "size of %1->", toString(), fileSize);
+                }
+        }
+        // all done
+        return result;
+    }
     
     
 }
