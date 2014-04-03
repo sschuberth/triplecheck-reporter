@@ -30,7 +30,7 @@ import utils.Settings;
 
 public class core {
 
-    public static String version = "0.4";
+    public static String version = "0.5";
     
     public static 
             Script script = new Script();
