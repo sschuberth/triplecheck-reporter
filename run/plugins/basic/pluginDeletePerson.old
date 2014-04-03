@@ -1,0 +1,128 @@
+/*
+ * SPDXVersion: SPDX-1.1
+ *
+ * Creator: Person: Nuno Brito (nuno.brito@triplecheck.de)
+ *
+ * Creator: Organization: TripleCheck (contact@triplecheck.de)
+ *
+ * Created: 2013-11-10T00:00:00Z
+ *
+ * LicenseName: NOASSERTION
+ *
+ * FileName: pluginDeletePerson.java  
+ *
+ * FileType: SOURCE
+ *
+ * FileCopyrightText: <text> Copyright 2013 Nuno Brito, TripleCheck </text>
+ *
+ * FileComment: <text>  </text> 
+ */
+
+package test;
+
+import GUI.Actions;
+import GUI.NodeType;
+import GUI.TreeNodeSPDX;
+import GUI.swingUtils;
+import javax.swing.JEditorPane;
+import script.Plugin;
+import script.log;
+import spdx.Person;
+import spdx.SPDXfile;
+import spdx.TagValue;
+import studio.core;
+
+
+/**
+ *
+ * @author Nuno Brito, 20th of September 2013 in Darmstadt, Germany.
+ *  nuno.brito@triplecheck.de | http://nunobrito.eu
+ */
+public class pluginDeletePerson extends Plugin{
+
+    @Override
+    public void startup(){
+    log.hooks.addAction("Single-click at " + Actions.personDelete, 
+            thisFile, "personDelete");
+
+    }
+    
+     /**
+      * Delete the currently selected person from the list
+      */
+     public static void personDelete(){
+         TreeNodeSPDX currentNode = swingUtils.getSelectedNode();
+         // if there is nothing selected, there is nothing to be done
+         if(currentNode == null){
+            return;
+         }
+         // only accept person-type of nodes
+         if(currentNode.nodeType != NodeType.person){
+             return;
+         }
+         Person person  = (Person) currentNode.getUserObject();
+         // get the unique ID for the parent of this node
+         TreeNodeSPDX parentNode = (TreeNodeSPDX) currentNode.getParent();
+         String UID = parentNode.getUID();
+         doDeletePerson(person, UID);
+     }
+
+     /**
+      * Delete the given person from the text area, no changes are applied
+      * on the physical text file
+      * @param currentNode 
+      */
+    private static void doDeletePerson(Person person, String UID) {
+         
+        // get the editor from our UI
+        JEditorPane textBox = core.studio.getTextBox();
+        
+        //int caretPosition = textBox.getCaretPosition();
+        
+        String text = textBox.getText();
+        text = doRemoveText(person.tagPerson, text);
+        text = doRemoveText(person.tagTool, text);
+        text = doRemoveText(person.tagOrganization, text);
+
+        
+        
+        // update our SPDX object with the changes
+        SPDXfile spdx = core.studio.getSPDX();
+        // get the position of this item inside the list
+        int index = core.components.indexOf(spdx);
+        // remove the item from the list
+        core.components.remove(spdx);
+        // create a new SPDX object based on new text and old file pointer
+        SPDXfile newSPDX = new SPDXfile(spdx.file, text);
+        // read the new data
+        spdx.read(text);
+        // add the new item at the same position of the old item
+        core.components.add(index, newSPDX);
+        // rebuild the whole tree again
+        swingUtils.populateTree(core.studio.getTree());
+        // get back to the parent node
+        swingUtils.setSelectedNode(UID);
+        // place back the care into position
+//        textBox.setText(text);
+//        // return text to the same position
+//        textBox.setCaretPosition(caretPosition);
+//        // bring back some focus to this text box
+//        textBox.requestFocusInWindow();
+        core.textWasModified = true;
+    }
+    
+    /**
+     * A cleaner way of replacing a text snippet
+     * @param what
+     * @param where 
+     */
+    private static String doRemoveText(TagValue what, String text){
+        if(what == null){
+            return text; // nothing to be done here
+        }
+         return text.replace(what.raw, "");
+    } 
+ 
+    
+    
+}

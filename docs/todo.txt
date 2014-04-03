@@ -1,0 +1,7 @@
+- Back button has limited history (only one level, this needs to be improved)
+- Dependency discovery should be included, list the imports that were found
+- Free analysis (5 minute' video with upload service, email feedback)
+- When clicking on "list files without license" and then "details" => gives error
+---------------------
+
+- add icons for images, documents, archives depending on file type
