@@ -48,9 +48,10 @@ public class LGPL implements License {
      */
     @Override
     public Boolean isApplicable(String text){
+        String test = text.toLowerCase();
         // iterate all our ids
         for(String id : list){
-            if(text.contains(id)){
+            if(test.contains(id)){
                 return true;
             }
         }
