@@ -184,7 +184,7 @@ public class showFileDetails extends Plugin{
                     ;
         }
         
-        if(file.hasLicense()){
+        if(file.countLicensesDeclared()>0){
             summary += 
                     html.br 
                     + html.br 

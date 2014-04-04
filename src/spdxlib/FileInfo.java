@@ -210,19 +210,20 @@ public class FileInfo {
      * @param file A FileInfo object with the information that we will analyze
      * @return 
      */
-    public Boolean hasLicense(){
-        
-        // do we have a license concluded for this file?
-        if(tagLicenseConcluded != null){
-            // get the text from the license that was concluded
-            String licenseText = tagLicenseConcluded.toString();
-            // a lot of trouble, but necessary to find out what is happening
-            if( (licenseText.equals("NONE")== false) 
-             && (licenseText.equals("NOASSERTION")== false)){
-                // we have at least one license concluded. Good enough
-                return true;
-            }
-        }
+    public int countLicensesDeclared(){
+        int result = 0;
+//        
+//        // do we have a license concluded for this file?
+//        if(tagLicenseConcluded != null){
+//            // get the text from the license that was concluded
+//            String licenseText = tagLicenseConcluded.toString();
+//            // a lot of trouble, but necessary to find out what is happening
+//            if( (licenseText.equals("NONE")== false) 
+//             && (licenseText.equals("NOASSERTION")== false)){
+//                // we have at least one license concluded. Good enough
+//                return result;
+//            }
+//        }
         
         // are there any licenses inside this file?
         for(TagValue licenseTag : licenseInfoInFile){
@@ -235,10 +236,10 @@ public class FileInfo {
                 continue;
             }
             // we just need to find one license to make our day happy! :-)
-            return true;
+            result++;
         }
           // no licenses, let's leave
-        return false;
+        return result;
     }
     
     

@@ -93,7 +93,7 @@ public class show extends Plugin{
             SPDXfile spdx = (SPDXfile) object;
             counterFiles += spdx.fileSection.files.size();
             counterCreators += spdx.creatorSection.people.size();
-            counterLicensesDeclared += doStatistics(spdx);
+            counterLicensesDeclared += spdx.getStatsLicensesDeclared();
         }
         
         String reviewerList = "";
@@ -329,6 +329,11 @@ public class show extends Plugin{
     }
     
     
+    
+    
+    
+    
+    
     /**
      * Show the summary for a given SPDX document
      * @param request
@@ -353,7 +358,7 @@ public class show extends Plugin{
         // get the SPDX file from the root node
         SPDXfile spdx = new SPDXfile(file);
         // compute some of our useful statistics about the SPDX document
-        int counterLicensesDeclared = doStatistics(spdx);
+        int counterLicensesDeclared = spdx.getStatsLicensesDeclared();
         int counterFiles = spdx.fileSection.files.size();
             
         // calculate percentage of files with a license declared
@@ -580,7 +585,7 @@ public class show extends Plugin{
              // iterate through all files
             for(FileInfo fileInfo : spdx.fileSection.files){
             // if there is a license, no need to continue
-            if(fileInfo.hasLicense()){
+            if(fileInfo.countLicensesDeclared()>0){
                 continue;
             }
             list.add(fileInfo);
@@ -591,7 +596,7 @@ public class show extends Plugin{
             // iterate through all files
             for(FileInfo fileInfo : spdx.fileSection.files){
             // if there is a license, no need to continue
-            if(fileInfo.hasLicense()==false){
+            if(fileInfo.countLicensesDeclared()==0){
                 continue;
             }
             list.add(fileInfo);
@@ -639,22 +644,7 @@ public class show extends Plugin{
     
    
     
-    /**
-     * When given a SPDX object, provide some statistics
-     * about the number of licenses that are not declared
-     */
-    int doStatistics(SPDXfile spdx){
-        int counterLicensesDeclared = 0;
-        // get the number of licenses declared
-            for(Object fileObject : spdx.fileSection.files){
-                FileInfo file = (FileInfo) fileObject;
-                // go deep into the license information
-                if(file.hasLicense()){
-                    counterLicensesDeclared++;
-                }
-            }
-            return counterLicensesDeclared;
-    }
+    
 
    
     /**

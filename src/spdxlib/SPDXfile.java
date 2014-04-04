@@ -60,6 +60,14 @@ public final class SPDXfile {
    String[] 
            lines; // where we keep all the lines that were separated
    
+   
+   // have statistics been already calculated for this document?
+   private boolean hasStats = false;
+   // if there is a file, what is the checksum?
+   private String checksum = "";
+   // how many licenses are present in this document?
+   private int statsLicensesDeclared = 0;
+   
    /**
     * Constructor where we initialize this object by serving an SPDX text
     * file as source of knowledge to fill up the contents
@@ -70,6 +78,8 @@ public final class SPDXfile {
        this.file = file;
        // do the normal reading
        read(file);
+       // now pre-process the stats
+       doStats();
    }
 
 //    public SPDXfile(File file, String text) {
@@ -555,6 +565,39 @@ public final class SPDXfile {
      */
     public void addTag(int linePosition, String text) {
         lines[linePosition] += "\n" + text;
+    }
+
+    /**
+     * How many licenses were declared inside this document?
+     * @return number of licenses declared
+     */
+    public int getStatsLicensesDeclared() {
+        return statsLicensesDeclared;
+    }
+    
+    
+    /**
+     * Computes all the statistics related to this document. This method
+     * is aimed at centralizing the stats calculation and this way avoid
+     * different loops several times, avoiding a waste of time and CPU.
+     */
+    private void doStats(){
+        // no need to continue if stats were already processed
+        if(hasStats) {
+            return;
+        }
+    
+        // initialize our variables
+        statsLicensesDeclared = 0;
+        
+        // get the number of licenses declared
+        for(Object fileObject : fileSection.files){
+            FileInfo fileInfo = (FileInfo) fileObject;
+            // count the number of declared licenses (not the concluded lic.)
+            statsLicensesDeclared += fileInfo.countLicensesDeclared();
+        }
+        
+        hasStats = true;
     }
     
 }
