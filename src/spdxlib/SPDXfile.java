@@ -18,8 +18,8 @@ package spdxlib;
 import definitions.Process;
 import definitions.is;
 import java.io.File;
-import java.util.ArrayList;
-import java.util.HashMap;
+import java.text.DecimalFormat;
+import java.util.*;
 import script.FileExtension;
 import script.log;
 import utils.files;
@@ -72,7 +72,8 @@ public final class SPDXfile {
    // are redundant files present on the document?
    private boolean statsHasSVN = false;
    
-   private HashMap<FileLanguage, Integer> statsExtensions = new HashMap();
+   private HashMap<FileLanguage, Integer> statsLanguagesFound = new HashMap();
+   private int statsLanguagesTotal = 0;
    
    /**
     * Constructor where we initialize this object by serving an SPDX text
@@ -603,30 +604,30 @@ public final class SPDXfile {
         statsHasSVN = false;
         
         // A single big loop to get all our stats computed
-        for(Object fileObject : fileSection.files){
-            FileInfo fileInfo = (FileInfo) fileObject;
+        for(FileInfo fileInfo : fileSection.files){
             // count the number of declared licenses (not the concluded lic.)
             statsLicensesDeclared += fileInfo.countLicensesDeclared();
-            
-            // process the most popular language type on this project
+            // process the most popular language types on this project
             FileExtension extension = fileInfo.getExtension();
-            
+            // only proceed when there is a valid extension
             if(extension != null){
-            // to which programming language is this file related?
-            FileLanguage language = extension.getLanguage();
-            // get the right index, increase the counter
-            // add up this info
-          //  if(language != null){
-            if(statsExtensions.containsKey(language)){
-                int count = statsExtensions.get(language);
-                count++;
-                statsExtensions.put(language, count);
-            }else{
-                // first time, add it up
-                statsExtensions.put(language, 1);
-          
-            }
-            
+                // to which programming language is this file related?
+                FileLanguage language = extension.getLanguage();
+                // get the right index, increase the counter
+                if(statsLanguagesFound.containsKey(language)){
+                    int count = statsLanguagesFound.get(language);
+                    count++;
+                    statsLanguagesFound.put(language, count);
+                }else{
+                    // first time, add it up
+                    statsLanguagesFound.put(language, 1);
+                }
+                // shall we count this as something we know? Avoid unsorted keys
+                if(language != FileLanguage.UNSORTED){
+                    // increase the counter
+                    statsLanguagesTotal++;
+                }
+                
             }
         }
         
@@ -650,17 +651,70 @@ public final class SPDXfile {
      * Give some indication of what is going on.
      */
     private void debugStats() {
-        if(statsExtensions.isEmpty()){
+        if(statsLanguagesFound.isEmpty()){
             System.err.println("SF650 - No languages were found?");
             return;
         }
         
-        System.out.println("\nFile: " + file.getName());
-        for(FileLanguage language: statsExtensions.keySet()){
-            int count = statsExtensions.get(language);
-            System.out.println(language.toString() + "-->" + count);
+        System.out.println("\nFile: " + file.getName() 
+                + " (" +statsLanguagesTotal+ " known files)");
+        // create a sorted array with the most popular languages
+        Map<Object,Integer> map = sortHashMap(statsLanguagesFound);
+
+        // show the ordered results
+        for(Object langObj :map.keySet()){
+            FileLanguage lang = (FileLanguage) langObj;
+            // ignore unsorted files, they're not needed
+            if(lang == FileLanguage.UNSORTED){
+                continue;
+            }
+            int count = map.get(lang);
+            System.out.println(lang.toString() + " -> " + count 
+                    + " ("
+                    + getPercentage(count, statsLanguagesTotal) + "%"
+                    + ")");
         }
         
+        
+        
     }
+    
+ 
+    /**
+     * Calculate a precise percentage on the value
+     * @param value the value from which we want a percentage assigned
+     * @param max the max value that represents 100%
+     * @return a string representing the percentual value
+     */
+    private String getPercentage(int value, int max){
+        double dMax = max;
+        double dValue = value;
+        double per = (dValue*100)/ dMax;
+        DecimalFormat df = new DecimalFormat("#.##");
+        return df.format(per);
+    }
+    
+    
+    /**
+     * Sort an hashmap according to its value.
+     * @origin http://wikijava.org/wiki/Sort_a_HashMap
+     * @date 2011-05-28
+     * @modified http://nunobrito.eu
+     * @date 2014-04-04
+     */
+    private Map sortHashMap(HashMap input){
+        Map<Object,Integer> map = new LinkedHashMap<Object,Integer>();
+        List<Object> yourMapKeys = new ArrayList<Object>(input.keySet());
+        List<Integer> yourMapValues = new ArrayList<Integer>(input.values());
+        TreeSet<Integer> sortedSet = new TreeSet<Integer>(yourMapValues);
+        Object[] sortedArray = sortedSet.toArray();
+        int size = sortedArray.length;
+        for (int i=size-1; i>-1; i--) {
+        map.put
+            (yourMapKeys.get(yourMapValues.indexOf(sortedArray[i])),
+            (Integer) sortedArray[i]);
+        }
+    return map;
+}
     
 }
