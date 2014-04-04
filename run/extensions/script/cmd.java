@@ -2,6 +2,7 @@ package script;
 
 import java.io.File;
 import java.util.Date;
+import script.FileExtension;
 import spdxlib.ContentType;
 import spdxlib.FileCategory;
 import spdxlib.FileLanguage;

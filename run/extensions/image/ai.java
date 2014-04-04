@@ -3,7 +3,8 @@ package image;
 import java.io.File;
 import script.FileExtension;
 import spdxlib.ContentType;
-import spdxlib.FileCategory;import spdxlib.FileLanguage;
+import spdxlib.FileCategory;
+import spdxlib.FileLanguage;
 
 /*
  * SPDXVersion: SPDX-1.1
