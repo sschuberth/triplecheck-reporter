@@ -18,10 +18,10 @@ import definitions.is;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
+import main.core;
 import script.FileExtension;
 import script.log;
 import spdxlib.ContentType;
-import main.core;
 
 
 /**

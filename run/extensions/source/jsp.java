@@ -4,6 +4,7 @@ import java.io.File;
 import script.FileExtension;
 import spdxlib.ContentType;
 import spdxlib.FileCategory;
+import spdxlib.FileLanguage;
 
 /*
  * SPDXVersion: SPDX-1.1
@@ -63,15 +64,15 @@ public class jsp extends FileExtension{
      */
     @Override
     public String getDescription() {
-        return null; // file type description
+        return "Java servlets"; // file type description
     }
     
     /**
-     * Are we collecting this description information from somewhere else?
+     * To which kind of language does this file relates the most?
      */
     @Override
-    public String getDescriptionURL(){
-        return null; // where the original page can be reached
+    public FileLanguage getLanguage(){
+        return FileLanguage.JAVA; // to which language is the file more related?
     }
     /**
      * Who is the owner for description that was provided?

@@ -20,6 +20,7 @@ import java.io.File;
 import java.util.Date;
 import spdxlib.ContentType;
 import spdxlib.FileCategory;
+import spdxlib.FileLanguage;
 
 
 /**
@@ -38,6 +39,10 @@ public class FileExtension {
     }
     // Category type? Source? executable? config?
     public FileCategory getCategory(){
+        return null;
+    }
+    // To which kind of language does this file relates the most?
+    public FileLanguage getLanguage(){
         return null;
     }
     // checks if the given file contains the magic signature bytes

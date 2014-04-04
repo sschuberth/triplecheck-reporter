@@ -70,6 +70,8 @@ public final class SPDXfile {
    // are redundant files present on the document?
    private boolean statsHasSVN = false;
    
+   private ArrayList<String> statsExtensions;
+   
    /**
     * Constructor where we initialize this object by serving an SPDX text
     * file as source of knowledge to fill up the contents

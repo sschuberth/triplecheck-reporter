@@ -2,9 +2,9 @@ package script;
 
 import java.io.File;
 import java.util.Date;
-import script.FileExtension;
 import spdxlib.ContentType;
 import spdxlib.FileCategory;
+import spdxlib.FileLanguage;
 
 /*
  * SPDXVersion: SPDX-1.1
@@ -65,11 +65,11 @@ public class pl extends FileExtension{
     }
     
     /**
-     * Are we collecting this description information from somewhere else?
+     * To which kind of language does this file relates the most?
      */
     @Override
-    public String getDescriptionURL(){
-        return null; // where the original page can be reached
+    public FileLanguage getLanguage(){
+        return FileLanguage.PERL; // to which language is the file more related?
     }
     /**
      * Who is the owner for description that was provided?
