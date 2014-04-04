@@ -67,6 +67,8 @@ public final class SPDXfile {
    private String checksum = "";
    // how many licenses are present in this document?
    private int statsLicensesDeclared = 0;
+   // are redundant files present on the document?
+   private boolean statsHasSVN = false;
    
    /**
     * Constructor where we initialize this object by serving an SPDX text
@@ -574,6 +576,11 @@ public final class SPDXfile {
     public int getStatsLicensesDeclared() {
         return statsLicensesDeclared;
     }
+
+    
+    public boolean hasSVN() {
+        return statsHasSVN;
+    }
     
     
     /**
@@ -589,6 +596,7 @@ public final class SPDXfile {
     
         // initialize our variables
         statsLicensesDeclared = 0;
+        statsHasSVN = false;
         
         // get the number of licenses declared
         for(Object fileObject : fileSection.files){
@@ -597,6 +605,18 @@ public final class SPDXfile {
             statsLicensesDeclared += fileInfo.countLicensesDeclared();
         }
         
+          
+        // are SVN files present on this document?
+        ArrayList<FileInfo> list = fileSection.files;
+        for(FileInfo fileInfo : list){
+            if(fileInfo.tagFileName.toString().contains(".svn")){
+                statsHasSVN = true;
+                break;
+            }
+        }
+        
+        
+        // all done
         hasStats = true;
     }
     

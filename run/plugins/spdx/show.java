@@ -72,8 +72,8 @@ public class show extends Plugin{
                 counterLicensesDeclared = 0
                 ;
         
-        // no products found..
-        if(core.products==null){
+        // no reports found..
+        if(core.reports==null){
             String result = ""
                     + html.div()
                     + html.br
@@ -89,7 +89,7 @@ public class show extends Plugin{
         }
         
         // get some statistical data
-        for(Object object : core.products){
+        for(Object object : core.reports){
             SPDXfile spdx = (SPDXfile) object;
             counterFiles += spdx.fileSection.files.size();
             counterCreators += spdx.creatorSection.people.size();
@@ -125,11 +125,11 @@ public class show extends Plugin{
         
         // handle the number of documents
         String documentText = "";
-        if(core.products.size() == 1){
+        if(core.reports.size() == 1){
             documentText = "1 document" + html.br;
         }
-        if(core.products.size() > 1){
-            documentText = core.products.size() + " documents" + html.br;
+        if(core.reports.size() > 1){
+            documentText = core.reports.size() + " documents" + html.br;
         }
         
         
@@ -191,7 +191,7 @@ public class show extends Plugin{
 //        Table table = new Table(line);
         
         String result = "";
-//        for(SPDXfile product : core.products){
+//        for(SPDXfile product : core.reports){
 //            String lastModified = utils.time.getTimeFromLong
 //                (product.file.lastModified());
 //            
@@ -322,6 +322,7 @@ public class show extends Plugin{
         return;
         }
         
+        // now do this properly on our desktop interface
         request.setAnswer("Loading text..");
         // we just want to just this on the GUI
         core.studio.editorPane(is.contentText, false, 0, result);
@@ -361,12 +362,7 @@ public class show extends Plugin{
         int counterLicensesDeclared = spdx.getStatsLicensesDeclared();
         int counterFiles = spdx.fileSection.files.size();
             
-        // calculate percentage of files with a license declared
-//        String percentage = 
-//                  " ("
-//                + (counterLicensesDeclared * 100)/counterFiles
-//                + "% in total)" + html.br; 
-//        
+       
         String searchEngines = 
                 html.div(10)
                 + html.linkToSearchGoogle(spdx.getId())
@@ -654,18 +650,9 @@ public class show extends Plugin{
      */
     private String doEvaluation(SPDXfile spdx) {
         String result = "";
+      
         
-        
-        Boolean hasSVNfiles = false;
-        ArrayList<FileInfo> list = spdx.fileSection.files;
-        for(FileInfo file : list){
-            if(file.tagFileName.toString().contains(".svn")){
-                hasSVNfiles = true;
-                break;
-            }
-        }
-        
-        if(hasSVNfiles){
+        if(spdx.hasSVN()){
             result = html.br
                     + html.h2(""
                             //html.getCommonFolderIcon("exclamation.png") 

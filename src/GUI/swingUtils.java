@@ -245,14 +245,14 @@ public class swingUtils {
         //createNode("Home", NodeType.home, nodeRoot);
         
         
-        // create the node for hosting our products
+        // create the node for hosting our reports
         TreeNodeSPDX productNode = nodeCreate(
-                "Products (" + core.products.size() + ")"
+                "Products (" + core.reports.size() + ")"
                 , NodeType.other, nodeRoot);
         productNode.id = folder.products;
         
         // add all SPDX documents that were found
-            for(SPDXfile spdx : core.products){
+            for(SPDXfile spdx : core.reports){
                 addNodeSPDX(productNode, spdx);
             }
         
@@ -520,9 +520,9 @@ public class swingUtils {
 //        File baseFolder = new File(".");
 ////        core.components = actions.findSPDX(new File(baseFolder, 
 ////                is.library));
-//        // now find our products
-//        core.products = actions.findSPDX(new File(baseFolder, 
-//                is.products));
+//        // now find our reports
+//        core.reports = actions.findSPDX(new File(baseFolder, 
+//                is.reports));
 //        
 //        // get the current UID of the selected node
 //        if(UID.isEmpty()){

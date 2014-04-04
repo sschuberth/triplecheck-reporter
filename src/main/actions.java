@@ -131,7 +131,7 @@ public class actions {
         findFolders(core.getProductsFolder(), 25, softwareNode);
         
         
-        // we use this value for later showing the products (SPDX) node
+        // we use this value for later showing the reports (SPDX) node
         // fully expanded
         core.temp.put(is.products, softwareNode.getUID());
         

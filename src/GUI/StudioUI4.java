@@ -320,7 +320,7 @@ public class StudioUI4 extends javax.swing.JFrame {
     public void doSettings() {
         // the basic root node that is always needed
         swingUtils.nodeAddRoot(tree);
-       // now add all products that we can find
+       // now add all reports that we can find
         actions.addTreeSPDX(tree);
     
         // get the list of RunPlugins going

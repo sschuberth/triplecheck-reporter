@@ -141,9 +141,9 @@ public class pluginSearch extends Plugin{
         core.studio.editorPane(is.contentHTML, false, 0, output);
             
             
-            // look in products now
+            // look in reports now
             String matchProductName =
-                searchListSPDX(core.products, searchTerm, definition.nodeSoftware);
+                searchListSPDX(core.reports, searchTerm, definition.nodeSoftware);
             
                     // compile all the results together
             output =  //matchComponentName
@@ -178,7 +178,7 @@ public class pluginSearch extends Plugin{
      /**
      * Allows to perform the list on a specific list of
      * SPDX array files. This is intended to make the distinction
-     * between the components and products
+     * between the components and reports
      * @param list
      * @param searchTerm
      * @param title

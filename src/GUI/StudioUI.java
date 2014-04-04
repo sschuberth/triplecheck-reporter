@@ -627,7 +627,7 @@ public class StudioUI extends javax.swing.JFrame {
     }//GEN-LAST:event_buttonProductEditSPDXActionPerformed
 
     private void libraryTreeChanged(javax.swing.event.TreeSelectionEvent evt) {//GEN-FIRST:event_libraryTreeChanged
-       // Something has changed on the tree list of products
+       // Something has changed on the tree list of reports
         //swingUtils.treeItemSelected(libraryTree, libraryText);
     }//GEN-LAST:event_libraryTreeChanged
 

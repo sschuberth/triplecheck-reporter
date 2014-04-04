@@ -325,15 +325,15 @@ public class StudioUI3 extends javax.swing.JFrame {
         // the basic root node that is always needed
         swingUtils.nodeAddRoot(tree);
          
-        // now add all products that we can find
+        // now add all reports that we can find
         actions.addTreeSPDX(tree);
         
         
          // set our first product as the default thing when adding
          // more components from the library
-//        if(core.products != null) 
-//           if(core.products.isEmpty() == false){
-//            productSelected = core.products.get(0);
+//        if(core.reports != null) 
+//           if(core.reports.isEmpty() == false){
+//            productSelected = core.reports.get(0);
 //            System.out.println("KH09 - Selecting the first product as default");
 //        } 
         

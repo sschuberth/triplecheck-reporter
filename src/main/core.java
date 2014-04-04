@@ -41,7 +41,7 @@ public class core {
     
     public static ArrayList<SPDXfile> 
             //components, 
-            products;
+            reports;
     
     // where we keep our shared objects
     public static HashMap
@@ -123,7 +123,7 @@ public class core {
     public static void refreshSPDX(){
         // find all SPDX files inside our archive
         File baseFolder = new File(".");
-        core.products = actions.findSPDX(new File(baseFolder, is.products));
+        core.reports = actions.findSPDX(new File(baseFolder, is.products));
         // send a message to the world, warning that things changed
         log.write(is.INFO, Messages.RefreshSPDX);
     }
