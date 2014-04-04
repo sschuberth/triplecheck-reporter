@@ -43,7 +43,7 @@ public class FileExtension {
     }
     // To which kind of language does this file relates the most?
     public FileLanguage getLanguage(){
-        return null;
+        return FileLanguage.UNSORTED;
     }
     // checks if the given file contains the magic signature bytes
     public Boolean isApplicable(File binaryFile){

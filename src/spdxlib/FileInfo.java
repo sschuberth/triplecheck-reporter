@@ -15,6 +15,8 @@ package spdxlib;
 
 import definitions.is;
 import java.util.ArrayList;
+import main.core;
+import script.FileExtension;
 import script.log;
 
 
@@ -50,7 +52,7 @@ public class FileInfo {
     
    
      // non tag related
-     public FileCategory fileCategory = FileCategory.UNKNOWN;
+    public FileCategory fileCategory = FileCategory.UNKNOWN;
      
      /**
       * Prints the data from this object for debugging the result
@@ -110,6 +112,8 @@ public class FileInfo {
         // all done
         return fileName;
     }
+    
+    
     
     
     /**
@@ -268,5 +272,56 @@ public class FileInfo {
         return result;
     }
     
+    
+    /**
+     * What is the extension of this file?
+     * @return the acronym that pertains to this file
+     */
+    public String getExtensionString(){
+        // only accept extensions with dots, otherwise it is not an extension
+        String extension = tagFileName.getValue();
+        if(extension.contains(".")==false){
+            return null;
+        }
+        // we have an extension, get it here
+        extension = extension.substring(extension.lastIndexOf(".")+1).toLowerCase();
+        // all done
+        return extension;
+    }
+    
+    
+     /**
+     * What is the extension of this file?
+     * @return the extension object with more info about this specific filetype
+     */
+    public FileExtension getExtension(){
+        FileExtension result = core.extensions.get(getExtensionString());
+        return result;
+    }
+    
+    /**
+     * When given a file name, discover the type of file that we have here
+     * @param fileName a normal 8.3 file name
+     * @return a type of category
+     */
+    public FileCategory findCategory(){
+        // assign a default value
+        FileCategory result = FileCategory.UNKNOWN;
+        
+        // first test, needs to have a dot as separator
+        String extension = getExtensionString();
+        
+        // extension is not recognized, let's just go away
+        if(core.extensions.has(extension) == false){
+            return result;
+        }
+        // get the extension that we need
+        FileExtension ext = core.extensions.get(extension);
+        
+        // define the new type of extension for this specific file
+        result = ext.getCategory();
+        
+    return result;
+    }
     
 }

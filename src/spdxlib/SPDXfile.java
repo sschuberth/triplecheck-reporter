@@ -19,6 +19,8 @@ import definitions.Process;
 import definitions.is;
 import java.io.File;
 import java.util.ArrayList;
+import java.util.HashMap;
+import script.FileExtension;
 import script.log;
 import utils.files;
 
@@ -70,7 +72,7 @@ public final class SPDXfile {
    // are redundant files present on the document?
    private boolean statsHasSVN = false;
    
-   private ArrayList<String> statsExtensions;
+   private HashMap<FileLanguage, Integer> statsExtensions = new HashMap();
    
    /**
     * Constructor where we initialize this object by serving an SPDX text
@@ -600,11 +602,32 @@ public final class SPDXfile {
         statsLicensesDeclared = 0;
         statsHasSVN = false;
         
-        // get the number of licenses declared
+        // A single big loop to get all our stats computed
         for(Object fileObject : fileSection.files){
             FileInfo fileInfo = (FileInfo) fileObject;
             // count the number of declared licenses (not the concluded lic.)
             statsLicensesDeclared += fileInfo.countLicensesDeclared();
+            
+            // process the most popular language type on this project
+            FileExtension extension = fileInfo.getExtension();
+            
+            if(extension != null){
+            // to which programming language is this file related?
+            FileLanguage language = extension.getLanguage();
+            // get the right index, increase the counter
+            // add up this info
+          //  if(language != null){
+            if(statsExtensions.containsKey(language)){
+                int count = statsExtensions.get(language);
+                count++;
+                statsExtensions.put(language, count);
+            }else{
+                // first time, add it up
+                statsExtensions.put(language, 1);
+          
+            }
+            
+            }
         }
         
           
@@ -617,9 +640,27 @@ public final class SPDXfile {
             }
         }
         
+        debugStats();
         
         // all done
         hasStats = true;
+    }
+
+    /**
+     * Give some indication of what is going on.
+     */
+    private void debugStats() {
+        if(statsExtensions.isEmpty()){
+            System.err.println("SF650 - No languages were found?");
+            return;
+        }
+        
+        System.out.println("\nFile: " + file.getName());
+        for(FileLanguage language: statsExtensions.keySet()){
+            int count = statsExtensions.get(language);
+            System.out.println(language.toString() + "-->" + count);
+        }
+        
     }
     
 }
