@@ -34,6 +34,34 @@ public enum FileLanguage {
     // misc
     SQL,
     HTML,
-    UNSORTED
+    UNSORTED;
     
+    
+    @Override
+    public String toString() {
+        switch (this) {
+        case JAVA: return "Java";
+        case DELPHI: return "Delphi";
+        case C: return "C";
+        case C_PLUS_PLUS: return "C++";
+        case DOT_NET: return ".NET";
+        case C_SHARP: return "C#";
+        case OBJECTIVE_C: return "Objective C";
+    
+    // scripted
+        case PHP: return "PHP";
+        case JAVASCRIPT: return "Javascript";
+        case RUBY: return "Ruby";
+        case PYTHON: return "Python";
+        case PERL: return "Perl";
+        case SCRIPT_LINUX: return "Linux scripts";
+        case SCRIPT_WINDOWS: return "Windows scripts";
+    
+    // misc
+        case SQL: return "SQL";
+        case HTML: return "HTML";
+        case UNSORTED: return "Unsorted";
+        }
+        return "";
+    }
 }

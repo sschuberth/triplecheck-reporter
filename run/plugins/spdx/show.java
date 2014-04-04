@@ -23,11 +23,13 @@ import java.io.File;
 import java.io.IOException;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
+import java.util.Map;
 import main.core;
 import main.param;
 import script.Plugin;
 import script.log;
 import spdxlib.FileInfo;
+import spdxlib.FileLanguage;
 import spdxlib.SPDXfile;
 import spdxlib.tools;
 import utils.Graphs;
@@ -417,7 +419,8 @@ public class show extends Plugin{
                 + html.br
                 + textOverallSize + " in size"
                 + html.br
-                
+                + spdx.getLanguageEvaluation()
+                + html.br
                 //+ html.getCommonFolderIcon("calculator.png")
                 
                 //+ percentage

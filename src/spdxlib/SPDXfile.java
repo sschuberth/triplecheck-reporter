@@ -23,6 +23,7 @@ import java.util.*;
 import script.FileExtension;
 import script.log;
 import utils.files;
+import utils.html;
 
 public final class SPDXfile {
     
@@ -641,16 +642,37 @@ public final class SPDXfile {
             }
         }
         
-        debugStats();
+        //debugStats();
         
         // all done
         hasStats = true;
     }
 
     /**
-     * Give some indication of what is going on.
+     * The unsorted hashmap with the languages that were most often found
+     * on this document
      */
-    private void debugStats() {
+    public HashMap<FileLanguage, Integer> getStatsLanguagesFound() {
+        return statsLanguagesFound;
+    }
+
+    /**
+     * 
+     * @return 
+     */
+    public int getStatsLanguagesTotal() {
+        return statsLanguagesTotal;
+    }
+
+    
+    
+     
+    
+    
+    /**
+     * Give some indication of what is going on in terms of languages
+     */
+    public void debugStats() {
         if(statsLanguagesFound.isEmpty()){
             System.err.println("SF650 - No languages were found?");
             return;
@@ -659,7 +681,7 @@ public final class SPDXfile {
         System.out.println("\nFile: " + file.getName() 
                 + " (" +statsLanguagesTotal+ " known files)");
         // create a sorted array with the most popular languages
-        Map<Object,Integer> map = sortHashMap(statsLanguagesFound);
+        Map<Object,Integer> map = utils.misc.sortHashMap(statsLanguagesFound);
 
         // show the ordered results
         for(Object langObj :map.keySet()){
@@ -671,50 +693,54 @@ public final class SPDXfile {
             int count = map.get(lang);
             System.out.println(lang.toString() + " -> " + count 
                     + " ("
-                    + getPercentage(count, statsLanguagesTotal) + "%"
+                    + utils.misc.getPercentage(count, statsLanguagesTotal) + "%"
                     + ")");
         }
-        
-        
-        
     }
     
- 
-    /**
-     * Calculate a precise percentage on the value
-     * @param value the value from which we want a percentage assigned
-     * @param max the max value that represents 100%
-     * @return a string representing the percentual value
+ /**
+     * Given the recognized languages inside a given document, create
+     * an evaluation about what is contained inside.
      */
-    private String getPercentage(int value, int max){
-        double dMax = max;
-        double dValue = value;
-        double per = (dValue*100)/ dMax;
-        DecimalFormat df = new DecimalFormat("#.##");
-        return df.format(per);
-    }
-    
-    
-    /**
-     * Sort an hashmap according to its value.
-     * @origin http://wikijava.org/wiki/Sort_a_HashMap
-     * @date 2011-05-28
-     * @modified http://nunobrito.eu
-     * @date 2014-04-04
-     */
-    private Map sortHashMap(HashMap input){
-        Map<Object,Integer> map = new LinkedHashMap<Object,Integer>();
-        List<Object> yourMapKeys = new ArrayList<Object>(input.keySet());
-        List<Integer> yourMapValues = new ArrayList<Integer>(input.values());
-        TreeSet<Integer> sortedSet = new TreeSet<Integer>(yourMapValues);
-        Object[] sortedArray = sortedSet.toArray();
-        int size = sortedArray.length;
-        for (int i=size-1; i>-1; i--) {
-        map.put
-            (yourMapKeys.get(yourMapValues.indexOf(sortedArray[i])),
-            (Integer) sortedArray[i]);
+    public String getLanguageEvaluation(){
+        if(statsLanguagesFound.isEmpty()){
+            System.err.println("SH650 - No languages were found?");
+            return "";
         }
-    return map;
-}
+        
+        // get the sorted map with the related languages
+        Map<Object,Integer> map = utils.misc.sortHashMap(statsLanguagesFound);
+        int total = statsLanguagesTotal;
+        
+        String result = 
+                ""
+                //+ "<b>In a glance</b>"
+                + html.br;
+        
+        
+        // show the ordered results
+        for(Object langObj :map.keySet()){
+            FileLanguage lang = (FileLanguage) langObj;
+            // ignore unsorted files, they're not needed
+            if(lang == FileLanguage.UNSORTED){
+                continue;
+            }
+            int count = map.get(lang);
+            result += ""
+                    //+ " -> " 
+                    + utils.misc.getPercentage(count, total) + "%"
+                    + " "
+                    + (lang.toString() 
+                    + " ("
+                    + count 
+                    + " files)"
+                    + html.br
+                    );
+        }
+        
+        return result;
+    }
+    
+   
     
 }
