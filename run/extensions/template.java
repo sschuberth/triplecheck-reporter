@@ -2,7 +2,8 @@ import java.io.File;
 import java.util.Date;
 import script.FileExtension;
 import spdxlib.ContentType;
-import spdxlib.FileCategory;import spdxlib.FileLanguage;
+import spdxlib.FileCategory;
+import spdxlib.FileLanguage;
 
 /*
  * SPDXVersion: SPDX-1.1
@@ -67,7 +68,7 @@ public class template extends FileExtension{
      */
     @Override
     public FileLanguage getLanguage(){
-        return null; // to which language is the file more related?
+        return FileLanguage.UNSORTED; // to which language is the file more related?
     }
     /**
      * Who is the owner for description that was provided?

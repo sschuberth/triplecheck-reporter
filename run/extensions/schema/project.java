@@ -4,7 +4,8 @@ import java.io.File;
 import java.util.Date;
 import script.FileExtension;
 import spdxlib.ContentType;
-import spdxlib.FileCategory;import spdxlib.FileLanguage;
+import spdxlib.FileCategory;
+import spdxlib.FileLanguage;
 
 /*
  * SPDXVersion: SPDX-1.1
@@ -69,7 +70,10 @@ public class project extends FileExtension{
      */
     @Override
     public FileLanguage getLanguage(){
-        return null; // to which language is the file more related?
+        // this file relates more to Eclipse, albeit the large
+        // majority of eclipse projects are bound to be Java-related.
+        // more info: http://file-extension.net/seeker/file_extension_project
+        return FileLanguage.JAVA; // to which language is the file more related?
     }
     /**
      * Who is the owner for description that was provided?

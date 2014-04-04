@@ -69,7 +69,7 @@ public class xib extends FileExtension{
      */
     @Override
     public FileLanguage getLanguage(){
-        return null; // to which language is the file more related?
+        return FileLanguage.UNSORTED; // to which language is the file more related?
     }
     /**
      * Who is the owner for description that was provided?

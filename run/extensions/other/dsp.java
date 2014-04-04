@@ -3,7 +3,8 @@ package other;
 import java.io.File;
 import script.FileExtension;
 import spdxlib.ContentType;
-import spdxlib.FileCategory;import spdxlib.FileLanguage;
+import spdxlib.FileCategory;
+import spdxlib.FileLanguage;
 
 /*
  * SPDXVersion: SPDX-1.1
@@ -71,7 +72,7 @@ public class dsp extends FileExtension{
      */
     @Override
     public FileLanguage getLanguage(){
-        return null; // to which language is the file more related?
+        return FileLanguage.C_PLUS_PLUS; // to which language is the file more related?
     }
     /**
      * Who is the owner for description that was provided?
