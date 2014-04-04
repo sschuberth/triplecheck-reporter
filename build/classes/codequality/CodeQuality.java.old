@@ -1,0 +1,76 @@
+/*
+ * SPDXVersion: SPDX-1.1
+ * Creator: Person: Nuno Brito (nuno.brito@triplecheck.de)
+ * Creator: Organization: TripleCheck (http://triplecheck.de)
+ * Created: 2013-11-29T00:00:00Z
+ * LicenseName: NOASSERTION
+ * FileName: ToolsQualityTest.java  
+ * FileType: SOURCE
+ * FileCopyrightText: <text> Copyright (c) 2013 Nuno Brito, TripleCheck </text>
+ * FileComment: <text> This tool will check a given source and try to report
+ * back an evaluation of its quality.</text> 
+ */
+
+package codequality;
+
+import definitions.Messages;
+import java.io.File;
+import script.Plugin;
+import script.log;
+import utils.html;
+import www.WebRequest;
+
+/**
+ *
+ * @author Nuno Brito, 29th of November 2013 in Darsmtadt, Germany
+ */
+public class CodeQuality extends Plugin{
+    
+    String title = "Code quality";
+    
+    @Override
+    public void startup(){
+    // add our node to the tree right after the "Tools" node is added
+        log.hooks.addAction(Messages.AddingTools, thisFile, "addNode");
+    }
+    
+    /**
+     * Add our toolbox node to the treeview.
+     */
+    public void addNode(){
+       addTreeNode(title, "medal-premium.png", "showPage");
+    }
+    
+    /**
+     * Displays a basic log of what has been happening
+     * @param request The request details
+     */
+    public void showPage(WebRequest request){ 
+      
+       File page = new File(thisFolder, "test.html");
+       
+       if(page.exists() == false){
+           System.err.println("CQ001 - Test page not found");
+           return;
+       }
+       
+       String result = utils.files.readAsString(page);
+       
+       request.BaseFolder = thisFolder;
+       // write everything for the user to read
+       request.setAnswer(result);
+    }
+
+    public void test(WebRequest request){ 
+        String result = "";
+        
+        for(String[] parameter : request.parameters){
+            result += parameter[0] + "->" + parameter[1] + html.br;
+        }
+        
+        request.setAnswer(result);
+    }
+    
+    
+    
+}
