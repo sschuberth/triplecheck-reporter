@@ -34,7 +34,8 @@ public enum FileLanguage {
     // misc
     SQL,
     HTML,
-    UNSORTED;
+    UNSORTED,
+    MULTIPLE;
     
     
     @Override
@@ -61,6 +62,7 @@ public enum FileLanguage {
         case SQL: return "SQL";
         case HTML: return "HTML";
         case UNSORTED: return "Unsorted";
+        case MULTIPLE: return "Multiple";
         }
         return "";
     }

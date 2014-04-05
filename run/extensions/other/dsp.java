@@ -64,7 +64,7 @@ public class dsp extends FileExtension{
      */
     @Override
     public String getDescription() {
-        return null; // file type description
+        return "File format used by Microsoft Visual Studio"; // file type description
     }
     
     /**
@@ -72,7 +72,10 @@ public class dsp extends FileExtension{
      */
     @Override
     public FileLanguage getLanguage(){
-        return FileLanguage.C_PLUS_PLUS; // to which language is the file more related?
+        // add the support for multiple languages on this case
+        languages.add(FileLanguage.C_PLUS_PLUS);
+        languages.add(FileLanguage.C);
+        return FileLanguage.MULTIPLE; // to which language is the file more related?
     }
     /**
      * Who is the owner for description that was provided?

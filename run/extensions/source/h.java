@@ -72,7 +72,15 @@ public class h extends FileExtension{
      */
     @Override
     public FileLanguage getLanguage(){
-        return FileLanguage.C; // to which language is the file more related?
+        /**
+         * .h files are headers for the C programming language, they apply
+         * both for C++ and C. For this kind of situation, we define the
+         * applicable language as "multiple" and then define the possible
+         * language options
+         */
+        languages.add(FileLanguage.C_PLUS_PLUS);
+        languages.add(FileLanguage.C);
+        return FileLanguage.MULTIPLE; // to which language is the file more related?
     }
     /**
      * Who is the owner for description that was provided?

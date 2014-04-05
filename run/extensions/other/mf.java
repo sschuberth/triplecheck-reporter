@@ -1,7 +1,6 @@
-package unknown;
+package other;
 
 import java.io.File;
-import java.util.Date;
 import script.FileExtension;
 import spdxlib.ContentType;
 import spdxlib.FileCategory;
@@ -9,26 +8,29 @@ import spdxlib.FileLanguage;
 
 /*
  * SPDXVersion: SPDX-1.1
- * Creator: Person: nuno
- * Created: 2013-11-30T21:19:07Z
+ * Creator: Person: Nuno Brito
+ * Created: 2013-11-16T14:30:03Z
  * LicenseName: CC-BY-3.0
- * TemplateVersion: TC-2013-11-16
  * FileName: mf.java  
  * FileCategory: SOURCE
- * FileCopyrightText: <text> Copyright © 2013, nuno </text>
- * FileComment: <text> This class provides details about the files that make 
- * use of the "mf" extension. When possible, the file provenance author
- * includes details such as date when this extension first began to be used.
- * There are cases where different data structures use the same file extension,
- * when this happens then the author needs to accomodate code to accurately
- * detect which type of file is being analysed.
+ * FileCopyrightText: <text> Copyright © 2013, Nuno Brito </text>
+ * FileComment: <text> This class provides details about files that have
+ * the extension of type manifest. Extensions tend to represent a specific type
+ * of file structure from where we can extract information. In some cases, the
+ * same type of file is used for representing different types of data from 
+ * different types of applications. We make no specific arrangement to handle
+ * these cases, albeit this class should be able of distinguishing each one of
+ * them and then provide a suited answer. For example, NFO files are both used
+ * as text files with information or used as binay files by a different tool.
+ * 
+ * The extension handler should be able of distinguishing these cases.
  * </text> 
  */
 
 
 /**
  *
- * @file provenance by nuno
+ * @author Nuno Brito
  */
 public class mf extends FileExtension{
     /**
@@ -62,7 +64,9 @@ public class mf extends FileExtension{
      */
     @Override
     public String getDescription() {
-        return null; // file type description
+        return "This file simply enumerates the files which are included "
+                + "in the distribution, either for processing by various packaging "
+                + "tools, or for human consumption."; // file type description
     }
     
     /**
@@ -88,12 +92,33 @@ public class mf extends FileExtension{
      */
     @Override
     public String getIdentifierShort() {
-        return "mf";
+        return "manifest";
     }
-    
+
     /**
-     * Who has the copyright over this extension? This is information that
-     * might be extracted from the meta-data inside the data contents. When
+     * Returns information is this file has a binary or text based structure.
+     * This is later used by the "isApplicable()" methods to speed up the
+     * processing of each file
+     * @return the type of content expected inside the file
+     */
+    @Override
+    public ContentType getContentType() {
+        return ContentType.TEXT;
+    }
+
+    /**
+     * We can typically group data structures inside files to a few categories.
+     * Albeit not perfect, it does help to sort out files into groups.
+     * @return the category generally associated with this file type
+     */
+    @Override
+    public FileCategory getCategory() {
+        return FileCategory.SCHEMA;
+    }
+
+    /**
+     * Who has the copyright over this file? Sometimes this is information that
+     * can be extracted from the meta-data inside the data contents. When
      * available, this information is available using this method.
      * @return A string with with copyright text extracted from the file
      */
@@ -113,52 +138,6 @@ public class mf extends FileExtension{
         return null;
     }
 
-    /**
-     * How old is the oldest file that we have found of this kind?
-     */
-    @Override
-    public Date earliestKnownRecord(){
-        // syntax example that you can use for recording the date
-        // Date result = utils.time.getDate(1999, 01, 01);
-        return null;
-    }
     
-    /**
-     * What are the MIME types registered for this file?
-     */
-    @Override
-    public String getMIME(){
-        return null;
-    }
-    
-    /**
-     * Returns information is this file has a binary or text based structure.
-     * This is later used by the "isApplicable()" methods to speed up the
-     * processing of each file
-     * @return the type of content expected inside the file
-     */
-    @Override
-    public ContentType getContentType() {
-        return ContentType.TEXT; // is it a binary or text file?
-    }
-
-    /**
-     * We can typically group data structures inside files to a few categories.
-     * Albeit not perfect, it does help to sort out files into groups.
-     * @return the category generally associated with this file type
-     */
-    @Override
-    public FileCategory getCategory() {
-        return FileCategory.UNKNOWN; // does it group under a category?
-    }
-
-    /**
-     * The normal designation for these kind of files.
-     */
-    @Override
-    public String getIdentifierLong(){
-        return null; // how is this file
-    }
-
     
 }

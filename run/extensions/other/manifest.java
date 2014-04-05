@@ -64,7 +64,9 @@ public class manifest extends FileExtension{
      */
     @Override
     public String getDescription() {
-        return null; // file type description
+        return "This file simply enumerates the files which are included "
+                + "in the distribution, either for processing by various packaging "
+                + "tools, or for human consumption."; // file type description
     }
     
     /**
@@ -72,7 +74,7 @@ public class manifest extends FileExtension{
      */
     @Override
     public FileLanguage getLanguage(){
-        return FileLanguage.JAVA; // to which language is the file more related?
+        return FileLanguage.UNSORTED; // to which language is the file more related?
     }
     /**
      * Who is the owner for description that was provided?
@@ -101,7 +103,7 @@ public class manifest extends FileExtension{
      */
     @Override
     public ContentType getContentType() {
-        return ContentType.UNKNOWN;
+        return ContentType.TEXT;
     }
 
     /**
@@ -111,7 +113,7 @@ public class manifest extends FileExtension{
      */
     @Override
     public FileCategory getCategory() {
-        return FileCategory.UNKNOWN;
+        return FileCategory.SCHEMA;
     }
 
     /**

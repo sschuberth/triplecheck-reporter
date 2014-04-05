@@ -604,6 +604,9 @@ public final class SPDXfile {
         statsLicensesDeclared = 0;
         statsHasSVN = false;
         
+        // this list keeps files where multiple languages apply
+        ArrayList<FileInfo> secondList = new ArrayList();
+        
         // A single big loop to get all our stats computed
         for(FileInfo fileInfo : fileSection.files){
             // count the number of declared licenses (not the concluded lic.)
@@ -614,6 +617,22 @@ public final class SPDXfile {
             if(extension != null){
                 // to which programming language is this file related?
                 FileLanguage language = extension.getLanguage();
+                // shall we count this as something we know? Avoid unsorted keys
+                if(language != FileLanguage.UNSORTED){
+                    // increase the counter
+                    statsLanguagesTotal++;
+                    // enable the line below if you want to see what is selected
+                    //System.out.println(fileInfo.getName() + "-->" + language.toString());
+                }
+                
+                // if the file is used by multiple languages, then we place it
+                // on a post-processing list to discover how it is being used.
+                if(language == FileLanguage.MULTIPLE){
+                    secondList.add(fileInfo);
+                    // no need to proceed, skip to next file
+                    continue;
+                }
+              
                 // get the right index, increase the counter
                 if(statsLanguagesFound.containsKey(language)){
                     int count = statsLanguagesFound.get(language);
@@ -623,16 +642,57 @@ public final class SPDXfile {
                     // first time, add it up
                     statsLanguagesFound.put(language, 1);
                 }
-                // shall we count this as something we know? Avoid unsorted keys
-                if(language != FileLanguage.UNSORTED){
-                    // increase the counter
-                    statsLanguagesTotal++;
-                }
+                
                 
             }
         }
         
+        // now go through the second list, try to discover where the files
+        // applicable to multiple languages belong
+        // iterate through all these files
+        for(FileInfo fileInfo : secondList){
+            // get the respective extension
+            FileExtension extension = fileInfo.getExtension();
+            // what are the multiple language options?
+            ArrayList<FileLanguage> multiple = extension.getLanguages();
+            // just a security check, we don't want empty variables
+            if(multiple.isEmpty()){
+                continue;
+            }
+            
+            // let's do some ranking
+            int highestCount = 0;
+            FileLanguage top = null;
+            
+            //FileLanguage language = extension.getLanguage();
+             
+            // go through each indexed language
+            for(FileLanguage thisLang : statsLanguagesFound.keySet()){
+                // we only want the possible candidates
+                if(extension.getLanguages().contains(thisLang)==false){
+                    continue;
+                }
+                
+                int thisCount = statsLanguagesFound.get(thisLang);
+                if(thisCount > highestCount){
+                    // we have a possible value
+                    top = thisLang;
+                }
+            }
+            // now we have the top ranked candidate
+            if(top != null){
+                int count = statsLanguagesFound.get(top);
+                    count++;
+                    statsLanguagesFound.put(top, count);
+            }
+            
+            
+           
+            
+        }
+        
           
+        // this had been replaced with a versioning that was more generic
         // are SVN files present on this document?
         ArrayList<FileInfo> list = fileSection.files;
         for(FileInfo fileInfo : list){

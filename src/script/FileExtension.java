@@ -17,6 +17,7 @@
 package script;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.Date;
 import spdxlib.ContentType;
 import spdxlib.FileCategory;
@@ -31,6 +32,9 @@ import spdxlib.FileLanguage;
 public class FileExtension {
 
     String infoDataURL;
+    
+    // this is used this extension applies to multiple languages simultaneously
+    protected ArrayList<FileLanguage> languages = new ArrayList();
     
     
     // binary or text file?
@@ -99,5 +103,11 @@ public class FileExtension {
     public String writeComment(){
         return null;
     }
+
+    public ArrayList<FileLanguage> getLanguages() {
+        return languages;
+    }
+    
+    
 }
 

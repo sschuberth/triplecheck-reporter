@@ -93,7 +93,7 @@ public class ExtensionCreate {
         String person = System.getProperty("user.name");
         text = text.replace("#PERSON#", person);
         text = text.replace("LicenseName: NOASSERTION", 
-                "LicenseName: CC-BY-3.0");
+                "LicenseName: CC-BY-4.0");
         text = text.replace("#DATE#", DocumentCreate.getDateSPDX());
         // get the year value for the copyright value
         Date date = new Date();
