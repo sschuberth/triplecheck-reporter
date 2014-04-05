@@ -18,8 +18,9 @@ package spdxlib;
 import definitions.Process;
 import definitions.is;
 import java.io.File;
-import java.text.DecimalFormat;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 import script.FileExtension;
 import script.log;
 import utils.files;
@@ -75,6 +76,10 @@ public final class SPDXfile {
    
    private HashMap<FileLanguage, Integer> statsLanguagesFound = new HashMap();
    private int statsLanguagesTotal = 0;
+   
+   // related to artwork
+   private int statsArtworkCount = 0;
+   private HashMap<FileCategory, Integer> statsArtworkFound = new HashMap();
    
    /**
     * Constructor where we initialize this object by serving an SPDX text
@@ -614,37 +619,65 @@ public final class SPDXfile {
             // process the most popular language types on this project
             FileExtension extension = fileInfo.getExtension();
             // only proceed when there is a valid extension
-            if(extension != null){
-                // to which programming language is this file related?
-                FileLanguage language = extension.getLanguage();
-                // shall we count this as something we know? Avoid unsorted keys
-                if(language != FileLanguage.UNSORTED){
-                    // increase the counter
-                    statsLanguagesTotal++;
-                    // enable the line below if you want to see what is selected
-                    //System.out.println(fileInfo.getName() + "-->" + language.toString());
-                }
-                
-                // if the file is used by multiple languages, then we place it
-                // on a post-processing list to discover how it is being used.
-                if(language == FileLanguage.MULTIPLE){
-                    secondList.add(fileInfo);
-                    // no need to proceed, skip to next file
-                    continue;
-                }
-              
-                // get the right index, increase the counter
-                if(statsLanguagesFound.containsKey(language)){
-                    int count = statsLanguagesFound.get(language);
-                    count++;
-                    statsLanguagesFound.put(language, count);
-                }else{
-                    // first time, add it up
-                    statsLanguagesFound.put(language, 1);
-                }
-                
-                
+            if(extension == null){
+                continue;
             }
+            
+            // get the category type
+            FileCategory category = extension.getCategory();
+            
+            
+            // is this an artwork that we should consider?
+            if((category == FileCategory.IMAGE)
+             ||(category == FileCategory.SOUND)
+             ||(category == FileCategory.FONT)
+             ||(category == FileCategory.MUSIC)
+             ||(category == FileCategory.VIDEO)
+                    ){
+                // increase the counter
+                statsArtworkCount ++;
+                // if already exists, just add up this one
+                if(statsArtworkFound.containsKey(category)){
+                    int count = statsArtworkFound.get(category);
+                    count++;
+                    statsArtworkFound.put(category, count);
+                }else{
+                    // first time here, create a new one
+                    statsArtworkFound.put(category, 1);
+                }
+            }
+            
+            
+            // to which programming language is this file related?
+            FileLanguage language = extension.getLanguage();
+            // shall we count this as something we know? Avoid unsorted keys
+            if(language != FileLanguage.UNSORTED){
+                // increase the counter
+                statsLanguagesTotal++;
+                // enable the line below if you want to see what is selected
+                //System.out.println(fileInfo.getName() + "-->" + language.toString());
+            }
+
+            // if the file is used by multiple languages, then we place it
+            // on a post-processing list to discover how it is being used.
+            if(language == FileLanguage.MULTIPLE){
+                secondList.add(fileInfo);
+                // no need to proceed, skip to next file
+                continue;
+            }
+
+            // get the right index, increase the counter
+            if(statsLanguagesFound.containsKey(language)){
+                int count = statsLanguagesFound.get(language);
+                count++;
+                statsLanguagesFound.put(language, count);
+            }else{
+                // first time, add it up
+                statsLanguagesFound.put(language, 1);
+            }
+                
+                
+            
         }
         
         // now go through the second list, try to discover where the files
@@ -717,13 +750,22 @@ public final class SPDXfile {
     }
 
     /**
-     * 
+     * Get the number of files that we recognized as source code
      * @return 
      */
     public int getStatsLanguagesTotal() {
         return statsLanguagesTotal;
     }
 
+    /**
+     * How many images, icons, sound clips and other artwork are present
+     * on this report?
+     */
+    public int getStatsArtworkCount() {
+        return statsArtworkCount;
+    }
+
+    
     
     
      
@@ -788,15 +830,35 @@ public final class SPDXfile {
             int count = map.get(lang);
             result += ""
                     //+ " -> " 
-                    + utils.misc.getPercentage(count, total) + "%"
-                    + " "
-                    + (lang.toString() 
-                    + " ("
                     + count 
-                    + " files)"
+                    + " "
+                    + lang.toString() 
+                    + " files"
+                    + " ("
+                    + utils.misc.getPercentage(count, total) + "%"
+                    + ")"
                     + html.br
-                    );
+                    ;
         }
+        
+        // add some info about icons and artwork
+        if(statsArtworkCount > 0){
+            //result +=  html.br;
+            // iterate through all the categories that were found
+            for(FileCategory category : statsArtworkFound.keySet()){
+                int count = statsArtworkFound.get(category);
+                result += ""
+                        //+ ": "
+                        + count
+                        + " "
+                        + category.toString()
+                        + "s"
+                        + html.br;
+            }
+            // all done with the artwork
+            result +=  html.br;
+        }
+        
         
         return result;
     }

@@ -44,9 +44,10 @@ public class PublicDomain implements License {
      */
     @Override
     public Boolean isApplicable(String text){
+        String lowerCaseText = text.toLowerCase();
         // iterate all our ids
         for(String id : list){
-            if(text.contains(id)){
+            if(lowerCaseText.contains(id)){
                 return true;
             }
         }

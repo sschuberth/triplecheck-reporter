@@ -21,6 +21,7 @@ public enum FileLanguage {
     DOT_NET,
     C_SHARP,
     OBJECTIVE_C,
+    ASSEMBLER,
     
     // scripted
     PHP,
@@ -48,6 +49,7 @@ public enum FileLanguage {
         case DOT_NET: return ".NET";
         case C_SHARP: return "C#";
         case OBJECTIVE_C: return "Objective C";
+        case ASSEMBLER: return "Assembler";
     
     // scripted
         case PHP: return "PHP";

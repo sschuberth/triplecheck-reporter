@@ -11,7 +11,7 @@ DataLicense: CC-BY-4.0
 
 Creator: Nuno Brito
 Creator: Tool: TripleCheck 0.5
-Created: 2014-04-04T23:09:00Z
+Created: 2014-04-05T12:20:41Z
 
 ##-------------------------
 ## Package Information
@@ -82,6 +82,7 @@ FileChecksum: MD5: 36ea57752f07326c9369fddc19def102
 FileChecksum: SSDEEP: 96:g1g5vnJWX979GHfz3rfcpxqzd6dkkhgupuXmM9:jnJWXp9yfz3EE4kkCT9
 FileSize: 4 Kb (4936 bytes)
 FileLOC: 203
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -94,6 +95,7 @@ FileChecksum: MD5: 9cb6c217b54012c4d3dfd078fdf660ae
 FileChecksum: SSDEEP: 24:xF6rs5ECVx+yMyip9+/nC9yYiySqNRBIAQyGNyY5AbG9+/H9yPyHIL2qPRBIAQyV:L638L8+qs8TuAn7m+vs6H8RuAnCd8oo
 FileSize: 1 Kb (1472 bytes)
 FileLOC: 76
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -106,6 +108,7 @@ FileChecksum: MD5: 6b026c1c4dd118ea5287ad2ac7cb3a8a
 FileChecksum: SSDEEP: 6:UjFLZtJ6iPjMYE5AQ0A25RAqkuodzPVJsa1ztABzVJ7N8o3LzVJsa1ztAxBzVJ71:U5LTJ6rYEeI2rAqkNztiamB5RCotiam9
 FileSize: 326 bytes
 FileLOC: 15
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -118,6 +121,7 @@ FileChecksum: MD5: 5afb776fdafe809c291a38b3e46a0ba8
 FileChecksum: SSDEEP: 12:U28SXnFsAV30s317F0c5thdd/m5dF0JWyFRaLEud52WWiVdDOzF0ce:masc3P3Ec5tfBEUJWxou2WWizDOace
 FileSize: 537 bytes
 FileLOC: 36
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -130,6 +134,7 @@ FileChecksum: MD5: 97f9582afbcb8ec781f3b9c47ad2bd53
 FileChecksum: SSDEEP: 12:U98vcmYJIaAQLF5oxSqmO30bth8zhV87oxSqmMAWUD8Lwe8zL82:W8/iRYxSC3itGzhSMxSCUDSwDzY2
 FileSize: 688 bytes
 FileLOC: 39
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -142,6 +147,7 @@ FileChecksum: MD5: 62726a1eb8d465979223788cf73bed6d
 FileChecksum: SSDEEP: 24:0Esod3EcUuE3rwMjgyGAfhSO3DcvOIDOacY:040qEpfpSCiZRD
 FileSize: 882 bytes
 FileLOC: 45
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -154,6 +160,7 @@ FileChecksum: MD5: ea54f28c350d0cc3509f5cd83ec5f41f
 FileChecksum: SSDEEP: 48:rSMfjjVqLq7EU7PszspFhXq7kh7h97PxOI3LtimHe4uzma4:eMfPVqLq7EU7PswrhXq7kh7h97PxOI3X
 FileSize: 1 Kb (1830 bytes)
 FileLOC: 74
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -166,6 +173,7 @@ FileChecksum: MD5: 84d753a86506982eb8d9413d87e969c2
 FileChecksum: SSDEEP: 12:USYENEvvY3eIdrAQLCewZL9gaVESQBP9VVye+FBBJQsfTJyMoFJQ:AvvweSrwL6+ESQBPtyfFB4sflyMoLQ
 FileSize: 635 bytes
 FileLOC: 25
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -178,6 +186,7 @@ FileChecksum: MD5: 78d63a0b8b2b7985602e934d3c65db8e
 FileChecksum: SSDEEP: 24:4wFspZpFB4sfhT/5e0fi4w/jyri4p9T/3a:hOZpFhfh7aGH97q
 FileSize: 957 bytes
 FileLOC: 34
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -190,6 +199,7 @@ FileChecksum: MD5: f700aa0781733530fcf558879af2f8b8
 FileChecksum: SSDEEP: 384:PRlh1xSkooz647SoO2xhl7mMfO20j6BnQ:plh1xSLoz6aZ106i
 FileSize: 12 Kb (13077 bytes)
 FileLOC: 470
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -202,6 +212,7 @@ FileChecksum: MD5: 381fa414176eb56be284dd563d1c9831
 FileChecksum: SSDEEP: 96:AFZl//XGkKzKKI4xsPbuWN+GVvFAFvauWN+7vFAFmK+b4SuoUD3D4+YjdO8kwiLA:in//idWzg3WoDKPXoUD3DqgUdx
 FileSize: 6 Kb (6942 bytes)
 FileLOC: 284
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -214,6 +225,7 @@ FileChecksum: MD5: 9c984597c649967d2450e9de9f3e3430
 FileChecksum: SSDEEP: 48:SHZIsrSgZs3e+XMONNqvRI6rS/xtrodxyS/kCXTwAS/xQkF:wIRnXvNqvObDOsCXUBiQ
 FileSize: 1 Kb (1579 bytes)
 FileLOC: 83
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -226,6 +238,7 @@ FileChecksum: MD5: a2840367db34353a349088846154df8f
 FileChecksum: SSDEEP: 192:pFjw/uXYa2MTg6zwHSQZWtEKuTonBug5grMGu4twzgp2HMqg7ToNd/jY5OiI6xEC:XjVITXMDjnHQTI6CzNxU8hyuZGd
 FileSize: 35 Kb (36211 bytes)
 FileLOC: 1402
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -238,6 +251,7 @@ FileChecksum: MD5: 982221c5d7b703c45750c0020593f75a
 FileChecksum: SSDEEP: 96:wyaLA6F3yaxKDkl/HmDaldHEDAD64uwlxDCy+k/EY/:wLAm3xKDklvmDalxEDADXuWxDCy+k/E6
 FileSize: 4 Kb (4162 bytes)
 FileLOC: 169
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -250,6 +264,7 @@ FileChecksum: MD5: a51c5b40535f3dd81bc65858d8a14772
 FileChecksum: SSDEEP: 6:HeASnDE+0Snv7Q0SnJDVyGF0Sn5Fkn0S14oIfQ0So90PjMEY0Sn5xr5Flyo9Zdn:HeCdJyGdafyB3TX5F
 FileSize: 261 bytes
 FileLOC: 7
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -262,6 +277,7 @@ FileChecksum: MD5: 8e5067345b06f8167e7987fc498b3798
 FileChecksum: SSDEEP: 192:AiYBc9YIKGulNgs0sI9XiKnJaYxyaBVIyK5DFELW98ZyeS:Axt9lNgs05hXIYxyaBVdK5JELXZhS
 FileSize: 8 Kb (8653 bytes)
 FileLOC: 282
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -274,6 +290,7 @@ FileChecksum: MD5: 4cff4944ce53d2d10e370bbf90a8b7bf
 FileChecksum: SSDEEP: 24:2tIMFWHbxMW8aKa0LjuG8LJuUKdw+wV8ULitvROjUKkj5u+u:21kP4dw1KObV8YYvROQKn
 FileSize: 1 Kb (1362 bytes)
 FileLOC: 38
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -286,6 +303,7 @@ FileChecksum: MD5: 476ad890849fed7e0afc59644cac929d
 FileChecksum: SSDEEP: 96:qHtUjRZGFjKLPxEend18jVL8g/qKOTaFITblfJ1HlNgXby:EtUjijKLPxEYd18JL8g/nOTaFITxnHl3
 FileSize: 4 Kb (4594 bytes)
 FileLOC: 182
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -298,6 +316,7 @@ FileChecksum: MD5: 9978f5495d159e1bbe52e75cefc25180
 FileChecksum: SSDEEP: 24:/T1oJs6uZnH47C3+yMyIymyl/oD/9yHh/dK7XDSy+AO/h9y8eX78yQQ++kdUmU8X:C7qLfmyCsHhymps5QE0lHyOlsFZBT6
 FileSize: 2 Kb (2811 bytes)
 FileLOC: 127
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -310,6 +329,7 @@ FileChecksum: MD5: c5d1f811ba93a90cb55b18ac41ce25af
 FileChecksum: SSDEEP: 12:UOZCTTcmYCJeIwJrAqm5+olXizQb0KUzcoyaWDaNeZKnh7:CTzOF01SzO05IaWDaNRh7
 FileSize: 660 bytes
 FileLOC: 38
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -322,6 +342,7 @@ FileChecksum: MD5: a44216e443b071d80a312fb0efb50e8d
 FileChecksum: SSDEEP: 96:8DItI79qRpfMNbArMqa9QMGtMNl1y8lcKKtt:8U6ZqRpocoFQltMNl1y8lcKGt
 FileSize: 3 Kb (3302 bytes)
 FileLOC: 132
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -334,6 +355,7 @@ FileChecksum: MD5: 70259041ac68975ac756f18b2a02a028
 FileChecksum: SSDEEP: 12:UEzY6Lm5cmYJIWAQLFgVscJ478yQ1Rek3LofCFWc5DdoqHJMx4h:BNmJupKy7XQ1odPc5OWh
 FileSize: 745 bytes
 FileLOC: 38
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -346,6 +368,7 @@ FileChecksum: MD5: 996242429a46622dd4ec74ea4bb78bd2
 FileChecksum: SSDEEP: 48:wtBcEUMWojbC4H8op12WY5byYrP3ZeMap+W4Cgo7MmgKZ4apQaGgo7MmC3MLofWg:w4wjn8rWQbyY70MrW4CDBUjDBC3Zd
 FileSize: 3 Kb (3277 bytes)
 FileLOC: 133
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -358,6 +381,7 @@ FileChecksum: MD5: 78bff2baf2a5cb82506ca744b7e5abeb
 FileChecksum: SSDEEP: 24:thbcnU5W5zc/Q09HU6091Uz2wRTvCb9vqvYC0m1RKpBgKJuVzVFCFo3F3Qry+y7K:I8Q09R09GqyGC0aogOuVzVFCFo3FgWK
 FileSize: 1 Kb (1967 bytes)
 FileLOC: 68
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -370,6 +394,7 @@ FileChecksum: MD5: a911638d16077c03f94474899b00638c
 FileChecksum: SSDEEP: 24:iyqmp4sm3oUJj0uyUhZx8z5qh0IxtNa1Bg84tGWdUFaAdmdImDGMBfTB8i+yJapy:/qQkLv8chVxGH4cOAdOnUiXM82FKoFk
 FileSize: 2 Kb (2269 bytes)
 FileLOC: 85
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -382,6 +407,7 @@ FileChecksum: MD5: 8e2adca41066c94f5401fef338efc2d2
 FileChecksum: SSDEEP: 24:1wFisqALy27ayo411e+oACqRBcFRjagROzGH/ZFlZxXHlTmylap1OKZHGzLtNe:1wZ241Y+0qOFRjagR4GHTBFTnKZALtg
 FileSize: 1 Kb (1815 bytes)
 FileLOC: 67
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -394,6 +420,7 @@ FileChecksum: MD5: 2ba4887444f35233ecb927a9dc9b3e72
 FileChecksum: SSDEEP: 384:DcLhXSXX3VvJt6gxAMamQyvvxCcDEtpl6:OhXSXXlvJtjxXLvZAl6
 FileSize: 12 Kb (13292 bytes)
 FileLOC: 516
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -406,6 +433,7 @@ FileChecksum: MD5: 6155763ed4fcadf9b36b9a8290b844b1
 FileChecksum: SSDEEP: 12:UQ1XKtNcmYcIvAQLFYbyhpLUTVIwheeWTWdue0Tsv/4P:Di/ku6gg+2
 FileSize: 695 bytes
 FileLOC: 30
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -418,6 +446,7 @@ FileChecksum: MD5: a81dc4b989135a89df2ccce9c400e3bd
 FileChecksum: SSDEEP: 96:iQCE78Or6YtpiMVQyFv/qmeSqw45Lira44gClCPmrs:iG78O2UVd/M5kSn5s
 FileSize: 3 Kb (3567 bytes)
 FileLOC: 168
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -430,6 +459,7 @@ FileChecksum: MD5: e71962818a2e5b830a72645e0830dda3
 FileChecksum: SSDEEP: 96:XQd7kO1peR72B79XnXpG+pJvTxBvzbrKK/oJ+BU:XYkO1peRy9XnXpG+pJL/boMBU
 FileSize: 3 Kb (3933 bytes)
 FileLOC: 155
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -442,6 +472,7 @@ FileChecksum: MD5: 915b920843b15fbc25175d70c224bba7
 FileChecksum: SSDEEP: 24:0sjdgPBzMqwo+IAR2KNv65kR8mPRoR2KNv65kRNgd:5kBzNwT+muG
 FileSize: 1 Kb (1313 bytes)
 FileLOC: 62
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -454,6 +485,7 @@ FileChecksum: MD5: 09f0d3cd464099f39c8e3f0a95cfd34b
 FileChecksum: SSDEEP: 12:UWsDk0vYVyID3AQLFKFK7mguDIWRXDbnRXDe:KbvVSw/guDIAPR6
 FileSize: 436 bytes
 FileLOC: 23
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -466,6 +498,7 @@ FileChecksum: MD5: 42d1c6a54700d57fc6f56dada639e1bc
 FileChecksum: SSDEEP: 48:hN8lckPjlrfuZXM6FmzDQl+xViFIAid17Jd8LcLgn:hCukPjlrGZr4vxVCHi3S64
 FileSize: 3 Kb (3546 bytes)
 FileLOC: 146
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -478,6 +511,7 @@ FileChecksum: MD5: d6e35b843df54f208fddba3902149553
 FileChecksum: SSDEEP: 12:U0MNcmYRIfIfIWAQLFgVl3aPaR7br0uQhX2s5qdJeooPFZ0S:ys0GtKlK0brAXUODtZ0S
 FileSize: 494 bytes
 FileLOC: 27
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -490,6 +524,7 @@ FileChecksum: MD5: 082405b13ef2a1d73616229c4e16491b
 FileChecksum: SSDEEP: 384:RnGCe2c57P15C2Pyb0CAz3BAi8f0LH0QMDq:JilvRqb0CAz3BAi8f0LH0QMDq
 FileSize: 19 Kb (20473 bytes)
 FileLOC: 761
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -502,6 +537,7 @@ FileChecksum: MD5: 0ce86205eed8f38faa14950e61175668
 FileChecksum: SSDEEP: 48:u6I8IfPqEEIqxU6JERcUmDtAszx0ILF/NozfU9VCCYrvdib3ls0HWgaeSzqXnOUA:/IVzEJXJEs08FuzA6GAC4
 FileSize: 3 Kb (3405 bytes)
 FileLOC: 115
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -514,6 +550,7 @@ FileChecksum: MD5: b80feb8f28a5837780f3d849b29b542b
 FileChecksum: SSDEEP: 384:8uR0VixWo+Tn1UkwNU8m9lzibuoYjPXVIjeIs:xYrekqYjPXGje5
 FileSize: 22 Kb (22964 bytes)
 FileLOC: 793
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -526,6 +563,7 @@ FileChecksum: MD5: 9845b65589b206c25d10bacac586501b
 FileChecksum: SSDEEP: 48:UI/BGiN+iU+rq7tv7kPijqSOqUxmEKIcu3Nv+a0ESErEPUhrc5fMTR:UIJGi0imv7kPij/OqFEHfNvx0ESErE4P
 FileSize: 2 Kb (2546 bytes)
 FileLOC: 105
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -538,6 +576,7 @@ FileChecksum: MD5: 8bc6b09d759a7a1a5448552d1838fe82
 FileChecksum: SSDEEP: 48:5/f107dc9V9ztcSRPMuXwPMNkPM03UwPMNIPMCG5c+vGdrawPMN1RwPMNIPMTB:5X67dc3T11XWeqHEWeOHGKraWe1RWeO4
 FileSize: 1 Kb (2018 bytes)
 FileLOC: 54
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -550,6 +589,7 @@ FileChecksum: MD5: 7a0b529d7f3ba3a5f453bba586c3ffed
 FileChecksum: SSDEEP: 192:voRwNe0P7Wg4tATDsPLTqOcscBV1bcParHNr35ei9XFT/fyl5l9T0GKuB414P7My:G0P7VsPLTqOcscBV5c4lpei9VbfW9T0Y
 FileSize: 10 Kb (10304 bytes)
 FileLOC: 356
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -562,6 +602,7 @@ FileChecksum: MD5: 772bce825a0d7ea79abc6956e9c112cc
 FileChecksum: SSDEEP: 48:+b5Ba/rSJ5CZU2fOZrVJR+w+A6yj1H3yVH+w+A6yY0j7l2:ixuZUDVkDyjt3yVADyYog
 FileSize: 2 Kb (2286 bytes)
 FileLOC: 84
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -574,6 +615,7 @@ FileChecksum: MD5: 9e756d481bde949f3531f715506426c8
 FileChecksum: SSDEEP: 384:uVtkh29+hbg/cDmG5qh8IqeZX+2bgHrKhh6fDcCbONOB4pGI5BaEd7C3:uLdbSu43
 FileSize: 12 Kb (12301 bytes)
 FileLOC: 477
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -586,6 +628,7 @@ FileChecksum: MD5: 516e988db30b6f351aafd05653704080
 FileChecksum: SSDEEP: 48:Sa4SguZC2yP1B1SG+jkiMxmpsPppxYTjki62yg:LguZC2ytBuX2mpsTxYPX62z
 FileSize: 1 Kb (1870 bytes)
 FileLOC: 66
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -598,6 +641,7 @@ FileChecksum: MD5: 55bcc3e7d039fad662f648a83c9fad3d
 FileChecksum: SSDEEP: 48:ipfebHjnCgTT4+SKZ1DBzud8Aldf+aNYTjkiQ7XABFt+uRgNHdPJesuu:iAbHjXTlSKZ1BuVlPYPXQ0tlM9xe7u
 FileSize: 3 Kb (3264 bytes)
 FileLOC: 111
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -610,6 +654,7 @@ FileChecksum: MD5: b83773b9630141e1313c469a7c884f0b
 FileChecksum: SSDEEP: 24:EuHsAnHCl0lqlpvFRioNcRvopSUk1YXoFjbvkoFjWMq8YAviM9WEFxMUk1YCcsaR:EaQrnRuRgUT1FF/F28YBsKT19aAzagvS
 FileSize: 1 Kb (1469 bytes)
 FileLOC: 56
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -622,6 +667,7 @@ FileChecksum: MD5: 570d080aff8e6af8754a21d650f97f75
 FileChecksum: SSDEEP: 48:qa1mq+n67wYOI9sn41sjtCVDy7JPpLKvmdHGgoKW40/FDU6NXrLyFNFtwOZF:qaT+6Zq41scVe7VpWudmcjGnWFNFOOb
 FileSize: 2 Kb (2876 bytes)
 FileLOC: 108
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -634,6 +680,7 @@ FileChecksum: MD5: 1f4265ce187490e1c24608beb13300dd
 FileChecksum: SSDEEP: 768:SqRXxY+GqmCiWutKZCSqIlBZwunSCFeJFVm31Q8W+:vismSVnRFZ
 FileSize: 27 Kb (28164 bytes)
 FileLOC: 999
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -646,6 +693,7 @@ FileChecksum: MD5: bb73da26ca47852c3c4e8eb02ab272ec
 FileChecksum: SSDEEP: 96:xC7CM3tjKRJGc2xznK9yZsOnDzM1hwRpZDyZOz529PVd3ZViDy0OWn:43sRJc4PsMMZDz0ZUDmy
 FileSize: 6 Kb (7096 bytes)
 FileLOC: 231
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -658,6 +706,7 @@ FileChecksum: MD5: 514fdcb861fb35422c6b8e129211f575
 FileChecksum: SSDEEP: 768:IqqG3RIkm9C0ygC0G/6iXiTHL+M+2+s7WKPv2MdPmC7EsGGhrE6HDCuezOB:I8RI+TfLu+s7WK1Pt7EGhrE62RK
 FileSize: 63 Kb (64757 bytes)
 FileLOC: 2268
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -670,6 +719,7 @@ FileChecksum: MD5: 150fefd15128b65fd5a7f5b54dd1bfd2
 FileChecksum: SSDEEP: 48:U6thQOEz/AbAtZAu4C1LnTZ1B1oG+jkiMJ3L6+lVDvYTjkitmY:5Ez2zuFTvBoXU31vYPXtX
 FileSize: 2 Kb (2985 bytes)
 FileLOC: 80
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -682,6 +732,7 @@ FileChecksum: MD5: 41de4b445f01bdbfc8ae9ea9273fcd0d
 FileChecksum: SSDEEP: 24:/kbsrlqmlnHClDpvFRMAviM9Dq+MdFvXAAMMAKo2u+xBs0UVWJiyUhvwQAVx0//h:/k6QmATnM8qjfAmA3Cs0UV0iyUhv0Vxu
 FileSize: 1 Kb (1524 bytes)
 FileLOC: 46
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -694,6 +745,7 @@ FileChecksum: MD5: 62c5ad96d04c944a9c00d0863a64bd8d
 FileChecksum: SSDEEP: 96:eO9jiROuUrsAVtKZ1beYh9NCnYPXRmHygV98zy:JGIsAVMZ1SU/CYfmVmG
 FileSize: 4 Kb (4479 bytes)
 FileLOC: 135
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -706,6 +758,7 @@ FileChecksum: MD5: c5d926947e181324752a1b66f2af1844
 FileChecksum: SSDEEP: 192:KZptgZFAnShyB4t8ZJDnInDIlSMUG/SrkpM+g3/6B2audXGGCV/iy:KZptgZFAhM8ZNWccMUgBn0XRXGGCV/b
 FileSize: 8 Kb (8314 bytes)
 FileLOC: 327
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -718,6 +771,7 @@ FileChecksum: MD5: ff43c28a6ad700e6cc9669da73344c9f
 FileChecksum: SSDEEP: 48:Ky0vP0vWSfAgXF5cS5RKacwIYYItBOyRcqRgxSMSOgn3njR8Jqbj:gv8vv4gXxGcBOyCq9tOg3bj
 FileSize: 2 Kb (2072 bytes)
 FileLOC: 98
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -730,6 +784,7 @@ FileChecksum: MD5: 8dcd18aba31ba3a13554b4b09429e38c
 FileChecksum: SSDEEP: 48:PrafDxDfxNgMAEOouDthy87SCzzwhRAUOSTK3ofX:PufNDp+Pzp5hgSzwhRAU3mYf
 FileSize: 1 Kb (1989 bytes)
 FileLOC: 81
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -742,6 +797,7 @@ FileChecksum: MD5: 906c0b291128d62afaab3aa78954c691
 FileChecksum: SSDEEP: 192:lALOsr+nFMzm107pNQu9LOLTaqmzpFTH77A4GuDUNAjvVXyKNOpap05oXwnERs:lANW27jyPgzpF5qAjvVXn3+oXwERs
 FileSize: 17 Kb (17537 bytes)
 FileLOC: 708
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -754,6 +810,7 @@ FileChecksum: MD5: c475c399047421b66aa932bee0d545c0
 FileChecksum: SSDEEP: 48:p2rAmq5e10sA3V59SmNIVfWBs1Vf+KXKYiNZ2ZnrS02UhtSl93FrS5hlx6Dp:p2EFkggIIVOOVGq62ZG07hwlhovz6Dp
 FileSize: 3 Kb (3822 bytes)
 FileLOC: 140
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -766,6 +823,7 @@ FileChecksum: MD5: 28ea3987447a6a90668427e4567ede94
 FileChecksum: SSDEEP: 96:pFcJFQI2dFNBLLtZGbfuSI7eJbfqFXN+LhJ:sJFQIMrNtI2SI7e1CN+LD
 FileSize: 4 Kb (4860 bytes)
 FileLOC: 187
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -778,6 +836,7 @@ FileChecksum: MD5: 9d4ccc981dda57430f6bbf5834bb154f
 FileChecksum: SSDEEP: 96:RFcBKzUJLyqxCSxHljspsD1GbfqeZTvvbfPr2:EBkUJL3xxxFS4cSe9vznr2
 FileSize: 4 Kb (4532 bytes)
 FileLOC: 185
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -790,6 +849,7 @@ FileChecksum: MD5: 4518d640102f71c2624128b1214f2a48
 FileChecksum: SSDEEP: 384:/wrRA2Ajwvx8lvU32unsMS/Irl8VXuNXgMTxXwxoC:Yr22Ajwvx8lvU33nsuAXuNX3TxXwxoC
 FileSize: 27 Kb (28503 bytes)
 FileLOC: 1120
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -802,6 +862,7 @@ FileChecksum: MD5: f4cb9c7bf067a4b2c2604e2e7a46182d
 FileChecksum: SSDEEP: 48:hH/kPjMqDXNq5FSx6IV+Ac6Qpg8lK0KwiM/q9rz:t/+jJbjgIVqjgKxrmrz
 FileSize: 3 Kb (3554 bytes)
 FileLOC: 133
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -814,6 +875,7 @@ FileChecksum: MD5: 3ae3470c1d022f503776709efa18687a
 FileChecksum: SSDEEP: 48:6kPjMl15tdSo/iMdbXh0IUflsz78QgePAHse7kxc4QQJsR1C8HCS0WgbUfqF9xU2:6+jYD/J7bXxUfkY1XnSUfqFXzhDhJ
 FileSize: 4 Kb (4194 bytes)
 FileLOC: 155
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -826,6 +888,7 @@ FileChecksum: MD5: 5c5e85581e485c6243d79f535e5f7df9
 FileChecksum: SSDEEP: 48:ekPjMl1e29QppzT7k8Wjyd0IUfZLfeIqLRQ3M3EULKSEyRkpUfqcheYbfhgYAdzq:e+jYk29c7LtUfZGPJNwUfxqe
 FileSize: 3 Kb (4066 bytes)
 FileLOC: 161
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -838,6 +901,7 @@ FileChecksum: MD5: 9295829cc930f6739644e79ea766d80f
 FileChecksum: SSDEEP: 12:UYXYHcmYN7UIz7rAAqkV8vRv7aWd82FFFN8l4fb2F9FN894foW:NuK7UU7rAuV85DaWd8iFFSl8i9FS97W
 FileSize: 413 bytes
 FileLOC: 20
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -863,6 +927,7 @@ FileChecksum: MD5: 8f7771d4b033a3a155819ddf27924cb3
 FileChecksum: SSDEEP: 12:UwDeYvYMsWkGBAIlksWkyRAQL+QG6NjoxSdHdvd1RCtiA3wBggCQB76pXe:xDTy6BAgnKC3xSJpRcNwCg9V61e
 FileSize: 462 bytes
 FileLOC: 26
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -875,6 +940,7 @@ FileChecksum: MD5: 6b3608933a4a505280eb0be827479762
 FileChecksum: SSDEEP: 24:JrsmVjWv8mDPX6QTI7BNIqhvRcGfIlcHS/pllc0kTDR9QWvAumDPZ6QTI7BNRfhR:ZJg6qI7oqhvqGQ2y/pl2t46qI7Jhv2w
 FileSize: 1 Kb (1804 bytes)
 FileLOC: 93
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -887,6 +953,7 @@ FileChecksum: MD5: daefcf65b23b67077471612eef50419a
 FileChecksum: SSDEEP: 6:UJ9euc1PjMYFeQ0AfrAQLtjQ6zFgXjajVosBX5jVagpjQ6dd:UJNcmYFeIfrAQLFT
 FileSize: 332 bytes
 FileLOC: 20
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -899,6 +966,7 @@ FileChecksum: MD5: 3217debe5afe05b17966a80196e7a88c
 FileChecksum: SSDEEP: 48:EMa0rPaSyRNLZoBuKhGZOcivoIJTdSrN:EN0rlyTVoBuKIZziwUYrN
 FileSize: 2 Kb (2712 bytes)
 FileLOC: 84
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -911,6 +979,7 @@ FileChecksum: MD5: 2ce63e695a36c21997866f40a1cc5343
 FileChecksum: SSDEEP: 48:EBZLyNuEVyyOyN0kMLpQlu1BOyEkTBwBwH1YpOyEZkT8FYdHjf:Eby8E4yOyN4NQlujOyftV4OyxQYdHjf
 FileSize: 1 Kb (2014 bytes)
 FileLOC: 59
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -923,6 +992,7 @@ FileChecksum: MD5: 247ea8934336d0c0f09bca4a8acfb68c
 FileChecksum: SSDEEP: 96:vNZlzbiW4XQayyZ7oUNIU75JDnSBFCDBDbCqCqKEEWJSc:lfzuW4XQayyZ7oUKU75tnS/CDBDbCr/s
 FileSize: 5 Kb (5677 bytes)
 FileLOC: 254
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -957,6 +1027,7 @@ FileChecksum: MD5: d77aa2a373b9ef71d14738049af4b313
 FileChecksum: SSDEEP: 192:KWZmnmBPLVYOyV+62vT9xrWjQV/38WWWhXTw+JNror0xvrgIag2rhZaee:LmULSONvT9R7jw6NroMH
 FileSize: 12 Kb (12927 bytes)
 FileLOC: 501
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -991,6 +1062,7 @@ FileChecksum: MD5: 832ce5264cc5c58c0483ad27bd00f0fc
 FileChecksum: SSDEEP: 192:PjTaQpsdIXm3HiQ+MvO54FQiulFe9VwutWG362+IwA3y:PjTa++3+MvK4EFDV
 FileSize: 6 Kb (6624 bytes)
 FileLOC: 254
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -1080,6 +1152,7 @@ FileChecksum: MD5: 8bbf8a04992cad82a10a38c44e9cf20c
 FileChecksum: SSDEEP: 6:UvcUyN3liePjMsARPb1u1NtMY3ywIXb/X1:UhyN3osA1KtJNIr/l
 FileSize: 301 bytes
 FileLOC: 12
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -1158,6 +1231,7 @@ FileChecksum: MD5: 63ddde1d6a9e0e5bd8f99420fd38a6a9
 FileChecksum: SSDEEP: 384:PbDnTGCC5D83zXBXEXS5wfHb7jx7L4V4:vnTGCC5D83zXBXEC5wfHb7jx7L4V4
 FileSize: 13 Kb (14227 bytes)
 FileLOC: 592
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -1192,6 +1266,7 @@ FileChecksum: MD5: aa313716b451c3c29615e65f59846812
 FileChecksum: SSDEEP: 48:uYMfbXJStpAsSRNMhvAo7+tES0JX+ScIMAU6mn4MAnOk+0ZVEhe:uYMfbXJMpAPjYI50JX+SUF6mnz0Ob02e
 FileSize: 1 Kb (1968 bytes)
 FileLOC: 88
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -1204,6 +1279,7 @@ FileChecksum: MD5: 17ea339660dc2b323d6fa0f1dc409265
 FileChecksum: SSDEEP: 96:UpXfwkwYz/QnD0rXoqR9NET/4GBAFPKR3Q4yiVmbHaVy6ymVADyYSm:O/JQDQV96T7hRdjymWDBj
 FileSize: 6 Kb (6632 bytes)
 FileLOC: 252
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -1216,6 +1292,7 @@ FileChecksum: MD5: 906b499e18972f2567feb1986ece07c5
 FileChecksum: SSDEEP: 24:JxFFsdLm9EpltnRP3j/r/6Xgi9I/OLXclm:jR2jtR/jL6XAKslm
 FileSize: 779 bytes
 FileLOC: 33
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -1228,6 +1305,7 @@ FileChecksum: MD5: 3cc51226b827c9ed3673faf8c60ecf86
 FileChecksum: SSDEEP: 12:UY4QNQb1Y2SG2I5OAqaAQLCycBggVH0qTKHchBUyVVHce5+FBBJQsG/6dJyB/OF+:J6SHcOcfpwH0oKHchBUoHcxFB4sG/6T8
 FileSize: 639 bytes
 FileLOC: 26
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -1240,6 +1318,7 @@ FileChecksum: MD5: 210fa34d93347af7eeeaae029db613f2
 FileChecksum: SSDEEP: 384:opc/+w5mo1fiPZX9kbOwSsl9UE7lfZ1ixqSzRauDsYE7Hgjs:opc+Emo1qPTkbhfZMnsYE77
 FileSize: 22 Kb (22662 bytes)
 FileLOC: 875
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -1252,6 +1331,7 @@ FileChecksum: MD5: 13fbfc7114c4faddb23da8b4fa8ad183
 FileChecksum: SSDEEP: 192:yeXEvqA5Ilqf1WlXEfyLSu/PQzBP8+Cm25XjGI8FyiPt9XKzikXJNVQYAFxyujWQ:lAyyGL/jF8Fju1QYAFxyujxv
 FileSize: 13 Kb (13404 bytes)
 FileLOC: 497
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -1264,6 +1344,7 @@ FileChecksum: MD5: 9fc21040f7feaf135ea6dd9c9767886f
 FileChecksum: SSDEEP: 12:UzLcL0vY2IfIBWArAvDAV3/pDG6SRcHdLxPrjoNVg9/Vh:Mv0bA2ovpDG6SRSacVh
 FileSize: 453 bytes
 FileLOC: 25
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -1276,6 +1357,7 @@ FileChecksum: MD5: b511b7a98427c37a5ed9f804e315ec5b
 FileChecksum: SSDEEP: 192:ubdcZRsbE9GWyrSAg/5g2XjalDxtIvAyUx20ME7:5Zig9lu2u
 FileSize: 8 Kb (8705 bytes)
 FileLOC: 306
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -3235,6 +3317,7 @@ FileChecksum: MD5: 73b9f257ba990ed8dc420e53df07ba73
 FileChecksum: SSDEEP: 192:z2QMG1RmslMLTfbBKxmndBJFmwJOWS1oP/uOWPc97kHIbWQdFh:QDcMzrhnGSbLjh
 FileSize: 10 Kb (10459 bytes)
 FileLOC: 456
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -6358,6 +6441,7 @@ FileChecksum: MD5: 19623cee61b9b48443612e3fa71ad184
 FileChecksum: SSDEEP: 96:Rd4JMvTt1OCs9rwd7CracBR31LVVrvImQuAfrekT3:iMvTrts9rw7cBRJVVrvZrkT3
 FileSize: 3 Kb (3878 bytes)
 FileLOC: 167
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -6370,6 +6454,7 @@ FileChecksum: MD5: cbc4111244318fb670b75d1290a7d15b
 FileChecksum: SSDEEP: 48:bAb2vr2vAqt6aRklZgX2YWilpLOS5RORwDVHCR3La7UAzgeBW0IZk:syvivAnaegX2YBldOEpkLa7UAzgeD
 FileSize: 1 Kb (1848 bytes)
 FileLOC: 78
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -6382,6 +6467,7 @@ FileChecksum: MD5: ef985f65cc02f4f0202532232d115e55
 FileChecksum: SSDEEP: 48:aAQal+GLyNlWT7JxuS9aZshK8LkUGxpyX9pRCRMRdC3ePUrCU1ue+axWTaYa83js:pd4QMCtxBx04CefbfXK3
 FileSize: 2 Kb (2963 bytes)
 FileLOC: 119
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -6394,6 +6480,7 @@ FileChecksum: MD5: 423097c0b9595c652f6e0980f7a53164
 FileChecksum: SSDEEP: 24:bfPlebOvHLOvOhLx3x3VaXYQ/m/4XN6fI1OeFVTRs7TRwD/sJMSmkJgVb:jAbOvrOvOQnXN6fWOS5RORwD/suSmSg9
 FileSize: 1 Kb (1098 bytes)
 FileLOC: 48
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -6406,6 +6493,7 @@ FileChecksum: MD5: 2cfaa5ad1891aebfb21409dce8b36552
 FileChecksum: SSDEEP: 12:jf+mXLhNUl3eOAIkAGGXfAZEmkFBXtnkG1ZAzNmkFkKfaebm3f72fhKEG3l:bPXbOeObkQXfdmkKq0mkWFsBFG3l
 FileSize: 574 bytes
 FileLOC: 21
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -6418,6 +6506,7 @@ FileChecksum: MD5: 1cef9d7126fc49d5fc449ccae4f75f09
 FileChecksum: SSDEEP: 48:QQA+nLyN3j6QT7J4pRCRwBgUxUGhBtakl4Bvn4H2GR0KGFL0+kI3+mc0K/o7GTk4:QGLM3j6CtV4BycnIc5wBQXTz9wduy3W
 FileSize: 5 Kb (5399 bytes)
 FileLOC: 223
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -6430,6 +6519,7 @@ FileChecksum: MD5: c148f74250c5b821b9a8fdf51196d136
 FileChecksum: SSDEEP: 24:biebBLWvRplDWL3EC3Va9lsQdTS+fRINK5JHccfIeOeFVTRs7TRw9NH/24McfIeh:hbpWvTNEmT1RIEzzflOS5RORw91scflh
 FileSize: 1 Kb (1535 bytes)
 FileLOC: 72
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -6466,6 +6556,7 @@ FileChecksum: MD5: 26a23697e914ab1afdb50ee4d179aee4
 FileChecksum: SSDEEP: 96:hDdpvtpvG9O+Gzf9IEaDTXhLUxCYWfyEmrXIpJWIJQJkBzERC1zrVJqcyKSXi:tvTvAGb7aPXRGlrXqgIJZQRczrRSXi
 FileSize: 4 Kb (4141 bytes)
 FileLOC: 205
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -6478,6 +6569,7 @@ FileChecksum: MD5: bfb96d9d799717eee1cfb22e50a0bcbf
 FileChecksum: SSDEEP: 48:hAd/nwQZ019Q0fkjrco/fWLwzSbR0gH8SoZ6QpW1/nfW1rS:hAd/nwA0f8v/WbRPKpw/nfwrS
 FileSize: 2 Kb (2986 bytes)
 FileLOC: 114
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -6538,6 +6630,7 @@ FileChecksum: MD5: 3cd5ba2911db472eda3d6ea5267d7f5d
 FileChecksum: SSDEEP: 384:xYEJ6MdMKZAoeRsWg+WZ6EQFonpzYj38BR6JT63JiB2GDF1tnxfvuB6djiFYXjPP:xYEJK2XZ6E038BRYT63JiB2GDF3nzjiK
 FileSize: 23 Kb (23612 bytes)
 FileLOC: 897
+LicenseInfoInFile: Public Domain
 
 ## File
 
@@ -6550,6 +6643,7 @@ FileChecksum: MD5: 221e7fd9e8e2cd52b958e2774aa32c16
 FileChecksum: SSDEEP: 192:mYuvpvyC4EHOIZvlHPi2/0uCdUXi00juYO9lWs:mYgBvtz9JSuCdUN0juT5
 FileSize: 6 Kb (6449 bytes)
 FileLOC: 267
+LicenseInfoInFile: Public Domain
 
 ## File
 

@@ -1,4 +1,4 @@
-package unknown;
+package config;
 
 import java.io.File;
 import java.util.Date;
@@ -28,7 +28,7 @@ import spdxlib.FileLanguage;
 
 /**
  *
- * @file provenance by nuno
+ * @file provenance by Nuno Brito
  */
 public class inc extends FileExtension{
     /**
@@ -62,7 +62,8 @@ public class inc extends FileExtension{
      */
     @Override
     public String getDescription() {
-        return null; // file type description
+        return "INC files can contain declarations, headers, functions, "
+                + "or other data that is referenced by a program’s source code."; // file type description
     }
     
     /**
@@ -70,7 +71,11 @@ public class inc extends FileExtension{
      */
     @Override
     public FileLanguage getLanguage(){
-        return FileLanguage.DELPHI; // to which language is the file more related?
+        // some sources refer Java as applicable but I've never saw this happen
+        languages.add(FileLanguage.C_PLUS_PLUS);
+        languages.add(FileLanguage.C);
+        languages.add(FileLanguage.DELPHI);
+        return FileLanguage.MULTIPLE; // to which language is the file more related?
     }
     /**
      * Who is the owner for description that was provided?
@@ -149,7 +154,7 @@ public class inc extends FileExtension{
      */
     @Override
     public FileCategory getCategory() {
-        return FileCategory.UNKNOWN; // does it group under a category?
+        return FileCategory.CONFIG; // does it group under a category?
     }
 
     /**
@@ -157,7 +162,7 @@ public class inc extends FileExtension{
      */
     @Override
     public String getIdentifierLong(){
-        return null; // how is this file
+        return "INClude file"; // how is this file
     }
 
     

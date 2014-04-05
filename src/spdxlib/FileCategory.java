@@ -30,6 +30,18 @@ public enum FileCategory {
     SOUND,
     MUSIC,
     OTHER,
-    UNKNOWN
+    UNKNOWN;
+    
+    @Override
+    public String toString() {
+       String result = this.name().toLowerCase();
+       
+//        result = // just upgrade the first case 
+//                Character.toString(result.charAt(0)).toUpperCase()
+//                // keep the rest in lower case
+//                + result.substring(1);
+        return result;
+    }
+       
     
 }

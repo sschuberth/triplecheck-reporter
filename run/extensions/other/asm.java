@@ -64,7 +64,7 @@ public class asm extends FileExtension{
      */
     @Override
     public String getDescription() {
-        return null; // file type description
+        return "Assembler language, low-level machine code"; // file type description
     }
     
     /**
@@ -72,7 +72,7 @@ public class asm extends FileExtension{
      */
     @Override
     public FileLanguage getLanguage(){
-        return FileLanguage.UNSORTED; // to which language is the file more related?
+        return FileLanguage.ASSEMBLER; // to which language is the file more related?
     }
     /**
      * Who is the owner for description that was provided?
