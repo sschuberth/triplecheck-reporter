@@ -69,8 +69,6 @@ public final class SPDXfile {
    private boolean hasStats = false;
    // if there is a file, what is the checksum?
    private String checksum = "";
-   // how many licenses are present in this document?
-   private int statsLicensesDeclared = 0;
    
    private HashMap<FileLanguage, Integer> statsLanguagesFound = new HashMap();
    private int statsLanguagesTotal = 0;
@@ -81,6 +79,12 @@ public final class SPDXfile {
    
    // are redundant files present on the document?
    private Boolean statsHasVersioning = false;
+   
+   // how many licenses were declated in this document?
+   private int statsLicensesDeclaredCount = 0;
+   // there is a difference between declared and concluded licenses
+   private HashMap<String, Integer> statsLicensesDeclared = new HashMap();
+   
    /**
     * Constructor where we initialize this object by serving an SPDX text
     * file as source of knowledge to fill up the contents
@@ -585,7 +589,7 @@ public final class SPDXfile {
      * @return number of licenses declared
      */
     public int getStatsLicensesDeclared() {
-        return statsLicensesDeclared;
+        return statsLicensesDeclaredCount;
     }
 
     
@@ -606,7 +610,7 @@ public final class SPDXfile {
         }
     
         // initialize our variables
-        statsLicensesDeclared = 0;
+        statsLicensesDeclaredCount = 0;
         statsHasVersioning = false;
         
         // this list keeps files where multiple languages apply
@@ -614,15 +618,34 @@ public final class SPDXfile {
         
         // A single big loop to get all our stats computed
         for(FileInfo fileInfo : fileSection.files){
+            
+            
             // count the number of declared licenses (not the concluded lic.)
-            statsLicensesDeclared += fileInfo.countLicensesDeclared();
+            int licensesCount =  fileInfo.countLicensesDeclared();
+            statsLicensesDeclaredCount += licensesCount;
+             // was at least one license added?
+            if(licensesCount > 0){
+                String license = fileInfo.getLicense();
+                // do we already have a similar license?
+                if(statsLicensesDeclared.containsKey(license)){
+                    //  increase the counter
+                    int count = statsLicensesDeclared.get(license);
+                    count++;
+                    statsLicensesDeclared.put(license, count);
+                }else{
+                    // first time, just add it up
+                    statsLicensesDeclared.put(license, 1);
+                }
+            }
+            
+            
+            
             // process the most popular language types on this project
             FileExtension extension = fileInfo.getExtension();
             // only proceed when there is a valid extension
             if(extension == null){
                 continue;
             }
-            
             // get the category type
             FileCategory category = extension.getCategory();
             
@@ -794,8 +817,17 @@ public final class SPDXfile {
                     + ")");
         }
     }
+
     
- /**
+
+    public int getStatsLicensesDeclaredCount() {
+        return statsLicensesDeclaredCount;
+    }
+    
+ 
+    
+    
+    /**
      * Given the recognized languages inside a given document, create
      * an evaluation about what is contained inside.
      */
@@ -854,6 +886,28 @@ public final class SPDXfile {
             result +=  html.br;
         }
         
+        
+        
+        // Now list the licenses
+        if(statsLicensesDeclaredCount > 0){
+            Map<String,Integer> map2 = utils.misc.sortHashMap(statsLicensesDeclared);
+            // show the ordered results
+            for(String lic :map2.keySet()){
+
+                int count = map2.get(lic);
+                result += ""
+                        //+ " -> " 
+                        + utils.misc.getPercentage(count, statsLicensesDeclaredCount) + "%"
+                        + " "
+                        + lic
+                        + " ("
+                        + count 
+                        + " files)"
+                        + html.br
+                        ;
+            }        
+            result +=  html.br;
+        }
         
         return result;
     }

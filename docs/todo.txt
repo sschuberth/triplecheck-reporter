@@ -6,10 +6,14 @@
 
 x When viewing details about a file, show extension description
 - Extensions needs to support cases like .hg_archival.txt
-- Missing to show the licenses that were found
+x Missing to show the licenses that were found
 - missing a page where user learns how to automate the SPDX generation
 - where applicable files mentioned with copyright?
 - We need cache generation to speed up loading times
 - Reduce size of extension classes (some methods are never used)
 - Make triggers to be categorized (imports, copyrights, licenses, etc)
+- Track files generated automatically (part of triggers?)
+- 
+
+
 x add icons for images, documents, archives depending on file type
