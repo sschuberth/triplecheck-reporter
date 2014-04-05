@@ -35,9 +35,7 @@ public class Apache implements License {
     // the list of id's that we can use to identify a license
     // identifiers are always in lower case to ease processing speed
     String[] list = {
-        "apache License, version 2.0",
-        "apache v2",
-        "apache 2.0"
+        "Apache License, Version 2.0"
     };
     
     /**
@@ -48,10 +46,10 @@ public class Apache implements License {
      */
     @Override
     public Boolean isApplicable(String text){
-        String lowerCaseText = text.toLowerCase();
+       // String lowerCaseText = text.toLowerCase();
         // iterate all our ids
         for(String id : list){
-            if(lowerCaseText.contains(id)){
+            if(text.contains(id)){
                 return true;
             }
         }
