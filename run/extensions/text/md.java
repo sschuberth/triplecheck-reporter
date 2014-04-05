@@ -1,4 +1,4 @@
-package unknown;
+package text;
 
 import java.io.File;
 import java.util.Date;
@@ -10,14 +10,14 @@ import spdxlib.FileLanguage;
 /*
  * SPDXVersion: SPDX-1.1
  * Creator: Person: Nuno Brito
- * Created: 2014-04-04T16:13:25Z
+ * Created: 2014-04-04T16:13:32Z
  * LicenseName: CC-BY-3.0
  * TemplateVersion: TC-2013-11-16
- * FileName: hgtags.java  
+ * FileName: md.java  
  * FileCategory: SOURCE
  * FileCopyrightText: <text> Copyright (c) 2014, Nuno Brito </text>
  * FileComment: <text> This class provides details about the files that make 
- * use of the "hgtags" extension. When possible, the file provenance author
+ * use of the "md" extension. When possible, the file provenance author
  * includes details such as date when this extension first began to be used.
  * There are cases where different data structures use the same file extension,
  * when this happens then the author needs to accomodate code to accurately
@@ -30,7 +30,7 @@ import spdxlib.FileLanguage;
  *
  * @file provenance by Nuno Brito
  */
-public class hgtags extends FileExtension{
+public class md extends FileExtension{
     /**
      * How can we confirm that this file extension is appliable to this file?
      * This method analyses the binary contents of a file to get the answer.
@@ -62,7 +62,7 @@ public class hgtags extends FileExtension{
      */
     @Override
     public String getDescription() {
-        return null; // file type description
+        return "Markdown syntax file"; // file type description
     }
     
     /**
@@ -88,7 +88,7 @@ public class hgtags extends FileExtension{
      */
     @Override
     public String getIdentifierShort() {
-        return "hgtags";
+        return "md";
     }
     
     /**
@@ -149,7 +149,7 @@ public class hgtags extends FileExtension{
      */
     @Override
     public FileCategory getCategory() {
-        return FileCategory.UNKNOWN; // does it group under a category?
+        return FileCategory.TEXT; // does it group under a category?
     }
 
     /**
