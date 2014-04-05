@@ -71,8 +71,6 @@ public final class SPDXfile {
    private String checksum = "";
    // how many licenses are present in this document?
    private int statsLicensesDeclared = 0;
-   // are redundant files present on the document?
-   private boolean statsHasSVN = false;
    
    private HashMap<FileLanguage, Integer> statsLanguagesFound = new HashMap();
    private int statsLanguagesTotal = 0;
@@ -81,6 +79,8 @@ public final class SPDXfile {
    private int statsArtworkCount = 0;
    private HashMap<FileCategory, Integer> statsArtworkFound = new HashMap();
    
+   // are redundant files present on the document?
+   private Boolean statsHasVersioning = false;
    /**
     * Constructor where we initialize this object by serving an SPDX text
     * file as source of knowledge to fill up the contents
@@ -589,8 +589,8 @@ public final class SPDXfile {
     }
 
     
-    public boolean hasSVN() {
-        return statsHasSVN;
+    public boolean hasVersioningFilesPresent() {
+        return statsHasVersioning;
     }
     
     
@@ -607,7 +607,7 @@ public final class SPDXfile {
     
         // initialize our variables
         statsLicensesDeclared = 0;
-        statsHasSVN = false;
+        statsHasVersioning = false;
         
         // this list keeps files where multiple languages apply
         ArrayList<FileInfo> secondList = new ArrayList();
@@ -626,6 +626,11 @@ public final class SPDXfile {
             // get the category type
             FileCategory category = extension.getCategory();
             
+            
+            // this is useful to know (because they are redundant in SPDX docs)
+            if(category == FileCategory.VERSIONING){
+                statsHasVersioning = true;
+            }
             
             // is this an artwork that we should consider?
             if((category == FileCategory.IMAGE)
@@ -725,16 +730,6 @@ public final class SPDXfile {
         }
         
           
-        // this had been replaced with a versioning that was more generic
-        // are SVN files present on this document?
-        ArrayList<FileInfo> list = fileSection.files;
-        for(FileInfo fileInfo : list){
-            if(fileInfo.tagFileName.toString().contains(".svn")){
-                statsHasSVN = true;
-                break;
-            }
-        }
-        
         //debugStats();
         
         // all done

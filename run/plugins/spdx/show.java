@@ -655,13 +655,13 @@ public class show extends Plugin{
         String result = "";
       
         
-        if(spdx.hasSVN()){
+        if(spdx.hasVersioningFilesPresent()){
             result = html.br
                     + html.h2(""
                             //html.getCommonFolderIcon("exclamation.png") 
                             + "Suggestions"
                             + "")
-                    + "Source code has SVN files that could be removed from the"
+                    + "Source code has versioning files that could be removed from the"
                     + " distribution"
                     + html.br
                     + html.br
