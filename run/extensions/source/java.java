@@ -64,7 +64,7 @@ public class java extends FileExtension{
      */
     @Override
     public String getDescription() {
-        return null; // file type description
+        return "Java source code file"; // file type description
     }
     
     /**

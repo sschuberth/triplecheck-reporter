@@ -1,4 +1,4 @@
-package other;
+package config;
 
 import java.io.File;
 import script.FileExtension;
@@ -11,11 +11,11 @@ import spdxlib.FileLanguage;
  * Creator: Person: Nuno Brito
  * Created: 2013-11-16T13:57:13Z
  * LicenseName: CC-BY-3.0
- * FileName: dsw.java  
+ * FileName: mak.java  
  * FileCategory: SOURCE
  * FileCopyrightText: <text> Copyright © 2013, Nuno Brito </text>
  * FileComment: <text> This class provides details about files that have
- * the extension of type dsw. Extensions tend to represent a specific type
+ * the extension of type mak. Extensions tend to represent a specific type
  * of file structure from where we can extract information. In some cases, the
  * same type of file is used for representing different types of data from 
  * different types of applications. We make no specific arrangement to handle
@@ -32,7 +32,7 @@ import spdxlib.FileLanguage;
  *
  * @author Nuno Brito
  */
-public class dsw extends FileExtension{
+public class mak extends FileExtension{
     /**
      * How can we confirm that this file extension is appliable to this file?
      * This method analyses the binary contents of a file to get the answer.
@@ -72,7 +72,8 @@ public class dsw extends FileExtension{
      */
     @Override
     public FileLanguage getLanguage(){
-        return FileLanguage.UNSORTED; // to which language is the file more related?
+        // found inside C++ source code folders. Not sure if used in others
+        return FileLanguage.C_PLUS_PLUS; // to which language is the file more related?
     }
     /**
      * Who is the owner for description that was provided?
@@ -90,7 +91,7 @@ public class dsw extends FileExtension{
      */
     @Override
     public String getIdentifierShort() {
-        return "dsw";
+        return "mak";
     }
 
     /**
@@ -101,7 +102,7 @@ public class dsw extends FileExtension{
      */
     @Override
     public ContentType getContentType() {
-        return ContentType.UNKNOWN;
+        return ContentType.TEXT;
     }
 
     /**
@@ -111,7 +112,7 @@ public class dsw extends FileExtension{
      */
     @Override
     public FileCategory getCategory() {
-        return FileCategory.UNKNOWN;
+        return FileCategory.CONFIG;
     }
 
     /**

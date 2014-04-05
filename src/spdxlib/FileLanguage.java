@@ -57,8 +57,8 @@ public enum FileLanguage {
         case RUBY: return "Ruby";
         case PYTHON: return "Python";
         case PERL: return "Perl";
-        case SCRIPT_LINUX: return "Linux scripts";
-        case SCRIPT_WINDOWS: return "Windows scripts";
+        case SCRIPT_LINUX: return "Linux script";
+        case SCRIPT_WINDOWS: return "Windows script";
     
     // misc
         case SQL: return "SQL";

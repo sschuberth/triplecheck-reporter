@@ -64,7 +64,7 @@ public class jar extends FileExtension{
      */
     @Override
     public String getDescription() {
-        return null; // file type description
+        return "Java Archive"; // file type description
     }
     
     /**

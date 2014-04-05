@@ -21,6 +21,7 @@ import definitions.is;
 import java.io.File;
 import main.core;
 import main.param;
+import script.FileExtension;
 import script.Plugin;
 import script.log;
 import spdxlib.FileInfo;
@@ -176,18 +177,56 @@ public class showFileDetails extends Plugin{
 //                ;
         // add a short summary about the file
         String summary = "";
-        if(file.tagFileSize != null){
-            summary += "This file is sized in " + file.tagFileSize.toString();
+        
+        
+       
+        // this is later used for fetching online information about extension  
+        String lookForExtensionInfo = "";
+        
+        FileExtension extension = file.getExtension();
+        
+        if(extension != null){
+             // add the part that permits online searches
+             lookForExtensionInfo = ""
+                        //+ html.br
+                        + swingUtils.addIfNotEmpty("Info about file extension \""
+                            + extension.getIdentifierShort()
+                            + "\"",
+                            html.div() 
+                            + html.linkToSearchFileExtension
+                            (extension.getIdentifierShort())
+                            + html._div
+                     );
+        
+            
+            if(extension.getDescription()!=null){
+                summary += extension.getDescription();
+            }else{
+                summary += ""
+                        + extension.getCategory().toStringCapitalLetter()
+                        + " file";
+            }
         }
-        if(file.tagFileLOC != null){
-            summary += " with " + file.tagFileLOC + " lines of code" 
-                    ;
+        //summary += html.br;
+        
+         if(file.tagFileSize != null){
+            summary += ", sized in " + file.tagFileSize.toString();
+        }
+         if(file.tagFileLOC != null){
+            summary += " with " + file.tagFileLOC + " lines of code"; 
+                    
+        }
+        
+        summary += html.br;
+        
+        // remove the comma and space when there is no extension
+        if(file.getExtension() == null){
+            summary = "S" + summary.substring(3);
         }
         
         if(file.countLicensesDeclared()>0){
             summary += 
-                    html.br 
-                    + html.br 
+                     html.br 
                     + "Applicable license(s): " + file.getLicense();
         }
         
@@ -238,7 +277,8 @@ public class showFileDetails extends Plugin{
                         + html.div()
                         // only possible when we have SHA256 hashes available
                         + html.linkToSearchMetaScan(file.tagFileChecksumSHA256.toString())
-                        + ""
+                        + html.divider
+                        + html.linkToSearchVirusTotal(file.tagFileChecksumSHA256.toString())
                         + html._div;
         }
         
@@ -268,6 +308,10 @@ public class showFileDetails extends Plugin{
                         + html._div;
         }
         
+      
+        
+        
+        
         String result = html.div()
                     + resultIntroduction
                     + html.br
@@ -277,13 +321,16 @@ public class showFileDetails extends Plugin{
                     + swingUtils.addIfNotEmpty("MD5",resultMD5)
                     //+ html.br
                     + swingUtils.addIfNotEmpty("SSDEEP", resultSSDEEP)
-                    + html.br
+                    //+ html.br
                     + swingUtils.addIfNotEmpty("Look for \""
                         +filename
                         +"\""
                         , resultFilename)
+                    + lookForExtensionInfo
                     + html._div
-//                    + swingUtils.addSSDEEP("SSDEEP", file)
+                    + html.br
+                    + html.br
+                      
 //                    + swingUtils.addIfNotEmpty("Copyright text",file.tagFileCopyrightText.toString())
                     ;
         

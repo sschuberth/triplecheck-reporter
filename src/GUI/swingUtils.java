@@ -843,10 +843,13 @@ public class swingUtils {
                || ((fileInfo.fileCategory == FileCategory.OTHER))
                ){
            return getIcon("document-xaml.png");
-           
        }
        
-       
+         
+       if(fileInfo.fileCategory == FileCategory.BINARY){
+           return getIcon("document-binary.png");
+       }
+     
        
          
        return getIcon("document.png");

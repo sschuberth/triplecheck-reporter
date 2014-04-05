@@ -243,7 +243,17 @@ public class html {
                 );
     }
   
-   
+     /**
+    * Search a term using the http://file-extension.net database
+    * @param what the search term to be found
+    * @return The HTML text prepared to be added on a web page
+    */
+   public static String linkToSearchFileExtension(String what){
+        return html.link("File Extension Seeker", ""
+                + "http://file-extension.net/seeker/file_extension_"
+                + what.toLowerCase()
+                );
+    }
    
    /**
     * Search a term using the Ohloh engine
