@@ -1,4 +1,4 @@
-package unknown;
+package binary;
 
 import java.io.File;
 import java.util.Date;
@@ -78,7 +78,7 @@ public class patch extends FileExtension{
      */
     @Override
     public String getDescriptionCredits(){
-        return null; //author of description
+        return "A binary patch file"; //author of description
     }
 
     /**
@@ -139,7 +139,7 @@ public class patch extends FileExtension{
      */
     @Override
     public ContentType getContentType() {
-        return ContentType.TEXT; // is it a binary or text file?
+        return ContentType.BINARY; // is it a binary or text file?
     }
 
     /**
@@ -149,7 +149,7 @@ public class patch extends FileExtension{
      */
     @Override
     public FileCategory getCategory() {
-        return FileCategory.UNKNOWN; // does it group under a category?
+        return FileCategory.BINARY; // does it group under a category?
     }
 
     /**
