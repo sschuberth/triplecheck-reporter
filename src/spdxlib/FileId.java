@@ -254,7 +254,11 @@ public class FileId {
         String content = utils.files.readAsString(file);
         
         // we want to track the lock from source code files
-        if(ext.getCategory() == FileCategory.SOURCE){
+        if(  // we read both source code and script files
+                (ext.getCategory() == FileCategory.SOURCE)
+              ||  (ext.getCategory() == FileCategory.SCRIPT)
+                
+                ){
             // do the LOC processing
             String[] lines = content.split("\n");
             LOC = 0;

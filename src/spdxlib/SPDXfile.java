@@ -895,7 +895,7 @@ public final class SPDXfile {
         
         // Now list the licenses
         if(statsLicensesDeclaredCount > 0){
-            Map<String,Integer> map2 = utils.misc.sortHashMap(statsLicensesDeclared);
+//            Map<String,Integer> map2 = utils.misc.sortHashMap(statsLicensesDeclared);
             // show the ordered results
             for(String lic :statsLicensesDeclared.keySet()){
 
