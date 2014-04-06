@@ -1,11 +1,12 @@
 @echo off
 
-set zipfile=triplecheck-0.5.zip
+set zipfile=triplecheck.zip
 set build=reporter
 set publish=publish
 
 :: Deleting the old files
 echo Deleting the publish folder
+mkdir ..\publish
 cd ..\publish
 for /f "tokens=* delims=" %%i in ('dir /s/b') do (
   rd /s /q "%%i" > null

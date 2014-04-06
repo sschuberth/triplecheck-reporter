@@ -514,6 +514,7 @@ public class swingUtils {
             return;
         }
         
+        try{
         core.studio.doSettings();
         
         // get back to the previoulsy selected node
@@ -521,7 +522,11 @@ public class swingUtils {
         // refresh things up
         tree.repaint();
         swingUtils.refreshTextBox();
-        
+        } catch (Exception e){
+            System.err.println("SU526: Exception while refreshing the user "
+                    + "interface with the following text: " 
+                    + e.getLocalizedMessage());
+        }
     }
 //    // find all components inside our common library
 //        File baseFolder = new File(".");

@@ -31,7 +31,7 @@ import utils.Settings;
 
 public class core {
 
-    public static String version = "0.5";
+    public static String version = "0.6";
     
     public static 
             Script script = new Script();
