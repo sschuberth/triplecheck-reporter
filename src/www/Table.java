@@ -126,7 +126,7 @@ public class Table {
             i++;
             result += "<td style=\"width: "
                     + size[i]
-                    + "px;\">"
+                    + "px; vertical-align: top;\">"
                     + param
                     + "</td>"
                     ;

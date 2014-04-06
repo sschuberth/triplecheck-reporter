@@ -522,7 +522,7 @@ public class StudioUI4 extends javax.swing.JFrame {
             text.setContentType(contentType);
             text.setText(content);
             // disable this box if you don't need to see the output on a file
-            //utils.files.SaveStringToFile(new File("output.html"), content);
+            utils.files.SaveStringToFile(new File("output.html"), content);
                     
             // should the button enabled?
             button.setEnabled(true);

@@ -406,9 +406,15 @@ public class show extends Plugin{
         String textLOC = myFormatter.format(countLOC);
         String textOverallSize = utils.files.humanReadableSize(overallSize);
         
+        // generate the nice graph
+        String[] titles = new String[]{"No license declared", "License declared"};
+        int noLicenses = counterFiles - counterLicensesDeclared;
+        int[] values = new int[]{noLicenses, counterLicensesDeclared};
+        // do the graph file
+        File graphFile = Graphs.generate(thisFolder, titles, values);
         
-        // the header when showing summary about a specific SPDX file
-        String summary = 
+           // the header when showing summary about a specific SPDX file
+        String column1 = 
                 html.h2(
                        // html.getIcon("wooden-box-label.png", request)
                         spdx.getId())
@@ -419,29 +425,28 @@ public class show extends Plugin{
                 + html.br
                 + textOverallSize + " in size"
                 + html.br
-                + spdx.getLanguageEvaluation()
-                + html.br
+                + html.getIcon("chart.png", request)
+                
+                //+ html.br
                 //+ html.getCommonFolderIcon("calculator.png")
                 
                 //+ percentage
-                + warnings
-                + evaluation
-                + html.br
+                //+ warnings
+                //+ evaluation
+                //+ html.br
                 ;
         
-        // generate the nice graph
-        String[] titles = new String[]{"No license declared", "License declared"};
-        int noLicenses = counterFiles - counterLicensesDeclared;
-        int[] values = new int[]{noLicenses, counterLicensesDeclared};
-        // do the graph file
-        File graphFile = Graphs.generate(thisFolder, titles, values);
+        String column2 = ""
+                + spdx.getLanguageEvaluation()
+                + html.br
+                //+ html.h3("Actions")
+                + ""
+                + "";
         
-        String[] header = new String[]{summary, 
-              html.br
-            + html.getIcon("chart.png", request)};
-        values = new int[]{270, 180};
+        String[] header = new String[]{column1, column2};
+        values = new int[]{180, 180};
         
-        summary = Table.alignedTable(header, values);
+        column1 = Table.alignedTable(header, values);
         
         // if we are on Windows, permit to open the folder
         String openFolder = "";
@@ -464,7 +469,8 @@ public class show extends Plugin{
         String result = ""
                 //swingUtils.getBreadcrumb(node)
                 + html.div(20)
-                + summary
+                + column1
+                 //+ html.br
                 + html._div
                 
                 
