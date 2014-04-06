@@ -216,19 +216,6 @@ public class FileInfo {
      */
     public int countLicensesDeclared(){
         int result = 0;
-//        
-//        // do we have a license concluded for this file?
-//        if(tagLicenseConcluded != null){
-//            // get the text from the license that was concluded
-//            String licenseText = tagLicenseConcluded.toString();
-//            // a lot of trouble, but necessary to find out what is happening
-//            if( (licenseText.equals("NONE")== false) 
-//             && (licenseText.equals("NOASSERTION")== false)){
-//                // we have at least one license concluded. Good enough
-//                return result;
-//            }
-//        }
-        
         // are there any licenses inside this file?
         for(TagValue licenseTag : licenseInfoInFile){
             String licenseText = licenseTag.toString();

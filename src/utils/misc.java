@@ -51,8 +51,8 @@ public class misc {
         List<Integer> yourMapValues = new ArrayList<Integer>(input.values());
         TreeSet<Integer> sortedSet = new TreeSet<Integer>(yourMapValues);
         Object[] sortedArray = sortedSet.toArray();
-        int size = sortedArray.length;
-        for (int i=size-1; i>-1; i--) {
+        int size = sortedArray.length - 1;
+        for (int i=size; i>=0; i--) {
         map.put
             (yourMapKeys.get(yourMapValues.indexOf(sortedArray[i])),
             (Integer) sortedArray[i]);

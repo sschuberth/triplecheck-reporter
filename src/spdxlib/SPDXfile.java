@@ -626,6 +626,11 @@ public final class SPDXfile {
              // was at least one license added?
             if(licensesCount > 0){
                 String license = fileInfo.getLicense();
+                
+//                if(license.equalsIgnoreCase("MIT")){
+//                    System.out.println("");
+//                }
+                
                 // do we already have a similar license?
                 if(statsLicensesDeclared.containsKey(license)){
                     //  increase the counter
@@ -892,9 +897,9 @@ public final class SPDXfile {
         if(statsLicensesDeclaredCount > 0){
             Map<String,Integer> map2 = utils.misc.sortHashMap(statsLicensesDeclared);
             // show the ordered results
-            for(String lic :map2.keySet()){
+            for(String lic :statsLicensesDeclared.keySet()){
 
-                int count = map2.get(lic);
+                int count = statsLicensesDeclared.get(lic);
                 result += ""
                         //+ " -> " 
                         + utils.misc.getPercentage(count, statsLicensesDeclaredCount) + "%"

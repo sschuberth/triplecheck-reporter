@@ -1,4 +1,4 @@
-package unknown;
+package config;
 
 import java.io.File;
 import java.util.Date;
@@ -62,7 +62,7 @@ public class launch extends FileExtension{
      */
     @Override
     public String getDescription() {
-        return null; // file type description
+        return "Eclipse launch configuration file"; // file type description
     }
     
     /**
@@ -149,7 +149,7 @@ public class launch extends FileExtension{
      */
     @Override
     public FileCategory getCategory() {
-        return FileCategory.UNKNOWN; // does it group under a category?
+        return FileCategory.CONFIG; // does it group under a category?
     }
 
     /**

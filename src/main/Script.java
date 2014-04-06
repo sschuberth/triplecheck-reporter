@@ -274,7 +274,7 @@ public class Script {
                 License plugin = (License) runScript.get("plugin");
                 // add it up
                 core.licenses.add(plugin);
-                script.log.write(is.COMPLETED, "Added license plugin: %1", 
+                script.log.write(is.COMPLETED, "Added trigger: %1", 
                         scriptFile.getName());
             }
             
