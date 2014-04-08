@@ -296,6 +296,10 @@ public class swingUtils {
 //        nodeReviews.nodeType = NodeType.sectionReview;
         // all done, add this node on the tree structure
         root.add(node);
+        
+        // code for debugging
+        //System.err.println(node.getUID());
+        
     }
     
     

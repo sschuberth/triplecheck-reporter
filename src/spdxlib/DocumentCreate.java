@@ -240,7 +240,7 @@ public class DocumentCreate {
         file = document; // keep this around for future reference
 
         // save the location of the source code for this document
-        core.settings.write(id.SOURCEFOLDER + getUID(), 
+        core.settings.write(id.SOURCEFOLDER + file.getName(), 
                 folderSourceCode.getAbsolutePath());
         
         // all done

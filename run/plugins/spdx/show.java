@@ -23,13 +23,11 @@ import java.io.File;
 import java.io.IOException;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
-import java.util.Map;
 import main.core;
 import main.param;
 import script.Plugin;
 import script.log;
 import spdxlib.FileInfo;
-import spdxlib.FileLanguage;
 import spdxlib.SPDXfile;
 import spdxlib.tools;
 import utils.Graphs;
@@ -192,7 +190,6 @@ public class show extends Plugin{
         
 //        Table table = new Table(line);
         
-        String result = "";
 //        for(SPDXfile product : core.reports){
 //            String lastModified = utils.time.getTimeFromLong
 //                (product.file.lastModified());
@@ -201,7 +198,7 @@ public class show extends Plugin{
 //            table.add(line);
 ////        }
         
-        result = findFiles(core.getProductsFolder(), 25, request);
+        String result = findFiles(core.getProductsFolder(), 25, request);
         
         return result;           
     }

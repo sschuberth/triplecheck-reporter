@@ -51,9 +51,16 @@ public class FileInfo {
             tagFileChecksumMD5;
     
    
+     private SPDXfile spdx = null; // where does this object comes from?
+     
      // non tag related
     public FileCategory fileCategory = FileCategory.UNKNOWN;
      
+    
+    public FileInfo(SPDXfile thisSPDX){
+        spdx = thisSPDX;
+    }
+    
      /**
       * Prints the data from this object for debugging the result
       */
@@ -180,31 +187,7 @@ public class FileInfo {
         }
         return licenseOutput;
     }
-//     String licenseOutput = "";
-//        // priority is the case where a human concludes a license
-//        if((tagLicenseConcluded != null)
-//                &&(tagLicenseConcluded.toString().equals("NOASSERTION")!=true)){
-//            // no need to proceed
-//            return 
-//                    //file.tagFileName.toString() 
-//                    //+ " ("+ 
-//                    tagLicenseConcluded.toString() 
-//                    //+")"
-//                    ;
-//        }
-//        
-//        // second priority are licenses detected inside the code
-//        if(licenseInfoInFile.size()>0){
-//            
-//            for(TagValue tag : licenseInfoInFile){
-//                licenseOutput =  licenseOutput.concat(", " + tag.toString());
-//            }
-//            // remove the first comma added throught our loop
-//            licenseOutput = " (" + licenseOutput.substring(2) + ")";
-//        }
-//        return licenseOutput;
-//    }
-    
+
     
     /**
      * When given a file, this method checks if it has either a reported or
@@ -309,6 +292,39 @@ public class FileInfo {
         result = ext.getCategory();
         
     return result;
+    }
+
+    /**
+     * Provides back the SPDX document that gave origin to this FileInfo tidybit
+     * @return 
+     */
+    public SPDXfile getSPDX() {
+        return spdx;
+    }
+   
+       /**
+     * Returns the path portion from a given FileInfo object
+     * @return 
+     */
+    public String getRelativeLocation(){
+        
+        // or else, the path is found inside the FileName tag
+        String fileName = tagFileName.getValue();
+        
+        // if we have a FilePath tag available, use it as default
+        if(tagFilePath != null){
+            String filePath = tagFilePath.getValue();
+            fileName = filePath + fileName;
+        }
+        
+        // if no path is available, just mention it as root
+        if(fileName.contains("/")==false){
+            return "./";
+        }
+        // there is a path available, let's get it
+        String result = fileName;//.substring(0, fileName.lastIndexOf("/"));
+        
+        return result;
     }
     
 }

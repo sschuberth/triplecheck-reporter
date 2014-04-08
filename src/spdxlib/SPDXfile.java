@@ -16,11 +16,13 @@
 package spdxlib;
 
 import definitions.Process;
+import definitions.id;
 import definitions.is;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import main.core;
 import script.FileExtension;
 import script.log;
 import utils.files;
@@ -42,7 +44,7 @@ public final class SPDXfile {
            licenses = new ArrayList();          
    
    public SectionFiles // where we report all found fileSection of the package
-           fileSection = new SectionFiles();
+           fileSection = new SectionFiles(this);
    
    Person
            reviewer;
@@ -916,6 +918,32 @@ public final class SPDXfile {
         }
         
         return result;
+    }
+
+    /**
+     * When available, gives back the location where we can find the source code
+     * files that were used when creating this document.
+     * @return A pointer to the folder where the source code files are located
+     */
+    public File getSourceFolder() {
+        if(file== null){
+            return null;
+        }
+        // get the title
+        String title = id.SOURCEFOLDER + file.getName();
+        
+        if(core.settings.hasKey(title)==false){
+            return null;
+        }
+        // create the folder pointer
+        File folder = new File(core.settings.read(title));
+        
+        // doesn't exist?
+        if(folder.exists() == false){
+            return null;
+        }
+        // all done!
+        return folder;
     }
     
    

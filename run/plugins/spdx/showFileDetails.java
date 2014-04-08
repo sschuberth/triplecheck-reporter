@@ -93,12 +93,12 @@ public class showFileDetails extends Plugin{
         if(node.nodeType != NodeType.file){
             return;
         }
-
+       
         // we're talking about tree nodes, get the respective information
-        FileInfo file = (FileInfo) node.getUserObject();
+        FileInfo fileInfo = (FileInfo) node.getUserObject();
         
         // create the summary for the requested file
-        String output = showFileDetails(file);
+        String output = showFileDetails(fileInfo);
         // this only applies to calls from the treeview
         core.studio.editorPane(is.contentHTML, Boolean.FALSE, 0, output);
         
@@ -128,22 +128,35 @@ public class showFileDetails extends Plugin{
      * Do the actual part of showing the details for this file
      * @param node 
      */
-    private String showFileDetails(FileInfo file) {
+    private String showFileDetails(FileInfo fileInfo) {
         // where we store the end result
 //        FileInfo file = (FileInfo) node.getUserObject();
         
         String googleTerm = "";
-        String filename = file.getName();
+        String filename = fileInfo.getName();
         // get the file extension if available
         //String extension = getFileExtension(filename);
             
+         SPDXfile spdx = fileInfo.getSPDX();
+        
+         // where are the source code files located?
+         File sourceFolder = spdx.getSourceFolder();
+        
+//        if(folder == null){
+//            System.err.println("No source code folder available");
+//        }else{
+//            System.out.println(folder.toString());
+//        }
+        
+        
+        
         try{
             // get the package name to narrow down the results
 //            TreeNodeSPDX parent = (TreeNodeSPDX) node.getParent();
 //            TreeNodeSPDX root = (TreeNodeSPDX) parent.getParent();
             
             // we need to remove misleading terms from the filename
-            String filteredName = file.getName();
+            String filteredName = fileInfo.getName();
                    // root.id.toLowerCase();
             
                 filteredName = filteredName.replace(".tar.gz", "");
@@ -166,15 +179,7 @@ public class showFileDetails extends Plugin{
                     + " a search keyword for google");
         }
         
-        // do the introduction of this file with a breadcrumb
-//        String[] fields = node.getUID().split(">>");
-//        String breadCrumb = 
-//                  fields[4]
-//                + ">"
-//                + fields[3]
-//                + ">"
-//                + fields[1]
-//                ;
+
         // add a short summary about the file
         String summary = "";
         
@@ -183,7 +188,7 @@ public class showFileDetails extends Plugin{
         // this is later used for fetching online information about extension  
         String lookForExtensionInfo = "";
         
-        FileExtension extension = file.getExtension();
+        FileExtension extension = fileInfo.getExtension();
         
         if(extension != null){
              // add the part that permits online searches
@@ -209,25 +214,25 @@ public class showFileDetails extends Plugin{
         }
         //summary += html.br;
         
-         if(file.tagFileSize != null){
-            summary += ", sized in " + file.tagFileSize.toString();
+         if(fileInfo.tagFileSize != null){
+            summary += ", sized in " + fileInfo.tagFileSize.toString();
         }
-         if(file.tagFileLOC != null){
-            summary += " with " + file.tagFileLOC + " lines of code"; 
+         if(fileInfo.tagFileLOC != null){
+            summary += " with " + fileInfo.tagFileLOC + " lines of code"; 
                     
         }
         
         summary += html.br;
         
         // remove the comma and space when there is no extension
-        if(file.getExtension() == null){
+        if(fileInfo.getExtension() == null){
             summary = "S" + summary.substring(3);
         }
         
-        if(file.countLicensesDeclared()>0){
+        if(fileInfo.countLicensesDeclared()>0){
             summary += 
                      html.br 
-                    + "Applicable license(s): " + file.getLicense();
+                    + "Applicable license(s): " + fileInfo.getLicense();
         }
         
         // do the date creation
@@ -255,47 +260,47 @@ public class showFileDetails extends Plugin{
 //                        + html.divider
 //                        + html.linkToSearchOhloh(file.tagFileName.toString())
                         + html.divider
-                        + html.linkToSearchGitHub(file.tagFileName.toString())
+                        + html.linkToSearchGitHub(fileInfo.tagFileName.toString())
                         + html._div;
         
         String resultSHA1 = "";
-        if(file.tagFileChecksumSHA1!= null){
-            resultSHA1 = file.tagFileChecksumSHA1.toString()
+        if(fileInfo.tagFileChecksumSHA1!= null){
+            resultSHA1 = fileInfo.tagFileChecksumSHA1.toString()
                         + html.br
                         + html.div()
                         + html.linkSearch("Find duplicates", "SHA1: "
-                            + file.tagFileChecksumSHA1.toString())
+                            + fileInfo.tagFileChecksumSHA1.toString())
                         + html.divider
                         + html.linkToSearchGoogle(
-                            "%22"+ file.tagFileChecksumSHA1.toString() + "%22" )
+                            "%22"+ fileInfo.tagFileChecksumSHA1.toString() + "%22" )
                         + html._div;
         }
         
         String resultSHA256 = "";
-        if(file.tagFileChecksumSHA256!= null){
-            resultSHA256 = file.tagFileChecksumSHA256.toString()
+        if(fileInfo.tagFileChecksumSHA256!= null){
+            resultSHA256 = fileInfo.tagFileChecksumSHA256.toString()
                         + html.div()
                         // only possible when we have SHA256 hashes available
-                        + html.linkToSearchMetaScan(file.tagFileChecksumSHA256.toString())
+                        + html.linkToSearchMetaScan(fileInfo.tagFileChecksumSHA256.toString())
                         + html.divider
-                        + html.linkToSearchVirusTotal(file.tagFileChecksumSHA256.toString())
+                        + html.linkToSearchVirusTotal(fileInfo.tagFileChecksumSHA256.toString())
                         + html._div;
         }
         
       String resultMD5 = "";
-        if(file.tagFileChecksumMD5!= null){
-            resultMD5 = file.tagFileChecksumMD5.toString()
+        if(fileInfo.tagFileChecksumMD5!= null){
+            resultMD5 = fileInfo.tagFileChecksumMD5.toString()
                         + html.div()
                         // We might be lucky and find an MD5 with info
                         + html.linkToSearchGoogle(
-                            "%22"+ file.tagFileChecksumMD5.toString() + "%22" )
+                            "%22"+ fileInfo.tagFileChecksumMD5.toString() + "%22" )
                         + html._div;
         }
         
       
         String resultSSDEEP = "";
-        if(file.tagFileChecksumSSDEEP!= null){
-            String text = file.tagFileChecksumSSDEEP.raw;
+        if(fileInfo.tagFileChecksumSSDEEP!= null){
+            String text = fileInfo.tagFileChecksumSSDEEP.raw;
             // remove the tag header
             text = text.replace("FileChecksum: SSDEEP: ", "");
             
@@ -309,11 +314,9 @@ public class showFileDetails extends Plugin{
         }
         
       
-        
-        
-        
         String result = html.div()
                     + resultIntroduction
+                    + sourceCodeActions(fileInfo, sourceFolder)
                     + html.br
                     + html.br
                     + swingUtils.addIfNotEmpty("SHA1", resultSHA1)
@@ -341,4 +344,47 @@ public class showFileDetails extends Plugin{
         return result;
     }
 
+    /**
+     * These are actions that are only possible when we have access to the
+     * folder where the source code of the SPDX report
+     * @param fileInfo  The object containing the reference information 
+     */
+    private String sourceCodeActions(FileInfo fileInfo, File folder){
+        String result;
+        
+        // first step, do we have a source code for this file?
+        if(folder == null){
+            // nothing, let's go back empty handed
+            return "";
+        }
+        
+        String relativePath = fileInfo.getRelativeLocation();
+        
+        // get our target file
+        File targetFile = new File(folder, relativePath);
+        
+        // doesn't exist? No need to continue
+        if(targetFile.exists() == false){
+            return "";
+        }
+        
+        String URL = "/spdx/actions";
+        String parameters = "?file=" + targetFile.getAbsolutePath();
+        String folderText = "?x=folder&target=" + targetFile.getParentFile().getAbsolutePath(); 
+        
+        result = ""
+                + html.br
+                + html.div()
+                + html.link("View", URL + parameters)
+                + html.divider
+                + html.link("Open folder", URL + folderText)
+                + html._div
+                ;
+        
+         System.out.println("--> " + targetFile.getAbsolutePath());
+       
+        return result;
+    }
+    
+    
 }

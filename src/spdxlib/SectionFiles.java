@@ -33,6 +33,12 @@ public class SectionFiles {
              unknown = new ArrayList();
      
      
+     SPDXfile spdx = null;
+     
+     public SectionFiles(SPDXfile thisSPDX){
+         spdx = thisSPDX;
+     }
+     
     /**
      * Parse the file tags section of the document
      */
@@ -40,11 +46,14 @@ public class SectionFiles {
         
         // start a new entry
         if(tag.title.equalsIgnoreCase("FileName")){
-            FileInfo file = new FileInfo();
+            FileInfo file = new FileInfo(spdx);
             file.tagFileName = tag;
             
             // what kind of file do we have here?
             file.fileCategory = file.findCategory();
+            
+            // add a backtrack feature
+            
             
             files.add(file);
             return true;
@@ -170,7 +179,7 @@ public class SectionFiles {
         if(files.size()>0){
             result = files.get(files.size()-1);
         }else{
-            result = new FileInfo();
+            result = new FileInfo(spdx);
             files.add(result);
         }
         return result;  
