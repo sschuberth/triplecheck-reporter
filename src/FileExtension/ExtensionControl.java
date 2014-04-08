@@ -114,6 +114,35 @@ public final class ExtensionControl {
     }
     
     
+    /**
+     * Given a file, return the associated extension object
+     */
+    public FileExtension get(File file){
+        if(file == null){
+            return null;
+        }
+        
+        String extension = file.getName();
+        if(extension.contains(".")==false){
+            return null;
+        }
+        
+        // get the last string after the dot
+        extension = extension.substring(extension.lastIndexOf(".")+1).toLowerCase();
+        
+        // not indexed? Leave here
+        if(has(extension) == false){
+            return null;
+        }
+        
+        // return the type of extension object
+        return list.get(extension);
+    }
+    
+    
+    
+    
+    
     public Boolean isIgnored(String extension){
         if(list.containsKey(extension)==false){
             return true;

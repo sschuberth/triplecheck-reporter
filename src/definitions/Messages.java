@@ -38,7 +38,7 @@ public class Messages {
             TextWasLoaded = "Text was loaded",
             
             TreeNodeChanged = "Tree node changed: %1",
-            TreeNodeDoubleClick = "Tree node doubllick on: %1",
+            TreeNodeDoubleClick = "Tree node doubleclick on: %1",
             
             GainedFocusOnSearchBox = "Gained focus on Search Box",
             LostFocusOnSearchBox = "Lost focus on Search Box",

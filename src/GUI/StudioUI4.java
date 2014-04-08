@@ -20,6 +20,8 @@ import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Timer;
+import java.util.TimerTask;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JTextField;
@@ -67,7 +69,15 @@ public class StudioUI4 extends javax.swing.JFrame {
             baseFolderPast = null,
             baseFilePresent = null,
             baseFilePast = null;
-  
+    
+    // to measure time between mouse clicks
+    boolean isAlreadyOneClick;
+    
+    boolean firstClickActive = false;
+    boolean secondClickActive = false;
+    
+    private long lastTime = 0;
+    
     /**
      * Creates new form StudioUI2
      */
@@ -254,32 +264,97 @@ public class StudioUI4 extends javax.swing.JFrame {
     }//GEN-LAST:event_frameKeypressed
 
     private void treeeventTreeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_treeeventTreeMouseClicked
-        int selRow = tree.getRowForLocation(evt.getX(), evt.getY());
-        //TreePath selPath = tree.getPathForLocation(evt.getX(), evt.getY());
-        if(selRow != -1) {
-            if((evt.getClickCount() == 1)){
-                   // &&isEnoughTime()) {
-                doTreeNodeChanged(false);
-            }
-            else if(evt.getClickCount() == 2) {
-                    doTreeNodeChanged(true);
-            }
-        }
-    }//GEN-LAST:event_treeeventTreeMouseClicked
-
-//    private Boolean isEnoughTime(){
-//        long thisTime = System.currentTimeMillis();
-//        long futureTime = lastTime + 3000;
-//        
-//        // are we there yet?
-//        if(thisTime > futureTime){
-//            lastTime = System.currentTimeMillis();
-//            return true;
-//        }else{
-//            return false;
+//        int selRow = tree.getRowForLocation(evt.getX(), evt.getY());
+//        //TreePath selPath = tree.getPathForLocation(evt.getX(), evt.getY());
+//        if(selRow != -1) {
+//            if((evt.getClickCount() == 1)){
+//                   // &&isEnoughTime()) {
+//                doTreeNodeChanged(false);
+//            }
+//            else if(evt.getClickCount() == 2) {
+//                    doTreeNodeChanged(true);
+//            }
 //        }
-//        
+//        if (isAlreadyOneClick) {
+//        //System.out.println("double click");
+//        doTreeNodeChanged(true);
+//        isAlreadyOneClick = false;
+//        return;
+//        } else {
+//        isAlreadyOneClick = true;
+//        Timer t = new Timer("doubleclickTimer", false);
+//        t.schedule(new TimerTask() {
+//            @Override
+//            public void run() {
+//                isAlreadyOneClick = false;
+//            }
+//        }, 500);
 //    }
+//       
+//        
+//                
+//        int selRow = tree.getRowForLocation(evt.getX(), evt.getY());
+//        if(selRow != -1) {
+//            if((evt.getClickCount() == 1)){
+//               if(isEnoughTime()){
+//                   doTreeNodeChanged(false);
+//               }
+//            }  
+//        }    
+        
+        
+//        if(firstClickActive == false){
+//            firstClickActive = true;
+//            timeBombOneClick();
+//        }
+        
+        if(firstClickActive){
+            doTreeNodeChanged(true);
+            firstClickActive = false;
+            secondClickActive = true;
+            return;
+        }
+        
+        if(secondClickActive==false){
+         timeBombOneClick(250);
+         firstClickActive = true;
+        }
+        
+    }//GEN-LAST:event_treeeventTreeMouseClicked
+    
+    
+    /**
+     * Initiates the count-down to launch the click operation
+     */
+    private void timeBombOneClick(int time){
+        Timer t = new Timer("doubleclickTimer", false);
+        t.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                // only proceed if no second click occurred in the meanwhile
+                if(secondClickActive == false){
+                    doTreeNodeChanged(false);
+                } 
+                firstClickActive = false;
+                secondClickActive = false;
+            }
+        }, time);
+    }
+    
+    
+    private Boolean isEnoughTime(){
+        long thisTime = System.currentTimeMillis();
+        long futureTime = lastTime + 1000;
+        
+        // are we there yet?
+        if(thisTime > futureTime){
+            lastTime = System.currentTimeMillis();
+            return true;
+        }else{
+            return false;
+        }
+        
+    }
     
     
     private void treeValueChanged(javax.swing.event.TreeSelectionEvent evt) {//GEN-FIRST:event_treeValueChanged
@@ -668,13 +743,16 @@ public class StudioUI4 extends javax.swing.JFrame {
         if(node == null){
             return;
         }
-     
 
+        
         if(doubleClick){
             core.temp.put(is.doubleClick, node);
             log.write(is.INFO, Messages.TreeNodeDoubleClick, node.getUID());
             return;
         }
+              
+         
+     
 
     
         // do we have a script associated with this node?

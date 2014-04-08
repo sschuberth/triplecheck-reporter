@@ -21,6 +21,7 @@ import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
 import main.core;
+import script.FileExtension;
 import script.Plugin;
 import script.log;
 import spdxlib.FileInfo;
@@ -76,11 +77,20 @@ public class actions extends Plugin{
      * @return              HTML text ready to be displayed to the user
      */
     private String readFile(File targetFile) {
-        // read the contents of this file
-        String result = utils.files.readAsString(targetFile);
+        String result = "";
+        // get the extension object
+        FileExtension extension = core.extensions.get(targetFile);
         
-        // add line breaks
-        result = result.replace("\n", "\n" + html.br);
+        // when we know the extension, make it pretty
+        if(extension != null){
+            result = extension.format(targetFile);
+            return result;
+        } else{
+            // read the contents of this file
+            result = utils.files.readAsString(targetFile);
+            // We don't what we have here, but display it anyways
+            result = result.replace("\n", "\n" + html.br);
+        }
         
         return result;
     }
@@ -123,11 +133,20 @@ public class actions extends Plugin{
         
         File targetFile = fileInfo.getFileName();
         
+        if(targetFile == null){
+            return;
+        }
+        
         String result = "";
         
         // if the file exists, show it
         if(targetFile.exists()){
             result = readFile(targetFile);
+        }
+
+        // nothing exciting here, no point in continuing
+        if(result.isEmpty()){
+            return;
         }
         
         // place everything on screen

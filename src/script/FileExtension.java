@@ -22,6 +22,7 @@ import java.util.Date;
 import spdxlib.ContentType;
 import spdxlib.FileCategory;
 import spdxlib.FileLanguage;
+import utils.html;
 
 
 /**
@@ -106,6 +107,37 @@ public class FileExtension {
 
     public ArrayList<FileLanguage> getLanguages() {
         return languages;
+    }
+
+    /**
+     * This method takes a file as parameter and outputs the most suited
+     * visualization of its content to a web page.
+     */
+    public String format(File targetFile) {
+        
+        // what kind of file do we have here?
+        FileCategory category = getCategory();
+        
+        // if this is a compressed file of some kind, no need to bother
+        if(category == FileCategory.ARCHIVE){
+            return "";
+        }
+        
+        
+        // if this is an image, show it as HTML code
+        if(category == FileCategory.IMAGE){
+            String iconPath = "file:///" 
+                    + targetFile.getAbsolutePath().replace("\\", "/");
+            return  "<img align=\"middle;\" hspace=\"3\" src=\""
+                    + iconPath
+                    + "\"> ";
+        }
+        
+        
+        //throw new UnsupportedOperationException("Not yet implemented");
+        String result = utils.files.readAsString(targetFile);
+        // We don't what we have here, but display it anyways
+        return result.replace("\n", "\n" + html.br);
     }
     
     
