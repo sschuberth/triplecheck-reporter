@@ -1,4 +1,4 @@
-package unknown;
+package config;
 
 import java.io.File;
 import java.util.Date;
@@ -62,7 +62,7 @@ public class gradle extends FileExtension{
      */
     @Override
     public String getDescription() {
-        return null; // file type description
+        return "Configuration file for Gradle (build automation tool)"; // file type description
     }
     
     /**
@@ -70,7 +70,7 @@ public class gradle extends FileExtension{
      */
     @Override
     public FileLanguage getLanguage(){
-        return FileLanguage.UNSORTED; // to which language is the file more related?
+        return FileLanguage.JAVA; // to which language is the file more related?
     }
     /**
      * Who is the owner for description that was provided?
@@ -149,7 +149,7 @@ public class gradle extends FileExtension{
      */
     @Override
     public FileCategory getCategory() {
-        return FileCategory.UNKNOWN; // does it group under a category?
+        return FileCategory.CONFIG; // does it group under a category?
     }
 
     /**
