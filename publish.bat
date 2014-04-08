@@ -1,6 +1,7 @@
 @echo off
 
-set zipfile=triplecheck.zip
+set zipfile=triplecheck-recent.zip
+set cabfile=triplecheck-recent.cab
 set build=reporter
 set publish=publish
 
@@ -35,12 +36,15 @@ echo This folder contains the generated reports > .\reports\readme.txt
 
 echo Creating a new zip file
 del ..\%zipfile% 
+del ..\%cabfile% 
 
 ::pause
 
 cd ..\%publish%
-..\%build%\tools\7z.exe a -r ..\%zipfile% 
-
+:: create the zip file
+..\%build%\tools\7z.exe a -r ..\%zipfile%
+:: create the cabinet file
+cabarc -r -p n ..\%cabfile% * 
 
 
 echo opening explorer

@@ -13,6 +13,7 @@
 package spdxlib;
 
 import definitions.definition;
+import definitions.id;
 import definitions.is;
 import java.io.File;
 import java.io.IOException;
@@ -237,11 +238,25 @@ public class DocumentCreate {
         debug("Saved result to file: " + document.getAbsolutePath());
         
         file = document; // keep this around for future reference
-        // done
+
+        // save the location of the source code for this document
+        core.settings.write(id.SOURCEFOLDER + getUID(), 
+                folderSourceCode.getAbsolutePath());
+        
+        // all done
+        doFinish();
+        return filename;
+    }
+    
+    
+    /**
+     * Complete the last actions before we can conclude the SPDX creation
+     */
+    private void doFinish(){
+        // write some info about this document
         isProcessing = false;
         isOk = true;
         debug("Done!");
-        return filename;
     }
     
     

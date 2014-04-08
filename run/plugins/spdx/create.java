@@ -79,19 +79,6 @@ public class create extends Plugin{
     @Override
     public void main(WebRequest request){
        request.setPage("spdxMain.html");
-//        String result = "<html>\n" +
-////            "<head>\n" +
-////            "<style type=\"text/css\">body {font-family:verdana,arial,"
-////                + "sans-serif;font-size:10pt;margin:30px;}</style>"
-////                + "</head>\n" +
-////            "\n" +
-//            "<body>"
-//                + ""
-//                + "Testing stuff!"
-//                + ""
-//                + "</body>"
-//                + "</html>";
-//        request.setAnswer(result);
     }
 
     
@@ -157,8 +144,7 @@ public class create extends Plugin{
                     + source.getAbsolutePath());
             return;
         }
-        
-        final WebRequest what = request;
+       
         
         RunningTask task = new RunningTask(){
             @Override
@@ -312,7 +298,7 @@ public class create extends Plugin{
         // do all the heavy work
         result = newSPDX.create(extractedFolder);
         }catch (Exception e){
-            log.write(is.ERROR, "CR315- Exception occurred when creating SPDX");
+            log.write(is.ERROR, "CR301- Exception occurred when creating SPDX");
         }
         // count the time it took to run this task
         long time = System.currentTimeMillis() - task.getUID();
@@ -462,6 +448,11 @@ public class create extends Plugin{
  * updating the tree view
  */
 private void concludeCreation(DocumentCreate newSPDX){
+    
+    // do the generic stuff that permits to link this report to a folder on disk
+    settings.write(definitions.id.SOURCEFOLDER + newSPDX.getUID(), id);
+    
+    
     String UID = newSPDX.getUID();
     // refresh the tree
     swingUtils.refreshAll(core.studio.getTree(), UID);
