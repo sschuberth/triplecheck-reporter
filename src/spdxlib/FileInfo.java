@@ -14,6 +14,7 @@
 package spdxlib;
 
 import definitions.is;
+import java.io.File;
 import java.util.ArrayList;
 import main.core;
 import script.FileExtension;
@@ -326,5 +327,20 @@ public class FileInfo {
         
         return result;
     }
+    
+    
+    public File getFileName(){
+        // what is the relative path?
+        String relativePath = getRelativeLocation();
+        // get our target file
+        File targetFile = new File(spdx.getSourceFolder(), relativePath);
+        // doesn't exist? No need to continue
+        if(targetFile.exists() == false){
+            return null;
+        }
+        // all done
+        return targetFile;
+    }
+    
     
 }

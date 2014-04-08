@@ -93,6 +93,10 @@ public class is {
         // web like
             NOTFOUND = 404,
             TEST = 311;
+   
+        
+        
+        public static String doubleClick = "doubleclick";
         
    
             

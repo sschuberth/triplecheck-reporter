@@ -67,7 +67,7 @@ public class StudioUI4 extends javax.swing.JFrame {
             baseFolderPast = null,
             baseFilePresent = null,
             baseFilePast = null;
-    
+  
     /**
      * Creates new form StudioUI2
      */
@@ -254,9 +254,34 @@ public class StudioUI4 extends javax.swing.JFrame {
     }//GEN-LAST:event_frameKeypressed
 
     private void treeeventTreeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_treeeventTreeMouseClicked
-        doTreeNodeChanged();
+        int selRow = tree.getRowForLocation(evt.getX(), evt.getY());
+        //TreePath selPath = tree.getPathForLocation(evt.getX(), evt.getY());
+        if(selRow != -1) {
+            if((evt.getClickCount() == 1)){
+                   // &&isEnoughTime()) {
+                doTreeNodeChanged(false);
+            }
+            else if(evt.getClickCount() == 2) {
+                    doTreeNodeChanged(true);
+            }
+        }
     }//GEN-LAST:event_treeeventTreeMouseClicked
 
+//    private Boolean isEnoughTime(){
+//        long thisTime = System.currentTimeMillis();
+//        long futureTime = lastTime + 3000;
+//        
+//        // are we there yet?
+//        if(thisTime > futureTime){
+//            lastTime = System.currentTimeMillis();
+//            return true;
+//        }else{
+//            return false;
+//        }
+//        
+//    }
+    
+    
     private void treeValueChanged(javax.swing.event.TreeSelectionEvent evt) {//GEN-FIRST:event_treeValueChanged
 
     }//GEN-LAST:event_treeValueChanged
@@ -638,26 +663,49 @@ public class StudioUI4 extends javax.swing.JFrame {
     /**
      * Whenever a tree node has changed, fire up an action
      */
-    private void doTreeNodeChanged() {
-        TreeNodeSPDX node = swingUtils.getSelectedNode();
+    private void doTreeNodeChanged(final Boolean doubleClick) {
+        final TreeNodeSPDX node = swingUtils.getSelectedNode();
         if(node == null){
             return;
         }
-        log.write(is.INFO, Messages.TreeNodeChanged, node.getUID());
-        
+     
+
+        if(doubleClick){
+            core.temp.put(is.doubleClick, node);
+            log.write(is.INFO, Messages.TreeNodeDoubleClick, node.getUID());
+            return;
+        }
+
+    
         // do we have a script associated with this node?
         if(node.scriptFile != null){
-            WebRequest newRequest = new WebRequest();
-            newRequest.requestType = RequestType.NONE;
-            newRequest.requestOrigin = RequestOrigin.GUI_tree;
-            newRequest.BaseFolder = node.scriptFolder;
-            newRequest.scriptFile = node.scriptFile;
-            newRequest.scriptFolder = node.scriptFolder;
-            newRequest.scriptMethod = node.scriptMethod;
-            newRequest.parameters = node.scriptParameters;
-            //newRequest.addParameter("method", node.scriptMethod);
-            controller.process(newRequest);
+            // launch a small thread to speed things up here
+               Thread thread = new Thread(){
+                   @Override
+                   public void run(){
+                      WebRequest newRequest = new WebRequest();
+                        newRequest.requestType = RequestType.NONE;
+                        newRequest.requestOrigin = RequestOrigin.GUI_tree;
+                        newRequest.BaseFolder = node.scriptFolder;
+                        newRequest.scriptFile = node.scriptFile;
+                        newRequest.scriptFolder = node.scriptFolder;
+                        newRequest.scriptMethod = node.scriptMethod;
+                        newRequest.parameters = node.scriptParameters;
+                        
+                     
+                        
+                        //newRequest.addParameter("method", node.scriptMethod);
+                        controller.process(newRequest);
+                   }
+               };
+               thread.start();
+            
         }
+    
+        // now execute the addon actions
+        log.write(is.INFO, Messages.TreeNodeChanged, node.getUID());
+    
+    
     }
 
     

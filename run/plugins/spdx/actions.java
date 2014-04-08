@@ -12,10 +12,18 @@
 
 package spdx;
 
+import GUI.NodeType;
+import GUI.TreeNodeSPDX;
+import GUI.swingUtils;
+import definitions.Messages;
+import definitions.is;
 import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
+import main.core;
 import script.Plugin;
+import script.log;
+import spdxlib.FileInfo;
 import utils.html;
 import www.WebRequest;
 
@@ -26,7 +34,17 @@ import www.WebRequest;
  *  nuno.brito@triplecheck.de | http://nunobrito.eu
  */
 public class actions extends Plugin{
+    
+    
+    @Override
+    public void startup(){
+        // react whenever a tree node is changed
+         log.hooks.addAction(Messages.TreeNodeDoubleClick, 
+                thisFile, "processDoubleClick");    
+    }
 
+   
+    
     /**
      * Shows a summary of details about the selected package
      * @param request
@@ -84,6 +102,36 @@ public class actions extends Plugin{
          request.setAnswer(output);
     }
     
-    
+     /**
+     * This method handles doubleclicks on tree nodes
+     */
+    void processDoubleClick(){
+        // ensure we get to know which node is selected
+        TreeNodeSPDX node = swingUtils.getSelectedNode();
+        // no need to continue if there is nothing selected
+        if(node == null){
+            return;
+        }
+        
+         // process files
+        if(node.nodeType != NodeType.file){
+            return;
+        }
+       
+        // we're talking about tree nodes, get the respective information
+        FileInfo fileInfo = (FileInfo) node.getUserObject();
+        
+        File targetFile = fileInfo.getFileName();
+        
+        String result = "";
+        
+        // if the file exists, show it
+        if(targetFile.exists()){
+            result = readFile(targetFile);
+        }
+        
+        // place everything on screen
+        core.studio.editorPane(is.contentHTML, false, 0, result);
+    }
     
 }

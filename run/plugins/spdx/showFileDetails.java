@@ -77,6 +77,9 @@ public class showFileDetails extends Plugin{
         request.setAnswer("Didn't found " + targetFile);
     }
     
+    
+   
+    
     /**
      * Checks if the node of a file has been selected. If this is the case then
      * show as much details as possible about the file
@@ -358,11 +361,10 @@ public class showFileDetails extends Plugin{
             return "";
         }
         
+        // what is the relative path?
         String relativePath = fileInfo.getRelativeLocation();
-        
         // get our target file
         File targetFile = new File(folder, relativePath);
-        
         // doesn't exist? No need to continue
         if(targetFile.exists() == false){
             return "";
@@ -381,8 +383,6 @@ public class showFileDetails extends Plugin{
                 + html._div
                 ;
         
-         System.out.println("--> " + targetFile.getAbsolutePath());
-       
         return result;
     }
     
