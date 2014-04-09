@@ -75,7 +75,6 @@ public class cpp extends FileExtension{
         return FileLanguage.C_PLUS_PLUS; // to which language is the file more related?
     }
 
-
     /**
      * Typically, this is the three letter identifier of the file extension.
      * We use everything in lower case to speed the processing performance.

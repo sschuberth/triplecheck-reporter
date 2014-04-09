@@ -8,10 +8,9 @@ import spdxlib.FileLanguage;
 
 /*
  * SPDXVersion: SPDX-1.1
- * Creator: Person: nuno
+ * Creator: Person: Nuno Brito
  * Created: 2014-01-25T17:42:07Z
  * LicenseName: CC-BY-4.0
- * TemplateVersion: TC-2013-11-16
  * FileName: acf.java  
  * FileCategory: SOURCE
  * FileCopyrightText: <text> Copyright © 2014, nuno </text>
@@ -72,7 +71,6 @@ public class acf extends FileExtension{
         return FileLanguage.UNSORTED; // to which language is the file more related?
     }
 
-
     /**
      * Typically, this is the three letter identifier of the file extension.
      * We use everything in lower case to speed the processing performance.
@@ -103,7 +101,5 @@ public class acf extends FileExtension{
     public FileCategory getCategory() {
         return FileCategory.UNKNOWN; // does it group under a category?
     }
-
-
     
 }

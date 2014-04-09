@@ -11,7 +11,6 @@ import spdxlib.FileLanguage;
  * Creator: Person: Nuno Brito
  * Created: 2014-02-19T17:12:14Z
  * LicenseName: CC-BY-4.0
- * TemplateVersion: TC-2013-11-16
  * FileName: pas.java  
  * FileCategory: SOURCE
  * FileCopyrightText: <text> Copyright © 2014, Nuno Brito </text>
@@ -72,7 +71,6 @@ public class pas extends FileExtension{
         return FileLanguage.DELPHI; // to which language is the file more related?
     }
 
-
     /**
      * Typically, this is the three letter identifier of the file extension.
      * We use everything in lower case to speed the processing performance.
@@ -103,7 +101,5 @@ public class pas extends FileExtension{
     public FileCategory getCategory() {
         return FileCategory.SOURCE; // does it group under a category?
     }
-
-
     
 }

@@ -75,7 +75,6 @@ public class asm extends FileExtension{
         return FileLanguage.ASSEMBLER; // to which language is the file more related?
     }
 
-
     /**
      * Typically, this is the three letter identifier of the file extension.
      * We use everything in lower case to speed the processing performance.

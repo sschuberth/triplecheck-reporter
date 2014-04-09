@@ -11,7 +11,6 @@ import spdxlib.FileLanguage;
  * Creator: Person: Nuno Brito
  * Created: 2014-04-06T10:30:58Z
  * LicenseName: CC-BY-4.0
- * TemplateVersion: TC-2013-11-16
  * FileName: yml.java  
  * FileCategory: SOURCE
  * FileCopyrightText: <text> Copyright (c) 2014, Nuno Brito </text>
@@ -77,7 +76,6 @@ public class yml extends FileExtension{
         return FileLanguage.MULTIPLE; // to which language is the file more related?
     }
 
-
     /**
      * Typically, this is the three letter identifier of the file extension.
      * We use everything in lower case to speed the processing performance.
@@ -109,7 +107,5 @@ public class yml extends FileExtension{
         // this is a generic data container, albeit seen often used for config
         return FileCategory.CONFIG; // does it group under a category?
     }
-
-
     
 }

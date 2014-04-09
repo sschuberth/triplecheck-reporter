@@ -11,7 +11,6 @@ import spdxlib.FileLanguage;
  * Creator: Person: Nuno Brito
  * Created: 2013-11-16T23:59:52Z
  * LicenseName: CC-BY-4.0
- * TemplateVersion: TC-2013-11-16
  * FileName: patch.java  
  * FileCategory: SOURCE
  * FileCopyrightText: <text> Copyright © 2013, Nuno Brito </text>
@@ -110,7 +109,5 @@ public class patch extends FileExtension{
     public FileCategory getCategory() {
         return FileCategory.BINARY; // does it group under a category?
     }
-
-
     
 }

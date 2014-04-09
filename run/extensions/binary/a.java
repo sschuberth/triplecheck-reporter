@@ -11,7 +11,6 @@ import spdxlib.FileLanguage;
  * Creator: Person: Nuno Brito
  * Created: 2014-04-04T16:13:27Z
  * LicenseName: CC-BY-3.0
- * TemplateVersion: TC-2013-11-16
  * FileName: a.java  
  * FileCategory: SOURCE
  * FileCopyrightText: <text> Copyright (c) 2014, Nuno Brito </text>
@@ -104,25 +103,6 @@ public class a extends FileExtension{
         return null;
     }
 
-     /**
-     * What is the version for this file? Sometimes this is information that
-     * can be extracted from the meta-data inside the data contents. When
-     * available, this information is available using this method.
-     * @return A string with with version text extracted from the file
-     */
-    @Override
-    public String getVersion() {
-        return null;
-    }
-
-   
-    /**
-     * What are the MIME types registered for this file?
-     */
-    @Override
-    public String getMIME(){
-        return null;
-    }
     
     /**
      * Returns information is this file has a binary or text based structure.

@@ -11,7 +11,6 @@ import spdxlib.FileLanguage;
  * Creator: Person: Nuno Brito
  * Created: 2013-11-17T00:00:00Z
  * LicenseName: CC-BY-4.0
- * TemplateVersion: TC-2013-11-16
  * FileName: awk.java  
  * FileCategory: SOURCE
  * FileCopyrightText: <text> Copyright © 2013, Nuno Brito </text>
@@ -72,7 +71,6 @@ public class awk extends FileExtension{
         return FileLanguage.UNSORTED; // to which language is the file more related?
     }
 
-
     /**
      * Typically, this is the three letter identifier of the file extension.
      * We use everything in lower case to speed the processing performance.
@@ -103,7 +101,5 @@ public class awk extends FileExtension{
     public FileCategory getCategory() {
         return FileCategory.UNKNOWN; // does it group under a category?
     }
-
-
     
 }

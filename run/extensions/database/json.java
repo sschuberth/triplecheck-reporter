@@ -11,7 +11,6 @@ import spdxlib.FileLanguage;
  * Creator: Person: Nuno Brito
  * Created: 2014-04-06T10:31:05Z
  * LicenseName: CC-BY-4.0
- * TemplateVersion: TC-2013-11-16
  * FileName: json.java  
  * FileCategory: SOURCE
  * FileCopyrightText: <text> Copyright (c) 2014, Nuno Brito </text>
@@ -72,7 +71,6 @@ public class json extends FileExtension{
         return FileLanguage.JAVASCRIPT; // to which language is the file more related?
     }
 
-
     /**
      * Typically, this is the three letter identifier of the file extension.
      * We use everything in lower case to speed the processing performance.
@@ -103,7 +101,5 @@ public class json extends FileExtension{
     public FileCategory getCategory() {
         return FileCategory.DATABASE; // does it group under a category?
     }
-
-
     
 }

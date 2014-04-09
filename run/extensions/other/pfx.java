@@ -75,7 +75,6 @@ public class pfx extends FileExtension{
         return FileLanguage.UNSORTED; // to which language is the file more related?
     }
 
-
     /**
      * Typically, this is the three letter identifier of the file extension.
      * We use everything in lower case to speed the processing performance.
@@ -85,8 +84,6 @@ public class pfx extends FileExtension{
     public String getIdentifierShort() {
         return "pfx";
     }
-    
-
     
     /**
      * Returns information is this file has a binary or text based structure.
@@ -108,7 +105,5 @@ public class pfx extends FileExtension{
     public FileCategory getCategory() {
         return FileCategory.UNKNOWN;
     }
-
- 
     
 }

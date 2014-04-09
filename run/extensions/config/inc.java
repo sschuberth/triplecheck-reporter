@@ -8,10 +8,9 @@ import spdxlib.FileLanguage;
 
 /*
  * SPDXVersion: SPDX-1.1
- * Creator: Person: nuno
+ * Creator: Person: Nuno Brito
  * Created: 2014-01-25T17:41:22Z
  * LicenseName: CC-BY-4.0
- * TemplateVersion: TC-2013-11-16
  * FileName: inc.java  
  * FileCategory: SOURCE
  * FileCopyrightText: <text> Copyright © 2014, nuno </text>
@@ -76,7 +75,6 @@ public class inc extends FileExtension{
         languages.add(FileLanguage.DELPHI);
         return FileLanguage.MULTIPLE; // to which language is the file more related?
     }
-
 
     /**
      * Typically, this is the three letter identifier of the file extension.

@@ -8,10 +8,9 @@ import spdxlib.FileLanguage;
 
 /*
  * SPDXVersion: SPDX-1.1
- * Creator: Person: nuno
+ * Creator: Person: Nuno Brito
  * Created: 2013-11-30T21:19:39Z
  * LicenseName: CC-BY-4.0
- * TemplateVersion: TC-2013-11-16
  * FileName: project.java  
  * FileCategory: SOURCE
  * FileCopyrightText: <text> Copyright © 2013, nuno </text>
@@ -75,7 +74,6 @@ public class project extends FileExtension{
         return FileLanguage.JAVA; // to which language is the file more related?
     }
 
-
     /**
      * Typically, this is the three letter identifier of the file extension.
      * We use everything in lower case to speed the processing performance.
@@ -106,7 +104,5 @@ public class project extends FileExtension{
     public FileCategory getCategory() {
         return FileCategory.SCHEMA; // does it group under a category?
     }
-
-
     
 }

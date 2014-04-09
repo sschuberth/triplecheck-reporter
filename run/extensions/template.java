@@ -9,7 +9,6 @@ import spdxlib.FileLanguage;
  * Creator: Person: #PERSON#
  * Created: #DATE#
  * LicenseName: EUPL-1.1-without-appendix
- * TemplateVersion: TC-2013-11-16
  * FileName: #EXT#.java  
  * FileCategory: SOURCE
  * FileCopyrightText: <text> #COPYRIGHT# </text>
