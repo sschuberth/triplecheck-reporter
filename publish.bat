@@ -19,6 +19,7 @@ cd ..\%build%
 "c:\Program Files (x86)\Launch4j\launch4jc.exe" .\docs\launch4j-triplecheck.xml
 
 
+
 echo copying the needed folders
 cd ..\%build%
 xcopy /s/y run\plugins ..\%publish%\plugins\
