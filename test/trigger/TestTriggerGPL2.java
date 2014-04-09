@@ -17,7 +17,7 @@ import main.actions;
 import main.core;
 import org.junit.*;
 import static org.junit.Assert.*;
-import script.License;
+import script.Trigger;
 
 /**
  *
@@ -64,7 +64,7 @@ public class TestTriggerGPL2 {
          
          
          String lowerCaseContent = content.toLowerCase();
-         for(License thisLicense: core.licenses){
+         for(Trigger thisLicense: core.licenses){
             if(thisLicense.isApplicable(lowerCaseContent )){
                 assertEquals("GPL-2.0", thisLicense.getShortIdentifier());
                 System.out.println("Found GPL v2 license");

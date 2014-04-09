@@ -1,7 +1,8 @@
 
+import definitions.TriggerType;
 import java.io.File;
 import java.util.Date;
-import script.License;
+import script.Trigger;
 
 /*
  * SPDXVersion: SPDX-1.1
@@ -23,7 +24,7 @@ import script.License;
  * @author Nuno Brito, 6th of April 2014 in Darmstadt, Germany.
  *  nuno.brito@triplecheck.de | http://nunobrito.eu
  */
-public class BSD3ClauseClear implements License {
+public class BSD3ClauseClear implements Trigger {
     
     // the list of id's that we can use to identify a license
     String[] list = {
@@ -77,16 +78,12 @@ public class BSD3ClauseClear implements License {
     public Date getDatePublished() {
         return null;
     }
-
-    @Override
-    public String getQuickSummary() {
-        return  "";
-    }
     
     @Override
-    public String getQuickSummaryLink() {
-        return "";
+    public TriggerType getType(){
+        return TriggerType.LICENSE;
     }
+
     
 
     @Override

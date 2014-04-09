@@ -4,11 +4,11 @@
  * Creator: Organization: TripleCheck (contact@triplecheck.de)
  * Created: 2013-11-14T00:00:00Z
  * LicenseName: EUPL-1.1-without-appendix
- * FileName: License.java  
+ * FileName: Trigger.java  
  * FileType: SOURCE
  * FileCopyrightText: <text> Copyright 2013 Nuno Brito, TripleCheck </text>
  * FileComment: <text> In UK English, please read "Licence" where applicable. 
- * To ease distincion and avoid confusions, "License" in the US meaning is used 
+ * To ease distincion and avoid confusions, "Trigger" in the US meaning is used 
  * for all cases. This class is used as a template for defining scripts that 
  * will try to detect applicable licenses.
  * 
@@ -19,6 +19,7 @@
 
 package script;
 
+import definitions.TriggerType;
 import java.io.File;
 import java.util.Date;
 
@@ -28,13 +29,14 @@ import java.util.Date;
  * @author Nuno Brito, 14th of November 2013 in Darmstadt, Germany.
  *  nuno.brito@triplecheck.de | http://nunobrito.eu
  */
-public interface License {
+public interface Trigger {
     
     public File 
             thisFile = null, // pointer to this beanshell file being executed
             thisDir = null; // pointer to the beanshell directory on disk
     
     
+    // used only by License triggers
     final String LicenseInfoInFile = "LicenseInfoInFile: ";
     
     /**
@@ -60,6 +62,11 @@ public interface License {
     public String getShortIdentifier();
     
     /**
+     * What kind of trigger is this one? Copyright? License? Something else?
+     */
+    public TriggerType getType();
+    
+    /**
      * From where it is possible to download a text file with this license.
      * If not possible to download a text file, at least some web page where
      * the license terms are specified
@@ -75,10 +82,6 @@ public interface License {
     public Date getDatePublished();
     
     public String getFullName();
-    
-    // a short getQuickSummary about the license
-    public String getQuickSummary();
-    public String getQuickSummaryLink();
     
     // what should be given as result?
     public String getResult();

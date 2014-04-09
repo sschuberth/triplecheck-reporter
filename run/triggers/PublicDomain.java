@@ -1,7 +1,8 @@
 
+import definitions.TriggerType;
 import java.io.File;
 import java.util.Date;
-import script.License;
+import script.Trigger;
 
 /*
  * SPDXVersion: SPDX-1.1
@@ -29,7 +30,7 @@ import script.License;
  * @author Nuno Brito, 14th of November 2013 in Darmstadt, Germany.
  *  nuno.brito@triplecheck.de | http://nunobrito.eu
  */
-public class PublicDomain implements License {
+public class PublicDomain implements Trigger {
     
     // the list of id's that we can use to identify a license
     String[] list = {
@@ -86,31 +87,9 @@ public class PublicDomain implements License {
     }
 
     @Override
-    public String getQuickSummary() {
-        return  " ### Sublicensing:\n"
-                + " You can distribute modified or unmodified, both source & "
-                + "object versions, under a different license if the license "
-                + "complies with Apache 2.0\n"
-                + " \n"
-                + " ### Distributing;\n"
-                + " 1) provide a copy of the license; \n"
-                + " 2) document modifications in files \n"
-                + " 3) if you make a derivative of the code licensed, keep it "
-                + "in source code form\n"
-                + " \n"
-                + " ### Patent Grants:\n" 
-                + " Broad patent license to claims that are necessarily "
-                + "infringed by Contribution, or a Contribution combined "
-                + "with the Work to which such Contribution was submitted.\n"
-                + " Can't sue: You cannot claim patent infringement over "
-                + "your contributions or derivated changes\n";
+    public TriggerType getType(){
+        return TriggerType.LICENSE;
     }
-    
-    @Override
-    public String getQuickSummaryLink() {
-        return "http://www.tldrlegal.com/license/apache-license-2.0-%28apache-2.0%29";
-    }
-    
 
     @Override
     public String getFullName() {

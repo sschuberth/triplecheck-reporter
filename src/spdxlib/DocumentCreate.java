@@ -22,7 +22,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import main.core;
-import script.License;
+import script.Trigger;
 import script.log;
 import ssdeep.ssdeep;
 
@@ -187,7 +187,7 @@ public class DocumentCreate {
             if((fileWasAnalysed)&&(fileId.licenseInfoInFile.size()>0)){
 
                 // iterate through each license or any other trigger needed
-                for(License triggerInfo : fileId.licenseInfoInFile)
+                for(Trigger triggerInfo : fileId.licenseInfoInFile)
                 triggerInfoInFile += addText(""
                         + triggerInfo.getResult()
                         );

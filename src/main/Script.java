@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Properties;
 import script.FileExtension;
-import script.License;
+import script.Trigger;
 import script.Plugin;
 
 //import script.log;
@@ -271,7 +271,7 @@ public class Script {
             // are we processing a license?
             if(className.equals(is.license)){
                 // get the object
-                License plugin = (License) runScript.get("plugin");
+                Trigger plugin = (Trigger) runScript.get("plugin");
                 // add it up
                 core.licenses.add(plugin);
                 script.log.write(is.COMPLETED, "Added trigger: %1", 

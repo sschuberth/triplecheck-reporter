@@ -1,7 +1,8 @@
 
+import definitions.TriggerType;
 import java.io.File;
 import java.util.Date;
-import script.License;
+import script.Trigger;
 
 /*
  * SPDXVersion: SPDX-1.1
@@ -30,7 +31,7 @@ import script.License;
  * @author Nuno Brito, 2nd of April 2014 in Darmstadt, Germany.
  *  nuno.brito@triplecheck.de | http://nunobrito.eu
  */
-public class GPLv2 implements License {
+public class GPLv2 implements Trigger {
     
     // the list of id's that we can use to identify a license
     String[] list = {
@@ -86,16 +87,12 @@ public class GPLv2 implements License {
     public Date getDatePublished() {
         return utils.time.getDate(1991, 06, 01); // Version 2, June 1991
     }
-
-    @Override
-    public String getQuickSummary() {
-        return  "";
-    }
     
     @Override
-    public String getQuickSummaryLink() {
-        return "";
+    public TriggerType getType(){
+        return TriggerType.LICENSE;
     }
+
     
 
     @Override

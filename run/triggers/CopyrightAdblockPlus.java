@@ -1,7 +1,8 @@
 
+import definitions.TriggerType;
 import java.io.File;
 import java.util.Date;
-import script.License;
+import script.Trigger;
 
 /*
  * SPDXVersion: SPDX-1.1
@@ -23,7 +24,7 @@ import script.License;
  * @author Nuno Brito, 2nd of April 2014 in Darmstadt, Germany.
  *  nuno.brito@triplecheck.de | http://nunobrito.eu
  */
-public class CopyrightAdblockPlus implements License {
+public class CopyrightAdblockPlus implements Trigger {
     
     String copyrightText = "Copyright (C) 2006-2013 Eyeo GmbH";
     
@@ -70,16 +71,12 @@ public class CopyrightAdblockPlus implements License {
     public Date getDatePublished() {
         return utils.time.getDate(2006, 01, 01);
     }
-
-    @Override
-    public String getQuickSummary() {
-        return  "";
-    }
     
     @Override
-    public String getQuickSummaryLink() {
-        return "";
+    public TriggerType getType(){
+        return TriggerType.COPYRIGHT;
     }
+
     
 
     @Override
@@ -94,4 +91,5 @@ public class CopyrightAdblockPlus implements License {
                 + "</text>";
     }
 
+  
 }

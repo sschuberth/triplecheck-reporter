@@ -18,7 +18,7 @@ import java.io.File;
 import java.util.ArrayList;
 import main.core;
 import script.FileExtension;
-import script.License;
+import script.Trigger;
 
 
 /**
@@ -31,7 +31,7 @@ public class FileId {
     public String
             tags; // what makes this file special?
            
-    public ArrayList<License> licenseInfoInFile = new ArrayList(); // just one for the moment, single source can have multiple
+    public ArrayList<Trigger> licenseInfoInFile = new ArrayList(); // just one for the moment, single source can have multiple
     
     //private ArrayListlicenseDB
     
@@ -275,7 +275,7 @@ public class FileId {
         
         // try to identify some of the most common licenses
         //String lowerCaseContent = content.toLowerCase();
-        for(License thisTrigger: core.licenses){
+        for(Trigger thisTrigger: core.licenses){
             if(thisTrigger.isApplicable(content)){
                 licenseInfoInFile.add(thisTrigger);
             }

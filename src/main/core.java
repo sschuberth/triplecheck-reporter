@@ -22,7 +22,7 @@ import definitions.is;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
-import script.License;
+import script.Trigger;
 import script.RunningTask;
 import script.log;
 import spdxlib.SPDXfile;
@@ -62,7 +62,7 @@ public class core {
     // a placeholder to launch searches and share the keywords securely
     public static String searchTerm = "";
     
-    public static ArrayList<License> 
+    public static ArrayList<Trigger> 
             licenses = new ArrayList();
     
     public static ExtensionControl
