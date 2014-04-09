@@ -7,7 +7,7 @@
  *
  * Created: 2013-09-13T00:00:00Z
  *
- * LicenseName: NOASSERTION
+ * LicenseName: EUPL-1.1-without-appendix
  *
  * FileName: createSPDX.java
  *

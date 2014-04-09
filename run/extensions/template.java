@@ -8,7 +8,7 @@ import spdxlib.FileLanguage;
  * SPDXVersion: SPDX-1.1
  * Creator: Person: #PERSON#
  * Created: #DATE#
- * LicenseName: NOASSERTION
+ * LicenseName: EUPL-1.1-without-appendix
  * TemplateVersion: TC-2013-11-16
  * FileName: #EXT#.java  
  * FileCategory: SOURCE

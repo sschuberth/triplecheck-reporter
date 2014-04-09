@@ -3,7 +3,7 @@
  * Creator: Person: Nuno Brito (nuno.brito@triplecheck.de)
  * Creator: Organization: TripleCheck (contact@triplecheck.de)
  * Created: 2014-04-05T00:00:00Z
- * LicenseName: NOASSERTION
+ * LicenseName: EUPL-1.1-without-appendix
  * FileName: LanguageBox.java  
  * FileType: SOURCE
  * FileCopyrightText: <text> Copyright 2014 Nuno Brito, TripleCheck </text>
