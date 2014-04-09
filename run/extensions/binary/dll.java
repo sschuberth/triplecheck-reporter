@@ -60,7 +60,7 @@ public class dll extends FileExtension{
      */
     @Override
     public String getDescription() {
-        return null; // file type description
+        return "Windows Dynamic Load Library file"; // file type description
     }
     
     /**

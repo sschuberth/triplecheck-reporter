@@ -860,10 +860,22 @@ public class swingUtils {
                ){
            return getIcon("document-xaml.png");
        }
-       
          
        if(fileInfo.fileCategory == FileCategory.BINARY){
            return getIcon("document-binary.png");
+       }
+     
+       if(fileInfo.fileCategory == FileCategory.EXECUTABLE){
+           return getIcon("compile.png");
+       }
+     
+       if(fileInfo.fileCategory == FileCategory.TEMP){
+           return getIcon("document-clock.png");
+       }
+     
+       if(fileInfo.fileCategory == FileCategory.MUSIC
+               || fileInfo.fileCategory == FileCategory.SOUND){
+           return getIcon("document-music.png");
        }
      
        

@@ -1,8 +1,9 @@
+package executable;
+
 import java.io.File;
 import script.FileExtension;
 import spdxlib.ContentType;
 import spdxlib.FileCategory;
-import spdxlib.FileLanguage;
 
 /*
  * SPDXVersion: SPDX-1.1
@@ -55,19 +56,10 @@ public class exe extends FileExtension{
 
     @Override
     public FileCategory getCategory() {
-        return FileCategory.UNKNOWN;
+        return FileCategory.EXECUTABLE;
     }
 
-    @Override
-    public String getCopyright() {
-        return null;
-    }
-
-    @Override
-    public String getVersion() {
-        return null;
-    }
-
+   
     
     
 }

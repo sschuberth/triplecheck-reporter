@@ -213,7 +213,7 @@ public class showFileDetails extends Plugin{
                             + "\"",
                             html.div() 
                             + html.linkToSearchFileExtension
-                            (extension.getIdentifierShort())
+                            (shortExtension)
                             + html._div
                      );
         

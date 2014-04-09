@@ -30,6 +30,7 @@ public enum FileCategory {
     SOUND,
     MUSIC,
     OTHER,
+    TEMP,
     UNKNOWN;
     
     @Override

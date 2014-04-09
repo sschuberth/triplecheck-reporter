@@ -1,4 +1,4 @@
-package media;
+package image;
 
 import java.io.File;
 import script.FileExtension;
@@ -9,13 +9,13 @@ import spdxlib.FileLanguage;
 /*
  * SPDXVersion: SPDX-1.1
  * Creator: Person: Nuno Brito
- * Created: 2014-01-25T17:42:38Z
+ * Created: 2014-01-25T15:22:20Z
  * LicenseName: CC-BY-4.0
- * FileName: wav.java  
+ * FileName: cur.java  
  * FileCategory: SOURCE
  * FileCopyrightText: <text> Copyright © 2014, nuno </text>
  * FileComment: <text> This class provides details about the files that make 
- * use of the "wav" extension. When possible, the file provenance author
+ * use of the "cur" extension. When possible, the file provenance author
  * includes details such as date when this extension first began to be used.
  * There are cases where different data structures use the same file extension,
  * when this happens then the author needs to accomodate code to accurately
@@ -28,7 +28,7 @@ import spdxlib.FileLanguage;
  *
  * @file provenance by Nuno Brito
  */
-public class wav extends FileExtension{
+public class cur extends FileExtension{
     /**
      * How can we confirm that this file extension is appliable to this file?
      * This method analyses the binary contents of a file to get the answer.
@@ -60,7 +60,7 @@ public class wav extends FileExtension{
      */
     @Override
     public String getDescription() {
-        return "WAVE audio file"; // file type description
+        return "Windows Cursor File"; // file type description
     }
     
     /**
@@ -78,7 +78,7 @@ public class wav extends FileExtension{
      */
     @Override
     public String getIdentifierShort() {
-        return "wav";
+        return "cur";
     }
     
     /**
@@ -99,7 +99,7 @@ public class wav extends FileExtension{
      */
     @Override
     public FileCategory getCategory() {
-        return FileCategory.SOUND; // does it group under a category?
+        return FileCategory.IMAGE; // does it group under a category?
     }
     
 }

@@ -14,11 +14,11 @@
 - Report should not be generated if it does not contain all files in package
 
 
-- unknown extensions don't show extension finder
-- .bpk,.res,  is not known
+x unknown extensions don't show extension finder
+x .bpk,.res,  is not known
 - .~pas needs a category for temp files
-- .exe is unknown
-- .cur (mouse cursor is not recognized)
+x .exe is unknown
+x .cur (mouse cursor is not recognized)
 
 
 x Missing to show the licenses that were found

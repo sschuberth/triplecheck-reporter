@@ -1,4 +1,4 @@
-package unknown;
+package media;
 
 import java.io.File;
 import script.FileExtension;
@@ -9,13 +9,13 @@ import spdxlib.FileLanguage;
 /*
  * SPDXVersion: SPDX-1.1
  * Creator: Person: Nuno Brito
- * Created: 2014-02-19T17:12:33Z
- * LicenseName: CC-BY-4.0
- * FileName: res.java  
+ * Created: 2014-04-09T21:46:13Z
+ * LicenseName: EUPL-1.1-without-appendix
+ * FileName: mid.java  
  * FileCategory: SOURCE
- * FileCopyrightText: <text> Copyright © 2014, Nuno Brito </text>
+ * FileCopyrightText: <text> Copyright (c) 2014, Nuno Brito </text>
  * FileComment: <text> This class provides details about the files that make 
- * use of the "res" extension. When possible, the file provenance author
+ * use of the "mid" extension. When possible, the file provenance author
  * includes details such as date when this extension first began to be used.
  * There are cases where different data structures use the same file extension,
  * when this happens then the author needs to accomodate code to accurately
@@ -28,7 +28,7 @@ import spdxlib.FileLanguage;
  *
  * @file provenance by Nuno Brito
  */
-public class res extends FileExtension{
+public class mid extends FileExtension{
     /**
      * How can we confirm that this file extension is appliable to this file?
      * This method analyses the binary contents of a file to get the answer.
@@ -60,7 +60,7 @@ public class res extends FileExtension{
      */
     @Override
     public String getDescription() {
-        return null; // file type description
+        return "Musical Instrument Digital Interface (MIDI) Sound File"; // file type description
     }
     
     /**
@@ -78,7 +78,7 @@ public class res extends FileExtension{
      */
     @Override
     public String getIdentifierShort() {
-        return "res";
+        return "mid";
     }
     
     /**
@@ -89,7 +89,7 @@ public class res extends FileExtension{
      */
     @Override
     public ContentType getContentType() {
-        return ContentType.TEXT; // is it a binary or text file?
+        return ContentType.BINARY; // is it a binary or text file?
     }
 
     /**
@@ -99,7 +99,7 @@ public class res extends FileExtension{
      */
     @Override
     public FileCategory getCategory() {
-        return FileCategory.UNKNOWN; // does it group under a category?
+        return FileCategory.MUSIC; // does it group under a category?
     }
     
 }

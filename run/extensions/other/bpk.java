@@ -1,4 +1,4 @@
-package unknown;
+package other;
 
 import java.io.File;
 import script.FileExtension;
@@ -9,13 +9,13 @@ import spdxlib.FileLanguage;
 /*
  * SPDXVersion: SPDX-1.1
  * Creator: Person: Nuno Brito
- * Created: 2014-02-19T17:12:38Z
+ * Created: 2014-01-25T17:41:55Z
  * LicenseName: CC-BY-4.0
- * FileName: dfm.java  
+ * FileName: bpk.java  
  * FileCategory: SOURCE
- * FileCopyrightText: <text> Copyright © 2014, Nuno Brito </text>
+ * FileCopyrightText: <text> Copyright © 2014, nuno </text>
  * FileComment: <text> This class provides details about the files that make 
- * use of the "dfm" extension. When possible, the file provenance author
+ * use of the "bpk" extension. When possible, the file provenance author
  * includes details such as date when this extension first began to be used.
  * There are cases where different data structures use the same file extension,
  * when this happens then the author needs to accomodate code to accurately
@@ -28,7 +28,7 @@ import spdxlib.FileLanguage;
  *
  * @file provenance by Nuno Brito
  */
-public class dfm extends FileExtension{
+public class bpk extends FileExtension{
     /**
      * How can we confirm that this file extension is appliable to this file?
      * This method analyses the binary contents of a file to get the answer.
@@ -60,7 +60,7 @@ public class dfm extends FileExtension{
      */
     @Override
     public String getDescription() {
-        return null; // file type description
+        return "Borland C++ Builder package file"; // file type description
     }
     
     /**
@@ -68,7 +68,7 @@ public class dfm extends FileExtension{
      */
     @Override
     public FileLanguage getLanguage(){
-        return FileLanguage.UNSORTED; // to which language is the file more related?
+        return FileLanguage.C_PLUS_PLUS; // to which language is the file more related?
     }
 
     /**
@@ -78,7 +78,7 @@ public class dfm extends FileExtension{
      */
     @Override
     public String getIdentifierShort() {
-        return "dfm";
+        return "bpk";
     }
     
     /**
@@ -89,7 +89,7 @@ public class dfm extends FileExtension{
      */
     @Override
     public ContentType getContentType() {
-        return ContentType.TEXT; // is it a binary or text file?
+        return ContentType.BINARY; // is it a binary or text file?
     }
 
     /**
@@ -99,7 +99,7 @@ public class dfm extends FileExtension{
      */
     @Override
     public FileCategory getCategory() {
-        return FileCategory.UNKNOWN; // does it group under a category?
+        return FileCategory.BINARY; // does it group under a category?
     }
     
 }
