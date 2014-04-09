@@ -13,8 +13,8 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Properties;
 import script.FileExtension;
-import script.Trigger;
 import script.Plugin;
+import script.Trigger;
 
 //import script.log;
 
@@ -268,8 +268,8 @@ public class Script {
                 }
             }
            
-            // are we processing a license?
-            if(className.equals(is.license)){
+            // are we processing a trigger?
+            if(className.equals(is.trigger)){
                 // get the object
                 Trigger plugin = (Trigger) runScript.get("plugin");
                 // add it up

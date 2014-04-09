@@ -103,7 +103,7 @@ public class showProductDetails extends Plugin{
             counterLicensesDeclared += spdx.getStatsLicensesDeclared();
         }
         
-        // calculate percentage of files with a license declared
+        // calculate percentage of files with a trigger declared
         String percentage = 
                   " ("
                 + (counterLicensesDeclared * 100)/counterFiles
@@ -149,7 +149,7 @@ public class showProductDetails extends Plugin{
         int counterLicensesDeclared = spdx.getStatsLicensesDeclared();
         int counterFiles = spdx.fileSection.files.size();
             
-        // calculate percentage of files with a license declared
+        // calculate percentage of files with a trigger declared
         String percentage = 
                   " ("
                 + (counterLicensesDeclared * 100)/counterFiles
@@ -274,7 +274,7 @@ public class showProductDetails extends Plugin{
  
     
     /**
-     * Shows a list of files for the selected package that do not have a license
+     * Shows a list of files for the selected package that do not have a trigger
      */
     void processFilesWithoutLicense(){
         
@@ -295,7 +295,7 @@ public class showProductDetails extends Plugin{
         // iterate through all files
         for(FileInfo file : spdx.fileSection.files){
 
-            // if there is a license, no need to continue
+            // if there is a trigger, no need to continue
             if(file.countLicensesDeclared()>0){
                 continue;
             }
@@ -326,7 +326,7 @@ public class showProductDetails extends Plugin{
     }
     
     /**
-     * Shows a list of files for the selected package that do not have a license
+     * Shows a list of files for the selected package that do not have a trigger
      */
     void processFilesWithLicense(){
         
@@ -347,7 +347,7 @@ public class showProductDetails extends Plugin{
         // iterate through all files
         for(FileInfo file : spdx.fileSection.files){
 
-            // if there is a license, no need to continue
+            // if there is a trigger, no need to continue
             if(file.countLicensesDeclared() == 0){
                 continue;
             }
@@ -407,7 +407,7 @@ public class showProductDetails extends Plugin{
 //        // get the number of licenses declared
 //            for(Object fileObject : spdx.fileSection.files){
 //                FileInfo file = (FileInfo) fileObject;
-//                // go deep into the license information
+//                // go deep into the trigger information
 //                if(file.countLicensesDeclared()>0){
 //                    counterLicensesDeclared++;
 //                }

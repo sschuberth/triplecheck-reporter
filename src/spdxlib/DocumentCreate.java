@@ -22,6 +22,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import main.core;
+import script.FileExtension;
 import script.Trigger;
 import script.log;
 import ssdeep.ssdeep;
@@ -182,11 +183,13 @@ public class DocumentCreate {
                 }
             }
             
+            
+            
             // add the licenseInfoInFile information in file
             String triggerInfoInFile = "";
             if((fileWasAnalysed)&&(fileId.licenseInfoInFile.size()>0)){
 
-                // iterate through each license or any other trigger needed
+                // iterate through each trigger or any other trigger needed
                 for(Trigger triggerInfo : fileId.licenseInfoInFile)
                 triggerInfoInFile += addText(""
                         + triggerInfo.getResult()
@@ -207,7 +210,8 @@ public class DocumentCreate {
                             + thisFile.getName())
                     // not needed if standard is followed
                     + addText("FilePath: " + filePath)
-                    + addText("FileType: OTHER")
+                    + addText("FileType: " 
+                        + doFileType(fileId))
                     + addText("FileChecksum: SHA1: "
                         + utils.Checksum.generateFileChecksum("SHA-1", thisFile))
                     + addText("FileChecksum: SHA256: " 
@@ -246,6 +250,68 @@ public class DocumentCreate {
         // all done
         doFinish();
         return filename;
+    }
+    
+    
+    /**
+     * This method returns the expected value for "FileType" inside an SPDX
+     * document.
+     */
+    private String doFileType(FileId fileId){
+        /**
+         * Purpose: This field provides information about the type of file
+         * identified. This information can be determinative of license
+         * compliance requirements. The options to populate this field are
+         * limited to:
+         *
+         * (a) SOURCE if the file is human readable source code
+         *       (.c, .html, etc.);
+         * (b) BINARY if the file is a compiled object or binary executable
+         *       (.o, .a, etc.);
+         * (c) ARCHIVE if the file represents an archive (.tar, .jar, etc.); or
+         * (d) OTHER if the file doesn't fit into the above categories
+         *       (pictures, audio, data files, etc.)
+         */
+        
+        // assign the default value as "OTHER"
+        String result = "OTHER";
+       
+        // get the extension
+        FileExtension extension = fileId.getExtension();
+        
+        
+        // preflight check
+        if(extension == null){
+            return result;
+        }
+        
+        FileCategory target = extension.getCategory();
+        
+        // safety check
+        if(target == null){
+            return result;
+        }
+        
+        // if this is a script or source code file, we mark as "SOURCE"
+        if(target == FileCategory.SOURCE 
+                || target ==FileCategory.SCRIPT
+                || target ==FileCategory.INTERNET
+                ){
+            return "SOURCE";
+        }
+        
+        // if this is a binary file, we mark as "BINARY"
+        if(target == FileCategory.BINARY
+                || target ==FileCategory.EXECUTABLE){
+            return "BINARY";
+        }
+        
+        // if this is a binary file, we mark as "BINARY"
+        if(target == FileCategory.ARCHIVE){
+            return "ARCHIVE";
+        }
+        
+        return result;
     }
     
     

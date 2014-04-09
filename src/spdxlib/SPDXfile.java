@@ -196,7 +196,7 @@ public final class SPDXfile {
         
 //        System.out.println(
 ////                "SPDX version = " + SPDXVersion + "\n" +
-////                "Data license = " + dataLicense + "\n" +
+////                "Data trigger = " + dataLicense + "\n" +
 ////                "Document Comment = " + documentComment + "\n" +
 ////                "Creators: " + creatorsList +
 ////                "Created = " + created + "\n" +
@@ -488,7 +488,7 @@ public final class SPDXfile {
     @Override
     public String toString(){
         String licenseOutput = "";
-        // if we have a license defined for this SPDX file, show it publicly
+        // if we have a trigger defined for this SPDX file, show it publicly
         if(packageSection.licenseConcluded.toString().isEmpty() == false){
             licenseOutput = " (" 
                     + packageSection.licenseConcluded.toString()+ ")";
@@ -625,15 +625,15 @@ public final class SPDXfile {
             // count the number of declared licenses (not the concluded lic.)
             int licensesCount =  fileInfo.countLicensesDeclared();
             statsLicensesDeclaredCount += licensesCount;
-             // was at least one license added?
+             // was at least one trigger added?
             if(licensesCount > 0){
                 String license = fileInfo.getLicense();
                 
-//                if(license.equalsIgnoreCase("MIT")){
+//                if(trigger.equalsIgnoreCase("MIT")){
 //                    System.out.println("");
 //                }
                 
-                // do we already have a similar license?
+                // do we already have a similar trigger?
                 if(statsLicensesDeclared.containsKey(license)){
                     //  increase the counter
                     int count = statsLicensesDeclared.get(license);

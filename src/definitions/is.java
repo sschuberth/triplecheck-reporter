@@ -14,7 +14,7 @@ public class is {
             defaultIcon = "validation3check.png",
             plugin = "Plugin",
             extension = "FileExtension",
-            license = "License",
+            trigger = "Trigger",
             methodStartUp = "startup",
             script = "script",
             project = "project",

@@ -83,7 +83,7 @@ public class FileInfo {
      }
      
     /**
-     * Each file can have one or more license applicable.
+     * Each file can have one or more trigger applicable.
      * This method adds them up as needed.
      * @param tag
      */
@@ -149,13 +149,13 @@ public class FileInfo {
      * This method will pick on a given FileInfo object and extract the relevant
      * licensing details.
      * @return A string text with a list of licenses when available. If no
-     * license was found, it will return null
+     * trigger was found, it will return null
      */
     public String getLicense(){
         // where we store the results from this analysis
         String licenseOutput = "";
         
-     // priority is the case where a human concludes a license
+     // priority is the case where a human concludes a trigger
         if((this.tagLicenseConcluded != null)
                 &&(tagLicenseConcluded.toString().equals("NOASSERTION")!=true)){
             // no need to proceed
@@ -169,16 +169,16 @@ public class FileInfo {
             int counterLicense = 0;
             // go through all licenses listed
              for(TagValue tag : licenseInfoInFile){
-                // should this license be ignored?
+                // should this trigger be ignored?
                 if(tag.toString().equalsIgnoreCase("none")){
                     continue;
                 }
-                // valid license, increase the counter
+                // valid trigger, increase the counter
                 counterLicense++;
-                // add the license to the printable text viewed by user
+                // add the trigger to the printable text viewed by user
                 licenseOutput =  licenseOutput.concat(", " + tag.toString());
             }
-            // don't display text if no license was accounted
+            // don't display text if no trigger was accounted
             if(counterLicense == 0){
                 licenseOutput = "";
             }else{
@@ -192,7 +192,7 @@ public class FileInfo {
     
     /**
      * When given a file, this method checks if it has either a reported or
-     * concluded license. The method is necessary since sometimes one of these
+     * concluded trigger. The method is necessary since sometimes one of these
      * fields is present using infomation like "NOASSERTION" which really
      * becomes a problem to normalize.
      * @param file A FileInfo object with the information that we will analyze
@@ -210,7 +210,7 @@ public class FileInfo {
             if(licenseText.equals("NOASSERTION")){
                 continue;
             }
-            // we just need to find one license to make our day happy! :-)
+            // we just need to find one trigger to make our day happy! :-)
             result++;
         }
           // no licenses, let's leave

@@ -39,7 +39,7 @@ public class actions {
         File folderLicense = new File(core.getWorkFolder(), folder.licenses);
         ArrayList<File> files = utils.files.findFilesFiltered(folderLicense, ".java", 2);
         for(File file : files){
-            core.script.runJava(file, null, is.license);
+            core.script.runJava(file, null, is.trigger);
         }
         
          // worry about the case when there is no folder nor licenses to include

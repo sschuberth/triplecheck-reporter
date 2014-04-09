@@ -37,6 +37,8 @@ public class FileId {
     
     public int
             LOC = 0; // simple count for lines of code
+    
+    private FileExtension extension = null;
     /**
      * Clarification note:
      * The LOC (Lines Of Code) valor is merely representative for the code size
@@ -202,24 +204,24 @@ public class FileId {
             return false;
         }
         try{
-        String extension = file.getName();
-        if(extension.contains(".")==false){
+        String extensionText = file.getName();
+        if(extensionText.contains(".")==false){
             return true;
         }
 //        if(extension.isEmpty()){
 //            return true;
 //        }
         // we have an extension, get it here
-        extension = extension.substring(extension.lastIndexOf(".")+1).toLowerCase();
+        extensionText = extensionText.substring(extensionText.lastIndexOf(".")+1).toLowerCase();
         
 //        if(extension.equals("java")){
 //           //System.out.println();
 //            archive = core.extensions.fullList;
 //        }
         
-        if(core.extensions.has(extension) == false){
+        if(core.extensions.has(extensionText) == false){
             ExtensionCreate ext = new ExtensionCreate();
-            ext.automatically(extension, false);
+            ext.automatically(extensionText, false);
             //System.err.println("FI223 - Adding extension: " + extension);
 //            core.extensions.ignoreList += ">" + extension + ">";
 //            core.extensions.fullList += ">" + extension + ">";
@@ -227,10 +229,10 @@ public class FileId {
         }
         
         // get the extension that we need
-        FileExtension ext = core.extensions.get(extension);
+        extension = core.extensions.get(extensionText);
         
         // at this point, we only process text files
-        if(ext.getContentType() != ContentType.TEXT){
+        if(extension.getContentType() != ContentType.TEXT){
             return false;
         }
         
@@ -255,8 +257,8 @@ public class FileId {
         
         // we want to track the lock from source code files
         if(  // we read both source code and script files
-                (ext.getCategory() == FileCategory.SOURCE)
-              ||  (ext.getCategory() == FileCategory.SCRIPT)
+                (extension.getCategory() == FileCategory.SOURCE)
+              ||  (extension.getCategory() == FileCategory.SCRIPT)
                 
                 ){
             // do the LOC processing
@@ -291,6 +293,10 @@ public class FileId {
         
         // all done with success
         return true;
+    }
+
+    public FileExtension getExtension() {
+        return extension;
     }
 
     

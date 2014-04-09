@@ -106,7 +106,7 @@ public class show extends Plugin{
         }
         
         
-        // calculate percentage of files with a license declared
+        // calculate percentage of files with a trigger declared
 //        String percentage = 
 //                  " ("
 //                + (counterLicensesDeclared * 100)/counterFiles
@@ -497,14 +497,14 @@ public class show extends Plugin{
                 + html._div
                 + html.div(20)
                 //+ html.getCommonFolderIcon("folder-smiley-sad.png")
-                //+ html.linkScript("Without a license", thisFile, "showFilesWithoutLicense")
+                //+ html.linkScript("Without a trigger", thisFile, "showFilesWithoutLicense")
                 + html.link("Without license specified", "?x=list&"
                         + param.filter + "=nolicense&" 
                         + param.spdx + "=" + spdxTarget)
                 
                 + html.br
                 //+ html.getCommonFolderIcon("folder-smiley.png")
-                //+ html.linkScript("With a license reported", thisFile, "showFilesWithLicense")
+                //+ html.linkScript("With a trigger reported", thisFile, "showFilesWithLicense")
                 + html.link("With license", "?x=list&"
                         + param.filter + "=withlicense&"
                         + param.spdx + "=" + spdxTarget)
@@ -581,11 +581,11 @@ public class show extends Plugin{
         // create the place holder for the results
         ArrayList<FileInfo> list = new ArrayList();
         
-        // get only the files without a declared license
+        // get only the files without a declared trigger
         if(thisFilter.equalsIgnoreCase(param.noLicense)){
              // iterate through all files
             for(FileInfo fileInfo : spdx.fileSection.files){
-            // if there is a license, no need to continue
+            // if there is a trigger, no need to continue
             if(fileInfo.countLicensesDeclared()>0){
                 continue;
             }
@@ -596,7 +596,7 @@ public class show extends Plugin{
         if(thisFilter.equalsIgnoreCase(param.withLicense)){
             // iterate through all files
             for(FileInfo fileInfo : spdx.fileSection.files){
-            // if there is a license, no need to continue
+            // if there is a trigger, no need to continue
             if(fileInfo.countLicensesDeclared()==0){
                 continue;
             }

@@ -26,8 +26,12 @@ import script.Trigger;
  */
 public class CopyrightAdblockPlus implements Trigger {
     
-    String copyrightText = "Copyright (C) 2006-2013 Eyeo GmbH";
+    String copyrightText = "Copyright (C) Eyeo GmbH";
     
+    String[] list = {
+            "Copyright (C) 2006-2013 Eyeo GmbH",    
+            "This file is part of Adblock Plus"
+    };
     /**
      * Verifies if the provided text applies to the triggers that
      * included on this license.
@@ -36,9 +40,13 @@ public class CopyrightAdblockPlus implements Trigger {
      */
     @Override
     public Boolean isApplicable(String text){
-//        if(text.contains(copyrightText))
-//            System.err.println("Bingo!");
-        return text.contains(copyrightText);
+        // iterate all our ids
+        for(String id : list){
+            if(text.contains(id)){
+                return true;
+            }
+        }
+        return false;
     }
 
     @Override
@@ -48,7 +56,7 @@ public class CopyrightAdblockPlus implements Trigger {
 
     @Override
     public String getShortIdentifier() {
-        return "ABP-2013";
+        return "ABP";
     }
 
     @Override
