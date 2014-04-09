@@ -123,7 +123,8 @@ public class showFileDetails extends Plugin{
         }
                 
         int pos = filename.lastIndexOf(".");
-        String extension = "filetype:" + filename.substring(pos+1);
+        String extension = //"filetype:" + 
+                filename.substring(pos+1);
         return extension;
     }
     
@@ -138,7 +139,7 @@ public class showFileDetails extends Plugin{
         String googleTerm = "";
         String filename = fileInfo.getName();
         // get the file extension if available
-        //String extension = getFileExtension(filename);
+        String shortExtension = getFileExtension(filename);
             
          SPDXfile spdx = fileInfo.getSPDX();
         
@@ -189,24 +190,13 @@ public class showFileDetails extends Plugin{
         
        
         // this is later used for fetching online information about extension  
-        String lookForExtensionInfo = "";
         
         FileExtension extension = fileInfo.getExtension();
         
         if(extension != null){
-             // add the part that permits online searches
-             lookForExtensionInfo = ""
-                        //+ html.br
-                        + swingUtils.addIfNotEmpty("Info about file extension \""
-                            + extension.getIdentifierShort()
-                            + "\"",
-                            html.div() 
-                            + html.linkToSearchFileExtension
-                            (extension.getIdentifierShort())
-                            + html._div
-                     );
-        
-            
+             // overwrite the value when recognized
+             shortExtension = extension.getIdentifierShort();
+             
             if(extension.getDescription()!=null){
                 summary += extension.getDescription();
             }else{
@@ -215,6 +205,18 @@ public class showFileDetails extends Plugin{
                         + " file";
             }
         }
+        
+        String lookForExtensionInfo = ""
+                        //+ html.br
+                        + swingUtils.addIfNotEmpty("Info about file extension \""
+                            + shortExtension
+                            + "\"",
+                            html.div() 
+                            + html.linkToSearchFileExtension
+                            (extension.getIdentifierShort())
+                            + html._div
+                     );
+        
         //summary += html.br;
         
          if(fileInfo.tagFileSize != null){

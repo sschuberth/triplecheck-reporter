@@ -2,6 +2,8 @@
 import definitions.TriggerType;
 import java.io.File;
 import java.util.Date;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import script.Trigger;
 
 /*
@@ -10,12 +12,10 @@ import script.Trigger;
  * Creator: Organization: TripleCheck (contact@triplecheck.de)
  * Created: 2014-04-02T00:00:00Z
  * LicenseName: EUPL-1.1-without-appendix
- * FileName: CopyrightAdBlockPlus.java  
+ * FileName: CopyrightDetector.java  
  * FileType: SOURCE
  * FileCopyrightText: <text> Copyright 2014 Nuno Brito, TripleCheck </text>
- * FileComment: <text> Given a text file, try to identify portions of text
- *  that allows us to know if the file belongs to a specific copyright.
- * </text> 
+ * FileComment: <text> A generic trigger to detect copyright text.</text> 
  */
 
 
@@ -24,14 +24,10 @@ import script.Trigger;
  * @author Nuno Brito, 2nd of April 2014 in Darmstadt, Germany.
  *  nuno.brito@triplecheck.de | http://nunobrito.eu
  */
-public class CopyrightAdblockPlus implements Trigger {
+public class CopyrightDetector implements Trigger {
     
-    String copyrightText = "Copyright (C) Eyeo GmbH";
+    String copyrightText = "";
     
-    String[] list = {
-            "Copyright (C) 2006-2013 Eyeo GmbH",    
-            "This file is part of Adblock Plus"
-    };
     /**
      * Verifies if the provided text applies to the triggers that
      * included on this license.
@@ -40,13 +36,38 @@ public class CopyrightAdblockPlus implements Trigger {
      */
     @Override
     public Boolean isApplicable(String text){
-        // iterate all our ids
-        for(String id : list){
-            if(text.contains(id)){
-                return true;
-            }
+       
+               // the mega-super expression to catch copyright statements
+     String patternString = ""
+             + "(\\((C|c)\\) |)"    // detect a (c) before the copyright text
+             + "(C|c)opyright"      // detect the copyright text
+             + "( \\((C|c)\\)|) "   // sometimes with a (c)
+             + "([0-9]|)"           // optionally with the year
+             + "+"             
+             + "[^\\n\\t\\*]+\\.?";
+
+        Pattern pattern = Pattern.compile(patternString);
+        Matcher matcher = pattern.matcher(text);
+
+        String copyright = "";
+        //int count = 0;
+        while(matcher.find()) {
+            //count++;
+            copyright = text.substring(matcher.start(), matcher.end())
+                    +"\n";
+//            System.out.println("found: " + count + " : "
+//                    + text.substring(matcher.start(), matcher.end())
+//
+//                    //+ matcher.start() + " - " + matcher.end()
+//                    );
         }
-        return false;
+        
+        copyrightText = copyright;
+        // do a debug result
+        System.out.println(copyright
+                + "\n------------");
+        
+        return copyrightText.isEmpty();
     }
 
     @Override

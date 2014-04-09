@@ -12,14 +12,9 @@ package trigger;
  * FileComment: <text> Test the detection of copyright </text> 
  */
 
-import java.util.ArrayList;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import main.actions;
-import main.core;
 import org.junit.*;
-import static org.junit.Assert.*;
-import script.Trigger;
 
 /**
  *
@@ -94,9 +89,9 @@ public class TestTriggerCopyright {
 + "\n#	Inspired by Linus Torvalds"
 + "\n#	Original idea maybe from Keith Owens"
 + "\n"
-            + ""
-            + ""
-            + "";
++ ""
++ ""
++ "";
 
    
     
@@ -121,7 +116,7 @@ public class TestTriggerCopyright {
    
      @Test
      public void findCopyright() {
-         // Copyright (C) 1989, 1991 Free Software Foundation, Inc.
+         // the mega-super expression to catch copyright statements
      String patternString = ""
              + "(\\((C|c)\\) |)"    // detect a (c) before the copyright text
              + "(C|c)opyright"      // detect the copyright text
@@ -130,10 +125,8 @@ public class TestTriggerCopyright {
              + "+"             
              + "[^\\n\\t\\*]+\\.?";
 
-     String text = content;//.replace("//", "");
-     
         Pattern pattern = Pattern.compile(patternString);
-        Matcher matcher = pattern.matcher(text);
+        Matcher matcher = pattern.matcher(content);
 
         int count = 0;
         while(matcher.find()) {
