@@ -1,7 +1,6 @@
 package binary;
 
 import java.io.File;
-import java.util.Date;
 import script.FileExtension;
 import spdxlib.ContentType;
 import spdxlib.FileCategory;
@@ -116,16 +115,7 @@ public class a extends FileExtension{
         return null;
     }
 
-    /**
-     * How old is the oldest file that we have found of this kind?
-     */
-    @Override
-    public Date earliestKnownRecord(){
-        // syntax example that you can use for recording the date
-        // Date result = utils.time.getDate(1999, 01, 01);
-        return null;
-    }
-    
+   
     /**
      * What are the MIME types registered for this file?
      */

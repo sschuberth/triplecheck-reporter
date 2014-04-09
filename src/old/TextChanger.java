@@ -28,10 +28,17 @@ public class TextChanger {
         // TODO code application logic here
         ArrayList<File> files = utils.files.findFiles(core.getExtensionsFolder());
         
-        String text1 = "\nimport script.FileExtension;;";
+        String text1 = "/**"
+     +"* Who is the owner for description that was provided?\n"
+     +"* What are the applicable license terms?\n"
+     +"*/\n"
+    +"@Override\n"
+    +"public String getDescriptionCredits(){\n"
+    +"    return null; //author of description\n"
+    +"}\n";
         
 
-String text2 = "\nimport script.FileExtension;";
+        String text2 = "";
         
         
         int i = 0;

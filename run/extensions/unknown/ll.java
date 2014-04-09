@@ -1,7 +1,6 @@
 package unknown;
 
 import java.io.File;
-import java.util.Date;
 import script.FileExtension;
 import spdxlib.ContentType;
 import spdxlib.FileCategory;
@@ -11,7 +10,7 @@ import spdxlib.FileLanguage;
  * SPDXVersion: SPDX-1.1
  * Creator: Person: nuno
  * Created: 2014-01-25T17:41:03Z
- * LicenseName: CC-BY-3.0
+ * LicenseName: CC-BY-4.0
  * TemplateVersion: TC-2013-11-16
  * FileName: ll.java  
  * FileCategory: SOURCE
@@ -28,7 +27,7 @@ import spdxlib.FileLanguage;
 
 /**
  *
- * @file provenance by nuno
+ * @file provenance by Nuno Brito
  */
 public class ll extends FileExtension{
     /**
@@ -72,14 +71,7 @@ public class ll extends FileExtension{
     public FileLanguage getLanguage(){
         return FileLanguage.UNSORTED; // to which language is the file more related?
     }
-    /**
-     * Who is the owner for description that was provided?
-     * What are the applicable license terms?
-     */
-    @Override
-    public String getDescriptionCredits(){
-        return null; //author of description
-    }
+
 
     /**
      * Typically, this is the three letter identifier of the file extension.
@@ -89,46 +81,6 @@ public class ll extends FileExtension{
     @Override
     public String getIdentifierShort() {
         return "ll";
-    }
-    
-    /**
-     * Who has the copyright over this extension? This is information that
-     * might be extracted from the meta-data inside the data contents. When
-     * available, this information is available using this method.
-     * @return A string with with copyright text extracted from the file
-     */
-    @Override
-    public String getCopyright() {
-        return null;
-    }
-
-     /**
-     * What is the version for this file? Sometimes this is information that
-     * can be extracted from the meta-data inside the data contents. When
-     * available, this information is available using this method.
-     * @return A string with with version text extracted from the file
-     */
-    @Override
-    public String getVersion() {
-        return null;
-    }
-
-    /**
-     * How old is the oldest file that we have found of this kind?
-     */
-    @Override
-    public Date earliestKnownRecord(){
-        // syntax example that you can use for recording the date
-        // Date result = utils.time.getDate(1999, 01, 01);
-        return null;
-    }
-    
-    /**
-     * What are the MIME types registered for this file?
-     */
-    @Override
-    public String getMIME(){
-        return null;
     }
     
     /**
@@ -152,13 +104,6 @@ public class ll extends FileExtension{
         return FileCategory.UNKNOWN; // does it group under a category?
     }
 
-    /**
-     * The normal designation for these kind of files.
-     */
-    @Override
-    public String getIdentifierLong(){
-        return null; // how is this file
-    }
 
     
 }

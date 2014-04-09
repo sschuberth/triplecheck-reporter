@@ -10,7 +10,7 @@ import spdxlib.FileLanguage;
  * SPDXVersion: SPDX-1.1
  * Creator: Person: Nuno Brito
  * Created: 2013-11-16T20:25:53Z
- * LicenseName: CC-BY-3.0
+ * LicenseName: CC-BY-4.0
  * FileName: jpg.java  
  * FileCategory: SOURCE
  * FileCopyrightText: <text> Copyright © 2013, Nuno Brito </text>
@@ -74,14 +74,7 @@ public class jpg extends FileExtension{
     public FileLanguage getLanguage(){
         return FileLanguage.UNSORTED; // to which language is the file more related?
     }
-    /**
-     * Who is the owner for description that was provided?
-     * What are the applicable license terms?
-     */
-    @Override
-    public String getDescriptionCredits(){
-        return null; //author of description
-    }
+
 
     /**
      * Typically, this is the three letter identifier of the file extension.
@@ -93,27 +86,6 @@ public class jpg extends FileExtension{
         return "jpg";
     }
     
-    /**
-     * Who has the copyright over this file? Sometimes this is information that
-     * can be extracted from the meta-data inside the data contents. When
-     * available, this information is available using this method.
-     * @return A string with with copyright text extracted from the file
-     */
-    @Override
-    public String getCopyright() {
-        return null;
-    }
-
-     /**
-     * What is the version for this file? Sometimes this is information that
-     * can be extracted from the meta-data inside the data contents. When
-     * available, this information is available using this method.
-     * @return A string with with version text extracted from the file
-     */
-    @Override
-    public String getVersion() {
-        return null;
-    }
 
     
     /**
