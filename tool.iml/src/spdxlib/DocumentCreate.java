@@ -201,15 +201,16 @@ public class DocumentCreate {
            // String fileModified = utils.time.getTimeFromLong(file.lastModified());
             
             String temp =
-                      addSection("File")
+                      addSection("File: " + thisFile.getName())
                     + addText("FileName: "
                             // in my conscience, path has no place on file name
                             // and only makes difficult to identify the name
                             // uncomment for strict compatibility with SPDX
-                            //+ filePath 
-                            + thisFile.getName())
+                            + filePath + thisFile.getName()
+                            //+ thisFile.getName()
+                    )
                     // not needed if standard is followed
-                    + addText("FilePath: " + filePath)
+                    //+ addText("FilePath: " + filePath)
                     + addText("FileType: " 
                         + doFileType(fileId))
                     + addText("FileChecksum: SHA1: "
