@@ -45,14 +45,13 @@ public class CopyrightDetector implements Trigger {
      */
     @Override
     public Boolean isApplicable(String text){
-       
-               // the mega-super expression to catch copyright statements
-     String patternString = ""
+        // the mega-super expression to catch copyright statements
+        String patternString = ""
              + "(\\((C|c)\\) |)"    // detect a (c) before the copyright text
              + "(C|c)opyright"      // detect the copyright text
              + "( \\((C|c)\\)|) "   // sometimes with a (c)
              + "([0-9]|)"           // optionally with the year
-             + "+"             
+             + "+"                 
              + "[^\\n\\t\\*]+\\.?";
 
      String patternCleaner = "(\\((C|c)\\) |)(C|c)opyright( \\((C|c)\\) |)";
@@ -62,7 +61,7 @@ public class CopyrightDetector implements Trigger {
 
         String copyright = "";
         Boolean onlyOne = true;
-        //int count = 0;
+        // go through all the matches
         while(matcher.find()) {
             // get the copyright text
             String temp = text.substring(matcher.start(), matcher.end()).replace("(\n|\r\n)", "");
@@ -70,8 +69,8 @@ public class CopyrightDetector implements Trigger {
             if(isBlackListed(temp)){
                 continue;
             }
-            // add this copyright notice
             
+            // add this copyright notice
             // if there is only one occurence, don't add a line break
             if(onlyOne){
                 copyright += temp;
@@ -94,9 +93,7 @@ public class CopyrightDetector implements Trigger {
         copyrightText = copyright;
         // do a debug result
         if(copyrightText.isEmpty() == false){
-            System.out.println(copyright
-//                + "------------"
-                    );
+            System.out.println(copyright);
         }
         
         return copyrightText.isEmpty()==false;
@@ -131,12 +128,12 @@ public class CopyrightDetector implements Trigger {
 
     @Override
     public String getShortIdentifier() {
-        return "ABP";
+        return "COPYRIGHT";
     }
 
     @Override
     public String getURL() {
-        return "https://adblockplus.org";
+        return null;
     }
 
     @Override
