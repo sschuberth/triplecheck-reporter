@@ -201,7 +201,9 @@ public class DocumentCreate {
            // String fileModified = utils.time.getTimeFromLong(file.lastModified());
             
             String temp =
-                      addSection("File: " + thisFile.getName())
+                     // addSection("File: " + thisFile.getName())
+                    //+ 
+                    "\n"
                     + addText("FileName: "
                             // in my conscience, path has no place on file name
                             // and only makes difficult to identify the name

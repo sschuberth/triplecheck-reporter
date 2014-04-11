@@ -6,17 +6,17 @@
 
 - Extensions needs to support cases like .hg_archival.txt
 - missing a page where user learns how to automate the SPDX generation
-- where applicable files mentioned with copyright?
 - We need cache generation to speed up loading times
-- Reduce size of extension classes (some methods are never used)
-- Make triggers to be categorized (imports, copyrights, licenses, etc)
 - Track files generated automatically (part of triggers?)
 - Report should not be generated if it does not contain all files in package
 
 
+x where applicable files mentioned with copyright?
+x Reduce size of extension classes (some methods are never used)
+x Make triggers to be categorized (imports, copyrights, licenses, etc)
 x unknown extensions don't show extension finder
 x .bpk,.res,  is not known
-- .~pas needs a category for temp files
+x .~pas needs a category for temp files
 x .exe is unknown
 x .cur (mouse cursor is not recognized)
 

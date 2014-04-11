@@ -11,7 +11,7 @@ DataLicense: CC-BY-4.0
 
 Creator: Nuno Brito
 Creator: Tool: TripleCheck 0.6
-Created: 2014-04-10T20:29:59Z
+Created: 2014-04-11T09:50:42Z
 
 ##-------------------------
 ## Package Information
@@ -27,8 +27,6 @@ PackageLicenseConcluded: NOASSERTION
 ##-------------------------
 
 
-## File: .classpath
-
 FileName: ./.classpath
 FileType: OTHER
 FileChecksum: SHA1: 5b0c4e7d17c558e90ebf892517e9e8f7be511dbf
@@ -36,8 +34,6 @@ FileChecksum: SHA256: 57bcbd67d767724c9295b20c31368ec91f0870ed7942896d90c88a6986
 FileChecksum: MD5: e213a8352e19ae97960347c440797ad9
 FileChecksum: SSDEEP: 12:TMHdZGCAyjieEtmHcpyjieDNlo4CpyjieCbvwQ:2d4deM7veJlofveCbvR
 FileSize: 526 bytes
-
-## File: .cproject
 
 FileName: ./.cproject
 FileType: OTHER
@@ -47,8 +43,6 @@ FileChecksum: MD5: 753f987b7460f2b6b8acd24c8cd70d64
 FileChecksum: SSDEEP: 96:aOsd/V3gbjZ8TgbLQapN3UFgZSrUFn+aPF7:aOsdN3mZ8TQQapN3UFAgUFn+aPF7
 FileSize: 3 Kb (3840 bytes)
 
-## File: Adblock Plus Native Builder.launch
-
 FileName: ./.externalToolBuilders/Adblock Plus Native Builder.launch
 FileType: OTHER
 FileChecksum: SHA1: d440d3b794f779a2102e8abbb20cd4f6e4520055
@@ -56,8 +50,6 @@ FileChecksum: SHA256: 1dcf8f8cf5fa327efde912b3d7fe9bdd694fa512de96ef8607ae054f11
 FileChecksum: MD5: 34ab044ad73f43e0118f118b04df1cf4
 FileChecksum: SSDEEP: 24:2dt/N8c7wvDz+JPbKchp8lu8OqmvDzXJPU8WS98XM8d8pYh5:cpN8cSDiJTKcj8lu8OFDjJ88l8XM8d8k
 FileSize: 1 Kb (1303 bytes)
-
-## File: .hgignore
 
 FileName: ./.hgignore
 FileType: OTHER
@@ -67,8 +59,6 @@ FileChecksum: MD5: bff6c6ba705f3544b265cc41ddf27cae
 FileChecksum: SSDEEP: 3:xwy8wroVCnT+LyBEIJvHwMtwzKP:OMICBhhQMtEw
 FileSize: 97 bytes
 
-## File: .hgsub
-
 FileName: ./.hgsub
 FileType: OTHER
 FileChecksum: SHA1: 55908d765c9d9aaf33b0c3ea5895582cb856515b
@@ -76,8 +66,6 @@ FileChecksum: SHA256: 6cd48bc113d106950e17c13df143703176fab4dd16bc749d8b147d1e0a
 FileChecksum: MD5: aff078a68dd9e895262f234eb984d1b1
 FileChecksum: SSDEEP: 3:PJNPIvAW/hIvAWJxNvqKLHpMHEHp9oKBxNiBHBr1tMKEdXBr1H3qzQ82:xNPYtYdq9H3KqBr1yKEdXBr1X3N
 FileSize: 200 bytes
-
-## File: .hgsubstate
 
 FileName: ./.hgsubstate
 FileType: OTHER
@@ -87,8 +75,6 @@ FileChecksum: MD5: 677790649d8b95bcd09b7d6a163b6ae0
 FileChecksum: SSDEEP: 6:fqGYTMwdHkATTPPY2Twg7HQHIAqjBRDlpO7DBr1H:fqVThdPA2TwI1vhpO7DBl
 FileSize: 267 bytes
 
-## File: .hgtags
-
 FileName: ./.hgtags
 FileType: OTHER
 FileChecksum: SHA1: fd150175a132c07d7ed4cab463898aa9f009bfd9
@@ -96,8 +82,6 @@ FileChecksum: SHA256: 3db04109b9b21de36496d924e8c34255eacd33bf3c5761478298395684
 FileChecksum: MD5: 1a8406af2f5d3cc6af9aa1dbd4a06621
 FileChecksum: SSDEEP: 12:tX1dSB9UBpksL7LdbT5dXNoWqjUQ9v2kTLZT/HOs8TDdcY34:NospddXNor58TDd34
 FileSize: 417 bytes
-
-## File: .hg_archival.txt
 
 FileName: ./.hg_archival.txt
 FileType: OTHER
@@ -107,8 +91,6 @@ FileChecksum: MD5: 3cf1057f0ed0af6db047612181670b57
 FileChecksum: SSDEEP: 3:l1J2phb1cnEXlYTXrHdnLRiUhTH0P3iaiBihR4giR9cDy6FUv:92phb1cn+KTbpLR1UP3iJUR4gy9iTg
 FileSize: 148 bytes
 
-## File: .project
-
 FileName: ./.project
 FileType: OTHER
 FileChecksum: SHA1: 4671c8517672435a5170f4f25e8784df86d0a9c6
@@ -116,8 +98,6 @@ FileChecksum: SHA256: 7f60ffd4b7ff25a4115efb2ab350313729764643e33ed0af1472e2f8e7
 FileChecksum: MD5: 54832485c6d349f7ac8e6a4416f1e8dc
 FileChecksum: SSDEEP: 24:2d9X6WitZKeLelqDebF3HwJW0Z4ZeeQGR23mW3Qtz:c9X6WiN23HwM1QGR2vgtz
 FileSize: 1 Kb (1902 bytes)
-
-## File: org.eclipse.jdt.core.prefs
 
 FileName: ./.settings/org.eclipse.jdt.core.prefs
 FileType: OTHER
@@ -127,8 +107,6 @@ FileChecksum: MD5: 16b4fbdbd9fbb7e296eb946f1ab147e4
 FileChecksum: SSDEEP: 12:r74qpREMSmuPpRE4JbpREQnGHF2p3pcnPpFoA6Ppl6PpXPpEpPpi:PbEZnPbE4dbEQGHIdynPYnPmPZPmpPc
 FileSize: 587 bytes
 
-## File: AndroidManifest.xml
-
 FileName: ./AndroidManifest.xml
 FileType: OTHER
 FileChecksum: SHA1: c0d0c451a84a5dc73b7f158b88ac672582d39e86
@@ -137,8 +115,6 @@ FileChecksum: MD5: 85d30f23f86d25cf0bdfed0f34780218
 FileChecksum: SSDEEP: 48:cXF1ey4QUbhHdWZ7yZK5lq915qL1sF1zqS99hC:WF1iQUbh8Z+ZK5lq9TqLyF9qU6
 FileSize: 2 Kb (2960 bytes)
 
-## File: iptables
-
 FileName: ./assets/install/iptables
 FileType: OTHER
 FileChecksum: SHA1: 69156408878bdf0346cbb5bc3d56f81954ec7fca
@@ -146,8 +122,6 @@ FileChecksum: SHA256: daf2e9240bc104100ca8be09713fd34598f1ac68494752cb9f39c31b22
 FileChecksum: MD5: cb4df350399910e488da5186f987f830
 FileChecksum: SSDEEP: 1536:pt2zVr3476L0l52h/bgbKIcb+jOrc9RH02OtGAAAAAAAAAAAAAAAAAAAAAAAAAA:ptO47A0l52Cbzcb+jj9RH02jAAAAAAA
 FileSize: 86 Kb (88352 bytes)
-
-## File: basedomain.js
 
 FileName: ./assets/js/basedomain.js
 FileType: SOURCE
@@ -160,8 +134,6 @@ FileLOC: 102
 FileCopyrightText: <text>Copyright 2011 Beau Gunderson</text>
 LicenseInfoInFile: MIT
 
-## File: ElemHide.jsm
-
 FileName: ./assets/js/ElemHide.jsm
 FileType: SOURCE
 FileChecksum: SHA1: 6e259b0aed211812b59c90d08ba966187988dd31
@@ -172,8 +144,6 @@ FileSize: 9 Kb (9956 bytes)
 FileLOC: 315
 FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 LicenseInfoInFile: GPL-3.0
-
-## File: FilterClasses.jsm
 
 FileName: ./assets/js/FilterClasses.jsm
 FileType: SOURCE
@@ -186,8 +156,6 @@ FileLOC: 467
 FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 LicenseInfoInFile: GPL-3.0
 
-## File: FilterListener.jsm
-
 FileName: ./assets/js/FilterListener.jsm
 FileType: SOURCE
 FileChecksum: SHA1: 638de3161455f2fe6d04058864df7403f847d38e
@@ -198,8 +166,6 @@ FileSize: 9 Kb (10238 bytes)
 FileLOC: 280
 FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 LicenseInfoInFile: GPL-3.0
-
-## File: FilterNotifier.jsm
 
 FileName: ./assets/js/FilterNotifier.jsm
 FileType: SOURCE
@@ -212,8 +178,6 @@ FileLOC: 51
 FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 LicenseInfoInFile: GPL-3.0
 
-## File: FilterStorage.jsm
-
 FileName: ./assets/js/FilterStorage.jsm
 FileType: SOURCE
 FileChecksum: SHA1: d7f1e68711fd6f9c9a280677753e28d58dcb4b90
@@ -224,8 +188,6 @@ FileSize: 19 Kb (19982 bytes)
 FileLOC: 556
 FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 LicenseInfoInFile: GPL-3.0
-
-## File: Matcher.jsm
 
 FileName: ./assets/js/Matcher.jsm
 FileType: SOURCE
@@ -238,8 +200,6 @@ FileLOC: 393
 FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 LicenseInfoInFile: GPL-3.0
 
-## File: publicSuffixList.js
-
 FileName: ./assets/js/publicSuffixList.js
 FileType: SOURCE
 FileChecksum: SHA1: d16a23f167166776a13d17ea2305fda516e2dea4
@@ -248,8 +208,6 @@ FileChecksum: MD5: a42f9d608eaccf5f94740e5ef4045e2c
 FileChecksum: SSDEEP: 1536:AfViD/0UXbtuuwCZRnFKXvczHbr19gwzFQnGQ:AfViD/0UXbtbwCZRnFKXvczHbr19gwzy
 FileSize: 90 Kb (92476 bytes)
 FileLOC: 4030
-
-## File: punycode.js
 
 FileName: ./assets/js/punycode.js
 FileType: SOURCE
@@ -262,8 +220,6 @@ FileLOC: 450
 FileCopyrightText: <text>Copyright 2011 Mathias Bynens <http://mathiasbynens.be/></text>
 LicenseInfoInFile: MIT
 
-## File: start.js
-
 FileName: ./assets/js/start.js
 FileType: SOURCE
 FileChecksum: SHA1: 183438b2fc813d40a256fdb275fe876a977de462
@@ -274,8 +230,6 @@ FileSize: 13 Kb (14145 bytes)
 FileLOC: 558
 FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 LicenseInfoInFile: GPL-3.0
-
-## File: SubscriptionClasses.jsm
 
 FileName: ./assets/js/SubscriptionClasses.jsm
 FileType: SOURCE
@@ -288,8 +242,6 @@ FileLOC: 344
 FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 LicenseInfoInFile: GPL-3.0
 
-## File: Synchronizer.jsm
-
 FileName: ./assets/js/Synchronizer.jsm
 FileType: SOURCE
 FileChecksum: SHA1: ad19c156b6c434e9d8072ca6c633f0151bb5962a
@@ -300,8 +252,6 @@ FileSize: 17 Kb (17460 bytes)
 FileLOC: 413
 FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 LicenseInfoInFile: GPL-3.0
-
-## File: XMLHttpRequest.jsm
 
 FileName: ./assets/js/XMLHttpRequest.jsm
 FileType: SOURCE
@@ -314,8 +264,6 @@ FileLOC: 169
 FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 LicenseInfoInFile: GPL-3.0
 
-## File: subscriptions.xml
-
 FileName: ./assets/subscriptions.xml
 FileType: OTHER
 FileChecksum: SHA1: d8b332820173e143166c31bfd10bdaeb5e59959e
@@ -326,8 +274,6 @@ FileSize: 4 Kb (4753 bytes)
 FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 LicenseInfoInFile: GPL-3.0
 
-## File: build.xml
-
 FileName: ./build.xml
 FileType: OTHER
 FileChecksum: SHA1: 8ac8319a37b2d24834bbb861942ee6395fa4485e
@@ -336,8 +282,6 @@ FileChecksum: MD5: 1e513c7ddd306645f84b98d0973a476b
 FileChecksum: SSDEEP: 96:Nfwq+Bh02D/+GGV/qVw+lmwRmbDidn98:NIq+M2D/Y+lmw0nf
 FileSize: 3 Kb (3873 bytes)
 
-## File: iptables.patch
-
 FileName: ./iptables.patch
 FileType: BINARY
 FileChecksum: SHA1: 48f8a8f8bc6dbf6aacaa74bd1666701c8977cedc
@@ -345,8 +289,6 @@ FileChecksum: SHA256: 1d17b68e0316d10bc1ef54f067791a3f1611ac1350eaa086855fbd1619
 FileChecksum: MD5: 755f4105ed1146b3bfdadbda4ac81097
 FileChecksum: SSDEEP: 96:zulVSKX/8VkSX19Qr0r1wrw7bWMKrqr2kr4DOWryr94r8/bJW5ONexlEJWc4Inx7:qT3cbXKSg/QNe4QJ5ONexOx5B
 FileSize: 5 Kb (5297 bytes)
-
-## File: AbpEngine.cpp
 
 FileName: ./jni/AbpEngine.cpp
 FileType: SOURCE
@@ -359,8 +301,6 @@ FileLOC: 496
 FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 LicenseInfoInFile: GPL-3.0
 
-## File: Android.mk
-
 FileName: ./jni/Android.mk
 FileType: OTHER
 FileChecksum: SHA1: 8f21a65f8700690f5b68af6a1cebfc0049727f47
@@ -368,8 +308,6 @@ FileChecksum: SHA256: c4a175db4c2fb0c4ec0780436e20a1bfe40ea4266e1b3578b9e18dcded
 FileChecksum: MD5: b0476d6bcc7e6281279adf21291bf7f1
 FileChecksum: SSDEEP: 24:RddyxKPqdMgSqdudu0qd2ohVTd6jcxv8Cdf2rnq:jdyxKPqdMgSqdudLqd5VTd6Axv8Cf2rq
 FileSize: 888 bytes
-
-## File: AndroidLogSystem.cpp
 
 FileName: ./jni/AndroidLogSystem.cpp
 FileType: SOURCE
@@ -382,8 +320,6 @@ FileLOC: 49
 FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 LicenseInfoInFile: GPL-3.0
 
-## File: AndroidLogSystem.h
-
 FileName: ./jni/AndroidLogSystem.h
 FileType: SOURCE
 FileChecksum: SHA1: 4517af125742a1a6727321ae41bd5f43b42e6ec9
@@ -394,8 +330,6 @@ FileSize: 991 bytes
 FileLOC: 26
 FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 LicenseInfoInFile: GPL-3.0
-
-## File: AndroidWebRequest.cpp
 
 FileName: ./jni/AndroidWebRequest.cpp
 FileType: SOURCE
@@ -408,8 +342,6 @@ FileLOC: 271
 FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 LicenseInfoInFile: GPL-3.0
 
-## File: AndroidWebRequest.h
-
 FileName: ./jni/AndroidWebRequest.h
 FileType: SOURCE
 FileChecksum: SHA1: 80c57859e6115b3e48530e88e6fc63f70c9b85e1
@@ -421,8 +353,6 @@ FileLOC: 52
 FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 LicenseInfoInFile: GPL-3.0
 
-## File: Application.mk
-
 FileName: ./jni/Application.mk
 FileType: OTHER
 FileChecksum: SHA1: 8b443f065018561e61f4feeaa0551c17370ae8b9
@@ -430,8 +360,6 @@ FileChecksum: SHA256: 32f32e1271a6fc9fe21b4f3b2c77b14adcfee8de05dbe5ea6750e56e00
 FileChecksum: MD5: 5d5f9694b32af677dacc23aa7807e68b
 FileChecksum: SSDEEP: 3:kFFw20WuhweQok/PnkwF+IUke4wxiHBvn:CFpv1F3UX4wxgBvn
 FileSize: 98 bytes
-
-## File: Debug.h
 
 FileName: ./jni/Debug.h
 FileType: SOURCE
@@ -441,8 +369,6 @@ FileChecksum: MD5: 601a78a98db98fffa729783d186b488f
 FileChecksum: SSDEEP: 6:x7bILyAQR6mi35lzfnBmpml9ExT9BRMXz4ATBHBRMX2wvmpmD:x7qyAIYpBp69BqX9BqXVD
 FileSize: 349 bytes
 FileLOC: 12
-
-## File: Utils.cpp
 
 FileName: ./jni/Utils.cpp
 FileType: SOURCE
@@ -455,8 +381,6 @@ FileLOC: 30
 FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 LicenseInfoInFile: GPL-3.0
 
-## File: Utils.h
-
 FileName: ./jni/Utils.h
 FileType: SOURCE
 FileChecksum: SHA1: eaeac224c435fa5a82c306529c6ea3db3fb15b28
@@ -468,8 +392,6 @@ FileLOC: 32
 FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 LicenseInfoInFile: GPL-3.0
 
-## File: libpreparser_lib.a
-
 FileName: ./jni/v8/libpreparser_lib.a
 FileType: BINARY
 FileChecksum: SHA1: 3eacfd339a82982728626e7554fce83b3098fbc4
@@ -477,8 +399,6 @@ FileChecksum: SHA256: adfcee65e7d9dba13b8d5114a81b1d3d73a2fa6d3eab29f4082b3ff7e6
 FileChecksum: MD5: 42554778c181512cb3b50832a8f89326
 FileChecksum: SSDEEP: 3072:vqbLsnHqs2AQ7HFb1r6vu/U7kxurz5kW54wAhcRNE7YnU+XPVq:SgnHPkFbt68KmwA6HUv
 FileSize: 377 Kb (386530 bytes)
-
-## File: libv8_base.a
 
 FileName: ./jni/v8/libv8_base.a
 FileType: BINARY
@@ -488,8 +408,6 @@ FileChecksum: MD5: c351988577c4677b8b317dff5be3a0e4
 FileChecksum: SSDEEP: 49152:AAvelAhKqtpxwHlDofqz2GZSk3oPLgZvsBszifawNemyGdBuEzGlYLZyqt3u:S7GeVoPLgZvvzifXNemyGKExZyqt3u
 FileSize: 12 Mb (12721868 bytes)
 
-## File: libv8_nosnapshot.a
-
 FileName: ./jni/v8/libv8_nosnapshot.a
 FileType: BINARY
 FileChecksum: SHA1: 11cb89402d1930517d1b54db3bce5a629a929c6b
@@ -498,8 +416,6 @@ FileChecksum: MD5: c17543d32d7750ec841bfff974586877
 FileChecksum: SSDEEP: 6144:2aEappgYB0QNp7f2FysaLGc4Ifm2RQHd4:5EagYB0Q7saLY4
 FileSize: 257 Kb (263472 bytes)
 
-## File: libv8_snapshot.a
-
 FileName: ./jni/v8/libv8_snapshot.a
 FileType: BINARY
 FileChecksum: SHA1: 91ee822867a70b2682d608adc921da6aa9762b6e
@@ -507,8 +423,6 @@ FileChecksum: SHA256: 2f1ff263ce98c58359da0ab07f8293f32a9e287fc8c2a72311f5deee99
 FileChecksum: MD5: 1c5ef26c98584dadbecc0aa79fd67cfb
 FileChecksum: SSDEEP: 12288:pEagYB0Q7saLYd1oe4whnRo3hCUDZXVilkH9H1Uh:pEagYB0+sIlK
 FileSize: 572 Kb (585868 bytes)
-
-## File: v8.h
 
 FileName: ./jni/v8/v8.h
 FileType: SOURCE
@@ -521,8 +435,6 @@ FileLOC: 3654
 LicenseInfoInFile: BSD-3-Clause-Clear
 FileCopyrightText: <text>Copyright 2011 the V8 project authors. All rights reserved.</text>
 
-## File: v8stdint.h
-
 FileName: ./jni/v8/v8stdint.h
 FileType: SOURCE
 FileChecksum: SHA1: 621d34cbdf0880c4ad1c8258af246bd06d7decef
@@ -534,8 +446,6 @@ FileLOC: 45
 LicenseInfoInFile: BSD-3-Clause-Clear
 FileCopyrightText: <text>Copyright 2012 the V8 project authors. All rights reserved.</text>
 
-## File: RootTools-1.7.jar
-
 FileName: ./libs/RootTools-1.7.jar
 FileType: ARCHIVE
 FileChecksum: SHA1: 4c3510225cb56d187e5f378576e144bc58a6a868
@@ -543,8 +453,6 @@ FileChecksum: SHA256: 84f46eed5aa855b03807cbf7e3a37a1539357ec3fae1446452b43e7570
 FileChecksum: MD5: f8a3bb70ac6b8d805cac115cc9dd4e39
 FileChecksum: SSDEEP: 1536:HIdxxlIHpLKOhaTnaE3Sc2DvSdZ7oNc/ZDMm1:I1okOon9ScqvSL7UchDx1
 FileSize: 67 Kb (68664 bytes)
-
-## File: project.properties
 
 FileName: ./project.properties
 FileType: OTHER
@@ -554,8 +462,6 @@ FileChecksum: MD5: 480a6cd4d8bd8082ccce0344ca3cdb32
 FileChecksum: SSDEEP: 12:q0AimPab6LFCARrjWOlx4ZhO7BpWhfRD21yAfRDfBl:q0AvPE6LUAR3WUaO7+BaX
 FileSize: 489 bytes
 
-## File: README.md
-
 FileName: ./README.md
 FileType: OTHER
 FileChecksum: SHA1: b8963f64dd1e8d74a17f3ecdb8395b9ec6f29c37
@@ -563,8 +469,6 @@ FileChecksum: SHA256: 878dc324d8e7c77395ce593116c7e34cea63c7b923c13db55cad68cedc
 FileChecksum: MD5: 163d0aa66870580b7463d3c8571a97ae
 FileChecksum: SSDEEP: 48:Q6Te6r616pFYlH8GK/16pFYNYv7ObrC+s:D6OZ+lfORs
 FileSize: 1 Kb (1699 bytes)
-
-## File: transparent.png
 
 FileName: ./res/drawable/transparent.png
 FileType: OTHER
@@ -574,8 +478,6 @@ FileChecksum: MD5: 3a0e1b5cc433d75ee35ed8b04b44f4ed
 FileChecksum: SSDEEP: 3:yionv//thPlE+tnM+wMLts5OCAadCmy42/uDlhlKxty2FR7WPVVp:6v/lhPfZM+wMRfC19s/6TIy2FRSPVVp
 FileSize: 122 bytes
 
-## File: ic_launcher.png
-
 FileName: ./res/drawable-hdpi/ic_launcher.png
 FileType: OTHER
 FileChecksum: SHA1: 2e32108409fbf74c8f03c35fcad21a06195324cd
@@ -583,8 +485,6 @@ FileChecksum: SHA256: 777f1890851866dcb94b3b692e49da69ab9184935a3a62e1289af9784e
 FileChecksum: MD5: 2cc8f565e721ff130d616424646c66d9
 FileChecksum: SSDEEP: 192:iS0tKg9E05TKGHwcDc0nWX5Z0Qa+ZCCGRwJ1SWJjG6UYspBFKZbYyqRL:WXE05mXocTX5ZDZ5GRoPNUYsTFgYv1
 FileSize: 11 Kb (11359 bytes)
-
-## File: ic_menu_help.png
 
 FileName: ./res/drawable-hdpi/ic_menu_help.png
 FileType: OTHER
@@ -594,8 +494,6 @@ FileChecksum: MD5: 764a3d110a3896f0ce60680d444e3cf0
 FileChecksum: SSDEEP: 24:Ofe4bDWt8w3T3sWlDXs1V5liOmmy4VgjfBexmB2ozsc8HCT7tZLagAzjT6EM9w:Ofpbc37ZpIV5/VVoZexmBBb3vazj6ET
 FileSize: 1 Kb (1391 bytes)
 
-## File: ic_menu_info_details.png
-
 FileName: ./res/drawable-hdpi/ic_menu_info_details.png
 FileType: OTHER
 FileChecksum: SHA1: 24a6cc5004f1e5b0833fd595410bd306219412fa
@@ -603,8 +501,6 @@ FileChecksum: SHA256: 063633beb09f9d544b0597fb33bcab13f6750111d7ec46ae2970801e7f
 FileChecksum: MD5: fb29bb0546c29c25f8becbc72a16af7c
 FileChecksum: SSDEEP: 48:Of8xll4Cg6o1J2RvpElikw82UlEskr98xtYJlbosFCyhHkomN8fenREq:CD6q2VgikJ2UxW98XmlbrCmHPmN8feD
 FileSize: 1 Kb (1983 bytes)
-
-## File: ic_menu_preferences.png
 
 FileName: ./res/drawable-hdpi/ic_menu_preferences.png
 FileType: OTHER
@@ -614,8 +510,6 @@ FileChecksum: MD5: d06bede3e101b0288a12962867e45112
 FileChecksum: SSDEEP: 48:OfPpRBrZL/1zCIA9xAqq1LgHZH50ZOiA6WH0WREq:irZL9zCIAfAH1s53LUE
 FileSize: 1 Kb (1851 bytes)
 
-## File: ic_menu_refresh.png
-
 FileName: ./res/drawable-hdpi/ic_menu_refresh.png
 FileType: OTHER
 FileChecksum: SHA1: 830e0d9ebe31bb8c08d2eaa9f229e5f5d8f84c3a
@@ -623,8 +517,6 @@ FileChecksum: SHA256: 5cce61b07314ea8c3b0adad1a76bba81b9e4199af2a60ae72dd8fc8348
 FileChecksum: MD5: 0876d6757135e15ccc7671f973a0a771
 FileChecksum: SSDEEP: 48:OfX+YNKpxviiZDEqHS42F8EremnXPV6osD3+5FXLREq:pJpwiZDEqybDemn/V6E
 FileSize: 1 Kb (2025 bytes)
-
-## File: ic_stat_blocking.png
 
 FileName: ./res/drawable-hdpi/ic_stat_blocking.png
 FileType: OTHER
@@ -634,8 +526,6 @@ FileChecksum: MD5: f40bad91bd6e606d0d8144a7b0e8d9f6
 FileChecksum: SSDEEP: 24:Ztv6HWFGv4ZnVYrBp/gfaDSixPKNyYOOA9ZSTmryrwzWaUv2vNOPu3c:LyHWwCirBpUa+ixiNyYOOEZSTm3zWaUj
 FileSize: 1 Kb (1422 bytes)
 
-## File: ic_stat_download.png
-
 FileName: ./res/drawable-hdpi/ic_stat_download.png
 FileType: OTHER
 FileChecksum: SHA1: 8502be56f71ce5b086ab218055436d4512bbc78a
@@ -643,8 +533,6 @@ FileChecksum: SHA256: a2d1d92f68b3047715c0a71f2f2d603f2a8b504add36a7dcccb0930c4a
 FileChecksum: MD5: 319b723e0d1481131d70c26da11c9931
 FileChecksum: SSDEEP: 24:ydsi19aT8kWhBFPbWNMcUwFG7W6N/suVhKRm:yH19f1WXBG7W6N/tVim
 FileSize: 878 bytes
-
-## File: ic_stat_warning.png
 
 FileName: ./res/drawable-hdpi/ic_stat_warning.png
 FileType: OTHER
@@ -654,8 +542,6 @@ FileChecksum: MD5: 7cb265c62f7ec65a744794f9dafe5637
 FileChecksum: SSDEEP: 24:y59t/JmzAvdPvONlNyZhUemwgYOKqfEtkKEj/GtlJitS7:yxJmzsdPEOOYcfQkKE8lV7
 FileSize: 1 Kb (1064 bytes)
 
-## File: ic_stat_blocking.png
-
 FileName: ./res/drawable-hdpi-v11/ic_stat_blocking.png
 FileType: OTHER
 FileChecksum: SHA1: 82a58af12bbdfc6ef4cd7471cb77734fe19a41b4
@@ -663,8 +549,6 @@ FileChecksum: SHA256: 0f667f46abf456a5e2f265f250ca8ae98df64e42cb6dc534dba83b7190
 FileChecksum: MD5: 22cd101622e6dbc917b56900c1d6bbc9
 FileChecksum: SSDEEP: 12:6v/7LgkQmhqRcYcwZU2myjw/wOpUyfAOEbcEmWoC/rHqGBAVch1:eQmhqRVm2myifAOscEj/rKGy6h1
 FileSize: 627 bytes
-
-## File: ic_stat_download.png
 
 FileName: ./res/drawable-hdpi-v11/ic_stat_download.png
 FileType: OTHER
@@ -674,8 +558,6 @@ FileChecksum: MD5: 3d0a38282f23accb92c92efb9699e3ce
 FileChecksum: SSDEEP: 6:6v/lhPiVPcRztgvPR9P8mMiS3LgPfbMN5zluzzVwCC4EVPiQdp:6v/7MPgzk8NMnbMN5zSeCw/
 FileSize: 298 bytes
 
-## File: ic_stat_warning.png
-
 FileName: ./res/drawable-hdpi-v11/ic_stat_warning.png
 FileType: OTHER
 FileChecksum: SHA1: 3dffac2eec9788ed69b77e4a458e474cf058c841
@@ -683,8 +565,6 @@ FileChecksum: SHA256: e832970b551fedd26b78fca0bf65d28f1d489ab5ad45b7ab552b69bdba
 FileChecksum: MD5: 33e29c2141b66785f47b56e2c9ec83e3
 FileChecksum: SSDEEP: 12:6v/7/YdV3BWC3nkLsRCIvdvGaUJ4uWYZIVS:F3BBXWsRCI1vlUJ42mU
 FileSize: 435 bytes
-
-## File: ic_stat_blocking.png
 
 FileName: ./res/drawable-hdpi-v9/ic_stat_blocking.png
 FileType: OTHER
@@ -694,8 +574,6 @@ FileChecksum: MD5: ee7b1f09f112a9b742b7ebad61d92112
 FileChecksum: SSDEEP: 12:6v/76awcDlDZkq0xzHJDaylBhmYhA/GqWbSW9JbIRAQFFtyRhr7n1:ZRQDZr0BHJDayboYhA/9WGW9JsRAQTtM
 FileSize: 766 bytes
 
-## File: ic_stat_download.png
-
 FileName: ./res/drawable-hdpi-v9/ic_stat_download.png
 FileType: OTHER
 FileChecksum: SHA1: cf2bd091d64ae8babc1235d122eff31548fc0b06
@@ -703,8 +581,6 @@ FileChecksum: SHA256: f8d704d68c64b2e67ff9dd4927188a3f3f6f15cfb958e831746afc0e12
 FileChecksum: MD5: a7b4e676d25b454a944ada4ff87b055d
 FileChecksum: SSDEEP: 6:6v/lhPfhGnHT+F4+k2mB9yD/TDut2y3XWTI0Y8qKxnYZ7LkvK27Id3b3bb6l9rRy:6v/7MTT+kl8ut2yM9Y8qWnYZ7LkiCIdp
 FileSize: 355 bytes
-
-## File: ic_stat_warning.png
 
 FileName: ./res/drawable-hdpi-v9/ic_stat_warning.png
 FileType: OTHER
@@ -714,8 +590,6 @@ FileChecksum: MD5: 4b9cac4abf772d86221488a35b3e2087
 FileChecksum: SSDEEP: 12:6v/7Y8OBLQqwZuHNRju9RteaxHHg0tyv2eaXl14jTEt:kg8qsC7atVty/clmTM
 FileSize: 573 bytes
 
-## File: ic_launcher.png
-
 FileName: ./res/drawable-ldpi/ic_launcher.png
 FileType: OTHER
 FileChecksum: SHA1: af08ee7acbf46e1c740dcd5f137d2d1938b51ae6
@@ -723,8 +597,6 @@ FileChecksum: SHA256: fb1dd0b5c1b2e181aaf9db9635f9beaf519b03169aacafbc110891ec32
 FileChecksum: MD5: 381f1c6f6b58eb6c0a7316944c762c7e
 FileChecksum: SSDEEP: 96:2SDZ/I09Da01l+gmkyTt6Hk8nTa4cX+m8q9OFiq4nhuVXSXSaoyUJy+dCyK6:2SDS0tKg9E05Ta938Rwq4MVCiaSJy+d3
 FileSize: 5 Kb (5799 bytes)
-
-## File: ic_menu_help.png
 
 FileName: ./res/drawable-ldpi/ic_menu_help.png
 FileType: OTHER
@@ -734,8 +606,6 @@ FileChecksum: MD5: dd2484b710c368e82b8a761e2d89a6ae
 FileChecksum: SSDEEP: 48:VWgHhQc1vm3t/sE6RvfpwrUhJHPxdc/GVhXE9V:NM3SXvRSUhJvouV4V
 FileSize: 1 Kb (1624 bytes)
 
-## File: ic_menu_info_details.png
-
 FileName: ./res/drawable-ldpi/ic_menu_info_details.png
 FileType: OTHER
 FileChecksum: SHA1: f2bc2563f1fb8fe8ae52c8a12d36c1794b329850
@@ -743,8 +613,6 @@ FileChecksum: SHA256: c7e29ef2f886674e6bc46079fe2e4865b7f114a6aa971cf5a8b369ae55
 FileChecksum: MD5: efdfed17a9a32a20e182364fe4de9b06
 FileChecksum: SSDEEP: 24:VWyGem/Eke3OaYWqN/V8NKxuFA637S+7/6jvicVjT8P4TmTQGsL6tTgzjPPEMbIV:VWyvmcke3O7dxxl637L1wjT8P4OQGsmV
 FileSize: 1 Kb (1499 bytes)
-
-## File: ic_menu_preferences.png
 
 FileName: ./res/drawable-ldpi/ic_menu_preferences.png
 FileType: OTHER
@@ -754,8 +622,6 @@ FileChecksum: MD5: ea6b6f9dcd6d7fce5c375797c9c827d0
 FileChecksum: SSDEEP: 24:VWM7R7YG+Htc/9y8Ef8upZRLRe9nLJXpNNCpQ2/AulB3Q0J2zjPPEMbIhv:VWM7KEQf8+jcLVpupeujQ04XE9V
 FileSize: 1 Kb (1601 bytes)
 
-## File: ic_menu_refresh.png
-
 FileName: ./res/drawable-ldpi/ic_menu_refresh.png
 FileType: OTHER
 FileChecksum: SHA1: 2c0240d177c7978fed9141ce3f7434a46c4c2e5a
@@ -763,8 +629,6 @@ FileChecksum: SHA256: ac81e7bd2ecb7ec212b5cc00a100f98b6432b9b81d72ad379560fb4674
 FileChecksum: MD5: ebea52232254d0fa8bdcc8f21f4dc195
 FileChecksum: SSDEEP: 48:VWOOnZJEKepLvlwVFyNqUE/iBaPwKAwQzssXE9V:GJEKeRgFPUE/iYwYV
 FileSize: 1 Kb (1695 bytes)
-
-## File: ic_stat_blocking.png
 
 FileName: ./res/drawable-ldpi/ic_stat_blocking.png
 FileType: OTHER
@@ -774,8 +638,6 @@ FileChecksum: MD5: fdbd2c7be9b26224f02d99096e166153
 FileChecksum: SSDEEP: 12:6v/7ndMMF1uObyLanKqYi5L/lhh5vW20bJMFEtXv9XYeW2XN:od3dRnJC20t2EtVV9
 FileSize: 509 bytes
 
-## File: ic_stat_download.png
-
 FileName: ./res/drawable-ldpi/ic_stat_download.png
 FileType: OTHER
 FileChecksum: SHA1: 23ee9b27b87ede21db2a458362dd77dad4c268e3
@@ -783,8 +645,6 @@ FileChecksum: SHA256: cd6025871b97dcafb36023e4d798be1ed3c84e387f4e3b7f4371f87e27
 FileChecksum: MD5: c12fa992e12adadb88f94c7a5b218db6
 FileChecksum: SSDEEP: 6:6v/lhP/Iay4CmKxS9Xu84KzXCU3+moxZ/Kv+8GbcispLUxBMXVFNXt5Y8wKP/RWG:6v/7n9yJ0E8rgxh++BciOUPgX1ozAd
 FileSize: 413 bytes
-
-## File: ic_stat_warning.png
 
 FileName: ./res/drawable-ldpi/ic_stat_warning.png
 FileType: OTHER
@@ -794,8 +654,6 @@ FileChecksum: MD5: 80082bc90af58fd918ec0ecb3f49ace6
 FileChecksum: SSDEEP: 12:6v/7ni5NzKEpRDHEYquXRlVufqTHX8XethoBskoXh4GMBlHa/685T:oUzB3Lvh7TM8+LeaGMD6LT
 FileSize: 507 bytes
 
-## File: ic_stat_blocking.png
-
 FileName: ./res/drawable-ldpi-v11/ic_stat_blocking.png
 FileType: OTHER
 FileChecksum: SHA1: a53df75eb4a4ea1f8cc0ae642ab8d9aa6a6bfff7
@@ -803,8 +661,6 @@ FileChecksum: SHA256: 2c215a14107290cb9986953fb1e5056cf3f967364ec54c5dd401c0f8fc
 FileChecksum: MD5: c12785c99dd1ae665d707729ec7d4846
 FileChecksum: SSDEEP: 6:6v/lhPW/4ADuH51CIF7Eu9LS3Ndw3IYIdX0+9md0AH0pB/lVp:6v/7uwADuH51CaEzNGYnX0uqRIB9
 FileSize: 278 bytes
-
-## File: ic_stat_download.png
 
 FileName: ./res/drawable-ldpi-v11/ic_stat_download.png
 FileType: OTHER
@@ -814,8 +670,6 @@ FileChecksum: MD5: 3daf1ecd75591298fe334f9dae87f3a3
 FileChecksum: SSDEEP: 6:6v/lhPW/o9cUw0TxP0WL6REIaDttkoIllkup:6v/7ug6rgPrLWEJDtioIkc
 FileSize: 198 bytes
 
-## File: ic_stat_warning.png
-
 FileName: ./res/drawable-ldpi-v11/ic_stat_warning.png
 FileType: OTHER
 FileChecksum: SHA1: fbd26a301b7965e43c6da09e88339f5f4701eb5a
@@ -823,8 +677,6 @@ FileChecksum: SHA256: 527abe997a9bed40a62eee0ba59a7e175e89cd5b72e98d10a751d1630b
 FileChecksum: MD5: 6e5722b87c4843f33c9088e0e400f2c1
 FileChecksum: SSDEEP: 6:6v/lhPW/CK3mMxPwT71RcIIQ5KNsVa7VglM+mxMywjYUoCLljp:6v/7u7meY/bfxsWMZxMyU4iN
 FileSize: 259 bytes
-
-## File: ic_stat_blocking.png
 
 FileName: ./res/drawable-ldpi-v9/ic_stat_blocking.png
 FileType: OTHER
@@ -834,8 +686,6 @@ FileChecksum: MD5: 9f737c4fc59dcc192fcc89f5b9e84c20
 FileChecksum: SSDEEP: 6:6v/lhP7H2FLWp0EKd4NuiPCz7nlMMD4Ou2saNpJMe0PBbwezXL3c0GfIoJtjp:6v/7b2JW5IPnNDxu2r/JfOaerkZtN
 FileSize: 343 bytes
 
-## File: ic_stat_download.png
-
 FileName: ./res/drawable-ldpi-v9/ic_stat_download.png
 FileType: OTHER
 FileChecksum: SHA1: c824657f8286f602cda4c378644f5c51d8592a68
@@ -843,8 +693,6 @@ FileChecksum: SHA256: 22283995f6852ef75d8b25603c9c200ff24062aa77ebacfbe68e727e01
 FileChecksum: MD5: 279c06c32cbff53127d16c7bf5217502
 FileChecksum: SSDEEP: 6:6v/lhPbBn7IdE7Z6gonXs9XSPRKg5v2P3YgDZUUp:6v/7V7IEjgXUGKg5I3YgP
 FileSize: 237 bytes
-
-## File: ic_stat_warning.png
 
 FileName: ./res/drawable-ldpi-v9/ic_stat_warning.png
 FileType: OTHER
@@ -854,8 +702,6 @@ FileChecksum: MD5: 753ae53d3d04620b60b1e802451bd629
 FileChecksum: SSDEEP: 6:6v/lhP7JAvBKWwuR2ZPnJjNwen0FVdew11luO2YtSG52yUAZxe9BqHFt8cEdp:6v/78QQR2ZVNwe0FVnuOZoGcYeqHFrEz
 FileSize: 323 bytes
 
-## File: ic_launcher.png
-
 FileName: ./res/drawable-mdpi/ic_launcher.png
 FileType: OTHER
 FileChecksum: SHA1: 42584b23e8ea6ea8e152e842e5fca7d7695d24e4
@@ -863,8 +709,6 @@ FileChecksum: SHA256: e5148c7b749db854689c2e30c2c78179dd50bcc2f9593082b05ae771f2
 FileChecksum: MD5: 9948c262f0acdbdddfe3cba6d6196bd1
 FileChecksum: SSDEEP: 48:I389Ft8M1GKik9f0KhlAMNwkNu1k22PblZtO3Rinx2vjIRLIIouLtI:sYXGfk9s8lA/kY1SblZtMREx2vjIe6I
 FileSize: 3 Kb (3387 bytes)
-
-## File: ic_menu_help.png
 
 FileName: ./res/drawable-mdpi/ic_menu_help.png
 FileType: OTHER
@@ -874,8 +718,6 @@ FileChecksum: MD5: 6a7c9430b426c21bb0d37e8e7bb92920
 FileChecksum: SSDEEP: 24:UfOxEIvlArlTBOLlA9P4eLam3b92HfWDzjT6EM9w:Ufid8QlA9wunL9Eoj6ET
 FileSize: 951 bytes
 
-## File: ic_menu_info_details.png
-
 FileName: ./res/drawable-mdpi/ic_menu_info_details.png
 FileType: OTHER
 FileChecksum: SHA1: 59aa927d4ba6b7a448165f2c13876cbd3ded0e2b
@@ -883,8 +725,6 @@ FileChecksum: SHA256: a22b4832509ba168526cee239b7d502ad5c3ee5a82a21a32c69365955d
 FileChecksum: MD5: 9db8668c51c00120cf544b1e2e98e072
 FileChecksum: SSDEEP: 24:UfODZQy9d8fxBOQmY4U/TUoaV1X8vz/Yzm6rU8IKN7Tx4ztcYLf3zjhEMH:UfwP8ZBbm1U7UoaV1w/JPEhCtcYL3REq
 FileSize: 1 Kb (1237 bytes)
-
-## File: ic_menu_preferences.png
 
 FileName: ./res/drawable-mdpi/ic_menu_preferences.png
 FileType: OTHER
@@ -894,8 +734,6 @@ FileChecksum: MD5: 7caa5eec7fbe5ace5d8a74b8e487f670
 FileChecksum: SSDEEP: 24:UfOKbe1uUPb6rlRmXiyscyYonY2kL7QhzjhEMH:UfFe1nPbk/rl/YwYchREq
 FileSize: 1 Kb (1142 bytes)
 
-## File: ic_menu_refresh.png
-
 FileName: ./res/drawable-mdpi/ic_menu_refresh.png
 FileType: OTHER
 FileChecksum: SHA1: 8a919181214e95955843e28516a22e50bf5475db
@@ -903,8 +741,6 @@ FileChecksum: SHA256: 2e65a0d26b9690ac6a603de42ac99b8c3c6ca66207e33aa1ba2a4ab578
 FileChecksum: MD5: 7c848846df23659b070f0b03d95fdb9e
 FileChecksum: SSDEEP: 24:UfOMc/+zyFAeZEI0JYEcup7g+QShgJdGdRLKdvQHzjgnVuGJCoGlJmoVCOMzjhEq:UfVgPaI8Xci2GzL+vYz+QGJxGZCOMREq
 FileSize: 1 Kb (1278 bytes)
-
-## File: ic_stat_blocking.png
 
 FileName: ./res/drawable-mdpi/ic_stat_blocking.png
 FileType: OTHER
@@ -914,8 +750,6 @@ FileChecksum: MD5: e10c3b31b70a76d8794f86a628691714
 FileChecksum: SSDEEP: 12:6v/7yDsAOI4XRkbgjimlVW8C75br3p7qclSnFFUL86VBMy31rEcLTrJ3GRwzuMX:xKoced8orZVlS+xXMkpZPJMWX
 FileSize: 786 bytes
 
-## File: ic_stat_download.png
-
 FileName: ./res/drawable-mdpi/ic_stat_download.png
 FileType: OTHER
 FileChecksum: SHA1: 0e71ef393e5339dca21c8fb06d6362202d2673df
@@ -923,8 +757,6 @@ FileChecksum: SHA256: 3e4b84877b0ba9248ecebf1ef869b8c0e8d6db7d9539898164aaaf1eda
 FileChecksum: MD5: 212c749d8857619c6ab90b69c31f07f8
 FileChecksum: SSDEEP: 12:6v/7MiPSCVzwPCY2b+vA3e9u5mLkACZg75LP+gUfvBvpUuTLc:4SYz6zvAUAmL3NLP+Xj8
 FileSize: 582 bytes
-
-## File: ic_stat_warning.png
 
 FileName: ./res/drawable-mdpi/ic_stat_warning.png
 FileType: OTHER
@@ -934,8 +766,6 @@ FileChecksum: MD5: 8117f149450b0f996d5498da88665544
 FileChecksum: SSDEEP: 12:6v/7oTE+t9eGbq7A7UU2jlM7r9gmLJ9AjLZc0XZvjn4iSJYdebMKgEWq7:+UgpJF2xRJ94j74iSJNbLSw
 FileSize: 705 bytes
 
-## File: ic_stat_blocking.png
-
 FileName: ./res/drawable-mdpi-v11/ic_stat_blocking.png
 FileType: OTHER
 FileChecksum: SHA1: ee821c0cb99e0e3dccbd179d51382acdb3a18b26
@@ -943,8 +773,6 @@ FileChecksum: SHA256: 83b6e952f0be891f06e7a76a12489ae73c1e141d406b8199aa5f21527d
 FileChecksum: MD5: 57dc2ff285bfc36cae8debee097d72d0
 FileChecksum: SSDEEP: 6:6v/lhPZ6V+t9hs3RmxJn1HJL75e7dD6TQQi9BjZKTCCn1+w7GafmrIonp:6v/7Qct9hs3Yxp1HJhed2T6sCCnP7fId
 FileSize: 369 bytes
-
-## File: ic_stat_download.png
 
 FileName: ./res/drawable-mdpi-v11/ic_stat_download.png
 FileType: OTHER
@@ -954,8 +782,6 @@ FileChecksum: MD5: d8e0c80112427c2e1e5a39de0ad056fa
 FileChecksum: SSDEEP: 6:6v/lhPZEDAxdVqzKrjRFA+nmSHaa/cGIjXmxpp:6v/7t3gzKJm+WqTemt
 FileSize: 235 bytes
 
-## File: ic_stat_warning.png
-
 FileName: ./res/drawable-mdpi-v11/ic_stat_warning.png
 FileType: OTHER
 FileChecksum: SHA1: 5b7922aae6dc34aecbffa4971eae0e79f1e4282d
@@ -963,8 +789,6 @@ FileChecksum: SHA256: 0ef43ad376b2c7b15649328c0384d004d2a6f499750057498bfb5c84fa
 FileChecksum: MD5: b45590adc2e9caa5f1c1bb37ffffa044
 FileChecksum: SSDEEP: 6:6v/lhPZ9navqNWxSv8QQyUkoLwkNeqJDlrzUoOOsBx1WHrs3VsVpavLWoz+Ip:6v/7fnakWxSXQ7kMRNeKJrzUoOOsj1iO
 FileSize: 320 bytes
-
-## File: ic_stat_blocking.png
 
 FileName: ./res/drawable-mdpi-v9/ic_stat_blocking.png
 FileType: OTHER
@@ -974,8 +798,6 @@ FileChecksum: MD5: 62ca5600b2b1b48c9eeb9e7f7d1fd5ca
 FileChecksum: SSDEEP: 12:6v/7Sy3oLW6Dxp6OZXn0T6D2+hQ5Y92dWWtgKTDfX2dYhPlWiWI6c1:L8oLW6DSwkclQGAdhgKTDfX2dIlZN1
 FileSize: 482 bytes
 
-## File: ic_stat_download.png
-
 FileName: ./res/drawable-mdpi-v9/ic_stat_download.png
 FileType: OTHER
 FileChecksum: SHA1: 78c57d9c8f9a2d4df7c4d762ee498b34d3534dc3
@@ -983,8 +805,6 @@ FileChecksum: SHA256: 7b77da581fc605c99afa34ebfb96d72a8f511b38c9e1d9a470912fb56b
 FileChecksum: MD5: 92c7a1654e7af8c9199393dc628a3657
 FileChecksum: SSDEEP: 6:6v/lhPGtyWA7NU6OM6zO1yukVZJJh12bmfe9E7dFK5op:6v/7Sy/7T6zO4BV3QqfeaF1
 FileSize: 270 bytes
-
-## File: ic_stat_warning.png
 
 FileName: ./res/drawable-mdpi-v9/ic_stat_warning.png
 FileType: OTHER
@@ -994,8 +814,6 @@ FileChecksum: MD5: 81ae9c7fa12808adbc89a0331b4089ef
 FileChecksum: SSDEEP: 12:6v/7SygrqMQ1JOBwfLjow7mDoGhZBZu7gGgvtI/94YUhQ9Dqc:L/rozUw5GTBZuMK/ajeX
 FileSize: 400 bytes
 
-## File: ic_launcher.png
-
 FileName: ./res/drawable-xhdpi/ic_launcher.png
 FileType: OTHER
 FileChecksum: SHA1: 78156b16b44484e8380d25195b969e9f0c9f018e
@@ -1003,8 +821,6 @@ FileChecksum: SHA256: 9381de0c81ca29cef0356400c4731dea0cbdd49d78eb8353f99a793f98
 FileChecksum: MD5: 51c5ab3ce822a27ab74d879e67148811
 FileChecksum: SSDEEP: 384:+XE05wZM36ioKGloKozXwMHMK95Pw4yW3gA0QqEfPANj8vHD:U35kZ9KGlG/PxffVHf4R6D
 FileSize: 16 Kb (16829 bytes)
-
-## File: ic_menu_help.png
 
 FileName: ./res/drawable-xhdpi/ic_menu_help.png
 FileType: OTHER
@@ -1014,8 +830,6 @@ FileChecksum: MD5: 31202c2c5abba309e7ec38d520e338bd
 FileChecksum: SSDEEP: 48:HfFCF7TgLzPT8grIPUqIPK+cdJJGWRTU1K1jCB26k2CmErS:MaL7lrIcxPK+AfGWRTSKikjVS
 FileSize: 1 Kb (1840 bytes)
 
-## File: ic_menu_info_details.png
-
 FileName: ./res/drawable-xhdpi/ic_menu_info_details.png
 FileType: OTHER
 FileChecksum: SHA1: 862a5a35432248d213e6f6d34c35df0e53d0c1ae
@@ -1023,8 +837,6 @@ FileChecksum: SHA256: 189afaf4fe970c068e4e81f44cd5fa510b733e9290ce0c7bb2d27bba29
 FileChecksum: MD5: 2b8362db1de8568d0f25f108a5f75b1a
 FileChecksum: SSDEEP: 48:Hfzr8WId42WHNmQ+QkYKNt59aqWJl6S+ijCWVCM/q4J+OfcLmGlCmErS:v8Wi42WHNmShKNt5gx7DVRdU9mGIVS
 FileSize: 2 Kb (2763 bytes)
-
-## File: ic_menu_preferences.png
 
 FileName: ./res/drawable-xhdpi/ic_menu_preferences.png
 FileType: OTHER
@@ -1034,8 +846,6 @@ FileChecksum: MD5: 558a801ad802b318e18f1435745dab2f
 FileChecksum: SSDEEP: 48:Hf+H5WhgxQYyBTZf1EwfsaxDkfxwWXKAaMMh/KZqFSMGRcqTCmErS:AK1xUiDkfSGUFfGS7VS
 FileSize: 2 Kb (2507 bytes)
 
-## File: ic_menu_refresh.png
-
 FileName: ./res/drawable-xhdpi/ic_menu_refresh.png
 FileType: OTHER
 FileChecksum: SHA1: 17f7de649b19a39f52f95a249efb202054518fd5
@@ -1043,8 +853,6 @@ FileChecksum: SHA256: f1b36670d7a93e7dc7e86f7d55eeb7a79948154f0ad1e4aebfaceb4c4e
 FileChecksum: MD5: ce0bb65c390385155828aa401d9ddbdb
 FileChecksum: SSDEEP: 48:HfcigzZISsqiPnuSqJdL4oCfx89x+tQd/yQnN1WA06vQmsCsZCmErS:Eigzxsqi2ndzC58f+CjnNgA06vjDJVS
 FileSize: 2 Kb (2857 bytes)
-
-## File: ic_stat_blocking.png
 
 FileName: ./res/drawable-xhdpi/ic_stat_blocking.png
 FileType: OTHER
@@ -1054,8 +862,6 @@ FileChecksum: MD5: 42f7780bee2be31d812fd963d506428d
 FileChecksum: SSDEEP: 48:qz9TOUJkN0DVSwfFW7a4zzuHkKsOsw76BxBgz4ujryHC2cn:qz9TOUJkiVbFW7Xz7bOsQLjHyHEn
 FileSize: 2 Kb (2221 bytes)
 
-## File: ic_stat_download.png
-
 FileName: ./res/drawable-xhdpi/ic_stat_download.png
 FileType: OTHER
 FileChecksum: SHA1: 1cafaf05cc6d606e9e33e892c2f938906a512054
@@ -1063,8 +869,6 @@ FileChecksum: SHA256: a529b9de6d7d8ede6ed45b39cb27478bf26fc8327d7109a26a5626c42d
 FileChecksum: MD5: e6da66e56dfd7d144b893dc424a28108
 FileChecksum: SSDEEP: 24:RPiCtJ45kU3fbStSPrbvcpDOvl+GsvSrgnoXHND3j:RP3J45kyfutaVlyvSrgnodDT
 FileSize: 1 Kb (1297 bytes)
-
-## File: ic_stat_warning.png
 
 FileName: ./res/drawable-xhdpi/ic_stat_warning.png
 FileType: OTHER
@@ -1074,8 +878,6 @@ FileChecksum: MD5: 56f70cd5c56e90ca9aadaa6bb2c8a6da
 FileChecksum: SSDEEP: 24:s5WfiqNswb8uDz1zYBh6xwifHjH1hIxJDLu4EVfqL8a/tzfLBM6di4nlkkmKJEK3:sUfiQTbOBQn1hEVUyL8a1zOEnCkOKh1/
 FileSize: 1 Kb (1511 bytes)
 
-## File: ic_stat_blocking.png
-
 FileName: ./res/drawable-xhdpi-v11/ic_stat_blocking.png
 FileType: OTHER
 FileChecksum: SHA1: 625b95ea28a689b767382d763becded2d6fed2f2
@@ -1083,8 +885,6 @@ FileChecksum: SHA256: d7814ae9ebf6ff3f06ce40cf11d174a51ff54ad28d49e6eed2e52eec65
 FileChecksum: MD5: fe05ba924bfeab2ec6fdec4953665ed5
 FileChecksum: SSDEEP: 12:6v/7A/4klGSBM2uvibregyXG8DPn2062qhnsxPQ1bahdXwXFjYh9SzMzgioNBP0w:5Akl9ZM2D9hnok6YRUCioN9xL
 FileSize: 926 bytes
-
-## File: ic_stat_download.png
 
 FileName: ./res/drawable-xhdpi-v11/ic_stat_download.png
 FileType: OTHER
@@ -1094,8 +894,6 @@ FileChecksum: MD5: 4abe502718d2967270bfa913c41cb3f0
 FileChecksum: SSDEEP: 6:6v/lhPFIOLl3y6AWn5zblZksvRiovz/OvW0Xtroe9YHepmei0bs+saiPAf2ISm0J:6v/79IOFy6AWntMs3vz/+3VYHeiXpUHE
 FileSize: 380 bytes
 
-## File: ic_stat_warning.png
-
 FileName: ./res/drawable-xhdpi-v11/ic_stat_warning.png
 FileType: OTHER
 FileChecksum: SHA1: 8b67811547b464afb7b53c7ba6491f15b85f69ce
@@ -1103,8 +901,6 @@ FileChecksum: SHA256: dc8443d8cbb07ec842ab7d79b189ef00ffd01273c63ec42402e1561a90
 FileChecksum: MD5: 1de0b81915a72ce9ef8983fb0ae64576
 FileChecksum: SSDEEP: 12:6v/7hh1IuWgt6JzLblAUBDm8I0BWhx0oRRCK9tLLmUjXgZMzV62cBQd4L+n2V:CjnXt6VFPs50onxtOUU66Am+ns
 FileSize: 571 bytes
-
-## File: ic_stat_blocking.png
 
 FileName: ./res/drawable-xhdpi-v9/ic_stat_blocking.png
 FileType: OTHER
@@ -1114,8 +910,6 @@ FileChecksum: MD5: f4f4367e3c9ab385bf9ab91d832cd791
 FileChecksum: SSDEEP: 24:xCQ+k1A5UKASs0S5mDDPcQGh/LGBCUumXDoVd:xj65Z4SDPcvFGBCff
 FileSize: 1 Kb (1090 bytes)
 
-## File: ic_stat_download.png
-
 FileName: ./res/drawable-xhdpi-v9/ic_stat_download.png
 FileType: OTHER
 FileChecksum: SHA1: 2e026c323cd3e16bbde93ef43336a9d08358e401
@@ -1123,8 +917,6 @@ FileChecksum: SHA256: 33c88d879161fcb5ee72a057c5c5468782584421f544ef8f428755faab
 FileChecksum: MD5: b96e78e80d5c4cacb9b5f1a666d0d685
 FileChecksum: SSDEEP: 12:6v/71gLGsypD/g6Zl1p+JHRGelh63lkgz:rLKD/gUwPlh61Fz
 FileSize: 398 bytes
-
-## File: ic_stat_warning.png
 
 FileName: ./res/drawable-xhdpi-v9/ic_stat_warning.png
 FileType: OTHER
@@ -1134,8 +926,6 @@ FileChecksum: MD5: 068da9942270f6ab2d935c3c8202f76b
 FileChecksum: SSDEEP: 12:6v/7fUO84FlaSQvecnzXoAIKk/iKp+mk74WN4B1w0QzLsaCHPPBdkvI26zDq/k6s:SrFlrmeczX9IKk/i/maYykaQ3ovI2HYb
 FileSize: 728 bytes
 
-## File: about.xml
-
 FileName: ./res/layout/about.xml
 FileType: OTHER
 FileChecksum: SHA1: 9f5a03c36a36fb898116e01434305cf8aaacdd13
@@ -1143,8 +933,6 @@ FileChecksum: SHA256: 1449554efe2bee9c7a020a53be53193fd91ecdf334f411820bf1f8f4bf
 FileChecksum: MD5: 06d7cb35f2d2f5f9250f7c28112a9ea5
 FileChecksum: SSDEEP: 12:TMHdbRxAyvASpBMHvgX+uHvgfY+GsvgnAMvgf6AMcymJMLVMARU3vgX+avgf6AA2:2dVzAVFD3y46VgP1eXgr
 FileSize: 564 bytes
-
-## File: configuration.xml
 
 FileName: ./res/layout/configuration.xml
 FileType: OTHER
@@ -1154,8 +942,6 @@ FileChecksum: MD5: 2c7e7a0298299ed46f61544ea61a9d5c
 FileChecksum: SSDEEP: 12:TMHdLSAyvASpBMHvgnAsHvgf6AsHcymJsHBylHtHiVMAR6vgX+Kvgf6AHsvgX+KG:2dkAHy46VclEl/G6+oVM9Ko1zaJ
 FileSize: 1 Kb (1187 bytes)
 
-## File: crashreport.xml
-
 FileName: ./res/layout/crashreport.xml
 FileType: OTHER
 FileChecksum: SHA1: 1b248e1d2fb18759d4a3f8e164ab7e46584168cd
@@ -1163,8 +949,6 @@ FileChecksum: SHA256: 09cf9344f62e69c4643ab5a9edb95cca4c421b72619b69c17c76b319fa
 FileChecksum: MD5: c590ab4d11bb2087d409657047b7d41e
 FileChecksum: SSDEEP: 24:2dVzAVFLl3y4+Vb1dufVb1CuMXC1T1iIFp7IFrTN1Ngr:cl4+V4VCXxI6E
 FileSize: 1 Kb (1719 bytes)
-
-## File: notif_hidden.xml
 
 FileName: ./res/layout/notif_hidden.xml
 FileType: OTHER
@@ -1174,8 +958,6 @@ FileChecksum: MD5: 3a351d01281a3b3ad05b904a2d03f9eb
 FileChecksum: SSDEEP: 6:TMVBdLEXKaAyiUzA7WpBMxBvg5J+/mxBvgW+6fYsxBEzyRkJsxBruolb0i1Ky:TMHdLSAyvASpBMHvgX+uHvgf6AsHcymk
 FileSize: 275 bytes
 
-## File: preferences.xml
-
 FileName: ./res/layout/preferences.xml
 FileType: OTHER
 FileChecksum: SHA1: 07607d58e386a05c4231ba66253e0cd59d4aa119
@@ -1183,8 +965,6 @@ FileChecksum: SHA256: 96195a31a5739c8e95c84417250788af32a196f81be4a3051472d532f0
 FileChecksum: MD5: f2939a1a3b06f4ffa7740d3ee8f23e23
 FileChecksum: SSDEEP: 12:TMHd3RAyvASpBi8vgX+hvgfY+hcymJNinCxR12vgX+hvgf6AXhs54VMAAcmx/vgU:2djpEFqy4J+Es4V9sEh8dtK+EFwh
 FileSize: 1 Kb (1315 bytes)
-
-## File: proxyconfiguration.xml
 
 FileName: ./res/layout/proxyconfiguration.xml
 FileType: OTHER
@@ -1194,8 +974,6 @@ FileChecksum: MD5: 1911ef1487dbf0f3aadf6bea4ebb8ab2
 FileChecksum: SSDEEP: 12:TMHdLSAyvASpBMHvgnAsHvgf6AsHcymJsHBylHtHiVMAR6vgX+Kvgf6AHsvgX+Kz:2dkAHy46VclEl/G6LGL7M9ze7sEJ
 FileSize: 1 Kb (1247 bytes)
 
-## File: menu_preferences.xml
-
 FileName: ./res/menu/menu_preferences.xml
 FileType: OTHER
 FileChecksum: SHA1: a17dbbfcc7ada32e2191ef1d51f0c2af8484dab9
@@ -1203,8 +981,6 @@ FileChecksum: SHA256: 7dc8028d3b8351e65a2d8db32c6c5cab6cb7c511ff0bbf2f116c10c3cb
 FileChecksum: MD5: b5381883799b31c108225d73198cf7e6
 FileChecksum: SSDEEP: 12:TMHdr1EAyvASpBpGPhfES1gIl3sPhNvES1Dl3IKPhf/s1ZIpn:2dZm4hMSUh6SvIch3qIpn
 FileSize: 647 bytes
-
-## File: info.html
 
 FileName: ./res/raw/info.html
 FileType: SOURCE
@@ -1214,8 +990,6 @@ FileChecksum: MD5: e6e2182721757b4fdf4c4d10faeda636
 FileChecksum: SSDEEP: 6:nYpqEsXJ46vGWCXPpUB5elCXPpUB7je0zIlCXPpoAIFI92:Ni6vGb/pUB5//pUBWUR/poASI92
 FileSize: 317 bytes
 
-## File: legal.html
-
 FileName: ./res/raw/legal.html
 FileType: SOURCE
 FileChecksum: SHA1: 6f6530757709a1513d2af3d92de2807cdea27556
@@ -1223,8 +997,6 @@ FileChecksum: SHA256: 35d2e0d1c39575b6e3259aa027707b7d45b555b3709d47cc45e44157cf
 FileChecksum: MD5: 6bb669bbc2af3e80375c0bfa85230db5
 FileChecksum: SSDEEP: 24:pzPHGHOhBDANqQBkAOKmiaPLIrPmRP1kZ2tePPmt+BUPAMIqCP1K58P5+W:NqGB6qQGx1v2eXkZ42mtzlQ/
 FileSize: 1 Kb (1334 bytes)
-
-## File: proxysettings.html
 
 FileName: ./res/raw/proxysettings.html
 FileType: SOURCE
@@ -1234,8 +1006,6 @@ FileChecksum: MD5: 5fcdd1457bcb9056898081039e11babc
 FileChecksum: SSDEEP: 12:QfCiY4+GicoAro5IeQCwSmLRpF9kpvLYj9pUBIuWEPp4zI:Ii2Je/wt0pvsBpsW2p4E
 FileSize: 716 bytes
 
-## File: proxysettings_old.html
-
 FileName: ./res/raw/proxysettings_old.html
 FileType: SOURCE
 FileChecksum: SHA1: 4fba4f52adead9d260334edd8cc06f1cf9ccaa9a
@@ -1243,8 +1013,6 @@ FileChecksum: SHA256: c25d19af1adfa1999381e63d94529a9449ad317cfdf3d5251e526ef7ea
 FileChecksum: MD5: 30d941b78eadc1758d132c5cf8da31ca
 FileChecksum: SSDEEP: 12:hQiNwCnvFewyzxpFkPpUBsbWjNFeMFoG9Gvb:hXbvFevupH6NFeM8vb
 FileSize: 476 bytes
-
-## File: info.html
 
 FileName: ./res/raw-ar/info.html
 FileType: SOURCE
@@ -1254,8 +1022,6 @@ FileChecksum: MD5: a015cd656e32a20b07e8cc6f85b4ced2
 FileChecksum: SSDEEP: 12:niusi9q8b/pUB5s/pUB+n8i9I/poAx8B6y2:9T9l/pF/prI/poAx8T2
 FileSize: 442 bytes
 
-## File: legal.html
-
 FileName: ./res/raw-ar/legal.html
 FileType: SOURCE
 FileChecksum: SHA1: 18244c42a3198952c47a8373510bbe39f2653472
@@ -1263,8 +1029,6 @@ FileChecksum: SHA256: 96e084a8118df15e04e7d6e09cfb07d1045006cb89b68c348241e10c8d
 FileChecksum: MD5: d147643a80a366b68170640db9b20b5f
 FileChecksum: SSDEEP: 24:/7PHGHOAIxr6mmM3jcNqQBAIbNvVKmiaPLIrDa6PmRP19vtePPm6aeBUPAMoxqCb:7qIxrnz3jSqQ3bNvV1v2+6eX9F2m6aT8
 FileSize: 1 Kb (1508 bytes)
-
-## File: proxysettings.html
 
 FileName: ./res/raw-ar/proxysettings.html
 FileType: SOURCE
@@ -1274,8 +1038,6 @@ FileChecksum: MD5: 8489a9b4b2272c04fd037e9da7096b3b
 FileChecksum: SSDEEP: 12:ewPc+MogU/0+2TIdYe0vJKKL0KAy80v3+ogNsmNQmRQ0mSss9TQF7IpUBI30i/p1:v5bP2cEJKOAyNOoNPsQFMph/p4E
 FileSize: 888 bytes
 
-## File: proxysettings_old.html
-
 FileName: ./res/raw-ar/proxysettings_old.html
 FileType: SOURCE
 FileChecksum: SHA1: b2eaf65f7c41b21635fce994db93cf253fde6b25
@@ -1283,8 +1045,6 @@ FileChecksum: SHA256: 2a8f9b9dab7b92389eb67e56462346ba91a07ce43c07b2b2ad1d249962
 FileChecksum: MD5: 87bad768f2f0ef687435bd1263d066b2
 FileChecksum: SSDEEP: 12:8geb91rS0ICEDd2tQogXtuK/pUBBZDVEeNCG80CaY9hgvZW:K9HbEDd2tQoituK/p+EeQZxqE
 FileSize: 667 bytes
-
-## File: info.html
 
 FileName: ./res/raw-cs/info.html
 FileType: SOURCE
@@ -1294,8 +1054,6 @@ FileChecksum: MD5: ea6ba18f528cabf0103d5b1d84893df6
 FileChecksum: SSDEEP: 6:gId+s/MtyhG7JIGWCXPpUB5Zh22QxCXPpUB7je0zwxCXPpoAjGMCy:gId+sZ4uGb/pUB5T/pUBWUn/poAqMCy
 FileSize: 331 bytes
 
-## File: legal.html
-
 FileName: ./res/raw-cs/legal.html
 FileType: SOURCE
 FileChecksum: SHA1: df3688917c76f2f20b3aa790197e6ef743415bdf
@@ -1303,8 +1061,6 @@ FileChecksum: SHA256: 897cc39a3b349f34966b3e598ed333694f04d8b42f7b94ecbd6ac29dbe
 FileChecksum: MD5: 5a91ba954e2215937e07f586aece3d42
 FileChecksum: SSDEEP: 24:ET9FPHGHOR++HpdNqQBGAj3NKmiaPLIrpmRP1m+tePPmIBUPAMOqCP1y58P5+W:YTq2RJXqQwa91v2IXP2md/Q3
 FileSize: 1 Kb (1335 bytes)
-
-## File: proxysettings.html
 
 FileName: ./res/raw-cs/proxysettings.html
 FileType: SOURCE
@@ -1314,8 +1070,6 @@ FileChecksum: MD5: 2bb3c36c6af636e781cc7c8f489dde80
 FileChecksum: SSDEEP: 24:WtFtHMK1LaO4mu0osMGGwbvXIe2pNp4E:EFtsyjP7Mnw7h2/4E
 FileSize: 788 bytes
 
-## File: proxysettings_old.html
-
 FileName: ./res/raw-cs/proxysettings_old.html
 FileType: SOURCE
 FileChecksum: SHA1: 0d1395ae97d139a7bf36aeed37897305a74fce74
@@ -1323,8 +1077,6 @@ FileChecksum: SHA256: b1502b697379f3c212201febbd7adefb7e0cb75888cdfa3eccf49e9e76
 FileChecksum: MD5: 9ea33149f8e31febea6495c709c09c3a
 FileChecksum: SSDEEP: 12:rB3I1x49Q6mZq4exHQapUBInJS13z6wWx49QymFAL9xB7RFfXXBW:rwxWmZq1wapdnQhQx2O25RFfXX8
 FileSize: 501 bytes
-
-## File: info.html
 
 FileName: ./res/raw-de/info.html
 FileType: SOURCE
@@ -1334,8 +1086,6 @@ FileChecksum: MD5: f872c5b8d16de7de0422cd2cfda8b570
 FileChecksum: SSDEEP: 6:TNvLuUQsESJ4qYLGWCXPpUB5elCXPpUB7tkRBprW1IlCXPpoA/f2:hLTQgb/pUB5//pUBhkn5oR/poA/f2
 FileSize: 340 bytes
 
-## File: legal.html
-
 FileName: ./res/raw-de/legal.html
 FileType: SOURCE
 FileChecksum: SHA1: eb721171f52ff582dbd4ed1fbeb50347b620f441
@@ -1343,8 +1093,6 @@ FileChecksum: SHA256: 24cc4b7b36416750b8bd01b2b2da52fec804ecd0346eec7174986d1bfc
 FileChecksum: MD5: 6d461fda9277ea459cd2f8ee43bc75f1
 FileChecksum: SSDEEP: 24:E/UPHGHOaaSAcNqQBgtAD47KmiaPLIrImRP1/Z2tePPm6+BUPAMbqCP1b58P5jW:E/wqPDqQCd1v2zX/Z42m6zWQj
 FileSize: 1 Kb (1317 bytes)
-
-## File: proxysettings.html
 
 FileName: ./res/raw-de/proxysettings.html
 FileType: SOURCE
@@ -1354,8 +1102,6 @@ FileChecksum: MD5: 16785bc166efd32078a768a8647d47e7
 FileChecksum: SSDEEP: 12:2/2M1IF0CzwXyCpd8RJGzlsa9ABdxQ/xA2pUBIOBmfPp4zI:rM1IFBzwxAJglstSG2pwYHp4E
 FileSize: 833 bytes
 
-## File: proxysettings_old.html
-
 FileName: ./res/raw-de/proxysettings_old.html
 FileType: SOURCE
 FileChecksum: SHA1: 4097cca51db4d651f41122bbe255d02159678557
@@ -1363,8 +1109,6 @@ FileChecksum: SHA256: 902feb5dde350d4efb62ccfb6651a36736487b93b77ed2ae36db0b40c1
 FileChecksum: MD5: 8f9044c117a11039999263a4062d1abe
 FileChecksum: SSDEEP: 12:rmJf6/y/GxZa49nRZUPXKpUBZKzV2DxOZ906L:rmJYy/Gra+RyKpRzWPa
 FileSize: 489 bytes
-
-## File: info.html
 
 FileName: ./res/raw-el/info.html
 FileType: SOURCE
@@ -1374,8 +1118,6 @@ FileChecksum: MD5: 70eb2568030bacb3294c18272eb4407e
 FileChecksum: SSDEEP: 12:hVzfrYX2au4Kf2wGb/pUB5Ig07/pUBMw+9207/poAPIZR:hXP0/p3V/pTV/poAPIb
 FileSize: 479 bytes
 
-## File: legal.html
-
 FileName: ./res/raw-el/legal.html
 FileType: SOURCE
 FileChecksum: SHA1: 1e4984dc89fdfebe4cf8e5b377a8a7b1f84ab787
@@ -1383,8 +1125,6 @@ FileChecksum: SHA256: 6578ee06c6d91c277bffac49d1b7504ae7bc04c3b0b8602876ba3dd4b2
 FileChecksum: MD5: cd3b61dafcc7b9c9460e5966cdbd7755
 FileChecksum: SSDEEP: 24:431kqjrPHGHOFbueF+642GNqQBIL7TKKmiaPLIrFlTPmRP1btePPmOBUPAMQqCPx:43tqibueUqQqLXK1v2FleXZ2mDtQT
 FileSize: 1 Kb (1723 bytes)
-
-## File: proxysettings.html
 
 FileName: ./res/raw-el/proxysettings.html
 FileType: SOURCE
@@ -1394,8 +1134,6 @@ FileChecksum: MD5: 1e3c0476a911f96455c79439d029887c
 FileChecksum: SSDEEP: 24:nAV7dsYIitTbcrbGa9qkYv3xYahtxtx4wipJrEwp4E:nAV5moTQrh8veasJrh4E
 FileSize: 1 Kb (1080 bytes)
 
-## File: proxysettings_old.html
-
 FileName: ./res/raw-el/proxysettings_old.html
 FileType: SOURCE
 FileChecksum: SHA1: 173bcadb83460c177edfee702eb7c8be61f385c8
@@ -1403,8 +1141,6 @@ FileChecksum: SHA256: f10822d2db742ebd0cac3e13a508e96234963c39290b7d58e64f12086e
 FileChecksum: MD5: 1cd2b57657990c27cdbd504fa1048a94
 FileChecksum: SSDEEP: 12:gb5fvshZUPu7C54cDrjxi09qxqSbuMYqqmpUBu9M9V5C7JFQS5koVQo9/brICLW:gF3ufctTqsCTBpBWfQjQYyuLq
 FileSize: 875 bytes
-
-## File: info.html
 
 FileName: ./res/raw-es/info.html
 FileType: SOURCE
@@ -1414,8 +1150,6 @@ FileChecksum: MD5: c551ab08a16de652b504820ff0d7c036
 FileChecksum: SSDEEP: 6:2g7lv32cxJIGWCXPpUB5cw02CXPpUB71bK9g02CXPpoAWQey:plf25Gb/pUB5cw07/pUB5bx07/poAW3y
 FileSize: 369 bytes
 
-## File: legal.html
-
 FileName: ./res/raw-es/legal.html
 FileType: SOURCE
 FileChecksum: SHA1: bdf8726de79636deac642c67bbbc577727d0d94b
@@ -1423,8 +1157,6 @@ FileChecksum: SHA256: 5a313a9ddb5d02e7de41ced25e891e1fd75a496ccee9166b7c2ba1fb39
 FileChecksum: MD5: 63bb3d27a9de001964f111ad0b41e801
 FileChecksum: SSDEEP: 24:bd3nmCBxPHGHOufB+QNqQBmAqimKmiaPLIrsmRP1LZ2tePPmm+BUPAM3qCP1H58s:b1tHqD82qQgHim1v23XLZ42mmz6QL
 FileSize: 1 Kb (1370 bytes)
-
-## File: proxysettings.html
 
 FileName: ./res/raw-es/proxysettings.html
 FileType: SOURCE
@@ -1434,8 +1166,6 @@ FileChecksum: MD5: e3f0dac17685bad86279c8267c61c9e1
 FileChecksum: SSDEEP: 12:c3DsZwSvINWxekuAU0Ab9EJdimJAjy9lpD2wVboLo990L4P/pUBIyS5p4zI:czsuOhruUdifjkDv7P/plp4E
 FileSize: 816 bytes
 
-## File: proxysettings_old.html
-
 FileName: ./res/raw-es/proxysettings_old.html
 FileType: SOURCE
 FileChecksum: SHA1: 00034cdc35618f16e3ff8e8f18713d42f4d2b910
@@ -1443,8 +1173,6 @@ FileChecksum: SHA256: 3435d68a92f4fe5ad716c194affe5915566860874674f27f339045ea23
 FileChecksum: MD5: 85ad15547c663c5de451d469bed6009b
 FileChecksum: SSDEEP: 12:+Bw15AmICKJjFpUBNQ0RI1Wo9II3icn7:QWAmICKtFp6Pmjig
 FileSize: 506 bytes
-
-## File: info.html
 
 FileName: ./res/raw-fr/info.html
 FileType: SOURCE
@@ -1454,8 +1182,6 @@ FileChecksum: MD5: e6e2182721757b4fdf4c4d10faeda636
 FileChecksum: SSDEEP: 6:nYpqEsXJ46vGWCXPpUB5elCXPpUB7je0zIlCXPpoAIFI92:Ni6vGb/pUB5//pUBWUR/poASI92
 FileSize: 317 bytes
 
-## File: legal.html
-
 FileName: ./res/raw-fr/legal.html
 FileType: SOURCE
 FileChecksum: SHA1: 6f6530757709a1513d2af3d92de2807cdea27556
@@ -1463,8 +1189,6 @@ FileChecksum: SHA256: 35d2e0d1c39575b6e3259aa027707b7d45b555b3709d47cc45e44157cf
 FileChecksum: MD5: 6bb669bbc2af3e80375c0bfa85230db5
 FileChecksum: SSDEEP: 24:pzPHGHOhBDANqQBkAOKmiaPLIrPmRP1kZ2tePPmt+BUPAMIqCP1K58P5+W:NqGB6qQGx1v2eXkZ42mtzlQ/
 FileSize: 1 Kb (1334 bytes)
-
-## File: proxysettings.html
 
 FileName: ./res/raw-fr/proxysettings.html
 FileType: SOURCE
@@ -1474,8 +1198,6 @@ FileChecksum: MD5: 5fcdd1457bcb9056898081039e11babc
 FileChecksum: SSDEEP: 12:QfCiY4+GicoAro5IeQCwSmLRpF9kpvLYj9pUBIuWEPp4zI:Ii2Je/wt0pvsBpsW2p4E
 FileSize: 716 bytes
 
-## File: proxysettings_old.html
-
 FileName: ./res/raw-fr/proxysettings_old.html
 FileType: SOURCE
 FileChecksum: SHA1: 4fba4f52adead9d260334edd8cc06f1cf9ccaa9a
@@ -1483,8 +1205,6 @@ FileChecksum: SHA256: c25d19af1adfa1999381e63d94529a9449ad317cfdf3d5251e526ef7ea
 FileChecksum: MD5: 30d941b78eadc1758d132c5cf8da31ca
 FileChecksum: SSDEEP: 12:hQiNwCnvFewyzxpFkPpUBsbWjNFeMFoG9Gvb:hXbvFevupH6NFeM8vb
 FileSize: 476 bytes
-
-## File: info.html
 
 FileName: ./res/raw-he/info.html
 FileType: SOURCE
@@ -1494,8 +1214,6 @@ FileChecksum: MD5: 59d2732a0268d79b6c2a1e1d4ee8f828
 FileChecksum: SSDEEP: 6:CIdcpI8ueyI9KtNVeyxJIGWCXPpUB54x09mxCXPpUB7fDggc8MmxCXPpoAy33IZb:CIYvyIItNVDMGb/pUB5r/pUBzDch/pou
 FileSize: 380 bytes
 
-## File: legal.html
-
 FileName: ./res/raw-he/legal.html
 FileType: SOURCE
 FileChecksum: SHA1: 9468438ec1946c7cbe9cc0a4c02f597664f2043c
@@ -1503,8 +1221,6 @@ FileChecksum: SHA256: 1fcc1280a5bc44509ee3d377ba6bda37c6cf56b883478408cce72f285c
 FileChecksum: MD5: 223984d871759be57816f83584fc2f5c
 FileChecksum: SSDEEP: 24:dp3PHGHO5FDXNqQBsAsKmiaPLIrNmRP1Y+tn9PPmSBUPAMWqCP1o58P5SW:Tqux9qQ6Z1v2cXNnBmXnQV
 FileSize: 1 Kb (1421 bytes)
-
-## File: proxysettings.html
 
 FileName: ./res/raw-he/proxysettings.html
 FileType: SOURCE
@@ -1514,8 +1230,6 @@ FileChecksum: MD5: 9e919439fb6e47cdd4844dda8d03baa6
 FileChecksum: SSDEEP: 24:zhN7IkM07iozz6mqGeg6WxhpissilupVp4E:Z6mDevQiH4E
 FileSize: 859 bytes
 
-## File: proxysettings_old.html
-
 FileName: ./res/raw-he/proxysettings_old.html
 FileType: SOURCE
 FileChecksum: SHA1: 3a7699e83ae792a2ca619eef27d2087664e2862c
@@ -1523,8 +1237,6 @@ FileChecksum: SHA256: 5464f39dac371f24e3f76d1370ca70c3ef48de17989a9022eaa17e7a97
 FileChecksum: MD5: e80484a4ad8c81aa2cc7a30c775f7b83
 FileChecksum: SSDEEP: 12:mtPGRdFy1qb5J20ydyAa9Az5u9pUB6UCtEBFsS0y7RyT9TOY:mthW5Jya9M5mpOCtELs+IOY
 FileSize: 560 bytes
-
-## File: info.html
 
 FileName: ./res/raw-hr/info.html
 FileType: SOURCE
@@ -1534,8 +1246,6 @@ FileChecksum: MD5: c16bbc1d9145d4190c6010b9a3ad108c
 FileChecksum: SSDEEP: 6:Ys6ijzXeI4yi7JV+WCXPpUB5QoLD02CXPpUB7qDY02CXPpoASE4t:YsHnFw+b/pUB5H07/pUBuDY07/poAQt
 FileSize: 348 bytes
 
-## File: legal.html
-
 FileName: ./res/raw-hr/legal.html
 FileType: SOURCE
 FileChecksum: SHA1: 1ed894bf109f122334be252ce7ea8dc8d03610db
@@ -1543,8 +1253,6 @@ FileChecksum: SHA256: b8786da0d51578935b4cc7cda6fc552fea444c7b07874b15048ed05ad9
 FileChecksum: MD5: 53862cd77098ff23d61e45efa009bc8d
 FileChecksum: SSDEEP: 24:XEPPHGHONBUaXfNqQBsIAw+HKmiaPLIrqYPmRP1nNtePPmLgBUPAMkjqCP1nO58x:XEHq6PXVqQaIJI1v2qYeXnD2mLFkeQnH
 FileSize: 1 Kb (1336 bytes)
-
-## File: proxysettings.html
 
 FileName: ./res/raw-hr/proxysettings.html
 FileType: SOURCE
@@ -1554,8 +1262,6 @@ FileChecksum: MD5: 7c7f906560d9eb8b379c141d56edc43d
 FileChecksum: SSDEEP: 12:gPD8cl0YSyb0yZLo0DQFvyg0qIfK0+RqbDPXN0SywXo9rp0QTX4HPpUBIUfp4zI:kyJyZLgyXAqP4wY6SIvpufp4E
 FileSize: 760 bytes
 
-## File: proxysettings_old.html
-
 FileName: ./res/raw-hr/proxysettings_old.html
 FileType: SOURCE
 FileChecksum: SHA1: 2d32d57f13d628e8a9538d5bba726670a5cee166
@@ -1563,8 +1269,6 @@ FileChecksum: SHA256: 1ec3d4d7d35b5768e0b2d009ae78f821016ffd903aa5f904d78bdf1d10
 FileChecksum: MD5: 7591a6d629761044d4f152ac286de0ba
 FileChecksum: SSDEEP: 12:ZVEpOe2B4sxAd4PVNrESpUBFLEUsxt59vX48s:0+diSpUOX48s
 FileSize: 483 bytes
-
-## File: info.html
 
 FileName: ./res/raw-hu/info.html
 FileType: SOURCE
@@ -1574,8 +1278,6 @@ FileChecksum: MD5: 30aa1d3bee91c3fa4ef6a38a9cc92e9d
 FileChecksum: SSDEEP: 6:coAqh7XKmtLK4XUyxJDGvUGWCXPpUB51b6olCXPpUB7IlCXPpoA1CU8:coAqh7X95KReGb/pUB5N6x/pUBN/poA2
 FileSize: 340 bytes
 
-## File: legal.html
-
 FileName: ./res/raw-hu/legal.html
 FileType: SOURCE
 FileChecksum: SHA1: d51aded116a7d044acc62ff94becfc378453af2b
@@ -1583,8 +1285,6 @@ FileChecksum: SHA256: d7c75b92f6a90cb854ca0fd7f7b27e5f02d226f8f280e7ff77466102b4
 FileChecksum: MD5: 67b8a6081bf83aa1b15b4a4850ee2ac0
 FileChecksum: SSDEEP: 24:BCLPHGHOAr5MDb2NqQBFNvSKmiaPLIrSmRP11Z2tePPmw+BUPAMZqCP1R58P5lW:YqJWDboqQLU1v2NX1Z42mwzYQH
 FileSize: 1 Kb (1367 bytes)
-
-## File: proxysettings.html
 
 FileName: ./res/raw-hu/proxysettings.html
 FileType: SOURCE
@@ -1594,8 +1294,6 @@ FileChecksum: MD5: f543b838eb47bec8d781a3c388aa7c82
 FileChecksum: SSDEEP: 24:8WJQeLs/yGH3GWMA4dAfo4XCWSyu92pul5Pp4kS:8WI/yGCqfyW+2ul5x4r
 FileSize: 875 bytes
 
-## File: proxysettings_old.html
-
 FileName: ./res/raw-hu/proxysettings_old.html
 FileType: SOURCE
 FileChecksum: SHA1: c3c43fa60f23867d2ec5b40cef41ac4dc7ef8ddc
@@ -1603,8 +1301,6 @@ FileChecksum: SHA256: d2793e9d3435285c1d83feab08cdb6cc8abd3d34843f9579aa31d2b1ec
 FileChecksum: MD5: 1348a90f80084a048f7850116d6e2902
 FileChecksum: SSDEEP: 12:oZK+oWaCwjSe0V7nUOHAxIeUj5pUB0K/jMW2ISeQfLzv9zWKQ:oMkei7nUdOe45pobX21eKFWKQ
 FileSize: 555 bytes
-
-## File: info.html
 
 FileName: ./res/raw-it/info.html
 FileType: SOURCE
@@ -1614,8 +1310,6 @@ FileChecksum: MD5: 561c41221af3eb52da79511d779d784f
 FileChecksum: SSDEEP: 6:4EZyhqpxJIGWCXPpUB5GxCXPpUB7je0zwxCXPpoAS0I/:Xc/Gb/pUB51/pUBWUn/poA2
 FileSize: 323 bytes
 
-## File: legal.html
-
 FileName: ./res/raw-it/legal.html
 FileType: SOURCE
 FileChecksum: SHA1: 899dcf15206068e5a546340e65d7b6753cc1ca25
@@ -1623,8 +1317,6 @@ FileChecksum: SHA256: f6bc4a309cd5742ebed6257dc273e83af8b5e9eff2c6ece065b59cffab
 FileChecksum: MD5: 2889d0cf13f2ce7d181078a5bd704878
 FileChecksum: SSDEEP: 24:M9uPHGHOMtW8DeoAPNqQBaAqhKmiaPLIrymRP16tePPmfBUPAM1qCP1x58P5dW:PqbtsqQAHh1v2tX02m+sQ1
 FileSize: 1 Kb (1379 bytes)
-
-## File: proxysettings.html
 
 FileName: ./res/raw-it/proxysettings.html
 FileType: SOURCE
@@ -1634,8 +1326,6 @@ FileChecksum: MD5: c9869e70618e5a1da6d457e23b96b40a
 FileChecksum: SSDEEP: 12:Au+QvZ00Ii6Yt0+ANqIg0eQLiv0zEDsoO0EKDjWRMg9scQgs9pUBIyIE70NZPp4E:AVCdoEeTCnWMncQxp4IPp4E
 FileSize: 769 bytes
 
-## File: proxysettings_old.html
-
 FileName: ./res/raw-it/proxysettings_old.html
 FileType: SOURCE
 FileChecksum: SHA1: 2df8a3c7fd654edcb98c69de597883388a667d00
@@ -1643,8 +1333,6 @@ FileChecksum: SHA256: 35ebc1ad26690e0413014d10562d876dcd4d8bcda09c05c5c85a5e0248
 FileChecksum: MD5: 3ef0ab209fbae83dbafc615f2740472b
 FileChecksum: SSDEEP: 12:WRzy6QiEFDE5MxcOpppUBh0sWtSL9TaovE:WRzy+5MJPpW0sWEpaf
 FileSize: 531 bytes
-
-## File: info.html
 
 FileName: ./res/raw-ja/info.html
 FileType: SOURCE
@@ -1654,8 +1342,6 @@ FileChecksum: MD5: d4366d6baf693183d065a18104da6b4f
 FileChecksum: SSDEEP: 6:cPKxJ+QMxm/6NWQxhGGWCXPpUB5dz55olCXPpUB7uuGaolCXPpoAGauVw5ix2I0:cPiMi6NWaZb/pUB5dN5x/pUBvGk/poAX
 FileSize: 382 bytes
 
-## File: legal.html
-
 FileName: ./res/raw-ja/legal.html
 FileType: SOURCE
 FileChecksum: SHA1: d62827a68c6a8eb2de2411bd4db64f402f226267
@@ -1663,8 +1349,6 @@ FileChecksum: SHA256: 3e65d8771323e48d3ee9d0552a677e1ed0a02cdf721e21f4f82eca9b2d
 FileChecksum: MD5: 50e15ad7989ca2739d3e26e8ba52ace6
 FileChecksum: SSDEEP: 24:FYshUPHGHOmC3DDe8MWNqQB8N8ATSdKmiaPLIrHmRP1QZ2tePPmh+BUPAMEqCP1z:FRwqe3DJMIqQaygSd1v2GXQZ42mhzZQz
 FileSize: 1 Kb (1448 bytes)
-
-## File: proxysettings.html
 
 FileName: ./res/raw-ja/proxysettings.html
 FileType: SOURCE
@@ -1674,8 +1358,6 @@ FileChecksum: MD5: b7eb08366ba5907e8299fd44eb3c1685
 FileChecksum: SSDEEP: 12:cPSWLHJJgK0nGhvk56PkCtIuVUy7098ZMLplOmA2pUBI7Dp4zWn:cPSIJg5GSMDn7Ypli2pNp4i
 FileSize: 843 bytes
 
-## File: proxysettings_old.html
-
 FileName: ./res/raw-ja/proxysettings_old.html
 FileType: SOURCE
 FileChecksum: SHA1: 96926ed768056f4384f659b1e5dc20ce5e24f6ed
@@ -1683,8 +1365,6 @@ FileChecksum: SHA256: 1991818b91b77b68a3a1d676b221408a056514385ed67c0f5c39c7a635
 FileChecksum: MD5: 14fc42c8815ad8e53ebd6ea1cec29e62
 FileChecksum: SSDEEP: 12:/PKx8CSW6VkbIPuXOJsEMC4GpUB46M2pN0hFuMKIPuXOlj9A7NGPC5S5:A8ZW6VRbFMmpI6jblGkMS5
 FileSize: 589 bytes
-
-## File: info.html
 
 FileName: ./res/raw-ko/info.html
 FileType: SOURCE
@@ -1694,8 +1374,6 @@ FileChecksum: MD5: e6e2182721757b4fdf4c4d10faeda636
 FileChecksum: SSDEEP: 6:nYpqEsXJ46vGWCXPpUB5elCXPpUB7je0zIlCXPpoAIFI92:Ni6vGb/pUB5//pUBWUR/poASI92
 FileSize: 317 bytes
 
-## File: legal.html
-
 FileName: ./res/raw-ko/legal.html
 FileType: SOURCE
 FileChecksum: SHA1: 6f6530757709a1513d2af3d92de2807cdea27556
@@ -1703,8 +1381,6 @@ FileChecksum: SHA256: 35d2e0d1c39575b6e3259aa027707b7d45b555b3709d47cc45e44157cf
 FileChecksum: MD5: 6bb669bbc2af3e80375c0bfa85230db5
 FileChecksum: SSDEEP: 24:pzPHGHOhBDANqQBkAOKmiaPLIrPmRP1kZ2tePPmt+BUPAMIqCP1K58P5+W:NqGB6qQGx1v2eXkZ42mtzlQ/
 FileSize: 1 Kb (1334 bytes)
-
-## File: proxysettings.html
 
 FileName: ./res/raw-ko/proxysettings.html
 FileType: SOURCE
@@ -1714,8 +1390,6 @@ FileChecksum: MD5: 5fcdd1457bcb9056898081039e11babc
 FileChecksum: SSDEEP: 12:QfCiY4+GicoAro5IeQCwSmLRpF9kpvLYj9pUBIuWEPp4zI:Ii2Je/wt0pvsBpsW2p4E
 FileSize: 716 bytes
 
-## File: proxysettings_old.html
-
 FileName: ./res/raw-ko/proxysettings_old.html
 FileType: SOURCE
 FileChecksum: SHA1: 4fba4f52adead9d260334edd8cc06f1cf9ccaa9a
@@ -1723,8 +1397,6 @@ FileChecksum: SHA256: c25d19af1adfa1999381e63d94529a9449ad317cfdf3d5251e526ef7ea
 FileChecksum: MD5: 30d941b78eadc1758d132c5cf8da31ca
 FileChecksum: SSDEEP: 12:hQiNwCnvFewyzxpFkPpUBsbWjNFeMFoG9Gvb:hXbvFevupH6NFeM8vb
 FileSize: 476 bytes
-
-## File: info.html
 
 FileName: ./res/raw-lt/info.html
 FileType: SOURCE
@@ -1734,8 +1406,6 @@ FileChecksum: MD5: 10865c6c8e6acec959d0466bbc5ccf72
 FileChecksum: SSDEEP: 6:Uc8nhIkwxJKxJZdvGWCXPpUB59KPY02CXPpUB7hKb02CXPpoAzUysB:UjVVdvGb/pUB5f07/pUBtY07/poAzM
 FileSize: 317 bytes
 
-## File: legal.html
-
 FileName: ./res/raw-lt/legal.html
 FileType: SOURCE
 FileChecksum: SHA1: b76b22f2bcdfbcd99cc25c2cd241c1185b7a70b3
@@ -1743,8 +1413,6 @@ FileChecksum: SHA256: 25494f494a4b8371c024e3bbe5ac16f5661ab59b2ece153e45ddce76b9
 FileChecksum: MD5: b936fba426294272bf003029c55f3648
 FileChecksum: SSDEEP: 24:WPHGHOMJ2jlJNqQBiUA47KmiaPLIrUPmRP1StePPmHBUPAM1qCP1p58P55W:uqzJ6lDqQhd1v2UeXc2mWsQJ
 FileSize: 1 Kb (1360 bytes)
-
-## File: proxysettings.html
 
 FileName: ./res/raw-lt/proxysettings.html
 FileType: SOURCE
@@ -1754,8 +1422,6 @@ FileChecksum: MD5: f9f6402fc5e1c48bc6b5b17a15b7f46a
 FileChecksum: SSDEEP: 12:n83iZV61eVr0fhnFPYXKX806BjZDg0Lvajxl0zJZ+8S0Oa+r9AbSm5A2pUBIGl9P:SiZV8eVuFPLgb5wiiHw3e2pk/p4E
 FileSize: 847 bytes
 
-## File: proxysettings_old.html
-
 FileName: ./res/raw-lt/proxysettings_old.html
 FileType: SOURCE
 FileChecksum: SHA1: db28b6a3f804967d28cdce418eba98b35a0362f4
@@ -1763,8 +1429,6 @@ FileChecksum: SHA256: 77891599e79e66a0e4a73661922a2e9a48527acb795c02a1064508ac44
 FileChecksum: MD5: afcf0cb0f1df19eca124f3a9226a63c0
 FileChecksum: SSDEEP: 6:15TudKU1MIerxATDv0CcKslmwMnvXPpUB74nLKyFXDWudKqDyuk3Mf6c9Ve70mt:1SerxlCmlmwMn3pUBobXDw3MCc9A7zt
 FileSize: 486 bytes
-
-## File: info.html
 
 FileName: ./res/raw-nb/info.html
 FileType: SOURCE
@@ -1774,8 +1438,6 @@ FileChecksum: MD5: 6dc018af9ecb870b63dff3d7aa5880ec
 FileChecksum: SSDEEP: 6:dgcipn+iyjpJIGWCXPpUB5jr18exCXPpUB7je0zwxCXPpoAOKt92:dkn+nIGb/pUB5n1y/pUBWUn/poAOKt92
 FileSize: 317 bytes
 
-## File: legal.html
-
 FileName: ./res/raw-nb/legal.html
 FileType: SOURCE
 FileChecksum: SHA1: 294f9eb2d8a9025ae4b265b7a2c32b2269bbc35b
@@ -1783,8 +1445,6 @@ FileChecksum: SHA256: 97baf7cd05dc24fba1083c066071b4289550257a78436a78637646a19e
 FileChecksum: MD5: a4f988f46a561895bf3207ea8c1d4b9d
 FileChecksum: SSDEEP: 24:ds/PHGHOgBDANqQBkAG/wKmiaPLIrKmRP1Z+tePPmdBUPAMpqCP1L58P5FW:W3qpB6qQGdY1v21Xe2msoQV
 FileSize: 1 Kb (1335 bytes)
-
-## File: proxysettings.html
 
 FileName: ./res/raw-nb/proxysettings.html
 FileType: SOURCE
@@ -1794,8 +1454,6 @@ FileChecksum: MD5: 2bc62795d06de8889bad1990f6b051a0
 FileChecksum: SSDEEP: 12:QfCiY4+GicoAro5IeQCwSmLRpF9kpvLY5A2pUBIdC/p4zI:Ii2Je/wt0pvse2p7C/p4E
 FileSize: 718 bytes
 
-## File: proxysettings_old.html
-
 FileName: ./res/raw-nb/proxysettings_old.html
 FileType: SOURCE
 FileChecksum: SHA1: dea9d8b3a744898761c2670a024c5951c68111e4
@@ -1803,8 +1461,6 @@ FileChecksum: SHA256: de2291c2a19afbffe8bf663eb69dd46cfb250e6291c998a24eae7ecfbc
 FileChecksum: MD5: 1319b85d6c1aa125a016fedf8cb3ad01
 FileChecksum: SSDEEP: 12:NQvkkO4iHqhspUB11wx7BxO5+396Cx/I:NOkt4iHqeprxFG+wm/I
 FileSize: 473 bytes
-
-## File: info.html
 
 FileName: ./res/raw-nl/info.html
 FileType: SOURCE
@@ -1814,8 +1470,6 @@ FileChecksum: MD5: 7838f7d6b180d590d74cdb9a01ce2335
 FileChecksum: SSDEEP: 6:TbxO+DxJIGWCXPpUB5qWCxCXPpUB7zwzU3wxCXPpoAMKt92:/xOLGb/pUB5jZ/pUBOU3n/poAp92
 FileSize: 315 bytes
 
-## File: legal.html
-
 FileName: ./res/raw-nl/legal.html
 FileType: SOURCE
 FileChecksum: SHA1: 689b7066abd3f660e7a29bdf3c3c1e89fcd4214f
@@ -1823,8 +1477,6 @@ FileChecksum: SHA256: 7142a56f9597f4e5a0de33e9bf9b63db00eabbcb0376a45431e8a52888
 FileChecksum: MD5: 14b2f18440eb4b91f67a9a1867c9d83a
 FileChecksum: SSDEEP: 24:0mPPHGHOvGewLJvPNqQBkAIKmiaPLIrkYPmRP13NtePPmzgBUPAMejqCP13O58Pj:fHqCG7VvFqQGp1v2kYeX3D2mzFeeQ3kI
 FileSize: 1 Kb (1366 bytes)
-
-## File: proxysettings.html
 
 FileName: ./res/raw-nl/proxysettings.html
 FileType: SOURCE
@@ -1834,8 +1486,6 @@ FileChecksum: MD5: af0b17112917baef2a8c40ca9051de69
 FileChecksum: SSDEEP: 12:qRtu/mWnS0ahkTAzNBNdJ0+AHWNl0aQwQc0RnruWpXJdK0LS9Q/vLnwpcpUBI2Nb:qREKhk2dkYDwLnamHzNvTwpcpgbPp4E
 FileSize: 773 bytes
 
-## File: proxysettings_old.html
-
 FileName: ./res/raw-nl/proxysettings_old.html
 FileType: SOURCE
 FileChecksum: SHA1: 3824cfba84f3cb2ce3de0d209f7ae30e5dd81bc0
@@ -1843,8 +1493,6 @@ FileChecksum: SHA256: bbf6a2687edca5b7ef7ecf5a709fba37e0c81ffb1cf43ca784a965e848
 FileChecksum: MD5: e4f83777e51e809ccc30bb8c2405d4b3
 FileChecksum: SSDEEP: 12:WTMXKHiauYm2aAAG3/pUBMwWeyXwFSI29BKDsL:WTFIYFpvteyXqFLDE
 FileSize: 540 bytes
-
-## File: info.html
 
 FileName: ./res/raw-pl/info.html
 FileType: SOURCE
@@ -1854,8 +1502,6 @@ FileChecksum: MD5: fa6ada67ec2a1b4c2f7dc9f3888f73d6
 FileChecksum: SSDEEP: 6:BrOdWVizeJIGWCXPpUB5ZcFlCXPpUB7r8vwGlCXPpoAh2u92:BCdYiz5Gb/pUB5L/pUB8e/poAh2W2
 FileSize: 339 bytes
 
-## File: legal.html
-
 FileName: ./res/raw-pl/legal.html
 FileType: SOURCE
 FileChecksum: SHA1: 15d0631de7b759c3f0c6a6352164eee9fb11c824
@@ -1863,8 +1509,6 @@ FileChecksum: SHA256: 925db509ca291992e218e90392dacca7b2ebbe0912065f8683d5782176
 FileChecksum: MD5: 6fe45174452145d33c9b7a0de1b3311e
 FileChecksum: SSDEEP: 24:wUOjEPPHGHOd+E3iJ/nivNqQB2ABnnOxKKmiaPLIrDmRP1yZ2tePPm7+BUPAM8qY:wUUEHqQB/qQgsP1v2SXyZ42m7zxQh
 FileSize: 1 Kb (1333 bytes)
-
-## File: proxysettings.html
 
 FileName: ./res/raw-pl/proxysettings.html
 FileType: SOURCE
@@ -1874,8 +1518,6 @@ FileChecksum: MD5: 5f017e6d9a9b2f1bd07baf6ab15586ed
 FileChecksum: SSDEEP: 12:4i0eI9uVRu6lDlJMDZ7RrhiMA079XZpwXo9r8vLTX45A2pUBItbHA2p4zI:e5kbrvMNRrUMAc9JpwY8vXIe2pv/p4E
 FileSize: 782 bytes
 
-## File: proxysettings_old.html
-
 FileName: ./res/raw-pl/proxysettings_old.html
 FileType: SOURCE
 FileChecksum: SHA1: 0212c2cbe34be204e722a11d5a44ab7911e889ca
@@ -1883,8 +1525,6 @@ FileChecksum: SHA256: 72a1f23bc083307c1155e4b5ced7143e1b79be84b9184fbe5e62076488
 FileChecksum: MD5: 36d8942697eaa3d2d8aaa78fcdac894e
 FileChecksum: SSDEEP: 12:3WXWu1s4NOVJOSiYc2pUBpRKEh7YF59xCX4fGGBW:mGD4NOVJ9m2p2KEhUFFCX4fJ8
 FileSize: 532 bytes
-
-## File: info.html
 
 FileName: ./res/raw-pt/info.html
 FileType: SOURCE
@@ -1894,8 +1534,6 @@ FileChecksum: MD5: 7c0d09dc48b6f4641f0f4be2620bf76a
 FileChecksum: SSDEEP: 6:KWgxDzzK79AFS9JIGWCXPpUB5NB9202CXPpUB7je0z202CXPpoAjf25y:lCz+LwGb/pUB5NBg07/pUBWU207/poAH
 FileSize: 351 bytes
 
-## File: legal.html
-
 FileName: ./res/raw-pt/legal.html
 FileType: SOURCE
 FileChecksum: SHA1: a123bd70d5b21cf113be908cc85fb2338b49726d
@@ -1903,8 +1541,6 @@ FileChecksum: SHA256: 5abdc7c66da24b9a40bab23db0aa5407eb9c9ddc876eda369a3bf32afb
 FileChecksum: MD5: 45751195495915a3a38d77db928b4429
 FileChecksum: SSDEEP: 24:GEogPHGHOoS7TdNqQBmvHQXKmiaPLIr0PmRP1wtePPm5BUPAMRqCP1v58P55W:/Fq1mXqQgvHm1v20eXC2m4QQd
 FileSize: 1 Kb (1374 bytes)
-
-## File: proxysettings.html
 
 FileName: ./res/raw-pt/proxysettings.html
 FileType: SOURCE
@@ -1914,8 +1550,6 @@ FileChecksum: MD5: bb880954c6c5c871fbfb11f5f3e41403
 FileChecksum: SSDEEP: 12:cp/0zyOYDQBb00IJQlAw7AFds80+AEUl0cWpAhhC0JzCU9HIn0Ttoxcu9sW02pUN:cB4oDCbbApXUspAVzCwIOnlW02p0p4E
 FileSize: 772 bytes
 
-## File: proxysettings_old.html
-
 FileName: ./res/raw-pt/proxysettings_old.html
 FileType: SOURCE
 FileChecksum: SHA1: 6216bbf7a84368186f71d349b80a5c97e7ae119b
@@ -1923,8 +1557,6 @@ FileChecksum: SHA256: 07f2dc07d705d1a8377f5ab1580490892cdea4deafc2830c45db77b072
 FileChecksum: MD5: 51248e04315d1c126a4f48094a360573
 FileChecksum: SSDEEP: 6:kFzkxLFe+Q1yAWwt2QkP8YGKKTQyMAEGT8Nk4/pUB74sv97XKyVQXQkPoqG9VOx0:+zkxQ+yyAg8hBc5pUBj+oqG9cOc5vE
 FileSize: 533 bytes
-
-## File: info.html
 
 FileName: ./res/raw-ru/info.html
 FileType: SOURCE
@@ -1934,8 +1566,6 @@ FileChecksum: MD5: bee83a3133d4373790aac3fdfbccb752
 FileChecksum: SSDEEP: 12:kVHYbdKGb/pUB5J7V5qW7/pUBwyq/poALKqFRXB0:pK0/pU73z/pFr/poALKqFRXy
 FileSize: 452 bytes
 
-## File: legal.html
-
 FileName: ./res/raw-ru/legal.html
 FileType: SOURCE
 FileChecksum: SHA1: 000ee643ac73f30637977d9d7b77c06495f0878b
@@ -1943,8 +1573,6 @@ FileChecksum: SHA256: 61c7962679aed1e761c85d21e4ed8dfc49df3e7960cdaa7d5a12773360
 FileChecksum: MD5: 9a8a9e85ee35fe4d43096b4c483a0882
 FileChecksum: SSDEEP: 24:r9gEQIfrAUPHGHOzUIZNqQB1QoGAQSCKmiaPLIrlmRP13W+tePPmoBUPAM+qCP1h:PDAwqOUyqQoR0C1v2kX3/2m9vQ3x
 FileSize: 1 Kb (1607 bytes)
-
-## File: proxysettings.html
 
 FileName: ./res/raw-ru/proxysettings.html
 FileType: SOURCE
@@ -1954,8 +1582,6 @@ FileChecksum: MD5: 108a5b3ec4d1c62f49d5f687659891ec
 FileChecksum: SSDEEP: 24:8WK0XKd/djelJBS8l4Flxl9p4s9pxngDW:dKEKbjwvG425
 FileSize: 1 Kb (1139 bytes)
 
-## File: proxysettings_old.html
-
 FileName: ./res/raw-ru/proxysettings_old.html
 FileType: SOURCE
 FileChecksum: SHA1: 7ac62a289b27f1e4d8b1d15d742cf964babb57b4
@@ -1963,8 +1589,6 @@ FileChecksum: SHA256: d00f32386f5a0b8fcc90e331e420454700f3768b36cc08cdd9f3f42034
 FileChecksum: MD5: 3276fb602e54b6a870a68d4ea99a049a
 FileChecksum: SSDEEP: 24:QZLjCPFRTVFjrHnEnPpYs32xRTJGof+CGE:QNCdTF3HnEnxYsgjnN
 FileSize: 795 bytes
-
-## File: info.html
 
 FileName: ./res/raw-sk/info.html
 FileType: SOURCE
@@ -1974,8 +1598,6 @@ FileChecksum: MD5: 92308dbe330148034f2899b514ab62b0
 FileChecksum: SSDEEP: 6:u0mOCJ8RsIGWCXPpUB5Zh22lWG92CXPpUB7j7fPHQxCXPpoA+mA8:vrRHGb/pUB5kW7/pUBD3n/poA+mt
 FileSize: 343 bytes
 
-## File: legal.html
-
 FileName: ./res/raw-sk/legal.html
 FileType: SOURCE
 FileChecksum: SHA1: 88c44987f233c5eef3e009ddfd614de256276ff9
@@ -1983,8 +1605,6 @@ FileChecksum: SHA256: 2fcfb184f183a355c6d4dec3cf58728117e59095d7d7f7fae70285a3cb
 FileChecksum: MD5: a0998790a3ac30c73e9f8aec0e8e74ae
 FileChecksum: SSDEEP: 24:ERViPcPHGH4u+reVNqQB5RA7xKmiaPLIr8mRP1qtePPmXBUPAMfqCP1h58P5vW:4ViQqhPqQPRq1v2HXE2mmCQ5
 FileSize: 1 Kb (1374 bytes)
-
-## File: proxysettings.html
 
 FileName: ./res/raw-sk/proxysettings.html
 FileType: SOURCE
@@ -1994,8 +1614,6 @@ FileChecksum: MD5: 9eeaa6d08705da8fbbaa91a5831177c8
 FileChecksum: SSDEEP: 12:EReUnVFWaQzqE+yw5WKjyW8LKUWUo1PWXxVWMSXo9i7/GAPpUBIkp4zI:EReQkqE+BQLRge67/GQpCp4E
 FileSize: 782 bytes
 
-## File: proxysettings_old.html
-
 FileName: ./res/raw-sk/proxysettings_old.html
 FileType: SOURCE
 FileChecksum: SHA1: 920b040655871ad90ddd7e19e5b2725b60597cd6
@@ -2003,8 +1621,6 @@ FileChecksum: SHA256: d984583117679e109d844b212c986d986b6b0c447290aedbb5a93c128e
 FileChecksum: MD5: 0b7ae0b241b6902ae75ed9e8b584158b
 FileChecksum: SSDEEP: 6:gfnXfrLwEBRcAMiJaxrfEggpUB7cfTVKACWCBRAhdG9VSOYWRcE0zBeBKp:anXJMiJ0fKpUBkTVKdqhA9cOVcEK8BW
 FileSize: 477 bytes
-
-## File: info.html
 
 FileName: ./res/raw-sr/info.html
 FileType: SOURCE
@@ -2014,8 +1630,6 @@ FileChecksum: MD5: f602dbdd49b68b7ba23823789b7da0bf
 FileChecksum: SSDEEP: 12:o05Nyk8pYAlUb/pUB5RV5807/pUBSh107/poALKyvd:ckc2/p835/pLU/poALKyl
 FileSize: 442 bytes
 
-## File: legal.html
-
 FileName: ./res/raw-sr/legal.html
 FileType: SOURCE
 FileChecksum: SHA1: 071fc6efcb57a43bceb0d6b85e790dfc9addb45b
@@ -2023,8 +1637,6 @@ FileChecksum: SHA256: 7cf43e0b3fe58ad107f42535498ea1ccb77ae424a89ef6e90d64971559
 FileChecksum: MD5: ed4d6675777addc52ec0f5866c0d4e7f
 FileChecksum: SSDEEP: 48:gDqYqFZJbOFwJFqQeTt9f1v25eX352mzrQ39:gEygoJyk2mz6
 FileSize: 1 Kb (1544 bytes)
-
-## File: proxysettings.html
 
 FileName: ./res/raw-sr/proxysettings.html
 FileType: SOURCE
@@ -2034,8 +1646,6 @@ FileChecksum: MD5: 4070de510dfb18624e787915428d169d
 FileChecksum: SSDEEP: 24:/tFln4L5bv2E8KoYOTs3P1u3HntfTe2phYhJPp4E:/p4L5bv2E8bNY3Pc3s2yhJx4E
 FileSize: 1 Kb (1085 bytes)
 
-## File: proxysettings_old.html
-
 FileName: ./res/raw-sr/proxysettings_old.html
 FileType: SOURCE
 FileChecksum: SHA1: 18b7c6538d5c4ab1bcfcfc968d9b2d8c59585e91
@@ -2043,8 +1653,6 @@ FileChecksum: SHA256: 8640502641e66b5315e8a39a6e1e9fa133662386fae0e59c112bda0e88
 FileChecksum: MD5: 5d7176d5fa0caaec9c9296559b5e3d3a
 FileChecksum: SSDEEP: 12:YEj9LX6WHQMXrfk6Lmky9Ac1jU1pUBgBK20alERzHQMXrfkj9lDFfToGsL:9j9LXzHJDkemkymmup9BKzRzHJDknRfu
 FileSize: 711 bytes
-
-## File: info.html
 
 FileName: ./res/raw-sv/info.html
 FileType: SOURCE
@@ -2054,8 +1662,6 @@ FileChecksum: MD5: e6e2182721757b4fdf4c4d10faeda636
 FileChecksum: SSDEEP: 6:nYpqEsXJ46vGWCXPpUB5elCXPpUB7je0zIlCXPpoAIFI92:Ni6vGb/pUB5//pUBWUR/poASI92
 FileSize: 317 bytes
 
-## File: legal.html
-
 FileName: ./res/raw-sv/legal.html
 FileType: SOURCE
 FileChecksum: SHA1: 6f6530757709a1513d2af3d92de2807cdea27556
@@ -2063,8 +1669,6 @@ FileChecksum: SHA256: 35d2e0d1c39575b6e3259aa027707b7d45b555b3709d47cc45e44157cf
 FileChecksum: MD5: 6bb669bbc2af3e80375c0bfa85230db5
 FileChecksum: SSDEEP: 24:pzPHGHOhBDANqQBkAOKmiaPLIrPmRP1kZ2tePPmt+BUPAMIqCP1K58P5+W:NqGB6qQGx1v2eXkZ42mtzlQ/
 FileSize: 1 Kb (1334 bytes)
-
-## File: proxysettings.html
 
 FileName: ./res/raw-sv/proxysettings.html
 FileType: SOURCE
@@ -2074,8 +1678,6 @@ FileChecksum: MD5: 5fcdd1457bcb9056898081039e11babc
 FileChecksum: SSDEEP: 12:QfCiY4+GicoAro5IeQCwSmLRpF9kpvLYj9pUBIuWEPp4zI:Ii2Je/wt0pvsBpsW2p4E
 FileSize: 716 bytes
 
-## File: proxysettings_old.html
-
 FileName: ./res/raw-sv/proxysettings_old.html
 FileType: SOURCE
 FileChecksum: SHA1: 4fba4f52adead9d260334edd8cc06f1cf9ccaa9a
@@ -2083,8 +1685,6 @@ FileChecksum: SHA256: c25d19af1adfa1999381e63d94529a9449ad317cfdf3d5251e526ef7ea
 FileChecksum: MD5: 30d941b78eadc1758d132c5cf8da31ca
 FileChecksum: SSDEEP: 12:hQiNwCnvFewyzxpFkPpUBsbWjNFeMFoG9Gvb:hXbvFevupH6NFeM8vb
 FileSize: 476 bytes
-
-## File: info.html
 
 FileName: ./res/raw-th/info.html
 FileType: SOURCE
@@ -2094,8 +1694,6 @@ FileChecksum: MD5: c83eb22ef57787dd19a714382dc23d75
 FileChecksum: SSDEEP: 12:kVnGoLuw+1wdErbYJqdMjb/pUB5v/pUBkQ4nx/poAnwl7ilzy:kFGoaw+1wSrbYWM//pk/pCC/poAu7i9y
 FileSize: 534 bytes
 
-## File: legal.html
-
 FileName: ./res/raw-th/legal.html
 FileType: SOURCE
 FileChecksum: SHA1: 728b701b789c15d4f92b7132d782d9acf849e8df
@@ -2103,8 +1701,6 @@ FileChecksum: SHA256: f7eb96f96370f70907e3c3c475e54fbb01e48965c3f58d470bd45afe0b
 FileChecksum: MD5: ead5e1883f8a86bff3e67d158a4cd048
 FileChecksum: SSDEEP: 24:8U1hIdqPHGHOATM/BDANqQBkAOKmiaPLIrPmRP1kZ2tePPmt+BUPAMIqCP1K58Pt:8UAyqQ/B6qQGx1v2eXkZ42mtzlQ/
 FileSize: 1 Kb (1421 bytes)
-
-## File: proxysettings.html
 
 FileName: ./res/raw-th/proxysettings.html
 FileType: SOURCE
@@ -2114,8 +1710,6 @@ FileChecksum: MD5: 16571dcd7d8f1c79a69d16d46adad924
 FileChecksum: SSDEEP: 24:mGw1s0DSBeD7LmQcTj6YGw1XZGw1KVcWyXEEG0UXE4vZF6JvPpzLU0Gwxyp4E:mGR0DSBeSQbYGcGMWTtZFQvxzNG14E
 FileSize: 1 Kb (1475 bytes)
 
-## File: proxysettings_old.html
-
 FileName: ./res/raw-th/proxysettings_old.html
 FileType: SOURCE
 FileChecksum: SHA1: 4fba4f52adead9d260334edd8cc06f1cf9ccaa9a
@@ -2123,8 +1717,6 @@ FileChecksum: SHA256: c25d19af1adfa1999381e63d94529a9449ad317cfdf3d5251e526ef7ea
 FileChecksum: MD5: 30d941b78eadc1758d132c5cf8da31ca
 FileChecksum: SSDEEP: 12:hQiNwCnvFewyzxpFkPpUBsbWjNFeMFoG9Gvb:hXbvFevupH6NFeM8vb
 FileSize: 476 bytes
-
-## File: info.html
 
 FileName: ./res/raw-tr/info.html
 FileType: SOURCE
@@ -2134,8 +1726,6 @@ FileChecksum: MD5: 70fe646c446bdd9e2b7efe291bfaa6f3
 FileChecksum: SSDEEP: 6:ORnXXJakXhSgPEP6L+WCXPpUB5JW02CXPpUB7Sz202CXPpoAjxyc0:aIkxSKEP6qb/pUB5I07/pUB2z207/pob
 FileSize: 323 bytes
 
-## File: legal.html
-
 FileName: ./res/raw-tr/legal.html
 FileType: SOURCE
 FileChecksum: SHA1: 761941b77e6a65320d2c1d58dbf544b534e677df
@@ -2143,8 +1733,6 @@ FileChecksum: SHA256: 460d0d71e3a8a882d137c13b3fce3b38573c61a57ffd1f5573b691198a
 FileChecksum: MD5: 5080966fc985fdf6ef554e62f990f08b
 FileChecksum: SSDEEP: 24:ZdcPHGHOcXmvu9NqQB1JLAPQyPdKmiaPLIrfPmRP1VtePPmsBUPAMMqCP1W58P5N:Z6ql2vu3qQbFvG1v2feXb2mhBQl
 FileSize: 1 Kb (1356 bytes)
-
-## File: proxysettings.html
 
 FileName: ./res/raw-tr/proxysettings.html
 FileType: SOURCE
@@ -2154,8 +1742,6 @@ FileChecksum: MD5: b71e4182065c36b3acb3ebec52edfc98
 FileChecksum: SSDEEP: 12:cPDJdiUhMO0MAaY00+Aro5Ig0aQCg0kSmLf0mpF9kpvLY5A2pUBIIucp4zz:cPDSUhsh0uJU/OF0pvse2pmp4P
 FileSize: 718 bytes
 
-## File: proxysettings_old.html
-
 FileName: ./res/raw-tr/proxysettings_old.html
 FileType: SOURCE
 FileChecksum: SHA1: a03cfafff4155abcf7d6b59226419c96d49aaa47
@@ -2163,8 +1749,6 @@ FileChecksum: SHA256: fdface0f7dbeb982ba42da7444efbac930b1b8a9c13367f2a2e44d307d
 FileChecksum: MD5: dc34f7d28b2c46c3e302a3816543b574
 FileChecksum: SSDEEP: 12:ZDLY0t+HBbSG/W7AQY/pUBfgfr4chQFfV595lM:5LVEBFUAQGp381dM
 FileSize: 520 bytes
-
-## File: info.html
 
 FileName: ./res/raw-uk/info.html
 FileType: SOURCE
@@ -2174,8 +1758,6 @@ FileChecksum: MD5: 486bb1c78ffd7e576aea72d38810e5a0
 FileChecksum: SSDEEP: 12:GVSeQhoYGhQYif8wGb/pUB5Jc07/pUBgcNa007/poALK1LB0:GOoYEa0/pUZ/p4NaR/poALKty
 FileSize: 470 bytes
 
-## File: legal.html
-
 FileName: ./res/raw-uk/legal.html
 FileType: SOURCE
 FileChecksum: SHA1: 09708a189a969feeee0354eca2e81542ebebfddd
@@ -2183,8 +1765,6 @@ FileChecksum: SHA256: 16c28d6936e86897c8c3e7174384e860ca65d188b81a6382ea2d5c7aae
 FileChecksum: MD5: ac7d75378350f24b074ba60cf07d0bf8
 FileChecksum: SSDEEP: 24:CwNjKPHGHOnMxceAONqQBQMLAiOKmiaPLIrfbfPmRP13W0tePPmKJBUPAMRWqCPP:PNGqKuYQqQLLQ1v2TeX372mhpQ35
 FileSize: 1 Kb (1572 bytes)
-
-## File: proxysettings.html
 
 FileName: ./res/raw-uk/proxysettings.html
 FileType: SOURCE
@@ -2194,8 +1774,6 @@ FileChecksum: MD5: a827f7ec54515ee3312bdca90e86e8e7
 FileChecksum: SSDEEP: 12:STc/degtVl0OeaFVNK0YDwVD07sXx5REsC00D2iVfAegNhfYg9yH0mNL9bNNqBtK:Ac05aHx3Ni5HJV1Wzsp4wSPpg
 FileSize: 1 Kb (1099 bytes)
 
-## File: proxysettings_old.html
-
 FileName: ./res/raw-uk/proxysettings_old.html
 FileType: SOURCE
 FileChecksum: SHA1: 9ce741858c2985536ba695c7736e102b4170645a
@@ -2203,8 +1781,6 @@ FileChecksum: SHA256: d7707fa25bc0a9b3fd235cc1adffadd87459070be03f828af307d53eec
 FileChecksum: MD5: c06a51a3ffb370b47316aaa9a8ad17d1
 FileChecksum: SSDEEP: 24:htAsfqkmRUlg51N8IysFvkpcyGCsZX+UtRkmqbFvNZP7iGE:h2YY8U1NAsFMcFCscUobFg
 FileSize: 813 bytes
-
-## File: info.html
 
 FileName: ./res/raw-zh-rCN/info.html
 FileType: SOURCE
@@ -2214,8 +1790,6 @@ FileChecksum: MD5: e756cee3260d447dfd7a6c70a046f5f1
 FileChecksum: SSDEEP: 6:hixJqpYUEqp7uBBGWCXPphxB51eq0ua2phxB7QQnNa2poAdYWn:hie+d07q8b/pzB51epu3pzBh3poA3
 FileSize: 314 bytes
 
-## File: legal.html
-
 FileName: ./res/raw-zh-rCN/legal.html
 FileType: SOURCE
 FileChecksum: SHA1: 8db9087de63d8d2c5e530c32393778f58e5fd84a
@@ -2223,8 +1797,6 @@ FileChecksum: SHA256: f940ce0768c29c344392fdb7f0c14e86939fa06cd3e55f8a2624ccf8b5
 FileChecksum: MD5: 49c10802e8178bd7969709be0987a1a4
 FileChecksum: SSDEEP: 24:9APHGHWfLrFPNqWQOAIuvWKmiaPLIrJmRP1ptePPmJI9BUPAMsPqCP1S58P5+W:Gq6LpFqG7YW1v2oX32mJIMsyQX
 FileSize: 1 Kb (1327 bytes)
-
-## File: proxysettings.html
 
 FileName: ./res/raw-zh-rCN/proxysettings.html
 FileType: SOURCE
@@ -2234,8 +1806,6 @@ FileChecksum: MD5: 56902f48150e770b7f89528afd55175a
 FileChecksum: SSDEEP: 12:x7Zr/lvvIcK/FhpHYYVpYsbPzkVpn9sCZ5A2pPQzlpzBIi:LrdHA/FYYpb4SCZe2pYRpV
 FileSize: 689 bytes
 
-## File: proxysettings_old.html
-
 FileName: ./res/raw-zh-rCN/proxysettings_old.html
 FileType: SOURCE
 FileChecksum: SHA1: 5c7c09c44889c095b8d2cc6401d275358d25d787
@@ -2243,8 +1813,6 @@ FileChecksum: SHA256: ce4453a476d76d32cb8fdd2da55029e4066a2eb9753a3c3a829813b89f
 FileChecksum: MD5: d65c96d063b29da8603858941e78f49f
 FileChecksum: SSDEEP: 12:KKtI2bw54b7HZr9pzBK9MAURzPZxwxJW49stuT:KKCiS4LpW4zPZxXG
 FileSize: 472 bytes
-
-## File: arrays.xml
 
 FileName: ./res/values/arrays.xml
 FileType: OTHER
@@ -2254,8 +1822,6 @@ FileChecksum: MD5: b194d92dfdb3e9159691162eb516e70c
 FileChecksum: SSDEEP: 3:hWt/6ksQvowIAALX0FkEJJXiZF0MDBkIZF0gGGEJJyZF/RX1/uzLWf:hW16YfFkESZmMDZmRGEJJyZHX12z6f
 FileSize: 208 bytes
 
-## File: bools.xml
-
 FileName: ./res/values/bools.xml
 FileType: OTHER
 FileChecksum: SHA1: 5ac81fa9195c3186a7ccdd7e605312b0286b2a7f
@@ -2263,8 +1829,6 @@ FileChecksum: SHA256: 6f3c8ee8a72cf14eea2f919d55f6a2d6cd4b20c74331e80c598659e648
 FileChecksum: MD5: 227db856d98771c8de067e65c773c1f2
 FileChecksum: SSDEEP: 6:TMVBdoLWCXFxh9KH3b5xFxh97EAjFxh97hdQ8xFxh9iDxFxh9kR46Cn:TMHd4Dh9KH/Dh97hDh97LQqDh9i9Dh9F
 FileSize: 291 bytes
-
-## File: integers.xml
 
 FileName: ./res/values/integers.xml
 FileType: OTHER
@@ -2274,8 +1838,6 @@ FileChecksum: MD5: 6a689b61edeea92ef5e77694b302fcf0
 FileChecksum: SSDEEP: 3:vFWWMNHU8LdgCZLWt/uA4qE0cLATkA4qIXWl2H2oXAWLWf:TMVBdJW120cLATAXWkWKAW6f
 FileSize: 156 bytes
 
-## File: strings.xml
-
 FileName: ./res/values/strings.xml
 FileType: OTHER
 FileChecksum: SHA1: d42acb6d5b60f7e6062c25e5c0d463738dbb12e6
@@ -2283,8 +1845,6 @@ FileChecksum: SHA256: d864ba8de74f07e0b25cfd6c2f1d494c14fc348cd9c4fcf53a03368cbc
 FileChecksum: MD5: cfdfa98bc7c9927dd9b6b02b42792f31
 FileChecksum: SSDEEP: 96:t6D4cHx3T0IEx28mb2I8Dq1J5I7wGbmQKUrnj:t6D4yT0IEx2v23qjGbeUH
 FileSize: 6 Kb (6767 bytes)
-
-## File: styles.xml
 
 FileName: ./res/values/styles.xml
 FileType: OTHER
@@ -2294,8 +1854,6 @@ FileChecksum: MD5: bc664ff48f688ded2355e26a22871899
 FileChecksum: SSDEEP: 12:TMHdaAyvASpBZFgGMigUSnzIJRXjXYuFPLQZP/XR:2dI5/LTqRR
 FileSize: 582 bytes
 
-## File: sysarrays.xml
-
 FileName: ./res/values/sysarrays.xml
 FileType: OTHER
 FileChecksum: SHA1: 72921c4ccc1f4eeff20464f13134a364a69f88c9
@@ -2303,8 +1861,6 @@ FileChecksum: SHA256: 1714391ea631ade3abbfb4972f80531671f0e94f7d7ef800bb142bc856
 FileChecksum: MD5: 7f27a47d3b9e844374f3ccdb8d4595f1
 FileChecksum: SSDEEP: 3:YHXZWksQvoIeAAbvFNkvhFkrM/ZFkAWFk7IZFvRXbKXnW3:YcYqrbd+vh2uZ2D27IZXXbMW3
 FileSize: 179 bytes
-
-## File: sysstrings.xml
 
 FileName: ./res/values/sysstrings.xml
 FileType: OTHER
@@ -2314,8 +1870,6 @@ FileChecksum: MD5: 3610430b1c46b24ad49a026f04488e3f
 FileChecksum: SSDEEP: 24:2d94AYNcNYApmTskhjZsUuXMpk004TI3yWKLxR2:cWR8WjZ1NbpTZWKLxR2
 FileSize: 1 Kb (1629 bytes)
 
-## File: arrays.xml
-
 FileName: ./res/values-ar/arrays.xml
 FileType: OTHER
 FileChecksum: SHA1: 5631c2ca3295548cdfde936919eb78149cf52375
@@ -2323,8 +1877,6 @@ FileChecksum: SHA256: 01d16f34eeacebd2e04b2299a8a0824f0ed343ece92955082dc5618d6b
 FileChecksum: MD5: 3de8823822714d6036d48b17757f9a4f
 FileChecksum: SSDEEP: 6:TMVBd77+8EatWpWYf+KgGU/9XZG3kNKWX06f:TMHd77aaxP3Z7NKWX0C
 FileSize: 254 bytes
-
-## File: strings.xml
 
 FileName: ./res/values-ar/strings.xml
 FileType: OTHER
@@ -2334,8 +1886,6 @@ FileChecksum: MD5: 6342dc058ec23c0d3f217dbded7e61ea
 FileChecksum: SSDEEP: 96:MhRXUce8Gai7K/w+urcvJIN7lv2/HOQZJcUfc9sKGyp5KUm8:Mh1Uce8h4KIfrYJkZIuKcqc+KG9UV
 FileSize: 8 Kb (8295 bytes)
 
-## File: arrays.xml
-
 FileName: ./res/values-cs/arrays.xml
 FileType: OTHER
 FileChecksum: SHA1: edb5c628db57f78d89adb76ae4accc216412f97d
@@ -2343,8 +1893,6 @@ FileChecksum: SHA256: 21701951ce90b23676258be7cc2487b4e5e03b475651e87723dd306d52
 FileChecksum: MD5: 8cf532d9eba88b39c2021b311b60e8a3
 FileChecksum: SSDEEP: 6:TMVBd77+8EatWpWYfGZBrGrMwxXhGZ2JUR3KWX06f:TMHd77aaxLfPcXhM2JU9KWX0C
 FileSize: 235 bytes
-
-## File: strings.xml
 
 FileName: ./res/values-cs/strings.xml
 FileType: OTHER
@@ -2354,8 +1902,6 @@ FileChecksum: MD5: df362ba02140d8856c0d6081eb65fb2b
 FileChecksum: SSDEEP: 96:MhJPt/ClqI82e/laPACmXAx1N67j/UxFKxgtNchUqD:MhJPtKqI8IdmQx1N0j/UxFKGt2hUy
 FileSize: 6 Kb (7087 bytes)
 
-## File: arrays.xml
-
 FileName: ./res/values-de/arrays.xml
 FileType: OTHER
 FileChecksum: SHA1: 2ae58b2fe89e53d4f68ad6753e3e585bcc7eaf2f
@@ -2363,8 +1909,6 @@ FileChecksum: SHA256: 37b0650186e05447eb4501acca3f3ec7a254a36ee25617029332b05a4d
 FileChecksum: MD5: cb0458c660242cc46b35d305442f1131
 FileChecksum: SSDEEP: 6:TMVBd77+8EatWpWYfFkA5XhG93iZG5i66/KWX06f:TMHd77aaxCkwhyWzvKWX0C
 FileSize: 251 bytes
-
-## File: strings.xml
 
 FileName: ./res/values-de/strings.xml
 FileType: OTHER
@@ -2374,8 +1918,6 @@ FileChecksum: MD5: c17e1bb8feb8f198ee4d3859cf7b8365
 FileChecksum: SSDEEP: 192:MhUzswwPXgQyNPw4he7G+HCRbJDXumUu:MhUABENYHCDUu
 FileSize: 7 Kb (7262 bytes)
 
-## File: arrays.xml
-
 FileName: ./res/values-el/arrays.xml
 FileType: OTHER
 FileChecksum: SHA1: 3391beba2f254592660d473b12938a8259b41e47
@@ -2383,8 +1925,6 @@ FileChecksum: SHA256: 608b039248370af81201aa9989c435c0a366397311f5790008c8c87a41
 FileChecksum: MD5: d7ed99a4e79035d11d17d34040515abd
 FileChecksum: SSDEEP: 6:TMVBd77+8EatWpWYfIahkhG5HatqvZGcKKWX06f:TMHd77aaxBah+KHatsZqKWX0C
 FileSize: 278 bytes
-
-## File: strings.xml
 
 FileName: ./res/values-el/strings.xml
 FileType: OTHER
@@ -2394,8 +1934,6 @@ FileChecksum: MD5: 62e6f2e617be7e99759bc0edf480fc74
 FileChecksum: SSDEEP: 96:MhcV0KmLyEiYDVeTlUKRamtQimkFgquMITalVieB6pGnY9TdT8TnTAmPvm+RUxWy:Mhc2VFKRFXuMHln4UuGNlEsUTl
 FileSize: 9 Kb (10162 bytes)
 
-## File: arrays.xml
-
 FileName: ./res/values-es/arrays.xml
 FileType: OTHER
 FileChecksum: SHA1: 079c3b65536a9f3b464a5da405fcb64ed47ad38f
@@ -2403,8 +1941,6 @@ FileChecksum: SHA256: 4ddd75f9a7ec62bc6a652d4b05e10f4060c8fc60430152076cc11d6034
 FileChecksum: MD5: 439198d90a6f670c4e88dd45697d1062
 FileChecksum: SSDEEP: 6:TMVBd77+8EatWpWYfFkEGHGlXhGi9L0KWX06f:TMHd77aaxCkZiRZ9L0KWX0C
 FileSize: 242 bytes
-
-## File: strings.xml
 
 FileName: ./res/values-es/strings.xml
 FileType: OTHER
@@ -2414,8 +1950,6 @@ FileChecksum: MD5: 6623ca7bee95ee304f1d26f0c81a6643
 FileChecksum: SSDEEP: 96:Mhg4h2ZUdk0kYR9/slggxZOEoejSehC/r2p1prv6/8/aZYUNDB:Mh6ZU6/YzEl1xvVyyJv+vCUNl
 FileSize: 7 Kb (7427 bytes)
 
-## File: arrays.xml
-
 FileName: ./res/values-fr/arrays.xml
 FileType: OTHER
 FileChecksum: SHA1: 91cde598f3bc0076f476b6943be06f7b3619ed8e
@@ -2423,8 +1957,6 @@ FileChecksum: SHA256: 6526bd849defc581d1a131288619f80b243a7c9916f80de80feef68de9
 FileChecksum: MD5: 38d9c81bc3b906ccfd38a46c73a6c035
 FileChecksum: SSDEEP: 6:TMVBd77+8EatWpWYfFkESZGMDZGRGEJJyFKWX06f:TMHd77aaxCk7Z30THyFKWX0C
 FileSize: 234 bytes
-
-## File: strings.xml
 
 FileName: ./res/values-fr/strings.xml
 FileType: OTHER
@@ -2434,8 +1966,6 @@ FileChecksum: MD5: 75a1e2882df04b20cf877a811878b09f
 FileChecksum: SSDEEP: 96:MhR0TXmx33NVEx28Vb2IlDzzI0wspboLEMUueq:MhR0T03NVEx2g2Gz7boFUi
 FileSize: 6 Kb (6690 bytes)
 
-## File: arrays.xml
-
 FileName: ./res/values-he/arrays.xml
 FileType: OTHER
 FileChecksum: SHA1: 82a380410cb8657218758339c24c8832382e0230
@@ -2443,8 +1973,6 @@ FileChecksum: SHA256: 18102957354b81a088c2e235cbc0fc599629ef5e7751e76ca0af663d04
 FileChecksum: MD5: 72d7f75e384da1d86e3e3b5f507669ca
 FileChecksum: SSDEEP: 6:TMVBd77+8EatWpWYfUFMoG4fG0G99KWX06f:TMHd77aax9FMoX6rKWX0C
 FileSize: 244 bytes
-
-## File: strings.xml
 
 FileName: ./res/values-he/strings.xml
 FileType: OTHER
@@ -2454,8 +1982,6 @@ FileChecksum: MD5: 933375ceef5adba29a980681118ee4fa
 FileChecksum: SSDEEP: 96:MhepskOSLWc+ShnX5t43bAah1SNyUTHvy+bMEd0KGqGI9lUEy:MheuJSyNSFX5t4UOUTqBaJHUZ
 FileSize: 7 Kb (7855 bytes)
 
-## File: arrays.xml
-
 FileName: ./res/values-hr/arrays.xml
 FileType: OTHER
 FileChecksum: SHA1: e702e57c5e01a86437ceca319a7f16e4cafd0e7c
@@ -2463,8 +1989,6 @@ FileChecksum: SHA256: 3fcd0bb8ccb3d1b1c5ebf46f91d3cdd2efa38c56090ccc77631462ec24
 FileChecksum: MD5: 9a35b456598eac2fbb549ce0a45f1524
 FileChecksum: SSDEEP: 6:TMVBd77+8EatWpWYfkBZGkJoG3mvFKWX06f:TMHd77aax9Z6ZFKWX0C
 FileSize: 235 bytes
-
-## File: strings.xml
 
 FileName: ./res/values-hr/strings.xml
 FileType: OTHER
@@ -2474,8 +1998,6 @@ FileChecksum: MD5: a6cd1cdce663ec8b39afa098eaf49db4
 FileChecksum: SSDEEP: 192:MhJO6d+UEx2g2kqQzKJ7dvS2xqbtOU0hE:MhJO2LBzhq5OUwE
 FileSize: 6 Kb (6941 bytes)
 
-## File: arrays.xml
-
 FileName: ./res/values-hu/arrays.xml
 FileType: OTHER
 FileChecksum: SHA1: 08fa14833fbdeebca9073c4247d05c80f512e13e
@@ -2483,8 +2005,6 @@ FileChecksum: SHA256: 103fa3a7ebeedec955f6e0310b16239be93cf85cf593c6b0f06eaf4b4d
 FileChecksum: MD5: 29c93ac048ea45d984bf1e6d538f0043
 FileChecksum: SSDEEP: 6:TMVBd77+8EatWpWYfFkmE1GFhGd4KWX06f:TMHd77aaxCkmKqhu4KWX0C
 FileSize: 238 bytes
-
-## File: strings.xml
 
 FileName: ./res/values-hu/strings.xml
 FileType: OTHER
@@ -2494,8 +2014,6 @@ FileChecksum: MD5: 6e6516da1d8663a0ef8f7684a3921c57
 FileChecksum: SSDEEP: 192:MhLT9iv/rQ1svupMtjxJs3Z5+Tho/5EIUl:MhLRmzQ1UupMtjxJITioREIUl
 FileSize: 7 Kb (7380 bytes)
 
-## File: arrays.xml
-
 FileName: ./res/values-it/arrays.xml
 FileType: OTHER
 FileChecksum: SHA1: 706c107a003beea54e71302bb7039e43b8c18f28
@@ -2503,8 +2021,6 @@ FileChecksum: SHA256: d657153f3c30f9d4f2202d201abddf5e227007be90a9b0c59f6ea2e2db
 FileChecksum: MD5: 4d005dbc291989c2fd6af6d5ae970a69
 FileChecksum: SSDEEP: 6:TMVBd77+8EatWpWYfFkEGHGL8BZGRGEp0KWX06f:TMHd77aaxCkZeSZ0Tp0KWX0C
 FileSize: 241 bytes
-
-## File: strings.xml
 
 FileName: ./res/values-it/strings.xml
 FileType: OTHER
@@ -2514,8 +2030,6 @@ FileChecksum: MD5: 9d695d2daaff0ed2900cae22c3bff229
 FileChecksum: SSDEEP: 96:Mh4PnconEx28Vb2IpO+R6EoaZcRIRb6PtJ3rHUPY:Mh4PHEx2g2l+OaZgIRuPtJbHUw
 FileSize: 6 Kb (7119 bytes)
 
-## File: arrays.xml
-
 FileName: ./res/values-ja/arrays.xml
 FileType: OTHER
 FileChecksum: SHA1: 51ad88f7ce762b3caa6867c5fc7a67525b64e597
@@ -2523,8 +2037,6 @@ FileChecksum: SHA256: de789cf434c9bf733571429173d248ecf1774bd9e8e5e49d76e56ad7f2
 FileChecksum: MD5: 6e35fff0082ec680b2d4d1a11c2e19c7
 FileChecksum: SSDEEP: 6:TMVBd77+8EatWpWYf4/ZRGtA/iZvZG8fPB3KWX06f:TMHd77aaxPn0EifdfPNKWX0C
 FileSize: 230 bytes
-
-## File: strings.xml
 
 FileName: ./res/values-ja/strings.xml
 FileType: OTHER
@@ -2534,8 +2046,6 @@ FileChecksum: MD5: c925cb37cd8cba7963f6d91b3e6270bd
 FileChecksum: SSDEEP: 96:MhNmHrt/hNIXCqmOGqndwRMSbShIOCA6alsQj/qqAOadTUSU4:MhNmHrtMCq0qd+WfReQ7qqAnZUh4
 FileSize: 7 Kb (7477 bytes)
 
-## File: arrays.xml
-
 FileName: ./res/values-ko/arrays.xml
 FileType: OTHER
 FileChecksum: SHA1: 91cde598f3bc0076f476b6943be06f7b3619ed8e
@@ -2543,8 +2053,6 @@ FileChecksum: SHA256: 6526bd849defc581d1a131288619f80b243a7c9916f80de80feef68de9
 FileChecksum: MD5: 38d9c81bc3b906ccfd38a46c73a6c035
 FileChecksum: SSDEEP: 6:TMVBd77+8EatWpWYfFkESZGMDZGRGEJJyFKWX06f:TMHd77aaxCk7Z30THyFKWX0C
 FileSize: 234 bytes
-
-## File: strings.xml
 
 FileName: ./res/values-ko/strings.xml
 FileType: OTHER
@@ -2554,8 +2062,6 @@ FileChecksum: MD5: 95aa08b3aaee62f9a477857bf078771e
 FileChecksum: SSDEEP: 96:MhhawXbXrVEx28Vb2IlDzzI0wspboLEMUueq:MhhzLbVEx2g2Gz7boFUi
 FileSize: 6 Kb (6711 bytes)
 
-## File: arrays.xml
-
 FileName: ./res/values-lt/arrays.xml
 FileType: OTHER
 FileChecksum: SHA1: 2c6c9f14323a8f3b5b966fba08a9b36c03cb2d22
@@ -2563,8 +2069,6 @@ FileChecksum: SHA256: 2ba4a6f94ea7160ffd8d7b5e7f3c6ef60a48665dbcb0567c3ecb33bdd2
 FileChecksum: MD5: 5860a5e7fb1a720455c379ad14b4519a
 FileChecksum: SSDEEP: 6:TMVBd77+8EatWpWYfi4jG82PRtZGRBrKKWX06f:TMHd77aaxb4j6Ph0JKKWX0C
 FileSize: 244 bytes
-
-## File: strings.xml
 
 FileName: ./res/values-lt/strings.xml
 FileType: OTHER
@@ -2574,8 +2078,6 @@ FileChecksum: MD5: 5cc9ecb9e3d4e3e8a456279cb93cb577
 FileChecksum: SSDEEP: 96:MCExRGMK5INUzX4iZZrDboJ2fuz0yQq41TScqU32:MCETGMK5HrbJs0yQq49qUm
 FileSize: 6 Kb (7090 bytes)
 
-## File: arrays.xml
-
 FileName: ./res/values-nb/arrays.xml
 FileType: OTHER
 FileChecksum: SHA1: 3c4a9f22bd4df28747e5ffef492597cb2daecd3e
@@ -2583,8 +2085,6 @@ FileChecksum: SHA256: ed97f788929393a5fe3537a084468453cacc0d047972ebb043f7dfc9f9
 FileChecksum: MD5: 39e4dcfe11885b7daccb1dbd195776ec
 FileChecksum: SSDEEP: 6:TMVBd77+8EatWpWYfFkAxBtZGMDZGRWOk0KWX06f:TMHd77aaxCk8r30dKWX0C
 FileSize: 230 bytes
-
-## File: strings.xml
 
 FileName: ./res/values-nb/strings.xml
 FileType: OTHER
@@ -2594,8 +2094,6 @@ FileChecksum: MD5: 649f171981ff8fd700db793a7730c599
 FileChecksum: SSDEEP: 96:Mh+Kvx33NVEx28Vb2IlDCY8P4RLopyoMz+URkJD:Mh+K13NVEx2g2GCMuyopURCD
 FileSize: 6 Kb (6764 bytes)
 
-## File: arrays.xml
-
 FileName: ./res/values-nl/arrays.xml
 FileType: OTHER
 FileChecksum: SHA1: d115d5cc340835fbb41b4ae7441068a9767b64eb
@@ -2603,8 +2101,6 @@ FileChecksum: SHA256: 9449031c2b01337ee6ba9dcb763ea2625e9da54e4896d3e8a71fd60ab7
 FileChecksum: MD5: 8671d4914c778b723566ed11d4f0abd0
 FileChecksum: SSDEEP: 6:TMVBd77+8EatWpWYfqfGoZGRA2NKWX06f:TMHd77aaxTfr0A2NKWX0C
 FileSize: 233 bytes
-
-## File: strings.xml
 
 FileName: ./res/values-nl/strings.xml
 FileType: OTHER
@@ -2614,8 +2110,6 @@ FileChecksum: MD5: ea1fb8b6aec86284b787f4772aaa37ef
 FileChecksum: SSDEEP: 192:MhtahkYIu4Ex2g2qgjmMjP/I1MbocyUnfUp:MhUh+Lqy+YUp
 FileSize: 6 Kb (7164 bytes)
 
-## File: arrays.xml
-
 FileName: ./res/values-pl/arrays.xml
 FileType: OTHER
 FileChecksum: SHA1: 1f1b23736dea081b30e93608c936ad69a950e037
@@ -2623,8 +2117,6 @@ FileChecksum: SHA256: 2e19605a690a92405d7ae0a505ff39223e0e1140c0b16142475541176c
 FileChecksum: MD5: d7bf36d71b76bfc5ee31a98142290b9a
 FileChecksum: SSDEEP: 6:TMVBd77+8EatWpWYfxL+oGY35ZG2WE0iFKWX06f:TMHd77aax5oj5ZyiFKWX0C
 FileSize: 242 bytes
-
-## File: strings.xml
 
 FileName: ./res/values-pl/strings.xml
 FileType: OTHER
@@ -2634,8 +2126,6 @@ FileChecksum: MD5: cae941e321329518a5706ddec6a8a696
 FileChecksum: SSDEEP: 96:MhwQ+sw5xQBj7Gc0PJPOu6b/uvIDXFXP0eGEVylrRKMHwUcsPw:MhwQ+s6Q10PnUuvIX1P0eGZlrRLQU3w
 FileSize: 7 Kb (7299 bytes)
 
-## File: arrays.xml
-
 FileName: ./res/values-pt/arrays.xml
 FileType: OTHER
 FileChecksum: SHA1: 15801ea6fca4cb53c69d95d7ec5b5e616f14abb8
@@ -2643,8 +2133,6 @@ FileChecksum: SHA256: f017964b4f1b3257200ad0f610251c4f9fb8ad8745b57e7864290eec07
 FileChecksum: MD5: a224a0c9bee2229bbb5f4bdc11e505a9
 FileChecksum: SSDEEP: 6:TMVBd77+8EatWpWYfFkEGHGvAhGRGEp0KWX06f:TMHd77aaxCkZH0Tp0KWX0C
 FileSize: 241 bytes
-
-## File: strings.xml
 
 FileName: ./res/values-pt/strings.xml
 FileType: OTHER
@@ -2654,8 +2142,6 @@ FileChecksum: MD5: 5b5aeaa547da501294e23e5825248161
 FileChecksum: SSDEEP: 96:MhEKjzn4Ex28Vb2IW+OZ9WIsJCJZhR4UGQ:MhEKP4Ex2g2Z9W9CJZhSUX
 FileSize: 7 Kb (7176 bytes)
 
-## File: arrays.xml
-
 FileName: ./res/values-ru/arrays.xml
 FileType: OTHER
 FileChecksum: SHA1: 8ab779a41bd84ad44f161f0aade073d25eb9e458
@@ -2663,8 +2149,6 @@ FileChecksum: SHA256: fbdb0488e0bd25602d30eb39ec2c65ca0d09b6db9384adfc8425d35894
 FileChecksum: MD5: 3f8361d2e3699165d0b374cf991148ba
 FileChecksum: SSDEEP: 6:TMVBd77+8EatWpWYf/K/ZGt19fbIZGtWy1fJB3KWX06f:TMHd77aaxjhIEZgWoJNKWX0C
 FileSize: 265 bytes
-
-## File: strings.xml
 
 FileName: ./res/values-ru/strings.xml
 FileType: OTHER
@@ -2674,8 +2158,6 @@ FileChecksum: MD5: 6367e03321139b2cdeddcc8e2e21f458
 FileChecksum: SSDEEP: 192:Mh2G9Kn/Ex2g2tEnQ1ECcN8WH2MbZ2cVTUx:Mh2uKnLLtEfCcN8MTUx
 FileSize: 8 Kb (9111 bytes)
 
-## File: arrays.xml
-
 FileName: ./res/values-sk/arrays.xml
 FileType: OTHER
 FileChecksum: SHA1: e48781bdf8644c8a8b791ec95f70376ab0c6261c
@@ -2683,8 +2165,6 @@ FileChecksum: SHA256: d1614a89cb49de7866194e2f2be726e5b78c1cc3018cb64d26e7193725
 FileChecksum: MD5: fd0843e1df977c2934b26c7793c977da
 FileChecksum: SSDEEP: 6:TMVBd77+8EatWpWYfFkmECAoGQPbrGZ2JoA0KWX06f:TMHd77aaxCkmTr1PfM2Jo3KWX0C
 FileSize: 236 bytes
-
-## File: strings.xml
 
 FileName: ./res/values-sk/strings.xml
 FileType: OTHER
@@ -2694,8 +2174,6 @@ FileChecksum: MD5: c657e533f57599d4c122ccc46b072b3d
 FileChecksum: SSDEEP: 192:MhC+dqEx2g2glFStdNApuEq7d2OLZDWUJ:MhzsLglFStdjsgZDWUJ
 FileSize: 6 Kb (7049 bytes)
 
-## File: arrays.xml
-
 FileName: ./res/values-sr/arrays.xml
 FileType: OTHER
 FileChecksum: SHA1: 91748b5c502433b701dd4107e29db3c612364b1d
@@ -2703,8 +2181,6 @@ FileChecksum: SHA256: 3d102af9590c16cd261db6e00286d551bb2ef6b2cf2abb690002f61b92
 FileChecksum: MD5: db1f8f49f8ddaa7c51f92b7aca69fa81
 FileChecksum: SSDEEP: 6:TMVBd77+8EatWpWYf3MbtZGt18moGqTitFKWX06f:TMHd77aaxXrVLG3KWX0C
 FileSize: 255 bytes
-
-## File: strings.xml
 
 FileName: ./res/values-sr/strings.xml
 FileType: OTHER
@@ -2714,8 +2190,6 @@ FileChecksum: MD5: a55d1add000cdec9f54de80e3fadb59c
 FileChecksum: SSDEEP: 96:MhlMkZx1yHYPK33EqrbMnZBT21lEP/ptcCu7uuFcb6oo9AlvydbZnChoTpUKOUt2:MhFvKyfTAa+qMQAEvydNnCcPUb
 FileSize: 8 Kb (9176 bytes)
 
-## File: arrays.xml
-
 FileName: ./res/values-sv/arrays.xml
 FileType: OTHER
 FileChecksum: SHA1: 3ee6b66f809795802ca6b519f5f2fe8aa4471b39
@@ -2723,8 +2197,6 @@ FileChecksum: SHA256: d43bbc3eca2366895f2eb1f8fd5e7a500b21684ff7f4506ed76d8eb9ec
 FileChecksum: MD5: 9b13935a7f28af775466447f75c16ab9
 FileChecksum: SSDEEP: 6:TMVBd77+8EatWpWYfFkAxbtZGwWQZGRWOHFKWX06f:TMHd77aaxCkWSg0bKWX0C
 FileSize: 233 bytes
-
-## File: strings.xml
 
 FileName: ./res/values-sv/strings.xml
 FileType: OTHER
@@ -2734,8 +2206,6 @@ FileChecksum: MD5: a3207437cbed47eaa94a16a3a5967e87
 FileChecksum: SSDEEP: 96:MhitDRhEx28Vb2IsBVLPXJVqnzjVYP7u7NUk9i:MhitDRhEx2g2dBdXqzRYPqpUkY
 FileSize: 6 Kb (7008 bytes)
 
-## File: arrays.xml
-
 FileName: ./res/values-th/arrays.xml
 FileType: OTHER
 FileChecksum: SHA1: fd5d238727a6859b63bc1fb3e1afb35819d3ab03
@@ -2743,8 +2213,6 @@ FileChecksum: SHA256: 35c11b2bb2377cdc34dc95ba58191795177814edb70d8c59b1b2e1c480
 FileChecksum: MD5: 2303889ccc5b4d8eccb0c72843cda4ff
 FileChecksum: SSDEEP: 6:TMVBd77+8EatWpWYfFhdcnw/ZGIo/MRrGRGEJJyFKWX06f:TMHd77aaxqcw/ZgMh0THyFKWX0C
 FileSize: 275 bytes
-
-## File: strings.xml
 
 FileName: ./res/values-th/strings.xml
 FileType: OTHER
@@ -2754,8 +2222,6 @@ FileChecksum: MD5: 3974d783176ee8eadfbfba5df45e44ee
 FileChecksum: SSDEEP: 192:MhXmDakWiFuigjPOic61Ex2g2G4375v68Bf1D216g5ay6wMFAMTj2+iTUooFj3is:Mh+ak5Fhgz9c65LGY75v64f1S16g5ayE
 FileSize: 8 Kb (9090 bytes)
 
-## File: arrays.xml
-
 FileName: ./res/values-tr/arrays.xml
 FileType: OTHER
 FileChecksum: SHA1: 012d1d7f3ca757df86b4af133871552e2b8998cb
@@ -2763,8 +2229,6 @@ FileChecksum: SHA256: 838139f3a1e0b0896f4ee61ad71b697ad5a87a99738febf45943b7949a
 FileChecksum: MD5: 9f02bb8a9d20be4d40630c2cbc08be74
 FileChecksum: SSDEEP: 6:TMVBd77+8EatWpWYfFkABGoxKw2IZGe6R3KWX06f:TMHd77aaxCk27jZlgKWX0C
 FileSize: 234 bytes
-
-## File: strings.xml
 
 FileName: ./res/values-tr/strings.xml
 FileType: OTHER
@@ -2774,8 +2238,6 @@ FileChecksum: MD5: 4e0663dc68fa28ab3284c331ababbae7
 FileChecksum: SSDEEP: 96:MhfmWAvELOEx28Vb2Ir6hNVB5IWgoD5sUBt6AW:MhfaEx2g2umngoiU8
 FileSize: 6 Kb (6953 bytes)
 
-## File: arrays.xml
-
 FileName: ./res/values-uk/arrays.xml
 FileType: OTHER
 FileChecksum: SHA1: 8f014b3fa6fcfee12379b267e543138e78ce01f2
@@ -2783,8 +2245,6 @@ FileChecksum: SHA256: 64c8c35692b442763971af5e9e13ef83e0d4a91a006a67b67b52e21794
 FileChecksum: MD5: 6f3a3cb40aeea61156b8988143c38c8e
 FileChecksum: SSDEEP: 6:TMVBd77+8EatWpWYf/fGt19fPGrKWGtFKWX06f:TMHd77aaxSI3XWG3KWX0C
 FileSize: 259 bytes
-
-## File: strings.xml
 
 FileName: ./res/values-uk/strings.xml
 FileType: OTHER
@@ -2794,8 +2254,6 @@ FileChecksum: MD5: 77f2f04237e5ca976eb081fc665bc908
 FileChecksum: SSDEEP: 192:MhUgxerGor1UAVo30rwuPBexa3jJ127yvNADQOp5EB6RK0MU4m:MhFWGorSV30jJexazq7yvNA2EHMUJ
 FileSize: 9 Kb (9456 bytes)
 
-## File: arrays.xml
-
 FileName: ./res/values-zh-rCN/arrays.xml
 FileType: OTHER
 FileChecksum: SHA1: 6fd985c2828544d1db3c2cf9bf84e67a8e221a9e
@@ -2803,8 +2261,6 @@ FileChecksum: SHA256: 414b53f0ea2a4a62f130ff9debab611ae9327e0fce4799bc5ddbf9b1c1
 FileChecksum: MD5: 97e5b50ce8a4a940ea1d8484f8f193a7
 FileChecksum: SSDEEP: 6:TMVBd77+8EatWpWYf4V1hGoCG8I/FKWX06f:TMHd77aaxP7h8dI/FKWX0C
 FileSize: 227 bytes
-
-## File: strings.xml
 
 FileName: ./res/values-zh-rCN/strings.xml
 FileType: OTHER
@@ -2814,8 +2270,6 @@ FileChecksum: MD5: 9b142240f89dd1931fef1dd8cfae91a0
 FileChecksum: SSDEEP: 96:Mh3QvoClQz9357L4Fdj4MePs+chtjsd7vUZ2d:MhWHlY1h4Fd8NchE7vUW
 FileSize: 5 Kb (5761 bytes)
 
-## File: preferences.xml
-
 FileName: ./res/xml/preferences.xml
 FileType: OTHER
 FileChecksum: SHA1: 3f5bf6211020956c2b7055d01718b65b7f8ec99c
@@ -2824,8 +2278,6 @@ FileChecksum: MD5: 573ae9adf19f5208f98d40b77e4514e2
 FileChecksum: SSDEEP: 12:TMHdDAyvASpBXvASQSKZQk2QPxzaQPc4QmJ5y9AvERdsZ0v40QJ5y9A5dZtFvxsi:2dBtvdk5Rl+Ky9q4P1Qfy9PE96Lc
 FileSize: 1 Kb (1218 bytes)
 
-## File: preferences_advanced.xml
-
 FileName: ./res/xml/preferences_advanced.xml
 FileType: OTHER
 FileChecksum: SHA1: 0dd18f71101fd348b633b1ebe430ade149e60707
@@ -2833,8 +2285,6 @@ FileChecksum: SHA256: b0d7024d4ce5dac6e41bd07c1befac72df52e1057fe2a2e3f15c541224
 FileChecksum: MD5: 6d23a6dd913e4c51675744351083ac51
 FileChecksum: SSDEEP: 24:2dyXfvB9wo1etyszPrylDQ0T3mvXrxEE2dS+2Rd6hKdF69d2xkZaMLnOZSN0NU6Z:cyx670T3APJaB0UYPa8
 FileSize: 3 Kb (3449 bytes)
-
-## File: AboutDialog.java
 
 FileName: ./src/org/adblockplus/android/AboutDialog.java
 FileType: SOURCE
@@ -2847,8 +2297,6 @@ FileLOC: 74
 FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 LicenseInfoInFile: GPL-3.0
 
-## File: ABPEngine.java
-
 FileName: ./src/org/adblockplus/android/ABPEngine.java
 FileType: SOURCE
 FileChecksum: SHA1: 0042c05788d37bf825ce894b272d7f89870ff4fd
@@ -2859,8 +2307,6 @@ FileSize: 4 Kb (5014 bytes)
 FileLOC: 116
 FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 LicenseInfoInFile: GPL-3.0
-
-## File: AdblockPlus.java
 
 FileName: ./src/org/adblockplus/android/AdblockPlus.java
 FileType: SOURCE
@@ -2873,8 +2319,6 @@ FileLOC: 505
 FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 LicenseInfoInFile: GPL-3.0
 
-## File: AdvancedPreferences.java
-
 FileName: ./src/org/adblockplus/android/AdvancedPreferences.java
 FileType: SOURCE
 FileChecksum: SHA1: 642814119ba362f0b87937c777b6ee90edcdcb41
@@ -2885,8 +2329,6 @@ FileSize: 8 Kb (9149 bytes)
 FileLOC: 252
 FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 LicenseInfoInFile: GPL-3.0
-
-## File: ConfigurationActivity.java
 
 FileName: ./src/org/adblockplus/android/ConfigurationActivity.java
 FileType: SOURCE
@@ -2899,8 +2341,6 @@ FileLOC: 60
 FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 LicenseInfoInFile: GPL-3.0
 
-## File: CrashHandler.java
-
 FileName: ./src/org/adblockplus/android/CrashHandler.java
 FileType: SOURCE
 FileChecksum: SHA1: 76b38a795b49d2bbfb6c517fb464f6d7d99562bf
@@ -2911,8 +2351,6 @@ FileSize: 4 Kb (4658 bytes)
 FileLOC: 158
 FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 LicenseInfoInFile: GPL-3.0
-
-## File: CrashReportDialog.java
 
 FileName: ./src/org/adblockplus/android/CrashReportDialog.java
 FileType: SOURCE
@@ -2925,8 +2363,6 @@ FileLOC: 163
 FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 LicenseInfoInFile: GPL-3.0
 
-## File: HelpfulCheckBoxPreference.java
-
 FileName: ./src/org/adblockplus/android/HelpfulCheckBoxPreference.java
 FileType: SOURCE
 FileChecksum: SHA1: 5764c2917772ef27f80d668e97ac40e27c91faa3
@@ -2937,8 +2373,6 @@ FileSize: 2 Kb (2864 bytes)
 FileLOC: 81
 FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 LicenseInfoInFile: GPL-3.0
-
-## File: JSEngine.java
 
 FileName: ./src/org/adblockplus/android/JSEngine.java
 FileType: SOURCE
@@ -2951,8 +2385,6 @@ FileLOC: 82
 FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 LicenseInfoInFile: GPL-3.0
 
-## File: Preferences.java
-
 FileName: ./src/org/adblockplus/android/Preferences.java
 FileType: SOURCE
 FileChecksum: SHA1: 8b2674663b21edef8d327c02eabe5d75fad19670
@@ -2964,8 +2396,6 @@ FileLOC: 528
 FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 LicenseInfoInFile: GPL-3.0
 
-## File: ProxyConfigurationActivity.java
-
 FileName: ./src/org/adblockplus/android/ProxyConfigurationActivity.java
 FileType: SOURCE
 FileChecksum: SHA1: 35780dbb99b67906bf65b6d10cdaabc4a77c3858
@@ -2974,8 +2404,6 @@ FileChecksum: MD5: 7b50b0c461d60169fd2453f9cd16f1d2
 FileChecksum: SSDEEP: 24:ck96cDk2ErXRVcLycEvXdcXbf2TcL6yMg2e2keLmBiYLukN9xRgmKeT70Ag/zLci:CWOnRrOLeIDZckeLmBpLukL/fd78zLrH
 FileSize: 1 Kb (1345 bytes)
 FileLOC: 38
-
-## File: ProxyService.java
 
 FileName: ./src/org/adblockplus/android/ProxyService.java
 FileType: SOURCE
@@ -2988,8 +2416,6 @@ FileLOC: 835
 FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 LicenseInfoInFile: GPL-3.0
 
-## File: ProxySettings.java
-
 FileName: ./src/org/adblockplus/android/ProxySettings.java
 FileType: SOURCE
 FileChecksum: SHA1: 93185ebbdfc0a06ecd6ed03147d62bddbb24c06f
@@ -3000,8 +2426,6 @@ FileSize: 6 Kb (6900 bytes)
 FileLOC: 228
 FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 LicenseInfoInFile: GPL-3.0
-
-## File: RefreshableListPreference.java
 
 FileName: ./src/org/adblockplus/android/RefreshableListPreference.java
 FileType: SOURCE
@@ -3014,8 +2438,6 @@ FileLOC: 68
 FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 LicenseInfoInFile: GPL-3.0
 
-## File: Starter.java
-
 FileName: ./src/org/adblockplus/android/Starter.java
 FileType: SOURCE
 FileChecksum: SHA1: 66a83ee2126b1c79e40b93ddec54592e410580c4
@@ -3026,8 +2448,6 @@ FileSize: 2 Kb (2291 bytes)
 FileLOC: 55
 FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 LicenseInfoInFile: GPL-3.0
-
-## File: Subscription.java
 
 FileName: ./src/org/adblockplus/android/Subscription.java
 FileType: SOURCE
@@ -3040,8 +2460,6 @@ FileLOC: 26
 FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 LicenseInfoInFile: GPL-3.0
 
-## File: SubscriptionParser.java
-
 FileName: ./src/org/adblockplus/android/SubscriptionParser.java
 FileType: SOURCE
 FileChecksum: SHA1: 17a4acbf57e2b9a544ddbe8d2374a341eb946bec
@@ -3052,8 +2470,6 @@ FileSize: 2 Kb (2701 bytes)
 FileLOC: 71
 FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 LicenseInfoInFile: GPL-3.0
-
-## File: SummarizedPreferences.java
 
 FileName: ./src/org/adblockplus/android/SummarizedPreferences.java
 FileType: SOURCE
@@ -3066,8 +2482,6 @@ FileLOC: 85
 FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 LicenseInfoInFile: GPL-3.0
 
-## File: AlarmReceiver.java
-
 FileName: ./src/org/adblockplus/android/updater/AlarmReceiver.java
 FileType: SOURCE
 FileChecksum: SHA1: 2e4c59d6fb3377bdf8acd461b2a6c19b1f6caa40
@@ -3078,8 +2492,6 @@ FileSize: 8 Kb (8687 bytes)
 FileLOC: 202
 FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 LicenseInfoInFile: GPL-3.0
-
-## File: UpdaterActivity.java
 
 FileName: ./src/org/adblockplus/android/updater/UpdaterActivity.java
 FileType: SOURCE
@@ -3092,8 +2504,6 @@ FileLOC: 91
 FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 LicenseInfoInFile: GPL-3.0
 
-## File: UpdaterService.java
-
 FileName: ./src/org/adblockplus/android/updater/UpdaterService.java
 FileType: SOURCE
 FileChecksum: SHA1: 55f064292dd89a224f3ca4a181f1c90f3df6a677
@@ -3104,8 +2514,6 @@ FileSize: 5 Kb (5957 bytes)
 FileLOC: 168
 FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 LicenseInfoInFile: GPL-3.0
-
-## File: BaseRequestHandler.java
 
 FileName: ./src/org/adblockplus/brazil/BaseRequestHandler.java
 FileType: SOURCE
@@ -3118,8 +2526,6 @@ FileLOC: 76
 FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 LicenseInfoInFile: GPL-3.0
 
-## File: RequestHandler.java
-
 FileName: ./src/org/adblockplus/brazil/RequestHandler.java
 FileType: SOURCE
 FileChecksum: SHA1: c2a8056d54fa37afb0a149723a71bd083def6c88
@@ -3130,8 +2536,6 @@ FileSize: 11 Kb (11656 bytes)
 FileLOC: 356
 FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 LicenseInfoInFile: GPL-3.0
-
-## File: SSLConnectionHandler.java
 
 FileName: ./src/org/adblockplus/brazil/SSLConnectionHandler.java
 FileType: SOURCE
@@ -3144,8 +2548,6 @@ FileLOC: 160
 FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 LicenseInfoInFile: GPL-3.0
 
-## File: TransparentProxyHandler.java
-
 FileName: ./src/org/adblockplus/brazil/TransparentProxyHandler.java
 FileType: SOURCE
 FileChecksum: SHA1: cfc6551f9a5869823cac75909d99d778b3d6ad3d
@@ -3156,8 +2558,6 @@ FileSize: 1 Kb (1349 bytes)
 FileLOC: 42
 FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 LicenseInfoInFile: GPL-3.0
-
-## File: ChunkedOutputStream.java
 
 FileName: ./src/org/adblockplus/ChunkedOutputStream.java
 FileType: SOURCE
@@ -3170,8 +2570,6 @@ FileLOC: 94
 FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 LicenseInfoInFile: GPL-3.0
 
-## File: CharUtils.java
-
 FileName: ./src/org/apache/commons/lang/CharUtils.java
 FileType: SOURCE
 FileChecksum: SHA1: ae40721e7fac52f1eef26a8131e5fb240291cc29
@@ -3181,8 +2579,6 @@ FileChecksum: SSDEEP: 192:UDXHZZNd3PSqzodl3oxFqXmUdFkCFlafOtAaiSKAy4MZ4CvMf/lbIL
 FileSize: 18 Kb (19330 bytes)
 FileLOC: 558
 LicenseInfoInFile: Apache-2.0
-
-## File: StringEscapeUtils.java
 
 FileName: ./src/org/apache/commons/lang/StringEscapeUtils.java
 FileType: SOURCE
@@ -3194,8 +2590,6 @@ FileSize: 22 Kb (22977 bytes)
 FileLOC: 587
 LicenseInfoInFile: Apache-2.0
 
-## File: StringUtils.java
-
 FileName: ./src/org/apache/commons/lang/StringUtils.java
 FileType: SOURCE
 FileChecksum: SHA1: d337c94d2260f315e62140529349388100114342
@@ -3205,8 +2599,6 @@ FileChecksum: SSDEEP: 1536:UqKXlAz15mojgbYEUB+BnBHBpBS2/u9jtlRvmhV6swBDD+g1djbmw
 FileSize: 177 Kb (181744 bytes)
 FileLOC: 4525
 LicenseInfoInFile: Apache-2.0
-
-## File: BoyerMoore.java
 
 FileName: ./src/org/literateprograms/BoyerMoore.java
 FileType: SOURCE
@@ -3219,8 +2611,6 @@ FileLOC: 105
 FileCopyrightText: <text>Copyright (c) 2012 the authors listed at the following URL, and/or</text>
 LicenseInfoInFile: MIT
 
-## File: PropertiesList.java
-
 FileName: ./src/sunlabs/brazil/properties/PropertiesList.java
 FileType: SOURCE
 FileChecksum: SHA1: 8c29c4598a43f27bacdfcf446a49f740ecb07ac3
@@ -3231,8 +2621,6 @@ FileSize: 24 Kb (25255 bytes)
 FileLOC: 789
 FileCopyrightText: <text>Copyright (c) 2001-2006 Sun Microsystems, Inc.</text>
 LicenseInfoInFile: SPL-1.0
-
-## File: ChainHandler.java
 
 FileName: ./src/sunlabs/brazil/server/ChainHandler.java
 FileType: SOURCE
@@ -3245,8 +2633,6 @@ FileLOC: 388
 FileCopyrightText: <text>Copyright (c) 1998-2006 Sun Microsystems, Inc.</text>
 LicenseInfoInFile: SPL-1.0
 
-## File: Connection.java
-
 FileName: ./src/sunlabs/brazil/server/Connection.java
 FileType: SOURCE
 FileChecksum: SHA1: ff48b9d43f1a33e7696e12a39fb30d64625d08ef
@@ -3257,8 +2643,6 @@ FileSize: 6 Kb (6807 bytes)
 FileLOC: 229
 FileCopyrightText: <text>Copyright (c) 1998-2006 Sun Microsystems, Inc.</text>
 LicenseInfoInFile: SPL-1.0
-
-## File: Handler.java
 
 FileName: ./src/sunlabs/brazil/server/Handler.java
 FileType: SOURCE
@@ -3271,8 +2655,6 @@ FileLOC: 150
 FileCopyrightText: <text>Copyright (c) 1998-2004 Sun Microsystems, Inc.</text>
 LicenseInfoInFile: SPL-1.0
 
-## File: Request.java
-
 FileName: ./src/sunlabs/brazil/server/Request.java
 FileType: SOURCE
 FileChecksum: SHA1: 3ba9a6653f9ede764cdb4f57240e01c3adc1c5cd
@@ -3283,8 +2665,6 @@ FileSize: 56 Kb (57360 bytes)
 FileLOC: 1683
 FileCopyrightText: <text>Copyright (c) 1998-2007 Sun Microsystems, Inc.</text>
 LicenseInfoInFile: SPL-1.0
-
-## File: Server.java
 
 FileName: ./src/sunlabs/brazil/server/Server.java
 FileType: SOURCE
@@ -3297,8 +2677,6 @@ FileLOC: 596
 FileCopyrightText: <text>Copyright (c) 1998-2005 Sun Microsystems, Inc.</text>
 LicenseInfoInFile: SPL-1.0
 
-## File: Base64.java
-
 FileName: ./src/sunlabs/brazil/util/Base64.java
 FileType: SOURCE
 FileChecksum: SHA1: 331e0299b16fe31f708f0524288acec63dc71c85
@@ -3309,8 +2687,6 @@ FileSize: 5 Kb (5753 bytes)
 FileLOC: 215
 FileCopyrightText: <text>Copyright (c) 2000-2004 Sun Microsystems, Inc.</text>
 LicenseInfoInFile: SPL-1.0
-
-## File: Format.java
 
 FileName: ./src/sunlabs/brazil/util/Format.java
 FileType: SOURCE
@@ -3323,8 +2699,6 @@ FileLOC: 418
 FileCopyrightText: <text>Copyright (c) 2000-2006 Sun Microsystems, Inc.</text>
 LicenseInfoInFile: SPL-1.0
 
-## File: Glob.java
-
 FileName: ./src/sunlabs/brazil/util/Glob.java
 FileType: SOURCE
 FileChecksum: SHA1: 400fa9bd1aa3e5f74aa98c84f90237acf8820136
@@ -3335,8 +2709,6 @@ FileSize: 6 Kb (7051 bytes)
 FileLOC: 273
 FileCopyrightText: <text>Copyright (c) 1999-2004 Sun Microsystems, Inc.</text>
 LicenseInfoInFile: SPL-1.0
-
-## File: HttpInputStream.java
 
 FileName: ./src/sunlabs/brazil/util/http/HttpInputStream.java
 FileType: SOURCE
@@ -3349,8 +2721,6 @@ FileLOC: 344
 FileCopyrightText: <text>Copyright (c) 1999-2004 Sun Microsystems, Inc.</text>
 LicenseInfoInFile: SPL-1.0
 
-## File: HttpRequest.java
-
 FileName: ./src/sunlabs/brazil/util/http/HttpRequest.java
 FileType: SOURCE
 FileChecksum: SHA1: 5d2b6f601c0a1502cdf9f30916d4367fa53364c1
@@ -3361,8 +2731,6 @@ FileSize: 51 Kb (52394 bytes)
 FileLOC: 1717
 FileCopyrightText: <text>Copyright (c) 1999-2007 Sun Microsystems, Inc.</text>
 LicenseInfoInFile: SPL-1.0
-
-## File: HttpSocket.java
 
 FileName: ./src/sunlabs/brazil/util/http/HttpSocket.java
 FileType: SOURCE
@@ -3375,8 +2743,6 @@ FileLOC: 118
 FileCopyrightText: <text>Copyright (c) 1999-2002 Sun Microsystems, Inc.</text>
 LicenseInfoInFile: SPL-1.0
 
-## File: HttpSocketPool.java
-
 FileName: ./src/sunlabs/brazil/util/http/HttpSocketPool.java
 FileType: SOURCE
 FileChecksum: SHA1: 31089e0e8cbed023d06eed08f8842d33792623d2
@@ -3387,8 +2753,6 @@ FileSize: 4 Kb (5083 bytes)
 FileLOC: 147
 FileCopyrightText: <text>Copyright (c) 1999-2004 Sun Microsystems, Inc.</text>
 LicenseInfoInFile: SPL-1.0
-
-## File: HttpUtil.java
 
 FileName: ./src/sunlabs/brazil/util/http/HttpUtil.java
 FileType: SOURCE
@@ -3401,8 +2765,6 @@ FileLOC: 431
 FileCopyrightText: <text>Copyright (c) 1999-2004 Sun Microsystems, Inc.</text>
 LicenseInfoInFile: SPL-1.0
 
-## File: MimeHeaders.java
-
 FileName: ./src/sunlabs/brazil/util/http/MimeHeaders.java
 FileType: SOURCE
 FileChecksum: SHA1: 83709e631e2abe02bdd12253b1a17b7d482d1623
@@ -3413,8 +2775,6 @@ FileSize: 10 Kb (10431 bytes)
 FileLOC: 330
 FileCopyrightText: <text>Copyright (c) 1999-2005 Sun Microsystems, Inc.</text>
 LicenseInfoInFile: SPL-1.0
-
-## File: MatchString.java
 
 FileName: ./src/sunlabs/brazil/util/MatchString.java
 FileType: SOURCE
@@ -3427,8 +2787,6 @@ FileLOC: 180
 FileCopyrightText: <text>Copyright (c) 2001-2006 Sun Microsystems, Inc.</text>
 LicenseInfoInFile: SPL-1.0
 
-## File: Regexp.java
-
 FileName: ./src/sunlabs/brazil/util/regexp/Regexp.java
 FileType: SOURCE
 FileChecksum: SHA1: db2acc4841e76b3cddddba5e826e5dead03d6586
@@ -3439,8 +2797,6 @@ FileSize: 44 Kb (45484 bytes)
 FileLOC: 1505
 FileCopyrightText: <text>Copyright (c) 1999-2004 Sun Microsystems, Inc.</text>
 LicenseInfoInFile: SPL-1.0
-
-## File: Regsub.java
 
 FileName: ./src/sunlabs/brazil/util/regexp/Regsub.java
 FileType: SOURCE
@@ -3453,8 +2809,6 @@ FileLOC: 241
 FileCopyrightText: <text>Copyright (c) 1999-2004 Sun Microsystems, Inc.</text>
 LicenseInfoInFile: SPL-1.0
 
-## File: SocketFactory.java
-
 FileName: ./src/sunlabs/brazil/util/SocketFactory.java
 FileType: SOURCE
 FileChecksum: SHA1: c74400e18c19b8f6b0d571d5d514ed22c59b3f94
@@ -3465,8 +2819,6 @@ FileSize: 5 Kb (5464 bytes)
 FileLOC: 151
 FileCopyrightText: <text>Copyright (c) 1999-2004 Sun Microsystems, Inc.</text>
 LicenseInfoInFile: SPL-1.0
-
-## File: StringMap.java
 
 FileName: ./src/sunlabs/brazil/util/StringMap.java
 FileType: SOURCE
