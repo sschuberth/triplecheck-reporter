@@ -28,6 +28,10 @@ xcopy /s/y run\extensions ..\%publish%\extensions\
 xcopy /s/y run\triggers ..\%publish%\triggers\
 xcopy /s/y ..\misc\java ..\%publish%\java\
 
+:: copy the licenses and other related files
+copy EUPL-1.1.txt ..\%publish%\EUPL-1.1.txt
+copy LICENSE ..\%publish%\LICENSE
+
 :: creating the reports folder
 cd ..\%publish%
 mkdir reports
