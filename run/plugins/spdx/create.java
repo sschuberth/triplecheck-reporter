@@ -348,21 +348,29 @@ public class create extends Plugin{
          // get the name portion
          Archiver archiver = null;
          
+         int lastDot = fileName.lastIndexOf(".");
+         String extension = fileName.toLowerCase();
+//fileName.substring(lastDot).toLowerCase();
+         // clean up specific cases
+//         if(extension.contains("#")){
+//             lastDot = extension.indexOf("#");
+//             extension = extension.substring(0, lastDot);
+//         }
+         
          // handle different compressed files
-         if(fileName.endsWith(".tar.gz"))
+         if(extension.contains(".tar.gz"))
             archiver = ArchiverFactory.createArchiver(ArchiveFormat.TAR, 
                     CompressionType.GZIP);
         
-         if(fileName.endsWith("zip"))
+         if(extension.contains(".zip"))
             archiver = ArchiverFactory.createArchiver(ArchiveFormat.ZIP);
         
-         if(fileName.endsWith("jar"))
+         if(extension.contains(".jar"))
             archiver = ArchiverFactory.createArchiver(ArchiveFormat.JAR);
             
         if(archiver == null){
             task.setIsProcessing(false);
-            task.setStatus("File %1 is not recognized as something that "
-                    + "we can decompress");
+            task.setStatus("File extension not recognized: %1", extension);
             return null;
         }    
             
@@ -403,6 +411,10 @@ public class create extends Plugin{
         int lastSlash = sourceURL.lastIndexOf("/");
         
         String targetFilename = sourceURL.substring(lastSlash + 1);
+        
+        // remove unwanted characters from 
+        
+        
         // we need files to have an extension
         if(targetFilename.contains(".")==false){
             // nothing else to do, just leave

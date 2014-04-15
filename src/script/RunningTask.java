@@ -44,7 +44,8 @@ public class RunningTask{
     
      // the text that is repeated across these messages
     private String getHeader(){
-        return "Task \"" + title + "\" ("+ UID + "): ";
+        return "Task \"" + title //+ "\" ("+ UID + ")"
+                + ": ";
     }
        
     // where we keep track of what has happened on this task
