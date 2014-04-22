@@ -1,6 +1,6 @@
 @echo off
 
-set zipfile=triplecheck-recent.zip
+set zipfile=triplecheck.zip
 set cabfile=triplecheck-recent.cab
 set build=reporter
 set publish=publish

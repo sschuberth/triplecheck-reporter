@@ -143,7 +143,7 @@ public class pluginSearch extends Plugin{
             
             // look in reports now
             String matchProductName =
-                searchListSPDX(core.reports, searchTerm, definition.nodeSoftware);
+                searchListSPDX(searchTerm, definition.nodeSoftware);
             
                     // compile all the results together
             output =  //matchComponentName
@@ -179,13 +179,11 @@ public class pluginSearch extends Plugin{
      * Allows to perform the list on a specific list of
      * SPDX array files. This is intended to make the distinction
      * between the components and reports
-     * @param list
      * @param searchTerm
      * @param title
      * @return 
      */
-    public String searchListSPDX(ArrayList list, String searchTerm,
-            String title){
+    public String searchListSPDX(String searchTerm,  String title){
         String result = ""; 
         String keyword = searchTerm.toLowerCase();
 
@@ -195,8 +193,7 @@ public class pluginSearch extends Plugin{
                 
                
         
-        for(Object object : list){
-            SPDXfile spdx = (SPDXfile) object;
+        for(SPDXfile spdx : core.reports){
             String matchTitle = "";
         // first search, find components we have with the same name
             String spdxId = spdx.getId().toLowerCase();

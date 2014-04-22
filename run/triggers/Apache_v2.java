@@ -36,7 +36,9 @@ public class Apache_v2 implements Trigger {
     // the list of id's that we can use to identify a license
     // identifiers are always in lower case to ease processing speed
     String[] list = {
-        "Apache License, Version 2.0"
+        "Apache License, Version 2.0",
+        "http://www.apache.org/licenses/LICENSE-2.0",
+        "Apache License Version 2.0",
     };
     
     /**

@@ -11,7 +11,7 @@ DataLicense: CC-BY-4.0
 
 Creator: Nuno Brito
 Creator: Tool: TripleCheck 0.6
-Created: 2014-04-11T09:50:42Z
+Created: 2014-04-22T11:22:45Z
 
 ##-------------------------
 ## Package Information
@@ -997,6 +997,7 @@ FileChecksum: SHA256: 35d2e0d1c39575b6e3259aa027707b7d45b555b3709d47cc45e44157cf
 FileChecksum: MD5: 6bb669bbc2af3e80375c0bfa85230db5
 FileChecksum: SSDEEP: 24:pzPHGHOhBDANqQBkAOKmiaPLIrPmRP1kZ2tePPmt+BUPAMIqCP1K58P5+W:NqGB6qQGx1v2eXkZ42mtzlQ/
 FileSize: 1 Kb (1334 bytes)
+LicenseInfoInFile: Apache-2.0
 
 FileName: ./res/raw/proxysettings.html
 FileType: SOURCE
@@ -1029,6 +1030,7 @@ FileChecksum: SHA256: 96e084a8118df15e04e7d6e09cfb07d1045006cb89b68c348241e10c8d
 FileChecksum: MD5: d147643a80a366b68170640db9b20b5f
 FileChecksum: SSDEEP: 24:/7PHGHOAIxr6mmM3jcNqQBAIbNvVKmiaPLIrDa6PmRP19vtePPm6aeBUPAMoxqCb:7qIxrnz3jSqQ3bNvV1v2+6eX9F2m6aT8
 FileSize: 1 Kb (1508 bytes)
+LicenseInfoInFile: Apache-2.0
 
 FileName: ./res/raw-ar/proxysettings.html
 FileType: SOURCE
@@ -1061,6 +1063,7 @@ FileChecksum: SHA256: 897cc39a3b349f34966b3e598ed333694f04d8b42f7b94ecbd6ac29dbe
 FileChecksum: MD5: 5a91ba954e2215937e07f586aece3d42
 FileChecksum: SSDEEP: 24:ET9FPHGHOR++HpdNqQBGAj3NKmiaPLIrpmRP1m+tePPmIBUPAMOqCP1y58P5+W:YTq2RJXqQwa91v2IXP2md/Q3
 FileSize: 1 Kb (1335 bytes)
+LicenseInfoInFile: Apache-2.0
 
 FileName: ./res/raw-cs/proxysettings.html
 FileType: SOURCE
@@ -1093,6 +1096,7 @@ FileChecksum: SHA256: 24cc4b7b36416750b8bd01b2b2da52fec804ecd0346eec7174986d1bfc
 FileChecksum: MD5: 6d461fda9277ea459cd2f8ee43bc75f1
 FileChecksum: SSDEEP: 24:E/UPHGHOaaSAcNqQBgtAD47KmiaPLIrImRP1/Z2tePPm6+BUPAMbqCP1b58P5jW:E/wqPDqQCd1v2zX/Z42m6zWQj
 FileSize: 1 Kb (1317 bytes)
+LicenseInfoInFile: Apache-2.0
 
 FileName: ./res/raw-de/proxysettings.html
 FileType: SOURCE
@@ -1125,6 +1129,7 @@ FileChecksum: SHA256: 6578ee06c6d91c277bffac49d1b7504ae7bc04c3b0b8602876ba3dd4b2
 FileChecksum: MD5: cd3b61dafcc7b9c9460e5966cdbd7755
 FileChecksum: SSDEEP: 24:431kqjrPHGHOFbueF+642GNqQBIL7TKKmiaPLIrFlTPmRP1btePPmOBUPAMQqCPx:43tqibueUqQqLXK1v2FleXZ2mDtQT
 FileSize: 1 Kb (1723 bytes)
+LicenseInfoInFile: Apache-2.0
 
 FileName: ./res/raw-el/proxysettings.html
 FileType: SOURCE
@@ -1157,6 +1162,7 @@ FileChecksum: SHA256: 5a313a9ddb5d02e7de41ced25e891e1fd75a496ccee9166b7c2ba1fb39
 FileChecksum: MD5: 63bb3d27a9de001964f111ad0b41e801
 FileChecksum: SSDEEP: 24:bd3nmCBxPHGHOufB+QNqQBmAqimKmiaPLIrsmRP1LZ2tePPmm+BUPAM3qCP1H58s:b1tHqD82qQgHim1v23XLZ42mmz6QL
 FileSize: 1 Kb (1370 bytes)
+LicenseInfoInFile: Apache-2.0
 
 FileName: ./res/raw-es/proxysettings.html
 FileType: SOURCE
@@ -1189,6 +1195,7 @@ FileChecksum: SHA256: 35d2e0d1c39575b6e3259aa027707b7d45b555b3709d47cc45e44157cf
 FileChecksum: MD5: 6bb669bbc2af3e80375c0bfa85230db5
 FileChecksum: SSDEEP: 24:pzPHGHOhBDANqQBkAOKmiaPLIrPmRP1kZ2tePPmt+BUPAMIqCP1K58P5+W:NqGB6qQGx1v2eXkZ42mtzlQ/
 FileSize: 1 Kb (1334 bytes)
+LicenseInfoInFile: Apache-2.0
 
 FileName: ./res/raw-fr/proxysettings.html
 FileType: SOURCE
@@ -1221,6 +1228,7 @@ FileChecksum: SHA256: 1fcc1280a5bc44509ee3d377ba6bda37c6cf56b883478408cce72f285c
 FileChecksum: MD5: 223984d871759be57816f83584fc2f5c
 FileChecksum: SSDEEP: 24:dp3PHGHO5FDXNqQBsAsKmiaPLIrNmRP1Y+tn9PPmSBUPAMWqCP1o58P5SW:Tqux9qQ6Z1v2cXNnBmXnQV
 FileSize: 1 Kb (1421 bytes)
+LicenseInfoInFile: Apache-2.0
 
 FileName: ./res/raw-he/proxysettings.html
 FileType: SOURCE
@@ -1253,6 +1261,7 @@ FileChecksum: SHA256: b8786da0d51578935b4cc7cda6fc552fea444c7b07874b15048ed05ad9
 FileChecksum: MD5: 53862cd77098ff23d61e45efa009bc8d
 FileChecksum: SSDEEP: 24:XEPPHGHONBUaXfNqQBsIAw+HKmiaPLIrqYPmRP1nNtePPmLgBUPAMkjqCP1nO58x:XEHq6PXVqQaIJI1v2qYeXnD2mLFkeQnH
 FileSize: 1 Kb (1336 bytes)
+LicenseInfoInFile: Apache-2.0
 
 FileName: ./res/raw-hr/proxysettings.html
 FileType: SOURCE
@@ -1285,6 +1294,7 @@ FileChecksum: SHA256: d7c75b92f6a90cb854ca0fd7f7b27e5f02d226f8f280e7ff77466102b4
 FileChecksum: MD5: 67b8a6081bf83aa1b15b4a4850ee2ac0
 FileChecksum: SSDEEP: 24:BCLPHGHOAr5MDb2NqQBFNvSKmiaPLIrSmRP11Z2tePPmw+BUPAMZqCP1R58P5lW:YqJWDboqQLU1v2NX1Z42mwzYQH
 FileSize: 1 Kb (1367 bytes)
+LicenseInfoInFile: Apache-2.0
 
 FileName: ./res/raw-hu/proxysettings.html
 FileType: SOURCE
@@ -1317,6 +1327,7 @@ FileChecksum: SHA256: f6bc4a309cd5742ebed6257dc273e83af8b5e9eff2c6ece065b59cffab
 FileChecksum: MD5: 2889d0cf13f2ce7d181078a5bd704878
 FileChecksum: SSDEEP: 24:M9uPHGHOMtW8DeoAPNqQBaAqhKmiaPLIrymRP16tePPmfBUPAM1qCP1x58P5dW:PqbtsqQAHh1v2tX02m+sQ1
 FileSize: 1 Kb (1379 bytes)
+LicenseInfoInFile: Apache-2.0
 
 FileName: ./res/raw-it/proxysettings.html
 FileType: SOURCE
@@ -1349,6 +1360,7 @@ FileChecksum: SHA256: 3e65d8771323e48d3ee9d0552a677e1ed0a02cdf721e21f4f82eca9b2d
 FileChecksum: MD5: 50e15ad7989ca2739d3e26e8ba52ace6
 FileChecksum: SSDEEP: 24:FYshUPHGHOmC3DDe8MWNqQB8N8ATSdKmiaPLIrHmRP1QZ2tePPmh+BUPAMEqCP1z:FRwqe3DJMIqQaygSd1v2GXQZ42mhzZQz
 FileSize: 1 Kb (1448 bytes)
+LicenseInfoInFile: Apache-2.0
 
 FileName: ./res/raw-ja/proxysettings.html
 FileType: SOURCE
@@ -1381,6 +1393,7 @@ FileChecksum: SHA256: 35d2e0d1c39575b6e3259aa027707b7d45b555b3709d47cc45e44157cf
 FileChecksum: MD5: 6bb669bbc2af3e80375c0bfa85230db5
 FileChecksum: SSDEEP: 24:pzPHGHOhBDANqQBkAOKmiaPLIrPmRP1kZ2tePPmt+BUPAMIqCP1K58P5+W:NqGB6qQGx1v2eXkZ42mtzlQ/
 FileSize: 1 Kb (1334 bytes)
+LicenseInfoInFile: Apache-2.0
 
 FileName: ./res/raw-ko/proxysettings.html
 FileType: SOURCE
@@ -1413,6 +1426,7 @@ FileChecksum: SHA256: 25494f494a4b8371c024e3bbe5ac16f5661ab59b2ece153e45ddce76b9
 FileChecksum: MD5: b936fba426294272bf003029c55f3648
 FileChecksum: SSDEEP: 24:WPHGHOMJ2jlJNqQBiUA47KmiaPLIrUPmRP1StePPmHBUPAM1qCP1p58P55W:uqzJ6lDqQhd1v2UeXc2mWsQJ
 FileSize: 1 Kb (1360 bytes)
+LicenseInfoInFile: Apache-2.0
 
 FileName: ./res/raw-lt/proxysettings.html
 FileType: SOURCE
@@ -1445,6 +1459,7 @@ FileChecksum: SHA256: 97baf7cd05dc24fba1083c066071b4289550257a78436a78637646a19e
 FileChecksum: MD5: a4f988f46a561895bf3207ea8c1d4b9d
 FileChecksum: SSDEEP: 24:ds/PHGHOgBDANqQBkAG/wKmiaPLIrKmRP1Z+tePPmdBUPAMpqCP1L58P5FW:W3qpB6qQGdY1v21Xe2msoQV
 FileSize: 1 Kb (1335 bytes)
+LicenseInfoInFile: Apache-2.0
 
 FileName: ./res/raw-nb/proxysettings.html
 FileType: SOURCE
@@ -1477,6 +1492,7 @@ FileChecksum: SHA256: 7142a56f9597f4e5a0de33e9bf9b63db00eabbcb0376a45431e8a52888
 FileChecksum: MD5: 14b2f18440eb4b91f67a9a1867c9d83a
 FileChecksum: SSDEEP: 24:0mPPHGHOvGewLJvPNqQBkAIKmiaPLIrkYPmRP13NtePPmzgBUPAMejqCP13O58Pj:fHqCG7VvFqQGp1v2kYeX3D2mzFeeQ3kI
 FileSize: 1 Kb (1366 bytes)
+LicenseInfoInFile: Apache-2.0
 
 FileName: ./res/raw-nl/proxysettings.html
 FileType: SOURCE
@@ -1509,6 +1525,7 @@ FileChecksum: SHA256: 925db509ca291992e218e90392dacca7b2ebbe0912065f8683d5782176
 FileChecksum: MD5: 6fe45174452145d33c9b7a0de1b3311e
 FileChecksum: SSDEEP: 24:wUOjEPPHGHOd+E3iJ/nivNqQB2ABnnOxKKmiaPLIrDmRP1yZ2tePPm7+BUPAM8qY:wUUEHqQB/qQgsP1v2SXyZ42m7zxQh
 FileSize: 1 Kb (1333 bytes)
+LicenseInfoInFile: Apache-2.0
 
 FileName: ./res/raw-pl/proxysettings.html
 FileType: SOURCE
@@ -1541,6 +1558,7 @@ FileChecksum: SHA256: 5abdc7c66da24b9a40bab23db0aa5407eb9c9ddc876eda369a3bf32afb
 FileChecksum: MD5: 45751195495915a3a38d77db928b4429
 FileChecksum: SSDEEP: 24:GEogPHGHOoS7TdNqQBmvHQXKmiaPLIr0PmRP1wtePPm5BUPAMRqCP1v58P55W:/Fq1mXqQgvHm1v20eXC2m4QQd
 FileSize: 1 Kb (1374 bytes)
+LicenseInfoInFile: Apache-2.0
 
 FileName: ./res/raw-pt/proxysettings.html
 FileType: SOURCE
@@ -1573,6 +1591,7 @@ FileChecksum: SHA256: 61c7962679aed1e761c85d21e4ed8dfc49df3e7960cdaa7d5a12773360
 FileChecksum: MD5: 9a8a9e85ee35fe4d43096b4c483a0882
 FileChecksum: SSDEEP: 24:r9gEQIfrAUPHGHOzUIZNqQB1QoGAQSCKmiaPLIrlmRP13W+tePPmoBUPAM+qCP1h:PDAwqOUyqQoR0C1v2kX3/2m9vQ3x
 FileSize: 1 Kb (1607 bytes)
+LicenseInfoInFile: Apache-2.0
 
 FileName: ./res/raw-ru/proxysettings.html
 FileType: SOURCE
@@ -1605,6 +1624,7 @@ FileChecksum: SHA256: 2fcfb184f183a355c6d4dec3cf58728117e59095d7d7f7fae70285a3cb
 FileChecksum: MD5: a0998790a3ac30c73e9f8aec0e8e74ae
 FileChecksum: SSDEEP: 24:ERViPcPHGH4u+reVNqQB5RA7xKmiaPLIr8mRP1qtePPmXBUPAMfqCP1h58P5vW:4ViQqhPqQPRq1v2HXE2mmCQ5
 FileSize: 1 Kb (1374 bytes)
+LicenseInfoInFile: Apache-2.0
 
 FileName: ./res/raw-sk/proxysettings.html
 FileType: SOURCE
@@ -1637,6 +1657,7 @@ FileChecksum: SHA256: 7cf43e0b3fe58ad107f42535498ea1ccb77ae424a89ef6e90d64971559
 FileChecksum: MD5: ed4d6675777addc52ec0f5866c0d4e7f
 FileChecksum: SSDEEP: 48:gDqYqFZJbOFwJFqQeTt9f1v25eX352mzrQ39:gEygoJyk2mz6
 FileSize: 1 Kb (1544 bytes)
+LicenseInfoInFile: Apache-2.0
 
 FileName: ./res/raw-sr/proxysettings.html
 FileType: SOURCE
@@ -1669,6 +1690,7 @@ FileChecksum: SHA256: 35d2e0d1c39575b6e3259aa027707b7d45b555b3709d47cc45e44157cf
 FileChecksum: MD5: 6bb669bbc2af3e80375c0bfa85230db5
 FileChecksum: SSDEEP: 24:pzPHGHOhBDANqQBkAOKmiaPLIrPmRP1kZ2tePPmt+BUPAMIqCP1K58P5+W:NqGB6qQGx1v2eXkZ42mtzlQ/
 FileSize: 1 Kb (1334 bytes)
+LicenseInfoInFile: Apache-2.0
 
 FileName: ./res/raw-sv/proxysettings.html
 FileType: SOURCE
@@ -1701,6 +1723,7 @@ FileChecksum: SHA256: f7eb96f96370f70907e3c3c475e54fbb01e48965c3f58d470bd45afe0b
 FileChecksum: MD5: ead5e1883f8a86bff3e67d158a4cd048
 FileChecksum: SSDEEP: 24:8U1hIdqPHGHOATM/BDANqQBkAOKmiaPLIrPmRP1kZ2tePPmt+BUPAMIqCP1K58Pt:8UAyqQ/B6qQGx1v2eXkZ42mtzlQ/
 FileSize: 1 Kb (1421 bytes)
+LicenseInfoInFile: Apache-2.0
 
 FileName: ./res/raw-th/proxysettings.html
 FileType: SOURCE
@@ -1733,6 +1756,7 @@ FileChecksum: SHA256: 460d0d71e3a8a882d137c13b3fce3b38573c61a57ffd1f5573b691198a
 FileChecksum: MD5: 5080966fc985fdf6ef554e62f990f08b
 FileChecksum: SSDEEP: 24:ZdcPHGHOcXmvu9NqQB1JLAPQyPdKmiaPLIrfPmRP1VtePPmsBUPAMMqCP1W58P5N:Z6ql2vu3qQbFvG1v2feXb2mhBQl
 FileSize: 1 Kb (1356 bytes)
+LicenseInfoInFile: Apache-2.0
 
 FileName: ./res/raw-tr/proxysettings.html
 FileType: SOURCE
@@ -1765,6 +1789,7 @@ FileChecksum: SHA256: 16c28d6936e86897c8c3e7174384e860ca65d188b81a6382ea2d5c7aae
 FileChecksum: MD5: ac7d75378350f24b074ba60cf07d0bf8
 FileChecksum: SSDEEP: 24:CwNjKPHGHOnMxceAONqQBQMLAiOKmiaPLIrfbfPmRP13W0tePPmKJBUPAMRWqCPP:PNGqKuYQqQLLQ1v2TeX372mhpQ35
 FileSize: 1 Kb (1572 bytes)
+LicenseInfoInFile: Apache-2.0
 
 FileName: ./res/raw-uk/proxysettings.html
 FileType: SOURCE
@@ -1797,6 +1822,7 @@ FileChecksum: SHA256: f940ce0768c29c344392fdb7f0c14e86939fa06cd3e55f8a2624ccf8b5
 FileChecksum: MD5: 49c10802e8178bd7969709be0987a1a4
 FileChecksum: SSDEEP: 24:9APHGHWfLrFPNqWQOAIuvWKmiaPLIrJmRP1ptePPmJI9BUPAMsPqCP1S58P5+W:Gq6LpFqG7YW1v2oX32mJIMsyQX
 FileSize: 1 Kb (1327 bytes)
+LicenseInfoInFile: Apache-2.0
 
 FileName: ./res/raw-zh-rCN/proxysettings.html
 FileType: SOURCE

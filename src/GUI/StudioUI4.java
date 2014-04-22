@@ -16,6 +16,7 @@ import definitions.is;
 import java.awt.Cursor;
 import java.awt.Toolkit;
 import java.awt.event.KeyEvent;
+import java.awt.event.MouseEvent;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
@@ -24,13 +25,17 @@ import java.util.Timer;
 import java.util.TimerTask;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JEditorPane;
 import javax.swing.JTextField;
 import javax.swing.JTree;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 import javax.swing.event.HyperlinkEvent;
 import javax.swing.event.HyperlinkListener;
+import javax.swing.text.Element;
 import javax.swing.text.html.FormSubmitEvent;
+import javax.swing.text.html.HTML;
+import javax.swing.text.html.HTMLDocument;
 import javax.swing.text.html.HTMLEditorKit;
 import main.actions;
 import main.controller;
@@ -1027,4 +1032,32 @@ public class StudioUI4 extends javax.swing.JFrame {
         log.write(is.INFO, Messages.CallFrontScreen);
     }
  
+    
+    /**
+     * This method will track a given mouse click to expose what HTML element
+     * was clicked upon
+     * @param event
+     * @return 
+     * @origin http://stackoverflow.com/questions/12932089/handling-hyperlink-right-clicks-on-a-jtextpane
+     * @copyright StanislavL - http://stackoverflow.com/users/301607/stanislavl
+     * @license CC-BY-SA-3.0
+     * @retrieved 2014-04-19
+     * @retriever Nuno Brito
+     * Not so sure if this code will be needed, keeping it around for the moment
+     */
+    private Element getHyperlinkElement(MouseEvent event) {
+            JEditorPane editor = (JEditorPane) event.getSource();
+            int pos = editor.getUI().viewToModel(editor, event.getPoint());
+            if (pos >= 0 && editor.getDocument() instanceof HTMLDocument) {
+                HTMLDocument hdoc = (HTMLDocument) editor.getDocument();
+                Element elem = hdoc.getCharacterElement(pos);
+                if (elem.getAttributes().getAttribute(HTML.Tag.A) != null) {
+                    return elem;
+                }
+            }
+            return null;
+        }
+
+    
+    
 }
