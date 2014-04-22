@@ -205,6 +205,9 @@ public class actions {
               node.scriptFile = scriptFile;
               node.scriptFolder = scriptFile.getParentFile();
               node.scriptMethod = "summary";
+              
+              // Set as object the file pointer
+              node.setUserObject(file);
               // create the correct parameters
               String relativePath = 
                       file.getAbsolutePath().replace(core.getProductsFolder().getAbsolutePath(), "");

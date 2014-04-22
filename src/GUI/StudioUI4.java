@@ -26,8 +26,11 @@ import java.util.TimerTask;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JEditorPane;
+import javax.swing.JMenuItem;
+import javax.swing.JPopupMenu;
 import javax.swing.JTextField;
 import javax.swing.JTree;
+import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 import javax.swing.event.HyperlinkEvent;
@@ -113,6 +116,7 @@ public class StudioUI4 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        menuItem_Delete = new javax.swing.JMenuItem();
         jSplitPane1 = new javax.swing.JSplitPane();
         panelWest = new javax.swing.JScrollPane();
         tree = new javax.swing.JTree();
@@ -122,6 +126,14 @@ public class StudioUI4 extends javax.swing.JFrame {
         text = new javax.swing.JEditorPane();
         button = new javax.swing.JButton();
         search = new javax.swing.JTextField();
+
+        menuItem_Delete.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/cross-script.png"))); // NOI18N
+        menuItem_Delete.setText("Delete");
+        menuItem_Delete.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                deleteSomethingClicked(evt);
+            }
+        });
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("TripleCheck");
@@ -269,49 +281,12 @@ public class StudioUI4 extends javax.swing.JFrame {
     }//GEN-LAST:event_frameKeypressed
 
     private void treeeventTreeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_treeeventTreeMouseClicked
-//        int selRow = tree.getRowForLocation(evt.getX(), evt.getY());
-//        //TreePath selPath = tree.getPathForLocation(evt.getX(), evt.getY());
-//        if(selRow != -1) {
-//            if((evt.getClickCount() == 1)){
-//                   // &&isEnoughTime()) {
-//                doTreeNodeChanged(false);
-//            }
-//            else if(evt.getClickCount() == 2) {
-//                    doTreeNodeChanged(true);
-//            }
-//        }
-//        if (isAlreadyOneClick) {
-//        //System.out.println("double click");
-//        doTreeNodeChanged(true);
-//        isAlreadyOneClick = false;
-//        return;
-//        } else {
-//        isAlreadyOneClick = true;
-//        Timer t = new Timer("doubleclickTimer", false);
-//        t.schedule(new TimerTask() {
-//            @Override
-//            public void run() {
-//                isAlreadyOneClick = false;
-//            }
-//        }, 500);
-//    }
-//       
-//        
-//                
-//        int selRow = tree.getRowForLocation(evt.getX(), evt.getY());
-//        if(selRow != -1) {
-//            if((evt.getClickCount() == 1)){
-//               if(isEnoughTime()){
-//                   doTreeNodeChanged(false);
-//               }
-//            }  
-//        }    
-        
-        
-//        if(firstClickActive == false){
-//            firstClickActive = true;
-//            timeBombOneClick();
-//        }
+
+        // are we handling a right-click event?
+        if (SwingUtilities.isRightMouseButton(evt)) {
+            processRightClickTreeview(evt);
+            return;
+        }
         
         if(firstClickActive){
             doTreeNodeChanged(true);
@@ -326,6 +301,37 @@ public class StudioUI4 extends javax.swing.JFrame {
         }
         
     }//GEN-LAST:event_treeeventTreeMouseClicked
+    
+    
+    /**
+     * This method will handle what happens when the end-user uses the mouse
+     * right-click button.
+     * @param evt 
+     */
+    void processRightClickTreeview(java.awt.event.MouseEvent evt){
+        // get the place where the right-click occurred
+        int row = tree.getClosestRowForLocation(evt.getX(), evt.getY());
+        // mark the new selection on our treeview
+        tree.setSelectionRow(row);
+        
+        // get the selected node
+        TreeNodeSPDX node = swingUtils.getSelectedNode();
+        // preflight check
+        if(node == null){
+            // nothing to do, just leave
+            return;
+        }
+        // we only care about SPDX files here
+        if(node.nodeType != NodeType.SPDX){
+            return;
+        }
+        
+   
+        JPopupMenu popupMenu = new JPopupMenu();
+        
+        popupMenu.add(menuItem_Delete);
+        popupMenu.show(evt.getComponent(), evt.getX(), evt.getY());
+    }
     
     
     /**
@@ -344,21 +350,6 @@ public class StudioUI4 extends javax.swing.JFrame {
                 secondClickActive = false;
             }
         }, time);
-    }
-    
-    
-    private Boolean isEnoughTime(){
-        long thisTime = System.currentTimeMillis();
-        long futureTime = lastTime + 1000;
-        
-        // are we there yet?
-        if(thisTime > futureTime){
-            lastTime = System.currentTimeMillis();
-            return true;
-        }else{
-            return false;
-        }
-        
     }
     
     
@@ -409,12 +400,48 @@ public class StudioUI4 extends javax.swing.JFrame {
         performSearch(evt);
     }//GEN-LAST:event_searchdoSearch
 
+    private void deleteSomethingClicked(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_deleteSomethingClicked
+        deleteSomething();
+    }//GEN-LAST:event_deleteSomethingClicked
+
+    void deleteSomething(){
+        // get the selected node
+        TreeNodeSPDX node = swingUtils.getSelectedNode();
+        // preflight check
+        if(node == null){
+            // nothing to do, just leave
+            return;
+        }
+        // we only care about SPDX files here
+        if(node.nodeType != NodeType.SPDX){
+            return;
+        }
+        
+        File file = (File) node.getUserObject();
+        
+        // no need to continue if the file does not exist
+        if(file.exists() == false){
+            return;
+        }
+        
+        // output the message that we are deleting an SPDX
+        log.write(is.DELETING,"SPDX to remove: %1", file.getAbsolutePath());
+        // do the deletion
+        file.delete();
+        // refresh all the contents
+        //node = tree.
+        String UID = (String) core.temp.get(is.products);
+        swingUtils.refreshAll(tree, UID);
+    }
+    
+    
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton button;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JSplitPane jSplitPane1;
+    private javax.swing.JMenuItem menuItem_Delete;
     private javax.swing.JPanel panelEast;
     private javax.swing.JScrollPane panelWest;
     private javax.swing.JTextField search;

@@ -29,7 +29,8 @@ public class MIT implements Trigger {
     // the list of id's that we can use to identify a license
     String[] list = {
         "under MIT license",
-        "Permission is hereby granted, free of charge, to any person obtaining"
+        "Permission is hereby granted, free of charge, to any person obtaining",
+        "and associated documentation files"
     };
     
     /**

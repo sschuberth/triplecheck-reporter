@@ -3,6 +3,7 @@
 <properties>
 <comment/>
 <entry key="SOURCEFOLDER--&gt;pdfbox.spdx">D:\triplechecksoftware\source\pdfbox</entry>
+<entry key="SOURCEFOLDER--&gt;javascript-ipv6-master.spdx">D:\triplechecksoftware\source\javascript-ipv6-master</entry>
 <entry key="SOURCEFOLDER--&gt;zlib-1.2.8.spdx">D:\triplechecksoftware\source\zlib-1.2.8</entry>
 <entry key="SOURCEFOLDER--&gt;delphi.spdx">D:\temp\delphi</entry>
 <entry key="SOURCEFOLDER--&gt;adblockplusandroid.spdx">D:\triplechecksoftware\source\adblockplus\adblockplusandroid</entry>
@@ -10,8 +11,10 @@
 <entry key="SOURCEFOLDER--&gt;jfreechart-1.0.17.tar.gz.spdx">D:\triplechecksoftware\reporter\run\downloads\extracted\jfreechart-1.0.17.tar.gz</entry>
 <entry key="SOURCEFOLDER--&gt;HtmlViewer-11.4.spdx">D:\triplechecksoftware\source\HtmlViewer-11.4</entry>
 <entry key="SOURCEFOLDER--&gt;rpy2-2.3.10.tar.gz#md5=9db1b8be710f1b6eee8974a956185c37.spdx">D:\triplechecksoftware\reporter\run\downloads\extracted\rpy2-2.3.10.tar.gz#md5=9db1b8be710f1b6eee8974a956185c37</entry>
+<entry key="SOURCEFOLDER--&gt;javascript-ipv6-2014-04-22.spdx">D:\triplechecksoftware\source\javascript-ipv6-master\javascript-ipv6-2014-04-22</entry>
 <entry key="SOURCEFOLDER--&gt;JakeWharton-ActionBarSherlock-5a15d92.spdx">D:\triplechecksoftware\source\JakeWharton-ActionBarSherlock-5a15d92</entry>
 <entry key="SOURCEFOLDER--&gt;RootTools-2014-04-22.spdx">D:\triplechecksoftware\source\RootTools-2014-04-22\RootTools-master\RootTools-2014-04-22</entry>
 <entry key="LastFolderNewSPDX">D:\triplechecksoftware\source\adblockplus\adblockplusandroid</entry>
 <entry key="TextChanger">D:\triplechecksoftware\reporter\run\triggers</entry>
+<entry key="SOURCEFOLDER--&gt;ActionBarSherlock-2014-04-22.spdx">D:\triplechecksoftware\source\ActionBarSherlock-master\ActionBarSherlock-2014-04-22</entry>
 </properties>

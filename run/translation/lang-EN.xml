@@ -7,6 +7,7 @@
 <entry key="Adding tools">Adding tools</entry>
 <entry key="Task &quot;Creating an SPDX document: File was downloaded as &quot;%1&quot; with an approximate size of %2">Task "Creating an SPDX document: File was downloaded as "%1" with an approximate size of %2</entry>
 <entry key="Task &quot;Creating an SPDX document: All done!">Task "Creating an SPDX document: All done!</entry>
+<entry key="RSS feed unavailable, possibly no Internet connected">RSS feed unavailable, possibly no Internet connected</entry>
 <entry key="Creating an SPDX document using as source: %1">Creating an SPDX document using as source: %1</entry>
 <entry key="Tree node changed: %1">Tree node changed: %1</entry>
 <entry key="Task &quot;Creating an SPDX document: 15 seconds were necessary to complete this task">Task "Creating an SPDX document: 15 seconds were necessary to complete this task</entry>
@@ -17,6 +18,7 @@
 <entry key="Version %1 %2">Version %1 %2</entry>
 <entry key="Web server is available on port %1 of this machine">Web server is available on port %1 of this machine</entry>
 <entry key="Web request for %1">Web request for %1</entry>
+<entry key="SPDX to remove: %1">SPDX to remove: %1</entry>
 <entry key="Download complete, %1">Download complete, %1</entry>
 <entry key="Task &quot;Creating an SPDX document: Downloading the file from %1">Task "Creating an SPDX document: Downloading the file from %1</entry>
 <entry key="Added trigger: %1">Added trigger: %1</entry>
@@ -32,10 +34,11 @@
 <entry key="Support to SPDX creation from folder on disk is not yet implemented">Support to SPDX creation from folder on disk is not yet implemented</entry>
 <entry key="Preparing to process %1 files">Preparing to process %1 files</entry>
 <entry key="Task &quot;Creating an SPDX document: 13 seconds were necessary to complete this task">Task "Creating an SPDX document: 13 seconds were necessary to complete this task</entry>
+<entry key="Task &quot;Creating report: 3 seconds were necessary to complete this task">Task "Creating report: 3 seconds were necessary to complete this task</entry>
 <entry key="SU2006- clicked on link %1">SU2006- clicked on link %1</entry>
 <entry key="Call Front Screen">Call Front Screen</entry>
-<entry key="Tree node doubleclick on: %1">Tree node doubleclick on: %1</entry>
 <entry key="Task &quot;Creating report: 0 seconds were necessary to complete this task">Task "Creating report: 0 seconds were necessary to complete this task</entry>
+<entry key="Tree node doubleclick on: %1">Tree node doubleclick on: %1</entry>
 <entry key="Found %1 files in %2">Found %1 files in %2</entry>
 <entry key="Refreshed the list of SPDX documents">Refreshed the list of SPDX documents</entry>
 <entry key="Task &quot;Creating report: Creating SPDX report">Task "Creating report: Creating SPDX report</entry>
