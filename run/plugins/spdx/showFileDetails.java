@@ -252,6 +252,7 @@ public class showFileDetails extends Plugin{
                 + "</h2>"
                 + html.div()
                 + summary
+                + getCopyrightData(fileInfo)
                 + html._div
                // + html.br
                 ;
@@ -318,7 +319,8 @@ public class showFileDetails extends Plugin{
                         + html._div;
         }
         
-      
+        
+      // the end result
         String result = html.div()
                     + resultIntroduction
                     + sourceCodeActions(fileInfo, sourceFolder)
@@ -386,6 +388,25 @@ public class showFileDetails extends Plugin{
                 ;
         
         return result;
+    }
+
+    /**
+     * Shows the copyright data when it is available
+     * @param fileInfo
+     * @return      HTML code ready to display for the end user
+     */
+    private String getCopyrightData(FileInfo fileInfo) {
+        String copyright = fileInfo.getCopyright();
+        if(copyright.isEmpty()){
+            return "";
+        }
+        // reinforce the break lines with HTML break lines
+        copyright = html.br
+                //html.h2("Copyright notices") +
+                + copyright.replace("\\n", "\\n" + html.br);
+
+        // all done
+        return copyright;
     }
     
     

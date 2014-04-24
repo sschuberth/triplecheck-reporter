@@ -28,8 +28,6 @@ import script.log;
 import utils.files;
 import utils.html;
 import static utils.misc.sortByComparator;
-import static utils.misc.sortHashMap;
-import www.Table;
 
 public final class SPDXfile {
     
@@ -811,7 +809,7 @@ public final class SPDXfile {
         System.out.println("\nFile: " + file.getName() 
                 + " (" +statsLanguagesTotal+ " known files)");
         // create a sorted array with the most popular languages
-        Map<Object,Integer> map = utils.misc.sortHashMap(statsLanguagesFound);
+        Map<Object,Integer> map = sortByComparator(statsLanguagesFound);
 
         // show the ordered results
         for(Object langObj :map.keySet()){
