@@ -89,7 +89,7 @@ public class CopyrightDetector implements Trigger {
         }
         
         // don't accept copyright texts too long (most likely a false positive)
-        if(copyright.length() > 150){
+        if(copyright.length() > 200){
             copyright = "";
         }
         

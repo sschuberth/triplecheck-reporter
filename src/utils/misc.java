@@ -40,24 +40,36 @@ public class misc {
     
     /**
      * Sort an hashmap according to its value.
-     * @origin http://wikijava.org/wiki/Sort_a_HashMap
-     * @date 2011-05-28
-     * @modified http://nunobrito.eu
-     * @date 2014-04-04
+     * @param unsortMap
+     * @return      A sorted map according to the highest value
+     * @origin http://www.mkyong.com/java/how-to-sort-a-map-in-java/
+     * @copyright (c) 2008-2014 Mkyong.com, all rights reserved.
+     * @license CC-BY-SA-3.0
+     * @retrieved 2014-04-24 by Nuno Brito
      */
-    public static Map sortHashMap(HashMap input){
-        Map<Object,Integer> map = new LinkedHashMap<Object,Integer>();
-        List<Object> yourMapKeys = new ArrayList<Object>(input.keySet());
-        List<Integer> yourMapValues = new ArrayList<Integer>(input.values());
-        TreeSet<Integer> sortedSet = new TreeSet<Integer>(yourMapValues);
-        Object[] sortedArray = sortedSet.toArray();
-        int size = sortedArray.length - 1;
-        for (int i=size; i>=0; i--) {
-        map.put
-            (yourMapKeys.get(yourMapValues.indexOf(sortedArray[i])),
-            (Integer) sortedArray[i]);
-        }
-    return map;
-}
+   
+    public static Map sortByComparator(Map unsortMap) {
+ 
+		List list = new LinkedList(unsortMap.entrySet());
+ 
+		// sort list based on comparator
+		Collections.sort(list, new Comparator() {
+                        @Override
+			public int compare(Object o1, Object o2) {
+				return ((Comparable) ((Map.Entry) (o2)).getValue())
+                                       .compareTo(((Map.Entry) (o1)).getValue());
+			}
+		});
+ 
+		// put sorted list into map again
+                //LinkedHashMap make sure order in which keys were inserted
+		Map sortedMap = new LinkedHashMap();
+		for (Iterator it = list.iterator(); it.hasNext();) {
+			Map.Entry entry = (Map.Entry) it.next();
+			sortedMap.put(entry.getKey(), entry.getValue());
+		}
+		return sortedMap;
+	}
+    
     
 }

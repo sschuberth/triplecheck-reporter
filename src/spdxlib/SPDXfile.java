@@ -27,6 +27,8 @@ import script.FileExtension;
 import script.log;
 import utils.files;
 import utils.html;
+import static utils.misc.sortByComparator;
+import static utils.misc.sortHashMap;
 import www.Table;
 
 public final class SPDXfile {
@@ -867,8 +869,11 @@ public final class SPDXfile {
         int countRecords = 0;
         int countFiles = 0;
         
+       Map map = sortByComparator(copyrightList);
+        
         // When all copyright texts were processed, time to list them
-        for(String copyright : copyrightList.keySet()){
+        for(Object copyrightObj : map.keySet()){
+            String copyright = (String) copyrightObj;
             int counter = copyrightList.get(copyright);
             countRecords += counter;
             countFiles++;
@@ -892,7 +897,7 @@ public final class SPDXfile {
                          "Found " + utils.text.pluralize(countRecords, "record")
                         + " across "+ utils.text.pluralize(countFiles, "file")
                         )
-                    + html.br
+                    //+ html.br
                     + html.br
                     + result;
                 
@@ -916,7 +921,7 @@ public final class SPDXfile {
         }
         
         // get the sorted map with the related languages
-        Map<Object,Integer> map = utils.misc.sortHashMap(statsLanguagesFound);
+        Map<Object,Integer> map = sortByComparator(statsLanguagesFound);
         int total = statsLanguagesTotal;
         
         String result = "";
@@ -970,8 +975,11 @@ public final class SPDXfile {
         if(statsLicensesDeclaredCount > 0){
 //            Map<String,Integer> map2 = utils.misc.sortHashMap(statsLicensesDeclared);
             // show the ordered results
-            for(String lic :statsLicensesDeclared.keySet()){
-
+            map = sortByComparator(statsLicensesDeclared);
+            
+            for(Object licObj :map.keySet()){
+                String lic = (String) licObj;
+                
                 int count = statsLicensesDeclared.get(lic);
                 result += ""
                         //+ " -> " 
