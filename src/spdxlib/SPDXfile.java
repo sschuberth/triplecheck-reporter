@@ -27,6 +27,7 @@ import script.FileExtension;
 import script.log;
 import utils.files;
 import utils.html;
+import www.Table;
 
 public final class SPDXfile {
     
@@ -832,11 +833,81 @@ public final class SPDXfile {
     }
     
  
+    /**
+     * Displays the copyright holders that were reported on this SPDX document
+     * @return      the HTML text ready to be displayed for end-users
+     */
+    public String getCopyrightEvaluation(){
+        String result = "";
+        
+        // create the initial list of copyright holders
+        HashMap<String, Integer> copyrightList = new HashMap();
+        // iterate each file on this SPDX
+        for(FileInfo fileInfo : fileSection.files){
+            String copyright = fileInfo.getCopyright();
+            if(copyright.isEmpty()){
+                continue;
+            }
+            // is this the first time we hear about this copyright?
+            if(copyrightList.containsKey(copyright) == false){
+                copyrightList.put(copyright, 1);
+            }else{
+                // not the first time, increment the counter
+                int counter = copyrightList.get(copyright);
+                counter++;
+                copyrightList.put(copyright, counter);
+            }
+        }
+        
+         // create an HTML table
+//        Table table = new Table(new String[]{"# files", "Text"}, new int[]{100, 300});
+//        Table table = new Table(new String[]{""}, new int[]{200});
+        
+        // the overall counter
+        int countRecords = 0;
+        int countFiles = 0;
+        
+        // When all copyright texts were processed, time to list them
+        for(String copyright : copyrightList.keySet()){
+            int counter = copyrightList.get(copyright);
+            countRecords += counter;
+            countFiles++;
+            // reinforce the break lines with HTML break lines
+            copyright = copyright.replace("\\n", "\\n" + html.br);
+//            table.add(new String[]{copyright + " (" +counter + " times)"});
+             result += //"- " + 
+                     copyright + " " 
+                       
+                     + html.textGrey( "(" +
+                         utils.text.pluralize(counter, "file")
+                             + ")"
+                        )
+                     //+ html.br
+                     + html.br;
+        }
+        
+        if(result.isEmpty() == false){
+            result = html.h2("Copyright holders")
+                    + html.textGrey(
+                         "Found " + utils.text.pluralize(countRecords, "record")
+                        + " across "+ utils.text.pluralize(countFiles, "file")
+                        )
+                    + html.br
+                    + html.br
+                    + result;
+                
+        }
+        
+//        result = table.output();
+        
+        return result;
+    }
     
     
     /**
      * Given the recognized languages inside a given document, create
      * an evaluation about what is contained inside.
+     * @return      An HTML summary to be displayed for end-users
      */
     public String getLanguageEvaluation(){
         if(statsLanguagesFound.isEmpty()){
@@ -848,12 +919,7 @@ public final class SPDXfile {
         Map<Object,Integer> map = utils.misc.sortHashMap(statsLanguagesFound);
         int total = statsLanguagesTotal;
         
-        String result = 
-                ""
-                ;
-                //+ "<b>In a glance</b>"
-              //  + html.br;
-        
+        String result = "";
         
         // show the ordered results
         for(Object langObj :map.keySet()){
@@ -864,7 +930,6 @@ public final class SPDXfile {
             }
             int count = map.get(lang);
             result += ""
-                    //+ " -> " 
                     + count 
                     + " "
                     + lang.toString() 
@@ -882,12 +947,17 @@ public final class SPDXfile {
             // iterate through all the categories that were found
             for(FileCategory category : statsArtworkFound.keySet()){
                 int count = statsArtworkFound.get(category);
+                // should we use 1 file or 2 file"s"
+                String quantity = "s"; // default to plural
+                // adjust text for singular text
+                if(count == 1){
+                    quantity = "";
+                }
                 result += ""
-                        //+ ": "
                         + count
                         + " "
                         + category.toString()
-                        + "s"
+                        + quantity
                         + html.br;
             }
             // all done with the artwork

@@ -185,21 +185,7 @@ public class show extends Plugin{
      * List all the files that are on the disk
      */
     private String listFilesSPDX(WebRequest request){
-        
-//        String[] line = new String[]{"SPDX", "Last modified"};
-        
-//        Table table = new Table(line);
-        
-//        for(SPDXfile product : core.reports){
-//            String lastModified = utils.time.getTimeFromLong
-//                (product.file.lastModified());
-//            
-//            line = new String[]{product.getId(), lastModified};
-//            table.add(line);
-////        }
-        
         String result = findFiles(core.getProductsFolder(), 25, request);
-        
         return result;           
     }
   
@@ -216,78 +202,73 @@ public class show extends Plugin{
      */
     public String findFiles(File where, int maxDeep, WebRequest request){
 
-    File[] files = where.listFiles();
-    String result = "";
-    
-    int[] sizes = new int[]{10,200};
-    
-    if(files != null)
-    for (File file : files) {
-      if (file.isFile()){
-         String filePath = file.getAbsolutePath();
-         // we only want .spdx files
-         if(filePath.endsWith("spdx")){
-             
-            // remove the local disk path with a generic one
-             String filteredPath = "." 
-                     + file.getAbsolutePath().replace(core.getProductsFolder()
-                             .getAbsolutePath(), "");
-             
-             //filteredPath = filteredPath.replace(" ", "%20");
-           
-             String fileLink = html.link(file.getName(), 
-                             "?x=summary&spdx="
-                             + filteredPath
-                             + "");
-             
-             //System.err.println("MSG SH23 - " + fileLink);
-             
-           result +=  Table.alignedTable(new String[]{
-                 html.getIcon("document-text.png", request), 
-                 fileLink},
-                 sizes);
-             
-            
-      }
-         
-      }
-      else
-      if ( (file.isDirectory())
-         &&( maxDeep-1 > 0 ) ){
-            String folderName = file.getName();
-            // do the recursive crawling
-            String temp = findFiles(file, maxDeep-1, request);
-            // we don't need empty folders
-            if(temp.length() == 0){
-                continue;
-            }
-            
-            String folderText = Table.alignedTable(new String[]{
-                 html.getIcon("folder-horizontal-open.png", request), 
-                 folderName},
-                 sizes);
-            
-            String current = 
-                    html.div()
-                    + folderText
-                    //+ html.br
-                    + html.div()
-                    + temp
-                    + html._div
-                    + html._div;
+        File[] files = where.listFiles();
+        String result = "";
 
-            // add a pretty paragraph
-            if(maxDeep == 25){
-                current = html.br + current;
-            }
-            
-            result += current;
-            
-            
-      }
-    
-    }
-    
+        int[] sizes = new int[]{10,200};
+
+        if(files != null)
+        for (File file : files) {
+          if (file.isFile()){
+             String filePath = file.getAbsolutePath();
+             // we only want .spdx files
+             if(filePath.endsWith("spdx")){
+
+                // remove the local disk path with a generic one
+                 String filteredPath = "." 
+                         + file.getAbsolutePath().replace(core.getProductsFolder()
+                                 .getAbsolutePath(), "");
+
+                 //filteredPath = filteredPath.replace(" ", "%20");
+
+                 String fileLink = html.link(file.getName(), 
+                                 "?x=summary&spdx="
+                                 + filteredPath
+                                 + "");
+
+                 //System.err.println("MSG SH23 - " + fileLink);
+
+               result +=  Table.alignedTable(new String[]{
+                     html.getIcon("document-text.png", request), 
+                     fileLink},
+                     sizes);
+
+
+          }
+
+          }
+          else
+          if ( (file.isDirectory())
+             &&( maxDeep-1 > 0 ) ){
+                String folderName = file.getName();
+                // do the recursive crawling
+                String temp = findFiles(file, maxDeep-1, request);
+                // we don't need empty folders
+                if(temp.length() == 0){
+                    continue;
+                }
+
+                String folderText = Table.alignedTable(new String[]{
+                     html.getIcon("folder-horizontal-open.png", request), 
+                     folderName},
+                     sizes);
+
+                String current = 
+                        html.div()
+                        + folderText
+                        //+ html.br
+                        + html.div()
+                        + temp
+                        + html._div
+                        + html._div;
+
+                // add a pretty paragraph
+                if(maxDeep == 25){
+                    current = html.br + current;
+                }
+                result += current;
+          }
+        }
     return result;
     }
     
@@ -372,20 +353,20 @@ public class show extends Plugin{
                 + html._div
                 ;
         
-        String evaluation = doEvaluation(spdx);
+        //String evaluation = doEvaluation(spdx);
         
         // prepare our list of warnings about things we don't particularly enjoy
-        String warnings = "";
-        // we don't like SPDX documents without declared licenses
-        if(counterLicensesDeclared == 00){
-            warnings = ""
-                    + html.br
-                    + html.br
-                    + Table.simple(
-                            html.getIcon("exclamation.png", request), 10,
-                            "No licenses declared", 150)
-                    ;
-        }
+//        String warnings = "";
+//        // we don't like SPDX documents without declared licenses
+//        if(counterLicensesDeclared == 00){
+//            warnings = ""
+//                    + html.br
+//                    + html.br
+//                    + Table.simple(
+//                            html.getIcon("exclamation.png", request), 10,
+//                            "No licenses declared", 150)
+//                    ;
+//        }
         
         
         // get the lines of code (LOC)
@@ -473,6 +454,8 @@ public class show extends Plugin{
                 + html.div()
                 + openFolder
                     
+                + html.br
+                + spdx.getCopyrightEvaluation()
                 + html.br
                 + swingUtils.addIfNotEmpty(""
                         //html.getCommonFolderIcon("magnifier-zoom-fit.png")
@@ -676,11 +659,12 @@ public class show extends Plugin{
 
     /**
      * Are we running under a Windows machine or not?
+     * @return      True when we are running Windows as host
      */
     public boolean isWindows(){
             String os = System.getProperty("os.name").toLowerCase();
             //windows
-        return (os.indexOf( "win" ) >= 0);
+        return (os.contains("win"));
     }
     
 }

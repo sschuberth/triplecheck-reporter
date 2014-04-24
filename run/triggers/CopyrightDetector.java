@@ -83,14 +83,19 @@ public class CopyrightDetector implements Trigger {
                 if(copyright.contains(clean)){
                     continue;
                 }
-                
+                // add the next copyright on a second line
                 copyright += "\n" + temp;
             }
-                
-            
         }
         
+        // don't accept copyright texts too long (most likely a false positive)
+        if(copyright.length() > 150){
+            copyright = "";
+        }
+        
+        // lock this value
         copyrightText = copyright;
+        
         // do a debug result
         if(copyrightText.isEmpty() == false){
             System.out.println(copyright);

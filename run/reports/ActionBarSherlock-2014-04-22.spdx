@@ -11,7 +11,7 @@ DataLicense: CC-BY-4.0
 
 Creator: Nuno Brito
 Creator: Tool: TripleCheck 0.6
-Created: 2014-04-22T11:42:23Z
+Created: 2014-04-24T19:33:03Z
 
 ##-------------------------
 ## Package Information
@@ -6849,14 +6849,6 @@ FileChecksum: MD5: 3b83ef96387f14655fc854ddc3c6bd57
 FileChecksum: SSDEEP: 192:nU6G5KXSD9VYUKhu1JVF9hFGvV/QiGkS594drFjuHYx5dvTrLh3kTSEn7HbHR:U9vlKM1zJlFvmNz5VrlkTS07Ht
 FileSize: 11 Kb (11358 bytes)
 LicenseInfoInFile: Apache-2.0
-FileCopyrightText: <text>copyright owner or entity authorized by
-copyright owner that is granting the License.
-copyright owner. For the purposes of this definition, "submitted"
-copyright owner as "Not a Contribution."
-Copyright License. Subject to the terms and conditions of
-copyright license to reproduce, prepare Derivative Works of,
-copyright statement to Your modifications and
-Copyright [yyyy] [name of copyright owner]</text>
 
 FileName: ./pom.xml
 FileType: OTHER

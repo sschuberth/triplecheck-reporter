@@ -377,5 +377,20 @@ public class text {
         return result;
     }
 
+    /**
+     * This method simplifies showing values with associated terms when they
+     * occur either in plural or singular manner. For example, solves the issue
+     * of output "1 files" onto the correct "1 file"
+     * @param value     The value to output
+     * @param text      The text that will be "pluralized"
+     * @return          The pluralized text
+     */
+    public static String pluralize(int value, String text){
+        if(value == 1){
+            return value + " " + text;
+        }else{
+            return value + " " + text + "s";  
+        }
+    }
     
 }

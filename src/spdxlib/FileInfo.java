@@ -341,6 +341,19 @@ public class FileInfo {
         // all done
         return targetFile;
     }
+   
     
+    /**
+     * Gets the copyright text on this file when available
+     * @return  A list with the copyright holders
+     */
+    public String getCopyright(){
+        if(tagFileCopyrightText == null){
+            return "";
+        }
+        
+        String result = tagFileCopyrightText.withoutTextTags();
+        return result;
+    }
     
 }

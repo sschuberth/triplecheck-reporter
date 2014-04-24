@@ -30,13 +30,14 @@
 <entry key="Added tool: %1">Added tool: %1</entry>
 <entry key="Added plugin: %1">Added plugin: %1</entry>
 <entry key="TripleCheck (c) %1, http://triplecheck.de">TripleCheck (c) %1, http://triplecheck.de</entry>
+<entry key="Task &quot;Creating report: 6 seconds were necessary to complete this task">Task "Creating report: 6 seconds were necessary to complete this task</entry>
 <entry key="Task &quot;Creating report: 100% complete">Task "Creating report: 100% complete</entry>
 <entry key="Support to SPDX creation from folder on disk is not yet implemented">Support to SPDX creation from folder on disk is not yet implemented</entry>
 <entry key="Preparing to process %1 files">Preparing to process %1 files</entry>
 <entry key="Task &quot;Creating an SPDX document: 13 seconds were necessary to complete this task">Task "Creating an SPDX document: 13 seconds were necessary to complete this task</entry>
 <entry key="Task &quot;Creating report: 3 seconds were necessary to complete this task">Task "Creating report: 3 seconds were necessary to complete this task</entry>
-<entry key="SU2006- clicked on link %1">SU2006- clicked on link %1</entry>
 <entry key="Call Front Screen">Call Front Screen</entry>
+<entry key="SU2006- clicked on link %1">SU2006- clicked on link %1</entry>
 <entry key="Task &quot;Creating report: 0 seconds were necessary to complete this task">Task "Creating report: 0 seconds were necessary to complete this task</entry>
 <entry key="Tree node doubleclick on: %1">Tree node doubleclick on: %1</entry>
 <entry key="Found %1 files in %2">Found %1 files in %2</entry>
@@ -51,6 +52,7 @@
 <entry key="Web server was closed">Web server was closed</entry>
 <entry key="Folder %1 was chosen as source for the SPDX document">Folder %1 was chosen as source for the SPDX document</entry>
 <entry key="Task &quot;Creating report: 10 seconds were necessary to complete this task">Task "Creating report: 10 seconds were necessary to complete this task</entry>
+<entry key="Task &quot;Creating report: 4 seconds were necessary to complete this task">Task "Creating report: 4 seconds were necessary to complete this task</entry>
 <entry key="Web request for &quot;%1&quot; in %2">Web request for "%1" in %2</entry>
 <entry key="Error while interpreting %1, the error message is: %2">Error while interpreting %1, the error message is: %2</entry>
 </properties>

@@ -72,9 +72,36 @@ public class TagValue {
     
     
     /**
+     * Returns the tag value text without having the [text][/text] tags
+     * @return 
+     */
+    public String withoutTextTags(){
+        
+        String result = "";
+        
+        try{
+            result = removeTextTags(value);
+        } catch (Exception e){
+            return "";
+        }
+        
+        return result;
+    }
+    
+    /**
      * Remove the <text> and </text> tags from the text
      */
-    String removeTextTags(final String input){
+    private String removeTextTags(final String input){
+        // preflight check
+//        if(input == null){
+//            return "";
+//        }
+//        
+//        if(input.length() == 0){
+//            return "";
+//        }
+        
+        
         String result = input.replace(is.textStart, "");
         result = result.replace(is.textEnd, "");
         // remove strange spaces on the beginning and end of text lines
