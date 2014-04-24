@@ -11,7 +11,7 @@ DataLicense: CC-BY-4.0
 
 Creator: Nuno Brito
 Creator: Tool: TripleCheck 0.6
-Created: 2014-04-22T11:27:16Z
+Created: 2014-04-24T23:22:33Z
 
 ##-------------------------
 ## Package Information
@@ -58,7 +58,6 @@ FileChecksum: SHA256: 6e7da18859caee16cf1ccb764b593eaed927089286881462466f55eee8
 FileChecksum: MD5: 14202fec53386a662a0986ec777dec87
 FileChecksum: SSDEEP: 3:IK0FAqWDZwtFZWAYE9fU/zQX3u5NAaVtdKbAB:L0qjY0lptdyE
 FileSize: 111 bytes
-FileCopyrightText: <text>copyright /></text>
 
 FileName: ./.idea/encodings.xml
 FileType: OTHER
@@ -172,7 +171,6 @@ FileChecksum: SHA256: 6e7da18859caee16cf1ccb764b593eaed927089286881462466f55eee8
 FileChecksum: MD5: 14202fec53386a662a0986ec777dec87
 FileChecksum: SSDEEP: 3:IK0FAqWDZwtFZWAYE9fU/zQX3u5NAaVtdKbAB:L0qjY0lptdyE
 FileSize: 111 bytes
-FileCopyrightText: <text>copyright /></text>
 
 FileName: ./RootTools/.idea/misc.xml
 FileType: OTHER

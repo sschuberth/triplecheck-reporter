@@ -33,8 +33,6 @@ public class CopyrightDetector implements Trigger {
        // "",
         "copyright ownership.",
         "copyright notice"
-            
-           
     };
     
     /**
@@ -90,8 +88,16 @@ public class CopyrightDetector implements Trigger {
         
         // don't accept copyright texts too long (most likely a false positive)
         if(copyright.length() > 200){
-            copyright = "";
+            return false;
         }
+        
+        // we don't want short copyright notices, likely false positive too
+        String temp = copyright.toLowerCase();
+        temp = copyright.replace("copyright", "");
+        if(temp.length() < 5){
+            return false;
+        }
+        
         
         // lock this value
         copyrightText = copyright;

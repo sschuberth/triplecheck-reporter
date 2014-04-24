@@ -403,7 +403,7 @@ public class showFileDetails extends Plugin{
         // reinforce the break lines with HTML break lines
         copyright = html.br
                 //html.h2("Copyright notices") +
-                + copyright.replace("\\n", "\\n" + html.br);
+                + copyright.replace("\n", "\n" + html.br);
 
         // all done
         return copyright;

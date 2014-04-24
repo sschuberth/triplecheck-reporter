@@ -66,7 +66,7 @@ public class ReadMultipleLine {
             // get the current line to do some work
             String line = lines[i];
             //String line = removeLineBreaks(lines[i]);
-            output += line;
+            output += line + "\n";
             
             // finish the blow
             if(line.contains(textEnd)){

@@ -873,10 +873,10 @@ public final class SPDXfile {
         for(Object copyrightObj : map.keySet()){
             String copyright = (String) copyrightObj;
             int counter = copyrightList.get(copyright);
-            countRecords += counter;
-            countFiles++;
+            countFiles += counter;
+            countRecords++;
             // reinforce the break lines with HTML break lines
-            copyright = copyright.replace("\\n", "\\n" + html.br);
+            copyright = copyright.replace("\n", "\n" + html.br);
 //            table.add(new String[]{copyright + " (" +counter + " times)"});
              result += //"- " + 
                      copyright + " " 

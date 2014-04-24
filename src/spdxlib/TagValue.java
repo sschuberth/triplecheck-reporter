@@ -89,9 +89,11 @@ public class TagValue {
     }
     
     /**
-     * Remove the <text> and </text> tags from the text
+     * Remove the text> and /text> tags from the text
+     * @param input
+     * @return 
      */
-    private String removeTextTags(final String input){
+    public String removeTextTags(final String input){
         // preflight check
 //        if(input == null){
 //            return "";
@@ -100,8 +102,7 @@ public class TagValue {
 //        if(input.length() == 0){
 //            return "";
 //        }
-        
-        
+         
         String result = input.replace(is.textStart, "");
         result = result.replace(is.textEnd, "");
         // remove strange spaces on the beginning and end of text lines

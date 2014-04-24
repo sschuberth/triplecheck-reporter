@@ -3,6 +3,7 @@
 <properties>
 <comment>English (US)</comment>
 <entry key="Task &quot;Creating an SPDX document: File %1 is not recognized as something that we can decompress">Task "Creating an SPDX document: File %1 is not recognized as something that we can decompress</entry>
+<entry key="Task &quot;Creating report: 1 second were necessary to complete this task">Task "Creating report: 1 second were necessary to complete this task</entry>
 <entry key="Task &quot;Creating an SPDX document: 1 second were necessary to complete this task">Task "Creating an SPDX document: 1 second were necessary to complete this task</entry>
 <entry key="Adding tools">Adding tools</entry>
 <entry key="Task &quot;Creating an SPDX document: File was downloaded as &quot;%1&quot; with an approximate size of %2">Task "Creating an SPDX document: File was downloaded as "%1" with an approximate size of %2</entry>

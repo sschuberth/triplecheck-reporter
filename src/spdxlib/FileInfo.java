@@ -353,6 +353,8 @@ public class FileInfo {
         }
         
         String result = tagFileCopyrightText.withoutTextTags();
+        //result = tagFileCopyrightText.removeTextTags(result);
+        //System.out.println(result);
         return result;
     }
     
