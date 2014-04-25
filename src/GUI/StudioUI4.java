@@ -26,7 +26,6 @@ import java.util.TimerTask;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JEditorPane;
-import javax.swing.JMenuItem;
 import javax.swing.JPopupMenu;
 import javax.swing.JTextField;
 import javax.swing.JTree;
@@ -84,7 +83,7 @@ public class StudioUI4 extends javax.swing.JFrame {
     boolean firstClickActive = false;
     boolean secondClickActive = false;
     
-    private long lastTime = 0;
+    private final long lastTime = 0;
     
     /**
      * Creates new form StudioUI2
@@ -117,6 +116,7 @@ public class StudioUI4 extends javax.swing.JFrame {
     private void initComponents() {
 
         menuItem_Delete = new javax.swing.JMenuItem();
+        menuItem_DefineLicense = new javax.swing.JMenuItem();
         jSplitPane1 = new javax.swing.JSplitPane();
         panelWest = new javax.swing.JScrollPane();
         tree = new javax.swing.JTree();
@@ -132,6 +132,14 @@ public class StudioUI4 extends javax.swing.JFrame {
         menuItem_Delete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 deleteSomethingClicked(evt);
+            }
+        });
+
+        menuItem_DefineLicense.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/medal--plus.png"))); // NOI18N
+        menuItem_DefineLicense.setText("Define license");
+        menuItem_DefineLicense.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuItem_DefineLicenseActionPerformed(evt);
             }
         });
 
@@ -313,7 +321,6 @@ public class StudioUI4 extends javax.swing.JFrame {
         int row = tree.getClosestRowForLocation(evt.getX(), evt.getY());
         // mark the new selection on our treeview
         tree.setSelectionRow(row);
-        
         // get the selected node
         TreeNodeSPDX node = swingUtils.getSelectedNode();
         // preflight check
@@ -321,18 +328,43 @@ public class StudioUI4 extends javax.swing.JFrame {
             // nothing to do, just leave
             return;
         }
+        // now show the popup menu as needed
+        doPopupMenu(node, evt);
+    }
+    
+    
+    /**
+     * Handles the right-click menu when the user wants to perform an action
+     * on the treeview
+     */
+    void doPopupMenu(TreeNodeSPDX node, java.awt.event.MouseEvent evt){
+
+        // create the menu
+        JPopupMenu popupMenu = new JPopupMenu();
+        
+        // should we show this popup or not? Default is not
+        boolean shouldShow = false;
+    
         // we only care about SPDX files here
-        if(node.nodeType != NodeType.SPDX){
+        if(node.nodeType == NodeType.SPDX){
+            popupMenu.add(menuItem_Delete);
+            shouldShow = true;
+        }
+       
+         // allow to change licenses on files
+        if(node.nodeType == NodeType.file){
+            popupMenu.add(menuItem_DefineLicense);
+            shouldShow = true;
+        }
+       
+        // nothing to do, just leave
+        if(shouldShow == false){
             return;
         }
         
-   
-        JPopupMenu popupMenu = new JPopupMenu();
-        
-        popupMenu.add(menuItem_Delete);
+        // show the menu
         popupMenu.show(evt.getComponent(), evt.getX(), evt.getY());
     }
-    
     
     /**
      * Initiates the count-down to launch the click operation
@@ -404,6 +436,32 @@ public class StudioUI4 extends javax.swing.JFrame {
         deleteSomething();
     }//GEN-LAST:event_deleteSomethingClicked
 
+    private void menuItem_DefineLicenseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuItem_DefineLicenseActionPerformed
+        addLicense();
+    }//GEN-LAST:event_menuItem_DefineLicenseActionPerformed
+
+    void addLicense(){
+        // get the selected node
+        TreeNodeSPDX node = swingUtils.getSelectedNode();
+        // preflight check
+        if(node == null){
+            // nothing to do, just leave
+            return;
+        }
+        // we only care about SPDX files here
+        if(node.nodeType != NodeType.file){
+            return;
+        }
+        
+        File file = (File) node.getUserObject();
+        
+        System.out.println("Been here! :-)");
+    }
+    
+    /**
+     * This method will delete a given SPDX document when selected from the
+     * treeview menu item
+     */
     void deleteSomething(){
         // get the selected node
         TreeNodeSPDX node = swingUtils.getSelectedNode();
@@ -441,6 +499,7 @@ public class StudioUI4 extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JSplitPane jSplitPane1;
+    private javax.swing.JMenuItem menuItem_DefineLicense;
     private javax.swing.JMenuItem menuItem_Delete;
     private javax.swing.JPanel panelEast;
     private javax.swing.JScrollPane panelWest;

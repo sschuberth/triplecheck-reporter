@@ -5,6 +5,7 @@
         <data xmlns="http://www.netbeans.org/ns/j2se-project/3">
             <name>TripleCheck</name>
             <source-roots>
+                <root id="src.licenses.dir"/>
                 <root id="src.extensions.dir"/>
                 <root id="src.plugins.dir"/>
                 <root id="src.triggers.dir"/>
