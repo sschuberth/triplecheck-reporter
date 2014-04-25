@@ -105,7 +105,15 @@ public class core {
     }
     
     public static File getProductsFolder(){
-        return new File(getWorkFolder(), folder.products);
+        return new File(getWorkFolder(), folder.reports);
+    }
+    
+    public static File getReportsFolder(){
+        return new File(getWorkFolder(), folder.triggers);
+    }
+    
+    public static File getLicensesFolder(){
+        return new File(getWorkFolder(), folder.licenses);
     }
     
     public static File getExtensionsFolder(){

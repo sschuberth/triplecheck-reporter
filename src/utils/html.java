@@ -394,5 +394,14 @@ public class html {
                 + "\">";
     }
     
-    
+    /**
+     * Converts all the HTML entities back into normal text
+     * @param input
+     * @return 
+     */
+    public static String decodeEntities(String input){
+        input = input.replace("&amp;", "&");
+        input = input.replace("&quot;", "\"");
+        return input;
+    }
 }

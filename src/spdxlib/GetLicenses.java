@@ -13,6 +13,9 @@
 
 package spdxlib;
 
+import java.io.File;
+import main.core;
+
 
 /**
  *
@@ -31,7 +34,7 @@ public class GetLicenses {
 
 
     /**
-     * Visits the official SPDX website to list all the available licenses
+     * Visits the official SPDX website to list all the available triggers
      */
     private static void listLicenses() {
         // first thing, get the webpage
@@ -56,7 +59,13 @@ public class GetLicenses {
         
         // now iterate through each item to be processed
         for(String item : rawItems){
-           processItem(item);
+            License license = processItem(item);
+            // no need to continue if empty
+            if(license == null){
+                continue;
+            }
+            // time to write this license to disk
+            writeLicense(license);
         }
         
         
@@ -66,10 +75,8 @@ public class GetLicenses {
      * Given the raw contents of an item 
      * @param item      the original item from the web page
      */
-    private static void processItem(String item) {
-        String 
-                licenseId,
-                licenseTitle;
+    private static License processItem(String item) {
+        
         
         String m1 = ":licenseId";
         String m2 = "</code>";
@@ -77,7 +84,7 @@ public class GetLicenses {
         
         // no need to continue if it has no needed keywords
         if(item.contains(m1)== false){
-            return;
+            return null;
         }
                    
         /**
@@ -96,16 +103,51 @@ public class GetLicenses {
         String t1 = item.substring(i3);
         int i4 = t1.indexOf(">") + 1;
         int i5 = t1.indexOf("</a>");
-        licenseTitle = t1.substring(i4, i5);
+        t1 = t1.substring(i4, i5);
+        t1 = utils.html.decodeEntities(t1);
+        final String licenseTitle = t1;
      
         
         // get the license short Id
         int i1 = item.indexOf(m1);
         String temp = item.substring(i1); // remove initial text up to m1
         int i2 = temp.indexOf(m2); // get the last part
-        licenseId = temp.substring(12, i2); // get the SPDX id for this item
+        final String licenseId = temp.substring(12, i2); // get the SPDX id for this item
 
-        System.out.println(licenseId + " -> " + licenseTitle);
+        // create the license object
+        License license = new License(){
+            @Override
+            public Boolean approvedOSI(){
+                return false; // was this license OSI approved or not?
+            }
+            @Override
+            public String getId(){
+                return licenseId; // short and unique id
+            }
+            @Override
+            public String getTitle(){
+                return licenseTitle; // full text title
+            }
+        };
+        
+        // write the license on disk
+        writeLicense(license);
+        //System.out.println(license.getId() + " -> " + license.getTitle());
+        // all done
+        return license;
+    }
+
+    /**
+     * Saves this specific license to disk
+     * @param license 
+     */
+    private static void writeLicense(License license) {
+        // get the license list folder
+        File folder = new File(core.getLicensesFolder(), 
+                definitions.folder.spdxLL);
+        
+        // write this license to disk
+        license.writeToDisk(folder);
     }
     
 }

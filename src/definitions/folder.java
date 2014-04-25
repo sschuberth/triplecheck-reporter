@@ -19,7 +19,9 @@ package definitions;
 public class folder {
 
         public static final String
-            licenses = "triggers",
-            products = "reports",
-            extensions = "extensions";
+            triggers = "triggers",
+            licenses = "licenses",
+            reports = "reports",
+            extensions = "extensions",
+            spdxLL = "SPDXLL"; // SPDX License List
 }

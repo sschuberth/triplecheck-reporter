@@ -33,16 +33,16 @@ import spdxlib.SPDXfile;
 public class actions {
 
     /**
-     * This method adds up all the licenses found on the licenses folder
+     * This method adds up all the triggers found on the triggers folder
      */
     public static void addLicenses(){
-        File folderLicense = new File(core.getWorkFolder(), folder.licenses);
+        File folderLicense = new File(core.getWorkFolder(), folder.triggers);
         ArrayList<File> files = utils.files.findFilesFiltered(folderLicense, ".java", 2);
         for(File file : files){
             core.script.runJava(file, null, is.trigger);
         }
         
-         // worry about the case when there is no folder nor licenses to include
+         // worry about the case when there is no folder nor triggers to include
         if(core.licenses.isEmpty()){
             log.write(is.WARNING, "No licenses were added, "
                     + "license detection is disabled.");

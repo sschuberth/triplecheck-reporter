@@ -44,7 +44,7 @@ public class ExtensionCreate {
      * and deviations so we will try to get some info from them and give
      * credits where credits are due.
      * @param extension the unrecognized extension
-     * @param file file pointer that we use to gather data
+     * @param overWrite
      */
     public void automatically(String extension, boolean overWrite) {
         File template = new File(core.getExtensionsFolder(), "template.java");

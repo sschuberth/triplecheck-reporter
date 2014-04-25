@@ -249,7 +249,7 @@ public class pluginSearch extends Plugin{
                            + " >> "
                            + spdx.getId()
                            + " >> "
-                           + folder.products
+                           + folder.reports
                            + " "
                            ;
                    

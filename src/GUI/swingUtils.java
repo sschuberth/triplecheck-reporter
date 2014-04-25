@@ -249,7 +249,7 @@ public class swingUtils {
         TreeNodeSPDX productNode = nodeCreate(
                 "Products (" + core.reports.size() + ")"
                 , NodeType.other, nodeRoot);
-        productNode.id = folder.products;
+        productNode.id = folder.reports;
         
         // add all SPDX documents that were found
             for(SPDXfile spdx : core.reports){
