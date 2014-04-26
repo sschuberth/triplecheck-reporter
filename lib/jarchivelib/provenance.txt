@@ -1,4 +1,0 @@
-Added on 2013-12-07
-Author site: http://rauschig.org/jarchivelib/
-Download site: http://oss.sonatype.org/content/repositories/releases/org/rauschig/jarchivelib/0.3.0/
-License: Apache 2.0
