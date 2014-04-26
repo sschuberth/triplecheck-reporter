@@ -23,13 +23,17 @@ import main.core;
  */
 public class GetLicenses {
 
-    static final String address = "http://spdx.org/licenses/";
+    static final String 
+            addressLL = "http://spdx.org/licenses/",
+            addressGit = "http://git.spdx.org/?p=license-list.git;a=blob_plain;f=";
+    
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         listLicenses();
+        System.exit(1981);
     }
 
 
@@ -38,10 +42,10 @@ public class GetLicenses {
      */
     private static void listLicenses() {
         // first thing, get the webpage
-        String content = utils.internet.webget(address);
+        String content = utils.internet.webget(addressLL);
         
         if((content == null) || (content.isEmpty())){
-            System.err.println("Failed to access website at " + address);
+            System.err.println("Failed to access website at " + addressLL);
             return;
         }
         
@@ -90,13 +94,17 @@ public class GetLicenses {
         /**
          * Example of what we are expecting to process
             <tr>
-            <td><a href="./ClArtistic" rel="rdf:_37">Clarified Artistic License</a></td>
-            <td about="./ClArtistic" typeof="spdx:License">
-            <code property="spdx:licenseId">ClArtistic</code></td>
-            <td align="center"></td>
-            <td><a href="./ClArtistic#licenseText">License Text</a></td>
-            </tr>       
+              <td><a href="./CDDL-1.0" rel="rdf:_41">
+              Common Development and Distribution License 1.0</a></td>
+              <td about="./CDDL-1.0" typeof="spdx:License">
+              <code property="spdx:licenseId">CDDL-1.0</code></td>
+              <td align="center">Y</td>
+              <td><a href="./CDDL-1.0#licenseText">License Text</a></td>
+            </tr>  
         */
+        
+        // is it approved by the OSI?
+        final Boolean approvedOSI = item.contains("<td align=\"center\">Y</td>");
         
         // get the license title
         int i3 = item.indexOf(m3);
@@ -114,11 +122,28 @@ public class GetLicenses {
         int i2 = temp.indexOf(m2); // get the last part
         final String licenseId = temp.substring(12, i2); // get the SPDX id for this item
 
+        // uncomment when you need to debug this method
+//         if("PHP-3.01 > CC-BY-NC-3.0 > AGPL-3.0".contains(licenseId)==false){
+//             return null;
+//        }
+        
+        // get the license text
+        String test = "";
+        try{
+            // let's test to see if the license terms can be read
+            test = getLicenseTerms(licenseId);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        final String licenseTerms = test;
+        
+        
+        
         // create the license object
         License license = new License(){
             @Override
             public Boolean approvedOSI(){
-                return false; // was this license OSI approved or not?
+                return approvedOSI; // was this license OSI approved or not?
             }
             @Override
             public String getId(){
@@ -128,15 +153,91 @@ public class GetLicenses {
             public String getTitle(){
                 return licenseTitle; // full text title
             }
+            @Override
+            public String getTerms(){
+                return licenseTerms; // full text title
+            }
+            
+            
         };
         
         // write the license on disk
         writeLicense(license);
-        //System.out.println(license.getId() + " -> " + license.getTitle());
+        System.out.println(license.getId() + " -> " + license.getTitle());
+        
         // all done
         return license;
     }
 
+    
+    /**
+     * Adds a new line to our source code being translated from a text file
+     * @param line  The line to translate
+     * @return      A line ready to be added on the source code
+     */
+    private static String addLine(String line, String extra){
+        String result = line;
+        result = result.replace("\n", "");
+        result = result.replace("\t", "");
+        result = result.replace("\r", "");
+        
+        result = "        + \"" 
+                + result.replace("\"", "\\\"") 
+                + extra + "\"\n";
+        return result;
+    }
+    
+    /**
+     * This method will retrieve the text version of the license terms as
+     * available on SPDX.org
+     * @return 
+     */
+    private static String getLicenseTerms(String Id){
+        String address = addressGit + Id + ".txt";
+        String result = utils.internet.getTextFile(address);
+        
+        //System.out.println("GL188: " + address);
+        
+        //final String nextLine = "\\n\"\n        + \"";
+        
+        // do a nice wrap effect to allow users to read the terms on the code
+        String[] lines = result.split("\n");
+        String output = "";
+        int limit = 80;
+        // iterate through each line
+        for(String line : lines){
+            // when it is too big, time to break into smaller lines
+            if(line.length() > limit){
+                // while the line is bigger than what we want, cut it further
+                while(line.length() > limit){
+                    // add a broken line
+                    output += addLine(line.substring(0, limit), "");
+                            //line.substring(0, limit).replace("\"", "\\\"")
+                            //+ nextLine;
+                    
+                    // iterate for the next line
+                    if(line.length() > limit){
+                        line = line.substring(limit);
+                    }
+                }
+                // add whatever was left from the cutting operation
+                output += addLine(line, "\\n");
+                        //line.replace("\"", "\\\"") + nextLine;
+            }else{
+                // just add the normal line
+                output += addLine(line, "\\n");
+                //line.replace("\"", "\\\"") + nextLine;
+            }
+        }
+        
+        result = output.substring(10);
+        return result;
+    }
+    
+    
+    
+    
+    
     /**
      * Saves this specific license to disk
      * @param license 

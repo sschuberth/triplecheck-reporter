@@ -5,7 +5,7 @@ import spdxlib.License;
 /*
  * SPDXVersion: SPDX-1.1
  * Creator: Person: Nuno Brito
- * Created: 2014-04-26T00:29:06Z
+ * Created: 2014-04-26T13:32:15Z
  * LicenseName: Apache-2.0
  * FileName: WTFPL.java 
  * FileCategory: SOURCE
@@ -40,4 +40,30 @@ public class WTFPL extends License{
     public String getTitle(){
         return "Do What The F*ck You Want To Public License"; // full text title
     }
+    
+    /**
+     * In most cases, the license will have generic terms that only present
+     * minor changes such as copyright attributions. This method provides
+     * an idea of the contents of the license.
+     * @return  Normal text (no markup) version of the license terms
+     */
+    @Override
+    public String getTerms(){
+        return "            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE\n"
+        + "                    Version 2, December 2004\n"
+        + "\n"
+        + " Copyright (C) 2004 Sam Hocevar <sam@hocevar.net>\n"
+        + "\n"
+        + " Everyone is permitted to copy and distribute verbatim or modified\n"
+        + " copies of this license document, and changing it is allowed as long\n"
+        + " as the name is changed.\n"
+        + "\n"
+        + "            DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE\n"
+        + "   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION\n"
+        + "\n"
+        + "  0. You just DO WHAT THE FUCK YOU WANT TO.\n"
+; // the license text
+    }
+ 
+    
 }

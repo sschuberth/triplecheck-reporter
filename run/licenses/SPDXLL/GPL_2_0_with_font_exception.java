@@ -5,7 +5,7 @@ import spdxlib.License;
 /*
  * SPDXVersion: SPDX-1.1
  * Creator: Person: Nuno Brito
- * Created: 2014-04-26T00:29:07Z
+ * Created: 2014-04-26T13:32:28Z
  * LicenseName: Apache-2.0
  * FileName: GPL_2_0_with_font_exception.java 
  * FileCategory: SOURCE
@@ -20,7 +20,7 @@ public class GPL_2_0_with_font_exception extends License{
      */
     @Override
     public Boolean approvedOSI(){
-        return false; // was this license OSI approved or not?
+        return true; // was this license OSI approved or not?
     }
     
     /**
@@ -40,4 +40,29 @@ public class GPL_2_0_with_font_exception extends License{
     public String getTitle(){
         return "GNU General Public License v2.0 w/Font exception"; // full text title
     }
+    
+    /**
+     * In most cases, the license will have generic terms that only present
+     * minor changes such as copyright attributions. This method provides
+     * an idea of the contents of the license.
+     * @return  Normal text (no markup) version of the license terms
+     */
+    @Override
+    public String getTerms(){
+        return "﻿insert GPL v2 text here\n"
+        + "\n"
+        + "Font Exception\n"
+        + "\n"
+        + "As a special exception, if you create a document which uses this font, and embed"
+        + " this font or unaltered portions of this font into the document, this font does "
+        + "not by itself cause the resulting document to be covered by the GNU General Publ"
+        + "ic License. This exception does not however invalidate any other reasons why the"
+        + " document might be covered by the GNU General Public License. If you modify this"
+        + " font, you may extend this exception to your version of the font, but you are no"
+        + "t obligated to do so. If you do not wish to do so, delete this exception stateme"
+        + "nt from your version.\n"
+; // the license text
+    }
+ 
+    
 }

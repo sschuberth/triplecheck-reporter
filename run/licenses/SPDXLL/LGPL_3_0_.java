@@ -5,7 +5,7 @@ import spdxlib.License;
 /*
  * SPDXVersion: SPDX-1.1
  * Creator: Person: Nuno Brito
- * Created: 2014-04-26T00:29:07Z
+ * Created: 2014-04-26T13:32:33Z
  * LicenseName: Apache-2.0
  * FileName: LGPL_3_0_.java 
  * FileCategory: SOURCE
@@ -20,7 +20,7 @@ public class LGPL_3_0_ extends License{
      */
     @Override
     public Boolean approvedOSI(){
-        return false; // was this license OSI approved or not?
+        return true; // was this license OSI approved or not?
     }
     
     /**
@@ -40,4 +40,18 @@ public class LGPL_3_0_ extends License{
     public String getTitle(){
         return "GNU Lesser General Public License v3.0 or later"; // full text title
     }
+    
+    /**
+     * In most cases, the license will have generic terms that only present
+     * minor changes such as copyright attributions. This method provides
+     * an idea of the contents of the license.
+     * @return  Normal text (no markup) version of the license terms
+     */
+    @Override
+    public String getTerms(){
+        return "\n"
+; // the license text
+    }
+ 
+    
 }

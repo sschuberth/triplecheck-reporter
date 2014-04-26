@@ -48,13 +48,23 @@ public class License {
     public String getTitle(){
         return ""; // full text title
     }
+
+    /**
+     * In most cases, the license will have generic terms that only present
+     * minor changes such as copyright attributions. This method provides
+     * an idea of the contents of the license.
+     * @return  Normal text (no markup) version of the license terms
+     */
+    public String getTerms(){
+        return ""; // the license text
+    }
     
     /**
      * Save this license on disk using a template
      * @param folder the Folder where this file will be stored
      */
     public void writeToDisk(File folder){
-        File template = new File(core.getLicensesFolder(), "template.java");
+        File template = new File(core.getLicensesFolder(), "LicenseTemplate.java");
         // no need to continue if it does not exist
         if(template.exists() == false){
             return;
@@ -78,6 +88,20 @@ public class License {
                 + cleanTitle
                 + "\"; // full text title");
         
+        // OSI approved or not?
+        term1 = "false; // was this license OSI approved or not?";
+        content = content.replace(term1, ""
+                + approvedOSI()
+                + "; // was this license OSI approved or not?");
+        
+        // do we have license terms to write about?
+        term1 = "return \"\"; // the license text";
+        content = content.replace(term1, "return "
+                //+ "\""
+                + getTerms()
+                //+ "\""
+                + "; // the license text");
+        
         
         // prepare the file name that we will write
         String filename = safeText(getId());
@@ -87,7 +111,7 @@ public class License {
         // final modifications
         content = "package SPDXLL;\n\n" + content;
         // add class name
-        content = content.replace("class template extends License{", 
+        content = content.replace("class LicenseTemplate extends License{", 
                 "class "+ filename +" extends License{");
         // add date creation details
         content = content.replace("#DATE#", DocumentCreate.getDateSPDX());
@@ -104,8 +128,8 @@ public class License {
         // add the person
         content = content.replace("#PERSON#", person);
         
-        
-        System.out.println("Writing file: " + file.getAbsolutePath());
+        // for debug
+        //System.out.println("Writing file: " + file.getAbsolutePath());
         // save everything on disk
         utils.files.SaveStringToFile(file, content);
         

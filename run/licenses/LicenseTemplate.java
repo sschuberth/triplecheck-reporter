@@ -11,7 +11,7 @@ import spdxlib.License;
  */
 
 
-public class template extends License{
+public class LicenseTemplate extends License{
    /**
      * Was this license approved by the OSI?
      * @return  True if the license is listed as approved   
@@ -38,4 +38,17 @@ public class template extends License{
     public String getTitle(){
         return ""; // full text title
     }
+    
+    /**
+     * In most cases, the license will have generic terms that only present
+     * minor changes such as copyright attributions. This method provides
+     * an idea of the contents of the license.
+     * @return  Normal text (no markup) version of the license terms
+     */
+    @Override
+    public String getTerms(){
+        return ""; // the license text
+    }
+ 
+    
 }

@@ -5,7 +5,7 @@ import spdxlib.License;
 /*
  * SPDXVersion: SPDX-1.1
  * Creator: Person: Nuno Brito
- * Created: 2014-04-26T00:29:06Z
+ * Created: 2014-04-26T13:32:25Z
  * LicenseName: Apache-2.0
  * FileName: GPL_1_0_.java 
  * FileCategory: SOURCE
@@ -40,4 +40,18 @@ public class GPL_1_0_ extends License{
     public String getTitle(){
         return "GNU General Public License v1.0 or later"; // full text title
     }
+    
+    /**
+     * In most cases, the license will have generic terms that only present
+     * minor changes such as copyright attributions. This method provides
+     * an idea of the contents of the license.
+     * @return  Normal text (no markup) version of the license terms
+     */
+    @Override
+    public String getTerms(){
+        return "\n"
+; // the license text
+    }
+ 
+    
 }

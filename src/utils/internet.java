@@ -1,22 +1,13 @@
 package utils;
 
-import GUI.MetaContainer;
-import definitions.is;
 import java.io.BufferedReader;
-import java.io.DataInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.*;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Enumeration;
-import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.JOptionPane;
-import net.htmlparser.jericho.Element;
-import net.htmlparser.jericho.HTMLElementName;
-import net.htmlparser.jericho.Source;
 import org.simpleframework.http.Request;
 
 
@@ -40,59 +31,45 @@ public class internet {
 
     Boolean debug = true;
 
+    /**
+     * Gets the contents of a file on the Internet into a string
+     * @origin http://www.avajava.com/tutorials/lessons/how-do-i-convert-a-web-page-to-a-string.html
+     * @copyright Deron Eriksson
+     * @license NOASSERTION
+     * @retrieved 2014-04-26
+     * @retriever Nuno Brito
+     * @param TextFileURL
+     * @return 
+     */
+     public static String getTextFile(String TextFileURL){
+         String result = "";
+         try {
+			URL url = new URL(TextFileURL);
+			URLConnection urlConnection = url.openConnection();
+			InputStream is = urlConnection.getInputStream();
+			InputStreamReader isr = new InputStreamReader(is);
 
-   
-   //checks for connection to the internet through dummy request
-        public static String getTextFile(String TextFileURL)
-        {
-            String text_out = "";
-                try {
+			int numCharsRead;
+			char[] charArray = new char[1024];
+			StringBuilder sb = new StringBuilder();
+			while ((numCharsRead = isr.read(charArray)) > 0) {
+				sb.append(charArray, 0, numCharsRead);
+			}
+			result = sb.toString();
 
-
-                        //make a valid URL to get ninja.txt
-                        URL url = new URL(TextFileURL);
-
-                        //open a connection to that source
-                        HttpURLConnection urlConnect =
-                                (HttpURLConnection)url.openConnection();
-
-                        // ensure that there is no cache to give old outdated files
-                            urlConnect.setDoInput(true);
-                            urlConnect.setUseCaches(false);
-                            //urlConnect.setConnectTimeout(1000);
-                            //urlConnect.setDoInput(false);
-                            //urlConnect.setDoOutput(false);
-
-                            DataInputStream dis;
-                            String s;
-
-
-                            dis = new DataInputStream(urlConnect.getInputStream());
-
-
-                            while ((s = dis.readLine()) != null)
-                                {
-                                      //text_out = text_out +"\r\n"+s;
-                                      if(s.length() == 0)
-                                          continue;
-                                      
-                                      text_out = text_out.concat(s + "\n");
-                                }
-                               dis.close();
-
-
-
-                } catch (UnknownHostException e) {
-                       // e.printStackTrace();
-                        return "";
-                }
-                catch (IOException e) {
-                       // e.printStackTrace();
-                        return "";
-                }
-                return text_out;
-        }
-
+                        is.close();
+                        isr.close();
+                        sb = null;
+                        urlConnection = null;
+		} catch (MalformedURLException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+         return result;
+     }
+    
+    
 /** sends email using an external PHP script, useful to bypass proxies */
 public static String sendEmail(String emailAddress, 
         String subject, String body){

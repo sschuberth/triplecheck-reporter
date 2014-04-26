@@ -5,7 +5,7 @@ import spdxlib.License;
 /*
  * SPDXVersion: SPDX-1.1
  * Creator: Person: Nuno Brito
- * Created: 2014-04-26T00:29:06Z
+ * Created: 2014-04-26T13:32:17Z
  * LicenseName: Apache-2.0
  * FileName: EFL_2_0.java 
  * FileCategory: SOURCE
@@ -20,7 +20,7 @@ public class EFL_2_0 extends License{
      */
     @Override
     public Boolean approvedOSI(){
-        return false; // was this license OSI approved or not?
+        return true; // was this license OSI approved or not?
     }
     
     /**
@@ -40,4 +40,37 @@ public class EFL_2_0 extends License{
     public String getTitle(){
         return "Eiffel Forum License v2.0"; // full text title
     }
+    
+    /**
+     * In most cases, the license will have generic terms that only present
+     * minor changes such as copyright attributions. This method provides
+     * an idea of the contents of the license.
+     * @return  Normal text (no markup) version of the license terms
+     */
+    @Override
+    public String getTerms(){
+        return "Eiffel Forum License, version 2\n"
+        + "\n"
+        + "1.  Permission is hereby granted to use, copy, modify and/or distribute this pac"
+        + "kage, provided that:\n"
+        + " - copyright notices are retained unchanged,\n"
+        + " - any distribution of this package, whether modified or not, includes this lice"
+        + "nse text.\n"
+        + "\n"
+        + "2.  Permission is hereby also granted to distribute binary programs which depend"
+        + " on this package. If the binary program depends on a modified version of this pa"
+        + "ckage, you are encouraged to publicly release the modified version of this packa"
+        + "ge.\n"
+        + "\n"
+        + "\n"
+        + "THIS PACKAGE IS PROVIDED \"AS IS\" AND WITHOUT WARRANTY. ANY EXPRESS OR IMPLIED WA"
+        + "RRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILI"
+        + "TY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AU"
+        + "THORS BE LIABLE TO ANY PARTY FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEM"
+        + "PLARY, OR CONSEQUENTIAL DAMAGES ARISING IN ANY WAY OUT OF THE USE OF THIS PACKAG"
+        + "E. \n"
+; // the license text
+    }
+ 
+    
 }

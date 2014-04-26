@@ -5,7 +5,7 @@ import spdxlib.License;
 /*
  * SPDXVersion: SPDX-1.1
  * Creator: Person: Nuno Brito
- * Created: 2014-04-26T00:29:07Z
+ * Created: 2014-04-26T13:33:22Z
  * LicenseName: Apache-2.0
  * FileName: Zlib.java 
  * FileCategory: SOURCE
@@ -20,7 +20,7 @@ public class Zlib extends License{
      */
     @Override
     public Boolean approvedOSI(){
-        return false; // was this license OSI approved or not?
+        return true; // was this license OSI approved or not?
     }
     
     /**
@@ -40,4 +40,35 @@ public class Zlib extends License{
     public String getTitle(){
         return "zlib License"; // full text title
     }
+    
+    /**
+     * In most cases, the license will have generic terms that only present
+     * minor changes such as copyright attributions. This method provides
+     * an idea of the contents of the license.
+     * @return  Normal text (no markup) version of the license terms
+     */
+    @Override
+    public String getTerms(){
+        return "zlib License\n"
+        + "\n"
+        + "\n"
+        + "  This software is provided 'as-is', without any express or implied\n"
+        + "  warranty.  In no event will the authors be held liable for any damages\n"
+        + "  arising from the use of this software.\n"
+        + "\n"
+        + "  Permission is granted to anyone to use this software for any purpose,\n"
+        + "  including commercial applications, and to alter it and redistribute it\n"
+        + "  freely, subject to the following restrictions:\n"
+        + "\n"
+        + "  1. The origin of this software must not be misrepresented; you must not\n"
+        + "     claim that you wrote the original software. If you use this software\n"
+        + "     in a product, an acknowledgment in the product documentation would be\n"
+        + "     appreciated but is not required.\n"
+        + "  2. Altered source versions must be plainly marked as such, and must not be\n"
+        + "     misrepresented as being the original software.\n"
+        + "  3. This notice may not be removed or altered from any source distribution.\n"
+; // the license text
+    }
+ 
+    
 }
