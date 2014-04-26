@@ -52,7 +52,7 @@ public class FileInfo {
             tagFileChecksumMD5;
     
    
-     private SPDXfile spdx = null; // where does this object comes from?
+     public SPDXfile spdx = null; // where does this object comes from?
      
      // non tag related
     public FileCategory fileCategory = FileCategory.UNKNOWN;
@@ -382,5 +382,28 @@ public class FileInfo {
         //System.out.println(result);
         return result;
     }
+
+    /**
+     * Adds or changes the tag for concluded license
+     * @param selectedLicense 
+     */
+    public void setConcludedLicense(String selectedLicense) {
+        // pre-flight checks
+        if(tagFileName == null){
+            System.err.println("FI397 Null name tag, can't proceed.");
+            return;
+        }
+        
+        // we want to add the license declaration right after the name tag
+        int pos = tagFileName.linePosition + 1;
+        
+        // knowing where to place the text, we add up this new tag
+        spdx.addTag(pos, "LicenseConcluded: " + selectedLicense);
+        
+        // now write back the changes
+        spdx.commitChanges();
+    }
+    
+   
     
 }

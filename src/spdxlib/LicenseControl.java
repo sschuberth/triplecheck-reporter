@@ -28,9 +28,18 @@ import utils.html;
  */
 public class LicenseControl {
 
+    /**
+     * Public constructor
+     */
+    public LicenseControl(){
+        launchThreadedStart();
+    }
+    
         
     public static HashMap<String, License>
             list = new HashMap();
+    
+    private boolean hasNotProcessed = true;
     
     public boolean has(String licenseId) {
         return list.containsKey(licenseId);
@@ -62,8 +71,7 @@ public class LicenseControl {
         // output some statistics about the number of extensions registered
         log.write(is.INFO, "Licenses recognized: %1", "" + files.size());
         //TODO we are still listing the template class as a file type.
-    
-       // buildTextList();
+        hasNotProcessed = false;
     }
 
     /**
@@ -87,27 +95,76 @@ public class LicenseControl {
      */
     public String search(String searchTerm) {
         
-        String result = "";
+        String result = "", // the end result
+                rankFirst = "", // results to be listed on top
+                rankSecond = ""; // the secondary results
+
+        // place the term in second position
         searchTerm = searchTerm.toLowerCase();
         
         // go through each found license
         for(String licenseId : list.keySet()){
+            // get the license object
             License license = list.get(licenseId);
+            boolean hasRankedFirst = false;
             
             // look on the ids
             if(license.getId().toLowerCase().contains(searchTerm)){
-                result += license.getPrettyText();
+                rankFirst += license.getPrettyText();
+                hasRankedFirst = true;
                 continue;
             }
             
             // look inside the text
             if(license.getTerms().toLowerCase().contains(searchTerm)){
-                result += license.getPrettyText();
+                // no need to repeat the result if already ranked
+                if(hasRankedFirst){
+                    continue;
+                }
+                rankSecond += license.getPrettyText();
                 continue;
            }
-            
         }
+        
+        // add the titles where needed
+        if(rankFirst.length() > 0){
+            rankFirst = html.h3("Matching title")
+                    + rankFirst;
+        }
+        // add the titles where needed
+        if(rankSecond.length() > 0){
+            rankSecond = html.h3("Inside text")
+                    + rankSecond;
+        }
+        // add up the results
+        result = rankFirst + rankSecond;
+        // all done
         return result;
+    }
+
+    /**
+     * Have we already tried to look for licenses at least once?
+     * @return 
+     */
+    public boolean hasNotProcessed() {
+        return hasNotProcessed;
+    }
+
+    /**
+     * We launch after a few second a thread that will automatically index
+     * the licenses available on this machine
+     */
+    private void launchThreadedStart() {
+               // launch a small thread to keep the progress updated
+               Thread thread = new Thread(){
+                   @Override
+                   public void run(){
+                       // wait a little bit for things to start
+                       utils.time.wait(2);
+                       find();
+                   }
+               };
+               thread.start();
     }
     
 }

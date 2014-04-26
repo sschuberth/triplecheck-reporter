@@ -39,11 +39,13 @@ import javax.swing.text.html.FormSubmitEvent;
 import javax.swing.text.html.HTML;
 import javax.swing.text.html.HTMLDocument;
 import javax.swing.text.html.HTMLEditorKit;
+import javax.swing.tree.DefaultTreeModel;
 import main.actions;
 import main.controller;
 import main.core;
 import script.RunPlugins;
 import script.log;
+import spdxlib.FileInfo;
 import spdxlib.SPDXfile;
 import utils.html;
 import utils.internet;
@@ -82,8 +84,6 @@ public class StudioUI4 extends javax.swing.JFrame {
     
     boolean firstClickActive = false;
     boolean secondClickActive = false;
-    
-    private final long lastTime = 0;
     
     /**
      * Creates new form StudioUI2
@@ -386,23 +386,18 @@ public class StudioUI4 extends javax.swing.JFrame {
     
     
     private void treeValueChanged(javax.swing.event.TreeSelectionEvent evt) {//GEN-FIRST:event_treeValueChanged
-
     }//GEN-LAST:event_treeValueChanged
 
     private void textFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_textFocusGained
-
     }//GEN-LAST:event_textFocusGained
 
     private void textFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_textFocusLost
-
     }//GEN-LAST:event_textFocusLost
 
     private void textPropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_textPropertyChange
-
     }//GEN-LAST:event_textPropertyChange
 
     private void textKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_textKeyTyped
-
     }//GEN-LAST:event_textKeyTyped
 
     private void buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonActionPerformed
@@ -453,9 +448,11 @@ public class StudioUI4 extends javax.swing.JFrame {
             return;
         }
         
-        File file = (File) node.getUserObject();
-        
-        System.out.println("Been here! :-)");
+        //File file = (File) node.getUserObject();
+        //System.out.println("Been here! :-)");
+        setEnabled(false);
+        AddLicense licUI = new AddLicense();
+        licUI.setVisible(true);
     }
     
     /**
@@ -1143,6 +1140,51 @@ public class StudioUI4 extends javax.swing.JFrame {
             }
             return null;
         }
+
+    /**
+     * This method will change the license from the tree node that is
+     * currently selected
+     * @param selectedLicense   the identifier of the license to be applied 
+     */
+    void setLicenseToSelectedTreeNode(String selectedLicense) {
+        // get the selected node
+        TreeNodeSPDX node = swingUtils.getSelectedNode();
+        // preflight check
+        if(node == null){
+            return;
+        }
+        
+        // only files are supported at the moment
+        if(node.nodeType != NodeType.file){
+            return;
+        }
+        // get the object
+        FileInfo fileInfo = (FileInfo) node.getUserObject();
+        // change the license
+        fileInfo.setConcludedLicense(selectedLicense);
+        
+       
+        // all done in terms of writing the changes
+        log.write(is.COMPLETED, "Applied license %1 to %2",
+                selectedLicense, fileInfo.getName());
+
+        // do a full refresh of the document
+        fileInfo.spdx.refresh();
+         // now update the value on our treeview
+        String location = fileInfo.getRelativeLocation();
+        FileInfo newInfo = fileInfo.spdx.findRelative(location);
+        // no need to continue if the result is null
+        if(newInfo == null){
+            System.err.println("SU1175: Didn't found the relative FileInfo");
+            return;
+        }
+        
+        // now update the node on the tree view
+        node.setUserObject(newInfo);
+        node.setTitle(newInfo.toString());
+        node.update(tree);
+        //System.err.println(newInfo.getName() + "->" + newInfo.getLicense());
+    }
 
     
     

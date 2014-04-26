@@ -61,11 +61,26 @@ public class License {
     }
     
     
+    /**
+     * An HTML pretty version of the text from this license. This method
+     * is used when listing licenses
+     */
     public String getPrettyText(){
+        return getPrettyText("");
+    }
+    
+    
+    /**
+     * An HTML pretty version of the text from this license. This method
+     * is used when listing licenses
+     * @param extra     If necessary for outside browsing
+     * @return          HTML code for display to end-user
+     */
+    public String getPrettyText(String extra){
         return getTitle()
                 + html.textGrey(" (" + getId() + ")")
                 + " "
-                + html.link("choose", "http://test")
+                + html.link("choose", extra + getId())
                 + html.br;
     }
     

@@ -24,7 +24,9 @@ import java.io.File;
 import java.util.ArrayList;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
+import javax.swing.JTree;
 import javax.swing.tree.DefaultMutableTreeNode;
+import javax.swing.tree.DefaultTreeModel;
 import main.core;
 
 
@@ -80,6 +82,15 @@ public class TreeNodeSPDX extends DefaultMutableTreeNode{
         return result;
     }
 
+    /**
+     * Update the view of this node on a given tree
+     * @param tree 
+     */
+    public void update(JTree tree){
+        DefaultTreeModel model = (DefaultTreeModel) tree.getModel();
+        model.nodeChanged(this);
+    }
+    
     public String getTitle() {
         if(title == null){
             title = id;

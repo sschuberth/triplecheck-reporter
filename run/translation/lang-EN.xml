@@ -7,18 +7,21 @@
 <entry key="Error while interpreting %1, the error message is: %2">Error while interpreting %1, the error message is: %2</entry>
 <entry key="Added trigger: %1">Added trigger: %1</entry>
 <entry key="SU2006- clicked on link %1">SU2006- clicked on link %1</entry>
+<entry key="Applied license %1 to %2">Applied license %1 to %2</entry>
 <entry key="Tree node changed: %1">Tree node changed: %1</entry>
 <entry key="Re-doing our cache again">Re-doing our cache again</entry>
 <entry key="Added tool: %1">Added tool: %1</entry>
 <entry key="Version %1 %2">Version %1 %2</entry>
 <entry key="Found %1 files in %2">Found %1 files in %2</entry>
+<entry key="Licenses recognized: %1">Licenses recognized: %1</entry>
 <entry key="Extensions recognized: %1">Extensions recognized: %1</entry>
 <entry key="Performing a search: %1">Performing a search: %1</entry>
+<entry key="Tree node doubleclick on: %1">Tree node doubleclick on: %1</entry>
 <entry key="Refreshed the list of SPDX documents">Refreshed the list of SPDX documents</entry>
 <entry key="Program is ready to use">Program is ready to use</entry>
 <entry key="Adding tools">Adding tools</entry>
-<entry key="Web request for &quot;%1&quot; in %2">Web request for "%1" in %2</entry>
 <entry key="TripleCheck (c) %1, http://triplecheck.de">TripleCheck (c) %1, http://triplecheck.de</entry>
+<entry key="Web request for &quot;%1&quot; in %2">Web request for "%1" in %2</entry>
 <entry key="Displaying web page: %1">Displaying web page: %1</entry>
 <entry key="Added plugin: %1">Added plugin: %1</entry>
 </properties>

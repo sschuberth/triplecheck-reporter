@@ -19,10 +19,12 @@ import java.awt.event.KeyEvent;
 import java.net.URL;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
+import javax.swing.event.HyperlinkEvent;
+import javax.swing.event.HyperlinkListener;
+import javax.swing.text.html.HTMLEditorKit;
 import main.core;
 import script.log;
 import spdxlib.License;
-import utils.html;
 import utils.time;
 
 /**
@@ -33,7 +35,6 @@ public final class AddLicense extends javax.swing.JFrame {
 
     public String searchText = "Search..";
     
-        
     long lastKeypress = System.currentTimeMillis();
     public long sensitivity = 350;
     
@@ -60,19 +61,69 @@ public final class AddLicense extends javax.swing.JFrame {
         doSettings();
     }
 
+   
+
     /**
      * Initial settings when launching the UI
      */
     void doSettings(){
-        core.licenses.find();
+
+        // only look for licenses if nobody else has done it yet
+        if(core.licenses.hasNotProcessed()){
+            core.licenses.find();
+        }
         // bring up the default text box
         textDefault();
         
+        text.requestFocusInWindow();
         // monitor key presses on the search box
         launchThread();
+        // capture the clicks on HTML content
+        doFormInterception();
     }
     
+    
+    /**
+     * Process the clicks on HTML hyperlinks at the text form
+     */
+    private void doFormInterception() {
+         // add the URL interception
+        HTMLEditorKit kit = (HTMLEditorKit) text.getEditorKit();
+        kit.setAutoFormSubmission(false);
+        text.addHyperlinkListener(new HyperlinkListener() {
+            @Override
+            public void hyperlinkUpdate(HyperlinkEvent e) {
+                processActionGUI(e);
+            }
+        });
+    }
    
+    
+     /**
+     * The main point entry for actions that take place on the Swing GUI
+     * component where the HTML text is displayed
+     * @param e 
+     */ 
+    private void processActionGUI(HyperlinkEvent e){
+         // react to hyperlinks being clicked
+        if(e.getEventType() == HyperlinkEvent.EventType.ACTIVATED) {
+            processSelection(e.getDescription());
+        }
+    }
+    
+    /**
+     * When a license is selected, carry with the remaining actions
+     * @param selectedLicense   License id of the selected license
+     */
+    private void processSelection(String selectedLicense){
+        // close this menu
+        setVisible(false);
+        dispose();
+        core.studio.setLicenseToSelectedTreeNode(selectedLicense);
+        // return to the main UI
+        showMainWindow();
+    }
+    
     
     /**
      * This method is called from within the constructor to initialize the form.
@@ -87,11 +138,16 @@ public final class AddLicense extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         text = new javax.swing.JEditorPane();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Choose a license");
         setAlwaysOnTop(true);
         setBackground(new java.awt.Color(255, 255, 255));
         setLocationByPlatform(true);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowClosing(java.awt.event.WindowEvent evt) {
+                formWindowClosing(evt);
+            }
+        });
 
         search.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         search.setText("Search..");
@@ -113,6 +169,7 @@ public final class AddLicense extends javax.swing.JFrame {
             }
         });
 
+        text.setEditable(false);
         text.setContentType("text/html"); // NOI18N
         jScrollPane1.setViewportView(text);
 
@@ -161,6 +218,12 @@ public final class AddLicense extends javax.swing.JFrame {
     private void searchdoSearch(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_searchdoSearch
         performSearch(evt);
     }//GEN-LAST:event_searchdoSearch
+
+    private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
+        // TODO add your handling code here:
+        System.out.println("Closing License window");
+        showMainWindow();
+    }//GEN-LAST:event_formWindowClosing
 
     /**
      * @param args the command line arguments
@@ -330,6 +393,14 @@ public final class AddLicense extends javax.swing.JFrame {
      */
     public void clearKeypresses() {
         buffer = "";
+    }
+
+    /**
+     * Show the main window again
+     */
+    private void showMainWindow() {
+        core.studio.setEnabled(true);
+        core.studio.setVisible(true);
     }
     
 }

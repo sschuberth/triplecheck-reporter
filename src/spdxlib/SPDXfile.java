@@ -35,31 +35,25 @@ public final class SPDXfile {
     // The variables listed here follow the same order as
     // listed on the SPDX 1.1 specification
    
-   public SectionCreator
-           creatorSection = new SectionCreator();
+   public SectionCreator creatorSection;
+   public SectionPackage packageSection;
     
-   public SectionPackage
-           packageSection = new SectionPackage();
-    
-   ArrayList<TagLicense> // list of triggers applicable to this SPDX  
-           licenses = new ArrayList();          
+   // list of triggers applicable to this SPDX  
+   ArrayList<TagLicense> licenses;          
    
-   public SectionFiles // where we report all found fileSection of the package
-           fileSection = new SectionFiles(this);
+   // where we report all found fileSection of the package
+   public SectionFiles fileSection;
    
-   Person
-           reviewer;
+   Person  reviewer;
    TagValue
            reviewDate,
            reviewComment;
-   
    
    // basic objects to support the SPDX processing
    public File
            file; // direct file pointer to this file
 
-   public TagValueCollection 
-           data = new TagValueCollection(); // where all data tags are placed
+   public TagValueCollection data; // where all data tags are placed
    
    public String 
             rawText; // text for the SPDX file
@@ -73,20 +67,20 @@ public final class SPDXfile {
    // if there is a file, what is the checksum?
    private String checksum = "";
    
-   private HashMap<FileLanguage, Integer> statsLanguagesFound = new HashMap();
-   private int statsLanguagesTotal = 0;
+   private HashMap<FileLanguage, Integer> statsLanguagesFound;
+   private int statsLanguagesTotal;
    
    // related to artwork
-   private int statsArtworkCount = 0;
-   private HashMap<FileCategory, Integer> statsArtworkFound = new HashMap();
+   private int statsArtworkCount;
+   private HashMap<FileCategory, Integer> statsArtworkFound;
    
    // are redundant files present on the document?
    private Boolean statsHasVersioning = false;
    
    // how many triggers were declated in this document?
-   private int statsLicensesDeclaredCount = 0;
+   private int statsLicensesDeclaredCount;
    // there is a difference between declared and concluded triggers
-   private HashMap<String, Integer> statsLicensesDeclared = new HashMap();
+   private HashMap<String, Integer> statsLicensesDeclared;
    
    /**
     * Constructor where we initialize this object by serving an SPDX text
@@ -94,14 +88,38 @@ public final class SPDXfile {
     * @param file 
     */
    public SPDXfile(File file){
-       // assign the file pointer
+      newStart(file);
+   }
+
+   /**
+    * The initializer of this class
+    * @param file   File on disk from where the SPDX document can be read
+    */
+   private void newStart(File file){
+        // assign the file pointer
        this.file = file;
+       
+       // clean up / initialize our variables
+       creatorSection = new SectionCreator();
+       packageSection = new SectionPackage();
+       licenses = new ArrayList();
+       fileSection = new SectionFiles(this);
+       
+       data = new TagValueCollection();
+       statsLanguagesFound = new HashMap();
+       statsArtworkFound = new HashMap();
+       statsLicensesDeclared = new HashMap();
+       
+       statsLanguagesTotal = 0;
+       statsLicensesDeclaredCount = 0;
+       statsArtworkCount = 0;
+               
        // do the normal reading
        read(file);
        // now pre-process the stats
        doStats();
    }
-
+   
 //    public SPDXfile(File file, String text) {
 //        // assign the file pointer
 //       this.file = file;
@@ -770,6 +788,7 @@ public final class SPDXfile {
     /**
      * The unsorted hashmap with the languages that were most often found
      * on this document
+     * @return 
      */
     public HashMap<FileLanguage, Integer> getStatsLanguagesFound() {
         return statsLanguagesFound;
@@ -786,6 +805,7 @@ public final class SPDXfile {
     /**
      * How many images, icons, sound clips and other artwork are present
      * on this report?
+     * @return 
      */
     public int getStatsArtworkCount() {
         return statsArtworkCount;
@@ -997,6 +1017,20 @@ public final class SPDXfile {
         return result;
     }
 
+    
+    /**
+     * A quick way for updating this SPDX object when there are changes
+     * that were made to the text file
+     */
+    public void refresh(){
+        // can't continue without knowing where the SPDX is located
+        if(file == null){
+            return;
+        }
+        // read all the data again
+        newStart(file);
+    }
+    
     /**
      * When available, gives back the location where we can find the source code
      * files that were used when creating this document.
@@ -1023,6 +1057,22 @@ public final class SPDXfile {
         return folder;
     }
     
-   
+    /**
+     * When given a relative path location, find the corresponding FileInfo
+     * object or return null if it does not exist. This method is particularly
+     * useful after a given SPDX object was indexed one time and then it is
+     * refreshed due to some end-user editing. With this method you can get
+     * the fresh FileInfo object with the most recent changes.
+     * @param relativePath  The relativeLocation path from the older FileInfo
+     * @return 
+     */
+    public FileInfo findRelative(String relativePath){
+        for(FileInfo fileInfo : fileSection.files){
+            if(fileInfo.getRelativeLocation().equals(relativePath)){
+                return fileInfo;
+            }
+        }
+        return null;
+    }
     
 }
