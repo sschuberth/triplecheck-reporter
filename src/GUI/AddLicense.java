@@ -21,6 +21,9 @@ import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 import main.core;
 import script.log;
+import spdxlib.License;
+import utils.html;
+import utils.time;
 
 /**
  *
@@ -29,6 +32,13 @@ import script.log;
 public final class AddLicense extends javax.swing.JFrame {
 
     public String searchText = "Search..";
+    
+        
+    long lastKeypress = System.currentTimeMillis();
+    public long sensitivity = 350;
+    
+    private String
+            buffer = "" ; // the buffer of keys being typed very quickly
     
     /**
      * Creates new form AddLicense
@@ -54,10 +64,15 @@ public final class AddLicense extends javax.swing.JFrame {
      * Initial settings when launching the UI
      */
     void doSettings(){
+        core.licenses.find();
         // bring up the default text box
         textDefault();
         
+        // monitor key presses on the search box
+        launchThread();
     }
+    
+   
     
     /**
      * This method is called from within the constructor to initialize the form.
@@ -69,11 +84,13 @@ public final class AddLicense extends javax.swing.JFrame {
     private void initComponents() {
 
         search = new javax.swing.JTextField();
+        jScrollPane1 = new javax.swing.JScrollPane();
         text = new javax.swing.JEditorPane();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Choose a license");
         setAlwaysOnTop(true);
+        setBackground(new java.awt.Color(255, 255, 255));
         setLocationByPlatform(true);
 
         search.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
@@ -97,34 +114,17 @@ public final class AddLicense extends javax.swing.JFrame {
         });
 
         text.setContentType("text/html"); // NOI18N
-        text.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                textFocusGained(evt);
-            }
-            public void focusLost(java.awt.event.FocusEvent evt) {
-                textFocusLost(evt);
-            }
-        });
-        text.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                textPropertyChange(evt);
-            }
-        });
-        text.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                textKeyTyped(evt);
-            }
-        });
+        jScrollPane1.setViewportView(text);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(search)
-                    .addComponent(text, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 479, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jScrollPane1)
+                    .addComponent(search, javax.swing.GroupLayout.DEFAULT_SIZE, 600, Short.MAX_VALUE))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -133,9 +133,11 @@ public final class AddLicense extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(search, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(text, javax.swing.GroupLayout.DEFAULT_SIZE, 316, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 316, Short.MAX_VALUE)
                 .addContainerGap())
         );
+
+        getAccessibleContext().setAccessibleParent(text);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -159,22 +161,6 @@ public final class AddLicense extends javax.swing.JFrame {
     private void searchdoSearch(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_searchdoSearch
         performSearch(evt);
     }//GEN-LAST:event_searchdoSearch
-
-    private void textFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_textFocusGained
-
-    }//GEN-LAST:event_textFocusGained
-
-    private void textFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_textFocusLost
-
-    }//GEN-LAST:event_textFocusLost
-
-    private void textPropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_textPropertyChange
-
-    }//GEN-LAST:event_textPropertyChange
-
-    private void textKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_textKeyTyped
-
-    }//GEN-LAST:event_textKeyTyped
 
     /**
      * @param args the command line arguments
@@ -213,6 +199,7 @@ public final class AddLicense extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextField search;
     private javax.swing.JEditorPane text;
     // End of variables declaration//GEN-END:variables
@@ -234,7 +221,7 @@ public final class AddLicense extends javax.swing.JFrame {
      * @param evt the keystroke
      */
     private void performSearch(KeyEvent evt) {
-        // people expect to press "ESC" to clear the whole bar
+        // people expect to press "ESC" to clearKeypresses the whole bar
         if(evt.getKeyCode() == KeyEvent.VK_ESCAPE){
             search.transferFocus();
             log.write(is.COMMAND, Messages.SearchBoxPressedESCAPE);
@@ -261,7 +248,7 @@ public final class AddLicense extends javax.swing.JFrame {
         // there is a bug that allows people to write over the "search" default
         if(search.getText().isEmpty()){
             search.setText(searchText);
-            core.key.clear();
+            clearKeypresses();
             return;
         }
         
@@ -274,17 +261,75 @@ public final class AddLicense extends javax.swing.JFrame {
         }
         
         // indicate that a key was pressed, this keeps the buffer alive
-        core.key.pressedKey("x");
+        pressedKey("x");
             
     }
+    
+   
     
     /**
      * The default text that should appear on 
      */
     void textDefault(){
-        String result = "test";
+        String result = "";
+        
+        // go through each found license
+        for(String licenseId : core.licenses.getList().keySet()){
+            License license = core.licenses.get(licenseId);
+            result += license.getPrettyText();
+        }
         
         text.setText(result);
+        text.setCaretPosition(0);
+        
+    }
+    
+    
+     /**
+     * The user has pressed a key, let's store this key on our buffer
+     * @param key the key that was pressed by the user
+     */
+    public void pressedKey(final String key){
+        buffer = buffer.concat(key);
+        lastKeypress = System.currentTimeMillis();
+    }
+    
+     /**
+     * Launch the thread to keep this thing active
+     */
+    void launchThread(){
+         Thread thread = new Thread(){
+                    @Override
+                    public void run() {
+                        while(true){
+                            // hold on this thread for a second
+                            time.waitMs(sensitivity);
+                            // no need to process anything if buffer is empty
+                            if(buffer.isEmpty()){
+                                continue;
+                            }
+                            long timeNow = System.currentTimeMillis();
+                            // we keep a buffer of 1 second between keys
+                            long waitingTime = lastKeypress + sensitivity;
+                            // has more than one second passed without pressing?
+                            if(timeNow > waitingTime){                
+                                String searchTerm = search.getText();
+                                String result = core.licenses.search(searchTerm);
+                                text.setText(result);
+                                buffer = "";
+                            }
+                        }
+                    }
+                };
+               // launch it up, fire and forget
+               thread.start();
+    }
+
+    /**
+     * Cleans up the buffer
+     */
+    public void clearKeypresses() {
+        buffer = "";
     }
     
 }

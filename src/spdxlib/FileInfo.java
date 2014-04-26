@@ -30,7 +30,7 @@ public class FileInfo {
             tagLicenseConcluded; // result of audit, mandatory, one
     
     public ArrayList<TagValue> 
-            // list all the licenses collected from the files included
+            // list all the triggers collected from the files included
             licenseInfoInFile = new ArrayList(); // mandatory, one or many        
    
     public TagValue 
@@ -148,8 +148,8 @@ public class FileInfo {
     /**
      * This method will pick on a given FileInfo object and extract the relevant
      * licensing details.
-     * @return A string text with a list of licenses when available. If no
-     * trigger was found, it will return null
+     * @return A string text with a list of triggers when available. If no
+ trigger was found, it will return null
      */
     public String getLicense(){
         // where we store the results from this analysis
@@ -163,11 +163,11 @@ public class FileInfo {
         }
         
            
-        // second priority are licenses detected inside the code
+        // second priority are triggers detected inside the code
         if(licenseInfoInFile.size()>0){
-            // we need to count the valid licenses
+            // we need to count the valid triggers
             int counterLicense = 0;
-            // go through all licenses listed
+            // go through all triggers listed
              for(TagValue tag : licenseInfoInFile){
                 // should this trigger be ignored?
                 if(tag.toString().equalsIgnoreCase("none")){
@@ -200,7 +200,7 @@ public class FileInfo {
      */
     public int countLicensesDeclared(){
         int result = 0;
-        // are there any licenses inside this file?
+        // are there any triggers inside this file?
         for(TagValue licenseTag : licenseInfoInFile){
             String licenseText = licenseTag.toString();
             // excluse the cases that shouldn't count for this metric
@@ -213,7 +213,7 @@ public class FileInfo {
             // we just need to find one trigger to make our day happy! :-)
             result++;
         }
-          // no licenses, let's leave
+          // no triggers, let's leave
         return result;
     }
     

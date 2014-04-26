@@ -36,7 +36,7 @@ public class start {
                         + "http://triplecheck.de", utils.time.getCurrentYear());
                 log.write(is.RUNNING, "Version %1 %2", core.version,
                         getDate());
-                // add our licenses
+                // add our triggers
                 actions.addLicenses();
                 // now add the known file extensions
                 core.extensions.addExtensions();

@@ -15,6 +15,7 @@ import java.util.Properties;
 import script.FileExtension;
 import script.Plugin;
 import script.Trigger;
+import spdxlib.License;
 
 //import script.log;
 
@@ -235,7 +236,7 @@ public class Script {
     
     /**
      * This method is used by runJava() to ease the processing between different
-     * types of plugin, licenses and whatever else comes in the future
+ types of plugin, triggers and whatever else comes in the future
      * @param className The type of class that we are processing
      * @param runScript The instance of the script
      */
@@ -273,9 +274,10 @@ public class Script {
                 // get the object
                 Trigger plugin = (Trigger) runScript.get("plugin");
                 // add it up
-                core.licenses.add(plugin);
+                core.triggers.add(plugin);
                 script.log.write(is.COMPLETED, "Added trigger: %1", 
                         scriptFile.getName());
+                return;
             }
             
             // is this a file extension that we want to archive?
@@ -286,7 +288,18 @@ public class Script {
                 if(core.extensions.has(extension.getIdentifierShort())==false){
                     core.extensions.add(extension);
                 }
-                
+                return;
+            }
+            
+            // is this a file extension that we want to archive?
+            if(className.equals(is.license)){
+                // get the object
+                License license = (License) runScript.get("plugin");
+                // add it up
+                if(core.licenses.has(license.getId())==false){
+                    core.licenses.add(license);
+                }
+                return;
             }
             
             

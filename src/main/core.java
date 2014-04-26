@@ -22,9 +22,10 @@ import definitions.is;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
-import script.Trigger;
 import script.RunningTask;
+import script.Trigger;
 import script.log;
+import spdxlib.LicenseControl;
 import spdxlib.SPDXfile;
 import utils.Settings;
 
@@ -62,11 +63,13 @@ public class core {
     public static String searchTerm = "";
     
     public static ArrayList<Trigger> 
-            licenses = new ArrayList();
+            triggers = new ArrayList();
     
     public static ExtensionControl
             extensions = new ExtensionControl();
-            
+   
+    public static LicenseControl
+            licenses = new LicenseControl();
    
     public static ArrayList<RunningTask> 
             runningTasks = new ArrayList();

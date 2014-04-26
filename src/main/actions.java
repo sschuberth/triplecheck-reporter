@@ -43,7 +43,7 @@ public class actions {
         }
         
          // worry about the case when there is no folder nor triggers to include
-        if(core.licenses.isEmpty()){
+        if(core.triggers.isEmpty()){
             log.write(is.WARNING, "No licenses were added, "
                     + "license detection is disabled.");
         }

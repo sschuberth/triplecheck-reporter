@@ -275,9 +275,9 @@ public class FileId {
             }
         }
         
-        // try to identify some of the most common licenses
+        // try to identify some of the most common triggers
         //String lowerCaseContent = content.toLowerCase();
-        for(Trigger thisTrigger: core.licenses){
+        for(Trigger thisTrigger: core.triggers){
             if(thisTrigger.isApplicable(content)){
                 licenseInfoInFile.add(thisTrigger);
             }

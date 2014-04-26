@@ -115,7 +115,7 @@ public class show extends Plugin{
         
         String warnings = "";
         
-        // we don't like SPDX documents without declared licenses
+        // we don't like SPDX documents without declared triggers
         if(counterLicensesDeclared == 00){
             warnings = ""
                     + html.getIcon("exclamation.png", request)
@@ -357,14 +357,14 @@ public class show extends Plugin{
         
         // prepare our list of warnings about things we don't particularly enjoy
 //        String warnings = "";
-//        // we don't like SPDX documents without declared licenses
+//        // we don't like SPDX documents without declared triggers
 //        if(counterLicensesDeclared == 00){
 //            warnings = ""
 //                    + html.br
 //                    + html.br
 //                    + Table.simple(
 //                            html.getIcon("exclamation.png", request), 10,
-//                            "No licenses declared", 150)
+//                            "No triggers declared", 150)
 //                    ;
 //        }
         

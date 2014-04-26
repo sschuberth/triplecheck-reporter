@@ -16,6 +16,7 @@ import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import main.core;
+import utils.html;
 
 
 /**
@@ -57,6 +58,15 @@ public class License {
      */
     public String getTerms(){
         return ""; // the license text
+    }
+    
+    
+    public String getPrettyText(){
+        return getTitle()
+                + html.textGrey(" (" + getId() + ")")
+                + " "
+                + html.link("choose", "http://test")
+                + html.br;
     }
     
     /**

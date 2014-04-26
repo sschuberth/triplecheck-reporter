@@ -15,6 +15,7 @@ public class is {
             plugin = "Plugin",
             extension = "FileExtension",
             trigger = "Trigger",
+            license = "License",
             methodStartUp = "startup",
             script = "script",
             project = "project",

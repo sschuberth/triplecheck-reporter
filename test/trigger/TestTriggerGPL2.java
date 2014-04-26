@@ -59,12 +59,12 @@ public class TestTriggerGPL2 {
      @Test
      public void findGPLv2() {
      
-         // add up all the licenses from our folder
+         // add up all the triggers from our folder
          actions.addLicenses();
          
          
          String lowerCaseContent = content.toLowerCase();
-         for(Trigger thisLicense: core.licenses){
+         for(Trigger thisLicense: core.triggers){
             if(thisLicense.isApplicable(lowerCaseContent )){
                 assertEquals("GPL-2.0", thisLicense.getShortIdentifier());
                 System.out.println("Found GPL v2 license");

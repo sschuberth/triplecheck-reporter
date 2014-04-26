@@ -351,7 +351,7 @@ public class StudioUI4 extends javax.swing.JFrame {
             shouldShow = true;
         }
        
-         // allow to change licenses on files
+         // allow to change triggers on files
         if(node.nodeType == NodeType.file){
             popupMenu.add(menuItem_DefineLicense);
             shouldShow = true;

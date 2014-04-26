@@ -41,7 +41,7 @@ public final class SPDXfile {
    public SectionPackage
            packageSection = new SectionPackage();
     
-   ArrayList<TagLicense> // list of licenses applicable to this SPDX  
+   ArrayList<TagLicense> // list of triggers applicable to this SPDX  
            licenses = new ArrayList();          
    
    public SectionFiles // where we report all found fileSection of the package
@@ -83,9 +83,9 @@ public final class SPDXfile {
    // are redundant files present on the document?
    private Boolean statsHasVersioning = false;
    
-   // how many licenses were declated in this document?
+   // how many triggers were declated in this document?
    private int statsLicensesDeclaredCount = 0;
-   // there is a difference between declared and concluded licenses
+   // there is a difference between declared and concluded triggers
    private HashMap<String, Integer> statsLicensesDeclared = new HashMap();
    
    /**
@@ -367,7 +367,7 @@ public final class SPDXfile {
     
     
     /**
-     * Parse information regarding other licenses
+     * Parse information regarding other triggers
      * @param tag 
      */
     private void parseOtherLicensingTags(TagValue tag) {
@@ -404,7 +404,7 @@ public final class SPDXfile {
     }
 
     /**
-     * Goes the array of licenses and gets the most recent one.
+     * Goes the array of triggers and gets the most recent one.
      * If there is none, it creates one.
      */
     private TagLicense getLastAddedLicense(){
@@ -588,8 +588,8 @@ public final class SPDXfile {
     }
 
     /**
-     * How many licenses were declared inside this document?
-     * @return number of licenses declared
+     * How many triggers were declared inside this document?
+     * @return number of triggers declared
      */
     public int getStatsLicensesDeclared() {
         return statsLicensesDeclaredCount;
@@ -623,7 +623,7 @@ public final class SPDXfile {
         for(FileInfo fileInfo : fileSection.files){
             
             
-            // count the number of declared licenses (not the concluded lic.)
+            // count the number of declared triggers (not the concluded lic.)
             int licensesCount =  fileInfo.countLicensesDeclared();
             statsLicensesDeclaredCount += licensesCount;
              // was at least one trigger added?
@@ -970,7 +970,7 @@ public final class SPDXfile {
         
         
         
-        // Now list the licenses
+        // Now list the triggers
         if(statsLicensesDeclaredCount > 0){
 //            Map<String,Integer> map2 = utils.misc.sortHashMap(statsLicensesDeclared);
             // show the ordered results

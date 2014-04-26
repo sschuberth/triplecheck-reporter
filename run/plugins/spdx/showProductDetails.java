@@ -400,11 +400,11 @@ public class showProductDetails extends Plugin{
     
 //    /**
 //     * When given a SPDX object, provide some statistics
-//     * about the number of licenses that are not declared
+//     * about the number of triggers that are not declared
 //     */
 //    int doStatistics(SPDXfile spdx){
 //        int counterLicensesDeclared = 0;
-//        // get the number of licenses declared
+//        // get the number of triggers declared
 //            for(Object fileObject : spdx.fileSection.files){
 //                FileInfo file = (FileInfo) fileObject;
 //                // go deep into the trigger information
