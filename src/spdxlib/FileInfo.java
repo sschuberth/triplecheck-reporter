@@ -303,7 +303,7 @@ public class FileInfo {
         return spdx;
     }
    
-       /**
+    /**
      * Returns the path portion from a given FileInfo object
      * @return 
      */
@@ -324,9 +324,33 @@ public class FileInfo {
         }
         // there is a path available, let's get it
         String result = fileName;//.substring(0, fileName.lastIndexOf("/"));
-        
         return result;
     }
+    
+       /**
+     * Returns the path portion from a given FileInfo object
+     * @return 
+     */
+    public String getPath(){
+        
+        // or else, the path is found inside the FileName tag
+        String fileName = tagFileName.getValue();
+        
+        // if we have a FilePath tag available, use it as default
+        if(tagFilePath != null){
+            String filePath = tagFilePath.getValue();
+            fileName = filePath + fileName;
+        }
+        
+        // if no path is available, just mention it as root
+        if(fileName.contains("/")==false){
+            return "./";
+        }
+
+        // if there is a path structure, return what comes before
+        int lastPos = fileName.lastIndexOf("/");
+        return fileName.substring(0, lastPos);
+      }
     
     
     public File getFileName(){
@@ -352,7 +376,8 @@ public class FileInfo {
             return "";
         }
         
-        String result = tagFileCopyrightText.withoutTextTags();
+        //String result = tagFileCopyrightText.withoutTextTags();
+        String result = tagFileCopyrightText.getValue();
         //result = tagFileCopyrightText.removeTextTags(result);
         //System.out.println(result);
         return result;

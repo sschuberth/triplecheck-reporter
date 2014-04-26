@@ -140,7 +140,7 @@ public class pluginSearch extends Plugin{
         // do the final output, everything done
         core.studio.editorPane(is.contentHTML, false, 0, output);
             
-            
+        try{    
             // look in reports now
             String matchProductName =
                 searchListSPDX(searchTerm, definition.nodeSoftware);
@@ -148,6 +148,10 @@ public class pluginSearch extends Plugin{
                     // compile all the results together
             output =  //matchComponentName
                      matchProductName;
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+            
         }
        
 
@@ -186,11 +190,13 @@ public class pluginSearch extends Plugin{
     public String searchListSPDX(String searchTerm,  String title){
         String result = ""; 
         String keyword = searchTerm.toLowerCase();
-
         // create the icons that might be displayed on the results
         String iconPackage = html.getCommonFolderIcon("box.png");
         String iconFile = html.getCommonFolderIcon("document-number.png");
-                
+           
+        if(core.reports.isEmpty()){
+            System.err.println("PluginSearch194: No reports to search");
+        }
                
         
         for(SPDXfile spdx : core.reports){
@@ -242,8 +248,8 @@ public class pluginSearch extends Plugin{
                    String linkFileUID = 
                            ">> "
                            + file.tagFileName.toString()
-                           + " >> "
-                           + file.tagFilePath.toString()
+                           //+ " >> "
+                           //+ file.tagFilePath.toString()
                            + " >> "
                            + "./"
                            + " >> "
@@ -254,16 +260,9 @@ public class pluginSearch extends Plugin{
                            ;
                    
                    
-                   String filePath = "";
-                   if(file.tagFilePath != null){
-                       filePath = " "  
-                               + html.textGrey(file.tagFilePath.toString());
-                   }
-                   
-                   
                    String[] params = new String[]{iconFile, 
                        html.linkNode(
-                               file.tagFileName.toString(),
+                               file.getName(),
                                linkFileUID)
                            + fileDetails
                    };
@@ -277,7 +276,7 @@ public class pluginSearch extends Plugin{
 //                           linkFileUID)
                            
                                    
-                           + "<code>" + filePath + "</code>"
+                           + "<code>" + file.getPath() + "</code>"
                            + html.br
                            + html.br
                    );

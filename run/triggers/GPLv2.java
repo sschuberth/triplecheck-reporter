@@ -38,7 +38,8 @@ public class GPLv2 implements Trigger {
         "under the terms of the GNU General Public License version 2",
         "Version 2, June 1991",
         "http://www.gnu.org/licenses/gpl-2.0.txt",
-        "General Public License (GPL) Version 2"
+        "General Public License (GPL) Version 2",
+        "GPLv2"
     };
     
     /**

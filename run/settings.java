@@ -1,4 +1,6 @@
+
 import script.Plugin;
+
 /**
  * SPDXVersion: SPDX-1.1
  * Creator: Person: Nuno Brito (nuno.brito@triplecheck.de)
@@ -11,6 +13,7 @@ import script.Plugin;
  * FileComment: <text> Basic settings loaded on the beginning of the program
  * start.</text> 
  */
+
 /**
  *
  * @author Nuno Brito, 13th of December 2013 in Darsmtadt, Germany

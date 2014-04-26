@@ -963,9 +963,10 @@ public final class SPDXfile {
                         + quantity
                         + html.br;
             }
-            // all done with the artwork
-            result +=  html.br;
         }
+
+        // all done with the artwork
+        result +=  html.br;
         
         
         

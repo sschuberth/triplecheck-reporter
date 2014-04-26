@@ -39,9 +39,8 @@ public class core {
     public static
             Settings settings = new Settings(new File("settings.xml"), "");
     
-    public static ArrayList<SPDXfile> 
-            //components, 
-            reports;
+    public static 
+            ArrayList<SPDXfile> reports = new ArrayList<SPDXfile>();
     
     // where we keep our shared objects
     public static HashMap

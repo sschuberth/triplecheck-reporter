@@ -44,7 +44,8 @@ public class create extends Plugin{
     
     final String 
             id = "Create SPDX",
-            LastFolderNewSPDX = "LastFolderNewSPDX";
+            LastFolederNewSPDX = "LastFolderNewSPDX",
+            myFolder = "TargetFolderSPDX";
             
     final String acceptedExtension = 
             ".tar.gz"
@@ -105,7 +106,7 @@ public class create extends Plugin{
          
         
         // get the value used before
-        String selectedFolder = settings.read(LastFolderNewSPDX, "");
+        String selectedFolder = settings.read(myFolder, "");
         
         // if nothign is chosen, just show it as "none"
         if(selectedFolder.isEmpty()){
@@ -128,7 +129,7 @@ public class create extends Plugin{
      */
     public void foldercreate(WebRequest request){
         // what should we use as source?
-        String selectedFolder = settings.read(LastFolderNewSPDX);
+        String selectedFolder = settings.read(myFolder);
         // start our action
         log.write(is.INFO, "Creating an SPDX document using as source: %1", 
                selectedFolder );
@@ -145,6 +146,8 @@ public class create extends Plugin{
             return;
         }
        
+        // save the selected folder for the next time
+        //settings.write(LastFolderNewSPDX, source.getAbsolutePath());
         
         RunningTask task = new RunningTask(){
             @Override
@@ -214,8 +217,8 @@ public class create extends Plugin{
             return;
         }
         
-        // do we want an older located defined?
-        String selectedFolder = settings.read(LastFolderNewSPDX);
+        // do we want an older location defined?
+        String selectedFolder = settings.read(myFolder);
 
         // do we want to use the default location or do we have an older choice?
         File startFolder = core.getWorkFolder();
@@ -226,9 +229,11 @@ public class create extends Plugin{
         // show the dialog
         File result = swingUtils.chooseFolder(startFolder);
         
+        
         // place the result in our settings
         if(result != null){
-            settings.write(LastFolderNewSPDX, result.getAbsolutePath());
+            final String newPath = result.getAbsolutePath();
+            settings.write(myFolder, newPath + "");
             log.write(is.ACCEPTED, "Folder %1 was chosen as source for the SPDX "
                 + "document", result.getAbsolutePath());
         }

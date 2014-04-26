@@ -30,9 +30,9 @@ public class CopyrightDetector implements Trigger {
     
     
     String[] blackList = {
-       // "",
         "copyright ownership.",
-        "copyright notice"
+        "copyright notice",
+        "Copyright (C) [YEAR] by [YOUR NAME] <YOUR EMAIL>"
     };
     
     /**
