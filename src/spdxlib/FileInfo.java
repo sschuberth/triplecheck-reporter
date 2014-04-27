@@ -149,7 +149,7 @@ public class FileInfo {
      * This method will pick on a given FileInfo object and extract the relevant
      * licensing details.
      * @return A string text with a list of triggers when available. If no
- trigger was found, it will return null
+     * trigger was found, it will return null
      */
     public String getLicense(){
         // where we store the results from this analysis
@@ -189,6 +189,44 @@ public class FileInfo {
         return licenseOutput;
     }
 
+
+    /**
+     * Get a list of the licenses that are available inside this container.
+     * This list includes the concluded and found licenses in the form of
+     * their short title identifiers that follow the SPDX nomenclature.
+     * @return a list with the licenses found or zero items if none is listed
+     */
+    public ArrayList getLicenses() {
+        // create the list place holder
+        ArrayList<String> result = new ArrayList();
+            
+        // add a concluded license when available
+        if(validLicenseTag(tagLicenseConcluded)){
+            result.add(tagLicenseConcluded.toString());
+        }
+        
+        // now iterate through all the listed licenses
+        for(TagValue tag : licenseInfoInFile){
+            if(validLicenseTag(tag)==false){
+                continue;
+            }
+            // is valid? Add it up then.
+            result.add(tag.toString());
+            }
+        
+        // all done
+        return result;
+    }
+    
+    /**
+     * Checks if a given tag contains relevant licensing details
+     * @param tag the tag to analyse
+     * @return true if the tag has license information
+     */
+    private Boolean validLicenseTag(TagValue tag){
+        return (tag != null) && (tag.toString().equals("NOASSERTION") != true);
+    }
+    
     
     /**
      * When given a file, this method checks if it has either a reported or
@@ -360,6 +398,7 @@ public class FileInfo {
         File targetFile = new File(spdx.getSourceFolder(), relativePath);
         // doesn't exist? No need to continue
         if(targetFile.exists() == false){
+            System.err.println("FI363, getFileName(): Didn't found: " + targetFile.getAbsolutePath());
             return null;
         }
         // all done
@@ -403,7 +442,8 @@ public class FileInfo {
         // now write back the changes
         spdx.commitChanges();
     }
-    
+
+   
    
     
 }

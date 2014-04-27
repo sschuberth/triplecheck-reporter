@@ -62,9 +62,11 @@ public class internet {
                         sb = null;
                         urlConnection = null;
 		} catch (MalformedURLException e) {
-			e.printStackTrace();
+			//e.printStackTrace();
+                        return "";
 		} catch (IOException e) {
-			e.printStackTrace();
+                    return "";
+			//e.printStackTrace();
 		}
          return result;
      }

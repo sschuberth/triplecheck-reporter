@@ -1044,6 +1044,7 @@ public final class SPDXfile {
         String title = id.SOURCEFOLDER + file.getName();
         
         if(core.settings.hasKey(title)==false){
+            System.err.println("SPDXfile1047: Didn't found " + title);
             return null;
         }
         // create the folder pointer

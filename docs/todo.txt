@@ -10,6 +10,15 @@
 - Track files generated automatically (part of triggers?)
 - Report should not be generated if it does not contain all files in package
 
+Log
+- Fixed frontpage "news" title when there is no internet connectivity
+- Improved the initial indexing of the available reports
+- Made available a popularity calculator, ranks the most popular licenses
+- License dialog now shows the top-ranked licenses on the first position
+
+
+
+
 
 x where applicable files mentioned with copyright?
 x Reduce size of extension classes (some methods are never used)

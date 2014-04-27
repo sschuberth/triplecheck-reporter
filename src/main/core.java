@@ -26,7 +26,8 @@ import script.RunningTask;
 import script.Trigger;
 import script.log;
 import spdxlib.LicenseControl;
-import spdxlib.SPDXfile;
+import structure.LicensePopularity;
+import structure.ReportsControl;
 import utils.Settings;
 
 
@@ -40,8 +41,6 @@ public class core {
     public static
             Settings settings = new Settings(new File("settings.xml"), "");
     
-    public static 
-            ArrayList<SPDXfile> reports = new ArrayList<SPDXfile>();
     
     // where we keep our shared objects
     public static HashMap
@@ -68,8 +67,14 @@ public class core {
     public static ExtensionControl
             extensions = new ExtensionControl();
    
+    public static ReportsControl
+            reports = new ReportsControl();
+   
     public static LicenseControl
             licenses = new LicenseControl();
+    
+    public static LicensePopularity
+            popularity = new LicensePopularity();
    
     public static ArrayList<RunningTask> 
             runningTasks = new ArrayList();
@@ -132,8 +137,7 @@ public class core {
      */
     public static void refreshSPDX(){
         // find all SPDX files inside our archive
-        File baseFolder = new File(".");
-        core.reports = actions.findSPDX(new File(baseFolder, is.products));
+        reports.index();
         // send a message to the world, warning that things changed
         log.write(is.INFO, Messages.RefreshSPDX);
     }

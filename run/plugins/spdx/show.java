@@ -89,7 +89,7 @@ public class show extends Plugin{
         }
         
         // get some statistical data
-        for(Object object : core.reports){
+        for(Object object : core.reports.list){
             SPDXfile spdx = (SPDXfile) object;
             counterFiles += spdx.fileSection.files.size();
             counterCreators += spdx.creatorSection.people.size();
@@ -125,11 +125,11 @@ public class show extends Plugin{
         
         // handle the number of documents
         String documentText = "";
-        if(core.reports.size() == 1){
+        if(core.reports.list.size() == 1){
             documentText = "1 document" + html.br;
         }
-        if(core.reports.size() > 1){
-            documentText = core.reports.size() + " documents" + html.br;
+        if(core.reports.list.size() > 1){
+            documentText = core.reports.list.size() + " documents" + html.br;
         }
         
         

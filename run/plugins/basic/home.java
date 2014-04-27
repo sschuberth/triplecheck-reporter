@@ -106,6 +106,13 @@ public class home extends Plugin{
                 ;
         
         
+        // only show the time line title when there is something to show
+        if(timeLine.isEmpty() == false){
+            timeLine = 
+                    html.h3("Recent news")
+                    + timeLine;
+        }
+        
         String result = ""
                 + html.div()
                 + html.br
@@ -116,14 +123,13 @@ public class home extends Plugin{
                 + "<hr>"
                 + html.br
                 + navigationSub
-                + html.h3("Recent news")
                 + timeLine
                 
                 + html._div
                 ;
         
         // expand the first treeview node by default
-        String showProducts = (String) core.temp.get(is.products);
+        String showProducts = (String) core.temp.get(is.reports);
         if(showProducts != null)
             if(showProducts.isEmpty() == false)
               swingUtils.setSelectedNode(showProducts);

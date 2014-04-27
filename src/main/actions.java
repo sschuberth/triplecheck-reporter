@@ -21,13 +21,9 @@ import definitions.definition;
 import definitions.folder;
 import definitions.is;
 import java.io.File;
-import java.io.IOException;
 import java.util.ArrayList;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.swing.JTree;
 import script.log;
-import spdxlib.SPDXfile;
 
 
 public class actions {
@@ -50,47 +46,7 @@ public class actions {
         
     }
 
-    /**
-     * Find all files within a given folder, return the respective
-     * details such as hashes and other details relevant for SPDX processing
-     * @param folder The folder location where we will look for SPDX files
-     * @return 
-     */
-    public static ArrayList<SPDXfile> findSPDX(File folder){
-        // only find the SPDX documents with .SPDX extension
-        ArrayList<File> files = utils.files.findFilesFiltered(folder, ".spdx", 25);
-        ArrayList<SPDXfile> list = new ArrayList();
-        try {
-            for(File file: files){
-            
-            String filePath = file.getCanonicalPath();
-            // ignore SVN folders of any kind
-            if(filePath.contains(".svn")){
-                continue;
-            }
-            SPDXfile spdxFile;
-                spdxFile = new SPDXfile(file.getCanonicalFile());
-                list.add(spdxFile);
-        }
-             
-            String pathName = folder.getCanonicalPath();
-            
-            pathName = "." 
-                    + pathName.replace(core.getWorkFolder().getCanonicalPath(), "");
-           // System.err.println(core.getWorkFolder().getCanonicalPath());
-            
-            log.write(is.INFO, "Found %1 files in %2", 
-                files.size()
-                +"", pathName);
-                
-            } catch (IOException ex) {
-                Logger.getLogger(actions.class.getName()).log(Level.SEVERE, null, ex);
-                System.exit(-100);
-            }
-       
-        return list;
-    }
-
+   
     
      /**
      * This is a critical method. It will look for all SPDX files inside a given
@@ -133,7 +89,7 @@ public class actions {
         
         // we use this value for later showing the reports (SPDX) node
         // fully expanded
-        core.temp.put(is.products, softwareNode.getUID());
+        core.temp.put(is.reports, softwareNode.getUID());
         
        // swingUtils.setSelectedNode(softwareNode.getUID());
     }

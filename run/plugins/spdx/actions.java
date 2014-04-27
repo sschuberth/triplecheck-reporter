@@ -120,11 +120,13 @@ public class actions extends Plugin{
         TreeNodeSPDX node = swingUtils.getSelectedNode();
         // no need to continue if there is nothing selected
         if(node == null){
+            System.err.println("AC123 Null node");
             return;
         }
         
          // process files
         if(node.nodeType != NodeType.file){
+            System.err.println("AC129 Not a node file");
             return;
         }
        
@@ -134,6 +136,7 @@ public class actions extends Plugin{
         File targetFile = fileInfo.getFileName();
         
         if(targetFile == null){
+            System.err.println("AC139 Null file pointer on: " + fileInfo.getName());
             return;
         }
         

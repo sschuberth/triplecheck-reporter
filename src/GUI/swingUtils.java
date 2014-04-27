@@ -247,12 +247,12 @@ public class swingUtils {
         
         // create the node for hosting our reports
         TreeNodeSPDX productNode = nodeCreate(
-                "Products (" + core.reports.size() + ")"
+                "Reports (" + core.reports.list.size() + ")"
                 , NodeType.other, nodeRoot);
         productNode.id = folder.reports;
         
         // add all SPDX documents that were found
-            for(SPDXfile spdx : core.reports){
+            for(SPDXfile spdx : core.reports.list){
                 addNodeSPDX(productNode, spdx);
             }
         

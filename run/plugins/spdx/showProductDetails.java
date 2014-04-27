@@ -64,7 +64,7 @@ public class showProductDetails extends Plugin{
         
         // are we clicking on the root of packages?
         if(nodeUID.equals(">> Products ")){
-            showPackageRoot("Products ", core.reports);
+            showPackageRoot("Products ", core.reports.list);
             return;
         }
 //        // do the same, this time for libraries

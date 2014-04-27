@@ -194,12 +194,12 @@ public class pluginSearch extends Plugin{
         String iconPackage = html.getCommonFolderIcon("box.png");
         String iconFile = html.getCommonFolderIcon("document-number.png");
            
-        if(core.reports.isEmpty()){
+        if(core.reports.list.isEmpty()){
             System.err.println("PluginSearch194: No reports to search");
         }
                
         
-        for(SPDXfile spdx : core.reports){
+        for(SPDXfile spdx : core.reports.list){
             String matchTitle = "";
         // first search, find components we have with the same name
             String spdxId = spdx.getId().toLowerCase();

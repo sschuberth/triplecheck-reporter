@@ -11,7 +11,7 @@ DataLicense: CC-BY-4.0
 
 Creator: Nuno Brito
 Creator: Tool: TripleCheck 0.6
-Created: 2014-04-26T15:14:12Z
+Created: 2014-04-27T09:36:01Z
 
 ##-------------------------
 ## Package Information
@@ -29,7 +29,6 @@ PackageLicenseConcluded: NOASSERTION
 
 FileName: ./access-bridge-32.jar
 FileType: ARCHIVE
-LicenseConcluded: IPL-1.0
 FileChecksum: SHA1: 37e9732284fd578d6b30169a177af88b6f0973ef
 FileChecksum: SHA256: fb69dc83e665fa4090f13ed88f9eb7757639dce3e717cfc765832c7783549008
 FileChecksum: MD5: 756460ed7efdc11a65c54a7a9d30261c
@@ -38,7 +37,6 @@ FileSize: 48 Kb (49173 bytes)
 
 FileName: ./access-bridge-64.jar
 FileType: ARCHIVE
-LicenseConcluded: Artistic-1.0
 FileChecksum: SHA1: 5f783df9dd581956c8e5a380403ac401d1da4715
 FileChecksum: SHA256: c26781a043951846922a8395b1ed37665f747932bfe81b63ecc89e4e32b41281
 FileChecksum: MD5: bcb50f90dd598eaa9577d2bcd3ec2015
@@ -47,7 +45,6 @@ FileSize: 48 Kb (49173 bytes)
 
 FileName: ./access-bridge.jar
 FileType: ARCHIVE
-LicenseConcluded: Condor-1.1
 FileChecksum: SHA1: 7e1022f1fb70ab6d7e0131ca88314b81f6838651
 FileChecksum: SHA256: 9c684531f5b0d8b42e8d1cae3310992da5feb5236bab707799424f87c406034a
 FileChecksum: MD5: 8f615ec0fc094baa435cf29f64529d16
@@ -56,7 +53,7 @@ FileSize: 48 Kb (49165 bytes)
 
 FileName: ./accessibility.properties
 FileType: OTHER
-LicenseConcluded: OLDAP-2.0.1
+LicenseConcluded: ZPL-2.0
 FileChecksum: SHA1: 59739f5b02e2594964393b7ed585de6cc9a02d4f
 FileChecksum: SHA256: 76667ca56147d12b09c2cea3f29e8df63597e107435e3a90aa0017df10f96e9f
 FileChecksum: MD5: 99de066a3c03c26a459b7b68f902947d
@@ -65,7 +62,6 @@ FileSize: 153 bytes
 
 FileName: ./COPYRIGHT
 FileType: OTHER
-LicenseConcluded: Entessa
 FileChecksum: SHA1: d4b51b420911d71f2c5e5632d0b0d29f76538fff
 FileChecksum: SHA256: e54a5351d88298e4c41e0bd628ab51d347201a9b3218f9437ae4562eb45cde97
 FileChecksum: MD5: 1c3fb095e8e2cd656bf5798ddf7e1897
@@ -74,7 +70,7 @@ FileSize: 3 Kb (3412 bytes)
 
 FileName: ./jaccess.jar
 FileType: ARCHIVE
-LicenseConcluded: SGI-B-2.0
+LicenseConcluded: GPL-3.0
 FileChecksum: SHA1: cd4ce2fbe6b4989d74dca3cdb748e773356e2a33
 FileChecksum: SHA256: 5b15b014f716fa53926bd20ff231b751efa25d617443b745002b0d046d260585
 FileChecksum: MD5: 86fe83b39cb0606c9e792907592b8199
@@ -83,7 +79,6 @@ FileSize: 42 Kb (43504 bytes)
 
 FileName: ./JavaAccessBridge-32.dll
 FileType: BINARY
-LicenseConcluded: ZPL-2.0
 FileChecksum: SHA1: a44c67621b65205d0b36fc2eb5634b39d26e744b
 FileChecksum: SHA256: 6c474e72eba6efb70bf95a8080501e26429ff461773e8a7eab35ccbebb26fdd8
 FileChecksum: MD5: 6b4cd5a484519199c53971af7eeb47ce
@@ -92,7 +87,6 @@ FileSize: 179 Kb (183808 bytes)
 
 FileName: ./JavaAccessBridge-64.dll
 FileType: BINARY
-LicenseConcluded: Artistic-2.0
 FileChecksum: SHA1: 5a9edbe6dbfdf1061444439dbecd6c05e9e28552
 FileChecksum: SHA256: d50ac34327fd0a44c8264a9e7aaa901fb7c94af7c765b6a37c4a400c9d8d95c7
 FileChecksum: MD5: 910b4807f983330959e5568c6cbb2523
@@ -101,7 +95,6 @@ FileSize: 197 Kb (202240 bytes)
 
 FileName: ./JavaAccessBridge.dll
 FileType: BINARY
-LicenseConcluded: MS-PL
 FileChecksum: SHA1: ba1ccf05f9ecd87b06866a94456a0b71eac974a4
 FileChecksum: SHA256: 1ddb5763ab6daf109352a20377c195b6052c05118a55085080078fb334d2f8c4
 FileChecksum: MD5: 5bb941850b6f8dcb98de5ba89dd9fefe
@@ -110,7 +103,6 @@ FileSize: 178 Kb (182272 bytes)
 
 FileName: ./JavaFerret-32.exe
 FileType: BINARY
-LicenseConcluded: ZPL-2.0
 FileChecksum: SHA1: 579f4831b6516978d4861bd8a1b75e8c6de491c5
 FileChecksum: SHA256: 9c186626a5777f5eb19d81cd55f528d3e43ee2e5d3e2c1bf1053215ba2824e66
 FileChecksum: MD5: fdcd4891ed0c244192d4cfaf15e0b12c
@@ -119,7 +111,6 @@ FileSize: 117 Kb (120320 bytes)
 
 FileName: ./JavaFerret-64.exe
 FileType: BINARY
-LicenseConcluded: IPL-1.0
 FileChecksum: SHA1: a4c4cada45ec7e9ebb7a020c891cde3a73fbecbe
 FileChecksum: SHA256: 045a7ec199bcaf809d60b91137c2f8d7efb2522ef66b59ec38307441c152abff
 FileChecksum: MD5: c58511e9f413868c95eeb0e6fa929380
@@ -128,7 +119,6 @@ FileSize: 128 Kb (131584 bytes)
 
 FileName: ./JavaFerret.exe
 FileType: BINARY
-LicenseConcluded: CC-BY-NC-ND-1.0
 FileChecksum: SHA1: 4f16b3925c1b368ba3f9e0c7c9ab33139b28d440
 FileChecksum: SHA256: c80799828305a2e7fde73e6b853dd3fa195c1e275a1d49f8e3971d36f9746f96
 FileChecksum: MD5: ded3913da92a178c58565c4d9619c9db
@@ -136,7 +126,6 @@ FileChecksum: SSDEEP: 1536:VY4BlN7BPX80ugAiEp/+62FRDFhCcg0EG2nwmWrVXksSuV8Ryd41a
 FileSize: 116 Kb (119296 bytes)
 
 FileName: ./JavaMonkey-32.exe
-LicenseConcluded: Artistic-2.0
 FileType: BINARY
 FileChecksum: SHA1: 9d316241d5e9f291483c4adedb8b6105a19e4172
 FileChecksum: SHA256: 586c6ae17eb36ea508a5572be83dea732f4b277f2b8363aaed3ed513bd2c3938
@@ -202,6 +191,7 @@ FileSize: 49 bytes
 
 FileName: ./src/include/AccessBridge.h
 FileType: SOURCE
+LicenseConcluded: LGPL-2.1
 FileChecksum: SHA1: 6d39b7a39e58e39538bab8e4704d413d28525f97
 FileChecksum: SHA256: 7dcd8c046abbd5094ec8dd03d4f2adee193317030bfc56f58477e26d51a9e58a
 FileChecksum: MD5: 6a6d3e4ffefa00c5493ee29ad8680eed
@@ -211,6 +201,7 @@ FileLOC: 392
 
 FileName: ./src/include/AccessBridgeCallbacks.h
 FileType: SOURCE
+LicenseConcluded: LGPL-2.1
 FileChecksum: SHA1: d05fa0ed9ec231dd26161200e001e3ad6f928679
 FileChecksum: SHA256: 6bf94d9494ff963ff7a99a9ab838a92434b1f05b6718053684cb03875cefb9cd
 FileChecksum: MD5: ca420d24f30198284182b0e97f192f67
@@ -221,6 +212,7 @@ FileCopyrightText: <text>Copyright (c) 2005, 2010, Oracle and/or its affiliates.
 
 FileName: ./src/include/AccessBridgeCalls.c
 FileType: SOURCE
+LicenseConcluded: LGPL-2.1
 FileChecksum: SHA1: 21e2b0428ef3e31f2324b5ba64481e06b0cbf5e9
 FileChecksum: SHA256: 42183590006f535947d99ab23043bf5f791519cfece7471764787edc1783e80c
 FileChecksum: MD5: 51562d89f7eadce1e8c36928b3c4db95
@@ -231,6 +223,7 @@ FileCopyrightText: <text>Copyright (c) 2005, 2010, Oracle and/or its affiliates.
 
 FileName: ./src/include/AccessBridgeCalls.h
 FileType: SOURCE
+LicenseConcluded: LGPL-2.1
 FileChecksum: SHA1: fdf7134105f50d9a90a147599019b1665a8d0420
 FileChecksum: SHA256: b15bf31d014ce5ac78122601919cc4930323a00becad94c6fb11fe4ced6a6efd
 FileChecksum: MD5: 5791352329e3876f8af464a2379cbad6
@@ -241,6 +234,7 @@ FileCopyrightText: <text>Copyright (c) 2005, 2010, Oracle and/or its affiliates.
 
 FileName: ./src/include/AccessBridgePackages.h
 FileType: SOURCE
+LicenseConcluded: LGPL-2.1
 FileChecksum: SHA1: bf8bc7031cfbc46bf78777932d5abf68563441a8
 FileChecksum: SHA256: 0c16b6de465c25ab93ce66d36d592f2a30b1d3e9d75dfda4415660f249d034bb
 FileChecksum: MD5: b4bf4a220c0766d0ef5ca16df4591bbc
@@ -250,6 +244,7 @@ FileLOC: 2184
 FileCopyrightText: <text>Copyright (c) 2005, 2010, Oracle and/or its affiliates. All rights reserved.</text>
 
 FileName: ./src/sample/JavaFerret.cpp
+LicenseConcluded: GPL-3.0
 FileType: SOURCE
 FileChecksum: SHA1: 5b724ae0210a4967fcd50fbf8482e7f4bf1b1be1
 FileChecksum: SHA256: 4a41602d788d0b66a799c85efc93c22a9124ac9bae36db343b698c6e40e94204
@@ -260,6 +255,7 @@ FileLOC: 890
 FileCopyrightText: <text>Copyright (c) 2005, 2010, Oracle and/or its affiliates. All rights reserved.</text>
 
 FileName: ./src/sample/JavaMonkey.cpp
+LicenseConcluded: GPL-3.0
 FileType: SOURCE
 FileChecksum: SHA1: 0a7a38ba117c2852d71843b8f02a7de7f6e5b997
 FileChecksum: SHA256: c4e548c9c34868994170f629d9ebb85c6ff712979b7404bcb487227d5c8ba164

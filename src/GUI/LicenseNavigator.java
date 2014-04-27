@@ -25,13 +25,14 @@ import javax.swing.text.html.HTMLEditorKit;
 import main.core;
 import script.log;
 import spdxlib.License;
+import utils.html;
 import utils.time;
 
 /**
  *
  * @author Nuno Brito, 25th of April 2014 in Darmstadt, Germany.
  */
-public final class AddLicense extends javax.swing.JFrame {
+public final class LicenseNavigator extends javax.swing.JFrame {
 
     public String searchText = "Search..";
     
@@ -41,10 +42,13 @@ public final class AddLicense extends javax.swing.JFrame {
     private String
             buffer = "" ; // the buffer of keys being typed very quickly
     
+    // we have different reactions to running standalone or as part of a dialog
+    public boolean isDialog = false;
+    
     /**
      * Creates new form AddLicense
      */
-    public AddLicense() {
+    public LicenseNavigator() {
          // adopt the default user interface menus and buttons
         try {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
@@ -116,10 +120,13 @@ public final class AddLicense extends javax.swing.JFrame {
      * @param selectedLicense   License id of the selected license
      */
     private void processSelection(String selectedLicense){
+        // a license was chosen, fireup the event on the main window
+        log.write(is.ACCEPTED, "License was chosen: %1", selectedLicense);
+        core.studio.setLicenseToSelectedTreeNode(selectedLicense);
+        
         // close this menu
         setVisible(false);
         dispose();
-        core.studio.setLicenseToSelectedTreeNode(selectedLicense);
         // return to the main UI
         showMainWindow();
     }
@@ -242,13 +249,13 @@ public final class AddLicense extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(AddLicense.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LicenseNavigator.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(AddLicense.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LicenseNavigator.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(AddLicense.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LicenseNavigator.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(AddLicense.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LicenseNavigator.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
@@ -256,7 +263,7 @@ public final class AddLicense extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             @Override
             public void run() {
-                new AddLicense().setVisible(true);
+                new LicenseNavigator().setVisible(true);
             }
         });
     }
@@ -336,11 +343,48 @@ public final class AddLicense extends javax.swing.JFrame {
     void textDefault(){
         String result = "";
         
+        // do we have a popular list to show in the first place?
+        if(core.popularity.getList().size() >0){
+            String temp = "";
+            int counter = 0;
+            for(String licenseId : core.popularity.getList().keySet()){
+              License license = core.licenses.get(licenseId);
+              // might be a license but was not indexed, skip this one
+              if(license == null){
+                  continue;
+              }
+              
+              int popValue = core.popularity.getValue(licenseId);
+              
+              // this license is valid, add it up
+              temp +=  "(" + popValue + ") "
+                      + license.getPrettyText()
+                      
+                      ;
+              counter++;
+              // place a limit on 10 licenses on the list
+              if(counter > 10){
+                  break;
+              }
+            }
+            // should we list this value on the first search ranking?
+            if(counter > 0){
+                result += html.h3("Licenses used often")
+                        + temp;
+            }
+        }
+        
         // go through each found license
+        result += html.h3("Available licenses");
         for(String licenseId : core.licenses.getList().keySet()){
             License license = core.licenses.get(licenseId);
             result += license.getPrettyText();
         }
+        
+        // give a left-side margin on the output
+        result = html.div()
+                + result
+                + html._div;
         
         text.setText(result);
         text.setCaretPosition(0);
@@ -399,6 +443,11 @@ public final class AddLicense extends javax.swing.JFrame {
      * Show the main window again
      */
     private void showMainWindow() {
+        // we are likely running as standalone
+        if(core.studio == null){
+            System.exit(9992);
+            return;
+        }
         core.studio.setEnabled(true);
         core.studio.setVisible(true);
     }

@@ -22,7 +22,7 @@ public class is {
             settings = "settings",
             folderSPDX = "folderSPDX",
             library = "library",
-            products = "reports",
+            reports = "reports",
             textStart = "<text>",
             textEnd = "</text>",
             iconFolder = "icons",

@@ -21,6 +21,7 @@ import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Enumeration;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.logging.Level;
@@ -39,7 +40,6 @@ import javax.swing.text.html.FormSubmitEvent;
 import javax.swing.text.html.HTML;
 import javax.swing.text.html.HTMLDocument;
 import javax.swing.text.html.HTMLEditorKit;
-import javax.swing.tree.DefaultTreeModel;
 import main.actions;
 import main.controller;
 import main.core;
@@ -351,8 +351,9 @@ public class StudioUI4 extends javax.swing.JFrame {
             shouldShow = true;
         }
        
-         // allow to change triggers on files
-        if(node.nodeType == NodeType.file){
+         // allow to change triggers on files and folders
+        if((node.nodeType == NodeType.file)
+           ||(node.nodeType == NodeType.folder)){
             popupMenu.add(menuItem_DefineLicense);
             shouldShow = true;
         }
@@ -441,18 +442,19 @@ public class StudioUI4 extends javax.swing.JFrame {
         // preflight check
         if(node == null){
             // nothing to do, just leave
+            System.err.println("SU444: node is null");
             return;
         }
-        // we only care about SPDX files here
-        if(node.nodeType != NodeType.file){
-            return;
+        // we only care about SPDX files and folders here
+        if((node.nodeType == NodeType.file)
+                ||(node.nodeType == NodeType.folder)){
+            // make the main window disabled and show the licensing window
+            log.write(is.INFO, "Opening license dialog");
+            setEnabled(false);
+            LicenseNavigator licUI = new LicenseNavigator();
+            licUI.setVisible(true);
         }
-        
-        //File file = (File) node.getUserObject();
-        //System.out.println("Been here! :-)");
-        setEnabled(false);
-        AddLicense licUI = new AddLicense();
-        licUI.setVisible(true);
+    // all done
     }
     
     /**
@@ -485,7 +487,7 @@ public class StudioUI4 extends javax.swing.JFrame {
         file.delete();
         // refresh all the contents
         //node = tree.
-        String UID = (String) core.temp.get(is.products);
+        String UID = (String) core.temp.get(is.reports);
         swingUtils.refreshAll(tree, UID);
     }
     
@@ -1141,6 +1143,80 @@ public class StudioUI4 extends javax.swing.JFrame {
             return null;
         }
 
+    
+    /**
+     * This method permits to collect sets of nodes
+     */
+    private void getNodes(TreeNodeSPDX node, 
+            ArrayList<TreeNodeSPDX> nodes, NodeType filter){
+            
+        // no child nodes? nothing else to do on this loop
+        if(node.getChildCount() == 0){
+            //System.err.println("SU1155: No child nodes to proceed");
+            return;
+        }
+        // enumerate the available sub-nodes and add them up
+        Enumeration list = node.children();
+        while(list.hasMoreElements()){
+            // get the next node
+            TreeNodeSPDX newNode = (TreeNodeSPDX) list.nextElement();
+            // dig deeper to find other subnodes there
+            getNodes(newNode, nodes, filter);
+             // what type of nodes are we interested?
+            if(newNode.nodeType != filter){
+                continue;
+            }
+            // add this node on our list
+            //System.err.println("->" + newNode.toString());
+            nodes.add(newNode);
+       }
+      // return nodes; 
+    }
+    
+    
+    /**
+     * Given a set of nodes, update their licenses
+     * @param nodeList 
+     */
+    private void updateLicenseNodes(ArrayList<TreeNodeSPDX> nodeList, 
+            String selectedLicense){
+        
+        FileInfo temp = null;
+        // iterate through the provided list
+        for(TreeNodeSPDX newNode : nodeList){
+                // get the object
+                FileInfo fileInfo = (FileInfo) newNode.getUserObject();
+                // change the license
+                fileInfo.setConcludedLicense(selectedLicense);
+                // all done in terms of writing the changes
+                log.write(is.COMPLETED, "Applied license %1 to %2",
+                        selectedLicense, fileInfo.getName());
+                temp = fileInfo;
+            }
+            // mandatory refresh
+            temp.spdx.refresh();
+            // second round of iterations
+            for(TreeNodeSPDX newNode : nodeList){
+                 // get the object
+                FileInfo fileInfo = (FileInfo) newNode.getUserObject();       
+                // now update the value on our treeview
+                String location = fileInfo.getRelativeLocation();
+                FileInfo newInfo = fileInfo.spdx.findRelative(location);
+                // no need to continue if the result is null
+                if(newInfo == null){
+                    System.err.println("SU1175: Didn't found the relative FileInfo");
+                    return;
+                }
+
+                // now update the node on the tree view
+                newNode.setUserObject(newInfo);
+                newNode.setTitle(newInfo.toString());
+                newNode.update(tree);
+
+            }
+    }
+    
+    
     /**
      * This method will change the license from the tree node that is
      * currently selected
@@ -1151,39 +1227,26 @@ public class StudioUI4 extends javax.swing.JFrame {
         TreeNodeSPDX node = swingUtils.getSelectedNode();
         // preflight check
         if(node == null){
+            System.err.println("SU1187: Node is null");
             return;
+        }
+
+        ArrayList<TreeNodeSPDX> nodeList = new ArrayList();
+        
+          // only files are supported at the moment
+        if(node.nodeType == NodeType.folder){
+            //System.err.println("Changing the whole folder");
+            getNodes(node, nodeList, NodeType.file);
         }
         
         // only files are supported at the moment
-        if(node.nodeType != NodeType.file){
-            return;
+        if(node.nodeType == NodeType.file){
+            nodeList.add(node);
         }
-        // get the object
-        FileInfo fileInfo = (FileInfo) node.getUserObject();
-        // change the license
-        fileInfo.setConcludedLicense(selectedLicense);
-        
-       
-        // all done in terms of writing the changes
-        log.write(is.COMPLETED, "Applied license %1 to %2",
-                selectedLicense, fileInfo.getName());
 
-        // do a full refresh of the document
-        fileInfo.spdx.refresh();
-         // now update the value on our treeview
-        String location = fileInfo.getRelativeLocation();
-        FileInfo newInfo = fileInfo.spdx.findRelative(location);
-        // no need to continue if the result is null
-        if(newInfo == null){
-            System.err.println("SU1175: Didn't found the relative FileInfo");
-            return;
-        }
-        
-        // now update the node on the tree view
-        node.setUserObject(newInfo);
-        node.setTitle(newInfo.toString());
-        node.update(tree);
-        //System.err.println(newInfo.getName() + "->" + newInfo.getLicense());
+      // update the licenses
+      updateLicenseNodes(nodeList, selectedLicense);
+
     }
 
     
