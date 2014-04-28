@@ -240,6 +240,20 @@ public class showFileDetails extends Plugin{
                     + "Applicable license(s): " + fileInfo.getLicense();
         }
         
+     
+        if(fileInfo.hasLicenseConcluded()){
+            summary += 
+                     html.br 
+                    + "License concluded: " + fileInfo.getLicenseConcluded();
+        }
+        
+        if(fileInfo.hasFileOrigin()){
+            summary += 
+                     html.br 
+                    + "Origin: " + fileInfo.getFileOrigin();
+        }
+     
+        
         // do the date creation
         //TODO We need to archive file date information
         //summary += "Created in " + file.;

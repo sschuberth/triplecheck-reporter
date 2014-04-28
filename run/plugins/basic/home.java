@@ -129,11 +129,16 @@ public class home extends Plugin{
                 ;
         
         // expand the first treeview node by default
+        try{
         String showProducts = (String) core.temp.get(is.reports);
-        if(showProducts != null)
-            if(showProducts.isEmpty() == false)
+        if(showProducts != null){
+            if(showProducts.isEmpty() == false){
               swingUtils.setSelectedNode(showProducts);
-        
+            }
+        }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
         request.setAnswer(result);
     }
     

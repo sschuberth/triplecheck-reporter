@@ -464,7 +464,8 @@ public class FileInfo {
             spdx.addTag(pos, key+": " + value);
 
             // now write back the changes
-            spdx.commitChanges();
+            // very slow on multiple write operations
+            //spdx.commitChanges();
         }
     }
 
@@ -474,6 +475,22 @@ public class FileInfo {
      */
     public boolean hasLicenseConcluded() {
         return hasValidLicenseTag(tagLicenseConcluded);
+    }
+
+    /**
+     * Returns the current value of the license concluded
+     * @return 
+     */
+    public String getLicenseConcluded() {
+        return tagLicenseConcluded.getValue();
+    }
+
+    public boolean hasFileOrigin() {
+        return hasValidLicenseTag(tagFileOrigin);
+    }
+
+    public String getFileOrigin() {
+        return tagFileOrigin.getValue();
     }
     
 }

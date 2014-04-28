@@ -11,11 +11,7 @@
 - Report should not be generated if it does not contain all files in package
 
 Log
-- Fixed frontpage "news" title when there is no internet connectivity
-- Improved the initial indexing of the available reports
-- Made available a popularity calculator, ranks the most popular licenses
-- License dialog now shows the top-ranked licenses on the first position
-- Now possible to assign licenses to folders that apply to all files within
+- Need to refresh popularity list after some dozens of files were processed
 
 
 

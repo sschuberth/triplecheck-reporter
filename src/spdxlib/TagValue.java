@@ -155,7 +155,8 @@ public class TagValue {
         //spdx.changeTag(this, oldRaw, newRaw);
         spdx.lines[linePosition] = newRaw;
         
-        spdx.commitChanges();
+       // very slow on multiple write operations 
+       // spdx.commitChanges();
     }
     
 }

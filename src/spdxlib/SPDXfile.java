@@ -592,7 +592,9 @@ public final class SPDXfile {
         }
         rawText = modifiedText;
         // write file on disk
-        files.SaveStringToFile(file, rawText);
+        
+        files.SaveLargeStringToFile(file, lines);
+        //files.SaveStringToFile(file, rawText);
     }
 
     /**

@@ -381,7 +381,8 @@ public class StudioUI4 extends javax.swing.JFrame {
         // get the place where the right-click occurred
         int row = tree.getClosestRowForLocation(evt.getX(), evt.getY());
         // mark the new selection on our treeview
-        tree.setSelectionRow(row);
+        //tree.setSelectionRow(row);
+        tree.addSelectionRow(row);
         // get the selected node
         TreeNodeSPDX node = swingUtils.getSelectedNode();
         // preflight check
@@ -402,9 +403,6 @@ public class StudioUI4 extends javax.swing.JFrame {
 
         // create the menu
         JPopupMenu popupMenu = new JPopupMenu();
-        
-        // should we show this popup or not? Default is not
-        boolean shouldShow = false;
     
 //        // we only care about SPDX files here
         if(node.nodeType == NodeType.SPDX){
@@ -416,26 +414,11 @@ public class StudioUI4 extends javax.swing.JFrame {
        
          // allow to change triggers on files and folders
         if((node.nodeType == NodeType.file)
-           ||(node.nodeType == NodeType.folder)){
-//            popupMenu.add(menuItem_DefineLicense);
-//            
-//                menuItem_MarkFile.add(menuItem_MarkFileAuthored);
-//                menuItem_MarkFile.add(menuItem_MarkFileAutomated);
-//                menuItem_MarkFile.add(menuItem_MarkFileExternal);
-//            popupMenu.add(menuItem_MarkFile);
+           ||(node.nodeType == NodeType.folder)
+           ||(node.nodeType == NodeType.sectionFile)
+                ){
             popupMenuFile.show(evt.getComponent(), evt.getX(), evt.getY());
-            
-            
-            //shouldShow = true;
         }
-       
-//        // nothing to do, just leave
-//        if(shouldShow == false){
-//            return;
-//        }
-//        
-//        // show the menu
-//        popupMenu.show(evt.getComponent(), evt.getX(), evt.getY());
     }
     
     /**
@@ -504,7 +487,7 @@ public class StudioUI4 extends javax.swing.JFrame {
     }//GEN-LAST:event_deleteSomethingClicked
 
     private void menuItem_DefineLicenseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuItem_DefineLicenseActionPerformed
-        addLicense();
+        addLicenseToSelectedNodes();
     }//GEN-LAST:event_menuItem_DefineLicenseActionPerformed
 
     private void menuItem_MarkFileAuthoredActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuItem_MarkFileAuthoredActionPerformed
@@ -527,10 +510,12 @@ public class StudioUI4 extends javax.swing.JFrame {
         markFileAs(FileOrigin.MODIFIED);
     }//GEN-LAST:event_menuItem_MarkFileModifiedActionPerformed
 
-    void addLicense(){
-        // get the selected node
-        TreeNodeSPDX node = swingUtils.getSelectedNode();
-        // preflight check
+    /**
+     * From a selected tree node, 
+     * @param node 
+     */
+    void addLicenseToSelectedNode(TreeNodeSPDX node){
+    // preflight check
         if(node == null){
             // nothing to do, just leave
             System.err.println("SU444: node is null");
@@ -538,7 +523,8 @@ public class StudioUI4 extends javax.swing.JFrame {
         }
         // we only care about SPDX files and folders here
         if((node.nodeType == NodeType.file)
-                ||(node.nodeType == NodeType.folder)){
+                ||(node.nodeType == NodeType.folder
+                ||(node.nodeType == NodeType.sectionFile))){
             // make the main window disabled and show the licensing window
             log.write(is.INFO, "Opening license dialog");
             setEnabled(false);
@@ -547,6 +533,40 @@ public class StudioUI4 extends javax.swing.JFrame {
         }
     // all done
     }
+    
+    
+    /**
+     * Has the end-user clicked on the option to open the right-click menu
+     * for changing licenses of a given set of files?
+     */
+    void addLicenseToSelectedNodes(){
+        // get the selected node
+        ArrayList<TreeNodeSPDX> nodeList = swingUtils.getSelectedNodes(tree);
+        // just need to open one
+        if(nodeList.isEmpty()){
+            return;
+        }
+        TreeNodeSPDX node = nodeList.get(0);
+        addLicenseToSelectedNode(node);
+        
+        // preflight check
+//        if(node == null){
+//            // nothing to do, just leave
+//            System.err.println("SU444: node is null");
+//            return;
+//        }
+//        // we only care about SPDX files and folders here
+//        if((node.nodeType == NodeType.file)
+//                ||(node.nodeType == NodeType.folder
+//                ||(node.nodeType == NodeType.sectionFile))){
+//            // make the main window disabled and show the licensing window
+//            log.write(is.INFO, "Opening license dialog");
+//            setEnabled(false);
+//            LicenseNavigator licUI = new LicenseNavigator();
+//            licUI.setVisible(true);
+        }
+    // all done
+    
     
     /**
      * This method will delete a given SPDX document when selected from the
@@ -1254,7 +1274,7 @@ public class StudioUI4 extends javax.swing.JFrame {
      * @param nodeList 
      */
     private void updateLicenseNodes(ArrayList<TreeNodeSPDX> nodeList, 
-            String selectedLicense){
+        String selectedLicense){
         // create the dummy-holder, necessary to grab the last indexed FileInfo
         FileInfo temp = new FileInfo(null);
         // iterate through the provided list
@@ -1270,6 +1290,7 @@ public class StudioUI4 extends javax.swing.JFrame {
                 temp = fileInfo;
             }
             // mandatory refresh on the SPDX object in our memory
+            temp.spdx.commitChanges();
             temp.spdx.refresh();
             // second round of iterations, re-use the treeview, update objects
             for(TreeNodeSPDX newNode : nodeList){
@@ -1300,29 +1321,33 @@ public class StudioUI4 extends javax.swing.JFrame {
      * @param selectedLicense   the identifier of the license to be applied 
      */
     void setLicenseToSelectedTreeNode(String selectedLicense) {
-        // get the selected node
-        TreeNodeSPDX node = swingUtils.getSelectedNode();
-        // preflight check
-        if(node == null){
-            System.err.println("SU1187: Node is null");
-            return;
-        }
+//        // get the selected node
+//        TreeNodeSPDX node = swingUtils.getSelectedNode();
+//        // preflight check
+//        if(node == null){
+//            System.err.println("SU1187: Node is null");
+//            return;
+//        }
 
-        // create a list of nodes to process
-        ArrayList<TreeNodeSPDX> nodeList = new ArrayList();
-          // only files and folders are supported at the moment
-        if(node.nodeType == NodeType.folder){
-            //System.err.println("Changing the whole folder");
-            getNodes(node, nodeList, NodeType.file);
+        // get the list of nodes that were selected
+         ArrayList<TreeNodeSPDX> nodeSelected = swingUtils.getSelectedNodes(tree);
+        // go through each one of these selected nodes
+        for(TreeNodeSPDX node : nodeSelected){
+            // create a list of nodes to process
+            ArrayList<TreeNodeSPDX> nodeList = new ArrayList();
+              // only files and folders are supported at the moment
+            if((node.nodeType == NodeType.folder)
+                    ||(node.nodeType == NodeType.sectionFile)){
+                //System.err.println("Changing the whole folder");
+                getNodes(node, nodeList, NodeType.file);
+            }
+            // only files are supported at the moment
+            if(node.nodeType == NodeType.file){
+                nodeList.add(node);
+            }
+            // update the licenses
+            updateLicenseNodes(nodeList, selectedLicense);
         }
-        // only files are supported at the moment
-        if(node.nodeType == NodeType.file){
-            nodeList.add(node);
-        }
-
-      // update the licenses
-      updateLicenseNodes(nodeList, selectedLicense);
-
     }
 
     /**
@@ -1340,7 +1365,8 @@ public class StudioUI4 extends javax.swing.JFrame {
         // create a list of nodes to process
         ArrayList<TreeNodeSPDX> nodeList = new ArrayList();
           // only files and folders are supported at the moment
-        if(node.nodeType == NodeType.folder){
+        if((node.nodeType == NodeType.folder)
+                ||(node.nodeType == NodeType.sectionFile)){
             //System.err.println("Changing the whole folder");
             getNodes(node, nodeList, NodeType.file);
         }
@@ -1365,8 +1391,13 @@ public class StudioUI4 extends javax.swing.JFrame {
                 temp = fileInfo;
             }
             // mandatory refresh on the SPDX object in our memory
+            temp.spdx.commitChanges();
+            
+             log.write(is.COMPLETED, "All done, marked file(s) as %1",
+                        value + "");
+            
             temp.spdx.refresh();
-            // second round of iterations, re-use the treeview, update objects
+//             second round of iterations, re-use the treeview, update objects
             for(TreeNodeSPDX newNode : nodeList){
                  // get the object
                 FileInfo fileInfo = (FileInfo) newNode.getUserObject();       
@@ -1383,6 +1414,8 @@ public class StudioUI4 extends javax.swing.JFrame {
                 newNode.setUserObject(newInfo);
                 newNode.setTitle(newInfo.toString());
                 newNode.update(tree);
+                log.write(is.COMPLETED, "All done, marked file(s) as %1",
+                        value + "");
             }
         
     }

@@ -379,6 +379,22 @@ public static long folderSize(File where){
    }
 
 
+    public static boolean SaveLargeStringToFile(File inputFile, String[] lines){
+        try {
+            BufferedWriter out = new BufferedWriter(new FileWriter(inputFile));
+            for(String line : lines){
+                out.write(line + "\n");
+            }
+            out.close();
+            }
+            catch (IOException e){
+                System.out.println(e.getMessage());
+                return false;
+            }
+        return true;
+	}
+   
+   
    /**
      * This method saves the contents from a string to a file
      *

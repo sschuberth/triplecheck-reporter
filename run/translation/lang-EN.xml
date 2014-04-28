@@ -8,6 +8,7 @@
 <entry key="RSS feed unavailable, possibly no Internet connected">RSS feed unavailable, possibly no Internet connected</entry>
 <entry key="Creating an SPDX document using as source: %1">Creating an SPDX document using as source: %1</entry>
 <entry key="Tree node changed: %1">Tree node changed: %1</entry>
+<entry key="Task &quot;Creating report: %1 files processed out of %2">Task "Creating report: %1 files processed out of %2</entry>
 <entry key="Version %1 %2">Version %1 %2</entry>
 <entry key="Applied origin %1 to %2">Applied origin %1 to %2</entry>
 <entry key="Added trigger: %1">Added trigger: %1</entry>
@@ -18,6 +19,7 @@
 <entry key="Added tool: %1">Added tool: %1</entry>
 <entry key="Added plugin: %1">Added plugin: %1</entry>
 <entry key="TripleCheck (c) %1, http://triplecheck.de">TripleCheck (c) %1, http://triplecheck.de</entry>
+<entry key="Task &quot;Creating report: 6 seconds were necessary to complete this task">Task "Creating report: 6 seconds were necessary to complete this task</entry>
 <entry key="Task &quot;Creating report: 100% complete">Task "Creating report: 100% complete</entry>
 <entry key="Preparing to process %1 files">Preparing to process %1 files</entry>
 <entry key="License was chosen: %1">License was chosen: %1</entry>
@@ -29,13 +31,14 @@
 <entry key="Found %1 files in %2">Found %1 files in %2</entry>
 <entry key="Task &quot;Creating report: Creating SPDX report">Task "Creating report: Creating SPDX report</entry>
 <entry key="Extensions recognized: %1">Extensions recognized: %1</entry>
+<entry key="All done, marked file(s) as %1">All done, marked file(s) as %1</entry>
 <entry key="Opening license dialog">Opening license dialog</entry>
 <entry key="Added a new task to our queue with the id: %1">Added a new task to our queue with the id: %1</entry>
 <entry key="Re-doing our cache again">Re-doing our cache again</entry>
 <entry key="Folder %1 was chosen as source for the SPDX document">Folder %1 was chosen as source for the SPDX document</entry>
 <entry key="Generating the license popularity list">Generating the license popularity list</entry>
 <entry key="Web request for &quot;%1&quot; in %2">Web request for "%1" in %2</entry>
-<entry key="Found and processed %1 reports">Found and processed %1 reports</entry>
 <entry key="Error while interpreting %1, the error message is: %2">Error while interpreting %1, the error message is: %2</entry>
+<entry key="Found and processed %1 reports">Found and processed %1 reports</entry>
 <entry key="Licenses recognized: %1">Licenses recognized: %1</entry>
 </properties>

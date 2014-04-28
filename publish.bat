@@ -26,6 +26,7 @@ xcopy /s/y run\plugins ..\%publish%\plugins\
 xcopy /s/y run\icons ..\%publish%\icons\
 xcopy /s/y run\extensions ..\%publish%\extensions\
 xcopy /s/y run\triggers ..\%publish%\triggers\
+xcopy /s/y run\licenses ..\%publish%\licenses\
 xcopy /s/y ..\misc\java ..\%publish%\java\
 
 :: copy the licenses and other related files

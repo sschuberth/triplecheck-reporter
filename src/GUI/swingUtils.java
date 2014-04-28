@@ -117,6 +117,30 @@ public class swingUtils {
     }
     
     /**
+     * Get the currently selected node from a given tree
+     * @param tree The tree box on the left side of the default UI
+     * @return The currently selected node or null if nothing selected
+     */
+    public static ArrayList<TreeNodeSPDX> getSelectedNodes(JTree tree){
+        // preflight checks
+        ArrayList<TreeNodeSPDX> result = new ArrayList();
+        
+        //TreeNodeSPDX pathw = (TreeNodeSPDX) tree.getSelectionPath().getLastPathComponent();
+        
+        try{
+            for(TreePath path : tree.getSelectionPaths()){
+                TreeNodeSPDX node = (TreeNodeSPDX) path.getLastPathComponent();
+                result.add(node);
+            }
+        }catch (Exception e){
+            //e.printStackTrace();
+            return null;
+        }
+    return result;
+    }
+    
+    
+    /**
      * Creates a new under under a given root node.
      * The new node contains the details about a person
      * @param root the parent of the new node
