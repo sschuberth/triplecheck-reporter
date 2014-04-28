@@ -12,12 +12,14 @@
 
 package GUI;
 
+import java.awt.Color;
 import java.awt.Component;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JTree;
 import javax.swing.tree.DefaultTreeCellRenderer;
 import main.core;
+import spdxlib.FileInfo;
 
 
 public class TreeRenderer extends DefaultTreeCellRenderer {
@@ -102,7 +104,20 @@ public class TreeRenderer extends DefaultTreeCellRenderer {
         
             // write the title of this product
             setText(node.toString());
-  
+            
+            // show nodes with concluded license in blue color
+            // we only make changes on file nodes
+            if(node.nodeType == NodeType.file){
+                // get the data from this node
+                FileInfo fileInfo = (FileInfo) node.getUserObject();
+                if(fileInfo.hasLicenseConcluded()){
+                    setForeground(Color.blue);
+                }
+                
+                
+            }
+            
+            
         return this;
     }
 

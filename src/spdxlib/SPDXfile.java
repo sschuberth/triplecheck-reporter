@@ -154,7 +154,7 @@ public final class SPDXfile {
         rawText = utils.files.readAsString(file);
         lines = rawText.split("\n");
         // read all available data from the given file
-        data.read(lines);
+        data.read(lines, this);
         // process all this information into meaningful data
         processData();
     }
@@ -664,6 +664,10 @@ public final class SPDXfile {
                 }
             }
             
+            // now add the concluded license
+            if(fileInfo.tagLicenseConcluded != null){
+                
+            }
             
             
             // process the most popular language types on this project
@@ -1074,6 +1078,59 @@ public final class SPDXfile {
             }
         }
         return null;
+    }
+
+    /**
+     * Lists information according to the concluded licenses
+     * @return 
+     */
+    public String summaryConcludedLicenses() {
+        String result = "";
+        int counter = 0;
+        for(FileInfo fileInfo : fileSection.files){
+            // no need to proceed when null or not asserted
+            if(fileInfo.tagLicenseConcluded == null){
+                continue;
+            }
+            if(fileInfo.tagLicenseConcluded.toString().equals("NOASSERTION")){
+                continue;
+            }
+            counter++;
+        }
+        // add up the result
+        result += counter + " files with concluded licenses"
+                + html.br;
+        
+        // now get the values for provenanced files
+        int counterAuthored = 0;
+        int counterExternal = 0;
+        
+        for(FileInfo fileInfo : fileSection.files){
+            if(fileInfo.tagFileOrigin==null){
+                continue;
+            }
+            String value = fileInfo.tagFileOrigin.getValue();
+            if(value.matches("" + FileOrigin.AUTHORED)){
+                counterAuthored++;
+            }
+            if(value.matches("" + FileOrigin.EXTERNAL)){
+                counterExternal++;
+            }
+        }
+        
+        // show the results
+        if(counterAuthored > 0){
+            result += counterAuthored + " files authored"
+                    +html.br;
+        }
+         // show the results
+        if(counterExternal > 0){
+            result += counterExternal + " external resources"
+                    +html.br;
+        }
+        
+        
+        return result;
     }
     
 }

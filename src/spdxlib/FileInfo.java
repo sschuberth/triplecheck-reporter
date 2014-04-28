@@ -45,6 +45,7 @@ public class FileInfo {
     // non-standard tags
      public TagValue 
             tagFilePath,
+            tagFileOrigin,
             tagFileSize,
             tagFileLOC,
             tagFileChecksumSHA256,
@@ -201,13 +202,13 @@ public class FileInfo {
         ArrayList<String> result = new ArrayList();
             
         // add a concluded license when available
-        if(validLicenseTag(tagLicenseConcluded)){
+        if(hasValidLicenseTag(tagLicenseConcluded)){
             result.add(tagLicenseConcluded.toString());
         }
         
         // now iterate through all the listed licenses
         for(TagValue tag : licenseInfoInFile){
-            if(validLicenseTag(tag)==false){
+            if(hasValidLicenseTag(tag)==false){
                 continue;
             }
             // is valid? Add it up then.
@@ -223,7 +224,7 @@ public class FileInfo {
      * @param tag the tag to analyse
      * @return true if the tag has license information
      */
-    private Boolean validLicenseTag(TagValue tag){
+    private Boolean hasValidLicenseTag(TagValue tag){
         return (tag != null) && (tag.toString().equals("NOASSERTION") != true);
     }
     
@@ -427,23 +428,52 @@ public class FileInfo {
      * @param selectedLicense 
      */
     public void setConcludedLicense(String selectedLicense) {
-        // pre-flight checks
-        if(tagFileName == null){
-            System.err.println("FI397 Null name tag, can't proceed.");
-            return;
-        }
-        
-        // we want to add the license declaration right after the name tag
-        int pos = tagFileName.linePosition + 1;
-        
-        // knowing where to place the text, we add up this new tag
-        spdx.addTag(pos, "LicenseConcluded: " + selectedLicense);
-        
-        // now write back the changes
-        spdx.commitChanges();
+        // change the concluded license tag
+        changeOneLine(tagLicenseConcluded, "LicenseConcluded", selectedLicense);
+    }
+
+    /**
+     * What is the origin of this file?
+     * @param value     A specific set of possible origin values
+     */
+    public void setOrigin(FileOrigin value) {
+        // change the origin tag
+        changeOneLine(tagFileOrigin, "FileOrigin", value + "");
     }
 
    
-   
+    /**
+     * This method allows to change the value of a tag with a single
+     * line of text
+     */
+    private void changeOneLine(TagValue tag, String key, String value){
+        // pre-flight checks
+        if(tagFileName == null){
+            System.err.println("FI452 Null tag, can't proceed.");
+            return;
+        }
+        
+        // shall we overwrite the old value?
+        if(tag != null){
+            tag.writeNewValue(value);
+        }else{
+            // add a new tag
+            // we want to add the license declaration right after the name tag
+            int pos = tagFileName.linePosition + 1;
+            // knowing where to place the text, we add up this new tag
+            spdx.addTag(pos, key+": " + value);
+
+            // now write back the changes
+            spdx.commitChanges();
+        }
+    }
+
+    /**
+     * Was a license concluded for this file?
+     * @return 
+     */
+    public boolean hasLicenseConcluded() {
+        return hasValidLicenseTag(tagLicenseConcluded);
+    }
     
 }

@@ -134,6 +134,12 @@ public class SectionFiles {
             return true;
         }
         
+        if(tag.title.equalsIgnoreCase("FileOrigin")){
+            FileInfo file = getLastAddedFile();
+            file.tagFileOrigin = tag;
+            return true;
+        }
+        
         if(tag.title.equalsIgnoreCase("FileSize")){
             FileInfo file = getLastAddedFile();
             file.tagFileSize = tag;

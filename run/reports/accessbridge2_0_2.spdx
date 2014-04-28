@@ -29,6 +29,7 @@ PackageLicenseConcluded: NOASSERTION
 
 FileName: ./access-bridge-32.jar
 FileType: ARCHIVE
+FileOrigin: MIXED
 FileChecksum: SHA1: 37e9732284fd578d6b30169a177af88b6f0973ef
 FileChecksum: SHA256: fb69dc83e665fa4090f13ed88f9eb7757639dce3e717cfc765832c7783549008
 FileChecksum: MD5: 756460ed7efdc11a65c54a7a9d30261c
@@ -37,6 +38,7 @@ FileSize: 48 Kb (49173 bytes)
 
 FileName: ./access-bridge-64.jar
 FileType: ARCHIVE
+FileOrigin: EXTERNAL
 FileChecksum: SHA1: 5f783df9dd581956c8e5a380403ac401d1da4715
 FileChecksum: SHA256: c26781a043951846922a8395b1ed37665f747932bfe81b63ecc89e4e32b41281
 FileChecksum: MD5: bcb50f90dd598eaa9577d2bcd3ec2015
@@ -53,6 +55,7 @@ FileSize: 48 Kb (49165 bytes)
 
 FileName: ./accessibility.properties
 FileType: OTHER
+FileOrigin: EXTERNAL
 LicenseConcluded: ZPL-2.0
 FileChecksum: SHA1: 59739f5b02e2594964393b7ed585de6cc9a02d4f
 FileChecksum: SHA256: 76667ca56147d12b09c2cea3f29e8df63597e107435e3a90aa0017df10f96e9f
@@ -61,7 +64,7 @@ FileChecksum: SSDEEP: 3:nSkoZgZLXnuWxVEseMWMVAAiuKIn7IRAdSPGGzJ0vhRjfMaAHCRyvy:n
 FileSize: 153 bytes
 
 FileName: ./COPYRIGHT
-FileType: OTHER
+FileOrigin: AUTOMATED
 FileChecksum: SHA1: d4b51b420911d71f2c5e5632d0b0d29f76538fff
 FileChecksum: SHA256: e54a5351d88298e4c41e0bd628ab51d347201a9b3218f9437ae4562eb45cde97
 FileChecksum: MD5: 1c3fb095e8e2cd656bf5798ddf7e1897
@@ -191,7 +194,8 @@ FileSize: 49 bytes
 
 FileName: ./src/include/AccessBridge.h
 FileType: SOURCE
-LicenseConcluded: LGPL-2.1
+FileOrigin: AUTHORED
+LicenseConcluded: MIT
 FileChecksum: SHA1: 6d39b7a39e58e39538bab8e4704d413d28525f97
 FileChecksum: SHA256: 7dcd8c046abbd5094ec8dd03d4f2adee193317030bfc56f58477e26d51a9e58a
 FileChecksum: MD5: 6a6d3e4ffefa00c5493ee29ad8680eed
@@ -201,7 +205,8 @@ FileLOC: 392
 
 FileName: ./src/include/AccessBridgeCallbacks.h
 FileType: SOURCE
-LicenseConcluded: LGPL-2.1
+FileOrigin: AUTHORED
+LicenseConcluded: MIT
 FileChecksum: SHA1: d05fa0ed9ec231dd26161200e001e3ad6f928679
 FileChecksum: SHA256: 6bf94d9494ff963ff7a99a9ab838a92434b1f05b6718053684cb03875cefb9cd
 FileChecksum: MD5: ca420d24f30198284182b0e97f192f67
@@ -212,7 +217,8 @@ FileCopyrightText: <text>Copyright (c) 2005, 2010, Oracle and/or its affiliates.
 
 FileName: ./src/include/AccessBridgeCalls.c
 FileType: SOURCE
-LicenseConcluded: LGPL-2.1
+FileOrigin: AUTHORED
+LicenseConcluded: MIT
 FileChecksum: SHA1: 21e2b0428ef3e31f2324b5ba64481e06b0cbf5e9
 FileChecksum: SHA256: 42183590006f535947d99ab23043bf5f791519cfece7471764787edc1783e80c
 FileChecksum: MD5: 51562d89f7eadce1e8c36928b3c4db95
@@ -223,7 +229,8 @@ FileCopyrightText: <text>Copyright (c) 2005, 2010, Oracle and/or its affiliates.
 
 FileName: ./src/include/AccessBridgeCalls.h
 FileType: SOURCE
-LicenseConcluded: LGPL-2.1
+FileOrigin: AUTHORED
+LicenseConcluded: MIT
 FileChecksum: SHA1: fdf7134105f50d9a90a147599019b1665a8d0420
 FileChecksum: SHA256: b15bf31d014ce5ac78122601919cc4930323a00becad94c6fb11fe4ced6a6efd
 FileChecksum: MD5: 5791352329e3876f8af464a2379cbad6
@@ -234,7 +241,8 @@ FileCopyrightText: <text>Copyright (c) 2005, 2010, Oracle and/or its affiliates.
 
 FileName: ./src/include/AccessBridgePackages.h
 FileType: SOURCE
-LicenseConcluded: LGPL-2.1
+FileOrigin: AUTHORED
+LicenseConcluded: MIT
 FileChecksum: SHA1: bf8bc7031cfbc46bf78777932d5abf68563441a8
 FileChecksum: SHA256: 0c16b6de465c25ab93ce66d36d592f2a30b1d3e9d75dfda4415660f249d034bb
 FileChecksum: MD5: b4bf4a220c0766d0ef5ca16df4591bbc
@@ -245,6 +253,7 @@ FileCopyrightText: <text>Copyright (c) 2005, 2010, Oracle and/or its affiliates.
 
 FileName: ./src/sample/JavaFerret.cpp
 LicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
 FileType: SOURCE
 FileChecksum: SHA1: 5b724ae0210a4967fcd50fbf8482e7f4bf1b1be1
 FileChecksum: SHA256: 4a41602d788d0b66a799c85efc93c22a9124ac9bae36db343b698c6e40e94204
@@ -256,6 +265,7 @@ FileCopyrightText: <text>Copyright (c) 2005, 2010, Oracle and/or its affiliates.
 
 FileName: ./src/sample/JavaMonkey.cpp
 LicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
 FileType: SOURCE
 FileChecksum: SHA1: 0a7a38ba117c2852d71843b8f02a7de7f6e5b997
 FileChecksum: SHA256: c4e548c9c34868994170f629d9ebb85c6ff712979b7404bcb487227d5c8ba164

@@ -46,6 +46,7 @@ import main.core;
 import script.RunPlugins;
 import script.log;
 import spdxlib.FileInfo;
+import spdxlib.FileOrigin;
 import spdxlib.SPDXfile;
 import utils.html;
 import utils.internet;
@@ -116,7 +117,13 @@ public class StudioUI4 extends javax.swing.JFrame {
     private void initComponents() {
 
         menuItem_Delete = new javax.swing.JMenuItem();
+        popupMenuFile = new javax.swing.JPopupMenu();
         menuItem_DefineLicense = new javax.swing.JMenuItem();
+        menuItem_MarkFileAuthored = new javax.swing.JMenuItem();
+        menuItem_MarkFileExternal = new javax.swing.JMenuItem();
+        menuItem_MarkFileAutomated = new javax.swing.JMenuItem();
+        menuItem_MarkFileMixed = new javax.swing.JMenuItem();
+        menuItem_MarkFileModified = new javax.swing.JMenuItem();
         jSplitPane1 = new javax.swing.JSplitPane();
         panelWest = new javax.swing.JScrollPane();
         tree = new javax.swing.JTree();
@@ -135,13 +142,67 @@ public class StudioUI4 extends javax.swing.JFrame {
             }
         });
 
+        popupMenuFile.setLabel("Mark as..");
+
         menuItem_DefineLicense.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/medal--plus.png"))); // NOI18N
-        menuItem_DefineLicense.setText("Define license");
+        menuItem_DefineLicense.setText("Define license..");
+        menuItem_DefineLicense.setToolTipText("What is the license concluded as applicable to this resource?");
         menuItem_DefineLicense.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 menuItem_DefineLicenseActionPerformed(evt);
             }
         });
+        popupMenuFile.add(menuItem_DefineLicense);
+
+        menuItem_MarkFileAuthored.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/fingerprint.png"))); // NOI18N
+        menuItem_MarkFileAuthored.setText("Mark file as authored");
+        menuItem_MarkFileAuthored.setToolTipText("Resource developed by ourselves");
+        menuItem_MarkFileAuthored.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuItem_MarkFileAuthoredActionPerformed(evt);
+            }
+        });
+        popupMenuFile.add(menuItem_MarkFileAuthored);
+
+        menuItem_MarkFileExternal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/box-label.png"))); // NOI18N
+        menuItem_MarkFileExternal.setText("Mark file as external resource");
+        menuItem_MarkFileExternal.setToolTipText("Made externally by a third-party provider");
+        menuItem_MarkFileExternal.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuItem_MarkFileExternalActionPerformed(evt);
+            }
+        });
+        popupMenuFile.add(menuItem_MarkFileExternal);
+
+        menuItem_MarkFileAutomated.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/box-resize.png"))); // NOI18N
+        menuItem_MarkFileAutomated.setText("Mark file as automated");
+        menuItem_MarkFileAutomated.setToolTipText("Generated automatically, no changes by author");
+        menuItem_MarkFileAutomated.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuItem_MarkFileAutomatedActionPerformed(evt);
+            }
+        });
+        popupMenuFile.add(menuItem_MarkFileAutomated);
+
+        menuItem_MarkFileMixed.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/document-number.png"))); // NOI18N
+        menuItem_MarkFileMixed.setText("Mark file as mixed");
+        menuItem_MarkFileMixed.setToolTipText("Generated automatically and then modified by author");
+        menuItem_MarkFileMixed.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuItem_MarkFileMixedActionPerformed(evt);
+            }
+        });
+        popupMenuFile.add(menuItem_MarkFileMixed);
+
+        menuItem_MarkFileModified.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/receipt--pencil.png"))); // NOI18N
+        menuItem_MarkFileModified.setText("Mark file as modified");
+        menuItem_MarkFileModified.setToolTipText("Developed by a third-party and modified by author");
+        menuItem_MarkFileModified.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuItem_MarkFileModifiedActionPerformed(evt);
+            }
+        });
+        popupMenuFile.add(menuItem_MarkFileModified);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("TripleCheck");
@@ -345,26 +406,36 @@ public class StudioUI4 extends javax.swing.JFrame {
         // should we show this popup or not? Default is not
         boolean shouldShow = false;
     
-        // we only care about SPDX files here
+//        // we only care about SPDX files here
         if(node.nodeType == NodeType.SPDX){
             popupMenu.add(menuItem_Delete);
-            shouldShow = true;
+            popupMenu.show(evt.getComponent(), evt.getX(), evt.getY());
+           // shouldShow = true;
+            return;
         }
        
          // allow to change triggers on files and folders
         if((node.nodeType == NodeType.file)
            ||(node.nodeType == NodeType.folder)){
-            popupMenu.add(menuItem_DefineLicense);
-            shouldShow = true;
+//            popupMenu.add(menuItem_DefineLicense);
+//            
+//                menuItem_MarkFile.add(menuItem_MarkFileAuthored);
+//                menuItem_MarkFile.add(menuItem_MarkFileAutomated);
+//                menuItem_MarkFile.add(menuItem_MarkFileExternal);
+//            popupMenu.add(menuItem_MarkFile);
+            popupMenuFile.show(evt.getComponent(), evt.getX(), evt.getY());
+            
+            
+            //shouldShow = true;
         }
        
-        // nothing to do, just leave
-        if(shouldShow == false){
-            return;
-        }
-        
-        // show the menu
-        popupMenu.show(evt.getComponent(), evt.getX(), evt.getY());
+//        // nothing to do, just leave
+//        if(shouldShow == false){
+//            return;
+//        }
+//        
+//        // show the menu
+//        popupMenu.show(evt.getComponent(), evt.getX(), evt.getY());
     }
     
     /**
@@ -436,6 +507,26 @@ public class StudioUI4 extends javax.swing.JFrame {
         addLicense();
     }//GEN-LAST:event_menuItem_DefineLicenseActionPerformed
 
+    private void menuItem_MarkFileAuthoredActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuItem_MarkFileAuthoredActionPerformed
+        markFileAs(FileOrigin.AUTHORED);
+    }//GEN-LAST:event_menuItem_MarkFileAuthoredActionPerformed
+
+    private void menuItem_MarkFileExternalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuItem_MarkFileExternalActionPerformed
+        markFileAs(FileOrigin.EXTERNAL);
+    }//GEN-LAST:event_menuItem_MarkFileExternalActionPerformed
+
+    private void menuItem_MarkFileAutomatedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuItem_MarkFileAutomatedActionPerformed
+        markFileAs(FileOrigin.AUTOMATED);
+    }//GEN-LAST:event_menuItem_MarkFileAutomatedActionPerformed
+
+    private void menuItem_MarkFileMixedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuItem_MarkFileMixedActionPerformed
+         markFileAs(FileOrigin.MIXED);
+    }//GEN-LAST:event_menuItem_MarkFileMixedActionPerformed
+
+    private void menuItem_MarkFileModifiedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuItem_MarkFileModifiedActionPerformed
+        markFileAs(FileOrigin.MODIFIED);
+    }//GEN-LAST:event_menuItem_MarkFileModifiedActionPerformed
+
     void addLicense(){
         // get the selected node
         TreeNodeSPDX node = swingUtils.getSelectedNode();
@@ -500,8 +591,14 @@ public class StudioUI4 extends javax.swing.JFrame {
     private javax.swing.JSplitPane jSplitPane1;
     private javax.swing.JMenuItem menuItem_DefineLicense;
     private javax.swing.JMenuItem menuItem_Delete;
+    private javax.swing.JMenuItem menuItem_MarkFileAuthored;
+    private javax.swing.JMenuItem menuItem_MarkFileAutomated;
+    private javax.swing.JMenuItem menuItem_MarkFileExternal;
+    private javax.swing.JMenuItem menuItem_MarkFileMixed;
+    private javax.swing.JMenuItem menuItem_MarkFileModified;
     private javax.swing.JPanel panelEast;
     private javax.swing.JScrollPane panelWest;
+    private javax.swing.JPopupMenu popupMenuFile;
     private javax.swing.JTextField search;
     private javax.swing.JEditorPane text;
     private javax.swing.JTree tree;
@@ -529,15 +626,7 @@ public class StudioUI4 extends javax.swing.JFrame {
             
             // ensure that the search box is the selected component
             search.requestFocusInWindow();
-            
-            // show the startup image
-//            editorPane(is.contentHTML, 
-//                    false, -1, 
-//                    html.div(30) 
-//                    + utils.html.getCommonFolderIcon("startup.png")
-//                    + html._div
-//                    );
-//            
+         
             button.setEnabled(false);
             
             // solve a bug we have on the screen
@@ -548,14 +637,10 @@ public class StudioUI4 extends javax.swing.JFrame {
             
             // capture the clicks on HTML content
             doFormInterception();
-            
             // this is needed to ensure we get line-wrapping
             jScrollPane2.setViewportView(text);
-           
             // change our title
             setTitle("TripleCheck");
-           
-//            doFrontScreen();
     }
 
     public JTree getTree(){
@@ -841,10 +926,7 @@ public class StudioUI4 extends javax.swing.JFrame {
             return;
         }
               
-         
      
-
-    
         // do we have a script associated with this node?
         if(node.scriptFile != null){
             // launch a small thread to speed things up here
@@ -860,24 +942,17 @@ public class StudioUI4 extends javax.swing.JFrame {
                         newRequest.scriptMethod = node.scriptMethod;
                         newRequest.parameters = node.scriptParameters;
                         
-                     
-                        
                         //newRequest.addParameter("method", node.scriptMethod);
                         controller.process(newRequest);
                    }
                };
                thread.start();
-            
         }
     
         // now execute the addon actions
         log.write(is.INFO, Messages.TreeNodeChanged, node.getUID());
-    
-    
     }
 
-    
-    
     /**
      * The main point entry for actions that take place on the Swing GUI
      * component where the HTML text is displayed
@@ -889,7 +964,6 @@ public class StudioUI4 extends javax.swing.JFrame {
         // signal that this request is coming from the user interface
         webRequest.requestOrigin = RequestOrigin.GUI;
         webRequest.BaseFolder = baseFolderPresent;
-           
 
         // now react to forms being submitted
         if (e instanceof FormSubmitEvent) {
@@ -1145,7 +1219,8 @@ public class StudioUI4 extends javax.swing.JFrame {
 
     
     /**
-     * This method permits to collect sets of nodes
+     * Starting from a specific node, find all child nodes that correspond
+     * to a specific node type filter. (most used used to collect file nodes)
      */
     private void getNodes(TreeNodeSPDX node, 
             ArrayList<TreeNodeSPDX> nodes, NodeType filter){
@@ -1180,8 +1255,8 @@ public class StudioUI4 extends javax.swing.JFrame {
      */
     private void updateLicenseNodes(ArrayList<TreeNodeSPDX> nodeList, 
             String selectedLicense){
-        
-        FileInfo temp = null;
+        // create the dummy-holder, necessary to grab the last indexed FileInfo
+        FileInfo temp = new FileInfo(null);
         // iterate through the provided list
         for(TreeNodeSPDX newNode : nodeList){
                 // get the object
@@ -1191,11 +1266,12 @@ public class StudioUI4 extends javax.swing.JFrame {
                 // all done in terms of writing the changes
                 log.write(is.COMPLETED, "Applied license %1 to %2",
                         selectedLicense, fileInfo.getName());
+                // store the last indexed FileInfo to grab reference of SPDX
                 temp = fileInfo;
             }
-            // mandatory refresh
+            // mandatory refresh on the SPDX object in our memory
             temp.spdx.refresh();
-            // second round of iterations
+            // second round of iterations, re-use the treeview, update objects
             for(TreeNodeSPDX newNode : nodeList){
                  // get the object
                 FileInfo fileInfo = (FileInfo) newNode.getUserObject();       
@@ -1204,7 +1280,7 @@ public class StudioUI4 extends javax.swing.JFrame {
                 FileInfo newInfo = fileInfo.spdx.findRelative(location);
                 // no need to continue if the result is null
                 if(newInfo == null){
-                    System.err.println("SU1175: Didn't found the relative FileInfo");
+                    System.err.println("SU1228: Didn't found the relative FileInfo");
                     return;
                 }
 
@@ -1212,8 +1288,9 @@ public class StudioUI4 extends javax.swing.JFrame {
                 newNode.setUserObject(newInfo);
                 newNode.setTitle(newInfo.toString());
                 newNode.update(tree);
-
             }
+            
+        // all done
     }
     
     
@@ -1231,14 +1308,13 @@ public class StudioUI4 extends javax.swing.JFrame {
             return;
         }
 
+        // create a list of nodes to process
         ArrayList<TreeNodeSPDX> nodeList = new ArrayList();
-        
-          // only files are supported at the moment
+          // only files and folders are supported at the moment
         if(node.nodeType == NodeType.folder){
             //System.err.println("Changing the whole folder");
             getNodes(node, nodeList, NodeType.file);
         }
-        
         // only files are supported at the moment
         if(node.nodeType == NodeType.file){
             nodeList.add(node);
@@ -1247,6 +1323,68 @@ public class StudioUI4 extends javax.swing.JFrame {
       // update the licenses
       updateLicenseNodes(nodeList, selectedLicense);
 
+    }
+
+    /**
+     * Marks a file as original
+     */
+    private void markFileAs(FileOrigin value) {
+         // get the selected node
+        TreeNodeSPDX node = swingUtils.getSelectedNode();
+        // preflight check
+        if(node == null){
+            System.err.println("SU1326: Node is null");
+            return;
+        }
+
+        // create a list of nodes to process
+        ArrayList<TreeNodeSPDX> nodeList = new ArrayList();
+          // only files and folders are supported at the moment
+        if(node.nodeType == NodeType.folder){
+            //System.err.println("Changing the whole folder");
+            getNodes(node, nodeList, NodeType.file);
+        }
+        // only files are supported at the moment
+        if(node.nodeType == NodeType.file){
+            nodeList.add(node);
+        }
+        
+        // update the licenses
+        // create the dummy-holder, necessary to grab the last indexed FileInfo
+        FileInfo temp = new FileInfo(null);
+        // iterate through the provided list
+        for(TreeNodeSPDX newNode : nodeList){
+                // get the object
+                FileInfo fileInfo = (FileInfo) newNode.getUserObject();
+                // change the license
+                fileInfo.setOrigin(value);
+                // all done in terms of writing the changes
+                log.write(is.COMPLETED, "Applied origin %1 to %2",
+                        value + "", fileInfo.getName());
+                // store the last indexed FileInfo to grab reference of SPDX
+                temp = fileInfo;
+            }
+            // mandatory refresh on the SPDX object in our memory
+            temp.spdx.refresh();
+            // second round of iterations, re-use the treeview, update objects
+            for(TreeNodeSPDX newNode : nodeList){
+                 // get the object
+                FileInfo fileInfo = (FileInfo) newNode.getUserObject();       
+                // now update the value on our treeview
+                String location = fileInfo.getRelativeLocation();
+                FileInfo newInfo = fileInfo.spdx.findRelative(location);
+                // no need to continue if the result is null
+                if(newInfo == null){
+                    System.err.println("SU1228: Didn't found the relative FileInfo");
+                    return;
+                }
+
+                // now update the node on the tree view
+                newNode.setUserObject(newInfo);
+                newNode.setTitle(newInfo.toString());
+                newNode.update(tree);
+            }
+        
     }
 
     

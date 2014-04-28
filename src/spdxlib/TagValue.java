@@ -39,6 +39,12 @@ public class TagValue {
             linePosition;
     
 
+    private final SPDXfile spdx; // where this tag belongs to
+    
+    public TagValue(SPDXfile spdxFather){
+        spdx = spdxFather;
+    }
+    
     /**
      * The raw value as read from the text file
      * @return the unformatted text captured from the text file
@@ -66,9 +72,16 @@ public class TagValue {
     }
 
     
+    /**
+     * Used only when reading the SPDX for the first time, not meant to be
+     * called afterwards
+     * @param value 
+     */
     public void setValue(String value) {
         this.value = value;
     }
+    
+  
     
     
     /**
@@ -129,5 +142,20 @@ public class TagValue {
         return result;
     }
     
+    
+       /**
+     * Changes the value of an existing tag and writes back to disk the changes
+     * @param newValue 
+     */
+    public void writeNewValue(String newValue) {
+        
+        String newRaw = raw.replace(value + "\n", newValue);
+        
+        this.value = newValue;
+        //spdx.changeTag(this, oldRaw, newRaw);
+        spdx.lines[linePosition] = newRaw;
+        
+        spdx.commitChanges();
+    }
     
 }

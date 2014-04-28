@@ -15,6 +15,7 @@ Log
 - Improved the initial indexing of the available reports
 - Made available a popularity calculator, ranks the most popular licenses
 - License dialog now shows the top-ranked licenses on the first position
+- Now possible to assign licenses to folders that apply to all files within
 
 
 

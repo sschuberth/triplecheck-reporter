@@ -57,8 +57,9 @@ public class TagValueCollection {
      * all the tag/value entries that were found.
      * 
      * @param lines the SPDX text content to be parsed 
+     * @param spdx 
      */
-    public void read(String[] lines){
+    public void read(String[] lines, SPDXfile spdx){
        
         // break this into individual lines
         //String[] lines = fullText.split("\n");
@@ -67,7 +68,7 @@ public class TagValueCollection {
         for(int i = 0; i < linesOfCode; i++){
             String line = lines[i];
             int linePosition = i;
-            TagValue tag = new TagValue();
+            TagValue tag = new TagValue(spdx);
             
             // interpret multiple lines of text
             if(line.contains("<text>")){

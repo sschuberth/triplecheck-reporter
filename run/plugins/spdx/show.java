@@ -409,6 +409,9 @@ public class show extends Plugin{
                 + counterLicensesDeclared + " declared licenses)"
                 + html.br
                 + textOverallSize + " in size"
+                + html.br
+                + html.br
+                + spdx.summaryConcludedLicenses()
                 
                 //+ html.br
                 //+ html.getCommonFolderIcon("calculator.png")

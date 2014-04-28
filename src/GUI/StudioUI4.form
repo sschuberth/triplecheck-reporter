@@ -13,17 +13,89 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="deleteSomethingClicked"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JMenuItem" name="menuItem_DefineLicense">
+    <Container class="javax.swing.JPopupMenu" name="popupMenuFile">
       <Properties>
-        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/icons/medal--plus.png"/>
-        </Property>
-        <Property name="text" type="java.lang.String" value="Define license"/>
+        <Property name="label" type="java.lang.String" value="Mark as.."/>
       </Properties>
-      <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menuItem_DefineLicenseActionPerformed"/>
-      </Events>
-    </Component>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
+        <Property name="useNullLayout" type="boolean" value="true"/>
+      </Layout>
+      <SubComponents>
+        <MenuItem class="javax.swing.JMenuItem" name="menuItem_DefineLicense">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/icons/medal--plus.png"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Define license.."/>
+            <Property name="toolTipText" type="java.lang.String" value="What is the license concluded as applicable to this resource?"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menuItem_DefineLicenseActionPerformed"/>
+          </Events>
+        </MenuItem>
+        <MenuItem class="javax.swing.JMenuItem" name="menuItem_MarkFileAuthored">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/icons/fingerprint.png"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Mark file as authored"/>
+            <Property name="toolTipText" type="java.lang.String" value="Resource developed by ourselves"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menuItem_MarkFileAuthoredActionPerformed"/>
+          </Events>
+        </MenuItem>
+        <MenuItem class="javax.swing.JMenuItem" name="menuItem_MarkFileExternal">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/icons/box-label.png"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Mark file as external resource"/>
+            <Property name="toolTipText" type="java.lang.String" value="Made externally by a third-party provider"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menuItem_MarkFileExternalActionPerformed"/>
+          </Events>
+        </MenuItem>
+        <MenuItem class="javax.swing.JMenuItem" name="menuItem_MarkFileAutomated">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/icons/box-resize.png"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Mark file as automated"/>
+            <Property name="toolTipText" type="java.lang.String" value="Generated automatically, no changes by author"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menuItem_MarkFileAutomatedActionPerformed"/>
+          </Events>
+        </MenuItem>
+        <MenuItem class="javax.swing.JMenuItem" name="menuItem_MarkFileMixed">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/icons/document-number.png"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Mark file as mixed"/>
+            <Property name="toolTipText" type="java.lang.String" value="Generated automatically and then modified by author"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menuItem_MarkFileMixedActionPerformed"/>
+          </Events>
+        </MenuItem>
+        <MenuItem class="javax.swing.JMenuItem" name="menuItem_MarkFileModified">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/icons/receipt--pencil.png"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Mark file as modified"/>
+            <Property name="toolTipText" type="java.lang.String" value="Developed by a third-party and modified by author"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menuItem_MarkFileModifiedActionPerformed"/>
+          </Events>
+        </MenuItem>
+      </SubComponents>
+    </Container>
   </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>

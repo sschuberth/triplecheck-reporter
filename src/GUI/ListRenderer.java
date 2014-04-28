@@ -1,20 +1,12 @@
 /*
  * SPDXVersion: SPDX-1.1
- *
  * Creator: Person: Nuno Brito (nuno.brito@triplecheck.de)
- *
  * Creator: Organization: TripleCheck (contact@triplecheck.de)
- *
  * Created: 2013-09-20T00:00:00Z
- *
  * LicenseName: EUPL-1.1-without-appendix
- *
  * FileName: ListRenderer.java  
- *
  * FileType: SOURCE
- *
  * FileCopyrightText: <text> Copyright 2013 Nuno Brito, TripleCheck </text>
- *
  * FileComment: <text> This class sets the icons that are displaed on the tree
  * lists for each item.</text> 
  */
