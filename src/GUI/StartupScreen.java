@@ -1,20 +1,12 @@
 /*
  * SPDXVersion: SPDX-1.1
- *
  * Creator: Person: Nuno Brito (nuno.brito@triplecheck.de)
- *
  * Creator: Organization: TripleCheck (contact@triplecheck.de)
- *
  * Created: 2013-09-16T00:00:00Z
- *
  * LicenseName: EUPL-1.1-without-appendix
- *
  * FileName: StartupScreen.java  
- *
  * FileType: SOURCE
- *
  * FileCopyrightText: <text> Copyright 2013 Nuno Brito, TripleCheck </text>
- *
  * FileComment: <text> Startup screen to permit loading the SPDX files fro our
  * library. </text> 
  */
@@ -22,20 +14,24 @@
 package GUI;
 
 import definitions.is;
+import java.awt.Color;
 import java.awt.Toolkit;
-import java.io.File;
 import java.net.URL;
-import javax.swing.JProgressBar;
+import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
-import main.actions;
-import main.core;
+import javax.swing.UnsupportedLookAndFeelException;
 
 /**
- *
- * @author Nuno Brito
+ * Parts of this code were based on the blog post from Alvin Alexander
+ * at http://alvinalexander.com/java/java-splash-screen-with-progress-bar-1
+ * Copyright (c) 2013 Alvin Alexander
+ * 
+ * @author Nuno Brito, 30th of April 2014 in Amrum, Germany.
  */
 public class StartupScreen extends javax.swing.JFrame {
 
+    final StartupScreen screen = this;
+    
     /**
      * Creates new form StartupScreen
      */
@@ -43,13 +39,24 @@ public class StartupScreen extends javax.swing.JFrame {
         // adopt the default user interface menus and buttons
         try {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-        } catch (Exception ex) {}
+        } catch (ClassNotFoundException ex) {} catch (InstantiationException ex) {
+        } catch (IllegalAccessException ex) {
+        } catch (UnsupportedLookAndFeelException ex) {
+        }
         
         // get the window icon working
         URL imgURL = this.getClass().getResource(is.defaultIcon);
         setIconImage(Toolkit.getDefaultToolkit().getImage(imgURL));
         
+        
         initComponents();
+        
+        // place the frame on the middle of the screen
+        setLocationRelativeTo(null);
+        // change the background to full white
+        getContentPane().setBackground( Color.WHITE );
+        
+       setDefaultLookAndFeelDecorated( false );
         
         doStartup();
     }
@@ -65,15 +72,13 @@ public class StartupScreen extends javax.swing.JFrame {
 
         labelLogo = new javax.swing.JLabel();
         progressBar = new javax.swing.JProgressBar();
-        progressText = new javax.swing.JLabel();
 
-        setLocationByPlatform(true);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setBackground(new java.awt.Color(255, 255, 255));
         setUndecorated(true);
         setResizable(false);
 
         labelLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/logo.png"))); // NOI18N
-
-        progressText.setText("Loading data, please wait..");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -81,11 +86,7 @@ public class StartupScreen extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(progressBar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(progressText)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addComponent(progressBar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
             .addGroup(layout.createSequentialGroup()
                 .addGap(83, 83, 83)
@@ -97,10 +98,8 @@ public class StartupScreen extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap(23, Short.MAX_VALUE)
                 .addComponent(labelLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(progressText)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(progressBar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(28, 28, 28)
+                .addComponent(progressBar, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
@@ -152,10 +151,88 @@ public class StartupScreen extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel labelLogo;
     private javax.swing.JProgressBar progressBar;
-    private javax.swing.JLabel progressText;
     // End of variables declaration//GEN-END:variables
 
+    public void setProgress(int progress){
+    final int theProgress = progress;
+    SwingUtilities.invokeLater(new Runnable() {
+      @Override
+      public void run() {
+        progressBar.setValue(theProgress);
+      }
+    });
+  }
+    
+    public void setProgress(String message, int progress)
+  {
+    final int theProgress = progress;
+    final String theMessage = message;
+    setProgress(progress);
+    SwingUtilities.invokeLater(new Runnable() {
+      @Override
+      public void run() {
+        progressBar.setValue(theProgress);
+        setMessage(theMessage);
+      }
+    });
+  }
+    
+    private void setMessage(String message){
+    if (message==null)
+    {
+      message = "";
+      progressBar.setStringPainted(false);
+    }
+    else
+    {
+      progressBar.setStringPainted(true);
+    }
+    progressBar.setString(message);
+  }
+
+    
     private void doStartup() {
+//        
+////         java.awt.EventQueue.invokeLater(new Runnable() {
+////            @Override
+////            public void run() {
+//                
+//                Thread thread = new Thread(){
+//                @Override
+//                public void run(){
+//                boolean loopAgain = true;
+//                long counter = 0;
+//                while(loopAgain){
+//                    counter = System.currentTimeMillis();
+//                   // String message = log.getMessagesSince(counter);
+//                    
+//                    LogEntry logMessage = log.getLatest();
+//                    if(logMessage == null){
+//                        utils.time.wait(1);
+//                        continue;
+//                    }
+//                                       
+//                    final String message = log.getLatest().getMessageSimple();
+//                    
+////                    new Runnable() {
+////                        @Override
+////                        public void run() {
+//                        progressText.setText(message);
+//                        progressText.updateUI();
+////                        }
+////                        };
+//
+//                    
+//                    System.err.println("->" + message);
+//                    utils.time.wait(1);
+//                    if(message.equals("Re-doing our cache again")){
+//                        loopAgain = false;
+//                    }
+//                }
+//                 }};
+//                thread.start();
+//            }
+//         });
         
 //        setTitle(this.labelTitle.getText());
 //             
@@ -168,9 +245,9 @@ public class StartupScreen extends javax.swing.JFrame {
         
     }
     
-    public JProgressBar getProgressBar(){
-        return progressBar;
-    }
+//    public JProgressBar getProgressBar(){
+//        return progressBar;
+//    }
     
     
 }

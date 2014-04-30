@@ -15,6 +15,7 @@
 package main;
 
 import FileExtension.ExtensionControl;
+import GUI.StartupScreen;
 import GUI.StudioUI4;
 import definitions.Messages;
 import definitions.folder;
@@ -33,7 +34,7 @@ import utils.Settings;
 
 public class core {
 
-    public static String version = "0.6";
+    public static String version = "0.7";
     
     public static 
             Script script = new Script();
@@ -48,6 +49,8 @@ public class core {
     
     //public static StudioUI2 studio2 = null;
     public static StudioUI4 studio = null;
+    
+    public static StartupScreen startupScreen = new StartupScreen();
     
     public static utils.KeyStroke key = 
             new utils.KeyStroke(Messages.SearchBoxPressedKey);

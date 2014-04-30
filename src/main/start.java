@@ -4,6 +4,7 @@
  */
 package main;
 
+import GUI.StartupScreen;
 import GUI.StudioUI4;
 import definitions.is;
 import java.io.File;
@@ -26,10 +27,12 @@ public class start {
      */
     public static void main(String[] args) {
         
-         
-       java.awt.EventQueue.invokeLater(new Runnable() {
-            @Override
-            public void run() {
+        // kickstart our screen
+        core.startupScreen.setVisible(true);
+        
+//       java.awt.EventQueue.invokeLater(new Runnable() {
+//            @Override
+//            public void run() {
                 // enable translations
                 log.EnableTranslator("EN", "English (US)");
                 log.write(is.CREDITS, "TripleCheck (c) %1, "
@@ -37,10 +40,14 @@ public class start {
                 log.write(is.RUNNING, "Version %1 %2", core.version,
                         getDate());
                 // add our triggers
+                core.startupScreen.setProgress("Adding licenses", 20);
                 actions.addLicenses();
                 // now add the known file extensions
+                core.startupScreen.setProgress("Adding extensions", 40);
                 core.extensions.addExtensions();
                 
+                core.startupScreen.setProgress("Loading reports",70);
+                    
                 // do the startup
                 Thread thread = new Thread(){
                 @Override
@@ -54,6 +61,10 @@ public class start {
                 try{
                     core.studio = new StudioUI4();
                     core.studio.doSettings();
+                    
+                    // remove the startup screen
+                    core.startupScreen.dispose();
+                    
                     core.studio.setVisible(true);
                     core.studio.hasFocus();
                 }catch (Exception e){
@@ -67,10 +78,10 @@ public class start {
 //                startup.setVisible(true);
 //                startup.hasFocus();
          
-            }
-
-          
-        });
+//            }
+//
+//          
+//        });
       
     }
     
