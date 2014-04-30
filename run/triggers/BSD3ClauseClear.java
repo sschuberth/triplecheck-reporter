@@ -72,13 +72,7 @@ public class BSD3ClauseClear implements Trigger {
     public Boolean supportsTextFiles() {
         return true;
     }
-
-   
-    @Override
-    public Date getDatePublished() {
-        return null;
-    }
-    
+ 
     @Override
     public TriggerType getType(){
         return TriggerType.LICENSE;

@@ -1,7 +1,6 @@
 
 import definitions.TriggerType;
 import java.io.File;
-import java.util.Date;
 import script.Trigger;
 
 /*
@@ -38,8 +37,94 @@ public class LGPL implements Trigger {
         "gnu lesser general public license",
         "lgpl",
         "gnu library general public license",
-        "gnu lesser gpl"
+        "gnu lesser gpl",
+        "LGPL 2.0",
+        "LGPL v2.0",
+        "LGPL 2.1",
+        "LGPL v2.1",
+        "LGPL-2.1", // spdx id
+        "LGPL 3.0",
+        "LGPL v3.0",
+        "LGPL-3.0"  // spdx id
     };
+    
+    // list of supported id's
+    final String
+            idLGPL2_0 = "LGPL-2.0",
+            idLGPL2_1 = "LGPL-2.1",
+            idLGPL3_0 = "LGPL-3.0",
+            titleLGPL2_0 = "GNU Library General Public License v2.0",
+            titleLGPL2_1 = "GNU Library General Public License v2.1",
+            titleLGPL3_0 = "GNU Lesser General Public License v3.0";
+    
+    // handle the cases of only this license version or above
+    final String
+            only = " only",
+            later = " or later";
+    
+    // define the default values
+    String 
+            defaultId = idLGPL3_0,
+            defaultTitle = titleLGPL3_0;
+    
+    
+    /**
+     * Detects which kind of LGPL license we are referring to. When no specific
+     * information is available, we assume the most recent edition as default.
+     * @param id    which trigger detected the license?
+     * @param text  full source code text
+     * @return      true when the license is confirmed, false when discarded
+     */
+    private Boolean detectLicenseVersion(String id, String text) {
+        // detect the supported versions
+        if(hasVersion("2.1", text)){
+            defaultId = idLGPL2_1;
+            defaultTitle = titleLGPL2_1;
+        }else
+        if(hasVersion("3.0", text)){
+            defaultId = idLGPL3_0;
+            defaultTitle = titleLGPL3_0;
+        }else
+         if(hasVersion("2.0", text)){
+            defaultId = idLGPL2_0;
+            defaultTitle = titleLGPL2_0;
+        }
+        
+        // detect the only or later situation
+        if(hasLaterClause(text)){
+            defaultTitle += later; // used on the textual description
+            defaultId += "+"; // used on the SPDX id
+        }else{
+            defaultTitle += only;
+        }
+        
+        return true;
+    }
+    
+    
+    /**
+     * Verifies the type of version that is referred inside the source code
+     * @param version   version to be detected
+     * @param text      source code
+     * @return          true if we have match, false if nothing was found
+     */
+    private boolean hasLaterClause(String text){
+        return     text.contains(" or later (the") // detect "or later" text
+                || text.contains("option) any later version.") // LGPL 3.0+
+                || text.contains( defaultId + "+"); // detect SPDX id tag
+    }
+    
+    /**
+     * Verifies the type of version that is referred inside the source code
+     * @param version   version to be detected
+     * @param text      source code
+     * @return          true if we have match, false if nothing was found
+     */
+    private boolean hasVersion(String version, String text){
+        return    text.contains("LGPL " + version)
+                ||text.contains("LGPL-"+version)
+                ||text.contains("License v"+version);
+    }
     
     /**
      * Verifies if the provided text applies to the triggers that
@@ -53,7 +138,7 @@ public class LGPL implements Trigger {
         // iterate all our ids
         for(String id : list){
             if(test.contains(id)){
-                return true;
+                return detectLicenseVersion(id, text);
             }
         }
         return false;
@@ -66,7 +151,7 @@ public class LGPL implements Trigger {
 
     @Override
     public String getShortIdentifier() {
-        return "LGPL-2.1";
+        return defaultId;
     }
 
     @Override
@@ -86,10 +171,7 @@ public class LGPL implements Trigger {
     }
 
    
-    @Override
-    public Date getDatePublished() {
-        return utils.time.getDate(2004, 02, 01);
-    }
+    
     
     @Override
     public TriggerType getType(){
@@ -100,12 +182,13 @@ public class LGPL implements Trigger {
 
     @Override
     public String getFullName() {
-        return "GNU Library General Public License v2.1 only";
+        return defaultTitle;
     }
 
     @Override
     public String getResult() {
         return LicenseInfoInFile + getShortIdentifier();
     }
+
     
 }

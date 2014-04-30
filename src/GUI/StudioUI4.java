@@ -383,13 +383,26 @@ public class StudioUI4 extends javax.swing.JFrame {
         // mark the new selection on our treeview
         //tree.setSelectionRow(row);
         tree.addSelectionRow(row);
-        // get the selected node
-        TreeNodeSPDX node = swingUtils.getSelectedNode();
-        // preflight check
-        if(node == null){
-            // nothing to do, just leave
-            return;
+        // get the selected nodes
+        ArrayList<TreeNodeSPDX> nodeList = swingUtils.getSelectedNodes(tree);
+
+        // correct a defect that might happen. The first node selected by
+        // default is "files". When the user-right clicks another files inside
+        // the three structure, since the "files" node is selected then the
+        // action will be applied to all nodes within. Causing unwanted overwrite
+        for(TreeNodeSPDX thisNode : nodeList){
+            // we can't have the root selected, this causes confusion
+            if(thisNode.nodeType == NodeType.sectionFile){
+                tree.setSelectionRow(row);
+            }
         }
+        
+        TreeNodeSPDX node = swingUtils.getSelectedNode();
+//        // preflight check
+//        if(node == null){
+//            // nothing to do, just leave
+//            return;
+//        }
         // now show the popup menu as needed
         doPopupMenu(node, evt);
     }

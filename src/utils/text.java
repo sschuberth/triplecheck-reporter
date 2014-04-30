@@ -147,6 +147,19 @@ public class text {
          return Integer.parseInt(temp);
      }
 
+     /**
+      * Removes all numbers from a text string
+      * @param input
+      * @return 
+      */  
+     public static String noNumbers(String input){
+         String temp = input.replaceAll("[0-9]", "");
+         if(temp == null){
+             return "";
+         }
+         return "";
+     }
+
 
   
        

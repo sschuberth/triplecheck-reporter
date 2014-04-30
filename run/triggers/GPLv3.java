@@ -80,19 +80,11 @@ public class GPLv3 implements Trigger {
     public Boolean supportsTextFiles() {
         return true;
     }
-
-   
-    @Override
-    public Date getDatePublished() {
-        return utils.time.getDate(2007, 06, 29);
-    }
-    
+ 
     @Override
     public TriggerType getType(){
         return TriggerType.LICENSE;
     }
-
-    
 
     @Override
     public String getFullName() {

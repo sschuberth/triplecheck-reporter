@@ -248,7 +248,7 @@ public class FileId {
 //        }
         
         // we are going to count Lines Of Code, need to avoid very large files
-        if(file.length()>1000000){
+        if(file.length()>2000000){
             System.err.println("FI249 - File too large for LOC: " 
                     + file.getAbsolutePath());
             return false;

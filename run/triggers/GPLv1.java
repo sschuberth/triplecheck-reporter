@@ -84,11 +84,6 @@ public class GPLv1 implements Trigger {
 
    
     @Override
-    public Date getDatePublished() {
-        return null;
-    }
-    
-    @Override
     public TriggerType getType(){
         return TriggerType.LICENSE;
     }

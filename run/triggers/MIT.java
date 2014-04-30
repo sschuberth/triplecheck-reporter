@@ -74,19 +74,11 @@ public class MIT implements Trigger {
     public Boolean supportsTextFiles() {
         return true;
     }
-
-   
-    @Override
-    public Date getDatePublished() {
-        return utils.time.getDate(2000, 01, 01);
-    }
-    
+ 
     @Override
     public TriggerType getType(){
         return TriggerType.LICENSE;
     }
-
-    
 
     @Override
     public String getFullName() {

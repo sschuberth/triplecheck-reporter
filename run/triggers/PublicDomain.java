@@ -80,12 +80,6 @@ public class PublicDomain implements Trigger {
         return true;
     }
 
-   
-    @Override
-    public Date getDatePublished() {
-        return utils.time.getDate(2004, 02, 01);
-    }
-
     @Override
     public TriggerType getType(){
         return TriggerType.LICENSE;

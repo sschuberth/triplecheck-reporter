@@ -93,10 +93,7 @@ public class Apache_v1 implements Trigger {
         return TriggerType.LICENSE;
     }
 
-    @Override
-    public Date getDatePublished() {
-        throw new UnsupportedOperationException("Not supported yet.");
-    }
+   
 
     @Override
     public String getResult() {

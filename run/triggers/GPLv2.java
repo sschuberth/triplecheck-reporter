@@ -87,11 +87,6 @@ public class GPLv2 implements Trigger {
 
    
     @Override
-    public Date getDatePublished() {
-        return utils.time.getDate(1991, 06, 01); // Version 2, June 1991
-    }
-    
-    @Override
     public TriggerType getType(){
         return TriggerType.LICENSE;
     }

@@ -98,6 +98,12 @@ public class CopyrightDetector implements Trigger {
             return false;
         }
         
+        // avoid cases with just numbers (copyright notice uses more than one line)
+        temp = utils.text.noNumbers(text);
+        if(temp.isEmpty()){
+            return false;
+        }
+        
         
         // lock this value
         copyrightText = copyright;
@@ -156,13 +162,7 @@ public class CopyrightDetector implements Trigger {
     public Boolean supportsTextFiles() {
         return true;
     }
-
-   
-    @Override
-    public Date getDatePublished() {
-        return utils.time.getDate(2006, 01, 01);
-    }
-    
+ 
     @Override
     public TriggerType getType(){
         return TriggerType.COPYRIGHT;

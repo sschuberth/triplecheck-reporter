@@ -63,6 +63,7 @@ public interface Trigger {
     
     /**
      * What kind of trigger is this one? Copyright? License? Something else?
+     * @return 
      */
     public TriggerType getType();
     
@@ -79,7 +80,7 @@ public interface Trigger {
     public Boolean supportsTextFiles();
     
     // when was this license published
-    public Date getDatePublished();
+    //public Date getDatePublished();
     
     public String getFullName();
     

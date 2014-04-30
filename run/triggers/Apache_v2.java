@@ -84,12 +84,7 @@ public class Apache_v2 implements Trigger {
         return true;
     }
 
-   
-    @Override
-    public Date getDatePublished() {
-        return utils.time.getDate(2004, 02, 01);
-    }
-
+  
     @Override
     public String getFullName() {
         return "Apache License 2.0";
