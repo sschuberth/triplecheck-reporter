@@ -4,7 +4,6 @@
  */
 package main;
 
-import GUI.StartupScreen;
 import GUI.StudioUI4;
 import definitions.is;
 import java.io.File;
@@ -29,11 +28,10 @@ public class start {
         
         // kickstart our screen
         core.startupScreen.setVisible(true);
-        
-//       java.awt.EventQueue.invokeLater(new Runnable() {
-//            @Override
-//            public void run() {
+
                 // enable translations
+                core.startupScreen.setProgress("Starting up", 10);
+                
                 log.EnableTranslator("EN", "English (US)");
                 log.write(is.CREDITS, "TripleCheck (c) %1, "
                         + "http://triplecheck.de", utils.time.getCurrentYear());
@@ -45,9 +43,6 @@ public class start {
                 // now add the known file extensions
                 core.startupScreen.setProgress("Adding extensions", 40);
                 core.extensions.addExtensions();
-                
-                core.startupScreen.setProgress("Loading reports",70);
-                    
                 // do the startup
                 Thread thread = new Thread(){
                 @Override
@@ -72,22 +67,13 @@ public class start {
 //                    log.write(is.ERROR,
 //                            e.getMessage());
                     System.exit(-1981);
-                    //studio.setBoxText(message);
                 }
-//                StartupScreen startup = new StartupScreen();
-//                startup.setVisible(true);
-//                startup.hasFocus();
-         
-//            }
-//
-//          
-//        });
-      
     }
     
     
     private static void doStartup() {
         // find all SPDX documents that we have available
+        core.startupScreen.setProgress("Loading reports",60);
         core.refreshSPDX();
         
         // now mark our presence
@@ -104,6 +90,7 @@ public class start {
             return;
         }
         // run our script
+        core.startupScreen.setProgress("Adding plugins",80);
         core.script.runJava(startSettings, "start", is.plugin);
    }
 

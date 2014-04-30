@@ -20,6 +20,7 @@ import java.net.URL;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
+import main.core;
 
 /**
  * Parts of this code were based on the blog post from Alvin Alexander
@@ -48,17 +49,14 @@ public class StartupScreen extends javax.swing.JFrame {
         URL imgURL = this.getClass().getResource(is.defaultIcon);
         setIconImage(Toolkit.getDefaultToolkit().getImage(imgURL));
         
-        
         initComponents();
         
         // place the frame on the middle of the screen
         setLocationRelativeTo(null);
         // change the background to full white
         getContentPane().setBackground( Color.WHITE );
-        
-       setDefaultLookAndFeelDecorated( false );
-        
-        doStartup();
+        // show the current version of our software
+        label.setText("Version " + core.version);
     }
 
     /**
@@ -72,6 +70,7 @@ public class StartupScreen extends javax.swing.JFrame {
 
         labelLogo = new javax.swing.JLabel();
         progressBar = new javax.swing.JProgressBar();
+        label = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
@@ -79,6 +78,8 @@ public class StartupScreen extends javax.swing.JFrame {
         setResizable(false);
 
         labelLogo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/logo.png"))); // NOI18N
+
+        label.setText("jLabel1");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -92,13 +93,19 @@ public class StartupScreen extends javax.swing.JFrame {
                 .addGap(83, 83, 83)
                 .addComponent(labelLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(93, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(label)
+                .addGap(83, 83, 83))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap(23, Short.MAX_VALUE)
                 .addComponent(labelLogo, javax.swing.GroupLayout.PREFERRED_SIZE, 123, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28)
+                .addGap(3, 3, 3)
+                .addComponent(label)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(progressBar, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -149,6 +156,7 @@ public class StartupScreen extends javax.swing.JFrame {
         });
     }
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel label;
     private javax.swing.JLabel labelLogo;
     private javax.swing.JProgressBar progressBar;
     // End of variables declaration//GEN-END:variables
@@ -190,64 +198,4 @@ public class StartupScreen extends javax.swing.JFrame {
     progressBar.setString(message);
   }
 
-    
-    private void doStartup() {
-//        
-////         java.awt.EventQueue.invokeLater(new Runnable() {
-////            @Override
-////            public void run() {
-//                
-//                Thread thread = new Thread(){
-//                @Override
-//                public void run(){
-//                boolean loopAgain = true;
-//                long counter = 0;
-//                while(loopAgain){
-//                    counter = System.currentTimeMillis();
-//                   // String message = log.getMessagesSince(counter);
-//                    
-//                    LogEntry logMessage = log.getLatest();
-//                    if(logMessage == null){
-//                        utils.time.wait(1);
-//                        continue;
-//                    }
-//                                       
-//                    final String message = log.getLatest().getMessageSimple();
-//                    
-////                    new Runnable() {
-////                        @Override
-////                        public void run() {
-//                        progressText.setText(message);
-//                        progressText.updateUI();
-////                        }
-////                        };
-//
-//                    
-//                    System.err.println("->" + message);
-//                    utils.time.wait(1);
-//                    if(message.equals("Re-doing our cache again")){
-//                        loopAgain = false;
-//                    }
-//                }
-//                 }};
-//                thread.start();
-//            }
-//         });
-        
-//        setTitle(this.labelTitle.getText());
-//             
-//        // get the selected folder and run the SPDX creation
-//        String source = core.settings.read(is.folderSPDX);
-//        File baseFolder = new File(source);
-//        actions.findFiles(baseFolder);
-//        
-//        this.dispose();
-        
-    }
-    
-//    public JProgressBar getProgressBar(){
-//        return progressBar;
-//    }
-    
-    
 }
