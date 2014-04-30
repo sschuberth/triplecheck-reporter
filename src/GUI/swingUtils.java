@@ -552,8 +552,10 @@ public class swingUtils {
         swingUtils.refreshTextBox();
         } catch (Exception e){
             System.err.println("SU526: Exception while refreshing the user "
-                    + "interface with the following text: " 
-                    + e.getLocalizedMessage());
+                    + "interface"
+//                    + " with the following text: " 
+//                    + e.getLocalizedMessage()
+            );
         }
     }
 //    // find all components inside our common library

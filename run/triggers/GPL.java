@@ -9,11 +9,11 @@ import script.Trigger;
  * Creator: Organization: TripleCheck (contact@triplecheck.de)
  * Created: 2013-11-14T00:00:00Z
  * LicenseName: EUPL-1.1-without-appendix
- * FileName: LGPL.java  
+ * FileName: GPL.java  
  * FileType: SOURCE
  * FileCopyrightText: <text> Copyright 2013 Nuno Brito, TripleCheck </text>
  * FileComment: <text> Given a text file, try to identify portions of text
- *  that allows us to distinguish if the file is covered under the LGPL 
+ *  that allows us to distinguish if the file is covered under the GPL 
  *  terms and which version when possible.
  * 
  * When looking at other tools detecting licenses, I note that exists a 
@@ -30,33 +30,32 @@ import script.Trigger;
  * @author Nuno Brito, 30th of April 2014 in Amrum, Germany.
  *  nuno.brito@triplecheck.de | http://nunobrito.eu
  */
-public class LGPL implements Trigger {
+public class GPL implements Trigger {
     
     // the list of id's that we can use to identify a license
     String[] list = {
-        "gnu lesser general public license",
-        "lgpl",
-        "LGPL",
-        "gnu library general public license",
-        "gnu lesser gpl",
-        "LGPL 2.0",
-        "LGPL v2.0",
-        "LGPL 2.1",
-        "LGPL v2.1",
-        "LGPL-2.1", // spdx id
-        "LGPL 3",
-        "LGPL v3",
-        "LGPL-3.0"  // spdx id
+        "GNU General Public License",
+        "licenses/gpl-",
+        " GPLv",
+        "GPL 1.0",
+        "GPL 2.0",
+        "GPL 3.0",
+        "GPL v1 ",
+        "GPL v2 ",
+        "GPL v3 ",
+        "GPL-1.0",  // spdx id
+        "GPL-2.0",  // spdx id
+        "GPL-3.0"  // spdx id
     };
     
     // list of supported id's
     final String
-            idLGPL2_0 = "LGPL-2.0",
-            idLGPL2_1 = "LGPL-2.1",
-            idLGPL3_0 = "LGPL-3.0",
-            titleLGPL2_0 = "GNU Library General Public License v2.0",
-            titleLGPL2_1 = "GNU Library General Public License v2.1",
-            titleLGPL3_0 = "GNU Lesser General Public License v3.0";
+            idGPL1_0 = "GPL-2.0",
+            idGPL2_0 = "GPL-2.0",
+            idGPL3_0 = "GPL-3.0",
+            titleGPL1_0 = "GNU General Public License v1.0",
+            titleGPL2_0 = "GNU General Public License v2.0",
+            titleGPL3_0 = "GNU General Public License v3.0";
     
     // handle the cases of only this license version or above
     final String
@@ -65,8 +64,8 @@ public class LGPL implements Trigger {
     
     // define the default values
     String 
-            defaultId = idLGPL3_0,
-            defaultTitle = titleLGPL3_0;
+            defaultId = idGPL3_0,
+            defaultTitle = titleGPL3_0;
     
     
     /**
@@ -78,20 +77,20 @@ public class LGPL implements Trigger {
      */
     private Boolean detectLicenseVersion(String text) {
         String
-                resultId = idLGPL3_0,
-                resultTitle = titleLGPL3_0;
+                resultId = idGPL3_0,
+                resultTitle = titleGPL3_0;
         // detect the supported versions
-        if(hasVersion("2.1", text)){
-            resultId = idLGPL2_1;
-            resultTitle = titleLGPL2_1;
+        if(hasVersion("1", text)){
+            resultId = idGPL1_0;
+            resultTitle = titleGPL1_0;
         }else
-        if(hasVersion("3.0", text)){
-            resultId = idLGPL3_0;
-            resultTitle = titleLGPL3_0;
+        if(hasVersion("2", text)){
+            resultId = idGPL2_0;
+            resultTitle = titleGPL2_0;
         }else
-         if(hasVersion("2.0", text)){
-            resultId = idLGPL2_0;
-            resultTitle = titleLGPL2_0;
+         if(hasVersion("3", text)){
+            resultId = idGPL3_0;
+            resultTitle = titleGPL3_0;
         }
         
         // detect the only or later situation
@@ -105,7 +104,8 @@ public class LGPL implements Trigger {
         // mark the license description
         defaultId = resultId;
         defaultTitle = resultTitle;
-        return isNotBlackListed(text);
+        return true;
+                //isNotBlackListed(text);
     }
     
       /**
@@ -135,8 +135,8 @@ public class LGPL implements Trigger {
      * @return          true if we have match, false if nothing was found
      */
     private boolean hasLaterClause(String text){
-        return    // text.contains(" or later (the") // detect "or later" text
-                   text.contains(" or later") // detect "or later" text
+        return     text.contains(" or later (the") // detect "or later" text
+                || text.contains(" or later;") // detect "or later" text
                 || text.contains("option) any later version.") // LGPL 3.0+
                 || text.contains( defaultId + "+"); // detect SPDX id tag
     }
@@ -148,11 +148,11 @@ public class LGPL implements Trigger {
      * @return          true if we have match, false if nothing was found
      */
     private boolean hasVersion(String version, String text){
-        return    text.contains("LGPL " + version)
-                ||text.contains("GNU Library General Public License, version " + version)
-                ||text.contains("GNU Lesser General Public License, version " + version)
-                ||text.contains("LGPL-"+version)
-                ||text.contains("License v"+version);
+        return    text.contains("GPL " + version + ".0")
+                ||text.contains("GPL-"+version + ".0")
+                ||text.contains("GNU General Public License, version "+version+ ".0")
+                ||text.contains("GPLv"+version)
+                ||text.contains("License v"+version + ".0");
     }
     
     /**

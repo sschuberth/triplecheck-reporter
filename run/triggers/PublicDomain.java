@@ -1,7 +1,6 @@
 
 import definitions.TriggerType;
 import java.io.File;
-import java.util.Date;
 import script.Trigger;
 
 /*
@@ -48,13 +47,30 @@ public class PublicDomain implements Trigger {
         String lowerCaseText = text.toLowerCase();
         // iterate all our ids
         for(String id : list){
-            if(lowerCaseText.contains(id)){
-                return true;
-            }
+            return verify(id, text, lowerCaseText);
         }
         return false;
     }
 
+    // instead of generic "Public Domain"
+    
+    /**
+     * Verifies if everything matches and if this trigger is applicable
+     * @param text  the source code to verify
+     * @return      true if applicable, false if not applicable
+     */
+    private boolean verify(String id, String text, String lowerCaseText){
+        // detect a case where the public domain is listed but not applicable
+        if(lowerCaseText.contains("instead of generic \"public domain\"")){
+                return false;
+        }
+        if(lowerCaseText.contains(id)){
+                return true;
+        }
+        // not enough reasons to consider applicable
+        return false;
+    }
+    
     @Override
     public Boolean isApplicable(File file) {
         throw new UnsupportedOperationException("Not supported yet.");

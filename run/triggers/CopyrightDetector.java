@@ -63,8 +63,9 @@ public class CopyrightDetector implements Trigger {
         while(matcher.find()) {
             // get the copyright text
             String temp = text.substring(matcher.start(), matcher.end()).replace("(\n|\r\n)", "");
+            String clean = temp.replaceAll(patternCleaner, "");
             // don't accept false positives (when possible)
-            if(isBlackListed(temp)){
+            if(isBlackListed(clean)){
                 continue;
             }
             
@@ -76,7 +77,7 @@ public class CopyrightDetector implements Trigger {
                 // add a line break for everything after
             }else{
                 // we need to check if this is a duplicate or not
-                String clean = temp.replaceAll(patternCleaner, "");
+                //String clean = temp.replaceAll(patternCleaner, "");
                 // no need to add up this copyright if already repeated somewhere
                 if(copyright.contains(clean)){
                     continue;
@@ -86,24 +87,7 @@ public class CopyrightDetector implements Trigger {
             }
         }
         
-        // don't accept copyright texts too long (most likely a false positive)
-        if(copyright.length() > 200){
-            return false;
-        }
-        
-        // we don't want short copyright notices, likely false positive too
-        String temp = copyright.toLowerCase();
-        temp = copyright.replace("copyright", "");
-        if(temp.length() < 5){
-            return false;
-        }
-        
-        // avoid cases with just numbers (copyright notice uses more than one line)
-        temp = utils.text.noNumbers(text);
-        if(temp.isEmpty()){
-            return false;
-        }
-        
+     
         
         // lock this value
         copyrightText = copyright;
@@ -124,6 +108,13 @@ public class CopyrightDetector implements Trigger {
     private Boolean isBlackListed(String text){
         // no empty values accepted
         if(text.isEmpty()){
+            return true;
+        }
+        
+        // don't accept copyright texts too long or too short
+        // then is most likely a false positive
+        if((text.length() > 200)
+                ||(text.length()<10)){
             return true;
         }
         
