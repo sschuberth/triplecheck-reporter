@@ -34,7 +34,7 @@ public class LGPL implements Trigger {
     
     // the list of id's that we can use to identify a license
     String[] list = {
-        "gnu lesser general public license",
+        "GNU Lesser General Public License",
         "lgpl",
         "LGPL",
         "gnu library general public license",

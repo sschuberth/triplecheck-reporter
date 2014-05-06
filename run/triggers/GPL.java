@@ -104,8 +104,7 @@ public class GPL implements Trigger {
         // mark the license description
         defaultId = resultId;
         defaultTitle = resultTitle;
-        return true;
-                //isNotBlackListed(text);
+        return isNotBlackListed(text);
     }
     
       /**
