@@ -39,11 +39,19 @@ public class CopyrightDetector implements Trigger {
         "interest",
         "law",
         "the software",
-        "ownership",
+        "owner",
         "(C)",
         "disclaimer",
         "holder",
+        "statement",
+        "License",
+        "license",
         "notice",
+        "[yyyy]",
+        "year",
+        "date",
+        "info",
+        "footer",
         "[YEAR] by [YOUR NAME] <YOUR EMAIL>"
     };
     
