@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment/>
+<entry key="SOURCEFOLDER--&gt;ultradefrag-4.0.0.spdx">D:\triplecheck\audits\360AMIGO\analysis\2014-04-28 360amigo analysis\downloads\ultradefrag-4.0.0.src\ultradefrag-4.0.0</entry>
+<entry key="SOURCEFOLDER--&gt;COTS-adblock.spdx">D:\triplechecksoftware\source\COTS-adblock</entry>
+<entry key="SOURCEFOLDER--&gt;7z.spdx">D:\triplechecksoftware\source\7z</entry>
+<entry key="SOURCEFOLDER--&gt;flyingsaucer.spdx">D:\triplechecksoftware\source\flyingsaucer</entry>
+<entry key="SOURCEFOLDER--&gt;ActionBarSherlock-master.spdx">D:\triplechecksoftware\source\ActionBarSherlock-master</entry>
+<entry key="BatchFolderSPDX">D:\triplechecksoftware\source</entry>
+<entry key="SOURCEFOLDER--&gt;busybox.spdx">D:\triplechecksoftware\test\busybox</entry>
+<entry key="SOURCEFOLDER--&gt;Undelete.spdx">D:\triplecheck\audits\amigo360\analysis\2014-04-28 amigo360 analysis\downloads\NTFSUndelete_src\Undelete</entry>
+<entry key="SOURCEFOLDER--&gt;etherpad.spdx">D:\triplechecksoftware\source\etherpad</entry>
+<entry key="SOURCEFOLDER--&gt;VTSourceOnly_4.8.7.spdx">D:\triplecheck\audits\amigo360\analysis\2014-04-28 amigo360 analysis\downloads\VTSourceOnly_4.8.7</entry>
+<entry key="SOURCEFOLDER--&gt;temp.spdx">D:\triplecheck\audits\360AMIGO\analysis\2014-04-28 360amigo analysis\output\temp</entry>
+<entry key="SOURCEFOLDER--&gt;JakeWharton-ActionBarSherlock-5a15d92.spdx">D:\triplechecksoftware\source\JakeWharton-ActionBarSherlock-5a15d92</entry>
+<entry key="SOURCEFOLDER--&gt;HtmlViewer-11.4.spdx">D:\triplechecksoftware\source\HtmlViewer-11.4</entry>
+<entry key="SOURCEFOLDER--&gt;NTFSFileRecovery.spdx">D:\triplecheck\audits\360AMIGO\analysis\2014-04-28 360amigo analysis\downloads\NTFSFileRecovery</entry>
+<entry key="SOURCEFOLDER--&gt;adblockplus.spdx">D:\triplechecksoftware\source\adblockplus</entry>
+<entry key="SOURCEFOLDER--&gt;JkDefrag-src-3.36.spdx">D:\triplecheck\audits\amigo360\analysis\2014-04-28 amigo360 analysis\downloads\JkDefrag-src-3.36</entry>
+<entry key="SOURCEFOLDER--&gt;mORMot.spdx">D:\triplecheck\audits\amigo360\analysis\2014-04-28 amigo360 analysis\downloads\mORMot\mORMot</entry>
+<entry key="TargetFolderSPDX">D:\triplecheck\audits\amigo360\analysis\2014-04-28 amigo360 analysis\downloads\mORMot\mORMot</entry>
+</properties>
