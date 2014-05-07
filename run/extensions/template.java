@@ -28,7 +28,7 @@ import spdxlib.FileLanguage;
  */
 public class template extends FileExtension{
     /**
-     * How can we confirm that this file extension is appliable to this file?
+     * How can we confirm that this file extension is applicable to this file?
      * This method analyses the binary contents of a file to get the answer.
      * @param binaryFile the pointer to a file on disk
      * @return True if file matches the data structure reported by the extension
@@ -39,7 +39,7 @@ public class template extends FileExtension{
     }
   
     /**
-     * How can we confirm that this file extension is appliable to this file?
+     * How can we confirm that this file extension is applicable to this file?
      * This method analyses the text of a file to get the answer. You can either
      * specify a file or the text. The advantage of using this method is that
      * you will not need to read the text from the file for each extension test.
