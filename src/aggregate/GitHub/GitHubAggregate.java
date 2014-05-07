@@ -18,8 +18,8 @@ import com.google.gson.GsonBuilder;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.concurrent.ConcurrentNavigableMap;
 import main.core;
-import static main.core.getWorkFolder;
 
 
 /**
@@ -82,6 +82,12 @@ public class GitHubAggregate {
 "  }\n" +
 "]";
     
+    // the database where the settings are kept    
+    GitDB gitDB;
+        
+    public GitHubAggregate(){
+        gitDB = new GitDB();
+    }    
         
     /**
      * Gets a given number of users from the Github site
@@ -108,12 +114,24 @@ public class GitHubAggregate {
        String fileString = user.id + "-" + user.login;
        File file = new File(folder, fileString);
        // save the file to disk
-        utils.files.SaveStringToFile(file, text);
+       utils.files.SaveStringToFile(file, text);
        //System.out.println(file.getAbsolutePath());
        // all done
        System.out.println("Saved: " + fileString);
     }
     
+    
+    
+    public void saveToDB(GithubUser user){
+        // open existing an collection (or create new)
+        ConcurrentNavigableMap<Integer, GithubUser> map = gitDB.map();
+
+        int id = Integer.parseInt(user.id);
+        // place in database
+        map.put(id, user);
+        
+        gitDB.commit();  //persist changes into disk
+    }
     
     /**
      * Gets the folder where misc settings are placed
@@ -132,25 +150,27 @@ public class GitHubAggregate {
      */
     public void buildList(){
         File folder = getFolder();
+        int limit = 10000;
         int counter = 0;
-        
         // avoid starting from 0
-        ArrayList<File> files = utils.files.findFiles(folder);
-        if(files.size() > 0){
-            counter = files.size();
-        }
-        
+//        ArrayList<File> files = utils.files.findFiles(folder);
+//        if(files.size() > 0){
+//            counter = files.size();
+//        }
         // main loop
-        while(counter < 20){
+        while(counter < limit){
             GithubUser[] users = getUsers(counter);
             // iterate all users
             for(GithubUser user : users){
-                saveToDisk(user, folder);
+                //saveToDisk(user, folder);
+                saveToDB(user);
                 counter++;
+                if(counter > limit){
+                    System.exit(1981);
+                }
             }
             // wait some time to respect rate limit
             utils.time.wait(throttle);
-            
         }
         
         

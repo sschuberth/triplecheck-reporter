@@ -12,11 +12,13 @@
 
 package aggregate.GitHub;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Nuno Brito, 6th of May 2014 in Darmstadt, Germany
  */
-public class GithubUser {
+public class GithubUser implements Serializable {
   public String login;  
   public String id;
   public String avatar_url;
