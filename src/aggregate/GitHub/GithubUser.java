@@ -16,7 +16,7 @@ package aggregate.GitHub;
  *
  * @author Nuno Brito, 6th of May 2014 in Darmstadt, Germany
  */
-public class GitHubUser {
+public class GithubUser {
   public String login;  
   public String id;
   public String avatar_url;

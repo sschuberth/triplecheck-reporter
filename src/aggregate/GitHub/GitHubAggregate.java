@@ -14,10 +14,13 @@
 package aggregate.GitHub;
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import java.io.File;
 import java.io.IOException;
-import com.jcabi.github.Github;
-import com.jcabi.github.RtGithub;
-import com.jcabi.github.User;
+import java.util.ArrayList;
+import main.core;
+import static main.core.getWorkFolder;
+
 
 /**
  *
@@ -33,7 +36,8 @@ public class GitHubAggregate {
  * 
  */
     
-    
+   
+    int throttle = 5;
     
     
     
@@ -78,27 +82,96 @@ public class GitHubAggregate {
 "  }\n" +
 "]";
     
+        
+    /**
+     * Gets a given number of users from the Github site
+     * @param since
+     * @return 
+     */    
+    public GithubUser[] getUsers(int since){
+        String resultAPI = utils.internet.webget("https://api.github.com/users?since="
+                + since);
+        Gson gson = new Gson();
+        return gson.fromJson(resultAPI, GithubUser[].class); 
+    }    
+        
+    /**
+     * Save the user data to disk
+     * @param user      The user object
+     * @param folder    Where the file will be written
+     */
+    public void saveToDisk(GithubUser user, File folder){
+       // enable pretty printing
+       Gson gson = new GsonBuilder().setPrettyPrinting().create();
+       String text = gson.toJson(user);
+       // create the filename
+       String fileString = user.id + "-" + user.login;
+       File file = new File(folder, fileString);
+       // save the file to disk
+        utils.files.SaveStringToFile(file, text);
+       //System.out.println(file.getAbsolutePath());
+       // all done
+       System.out.println("Saved: " + fileString);
+    }
+    
+    
+    /**
+     * Gets the folder where misc settings are placed
+     * @return The folder from where the main application is running
+     */
+    public static File getFolder(){
+        File result = new File(core.getMiscFolder(), "github");
+        // if the folder doesn't exist, create one
+        if(result.exists() == false){
+            utils.files.mkdirs(result);
+        }
+        return result;
+    }
+    /**
+     * Creates the list of users at Github
+     */
+    public void buildList(){
+        File folder = getFolder();
+        int counter = 0;
+        
+        // avoid starting from 0
+        ArrayList<File> files = utils.files.findFiles(folder);
+        if(files.size() > 0){
+            counter = files.size();
+        }
+        
+        // main loop
+        while(counter < 20){
+            GithubUser[] users = getUsers(counter);
+            // iterate all users
+            for(GithubUser user : users){
+                saveToDisk(user, folder);
+                counter++;
+            }
+            // wait some time to respect rate limit
+            utils.time.wait(throttle);
+            
+        }
+        
+        
+    }
+        
     /**
      * @param args the command line arguments
      * @throws java.io.IOException
      */
     public static void main(String[] args) throws IOException{
-//        String resultAPI = utils.internet.webget("https://api.github.com/users?since=1");
-////       // System.out.println(test);
-////        
-//        Gson gson = new Gson();
-//        GitHubUser[] users = gson.fromJson(resultAPI, GitHubUser[].class); 
-//        for(GitHubUser user : users){
+
+        GitHubAggregate github = new GitHubAggregate();
+            
+        github.buildList();
+//        // get users
+//        GithubUser[] users = github.getUsers(1);
+//        // iterate all users       
+//        for(GithubUser user : users){
 //            System.out.println(user.login);
 //        }
-       
-        
-        Github github = new RtGithub();
-    Iterable<User> users = github.users().iterate("");
-    for (User user : users) {
-      System.out.println("login: " + user.login());
-    }
-        
+      
     }
 }
   
