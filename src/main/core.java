@@ -92,6 +92,31 @@ public class core {
     }
     
     /**
+     * Gets the folder where misc settings are placed
+     * @return The folder from where the main application is running
+     */
+    public static File getMiscFolder(){
+        File result = new File(getWorkFolder(), "misc");
+        // if the folder doesn't exist, create one
+        if(result.exists() == false){
+            utils.files.mkdirs(result);
+        }
+        return result;
+    }
+    
+     /**
+     * Where are all the github related files placed?
+     * @return 
+     */
+    public File getGithubFolder(){
+        File result = new File(core.getMiscFolder(),"github");
+        // if the folder doesn't exist, create one
+        if(result.exists() == false){
+            utils.files.mkdirs(result);
+        }
+        return result;
+    }
+    /**
      * Gets an Icon file from the icon archive
      * @param filename The icon name inside our archive
      * @return A file pointer to the icon
