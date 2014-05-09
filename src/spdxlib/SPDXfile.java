@@ -58,8 +58,8 @@ public final class SPDXfile {
    public String 
             rawText; // text for the SPDX file
    
-   String[] 
-           lines; // where we keep all the lines that were separated
+   ArrayList<String> 
+           lines1; // where we keep all the lines that were separated
    
    
    // have statistics been already calculated for this document?
@@ -92,32 +92,35 @@ public final class SPDXfile {
    }
 
    /**
+    * Resets the variables for this object
+    */
+   private void cleanUpVariables(){
+       creatorSection = new SectionCreator();
+       packageSection = new SectionPackage();
+       licenses = new ArrayList();
+       fileSection = new SectionFiles(this);
+       data = new TagValueCollection();
+       statsLanguagesFound = new HashMap();
+       statsArtworkFound = new HashMap();
+       statsLicensesDeclared = new HashMap();
+       statsLanguagesTotal = 0;
+       statsLicensesDeclaredCount = 0;
+       statsArtworkCount = 0;
+   }
+   
+   /**
     * The initializer of this class
     * @param file   File on disk from where the SPDX document can be read
     */
    private void newStart(File file){
         // assign the file pointer
-       this.file = file;
-       
-       // clean up / initialize our variables
-       creatorSection = new SectionCreator();
-       packageSection = new SectionPackage();
-       licenses = new ArrayList();
-       fileSection = new SectionFiles(this);
-       
-       data = new TagValueCollection();
-       statsLanguagesFound = new HashMap();
-       statsArtworkFound = new HashMap();
-       statsLicensesDeclared = new HashMap();
-       
-       statsLanguagesTotal = 0;
-       statsLicensesDeclaredCount = 0;
-       statsArtworkCount = 0;
-               
-       // do the normal reading
-       read(file);
-       // now pre-process the stats
-       doStats();
+        this.file = file;
+        // clean up / initialize our variables
+        cleanUpVariables();
+        // do the normal reading
+        read(file);
+        // now pre-process the stats
+        doStats();
    }
    
 //    public SPDXfile(File file, String text) {
@@ -151,10 +154,11 @@ public final class SPDXfile {
         // get the file pointer for future reference
         data.tagFile = file;
         // get the complete content of the file to a string file
-        rawText = utils.files.readAsString(file);
-        lines = rawText.split("\n");
+        //rawText = 
+        lines1 = utils.files.readAsStringArray(file);
+                //rawText.split("\n");
         // read all available data from the given file
-        data.read(lines, this);
+        data.read(lines1.toArray(new String[0]), this);
         // process all this information into meaningful data
         processData();
     }
@@ -187,7 +191,6 @@ public final class SPDXfile {
       parseSections();
       creatorSection.created = readGeneric(Keyword.Created);
       creatorSection.creatorComment = readGeneric(Keyword.CreatorComment);
-      
    }
    
    /**
@@ -577,7 +580,7 @@ public final class SPDXfile {
         // remove break lines, otherwise it adds a redundant line afterwards
         newText = newText.replace("\n", "");
         // replace the old line with the new contents
-        lines[tag.linePosition] = newText;
+        lines1.set(tag.linePosition, newText);
         return tag;
     }
     
@@ -586,25 +589,37 @@ public final class SPDXfile {
      */
     public void commitChanges(){
         // save everything to disk
-        String modifiedText = "";
-        for(String line : lines){
-            modifiedText += line + "\n";
-        }
-        rawText = modifiedText;
+//        String modifiedText = "";
+//        for(String line : lines){
+//            modifiedText += line + "\n";
+//        }
+//        rawText = modifiedText;
         // write file on disk
         
-        files.SaveLargeStringToFile(file, lines);
+        files.SaveLargeStringToFile(file, lines1);
         //files.SaveStringToFile(file, rawText);
     }
 
     /**
      * Whenever a given tag does not exist, there are cases when we need to add
-     * one. This method permits to add a tag right after one that already exists 
+     * one. This method permits to add a tag on the position where a tag exists 
      * @param linePosition The tag used as anchor
      * @param text the text to be included
      */
     public void addTag(int linePosition, String text) {
-        lines[linePosition] += "\n" + text;
+        lines1.add(linePosition, text);
+        
+//        for(FileInfo fileInfo : fileSection.files){
+//            if(fileInfo.tagFileName.linePosition > linePosition){
+//                fileInfo.tagFileName.linePosition++;
+//            }
+//        }
+//               
+//        data.read(lines1.toArray(new String[0]), this);
+//        // process all this information into meaningful data
+//        processData();
+//        String oldLine = lines1.get(linePosition);
+//        lines1.set(linePosition, oldLine + "\n" + text);
     }
 
     /**

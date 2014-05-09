@@ -6,6 +6,8 @@ package utils;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -52,7 +54,33 @@ public class files {
       result = result.toLowerCase();
     return result;
   }
+  
 
+  /**
+   * This method will read the contents from a text file onto
+   * a text array. It is useful to speed the text reading operation
+   * @param file    the file on disk
+   * @return        an array with the text lines
+   * @date 2014-05-09
+   */
+  public static ArrayList<String> readAsStringArray(File file){
+      ArrayList<String> result = new ArrayList();
+      try {
+          BufferedReader reader = new BufferedReader(new FileReader(file));
+          String line;
+          // iterate through all lines
+            while ((line = reader.readLine()) != null) {
+                // add the line
+                result.add(line);
+            }
+          
+      } catch (IOException ex) {
+          Logger.getLogger(files.class.getName()).log(Level.SEVERE, null, ex);
+      }
+      return result;
+  }
+  
+  
     public static String readAsString(File file){
         long length = file.length();
         byte[] bytes = new byte[(int) length];
@@ -379,6 +407,22 @@ public static long folderSize(File where){
    }
 
 
+   public static boolean SaveLargeStringToFile(File inputFile, 
+           ArrayList<String> lines){
+        try {
+            BufferedWriter out = new BufferedWriter(new FileWriter(inputFile));
+            for(String line : lines){
+                out.write(line + "\n");
+            }
+            out.close();
+            }
+            catch (IOException e){
+                System.out.println(e.getMessage());
+                return false;
+            }
+        return true;
+	}
+   
     public static boolean SaveLargeStringToFile(File inputFile, String[] lines){
         try {
             BufferedWriter out = new BufferedWriter(new FileWriter(inputFile));

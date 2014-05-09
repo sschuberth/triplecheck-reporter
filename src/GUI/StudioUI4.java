@@ -1291,8 +1291,15 @@ public class StudioUI4 extends javax.swing.JFrame {
      */
     private void licenseUpdateNodes(ArrayList<TreeNodeSPDX> nodeList, 
         String selectedLicense){
-        // create the dummy-holder, necessary to grab the last indexed FileInfo
-        SPDXfile spdx = null;
+        // preflight check
+        if(nodeList == null || nodeList.isEmpty()){
+            System.err.println("SU1296 - Empty array, can't update licenses");
+            return;
+        }
+        
+        // create the temp-holder, necessary to grab the first FileInfo
+        FileInfo tempFileInfo = (FileInfo) nodeList.get(0).getUserObject();
+        SPDXfile spdx = tempFileInfo.getSPDX();
         // iterate through the provided list
         for(TreeNodeSPDX newNode : nodeList){
             // we only want files around here
@@ -1301,14 +1308,11 @@ public class StudioUI4 extends javax.swing.JFrame {
             }
             // get the object
             FileInfo fileInfo = (FileInfo) newNode.getUserObject();
-            spdx = fileInfo.getSPDX();
             // change the license
             fileInfo.setConcludedLicense(selectedLicense);
             // all done in terms of writing the changes
             log.write(is.COMPLETED, "Applied license %1 to %2",
                     selectedLicense, fileInfo.getName());
-            // store the last indexed FileInfo to grab reference of SPDX
-            //temp = fileInfo;
         }
             // mandatory refresh on the SPDX object in our memory
             spdx.commitChanges();

@@ -1,20 +1,12 @@
 /*
  * SPDXVersion: SPDX-1.1
- *
  * Creator: Person: Nuno Brito (nuno.brito@triplecheck.de)
- *
  * Creator: Organization: TripleCheck (contact@triplecheck.de)
- *
  * Created: 2013-09-14T00:00:00Z
- *
  * LicenseName: EUPL-1.1-without-appendix
- *
  * FileName: TagValue.java  
- *
  * FileType: SOURCE
- *
  * FileCopyrightText: <text> Copyright 2013 Nuno Brito, TripleCheck </text>
- *
  * FileComment: <text> A simple holder for Tag/Value pairs of data </text> 
  */
 
@@ -149,11 +141,12 @@ public class TagValue {
      */
     public void writeNewValue(String newValue) {
         
-        String newRaw = raw.replace(value + "\n", newValue);
+        //String newRaw = raw.replace(value + "\n", newValue);
         
         this.value = newValue;
+        spdx.lines1.set(linePosition, newValue);
         //spdx.changeTag(this, oldRaw, newRaw);
-        spdx.lines[linePosition] = newRaw;
+        //spdx.lines.set(linePosition = newRaw;
         
        // very slow on multiple write operations 
        // spdx.commitChanges();

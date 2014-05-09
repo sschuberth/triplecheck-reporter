@@ -498,7 +498,6 @@ public class FileInfo {
             int pos = tagFileName.linePosition + 1;
             // knowing where to place the text, we add up this new tag
             spdx.addTag(pos, key+": " + value);
-
             // now write back the changes
             // very slow on multiple write operations
             //spdx.commitChanges();
