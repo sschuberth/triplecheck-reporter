@@ -10,12 +10,15 @@ The end result is a report written in SPDX format that includes:
 - Filenames (and types)
 - File size
 
+The most common usages are:
+- Estimate the code size (and complexity) before auditing the licenses
+- See how well your code is identifiable to humans and licensing tools
 
 
-Credits
-========
+Credits and thanks
+==================
 
-A list of the software, services and people that made this tooling possible.
+A list of the software, services and people that make triplecheck possible.
 
 ### Software
 - JArchiveLib (Apache 2.0) http://rauschig.org/jarchivelib/
@@ -30,9 +33,10 @@ A list of the software, services and people that made this tooling possible.
 
 
 ### Services and sites
+- SPDX -> http://spdx.org (the Linux Foundation SPDX working group)
 - Github -> http://github.com (THE place for sharing code)
-- SPDX -> http://spdx.org (the SPDX working group)
 - Metascan -> https://metascan-online.com/ (for helping with API to detect malware)
+- File Extension Seeker -> http://file-extension.net (great help to identify extensions)
 
 
 ### People

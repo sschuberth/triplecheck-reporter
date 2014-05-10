@@ -24,45 +24,45 @@ import main.core;
 public class RightClicks {
     
     
-    /**
-      * Adds the currently selected component to the currently selected product
-      */
-     public static void addComponent(){
-         TreeNodeSPDX currentNode = swingUtils.getSelectedNode();
-         // avoid null cases
-         if(currentNode == null){
-             return;
-         }
-         // get the SPDX file from the root node
-         SPDXfile component = (SPDXfile) swingUtils.getNodePackage
-                 (core.studio.getTree())
-                 .getUserObject();
-        // if there is nothing selected, there is nothing to be done
-        if(currentNode == null){
-            return;
-         }
-        
-        // get the current UID of the selected node
-        String UID = currentNode.getUID();
-        
-        // get the current selected SPDXfile
-        SPDXfile spdx = core.studio.productSelected;
-        // check if it exists
-        if(spdx == null){
-            log.write(is.ERROR, "No product selected, cannot add component!");
-            return;
-         }
-        // add this SPDX component onto the SPDX product
-        spdx.addComponent(component);
-        // refresh all the user data
-        swingUtils.populateTree(core.studio.getTree());
-        // get back to the parent node
-        swingUtils.setSelectedNode(UID);
-        // debug message
-        //System.err.println("RE76 - Hi Mom!");
-        
-        
-     }
+//    /**
+//      * Adds the currently selected component to the currently selected product
+//      */
+//     public static void addComponent(){
+//         TreeNodeSPDX currentNode = swingUtils.getSelectedNode();
+//         // avoid null cases
+//         if(currentNode == null){
+//             return;
+//         }
+//         // get the SPDX file from the root node
+//         SPDXfile component = (SPDXfile) swingUtils.getNodePackage
+//                 (core.studio.getTree())
+//                 .getUserObject();
+//        // if there is nothing selected, there is nothing to be done
+//        if(component == null){
+//            return;
+//         }
+//        
+//        // get the current UID of the selected node
+//        String UID = currentNode.getUID();
+//        
+//        // get the current selected SPDXfile
+//        SPDXfile spdx = core.studio.productSelected;
+//        // check if it exists
+//        if(spdx == null){
+//            log.write(is.ERROR, "No product selected, cannot add component!");
+//            return;
+//         }
+//        // add this SPDX component onto the SPDX product
+//        spdx.addComponent(component);
+//        // refresh all the user data
+//        swingUtils.populateTree(core.studio.getTree());
+//        // get back to the parent node
+//        swingUtils.setSelectedNode(UID);
+//        // debug message
+//        //System.err.println("RE76 - Hi Mom!");
+//        
+//        
+//     }
     
      
      

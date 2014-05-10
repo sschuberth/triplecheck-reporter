@@ -1371,38 +1371,16 @@ public class StudioUI4 extends javax.swing.JFrame {
                 // store the last indexed FileInfo to grab reference of SPDX
                 temp = fileInfo;
             }
-            // mandatory refresh on the SPDX object in our memory
+            // save all changes to disk
             temp.spdx.commitChanges();
             
              log.write(is.COMPLETED, "All done, marked file(s) as %1",
                         value + "");
-            
+            // refresh the variables inside the spdx object
             temp.spdx.refresh();
-            TreeviewUtils.spdxUpdateAllNodes(temp.spdx);
-//             second round of iterations, re-use the treeview, update objects
-//            for(TreeNodeSPDX newNode : nodeList){
-//                 // get the object
-//                FileInfo fileInfo = (FileInfo) newNode.getUserObject();       
-//                // now update the value on our treeview
-//                String location = fileInfo.getRelativeLocation();
-//                FileInfo newInfo = fileInfo.spdx.findRelative(location);
-//                // no need to continue if the result is null
-//                if(newInfo == null){
-//                    System.err.println("SU1228: Didn't found the relative FileInfo");
-//                    return;
-//                }
-//
-//                // now update the node on the tree view
-//                newNode.setUserObject(newInfo);
-//                newNode.setTitle(newInfo.toString());
-//                newNode.update();
-//                log.write(is.COMPLETED, "All done, marked file(s) as %1",
-//                        value + "");
-//            }
-            
+            TreeviewUtils.spdxUpdateAllNodes(temp.spdx);            
             // update the index values
             core.popularity.doIndex();
-        
     }
 
     

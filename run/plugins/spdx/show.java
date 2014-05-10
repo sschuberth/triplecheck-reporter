@@ -88,8 +88,10 @@ public class show extends Plugin{
             return;
         }
         
+        ArrayList<SPDXfile> spdxList = core.reports.getList();
+        
         // get some statistical data
-        for(Object object : core.reports.list){
+        for(Object object : spdxList){
             SPDXfile spdx = (SPDXfile) object;
             counterFiles += spdx.fileSection.files.size();
             counterCreators += spdx.creatorSection.people.size();
@@ -125,11 +127,11 @@ public class show extends Plugin{
         
         // handle the number of documents
         String documentText = "";
-        if(core.reports.list.size() == 1){
+        if(spdxList.size() == 1){
             documentText = "1 document" + html.br;
         }
-        if(core.reports.list.size() > 1){
-            documentText = core.reports.list.size() + " documents" + html.br;
+        if(spdxList.size() > 1){
+            documentText = spdxList.size() + " documents" + html.br;
         }
         
         
@@ -285,7 +287,7 @@ public class show extends Plugin{
         if(file == null){
             return;
         }
-        // read the whole file
+        // readLines the whole file
         String result = utils.files.readAsString(file);
         
         
@@ -636,7 +638,7 @@ public class show extends Plugin{
    
     /**
      * Provides an evaluation if the SPDX file has quality or not
-     * @param spdx an object from where we will read all data
+     * @param spdx an object from where we will readLines all data
      * @return A string used for the HTML output
      */
     private String doEvaluation(SPDXfile spdx) {

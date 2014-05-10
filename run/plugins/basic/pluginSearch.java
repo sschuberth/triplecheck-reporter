@@ -193,13 +193,13 @@ public class pluginSearch extends Plugin{
         String iconPackage = html.getCommonFolderIcon("box.png");
         String iconFile = html.getCommonFolderIcon("document-number.png");
            
-        if(core.reports.list.isEmpty()){
+        if(core.reports.getList().isEmpty()){
             System.err.println("PluginSearch198: No reports to search");
             return "";
         }
                
         
-        for(SPDXfile spdx : core.reports.list){
+        for(SPDXfile spdx : core.reports.getList()){
             String matchTitle = "";
         // first search, find components we have with the same name
             String spdxId = spdx.getId().toLowerCase();
@@ -246,7 +246,7 @@ public class pluginSearch extends Plugin{
                        
                    
                    
-                   // the internal hyperlink to read more details
+                   // the internal hyperlink to readLines more details
                    // get the UID
                    String linkFileUID = file.getUID();
                    
@@ -281,7 +281,7 @@ public class pluginSearch extends Plugin{
                }
                
                
-               // the internal hyperlink to read more details
+               // the internal hyperlink to readLines more details
                    String linkPackageUID = 
                            html.linkNode(
                            spdx.getId(),

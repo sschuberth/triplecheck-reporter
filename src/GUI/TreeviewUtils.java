@@ -219,7 +219,7 @@ public class TreeviewUtils {
 
     /**
      * This method will select a given SPDX node on the treeview and then
-     * read it again from disk to reflect changes from an update
+ readLines it again from disk to reflect changes from an update
      * @param UID 
      */
     private static void spdxReplace(TreeNodeSPDX node, boolean selected) {
@@ -571,7 +571,6 @@ public class TreeviewUtils {
         // create the node files and folders
         spdxCreateNodeStructure(node);
         
-        
         // all done, time to refresh things up
         swingUtils.setSelectedNode(node.getUID());
         // refresh things up
@@ -608,10 +607,8 @@ public class TreeviewUtils {
                     spdxFile.getAbsolutePath());
             return;
         }
-        // now read the SPDX document
+        // now readLines the SPDX document
         SPDXfile spdx = new SPDXfile(spdxFile);
-        
-        
         // basic parts were done, now add up the needed details
         addPeople(spdx, node);
         addFiles(spdx, node);

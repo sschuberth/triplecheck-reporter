@@ -34,7 +34,7 @@ import static utils.misc.sortByComparator;
  * @author Nuno Brito, 27th of April 2014 in the highway to North sea, Germany.
  *  nuno.brito@triplecheck.de | http://nunobrito.eu
  */
-public class LicensePopularity {
+public final class LicensePopularity {
     
     boolean hasNotIndexed = true;
     // the place where we keep our ranking score for each license
@@ -66,7 +66,7 @@ public class LicensePopularity {
         popularityList = null;
         
         // get the list of reports
-        ArrayList<SPDXfile> reports = core.reports.list;
+        ArrayList<SPDXfile> reports = core.reports.getList();
         log.write(is.CREATING, "Generating the popularity indexes");
         
         // go through each report to index the licenses

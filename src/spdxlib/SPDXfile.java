@@ -3,12 +3,12 @@
    * Person: Person: Nuno Brito (nuno.brito@triplecheck.de)
    * Person: Organization: TripleCheck (contact@triplecheck.de)
    * Date: 2013-08-29T00:00:00Z
- * LicenseName: EUPL-1.1-without-appendix
+   * LicenseName: EUPL-1.1-without-appendix
    * FileName: SPDXfile.java  
    * FileType: SOURCE
    * FileCopyrightText: <text> Copyright 2013 Nuno Brito, TripleCheck </text>
    * FileComment: <text> Object that contains an SPDX report. This class 
-   * contains the basic functions to read an SPDX file from disk, to perform 
+   * contains the basic functions to readLines an SPDX file from disk, to perform 
    * the basic operations such as adding/changing/finding data and then 
    * saving this information back to a file on disk. </text> 
    */
@@ -18,12 +18,17 @@ package spdxlib;
 import definitions.Process;
 import definitions.id;
 import definitions.is;
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import main.core;
 import script.FileExtension;
 import script.log;
@@ -51,12 +56,13 @@ public final class SPDXfile {
            reviewDate,
            reviewComment;
    
+   public ArrayList<TagValue> 
+            tags = new ArrayList(); 
+    
    // basic objects to support the SPDX processing
    public File
            file; // direct file pointer to this file
 
-   public TagValueCollection data; // where all data tags are placed
-   
    public String 
             rawText; // text for the SPDX file
    
@@ -66,8 +72,6 @@ public final class SPDXfile {
    
    // have statistics been already calculated for this document?
    private boolean hasStats = false;
-   // if there is a file, what is the checksum?
-   private String checksum = "";
    
    private HashMap<FileLanguage, Integer> statsLanguagesFound;
    private int statsLanguagesTotal;
@@ -101,7 +105,6 @@ public final class SPDXfile {
        packageSection = new SectionPackage();
        licenses = new ArrayList();
        fileSection = new SectionFiles(this);
-       data = new TagValueCollection();
        statsLanguagesFound = new HashMap();
        statsArtworkFound = new HashMap();
        statsLicensesDeclared = new HashMap();
@@ -112,7 +115,7 @@ public final class SPDXfile {
    
    /**
     * The initializer of this class
-    * @param file   File on disk from where the SPDX document can be read
+    * @param file   File on disk from where the SPDX document can be readLines
     */
    private void newStart(File file){
         // assign the file pointer
@@ -124,16 +127,6 @@ public final class SPDXfile {
         // now pre-process the stats
         doStats();
    }
-   
-//    public SPDXfile(File file, String text) {
-//        // assign the file pointer
-//       this.file = file;
-//       rawText = text;
-//       // do the normal reading
-//       read(text);
-//    }
-   
-    
     
     /**
      * A reader for the version 1.1 of SPDX tag value format
@@ -153,31 +146,15 @@ public final class SPDXfile {
             return;
         }
          
-        // get the file pointer for future reference
-        data.tagFile = file;
         // get the complete content of the file to a string file
-        //rawText = 
         lines1 = utils.files.readAsStringArray(file);
                 //rawText.split("\n");
-        // read all available data from the given file
-        data.read(lines1, this);
+        // readLines all available data from the given file
+        readLines();
         // process all this information into meaningful data
         processData();
     }
     
-   /**
-    * Refreshes the data on this SPDX object with information directly
-    * provided from a text string
-    * @param text Content to be processed by the SPDX parser
-    */
-//     public void read(String text){
-//          // read all available data from the given file
-//        data.read(text);
-//        // process all this information into meaningful data
-//        processData();
-//     }
-     
-     
      
    /**
     * Based on the information available on the "data" object, the SPDX
@@ -189,8 +166,8 @@ public final class SPDXfile {
       creatorSection.SPDXVersion = readGeneric(Keyword.SPDXVersion);
       creatorSection.dataLicense = readGeneric(Keyword.DataLicense);
       creatorSection.documentComment = readGeneric(Keyword.DocumentComment);
-      // read people information
-      parseSections();
+      // readLines people information
+      parseTags();
       creatorSection.created = readGeneric(Keyword.Created);
       creatorSection.creatorComment = readGeneric(Keyword.CreatorComment);
    }
@@ -200,7 +177,7 @@ public final class SPDXfile {
     * only works for unique key titles.
     */
     TagValue readGeneric(final Keyword keyword){
-       for(TagValue tag : data.tags){
+       for(TagValue tag : tags){
            if(tag.title.equalsIgnoreCase(keyword.toString())){
                return tag;
            }
@@ -276,7 +253,7 @@ public final class SPDXfile {
      * beyond the specification and adapt to the odd cases in order to retrieve
      * as much information as possible.
      */
-    void parseSections(){
+    void parseTags(){
         /**
          * There exist several tag/values across the document that can be
          * errouneously mixed or misplaced. For example, the people info
@@ -292,42 +269,34 @@ public final class SPDXfile {
         // define our markers that will be used for positioning
         int processing = Process.nothing;
         
-        // go through all tag/value entries
-        for(int i = 0; i < data.tags.size(); i++){
-            // get the current tag
-            TagValue tag = data.tags.get(i);
-            // do the markers check. No need to repeat them if already flagged
-            processing = whichSectionShouldBeProcess(tag, processing);
-            
-//            TagValue abc = data.tags.get(i); 
-//            if(i==xxx){
-//                System.out.println();
-//            }
-            
-            ///////////////////////////////////////////////////////////////////
-            // check for the specific blocks that we want to tap
-            ///////////////////////////////////////////////////////////////////
-            
-            switch(processing) { 
-            
-                case Process.header:
-                    parseCreatorTags(tag);
-                    break;
-            
-                case Process.packageData:
-                    packageSection.parseTag(tag);
-                    parseOtherLicensingTags(tag);
-                    break;
-            
-                case Process.files:
-                    fileSection.parseTag(tag);
-                    break;
-
-                case Process.review:
-                    parseReviewerTags(tag);
-                    break;
-            }
-        }
+       for (TagValue tag : tags) {
+           // do the markers check. No need to repeat them if already flagged
+           processing = whichSectionShouldBeProcess(tag, processing);
+           
+           ///////////////////////////////////////////////////////////////////
+           // check for the specific blocks that we want to tap
+           ///////////////////////////////////////////////////////////////////
+           
+           switch(processing) {
+               
+               case Process.header:
+                   parseCreatorTags(tag);
+                   break;
+                   
+               case Process.packageData:
+                   packageSection.parseTag(tag);
+                   parseOtherLicensingTags(tag);
+                   break;
+                   
+               case Process.files:
+                   fileSection.parseTag(tag);
+                   break;
+                   
+               case Process.review:
+                   parseReviewerTags(tag);
+                   break;
+           }
+       }
         
         // do the recovery attempts
         if(fileSection.unknown.size() > 0){
@@ -626,19 +595,6 @@ public final class SPDXfile {
         // third, convert back to static array and place back in our list
         lines = output.toArray(new String[0]);
         lines1.set(linePosition, lines);
-        
-        
-//        for(FileInfo fileInfo : fileSection.files){
-//            if(fileInfo.tagFileName.linePosition > linePosition){
-//                fileInfo.tagFileName.linePosition++;
-//            }
-//        }
-//               
-//        data.read(lines1.toArray(new String[0]), this);
-//        // process all this information into meaningful data
-//        processData();
-//        String oldLine = lines1.get(linePosition);
-//        lines1.set(linePosition, oldLine + "\n" + text);
     }
 
     /**
@@ -1070,7 +1026,7 @@ public final class SPDXfile {
                      file.getAbsolutePath());
             return false;
         }
-        // read all the data again
+        // readLines all the data again
         newStart(file);
         // all good here
         return true;
@@ -1169,9 +1125,104 @@ public final class SPDXfile {
             result += counterExternal + " external resources"
                     +html.br;
         }
-        
-        
         return result;
     }
+    
+   
+    /**
+     * The objective of this method is to go throught each line on a given
+     * text file and extract every possible information in regards to tag/value
+     * data. The result is an arraylist of tags that contain in sequential order
+     * all the tag/value entries that were found.
+     */
+    public void readLines(){
+        System.err.println("TVC80 - Reading SPDX: " + file.getName());
+
+              lines1 = new ArrayList();
+      try {
+          BufferedReader reader = new BufferedReader(new FileReader(file));
+          String temp;
+          // iterate through all lines
+          int linePosition = 0;
+            while ((temp = reader.readLine()) != null) {
+                // read the tag/value information
+                readLine(temp, linePosition);
+                // store the line as reference for later
+                String[] line = new String[]{temp};
+                lines1.add(line);
+                // increase the line counter
+                linePosition++;
+            }
+          
+      } catch (IOException ex) {
+          Logger.getLogger(files.class.getName()).log(Level.SEVERE, null, ex);
+      }
+       
+    }
+    
+    
+    /**
+     * When assigned withe a specific line, process it
+     * @param line  the text line to be processed
+     * @param linePosition  At which position of the text file is this line?
+     */
+    public void readLine(String line, int linePosition){
+//         String line = lines[i];
+            //int linePosition = i;
+            TagValue tag = new TagValue(this);
+            
+            // interpret multiple lines of text
+            if(line.contains("<text>")){
+                //TODO we need support to mulitple line
+                return;
+//                ReadMultipleLine multiple = new ReadMultipleLine();
+//                multiple.getMultipleLine(lines, i);
+//                i += multiple.lineCount - 1;
+//                if(multiple.status != ReadMultipleLine.readStatus.OK){
+//                    // if there was an error, avoid adding up this value
+//                    return;
+//                }
+//                // add the text as a single line.
+//                line = multiple.output;
+//                tag.isMultiLine = true;
+            }
+            
+            // we care about lines with tags
+            if(line.contains(":")== false){
+               return;
+            }
+            // find the initial title delimiter
+            int limiter = line.indexOf(":");
+            tag.linePosition = linePosition;
+            // get the title name, remove empty spaces
+            tag.title = line.substring(0, limiter).trim();
+            // get the full content
+            tag.raw = line + "\n";
+            // get the associated value
+            tag.setValue(line.substring(limiter + 2));
+            // avoid the bad "created" tag that contains fake :
+            if(   //TODO this could be replaced with a nice RegEx rule one day..
+                    (tag.title.equalsIgnoreCase("Created")==false)
+                  &&(tag.title.equalsIgnoreCase("ReviewDate")==false)
+                    )
+            // there are cases of sub-tags that need to be processed
+            while(tag.getValue().contains(":")){
+                limiter = tag.getValue().indexOf(":");
+                // solve cases of people adding ":" inside the <text> tags
+                if(tag.getValue().contains("<text>")){
+                    int limiterEnd = tag.getValue().indexOf("<text>");
+                    if(limiter > limiterEnd){
+                        break;
+                    }
+                }
+                // add the sub-tag, iterate to the next value
+                String newTag = tag.getValue().substring(0, limiter).trim();
+                tag.title = tag.title + "->" + newTag;
+                tag.setValue(tag.getValue().substring(limiter + 2));
+            }
+        // all done
+        tags.add(tag);
+    }
+    
     
 }

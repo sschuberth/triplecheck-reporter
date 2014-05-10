@@ -242,47 +242,47 @@ public class swingUtils {
     }
     
     
-    /**
-     * List all the indexed SPDX documents on the tree view
-     * @param tree where all items are listed
-     */
-    public static void populateTree(JTree tree){
-        // tree hook
-        tree.setCellRenderer(new TreeRenderer()); 
-        //Create the nodes.
-        TreeNodeSPDX nodeRoot =
-            new TreeNodeSPDX("root");
-        nodeRoot.id = "Root";
-        
-        //createNode("Home", NodeType.home, nodeRoot);
-        
-        
-        // create the node for hosting our reports
-        TreeNodeSPDX productNode = nodeCreate(
-                "Reports (" + core.reports.list.size() + ")"
-                , NodeType.other, nodeRoot);
-        productNode.id = folder.reports;
-        
-        // add all SPDX documents that were found
-            for(SPDXfile spdx : core.reports.list){
-                addNodeSPDX(productNode, spdx);
-            }
-        
-            
-//        // now create our library node with all found components    
-//        TreeNodeSPDX libraryNode = nodeCreate(
-//                "Library (" + core.components.size() + ")"
+//    /**
+//     * List all the indexed SPDX documents on the tree view
+//     * @param tree where all items are listed
+//     */
+//    public static void populateTree(JTree tree){
+//        // tree hook
+//        tree.setCellRenderer(new TreeRenderer()); 
+//        //Create the nodes.
+//        TreeNodeSPDX nodeRoot =
+//            new TreeNodeSPDX("root");
+//        nodeRoot.id = "Root";
+//        
+//        //createNode("Home", NodeType.home, nodeRoot);
+//        
+//        
+//        // create the node for hosting our reports
+//        TreeNodeSPDX productNode = nodeCreate(
+//                "Reports (" + core.reports.list.size() + ")"
 //                , NodeType.other, nodeRoot);
-//        libraryNode.id = "Library";
+//        productNode.id = folder.reports;
+//        
 //        // add all SPDX documents that were found
-//            for(SPDXfile spdx : core.components){
-//                addNodeSPDX(libraryNode, spdx);
+//            for(SPDXfile spdx : core.reports.list){
+//                addNodeSPDX(productNode, spdx);
 //            }
-
-    // all finished, write this data on GUI tree list
-        DefaultTreeModel treeModel = new DefaultTreeModel(nodeRoot);
-        tree.setModel(treeModel);
-    }
+//        
+//            
+////        // now create our library node with all found components    
+////        TreeNodeSPDX libraryNode = nodeCreate(
+////                "Library (" + core.components.size() + ")"
+////                , NodeType.other, nodeRoot);
+////        libraryNode.id = "Library";
+////        // add all SPDX documents that were found
+////            for(SPDXfile spdx : core.components){
+////                addNodeSPDX(libraryNode, spdx);
+////            }
+//
+//    // all finished, write this data on GUI tree list
+//        DefaultTreeModel treeModel = new DefaultTreeModel(nodeRoot);
+//        tree.setModel(treeModel);
+//    }
     
         /**
      * Given an SPDX object, create the tree nodes with information
@@ -634,7 +634,7 @@ public class swingUtils {
     
     /**
      * Adds a tree node on the Swing UI
-     * @param title Title that is read by the user
+     * @param title Title that is readLines by the user
      * @param iconImage Specify an icon image from our local archive
      * @param nodeRoot The parent node where the new node will be attached
      * @return The newly created tree node

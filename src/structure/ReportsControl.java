@@ -19,7 +19,6 @@ import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import main.actions;
-import main.core;
 import script.log;
 import spdxlib.SPDXfile;
 
@@ -31,7 +30,7 @@ import spdxlib.SPDXfile;
  */
 public final class ReportsControl {
 
-    public ArrayList<SPDXfile> list = new ArrayList<SPDXfile>();
+    private ArrayList<SPDXfile> list = new ArrayList<SPDXfile>();
     
     /**
      * Instantiate our default constructor for this class
@@ -80,10 +79,10 @@ public final class ReportsControl {
                 counter++;
         }
              
-            String pathName = folder.getCanonicalPath();
-            
-            pathName = "." 
-                    + pathName.replace(core.getWorkFolder().getCanonicalPath(), "");
+//            String pathName = folder.getCanonicalPath();
+//            
+//            pathName = "." 
+//                    + pathName.replace(core.getWorkFolder().getCanonicalPath(), "");
             
             log.write(is.INFO, "Found and processed %1 reports", 
                 counter + "");
@@ -172,6 +171,14 @@ public final class ReportsControl {
         }
         // all done
         return spdxFile;
+    }
+
+    /**
+     * Gets the list of SPDX documents that we have indexed
+     * @return 
+     */
+    public ArrayList<SPDXfile> getList() {
+        return list;
     }
 
     
