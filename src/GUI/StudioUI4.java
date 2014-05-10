@@ -1252,37 +1252,6 @@ public class StudioUI4 extends javax.swing.JFrame {
             }
             return null;
         }
-
-    
-    /**
-     * Starting from a specific node, find all child nodes that correspond
-     * to a specific node type filter. (most used used to collect file nodes)
-     */
-    private void getNodes(TreeNodeSPDX node, 
-            ArrayList<TreeNodeSPDX> nodes, NodeType filter){
-            
-        // no child nodes? nothing else to do on this loop
-        if(node.getChildCount() == 0){
-            //System.err.println("SU1155: No child nodes to proceed");
-            return;
-        }
-        // enumerate the available sub-nodes and add them up
-        Enumeration list = node.children();
-        while(list.hasMoreElements()){
-            // get the next node
-            TreeNodeSPDX newNode = (TreeNodeSPDX) list.nextElement();
-            // dig deeper to find other subnodes there
-            getNodes(newNode, nodes, filter);
-             // what type of nodes are we interested?
-            if(newNode.nodeType != filter){
-                continue;
-            }
-            // add this node on our list
-            //System.err.println("->" + newNode.toString());
-            nodes.add(newNode);
-       }
-      // return nodes; 
-    }
     
     
     /**
@@ -1319,30 +1288,18 @@ public class StudioUI4 extends javax.swing.JFrame {
             // mandatory refresh on the SPDX object in our memory
             spdx.commitChanges();
             spdx.refresh();
-            // second round of iterations, re-use the treeview, update objects
-            for(TreeNodeSPDX newNode : nodeList){
-                 // get the object
-                FileInfo fileInfo = (FileInfo) newNode.getUserObject();       
-                // now update the value on our treeview
-                String location = fileInfo.getRelativeLocation();
-                FileInfo newInfo = fileInfo.spdx.findRelative(location);
-                // no need to continue if the result is null
-                if(newInfo == null){
-                    System.err.println("SU1228: Didn't found the relative FileInfo");
-                    return;
-                }
-
-                // now update the node on the tree view
-                newNode.setUserObject(newInfo);
-                newNode.setTitle(newInfo.toString());
-                newNode.update();
-                
-            }
+            // now, update all the tree nodes with the new information
+            TreeviewUtils.spdxUpdateAllNodes(spdx);
+            // show some feedback
+            swingUtils.showMessage("Applied the "
+                    + selectedLicense
+                    +" to "
+                    + utils.text.pluralize(nodeList.size(), "file"));
             
         // all done
     }
     
-    
+   
     /**
      * This method will change the license from the tree node that is
      * currently selected
@@ -1360,7 +1317,7 @@ public class StudioUI4 extends javax.swing.JFrame {
             if((node.nodeType == NodeType.folder)
                     ||(node.nodeType == NodeType.sectionFile)){
                 //System.err.println("Changing the whole folder");
-                getNodes(node, nodeList, NodeType.file);
+                TreeviewUtils.getNodes(node, nodeList, NodeType.file);
             }
             // only files are supported at the moment
             if(node.nodeType == NodeType.file){
@@ -1389,7 +1346,7 @@ public class StudioUI4 extends javax.swing.JFrame {
         if((node.nodeType == NodeType.folder)
                 ||(node.nodeType == NodeType.sectionFile)){
             //System.err.println("Changing the whole folder");
-            getNodes(node, nodeList, NodeType.file);
+            TreeviewUtils.getNodes(node, nodeList, NodeType.file);
         }
         // only files are supported at the moment
         if(node.nodeType == NodeType.file){

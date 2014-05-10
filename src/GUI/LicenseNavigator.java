@@ -120,15 +120,14 @@ public final class LicenseNavigator extends javax.swing.JFrame {
      * @param selectedLicense   License id of the selected license
      */
     private void processSelection(String selectedLicense){
-        // a license was chosen, fireup the event on the main window
-        log.write(is.ACCEPTED, "License was chosen: %1", selectedLicense);
-        core.studio.licenseMarkSelectedNodes(selectedLicense);
-        
-        // close this menu
+         // close this menu
         setVisible(false);
         dispose();
         // return to the main UI
         showMainWindow();
+        // a license was chosen, fireup the event on the main window
+        log.write(is.ACCEPTED, "License was chosen: %1", selectedLicense);
+        core.studio.licenseMarkSelectedNodes(selectedLicense);
     }
     
     

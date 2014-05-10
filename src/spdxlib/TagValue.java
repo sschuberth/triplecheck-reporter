@@ -13,10 +13,6 @@
 package spdxlib;
 
 import definitions.is;
-import java.util.ArrayList;
-import java.util.Arrays;
-import static java.util.Collections.list;
-import java.util.List;
 
 public class TagValue {
     public String

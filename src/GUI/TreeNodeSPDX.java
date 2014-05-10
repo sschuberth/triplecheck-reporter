@@ -89,7 +89,7 @@ public class TreeNodeSPDX extends DefaultMutableTreeNode{
         DefaultTreeModel model = (DefaultTreeModel) 
                 core.studio.getTree().getModel();
         model.nodeChanged(this);
-        model.reload(this.getParent());
+       // model.reload(this.getParent());
     }
     
     public String getTitle() {

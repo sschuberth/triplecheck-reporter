@@ -12,19 +12,12 @@
 
 package structure;
 
-import GUI.NodeType;
-import GUI.TreeNodeSPDX;
-import GUI.TreeviewUtils;
-import GUI.swingUtils;
-import static GUI.swingUtils.nodeCreate;
-import definitions.definition;
 import definitions.is;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.JTree;
 import main.actions;
 import main.core;
 import script.log;

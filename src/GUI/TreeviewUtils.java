@@ -373,7 +373,7 @@ public class TreeviewUtils {
         
         core.studio.getTree().setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
         // create the tree structure
-        doTreeStructure(node, spdx);
+        spdxDoTreeStructure(node, spdx);
         // if an exception occurs, this next line doesn't happen..
         core.studio.getTree().setCursor(Cursor.getDefaultCursor());
     }
@@ -383,7 +383,7 @@ public class TreeviewUtils {
      * @param root
      * @param spdx 
      */
-    private static void doTreeStructure(TreeNodeSPDX root, SPDXfile spdx){
+    private static void spdxDoTreeStructure(TreeNodeSPDX root, SPDXfile spdx){
         
         // where we store all the nodes of our tree
         HashMap nodeList = new HashMap();
@@ -400,17 +400,11 @@ public class TreeviewUtils {
             if(path.equals(".")){
                 continue;
             }
-            
-            //String parentFolder = getParentFolder(path);
             // add it up to our list
             TreeNodeSPDX folderNode = addNodeFolder(root, path);
             // put in our cached list
-            //path = path.substring(0, path.length() -1);
             nodeList.put(path, folderNode);
-            // ./jfreechart-1.0.17/lib/
-            //System.err.println("Placing path: " + path);
         }
-        
         
         
         // add all the files from the SPDX to our treeview folders
@@ -673,8 +667,94 @@ public class TreeviewUtils {
             // add the user name that we want to edit
             nodePerson.scriptParameters.add(new String[]{param.filter, person.getTitle()});
         }
-        
-       
     } 
+    
+    /**
+     * Starting from a specific node, find all child nodes that correspond
+     * to a specific node type filter. (most used used to collect file nodes)
+     * @param node      The starting point from where we want to get results
+     * @param nodes     The result, contains a list of nodes
+     * @param filter    Only nodes of a given NodeType will be added to the list
+     */
+    public static void getNodes(TreeNodeSPDX node, 
+            ArrayList<TreeNodeSPDX> nodes, NodeType filter){
+            
+        // no child nodes? nothing else to do on this loop
+        if(node.getChildCount() == 0){
+            //System.err.println("SU1155: No child nodes to proceed");
+            return;
+        }
+        // enumerate the available sub-nodes and add them up
+        Enumeration list = node.children();
+        while(list.hasMoreElements()){
+            // get the next node
+            TreeNodeSPDX newNode = (TreeNodeSPDX) list.nextElement();
+            // dig deeper to find other subnodes there
+            getNodes(newNode, nodes, filter);
+             // what type of nodes are we interested?
+            if(newNode.nodeType != filter){
+                continue;
+            }
+            // add this node on our list
+            //System.err.println("->" + newNode.toString());
+            nodes.add(newNode);
+       }
+      // return nodes; 
+    }
+    
+    
+     /**
+     * When changes happen on the physical SPDX document on disk, we need
+     * to update the nodes inside the treeview with the fresh information
+     * @param spdx      The spdx object with the updated information
+     */
+    public static void spdxUpdateAllNodes(SPDXfile spdx){
+        nodeReports.children();
+        // enumerate the available sub-nodes and add them up
+        Enumeration list = nodeReports.children();
+        TreeNodeSPDX spdxNode = null;
+        // go through the basic root of documents
+        while(list.hasMoreElements()){
+            // get the next node
+            TreeNodeSPDX tempNode = (TreeNodeSPDX) list.nextElement();
+            // does its object match with what we are looking?
+            File file = (File) tempNode.getUserObject();
+            if(file.getAbsolutePath().equals(spdx.file.getAbsolutePath())){
+                spdxNode = tempNode;
+                // no need to loop through the other documents
+                break;
+            }
+       }
+        // no need to continue if nothing was found
+        if(spdxNode == null){
+            System.err.println("TU728 - Didn't found spdxNode at " 
+                    + spdx.file.getAbsolutePath());
+            return;
+        }
+
+        // now create a list with all the nodes that we want to change
+        ArrayList<TreeNodeSPDX> nodes = new ArrayList();
+        getNodes(spdxNode, nodes, NodeType.file);
+        //System.err.println("Changing " + nodes.size() + " nodes");
+        // go through each one to make changes
+        for(TreeNodeSPDX node : nodes){
+             // get the object
+            FileInfo fileInfo = (FileInfo) node.getUserObject();       
+            // now update the value on our treeview
+            String location = fileInfo.getRelativeLocation();
+            FileInfo newInfo = fileInfo.spdx.findRelative(location);
+            // no need to continue if the result is null
+            if(newInfo == null){
+                System.err.println("SU1228: Didn't found the relative FileInfo");
+                return;
+            }
+            // now update the node on the tree view
+            node.setUserObject(newInfo);
+            node.setTitle(newInfo.toString());
+            node.update();
+        }
+        
+    }
+    
     
 }
