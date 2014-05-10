@@ -12,7 +12,6 @@
 
 package aggregate.GitHub;
 
-import static aggregate.GitHub.GitHubAggregate.getFolder;
 import java.io.File;
 import java.util.concurrent.ConcurrentNavigableMap;
 import org.mapdb.DB;
@@ -31,7 +30,7 @@ DB db;
         
     // constructor
     public GitDB(){
-        File file = new File(getFolder(), "users.mapdb");
+        File file = new File(GitHubAggregate.getFolder(), "users.mapdb");
         db = DBMaker.newFileDB(file)
                .closeOnJvmShutdown()
                //.encryptionEnable("password")

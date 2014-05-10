@@ -8,6 +8,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import utils.db.MapDB;
 
 /**
  *
@@ -408,7 +409,29 @@ public static long folderSize(File where){
        return true;
    }
 
-
+   /**
+    * This is a method intended to work with files typically larger than
+    * what is permitted to hold in memory by the default Java heap memory
+    * allocation
+    * @param inputFile  A file on disk
+     * @param db
+    * @return 
+    */
+   public static boolean SaveLargeStringToFile(File inputFile, MapDB db){
+        try {
+            BufferedWriter out = new BufferedWriter(new FileWriter(inputFile));
+            for(String line : db.map().values()){
+                    out.write(line + "\n");
+            }
+            out.close();
+            }
+            catch (IOException e){
+                System.out.println(e.getMessage());
+                return false;
+            }
+        return true;
+	}
+   
    public static boolean SaveLargeStringToFile(File inputFile, 
            ArrayList<String[]> listLines){
         try {

@@ -26,6 +26,7 @@ import script.FileExtension;
 import script.Trigger;
 import script.log;
 import ssdeep.ssdeep;
+import utils.db.MapDB;
 
 
 /**
@@ -50,7 +51,7 @@ public class DocumentCreate {
             PackageLicenseConcluded = "NOASSERTION",
             packageDownloadLocation = "NOASSERTION",
             // other things
-            output // where we store the content written to a text file
+            output2 // where we store the content written to a text file
             ;
     
     
@@ -114,13 +115,14 @@ public class DocumentCreate {
         if(PackageName != null){
             filename = PackageName;
         }
-        
+        // get the date of creation in SPDX text format
         String textDate = getDateSPDX();
-        
-        
+        // create the filename
         filename = filename + ".spdx";
+        // create the database
+        MapDB db = new utils.db.MapDB("temp", true);
         
-        output =  
+        String header =  
                   addParagraph("SPDX Document Information")
                 + addText("SPDXVersion: " + versionSPDX)
                 + addText("DataLicense: " + licensePackage)
@@ -142,103 +144,28 @@ public class DocumentCreate {
                 + addParagraph("File Information")
                 ;
         
+        // initialize the database
+        int counter = 0;
+        db.map().put(counter, header);
         
         log.write(is.INFO, "Preparing to process %1 files", "" + files.size());
         
-        // iterate through each file
+        // iterate through each file to process
         for(File thisFile : files){
-            // compute our SSDEEP hashes
-            ssdeep test = new ssdeep();
-            String ssdeep;
-            try {
-                ssdeep = test.fuzzy_hash_file(thisFile);
-            } catch (IOException ex) {
-                ssdeep = "NOASSERTION";
-            }
-            
-            // path of this file
-            String filePath = thisFile.getAbsolutePath();
-            filePath = filePath.replace(folderSourceCode.getAbsolutePath(), "");
-            filePath = filePath.replace("\\", "/");
-            filePath = "." + filePath.replace(thisFile.getName(), "");
-            
-            // the size of this file
-            String fileSize = utils.files.humanReadableSize(thisFile.length());
-            
-            // only add up this info when making the size human readable
-            if(thisFile.length() > 1000){
-                   fileSize +=  " ("+ thisFile.length() +" bytes)";
-            }
-            
-            // do the file identification
-            String LOC = "";
-            FileId fileId = new FileId();
-            Boolean fileWasAnalysed = fileId.analyze(thisFile);
-            // get the value for lines of COD
-            if(fileWasAnalysed){
-                if(fileId.LOC > 0){
-                    LOC = "FileLOC: " + fileId.LOC;
-                }
-            }
-            
-            
-            
-            // add the licenseInfoInFile information in file
-            String triggerInfoInFile = "";
-            if((fileWasAnalysed)&&(fileId.licenseInfoInFile.size()>0)){
-
-                // iterate through each trigger or any other trigger needed
-                for(Trigger triggerInfo : fileId.licenseInfoInFile)
-                triggerInfoInFile += addText(""
-                        + triggerInfo.getResult()
-                        );
-            }
-            
-            //TODO There is no OS independent way to get date of file creation
-            // at least one Windows and Linux should be added when available
-           // String fileModified = utils.time.getTimeFromLong(file.lastModified());
-            
-            String temp =
-                     // addSection("File: " + thisFile.getName())
-                    //+ 
-                    "\n"
-                    + addText("FileName: "
-                            // in my conscience, path has no place on file name
-                            // and only makes difficult to identify the name
-                            // uncomment for strict compatibility with SPDX
-                            + filePath + thisFile.getName()
-                            //+ thisFile.getName()
-                    )
-                    // not needed if standard is followed
-                    //+ addText("FilePath: " + filePath)
-                    + addText("FileType: " 
-                        + doFileType(fileId))
-                    + addText("FileChecksum: SHA1: "
-                        + utils.Checksum.generateFileChecksum("SHA-1", thisFile))
-                    + addText("FileChecksum: SHA256: " 
-                        + utils.Checksum.generateFileChecksum("SHA-256", thisFile))
-                    + addText("FileChecksum: MD5: "
-                        + utils.Checksum.generateFileChecksum("MD5", thisFile))
-                    + addText("FileChecksum: SSDEEP: " + ssdeep)
-                    + addText("FileSize: " + fileSize)
-//                    + addText("FileModified: " + getFileDateSPDX(thisFile))
-                    
-                    + addText(LOC)
-                    //+ addText("FileLastModified: " + fileModified)
-                    + triggerInfoInFile
-                    //+ "\nLicenseConcluded: NOASSERTION"
-                    //+ "\nLicenseInfoInFile: NONE"
-                    //+ "\nFileCopyrightText: NONE"
-                    ;
-            
-            output = output + temp;
+            String result = processFile(thisFile, folderSourceCode);
+            counter++;
+            db.map().put(counter, result);
+            db.commit();
+            //output = output + temp;
             // increase the counter
             filesProcessed++;
         }
         
+        
         // create the file pointer
         File document = new File(folderProduct, filename);
-        utils.files.SaveStringToFile(document, output);
+        //utils.files.SaveStringToFile(document, output);
+        utils.files.SaveLargeStringToFile(document, db);
         
         debug("Saved result to file: " + document.getAbsolutePath());
         
@@ -249,10 +176,104 @@ public class DocumentCreate {
                 folderSourceCode.getAbsolutePath());
         
         // all done
+        db.close();
         doFinish();
         return filename;
     }
     
+    
+    /**
+     * This method is called for each file that we need to process. It is here
+     * that optimizations in regards to speed should be made
+     * @param thisFile          The file to process
+     * @param folderSourceCode  The folder for the root source code folder 
+     */
+    private String processFile(File thisFile, File folderSourceCode){
+    
+
+        // compute our SSDEEP hashes
+        ssdeep test = new ssdeep();
+        String ssdeep;
+        try {
+            ssdeep = test.fuzzy_hash_file(thisFile);
+        } catch (IOException ex) {
+            ssdeep = "NOASSERTION";
+        }
+
+        // path of this file
+        String filePath = thisFile.getAbsolutePath();
+        filePath = filePath.replace(folderSourceCode.getAbsolutePath(), "");
+        filePath = filePath.replace("\\", "/");
+        filePath = "." + filePath.replace(thisFile.getName(), "");
+
+        // the size of this file
+        String fileSize = utils.files.humanReadableSize(thisFile.length());
+
+        // only add up this info when making the size human readable
+        if(thisFile.length() > 1000){
+               fileSize +=  " ("+ thisFile.length() +" bytes)";
+        }
+
+        // do the file identification
+        String LOC = "";
+        FileId fileId = new FileId();
+        Boolean fileWasAnalysed = fileId.analyze(thisFile);
+        // get the value for lines of COD
+        if(fileWasAnalysed){
+            if(fileId.LOC > 0){
+                LOC = "FileLOC: " + fileId.LOC;
+            }
+        }
+
+        // add the licenseInfoInFile information in file
+        String triggerInfoInFile = "";
+        if((fileWasAnalysed)&&(fileId.licenseInfoInFile.size()>0)){
+
+            // iterate through each trigger or any other trigger needed
+            for(Trigger triggerInfo : fileId.licenseInfoInFile)
+            triggerInfoInFile += addText(""
+                    + triggerInfo.getResult()
+                    );
+        }
+
+        //TODO There is no OS independent way to get date of file creation
+        // at least one Windows and Linux should be added when available
+       // String fileModified = utils.time.getTimeFromLong(file.lastModified());
+
+        String result =
+                 // addSection("File: " + thisFile.getName())
+                //+ 
+                //"\n"
+                addText("FileName: "
+                        // in my conscience, path has no place on file name
+                        // and only makes difficult to identify the name
+                        // uncomment for strict compatibility with SPDX
+                        + filePath + thisFile.getName()
+                        //+ thisFile.getName()
+                )
+                // not needed if standard is followed
+                //+ addText("FilePath: " + filePath)
+                + addText("FileType: " 
+                    + doFileType(fileId))
+                + addText("FileChecksum: SHA1: "
+                    + utils.Checksum.generateFileChecksum("SHA-1", thisFile))
+                + addText("FileChecksum: SHA256: " 
+                    + utils.Checksum.generateFileChecksum("SHA-256", thisFile))
+                + addText("FileChecksum: MD5: "
+                    + utils.Checksum.generateFileChecksum("MD5", thisFile))
+                + addText("FileChecksum: SSDEEP: " + ssdeep)
+                + addText("FileSize: " + fileSize)
+//                    + addText("FileModified: " + getFileDateSPDX(thisFile))
+                + addText(LOC)
+                //+ addText("FileLastModified: " + fileModified)
+                + triggerInfoInFile
+                //+ "\nLicenseConcluded: NOASSERTION"
+                //+ "\nLicenseInfoInFile: NONE"
+                //+ "\nFileCopyrightText: NONE"
+                ;
+        // all done
+        return result;
+    }
     
     /**
      * This method returns the expected value for "FileType" inside an SPDX
@@ -276,23 +297,17 @@ public class DocumentCreate {
         
         // assign the default value as "OTHER"
         String result = "OTHER";
-       
         // get the extension
         FileExtension extension = fileId.getExtension();
-        
-        
         // preflight check
         if(extension == null){
             return result;
         }
-        
         FileCategory target = extension.getCategory();
-        
         // safety check
         if(target == null){
             return result;
         }
-        
         // if this is a script or source code file, we mark as "SOURCE"
         if(target == FileCategory.SOURCE 
                 || target ==FileCategory.SCRIPT
@@ -300,18 +315,15 @@ public class DocumentCreate {
                 ){
             return "SOURCE";
         }
-        
         // if this is a binary file, we mark as "BINARY"
         if(target == FileCategory.BINARY
                 || target ==FileCategory.EXECUTABLE){
             return "BINARY";
         }
-        
         // if this is a binary file, we mark as "BINARY"
         if(target == FileCategory.ARCHIVE){
             return "ARCHIVE";
         }
-        
         return result;
     }
     
@@ -336,18 +348,12 @@ public class DocumentCreate {
         return    "##-------------------------\n"
                 + "## " + title + "\n"
                 + "##-------------------------\n"
-                + "\n";
-                
-    }
-    
-    private String addSection(String title){
-        return    "\n"
-                + "## " + title + "\n"
-                + "\n"
+                //+ "\n"
                 ;
                 
     }
     
+  
     /**
      * Adds a simple line of text with a carriage return at the end
      * @param text the text to be included

@@ -56,7 +56,8 @@ public class CopyrightDetector implements Trigger {
         "many different people",
         "variable",
         "_copyright",
-        "conditions"
+        "conditions",
+        "COPYRIGHT_YEARS"
     };
     
     /**
