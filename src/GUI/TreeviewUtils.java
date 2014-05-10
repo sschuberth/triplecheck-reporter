@@ -121,7 +121,7 @@ public class TreeviewUtils {
         node.scriptParameters.add(new String[]{param.spdx, relativePath});
         rootNode.add(node);
         // add it up (not working)
-        rootNode.update();
+        rootNode.update(true);
         return node;
     }
     
@@ -615,7 +615,7 @@ public class TreeviewUtils {
         // basic parts were done, now add up the needed details
         addPeople(spdx, node);
         addFiles(spdx, node);
-        node.update();
+        node.update(true);
     }
       
     /**
@@ -751,7 +751,7 @@ public class TreeviewUtils {
             // now update the node on the tree view
             node.setUserObject(newInfo);
             node.setTitle(newInfo.toString());
-            node.update();
+            node.update(false);
         }
         
     }

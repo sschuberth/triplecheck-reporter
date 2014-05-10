@@ -1,20 +1,12 @@
 /*
  * SPDXVersion: SPDX-1.1
- *
  * Creator: Person: Nuno Brito (nuno.brito@triplecheck.de)
- *
  * Creator: Organization: TripleCheck (contact@triplecheck.de)
- *
  * Created: 2013-09-01T00:00:00Z
- *
  * LicenseName: EUPL-1.1-without-appendix
- *
  * FileName: TreeNodeSPDX.java  
- *
  * FileType: SOURCE
- *
  * FileCopyrightText: <text> Copyright 2013 Nuno Brito, TripleCheck </text>
- *
  * FileComment: <text> A tree node object adapted for SPDX documents </text> 
  */
 
@@ -24,7 +16,6 @@ import java.io.File;
 import java.util.ArrayList;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
-import javax.swing.JTree;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeModel;
 import main.core;
@@ -84,12 +75,16 @@ public class TreeNodeSPDX extends DefaultMutableTreeNode{
 
     /**
      * Update the view of this node on a given tree 
+     * @param full  should the treeview be fully refreshed or not?
      */
-    public void update(){
+    public void update(boolean full){
         DefaultTreeModel model = (DefaultTreeModel) 
                 core.studio.getTree().getModel();
         model.nodeChanged(this);
-       // model.reload(this.getParent());
+        // if true, reload the whole treeview
+        if(full){
+            model.reload(this.getParent());
+        }
     }
     
     public String getTitle() {

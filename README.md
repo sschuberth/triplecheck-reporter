@@ -1,16 +1,15 @@
 reporter
 ========
 
-This tool is useful for the cases when you want to evaluate your source code from a licensing compliance perspective.
+This tool helps to evaluate your source code quality from a licensing compliance perspective.
 
-The end result is a report written in SPDX format that includes the following details:
+The end result is a report written in SPDX format that includes:
+- License and copyright identification (LGPL, GPL, Apache)
 - Lines Of Code (LOC)
 - Checksums (MD5, SHA256, SSDEEP)
-- Filenames
-- Basic license identification (LGPL, GPL, Apache)
+- Filenames (and types)
 - File size
 
-With this kind of information becomes possible to get a preliminary idea of the code before access to the source is made available.
 
 
 Credits
@@ -37,4 +36,4 @@ A list of the software, services and people that made this tooling possible.
 
 
 ### People
-- Gary O'Neal for early testing and always helpful feedback
+- Gary O'Neal -> http://sourceauditor.com (always available with helpful feedback)

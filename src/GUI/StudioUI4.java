@@ -1333,27 +1333,30 @@ public class StudioUI4 extends javax.swing.JFrame {
      */
     private void markFileOriginAs(FileOrigin value) {
          // get the selected node
-        TreeNodeSPDX node = swingUtils.getSelectedNode();
+        TreeNodeSPDX nodeLastSelected = swingUtils.getSelectedNode();
         // preflight check
-        if(node == null){
+        if(nodeLastSelected == null){
             System.err.println("SU1326: Node is null");
             return;
         }
 
         // create a list of nodes to process
+        ArrayList<TreeNodeSPDX> selectedNodes = swingUtils.getSelectedNodes(tree);
         ArrayList<TreeNodeSPDX> nodeList = new ArrayList();
-          // only files and folders are supported at the moment
-        if((node.nodeType == NodeType.folder)
-                ||(node.nodeType == NodeType.sectionFile)){
-            //System.err.println("Changing the whole folder");
-            TreeviewUtils.getNodes(node, nodeList, NodeType.file);
+        // get only the relevant nodes
+        for(TreeNodeSPDX node : selectedNodes){
+              // only files and folders are supported at the moment
+            if((node.nodeType == NodeType.folder)
+                    ||(node.nodeType == NodeType.sectionFile)){
+                //System.err.println("Changing the whole folder");
+                TreeviewUtils.getNodes(node, nodeList, NodeType.file);
+            }
+            // only files are supported at the moment
+            if(node.nodeType == NodeType.file){
+                nodeList.add(node);
+            }
         }
-        // only files are supported at the moment
-        if(node.nodeType == NodeType.file){
-            nodeList.add(node);
-        }
-        
-        // update the licenses
+        // now update the licenses
         // create the dummy-holder, necessary to grab the last indexed FileInfo
         FileInfo temp = new FileInfo(null);
         // iterate through the provided list
@@ -1375,26 +1378,27 @@ public class StudioUI4 extends javax.swing.JFrame {
                         value + "");
             
             temp.spdx.refresh();
+            TreeviewUtils.spdxUpdateAllNodes(temp.spdx);
 //             second round of iterations, re-use the treeview, update objects
-            for(TreeNodeSPDX newNode : nodeList){
-                 // get the object
-                FileInfo fileInfo = (FileInfo) newNode.getUserObject();       
-                // now update the value on our treeview
-                String location = fileInfo.getRelativeLocation();
-                FileInfo newInfo = fileInfo.spdx.findRelative(location);
-                // no need to continue if the result is null
-                if(newInfo == null){
-                    System.err.println("SU1228: Didn't found the relative FileInfo");
-                    return;
-                }
-
-                // now update the node on the tree view
-                newNode.setUserObject(newInfo);
-                newNode.setTitle(newInfo.toString());
-                newNode.update();
-                log.write(is.COMPLETED, "All done, marked file(s) as %1",
-                        value + "");
-            }
+//            for(TreeNodeSPDX newNode : nodeList){
+//                 // get the object
+//                FileInfo fileInfo = (FileInfo) newNode.getUserObject();       
+//                // now update the value on our treeview
+//                String location = fileInfo.getRelativeLocation();
+//                FileInfo newInfo = fileInfo.spdx.findRelative(location);
+//                // no need to continue if the result is null
+//                if(newInfo == null){
+//                    System.err.println("SU1228: Didn't found the relative FileInfo");
+//                    return;
+//                }
+//
+//                // now update the node on the tree view
+//                newNode.setUserObject(newInfo);
+//                newNode.setTitle(newInfo.toString());
+//                newNode.update();
+//                log.write(is.COMPLETED, "All done, marked file(s) as %1",
+//                        value + "");
+//            }
             
             // update the index values
             core.popularity.doIndex();

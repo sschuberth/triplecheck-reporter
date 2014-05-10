@@ -23,7 +23,6 @@ package spdxlib;
 
 import java.io.File;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 
@@ -78,7 +77,7 @@ public class TagValueCollection {
      * @param spdx 
      */
     public void read(String[] lines, SPDXfile spdx){
-       
+        System.err.println("TVC80 - Reading SPDX: " + spdx.file.getName());
         // break this into individual lines
         //String[] lines = fullText.split("\n");
         linesOfCode = lines.length;

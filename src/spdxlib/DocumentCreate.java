@@ -49,15 +49,12 @@ public class DocumentCreate {
             // official field names
             PackageName = null,
             PackageLicenseConcluded = "NOASSERTION",
-            packageDownloadLocation = "NOASSERTION",
-            // other things
-            output2 // where we store the content written to a text file
-            ;
+            packageDownloadLocation = "NOASSERTION";
     
-    
-    
+    // has this SPDX document been correctly generated?
     boolean isOk = false;
    
+    // which files will be indexed?
     public ArrayList<File> files;
     
     public boolean isProcessing;

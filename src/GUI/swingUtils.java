@@ -105,6 +105,7 @@ public class swingUtils {
     /**
      * Get the currently selected node from a given tree
      * @param tree The tree box on the left side of the default UI
+     * @param filter    The NodeTypes that we are expecting
      * @return The currently selected node or null if nothing selected
      */
     public static ArrayList<TreeNodeSPDX> getSelectedNodes(JTree tree){
@@ -116,10 +117,11 @@ public class swingUtils {
         try{
             for(TreePath path : tree.getSelectionPaths()){
                 TreeNodeSPDX node = (TreeNodeSPDX) path.getLastPathComponent();
+                //if(filter != null && node.nodeType == filter)
                 result.add(node);
             }
         }catch (Exception e){
-            //e.printStackTrace();
+            e.printStackTrace();
             return null;
         }
     return result;
