@@ -102,7 +102,7 @@ public class home extends Plugin{
         
         String quickHelp = ""//html.br
                 + "<div style=\"text-align: right;\">Don't know how to start?\n" +
-                "Look in our <a href=\"https://www.youtube.com/watch?v=nljP6hC8xbc\" target=\"_blank\">quick\n" +
+                "Watch our <a href=\"https://www.youtube.com/watch?v=nljP6hC8xbc\" target=\"_blank\">quick\n" +
                 "guide</a>&nbsp&nbsp</div>"
                 ;
         

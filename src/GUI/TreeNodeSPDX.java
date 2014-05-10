@@ -110,7 +110,6 @@ public class TreeNodeSPDX extends DefaultMutableTreeNode{
     
      /**
       * Given a specific tree node, generate a unique ID
-      * @param node the node from where start to calculate the ID string
       * @return a unique ID based on the parent nodes of this entry
       */
      public String getUID(){

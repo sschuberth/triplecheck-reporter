@@ -49,19 +49,18 @@ public class ExtensionCreate {
     public void automatically(String extension, boolean overWrite) {
         File template = new File(core.getExtensionsFolder(), "template.java");
         // preflight check
-        String safeExt =
-                utils.text.findRegEx( extension,"[a-zA-Z]+$", 0);
+//        String safeExt =
+//                utils.text.findRegEx( extension,"[a-zA-Z]+$", 0);
         // if the extension was just numbers, we need to make this compatible
-        if(safeExt.isEmpty()){
-            safeExt = "ext" 
+//        if(safeExt.isEmpty()){
+        String safeExt = "ext_" 
                    + utils.text.findRegEx( extension,"[a-zA-Z0-9_]+$", 0);
-        }
+//        }
         
         File newExtension = new File(core.getExtensionsUnknown(), 
                 safeExt + ".java");
         // don't overwrite already existent unknown files
         if(overWrite == false){
-           
             // don't add a registered extension
             ArrayList<File> existingFiles = utils.files.findFiles(core.getExtensionsFolder());
             for(File thisFile : existingFiles){

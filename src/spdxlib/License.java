@@ -64,6 +64,7 @@ public class License {
     /**
      * An HTML pretty version of the text from this license. This method
      * is used when listing licenses
+     * @param title   The formal title of this license
      * @param url     If necessary for outside browsing
      * @return          HTML code for display to end-user
      */
