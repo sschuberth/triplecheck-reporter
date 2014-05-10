@@ -13,6 +13,10 @@
 package spdxlib;
 
 import definitions.is;
+import java.util.ArrayList;
+import java.util.Arrays;
+import static java.util.Collections.list;
+import java.util.List;
 
 public class TagValue {
     public String
@@ -137,19 +141,15 @@ public class TagValue {
     
        /**
      * Changes the value of an existing tag and writes back to disk the changes
-     * @param newValue 
+     * @param newValue      Just the value part of the tag, no break lines here
      */
-    public void writeNewValue(String newValue) {
-        
-        //String newRaw = raw.replace(value + "\n", newValue);
-        
+    public void overwriteValue(String newValue) {
         this.value = newValue;
-        spdx.lines1.set(linePosition, newValue);
-        //spdx.changeTag(this, oldRaw, newRaw);
-        //spdx.lines.set(linePosition = newRaw;
-        
-       // very slow on multiple write operations 
-       // spdx.commitChanges();
+        // get the original value
+        String[] lines = spdx.lines1.get(linePosition);
+        lines[0] = newValue;
+        // write it back
+        spdx.lines1.set(linePosition, lines);
     }
     
 }

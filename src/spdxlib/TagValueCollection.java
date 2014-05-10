@@ -23,6 +23,8 @@ package spdxlib;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 
 public class TagValueCollection {
@@ -48,6 +50,22 @@ public class TagValueCollection {
         }
     }
     
+    
+    /**
+     * Read the tags inside a document
+     * @param lines
+     * @param spdx 
+     */
+    public void read(ArrayList<String[]>  lines, SPDXfile spdx){
+        List<String> output = new ArrayList<String>();
+        // first, add the original values
+        for(String[] lineArray : lines){
+            output.add(lineArray[0]);
+        }
+       // second, convert back to static array and process
+        String[] processLines = output.toArray(new String[0]);
+        read(processLines, spdx);
+    }
     
    
     /**

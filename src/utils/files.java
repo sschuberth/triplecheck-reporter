@@ -63,13 +63,14 @@ public class files {
    * @return        an array with the text lines
    * @date 2014-05-09
    */
-  public static ArrayList<String> readAsStringArray(File file){
-      ArrayList<String> result = new ArrayList();
+  public static ArrayList<String[]> readAsStringArray(File file){
+      ArrayList<String[]> result = new ArrayList();
       try {
           BufferedReader reader = new BufferedReader(new FileReader(file));
-          String line;
+          String temp;
           // iterate through all lines
-            while ((line = reader.readLine()) != null) {
+            while ((temp = reader.readLine()) != null) {
+                String[] line = new String[]{temp};
                 // add the line
                 result.add(line);
             }
@@ -77,6 +78,7 @@ public class files {
       } catch (IOException ex) {
           Logger.getLogger(files.class.getName()).log(Level.SEVERE, null, ex);
       }
+      //System.out.println("files81 - read string array with " + result.size() + " elements");
       return result;
   }
   
@@ -408,11 +410,13 @@ public static long folderSize(File where){
 
 
    public static boolean SaveLargeStringToFile(File inputFile, 
-           ArrayList<String> lines){
+           ArrayList<String[]> listLines){
         try {
             BufferedWriter out = new BufferedWriter(new FileWriter(inputFile));
-            for(String line : lines){
-                out.write(line + "\n");
+            for(String[] lines : listLines){
+                for(String line : lines){
+                    out.write(line + "\n");
+                }
             }
             out.close();
             }

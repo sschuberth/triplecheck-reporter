@@ -20,7 +20,9 @@ import definitions.id;
 import definitions.is;
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import main.core;
 import script.FileExtension;
@@ -58,7 +60,7 @@ public final class SPDXfile {
    public String 
             rawText; // text for the SPDX file
    
-   ArrayList<String> 
+   ArrayList<String[]> 
            lines1; // where we keep all the lines that were separated
    
    
@@ -158,7 +160,7 @@ public final class SPDXfile {
         lines1 = utils.files.readAsStringArray(file);
                 //rawText.split("\n");
         // read all available data from the given file
-        data.read(lines1.toArray(new String[0]), this);
+        data.read(lines1, this);
         // process all this information into meaningful data
         processData();
     }
@@ -580,7 +582,21 @@ public final class SPDXfile {
         // remove break lines, otherwise it adds a redundant line afterwards
         newText = newText.replace("\n", "");
         // replace the old line with the new contents
-        lines1.set(tag.linePosition, newText);
+        //lines1.set(tag.linePosition, newText);
+        
+        
+        // get the original value
+        String[] lines = lines1.get(tag.linePosition);
+        // create the array iterator
+        List<String> output = new ArrayList<String>();
+        // first, add the original values
+        output.addAll(Arrays.asList(lines));
+        // second, add the new value
+        output.set(0, newText);
+        // third, convert back to static array and place back in our list
+        lines = output.toArray(new String[0]);
+        lines1.set(tag.linePosition, lines);
+        
         return tag;
     }
     
@@ -588,16 +604,8 @@ public final class SPDXfile {
      * After we are finished making changes, we can save the text file
      */
     public void commitChanges(){
-        // save everything to disk
-//        String modifiedText = "";
-//        for(String line : lines){
-//            modifiedText += line + "\n";
-//        }
-//        rawText = modifiedText;
-        // write file on disk
-        
-        files.SaveLargeStringToFile(file, lines1);
-        //files.SaveStringToFile(file, rawText);
+       // write file on disk
+       files.SaveLargeStringToFile(file, lines1);
     }
 
     /**
@@ -607,7 +615,18 @@ public final class SPDXfile {
      * @param text the text to be included
      */
     public void addTag(int linePosition, String text) {
-        lines1.add(linePosition, text);
+        // get the original value
+        String[] lines = lines1.get(linePosition);
+        // create the array iterator
+        List<String> output = new ArrayList<String>();
+        // first, add the original values
+        output.addAll(Arrays.asList(lines));
+        // second, add the new value
+        output.add(text);
+        // third, convert back to static array and place back in our list
+        lines = output.toArray(new String[0]);
+        lines1.set(linePosition, lines);
+        
         
 //        for(FileInfo fileInfo : fileSection.files){
 //            if(fileInfo.tagFileName.linePosition > linePosition){

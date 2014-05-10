@@ -491,16 +491,15 @@ public class FileInfo {
         
         // shall we overwrite the old value?
         if(tag != null){
-            tag.writeNewValue(value);
+            tag.overwriteValue(value);
         }else{
             // add a new tag
             // we want to add the license declaration right after the name tag
-            int pos = tagFileName.linePosition + 1;
+            int pos = tagFileName.linePosition;
             // knowing where to place the text, we add up this new tag
             spdx.addTag(pos, key+": " + value);
-            // now write back the changes
-            // very slow on multiple write operations
-            //spdx.commitChanges();
+            // an spdx.commit() needs to be launched after this operation
+           
         }
     }
 

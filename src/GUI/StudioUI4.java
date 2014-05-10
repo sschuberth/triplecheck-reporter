@@ -1300,6 +1300,7 @@ public class StudioUI4 extends javax.swing.JFrame {
         // create the temp-holder, necessary to grab the first FileInfo
         FileInfo tempFileInfo = (FileInfo) nodeList.get(0).getUserObject();
         SPDXfile spdx = tempFileInfo.getSPDX();
+        //System.out.println("Writing to " + nodeList.size() + " nodes");
         // iterate through the provided list
         for(TreeNodeSPDX newNode : nodeList){
             // we only want files around here
@@ -1314,6 +1315,7 @@ public class StudioUI4 extends javax.swing.JFrame {
             log.write(is.COMPLETED, "Applied license %1 to %2",
                     selectedLicense, fileInfo.getName());
         }
+        
             // mandatory refresh on the SPDX object in our memory
             spdx.commitChanges();
             spdx.refresh();
@@ -1348,12 +1350,13 @@ public class StudioUI4 extends javax.swing.JFrame {
      */
     void licenseMarkSelectedNodes(String selectedLicense) {
         // get the list of nodes that were selected
-         ArrayList<TreeNodeSPDX> nodeSelected = swingUtils.getSelectedNodes(tree);
+        ArrayList<TreeNodeSPDX> nodeSelected = swingUtils.getSelectedNodes(tree);
+        // create a list of nodes to process
+        ArrayList<TreeNodeSPDX> nodeList = new ArrayList();
+
         // go through each one of these selected nodes
         for(TreeNodeSPDX node : nodeSelected){
-            // create a list of nodes to process
-            ArrayList<TreeNodeSPDX> nodeList = new ArrayList();
-            // only files and folders are supported at the moment
+                        // only files and folders are supported at the moment
             if((node.nodeType == NodeType.folder)
                     ||(node.nodeType == NodeType.sectionFile)){
                 //System.err.println("Changing the whole folder");
@@ -1363,9 +1366,9 @@ public class StudioUI4 extends javax.swing.JFrame {
             if(node.nodeType == NodeType.file){
                 nodeList.add(node);
             }
+        }
             // update the licenses
             licenseUpdateNodes(nodeList, selectedLicense);
-        }
     }
 
     /**
