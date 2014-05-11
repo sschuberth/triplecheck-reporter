@@ -159,6 +159,8 @@ public final class LicensePopularity {
 
      /**
      * Provides a summary of the licenses found in the project
+//     * @param title     Title for the URL link
+//     * @param link      Link to where points. If empty, points to license ID
      * @return 
      */
     public String getPopularitySummary(){
@@ -179,8 +181,8 @@ public final class LicensePopularity {
               
               // this license is valid, add it up
               temp +=  "(" + popValue + ") "
-                      + license.getPrettyText("", licenseId)
-                      
+                      //+ license.getPrettyText("", licenseId)
+                      + license.getPrettyText("Choose", licenseId);
                       ;
               counter++;
               // place a limit on 10 licenses on the list
@@ -190,7 +192,7 @@ public final class LicensePopularity {
             }
             // should we list this value on the first search ranking?
             if(counter > 0){
-                result += html.h3("Licensing terms adopted")
+                result += html.h3("Licensing terms being used")
                         + temp;
             }
         }

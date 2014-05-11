@@ -73,6 +73,7 @@ public class core {
     public static ReportsControl
             reports = new ReportsControl();
    
+    // find the licenses available on disk
     public static LicenseControl
             licenses = new LicenseControl();
     

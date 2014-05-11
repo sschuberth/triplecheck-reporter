@@ -7,13 +7,8 @@ package main;
 import GUI.StudioUI4;
 import definitions.is;
 import java.io.File;
-import java.io.IOException;
-import java.net.URL;
-import java.net.URLConnection;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import script.log;
+import spdxlib.LicenseControl;
 
 /**
  *
@@ -37,6 +32,7 @@ public class start {
         actions.addTriggers();
         // now add the known file extensions
         core.extensions.addExtensions();
+        
         // do the startup
         doStartup();
         
@@ -59,7 +55,6 @@ public class start {
     private static void doStartup() {
         // find all SPDX documents that we have available
         core.refreshSPDX();
-        
         // now mark our presence
         String text = utils.internet.getTextFile
             ("http://triplecheck.de/settings.java");

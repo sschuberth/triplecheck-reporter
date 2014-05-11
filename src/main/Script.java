@@ -228,7 +228,7 @@ public class Script {
             } catch (Exception e){
                 script.log.write(is.ERROR, "Error while interpreting %1, the "
                         + "error message is: %2"
-                        , scriptFile.getAbsolutePath(), e.getLocalizedMessage());
+                        , scriptFile.getAbsolutePath(), e.getMessage());
                 //e.printStackTrace();
             }
             // all done.

@@ -36,12 +36,13 @@ public class LicenseControl {
     }
     
         
-    public static HashMap<String, License>
+    private static final HashMap<String, License>
             list = new HashMap();
     
     private boolean hasNotProcessed = true;
     
     public boolean has(String licenseId) {
+        doCheck();
         return list.containsKey(licenseId);
     }
 
@@ -54,7 +55,18 @@ public class LicenseControl {
         list.put(license.getId(), license);
     }
 
+    /**
+     * Have the licenses already been indexed before?
+     */
+    private void doCheck(){
+//        if(hasNotProcessed){
+//            // index them please
+//            find();
+//        }
+    }
+    
     public HashMap<String, License> getList() {
+        doCheck();
         return list;
     }
     
@@ -62,6 +74,9 @@ public class LicenseControl {
      * Add up all the extensions that we have available on disk
      */
     public void find() {
+        if(hasNotProcessed == false){
+            return;
+        }
         // clear up the list to avoid duplicates
         File folder = core.getLicensesFolder();
         ArrayList<File> files = utils.files.findFilesFiltered(folder, ".java", 2);
@@ -70,6 +85,7 @@ public class LicenseControl {
         }
         // output some statistics about the number of extensions registered
         log.write(is.INFO, "Licenses recognized: %1", "" + files.size());
+        System.err.println("LC85 - Found licenses: " + files.size() + "");
         //TODO we are still listing the template class as a file type.
         hasNotProcessed = false;
     }

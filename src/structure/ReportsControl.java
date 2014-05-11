@@ -18,7 +18,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import main.actions;
 import script.log;
 import spdxlib.SPDXfile;
 import utils.db.MapDB_SPDX;
