@@ -339,7 +339,10 @@ public class show extends Plugin{
         
         
         // get the SPDX file from the root node
-        SPDXfile spdx = new SPDXfile(file);
+        //System.err.println("DBG-S342 Reading SPDX");
+        //SPDXfile spdx = new SPDXfile(file);
+        SPDXfile spdx = core.reports.get(file);
+        
         // compute some of our useful statistics about the SPDX document
         int counterLicensesDeclared = spdx.getStatsLicensesDeclared();
         int counterFiles = spdx.fileSection.files.size();
@@ -565,6 +568,7 @@ public class show extends Plugin{
         
         
         // start the processing
+        System.err.println("DBG-S569 Reading SPDX");
         SPDXfile spdx = new SPDXfile(file);
         // create the place holder for the results
         ArrayList<FileInfo> list = new ArrayList();

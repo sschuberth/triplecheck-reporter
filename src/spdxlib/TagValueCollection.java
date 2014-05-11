@@ -77,7 +77,7 @@ public class TagValueCollection {
      * @param spdx 
      */
     public void read(String[] lines, SPDXfile spdx){
-        System.err.println("TVC80 - Reading SPDX: " + spdx.file.getName());
+        System.err.println("TVC80-old - Reading SPDX: " + spdx.file.getName());
         // break this into individual lines
         //String[] lines = fullText.split("\n");
         linesOfCode = lines.length;

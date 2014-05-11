@@ -73,7 +73,13 @@ public final class ReportsControl {
             if(filePath.contains(".svn")){
                 continue;
             }
+            
             SPDXfile spdxFile;
+//            = get(file);
+//            if(spdxFile != null){
+//                continue;
+//            }
+                System.out.println("DBG-RC77 Reading SPDX");
                 spdxFile = new SPDXfile(file.getCanonicalFile());
                 thisList.add(spdxFile);
                 counter++;
@@ -115,16 +121,19 @@ public final class ReportsControl {
     /**
      * When provided a given File, it will return the associated report
      * @param what      An SPDX file on disk
-     * @return      An SPDX object when or null when not found
+     * @return          An SPDX object when or null when not found
      */
     public SPDXfile get(File what){
         String path = what.getAbsolutePath();
         for(SPDXfile spdx : list){
                 if(spdx.file.getAbsolutePath().equals(path)){
-                    spdx.refresh();
+                    // don't know why this is called
+                    //spdx.refresh();
                     return spdx;
                 }
-        }    
+        }
+        System.err.println("DBG-RC129 - Returning null to SPDX: "
+            + what.getAbsolutePath());
         return null;
     }
     

@@ -608,7 +608,9 @@ public class TreeviewUtils {
             return;
         }
         // now readLines the SPDX document
-        SPDXfile spdx = new SPDXfile(spdxFile);
+        //System.err.println("DBG-TU611 Reading SPDX");
+        //SPDXfile spdx = new SPDXfile(spdxFile);
+        SPDXfile spdx = core.reports.get(spdxFile);
         // basic parts were done, now add up the needed details
         addPeople(spdx, node);
         addFiles(spdx, node);
