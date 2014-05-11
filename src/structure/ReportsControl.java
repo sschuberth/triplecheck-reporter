@@ -67,36 +67,39 @@ public final class ReportsControl {
         File folder = new File(baseFolder, is.reports);
         // only find the SPDX documents with .SPDX extension
         ArrayList<File> files = utils.files.findFilesFiltered(folder, ".spdx", 25);
-        //ArrayList<SPDXfile> thisList = new ArrayList();
         int counter = 0;
-        try {
-            for(File file: files){
-                String filePath = file.getCanonicalPath();
-                // ignore SVN folders of any kind
-                if(filePath.contains(".svn")){
-                    continue;
-                }
-                // increase the counter
-                counter++;
-                
-                // have we indexed this file in the past?
-                if(list.map().containsKey(file)){
-                    System.err.println("RC82 - Using cached version of: " 
-                            + file.getAbsolutePath());
-                    continue;
-                }
-                
-                System.err.println("DBG-RC64 Reading SPDX");
-                // read the file
-                readSPDXfile(file);
+        // go through all the files that were found
+        for(File file: files){
+            String filePath = file.getAbsolutePath();
+            // ignore SVN folders of any kind
+            if(filePath.contains(".svn")){
+                continue;
             }
+            // increase the counter
+            counter++;
+
+            // have we indexed this file in the past?
+            if(list.map().containsKey(file)){
+                // we have a match, but was the file on disk modified?
+                // get the file that is cached
+                SPDXfile spdx = list.map().get(file);
+                // are the file sizes equal?
+                if(spdx.file.length() == file.length()){
+                    // no need to index, it is the same file. Use the cache.
+                    System.err.println("RC82 - Using cached version of: " 
+                        + file.getAbsolutePath());
+                    continue;
+                }
+            }
+            // file is not indexed (or had changes on disk), load it up
+            System.err.println("DBG-RC64 Adding SPDX: " + file.getName());
+            log.write(is.OPENING, "Adding SPDX: %1", file.getName());
+            // read the file
+            readSPDXfile(file);
+        }
         list.commit();
         log.write(is.INFO, "Found and processed %1 reports", 
         counter + "");
-        } catch (IOException ex) {
-            Logger.getLogger(actions.class.getName()).log(Level.SEVERE, null, ex);
-            System.exit(-100);
-        }
         //return thisList;
     }
 

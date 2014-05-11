@@ -109,14 +109,7 @@ public class controller {
      * @return The HTML code that will be presented to the end-user
      */
     public static String process(WebRequest newRequest) {
-        // if the user clicked on a tree node, we know what to do
-//        if(
-//           (newRequest.requestOrigin == RequestOrigin.GUI_tree)
-//          || (newRequest.requestOrigin == RequestOrigin.GUI)
-//                
-//                ){
-        
-        
+        // preflight check
         if(newRequest == null){
             log.write(is.ERROR, "CON001 - Received a null request");
             return "";
@@ -133,9 +126,13 @@ public class controller {
             newRequest.BaseFolder = newRequest.scriptFile.getParentFile();
             newRequest.scriptFolder = newRequest.BaseFolder;
             
+            // remove the details computer details from the log
+            String relativePath = newRequest.scriptFile.getAbsolutePath()
+                    .replace(core.getWorkFolder().getAbsolutePath(), "");
+            
             log.write(is.OPENING, "Web request for \"%1\" in %2", 
                     newRequest.scriptMethod,
-                    newRequest.scriptFile.getAbsolutePath());
+                    relativePath);
         
             // do a unique id for this request
             long randomTime = System.currentTimeMillis();

@@ -115,7 +115,7 @@ public class log {
      * Gets the current number of indexed log messages
      * @return number of messages indexed
      */
-    public static long getCounter() {
+    public static int getCounter() {
         return list.size();
     }
 

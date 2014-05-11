@@ -6,14 +6,24 @@
  * LicenseName: EUPL-1.1-without-appendix
  * FileName: misc.java  
  * FileType: SOURCE
- * FileCopyrightText: <text> Copyright 2014 Nuno Brito, TripleCheck </text>
+ * FileCopyrightText: <text> 
+    Copyright 2014 Nuno Brito, TripleCheck
+    Copyright 2013 Zig (http://mindprod.com/jgloss/compiletimestamp.html)
+    Copyright (c) 2008-2014 Mkyong.com, all rights reserved.
+</text>
  * FileComment: <text> Misc. methods </text> 
  */
 
 package utils;
 
+import java.io.IOException;
+import java.net.URL;
+import java.net.URLConnection;
+import java.text.DateFormat;
 import java.text.DecimalFormat;
+import java.text.SimpleDateFormat;
 import java.util.*;
+import main.start;
 
 
 /**
@@ -43,7 +53,6 @@ public class misc {
      * @param unsortMap
      * @return      A sorted map according to the highest value
      * @origin http://www.mkyong.com/java/how-to-sort-a-map-in-java/
-     * @copyright (c) 2008-2014 Mkyong.com, all rights reserved.
      * @license CC-BY-SA-3.0
      * @retrieved 2014-04-24 by Nuno Brito
      */
@@ -72,4 +81,44 @@ public class misc {
 	}
     
     
+   /**
+    * Gets the date when a given class was created in ISO format
+    * @param aClass     the target class
+    * @return           a string containing the creation date
+    */ 
+   public static String getDate(Class aClass){
+       String result = "";
+        try {
+            Date date = getCompileTimeStamp(start.class);
+            DateFormat df = new SimpleDateFormat("yyyy-MM-dd");
+            result = "from " + df.format(date);
+        } catch (IOException ex) {
+        }
+       
+       return result;
+   } 
+    
+/**
+ * get date a class was compiled by looking at the corresponding class file in the jar.
+ * @origin http://mindprod.com/jgloss/compiletimestamp.html
+ * @retrieved in 2013-11-17 by Nuno Brito
+     * @param cls   Class that we want to evaluate the time stamp
+     * @return      The time/date result
+     * @throws java.io.IOException
+ */
+public static Date getCompileTimeStamp( Class<?> cls ) throws IOException
+{
+   ClassLoader loader = cls.getClassLoader();
+   String filename = cls.getName().replace('.', '/') + ".class";
+   // get the corresponding class file as a Resource.
+   URL resource=( loader!=null ) ?
+                loader.getResource( filename ) :
+                ClassLoader.getSystemResource( filename );
+   URLConnection connection = resource.openConnection();
+   // Note, we are using Connection.getLastModified not File.lastModifed.
+   // This will then work both or members of jars or standalone class files.
+   long time = connection.getLastModified();
+   return( time != 0L ) ? new Date( time ) : null;
+}
+
 }

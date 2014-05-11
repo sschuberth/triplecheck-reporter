@@ -6,8 +6,11 @@
  * LicenseName: EUPL-1.1-without-appendix
  * FileName: StartupScreen.java  
  * FileType: SOURCE
- * FileCopyrightText: <text> Copyright 2013 Nuno Brito, TripleCheck </text>
- * FileComment: <text> Startup screen to permit loading the SPDX files fro our
+ * FileCopyrightText: <text> 
+    Copyright 2013 Nuno Brito, TripleCheck 
+    Copyright (c) 2013 Alvin Alexander
+</text>
+ * FileComment: <text> Startup screen to permit loading the SPDX files for our
  * library. </text> 
  */
 
@@ -21,18 +24,18 @@ import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 import main.core;
+import script.log;
 
 /**
  * Parts of this code were based on the blog post from Alvin Alexander
  * at http://alvinalexander.com/java/java-splash-screen-with-progress-bar-1
- * Copyright (c) 2013 Alvin Alexander
  * 
  * @author Nuno Brito, 30th of April 2014 in Amrum, Germany.
  */
 public class StartupScreen extends javax.swing.JFrame {
 
     final StartupScreen screen = this;
-    
+    final String counterValue = "startupcounter";
     /**
      * Creates new form StartupScreen
      */
@@ -176,18 +179,17 @@ public class StartupScreen extends javax.swing.JFrame {
     private javax.swing.JProgressBar progressBar;
     // End of variables declaration//GEN-END:variables
 
-    public void setProgress(int progress){
-    final int theProgress = progress;
-    SwingUtilities.invokeLater(new Runnable() {
-      @Override
-      public void run() {
-        progressBar.setValue(theProgress);
-      }
-    });
+    private void setProgress(int progress){
+        final int theProgress = progress;
+        SwingUtilities.invokeLater(new Runnable() {
+          @Override
+          public void run() {
+            progressBar.setValue(theProgress);
+          }
+        });
   }
     
-    public void setProgress(String message, int progress)
-  {
+   private void setProgress(String message, int progress){
     final int theProgress = progress;
     final String theMessage = message;
     setProgress(progress);
@@ -200,7 +202,7 @@ public class StartupScreen extends javax.swing.JFrame {
     });
   }
     
-    private void setMessage(String message){
+    public void setMessage(String message){
     if (message==null)
     {
       message = "";
@@ -213,4 +215,54 @@ public class StartupScreen extends javax.swing.JFrame {
     progressBar.setString(message);
   }
 
+    
+    /**
+     * Makes the startup screen visible with an update of the messages
+     * being displayed to the end user. It was getting difficult to
+     * make the progress bar increase as we get closer to load everything.
+     * The first idea was defining percentages manually but ended doing
+     * this in a dynamic manner to follow more closely the reality of loading.
+     */
+    public void kickoff(){
+        // make the window visible
+        setVisible(true);
+
+        // initialize the counters
+        int counter = 40;
+        
+        // do we have a value from a previous run?
+        if(core.settings.hasKey(counterValue)){
+            // get the older value
+            String lastValue = core.settings.read(counterValue);
+            // convert to integer
+            int newValue = Integer.parseInt(lastValue);
+            // is it worth to upgrade the counter?
+            if(newValue > counter){
+                // setup the new value
+                counter = newValue;
+//                System.err.println("ST238 - Adjusted value to " + newValue);
+            }
+        }
+        
+        // what is maximum that we are expecting for our progress bar?
+        progressBar.setMaximum(counter);
+        
+        // start a thread that will update itself with log messages
+        Thread thread = new Thread(){
+            @Override
+            public void run(){
+                    while(isVisible()){
+                        setMessage(log.getLatest().getMessageSimple());
+                        int count = log.getCounter();
+                        setProgress(count);
+                        utils.time.waitMs(150);
+                    }
+                    // store the real value for later reuse
+                    core.settings.write(counterValue, log.getCounter()+ "");
+//                    System.err.println("ST262 - Writing new value as " 
+//                            + log.getCounter() + "");
+                }};
+         thread.start();
+    }
+    
 }
