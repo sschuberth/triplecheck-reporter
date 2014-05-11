@@ -21,6 +21,7 @@ import java.util.logging.Logger;
 import main.actions;
 import script.log;
 import spdxlib.SPDXfile;
+import utils.db.MapDB_SPDX;
 
 
 /**
@@ -30,14 +31,17 @@ import spdxlib.SPDXfile;
  */
 public final class ReportsControl {
 
-    private ArrayList<SPDXfile> list = new ArrayList<SPDXfile>();
+    //private ArrayList<SPDXfile> list1 = new ArrayList<SPDXfile>();
+    
+    private final MapDB_SPDX list = new utils.db.MapDB_SPDX(false);
     
     /**
      * Instantiate our default constructor for this class
      */
     public ReportsControl(){
         // if no reports are listed, get them
-        if(list.isEmpty()){
+        //TODO we need to check for changes that happened on disk
+        if(list.map().isEmpty()){
             index();
         }
     }
@@ -47,9 +51,7 @@ public final class ReportsControl {
      * Send out a warning that our SPDX's have been modified somehow
      */
     public void index(){
-        // find all SPDX files inside our archive
-        File baseFolder = new File(".");
-        list = findSPDX(new File(baseFolder, is.reports));
+        findSPDX();
     }
     
     
@@ -60,45 +62,42 @@ public final class ReportsControl {
      * @param folder The folder location where we will look for SPDX files
      * @return 
      */
-    private ArrayList<SPDXfile> findSPDX(File folder){
+    private void findSPDX(){
+        File baseFolder = new File(".");
+        File folder = new File(baseFolder, is.reports);
         // only find the SPDX documents with .SPDX extension
         ArrayList<File> files = utils.files.findFilesFiltered(folder, ".spdx", 25);
-        ArrayList<SPDXfile> thisList = new ArrayList();
+        //ArrayList<SPDXfile> thisList = new ArrayList();
         int counter = 0;
         try {
             for(File file: files){
-            
-            String filePath = file.getCanonicalPath();
-            // ignore SVN folders of any kind
-            if(filePath.contains(".svn")){
-                continue;
-            }
-            
-            SPDXfile spdxFile;
-//            = get(file);
-//            if(spdxFile != null){
-//                continue;
-//            }
-                System.out.println("DBG-RC77 Reading SPDX");
-                spdxFile = new SPDXfile(file.getCanonicalFile());
-                thisList.add(spdxFile);
+                String filePath = file.getCanonicalPath();
+                // ignore SVN folders of any kind
+                if(filePath.contains(".svn")){
+                    continue;
+                }
+                // increase the counter
                 counter++;
-        }
-             
-//            String pathName = folder.getCanonicalPath();
-//            
-//            pathName = "." 
-//                    + pathName.replace(core.getWorkFolder().getCanonicalPath(), "");
-            
-            log.write(is.INFO, "Found and processed %1 reports", 
-                counter + "");
                 
-            } catch (IOException ex) {
-                Logger.getLogger(actions.class.getName()).log(Level.SEVERE, null, ex);
-                System.exit(-100);
+                // have we indexed this file in the past?
+                if(list.map().containsKey(file)){
+                    System.err.println("RC82 - Using cached version of: " 
+                            + file.getAbsolutePath());
+                    continue;
+                }
+                
+                System.err.println("DBG-RC64 Reading SPDX");
+                // read the file
+                readSPDXfile(file);
             }
-       
-        return thisList;
+        list.commit();
+        log.write(is.INFO, "Found and processed %1 reports", 
+        counter + "");
+        } catch (IOException ex) {
+            Logger.getLogger(actions.class.getName()).log(Level.SEVERE, null, ex);
+            System.exit(-100);
+        }
+        //return thisList;
     }
 
     /**
@@ -108,9 +107,11 @@ public final class ReportsControl {
      * @return          have we succeeded in refreshing an SPDX or not?
      */
     public boolean refresh(String path) {
-        for(SPDXfile spdx : list){
+        for(SPDXfile spdx : list.map().values()){
             if(spdx.file.getAbsolutePath().equals(path)){
                 spdx.refresh();
+                // update the spdx on the database
+                list.map().put(spdx.file, spdx);
                 return true;
             }
         }
@@ -120,21 +121,24 @@ public final class ReportsControl {
 
     /**
      * When provided a given File, it will return the associated report
-     * @param what      An SPDX file on disk
+     * @param file      An SPDX file on disk
      * @return          An SPDX object when or null when not found
      */
-    public SPDXfile get(File what){
-        String path = what.getAbsolutePath();
-        for(SPDXfile spdx : list){
-                if(spdx.file.getAbsolutePath().equals(path)){
-                    // don't know why this is called
-                    //spdx.refresh();
-                    return spdx;
-                }
+    public SPDXfile get(File file){
+        //String path = what.getAbsolutePath();
+        SPDXfile result = list.map().get(file);
+        
+        // if there is no SPDX but the file exists, read it up
+        if(result == null && file.exists()){
+            // read the file
+            readSPDXfile(file);
+            // commit the changes
+            list.commit();
+            // return the object
+            result = list.map().get(file);
         }
-        System.err.println("DBG-RC129 - Returning null to SPDX: "
-            + what.getAbsolutePath());
-        return null;
+        // all done
+        return result;
     }
     
     /**
@@ -149,13 +153,13 @@ public final class ReportsControl {
             return false;
         }
         // get the SPDX object
-        SPDXfile spdx = get(file);
+        //SPDXfile spdx = get(file);
          // do the deletion
         file.delete();
         // remove from our list
-        if(spdx != null){
-            list.remove(spdx);
-        }
+        //if(spdx != null){
+        list.map().remove(file);
+        //}
         
         // retun success when the file no longer exists
         return file.exists() == false;
@@ -168,18 +172,23 @@ public final class ReportsControl {
     /**
      * Given an SPDX file, we will process and add it up to our list
      * @param file  the SPDX report on disk
+     * @param spdxFile
      * @return      null if something fails or else provides the new SPDX object
      */
-    public SPDXfile add(File file) {
-        SPDXfile spdxFile = null;
-        try {
-            spdxFile = new SPDXfile(file.getCanonicalFile());
-            list.add(spdxFile);
-        } catch (IOException ex) {
-            Logger.getLogger(ReportsControl.class.getName()).log(Level.SEVERE, null, ex);
-        }
+    public void add(File file, SPDXfile spdxFile) {
+//        SPDXfile spdxFile = null;
+         list.map().put(file, spdxFile);
+         list.commit();
+         
+//        try {
+//            spdxFile = new SPDXfile(file.getCanonicalFile());
+//            list.map().put(file, spdxFile);
+//            list.commit();
+//        } catch (IOException ex) {
+//            Logger.getLogger(ReportsControl.class.getName()).log(Level.SEVERE, null, ex);
+//        }
         // all done
-        return spdxFile;
+//        return spdxFile;
     }
 
     /**
@@ -187,8 +196,29 @@ public final class ReportsControl {
      * @return 
      */
     public ArrayList<SPDXfile> getList() {
-        return list;
+        // not an efficient method, just here for retro-compatibility
+        ArrayList<SPDXfile> result = new ArrayList();
+        for(SPDXfile spdx : list.map().values()){
+            result.add(spdx);
+        }
+        return result;
     }
+
+    /**
+     * Reads the SPDX file into memory
+     * @param file  A file on disk
+     */
+    private void readSPDXfile(File file) {
+        try {
+            // read the SPDX file
+            SPDXfile spdxFile = new SPDXfile(file.getCanonicalFile());
+            // place the file on our db
+            list.map().put(file, spdxFile);
+            // don't do commit, let the calling function do this
+        } catch (IOException ex) {
+            Logger.getLogger(ReportsControl.class.getName()).log(Level.SEVERE, null, ex);
+        }
+ }
 
     
 }

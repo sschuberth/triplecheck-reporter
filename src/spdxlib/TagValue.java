@@ -13,8 +13,9 @@
 package spdxlib;
 
 import definitions.is;
+import java.io.Serializable;
 
-public class TagValue {
+public class TagValue implements Serializable {
     public String
             title,
             raw; // the raw contents of this data

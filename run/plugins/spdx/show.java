@@ -566,10 +566,9 @@ public class show extends Plugin{
             return;
         }
         
-        
         // start the processing
-        System.err.println("DBG-S569 Reading SPDX");
-        SPDXfile spdx = new SPDXfile(file);
+        //System.err.println("DBG-S569 Reading SPDX");
+        SPDXfile spdx = core.reports.get(file);
         // create the place holder for the results
         ArrayList<FileInfo> list = new ArrayList();
         
@@ -605,8 +604,6 @@ public class show extends Plugin{
         for(FileInfo fileInfo : list){
             // create a column with our file information
             String[] column = new String[]{
-//                utils.text.shortText(fileInfo.toString(), 25),
-//                utils.text.shortText(fileInfo.tagFilePath.toString(), 30),
                 fileInfo.toString(),
                 html.link("Detail", "?x=specific&"
                         + param.spdx + "=" + spdxTarget + "&"

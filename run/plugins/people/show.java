@@ -69,7 +69,9 @@ public class show extends Plugin{
         }
         
         // get the SPDX file from the root node
-        SPDXfile spdx = new SPDXfile(file);
+        //System.err.println("DBG-S72 Reading SPDX");
+        SPDXfile spdx = core.reports.get(file);
+                //new SPDXfile(file);
        
         // get the filter, from where we will get our data to replace
         String filter = request.getParameter(param.filter);

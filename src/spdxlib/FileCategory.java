@@ -11,7 +11,9 @@
  */
 package spdxlib;
 
-public enum FileCategory {
+import java.io.Serializable;
+
+public enum FileCategory implements Serializable{
     TEXT,
     SOURCE,
     DOCUMENT,

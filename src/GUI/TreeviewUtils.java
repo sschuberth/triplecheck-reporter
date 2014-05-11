@@ -79,7 +79,7 @@ public class TreeviewUtils {
         // we now are sure that exists no such SPDX indexed yet 
         log.write(is.INSTALLING, "Adding new SPDX node");
         // add this new SPDX to our list
-        SPDXfile spdx = core.reports.add(file);
+        SPDXfile spdx = core.reports.get(file);
         // preflight check
         if(spdx == null){
             log.write(is.ERROR, "TU79 - SPDX object is null: %1", 

@@ -8,7 +8,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import utils.db.MapDB;
+import utils.db.MapDB_Indexer;
 
 /**
  *
@@ -414,10 +414,10 @@ public static long folderSize(File where){
     * what is permitted to hold in memory by the default Java heap memory
     * allocation
     * @param inputFile  A file on disk
-     * @param db
+     * @param db        A MapDB_Indexer object that we can use to read values
     * @return 
     */
-   public static boolean SaveLargeStringToFile(File inputFile, MapDB db){
+   public static boolean SaveLargeStringToFile(File inputFile, MapDB_Indexer db){
         try {
             BufferedWriter out = new BufferedWriter(new FileWriter(inputFile));
             for(String line : db.map().values()){

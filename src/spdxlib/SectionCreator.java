@@ -21,10 +21,11 @@
 
 package spdxlib;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 
-public class SectionCreator {
+public class SectionCreator implements Serializable{
 
    public TagValue
            SPDXVersion, // specification version that was used, mandatory, one

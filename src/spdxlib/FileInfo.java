@@ -15,13 +15,14 @@ package spdxlib;
 
 import definitions.is;
 import java.io.File;
+import java.io.Serializable;
 import java.util.ArrayList;
 import main.core;
 import script.FileExtension;
 import script.log;
 
 
-public class FileInfo {
+public class FileInfo implements Serializable {
 
     public TagValue 
             tagFileName, // full path and name of the file, mandatory, one

@@ -22,6 +22,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -36,7 +37,7 @@ import utils.files;
 import utils.html;
 import static utils.misc.sortByComparator;
 
-public final class SPDXfile {
+public final class SPDXfile implements Serializable{
     
     
     // The variables listed here follow the same order as

@@ -585,36 +585,7 @@ public class swingUtils {
    
  
     
-    /////////////////////////////////////////////////////////////////////////
-    // Things related to show the SPDX text on the text area
-    
-     /**
-     * Loads up the text for the currently selected package
-     */
-    private void showTextProductTabSPDX(JTree tree, JEditorPane text) {
-      // display the text from the original spdx document
-        TreeNodeSPDX node = swingUtils.getNodePackage(tree);
-        // preflight check
-        if(node == null){
-            return;
-        }
-        
-        // display our text file
-        SPDXfile spdx = (SPDXfile) node.getUserObject();
-        text.setEnabled(false);
-        text.setContentType("text/plain");
-        text.setText(spdx.rawText);
-        //text.setCaretPosition(0);
-        text.setEnabled(true);
-        text.setEditable(true);
-        
-       
-        
-        // all done
-        core.textWasModified = false;
-        log.write(is.COMMAND, Messages.TextWasLoaded);
-    }
-    
+
     
       /**
      * SSDEEP is an object that needs to be handled separately since it includes

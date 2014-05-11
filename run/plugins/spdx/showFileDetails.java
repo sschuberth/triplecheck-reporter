@@ -64,7 +64,7 @@ public class showFileDetails extends Plugin{
             return;
         }
         // start the processing
-        SPDXfile spdx = new SPDXfile(spdxFile);
+        SPDXfile spdx = core.reports.get(spdxFile);
         // go through all files inside the document
         for(FileInfo file : spdx.fileSection.files){
             // have we (finally) found a match?

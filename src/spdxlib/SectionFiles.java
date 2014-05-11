@@ -21,10 +21,11 @@
 
 package spdxlib;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 
-public class SectionFiles {
+public class SectionFiles implements Serializable {
 
      public ArrayList<FileInfo>
              files = new ArrayList();

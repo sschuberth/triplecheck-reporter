@@ -13,11 +13,12 @@
 
 package spdxlib;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 
 
-public class SectionPackage {
+public class SectionPackage implements Serializable {
 
     public TagValue
             name, // formal name of the package, mandatory, one

@@ -11,7 +11,9 @@
  */
 package spdxlib;
 
-public enum FileLanguage {
+import java.io.Serializable;
+
+public enum FileLanguage implements Serializable {
     
     // compiled
     JAVA,

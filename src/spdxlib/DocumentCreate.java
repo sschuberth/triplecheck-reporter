@@ -26,7 +26,7 @@ import script.FileExtension;
 import script.Trigger;
 import script.log;
 import ssdeep.ssdeep;
-import utils.db.MapDB;
+import utils.db.MapDB_Indexer;
 
 
 /**
@@ -117,7 +117,7 @@ public class DocumentCreate {
         // create the filename
         filename = filename + ".spdx";
         // create the database
-        MapDB db = new utils.db.MapDB("temp", true);
+        MapDB_Indexer db = new utils.db.MapDB_Indexer("temp", true);
         
         String header =  
                   addParagraph("SPDX Document Information")

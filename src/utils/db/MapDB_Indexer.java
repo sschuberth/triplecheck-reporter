@@ -4,10 +4,10 @@
  * Creator: Organization: TripleCheck (contact@triplecheck.de)
  * Created: 2014-04-10T14:28:12Z
  * LicenseName: EUPL-1.1-without-appendix 
- * FileName: MapDB.java  
+ * FileName: MapDB_Indexer.java  
  * FileType: SOURCE
  * FileCopyrightText: <text> Copyright 2014 Nuno Brito, TripleCheck </text>
- * FileComment: <text> Provides a database using MapDB </text> 
+ * FileComment: <text> Provides a database using MapDB_Indexer </text> 
  */
 
 package utils.db;
@@ -24,13 +24,13 @@ import org.mapdb.DBMaker;
  * @author Nuno Brito, 10th of April 2014 in Darmstadt, Germany.
  *  nuno.brito@triplecheck.de | http://nunobrito.eu
  */
-public final class MapDB {
+public final class MapDB_Indexer {
 
 // the database object            
 DB db;        
 
     // constructor
-    public MapDB(String title, boolean freshStart){
+    public MapDB_Indexer(String title, boolean freshStart){
         File file = new File(getFolder(), title);
         // shall we remove the file to permit a fresh start from scratch?
         if(freshStart && file.exists()){
@@ -50,7 +50,7 @@ DB db;
                .make();
         System.out.println("Using DB at " + file.getAbsolutePath());
         // compute some stats
-        ConcurrentNavigableMap<Integer, String> currentMap = map();
+        ConcurrentNavigableMap<Integer,String> currentMap = map();
         long counter = currentMap.size();
         System.out.println("DB has " + counter + " entries");
     }    
