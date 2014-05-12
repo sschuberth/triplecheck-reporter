@@ -30,7 +30,31 @@ public class is {
             contentText = "text/plain",
             methodDefault = "main",
             methodExecute = "x",
-            ID = "id";
+            ID = "id",
+            
+            // define immutable strings to speed up processing in scale
+            tagFileName = "FileName:",
+            tagFileType = "FileType:",
+            tagFileChecksum = "FileChecksum:",
+            tagFileChecksumSHA1 = "SHA1:",
+            tagFileChecksumSHA256 = "SHA256:",
+            tagFileChecksumMD5 = "MD5:",
+            tagFileChecksumSSDEEP = "SSDEEP:",
+            tagFileLOC = "FileLOC:",
+            tagFileSize = "FileSize:",
+            tagLicenseInfoInFile = "LicenseInfoInFile:",
+            tagFileCopyrightText = "FileCopyrightText:",
+
+            valueSource =  "SOURCE",
+            valueBinary =  "BINARY",
+            valueArchive = "ARCHIVE",
+            valueOther =   "OTHER",
+    
+            textFinal = "</text>";
+            
+      public final static int
+              intSource = valueSource.hashCode();
+            
     
     // related to processes
         public final static int

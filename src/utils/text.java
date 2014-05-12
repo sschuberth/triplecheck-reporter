@@ -1,6 +1,17 @@
-/*
- * This class provides some handy routines for filtering text and providing
- * a safe input for our applications.
+/**
+ * SPDXVersion: SPDX-1.1
+ * Creator: Person: Nuno Brito (nuno.brito@triplecheck.de)
+ * Creator: Organization: TripleCheck (http://triplecheck.de)
+ * Created: 2011-05-11T00:00:00Z
+ * LicenseName: EUPL-1.1-without-appendix
+ * FileName: sandbox.java
+ * FileType: SOURCE
+ * FileCopyrightText: <text> 
+ *  Copyright (c) 2014 Nuno Brito, TripleCheck
+ *  Copyright (c) 2012 Stephan - http://stackoverflow.com/questions/3805601/whats-the-quickest-way-to-compare-strings-in-java
+ * </text>
+ * FileComment: <text> This class provides some handy routines for filtering text and providing
+ * a safe input for our applications. </text>
  */
 
 package utils;
@@ -15,7 +26,8 @@ import java.util.regex.Pattern;
 /**
  *
  * @author Nuno Brito, 24th of July 2011 in Darmstadt, Germany
- * @modified in 8th December 2012 to match winbuilder needs.
+ * @modified in 8th of December 2012 to match winbuilder needs.
+ * @modified in 12th of May 2014 to fit triplecheck processing.
  */
 public class text {
 
@@ -405,5 +417,22 @@ public class text {
             return value + " " + text + "s";  
         }
     }
+    
+    
+    /**
+     * Compares two exact strings based on their hashes. This method is
+     * optimized for speed. Be sure to always use one of the strings as final
+     * defined earlier in advance.
+     * @origin: http://stackoverflow.com/questions/3805601/whats-the-quickest-way-to-compare-strings-in-java
+     * @author: Stephan - http://stackoverflow.com/users/748524/stephan
+     * @date 2014-05-12
+     * @param s1    Text string 1
+     * @param s2    Text string 2
+     * @return      Returns true is String 1 is equal to String 2, returns false otherwise
+     */
+    public static boolean equals(final String s1, final String s2) {
+        return s1 != null && s2 != null && s1.hashCode() == s2.hashCode()
+                && s1.equals(s2);
+}
     
 }

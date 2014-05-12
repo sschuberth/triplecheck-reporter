@@ -21,7 +21,6 @@ import definitions.is;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
-import java.io.IOException;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -147,9 +146,6 @@ public final class SPDXfile implements Serializable{
             return;
         }
          
-        // get the complete content of the file to a string file
-        lines1 = utils.files.readAsStringArray(file);
-                //rawText.split("\n");
         // readLines all available data from the given file
         readLines();
         // process all this information into meaningful data
@@ -163,6 +159,12 @@ public final class SPDXfile implements Serializable{
      * @param file SPDX text file with the data to be interpreted
     */
    private void processData(){
+       
+       if(lines1.size() > 6000){
+           log.write(is.INFO, "Processing %1 with %2 files, please wait..",
+                   this.file.getName() + "", lines1.size() + "");
+       }
+       
       // reading is done in sequential mode, not very fast but it is robust 
       creatorSection.SPDXVersion = readGeneric(Keyword.SPDXVersion);
       creatorSection.dataLicense = readGeneric(Keyword.DataLicense);
@@ -1137,39 +1139,53 @@ public final class SPDXfile implements Serializable{
      * all the tag/value entries that were found.
      */
     public void readLines(){
-        System.err.println("TVC80 - Reading SPDX: " + file.getName());
-
-              lines1 = new ArrayList();
+        System.err.println("TVC1143 - Reading SPDX: " + file.getName());
+//// get the complete content of the file to a string file
+//        lines1 = utils.files.readAsStringArray(file);
+        
+        lines1 = new ArrayList();
+        // iterate through all lines
+        int linePosition = 0;
+          
       try {
           BufferedReader reader = new BufferedReader(new FileReader(file));
           String temp;
-          // iterate through all lines
-          int linePosition = 0;
             while ((temp = reader.readLine()) != null) {
                 // read the tag/value information
+                
+             try {
                 readLine(temp, linePosition);
+                } catch (Exception ex) {
+                     System.err.println("Error when reading line: " + linePosition
+                  + " of file: " + file.getAbsolutePath());
+                     continue;
+                }
+                
                 // store the line as reference for later
-                String[] line = new String[]{temp};
-                lines1.add(line);
+//                String[] line = new String[]{temp};
+//                lines1.add(line);
                 // increase the line counter
                 linePosition++;
             }
           
-      } catch (IOException ex) {
+      } catch (Exception ex) {
           Logger.getLogger(files.class.getName()).log(Level.SEVERE, null, ex);
+          // this is a critical error, let's stop here to reflect
+          System.err.println("Error when reading line: " + linePosition
+                  + " of file: " + file.getAbsolutePath());
+          System.exit(6751);
       }
-       
+//      System.err.println("TVC1178 - Finished SPDX: " + file.getName());
     }
     
     
     /**
-     * When assigned withe a specific line, process it
+     * When assigned with a specific line, process it
      * @param line  the text line to be processed
      * @param linePosition  At which position of the text file is this line?
      */
     public void readLine(String line, int linePosition){
-//         String line = lines[i];
-            //int linePosition = i;
+        
             TagValue tag = new TagValue(this);
             
             // interpret multiple lines of text
@@ -1196,9 +1212,17 @@ public final class SPDXfile implements Serializable{
             int limiter = line.indexOf(":");
             tag.linePosition = linePosition;
             // get the title name, remove empty spaces
+             try{
+       
             tag.title = line.substring(0, limiter).trim();
             // get the full content
             tag.raw = line + "\n";
+              
+             }catch (RuntimeException e){
+                 System.err.println("SF11206 - Error reading tag on line: " +  linePosition);
+                 System.exit(2034);
+             }
+            
             // get the associated value
             tag.setValue(line.substring(limiter + 2));
             // avoid the bad "created" tag that contains fake :

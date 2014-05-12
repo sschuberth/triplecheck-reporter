@@ -18,6 +18,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import main.core;
 import script.log;
 import spdxlib.SPDXfile;
 import utils.db.MapDB_SPDX;
@@ -175,7 +176,6 @@ public final class ReportsControl {
      * Given an SPDX file, we will process and add it up to our list
      * @param file  the SPDX report on disk
      * @param spdxFile
-     * @return      null if something fails or else provides the new SPDX object
      */
     public void add(File file, SPDXfile spdxFile) {
 //        SPDXfile spdxFile = null;
@@ -222,5 +222,15 @@ public final class ReportsControl {
         }
  }
 
+    /**
+     * First test trying to digest somewhat larger files
+     */
+    public void test(){
+        // get the pointer to a 20Mb spdx document
+        File file = new File (core.getMiscFolder(), "linux-coreos.spdx");
+        readSPDXfile(file);
+        System.err.println("All done!");
+        //System.err.println(file.getAbsolutePath());
+    }
     
 }

@@ -12,11 +12,13 @@
 
 package utils.db;
 
+import definitions.is;
 import java.io.File;
 import java.util.concurrent.ConcurrentNavigableMap;
 import main.core;
 import org.mapdb.DB;
 import org.mapdb.DBMaker;
+import script.log;
 import spdxlib.SPDXfile;
 
 
@@ -51,11 +53,17 @@ DB db;
                .closeOnJvmShutdown()
                //.encryptionEnable("password")
                .make();
-        System.out.println("Using DB at " + file.getAbsolutePath());
-        // compute some stats
+        
+       // compute some stats
         ConcurrentNavigableMap<File, SPDXfile> currentMap = map();
-        long counter = currentMap.size();
-        System.out.println("DB has " + counter + " entries");
+         // create a relative path to preserve anonimity in logs
+        String relativePath = file.getAbsolutePath()
+                .replace(core.getWorkFolder().getAbsolutePath(), "");
+        // output the message to end-users
+        log.write(is.INFO, "Using DB at %1 with %2 entries", relativePath,
+           currentMap.size() + "");
+//        long counter = currentMap.size();
+//        System.out.println("DB has " + counter + " entries");
     }    
     
     /**
