@@ -44,6 +44,8 @@ public class is {
             tagFileSize = "FileSize:",
             tagLicenseInfoInFile = "LicenseInfoInFile:",
             tagFileCopyrightText = "FileCopyrightText:",
+            tagLicenseConcluded = "FileCopyrightText:",
+            tagFileOrigin = "FileOrigin:",
 
             valueSource =  "SOURCE",
             valueBinary =  "BINARY",

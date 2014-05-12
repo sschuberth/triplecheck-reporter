@@ -16,15 +16,15 @@
 package structure;
 
 import definitions.is;
+import experiment.FileInfo2;
+import experiment.SPDXfile2;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import main.core;
 import script.log;
-import spdxlib.FileInfo;
 import spdxlib.FileOrigin;
 import spdxlib.License;
-import spdxlib.SPDXfile;
 import utils.html;
 import static utils.misc.sortByComparator;
 
@@ -66,11 +66,11 @@ public final class LicensePopularity {
         popularityList = null;
         
         // get the list of reports
-        ArrayList<SPDXfile> reports = core.reports.getList();
+        ArrayList<SPDXfile2> reports = core.reports.getList();
         log.write(is.CREATING, "Generating the popularity indexes");
         
         // go through each report to index the licenses
-        for(SPDXfile report : reports){
+        for(SPDXfile2 report : reports){
             processReport(report);
         }
         
@@ -88,9 +88,9 @@ public final class LicensePopularity {
      * Process the licenses inside a given SPDX report
      * @param spdx 
      */
-    private void processReport(SPDXfile report){
+    private void processReport(SPDXfile2 report){
         // iterate through each file on this report
-        for(FileInfo fileInfo : report.fileSection.files){
+        for(FileInfo2 fileInfo : report.getFiles()){
             // get the licenses within
             processFileInfo(fileInfo);
         }
@@ -102,11 +102,11 @@ public final class LicensePopularity {
      * counting of original files.
      * @param fileInfo 
      */
-    private void processFileInfo(FileInfo fileInfo){
+    private void processFileInfo(FileInfo2 fileInfo){
         // start by increasing the number of detected files
         numberOfFiles++;
         // get the list of licenses
-        ArrayList<String> licList = fileInfo.getLicenses();
+        ArrayList<String> licList = fileInfo.getLicenseInfoInFile();
         // iterate through each license that was found
         for(String license : licList){
             int counter;

@@ -32,9 +32,9 @@ public class TagValue implements Serializable {
             linePosition;
     
 
-    private final SPDXfile spdx; // where this tag belongs to
+    private final SPDXfile_old spdx; // where this tag belongs to
     
-    public TagValue(SPDXfile spdxFather){
+    public TagValue(SPDXfile_old spdxFather){
         spdx = spdxFather;
     }
     

@@ -12,6 +12,8 @@
 package spdxlib;
 
 import java.io.Serializable;
+import javax.swing.Icon;
+import main.core;
 
 public enum FileCategory implements Serializable{
     TEXT,
@@ -35,6 +37,38 @@ public enum FileCategory implements Serializable{
     TEMP,
     UNKNOWN;
     
+    
+    /**
+     * Based on the name of the category, get the associated icon
+     * @return 
+     */
+    public Icon toIcon() {
+        switch(this){
+            case TEXT: return core.iconTEXT;
+            case SOURCE: return core.iconSOURCE;
+            case DOCUMENT: return core.iconDOCUMENT;
+            case INTERNET: return core.iconINTERNET;
+            case SCRIPT: return core.iconSCRIPT;
+            case SCHEMA: return core.iconSCHEMA;
+            case CONFIG: return core.iconCONFIG;
+            case VERSIONING: return core.iconVERSIONING;
+            case EXECUTABLE: return core.iconEXECUTABLE;
+            case FONT: return core.iconFONT;
+            case ARCHIVE: return core.iconARCHIVE;
+            case BINARY: return core.iconBINARY;
+            case DATABASE: return core.iconDATABASE;
+            case IMAGE: return core.iconIMAGE;
+            case VIDEO: return core.iconVIDEO;
+            case SOUND: return core.iconSOUND;
+            case MUSIC: return core.iconMUSIC;
+            case OTHER: return core.iconOTHER;
+            case TEMP: return core.iconTEMP;
+            case UNKNOWN: return core.iconUNKNOWN;
+            default: return core.iconUNKNOWN;
+        }
+    }
+    
+    
     @Override
     public String toString() {
        String result = this.name().toLowerCase();
@@ -54,5 +88,5 @@ public enum FileCategory implements Serializable{
                 + result.substring(1);
         return result;
     }
-    
+        
 }

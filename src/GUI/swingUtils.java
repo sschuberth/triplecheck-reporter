@@ -12,8 +12,9 @@
 package GUI;
 
 import definitions.Messages;
-import definitions.folder;
 import definitions.is;
+import experiment.FileInfo2;
+import experiment.SPDXfile2;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Enumeration;
@@ -105,7 +106,6 @@ public class swingUtils {
     /**
      * Get the currently selected node from a given tree
      * @param tree The tree box on the left side of the default UI
-     * @param filter    The NodeTypes that we are expecting
      * @return The currently selected node or null if nothing selected
      */
     public static ArrayList<TreeNodeSPDX> getSelectedNodes(JTree tree){
@@ -162,7 +162,7 @@ public class swingUtils {
     /**
       * Adds the output when the given tag is not null
      * @param title the title of this entry
-     * @param tag the value of this entry
+     * @param text
      * @return a printable string using the format "key: value"
       */
     static public String addIfNotEmpty(String title, String text){
@@ -203,12 +203,6 @@ public class swingUtils {
         return addIfNotEmpty(title, tag.toString());
     }
     
-    
-      public static void runDemo(FileInfo file) {
-        System.err.println("");
-    }
-    
-      
     /**
      * Creates a new node on our tree list
      * @param title the readable title of this node
@@ -242,145 +236,74 @@ public class swingUtils {
     }
     
     
-//    /**
-//     * List all the indexed SPDX documents on the tree view
-//     * @param tree where all items are listed
-//     */
-//    public static void populateTree(JTree tree){
-//        // tree hook
-//        tree.setCellRenderer(new TreeRenderer()); 
-//        //Create the nodes.
-//        TreeNodeSPDX nodeRoot =
-//            new TreeNodeSPDX("root");
-//        nodeRoot.id = "Root";
-//        
-//        //createNode("Home", NodeType.home, nodeRoot);
-//        
-//        
-//        // create the node for hosting our reports
-//        TreeNodeSPDX productNode = nodeCreate(
-//                "Reports (" + core.reports.list.size() + ")"
-//                , NodeType.other, nodeRoot);
-//        productNode.id = folder.reports;
-//        
-//        // add all SPDX documents that were found
-//            for(SPDXfile spdx : core.reports.list){
-//                addNodeSPDX(productNode, spdx);
-//            }
-//        
-//            
-////        // now create our library node with all found components    
-////        TreeNodeSPDX libraryNode = nodeCreate(
-////                "Library (" + core.components.size() + ")"
-////                , NodeType.other, nodeRoot);
-////        libraryNode.id = "Library";
-////        // add all SPDX documents that were found
-////            for(SPDXfile spdx : core.components){
-////                addNodeSPDX(libraryNode, spdx);
-////            }
-//
-//    // all finished, write this data on GUI tree list
-//        DefaultTreeModel treeModel = new DefaultTreeModel(nodeRoot);
-//        tree.setModel(treeModel);
-//    }
-    
-        /**
-     * Given an SPDX object, create the tree nodes with information
-     * @param root where the SPDX tree will be built upon
-     * @param spdx the object with relevant SPDX information
-     */
-    public static void addNodeSPDX(TreeNodeSPDX root, SPDXfile spdx){
-        // create the new node that is used as base, choose an ID
-        TreeNodeSPDX node = swingUtils.createNodeChild("",root);
-        node.nodeType = NodeType.sectionPackage;
-        node.id = spdx.getId();
-        // add the full object to ease representation
-        node.setUserObject(spdx);
-        // create the subnodes for creation information
-        doNodeCreationInfo(node, spdx); 
-        // add up all the fileSection
-        doNodeFileInfo(node, spdx);
-        // now we add the dependencies node
-        doNodeDependencies(node, spdx);
-        
-        
-//        TreeNodeSPDX nodeReviews = swingUtils.nodeCreate("Review",node);
-//        nodeReviews.nodeType = NodeType.sectionReview;
-        // all done, add this node on the tree structure
-        root.add(node);
-        
-        // code for debugging
-        //System.err.println(node.getUID());
-        
-    }
     
     
     /**
      * Adds the details of the creation info
      */
-    static void doNodeCreationInfo(TreeNodeSPDX root, SPDXfile spdx){
+    static void doNodeCreationInfo(TreeNodeSPDX root, SPDXfile2 spdx){
         
         TreeNodeSPDX node = swingUtils.createNodeChild("",root);
         node.nodeType = NodeType.sectionCreator;
         node.id = "Creator";
-        node.setUserObject(spdx.creatorSection);
-        
-        // now, create a node for each author
-        for(Person person : spdx.creatorSection.people){
-            swingUtils.addNodePerson(node, person);
-        }
+//        node.setUserObject(spdx.creatorSection);
+//        
+//        // now, create a node for each author
+//        for(Person person : spdx.creatorSection.people){
+//            swingUtils.addNodePerson(node, person);
+//        }
     }
     
     /**
      * Add the node of files if there are any available
      */
-    static void doNodeFileInfo(TreeNodeSPDX root, SPDXfile spdx){
+    static void doNodeFileInfo(TreeNodeSPDX root, SPDXfile2 spdx){
         
-        int fileCount = spdx.fileSection.files.size();
+        int fileCount = spdx.getFiles().size();
         String counter = (fileCount > 0) ? " (" + fileCount + ")" : "";        
         
         TreeNodeSPDX node = swingUtils.createNodeChild("Files" + counter,root);
         node.nodeType = NodeType.sectionFile;
         node.id = "Files";
         
-        for(FileInfo file : spdx.fileSection.files){
+        for(FileInfo2 file : spdx.getFiles()){
             TreeNodeSPDX fileNode 
                     = swingUtils.createNodeChild(
                     "" // name is inherited from toString() of the file object
                     , node);
             // define this node as a normal file
             fileNode.nodeType = NodeType.file;
-            fileNode.id = file.getName();
+            fileNode.id = file.getFileName();
             fileNode.setUserObject(file);
         }
         
     }  
     
     
-    /**
-     * Add nodes with the dependencies required for the SPDX package
-     */
-    static void doNodeDependencies(TreeNodeSPDX root, SPDXfile spdx){
-        TreeNodeSPDX node = swingUtils.createNodeChild(
-                "Dependencies ("
-                + spdx.packageSection.dependencies.size()
-                + ")"
-                ,root);
-        node.id = "Dependencies";
-        
-        for(TagValue dep : spdx.packageSection.dependencies){
-            //System.err.println("FG09 - Added a dependency");
-            TreeNodeSPDX depNode 
-                    = swingUtils.createNodeChild(
-                    dep.toString() // name is inherited from toString() of the file object
-                    , node);
-            // define this node as a normal file
-            depNode.nodeType = NodeType.dependency;
-            depNode.id = dep.toString();
-            depNode.setIcon("box.png");
-            depNode.setUserObject(dep);
-        }
-    }
+//    /**
+//     * Add nodes with the dependencies required for the SPDX package
+//     */
+//    static void doNodeDependencies(TreeNodeSPDX root, SPDXfile2 spdx){
+//        TreeNodeSPDX node = swingUtils.createNodeChild(
+//                "Dependencies ("
+//                + spdx.packageSection.dependencies.size()
+//                + ")"
+//                ,root);
+//        node.id = "Dependencies";
+//        
+//        for(TagValue dep : spdx.packageSection.dependencies){
+//            //System.err.println("FG09 - Added a dependency");
+//            TreeNodeSPDX depNode 
+//                    = swingUtils.createNodeChild(
+//                    dep.toString() // name is inherited from toString() of the file object
+//                    , node);
+//            // define this node as a normal file
+//            depNode.nodeType = NodeType.dependency;
+//            depNode.id = dep.toString();
+//            depNode.setIcon("box.png");
+//            depNode.setUserObject(dep);
+//        }
+//    }
    
     
   
@@ -594,12 +517,9 @@ public class swingUtils {
      * @param file The FileInfo object that contains SSDEEP information
      * @return 
      */
-    public static String addSSDEEP(String title, FileInfo file) {
-        // get the raw contents of this tag
-        String text = file.tagFileChecksumSSDEEP.raw;
-        // remove the tag header
-        text = text.replace("FileChecksum: SSDEEP: ", "");
-        swingUtils.addIfNotEmpty(title, text);
+    public static String addSSDEEP(String title, FileInfo2 file) {
+        // get the contents of this tag
+        String text = file.getTagFileChecksumSSDEEP();
         return swingUtils.addIfNotEmpty(title, text);
     } 
     
@@ -772,94 +692,6 @@ public class swingUtils {
     return nodeRoot;
     }
     
-    
-     // get a specific icon from our own library
-    private static Icon getIcon(String what){
-        return new ImageIcon(core.getIcon(what).getAbsolutePath());
-    }
-
-    
-    /**
-     * given a specific type of file extension, output an appropriate icon
-     * @param fileInfo
-     * @return 
-     */
-    public static Icon setIcon(FileInfo fileInfo) {
-
-       if(fileInfo.fileCategory == FileCategory.IMAGE){
-           return getIcon("document-image.png");
-       }
-       
-       if(fileInfo.fileCategory == FileCategory.DOCUMENT){
-           return getIcon("document-word.png");
-       }
-       
-       if(fileInfo.fileCategory == FileCategory.SOURCE){
-           return getIcon("document-code.png");
-       }
-       
-       if(fileInfo.fileCategory == FileCategory.ARCHIVE){
-           return getIcon("box.png");
-       }
-       
-       if(fileInfo.fileCategory == FileCategory.SCRIPT){
-           return getIcon("script-code.png");
-       }
-       
-       if(fileInfo.fileCategory == FileCategory.VIDEO){
-           return getIcon("document-film.png");
-       }
-      
-       if(fileInfo.fileCategory == FileCategory.TEXT){
-           return getIcon("document-list.png");
-       }
-      
-       if(fileInfo.fileCategory == FileCategory.DATABASE){
-           return getIcon("database.png");
-       }
-      
-       if(fileInfo.fileCategory == FileCategory.CONFIG){
-           return getIcon("document--pencil.png");
-       }
-      
-       if(fileInfo.fileCategory == FileCategory.INTERNET){
-           return getIcon("document-globe.png");
-       }
-       
-       if(fileInfo.fileCategory == FileCategory.VERSIONING){
-           return getIcon("document-clock.png");
-       }
-      
-       
-       if((fileInfo.fileCategory == FileCategory.SCHEMA)
-               || ((fileInfo.fileCategory == FileCategory.OTHER))
-               ){
-           return getIcon("document-xaml.png");
-       }
-         
-       if(fileInfo.fileCategory == FileCategory.BINARY){
-           return getIcon("document-binary.png");
-       }
-     
-       if(fileInfo.fileCategory == FileCategory.EXECUTABLE){
-           return getIcon("compile.png");
-       }
-     
-       if(fileInfo.fileCategory == FileCategory.TEMP){
-           return getIcon("document-clock.png");
-       }
-     
-       if(fileInfo.fileCategory == FileCategory.MUSIC
-               || fileInfo.fileCategory == FileCategory.SOUND){
-           return getIcon("document-music.png");
-       }
-     
-       
-         
-       return getIcon("document.png");
-    }
-    
- 
     /**
      * Based on a given treeview node, fire up the specified event just like
      * a normal user would have clicked on it.
@@ -867,14 +699,14 @@ public class swingUtils {
      */
     public static void doRequest(TreeNodeSPDX node){
         WebRequest newRequest = new WebRequest();
-                        newRequest.requestType = RequestType.NONE;
-                        newRequest.requestOrigin = RequestOrigin.GUI_tree;
-                        newRequest.BaseFolder = node.scriptFolder;
-                        newRequest.scriptFile = node.scriptFile;
-                        newRequest.scriptFolder = node.scriptFolder;
-                        newRequest.scriptMethod = node.scriptMethod;
-                        newRequest.parameters = node.scriptParameters;
-                        controller.process(newRequest);
+        newRequest.requestType = RequestType.NONE;
+        newRequest.requestOrigin = RequestOrigin.GUI_tree;
+        newRequest.BaseFolder = node.scriptFolder;
+        newRequest.scriptFile = node.scriptFile;
+        newRequest.scriptFolder = node.scriptFolder;
+        newRequest.scriptMethod = node.scriptMethod;
+        newRequest.parameters = node.scriptParameters;
+        controller.process(newRequest);
     }
     
     

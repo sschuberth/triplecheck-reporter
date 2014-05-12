@@ -17,6 +17,7 @@
 
 package experiment;
 
+import definitions.id;
 import definitions.is;
 import java.io.BufferedReader;
 import java.io.File;
@@ -28,6 +29,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import main.core;
 import spdxlib.FileCategory;
+import spdxlib.FileOrigin;
 import utils.files;
 
 
@@ -43,9 +45,30 @@ public class SPDXfile2 implements Serializable{
     
     // what is the information within?
     ArrayList<FileInfo2> files = new ArrayList();
+
+    // which file was used for reading this document?
+    public File file;
+    
     
     // temporary values only used during the initial processing
     FileInfo2 tempInfo;
+    int linePosition = 1;
+        
+    // default constructor, we need a file to proceed
+    public SPDXfile2(File canonicalFile) {
+        this.file = canonicalFile;
+        readSPDXfile(file);
+    }
+
+    /**
+     * The name for this SPDX document
+     * @return  The name of this SPDX document without the .SPDX extension
+     */
+    public final String getId() {
+        return file.getName().replace(".spdx", "");
+    }
+
+
     // used for tags with multiple lines, such as:
     // FileCopyrightText -> COPYRIGHT
     enum mTypes {COPYRIGHT};
@@ -55,16 +78,6 @@ public class SPDXfile2 implements Serializable{
     // this line keeps the continuation of multiple lines, separated by \n
     private String lastLine;
     
-    /**
-     * First test trying to digest somewhat larger files
-     */
-    public void test(){
-        // get the pointer to a 20Mb spdx document
-        File file = new File (core.getMiscFolder(), "linux-coreos.spdx");
-        readSPDXfile(file);
-        System.err.println("All done!");
-        //System.err.println(file.getAbsolutePath());
-    }
 
     /**
      * Reads the data inside an SPDX tag/value document onto this object
@@ -81,10 +94,9 @@ public class SPDXfile2 implements Serializable{
      * data. The result is an arraylist of tags that contain in sequential order
      * all the tag/value entries that were found.
      */
-    private void readLines(File file){
+    private void readLines(final File file){
         // iterate through all lines
-        int linePosition = 1;
-          
+        linePosition = 1;  
       try {
           BufferedReader reader = new BufferedReader(new FileReader(file));
           String line;
@@ -110,10 +122,6 @@ public class SPDXfile2 implements Serializable{
                   + " of file: " + file.getAbsolutePath());
           System.exit(6751);
       }
-      System.out.println("SP92 - Finished SPDX " + file.getName()
-              + " with " + linePosition + " lines");
-     
-      printFeedback();
     }
 
     
@@ -142,7 +150,8 @@ public class SPDXfile2 implements Serializable{
                 // now write the appropriate key holder
                 switch(lastTag){
                     case COPYRIGHT:
-                        tempInfo.setFileCopyrightText(lastLine);
+                        final String temp = lastLine.substring(is.tagFileCopyrightText.length());
+                        tempInfo.setFileCopyrightText(temp);
                         break;
                 }
             }
@@ -151,7 +160,7 @@ public class SPDXfile2 implements Serializable{
         // have we found a file?
         if(tagStartsWith(is.tagFileName, line)){
             // create the new file object
-            FileInfo2 fileInfo = new FileInfo2();
+            FileInfo2 fileInfo = new FileInfo2(this);
             // add the respective file name
             fileInfo.setFileName(tagGetValue(is.tagFileName, line));
             // set the file line position
@@ -187,8 +196,18 @@ public class SPDXfile2 implements Serializable{
         if(tagStartsWith(is.tagLicenseInfoInFile, line)){
            final String temp = tagGetValue(is.tagLicenseInfoInFile, line);
             tempInfo.addLicenseInfoInFile(temp);
+         }else
+        // Was an origin defined for this file?
+        if(tagStartsWith(is.tagFileOrigin, line)){
+            final String temp = tagGetValue(is.tagFileOrigin, line);
+            tempInfo.setFileOrigin(FileOrigin.valueOf(temp));
         }
-        
+        else
+        // Is a license defined for this file?
+        if(tagStartsWith(is.tagLicenseConcluded, line)){
+            final String temp = tagGetValue(is.tagLicenseConcluded, line);
+            tempInfo.setLicenseConcluded(temp);
+        }
     }
     
     /**
@@ -261,23 +280,103 @@ public class SPDXfile2 implements Serializable{
     /**
      * Print some feedback about this object
      */
-    private void printFeedback(){
-         System.out.println(fileCounter + " files processed");
-         System.out.println(files.get(0).getFileName());
-         
-         int counter = 0;
-         int counterLOC = 0;
-         long counterSize = 0;
-         for(FileInfo2 fileInfo : files){
-             if(fileInfo.getFileType() == FileCategory.SOURCE){
-                 counter++;
-                 counterLOC += fileInfo.getFileLOC();
-                 counterSize += fileInfo.getFileSize();
+    public void printFeedback(){
+              
+        System.out.println("SP284 - SPDX: " + file.getName()
+              + " with " + linePosition + " lines");
+        
+        System.out.println(fileCounter + " files processed");
+        
+        System.out.println(files.get(0).getFileName());
+        int counter = 0;
+        int counterLOC = 0;
+        long counterSize = 0;
+        for(FileInfo2 fileInfo : files){
+            if(fileInfo.getFileType() == FileCategory.SOURCE){
+                counter++;
+                counterLOC += fileInfo.getFileLOC();
+                counterSize += fileInfo.getFileSize();
              }
          }
          System.out.println("Source files: " + counter);
          System.out.println("Total LOC: " + counterLOC);
          System.out.println("Total Size: " + utils.files.humanReadableSize(counterSize));
     }
+
+    /**
+     * Gets the list of files that were indexed
+     * @return  An array with all the related FileInfo objects
+     */
+    public ArrayList<FileInfo2> getFiles() {
+        return files;
+    }
   
+    /**
+     * When available, gives back the location where we can find the source code
+     * files that were used when creating this document.
+     * @return A pointer to the folder where the source code files are located
+     */
+    public File getSourceFolder() {
+        if(file== null){
+            return null;
+        }
+        // get the title
+        String title = id.SOURCEFOLDER + file.getName();
+        
+        if(core.settings.hasKey(title)==false){
+            System.err.println("SPDXfile324: Didn't found " + title);
+            return null;
+        }
+        // create the folder pointer
+        File folder = new File(core.settings.read(title));
+        
+        // doesn't exist?
+        if(folder.exists() == false){
+            return null;
+        }
+        // all done!
+        return folder;
+    }
+    
+    /**
+     * How many licenses were declared inside this document?
+     * @return  The sum of licenses inside the source code
+     */
+    public int getLicensesDeclaredCount() {
+        int counter = 0;
+        for(FileInfo2 fileInfo : files){
+            counter += fileInfo.getLicenseInfoInFile().size();
+        }
+        return counter;
+    }
+    
+    /**
+     * This method saves back any changes onto the original file on disk
+     */ 
+    public void refresh() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+   
+    public String getLanguageEvaluation() {
+        System.err.println("Missing to implement Language evaluation");
+        return "";
+    }
+
+    public String summaryConcludedLicenses() {
+        System.err.println("Missing to implement Language evaluation");
+        return "";
+   }
+     
+    public String getCopyrightEvaluation() {
+        System.err.println("Missing to implement Copyright evaluation");
+        return "";
+    }
+
+    
+    public boolean hasVersioningFilesPresent() {
+        System.err.println("Missing to implement VersioningFilesPresent");
+        return false;
+   }
+
+   
 }

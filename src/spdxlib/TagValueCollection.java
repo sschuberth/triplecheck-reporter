@@ -1,20 +1,12 @@
 /*
  * SPDXVersion: SPDX-1.1
- *
  * Creator: Person: Nuno Brito (nuno.brito@triplecheck.de)
- *
  * Creator: Organization: TripleCheck (contact@triplecheck.de)
- *
  * Created: 2013-09-01T00:00:00Z
- *
  * LicenseName: EUPL-1.1-without-appendix
- *
  * FileName: TagValueFile.java  
- *
  * FileType: SOURCE
- *
  * FileCopyrightText: <text> Copyright 2013 Nuno Brito, TripleCheck </text>
- *
  * FileComment: <text> Allows to read the tag/values data inside 
  * a specific text file </text> 
  */
@@ -55,7 +47,7 @@ public class TagValueCollection {
      * @param lines
      * @param spdx 
      */
-    public void read(ArrayList<String[]>  lines, SPDXfile spdx){
+    public void read(ArrayList<String[]>  lines, SPDXfile_old spdx){
         List<String> output = new ArrayList<String>();
         // first, add the original values
         for(String[] lineArray : lines){
@@ -76,7 +68,7 @@ public class TagValueCollection {
      * @param lines the SPDX text content to be parsed 
      * @param spdx 
      */
-    public void read(String[] lines, SPDXfile spdx){
+    public void read(String[] lines, SPDXfile_old spdx){
         System.err.println("TVC80-old - Reading SPDX: " + spdx.file.getName());
         // break this into individual lines
         //String[] lines = fullText.split("\n");

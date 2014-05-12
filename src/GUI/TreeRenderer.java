@@ -12,6 +12,7 @@
 
 package GUI;
 
+import experiment.FileInfo2;
 import java.awt.Color;
 import java.awt.Component;
 import javax.swing.Icon;
@@ -19,7 +20,6 @@ import javax.swing.ImageIcon;
 import javax.swing.JTree;
 import javax.swing.tree.DefaultTreeCellRenderer;
 import main.core;
-import spdxlib.FileInfo;
 
 
 public class TreeRenderer extends DefaultTreeCellRenderer {
@@ -109,7 +109,7 @@ public class TreeRenderer extends DefaultTreeCellRenderer {
             // we only make changes on file nodes
             if(node.nodeType == NodeType.file){
                 // get the data from this node
-                FileInfo fileInfo = (FileInfo) node.getUserObject();
+                FileInfo2 fileInfo = (FileInfo2) node.getUserObject();
                 if(fileInfo.hasLicenseConcluded()){
                     setForeground(Color.blue);
                 }

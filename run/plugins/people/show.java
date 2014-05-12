@@ -14,6 +14,7 @@
 package people;
 
 import definitions.is;
+import experiment.SPDXfile2;
 import java.io.File;
 import main.core;
 import main.param;
@@ -23,7 +24,6 @@ import net.htmlparser.jericho.Source;
 import script.Plugin;
 import script.log;
 import spdxlib.Person;
-import spdxlib.SPDXfile;
 import spdxlib.TagValue;
 import utils.html;
 import www.WebRequest;
@@ -60,156 +60,156 @@ public class show extends Plugin{
      * that was currently selected
      */
     private void templateCreate(WebRequest request, File templatePage){
-        // we need the "file" parameter to tell us what to detail
-        String spdxTarget = request.getParameter(param.spdx);
-        // does this file exists?
-        File file = getFile(spdxTarget, request);
-        if(file == null){
-            return;
-        }
-        
-        // get the SPDX file from the root node
-        //System.err.println("DBG-S72 Reading SPDX");
-        SPDXfile spdx = core.reports.get(file);
-                //new SPDXfile(file);
-       
-        // get the filter, from where we will get our data to replace
-        String filter = request.getParameter(param.filter);
-        // the place where we will hold the person details
-        Person person = null;
-        // iterate through all known people
-        for(Person thisPerson : spdx.creatorSection.people){
-            if(thisPerson.getTitle().equals(filter)){
-                // we found a match (ignore any duplicates)
-                person = thisPerson;
-                break;
-            }
-        }
-        // need to check if we do have someone..
-        if(person == null){
-            request.setAnswer("Person was not found");
-            return;
-        }
-        
-        // place the contents of our template inside a string
-        String webText = utils.files.readAsString(templatePage);
-       
-        // instantiate our HTML manipulating class
-        Source source = new net.htmlparser.jericho.Source(webText);
-        // get all the data available right now on the form
-        FormFields formFields = source.getFormFields();
-       
-        formFields.setValue(name, person.getPerson());
-        formFields.setValue(email, person.getPersonEmail());
-        formFields.setValue(organization, person.getOrganization());
-        formFields.setValue(organizationEmail, person.getOrganizationEmail());
-        formFields.setValue(tool, person.getTool());
-        formFields.setValue(toolVersion, person.getToolVersion());
-        // point where is the SPDX with this information
-        formFields.setValue(sourceTag, spdxTarget);
-        formFields.setValue(param.filter, filter);
-        
-        
-        // save the output
-        OutputDocument outputDocument = new OutputDocument(source);
-        // adds all segments necessary to effect changes
-        outputDocument.replace(formFields);
-        String result = outputDocument.toString();
-       
-        File tempFile = new File(thisFolder, "temp.html");
-        utils.files.SaveStringToFile(tempFile, result);
-
-        request.setPage(tempFile);
+//        // we need the "file" parameter to tell us what to detail
+//        String spdxTarget = request.getParameter(param.spdx);
+//        // does this file exists?
+//        File file = getFile(spdxTarget, request);
+//        if(file == null){
+//            return;
+//        }
+//        
+//        // get the SPDX file from the root node
+//        //System.err.println("DBG-S72 Reading SPDX");
+//        SPDXfile2 spdx = core.reports.get(file);
+//                //new SPDXfile(file);
+//       
+//        // get the filter, from where we will get our data to replace
+//        String filter = request.getParameter(param.filter);
+//        // the place where we will hold the person details
+//        Person person = null;
+//        // iterate through all known people
+//        for(Person thisPerson : spdx.creatorSection.people){
+//            if(thisPerson.getTitle().equals(filter)){
+//                // we found a match (ignore any duplicates)
+//                person = thisPerson;
+//                break;
+//            }
+//        }
+//        // need to check if we do have someone..
+//        if(person == null){
+//            request.setAnswer("Person was not found");
+//            return;
+//        }
+//        
+//        // place the contents of our template inside a string
+//        String webText = utils.files.readAsString(templatePage);
+//       
+//        // instantiate our HTML manipulating class
+//        Source source = new net.htmlparser.jericho.Source(webText);
+//        // get all the data available right now on the form
+//        FormFields formFields = source.getFormFields();
+//       
+//        formFields.setValue(name, person.getPerson());
+//        formFields.setValue(email, person.getPersonEmail());
+//        formFields.setValue(organization, person.getOrganization());
+//        formFields.setValue(organizationEmail, person.getOrganizationEmail());
+//        formFields.setValue(tool, person.getTool());
+//        formFields.setValue(toolVersion, person.getToolVersion());
+//        // point where is the SPDX with this information
+//        formFields.setValue(sourceTag, spdxTarget);
+//        formFields.setValue(param.filter, filter);
+//        
+//        
+//        // save the output
+//        OutputDocument outputDocument = new OutputDocument(source);
+//        // adds all segments necessary to effect changes
+//        outputDocument.replace(formFields);
+//        String result = outputDocument.toString();
+//       
+//        File tempFile = new File(thisFolder, "temp.html");
+//        utils.files.SaveStringToFile(tempFile, result);
+//
+//        request.setPage(tempFile);
        //request.setAnswer(result);
     }
-   
+}
     /**
     * Save the settings to disk
     * @param request 
     */
-    public void save(WebRequest request){
-         // we need the "file" parameter to tell us what to detail
-        String spdxTarget = request.getParameter(sourceTag);
-        // does this file exists?
-        File file = getFile(spdxTarget, request);
-        if(file == null){
-            return;
-        }
-        
-        // get the SPDX file from the root node
-        SPDXfile spdx = new SPDXfile(file);
-       
-        // get the filter, from where we will get our data to replace
-        String filter = request.getParameter(param.filter);
-        // the place where we will hold the person details
-        Person person = null;
-        // iterate through all known people
-        for(Person thisPerson : spdx.creatorSection.people){
-            if(thisPerson.getTitle().equals(filter)){
-                // we found a match (ignore any duplicates)
-                person = thisPerson;
-                break;
-            }
-        }
-        // need to check if we do have someone..
-        if(person == null){
-            request.setAnswer("Person was not found");
-            return;
-        }
-        
-        // name of the SPDX author
-        processItem(person.getTagPerson(), person.getPerson(),
-                person.getAnchor(), spdx, request, name, "Creator: ");
-
-        // email of the SPDX author
-//        processItemEmail(person.getTagPerson(), person.getPerson(),
-//                person.getAnchor(), spdx, request, email);
+//    public void save(WebRequest request){
+//         // we need the "file" parameter to tell us what to detail
+//        String spdxTarget = request.getParameter(sourceTag);
+//        // does this file exists?
+//        File file = getFile(spdxTarget, request);
+//        if(file == null){
+//            return;
+//        }
 //        
-        // does the name need to be changed?
-        String thisPersonEmail = getParam(email, request);
-        if(thisPersonEmail.endsWith(person.getPersonEmail())==false){
-            // we need to change things
-            spdx.changeTag(person.getTagPerson(), person.getPersonEmail(), thisPersonEmail);
-        }
-        
-        
-        // organization
-        processItem(person.getTagOrganization(), person.getOrganization(),
-                person.getAnchor(), spdx, request, organization, "Creator: Organization:");
-      
-         // does the name need to be changed?
-        String thisOrganizationEmail = getParam(organizationEmail, request);
-        if(thisOrganizationEmail.endsWith(person.getOrganizationEmail())==false){
-            
-            // we need to change things
-            spdx.changeTag(person.getTagOrganization(), person.getOrganizationEmail(), thisOrganizationEmail);
-        }
-       
-
-        // tool
-        processItem(person.getTagTool(), person.getTool(),
-                person.getAnchor(), spdx, request, tool, "Creator: Tool:");
-
-      
-       // does the name need to be changed?
-        String thisToolVersion = getParam(toolVersion, request);
-        if(thisToolVersion.endsWith(person.getToolVersion())==false){
-            // we need to change things
-            spdx.changeTag(person.getTagTool(), person.getToolVersion(), thisToolVersion);
-        }
-      
-        
-        //System.out.println(spdx.rawText);
-        spdx.commitChanges();
-        
-        
-         // all done
-        String message = html.h3("Settings saved!");
-        request.setAnswer(
-                message
-        //        utils.html.redirect("/webserver/server", 2, message)
-        );
-    }
+//        // get the SPDX file from the root node
+//        SPDXfile spdx = new SPDXfile(file);
+//       
+//        // get the filter, from where we will get our data to replace
+//        String filter = request.getParameter(param.filter);
+//        // the place where we will hold the person details
+//        Person person = null;
+//        // iterate through all known people
+//        for(Person thisPerson : spdx.creatorSection.people){
+//            if(thisPerson.getTitle().equals(filter)){
+//                // we found a match (ignore any duplicates)
+//                person = thisPerson;
+//                break;
+//            }
+//        }
+//        // need to check if we do have someone..
+//        if(person == null){
+//            request.setAnswer("Person was not found");
+//            return;
+//        }
+//        
+//        // name of the SPDX author
+//        processItem(person.getTagPerson(), person.getPerson(),
+//                person.getAnchor(), spdx, request, name, "Creator: ");
+//
+//        // email of the SPDX author
+////        processItemEmail(person.getTagPerson(), person.getPerson(),
+////                person.getAnchor(), spdx, request, email);
+////        
+//        // does the name need to be changed?
+//        String thisPersonEmail = getParam(email, request);
+//        if(thisPersonEmail.endsWith(person.getPersonEmail())==false){
+//            // we need to change things
+//            spdx.changeTag(person.getTagPerson(), person.getPersonEmail(), thisPersonEmail);
+//        }
+//        
+//        
+//        // organization
+//        processItem(person.getTagOrganization(), person.getOrganization(),
+//                person.getAnchor(), spdx, request, organization, "Creator: Organization:");
+//      
+//         // does the name need to be changed?
+//        String thisOrganizationEmail = getParam(organizationEmail, request);
+//        if(thisOrganizationEmail.endsWith(person.getOrganizationEmail())==false){
+//            
+//            // we need to change things
+//            spdx.changeTag(person.getTagOrganization(), person.getOrganizationEmail(), thisOrganizationEmail);
+//        }
+//       
+//
+//        // tool
+//        processItem(person.getTagTool(), person.getTool(),
+//                person.getAnchor(), spdx, request, tool, "Creator: Tool:");
+//
+//      
+//       // does the name need to be changed?
+//        String thisToolVersion = getParam(toolVersion, request);
+//        if(thisToolVersion.endsWith(person.getToolVersion())==false){
+//            // we need to change things
+//            spdx.changeTag(person.getTagTool(), person.getToolVersion(), thisToolVersion);
+//        }
+//      
+//        
+//        //System.out.println(spdx.rawText);
+//        spdx.commitChanges();
+//        
+//        
+//         // all done
+//        String message = html.h3("Settings saved!");
+//        request.setAnswer(
+//                message
+//        //        utils.html.redirect("/webserver/server", 2, message)
+//        );
+//    }
     
     /**
      * Process the organization details
@@ -217,27 +217,27 @@ public class show extends Plugin{
      * @param spdx the SPDX document
      * @param request the web request from the end user
      */
-    private void processItem(TagValue oldTag, String oldValue, 
-            int linePosition,
-            SPDXfile spdx, WebRequest request,
-            String formParam, String newTagText){
-        // get the proposed value
-        String newValue = getParam(formParam, request);
-        // do we have an organization tag available?
-        if(oldTag == null){
-            // none, this means we need to create one
-            String text = newTagText + " " + newValue; 
-            spdx.addTag(linePosition, text); 
-            log.write(is.ADDING, "Added new tag as %1", text);
-            return;
-            }
-        
-        // does the name exists but just needs to be changed?
-        if(newValue.endsWith(oldValue)==false){
-            // we need to change things
-            spdx.changeTag(oldTag, oldValue, newValue);
-        }
-    }
+//    private void processItem(TagValue oldTag, String oldValue, 
+//            int linePosition,
+//            SPDXfile spdx, WebRequest request,
+//            String formParam, String newTagText){
+//        // get the proposed value
+//        String newValue = getParam(formParam, request);
+//        // do we have an organization tag available?
+//        if(oldTag == null){
+//            // none, this means we need to create one
+//            String text = newTagText + " " + newValue; 
+//            spdx.addTag(linePosition, text); 
+//            log.write(is.ADDING, "Added new tag as %1", text);
+//            return;
+//            }
+//        
+//        // does the name exists but just needs to be changed?
+//        if(newValue.endsWith(oldValue)==false){
+//            // we need to change things
+//            spdx.changeTag(oldTag, oldValue, newValue);
+//        }
+//    }
     
 //    /**
 //     * Process the organization details
@@ -266,39 +266,39 @@ public class show extends Plugin{
 //    }
    
     
-    /**
-     * 
-     * @param parameter
-     * @param request 
-     */
-    private String getParam(String parameter, WebRequest request){
-        String result = "";
-        try{
-            result = request.getParameter(parameter);
-        }catch (Exception e){
-        }
-        return result;
-    }
+//    /**
+//     * 
+//     * @param parameter
+//     * @param request 
+//     */
+//    private String getParam(String parameter, WebRequest request){
+//        String result = "";
+//        try{
+//            result = request.getParameter(parameter);
+//        }catch (Exception e){
+//        }
+//        return result;
+//    }
     
     /**
      * Verifies if a given SPDX document exists inside our archive or or not
      * @param spdxTarget The file inside the SPDX Archive
      * @return null if the file does not exists, otherwise return a pointer
      */
-    private File getFile(String spdxTarget, WebRequest request){
-         if(spdxTarget == null){
-            request.setAnswer("No file specified");
-            return null;
-        }
-        // does this file exists?
-        File file = new File(core.getProductsFolder(), spdxTarget);
-        // this file needs to exist
-        if((file.exists() == false) || (file.isDirectory())){
-            request.setAnswer("File was not found in our archive, sorry");
-            return null;
-        }
-        // all done
-        return file;
-    }
-    
-}
+//    private File getFile(String spdxTarget, WebRequest request){
+//         if(spdxTarget == null){
+//            request.setAnswer("No file specified");
+//            return null;
+//        }
+//        // does this file exists?
+//        File file = new File(core.getProductsFolder(), spdxTarget);
+//        // this file needs to exist
+//        if((file.exists() == false) || (file.isDirectory())){
+//            request.setAnswer("File was not found in our archive, sorry");
+//            return null;
+//        }
+//        // all done
+//        return file;
+//    }
+//    
+//}

@@ -13,6 +13,7 @@
 
 package spdxlib;
 
+import experiment.FileInfo2;
 import java.io.Serializable;
 import java.util.ArrayList;
 
@@ -48,7 +49,7 @@ public class SectionPackage implements Serializable {
             summary, // summarize use or function of package, optional, one
             description; // detail use or function of package, optional, one
     
-    public ArrayList<FileInfo> // information about all files present on the package
+    public ArrayList<FileInfo2> // information about all files present on the package
             files = new ArrayList(); // mandatory, one or many        
    
     

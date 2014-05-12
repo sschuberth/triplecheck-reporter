@@ -19,7 +19,7 @@ import main.core;
 import org.mapdb.DB;
 import org.mapdb.DBMaker;
 import script.log;
-import spdxlib.SPDXfile;
+import spdxlib.SPDXfile_old;
 
 
 /**
@@ -55,7 +55,7 @@ DB db;
                .make();
         
        // compute some stats
-        ConcurrentNavigableMap<File, SPDXfile> currentMap = map();
+        ConcurrentNavigableMap<File, SPDXfile_old> currentMap = map();
          // create a relative path to preserve anonimity in logs
         String relativePath = file.getAbsolutePath()
                 .replace(core.getWorkFolder().getAbsolutePath(), "");
@@ -77,7 +77,7 @@ DB db;
         db.commit();
     }
     
-    public ConcurrentNavigableMap<File, SPDXfile> map(){
+    public ConcurrentNavigableMap<File, SPDXfile_old> map(){
         return db.getTreeMap("spdx");
     }
     

@@ -12,12 +12,13 @@
 
 package spdxlib;
 
+import experiment.FileInfo2;
 import java.util.ArrayList;
 
 
 /**
  *
- * @author Nuno Brito, 5th of November 2014 in Darmstadt, Germany.
+ * @author Nuno Brito, 5th of April 2014 in Darmstadt, Germany.
  *  nuno.brito@triplecheck.de | http://nunobrito.eu
  */
 public class LanguageBox implements Comparable<Integer>{
@@ -27,7 +28,7 @@ public class LanguageBox implements Comparable<Integer>{
     // how many files of this kind have we found so far?
     private int count = 0;
     // which files were found?
-    private ArrayList<FileInfo> list = new ArrayList();
+    private ArrayList<FileInfo2> list = new ArrayList();
     
     
     public LanguageBox(FileLanguage target){
@@ -52,8 +53,9 @@ public class LanguageBox implements Comparable<Integer>{
 
     /**
      * Add up a new file to our list, increase the counter
+     * @param newFile   A fileInfo object
      */
-    public void add(FileInfo newFile){
+    public void add(FileInfo2 newFile){
         list.add(newFile);
         count++;
     }

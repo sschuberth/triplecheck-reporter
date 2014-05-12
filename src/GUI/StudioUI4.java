@@ -13,6 +13,8 @@ package GUI;
 
 import definitions.Messages;
 import definitions.is;
+import experiment.FileInfo2;
+import experiment.SPDXfile2;
 import java.awt.Color;
 import java.awt.Cursor;
 import java.awt.Toolkit;
@@ -45,9 +47,7 @@ import main.controller;
 import main.core;
 import script.RunPlugins;
 import script.log;
-import spdxlib.FileInfo;
 import spdxlib.FileOrigin;
-import spdxlib.SPDXfile;
 import utils.html;
 import utils.internet;
 import www.RequestOrigin;
@@ -69,7 +69,7 @@ public class StudioUI4 extends javax.swing.JFrame {
     TreeNodeSPDX lastNodeSelected;
     
     // what was the last product that was marked as selected?
-    public SPDXfile productSelected = null;
+//    public SPDXfile productSelected = null;
     
     public String searchText = "Search..";
     
@@ -1260,42 +1260,43 @@ public class StudioUI4 extends javax.swing.JFrame {
      */
     private void licenseUpdateNodes(ArrayList<TreeNodeSPDX> nodeList, 
         String selectedLicense){
-        // preflight check
-        if(nodeList == null || nodeList.isEmpty()){
-            System.err.println("SU1296 - Empty array, can't update licenses");
-            return;
-        }
-        
-        // create the temp-holder, necessary to grab the first FileInfo
-        FileInfo tempFileInfo = (FileInfo) nodeList.get(0).getUserObject();
-        SPDXfile spdx = tempFileInfo.getSPDX();
-        //System.out.println("Writing to " + nodeList.size() + " nodes");
-        // iterate through the provided list
-        for(TreeNodeSPDX newNode : nodeList){
-            // we only want files around here
-            if(newNode.nodeType != NodeType.file){
-                continue;
-            }
-            // get the object
-            FileInfo fileInfo = (FileInfo) newNode.getUserObject();
-            // change the license
-            fileInfo.setConcludedLicense(selectedLicense);
-            // all done in terms of writing the changes
-            log.write(is.COMPLETED, "Applied license %1 to %2",
-                    selectedLicense, fileInfo.getName());
-        }
-        
-            // mandatory refresh on the SPDX object in our memory
-            spdx.commitChanges();
-            spdx.refresh();
-            // now, update all the tree nodes with the new information
-            TreeviewUtils.spdxUpdateAllNodes(spdx);
-            // show some feedback
-            swingUtils.showMessage("Applied the "
-                    + selectedLicense
-                    +" to "
-                    + utils.text.pluralize(nodeList.size(), "file"));
-            
+        System.err.println("SU1263 - License Update nodes: Fix me..");
+//        // preflight check
+//        if(nodeList == null || nodeList.isEmpty()){
+//            System.err.println("SU1296 - Empty array, can't update licenses");
+//            return;
+//        }
+//        
+//        // create the temp-holder, necessary to grab the first FileInfo
+//        FileInfo2 tempFileInfo = (FileInfo2) nodeList.get(0).getUserObject();
+//        //SPDXfile2 spdx = tempFileInfo.getSPDX();
+//        //System.out.println("Writing to " + nodeList.size() + " nodes");
+//        // iterate through the provided list
+//        for(TreeNodeSPDX newNode : nodeList){
+//            // we only want files around here
+//            if(newNode.nodeType != NodeType.file){
+//                continue;
+//            }
+//            // get the object
+//            FileInfo fileInfo = (FileInfo) newNode.getUserObject();
+//            // change the license
+//            fileInfo.setConcludedLicense(selectedLicense);
+//            // all done in terms of writing the changes
+//            log.write(is.COMPLETED, "Applied license %1 to %2",
+//                    selectedLicense, fileInfo.getName());
+//        }
+//        
+//            // mandatory refresh on the SPDX object in our memory
+//            spdx.commitChanges();
+//            spdx.refresh();
+//            // now, update all the tree nodes with the new information
+//            TreeviewUtils.spdxUpdateAllNodes(spdx);
+//            // show some feedback
+//            swingUtils.showMessage("Applied the "
+//                    + selectedLicense
+//                    +" to "
+//                    + utils.text.pluralize(nodeList.size(), "file"));
+//            
         // all done
     }
     
@@ -1332,55 +1333,56 @@ public class StudioUI4 extends javax.swing.JFrame {
      * Marks a file as original, modified or third-party resource
      */
     private void markFileOriginAs(FileOrigin value) {
-         // get the selected node
-        TreeNodeSPDX nodeLastSelected = swingUtils.getSelectedNode();
-        // preflight check
-        if(nodeLastSelected == null){
-            System.err.println("SU1326: Node is null");
-            return;
-        }
-
-        // create a list of nodes to process
-        ArrayList<TreeNodeSPDX> selectedNodes = swingUtils.getSelectedNodes(tree);
-        ArrayList<TreeNodeSPDX> nodeList = new ArrayList();
-        // get only the relevant nodes
-        for(TreeNodeSPDX node : selectedNodes){
-              // only files and folders are supported at the moment
-            if((node.nodeType == NodeType.folder)
-                    ||(node.nodeType == NodeType.sectionFile)){
-                //System.err.println("Changing the whole folder");
-                TreeviewUtils.getNodes(node, nodeList, NodeType.file);
-            }
-            // only files are supported at the moment
-            if(node.nodeType == NodeType.file){
-                nodeList.add(node);
-            }
-        }
-        // now update the licenses
-        // create the dummy-holder, necessary to grab the last indexed FileInfo
-        FileInfo temp = new FileInfo(null);
-        // iterate through the provided list
-        for(TreeNodeSPDX newNode : nodeList){
-                // get the object
-                FileInfo fileInfo = (FileInfo) newNode.getUserObject();
-                // change the license
-                fileInfo.setOrigin(value);
-                // all done in terms of writing the changes
-                log.write(is.COMPLETED, "Applied origin %1 to %2",
-                        value + "", fileInfo.getName());
-                // store the last indexed FileInfo to grab reference of SPDX
-                temp = fileInfo;
-            }
-            // save all changes to disk
-            temp.spdx.commitChanges();
-            
-             log.write(is.COMPLETED, "All done, marked file(s) as %1",
-                        value + "");
-            // refresh the variables inside the spdx object
-            temp.spdx.refresh();
-            TreeviewUtils.spdxUpdateAllNodes(temp.spdx);            
-            // update the index values
-            core.popularity.doIndex();
+        System.err.println("SU1263 - License Update nodes: Fix me..");
+//         // get the selected node
+//        TreeNodeSPDX nodeLastSelected = swingUtils.getSelectedNode();
+//        // preflight check
+//        if(nodeLastSelected == null){
+//            System.err.println("SU1326: Node is null");
+//            return;
+//        }
+//
+//        // create a list of nodes to process
+//        ArrayList<TreeNodeSPDX> selectedNodes = swingUtils.getSelectedNodes(tree);
+//        ArrayList<TreeNodeSPDX> nodeList = new ArrayList();
+//        // get only the relevant nodes
+//        for(TreeNodeSPDX node : selectedNodes){
+//              // only files and folders are supported at the moment
+//            if((node.nodeType == NodeType.folder)
+//                    ||(node.nodeType == NodeType.sectionFile)){
+//                //System.err.println("Changing the whole folder");
+//                TreeviewUtils.getNodes(node, nodeList, NodeType.file);
+//            }
+//            // only files are supported at the moment
+//            if(node.nodeType == NodeType.file){
+//                nodeList.add(node);
+//            }
+//        }
+//        // now update the licenses
+//        // create the dummy-holder, necessary to grab the last indexed FileInfo
+//        FileInfo2 temp = new FileInfo2(null);
+//        // iterate through the provided list
+//        for(TreeNodeSPDX newNode : nodeList){
+//                // get the object
+//                FileInfo fileInfo = (FileInfo) newNode.getUserObject();
+//                // change the license
+//                fileInfo.setOrigin(value);
+//                // all done in terms of writing the changes
+//                log.write(is.COMPLETED, "Applied origin %1 to %2",
+//                        value + "", fileInfo.getName());
+//                // store the last indexed FileInfo to grab reference of SPDX
+//                temp = fileInfo;
+//            }
+//            // save all changes to disk
+//            temp.spdx.commitChanges();
+//            
+//             log.write(is.COMPLETED, "All done, marked file(s) as %1",
+//                        value + "");
+//            // refresh the variables inside the spdx object
+//            temp.spdx.refresh();
+//            TreeviewUtils.spdxUpdateAllNodes(temp.spdx);            
+//            // update the index values
+//            core.popularity.doIndex();
     }
 
     

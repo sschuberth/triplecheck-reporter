@@ -18,6 +18,8 @@ package spdx;
 import GUI.swingUtils;
 import definitions.Messages;
 import definitions.is;
+import experiment.FileInfo2;
+import experiment.SPDXfile2;
 import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
@@ -27,8 +29,6 @@ import main.core;
 import main.param;
 import script.Plugin;
 import script.log;
-import spdxlib.FileInfo;
-import spdxlib.SPDXfile;
 import spdxlib.tools;
 import utils.Graphs;
 import utils.html;
@@ -88,14 +88,14 @@ public class show extends Plugin{
             return;
         }
         
-        ArrayList<SPDXfile> spdxList = core.reports.getList();
+        ArrayList<SPDXfile2> spdxList = core.reports.getList();
         
         // get some statistical data
         for(Object object : spdxList){
-            SPDXfile spdx = (SPDXfile) object;
-            counterFiles += spdx.fileSection.files.size();
-            counterCreators += spdx.creatorSection.people.size();
-            counterLicensesDeclared += spdx.getStatsLicensesDeclared();
+            SPDXfile2 spdx = (SPDXfile2) object;
+            counterFiles += spdx.getFiles().size();
+//            counterCreators += spdx.creatorSection.people.size();
+            counterLicensesDeclared += spdx.getLicensesDeclaredCount();
         }
         
         String reviewerList = "";
@@ -341,11 +341,11 @@ public class show extends Plugin{
         // get the SPDX file from the root node
         //System.err.println("DBG-S342 Reading SPDX");
         //SPDXfile spdx = new SPDXfile(file);
-        SPDXfile spdx = core.reports.get(file);
+        SPDXfile2 spdx = core.reports.get(file);
         
         // compute some of our useful statistics about the SPDX document
-        int counterLicensesDeclared = spdx.getStatsLicensesDeclared();
-        int counterFiles = spdx.fileSection.files.size();
+        int counterLicensesDeclared = spdx.getLicensesDeclaredCount();
+        int counterFiles = spdx.getFiles().size();
             
        
         String searchEngines = 
@@ -377,9 +377,9 @@ public class show extends Plugin{
         // get the lines of code (LOC)
         int countLOC = 0;
         long overallSize = 0;
-        for(FileInfo fileInfo : spdx.fileSection.files){
-            countLOC += fileInfo.getLOC();
-            overallSize += fileInfo.getSize();
+        for(FileInfo2 fileInfo : spdx.getFiles()){
+            countLOC += fileInfo.getFileLOC();
+            overallSize += fileInfo.getFileSize();
         }
         
         // add the thousands separator
@@ -568,16 +568,16 @@ public class show extends Plugin{
         
         // start the processing
         //System.err.println("DBG-S569 Reading SPDX");
-        SPDXfile spdx = core.reports.get(file);
+        SPDXfile2 spdx = core.reports.get(file);
         // create the place holder for the results
-        ArrayList<FileInfo> list = new ArrayList();
+        ArrayList<FileInfo2> list = new ArrayList();
         
         // get only the files without a declared trigger
         if(thisFilter.equalsIgnoreCase(param.noLicense)){
              // iterate through all files
-            for(FileInfo fileInfo : spdx.fileSection.files){
+            for(FileInfo2 fileInfo : spdx.getFiles()){
             // if there is a trigger, no need to continue
-            if(fileInfo.countLicensesDeclared()>0){
+            if(fileInfo.getLicenseInfoInFile().size()>0){
                 continue;
             }
             list.add(fileInfo);
@@ -586,9 +586,9 @@ public class show extends Plugin{
         // get the unlicensed files
         if(thisFilter.equalsIgnoreCase(param.withLicense)){
             // iterate through all files
-            for(FileInfo fileInfo : spdx.fileSection.files){
+            for(FileInfo2 fileInfo : spdx.getFiles()){
             // if there is a trigger, no need to continue
-            if(fileInfo.countLicensesDeclared()==0){
+            if(fileInfo.getLicenseInfoInFile().isEmpty()){
                 continue;
             }
             list.add(fileInfo);
@@ -601,15 +601,15 @@ public class show extends Plugin{
         
         
         // iterate through all files
-        for(FileInfo fileInfo : list){
+        for(FileInfo2 fileInfo : list){
             // create a column with our file information
             String[] column = new String[]{
                 fileInfo.toString(),
                 html.link("Detail", "?x=specific&"
                         + param.spdx + "=" + spdxTarget + "&"
-                        + param.file + "=" + fileInfo.getName()
+                        + param.file + "=" + fileInfo.getFileName()
                 ),
-                    fileInfo.tagFilePath.toString()
+                    fileInfo.getFilePath()
             };
             table.add(column);
         }
@@ -621,7 +621,7 @@ public class show extends Plugin{
                 //+ this.doFileSummary(spdx)
                 + doEvaluation(spdx)
                 + "Showing " + list.size() + " files from a total of " 
-                + spdx.fileSection.files.size() + " files"
+                + spdx.getFiles().size() + " files"
                 + "" + html.br+ html.br
                 + table.output()
                 + html._div
@@ -642,7 +642,7 @@ public class show extends Plugin{
      * @param spdx an object from where we will readLines all data
      * @return A string used for the HTML output
      */
-    private String doEvaluation(SPDXfile spdx) {
+    private String doEvaluation(SPDXfile2 spdx) {
         String result = "";
       
         

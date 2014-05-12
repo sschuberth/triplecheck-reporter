@@ -12,11 +12,6 @@
  */
 package GUI;
 
-import definitions.is;
-import script.log;
-import spdxlib.SPDXfile;
-import main.core;
-
 /**
  *
  * @author Nuno Brito, 18th of October 2013 in Darmstadt, Germany.

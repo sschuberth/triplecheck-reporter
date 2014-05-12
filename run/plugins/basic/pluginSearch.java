@@ -16,6 +16,8 @@ package basic;
 import definitions.Messages;
 import definitions.definition;
 import definitions.is;
+import experiment.FileInfo2;
+import experiment.SPDXfile2;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -23,8 +25,6 @@ import main.controller;
 import main.core;
 import script.Plugin;
 import script.log;
-import spdxlib.FileInfo;
-import spdxlib.SPDXfile;
 import ssdeep.SpamSumSignature;
 import ssdeep.ssdeep;
 import utils.html;
@@ -199,7 +199,7 @@ public class pluginSearch extends Plugin{
         }
                
         
-        for(SPDXfile spdx : core.reports.getList()){
+        for(SPDXfile2 spdx : core.reports.getList()){
             String matchTitle = "";
         // first search, find components we have with the same name
             String spdxId = spdx.getId().toLowerCase();
@@ -219,25 +219,26 @@ public class pluginSearch extends Plugin{
                
                // create the file list
                for(Object fileObject : fileList){
-                   FileInfo file = (FileInfo) fileObject;
+                   FileInfo2 file = (FileInfo2) fileObject;
                    // do the details about this file
                    String fileDetails = "";
                
                    // add the file size on the details
-                   if(file.tagFileSize != null){
-                       String fileSize = file.tagFileSize.toString();
-                       if(fileSize.contains("(")){
-                           fileSize = fileSize.substring(0, 
-                                   fileSize.indexOf("(")-1);
-                           fileDetails =  fileDetails + fileSize;
-                       }
+                   if(file.getFileSize() != 0){
+                       String fileSize = utils.files.humanReadableSize(file.getFileSize());
+                        fileDetails =  fileDetails.concat(fileSize);
+//                       if(fileSize.contains("(")){
+//                           fileSize = fileSize.substring(0, 
+//                                   fileSize.indexOf("(")-1);
+//                           fileDetails =  fileDetails + fileSize;
+//                       }
                    }
                        
                    // add the LOC when available
-                   if(file.tagFileLOC !=null){
+                   if(file.getFileLOC() !=0){
                        fileDetails = fileDetails 
                                + ", "
-                               + file.tagFileLOC.toString() + " LOC"; 
+                               + file.getFileLOC() + " LOC"; 
                    }
                    
                    if(fileDetails.length()>0){
@@ -248,11 +249,11 @@ public class pluginSearch extends Plugin{
                    
                    // the internal hyperlink to readLines more details
                    // get the UID
-                   String linkFileUID = file.getUID();
+                   String linkFileUID = file.getUID(spdx);
                    
                    String[] params = new String[]{iconFile, 
                        html.linkNode(
-                               file.getName(),
+                               file.getFileName(),
                                linkFileUID)
                            + fileDetails
                    };
@@ -266,7 +267,7 @@ public class pluginSearch extends Plugin{
 //                           linkFileUID)
                            
                                    
-                           + "<code>" + file.getPath() + "</code>"
+                           + "<code>" + file.getFilePath() + "</code>"
                            + html.br
                            + html.br
                    );
@@ -354,7 +355,7 @@ public class pluginSearch extends Plugin{
      * @param spdx
      * @return 
      */
-    ArrayList processFilters(SPDXfile spdx, String originalKeyword){
+    ArrayList processFilters(SPDXfile2 spdx, String originalKeyword){
         String keyword = originalKeyword.toLowerCase();
         ArrayList result = new ArrayList();
         
@@ -364,9 +365,9 @@ public class pluginSearch extends Plugin{
             // process the SHA1 term
             String what = keyword.replace("sha1: ", "");
             what = what.replace("sha1:", "");
-           for(Object fileObject : spdx.fileSection.files){
-               FileInfo file = (FileInfo) fileObject;
-               String test = file.tagFileChecksumSHA1.getValue().toLowerCase();
+           for(Object fileObject : spdx.getFiles()){
+               FileInfo2 file = (FileInfo2) fileObject;
+               String test = file.getTagFileChecksumSHA1();
                if(test.contains(what)){
                    result.add(file);
                    resultCounter++;
@@ -385,14 +386,14 @@ public class pluginSearch extends Plugin{
             what = what.replace("ssdeep:", "");
             what = what.replace("ssdeep: ", "");
            
-            for(Object fileObject : spdx.fileSection.files){
-               FileInfo file = (FileInfo) fileObject;
+            for(Object fileObject : spdx.getFiles()){
+               FileInfo2 file = (FileInfo2) fileObject;
                // SSDEEP might not be present on this data object
-               if(file.tagFileChecksumSSDEEP == null){
+               if(file.getTagFileChecksumSSDEEP() == null){
                    continue;
                }
                // get the SSDEEP signature from this file
-               String signature = file.tagFileChecksumSSDEEP.raw;
+               String signature = file.getTagFileChecksumSSDEEP() ;
                signature = signature.replace("FileChecksum: SSDEEP: ", "");
                // comparing the two signatures
                ssdeep test = new ssdeep();
@@ -408,9 +409,9 @@ public class pluginSearch extends Plugin{
         }
         
         // simply look for names that match the keyword
-           for(Object fileObject : spdx.fileSection.files){
-               FileInfo file = (FileInfo) fileObject;
-               String fileName = file.tagFileName.getValue().toLowerCase();
+           for(Object fileObject : spdx.getFiles()){
+               FileInfo2 file = (FileInfo2) fileObject;
+               String fileName = file.getFileName().toLowerCase();
                if(fileName.contains(keyword)){
                    result.add(file);
                    resultCounter++;

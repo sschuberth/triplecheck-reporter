@@ -23,6 +23,8 @@ import definitions.is;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
 import script.RunningTask;
 import script.Trigger;
 import script.log;
@@ -82,7 +84,31 @@ public class core {
    
     public static ArrayList<RunningTask> 
             runningTasks = new ArrayList();
-     
+    
+    // define the icon used on the tree view
+    public static final Icon
+            // this might seem an overwhelming wall of text but it important
+            // to cache up these icons to avoid re-reading them in the future
+        iconTEXT = new ImageIcon(getIcon("document-list.png").getAbsolutePath()),
+        iconSOURCE = new ImageIcon(getIcon("document-code.png").getAbsolutePath()),
+        iconDOCUMENT = new ImageIcon(getIcon("document-word.png").getAbsolutePath()),
+        iconINTERNET = new ImageIcon(getIcon("document-globe.png").getAbsolutePath()),
+        iconSCRIPT = new ImageIcon(getIcon("script-code.png").getAbsolutePath()),
+        iconSCHEMA = new ImageIcon(getIcon("document-xaml.png").getAbsolutePath()),
+        iconCONFIG = new ImageIcon(getIcon("document--pencil.png").getAbsolutePath()),
+        iconVERSIONING = new ImageIcon(getIcon("document-clock.png").getAbsolutePath()),
+        iconEXECUTABLE = new ImageIcon(getIcon("compile.png").getAbsolutePath()),
+        iconFONT = new ImageIcon(getIcon("document.png").getAbsolutePath()),
+        iconARCHIVE = new ImageIcon(getIcon("box.png").getAbsolutePath()),
+        iconBINARY = new ImageIcon(getIcon("document-binary.png").getAbsolutePath()),
+        iconDATABASE = new ImageIcon(getIcon("database.png").getAbsolutePath()),
+        iconIMAGE = new ImageIcon(getIcon("document-image.png").getAbsolutePath()),
+        iconVIDEO = new ImageIcon(getIcon("document-film.png").getAbsolutePath()),
+        iconSOUND = new ImageIcon(getIcon("document-music.png").getAbsolutePath()),
+        iconMUSIC = new ImageIcon(getIcon("document-music.png").getAbsolutePath()),
+        iconOTHER = new ImageIcon(getIcon("document-xaml.png").getAbsolutePath()),
+        iconTEMP = new ImageIcon(getIcon("document-clock.png").getAbsolutePath()),
+        iconUNKNOWN = new ImageIcon(getIcon("document.png").getAbsolutePath());
     
     /**
      * Gets the folder where we are running

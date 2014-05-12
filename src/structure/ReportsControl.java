@@ -13,15 +13,13 @@
 package structure;
 
 import definitions.is;
+import experiment.SPDXfile2;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import main.core;
 import script.log;
-import spdxlib.SPDXfile;
-import utils.db.MapDB_SPDX;
 
 
 /**
@@ -31,17 +29,16 @@ import utils.db.MapDB_SPDX;
  */
 public final class ReportsControl {
 
-    //private ArrayList<SPDXfile> list1 = new ArrayList<SPDXfile>();
+    private final ArrayList<SPDXfile2> list = new ArrayList<SPDXfile2>();
     
-    private final MapDB_SPDX list = new utils.db.MapDB_SPDX(false);
+    //private final MapDB_SPDX list = new utils.db.MapDB_SPDX(false);
     
     /**
      * Instantiate our default constructor for this class
      */
     public ReportsControl(){
         // if no reports are listed, get them
-        //TODO we need to check for changes that happened on disk
-        if(list.map().isEmpty()){
+        if(list.isEmpty()){
             index();
         }
     }
@@ -53,7 +50,6 @@ public final class ReportsControl {
     public void index(){
         findSPDX();
     }
-    
     
     
     /**
@@ -77,30 +73,11 @@ public final class ReportsControl {
             }
             // increase the counter
             counter++;
-
-            // have we indexed this file in the past?
-            if(list.map().containsKey(file)){
-                // we have a match, but was the file on disk modified?
-                // get the file that is cached
-                SPDXfile spdx = list.map().get(file);
-                // are the file sizes equal?
-                if(spdx.file.length() == file.length()){
-                    // no need to index, it is the same file. Use the cache.
-                    System.err.println("RC82 - Using cached version of: " 
-                        + file.getAbsolutePath());
-                    continue;
-                }
-            }
-            // file is not indexed (or had changes on disk), load it up
-            System.err.println("DBG-RC64 Adding SPDX: " + file.getName());
-            log.write(is.OPENING, "Adding SPDX: %1", file.getName());
             // read the file
             readSPDXfile(file);
         }
-        list.commit();
         log.write(is.INFO, "Found and processed %1 reports", 
         counter + "");
-        //return thisList;
     }
 
     /**
@@ -110,39 +87,22 @@ public final class ReportsControl {
      * @return          have we succeeded in refreshing an SPDX or not?
      */
     public boolean refresh(String path) {
-        for(SPDXfile spdx : list.map().values()){
+        int index = 0;
+        for(SPDXfile2 spdx : list){
             if(spdx.file.getAbsolutePath().equals(path)){
                 spdx.refresh();
                 // update the spdx on the database
-                list.map().put(spdx.file, spdx);
+                list.set(index, spdx);
                 return true;
             }
+            // next spdx on our list
+            index++;
         }
         // no refeshing occured
         return false;
     }
 
-    /**
-     * When provided a given File, it will return the associated report
-     * @param file      An SPDX file on disk
-     * @return          An SPDX object when or null when not found
-     */
-    public SPDXfile get(File file){
-        //String path = what.getAbsolutePath();
-        SPDXfile result = list.map().get(file);
-        
-        // if there is no SPDX but the file exists, read it up
-        if(result == null && file.exists()){
-            // read the file
-            readSPDXfile(file);
-            // commit the changes
-            list.commit();
-            // return the object
-            result = list.map().get(file);
-        }
-        // all done
-        return result;
-    }
+    
     
     /**
      * Deletes a given report from our list and disk
@@ -156,14 +116,12 @@ public final class ReportsControl {
             return false;
         }
         // get the SPDX object
-        //SPDXfile spdx = get(file);
-         // do the deletion
-        file.delete();
-        // remove from our list
-        //if(spdx != null){
-        list.map().remove(file);
-        //}
-        
+        SPDXfile2 spdx = get(file);
+        // if it exists, remove from our list
+        if(spdx != null){
+            list.remove(spdx);
+            file.delete();
+        }
         // retun success when the file no longer exists
         return file.exists() == false;
     }
@@ -175,35 +133,37 @@ public final class ReportsControl {
     /**
      * Given an SPDX file, we will process and add it up to our list
      * @param file  the SPDX report on disk
-     * @param spdxFile
+     * @param spdxFile  An SPDX object to be added on our list
      */
-    public void add(File file, SPDXfile spdxFile) {
-//        SPDXfile spdxFile = null;
-         list.map().put(file, spdxFile);
-         list.commit();
-         
-//        try {
-//            spdxFile = new SPDXfile(file.getCanonicalFile());
-//            list.map().put(file, spdxFile);
-//            list.commit();
-//        } catch (IOException ex) {
-//            Logger.getLogger(ReportsControl.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-        // all done
-//        return spdxFile;
+    public void add(File file, SPDXfile2 spdxFile) {
+        SPDXfile2 temp = get(file);
+        // this file didn't existed before, add it up
+        if(temp == null){
+            list.add(spdxFile);
+            return;
+        }
+        // this spdx already exists, update
+        int index = 0;
+        // go through all listed spdx reports
+        for(SPDXfile2 spdx : list){
+            // do we have a match for the directory?
+            if(spdx.file.getAbsolutePath().equals(file.getAbsolutePath())){
+                // yes we do, update with a new value
+                list.set(index, spdxFile);
+                return;
+            }
+            // increase the counter, move to next spdx in list
+            index++;
+        }
+        
     }
 
     /**
      * Gets the list of SPDX documents that we have indexed
      * @return 
      */
-    public ArrayList<SPDXfile> getList() {
-        // not an efficient method, just here for retro-compatibility
-        ArrayList<SPDXfile> result = new ArrayList();
-        for(SPDXfile spdx : list.map().values()){
-            result.add(spdx);
-        }
-        return result;
+    public ArrayList<SPDXfile2> getList() {
+        return list;
     }
 
     /**
@@ -213,24 +173,47 @@ public final class ReportsControl {
     private void readSPDXfile(File file) {
         try {
             // read the SPDX file
-            SPDXfile spdxFile = new SPDXfile(file.getCanonicalFile());
-            // place the file on our db
-            list.map().put(file, spdxFile);
-            // don't do commit, let the calling function do this
+            SPDXfile2 spdxFile = new SPDXfile2(file.getCanonicalFile());
+            // place the file on our list
+            add(file, spdxFile);
         } catch (IOException ex) {
+            System.err.println("RC180 - Failed to read: " + file.getAbsolutePath());
             Logger.getLogger(ReportsControl.class.getName()).log(Level.SEVERE, null, ex);
         }
- }
+    }
 
     /**
-     * First test trying to digest somewhat larger files
+     * Do we have a specific file already indexed?
+     * @param file
+     * @return 
      */
-    public void test(){
-        // get the pointer to a 20Mb spdx document
-        File file = new File (core.getMiscFolder(), "linux-coreos.spdx");
-        readSPDXfile(file);
-        System.err.println("All done!");
-        //System.err.println(file.getAbsolutePath());
+    private boolean has(File file) {
+        // go through all the files
+        for(SPDXfile2 spdx : list){
+            // if we have a match
+            if(file.getAbsolutePath().equals(spdx.file.getAbsolutePath())){
+                return true;
+            }
+        }
+        // all done
+        return false;
+    }
+    
+    /**
+     * When provided a given File, it will return the associated report
+     * @param file      An SPDX file on disk
+     * @return          An SPDX object when or null when not found
+     */
+    public SPDXfile2 get(File file){
+        // go through all the files
+        for(SPDXfile2 spdx : list){
+            // if we have a match
+            if(file.getAbsolutePath().equals(spdx.file.getAbsolutePath())){
+                return spdx;
+            }
+        }
+        // all done
+        return null;
     }
     
 }

@@ -27,16 +27,16 @@ import java.util.ArrayList;
 
 public class SectionFiles implements Serializable {
 
-     public ArrayList<FileInfo>
+     public ArrayList<FileInfo_old>
              files = new ArrayList();
      
      public ArrayList<TagValue>
              unknown = new ArrayList();
      
      
-     SPDXfile spdx = null;
+     SPDXfile_old spdx = null;
      
-     public SectionFiles(SPDXfile thisSPDX){
+     public SectionFiles(SPDXfile_old thisSPDX){
          spdx = thisSPDX;
      }
      
@@ -47,7 +47,7 @@ public class SectionFiles implements Serializable {
         
         // start a new entry
         if(tag.title.equalsIgnoreCase("FileName")){
-            FileInfo file = new FileInfo(spdx);
+            FileInfo_old file = new FileInfo_old(spdx);
             file.tagFileName = tag;
             
             // what kind of file do we have here?
@@ -61,68 +61,68 @@ public class SectionFiles implements Serializable {
         }
 
         if(tag.title.equalsIgnoreCase("FileType")){
-            FileInfo file = getLastAddedFile();
+            FileInfo_old file = getLastAddedFile();
             file.tagFiletype = tag;
             return true;
         }
         
         if(tag.title.equalsIgnoreCase("FileChecksum->SHA1")){
-            FileInfo file = getLastAddedFile();
+            FileInfo_old file = getLastAddedFile();
             file.tagFileChecksumSHA1 = tag;
             return true;
         }
         
         if(tag.title.equalsIgnoreCase("LicenseConcluded")){
-            FileInfo file = getLastAddedFile();
+            FileInfo_old file = getLastAddedFile();
             file.tagLicenseConcluded = tag;
             return true;
         }
         
         // add licenseInfoInFile handling here
         if(tag.title.equalsIgnoreCase("LicenseInfoInFile")){
-            FileInfo file = getLastAddedFile();
+            FileInfo_old file = getLastAddedFile();
             file.addLicense(tag);
             return true;
         }
         
         if(tag.title.equalsIgnoreCase("LicenseComments")){
-            FileInfo file = getLastAddedFile();
+            FileInfo_old file = getLastAddedFile();
             file.tagLicenseComments = tag;
             return true;
         }
         
         if(tag.title.equalsIgnoreCase("FileCopyrightText")){
-            FileInfo file = getLastAddedFile();
+            FileInfo_old file = getLastAddedFile();
             file.tagFileCopyrightText = tag;
             return true;
         }
         
         if(tag.title.equalsIgnoreCase("ArtifactOfProjectName")){
-            FileInfo file = getLastAddedFile();
+            FileInfo_old file = getLastAddedFile();
             file.tagArtifactOfProjectName = tag;
             return true;
         }
         
         if(tag.title.equalsIgnoreCase("ArtifactOfProjectHomePage")){
-            FileInfo file = getLastAddedFile();
+            FileInfo_old file = getLastAddedFile();
             file.tagArtifactOfProjectHomePage = tag;
             return true;
         }
         
         if(tag.title.equalsIgnoreCase("ArtifactOfProjectURI")){
-            FileInfo file = getLastAddedFile();
+            FileInfo_old file = getLastAddedFile();
             file.tagArtifactOfProjectURI = tag;
             return true;
         }
         
         if(tag.title.equalsIgnoreCase("ArtifactOfProjectURI")){
-            FileInfo file = getLastAddedFile();
+            FileInfo_old file = getLastAddedFile();
             file.tagArtifactOfProjectURI = tag;
             return true;
         }
         
         if(tag.title.equalsIgnoreCase("Comment")){
-            FileInfo file = getLastAddedFile();
+            FileInfo_old file = getLastAddedFile();
             file.tagComment = tag;
             return true;
         }
@@ -130,43 +130,43 @@ public class SectionFiles implements Serializable {
         // non-standard tags
         
         if(tag.title.equalsIgnoreCase("FilePath")){
-            FileInfo file = getLastAddedFile();
+            FileInfo_old file = getLastAddedFile();
             file.tagFilePath = tag;
             return true;
         }
         
         if(tag.title.equalsIgnoreCase("FileOrigin")){
-            FileInfo file = getLastAddedFile();
+            FileInfo_old file = getLastAddedFile();
             file.tagFileOrigin = tag;
             return true;
         }
         
         if(tag.title.equalsIgnoreCase("FileSize")){
-            FileInfo file = getLastAddedFile();
+            FileInfo_old file = getLastAddedFile();
             file.tagFileSize = tag;
             return true;
         }
         
         if(tag.title.equalsIgnoreCase("FileLOC")){
-            FileInfo file = getLastAddedFile();
+            FileInfo_old file = getLastAddedFile();
             file.tagFileLOC = tag;
             return true;
         }
         
         if(tag.title.equalsIgnoreCase("FileChecksum->SHA256")){
-            FileInfo file = getLastAddedFile();
+            FileInfo_old file = getLastAddedFile();
             file.tagFileChecksumSHA256 = tag;
             return true;
         }
         
         if(tag.title.equalsIgnoreCase("FileChecksum->MD5")){
-            FileInfo file = getLastAddedFile();
+            FileInfo_old file = getLastAddedFile();
             file.tagFileChecksumMD5 = tag;
             return true;
         }
         
         if(tag.title.contains("FileChecksum->SSDEEP")){
-            FileInfo file = getLastAddedFile();
+            FileInfo_old file = getLastAddedFile();
             file.tagFileChecksumSSDEEP = tag;
             return true;
         }
@@ -181,12 +181,12 @@ public class SectionFiles implements Serializable {
     /*
      * Provides the last added file object on our array
      */
-    private FileInfo getLastAddedFile() {
-        FileInfo result;
+    private FileInfo_old getLastAddedFile() {
+        FileInfo_old result;
         if(files.size()>0){
             result = files.get(files.size()-1);
         }else{
-            result = new FileInfo(spdx);
+            result = new FileInfo_old(spdx);
             files.add(result);
         }
         return result;  

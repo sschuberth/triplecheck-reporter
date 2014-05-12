@@ -17,6 +17,7 @@ import GUI.TreeNodeSPDX;
 import GUI.swingUtils;
 import definitions.Messages;
 import definitions.is;
+import experiment.FileInfo2;
 import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
@@ -24,7 +25,6 @@ import main.core;
 import script.FileExtension;
 import script.Plugin;
 import script.log;
-import spdxlib.FileInfo;
 import utils.html;
 import www.WebRequest;
 
@@ -132,29 +132,29 @@ public class actions extends Plugin{
         }
        
         // we're talking about tree nodes, get the respective information
-        FileInfo fileInfo = (FileInfo) node.getUserObject();
-        
-        File targetFile = fileInfo.getFileName();
-        
-        if(targetFile == null){
-            System.err.println("AC139 Null file pointer on: " + fileInfo.getName());
-            return;
-        }
-        
-        String result = "";
-        
-        // if the file exists, show it
-        if(targetFile.exists()){
-            result = readFile(targetFile);
-        }
-
-        // nothing exciting here, no point in continuing
-        if(result.isEmpty()){
-            return;
-        }
-        
-        // place everything on screen
-        core.studio.editorPane(is.contentHTML, false, 0, result);
+        FileInfo2 fileInfo = (FileInfo2) node.getUserObject();
+        System.err.println("AC136 Need to implement double click");
+//        File targetFile = fileInfo.getFile(spdx);
+//        
+//        if(targetFile == null){
+//            System.err.println("AC139 Null file pointer on: " + fileInfo.getFileName());
+//            return;
+//        }
+//        
+//        String result = "";
+//        
+//        // if the file exists, show it
+//        if(targetFile.exists()){
+//            result = readFile(targetFile);
+//        }
+//
+//        // nothing exciting here, no point in continuing
+//        if(result.isEmpty()){
+//            return;
+//        }
+//        
+//        // place everything on screen
+//        core.studio.editorPane(is.contentHTML, false, 0, result);
     }
     
 }

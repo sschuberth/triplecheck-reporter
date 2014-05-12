@@ -17,6 +17,8 @@ import static GUI.swingUtils.nodeCreate;
 import definitions.Messages;
 import definitions.definition;
 import definitions.is;
+import experiment.FileInfo2;
+import experiment.SPDXfile2;
 import java.awt.Cursor;
 import java.io.File;
 import java.util.ArrayList;
@@ -26,9 +28,6 @@ import javax.swing.JTree;
 import main.core;
 import main.param;
 import script.log;
-import spdxlib.FileInfo;
-import spdxlib.Person;
-import spdxlib.SPDXfile;
 
 
 /**
@@ -79,7 +78,7 @@ public class TreeviewUtils {
         // we now are sure that exists no such SPDX indexed yet 
         log.write(is.INSTALLING, "Adding new SPDX node");
         // add this new SPDX to our list
-        SPDXfile spdx = core.reports.get(file);
+        SPDXfile2 spdx = core.reports.get(file);
         // preflight check
         if(spdx == null){
             log.write(is.ERROR, "TU79 - SPDX object is null: %1", 
@@ -177,10 +176,10 @@ public class TreeviewUtils {
               if(file.getName().endsWith(".spdx")==false){
                   continue;
               }
-              // we don't generic SPDX files here
-              if(file.getName().endsWith("-info.spdx")){
-                  continue;
-              }
+//              // we don't generic SPDX files here
+//              if(file.getName().endsWith("-info.spdx")){
+//                  continue;
+//              }
               // add this SPDX to our tree view
               spdxAddNode(file, rootNode);
               count++;
@@ -336,9 +335,9 @@ public class TreeviewUtils {
     
     
     /**
-     * Add the files inside this SPDX document
+     * Add the files inside this SPDX document to the treeview node
      */
-    private static void addFiles(SPDXfile spdx, TreeNodeSPDX spdxNode){
+    private static void spdxCreateFilesSection(SPDXfile2 spdx, TreeNodeSPDX spdxNode){
         // this code below avoids that we add too many times the Files node
         Enumeration list = spdxNode.children();
         while(list.hasMoreElements()){
@@ -354,10 +353,10 @@ public class TreeviewUtils {
         String title = "Files";
         
         // do we have more than one reviewer?
-        if(spdx.fileSection.files.size() > 1){
+        if(spdx.getFiles().size() > 1){
             title = "Files " 
                     + " ("
-                    + spdx.fileSection.files.size()
+                    + spdx.getFiles().size()
                     + ")";
         }
         
@@ -367,13 +366,13 @@ public class TreeviewUtils {
                 NodeType.sectionFile, spdxNode);
         node.nodeType = NodeType.sectionFile;
         node.id = "./";
-        node.setUserObject(spdx.fileSection);
+        node.setUserObject(spdx.getFiles());
 
         
         
         core.studio.getTree().setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
         // create the tree structure
-        spdxDoTreeStructure(node, spdx);
+        spdxDoTreeFileStructure(node, spdx);
         // if an exception occurs, this next line doesn't happen..
         core.studio.getTree().setCursor(Cursor.getDefaultCursor());
     }
@@ -383,7 +382,7 @@ public class TreeviewUtils {
      * @param root
      * @param spdx 
      */
-    private static void spdxDoTreeStructure(TreeNodeSPDX root, SPDXfile spdx){
+    public static void spdxDoTreeFileStructure(TreeNodeSPDX root, SPDXfile2 spdx){
         
         // where we store all the nodes of our tree
         HashMap nodeList = new HashMap();
@@ -392,33 +391,32 @@ public class TreeviewUtils {
         nodeList.put(".", root);
         
         // go through all the files inside the SPDX 
-        for(FileInfo fileInfo : spdx.fileSection.files){
+        for(FileInfo2 fileInfo : spdx.getFiles()){
             // get the path for this file bit
-            String path = getFilePath(fileInfo);
-            
+            final String path = fileInfo.getFilePath();
             // don't add the root node
-            if(path.equals(".")){
+            if(utils.text.equals(path, ".")){
                 continue;
             }
-            // add it up to our list
+            // add a new folder to our list
             TreeNodeSPDX folderNode = addNodeFolder(root, path);
             // put in our cached list
             nodeList.put(path, folderNode);
         }
         
         
-        // add all the files from the SPDX to our treeview folders
-        for(FileInfo fileInfo : spdx.fileSection.files){
+        // now add all the files from the SPDX to our treeview folders
+        for(FileInfo2 fileInfo : spdx.getFiles()){
             // get the path for this file bit
-            String path = getFilePath(fileInfo);
+            final String path = fileInfo.getFilePath();
             
-            //System.out.println("Looking for -->" + path);
-            TreeNodeSPDX pathNode = (TreeNodeSPDX) nodeList.get(path);
-            TreeNodeSPDX nodeFile = new TreeNodeSPDX(fileInfo.toString());
-            nodeFile.id = fileInfo.getName();
+            final TreeNodeSPDX pathNode = (TreeNodeSPDX) nodeList.get(path);
+            TreeNodeSPDX nodeFile = new TreeNodeSPDX(fileInfo.getName());
+            nodeFile.id = fileInfo.getFileName();
             nodeFile.nodeType = NodeType.file;
             // set a specific icon for this item
-            nodeFile.icon = swingUtils.setIcon(fileInfo);
+            nodeFile.icon = fileInfo.getFileCategory().toIcon();
+                    //swingUtils.setIcon(fileInfo);
             // add this file to the parent path
             nodeFile.setUserObject(fileInfo);
             pathNode.add(nodeFile);
@@ -426,38 +424,13 @@ public class TreeviewUtils {
     }
 
     /**
-     * Returns the path portion from a given FileInfo object
-     * @return 
-     */
-    private static String getFilePath(FileInfo fileInfo){
-        
-        // or else, the path is found inside the FileName tag
-        String fileName = fileInfo.tagFileName.getValue();
-        
-        // if we have a FilePath tag available, use it as default
-        if(fileInfo.tagFilePath != null){
-            String filePath = fileInfo.tagFilePath.getValue();
-            fileName = filePath + fileName;
-        }
-        
-        // if no path is available, just mention it as root
-        if(fileName.contains("/")==false){
-            return "./";
-        }
-        // there is a path available, let's get it
-        String result = fileName.substring(0, fileName.lastIndexOf("/"));
-        
-        return result;
-    }
-    
-    /**
      * Adds a given folder as child from a specific folder
      */
     private static TreeNodeSPDX addNodeFolder(TreeNodeSPDX root, String newFolder){
         // don't accept requests for the root node
-        if(newFolder.equals("./")){
-            return root;
-        }
+//        if(utils.text.equals(newFolder, "./")){
+//            return root;
+//        }
         
         // try to locate this parent
         TreeNodeSPDX TheOne = findTheOne(root, newFolder);
@@ -465,7 +438,6 @@ public class TreeviewUtils {
         if(TheOne == null){
             TheOne = createTheOne(root, newFolder);
         }
-         
         return TheOne;
     }
     
@@ -513,15 +485,14 @@ public class TreeviewUtils {
      * @param what
      * @return 
      */
-    private static TreeNodeSPDX findTheOne(TreeNodeSPDX where, String what){
+    private static TreeNodeSPDX findTheOne(TreeNodeSPDX where, final String what){
     // list all the children folders
         Enumeration list = where.children();
         while(list.hasMoreElements()){
-            TreeNodeSPDX child = (TreeNodeSPDX) list.nextElement();
+            final TreeNodeSPDX child = (TreeNodeSPDX) list.nextElement();
             // first question: Are you the one?
-            if(child.id.equals(what)){
-                // no need to continue, he is the one
-                return child;
+            if(utils.text.equals(child.id,what)){
+                 return child;
             }
             // Is any of your children, the one?
             TreeNodeSPDX result = findTheOne(child, what);
@@ -610,63 +581,63 @@ public class TreeviewUtils {
         // now readLines the SPDX document
         //System.err.println("DBG-TU611 Reading SPDX");
         //SPDXfile spdx = new SPDXfile(spdxFile);
-        SPDXfile spdx = core.reports.get(spdxFile);
+        SPDXfile2 spdx = core.reports.get(spdxFile);
         // basic parts were done, now add up the needed details
-        addPeople(spdx, node);
-        addFiles(spdx, node);
+//        addPeople(spdx, node);
+        spdxCreateFilesSection(spdx, node);
         node.update(true);
     }
       
-    /**
-     * When necessary, add nodes listing the people that have created the SPDX
-     * document. If these nodes were already created, do nothing
-     */
-    private static void addPeople(SPDXfile spdx, TreeNodeSPDX spdxNode){
-        Enumeration list = spdxNode.children();
-        while(list.hasMoreElements()){
-            TreeNodeSPDX child = (TreeNodeSPDX) list.nextElement();
-            if(child.nodeType == NodeType.sectionCreator){
-                // no need to continue, people were already listed
-                return;
-            }
-        }
-        
-        // title of the node that we want to create
-        String title = definition.nodeReviewerSPDX;
-        
-        // do we have more than one reviewer?
-        if(spdx.creatorSection.people.size() > 1){
-            title = definition.nodeReviewersSPDX 
-                    + " ("
-                    + spdx.creatorSection.people.size()
-                    + ")";
-        }
-        
-        // let's add people, this is our main node
-        TreeNodeSPDX node = swingUtils.nodeCreate(
-                title, 
-                NodeType.sectionCreator, spdxNode);
-        node.nodeType = NodeType.sectionCreator;
-        node.id = definition.nodeReviewerSPDX;
-        node.setUserObject(spdx.creatorSection);
-        
-        // create now a node for each author
-        for(Person person : spdx.creatorSection.people){
-            TreeNodeSPDX nodePerson = swingUtils.addNodePerson(node, person);
-            // add here the action we want to happen when clicked
-            File scriptFile = new File(core.getPluginsFolder(), "/people/show.java");
-            nodePerson.scriptFile = scriptFile;
-            nodePerson.scriptFolder = scriptFile.getParentFile();
-            nodePerson.scriptMethod = "details";
-            // create the correct parameters
-            String relativePath = 
-                    spdx.file.getAbsolutePath().replace(core.getProductsFolder().getAbsolutePath(), "");
-            // add the SPDX that we want to edit/show
-            nodePerson.scriptParameters.add(new String[]{param.spdx, relativePath});
-            // add the user name that we want to edit
-            nodePerson.scriptParameters.add(new String[]{param.filter, person.getTitle()});
-        }
-    } 
+//    /**
+//     * When necessary, add nodes listing the people that have created the SPDX
+//     * document. If these nodes were already created, do nothing
+//     */
+//    private static void addPeople(SPDXfile2 spdx, TreeNodeSPDX spdxNode){
+//        Enumeration list = spdxNode.children();
+//        while(list.hasMoreElements()){
+//            TreeNodeSPDX child = (TreeNodeSPDX) list.nextElement();
+//            if(child.nodeType == NodeType.sectionCreator){
+//                // no need to continue, people were already listed
+//                return;
+//            }
+//        }
+//        
+//        // title of the node that we want to create
+//        String title = definition.nodeReviewerSPDX;
+//        
+//        // do we have more than one reviewer?
+//        if(spdx.creatorSection.people.size() > 1){
+//            title = definition.nodeReviewersSPDX 
+//                    + " ("
+//                    + spdx.creatorSection.people.size()
+//                    + ")";
+//        }
+//        
+//        // let's add people, this is our main node
+//        TreeNodeSPDX node = swingUtils.nodeCreate(
+//                title, 
+//                NodeType.sectionCreator, spdxNode);
+//        node.nodeType = NodeType.sectionCreator;
+//        node.id = definition.nodeReviewerSPDX;
+//        node.setUserObject(spdx.creatorSection);
+//        
+//        // create now a node for each author
+//        for(Person person : spdx.creatorSection.people){
+//            TreeNodeSPDX nodePerson = swingUtils.addNodePerson(node, person);
+//            // add here the action we want to happen when clicked
+//            File scriptFile = new File(core.getPluginsFolder(), "/people/show.java");
+//            nodePerson.scriptFile = scriptFile;
+//            nodePerson.scriptFolder = scriptFile.getParentFile();
+//            nodePerson.scriptMethod = "details";
+//            // create the correct parameters
+//            String relativePath = 
+//                    spdx.file.getAbsolutePath().replace(core.getProductsFolder().getAbsolutePath(), "");
+//            // add the SPDX that we want to edit/show
+//            nodePerson.scriptParameters.add(new String[]{param.spdx, relativePath});
+//            // add the user name that we want to edit
+//            nodePerson.scriptParameters.add(new String[]{param.filter, person.getTitle()});
+//        }
+//    } 
     
     /**
      * Starting from a specific node, find all child nodes that correspond
@@ -702,58 +673,58 @@ public class TreeviewUtils {
     }
     
     
-     /**
-     * When changes happen on the physical SPDX document on disk, we need
-     * to update the nodes inside the treeview with the fresh information
-     * @param spdx      The spdx object with the updated information
-     */
-    public static void spdxUpdateAllNodes(SPDXfile spdx){
-        nodeReports.children();
-        // enumerate the available sub-nodes and add them up
-        Enumeration list = nodeReports.children();
-        TreeNodeSPDX spdxNode = null;
-        // go through the basic root of documents
-        while(list.hasMoreElements()){
-            // get the next node
-            TreeNodeSPDX tempNode = (TreeNodeSPDX) list.nextElement();
-            // does its object match with what we are looking?
-            File file = (File) tempNode.getUserObject();
-            if(file.getAbsolutePath().equals(spdx.file.getAbsolutePath())){
-                spdxNode = tempNode;
-                // no need to loop through the other documents
-                break;
-            }
-       }
-        // no need to continue if nothing was found
-        if(spdxNode == null){
-            System.err.println("TU728 - Didn't found spdxNode at " 
-                    + spdx.file.getAbsolutePath());
-            return;
-        }
-
-        // now create a list with all the nodes that we want to change
-        ArrayList<TreeNodeSPDX> nodes = new ArrayList();
-        getNodes(spdxNode, nodes, NodeType.file);
-        //System.err.println("Changing " + nodes.size() + " nodes");
-        // go through each one to make changes
-        for(TreeNodeSPDX node : nodes){
-             // get the object
-            FileInfo fileInfo = (FileInfo) node.getUserObject();       
-            // now update the value on our treeview
-            String location = fileInfo.getRelativeLocation();
-            FileInfo newInfo = fileInfo.spdx.findRelative(location);
-            // no need to continue if the result is null
-            if(newInfo == null){
-                System.err.println("SU1228: Didn't found the relative FileInfo");
-                return;
-            }
-            // now update the node on the tree view
-            node.setUserObject(newInfo);
-            node.setTitle(newInfo.toString());
-            node.update(false);
-        }
-        
-    }
+//     /**
+//     * When changes happen on the physical SPDX document on disk, we need
+//     * to update the nodes inside the treeview with the fresh information
+//     * @param spdx      The spdx object with the updated information
+//     */
+//    public static void spdxUpdateAllNodes(SPDXfile spdx){
+//        nodeReports.children();
+//        // enumerate the available sub-nodes and add them up
+//        Enumeration list = nodeReports.children();
+//        TreeNodeSPDX spdxNode = null;
+//        // go through the basic root of documents
+//        while(list.hasMoreElements()){
+//            // get the next node
+//            TreeNodeSPDX tempNode = (TreeNodeSPDX) list.nextElement();
+//            // does its object match with what we are looking?
+//            File file = (File) tempNode.getUserObject();
+//            if(file.getAbsolutePath().equals(spdx.file.getAbsolutePath())){
+//                spdxNode = tempNode;
+//                // no need to loop through the other documents
+//                break;
+//            }
+//       }
+//        // no need to continue if nothing was found
+//        if(spdxNode == null){
+//            System.err.println("TU728 - Didn't found spdxNode at " 
+//                    + spdx.file.getAbsolutePath());
+//            return;
+//        }
+//
+//        // now create a list with all the nodes that we want to change
+//        ArrayList<TreeNodeSPDX> nodes = new ArrayList();
+//        getNodes(spdxNode, nodes, NodeType.file);
+//        //System.err.println("Changing " + nodes.size() + " nodes");
+//        // go through each one to make changes
+//        for(TreeNodeSPDX node : nodes){
+//             // get the object
+//            FileInfo fileInfo = (FileInfo) node.getUserObject();       
+//            // now update the value on our treeview
+//            String location = fileInfo.getRelativeLocation();
+//            FileInfo newInfo = fileInfo.spdx.findRelative(location);
+//            // no need to continue if the result is null
+//            if(newInfo == null){
+//                System.err.println("SU1228: Didn't found the relative FileInfo");
+//                return;
+//            }
+//            // now update the node on the tree view
+//            node.setUserObject(newInfo);
+//            node.setTitle(newInfo.toString());
+//            node.update(false);
+//        }
+//        
+//    }
     
     
 }
