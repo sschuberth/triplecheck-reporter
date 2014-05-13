@@ -11,7 +11,7 @@
  *  file of the package </text> 
  */
 
-package spdxlib;
+package old;
 
 import definitions.is;
 import java.io.File;
@@ -20,6 +20,8 @@ import java.util.ArrayList;
 import main.core;
 import script.FileExtension;
 import script.log;
+import spdxlib.FileCategory;
+import spdxlib.FileOrigin;
 
 
 public class FileInfo_old implements Serializable {

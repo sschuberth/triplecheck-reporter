@@ -13,7 +13,7 @@
    * saving this information back to a file on disk. </text> 
    */
 
-package spdxlib;
+package old;
 
 import definitions.Process;
 import definitions.id;
@@ -32,6 +32,10 @@ import java.util.logging.Logger;
 import main.core;
 import script.FileExtension;
 import script.log;
+import spdxlib.FileCategory;
+import spdxlib.FileLanguage;
+import spdxlib.FileOrigin;
+import spdxlib.Keyword;
 import utils.files;
 import utils.html;
 import static utils.misc.sortByComparator;

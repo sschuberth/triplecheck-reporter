@@ -18,15 +18,15 @@ import GUI.TreeNodeSPDX;
 import GUI.swingUtils;
 import definitions.Messages;
 import definitions.is;
-import experiment.FileInfo2;
-import experiment.SPDXfile2;
+import spdxlib.FileInfo2;
+import spdxlib.SPDXfile2;
 import java.io.File;
 import main.core;
 import main.param;
 import script.FileExtension;
 import script.Plugin;
 import script.log;
-import spdxlib.tools;
+import old.tools;
 import utils.html;
 import www.WebRequest;
 

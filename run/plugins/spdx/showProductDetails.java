@@ -19,7 +19,7 @@ import GUI.TreeNodeSPDX;
 import GUI.swingUtils;
 import definitions.Messages;
 import definitions.is;
-import experiment.SPDXfile2;
+import spdxlib.SPDXfile2;
 import java.util.ArrayList;
 import main.core;
 import script.Plugin;

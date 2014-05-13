@@ -19,8 +19,9 @@
  *  documents </text> 
  */
 
-package spdxlib;
+package old;
 
+import old.TagValue;
 import java.io.Serializable;
 import java.util.ArrayList;
 

@@ -11,9 +11,10 @@
    * Infomation field</text> 
    */
 
-package spdxlib;
+package old;
 
-import experiment.FileInfo2;
+import old.TagValue;
+import spdxlib.FileInfo2;
 import java.io.Serializable;
 import java.util.ArrayList;
 

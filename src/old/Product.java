@@ -20,7 +20,7 @@
  * product is composed with multiple software components. </text> 
  */
 
-package spdxlib;
+package old;
 
 import java.io.File;
 

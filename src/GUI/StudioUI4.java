@@ -13,8 +13,6 @@ package GUI;
 
 import definitions.Messages;
 import definitions.is;
-import experiment.FileInfo2;
-import experiment.SPDXfile2;
 import java.awt.Color;
 import java.awt.Cursor;
 import java.awt.Toolkit;
@@ -24,7 +22,6 @@ import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.Enumeration;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.logging.Level;
@@ -237,11 +234,6 @@ public class StudioUI4 extends javax.swing.JFrame {
         tree.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 treeeventTreeMouseClicked(evt);
-            }
-        });
-        tree.addTreeSelectionListener(new javax.swing.event.TreeSelectionListener() {
-            public void valueChanged(javax.swing.event.TreeSelectionEvent evt) {
-                treeValueChanged(evt);
             }
         });
         panelWest.setViewportView(tree);
@@ -485,9 +477,6 @@ public class StudioUI4 extends javax.swing.JFrame {
     }
     
     
-    private void treeValueChanged(javax.swing.event.TreeSelectionEvent evt) {//GEN-FIRST:event_treeValueChanged
-    }//GEN-LAST:event_treeValueChanged
-
     private void textFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_textFocusGained
     }//GEN-LAST:event_textFocusGained
 
@@ -649,7 +638,7 @@ public class StudioUI4 extends javax.swing.JFrame {
         // the basic root node that is always needed
         swingUtils.nodeAddRoot(tree);
        // now add all reports that we can find
-        TreeviewUtils.spdxCreateListFull();
+        TreeviewUtils.spdxAddFullTree();
     
         // get the list of RunPlugins going
         RunPlugins.listPlugins();

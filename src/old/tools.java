@@ -11,7 +11,7 @@
  * to check certain details about SPDX information.</text> 
  */
 
-package spdxlib;
+package old;
 
 import java.io.File;
 import main.core;

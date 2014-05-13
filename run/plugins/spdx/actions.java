@@ -17,7 +17,7 @@ import GUI.TreeNodeSPDX;
 import GUI.swingUtils;
 import definitions.Messages;
 import definitions.is;
-import experiment.FileInfo2;
+import spdxlib.FileInfo2;
 import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;

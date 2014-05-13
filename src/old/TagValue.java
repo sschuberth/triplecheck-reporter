@@ -10,8 +10,9 @@
  * FileComment: <text> A simple holder for Tag/Value pairs of data </text> 
  */
 
-package spdxlib;
+package old;
 
+import old.SPDXfile_old;
 import definitions.is;
 import java.io.Serializable;
 

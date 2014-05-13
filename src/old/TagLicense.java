@@ -9,7 +9,9 @@
  * FileCopyrightText: <text> Copyright 2013 Nuno Brito, TripleCheck </text>
  * FileComment: <text> Class to represent a specific license </text> 
  */
-package spdxlib;
+package old;
+
+import old.TagValue;
 
 public class TagLicense {
     public TagValue

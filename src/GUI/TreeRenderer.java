@@ -12,7 +12,7 @@
 
 package GUI;
 
-import experiment.FileInfo2;
+import spdxlib.FileInfo2;
 import java.awt.Color;
 import java.awt.Component;
 import javax.swing.Icon;
@@ -53,7 +53,26 @@ public class TreeRenderer extends DefaultTreeCellRenderer {
         super.getTreeCellRendererComponent(
             tree, value, sel, exp, leaf, row, hasFocus);
         
+        // get the node we focusing at this moment
         TreeNodeSPDX node = (TreeNodeSPDX) value;
+        
+        // write the title of this product
+            setText(node.toString());
+            // show nodes with concluded license in blue color
+            // we only make changes on file nodes
+            if((node.getUserObject() != null)
+                &&(node.nodeType == NodeType.file)){
+                    // get the data from this node
+                    FileInfo2 fileInfo = (FileInfo2) node.getUserObject();
+                    //System.err.println("Printing icon to " + fileInfo.getFileCategory());
+                    node.icon = fileInfo.getFileCategory().toIcon();
+                    //setIcon(fileInfo.getFileCategory().toIcon());
+                    if(fileInfo.hasLicenseConcluded()){
+                        setForeground(Color.blue);
+                }
+            }
+            
+        
 
         // if there is an icon defined for this node, set it up here.
         if(node.icon != null){
@@ -64,59 +83,22 @@ public class TreeRenderer extends DefaultTreeCellRenderer {
             case none:
                 setIcon(none);
                 break;
-            case file:
-                setIcon(file);
-                break;
             case folder:
                 setIcon(folderClosed);
                 node.iconWhenSelected = get("folder-horizontal-open.png");
                 break;
-            case person:
-                setIcon(person);
-                break;
-            case sectionCreator:
-                setIcon(sectionCreator);
-                break;
-            case sectionPackage:
-                setIcon(sectionPackage);
-                break;
             case sectionFile:
                 setIcon(sectionFile);
-                break;
-            case sectionReview:
-                setIcon(sectionReview);
-                break;
-//            case home:
-//                setIcon(home);
-//                break;
-            case home:
-                setIcon(home);
                 break;
         }
         
         // is this icon selected?
-        if(sel == true){
-            if(node.iconWhenSelected != null){
-                setIcon(node.iconWhenSelected);
-            }
-        
+    if(sel){
+        if(node.iconWhenSelected != null){
+            setIcon(node.iconWhenSelected);
         }
-        
-            // write the title of this product
-            setText(node.toString());
-            
-            // show nodes with concluded license in blue color
-            // we only make changes on file nodes
-            if(node.nodeType == NodeType.file){
-                // get the data from this node
-                FileInfo2 fileInfo = (FileInfo2) node.getUserObject();
-                if(fileInfo.hasLicenseConcluded()){
-                    setForeground(Color.blue);
-                }
-                
-                
-            }
-            
+
+    }
             
         return this;
     }

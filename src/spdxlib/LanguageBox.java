@@ -12,7 +12,6 @@
 
 package spdxlib;
 
-import experiment.FileInfo2;
 import java.util.ArrayList;
 
 

@@ -11,10 +11,12 @@
  */
 package GUI;
 
+import old.Person;
+import old.TagValue;
 import definitions.Messages;
 import definitions.is;
-import experiment.FileInfo2;
-import experiment.SPDXfile2;
+import spdxlib.FileInfo2;
+import spdxlib.SPDXfile2;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Enumeration;
@@ -397,9 +399,9 @@ public class swingUtils {
             // now get the SPDX node
             TreeNodeSPDX node = TreeviewUtils.getNode(">> " + temp);
             // if there is no children, do the reading
-            if(node!= null && node.getChildCount() == 0){
-                TreeviewUtils.spdxCreateNodeStructure(node);
-            }
+//            if(node!= null && node.getChildCount() == 0){
+//                TreeviewUtils.spdxCreateNodeStructure(node);
+//            }
             
         }
         

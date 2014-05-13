@@ -16,6 +16,7 @@ import java.io.File;
 import java.util.ArrayList;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
+import javax.swing.JTree;
 import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeModel;
 import main.core;
@@ -49,9 +50,9 @@ public class TreeNodeSPDX extends DefaultMutableTreeNode{
             iconWhenSelected = null;
     
 
-    public TreeNodeSPDX(String library) {
-        super(library);
-        title = library;
+    public TreeNodeSPDX(final String title) {
+        super(title);
+        this.title = title;
     }
     
 //    @Override
@@ -73,6 +74,19 @@ public class TreeNodeSPDX extends DefaultMutableTreeNode{
         return result;
     }
 
+    /**
+     * Update the view of this node on a given tree 
+     * @param full  should the treeview be fully refreshed or not?
+     * @param tree
+     */
+    public void update(boolean full, JTree tree){
+        DefaultTreeModel model = (DefaultTreeModel) tree.getModel();
+        model.nodeChanged(this);
+        // if true, reload the whole treeview
+        if(full){
+            model.reload(this.getParent());
+        }
+    }
     /**
      * Update the view of this node on a given tree 
      * @param full  should the treeview be fully refreshed or not?

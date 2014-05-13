@@ -11,8 +11,9 @@
  * a specific text file </text> 
  */
 
-package spdxlib;
+package old;
 
+import old.SPDXfile_old;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;

@@ -11,15 +11,15 @@
  * inside an SPDX document.</text> 
  */
 
-package experiment;
+package spdxlib;
 
+import GUI.TreeNodeSPDX;
+import GUI.TreeviewUtils;
 import java.io.File;
 import java.io.Serializable;
 import java.util.ArrayList;
 import main.core;
 import script.FileExtension;
-import spdxlib.FileCategory;
-import spdxlib.FileOrigin;
 
 
 /**
@@ -64,7 +64,10 @@ public class FileInfo2 implements Serializable{
     private final SPDXfile2 spdx;
     
     
-    public FileInfo2(SPDXfile2 spdx){
+    private TreeNodeSPDX node;
+    
+    
+    public FileInfo2(final SPDXfile2 spdx){
         this.spdx = spdx;
     }
     
@@ -230,19 +233,7 @@ public class FileInfo2 implements Serializable{
         return filePath;
     }
     
-    /**
-     * This method should only be called when the FileName is modified
-     */
-    private void computeFilePath(){
-//        // if no path is available, just mention it as root
-//        if((fileName.contains("/")==false)){
-//            return "./";
-//        }
-        // there is a path available, let's get it
-        final String result = fileName.substring(0, fileName.lastIndexOf("/"));
-        filePath = result;
-    }
-    
+   
     /**
      * Calculate the UID for this item
      * @param spdx      The spdx file where this object is placed
@@ -315,6 +306,24 @@ public class FileInfo2 implements Serializable{
     public SPDXfile2 getSPDX() {
         return spdx;
    }
-     
+
+    /**
+     * This method should only be called when the FileName is modified
+     */
+    private void computeFilePath(){
+        // there is a path available, let's get it
+        final String result = fileName.substring(0, fileName.lastIndexOf("/"));
+        filePath = result;
+    }
     
+    /**
+     * Create the node to be placed on the treeview
+     * @param nodeFiles     The root node from where all files are found
+     */
+    void computeNode(final TreeNodeSPDX nodeFiles) {
+        final String thisFileName = fileName;
+        node = TreeviewUtils.mkdirNodes(nodeFiles, thisFileName);
+        node.setUserObject(this);
+    }
+     
 }

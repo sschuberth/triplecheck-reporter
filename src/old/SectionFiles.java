@@ -19,8 +19,11 @@
  *  reported on the SPDX document </text> 
  */
 
-package spdxlib;
+package old;
 
+import old.TagValue;
+import old.SPDXfile_old;
+import old.FileInfo_old;
 import java.io.Serializable;
 import java.util.ArrayList;
 

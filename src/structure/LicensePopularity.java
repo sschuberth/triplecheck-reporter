@@ -16,8 +16,8 @@
 package structure;
 
 import definitions.is;
-import experiment.FileInfo2;
-import experiment.SPDXfile2;
+import spdxlib.FileInfo2;
+import spdxlib.SPDXfile2;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;

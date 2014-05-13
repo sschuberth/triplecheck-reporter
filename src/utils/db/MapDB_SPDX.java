@@ -19,7 +19,7 @@ import main.core;
 import org.mapdb.DB;
 import org.mapdb.DBMaker;
 import script.log;
-import spdxlib.SPDXfile_old;
+import old.SPDXfile_old;
 
 
 /**

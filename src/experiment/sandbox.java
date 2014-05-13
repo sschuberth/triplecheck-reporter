@@ -12,6 +12,7 @@
 
 package experiment;
 
+import spdxlib.SPDXfile2;
 import GUI.TreeNodeSPDX;
 import GUI.TreeviewUtils;
 import definitions.is;
@@ -39,9 +40,9 @@ public class sandbox {
         }
         SPDXfile2 spdx = new SPDXfile2(bigFile);
         log.write(is.INFO, "Finished reading spdx");
-        TreeNodeSPDX root = new TreeNodeSPDX("test");
-        TreeviewUtils.spdxDoTreeFileStructure(root, spdx);
-        log.write(is.INFO, "Finished creating node");
+//        TreeNodeSPDX root = new TreeNodeSPDX("test");
+        //TreeviewUtils.spdxDoTreeFileStructure(root, spdx);
+//        log.write(is.INFO, "Finished creating node");
 //        spdx.printFeedback();
         System.exit(1111);
     }

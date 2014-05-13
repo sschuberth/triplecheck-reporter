@@ -13,7 +13,7 @@
 package structure;
 
 import definitions.is;
-import experiment.SPDXfile2;
+import spdxlib.SPDXfile2;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;

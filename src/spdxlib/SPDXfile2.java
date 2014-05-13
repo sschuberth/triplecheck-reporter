@@ -15,8 +15,10 @@
  *  - Reading and writing operations can be only be done internally</text> 
  */
 
-package experiment;
+package spdxlib;
 
+import GUI.NodeType;
+import GUI.TreeNodeSPDX;
 import definitions.id;
 import definitions.is;
 import java.io.BufferedReader;
@@ -28,8 +30,7 @@ import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import main.core;
-import spdxlib.FileCategory;
-import spdxlib.FileOrigin;
+import script.log;
 import utils.files;
 
 
@@ -49,6 +50,8 @@ public class SPDXfile2 implements Serializable{
     // which file was used for reading this document?
     public File file;
     
+    // the node where all info about files is stored
+    private TreeNodeSPDX nodeFiles = new TreeNodeSPDX("Files");
     
     // temporary values only used during the initial processing
     FileInfo2 tempInfo;
@@ -67,7 +70,6 @@ public class SPDXfile2 implements Serializable{
     public final String getId() {
         return file.getName().replace(".spdx", "");
     }
-
 
     // used for tags with multiple lines, such as:
     // FileCopyrightText -> COPYRIGHT
@@ -105,25 +107,46 @@ public class SPDXfile2 implements Serializable{
                 try {
                     // read the tag/value information
                     processFileLine(line, linePosition);
+                
                 } catch (Exception ex) {
-                    System.err.println("Error when reading line: " + linePosition
-                            + " of file: " + file.getAbsolutePath());
+                    log.write(is.ERROR, "Error when reading line: %1 of file %2"
+                            ,linePosition + "", file.getAbsolutePath());
                     // no need to stop, continue to the next item
                     continue;
                 }
                 // increase the line counter
                 linePosition++;
             }
-          
+            // small tidybits that were left to fix up
+            postProcessing();
       } catch (IOException ex) {
           Logger.getLogger(files.class.getName()).log(Level.SEVERE, null, ex);
-          // this is a critical error, let's stop here to reflect
-          System.err.println("Error when reading line: " + linePosition
-                  + " of file: " + file.getAbsolutePath());
-          System.exit(6751);
+          // something went wrong
+          log.write(is.ERROR, "Error when reading line: %1 of file %2"
+                  ,linePosition + "", file.getAbsolutePath());
       }
     }
 
+    /**
+     * This method checks if a given line has the </text> tag which represents
+     * the end of a multiple line. When this happens, we collect the result
+     * and write back the value.
+     * @param line  The line to be processed
+     */
+    void doMultipleLineCheck(final String line){
+        // can we stop accounting these lines as multiple?
+        if(line.endsWith(is.textFinal)){
+                    isMultiple = false;
+                    // now write the appropriate key holder
+                    switch(lastTag){
+                        case COPYRIGHT:
+                            final String temp = lastLine
+                                    .substring(is.tagFileCopyrightText.length());
+                            tempInfo.setFileCopyrightText(temp);
+                            break;
+                    }
+        }
+    }
     
     /**
      * Add this piece of data onto our object being formed
@@ -137,34 +160,26 @@ public class SPDXfile2 implements Serializable{
             isMultiple = true;
             lastTag = mTypes.COPYRIGHT;
             lastLine = "";
-            //lastLine = tagGetValue(is.tagFileCopyrightText, line);
         }
         
         // is this line a continuation of a previous multiple line?
         if(isMultiple){
             // add this new line, plus a break line
             lastLine = lastLine.concat(line + "\n");
-             // can we stop accounting these lines as multiple?
-            if(line.endsWith(is.textFinal)){
-                isMultiple = false;
-                // now write the appropriate key holder
-                switch(lastTag){
-                    case COPYRIGHT:
-                        final String temp = lastLine.substring(is.tagFileCopyrightText.length());
-                        tempInfo.setFileCopyrightText(temp);
-                        break;
-                }
-            }
+            doMultipleLineCheck(line);
         }else
         // start the block to process all other file tags 
         // have we found a file?
         if(tagStartsWith(is.tagFileName, line)){
+            final String fileName = tagGetValue(is.tagFileName, line);
             // create the new file object
             FileInfo2 fileInfo = new FileInfo2(this);
             // add the respective file name
-            fileInfo.setFileName(tagGetValue(is.tagFileName, line));
+            fileInfo.setFileName(fileName);
             // set the file line position
             fileInfo.setLinePosition(linePosition);
+            // compute the file node
+            fileInfo.computeNode(nodeFiles);
             // set this file as the last one we have indexed
             tempInfo = fileInfo;
             // add it up to our general counter
@@ -372,11 +387,31 @@ public class SPDXfile2 implements Serializable{
         return "";
     }
 
-    
+    public TreeNodeSPDX getNodeFiles() {
+        return nodeFiles;
+    }
+
     public boolean hasVersioningFilesPresent() {
         System.err.println("Missing to implement VersioningFilesPresent");
         return false;
    }
 
-   
+    /**
+     * Correct small tidybit that are left to process. This avoids the need
+     * for IF conditions during processing
+     */
+    private void postProcessing() {
+        nodeFiles = (TreeNodeSPDX) nodeFiles.getFirstChild();
+        nodeFiles.nodeType = NodeType.sectionFile;
+        nodeFiles.id = "./";
+        // set the title
+        if(fileCounter > 1){
+            nodeFiles.setTitle("Files (" + fileCounter + ")");
+        }else{
+            nodeFiles.setTitle("Files");
+        }
+    }
+
+
+    
 }

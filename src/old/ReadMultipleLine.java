@@ -19,7 +19,7 @@
  * different lines such as this comment. </text> 
  */
 
-package spdxlib;
+package old;
 
 
 public class ReadMultipleLine {
