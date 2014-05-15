@@ -50,7 +50,8 @@ public final class LicensePopularity {
      */
     public LicensePopularity(){
         if(hasNotIndexed){
-            doIndex();
+            System.err.println("LP53 - Missing to fix License popularity");
+            //doIndex();
         }
     }
 
@@ -105,43 +106,45 @@ public final class LicensePopularity {
     private void processFileInfo(FileInfo2 fileInfo){
         // start by increasing the number of detected files
         numberOfFiles++;
+        System.err.println("LP108 - Missing to implement processFileInfo");
+    
         // get the list of licenses
-        ArrayList<String> licList = fileInfo.getLicenseInfoInFile();
-        // iterate through each license that was found
-        for(String license : licList){
-            int counter;
-            // have we found this license before? If so, get the counter
-            if(list.containsKey(license)){
-                counter = list.get(license);
-                // add up another notch
-                counter++;
-            }else{
-                // not found before, add it for the first time
-                counter = 1;
-            }
-            // all done, place it back in place
-            list.put(license, counter);
-        }
-        
-         // process the authorship details
-        FileOrigin origin = fileInfo.getFileOrigin();
-        
-        // null value? Default to unknown
-        if(origin == null){
-            origin = FileOrigin.UNKNOWN;
-        }
-        
-        int countOrigin;
-        // was the author details of this file added before?
-        if(listOrigin.containsKey(origin)){
-            countOrigin = listOrigin.get(origin);
-            countOrigin++;
-        }else{
-            countOrigin = 1;
-        }
-        // place this value back into the counter
-        listOrigin.put(origin, countOrigin);
-        
+//        ArrayList<LicenseType> licList = fileInfo.getLicenseInfoInFile();
+//        // iterate through each license that was found
+//        for(String license : licList){
+//            int counter;
+//            // have we found this license before? If so, get the counter
+//            if(list.containsKey(license)){
+//                counter = list.get(license);
+//                // add up another notch
+//                counter++;
+//            }else{
+//                // not found before, add it for the first time
+//                counter = 1;
+//            }
+//            // all done, place it back in place
+//            list.put(license, counter);
+//        }
+//        
+//         // process the authorship details
+//        FileOrigin origin = fileInfo.getFileOrigin();
+//        
+//        // null value? Default to unknown
+//        if(origin == null){
+//            origin = FileOrigin.UNKNOWN;
+//        }
+//        
+//        int countOrigin;
+//        // was the author details of this file added before?
+//        if(listOrigin.containsKey(origin)){
+//            countOrigin = listOrigin.get(origin);
+//            countOrigin++;
+//        }else{
+//            countOrigin = 1;
+//        }
+//        // place this value back into the counter
+//        listOrigin.put(origin, countOrigin);
+//        
         
     }
     

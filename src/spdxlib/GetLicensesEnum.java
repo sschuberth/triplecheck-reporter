@@ -285,11 +285,9 @@ public class GetLicensesEnum {
      */
     private static String convertToEnum(String id) {
         String result = id;
-                
         result = result.replace("-", "_");
         result = result.replace(".", "_");
         result = result.replace("+", "_plus");
-        
         return result;
     }
 

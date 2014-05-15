@@ -54,12 +54,13 @@ public class FileInfo2 implements Serializable{
     private long fileSize = 0;
     
     // what are the licenses present on this file?
-    private final ArrayList<String> licenseInfoInFile = new ArrayList();
+    private final ArrayList<LicenseType> licenseInfoInFile = new ArrayList();
     private String licenseInfoInFileSummary = "";
     private boolean licenseInfoInFileAvailable = false;
+    private int licenseInfoInFileCounter = 0;
      
     // was a license concluded for this file?
-    private String licenseConcluded;
+    private LicenseType licenseConcluded;
     private boolean licenseConcludedAvailable = false;
     
     // was copyright text found for this file?
@@ -147,22 +148,23 @@ public class FileInfo2 implements Serializable{
         this.fileSize = fileSize;
     }
 
-    public ArrayList<String> getLicenseInfoInFile() {
+    public ArrayList<LicenseType> getLicenseInfoInFile() {
         return licenseInfoInFile;
     }
 
-    public void addLicenseInfoInFile(final String licenseInfoInFile) {
+    public void addLicenseInfoInFile(final LicenseType licenseInfoInFileSingle) {
         // add this license to the summary
         if(this.licenseInfoInFile.isEmpty()){
             licenseInfoInFileSummary 
-                    = licenseInfoInFileSummary.concat(licenseInfoInFile);
+                    = licenseInfoInFileSummary.concat(licenseInfoInFileSingle.toId());
         }else{
             // for the case when exists more than a single license
             licenseInfoInFileSummary 
-                    = licenseInfoInFileSummary.concat(", " + licenseInfoInFile);
+                    = licenseInfoInFileSummary.concat(", " + licenseInfoInFileSingle.toId());
         }
         // add it up
-        this.licenseInfoInFile.add(licenseInfoInFile);
+        licenseInfoInFile.add(licenseInfoInFileSingle);
+        licenseInfoInFileCounter++;
         // do the summary of licenses + name
         toString = getName() + " (" + licenseInfoInFileSummary + ")";
         licenseInfoInFileAvailable = true;
@@ -185,10 +187,10 @@ public class FileInfo2 implements Serializable{
     }
 
     public String getLicenseConcluded() {
-        return licenseConcluded;
+        return licenseConcluded.toId();
     }
 
-    public void setLicenseConcluded(String licenseConcluded) {
+    public void setLicenseConcluded(LicenseType licenseConcluded) {
         this.licenseConcluded = licenseConcluded;
         licenseConcludedAvailable = true;
     }
@@ -249,6 +251,10 @@ public class FileInfo2 implements Serializable{
     public FileCategory getFileCategory() {
         //TODO needs to be improved in the future
         return fileType;
+    }
+
+    public int getLicenseInfoInFileCounter() {
+        return licenseInfoInFileCounter;
     }
     
     /**

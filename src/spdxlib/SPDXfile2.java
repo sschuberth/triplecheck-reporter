@@ -219,7 +219,7 @@ public class SPDXfile2 implements Serializable{
         // was any license found inside this file?
         if(tagStartsWith(is.tagLicenseInfoInFile, line)){
            final String temp = tagGetValue(is.tagLicenseInfoInFile, line);
-            tempInfo.addLicenseInfoInFile(temp);
+            tempInfo.addLicenseInfoInFile(LicenseType.convertToEnum(temp));
          }else
         // Was an origin defined for this file?
         if(tagStartsWith(is.tagFileOrigin, line)){
@@ -230,7 +230,7 @@ public class SPDXfile2 implements Serializable{
         // Is a license defined for this file?
         if(tagStartsWith(is.tagLicenseConcluded, line)){
             final String temp = tagGetValue(is.tagLicenseConcluded, line);
-            tempInfo.setLicenseConcluded(temp);
+            tempInfo.setLicenseConcluded(LicenseType.convertToEnum(temp));
         }
     }
     
@@ -369,7 +369,7 @@ public class SPDXfile2 implements Serializable{
     public int getLicensesDeclaredCount() {
         int counter = 0;
         for(FileInfo2 fileInfo : files){
-            counter += fileInfo.getLicenseInfoInFile().size();
+            counter += fileInfo.getLicenseInfoInFileCounter();
         }
         return counter;
     }

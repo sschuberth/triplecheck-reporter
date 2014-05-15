@@ -231,13 +231,15 @@ public class showFileDetails extends Plugin{
             summary = "S" + summary.substring(3);
         }
         
-        if(fileInfo.getLicenseInfoInFile().size()>0){
+        if(fileInfo.getLicenseInfoInFileCounter() >0){
             summary += 
                      html.br 
-                    + "Applicable license(s): ";
-            for(String license : fileInfo.getLicenseInfoInFile()){
-                summary = summary.concat(license + " ");
-            }        
+                    + "Applicable license(s): "
+                    + fileInfo.getLicenseInfoInFileSummary()
+                    ;
+//            for(LicenseType license : fileInfo.getLicenseInfoInFile()){
+//                summary = summary.concat(license + " ");
+//            }        
         }
         
      

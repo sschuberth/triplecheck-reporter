@@ -1,3 +1,5 @@
+package spdxlib;
+
 /*
  * SPDXVersion: SPDX-1.1
  * Creator: Person: Nuno Brito
@@ -888,4 +890,20 @@ public enum LicenseType {
 	default: return false;
 		}
 	}
+        
+        
+        
+        
+    /**
+     * Convert the SPDX identifier of a license into an ENUM
+     * @param id
+     * @return 
+     */
+    public static LicenseType convertToEnum(final String id) {
+        final String result = id
+                .replace("-", "_")
+                .replace(".", "_")
+                .replace("+", "_plus");
+        return LicenseType.valueOf(result);
+    }
 }

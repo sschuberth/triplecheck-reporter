@@ -577,7 +577,7 @@ public class show extends Plugin{
              // iterate through all files
             for(FileInfo2 fileInfo : spdx.getFiles()){
             // if there is a trigger, no need to continue
-            if(fileInfo.getLicenseInfoInFile().size()>0){
+            if(fileInfo.getLicenseInfoInFileCounter()>0){
                 continue;
             }
             list.add(fileInfo);
@@ -588,7 +588,7 @@ public class show extends Plugin{
             // iterate through all files
             for(FileInfo2 fileInfo : spdx.getFiles()){
             // if there is a trigger, no need to continue
-            if(fileInfo.getLicenseInfoInFile().isEmpty()){
+            if(fileInfo.getLicenseInfoInFileCounter() == 0){
                 continue;
             }
             list.add(fileInfo);
