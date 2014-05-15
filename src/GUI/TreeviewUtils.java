@@ -21,6 +21,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.Enumeration;
 import javax.swing.JTree;
+import javax.swing.SwingUtilities;
 import javax.swing.tree.TreePath;
 import javax.swing.tree.TreeSelectionModel;
 import main.core;
@@ -187,10 +188,10 @@ public class TreeviewUtils {
      * folder and them as tree nodes 
      */
     public static void spdxAddFullTree() {
-        JTree tree = core.studio.getTree();
+        final JTree tree = core.studio.getTree();
        
         // get the root node where we have our treeview
-        TreeNodeSPDX rootNode = swingUtils.getRootNode(tree);
+        final TreeNodeSPDX rootNode = swingUtils.getRootNode(tree);
         
          // create the node for hosting our list of SPDX documents
         TreeNodeSPDX softwareNode = nodeCreate(
@@ -207,15 +208,52 @@ public class TreeviewUtils {
         softwareNode.scriptMethod = "main";
   
               
+        TreeNodeSPDX lastNode = null;
         // create a tree based on folder tree on disk
         for(SPDXfile2 spdx : core.reports.getList()){
-            spdxAddNode2(spdx, softwareNode);
+            lastNode = spdxAddNode2(spdx, softwareNode);
         }
         
-        // expand the tree node 
-//        TreeviewUtils.nodeExpand(softwareNode);
+       
+        if(lastNode == null){
+            return;
+        }
+        
+        // expand the tree node
+        //TreeviewUtils.nodeExpand(lastNode);
+       final TreeNodeSPDX node = lastNode;
+        final TreeNodeSPDX softNode = softwareNode;
+        
+        SwingUtilities.invokeLater(new Runnable() {
+    @Override
+    public void run() {
+        JTree tree = core.studio.getTree();
+        tree.updateUI();
+        tree.requestFocus();
+        tree.setExpandsSelectedPaths(true);
+        TreeSelectionModel model = tree.getSelectionModel();
+        TreePath path1 = new TreePath(rootNode.getPath());
+        TreePath path2 = new TreePath(softNode.getPath());
+        TreePath path3 = new TreePath(node.getPath());
+        
+        model.setSelectionPath(path1);
+        model.setSelectionPath(path2);
+        model.setSelectionPath(path3);
+        tree.scrollPathToVisible(path3);  
+        tree.setSelectionModel(model);
+        tree.expandPath(path3);
+        
+        ThirdParty.MiscMethods.collapseAll(tree, path3);
+        
+            }
+        });
+        
+     
     }
 
+    
+    
+    
    
 //    /**
 //     * This is a critical method. It will look for all SPDX files inside a given
@@ -682,16 +720,15 @@ public class TreeviewUtils {
             tree.expandPath(path);
             tree.setSelectionModel(model);
          
-
         // second wave
-//        path = new TreePath(node.getPath());
-//        // what we really wanted is to highligh the father, so, go back!
-//        model.addSelectionPath(path);
-//        tree.setExpandsSelectedPaths(true);
-//        tree.setSelectionPath(path);  
-//        tree.scrollPathToVisible(path);    
+        path = new TreePath(node.getPath());
+        // what we really wanted is to highligh the father, so, go back!
+        model.addSelectionPath(path);
+        tree.setExpandsSelectedPaths(true);
+        tree.setSelectionPath(path);  
+        tree.scrollPathToVisible(path);    
         
-//        tree.setSelectionModel(model);
+        tree.setSelectionModel(model);
     }   
     
     
