@@ -5,8 +5,8 @@ import spdxlib.License;
 /*
  * SPDXVersion: SPDX-1.1
  * Creator: Person: Nuno Brito
- * Created: 2014-04-26T13:44:31Z
- * LicenseName: Apache-2.0
+ * Created: 2014-05-15T11:44:38Z
+ * LicenseName: EUPL-1.1-without-appendix
  * FileName: GPL_2_0_with_GCC_exception.java 
  * FileCategory: SOURCE
  * FileCopyrightText: <text> Copyright (c) 2014, Nuno Brito </text>
@@ -49,17 +49,7 @@ public class GPL_2_0_with_GCC_exception extends License{
      */
     @Override
     public String getTerms(){
-        return "insert GPL v2 text here\n"
-        + "\n"
-        + "GCC Linking Exception\n"
-        + "In addition to the permissions in the GNU General Public License, the Free Softw"
-        + "are Foundation gives you unlimited permission to link the compiled version of th"
-        + "is file into combinations with other programs, and to distribute those combinati"
-        + "ons without any restriction coming from the use of this file. (The General Publi"
-        + "c License restrictions do apply in other respects; for example, they cover modif"
-        + "ication of the file, and distribution when not linked into a combine executable."
-        + ")\n"
-; // the license text
+        return ""; // the license text
     }
  
     

@@ -22,7 +22,13 @@ public enum TriggerType {
     COPYRIGHT,      // cases where a copyright was detected
     LICENSE,        // triggers specific to licensing terms
     AUTO_GENERATED, // marks a file that was auto-generated (no IPR claims)
-    UNKNOWN         // trigger type is unknown (default value)
-
+    UNKNOWN;        // trigger type is unknown (default value)
+    
+    
+    public boolean toTitle(){
+        switch(this){
+            default: return true;
+        }
+    }
 
 }

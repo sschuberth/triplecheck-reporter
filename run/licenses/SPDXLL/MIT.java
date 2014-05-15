@@ -5,8 +5,8 @@ import spdxlib.License;
 /*
  * SPDXVersion: SPDX-1.1
  * Creator: Person: Nuno Brito
- * Created: 2014-04-26T13:44:47Z
- * LicenseName: Apache-2.0
+ * Created: 2014-05-15T11:44:38Z
+ * LicenseName: EUPL-1.1-without-appendix
  * FileName: MIT.java 
  * FileCategory: SOURCE
  * FileCopyrightText: <text> Copyright (c) 2014, Nuno Brito </text>
@@ -49,28 +49,7 @@ public class MIT extends License{
      */
     @Override
     public String getTerms(){
-        return "MIT License\n"
-        + "\n"
-        + "Copyright (c) <year> <copyright holders>\n"
-        + "\n"
-        + "Permission is hereby granted, free of charge, to any person obtaining a copy of "
-        + "this software and associated documentation files (the \"Software\"), to deal in th"
-        + "e Software without restriction, including without limitation the rights to use, "
-        + "copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the "
-        + "Software, and to permit persons to whom the Software is furnished to do so, subj"
-        + "ect to the following conditions:\n"
-        + "\n"
-        + "The above copyright notice and this permission notice shall be included in all c"
-        + "opies or substantial portions of the Software.\n"
-        + "\n"
-        + "THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\n"
-        + "IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\n"
-        + "FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\n"
-        + "AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\n"
-        + "LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\n"
-        + "OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\n"
-        + "THE SOFTWARE.\n"
-; // the license text
+        return ""; // the license text
     }
  
     

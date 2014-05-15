@@ -5,8 +5,8 @@ import spdxlib.License;
 /*
  * SPDXVersion: SPDX-1.1
  * Creator: Person: Nuno Brito
- * Created: 2014-04-26T13:44:56Z
- * LicenseName: Apache-2.0
+ * Created: 2014-05-15T11:44:38Z
+ * LicenseName: EUPL-1.1-without-appendix
  * FileName: NTP.java 
  * FileCategory: SOURCE
  * FileCopyrightText: <text> Copyright (c) 2014, Nuno Brito </text>
@@ -49,19 +49,7 @@ public class NTP extends License{
      */
     @Override
     public String getTerms(){
-        return "NTP License (NTP)\n"
-        + "\n"
-        + "Copyright (c) (CopyrightHoldersName) (From 4-digit-year)-(To 4-digit-year)\n"
-        + "\n"
-        + "Permission to use, copy, modify, and distribute this software and its documentat"
-        + "ion for any purpose with or without fee is hereby granted, provided that the abo"
-        + "ve copyright notice appears in all copies and that both the copyright notice and"
-        + " this permission notice appear in supporting documentation, and that the name (T"
-        + "rademarkedName) not be used in advertising or publicity pertaining to distributi"
-        + "on of the software without specific, written prior permission. (TrademarkedName)"
-        + " makes no representations about the suitability this software for any purpose. I"
-        + "t is provided \"as is\" without express or implied warranty.\n"
-; // the license text
+        return ""; // the license text
     }
  
     

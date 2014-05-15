@@ -5,8 +5,8 @@ import spdxlib.License;
 /*
  * SPDXVersion: SPDX-1.1
  * Creator: Person: Nuno Brito
- * Created: 2014-04-26T13:44:30Z
- * LicenseName: Apache-2.0
+ * Created: 2014-05-15T11:44:38Z
+ * LicenseName: EUPL-1.1-without-appendix
  * FileName: GPL_2_0_with_bison_exception.java 
  * FileCategory: SOURCE
  * FileCopyrightText: <text> Copyright (c) 2014, Nuno Brito </text>
@@ -49,22 +49,7 @@ public class GPL_2_0_with_bison_exception extends License{
      */
     @Override
     public String getTerms(){
-        return "﻿insert GPL v2 text here\n"
-        + "\n"
-        + "Bison Exception\n"
-        + "\n"
-        + "As a special exception, you may create a larger work that contains part or all o"
-        + "f the Bison parser skeleton and distribute that work under terms of your choice,"
-        + " so long as that work isn't itself a parser generator using the skeleton or a mo"
-        + "dified version thereof as a parser skeleton. Alternatively, if you modify or red"
-        + "istribute the parser skeleton itself, you may (at your option) remove this speci"
-        + "al exception, which will cause the skeleton and the resulting Bison output files"
-        + " to be licensed under the GNU General Public License without this special except"
-        + "ion.\n"
-        + "\n"
-        + "This special exception was added by the Free Software Foundation in version 2.2 "
-        + "of Bison.\n"
-; // the license text
+        return ""; // the license text
     }
  
     

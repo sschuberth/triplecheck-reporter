@@ -4,7 +4,7 @@ import spdxlib.License;
  * SPDXVersion: SPDX-1.1
  * Creator: Person: #PERSON#
  * Created: #DATE#
- * LicenseName: Apache-2.0
+ * LicenseName: EUPL-1.1-without-appendix
  * FileName: #EXT# 
  * FileCategory: SOURCE
  * FileCopyrightText: <text> #COPYRIGHT# </text>

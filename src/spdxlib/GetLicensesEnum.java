@@ -2,18 +2,19 @@
  * SPDXVersion: SPDX-1.1
  * Creator: Person: Nuno Brito (nuno.brito@triplecheck.de)
  * Creator: Organization: TripleCheck (http://triplecheck.de)
- * Created: 2014-04-25T00:00:00Z
+ * Created: 2014-05-15T00:00:00Z
  * LicenseName: EUPL-1.1-without-appendix
  * FileName: GetLicenses.java
  * FileType: SOURCE
  * FileCopyrightText: <text> Copyright (c) 2014 Nuno Brito, TripleCheck </text>
  * FileComment: <text> Crawls the official SPDX License List (LL) page
- * to generate a new set of templates. </text>
+ * to generate an enum that is optimized for performance </text>
  */
 
 package spdxlib;
 
 import java.io.File;
+import java.util.ArrayList;
 import main.core;
 
 
@@ -21,12 +22,14 @@ import main.core;
  *
  * @author Nuno Brito, 25th of April 2014 in Darmstadt, Germany
  */
-public class GetLicenses {
+public class GetLicensesEnum {
 
     static final String 
             addressLL = "http://spdx.org/licenses/",
             addressGit = "http://git.spdx.org/?p=license-list.git;a=blob_plain;f=";
     
+    
+    static ArrayList<License> licenses = new ArrayList();
 
     /**
      * @param args the command line arguments
@@ -68,11 +71,14 @@ public class GetLicenses {
             if(license == null){
                 continue;
             }
-            // time to write this license to disk
-            writeLicenseToDisk(license);
-            System.out.println(license.getId() + " -> " + license.getTitle());
+            licenses.add(license);
+//            // time to write this license to disk
+//            writeLicenseToEnum(license);
+//            System.out.println(license.getId() + " -> " + license.getTitle());
         }
         
+        // now create the enum text
+        generateEnumText();
         
     }
 
@@ -129,8 +135,7 @@ public class GetLicenses {
 //        }
         
         // get the license text
-        String test = "\"\"";
-        // this makes loading very slow. We need to somehow automate this part.
+        String test = "";
 //        try{
 //            // let's test to see if the license terms can be read
 //            test = getLicenseTerms(licenseId);
@@ -246,18 +251,18 @@ public class GetLicenses {
     
     
     
-    /**
-     * Saves this specific license to disk
-     * @param license 
-     */
-    private static void writeLicenseToDisk(License license) {
-        // get the license list folder
-        File folder = new File(core.getLicensesFolder(), 
-                definitions.folder.spdxLL);
-        
-        // write this license to disk
-        license.writeToDisk(folder);
-    }
+//    /**
+//     * Saves this specific license to disk
+//     * @param license 
+//     */
+//    private static void writeLicenseToDisk(License license) {
+//        // get the license list folder
+//        File folder = new File(core.getLicensesFolder(), 
+//                definitions.folder.spdxLL);
+//        
+//        // write this license to disk
+//        license.writeToDisk(folder);
+//    }
     
     /**
      * Saves this specific license to disk
@@ -268,9 +273,113 @@ public class GetLicenses {
         File folder = new File(core.getLicensesFolder(), 
                 definitions.folder.spdxLL);
         
+        String enumID = convertToEnum(license.getId());
         
         // write this license to disk
-        license.writeToDisk(folder);
+    }
+
+    /**
+     * Convert the SPDX identifier of a license into an ENUM
+     * @param id
+     * @return 
+     */
+    private static String convertToEnum(String id) {
+        String result = id;
+                
+        result = result.replace("-", "_");
+        result = result.replace(".", "_");
+        result = result.replace("+", "_plus");
+        
+        return result;
+    }
+
+    private static void generateEnumText() {
+        String enumTypes = "";
+        String enumTitles = "";
+        String enumIds = "";
+        String enumOSI = ""; // OSI Approved or not?
+        
+        
+        String enumLast = "";
+        // iterate all information that we have
+        String template = 
+                  "          "
+                + "          "
+                + "          "
+                + "          "
+                ;
+        for(License license: licenses){
+            String id = convertToEnum(license.getId());
+            String padding = template.substring(id.length());
+            // do the enum types
+            enumLast = "\n\t" + id +","+ padding + "// " + license.getTitle();
+            enumTypes +=  enumLast;
+            // get the translation to titles
+            enumTitles += "\n\tcase " + id + ": return \""
+                    + license.getTitle().replace("\"", "\\\"")
+                    + "\";";
+            // get the small identifiers
+            enumIds += "\n\tcase " + id + ": return \""
+                    + license.getId()
+                    + "\";";
+            // OSI approved?
+            enumOSI += "\n\tcase " + id + ": return "
+                    + license.approvedOSI().toString()
+                    + ";";
+        }
+        
+        
+        // do some correction for the last item
+        String correctedText = enumLast.replace(",", ";");
+        enumTypes = enumTypes.replace(enumLast, correctedText);
+        
+         // enum types
+        enumTypes = 
+                  "public enum LicenseType {\n"
+                + "\t" + enumTypes.substring(2) + "\n";
+        // titles
+        enumTypes +=
+                  "\n\n\tpublic String toTitle(){\n"
+                + "        switch(this){"
+                + enumTitles
+                + "\n\tdefault: return \"Not recognized\";\n\t\t}\n\t}";
+        
+        // ids
+        enumTypes +=
+                  "\n\n\tpublic String toId(){\n"
+                + "        switch(this){"
+                + enumIds
+                + "\n\tdefault: return \"Not recognized\";\n\t\t}\n\t}";
+        
+        // Was this license OSI approved?
+        enumTypes +=
+                  "\n\n\tpublic boolean isApprovedOSI(){\n"
+                + "        switch(this){"
+                + enumOSI
+                + "\n\tdefault: return false;\n\t\t}\n\t}";
+        
+        
+        enumTypes += "\n}";
+        
+        String header = 
+                "/*\n" +
+                " * SPDXVersion: SPDX-1.1\n" +
+                " * Creator: Person: Nuno Brito\n" +
+                " * Created: "+utils.time.getDateSPDX()+"\n" +
+                " * LicenseName: EUPL-1.1-without-appendix\n" +
+                " * FileName: LicenseType.java \n" +
+                " * FileCategory: SOURCE\n" +
+                " * FileCopyrightText: <text> Copyright (c) "
+                + utils.time.getCurrentYear()+", Nuno Brito </text>\n" +
+                " */\n\n";
+        
+        // add up our header
+        enumTypes = header + enumTypes;
+        
+        System.out.println(enumTypes);
+        File output = new File(core.getMiscFolder(), "LicenseType.java");
+        utils.files.SaveStringToFile(output, enumTypes);
+        
     }
     
 }
