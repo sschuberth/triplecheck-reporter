@@ -344,9 +344,8 @@ public final class LicenseNavigator extends javax.swing.JFrame {
         
           // go through each found license
         result += html.h3("Available licenses");
-        for(String licenseId : core.licenses.getList().keySet()){
-            License license = core.licenses.get(licenseId);
-            result += license.getPrettyText("Choose", licenseId);
+        for(License license : core.licenses.getList()){
+            result += license.getPrettyText("Choose", license.getId());
         }
         
         // give a left-side margin on the output

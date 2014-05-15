@@ -164,7 +164,7 @@ public class CopyrightDetector implements Trigger {
 
     @Override
     public String getShortIdentifier() {
-        return "COPYRIGHT";
+        return "Copyright detection";
     }
 
     @Override

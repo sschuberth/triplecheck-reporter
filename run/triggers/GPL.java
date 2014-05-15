@@ -192,7 +192,7 @@ public class GPL implements Trigger {
 
     @Override
     public String getShortIdentifier() {
-        return defaultId;
+        return "GPL";
     }
 
     @Override

@@ -29,7 +29,8 @@ public class sandbox {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        createSPDX();
+        //createSPDX();
+        readSPDX();
         System.exit(1111);
     }
     

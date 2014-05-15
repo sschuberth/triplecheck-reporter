@@ -180,7 +180,7 @@ public class LGPL implements Trigger {
 
     @Override
     public String getShortIdentifier() {
-        return defaultId;
+        return "LGPL";
     }
 
     @Override

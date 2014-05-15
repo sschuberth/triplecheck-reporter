@@ -15,8 +15,8 @@ package spdxlib;
 import definitions.is;
 import java.io.File;
 import java.util.ArrayList;
-import java.util.HashMap;
 import main.core;
+import script.exec;
 import script.log;
 import utils.html;
 
@@ -26,7 +26,7 @@ import utils.html;
  * @author Nuno Brito, 26th of April 2014 in Darmstadt, Germany.
  *  nuno.brito@triplecheck.de | http://nunobrito.eu
  */
-public class LicenseControl {
+public final class LicenseControl {
 
     /**
      * Public constructor
@@ -36,37 +36,16 @@ public class LicenseControl {
     }
     
         
-    private static final HashMap<String, License>
-            list = new HashMap();
+    private static final ArrayList<License> list = new ArrayList();
     
     private boolean hasNotProcessed = true;
     
-    public boolean has(String licenseId) {
-        doCheck();
-        return list.containsKey(licenseId);
-    }
-
     public void add(License license) {
-        // we don't need empty id's, this applies to the template
-        if(license.getId().isEmpty()){
-            return;
-        }
-        // add it up
-        list.put(license.getId(), license);
+        list.add(license);
     }
 
-    /**
-     * Have the licenses already been indexed before?
-     */
-    private void doCheck(){
-//        if(hasNotProcessed){
-//            // index them please
-//            find();
-//        }
-    }
     
-    public HashMap<String, License> getList() {
-        doCheck();
+    public ArrayList<License> getList() {
         return list;
     }
     
@@ -80,11 +59,16 @@ public class LicenseControl {
         // clear up the list to avoid duplicates
         File folder = core.getLicensesFolder();
         ArrayList<File> files = utils.files.findFilesFiltered(folder, ".java", 2);
+        log.write(is.INSTALLING, "Processing %1 licenses", "" + files.size());
         for(File file : files){
             core.script.runJava(file, null, is.license);
+            License license = (License) exec.runJava(file, is.license);
+            if(license != null){
+                list.add(license);
+            }
         }
         // output some statistics about the number of extensions registered
-        log.write(is.INFO, "Licenses recognized: %1", "" + files.size());
+        log.write(is.COMPLETED, "Licenses recognized: %1", "" + list.size());
         //System.err.println("LC85 - Found licenses: " + files.size() + "");
         //TODO we are still listing the template class as a file type.
         hasNotProcessed = false;
@@ -97,8 +81,10 @@ public class LicenseControl {
      * @return              A License object
      */
     public License get(String licenseId) {
-        if(list.containsKey(licenseId)){
-            return list.get(licenseId);
+        for(License license : list){
+            if(utils.text.equals(licenseId, license.getId())){
+                return license;
+            }
         }
         return null;
     }
@@ -119,14 +105,12 @@ public class LicenseControl {
         searchTerm = searchTerm.toLowerCase();
         
         // go through each found license
-        for(String licenseId : list.keySet()){
-            // get the license object
-            License license = list.get(licenseId);
+        for(License license : list){
             boolean hasRankedFirst = false;
             
             // look on the ids
             if(license.getId().toLowerCase().contains(searchTerm)){
-                rankFirst += license.getPrettyText("choose", licenseId);
+                rankFirst += license.getPrettyText("choose", license.getId());
                 hasRankedFirst = true;
                 continue;
             }
@@ -137,8 +121,8 @@ public class LicenseControl {
                 if(hasRankedFirst){
                     continue;
                 }
-                rankSecond += license.getPrettyText("choose", licenseId);
-                continue;
+                rankSecond += license.getPrettyText("choose", license.getId());
+                //continue;
            }
         }
         
@@ -177,10 +161,9 @@ public class LicenseControl {
                    public void run(){
                        // wait a little bit for things to start
                        utils.time.wait(2);
-                       find();
+                       find(); 
                    }
-               };
-               thread.start();
-    }
-    
+            };
+                       
+        }
 }

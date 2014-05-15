@@ -26,7 +26,6 @@ import java.util.HashMap;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import script.RunningTask;
-import script.Trigger;
 import spdxlib.LicenseControl;
 import structure.LicensePopularity;
 import structure.ReportsControl;
@@ -36,7 +35,7 @@ import utils.Settings;
 
 public class core {
 
-    public static String version = "0.8";
+    public static String version = "0.9";
     
     public static 
             Script script = new Script();

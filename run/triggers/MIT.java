@@ -1,7 +1,6 @@
 
 import definitions.TriggerType;
 import java.io.File;
-import java.util.Date;
 import script.Trigger;
 
 /*
@@ -82,7 +81,7 @@ public class MIT implements Trigger {
 
     @Override
     public String getFullName() {
-        return "MIT License";
+        return "MIT detection";
     }
 
     @Override

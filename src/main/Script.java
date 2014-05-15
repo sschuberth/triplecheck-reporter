@@ -259,7 +259,8 @@ public class Script {
                 runScript.eval("plugin." + methodName + "();");
                 // no need to continue
                 }
-            }else
+            }
+//            else
            
 //            // are we processing a trigger?
 //            if(className.equals(is.trigger)){
@@ -282,14 +283,14 @@ public class Script {
 //            }else
             
             // is this a file extension that we want to archive?
-            if(className.equals(is.license)){
-                // get the object
-                License license = (License) runScript.get("plugin");
-                // add it up
-                if(core.licenses.has(license.getId())==false){
-                    core.licenses.add(license);
-                }
-            }
+//            if(className.equals(is.license)){
+//                // get the object
+//                License license = (License) runScript.get("plugin");
+//                // add it up
+//                if(core.licenses.has(license.getId())==false){
+//                    core.licenses.add(license);
+//                }
+//            }
             
             
             // all done
