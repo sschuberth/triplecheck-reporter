@@ -58,6 +58,9 @@ public final class ExtensionControl {
         File folder = core.getExtensionsFolder();
         ArrayList<File> files = utils.files.findFilesFiltered(folder, ".java", 2);
         for(File file : files){
+            if(file.getParentFile().getName().contains("unknown")){
+                continue;
+            }
             FileExtension result = (FileExtension) script.exec.runJava(file, "FileExtension");
             if(result != null){
                 list.add(result);

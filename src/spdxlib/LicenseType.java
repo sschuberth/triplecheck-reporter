@@ -11,6 +11,10 @@ package spdxlib;
  */
 
 public enum LicenseType {
+        // added for own use
+	Public_Domain,                                 
+        MPL_2_0_plus,                                 
+        // from the SPDX site
 	AFL_1_1,                                 // Academic Free License v1.1
 	AFL_1_2,                                 // Academic Free License v1.2
 	AFL_2_0,                                 // Academic Free License v2.0
@@ -230,6 +234,11 @@ public enum LicenseType {
 
 	public String toTitle(){
         switch(this){
+        // own usage    
+	case Public_Domain: return "Public Domain";
+        case MPL_2_0_plus: return "Mozilla Public License 2.0 or later";                                 
+        
+        // SPDX list    
 	case AFL_1_1: return "Academic Free License v1.1";
 	case AFL_1_2: return "Academic Free License v1.2";
 	case AFL_2_0: return "Academic Free License v2.0";
@@ -451,6 +460,11 @@ public enum LicenseType {
 
 	public String toId(){
         switch(this){
+        // own usage
+        case Public_Domain: return "Public Domain";
+        case MPL_2_0_plus: return "MPL-2.0+";                                 
+        
+	// SPDX list 
 	case AFL_1_1: return "AFL-1.1";
 	case AFL_1_2: return "AFL-1.2";
 	case AFL_2_0: return "AFL-2.0";
@@ -896,11 +910,12 @@ public enum LicenseType {
         
     /**
      * Convert the SPDX identifier of a license into an ENUM
-     * @param id
-     * @return 
+     * @param id the id to a meaninful object
+     * @return  The LicenseType when identified
      */
     public static LicenseType convertToEnum(final String id) {
         final String result = id
+                .replace(" ", "_")
                 .replace("-", "_")
                 .replace(".", "_")
                 .replace("+", "_plus");
