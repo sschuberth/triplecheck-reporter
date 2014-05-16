@@ -34,6 +34,9 @@ public enum FileLanguage implements Serializable {
     SCRIPT_LINUX,
     SCRIPT_WINDOWS,
     
+    // mixed (can be compiled or interpreted)
+    BASIC,
+    
     // misc
     SQL,
     HTML,

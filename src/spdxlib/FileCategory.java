@@ -11,11 +11,10 @@
  */
 package spdxlib;
 
-import java.io.Serializable;
 import javax.swing.Icon;
 import main.core;
 
-public enum FileCategory implements Serializable{
+public enum FileCategory{
     TEXT,
     SOURCE,
     DOCUMENT,
@@ -63,7 +62,6 @@ public enum FileCategory implements Serializable{
             case MUSIC: return core.iconMUSIC;
             case OTHER: return core.iconOTHER;
             case TEMP: return core.iconTEMP;
-            case UNKNOWN: return core.iconUNKNOWN;
             default: return core.iconUNKNOWN;
         }
     }

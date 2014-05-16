@@ -108,8 +108,12 @@ public class core {
         iconMUSIC = new ImageIcon(getIcon("document-music.png").getAbsolutePath()),
         iconOTHER = new ImageIcon(getIcon("document-xaml.png").getAbsolutePath()),
         iconTEMP = new ImageIcon(getIcon("document-clock.png").getAbsolutePath()),
-        iconUNKNOWN = new ImageIcon(getIcon("document.png").getAbsolutePath());
+        iconUNKNOWN = new ImageIcon(getIcon("document.png").getAbsolutePath()),
     
+        iconFolderClosed = new ImageIcon(getIcon("folder-horizontal.png").getAbsolutePath()),
+        iconFolderOpen = new ImageIcon(getIcon("folder-horizontal-open.png").getAbsolutePath()),
+        iconFiles = new ImageIcon(getIcon("documents-stack.png").getAbsolutePath());
+
     /**
      * Gets the folder where we are running
      * @return The folder from where the main application is running
@@ -148,7 +152,7 @@ public class core {
      * @param filename The icon name inside our archive
      * @return A file pointer to the icon
      */
-    public static File getIcon(String filename){
+    public static File getIcon(final String filename){
         File iconFolder = new File(getWorkFolder(), is.iconFolder);
             return new File(iconFolder, filename);
     }

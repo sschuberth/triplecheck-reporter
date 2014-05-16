@@ -448,31 +448,31 @@ public class TreeviewUtils {
 //        return lastNode;
 //    }
     
-     /**
-     * Tries to find a node with a given ID from a given 
-     * node as root location
-     * @param what
-     * @return 
-     */
-    private static TreeNodeSPDX findTheOne(TreeNodeSPDX where, final String what){
-    // list all the children folders
-        Enumeration list = where.children();
-        while(list.hasMoreElements()){
-            final TreeNodeSPDX child = (TreeNodeSPDX) list.nextElement();
-            // first question: Are you the one?
-            if(utils.text.equals(child.id,what)){
-                 return child;
-            }
-            // Is any of your children, the one?
-            TreeNodeSPDX result = findTheOne(child, what);
-            if(result != null){
-                // he is the one
-                return result;
-            }
-        }
-        return null;
-    }
-    
+//     /**
+//     * Tries to find a node with a given ID from a given 
+//     * node as root location
+//     * @param what
+//     * @return 
+//     */
+//    private static TreeNodeSPDX findTheOne(TreeNodeSPDX where, final String what){
+//    // list all the children folders
+//        Enumeration list = where.children();
+//        while(list.hasMoreElements()){
+//            final TreeNodeSPDX child = (TreeNodeSPDX) list.nextElement();
+//            // first question: Are you the one?
+//            if(utils.text.equals(child.id,what)){
+//                 return child;
+//            }
+//            // Is any of your children, the one?
+//            TreeNodeSPDX result = findTheOne(child, what);
+//            if(result != null){
+//                // he is the one
+//                return result;
+//            }
+//        }
+//        return null;
+//    }
+//    
    
 //     /**
 //     * Does a given node contain a child with a specific ID?

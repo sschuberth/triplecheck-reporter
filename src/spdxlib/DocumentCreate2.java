@@ -201,7 +201,7 @@ public class DocumentCreate2 {
             // for indexing this kind of extension in the future
             createExtension();
             // save the information into our file object
-            tempInfo.setFileType(FileCategory.OTHER);
+            tempInfo.setFileType(FileType.OTHER);
             return is.tagFileType.concat(" OTHER\n");
         }
         // get the respective category for this file type
@@ -211,17 +211,17 @@ public class DocumentCreate2 {
             case INTERNET:
             case SCRIPT:
             case SOURCE: 
-                tempInfo.setFileType(FileCategory.SOURCE);
+                tempInfo.setFileType(FileType.SOURCE);
                 return is.tagFileType.concat(" SOURCE\n");
             case BINARY:
             case EXECUTABLE: 
-                tempInfo.setFileType(FileCategory.BINARY);
+                tempInfo.setFileType(FileType.BINARY);
                 return is.tagFileType.concat(" BINARY\n");
             case ARCHIVE: 
-                tempInfo.setFileType(FileCategory.ARCHIVE);
+                tempInfo.setFileType(FileType.ARCHIVE);
                 return is.tagFileType.concat(" ARCHIVE\n");
             default: 
-                tempInfo.setFileType(FileCategory.OTHER);
+                tempInfo.setFileType(FileType.OTHER);
                 return is.tagFileType.concat(" OTHER\n");    
         }
     }
@@ -316,7 +316,7 @@ public class DocumentCreate2 {
         String result = "";
         
         // when the file has source code, we count the lines of code
-        if(tempInfo.getFileType() == FileCategory.SOURCE){
+        if(tempInfo.getFileType() == FileType.SOURCE){
             // calculate the lines of code
             final int LOC = getLOC(content);
             // get the tag to be written on the SPDX

@@ -20,6 +20,9 @@ import java.util.ArrayList;
 import main.core;
 import script.FileExtension;
 import script.log;
+import spdxlib.ContentType;
+import spdxlib.FileCategory;
+import spdxlib.FileLanguage;
 
 
 /**
@@ -30,6 +33,8 @@ import script.log;
 public final class ExtensionControl {
 
     private final ArrayList<FileExtension> list = new ArrayList();
+    private final DefaultExtension unknownExtension = new DefaultExtension();
+    
     
     /**
      * Public constructor
@@ -97,7 +102,7 @@ public final class ExtensionControl {
                 return ext;
             }
         }
-        return null;
+        return unknownExtension;
     }
     
     
@@ -127,5 +132,42 @@ public final class ExtensionControl {
     
     
     
+    
+}
+
+
+/**
+ *  This class is the one provided whenever we stumble on a file extension
+ * that is not present in our list.
+ */
+class DefaultExtension extends FileExtension{
+     @Override
+    public Boolean isApplicable(File binaryFile) {
+        return true;
+    }
+    @Override
+    public Boolean isApplicable(String textFile) {
+        return true;
+    }
+    @Override
+    public String getDescription() {
+        return null; // file type description
+    }
+    @Override
+    public FileLanguage getLanguage(){
+        return FileLanguage.UNSORTED; // to which language is the file more related?
+    }
+    @Override
+    public String getIdentifierShort() {
+        return "";
+    }
+   @Override
+    public ContentType getContentType() {
+        return ContentType.UNKNOWN; // is it a binary or text file?
+    }
+    @Override
+    public FileCategory getCategory() {
+        return FileCategory.UNKNOWN; // does it group under a category?
+    }
     
 }

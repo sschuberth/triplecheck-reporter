@@ -21,11 +21,7 @@ import GUI.NodeType;
 import GUI.TreeNodeSPDX;
 import definitions.id;
 import definitions.is;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.Serializable;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -199,7 +195,7 @@ public class SPDXfile2 implements Serializable{
         // Now proceed to find the file type
         if(tagStartsWith(is.tagFileType, line)){
             final String temp = tagGetValue(is.tagFileType, line);
-            tempInfo.setFileType(FileCategory.valueOf(temp));
+            tempInfo.setFileType(FileType.valueOf(temp));
         }else
         // was a checksum reported?
         if(tagStartsWith(is.tagFileChecksum, line)){
@@ -316,7 +312,7 @@ public class SPDXfile2 implements Serializable{
         int counterLOC = 0;
         long counterSize = 0;
         for(FileInfo2 fileInfo : files){
-            if(fileInfo.getFileType() == FileCategory.SOURCE){
+            if(fileInfo.getFileType() == FileType.SOURCE){
                 counter++;
                 counterLOC += fileInfo.getFileLOC();
                 counterSize += fileInfo.getFileSize();
@@ -413,6 +409,7 @@ public class SPDXfile2 implements Serializable{
         nodeFiles = (TreeNodeSPDX) nodeFiles.getFirstChild();
         nodeFiles.nodeType = NodeType.sectionFile;
         nodeFiles.id = "./";
+        nodeFiles.icon = core.iconFiles;
         // set the title
         if(fileCounter > 1){
             nodeFiles.setTitle("Files (" + fileCounter + ")");

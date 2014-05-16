@@ -12,7 +12,6 @@
 
 package GUI;
 
-import spdxlib.FileInfo2;
 import java.awt.Color;
 import java.awt.Component;
 import javax.swing.Icon;
@@ -20,29 +19,30 @@ import javax.swing.ImageIcon;
 import javax.swing.JTree;
 import javax.swing.tree.DefaultTreeCellRenderer;
 import main.core;
+import spdxlib.FileInfo2;
 
 
 public class TreeRenderer extends DefaultTreeCellRenderer {
  
-    // get our icons
-    private Icon get(String what){
-        return new ImageIcon(core.getIcon(what).getAbsolutePath());
-    }
+//    // get our icons
+//    private Icon get(String what){
+//        return new ImageIcon(core.getIcon(what).getAbsolutePath());
+//    }
     
-    Icon 
-            none = get("blue-document-node.png"),
-            person = get("stickman.png"),
-            //person = get("user-medium-silhouette.png"),
-            sectionCreator = get("fingerprint.png"),
-            sectionPackage = get("box.png"),
-            sectionFile = get("documents-stack.png"),
-            sectionReview = get("geolocation.png"),
-            //dependency = get("envelope.png"),
-            file = get("document-number.png"),
-            home = get("home.png"),
-    
-            folderClosed = get("folder-horizontal.png"),
-            folderOpen = get("folder-horizontal-open.png");
+//    Icon 
+//            none = get("blue-document-node.png"),
+//            person = get("stickman.png"),
+//            //person = get("user-medium-silhouette.png"),
+//            sectionCreator = get("fingerprint.png"),
+//            sectionPackage = get("box.png"),
+//            sectionFile = get("documents-stack.png"),
+//            sectionReview = get("geolocation.png"),
+//            //dependency = get("envelope.png"),
+//            file = get("document-number.png"),
+//            home = get("home.png"),
+//    
+//            folderClosed = get("folder-horizontal.png"),
+//            folderOpen = get("folder-horizontal-open.png");
     
             // medal-premium.png
   
@@ -64,8 +64,14 @@ public class TreeRenderer extends DefaultTreeCellRenderer {
                 &&(node.nodeType == NodeType.file)){
                     // get the data from this node
                     FileInfo2 fileInfo = (FileInfo2) node.getUserObject();
-                    //System.err.println("Printing icon to " + fileInfo.getFileCategory());
-                    node.icon = fileInfo.getFileCategory().toIcon();
+                    
+                    if(fileInfo.getExtensionObject()!= null){
+                        //node.icon = fileInfo.getFileCategory().toIcon();
+                        node.icon = fileInfo.getExtensionObject().getCategory().toIcon();
+                        
+                        //System.err.println("Printing icon "+fileInfo.getName()+" with " + fileInfo.getFileCategory());
+                    }
+                    
                     setText(fileInfo.toString());
                     //setIcon(fileInfo.getFileCategory().toIcon());
                     
@@ -96,15 +102,15 @@ public class TreeRenderer extends DefaultTreeCellRenderer {
         }
         else // do the switch based on type of icon
         switch(node.nodeType){
-            case none:
-                setIcon(none);
-                break;
+//            case none:
+//                setIcon(none);
+//                break;
             case folder:
-                setIcon(folderClosed);
-                node.iconWhenSelected = get("folder-horizontal-open.png");
+                setIcon(core.iconFolderClosed);
+                node.iconWhenSelected = core.iconFolderOpen;
                 break;
-            case sectionFile:
-                setIcon(sectionFile);
+            default:
+                setIcon(core.iconUNKNOWN);
                 break;
         }
         

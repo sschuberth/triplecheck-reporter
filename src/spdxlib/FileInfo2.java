@@ -35,7 +35,8 @@ public class FileInfo2 implements Serializable{
     private String extension;   // the extension portion path nor name
     
     // source, archive, binary or unknown?
-    private FileCategory fileType;
+    private FileType fileType;          // official SPDX types of files
+    private FileCategory fileCategory;  // our own categories for files
     private FileOrigin fileOrigin;
     
     // in which line of the text file is this file placed?
@@ -85,10 +86,10 @@ public class FileInfo2 implements Serializable{
         this.fileName = fileName;
         computeFileNamePortions();
     }
-    public FileCategory getFileType() {
+    public FileType getFileType() {
         return fileType;
     }
-    public void setFileType(final FileCategory fileType) {
+    public void setFileType(final FileType fileType) {
         this.fileType = fileType;
     }
 
@@ -249,8 +250,7 @@ public class FileInfo2 implements Serializable{
      * @return 
      */
     public FileCategory getFileCategory() {
-        //TODO needs to be improved in the future
-        return fileType;
+        return fileCategory;
     }
 
     public int getLicenseInfoInFileCounter() {
@@ -351,6 +351,8 @@ public class FileInfo2 implements Serializable{
         final String thisFileName = fileName;
         node = TreeviewUtils.mkdirNodes(nodeFiles, thisFileName);
         node.setUserObject(this);
+        // in the process, we also define the file Category
+//        fileCategory = this.getExtensionObject().getCategory();
     }
      
    

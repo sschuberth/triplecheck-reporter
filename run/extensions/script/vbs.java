@@ -1,4 +1,4 @@
-package unknown;
+package script;
 
 import java.io.File;
 import script.FileExtension;
@@ -28,7 +28,7 @@ import spdxlib.FileLanguage;
  *
  * @file provenance by Nuno Brito
  */
-public class ext_vbs extends FileExtension{
+public class vbs extends FileExtension{
     /**
      * How can we confirm that this file extension is applicable to this file?
      * This method analyses the binary contents of a file to get the answer.
@@ -61,7 +61,7 @@ public class ext_vbs extends FileExtension{
      */
     @Override
     public String getDescription() {
-        return null; // file type description
+        return "Visual Basic script file"; // file type description
     }
     
     /**
@@ -70,7 +70,7 @@ public class ext_vbs extends FileExtension{
      */
     @Override
     public FileLanguage getLanguage(){
-        return FileLanguage.UNSORTED; // to which language is the file more related?
+        return FileLanguage.BASIC; // to which language is the file more related?
     }
 
     /**
@@ -101,7 +101,7 @@ public class ext_vbs extends FileExtension{
      */
     @Override
     public FileCategory getCategory() {
-        return FileCategory.UNKNOWN; // does it group under a category?
+        return FileCategory.SCRIPT; // does it group under a category?
     }
     
 }
