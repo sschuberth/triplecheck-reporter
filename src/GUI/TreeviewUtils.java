@@ -224,29 +224,31 @@ public class TreeviewUtils {
        final TreeNodeSPDX node = lastNode;
         final TreeNodeSPDX softNode = softwareNode;
         
+        
+        
         SwingUtilities.invokeLater(new Runnable() {
-    @Override
-    public void run() {
-        JTree tree = core.studio.getTree();
-        tree.updateUI();
-        tree.requestFocus();
-        tree.setExpandsSelectedPaths(true);
-        TreeSelectionModel model = tree.getSelectionModel();
-        TreePath path1 = new TreePath(rootNode.getPath());
-        TreePath path2 = new TreePath(softNode.getPath());
-        TreePath path3 = new TreePath(node.getPath());
-        
-        model.setSelectionPath(path1);
-        model.setSelectionPath(path2);
-        model.setSelectionPath(path3);
-        tree.scrollPathToVisible(path3);  
-        tree.setSelectionModel(model);
-        tree.expandPath(path3);
-        
-        ThirdParty.MiscMethods.collapseAll(tree, path3);
-        
-            }
-        });
+        @Override
+        public void run() {
+            JTree tree = core.studio.getTree();
+            tree.updateUI();
+            tree.requestFocus();
+            tree.setExpandsSelectedPaths(true);
+            TreeSelectionModel model = tree.getSelectionModel();
+            TreePath path1 = new TreePath(rootNode.getPath());
+            TreePath path2 = new TreePath(softNode.getPath());
+            TreePath path3 = new TreePath(node.getPath());
+
+            model.setSelectionPath(path1);
+            model.setSelectionPath(path2);
+            model.setSelectionPath(path3);
+            tree.scrollPathToVisible(path3);  
+            tree.setSelectionModel(model);
+            tree.expandPath(path3);
+
+            ThirdParty.MiscMethods.collapseAll(tree, path3);
+
+                }
+            });
         
      
     }

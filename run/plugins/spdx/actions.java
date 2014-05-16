@@ -21,6 +21,10 @@ import spdxlib.FileInfo2;
 import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
+import javax.swing.JTree;
+import javax.swing.SwingUtilities;
+import javax.swing.tree.TreePath;
+import javax.swing.tree.TreeSelectionModel;
 import main.core;
 import script.FileExtension;
 import script.Plugin;
@@ -163,8 +167,18 @@ public class actions extends Plugin{
         
         // try to place everything on screen
         try{
-            core.studio.editorPane(is.contentHTML, false, 0, result);
-        }catch (Exception e){
+            final String content = result;
+            
+//            core.studio.editorPane(is.contentHTML, false, 0, result);
+            SwingUtilities.invokeLater(new Runnable() {
+        @Override
+        public void run(){
+            core.studio.editorPane(is.contentHTML, false, 0, content);
+                }
+            });
+            
+            
+        }catch (RuntimeException e){
             System.err.println("AC168 - Error when showing file: " + targetFile.getAbsolutePath());
             // activate plan B, just show the boring stuff
             result = boringText(targetFile);

@@ -18,15 +18,15 @@ import GUI.TreeNodeSPDX;
 import GUI.swingUtils;
 import definitions.Messages;
 import definitions.is;
-import spdxlib.FileInfo2;
-import spdxlib.SPDXfile2;
 import java.io.File;
 import main.core;
 import main.param;
+import old.tools;
 import script.FileExtension;
 import script.Plugin;
 import script.log;
-import old.tools;
+import spdxlib.FileInfo2;
+import spdxlib.SPDXfile2;
 import utils.html;
 import www.WebRequest;
 
@@ -127,15 +127,11 @@ public class showFileDetails extends Plugin{
      * Do the actual part of showing the details for this file
      */
     private String showFileDetails(FileInfo2 fileInfo) {
-        System.err.println("SFD131 - Showing details for " + fileInfo.getName());
+        System.err.println("SFD130 - Showing details for " + fileInfo.getName());
         String googleTerm = "";
         String filename = fileInfo.getName();
         // get the file extension if available
-        String shortExtension = getFileExtension(filename);
-            
-        
-        System.err.println("SFD137 - Summary of " + filename
-            + fileInfo.getLicenseInfoInFileSummary());
+        String shortExtension = fileInfo.getExtension();
         
         SPDXfile2 spdx = fileInfo.getSPDX();
         
