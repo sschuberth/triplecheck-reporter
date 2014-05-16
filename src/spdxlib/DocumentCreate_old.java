@@ -380,7 +380,7 @@ public class DocumentCreate_old {
         return ">> "
                 + file.getName()
                 + " >> "
-                + definition.nodeSoftware + " ";
+                + definition.nodeReports + " ";
     }
     
 }

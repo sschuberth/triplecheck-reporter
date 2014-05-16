@@ -125,7 +125,12 @@ public class TreeNodeSPDX extends DefaultMutableTreeNode{
          String result = "";
          TreeNodeSPDX currentNode = this;
          while(currentNode.getParent() != null){
-             result = result + ">> " + currentNode.id + " ";
+             if(currentNode.id.isEmpty()){
+                result = result + ">> " + currentNode.getTitle() + " ";
+             }
+            else{
+                result = result + ">> " + currentNode.id + " ";
+             }
              currentNode = (TreeNodeSPDX) currentNode.getParent();
          }     
          return result;

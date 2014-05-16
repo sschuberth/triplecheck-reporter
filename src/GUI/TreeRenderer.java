@@ -14,8 +14,6 @@ package GUI;
 
 import java.awt.Color;
 import java.awt.Component;
-import javax.swing.Icon;
-import javax.swing.ImageIcon;
 import javax.swing.JTree;
 import javax.swing.tree.DefaultTreeCellRenderer;
 import main.core;
@@ -58,71 +56,77 @@ public class TreeRenderer extends DefaultTreeCellRenderer {
         
         // write the title of this product
             setText(node.toString());
-            // show nodes with concluded license in blue color
-            // we only make changes on file nodes
-            if((node.getUserObject() != null)
-                &&(node.nodeType == NodeType.file)){
-                    // get the data from this node
-                    FileInfo2 fileInfo = (FileInfo2) node.getUserObject();
-                    
-                    if(fileInfo.getExtensionObject()!= null){
-                        //node.icon = fileInfo.getFileCategory().toIcon();
-                        node.icon = fileInfo.getExtensionObject().getCategory().toIcon();
-                        
-                        //System.err.println("Printing icon "+fileInfo.getName()+" with " + fileInfo.getFileCategory());
-                    }
-                    
-                    setText(fileInfo.toString());
-                    //setIcon(fileInfo.getFileCategory().toIcon());
-                    
-                    // when a file has a licensed declared and concluded
-                    if((fileInfo.hasLicenseConcluded())
-                            &&(fileInfo.hasLicenseInfoInFile())){
-                        setForeground(Color.BLACK);
-                        setBackground(Color.YELLOW);
-                    }else
-                        // when it's just a concluded license
-                    if(fileInfo.hasLicenseConcluded()){
-                        setForeground(Color.GREEN);
-                    }else
-                        // when it is license inside the file
-                    if(fileInfo.hasLicenseInfoInFile()){
-                        setForeground(Color.BLUE);
-//                        setForeground(Color.BLACK);
-//                        setBackground(Color.YELLOW);
-                    }
-                   
-            }
             
+       // is this icon selected?
+        if(sel){
+            // show the selected icon in that case
+            if(node.iconWhenSelected != null){
+                setIcon(node.iconWhenSelected);
+            }
+        }   
         
-
+        
+        // when it is a file, process and close down the shop
+        if((node.getUserObject() != null)
+                &&(node.nodeType == NodeType.file)){
+            doNodeFile(node);
+            return this;
+        }
         // if there is an icon defined for this node, set it up here.
         if(node.icon != null){
             setIcon(node.icon);
         }
         else // do the switch based on type of icon
         switch(node.nodeType){
-//            case none:
-//                setIcon(none);
-//                break;
             case folder:
                 setIcon(core.iconFolderClosed);
                 node.iconWhenSelected = core.iconFolderOpen;
+                break;
+            case sectionFile:
+                setIcon(core.iconFiles);
                 break;
             default:
                 setIcon(core.iconUNKNOWN);
                 break;
         }
-        
-        // is this icon selected?
-    if(sel){
-        if(node.iconWhenSelected != null){
-            setIcon(node.iconWhenSelected);
-        }
-
-    }
             
         return this;
     }
 
+    
+    /**
+     * Handles a file node
+     * @param node 
+     */
+    private void doNodeFile(TreeNodeSPDX node){
+        // get the data from this node
+        FileInfo2 fileInfo = (FileInfo2) node.getUserObject();
+
+        if(fileInfo.getExtensionObject()!= null){
+            //node.icon = fileInfo.getFileCategory().toIcon();
+            node.icon = fileInfo.getExtensionObject().getCategory().toIcon();
+            setIcon(node.icon);
+        }
+
+        setText(fileInfo.toString());
+        // show nodes with concluded license in blue color
+        // when a file has a licensed declared and concluded
+        if((fileInfo.hasLicenseConcluded())
+                &&(fileInfo.hasLicenseInfoInFile())){
+            setForeground(Color.BLACK);
+            setBackground(Color.YELLOW);
+        }else
+            // when it's just a concluded license
+        if(fileInfo.hasLicenseConcluded()){
+            setForeground(Color.GREEN);
+        }else
+            // when it is license inside the file
+        if(fileInfo.hasLicenseInfoInFile()){
+            setForeground(Color.BLUE);
+//                        setForeground(Color.BLACK);
+//                        setBackground(Color.YELLOW);
+        }
+    }
+    
+    
 }

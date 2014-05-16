@@ -105,8 +105,8 @@ public class TreeviewUtils {
             final TreeNodeSPDX rootNode) {
         final File file = spdx.file;
         final String fileName = file.getName();
-        // create the new node
-        final TreeNodeSPDX node = new TreeNodeSPDX(fileName);
+        // create the new node, remove the spdx file extension
+        final TreeNodeSPDX node = new TreeNodeSPDX(fileName.replace(".spdx", ""));
         node.setIcon("box.png");
         node.nodeType = NodeType.SPDX;
         node.id = fileName;
@@ -194,24 +194,30 @@ public class TreeviewUtils {
         final TreeNodeSPDX rootNode = swingUtils.getRootNode(tree);
         
          // create the node for hosting our list of SPDX documents
-        TreeNodeSPDX softwareNode = nodeCreate(
-                definition.nodeSoftware
+        nodeReports = nodeCreate(
+                definition.nodeReports
                 , NodeType.other, rootNode);
         // add the identification to this tag
-        softwareNode.id = definition.nodeSoftware;
-        softwareNode.setIcon("box-label.png");
+        nodeReports.id = definition.nodeReports;
+        nodeReports.setIcon("box-label.png");
         
         // set here what we want to happen when the user clicks on it
         File scriptFile = new File(core.getPluginsFolder(), "/basic/home.java");
-        softwareNode.scriptFile = scriptFile;
-        softwareNode.scriptFolder = scriptFile.getParentFile();
-        softwareNode.scriptMethod = "main";
+        nodeReports.scriptFile = scriptFile;
+        nodeReports.scriptFolder = scriptFile.getParentFile();
+        nodeReports.scriptMethod = "main";
   
               
         TreeNodeSPDX lastNode = null;
+        int counter = 0;
         // create a tree based on folder tree on disk
         for(SPDXfile2 spdx : core.reports.getList()){
-            lastNode = spdxAddNode2(spdx, softwareNode);
+            lastNode = spdxAddNode2(spdx, nodeReports);
+            counter++;
+        }
+        
+        if(counter > 0){
+            nodeReports.setTitle(definition.nodeReports + " (" + counter + ")");
         }
         
        
@@ -222,7 +228,7 @@ public class TreeviewUtils {
         // expand the tree node
         //TreeviewUtils.nodeExpand(lastNode);
        final TreeNodeSPDX node = lastNode;
-        final TreeNodeSPDX softNode = softwareNode;
+        final TreeNodeSPDX softNode = nodeReports;
         
         
         
@@ -273,11 +279,11 @@ public class TreeviewUtils {
 //        
 //         // create the node for hosting our list of SPDX documents
 //        nodeReports = nodeCreate(
-//                definition.nodeSoftware
+//                definition.nodeReports
 //                        //+ " (" + fileList.size() + ")"
 //                , NodeType.reportsHome, rootNode);
 //        // add the identification to this tag
-//        nodeReports.id = definition.nodeSoftware;
+//        nodeReports.id = definition.nodeReports;
 //        nodeReports.setIcon("box-label.png");
 //        
 //        // set here what we want to happen when the user clicks on it
@@ -689,7 +695,7 @@ public class TreeviewUtils {
     // we reached the end and didn't found it. That's ok, create one now
     TreeNodeSPDX thisNode = new TreeNodeSPDX(find);
     thisNode.nodeType = NodeType.folder;
-    //parentNode.add(thisNode);
+    // we place the node on top of the list (to show sorted folders/files)
     parentNode.insert(thisNode, 0);
     return thisNode;
 }

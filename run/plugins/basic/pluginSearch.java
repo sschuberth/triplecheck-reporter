@@ -142,7 +142,7 @@ public class pluginSearch extends Plugin{
         try{    
             // look in reports now
             String matchProductName =
-                searchListSPDX(searchTerm, definition.nodeSoftware);
+                searchListSPDX(searchTerm, definition.nodeReports);
             
                     // compile all the results together
             output =  //matchComponentName
@@ -191,7 +191,7 @@ public class pluginSearch extends Plugin{
         String keyword = searchTerm.toLowerCase();
         // create the icons that might be displayed on the results
         String iconPackage = html.getCommonFolderIcon("box.png");
-        String iconFile = html.getCommonFolderIcon("document-number.png");
+        final String iconFile = html.getCommonFolderIcon("document-number.png");
            
         if(core.reports.getList().isEmpty()){
             System.err.println("PluginSearch198: No reports to search");
@@ -249,11 +249,11 @@ public class pluginSearch extends Plugin{
                    
                    // the internal hyperlink to readLines more details
                    // get the UID
-                   String linkFileUID = file.getUID(spdx);
+                   String linkFileUID = file.getUID();
                    
                    String[] params = new String[]{iconFile, 
                        html.linkNode(
-                               file.getFileName(),
+                               file.getName(),
                                linkFileUID)
                            + fileDetails
                    };

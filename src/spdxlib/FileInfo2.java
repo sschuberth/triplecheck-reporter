@@ -268,30 +268,10 @@ public class FileInfo2 implements Serializable{
    
     /**
      * Calculate the UID for this item
-     * @param spdx      The spdx file where this object is placed
      * @return          The UID to find this item inside a tree view
      */
-    public String getUID(SPDXfile2 spdx) {
-        String result = ">> " 
-                + getFileName()
-                ;
-        
-        String path = this.getFilePath();
-        // iterate to build the path id
-        while(path.contains("/")){
-            // get the path
-            result += " >> "
-                    + path;
-            // remove one of the path indicators
-            int pos = path.lastIndexOf("/");
-            path = path.substring(0, pos);
-        }
-        
-        result += " >> ./ >> "
-                + spdx.getId() + ".spdx >> Reports "
-                ;
-        
-        return result;
+    public String getUID() {
+        return node.getUID();
     }
 
     /**
