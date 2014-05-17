@@ -456,23 +456,23 @@ public class SPDXfile2 implements Serializable{
             String line;
             int itemCounter = 0;
             boolean hasMoreToProcess = true;
-            final String lineBreak = "\n";
-            final String space = " ";
+            boolean skipNextLine = false;
             // get the first key to process
-            String id = is.tagFileName + space + list.get(itemCounter).getFileName();
+            String id = is.tagFileName + is.space + list.get(itemCounter).getFileName();
             // go trought each line
             line = reader.readLine();
             //while ((line = reader.readLine()) != null) {
             while (line != null) {
-                // write the line as seen on the original file
-                writer.append(line + lineBreak);
                 
+                if(skipNextLine){
+                    skipNextLine = false;
+                }else
+                // write the line as seen on the original file
+                writer.append(line + is.lineBreak);
                 // check if should think about adding a line or not
                 if(hasMoreToProcess){
                     // verify if this line is what we want to write after
                     if(utils.text.equals(id, line)){
-                        // increase the counter
-                        itemCounter++;
                         
                         // if we should overwrite, we need use special code
                         if(overwrite == true){
@@ -501,7 +501,7 @@ public class SPDXfile2 implements Serializable{
                                 // do we have a match?
                                 if(wasOverwritten ==false && tagStartsWith(tagId, thisLine)){
                                     // overwrite the entry
-                                    thisLine = tagId + space + tagValue;
+                                    thisLine = tagId + is.space + tagValue;
                                     // signal that we did changes here
                                     wasOverwritten = true;
                                 }
@@ -512,36 +512,42 @@ public class SPDXfile2 implements Serializable{
                             // have we overwritten this value?
                             if(wasOverwritten == false){
                                 // insert our lines after the second entry
-                                linesModified.add(1, tagId + space + tagValue);
+                                linesModified.add(1, tagId + is.space + tagValue);
                             }
                             
                             // now write everything back to disk
                             for(String thisLine : linesModified){
-                                 writer.append(thisLine + lineBreak);
+                                 writer.append(thisLine + is.lineBreak);
                                  // write back our changes on the main line
                                  line = thisLine;
                             }
                             
                         }
-                            
                         // just add a new line if we don't care about overwrite
                         else{
                            // add up the new line
-                            writer.append(tagId + space + tagValue + lineBreak);
-//                            continue;
+                            writer.append(tagId + is.space + tagValue + is.lineBreak);
                         }
-                        // did we found all lines already?
+                        
+                        
+                        // last phase, increase the counter
+                        // increase the counter
+                        itemCounter++;
+                        skipNextLine = true;
+                         // did we found all lines already?
                         if(itemCounter == list.size()){
                             // set this flag as false to speed up processing
                             hasMoreToProcess = false;
                         }else{
                             // get the new item
-                            id = is.tagFileName + space + list.get(itemCounter).getFileName();
+                            id = is.tagFileName + is.space + list.get(itemCounter).getFileName();
                         }
                     }// if the line equals to our id
                 } // if we have more to process
                 // read the next line
-                line = reader.readLine();
+                if(skipNextLine == false){
+                    line = reader.readLine();
+                }
             }
             // finished reading and writing
             writer.close();
@@ -559,6 +565,79 @@ public class SPDXfile2 implements Serializable{
                
     }
  
+    
+//    private void writeTextMatchProcess(String line, boolean overwrite,
+//            BufferedWriter writer, BufferedReader reader,
+//            final String tagId, final String tagValue) throws IOException{
+//       // if we should overwrite, we need use special code
+//                        if(overwrite == true){
+//                            int maxLines = 20;
+//                            int lineCounter = 0;
+//                            ArrayList<String> lines = new ArrayList();
+//                            // go through the next 20 lines of text
+//                            while (((line = reader.readLine()) != null)
+//                                    &&(lineCounter < maxLines)){
+//                                // if we started into the next entry, stop here
+//                                if(tagStartsWith(is.tagFileName, line)){
+//                                    // add the next line (for the next entry)
+//                                    lines.add(line);
+//                                    // break the cycle
+//                                    break;
+//                                }
+//                                lines.add(line);
+//                                lineCounter++;
+//                            }
+//                            
+//                            // now prepare a modified list of strings
+//                            ArrayList<String> linesModified = new ArrayList();
+//                            boolean wasOverwritten = false;
+//                            // iterate through each line
+//                            for(String thisLine : lines){
+//                                // do we have a match?
+//                                if(wasOverwritten ==false && tagStartsWith(tagId, thisLine)){
+//                                    // overwrite the entry
+//                                    thisLine = tagId + is.space + tagValue;
+//                                    // signal that we did changes here
+//                                    wasOverwritten = true;
+//                                }
+//                                // add the modified (or not) line to our list
+//                                linesModified.add(thisLine);
+//                            }
+//                            
+//                            // have we overwritten this value?
+//                            if(wasOverwritten == false){
+//                                // insert our lines after the second entry
+//                                linesModified.add(1, tagId + space + tagValue);
+//                            }
+//                            
+//                            // now write everything back to disk
+//                            for(String thisLine : linesModified){
+//                                 writer.append(thisLine + lineBreak);
+//                                 // write back our changes on the main line
+//                                 line = thisLine;
+//                            }
+//                            
+//                        }
+//                        // just add a new line if we don't care about overwrite
+//                        else{
+//                           // add up the new line
+//                            writer.append(tagId + space + tagValue + lineBreak);
+//                        }
+//                        
+//                        
+//                        // last phase, increase the counter
+//                        // increase the counter
+//                        itemCounter++;
+//                         // did we found all lines already?
+//                        if(itemCounter == list.size()){
+//                            // set this flag as false to speed up processing
+//                            hasMoreToProcess = false;
+//                        }else{
+//                            // get the new item
+//                            id = is.tagFileName + space + list.get(itemCounter).getFileName();
+//                        }
+//    }
+    
     
     /*
     int counter = 0;

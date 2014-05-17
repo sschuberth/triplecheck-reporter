@@ -52,8 +52,12 @@ public class is {
             valueArchive = "ARCHIVE",
             valueOther =   "OTHER",
     
-            textFinal = "</text>";
+            textFinal = "</text>",
             
+            lineBreak = "\n",
+            space = " ";
+            
+    
       public final static int
               intSource = valueSource.hashCode();
             
