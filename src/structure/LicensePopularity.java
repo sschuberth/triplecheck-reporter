@@ -26,7 +26,6 @@ import script.log;
 import spdxlib.FileOrigin;
 import spdxlib.License;
 import utils.html;
-import static utils.misc.sortByComparator;
 
 
 /**
@@ -79,7 +78,7 @@ public final class LicensePopularity {
         log.write(is.INFO, "Computed popularity index of %1 different licenses", list.size() + "");
 
         // index all the licenses according to popularity
-        popularityList = sortByComparator(list);
+        popularityList = ThirdParty.MiscMethods.sortByComparator(list);
         
         //print();
     // all done
@@ -254,7 +253,7 @@ public final class LicensePopularity {
     public String getAuthorStatsSummary(){
         String result = "";
         // sort the results
-        Map<FileOrigin, Integer> sorted = utils.misc.sortByComparator(listOrigin);
+        Map<FileOrigin, Integer> sorted = ThirdParty.MiscMethods.sortByComparator(listOrigin);
         
         
         

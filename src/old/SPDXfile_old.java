@@ -38,7 +38,6 @@ import spdxlib.FileOrigin;
 import spdxlib.Keyword;
 import utils.files;
 import utils.html;
-import static utils.misc.sortByComparator;
 
 public final class SPDXfile_old implements Serializable{
     
@@ -832,7 +831,7 @@ public final class SPDXfile_old implements Serializable{
         System.out.println("\nFile: " + file.getName() 
                 + " (" +statsLanguagesTotal+ " known files)");
         // create a sorted array with the most popular languages
-        Map<Object,Integer> map = sortByComparator(statsLanguagesFound);
+        Map<Object,Integer> map = ThirdParty.MiscMethods.sortByComparator(statsLanguagesFound);
 
         // show the ordered results
         for(Object langObj :map.keySet()){
@@ -890,7 +889,7 @@ public final class SPDXfile_old implements Serializable{
         int countRecords = 0;
         int countFiles = 0;
         
-       Map map = sortByComparator(copyrightList);
+       Map map = ThirdParty.MiscMethods.sortByComparator(copyrightList);
         
         // When all copyright texts were processed, time to list them
         for(Object copyrightObj : map.keySet()){
@@ -942,7 +941,7 @@ public final class SPDXfile_old implements Serializable{
         }
         
         // get the sorted map with the related languages
-        Map<Object,Integer> map = sortByComparator(statsLanguagesFound);
+        Map<Object,Integer> map = ThirdParty.MiscMethods.sortByComparator(statsLanguagesFound);
         int total = statsLanguagesTotal;
         
         String result = "";
@@ -997,7 +996,7 @@ public final class SPDXfile_old implements Serializable{
         if(statsLicensesDeclaredCount > 0){
 //            Map<String,Integer> map2 = utils.misc.sortHashMap(statsLicensesDeclared);
             // show the ordered results
-            map = sortByComparator(statsLicensesDeclared);
+            map = ThirdParty.MiscMethods.sortByComparator(statsLicensesDeclared);
             
             for(Object licObj :map.keySet()){
                 String lic = (String) licObj;
