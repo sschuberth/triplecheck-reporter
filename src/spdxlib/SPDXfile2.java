@@ -62,6 +62,17 @@ public class SPDXfile2 implements Serializable{
     }
     
     /**
+     * Refresh the internal variables when we change some values inside the spdx
+     */
+    public void refresh(){
+        files = new ArrayList();
+        nodeFiles = new TreeNodeSPDX("Files");
+        charPosition = 1;
+        tempInfo = null;
+        fileCounter = 0;
+    }
+    
+    /**
      * A constructor without arguments. This method is not public to permit
      * only the other classes on this package to access.
      */
@@ -144,6 +155,7 @@ public class SPDXfile2 implements Serializable{
                     isMultiple = false;
                     // now write the appropriate key holder
                     switch(lastTag){
+                        // for the moment, only copyright tags use multiple text
                         case COPYRIGHT:
                             final String temp = lastLine
                                     .substring(is.tagFileCopyrightText.length());
@@ -369,13 +381,6 @@ public class SPDXfile2 implements Serializable{
         return counter;
     }
     
-    /**
-     * This method saves back any changes onto the original file on disk
-     */ 
-    public void refresh() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-   
     public String getLanguageEvaluation() {
         System.err.println("Missing to implement Language evaluation");
         return "";
@@ -398,7 +403,7 @@ public class SPDXfile2 implements Serializable{
     public boolean hasVersioningFilesPresent() {
         System.err.println("Missing to implement VersioningFilesPresent");
         return false;
-   }
+    }
 
     /**
      * Correct small tidybit that are left to process. This avoids the need
@@ -426,24 +431,23 @@ public class SPDXfile2 implements Serializable{
      */
     public void writeLines(ArrayList<FileInfo2> fileInfoList,
             final String tagId, final String tagValue, Boolean overwrite){
-        System.err.println("SP428 - Writing in " + file.getName());
-        // first we need to sort the value that we want to write    
+        System.err.println("SP434 - Writing in " + file.getName());
+        // first we need to sort theses values according to line position    
         Map<FileInfo2, Integer> originalList = new HashMap();
         for(FileInfo2 fileInfo : fileInfoList){
-            // we place all the items on the array with the line position value
+            // we place the items on the array with the line position value
             originalList.put(fileInfo, fileInfo.getLinePosition());
         }
-        // now we sort them according
+        // With a map we can now we sort them accordingly
         Map<FileInfo2, Integer> sortedList = ThirdParty.MiscMethods.
                 sortByComparatorSmallerFirst(originalList);
        
-        // end up with sorting them to plain ArrayList again
+        // now we end up sorting them again to plain ArrayList
         ArrayList<FileInfo2> list = new ArrayList();
         for(FileInfo2 fileInfo : sortedList.keySet()){
             list.add(fileInfo);
         }
         // now do our magic
-        
         // create an output file in the same folder
         File outputFile = new File(file.getParentFile(), "temp.txt");
         try{
@@ -552,126 +556,19 @@ public class SPDXfile2 implements Serializable{
             // finished reading and writing
             writer.close();
             reader.close();
-            System.err.println("Finished writing in " + file.getName());
-            
-        }catch(Exception e){
-            e.printStackTrace();
-        }    
-        
-        // print for test
-//        for(FileInfo2 fileInfo : sortedList.keySet()){
-//            System.err.println(fileInfo.getName() + " -> " + fileInfo.getLinePosition());
-//        }
-               
-    }
- 
-    
-//    private void writeTextMatchProcess(String line, boolean overwrite,
-//            BufferedWriter writer, BufferedReader reader,
-//            final String tagId, final String tagValue) throws IOException{
-//       // if we should overwrite, we need use special code
-//                        if(overwrite == true){
-//                            int maxLines = 20;
-//                            int lineCounter = 0;
-//                            ArrayList<String> lines = new ArrayList();
-//                            // go through the next 20 lines of text
-//                            while (((line = reader.readLine()) != null)
-//                                    &&(lineCounter < maxLines)){
-//                                // if we started into the next entry, stop here
-//                                if(tagStartsWith(is.tagFileName, line)){
-//                                    // add the next line (for the next entry)
-//                                    lines.add(line);
-//                                    // break the cycle
-//                                    break;
-//                                }
-//                                lines.add(line);
-//                                lineCounter++;
-//                            }
-//                            
-//                            // now prepare a modified list of strings
-//                            ArrayList<String> linesModified = new ArrayList();
-//                            boolean wasOverwritten = false;
-//                            // iterate through each line
-//                            for(String thisLine : lines){
-//                                // do we have a match?
-//                                if(wasOverwritten ==false && tagStartsWith(tagId, thisLine)){
-//                                    // overwrite the entry
-//                                    thisLine = tagId + is.space + tagValue;
-//                                    // signal that we did changes here
-//                                    wasOverwritten = true;
-//                                }
-//                                // add the modified (or not) line to our list
-//                                linesModified.add(thisLine);
-//                            }
-//                            
-//                            // have we overwritten this value?
-//                            if(wasOverwritten == false){
-//                                // insert our lines after the second entry
-//                                linesModified.add(1, tagId + space + tagValue);
-//                            }
-//                            
-//                            // now write everything back to disk
-//                            for(String thisLine : linesModified){
-//                                 writer.append(thisLine + lineBreak);
-//                                 // write back our changes on the main line
-//                                 line = thisLine;
-//                            }
-//                            
-//                        }
-//                        // just add a new line if we don't care about overwrite
-//                        else{
-//                           // add up the new line
-//                            writer.append(tagId + space + tagValue + lineBreak);
-//                        }
-//                        
-//                        
-//                        // last phase, increase the counter
-//                        // increase the counter
-//                        itemCounter++;
-//                         // did we found all lines already?
-//                        if(itemCounter == list.size()){
-//                            // set this flag as false to speed up processing
-//                            hasMoreToProcess = false;
-//                        }else{
-//                            // get the new item
-//                            id = is.tagFileName + space + list.get(itemCounter).getFileName();
-//                        }
-//    }
-    
-    
-    /*
-    int counter = 0;
-        // get the first key to process
-        String id = is.tagFileName + " " + list.get(counter).getFileName();
-        try {
-            int addedChars = 0;
-            // open the file for writing
-            RandomAccessFile  rf = new RandomAccessFile(file.getAbsolutePath(), "rw");
-            // now go to each position and write new values        
-            for(FileInfo2 fileInfo : sortedList.keySet()){
-                // get the length of the identifier to calculate the next line
-                final String keyName = is.tagFileName + " " + list.get(counter).getFileName();
-                // get the size of the line, plus one for the breakline char
-                final int size = keyName.length() + 1;
-                // increase this value to our overall added chars
-                addedChars += size;
-                // get the coordinates to where we can write a line
-                final int nextPosition = fileInfo.getLinePosition()
-                        + addedChars;
-                // move to that coordinate
-                rf.seek(nextPosition);
-                // what is the text that we want to write?
-                final String textToWrite = "Hello World!\n";
-                // count these values too
-                addedChars += textToWrite.length();
-                // all done, write the string and move to next in list
-                rf.write(textToWrite.getBytes());
-                System.err.println(fileInfo.getName() + " -> " + nextPosition);
+            // now replace the original file
+            boolean fileDeleted = file.delete();
+            // was the file really deleted?
+            if(fileDeleted){
+                 outputFile.renameTo(file);
+            }else{
+                System.err.println("SP565 - Failed to delete: " + file.getName());
             }
-            
-            rf.close();
-            } catch (Exception e){
+            // delete the generated file
+            outputFile.delete();
+            System.err.println("SP559 - Finished writing in " + file.getName());
+        }catch(Exception e){
+            System.err.println("SP562 - Exception occurred " + e.getMessage());
         }    
-     */
-    
+    }
 }
