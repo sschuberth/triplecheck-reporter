@@ -1369,45 +1369,23 @@ public class StudioUI4 extends javax.swing.JFrame {
                 spdxList.put(id, list);
             }
         }
+        // grab the currently selected node
+        TreeNodeSPDX selectedNode = swingUtils.getSelectedNode();
         
-        // now that we splitted all the fileInfo split, it is time to write them
+        // now that we splitted all the fileInfo, it is time to write them
         for(ArrayList<FileInfo2> fileInfoList : spdxList.values()){
             // get the SPDX object
             SPDXfile2 spdx = fileInfoList.get(0).getSPDX();
             // write the lines for this list
             spdx.writeLines(fileInfoList, is.tagFileOrigin, value.toString(), true);
+            // after writing the changes to disk, it is time to update the nodes
+            for(FileInfo2 fileInfo : fileInfoList){
+                fileInfo.setFileOrigin(value);
+            }
         }
         
-        
-        
-        
-        
-        //        // create the dummy-holder, necessary to grab the last indexed FileInfo
-        //        FileInfo2 temp = new FileInfo2(null);
-        //        // iterate through the provided list
-        //        for(TreeNodeSPDX newNode : nodeList){
-        //                // get the object
-        //                FileInfo fileInfo = (FileInfo) newNode.getUserObject();
-        //                // change the license
-        //                fileInfo.setOrigin(value);
-        //                // all done in terms of writing the changes
-        //                log.write(is.COMPLETED, "Applied origin %1 to %2",
-        //                        value + "", fileInfo.getName());
-        //                // store the last indexed FileInfo to grab reference of SPDX
-        //                temp = fileInfo;
-        //            }
-        //            // save all changes to disk
-        //            temp.spdx.commitChanges();
-        //
-        //             log.write(is.COMPLETED, "All done, marked file(s) as %1",
-        //                        value + "");
-        //            // refresh the variables inside the spdx object
-        //            temp.spdx.refresh();
-        //            TreeviewUtils.spdxUpdateAllNodes(temp.spdx);
-        //            // update the index values
-        //            core.popularity.doIndex();
+        // update the selected node
+        log.write(is.INFO, Messages.TreeNodeChanged, selectedNode.getUID());
     }
 
-    
-    
 }

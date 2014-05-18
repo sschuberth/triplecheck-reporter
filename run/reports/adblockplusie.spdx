@@ -21,6 +21,7 @@ PackageName: adblockplusie
 ##-------------------------
 FileName: ./.hgignore
 FileType: OTHER
+FileOrigin: AUTHORED
 FileChecksum: SHA1: 0dd27d1c6a8e3a52ac0cf395c5425b8bc6f9dc31
 FileChecksum: SHA256: 27294c15f50a922f96a45f240498a4babb541ac613750a3e3b0d9fa3d4a28a20
 FileChecksum: MD5: abae912c1e6dbac6639dd2105e5bbf7d
@@ -29,6 +30,7 @@ FileSize: 95 bytes
 
 FileName: ./.hgtags
 FileType: OTHER
+FileOrigin: AUTHORED
 FileChecksum: SHA1: 6eb748ba5dbee01f32f143a78ddc9aae9ea153d9
 FileChecksum: SHA256: e2fc584b7e32a034f649d343bd9ce0dc8da1295abf402bf3dd97abb737f54cab
 FileChecksum: MD5: b356ee82db4d95e9485d6d9236175a15
@@ -37,6 +39,7 @@ FileSize: 180 bytes
 
 FileName: ./adblockplus.gyp
 FileType: OTHER
+FileOrigin: AUTHORED
 FileChecksum: SHA1: 1d000bbfb271a69762d0a42c52824601e6dcd60b
 FileChecksum: SHA256: fd71d7db5c93bdb8d1df5366796bb1e3896f78778dcc03008d79f159073f6485
 FileChecksum: MD5: 0a1862bde6e08292c9fa414315fd01af
@@ -247,7 +250,8 @@ FileChecksum: MD5: c05168c15fda87a2092d27e0675447f1
 FileChecksum: SSDEEP: 96:CQyaO9TF8ENviD3oKQ+hr8uwTSiTSU6X+cVCYQ5jJuCX7ty5hIVQV:CQ9ETF8EQ3oKQcrSIJ8N5gCXI5hIVQV
 FileSize: 4 Kb (5003 bytes)
 FileLOC: 163
-FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH
+</text>
 LicenseInfoInFile: GPL-3.0
 
 FileName: ./html/static/js/ieFirstRun.js
@@ -303,7 +307,8 @@ FileChecksum: MD5: 9c21caa629b4a12ccc866a3aa7e4fe7b
 FileChecksum: SSDEEP: 48:gAyQyzH/wOBVelT3iXMRdICcEnid3VmDpKLQy5DW5:m/+d/SVgpKLBK
 FileSize: 2 Kb (2818 bytes)
 FileLOC: 73
-FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH
+</text>
 LicenseInfoInFile: GPL-3.0
 
 FileName: ./html/templates/index.html
@@ -1980,7 +1985,8 @@ FileChecksum: SSDEEP: 48:YXAx4QR07mH31voeSmGSmtMAwdXWfdAjeSHhfn26v4G0+u2nM4oZMO+
 FileSize: 3 Kb (3177 bytes)
 FileLOC: 94
 LicenseInfoInFile: Apache-2.0
-FileCopyrightText: <text>Copyright 2007 Igor Tandetnik</text>
+FileCopyrightText: <text>Copyright 2007 Igor Tandetnik
+</text>
 
 FileName: ./src/plugin/ProtocolCF.inl
 FileType: OTHER
@@ -1990,7 +1996,8 @@ FileChecksum: MD5: 7f55ad941d1e558cd010617fb9660461
 FileChecksum: SSDEEP: 96:YXAx40UmHFvoarOh9Z34mvgTfwuNcvYb3b+AfyRu2vRo4aRz7U:GAxtPH1wun3yAfyDpLAE
 FileSize: 5 Kb (6091 bytes)
 LicenseInfoInFile: Apache-2.0
-FileCopyrightText: <text>Copyright 2007 Igor Tandetnik</text>
+FileCopyrightText: <text>Copyright 2007 Igor Tandetnik
+</text>
 
 FileName: ./src/plugin/ProtocolImpl.h
 FileType: SOURCE
@@ -2001,7 +2008,8 @@ FileChecksum: SSDEEP: 192:GAxtPHxYN+XlR/CpkBBeS2mHug5+bmmyj/m1mYBOWZhdZqr28qI9bx
 FileSize: 13 Kb (13847 bytes)
 FileLOC: 449
 LicenseInfoInFile: Apache-2.0
-FileCopyrightText: <text>Copyright 2007 Igor Tandetnik</text>
+FileCopyrightText: <text>Copyright 2007 Igor Tandetnik
+</text>
 
 FileName: ./src/plugin/ProtocolImpl.inl
 FileType: OTHER
@@ -2011,7 +2019,8 @@ FileChecksum: MD5: 887ccc9c6528e72026abeafea6bf0dd1
 FileChecksum: SSDEEP: 384:G8tRsRTbwaMcHRaB5Kqew5BFyoW3RDRlh6zxbSPqWPtDp2gGpHwZlBSv3HD24k2u:G87gT8aMWRaB5KK5BFyoW3RDRlh6Qtll
 FileSize: 22 Kb (23330 bytes)
 LicenseInfoInFile: Apache-2.0
-FileCopyrightText: <text>Copyright 2007 Igor Tandetnik</text>
+FileCopyrightText: <text>Copyright 2007 Igor Tandetnik
+</text>
 
 FileName: ./src/plugin/Resource.h
 FileType: SOURCE

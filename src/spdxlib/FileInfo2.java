@@ -334,7 +334,12 @@ public class FileInfo2 implements Serializable{
         // in the process, we also define the file Category
 //        fileCategory = this.getExtensionObject().getCategory();
     }
+
+    public TreeNodeSPDX getNode() {
+        return node;
+    }
      
+    
    
     /**
      * If the report was created on this machine, it might be possible to
