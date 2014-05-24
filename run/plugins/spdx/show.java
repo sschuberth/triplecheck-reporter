@@ -329,15 +329,7 @@ public class show extends Plugin{
         if(file == null){
             return;
         }
-        
-//        String cache = (String) core.temp.get(showSPDX);
-//        if(cache != null){
-//            log.write(is.COMPLETED, "Using the cached version of show SPDX");
-//            request.setAnswer(cache);
-//            return;
-//        }
-        
-        
+      
         // get the SPDX file from the root node
         //System.err.println("DBG-S342 Reading SPDX");
         //SPDXfile spdx = new SPDXfile(file);
@@ -358,34 +350,12 @@ public class show extends Plugin{
                 + html._div
                 ;
         
-        //String evaluation = doEvaluation(spdx);
+        // get the lines of code (LOC) and size
+        int countLOC = spdx.getCountLOC();
+        long overallSize = spdx.getCountSize();
         
-        // prepare our list of warnings about things we don't particularly enjoy
-//        String warnings = "";
-//        // we don't like SPDX documents without declared triggers
-//        if(counterLicensesDeclared == 00){
-//            warnings = ""
-//                    + html.br
-//                    + html.br
-//                    + Table.simple(
-//                            html.getIcon("exclamation.png", request), 10,
-//                            "No triggers declared", 150)
-//                    ;
-//        }
-        
-        
-        // get the lines of code (LOC)
-        int countLOC = 0;
-        long overallSize = 0;
-        for(FileInfo2 fileInfo : spdx.getFiles()){
-            countLOC += fileInfo.getFileLOC();
-            overallSize += fileInfo.getFileSize();
-        }
-        
-        // add the thousands separator
-        
+        // add the pretty text with a thousands separator
         DecimalFormat myFormatter = new DecimalFormat("###,###");
-        
         String textLOC = myFormatter.format(countLOC);
         String textOverallSize = utils.files.humanReadableSize(overallSize);
         
@@ -408,10 +378,11 @@ public class show extends Plugin{
                 + html.getIcon("chart.png", request)
                 + html.br
                 + html.br
-                + textLOC + " lines of code (LOC)"
+                + textLOC + " lines of code"
                 + html.br
-                + counterFiles + " files (" 
-                + counterLicensesDeclared + " declared licenses)"
+                + counterFiles + " files"
+//                + " (" 
+//                + counterLicensesDeclared + " declared licenses)"
                 + html.br
                 + textOverallSize + " in size"
                 + html.br

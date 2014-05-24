@@ -28,8 +28,10 @@ import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import main.core;
+import script.FileExtension;
 import script.log;
 import utils.files;
+import utils.html;
 
 
 /**
@@ -54,7 +56,22 @@ public class SPDXfile2 implements Serializable{
     // temporary values only used during the initial processing
     FileInfo2 tempInfo;
     int charPosition = 1;
+    private boolean hasComputedStats = false; // were stats calculated already?
         
+    // statistical variables
+    private int 
+        countLicensesDeclared = 0,
+        countLicensesConcluded = 0,
+        countFilesWithCopyright = 0,
+        countLOC = 0,
+        countSize = 0;
+
+    // variables used for the language calculation
+    private boolean languagesWereNotEvaluated = true;
+    final private HashMap<FileLanguage, Integer> countMainLanguages = new HashMap();
+    // this list keeps files where multiple languages apply
+    final private ArrayList<FileInfo2> secondList = new ArrayList();
+    
     // default constructor, we need a file to proceed
     public SPDXfile2(File canonicalFile) {
         this.file = canonicalFile;
@@ -381,16 +398,231 @@ public class SPDXfile2 implements Serializable{
         return counter;
     }
     
+    /**
+     * Get the summary for the languages adopted across this project
+     * @return      An HTML string with the summay of adopted languages
+     */
     public String getLanguageEvaluation() {
-        System.err.println("Missing to implement Language evaluation");
-        return "";
+        if(languagesWereNotEvaluated){
+            evaluateLanguages();
+        }
+        
+        // where we will store the results
+        String result = "";
+        
+        // create a list sorted according to biggest on top
+        Map<FileLanguage,Integer> map = ThirdParty.MiscMethods.sortByComparator(countMainLanguages);
+        
+        // how many files do we have in total?
+        int total = 0;
+        for(Integer value : map.values()){
+            total += value;
+        }
+        
+        for(FileLanguage language : map.keySet()){
+            int value = countMainLanguages.get(language);
+            result += value + " " 
+                    + language.toString() 
+                    + " files"
+                    + " ("
+                    + utils.misc.getPercentage(value, total) + "%"
+                    + ")"
+                    + html.br;
+        }
+        
+        
+        //System.err.println("Missing to implement Language evaluation");
+        return result;
     }
 
+    
+    /**
+     * Runs the code for evaluating the type of languages being used
+     * inside the project files
+     */
+    private void evaluateLanguages(){
+        // the main loop
+        for(FileInfo2 fileInfo : files){
+            computeLanguages(fileInfo);
+        }
+        
+        // now process the languages on the second list
+        computeLanguageSecondList();
+        
+        
+        // set the marker that we have evaluated the languages
+        languagesWereNotEvaluated = false;
+    }
+    
+    
+    /**
+     * Process the files that we are not certain about which
+     * type of language is applicable since they are sometimes
+     * used by different programming languages
+     */
+    private void computeLanguageSecondList(){
+        // now go through the second list, try to discover where the files
+        // applicable to multiple languages belong
+        // iterate through all these files
+        for(FileInfo2 fileInfo : secondList){
+           // get the respective extension
+            FileExtension extension = fileInfo.getExtensionObject();
+           // let's do some ranking
+            int highestCount = 0;
+            FileLanguage top = null;
+            // go through each indexed language
+            for(FileLanguage thisLang : countMainLanguages.keySet()){
+                // we only want the possible candidates
+                if(extension.getLanguages().contains(thisLang)==false){
+                    continue;
+                }
+                
+                int thisCount = countMainLanguages.get(thisLang);
+                if(thisCount > highestCount){
+                    // we have a possible value
+                    top = thisLang;
+                }
+            }
+            // now we have the top ranked candidate
+            if(top != null){
+                int count = countMainLanguages.get(top);
+                    count++;
+                    countMainLanguages.put(top, count);
+            }
+        }
+        // now delete the second list elements to save memory
+        secondList.clear();
+    }
+    
+    
+    /**
+     * Outputs a summary of the licenses that were both both concluded as
+     * applicable to files inside the project, as the licenses found inside
+     * within the source code.
+     * @return 
+     */
     public String summaryConcludedLicenses() {
-        System.err.println("Missing to implement Concluded licenses evaluation");
-        return "";
-   }
+        // compute the number of licenses declared if not done before
+        //computeStats();
+        
+        String result = ""
+                + countFilesWithCopyright
+                + " files copyright declared" 
+                + html.br
+                + countLicensesDeclared
+                + " files with declared licenses" 
+                + html.br
+                + countLicensesConcluded
+                + " files with concluded licenses" 
+                + html.br
+                ;
+        
+        return result;
+    }
      
+    
+    /**
+     * We use this method for doing a single loop that aggregates all
+     * the stats that we need about this project.
+     */
+    private void computeStats(){
+        // already done the stats? no need to continue
+        if(hasComputedStats){
+            return;
+        }
+        
+        // the main loop
+        for(FileInfo2 fileInfo : files){
+            computeLicenses(fileInfo);
+            //computeLanguages(fileInfo);
+        }
+        
+        hasComputedStats = true;
+    }
+
+    
+    
+    /**
+     * Calculate the language related statistics.
+     * @param fileInfo      the file object being calculated    
+     */
+    private void computeLanguages(FileInfo2 fileInfo){
+        // get the language object or just "unknown" if not indexed before
+        FileLanguage thisLanguage = 
+                fileInfo.getExtensionObject().getLanguage();
+        
+
+        // we only want files with a specified language
+        if(thisLanguage == FileLanguage.UNSORTED){
+            return;
+        }
+        
+        // if the file is used by multiple languages, then we place it
+        // on a post-processing list to discover how it is being used.
+        if(thisLanguage == FileLanguage.MULTIPLE){
+            secondList.add(fileInfo);
+            // no need to proceed, skip to next file
+            return;
+        }
+
+
+        // was this language indexed before?
+        if(countMainLanguages.containsKey(thisLanguage)){
+            int counter = countMainLanguages.get(thisLanguage);
+            counter++;
+            countMainLanguages.put(thisLanguage, counter);
+        }else{
+        // wasn't indexed before, add it up
+            countMainLanguages.put(thisLanguage, 1);
+        }
+    }
+    
+    /**
+     * During the compute loop, calculate the value for the licenses
+     * @param fileInfo  A fileInfo object
+     */
+    private void computeLicenses(FileInfo2 fileInfo){
+        // get the lines of code and size of file
+        countLOC += fileInfo.getFileLOC();
+        countSize += fileInfo.getFileSize();
+        // have we been through this file to mark licenses?
+        if(fileInfo.hasLicenseConcluded()){
+            countLicensesConcluded++;
+        }
+        // where licenses declared?
+        if(fileInfo.hasLicenseInfoInFile()){
+            countLicensesDeclared++;
+        }
+        // count the copyright assignments
+        final String copyrights = fileInfo.getFileCopyrightText();
+        if((copyrights != null)&&(copyrights.isEmpty() == false)){
+            countFilesWithCopyright++;
+        }
+    }
+    
+    
+    public int getCountLicensesDeclared() {
+        return countLicensesDeclared;
+    }
+
+    public int getCountLicensesConcluded() {
+        return countLicensesConcluded;
+    }
+
+    public int getCountFilesWithCopyright() {
+        return countFilesWithCopyright;
+    }
+
+    public int getCountLOC() {
+        return countLOC;
+    }
+
+    public int getCountSize() {
+        return countSize;
+    }
+    
+    
+    
     public String getCopyrightEvaluation() {
         System.err.println("Missing to implement Copyright evaluation");
         return "";
@@ -420,6 +652,8 @@ public class SPDXfile2 implements Serializable{
         }else{
             nodeFiles.setTitle("Files");
         }
+        // get the stats done
+        computeStats();
     }
 
     
@@ -428,6 +662,10 @@ public class SPDXfile2 implements Serializable{
      * This method will get a list of given fileInfo object and write back the
      * changes as needed.
      * @param fileInfoList  A list with fileInfo objects 
+     * @param tagId         The tag type that is our target to overwrite
+     * @param tagValue      The value for the new (or overwritten) tag 
+     * @param overwrite     If true, writes on existing value. Otherwise, 
+     * adds another key/value
      */
     public void writeLines(ArrayList<FileInfo2> fileInfoList,
             final String tagId, final String tagValue, Boolean overwrite){
@@ -567,7 +805,7 @@ public class SPDXfile2 implements Serializable{
             // delete the generated file
             outputFile.delete();
             System.err.println("SP559 - Finished writing in " + file.getName());
-        }catch(Exception e){
+        }catch(IOException e){
             System.err.println("SP562 - Exception occurred " + e.getMessage());
         }    
     }

@@ -29,8 +29,8 @@ public class sandbox {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        //createSPDX();
-        readSPDX();
+        createSPDX();
+        //readSPDX();
         System.exit(1111);
     }
     
@@ -57,14 +57,13 @@ public class sandbox {
          // now add the known file extensions
         //core.extensions.addExtensions();
         
-         File baseFolder = new File("../..", "source");
-         File thisFolder = new File(baseFolder, "linux-coreos");
+         //File baseFolder = new File("../..", "source2");
+         File thisFolder = new File("../..", "source2");
          //File thisFolder = new File(baseFolder, "busybox\\busybox-1.21.1");
          //File thisFolder = new File(baseFolder, "busybox\\busybox-1.21.1");
          
          
-         File resultFile = new File(core.getMiscFolder(), thisFolder.getName()
-         + ".spdx");
+         File resultFile = new File("result.spdx");
          
          DocumentCreate2 spdx = new DocumentCreate2();
          spdx.create(thisFolder, resultFile);

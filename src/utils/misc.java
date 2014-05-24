@@ -42,13 +42,11 @@ public class misc {
     public static String getPercentage(int value, int max){
         double dMax = max;
         double dValue = value;
-        double per = (dValue*100)/ dMax;
+        double first = dValue*100;
+        double per = first / dMax;
         DecimalFormat df = new DecimalFormat("#.#");
         return df.format(per);
     }
-    
-    
-   
     
    /**
     * Gets the date when a given class was created in ISO format

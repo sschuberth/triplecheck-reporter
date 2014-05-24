@@ -731,10 +731,7 @@ public final class SPDXfile_old implements Serializable{
                 // first time, add it up
                 statsLanguagesFound.put(language, 1);
             }
-                
-                
-            
-        }
+         }
         
         // now go through the second list, try to discover where the files
         // applicable to multiple languages belong
