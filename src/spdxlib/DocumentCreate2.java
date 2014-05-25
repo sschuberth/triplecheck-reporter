@@ -66,7 +66,17 @@ public class DocumentCreate2 {
     public int getFilesTotal() {
         return filesTotal;
     }
-
+    /**
+     * From a given folder on disk, create an SPDX report
+     * @param folderToAnalyze   The folder on disk
+     * @return  True if the report was created with success, false otherwise
+     */ 
+    public boolean create(final File folderToAnalyze) {
+        String filename = folderToAnalyze.getName() + ".spdx";
+        // create the file pointer
+        File document = new File(core.getProductsFolder(), filename);
+        return create(folderToAnalyze, document);
+    }
     /**
      * From a given folder on disk, create an SPDX report
      * @param folderToAnalyze   The folder where files to analyze are located

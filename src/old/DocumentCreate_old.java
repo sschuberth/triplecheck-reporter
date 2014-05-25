@@ -10,7 +10,7 @@
  * FileComment: <text> Creates an SPDX document from a given source </text> 
  */
 
-package spdxlib;
+package old;
 
 import definitions.definition;
 import definitions.id;
@@ -22,6 +22,8 @@ import main.core;
 import script.FileExtension;
 import script.Trigger;
 import script.log;
+import spdxlib.FileCategory;
+import spdxlib.FileId;
 import ssdeep.ssdeep;
 import utils.db.MapDB_Indexer;
 

@@ -28,8 +28,6 @@ import org.codehaus.janino.SimpleCompiler;
  */
 public class bytecode {
     
-//    static Class clazz;
-    
     /**
      * Given a file on disk, this method will try to convert a source code
      * file into a compiled bytecode class

@@ -72,8 +72,8 @@ public class GPL implements Trigger {
     
     // define the default values
     String 
-            defaultId = idGPL3_0,
-            defaultTitle = titleGPL3_0;
+            defaultId = idGPL1_0,
+            defaultTitle = titleGPL1_0;
     
     
     /**
@@ -194,7 +194,7 @@ public class GPL implements Trigger {
 
     @Override
     public String getShortIdentifier() {
-        return "GPL";
+        return defaultId;
     }
 
     @Override

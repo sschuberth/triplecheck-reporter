@@ -12,7 +12,6 @@
 
 package spdx;
 
-import GUI.TreeviewUtils;
 import GUI.swingUtils;
 import definitions.Messages;
 import definitions.is;
@@ -74,9 +73,9 @@ public class create extends Plugin{
     public void addNode(){
         addTreeNode(id, "box--plus.png", "main");
         
-        addChildNode("from web", "application-dock-270.png", "mainWeb");
+        //addChildNode("from web", "application-dock-270.png", "mainWeb");
         addChildNode("from folder", "folder-smiley.png", "mainFolder");
-        addChildNode("batch mode", "blue-document-node.png", "mainBatch");
+        //addChildNode("batch mode", "blue-document-node.png", "mainBatch");
         
     }
     
@@ -177,8 +176,6 @@ public class create extends Plugin{
             return;
         }
        
-        // save the selected folder for the next time
-        //settings.write(LastFolderNewSPDX, source.getAbsolutePath());
         
         RunningTask task = new RunningTask(){
             @Override
@@ -469,15 +466,15 @@ public class create extends Plugin{
      */
     private String createDocument(File extractedFolder, RunningTask task, 
             DocumentCreate2 newSPDX){
-        //task.setStatus("Processing " + extractedFolder.getAbsolutePath());
+            task.setStatus("Processing " + extractedFolder.getAbsolutePath());
         
-        //String result = "";
+//        String result = "";
         
         try{
         // do all the heavy work
-        //result = 
-                //newSPDX.create(extractedFolder);
-                System.err.println("CR479 - Create folder from GUI not yet implemented");
+//        result = 
+                newSPDX.create(extractedFolder);
+//                System.err.println("CR479 - Create folder from GUI not yet implemented");
         }catch (Exception e){
             log.write(is.ERROR, "CR301- Exception occurred when creating SPDX"
                     + ": %1",e.toString());
@@ -499,25 +496,27 @@ public class create extends Plugin{
         // all done
         task.setPercentageComplete(100);
         task.setStatus("All done!");
-        
+            
+        String result = extractedFolder.getName() + ".spdx";
         
         // all done here, explain where the SPDX document can be found
-               task.nextStep = "";
-               System.err.println("CR505 - No next steps implemented yet");
-//                         html.link("SPDX summary", 
-//                        "/spdx/show?x=summary&"
-//                        + param.spdx + "=" + result
-//                         )
-//                       + " | " +
-//                       html.link("Show full text", 
-//                        "/spdx/show?x=full&"
-//                        + param.spdx + "=" + result)
-//                       + html.redirect(
-//                               "/spdx/show?x=summary&"
-//                                + param.spdx + "=" + result
-//                               , 
-//                               2
-//                               , "Redirecting..")
+               task.nextStep = 
+//                       "";
+//               System.err.println("CR505 - No next steps implemented yet");
+                         html.link("SPDX summary", 
+                        "/spdx/show?x=summary&"
+                        + param.spdx + "=" + result
+                         )
+                       + " | " +
+                       html.link("Show full text", 
+                        "/spdx/show?x=full&"
+                        + param.spdx + "=" + result)
+                       + html.redirect(
+                               "/spdx/show?x=summary&"
+                                + param.spdx + "=" + result
+                               , 
+                               2
+                               , "Redirecting..")
                        ;
                
                
