@@ -31,6 +31,7 @@ import main.core;
 import script.FileExtension;
 import script.log;
 import structure.LanguageCounter;
+import structure.LicenseCounter;
 import utils.files;
 import utils.html;
 
@@ -71,9 +72,12 @@ public class SPDXfile2 implements Serializable{
     private boolean languagesWereNotEvaluated = true;
     //final private EnumMap<FileLanguage, Integer> countMainLanguages = new EnumMap<FileLanguage, Integer>(FileLanguage.class);
     final private LanguageCounter languageCounter = new LanguageCounter();
-    
     // this list keeps files where multiple languages apply
     final private ArrayList<FileInfo2> secondList = new ArrayList();
+
+    // variables for handling the licenses inside this document
+    final private LicenseCounter licenseCounter = new LicenseCounter();
+    
     
     // default constructor, we need a file to proceed
     public SPDXfile2(File canonicalFile) {
@@ -407,7 +411,7 @@ public class SPDXfile2 implements Serializable{
      */
     public String getLanguageEvaluation() {
         if(languagesWereNotEvaluated){
-            evaluateLanguages();
+            evaluateLanguagesAndLicenses();
         }
         
         // where we will store the results
@@ -415,11 +419,8 @@ public class SPDXfile2 implements Serializable{
         
         // create a list sorted according to biggest on top
         Map<FileLanguage,Integer> map = languageCounter.sortedMap();
-                
         // how many files do we have in total?
         int total = languageCounter.getOverallCounter();
-      
-        
         for(FileLanguage language : map.keySet()){
             int value = languageCounter.get(language);
             // ignore the empty languages
@@ -436,6 +437,31 @@ public class SPDXfile2 implements Serializable{
                     + html.br;
         }
         
+        result += html.br;
+               
+        
+         // create a licensing list sorted according to biggest on top
+        Map<LicenseType,Integer> mapLicenses = licenseCounter.sortedMap();
+        // how many files do we have in total?
+        int totalLicenses = licenseCounter.getOverallCounter();
+        for(LicenseType license : mapLicenses.keySet()){
+            int value = licenseCounter.get(license);
+            // ignore the empty languages
+            if(value == 0){
+                continue;
+            }
+            result += ""
+                    + utils.misc.getPercentage(value, totalLicenses) + "%"
+                    + " "
+                    + license.toId()
+                    + " ("
+                    + utils.text.pluralize(
+                            value, 
+                             "file")
+                    + ")"
+                    + html.br;
+        }
+        
         
         //System.err.println("Missing to implement Language evaluation");
         return result;
@@ -446,10 +472,12 @@ public class SPDXfile2 implements Serializable{
      * Runs the code for evaluating the type of languages being used
      * inside the project files
      */
-    private void evaluateLanguages(){
+    private void evaluateLanguagesAndLicenses(){
         // the main loop
         for(FileInfo2 fileInfo : files){
             computeLanguages(fileInfo);
+            // also compute the licenses
+            licenseCounter.increment(fileInfo.getLicenseInfoInFile());
         }
         
         // now process the languages on the second list
@@ -473,7 +501,7 @@ public class SPDXfile2 implements Serializable{
         // iterate through all these files
         for(FileInfo2 fileInfo : secondList){
            // get the respective extension
-            FileExtension extension = fileInfo.getExtensionObject();
+//            FileExtension extension = fileInfo.getExtensionObject();
            // let's do some ranking
             int highestCount = 0;
             FileLanguage top = null;
@@ -619,8 +647,6 @@ public class SPDXfile2 implements Serializable{
     public int getCountSize() {
         return countSize;
     }
-    
-    
     
     public String getCopyrightEvaluation() {
         System.err.println("Missing to implement Copyright evaluation");
