@@ -407,8 +407,8 @@ public class show extends Plugin{
         // if we are on Windows, permit to open the folder
         String openFolder = "";
         if(isWindows()){
-            openFolder = 
-                    html.br
+            openFolder = ""
+                    //+ html.br
                     + html.link("Open folder in Windows explorer", 
                         "?x=openFolder&"
                         + param.file + "=" + file.getAbsolutePath()
@@ -431,7 +431,6 @@ public class show extends Plugin{
                 
                 
                 + html.div()
-                + openFolder
                     
                 + html.br
                 + spdx.getCopyrightEvaluation()
@@ -446,6 +445,7 @@ public class show extends Plugin{
                 + "<b>" + "Other actions" + "</b>" + html.br
                 + html._div
                 + html.div(20)
+                + openFolder
                 //+ html.getCommonFolderIcon("receipt--pencil.png")
                 + html.link("Show full text", 
                         "?x=full&"
@@ -454,23 +454,23 @@ public class show extends Plugin{
                 + html.br
                 //+ html.br
                 
-                + html.div()
-                + "<b>" + "List files" + "</b>" + html.br
-                + html._div
-                + html.div(20)
-                //+ html.getCommonFolderIcon("folder-smiley-sad.png")
-                //+ html.linkScript("Without a trigger", thisFile, "showFilesWithoutLicense")
-                + html.link("Without license specified", "?x=list&"
-                        + param.filter + "=nolicense&" 
-                        + param.spdx + "=" + spdxTarget)
-                
-                + html.br
+//                + html.div()
+//                + "<b>" + "List files" + "</b>" + html.br
+//                + html._div
+//                + html.div(20)
+//                //+ html.getCommonFolderIcon("folder-smiley-sad.png")
+//                //+ html.linkScript("Without a trigger", thisFile, "showFilesWithoutLicense")
+//                + html.link("Without license specified", "?x=list&"
+//                        + param.filter + "=nolicense&" 
+//                        + param.spdx + "=" + spdxTarget)
+//                
+//                + html.br
                 //+ html.getCommonFolderIcon("folder-smiley.png")
                 //+ html.linkScript("With a trigger reported", thisFile, "showFilesWithLicense")
-                + html.link("With license", "?x=list&"
-                        + param.filter + "=withlicense&"
-                        + param.spdx + "=" + spdxTarget)
-                + html._div
+//                + html.link("With license", "?x=list&"
+//                        + param.filter + "=withlicense&"
+//                        + param.spdx + "=" + spdxTarget)
+//                + html._div
                 + "";
         
         // save our cache for next time
