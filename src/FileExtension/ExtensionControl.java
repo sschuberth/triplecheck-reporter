@@ -36,6 +36,8 @@ public final class ExtensionControl {
     private final DefaultExtension unknownExtension = new DefaultExtension();
     
     
+    private final ArrayList<String> listIndexes = new ArrayList();
+    
     /**
      * Public constructor
      */
@@ -52,6 +54,7 @@ public final class ExtensionControl {
             return;
         }
         list.add(extension);
+        listIndexes.add(extension.getIdentifierShort());
     }
     
     /**
@@ -60,6 +63,7 @@ public final class ExtensionControl {
     public void addExtensions() {
         // clear up the list to avoid duplicates
         list.clear();
+        listIndexes.clear();
         File folder = core.getExtensionsFolder();
         ArrayList<File> files = utils.files.findFilesFiltered(folder, ".java", 2);
         for(File file : files){
@@ -69,6 +73,7 @@ public final class ExtensionControl {
             FileExtension result = (FileExtension) script.exec.runJava(file, "FileExtension");
             if(result != null){
                 list.add(result);
+                listIndexes.add(result.getIdentifierShort());
             }
         }
         // output some statistics about the number of extensions registered
@@ -81,12 +86,17 @@ public final class ExtensionControl {
      * @return 
      */
     public Boolean has(final String extension){
-        for(FileExtension ext : list){
-            final String shortId = ext.getIdentifierShort();
-            if(utils.text.equals(shortId, extension)){
+        for(String ext : listIndexes){
+            if(utils.text.equals(ext, extension)){
                 return true;
             }
         }
+//       for(FileExtension ext : list){
+//            final String shortId = ext.getIdentifierShort();
+//            if(utils.text.equals(shortId, extension)){
+//                return true;
+//            }
+//        }
         return false;
     }
     
@@ -104,6 +114,15 @@ public final class ExtensionControl {
         }
         return unknownExtension;
     }
+    
+    public FileExtension get(int extensionIndex){
+        return list.get(extensionIndex);
+    }
+
+    public FileExtension getUnknownExtension() {
+        return unknownExtension;
+    }
+    
     
     
     /**
@@ -129,10 +148,18 @@ public final class ExtensionControl {
     public ArrayList<FileExtension> getList() {
         return list;
     }
-    
-    
-    
-    
+
+    /**
+     * Returns the index number where this extension is placed inside our array.
+     * Otherwise returns -1 when the extension was not found
+     * @param extension     The string extension (without the dot) that we want
+     * to find
+     * @return              The number where the extension object is placed in
+     * our internal array
+     */
+    public int getIndex(String extension) {
+        return listIndexes.indexOf(extension);
+    }
 }
 
 

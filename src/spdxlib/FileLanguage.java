@@ -11,9 +11,7 @@
  */
 package spdxlib;
 
-import java.io.Serializable;
-
-public enum FileLanguage implements Serializable {
+public enum FileLanguage {
     
     // compiled
     JAVA,
@@ -46,7 +44,7 @@ public enum FileLanguage implements Serializable {
     
     @Override
     public String toString() {
-        switch (this) {
+       switch (this) {
         case JAVA: return "Java";
         case DELPHI: return "Delphi";
         case C: return "C";
@@ -68,6 +66,7 @@ public enum FileLanguage implements Serializable {
     // misc
         case SQL: return "SQL";
         case HTML: return "HTML";
+        case BASIC: return "Basic";
         case UNSORTED: return "Unsorted";
         case MULTIPLE: return "Multiple";
         }

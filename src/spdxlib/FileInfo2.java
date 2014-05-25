@@ -16,7 +16,6 @@ package spdxlib;
 import GUI.TreeNodeSPDX;
 import GUI.TreeviewUtils;
 import java.io.File;
-import java.io.Serializable;
 import java.util.ArrayList;
 import main.core;
 import script.FileExtension;
@@ -27,7 +26,7 @@ import script.FileExtension;
  * @author Nuno Brito, 10th of April 2014 in Darmstadt, Germany.
  *  nuno.brito@triplecheck.de | http://nunobrito.eu
  */
-public class FileInfo2 implements Serializable{
+public class FileInfo2 {
     // file name declared
     private String fileName;
     private String filePath;    // the path portion without the file name
@@ -38,10 +37,12 @@ public class FileInfo2 implements Serializable{
     private FileType fileType;          // official SPDX types of files
     private FileCategory fileCategory;  // our own categories for files
     private FileOrigin fileOrigin;
+    private FileExtension fileExtensionObject;
     
     // in which line of the text file is this file placed?
     private int linePosition;
-
+    private int fileExtensionIndex = -1;
+    
     // checksums
     private String tagFileChecksumSHA1;
     private String tagFileChecksumSHA256;
@@ -297,9 +298,16 @@ public class FileInfo2 implements Serializable{
      * @return the extension object with more info about this specific filetype
      */
     public FileExtension getExtensionObject(){
+//        if(fileExtensionIndex != -1){
+//            return core.extensions.get(fileExtensionIndex);
+//        }
+//        return core.extensions.getUnknownExtension();
+        
+        return fileExtensionObject;
+        
         //System.err.println(name + "-->Extension: " + extension);
-        FileExtension result = core.extensions.get(extension);
-        return result;
+        //FileExtension result = core.extensions.get(extension);
+        //return result;
     }
    
     public SPDXfile2 getSPDX() {
@@ -321,6 +329,13 @@ public class FileInfo2 implements Serializable{
         // get the extension
         final int lastDot = name.lastIndexOf(".");
         extension = name.substring(lastDot+1).toLowerCase();
+        fileExtensionIndex = core.extensions.getIndex(extension);
+        // add the file extension object
+        if(fileExtensionIndex != -1){
+            fileExtensionObject = core.extensions.get(fileExtensionIndex);
+        }else{
+            fileExtensionObject = core.extensions.getUnknownExtension();
+        }        
     }
     
     /**

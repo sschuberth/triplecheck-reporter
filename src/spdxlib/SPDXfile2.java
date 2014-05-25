@@ -30,6 +30,7 @@ import java.util.logging.Logger;
 import main.core;
 import script.FileExtension;
 import script.log;
+import structure.ArrayMap;
 import utils.files;
 import utils.html;
 
@@ -68,7 +69,8 @@ public class SPDXfile2 implements Serializable{
 
     // variables used for the language calculation
     private boolean languagesWereNotEvaluated = true;
-    final private HashMap<FileLanguage, Integer> countMainLanguages = new HashMap();
+    final private ArrayMap<FileLanguage, Integer> countMainLanguages = new ArrayMap();
+    
     // this list keeps files where multiple languages apply
     final private ArrayList<FileInfo2> secondList = new ArrayList();
     
@@ -411,8 +413,9 @@ public class SPDXfile2 implements Serializable{
         String result = "";
         
         // create a list sorted according to biggest on top
-        Map<FileLanguage,Integer> map = ThirdParty.MiscMethods.sortByComparator(countMainLanguages);
-        
+        Map<FileLanguage,Integer> map = countMainLanguages.sortedMap();
+        //Map<FileLanguage,Integer> map = ThirdParty.MiscMethods.sortByComparator(countMainLanguages);
+                
         // how many files do we have in total?
         int total = 0;
         for(Integer value : map.values()){
@@ -421,9 +424,10 @@ public class SPDXfile2 implements Serializable{
         
         for(FileLanguage language : map.keySet()){
             int value = countMainLanguages.get(language);
-            result += value + " " 
-                    + language.toString() 
-                    + " files"
+            result += 
+                    utils.text.pluralize(value, 
+                             language.toString() 
+                            + " file")
                     + " ("
                     + utils.misc.getPercentage(value, total) + "%"
                     + ")"
@@ -463,6 +467,7 @@ public class SPDXfile2 implements Serializable{
     private void computeLanguageSecondList(){
         // now go through the second list, try to discover where the files
         // applicable to multiple languages belong
+        
         // iterate through all these files
         for(FileInfo2 fileInfo : secondList){
            // get the respective extension
@@ -476,14 +481,16 @@ public class SPDXfile2 implements Serializable{
                 if(extension.getLanguages().contains(thisLang)==false){
                     continue;
                 }
-                
+                // get the current value
                 int thisCount = countMainLanguages.get(thisLang);
+                // if this is a high-value, use it as marker
                 if(thisCount > highestCount){
                     // we have a possible value
                     top = thisLang;
+                    highestCount = thisCount;
                 }
             }
-            // now we have the top ranked candidate
+            // now we have the top-ranking candidate
             if(top != null){
                 int count = countMainLanguages.get(top);
                     count++;
@@ -534,10 +541,11 @@ public class SPDXfile2 implements Serializable{
         // the main loop
         for(FileInfo2 fileInfo : files){
             computeLicenses(fileInfo);
-            //computeLanguages(fileInfo);
+//            computeLanguages(fileInfo);
         }
-        
         hasComputedStats = true;
+        
+        
     }
 
     
@@ -551,7 +559,6 @@ public class SPDXfile2 implements Serializable{
         FileLanguage thisLanguage = 
                 fileInfo.getExtensionObject().getLanguage();
         
-
         // we only want files with a specified language
         if(thisLanguage == FileLanguage.UNSORTED){
             return;
@@ -565,14 +572,13 @@ public class SPDXfile2 implements Serializable{
             return;
         }
 
-
         // was this language indexed before?
         if(countMainLanguages.containsKey(thisLanguage)){
             int counter = countMainLanguages.get(thisLanguage);
             counter++;
             countMainLanguages.put(thisLanguage, counter);
         }else{
-        // wasn't indexed before, add it up
+            // wasn't indexed before, add it up
             countMainLanguages.put(thisLanguage, 1);
         }
     }
