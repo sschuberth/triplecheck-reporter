@@ -298,16 +298,7 @@ public class FileInfo2 {
      * @return the extension object with more info about this specific filetype
      */
     public FileExtension getExtensionObject(){
-//        if(fileExtensionIndex != -1){
-//            return core.extensions.get(fileExtensionIndex);
-//        }
-//        return core.extensions.getUnknownExtension();
-        
         return fileExtensionObject;
-        
-        //System.err.println(name + "-->Extension: " + extension);
-        //FileExtension result = core.extensions.get(extension);
-        //return result;
     }
    
     public SPDXfile2 getSPDX() {

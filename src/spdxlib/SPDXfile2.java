@@ -23,6 +23,7 @@ import definitions.id;
 import definitions.is;
 import java.io.*;
 import java.util.ArrayList;
+import java.util.EnumMap;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Level;
@@ -31,6 +32,7 @@ import main.core;
 import script.FileExtension;
 import script.log;
 import structure.ArrayMap;
+import structure.LanguageCounter;
 import utils.files;
 import utils.html;
 
@@ -69,7 +71,8 @@ public class SPDXfile2 implements Serializable{
 
     // variables used for the language calculation
     private boolean languagesWereNotEvaluated = true;
-    final private ArrayMap<FileLanguage, Integer> countMainLanguages = new ArrayMap();
+    //final private EnumMap<FileLanguage, Integer> countMainLanguages = new EnumMap<FileLanguage, Integer>(FileLanguage.class);
+    final private LanguageCounter languageCounter = new LanguageCounter();
     
     // this list keeps files where multiple languages apply
     final private ArrayList<FileInfo2> secondList = new ArrayList();
@@ -413,17 +416,18 @@ public class SPDXfile2 implements Serializable{
         String result = "";
         
         // create a list sorted according to biggest on top
-        Map<FileLanguage,Integer> map = countMainLanguages.sortedMap();
-        //Map<FileLanguage,Integer> map = ThirdParty.MiscMethods.sortByComparator(countMainLanguages);
+        Map<FileLanguage,Integer> map = languageCounter.sortedMap();
                 
         // how many files do we have in total?
-        int total = 0;
-        for(Integer value : map.values()){
-            total += value;
-        }
+        int total = languageCounter.getOverallCounter();
+      
         
         for(FileLanguage language : map.keySet()){
-            int value = countMainLanguages.get(language);
+            int value = languageCounter.get(language);
+            // ignore the empty languages
+            if(value == 0){
+                continue;
+            }
             result += 
                     utils.text.pluralize(value, 
                              language.toString() 
@@ -451,7 +455,7 @@ public class SPDXfile2 implements Serializable{
         }
         
         // now process the languages on the second list
-        computeLanguageSecondList();
+//        computeLanguageSecondList();
         
         
         // set the marker that we have evaluated the languages
@@ -476,13 +480,17 @@ public class SPDXfile2 implements Serializable{
             int highestCount = 0;
             FileLanguage top = null;
             // go through each indexed language
-            for(FileLanguage thisLang : countMainLanguages.keySet()){
+            for(FileLanguage thisLang : FileLanguage.values()){
+                
+                if(languageCounter.get(thisLang)==0){
+                    continue;
+                }else
                 // we only want the possible candidates
                 if(extension.getLanguages().contains(thisLang)==false){
                     continue;
                 }
                 // get the current value
-                int thisCount = countMainLanguages.get(thisLang);
+                int thisCount = languageCounter.get(thisLang);
                 // if this is a high-value, use it as marker
                 if(thisCount > highestCount){
                     // we have a possible value
@@ -492,9 +500,10 @@ public class SPDXfile2 implements Serializable{
             }
             // now we have the top-ranking candidate
             if(top != null){
-                int count = countMainLanguages.get(top);
-                    count++;
-                    countMainLanguages.put(top, count);
+                languageCounter.increment(top);
+//                int count = countMainLanguages.get(top);
+//                    count++;
+//                    countMainLanguages.put(top, count);
             }
         }
         // now delete the second list elements to save memory
@@ -556,31 +565,19 @@ public class SPDXfile2 implements Serializable{
      */
     private void computeLanguages(FileInfo2 fileInfo){
         // get the language object or just "unknown" if not indexed before
-        FileLanguage thisLanguage = 
+        FileLanguage thisLanguage = //core.extensions.getUnknownExtension().getLanguage();
                 fileInfo.getExtensionObject().getLanguage();
         
         // we only want files with a specified language
         if(thisLanguage == FileLanguage.UNSORTED){
-            return;
-        }
-        
+        }else
         // if the file is used by multiple languages, then we place it
         // on a post-processing list to discover how it is being used.
         if(thisLanguage == FileLanguage.MULTIPLE){
             secondList.add(fileInfo);
             // no need to proceed, skip to next file
-            return;
-        }
-
-        // was this language indexed before?
-        if(countMainLanguages.containsKey(thisLanguage)){
-            int counter = countMainLanguages.get(thisLanguage);
-            counter++;
-            countMainLanguages.put(thisLanguage, counter);
-        }else{
-            // wasn't indexed before, add it up
-            countMainLanguages.put(thisLanguage, 1);
-        }
+        }else
+            languageCounter.increment(thisLanguage);
     }
     
     /**

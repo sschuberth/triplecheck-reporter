@@ -12,10 +12,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Properties;
-import script.FileExtension;
 import script.Plugin;
-import script.Trigger;
-import spdxlib.License;
 
 //import script.log;
 
@@ -260,39 +257,6 @@ public class Script {
                 // no need to continue
                 }
             }
-//            else
-           
-//            // are we processing a trigger?
-//            if(className.equals(is.trigger)){
-//                // get the object
-//                Trigger plugin = (Trigger) runScript.get("plugin");
-//                // add it up
-//                core.triggers.add(plugin);
-//                script.log.write(is.COMPLETED, "Added trigger: %1", 
-//                        scriptFile.getName());
-//            }else
-            
-            // is this a file extension that we want to archive?
-//            if(className.equals(is.extension)){
-//                // get the object
-//                FileExtension extension = (FileExtension) runScript.get("plugin");
-//                // add it up
-//                //if(core.extensions.has(extension.getIdentifierShort())==false){
-//                    core.extensions.add(extension);
-//               // }
-//            }else
-            
-            // is this a file extension that we want to archive?
-//            if(className.equals(is.license)){
-//                // get the object
-//                License license = (License) runScript.get("plugin");
-//                // add it up
-//                if(core.licenses.has(license.getId())==false){
-//                    core.licenses.add(license);
-//                }
-//            }
-            
-            
             // all done
     }
     
