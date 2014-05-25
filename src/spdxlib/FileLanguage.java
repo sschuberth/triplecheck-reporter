@@ -11,7 +11,7 @@
  */
 package spdxlib;
 
-public enum FileLanguage {
+public enum FileLanguage{
     
     // compiled
     JAVA,

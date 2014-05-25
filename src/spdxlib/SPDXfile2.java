@@ -23,7 +23,6 @@ import definitions.id;
 import definitions.is;
 import java.io.*;
 import java.util.ArrayList;
-import java.util.EnumMap;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Level;
@@ -31,7 +30,6 @@ import java.util.logging.Logger;
 import main.core;
 import script.FileExtension;
 import script.log;
-import structure.ArrayMap;
 import structure.LanguageCounter;
 import utils.files;
 import utils.html;
@@ -455,7 +453,7 @@ public class SPDXfile2 implements Serializable{
         }
         
         // now process the languages on the second list
-//        computeLanguageSecondList();
+        computeLanguageSecondList();
         
         
         // set the marker that we have evaluated the languages
@@ -484,11 +482,12 @@ public class SPDXfile2 implements Serializable{
                 
                 if(languageCounter.get(thisLang)==0){
                     continue;
-                }else
-                // we only want the possible candidates
-                if(extension.getLanguages().contains(thisLang)==false){
-                    continue;
                 }
+//                else
+                // we only want the possible candidates
+//                if(extension.getLanguages().contains(thisLang)==false){
+//                    continue;
+//                }
                 // get the current value
                 int thisCount = languageCounter.get(thisLang);
                 // if this is a high-value, use it as marker
@@ -501,9 +500,6 @@ public class SPDXfile2 implements Serializable{
             // now we have the top-ranking candidate
             if(top != null){
                 languageCounter.increment(top);
-//                int count = countMainLanguages.get(top);
-//                    count++;
-//                    countMainLanguages.put(top, count);
             }
         }
         // now delete the second list elements to save memory

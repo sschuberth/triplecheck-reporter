@@ -14,6 +14,8 @@
 
 package FileExtension;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import definitions.is;
 import java.io.File;
 import java.util.ArrayList;
@@ -23,6 +25,7 @@ import script.log;
 import spdxlib.ContentType;
 import spdxlib.FileCategory;
 import spdxlib.FileLanguage;
+import structure.ExtensionType;
 
 
 /**
@@ -32,11 +35,19 @@ import spdxlib.FileLanguage;
  */
 public final class ExtensionControl {
 
+    // fast list with all the recognized extensions
     private final ArrayList<FileExtension> list = new ArrayList();
+    // complete (but slower performing) list with the recognized extensions
+    private final ArrayList<FileExtension> listSlow = new ArrayList();
+    // very-light list to speed up extension recognition
+    private final ArrayList<String> listIndexes = new ArrayList();
+    
+    // available when we don't know what extension is applicable
     private final DefaultExtension unknownExtension = new DefaultExtension();
     
     
-    private final ArrayList<String> listIndexes = new ArrayList();
+    // where do find the JSON files?
+    File folderJSON = new File(core.getMiscFolder(), "extensions");
     
     /**
      * Public constructor
@@ -50,10 +61,17 @@ public final class ExtensionControl {
      * @param extension A class extension
      */
     public void add(FileExtension extension){
-        if(extension == null){
-            return;
-        }
-        list.add(extension);
+//        if(extension == null){
+//            return;
+//        }
+        
+         // convert the object
+        ExtensionType ext = convertToJSON(extension);
+        FileExtension newExt = convertFromJSON(ext);
+        
+        // now add this to our indexes
+        list.add(newExt);
+        listSlow.add(extension);
         listIndexes.add(extension.getIdentifierShort());
     }
     
@@ -63,19 +81,27 @@ public final class ExtensionControl {
     public void addExtensions() {
         // clear up the list to avoid duplicates
         list.clear();
+        listSlow.clear();
         listIndexes.clear();
+        
+             
         File folder = core.getExtensionsFolder();
         ArrayList<File> files = utils.files.findFilesFiltered(folder, ".java", 2);
-        for(File file : files){
+        for(File file : files){   
+            // ignore the extensions inside the "unknown" folder
             if(file.getParentFile().getName().contains("unknown")){
                 continue;
             }
-            FileExtension result = (FileExtension) script.exec.runJava(file, "FileExtension");
-            if(result != null){
-                list.add(result);
-                listIndexes.add(result.getIdentifierShort());
+            // get the extension interpreted
+            FileExtension temp = (FileExtension) script.exec.runJava(file, "FileExtension");
+            // avoid the template extension
+            if(temp.getIdentifierShort().contains("#")){
+                continue;
             }
+            // add it up to our lists
+            add(temp);
         }
+        
         // output some statistics about the number of extensions registered
         log.write(is.INFO, "Extensions recognized: %1", "" + list.size());
     }
@@ -160,6 +186,110 @@ public final class ExtensionControl {
     public int getIndex(String extension) {
         return listIndexes.indexOf(extension);
     }
+    
+    
+    
+    /**
+     * Convert from a Formal Extension object to JSON
+     * @param fileExtension The formal extension object
+     * @return              The converted JSON object
+     */
+    private ExtensionType convertToJSON(final FileExtension fileExtension){
+        ExtensionType ext = new ExtensionType();
+        ext.idLong = fileExtension.getIdentifierLong();
+        ext.idShort = fileExtension.getIdentifierShort();
+        ext.language = fileExtension.getLanguage();
+        ext.languages = fileExtension.getLanguages();
+        ext.contentType = fileExtension.getContentType();
+        ext.category = fileExtension.getCategory();
+        ext.description = fileExtension.getDescription();
+        return ext;    
+     }
+   
+    
+    /**
+     * Converts a JSON object onto a more formal extension object
+     * @param input An ExtensionType object
+     * @return      An FileExtension object
+     */
+    private FileExtension convertFromJSON(final ExtensionType input){
+        return new FileExtension(){
+                @Override
+                public Boolean isApplicable(File binaryFile) {
+                    return true;
+                }
+                @Override
+                public Boolean isApplicable(String textFile) {
+                    return true;
+                }
+                @Override
+                public String getDescription() {
+                    return input.description; // file type description
+                }
+                @Override
+                public FileLanguage getLanguage(){
+                    return input.language; // to which language is the file more related?
+                }
+                @Override
+                public String getIdentifierShort() {
+                    return input.idShort;
+                }
+               @Override
+                public ContentType getContentType() {
+                    return input.contentType; // is it a binary or text file?
+                }
+                @Override
+                public FileCategory getCategory() {
+                    return input.category; // does it group under a category?
+                }
+            };
+    }
+    
+    /**
+     * This method reads the available JSON files with the file extension
+     * definitions
+     * @param targetFolder  The folder where *.json files are found
+     */    
+    private void readJsonFiles(File targetFolder) {
+        Gson gson = new Gson();
+        // get all files to read
+        ArrayList<File> files = utils.files.findFilesFiltered(targetFolder, ".json", 10);
+        // interpret them
+        for(File file : files){
+            final String output = utils.files.readAsString(file);
+            final ExtensionType result = gson.fromJson(output, ExtensionType.class);
+            FileExtension extension = convertFromJSON(result);
+            // add this extension to our list
+            add(extension);
+        }
+    }
+    
+    /**
+     * This method generates JSON files from the fileExtension scripts found
+     * in our install. This method is useful to avoid loading these fileExtension
+     * classes using Beanshell.
+     * @param targetFolder      The folder where the *.json files are located
+     */
+    public void generateJsonFiles(File targetFolder) {
+        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        int counter = 0;
+        for(FileExtension fileExtension : core.extensions.getList()){
+            final String Id = fileExtension.getIdentifierShort();
+            // avoid the template
+            if(Id.contains("#")){
+                continue;
+            }
+            // convert the object
+            ExtensionType ext = convertToJSON(fileExtension);
+            // get the string
+            String json = gson.toJson(ext);
+            File file = new File(targetFolder, Id + ".json");
+            utils.files.SaveStringToFile(file, json);
+            counter++;
+        }
+        System.out.println("Processed " + counter + " files");
+    }
+    
 }
 
 
