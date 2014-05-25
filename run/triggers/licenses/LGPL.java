@@ -1,3 +1,5 @@
+package licenses;
+
 
 import definitions.TriggerType;
 import java.io.File;
@@ -9,11 +11,11 @@ import script.Trigger;
  * Creator: Organization: TripleCheck (contact@triplecheck.de)
  * Created: 2013-11-14T00:00:00Z
  * LicenseName: EUPL-1.1-without-appendix
- * FileName: MPL.java  
+ * FileName: LGPL.java  
  * FileType: SOURCE
  * FileCopyrightText: <text> Copyright 2013 Nuno Brito, TripleCheck </text>
  * FileComment: <text> Given a text file, try to identify portions of text
- *  that allows us to distinguish if the file is covered under the MPL 
+ *  that allows us to distinguish if the file is covered under the LGPL 
  *  terms and which version when possible.
  * 
  * When looking at other tools detecting licenses, I note that exists a 
@@ -30,30 +32,33 @@ import script.Trigger;
  * @author Nuno Brito, 30th of April 2014 in Amrum, Germany.
  *  nuno.brito@triplecheck.de | http://nunobrito.eu
  */
-public class MPL implements Trigger {
+public class LGPL implements Trigger {
     
     // the list of id's that we can use to identify a license
     String[] list = {
-        "Mozilla Public License",
-        "http://www.mozilla.org/MPL",
-        //"MPL",
-        "MPL 1.0",
-        "MPL 1.1",
-        "MPL 2.0",
-        "MPL v1 ",
-        "MPL v2 ",
-        "MPL v3 ",
-        "MPL-1.0",  // spdx id
-        "MPL-1.1",  // spdx id
-        "MPL-2.0"   // spdx id
+        "GNU Lesser General Public License",
+        "GNU LESSER GENERAL PUBLIC LICENSE", // used for LGPL official text
+        "lgpl",
+        "LGPL",
+        "gnu lesser gpl",
+        "LGPL 2.0",
+        "LGPL v2.0",
+        "LGPL 2.1",
+        "LGPL v2.1",
+        "LGPL-2.1", // spdx id
+        "LGPL 3",
+        "LGPL v3",
+        "LGPL-3.0"  // spdx id
     };
     
     // list of supported id's
     final String
-            idMPL1_0 = "MPL-1.0",
-            idMPL1_1 = "MPL-1.1",
-            idMPL2_0 = "MPL-2.0",
-            title = "Mozilla Public License";
+            idLGPL2_0 = "LGPL-2.0",
+            idLGPL2_1 = "LGPL-2.1",
+            idLGPL3_0 = "LGPL-3.0",
+            titleLGPL2_0 = "GNU Library General Public License v2.0",
+            titleLGPL2_1 = "GNU Library General Public License v2.1",
+            titleLGPL3_0 = "GNU Lesser General Public License v3.0";
     
     // handle the cases of only this license version or above
     final String
@@ -62,8 +67,8 @@ public class MPL implements Trigger {
     
     // define the default values
     String 
-            defaultId = idMPL2_0,
-            defaultTitle = title;
+            defaultId = idLGPL3_0,
+            defaultTitle = titleLGPL3_0;
     
     
     /**
@@ -73,27 +78,22 @@ public class MPL implements Trigger {
      * @param text  full source code text
      * @return      true when the license is confirmed, false when discarded
      */
-    private Boolean detectLicenseVersion(String textOriginal) {
+    private Boolean detectLicenseVersion(String text) {
         String
-                resultId = idMPL2_0,
-                resultTitle = title;
-        
-        // reduce issues due to break lines
-        String text = normalizeText(textOriginal);
-               
-        
+                resultId = idLGPL3_0,
+                resultTitle = titleLGPL3_0;
         // detect the supported versions
-        if(hasVersion("1.0", text)){
-            resultId = idMPL1_0;
-            resultTitle = title + " 1.0";
+        if(hasVersion("2.1", text)){
+            resultId = idLGPL2_1;
+            resultTitle = titleLGPL2_1;
         }else
-        if(hasVersion("1.1", text)){
-            resultId = idMPL1_1;
-            resultTitle = title + " 1.1";
+        if(hasVersion("3.0", text)){
+            resultId = idLGPL3_0;
+            resultTitle = titleLGPL3_0;
         }else
          if(hasVersion("2.0", text)){
-            resultId = idMPL2_0;
-            resultTitle = title + " 2.0";
+            resultId = idLGPL2_0;
+            resultTitle = titleLGPL2_0;
         }
         
         // detect the only or later situation
@@ -107,41 +107,27 @@ public class MPL implements Trigger {
         // mark the license description
         defaultId = resultId;
         defaultTitle = resultTitle;
-        return true;
-                //isNotBlackListed(text);
+        return isNotBlackListed(text);
     }
     
-    
-     /**
-     * This method permits to remove comments and other text characters
-     * that change the meaning of the given trigger to be identified
+      /**
+     * Only accepts an entry that passes the triggers if it hasn't been somehow
+     * blacklisted in the past.
      * @param text  the source code
-     * @return      the source code after removing non-wanted characters
+     * @return      true if permitted to be added, false if it should be discarded
      */
-    private String normalizeText(String text){
-        String result = text.replace("\n", "");
-            result = result.replace("\r", "");
-        return result;
+    private Boolean isNotBlackListed(String text) {
+        // cover the specific case of the GPL terms that include LGPL in text:
+        /**
+         *   The GNU General Public License does not permit incorporating your program
+         * into proprietary programs.  If your program is a subroutine library, you
+         * may consider it more useful to permit linking proprietary applications with
+         * the library.  If this is what you want to do, use the GNU Lesser General
+         * Public License instead of this License.  But first, please read
+         * <http://www.gnu.org/philosophy/why-not-lgpl.html>.
+         */
+        return !text.contains("why-not-lgpl.html");
     }
-    
-//      /**
-//     * Only accepts an entry that passes the triggers if it hasn't been somehow
-//     * blacklisted in the past.
-//     * @param text  the source code
-//     * @return      true if permitted to be added, false if it should be discarded
-//     */
-//    private Boolean isNotBlackListed(String text) {
-//        // cover the specific case of the GPL terms that include LGPL in text:
-//        /**
-//         *   The GNU General Public License does not permit incorporating your program
-//         * into proprietary programs.  If your program is a subroutine library, you
-//         * may consider it more useful to permit linking proprietary applications with
-//         * the library.  If this is what you want to do, use the GNU Lesser General
-//         * Public License instead of this License.  But first, please read
-//         * <http://www.gnu.org/philosophy/why-not-lgpl.html>.
-//         */
-//        return !text.contains("why-not-lgpl.html");
-//    }
     
     
     /**
@@ -151,8 +137,8 @@ public class MPL implements Trigger {
      * @return          true if we have match, false if nothing was found
      */
     private boolean hasLaterClause(String text){
-        return     text.contains(" or later (the") // detect "or later" text
-                || text.contains(" or later;") // detect "or later" text
+        return    // text.contains(" or later (the") // detect "or later" text
+                   text.contains(" or later") // detect "or later" text
                 || text.contains("option) any later version.") // LGPL 3.0+
                 || text.contains( defaultId + "+"); // detect SPDX id tag
     }
@@ -164,13 +150,11 @@ public class MPL implements Trigger {
      * @return          true if we have match, false if nothing was found
      */
     private boolean hasVersion(String version, String text){
-        return    text.contains("MPL " + version)
-                ||text.contains("MPL-"+version)
-                ||text.contains("Mozilla Public License, version "+version)
-                // we need to find a way of removing these exceptions
-                ||text.contains("Mozilla Public License  Version "+version)
-                ||text.contains("MPLv"+version)
-                ||text.contains("Mozilla Public License v"+version);
+        return    text.contains("LGPL " + version)
+                ||text.contains("GNU Library General Public License, version " + version)
+                ||text.contains("GNU Lesser General Public License, version " + version)
+                ||text.contains("LGPL-"+version)
+                ||text.contains("License v"+version);
     }
     
     /**
@@ -198,7 +182,7 @@ public class MPL implements Trigger {
 
     @Override
     public String getShortIdentifier() {
-        return defaultId;
+        return "LGPL";
     }
 
     @Override
@@ -229,7 +213,7 @@ public class MPL implements Trigger {
 
     @Override
     public String getResult() {
-        return LicenseInfoInFile + getShortIdentifier();
+        return LicenseInfoInFile.concat(getShortIdentifier());
     }
   
 }

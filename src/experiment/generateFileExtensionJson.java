@@ -28,7 +28,7 @@ public class generateFileExtensionJson {
         // where to we want to store the files?
         File targetFolder = new File(core.getMiscFolder(), "extensions");
         
-        core.extensions.generateJsonFiles(targetFolder);
+//        core.extensions.generateJsonFiles(targetFolder);
 //        core.extensions.readJsonFiles(targetFolder);
         
         System.exit(0);

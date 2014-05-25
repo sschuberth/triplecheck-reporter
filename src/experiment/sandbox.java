@@ -58,13 +58,13 @@ public class sandbox {
         //core.extensions.addExtensions();
         
          //File baseFolder = new File("../..", "source2");
-         File thisFolder = new File("../..", "source2");
+         File thisFolder = new File("D:\\triplechecksoftware\\source\\linux-coreos");
          //File thisFolder = new File(baseFolder, "busybox\\busybox-1.21.1");
          //File thisFolder = new File(baseFolder, "busybox\\busybox-1.21.1");
          
          
          File resultFile = new File("result.spdx");
-         
+         System.out.println("Creating SPDX from: " + thisFolder.getAbsolutePath());
          DocumentCreate2 spdx = new DocumentCreate2();
          spdx.create(thisFolder, resultFile);
          

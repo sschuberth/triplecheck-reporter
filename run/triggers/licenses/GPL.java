@@ -1,3 +1,5 @@
+package licenses;
+
 
 import definitions.TriggerType;
 import java.io.File;

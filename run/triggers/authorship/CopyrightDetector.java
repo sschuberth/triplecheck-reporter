@@ -1,3 +1,5 @@
+package authorship;
+
 
 import definitions.TriggerType;
 import java.io.File;

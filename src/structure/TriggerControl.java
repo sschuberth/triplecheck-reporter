@@ -41,7 +41,9 @@ public final class TriggerControl {
         File folderTriggers = new File(core.getWorkFolder(), folder.triggers);
         ArrayList<File> files = utils.files.findFilesFiltered(folderTriggers, ".java", 2);
         for(File file : files){
-            Trigger result = (Trigger) script.exec.runJava(file, is.trigger);
+            //Trigger result = (Trigger) script.exec.runJava(file, is.trigger);
+            Trigger result = (Trigger) utils.bytecode.getObject(file);
+            
             if(result != null){
                 log.write(is.ADDING, "Trigger: " + result.getShortIdentifier());
                 list.add(result);

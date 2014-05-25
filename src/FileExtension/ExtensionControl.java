@@ -17,11 +17,7 @@ package FileExtension;
 import definitions.is;
 import java.io.File;
 import java.util.ArrayList;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import main.core;
-import org.codehaus.commons.compiler.CompileException;
-import org.codehaus.janino.SimpleCompiler;
 import script.FileExtension;
 import script.log;
 import spdxlib.ContentType;
@@ -83,7 +79,7 @@ public final class ExtensionControl {
             }
             
             // get the extension interpreted
-            FileExtension temp = (FileExtension) getFileExtension(file);
+            FileExtension temp = (FileExtension) utils.bytecode.getObject(file);
             
             // no need for null values
             if(temp == null){
@@ -277,46 +273,7 @@ public final class ExtensionControl {
 //    }
 //    
 //    
-    /**
-     * Given a file on disk, this method will try to convert a source code
-     * file into a compiled bytecode class
-     * @param sourceFile    Location of the file on disk
-     * @return              The compiled object
-     */
-    private Object getFileExtension(File sourceFile){
-        try {
-            String sourceCode = utils.files.readAsString(sourceFile);
-            SimpleCompiler compiler = new SimpleCompiler();
-            compiler.cook(sourceCode);
-            Class clazz = compiler.getClassLoader().loadClass(buildClassName(sourceCode, sourceFile));
-            return clazz.newInstance();
-            
-        } catch (CompileException ex) {
-            Logger.getLogger(ExtensionControl.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            Logger.getLogger(ExtensionControl.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            Logger.getLogger(ExtensionControl.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (ClassNotFoundException ex) {
-            Logger.getLogger(ExtensionControl.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        return null;
-    }
     
-    /**
-     * Given a source code file, this method will try to extract the declared
-     * package name in order to build a class name that will be used by the
-     * class loader.
-     * @param sourceCode
-     * @return      The Class name
-     */
-    private String buildClassName(final String sourceCode, File file){
-        // we expect to find the package declaration on the first line
-        int index = sourceCode.indexOf(";");
-        final String name = "." + file.getName().substring(0, file.getName().indexOf("."));
-        // "package " has 8 spaces
-        return sourceCode.substring(8, index) + name;
-    }
     
 }
 

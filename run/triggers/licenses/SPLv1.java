@@ -1,6 +1,9 @@
+package licenses;
+
 
 import definitions.TriggerType;
 import java.io.File;
+import java.util.Date;
 import script.Trigger;
 
 /*
@@ -9,7 +12,7 @@ import script.Trigger;
  * Creator: Organization: TripleCheck (contact@triplecheck.de)
  * Created: 2014-04-06T00:00:00Z
  * LicenseName: EUPL-1.1-without-appendix
- * FileName: MIT.java  
+ * FileName: SunPublicLicense.java  
  * FileType: SOURCE
  * FileCopyrightText: <text> Copyright 2014 Nuno Brito, TripleCheck </text>
  * FileComment: <text> Given a text file, try to identify portions of text
@@ -23,13 +26,11 @@ import script.Trigger;
  * @author Nuno Brito, 6th of April 2014 in Darmstadt, Germany.
  *  nuno.brito@triplecheck.de | http://nunobrito.eu
  */
-public class MIT implements Trigger {
+public class SPLv1 implements Trigger {
     
     // the list of id's that we can use to identify a license
     String[] list = {
-        "under MIT license",
-        "Permission is hereby granted, free of charge, to any person obtaining",
-        "and associated documentation files"
+        "subject to the Sun Public License"
     };
     
     /**
@@ -56,12 +57,13 @@ public class MIT implements Trigger {
 
     @Override
     public String getShortIdentifier() {
-        return "MIT";
+        return "SPL-1.0";
     }
 
     @Override
     public String getURL() {
-        return "http://spdx.org/licenses/MIT";
+        return "http://spdx.org/licenses/" 
+                + getShortIdentifier() + "#licenseText";
     }
 
     @Override
@@ -73,7 +75,7 @@ public class MIT implements Trigger {
     public Boolean supportsTextFiles() {
         return true;
     }
- 
+  
     @Override
     public TriggerType getType(){
         return TriggerType.LICENSE;
@@ -81,7 +83,7 @@ public class MIT implements Trigger {
 
     @Override
     public String getFullName() {
-        return "MIT detection";
+        return "Sun Public License v1.0";
     }
 
     @Override
