@@ -24,10 +24,14 @@ import javax.swing.JTree;
 import javax.swing.SwingUtilities;
 import javax.swing.tree.TreePath;
 import javax.swing.tree.TreeSelectionModel;
+import main.controller;
 import main.core;
 import main.param;
 import script.log;
 import spdxlib.SPDXfile2;
+import www.RequestOrigin;
+import www.RequestType;
+import www.WebRequest;
 
 
 /**
@@ -739,5 +743,25 @@ public class TreeviewUtils {
         tree.setSelectionModel(model);
     }   
     
+    
+    /**
+     * Based on a given treeview node, fire up the specified event just like
+     * a normal user would have clicked on it.
+     * @param scriptFile    The file to execute
+     * @param method        The method to be called
+     * @param parameters    The parameters for this call
+     */
+    public static void doRequest(final File scriptFile, 
+            final String method, final ArrayList<String[]> parameters){
+        WebRequest newRequest = new WebRequest();
+        newRequest.requestType = RequestType.NONE;
+        newRequest.requestOrigin = RequestOrigin.GUI_tree;
+        newRequest.BaseFolder = scriptFile.getParentFile();
+        newRequest.scriptFile = scriptFile;
+        newRequest.scriptFolder = scriptFile.getParentFile();
+        newRequest.scriptMethod = method;
+        newRequest.parameters = parameters;
+        controller.process(newRequest);
+    }
     
 }
