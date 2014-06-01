@@ -54,5 +54,5 @@ public class Messages {
             
             NodeSelected = "Node Selected: %1",
             RefreshSPDX = "Refreshed the list of SPDX documents",
-            CallFrontScreen = "Call Front Screen";
+            CallFrontScreen = "All done, showing main window";
 }

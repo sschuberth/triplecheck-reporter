@@ -11,10 +11,11 @@
  * to generate a new set of templates. </text>
  */
 
-package spdxlib;
+package spdxlib.generators;
 
 import java.io.File;
 import main.core;
+import spdxlib.License;
 
 
 /**

@@ -10,7 +10,7 @@
    * FileComment: <text>Static definitions for the SPDX format</text> 
    */
 
-package spdxlib;
+package old;
 
 
 

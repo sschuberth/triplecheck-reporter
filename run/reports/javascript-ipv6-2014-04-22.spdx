@@ -38,6 +38,7 @@ FileSize: 35 bytes
 
 FileName: ./.travis.yml
 LicenseConcluded: ZPL-2.0
+FileLicenseConcluded: LPL-1.02
 FileType: OTHER
 FileChecksum: SHA1: 96042cfeef00aeb8b5a759fa672474be5c24e3f3
 FileChecksum: SHA256: e0354576e1c3bcfe636c2f02be5a82beb0d1fe4567a39e79b90ad852f5f3c787
@@ -92,6 +93,7 @@ LicenseConcluded: ZPL-2.0
 
 FileName: ./index.js
 FileType: SOURCE
+FileLicenseConcluded: Zlib
 FileChecksum: SHA1: 3cdf23f4ac3c336856d84dbba62e7b621f78a76d
 FileChecksum: SHA256: 9004770366bd7bd04947d3b28c4b19804a3baffb8749b75315631eb030f63ea7
 FileChecksum: MD5: 9c1c5482c53ae503354b920e829b3248

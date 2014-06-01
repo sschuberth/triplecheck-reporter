@@ -11,11 +11,12 @@
  * to generate an enum that is optimized for performance </text>
  */
 
-package spdxlib;
+package spdxlib.generators;
 
 import java.io.File;
 import java.util.ArrayList;
 import main.core;
+import spdxlib.License;
 
 
 /**

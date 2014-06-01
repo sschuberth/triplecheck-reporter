@@ -11,7 +11,7 @@
  * identify its characteristics automatically much automatically possible. </text> 
  */
 
-package spdxlib;
+package old;
 
 import FileExtension.ExtensionCreate;
 import java.io.File;
@@ -19,6 +19,8 @@ import java.util.ArrayList;
 import main.core;
 import script.FileExtension;
 import script.Trigger;
+import spdxlib.ContentType;
+import spdxlib.FileCategory;
 
 
 /**

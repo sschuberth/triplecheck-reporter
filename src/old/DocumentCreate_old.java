@@ -23,7 +23,6 @@ import script.FileExtension;
 import script.Trigger;
 import script.log;
 import spdxlib.FileCategory;
-import spdxlib.FileId;
 import ssdeep.ssdeep;
 import utils.db.MapDB_Indexer;
 

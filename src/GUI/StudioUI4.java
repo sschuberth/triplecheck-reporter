@@ -1302,33 +1302,33 @@ public class StudioUI4 extends javax.swing.JFrame {
     }
     
    
-    /**
-     * This method will change the license from the tree node that is
-     * currently selected
-     * @param selectedLicense   the identifier of the license to be applied 
-     */
-    void licenseMarkSelectedNodes(String selectedLicense) {
-        // get the list of nodes that were selected
-        ArrayList<TreeNodeSPDX> nodeSelected = swingUtils.getSelectedNodes(tree);
-        // create a list of nodes to process
-        ArrayList<TreeNodeSPDX> nodeListAccepted = new ArrayList();
-
-        // go through each one of these selected nodes
-        for(TreeNodeSPDX node : nodeSelected){
-                        // only files and folders are supported at the moment
-            if((node.nodeType == NodeType.folder)
-                    ||(node.nodeType == NodeType.sectionFile)){
-                //System.err.println("Changing the whole folder");
-                TreeviewUtils.getNodes(node, nodeListAccepted, NodeType.file);
-            }
-            // only files are supported at the moment
-            if(node.nodeType == NodeType.file){
-                nodeListAccepted.add(node);
-            }
-        }
-            // update the licenses
-            licenseUpdateNodes(nodeListAccepted, selectedLicense);
-    }
+//    /**
+//     * This method will change the license from the tree node that is
+//     * currently selected
+//     * @param selectedLicense   the identifier of the license to be applied 
+//     */
+//    void licenseMarkSelectedNodes(String selectedLicense) {
+//        // get the list of nodes that were selected
+//        ArrayList<TreeNodeSPDX> nodeSelected = swingUtils.getSelectedNodes(tree);
+//        // create a list of nodes to process
+//        ArrayList<TreeNodeSPDX> nodeListAccepted = new ArrayList();
+//
+//        // go through each one of these selected nodes
+//        for(TreeNodeSPDX node : nodeSelected){
+//                        // only files and folders are supported at the moment
+//            if((node.nodeType == NodeType.folder)
+//                    ||(node.nodeType == NodeType.sectionFile)){
+//                //System.err.println("Changing the whole folder");
+//                TreeviewUtils.getNodes(node, nodeListAccepted, NodeType.file);
+//            }
+//            // only files are supported at the moment
+//            if(node.nodeType == NodeType.file){
+//                nodeListAccepted.add(node);
+//            }
+//        }
+//            // update the licenses
+//            licenseUpdateNodes(nodeListAccepted, selectedLicense);
+//    }
 
     /**
      * Marks a file as original, modified or third-party resource
@@ -1384,8 +1384,6 @@ public class StudioUI4 extends javax.swing.JFrame {
                 spdxList.put(id, list);
             }
         }
-        // grab the currently selected node
-        TreeNodeSPDX selectedNode = swingUtils.getSelectedNode();
         
         // now that we splitted all the fileInfo, it is time to write them
         for(ArrayList<FileInfo2> fileInfoList : spdxList.values()){
@@ -1399,6 +1397,8 @@ public class StudioUI4 extends javax.swing.JFrame {
             }
         }
         
+        // grab the currently selected node
+        TreeNodeSPDX selectedNode = swingUtils.getSelectedNode();
         // update the selected node
         log.write(is.INFO, Messages.TreeNodeChanged, selectedNode.getUID());
     }

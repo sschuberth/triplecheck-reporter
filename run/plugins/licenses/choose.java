@@ -115,19 +115,27 @@ public class choose extends Plugin{
      * @param request 
      */
     public void applyLicense(WebRequest request) {
-        final String listUID = request.getParameter("uid");
+        final String rawListUID = request.getParameter("uid");
         final String licenseId = request.getParameter("lic");
 //        System.out.println("------");
-//        System.out.println(listUID);
+//        System.out.println(rawListUID);
 //        System.out.println(licenseId);
+        // get the respective license object
+        License license = core.licenses.get(licenseId);
+        // now create the UID list
+        String[] listUID = rawListUID.split(";");
+        // finish this up by changing the licenses
+        core.licenses.changeDeclaredLicense(listUID, license);
         
         request.setAnswer("All done");
         
         // if we are clicking from a tree view, go back to last selected node
-        if(request.requestOrigin == RequestOrigin.GUI_tree){
+        if(request.requestOrigin == RequestOrigin.GUI_tree 
+                || request.requestOrigin == RequestOrigin.GUI){
             TreeNodeSPDX node = swingUtils.getSelectedNode();
-            //swingUtils.setSelectedNode(node.getUID());
-            TreeviewUtils.nodeExpand(node);
+            // update the selected node
+            log.write(is.INFO, Messages.TreeNodeChanged, node.getUID());
+            // change back to the default search provider
             core.studio.searchProvider = Messages.SearchBoxPressedENTER;
         }
     

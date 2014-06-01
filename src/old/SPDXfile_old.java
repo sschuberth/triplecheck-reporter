@@ -35,7 +35,6 @@ import script.log;
 import spdxlib.FileCategory;
 import spdxlib.FileLanguage;
 import spdxlib.FileOrigin;
-import spdxlib.Keyword;
 import utils.files;
 import utils.html;
 

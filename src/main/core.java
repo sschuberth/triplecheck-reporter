@@ -26,7 +26,7 @@ import java.util.HashMap;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import script.RunningTask;
-import spdxlib.LicenseControl;
+import structure.LicenseControl;
 import structure.LicensePopularity;
 import structure.ReportsControl;
 import structure.TriggerControl;
