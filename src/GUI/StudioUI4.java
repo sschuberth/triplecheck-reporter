@@ -65,7 +65,7 @@ public class StudioUI4 extends javax.swing.JFrame {
     // what was the last product that was marked as selected?
 //    public SPDXfile productSelected = null;
     
-    public String searchText = "Search..";
+    private final String searchTextDefault = "Search..";
     // we can permit our search box to do different actions
     public String searchProvider = Messages.SearchBoxPressedENTER;
     
@@ -502,7 +502,7 @@ public class StudioUI4 extends javax.swing.JFrame {
         doSearchMouseClicked();
         // reset back to the default value when empty
         if(search.getText().isEmpty()){
-            search.setText(searchText);
+            search.setText(searchTextDefault);
         }
         core.searchBoxActive = false;
     }//GEN-LAST:event_searchFocusLost
@@ -694,7 +694,7 @@ public class StudioUI4 extends javax.swing.JFrame {
      */
     private void doSearchMouseClicked() {
         String currentTerm = search.getText();
-        if(currentTerm.equals(searchText)){
+        if(currentTerm.equals(searchTextDefault)){
             search.setText("");
         }
     }
@@ -709,7 +709,7 @@ public class StudioUI4 extends javax.swing.JFrame {
             search.transferFocus();
             //System.err.println("SU00 - Pressed ESCAPE on search box");
             log.write(is.COMMAND, Messages.SearchBoxPressedESCAPE);
-            search.setText(searchText);
+            search.setText(searchTextDefault);
             return;
         }
         
@@ -731,7 +731,7 @@ public class StudioUI4 extends javax.swing.JFrame {
         
         // there is a bug that allows people to write over the "search" default
         if(search.getText().isEmpty()){
-            search.setText(searchText);
+            search.setText(searchTextDefault);
             core.key.clear();
             return;
         }
@@ -739,8 +739,8 @@ public class StudioUI4 extends javax.swing.JFrame {
         
         
         // there is a bug that allows people to write over the "search" default
-        if(search.getText().startsWith(searchText)){
-            String temp = search.getText().replace(searchText, "");
+        if(search.getText().startsWith(searchTextDefault)){
+            String temp = search.getText().replace(searchTextDefault, "");
             search.setText(temp);
         }
         
@@ -1403,4 +1403,18 @@ public class StudioUI4 extends javax.swing.JFrame {
         log.write(is.INFO, Messages.TreeNodeChanged, selectedNode.getUID());
     }
 
+    
+    /**
+     * Changes the default search text that is currently placed on the search
+     * box
+     * @param text The next text. If empty, shows the default "Search..." text 
+     */
+    public void setSearchText(final String text){
+        if(text.isEmpty()){
+            search.setText(searchTextDefault);
+        }else{
+            search.setText(text);
+        }
+    }
+    
 }

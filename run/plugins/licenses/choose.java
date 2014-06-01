@@ -137,6 +137,8 @@ public class choose extends Plugin{
             log.write(is.INFO, Messages.TreeNodeChanged, node.getUID());
             // change back to the default search provider
             core.studio.searchProvider = Messages.SearchBoxPressedENTER;
+            core.studio.setSearchText("");
+            //node.update(false);
         }
     
         

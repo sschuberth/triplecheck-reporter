@@ -30,6 +30,7 @@ FileSize: 95 bytes
 
 FileName: ./.hgtags
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 6eb748ba5dbee01f32f143a78ddc9aae9ea153d9
 FileChecksum: SHA256: e2fc584b7e32a034f649d343bd9ce0dc8da1295abf402bf3dd97abb737f54cab
@@ -39,6 +40,7 @@ FileSize: 180 bytes
 
 FileName: ./adblockplus.gyp
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 1d000bbfb271a69762d0a42c52824601e6dcd60b
 FileChecksum: SHA256: fd71d7db5c93bdb8d1df5366796bb1e3896f78778dcc03008d79f159073f6485
@@ -56,6 +58,7 @@ FileSize: 1 Kb (1033 bytes)
 
 FileName: ./build_release.py
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileChecksum: SHA1: 4ef9765519cdee7eb9d07858e6adc8579f3e3586
 FileChecksum: SHA256: 9cd60d16dc03d8960ec7eb4de0847e27ec6f189b27e34e84cce3adf891ad4fbc
 FileChecksum: MD5: 86c592064e34ce52d54dd599bc25c2bc
@@ -65,6 +68,7 @@ FileLOC: 58
 
 FileName: ./createsolution.bat
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileChecksum: SHA1: 632cd4d41a4c4698bd4953e8ccb0d0a4a181a9b5
 FileChecksum: SHA256: 3bb5479e02f42892a0474f510660173ac2648523eb20d931487080ce69669626
 FileChecksum: MD5: 9d737d778c13e585928bfb30c21c8f16
@@ -74,6 +78,7 @@ FileLOC: 10
 
 FileName: ./defaults.gypi
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileChecksum: SHA1: f045d1bd1d6954d9e8e830b7f88f14dae4c54b01
 FileChecksum: SHA256: 88e2de6f5874035c39bfadb72ed2a7519214e0598d1f7bc4eb72cf18276e95f2
 FileChecksum: MD5: b3c5278498c8b6d8e001513f87dc029e
@@ -1399,6 +1404,7 @@ FileSize: 2 Kb (2187 bytes)
 
 FileName: ./README.md
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileChecksum: SHA1: 4fb4898389b1fe530cf6c5665067fac9a364e0de
 FileChecksum: SHA256: 9f12ab3ea0121c0b909ea70748cc91343f926764fdbc02ab38617c732a6dc382
 FileChecksum: MD5: 24f123ebcc62d0fecb061a7724005536

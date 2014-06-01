@@ -195,6 +195,7 @@ public class FileInfo2 {
     public void setLicenseConcluded(LicenseType licenseConcluded) {
         this.licenseConcluded = licenseConcluded;
         licenseConcludedAvailable = true;
+        toString = getName() + " (" + licenseConcluded.toId() + ")";
     }
 
     

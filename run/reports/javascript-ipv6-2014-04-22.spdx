@@ -168,6 +168,7 @@ LicenseInfoInFile: MIT
 
 FileName: ./LICENSE
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileChecksum: SHA1: 61ff182ff844689ee29fc5fa03353b19f13a6d3c
 FileChecksum: SHA256: f8d791359a50cbcac82c29cb7b0b1b889b28be76fdd35b8ee33f0f7c8704702a
 LicenseConcluded: ZPL-2.0
@@ -177,6 +178,7 @@ FileSize: 1 Kb (1061 bytes)
 
 FileName: ./package.json
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileChecksum: SHA1: 23bbc28dc7642d80af0db5d509ef90cd99634540
 LicenseConcluded: ZPL-2.0
 FileChecksum: SHA256: 4209d80a3cbf8aafa60c9b026cdd98d1add37874593aca7b98b7791f370c1e8d
@@ -186,6 +188,7 @@ FileSize: 786 bytes
 
 FileName: ./README.md
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileChecksum: SHA1: df2666c2bf0ae5c5e20aa8ae010cb7204608a012
 FileChecksum: SHA256: e4d37d76976088d5362f222806381e6968f4807928b67e049af581a218d6b0e5
 FileChecksum: MD5: 78ef20790e829ebd0132bbd6a984b23b

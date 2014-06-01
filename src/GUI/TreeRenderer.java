@@ -57,6 +57,8 @@ public class TreeRenderer extends DefaultTreeCellRenderer {
         
         // write the title of this product
             setText(node.toString());
+            setFont(getFont().deriveFont(Font.PLAIN));
+        
             
        // is this icon selected?
         if(sel){

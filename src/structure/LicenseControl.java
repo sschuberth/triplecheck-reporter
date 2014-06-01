@@ -12,12 +12,14 @@
 
 package structure;
 
+import GUI.NodeType;
 import GUI.TreeNodeSPDX;
 import GUI.TreeviewUtils;
 import definitions.is;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
+import javax.swing.tree.DefaultTreeModel;
 import main.core;
 import script.exec;
 import script.log;
@@ -231,6 +233,17 @@ public final class LicenseControl {
                 fileInfo.setLicenseConcluded(LicenseType.convertToEnum(license.getId()));
             }
         }
+        
+        // finish by updating the nodes on the treeview
+        for(TreeNodeSPDX node : nodeList){
+            if(node.nodeType != NodeType.file){
+                continue;
+            }
+            DefaultTreeModel model = (DefaultTreeModel) 
+                    core.studio.getTree().getModel();
+            model.nodeChanged(node);
+        }
+        
         
         
     }
