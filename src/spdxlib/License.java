@@ -186,11 +186,15 @@ public class License {
         
         result += "OSI Approved: " + approvedOSI().toString();
         
-        final String terms = getTerms();
+        final String terms = getTerms().replace("\n", "<br>");
         
         if(terms.isEmpty() == false){
             result += html.br
-                    + terms;
+                    + html.br
+                    + html.h2("License terms")
+                    + "<tt>"
+                    + terms
+                    + "</tt>";
         }
         
         result = html.div()

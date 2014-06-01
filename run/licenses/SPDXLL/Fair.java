@@ -4,12 +4,12 @@ import spdxlib.License;
 
 /*
  * SPDXVersion: SPDX-1.1
- * Creator: Person: Nuno Brito
- * Created: 2014-05-15T11:44:38Z
+ * Creator: Person: nuno
+ * Created: 2014-06-01T13:28:22Z
  * LicenseName: EUPL-1.1-without-appendix
  * FileName: Fair.java 
  * FileCategory: SOURCE
- * FileCopyrightText: <text> Copyright (c) 2014, Nuno Brito </text>
+ * FileCopyrightText: <text> Copyright (c) 2014, nuno </text>
  */
 
 
@@ -49,7 +49,17 @@ public class Fair extends License{
      */
     @Override
     public String getTerms(){
-        return ""; // the license text
+        return "Fair License\n"
+        + "\n"
+        + "<Copyright Information>\n"
+        + "\n"
+        + "Usage of the works is permitted provided that this instrument is retained with t"
+        + "he works, so that any entity that uses the works is notified of this instrument.\n"
+        + "\n"
+        + "DISCLAIMER: THE WORKS ARE WITHOUT WARRANTY.\n"
+        + "\n"
+        + "[2004, Fair License: rhid.com/fair (this URL no longer works)]\n"
+; // the license text
     }
  
     

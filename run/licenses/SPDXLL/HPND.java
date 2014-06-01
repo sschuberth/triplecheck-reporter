@@ -4,12 +4,12 @@ import spdxlib.License;
 
 /*
  * SPDXVersion: SPDX-1.1
- * Creator: Person: Nuno Brito
- * Created: 2014-05-15T11:44:38Z
+ * Creator: Person: nuno
+ * Created: 2014-06-01T13:28:52Z
  * LicenseName: EUPL-1.1-without-appendix
  * FileName: HPND.java 
  * FileCategory: SOURCE
- * FileCopyrightText: <text> Copyright (c) 2014, Nuno Brito </text>
+ * FileCopyrightText: <text> Copyright (c) 2014, nuno </text>
  */
 
 
@@ -49,7 +49,27 @@ public class HPND extends License{
      */
     @Override
     public String getTerms(){
-        return ""; // the license text
+        return "Historical Permission Notice and Disclaimer\n"
+        + "\n"
+        + "<copyright notice>\n"
+        + "\n"
+        + "Permission to use, copy, modify and distribute this software and its documentati"
+        + "on for any purpose and without fee is hereby granted, provided that the above co"
+        + "pyright notice appear in all copies[,] [and] that both [that] [the] copyright no"
+        + "tice and this permission notice appear in supporting documentation[, and that th"
+        + "e name [of] <copyright holder> [or <related entities>] not be used in advertisin"
+        + "g or publicity pertaining to distribution of the software without specific, writ"
+        + "ten prior permission]. [<copyright holder> makes no representations about the su"
+        + "itability of this software for any purpose. It is provided \"as is\" without expre"
+        + "ss or implied warranty.]\n"
+        + "\n"
+        + "[<copyright holder> DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE, INCLU"
+        + "DING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS[,][.] IN NO EVENT SHA"
+        + "LL <copyright holder> BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAG"
+        + "ES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHE"
+        + "R IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF "
+        + "OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.]\n"
+; // the license text
     }
  
     

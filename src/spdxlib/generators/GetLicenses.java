@@ -132,12 +132,12 @@ public class GetLicenses {
         // get the license text
         String test = "\"\"";
         // this makes loading very slow. We need to somehow automate this part.
-//        try{
-//            // let's test to see if the license terms can be read
-//            test = getLicenseTerms(licenseId);
-//        }catch (Exception e){
-//            e.printStackTrace();
-//        }
+        try{
+            // let's test to see if the license terms can be read
+            test = getLicenseTerms(licenseId);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
         final String licenseTerms = test;
         
         
