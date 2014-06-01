@@ -10,7 +10,7 @@
  * FileComment: <text> Allows an end-user to select a license for a given file </text>
  */
 
-package old;
+package GUI;
 
 import definitions.Messages;
 import definitions.is;

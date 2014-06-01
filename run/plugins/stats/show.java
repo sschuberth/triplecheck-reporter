@@ -31,7 +31,7 @@ public class show extends Plugin{
     @Override
     public void startup(){
         // add our node to the tree right after the "Tools" node is added
-        log.hooks.addAction(Messages.AddingTools, thisFile, "addNode");
+       // log.hooks.addAction(Messages.AddingTools, thisFile, "addNode");
     }
     
     /**

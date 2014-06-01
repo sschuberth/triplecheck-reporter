@@ -37,7 +37,7 @@ public class choose extends Plugin{
     
     @Override
     public void startup(){
-        log.hooks.addAction(Messages.SearchBoxLicenses, 
+        log.hooks.addAction(Messages.SearchBoxLicenseSelect, 
                 thisFile, "doFindLicense");    
     }
 
@@ -103,7 +103,7 @@ public class choose extends Plugin{
         
         // specific to the GUI
         if(request.requestOrigin == RequestOrigin.GUI_tree){
-            core.studio.searchProvider = Messages.SearchBoxLicenses;
+            core.studio.searchProvider = Messages.SearchBoxLicenseSelect;
             // save in the common space the treeview with selected links
             core.temp.put("TreeviewLicenseSelectedFilesLink", link);
         }

@@ -173,5 +173,31 @@ public class License {
         
         return result;
     }
+
+    /**
+     * Provides some basic information about the license, applicable terms
+     * and other notes that might be relevant
+     * @return 
+     */
+    public String getSummaryHTML() {
+        String result = "";
+        // add the title
+        result += html.h2(getTitle());
+        
+        result += "OSI Approved: " + approvedOSI().toString();
+        
+        final String terms = getTerms();
+        
+        if(terms.isEmpty() == false){
+            result += html.br
+                    + terms;
+        }
+        
+        result = html.div()
+                + result
+                + html._div;
+        
+        return result;
+    }
     
 }

@@ -167,8 +167,10 @@ public class FileInfo2 {
         // add it up
         licenseInfoInFile.add(licenseInfoInFileSingle);
         licenseInfoInFileCounter++;
-        // do the summary of licenses + name
-        toString = getName() + " (" + licenseInfoInFileSummary + ")";
+        // do the summary of licenses + name if no license was yet concluded
+        if(licenseConcludedAvailable == false){
+            toString = getName() + " (" + licenseInfoInFileSummary + ")";
+        }
         licenseInfoInFileAvailable = true;
     }
 

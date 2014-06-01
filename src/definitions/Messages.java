@@ -50,7 +50,8 @@ public class Messages {
             SearchBoxPressedENTER = "Pressed ENTER on search box",
             SearchBoxPressedKey = "Pressed KEY on search box",
             SearchBoxPressedESCAPE = "Pressed ESCAPE on search box",
-            SearchBoxLicenses = "Looking for a license on the search box",
+            SearchBoxLicenseSelect = "Looking to select a license on the search box",
+            SearchBoxLicenseSearch = "Searching for a specific a license",
             
             NodeSelected = "Node Selected: %1",
             RefreshSPDX = "Refreshed the list of SPDX documents",

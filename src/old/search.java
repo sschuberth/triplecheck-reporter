@@ -7,10 +7,10 @@
  * FileName: search.java  
  * FileType: SOURCE
  * FileCopyrightText: <text> Copyright (c) 2014 Nuno Brito, TripleCheck </text>
- * FileComment: <text> The page for finding information </text> 
+ * FileComment: <text> The page for finding information about licenses</text> 
  */
 
-package basic;
+package old;
 
 import definitions.Messages;
 import java.io.File;
@@ -25,7 +25,7 @@ import www.WebRequest;
  */
 public class search extends Plugin{
      
-    String id = "Search";
+    String id = "Search licenses";
     
     @Override
     public void startup(){
@@ -37,7 +37,7 @@ public class search extends Plugin{
      * Add our toolbox node to the treeview.
      */
     public void addNode(){
-        //addTreeNode(id, "magnifier-left.png", "main");
+        addTreeNode(id, "magnifier-left.png", "main");
     }
     
      
