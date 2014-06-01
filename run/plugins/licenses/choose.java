@@ -66,7 +66,7 @@ public class choose extends Plugin{
         }
         System.out.println("Finding a license");
         final String link = (String) core.temp.get("TreeviewLicenseSelectedFilesLink");
-        String output = core.licenses.search(searchTerm , link);
+        String output = core.licenses.search(searchTerm , "choose", link);
         core.studio.editorPane(is.contentHTML, false, 0, output);
     }
        

@@ -110,7 +110,8 @@ public final class LicenseControl {
      * @param link          The URL link that permits selecting a license
      * @return              HTML code ready to display to the user
      */
-    public String search(String searchTerm, final String link) {
+    public String search(String searchTerm, final String title, 
+            final String link) {
         
         String result, // the end result
                 rankFirst = "", // results to be listed on top
@@ -125,7 +126,7 @@ public final class LicenseControl {
             
             // look on the ids
             if(license.getId().toLowerCase().contains(searchTerm)){
-                rankFirst += license.getPrettyText("choose", link + license.getId());
+                rankFirst += license.getPrettyText(title, link + license.getId());
                 hasRankedFirst = true;
                 continue;
             }
@@ -136,19 +137,19 @@ public final class LicenseControl {
                 if(hasRankedFirst){
                     continue;
                 }
-                rankSecond += license.getPrettyText("choose", license.getId());
+                rankSecond += license.getPrettyText(title, link + license.getId());
                 //continue;
            }
         }
         
         // add the titles where needed
         if(rankFirst.length() > 0){
-            rankFirst = html.h3("Matching title")
+            rankFirst = html.h3("Text matching the license title")
                     + rankFirst;
         }
         // add the titles where needed
         if(rankSecond.length() > 0){
-            rankSecond = html.h3("Inside the license terms")
+            rankSecond = html.h3("Text inside the license terms")
                     + rankSecond;
         }
         // add up the results

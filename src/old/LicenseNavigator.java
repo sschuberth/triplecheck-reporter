@@ -10,7 +10,7 @@
  * FileComment: <text> Allows an end-user to select a license for a given file </text>
  */
 
-package GUI;
+package old;
 
 import definitions.Messages;
 import definitions.is;
@@ -388,7 +388,7 @@ public final class LicenseNavigator extends javax.swing.JFrame {
                             // has more than one second passed without pressing?
                             if(timeNow > waitingTime){                
                                 String searchTerm = search.getText();
-                                String result = core.licenses.search(searchTerm, "");
+                                String result = core.licenses.search(searchTerm, "choose", "");
                                 text.setText(result);
                                 buffer = "";
                             }

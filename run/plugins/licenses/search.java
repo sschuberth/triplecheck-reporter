@@ -77,7 +77,7 @@ public class search extends Plugin{
         }
         final String link = "/licenses/search?x=view&lic=";
 
-        String output = core.licenses.search(searchTerm , link);
+        String output = core.licenses.search(searchTerm , "read", link);
         core.studio.editorPane(is.contentHTML, false, 0, output);
     }
     
