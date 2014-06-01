@@ -17,7 +17,6 @@ package main;
 import FileExtension.ExtensionControl;
 import GUI.StartupScreen;
 import GUI.StudioUI4;
-import definitions.Messages;
 import definitions.folder;
 import definitions.is;
 import java.io.File;
@@ -152,7 +151,7 @@ public class core {
      * @return A file pointer to the icon
      */
     public static File getIcon(final String filename){
-        File iconFolder = new File(getWorkFolder(), is.iconFolder);
+        File iconFolder = new File(getMiscFolder(), is.iconFolder);
             return new File(iconFolder, filename);
     }
     
