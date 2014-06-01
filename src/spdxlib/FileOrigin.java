@@ -22,7 +22,7 @@ public enum FileOrigin {
     AUTHORED,   // resource as developed by ourselves
     EXTERNAL,   // resource was made externally by a third-party provider
     AUTOMATED,  // resource is generated automatically, no changes by author
-    MIXED,      // resource generated automatically and then modified by author
+    AUTOMIXED,      // resource generated automatically and then modified by author
     MODIFIED,   // resource developed by a third-party and modified by author
     UNKNOWN;    // resource within unknown origin
     
@@ -57,7 +57,7 @@ public enum FileOrigin {
         case AUTHORED: return "Authored files";
         case EXTERNAL: return "Files from a third-party author";
         case AUTOMATED: return "Files generated automatically, no changes by author";
-        case MIXED: return "Files generated automatically and modified by author";
+        case AUTOMIXED: return "Files generated automatically and modified by author";
         case MODIFIED: return "Files developed by a third-party and modified by author";
         case UNKNOWN: return "Files with unknown origin";
         }

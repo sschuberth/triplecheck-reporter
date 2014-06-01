@@ -536,7 +536,7 @@ public class StudioUI4 extends javax.swing.JFrame {
     }//GEN-LAST:event_menuItem_MarkFileAutomatedActionPerformed
 
     private void menuItem_MarkFileMixedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuItem_MarkFileMixedActionPerformed
-         markFileOriginAs(FileOrigin.MIXED);
+         markFileOriginAs(FileOrigin.AUTOMIXED);
     }//GEN-LAST:event_menuItem_MarkFileMixedActionPerformed
 
     private void menuItem_MarkFileModifiedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuItem_MarkFileModifiedActionPerformed
@@ -843,7 +843,13 @@ public class StudioUI4 extends javax.swing.JFrame {
             
             // set the new content, first the type and then the text
             text.setContentType(contentType);
-            text.setText(content);
+            
+            try{
+                // now write the text
+                text.setText(content);
+            }catch (Exception e){
+                System.err.println("SU851 - Exception occurred while outputting text");
+            }
             // disable this box if you don't need to see the output on a file
             //utils.files.SaveStringToFile(new File("output.html"), content);
                     

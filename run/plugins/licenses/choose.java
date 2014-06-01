@@ -14,7 +14,6 @@
 package licenses;
 
 import GUI.TreeNodeSPDX;
-import GUI.TreeviewUtils;
 import GUI.swingUtils;
 import definitions.Messages;
 import definitions.is;

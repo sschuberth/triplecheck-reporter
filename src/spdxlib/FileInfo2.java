@@ -67,6 +67,7 @@ public class FileInfo2 {
     
     // was copyright text found for this file?
     private String fileCopyrightText;
+    private boolean hasCopyrightDeclared = false;
     
     // to which SPDX object is this file related?
     private final SPDXfile2 spdx;
@@ -180,7 +181,14 @@ public class FileInfo2 {
 
     public void setFileCopyrightText(final String fileCopyrightText) {
         this.fileCopyrightText = fileCopyrightText;
+        hasCopyrightDeclared = true;
     }
+
+    public boolean hasCopyrightDeclared() {
+        return hasCopyrightDeclared;
+    }
+    
+    
 
     public FileOrigin getFileOrigin() {
         return fileOrigin;

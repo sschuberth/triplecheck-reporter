@@ -15,14 +15,25 @@ package GUI;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Font;
+import java.awt.font.TextAttribute;
+import java.util.HashMap;
+import java.util.Map;
 import javax.swing.JTree;
 import javax.swing.tree.DefaultTreeCellRenderer;
 import main.core;
 import spdxlib.FileInfo2;
+import spdxlib.FileOrigin;
 
 
 public class TreeRenderer extends DefaultTreeCellRenderer {
+
+    Map<TextAttribute, Integer> fontAttributes = new HashMap<TextAttribute, Integer>();
  
+    public TreeRenderer(){
+        super();
+        fontAttributes.put(TextAttribute.UNDERLINE, TextAttribute.UNDERLINE_ON);
+    }
+    
 //    // get our icons
 //    private Icon get(String what){
 //        return new ImageIcon(core.getIcon(what).getAbsolutePath());
@@ -111,7 +122,9 @@ public class TreeRenderer extends DefaultTreeCellRenderer {
             setIcon(node.icon);
         }
 
-        setText(fileInfo.toString());
+        // the title for this node
+        String title = fileInfo.toString();
+        
         setFont(getFont().deriveFont(Font.PLAIN));
         // show nodes with concluded license in blue color
         // when a file has a licensed declared and concluded
@@ -130,6 +143,37 @@ public class TreeRenderer extends DefaultTreeCellRenderer {
         if(fileInfo.hasLicenseInfoInFile()){
             setForeground(Color.BLUE);
         }
+        
+        // now evaluate the authorship
+        if(fileInfo.getFileOrigin()!= null)
+            switch(fileInfo.getFileOrigin()){
+                case AUTHORED: 
+                    title = "+" + title;
+                    break;
+                case EXTERNAL: 
+                    title = "[" + title + "]";
+                    break;
+                case MODIFIED: 
+                    title = "+[" + title + "]";
+                    break;
+                case AUTOMATED:
+                    title = "/" + title;
+                    break;
+                case AUTOMIXED:
+                    title = "+/" + title;
+                    break;
+            }
+        
+        
+        // add the copyright statement
+        if(fileInfo.hasCopyrightDeclared()){
+            title = title + " (c)";
+        }
+        
+        // now set the title
+        setText(title);
+        
+        
     }
     
     
