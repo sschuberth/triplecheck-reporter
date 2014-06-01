@@ -110,7 +110,9 @@ public class core {
     
         iconFolderClosed = new ImageIcon(getIcon("folder-horizontal.png").getAbsolutePath()),
         iconFolderOpen = new ImageIcon(getIcon("folder-horizontal-open.png").getAbsolutePath()),
-        iconFiles = new ImageIcon(getIcon("documents-stack.png").getAbsolutePath());
+        iconFiles = new ImageIcon(getIcon("documents-stack.png").getAbsolutePath()),
+
+        iconFingerprint = new ImageIcon(getIcon("fingerprint.png").getAbsolutePath());
 
     /**
      * Gets the folder where we are running

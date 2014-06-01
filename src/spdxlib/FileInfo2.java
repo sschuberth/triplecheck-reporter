@@ -36,7 +36,7 @@ public class FileInfo2 {
     // source, archive, binary or unknown?
     private FileType fileType;          // official SPDX types of files
     private FileCategory fileCategory;  // our own categories for files
-    private FileOrigin fileOrigin;
+    private FileOrigin fileOrigin = FileOrigin.UNKNOWN;
     private FileExtension fileExtensionObject;
     
     // in which line of the text file is this file placed?

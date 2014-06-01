@@ -22,7 +22,6 @@ import javax.swing.JTree;
 import javax.swing.tree.DefaultTreeCellRenderer;
 import main.core;
 import spdxlib.FileInfo2;
-import spdxlib.FileOrigin;
 
 
 public class TreeRenderer extends DefaultTreeCellRenderer {
@@ -98,6 +97,9 @@ public class TreeRenderer extends DefaultTreeCellRenderer {
                 break;
             case sectionFile:
                 setIcon(core.iconFiles);
+                break;
+            case sectionCreator:
+                setIcon(core.iconFingerprint);
                 break;
             default:
                 setIcon(core.iconUNKNOWN);

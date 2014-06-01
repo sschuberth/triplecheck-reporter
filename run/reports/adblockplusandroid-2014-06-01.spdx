@@ -3405,6 +3405,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./assets/js/FilterClasses.jsm
 FileType: SOURCE
+FileOrigin: AUTHORED
 FileChecksum: SHA1: 02a4f45437935c4542b45b6e6b990781eacf831f
 FileChecksum: SHA256: 75b2a9f8b853b5b4e603c769ba74aca5219a0731c98f17c447ccfd2fd75f1e1a
 FileChecksum: MD5: 776b652a4db2832032a54ecd098923e4
@@ -3416,6 +3417,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./assets/js/FilterStorage.jsm
 FileType: SOURCE
+FileOrigin: AUTHORED
 FileChecksum: SHA1: d7f1e68711fd6f9c9a280677753e28d58dcb4b90
 FileChecksum: SHA256: 9fcd32b347327a8ff466458598dcd2bfb36c2b5074ae177bbd63b60693a3a7d1
 FileChecksum: MD5: a68e026d825a8b72aeaa864657573027
@@ -3427,6 +3429,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./assets/js/Matcher.jsm
 FileType: SOURCE
+FileOrigin: AUTHORED
 FileChecksum: SHA1: ee336626fffa1330b0120600b387e0b3b4e8b4b6
 FileChecksum: SHA256: c94950b95b502b97b353d84a5bb883d7eba008a63bcd0492470eea188436b4bb
 FileChecksum: MD5: 5488ea712c9e0b47a9f3af920642f7bd
@@ -3438,6 +3441,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./assets/js/basedomain.js
 FileType: SOURCE
+FileOrigin: MODIFIED
 FileChecksum: SHA1: 4e1665372aef16fc0006986b5a89b971548a140a
 FileChecksum: SHA256: 27bbcf9a94b2bfea52abd9818c819966a82a9144332428d4d343aab5e809c17d
 FileChecksum: MD5: df0f25fadfffed88e9c05140923b0ac2
@@ -3449,6 +3453,7 @@ FileCopyrightText: <text>Copyright 2011 Beau Gunderson</text>
 
 FileName: ./assets/js/ElemHide.jsm
 FileType: SOURCE
+FileOrigin: AUTHORED
 FileChecksum: SHA1: 6e259b0aed211812b59c90d08ba966187988dd31
 FileChecksum: SHA256: e3f8829a4c87966575fac8028aeccf3fcd3b3675a9aaff0bdd6384fcb11b07fa
 FileChecksum: MD5: 2c41d7145c46c2eab010b5980c8998e1
@@ -3460,6 +3465,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./assets/js/publicSuffixList.js
 FileType: SOURCE
+FileOrigin: EXTERNAL
 FileChecksum: SHA1: d16a23f167166776a13d17ea2305fda516e2dea4
 FileChecksum: SHA256: f6c4422f43e0e7b27dec23532d66206278f6516e7cd06f0ddd6136767c057258
 FileChecksum: MD5: a42f9d608eaccf5f94740e5ef4045e2c
@@ -3469,6 +3475,7 @@ FileLOC: 4030
 
 FileName: ./assets/js/SubscriptionClasses.jsm
 FileType: SOURCE
+FileOrigin: AUTOMIXED
 FileChecksum: SHA1: f0258a26547d67c15d817c313cf6690cdcc5853f
 FileChecksum: SHA256: 5c707b8c1410a365446d8b539a03b29c3db95b3b23d018af6ff424443d16ca81
 FileChecksum: MD5: f726859b85948079989d4e7866894af1
@@ -3480,6 +3487,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./assets/js/XMLHttpRequest.jsm
 FileType: SOURCE
+FileOrigin: AUTHORED
 FileChecksum: SHA1: 61e710ace07492c5f9bd9029e184e02042af7ae6
 FileChecksum: SHA256: 674e3de890529bd122a1de995ca14221ef1df662b38fb2ab756a002c6aa02fe2
 FileChecksum: MD5: fff3a65a68b223380f6041eaafb6c458
@@ -3491,6 +3499,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./assets/js/FilterNotifier.jsm
 FileType: SOURCE
+FileOrigin: AUTOMIXED
 FileChecksum: SHA1: 9ef64327966b0397bb1d73ba2d7385e8d50688e9
 FileChecksum: SHA256: bb63140fc87a48f3159f02d483c0f78b00363b606222916bbcf1add9faa7f849
 FileChecksum: MD5: 70fd991e3734e8aa428db7f0e57f1223
@@ -3502,6 +3511,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./assets/js/FilterListener.jsm
 FileType: SOURCE
+FileOrigin: AUTOMIXED
 FileChecksum: SHA1: 638de3161455f2fe6d04058864df7403f847d38e
 FileChecksum: SHA256: 95844892a58ddba0f68ece2892b76488a91333b24901e679cd76b6f5a59aee1c
 FileChecksum: MD5: f0d4e4e8a6fa3e4ee2275a5a59007d5f
@@ -3513,6 +3523,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./assets/js/punycode.js
 FileType: SOURCE
+FileOrigin: EXTERNAL
 FileChecksum: SHA1: 404e9b4e2fae3fd856beb62d5f3227f0616db859
 FileChecksum: SHA256: 3cd452108a17103d0332c2034a940bb74afef0874d49e07c9f8f42544129abeb
 FileChecksum: MD5: 0ed38ac63eb44b037da73dcba9423e4a
@@ -3524,6 +3535,7 @@ FileCopyrightText: <text>Copyright 2011 Mathias Bynens <http://mathiasbynens.be/
 
 FileName: ./assets/js/start.js
 FileType: SOURCE
+FileOrigin: AUTHORED
 FileChecksum: SHA1: 183438b2fc813d40a256fdb275fe876a977de462
 FileChecksum: SHA256: 3f18afb5297df1e7b090719a9a0478a67c0d505a7c1093b598ba861b0657bef4
 FileChecksum: MD5: ac9488bfe21da3bff0aafa6ad7321b9c
@@ -3535,6 +3547,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./assets/js/Synchronizer.jsm
 FileType: SOURCE
+FileOrigin: AUTOMIXED
 FileChecksum: SHA1: ad19c156b6c434e9d8072ca6c633f0151bb5962a
 FileChecksum: SHA256: 6a857d58b701f3998c7b0ae05b4c8ef05c478912d56eaa429b5b460623060520
 FileChecksum: MD5: dc3a99d4375977fd80580e174340e223

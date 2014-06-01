@@ -125,6 +125,9 @@ public class TreeviewUtils {
         // add the files that we might have
         node.add(spdx.getNodeFiles());
         
+        // provide for some authorship stats / tooling
+        node.add(spdx.getNodeAuthorShip());
+        
         // create the correct parameters
         final String relativePath = 
         file.getAbsolutePath().replace(core.getProductsFolder().getAbsolutePath(), "");

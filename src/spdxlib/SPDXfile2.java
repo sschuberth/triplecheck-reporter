@@ -27,6 +27,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.tree.MutableTreeNode;
 import main.core;
 import script.FileExtension;
 import script.log;
@@ -54,6 +55,7 @@ public class SPDXfile2 implements Serializable{
     
     // the node where all info about files is stored
     private TreeNodeSPDX nodeFiles = new TreeNodeSPDX("Files");
+    private TreeNodeSPDX nodeAuthorship = new TreeNodeSPDX("Authorship");
     
     // temporary values only used during the initial processing
     FileInfo2 tempInfo;
@@ -91,6 +93,7 @@ public class SPDXfile2 implements Serializable{
     public void refresh(){
         files = new ArrayList();
         nodeFiles = new TreeNodeSPDX("Files");
+        nodeAuthorship = new TreeNodeSPDX("Authorship");
         charPosition = 1;
         tempInfo = null;
         fileCounter = 0;
@@ -111,6 +114,73 @@ public class SPDXfile2 implements Serializable{
         return file.getName().replace(".spdx", "");
     }
 
+    /**
+     * Provides details about the author ship of this SPDX document
+     * @return An HTML document ready to be shown at the end-user
+     */
+    public String computeAuthorship() {
+        String result = html.h2("Authorship details");
+        // define our counters
+        int 
+                fileAuthored = 0,
+                fileExternal = 0,
+                fileModified = 0,
+                fileAutomated = 0,
+                fileAutomixed = 0,
+                fileUnknown = 0;
+        
+        ArrayList<FileInfo2> listUnknown = new ArrayList();
+        
+        // now iterate all the file objects that we have listed
+        for(FileInfo2 fileInfo : files){
+            switch(fileInfo.getFileOrigin()){
+                case AUTHORED: fileAuthored++; break;
+                case EXTERNAL: fileExternal++; break;
+                case MODIFIED: fileModified++; break;
+                case AUTOMATED: fileAutomated++; break;
+                case AUTOMIXED: fileAutomixed++; break;
+                case UNKNOWN: 
+                    fileUnknown++; 
+                    listUnknown.add(fileInfo);
+                    break;
+            }
+        }
+        
+        // output the result
+        result += showAuthorshipDetail("Original files: ", fileAuthored)
+                + showAuthorshipDetail("Third-party files: ", fileExternal)
+                + showAuthorshipDetail("Modified third-party files: ", fileModified)
+                + showAuthorshipDetail("Automatically generated files: ", fileAutomated)
+                + showAuthorshipDetail("Automatically generated files that were modified: ", fileAutomixed)
+                + showAuthorshipDetail("Files with unknown authorship: ", fileUnknown)
+                + html.br
+                ;
+        
+        
+        // add a list of files that we should process
+        if(fileUnknown > 0 && fileUnknown < 1000){
+            result += html.h2("Files missing to process:");
+            for(FileInfo2 fileInfo : listUnknown){
+                result += fileInfo.getFileName() + html.br;
+            }
+        }
+        
+        // add the div alignment
+        result = html.div()
+                + result
+                + html._div;
+        
+        return result;
+    }
+
+    private String showAuthorshipDetail(final String what, final int counter){
+        if(counter == 0){
+            return "";
+        }else{
+            return what + counter + html.br;
+        }
+    }
+    
     // used for tags with multiple lines, such as:
     // FileCopyrightText -> COPYRIGHT
     enum mTypes {COPYRIGHT};
@@ -657,6 +727,11 @@ public class SPDXfile2 implements Serializable{
         return nodeFiles;
     }
 
+    
+    public TreeNodeSPDX getNodeAuthorShip() {
+        return nodeAuthorship;
+    }
+    
     public boolean hasVersioningFilesPresent() {
         System.err.println("Missing to implement VersioningFilesPresent");
         return false;
@@ -677,6 +752,18 @@ public class SPDXfile2 implements Serializable{
         }else{
             nodeFiles.setTitle("Files");
         }
+        
+        final File scriptFile = new File(core.getPluginsFolder(), "/spdx/authorship.java");
+        nodeAuthorship.scriptFile = scriptFile;
+        nodeAuthorship.scriptFolder = scriptFile.getParentFile();
+        nodeAuthorship.scriptMethod = "main";
+        nodeAuthorship.icon = core.iconFingerprint;
+        nodeAuthorship.nodeType = NodeType.sectionCreator;
+        // Set as object the file pointer
+        nodeAuthorship.setUserObject(file);
+        
+        
+        
         // get the stats done
         computeStats();
     }

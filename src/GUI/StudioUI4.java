@@ -190,7 +190,7 @@ public class StudioUI4 extends javax.swing.JFrame {
         popupMenuFile.add(menuItem_MarkFileAutomated);
 
         menuItem_MarkFileMixed.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/document-number.png"))); // NOI18N
-        menuItem_MarkFileMixed.setText("Mark file as mixed");
+        menuItem_MarkFileMixed.setText("Mark file as automixed");
         menuItem_MarkFileMixed.setToolTipText("Generated automatically and then modified by author");
         menuItem_MarkFileMixed.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
