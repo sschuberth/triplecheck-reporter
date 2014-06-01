@@ -148,7 +148,7 @@ public final class LicenseControl {
         }
         // add the titles where needed
         if(rankSecond.length() > 0){
-            rankSecond = html.h3("Inside text")
+            rankSecond = html.h3("Inside the license terms")
                     + rankSecond;
         }
         // add up the results
