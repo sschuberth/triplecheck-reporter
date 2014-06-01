@@ -152,7 +152,10 @@ public final class LicenseControl {
                     + rankSecond;
         }
         // add up the results
-        result = rankFirst + rankSecond;
+        result = html.div() 
+                + rankFirst 
+                + rankSecond
+                + html._div;
         // all done
         return result;
     }

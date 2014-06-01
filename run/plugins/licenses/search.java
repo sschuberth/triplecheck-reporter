@@ -77,7 +77,6 @@ public class search extends Plugin{
         }
         final String link = "/licenses/search?x=view&lic=";
 
-        //(String) core.temp.get("TreeviewLicenseSelectedFilesLink");
         String output = core.licenses.search(searchTerm , link);
         core.studio.editorPane(is.contentHTML, false, 0, output);
     }
