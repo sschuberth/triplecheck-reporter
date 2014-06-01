@@ -14,6 +14,7 @@ package GUI;
 
 import java.awt.Color;
 import java.awt.Component;
+import java.awt.Font;
 import javax.swing.JTree;
 import javax.swing.tree.DefaultTreeCellRenderer;
 import main.core;
@@ -109,22 +110,23 @@ public class TreeRenderer extends DefaultTreeCellRenderer {
         }
 
         setText(fileInfo.toString());
+        setFont(getFont().deriveFont(Font.PLAIN));
         // show nodes with concluded license in blue color
         // when a file has a licensed declared and concluded
         if((fileInfo.hasLicenseConcluded())
                 &&(fileInfo.hasLicenseInfoInFile())){
-            setForeground(Color.BLACK);
-            setBackground(Color.YELLOW);
+            setForeground(Color.BLUE);
+            setFont(getFont().deriveFont(Font.BOLD));
         }else
             // when it's just a concluded license
         if(fileInfo.hasLicenseConcluded()){
-            setForeground(Color.GREEN);
+            setBorderSelectionColor(Color.black);
+            setForeground(Color.BLACK);
+            setFont(getFont().deriveFont(Font.BOLD + Font.ITALIC));
         }else
             // when it is license inside the file
         if(fileInfo.hasLicenseInfoInFile()){
             setForeground(Color.BLUE);
-//                        setForeground(Color.BLACK);
-//                        setBackground(Color.YELLOW);
         }
     }
     

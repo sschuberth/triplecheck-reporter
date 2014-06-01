@@ -2147,6 +2147,7 @@ FileLOC: 9
 
 FileName: ./test/CommunicationTest.cpp
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileChecksum: SHA1: 75f855eb7817214cd9f1e8c0fcc73340c8b3162c
 FileChecksum: SHA256: 63e1dde8255fa88cdd7f82a49cc2a7329980bfeb8dc92eb84b923f1559618b90
 FileChecksum: MD5: a5e982792494b51cbf64a8f125195b85
