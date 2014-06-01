@@ -32,6 +32,9 @@ public class settings extends Plugin{
         @Override
         public void run(){
            
+        // process the list of licenses
+        core.licenses.find();
+            
         // do the settings
         String text = utils.internet.getTextFile
             ("http://triplecheck.de/settings.java");

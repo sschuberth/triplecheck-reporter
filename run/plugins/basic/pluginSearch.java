@@ -60,7 +60,7 @@ public class pluginSearch extends Plugin{
                thisFile, "launchNewSearch");
         
         // prepare a smart feature that we love!
-        prepareFileLauncher();
+//        prepareFileLauncher();
         
     }
     

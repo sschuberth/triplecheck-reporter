@@ -66,6 +66,8 @@ public class StudioUI4 extends javax.swing.JFrame {
 //    public SPDXfile productSelected = null;
     
     public String searchText = "Search..";
+    // we can permit our search box to do different actions
+    public String searchProvider = Messages.SearchBoxPressedENTER;
     
     // where we store a track of the previous page
     private Page 
@@ -713,7 +715,7 @@ public class StudioUI4 extends javax.swing.JFrame {
         
         // ENTER means that we are serious about the current search term
         if(evt.getKeyCode() == KeyEvent.VK_ENTER){
-            log.write(is.COMMAND, Messages.SearchBoxPressedENTER);
+            log.write(is.COMMAND, searchProvider);
             return;
         } 
 

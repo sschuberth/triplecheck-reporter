@@ -30,6 +30,7 @@
 package utils;
 
 import definitions.is;
+import main.core;
 import script.log;
 
 
@@ -41,8 +42,8 @@ import script.log;
 public final class KeyStroke {
 
     long lastKeypress = System.currentTimeMillis();
-    private final String 
-            message; // the message to be launched through the log system
+//    private final String 
+//            message; // the message to be launched through the log system
     
     public long sensitivity = 350;
     
@@ -52,8 +53,8 @@ public final class KeyStroke {
     /**
      * Where everything begins
      */
-    public KeyStroke(String message){
-        this.message = message;
+    public KeyStroke(){
+//        this.message = message;
         launchThread();
     }
 
@@ -85,7 +86,8 @@ public final class KeyStroke {
                             long waitingTime = lastKeypress + sensitivity;
                             // has more than one second passed without pressing?
                             if(timeNow > waitingTime){                            
-                                log.write(is.COMMAND, message);
+                                //log.write(is.COMMAND, message);
+                                log.write(is.COMMAND, core.studio.searchProvider);
                                 buffer = "";
                             }
                         }

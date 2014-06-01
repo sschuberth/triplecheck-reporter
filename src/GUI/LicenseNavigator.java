@@ -388,7 +388,7 @@ public final class LicenseNavigator extends javax.swing.JFrame {
                             // has more than one second passed without pressing?
                             if(timeNow > waitingTime){                
                                 String searchTerm = search.getText();
-                                String result = core.licenses.search(searchTerm);
+                                String result = core.licenses.search(searchTerm, "");
                                 text.setText(result);
                                 buffer = "";
                             }

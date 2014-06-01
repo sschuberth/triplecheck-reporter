@@ -53,8 +53,7 @@ public class core {
     
     public static StartupScreen startupScreen = new StartupScreen();
     
-    public static utils.KeyStroke key = 
-            new utils.KeyStroke(Messages.SearchBoxPressedKey);
+    public static utils.KeyStroke key = new utils.KeyStroke();
     
     public static File thisFile;
     

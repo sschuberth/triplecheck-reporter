@@ -218,9 +218,11 @@ public class Script {
                     (codeText, className, scriptFile, methodName, runScript);
 
             } catch (Exception e){
-                script.log.write(is.ERROR, "SC224 Error interpreting %1"
-                        , scriptFile.getName());
+                script.log.write(is.ERROR, "SC224 Error interpreting %2() on "
+                        + "%1"
+                        , scriptFile.getAbsolutePath(), methodName);
                 e.printStackTrace();
+                //System.err.println(codeText);
             }
             // all done.
     }

@@ -46,6 +46,10 @@ public final class LicenseControl {
 
     
     public ArrayList<License> getList() {
+        // only provide back a list after the licensing processing was made
+        if(list.isEmpty() && hasNotProcessed){
+            find();
+        }
         return list;
     }
     
@@ -61,9 +65,10 @@ public final class LicenseControl {
         ArrayList<File> files = utils.files.findFilesFiltered(folder, ".java", 2);
         log.write(is.INSTALLING, "Processing %1 licenses", "" + files.size());
         for(File file : files){
-            core.script.runJava(file, null, is.license);
+            //core.script.runJava(file, null, is.license);
             License license = (License) exec.runJava(file, is.license);
-            if(license != null){
+                //utils.bytecode.getObject(file);
+            if(license != null && license.getId().isEmpty() == false){
                 list.add(license);
             }
         }
@@ -93,11 +98,12 @@ public final class LicenseControl {
      * When given a search term, looks inside our archived licenses and provides
      * a list with possible results
      * @param searchTerm    Portion of text to be found
+     * @param link          The URL link that permits selecting a license
      * @return              HTML code ready to display to the user
      */
-    public String search(String searchTerm) {
+    public String search(String searchTerm, final String link) {
         
-        String result = "", // the end result
+        String result, // the end result
                 rankFirst = "", // results to be listed on top
                 rankSecond = ""; // the secondary results
 
@@ -110,7 +116,7 @@ public final class LicenseControl {
             
             // look on the ids
             if(license.getId().toLowerCase().contains(searchTerm)){
-                rankFirst += license.getPrettyText("choose", license.getId());
+                rankFirst += license.getPrettyText("choose", link + license.getId());
                 hasRankedFirst = true;
                 continue;
             }
