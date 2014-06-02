@@ -242,7 +242,7 @@ public class showFileDetails extends Plugin{
         if(fileInfo.hasLicenseConcluded()){
             summary += 
                      html.br 
-                    + "License concluded: " + fileInfo.getLicenseConcluded();
+                    + "License concluded: " + fileInfo.getLicenseConcluded().toId();
         }
         
         if(fileInfo.getFileOrigin() != null){

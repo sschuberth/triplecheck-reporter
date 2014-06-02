@@ -16,15 +16,12 @@
 package structure;
 
 import definitions.is;
-import spdxlib.FileInfo2;
-import spdxlib.SPDXfile2;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import main.core;
 import script.log;
-import spdxlib.FileOrigin;
-import spdxlib.License;
+import spdxlib.*;
 import utils.html;
 
 
@@ -38,9 +35,10 @@ public final class LicensePopularity {
     boolean hasNotIndexed = true;
     // the place where we keep our ranking score for each license
     private final HashMap<String, Integer> list = new HashMap();
+    private HashMap<LicenseType, Integer> listLicense = new HashMap();
     private final HashMap<FileOrigin, Integer> listOrigin = new HashMap();
     // where we map licenses to their value
-    private Map<String,Integer> popularityList;
+    private Map<LicenseType,Integer> popularityList;
     // how many files were counted?
     private int numberOfFiles = 0;
     
@@ -71,7 +69,7 @@ public final class LicensePopularity {
         
         // go through each report to index the licenses
         for(SPDXfile2 report : reports){
-            processReport(report);
+            processReport(report, "", "");
         }
         
         // ok, we processed all the reports. Give some feedback on what we got.
@@ -88,12 +86,38 @@ public final class LicensePopularity {
      * Process the licenses inside a given SPDX report
      * @param spdx 
      */
-    private void processReport(SPDXfile2 report){
+    public String processReport(SPDXfile2 report, 
+            final String title, final String link){
+        String result = "";
+        listLicense.clear();
         // iterate through each file on this report
         for(FileInfo2 fileInfo : report.getFiles()){
             // get the licenses within
             processFileInfo(fileInfo);
         }
+        
+        // index all the licenses according to popularity
+        popularityList = ThirdParty.MiscMethods.sortByComparator(listLicense);
+        
+        // no need to continue for empty results
+        if(popularityList.isEmpty()){
+            return "";
+        }
+        
+        result += html.h3("Licenses used in this project");
+        
+        for(LicenseType licenseType : popularityList.keySet()){
+            int popValue = popularityList.get(licenseType);
+            License license = core.licenses.getAsTitle(licenseType.toTitle());
+            result += 
+                    "(" + popValue + ") "
+                    + license.getPrettyText(title, link + license.getId());
+        }
+        
+        // all done
+        result += html.br;
+        
+        return result;
     }
     
     /**
@@ -104,27 +128,33 @@ public final class LicensePopularity {
      */
     private void processFileInfo(FileInfo2 fileInfo){
         // start by increasing the number of detected files
-        numberOfFiles++;
-        System.err.println("LP108 - Missing to implement processFileInfo");
+//        numberOfFiles++;
+        //System.err.println("LP108 - Missing to implement processFileInfo");
     
         // get the list of licenses
-//        ArrayList<LicenseType> licList = fileInfo.getLicenseInfoInFile();
-//        // iterate through each license that was found
-//        for(String license : licList){
-//            int counter;
-//            // have we found this license before? If so, get the counter
-//            if(list.containsKey(license)){
-//                counter = list.get(license);
-//                // add up another notch
-//                counter++;
-//            }else{
-//                // not found before, add it for the first time
-//                counter = 1;
-//            }
-//            // all done, place it back in place
-//            list.put(license, counter);
-//        }
-//        
+        ArrayList<LicenseType> licList = fileInfo.getLicenseInfoInFile();
+        
+        // do we have a license defined as well?
+        if(fileInfo.hasLicenseConcluded()){
+            licList.add(fileInfo.getLicenseConcluded());
+        }
+        
+        // iterate through each license that was found
+        for(LicenseType license : licList){
+            int counter;
+            // have we found this license before? If so, get the counter
+            if(listLicense.containsKey(license)){
+                counter = listLicense.get(license);
+                // add up another notch
+                counter++;
+            }else{
+                // not found before, add it for the first time
+                counter = 1;
+            }
+            // all done, place it back in place
+            listLicense.put(license, counter);
+        }
+        
 //         // process the authorship details
 //        FileOrigin origin = fileInfo.getFileOrigin();
 //        
@@ -143,7 +173,7 @@ public final class LicensePopularity {
 //        }
 //        // place this value back into the counter
 //        listOrigin.put(origin, countOrigin);
-//        
+        
         
     }
     
@@ -172,8 +202,8 @@ public final class LicensePopularity {
         if(core.popularity.getList().size() >0){
             String temp = "";
             int counter = 0;
-            for(String licenseId : core.popularity.getList().keySet()){
-              License license = core.licenses.get(licenseId);
+            for(LicenseType licenseId : core.popularity.getList().keySet()){
+              License license = core.licenses.get(licenseId.toId());
               // might be a license but was not indexed, skip this one
               if(license == null){
                   continue;
@@ -183,8 +213,7 @@ public final class LicensePopularity {
               
               // this license is valid, add it up
               temp +=  "(" + popValue + ") "
-                      //+ license.getPrettyText("", licenseId)
-                      + license.getPrettyText("Choose", licenseId);
+                      + license.getPrettyText("Choose", licenseId.toId())
                       ;
               counter++;
               // place a limit on 10 licenses on the list
@@ -210,7 +239,7 @@ public final class LicensePopularity {
      */
     private void print() {
         int rank = 0;
-        for(String license : popularityList.keySet()){
+        for(LicenseType license : popularityList.keySet()){
             int value = popularityList.get(license);
             rank++;
             System.out.println("#" + rank + " " + license + " (" + value + ")");
@@ -222,7 +251,7 @@ public final class LicensePopularity {
      * indexed previously.
      * @return 
      */
-    public Map<String, Integer> getList() {
+    public Map<LicenseType, Integer> getList() {
         return popularityList;
     }
 
@@ -231,7 +260,7 @@ public final class LicensePopularity {
      * @param license   SPDX identifier
      * @return the number of times we've indexed this license
      */
-    public int getValue(String license) {
+    public int getValue(LicenseType license) {
         return popularityList.get(license);
     }
 

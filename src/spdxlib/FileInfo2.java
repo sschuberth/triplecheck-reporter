@@ -198,8 +198,8 @@ public class FileInfo2 {
         this.fileOrigin = fileOrigin;
     }
 
-    public String getLicenseConcluded() {
-        return licenseConcluded.toId();
+    public LicenseType getLicenseConcluded() {
+        return licenseConcluded;
     }
 
     public void setLicenseConcluded(LicenseType licenseConcluded) {

@@ -279,6 +279,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./.hgtags
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: fd150175a132c07d7ed4cab463898aa9f009bfd9
 FileChecksum: SHA256: 3db04109b9b21de36496d924e8c34255eacd33bf3c5761478298395684e43163
@@ -288,6 +289,7 @@ FileSize: 417 bytes
 
 FileName: ./.hgignore
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 21cf9fea5bc516d5638c6f5d262050e7e14d85d8
 FileChecksum: SHA256: bbdd9a4de5d663fb3465186b906a13dfe504a06d1e0df92c20b7119e33b099c3
@@ -297,6 +299,7 @@ FileSize: 98 bytes
 
 FileName: ./iptables.patch
 FileType: BINARY
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 48f8a8f8bc6dbf6aacaa74bd1666701c8977cedc
 FileChecksum: SHA256: 1d17b68e0316d10bc1ef54f067791a3f1611ac1350eaa086855fbd1619eeaeaf
@@ -306,6 +309,7 @@ FileSize: 5 Kb (5297 bytes)
 
 FileName: ./.classpath
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 5b0c4e7d17c558e90ebf892517e9e8f7be511dbf
 FileChecksum: SHA256: 57bcbd67d767724c9295b20c31368ec91f0870ed7942896d90c88a69869c826c
@@ -315,6 +319,7 @@ FileSize: 526 bytes
 
 FileName: ./AndroidManifest.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: c0d0c451a84a5dc73b7f158b88ac672582d39e86
 FileChecksum: SHA256: 3bca484a6d91506feb4768658f4ad3fdb22c0389f6da4e1520578eeedfcda6f0
@@ -3376,6 +3381,7 @@ FileSize: 227 bytes
 
 FileName: ./build.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 8ac8319a37b2d24834bbb861942ee6395fa4485e
 FileChecksum: SHA256: fd0e611e04087e553d3bcaafb619178e8692a0582aa2270bec4007645c85b896
@@ -3394,6 +3400,7 @@ FileSize: 1 Kb (1298 bytes)
 
 FileName: ./assets/subscriptions.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: d8b332820173e143166c31bfd10bdaeb5e59959e
 FileChecksum: SHA256: 46cfa220f58bca415850ce5e6cc4ee7b6e4a29c3b1bc254789c34cfe55173266
@@ -3441,6 +3448,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./assets/js/basedomain.js
 FileType: SOURCE
+FileLicenseConcluded: MIT
 FileOrigin: MODIFIED
 FileChecksum: SHA1: 4e1665372aef16fc0006986b5a89b971548a140a
 FileChecksum: SHA256: 27bbcf9a94b2bfea52abd9818c819966a82a9144332428d4d343aab5e809c17d
@@ -3465,6 +3473,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./assets/js/publicSuffixList.js
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: d16a23f167166776a13d17ea2305fda516e2dea4
 FileChecksum: SHA256: f6c4422f43e0e7b27dec23532d66206278f6516e7cd06f0ddd6136767c057258
@@ -3523,6 +3532,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./assets/js/punycode.js
 FileType: SOURCE
+FileLicenseConcluded: MIT
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: 404e9b4e2fae3fd856beb62d5f3227f0616db859
 FileChecksum: SHA256: 3cd452108a17103d0332c2034a940bb74afef0874d49e07c9f8f42544129abeb
@@ -3559,6 +3569,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./assets/install/iptables
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: MODIFIED
 FileChecksum: SHA1: 69156408878bdf0346cbb5bc3d56f81954ec7fca
 FileChecksum: SHA256: daf2e9240bc104100ca8be09713fd34598f1ac68494752cb9f39c31b224d2ccf
@@ -3568,6 +3579,7 @@ FileSize: 86 Kb (88352 bytes)
 
 FileName: ./README.md
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: b8963f64dd1e8d74a17f3ecdb8395b9ec6f29c37
 FileChecksum: SHA256: 878dc324d8e7c77395ce593116c7e34cea63c7b923c13db55cad68cedc368048
@@ -3577,6 +3589,7 @@ FileSize: 1 Kb (1699 bytes)
 
 FileName: ./.project
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 0a62f23cc2ef8a59961c4a82b3adf03eeeb59bdf
 FileChecksum: SHA256: 41e7643e66f15fd6ff058c291f937291ce1716bca734946cf830a596c940f067
@@ -3586,6 +3599,7 @@ FileSize: 1 Kb (1759 bytes)
 
 FileName: ./.settings/org.eclipse.jdt.core.prefs
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 7a0601abc2a9c2244c2532f55ede36f775c9d533
 FileChecksum: SHA256: 5d08c846e201cbafb6cbc0138a7287bdb5a62bbcf34a4902f93164fb81d14b9c
@@ -3595,6 +3609,7 @@ FileSize: 587 bytes
 
 FileName: ./libs/RootTools-1.7.jar
 FileType: ARCHIVE
+FileLicenseConcluded: Apache-2.0
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: 4c3510225cb56d187e5f378576e144bc58a6a868
 FileChecksum: SHA256: 84f46eed5aa855b03807cbf7e3a37a1539357ec3fae1446452b43e75700cea61
@@ -3604,6 +3619,7 @@ FileSize: 67 Kb (68664 bytes)
 
 FileName: ./project.properties
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 94b5e717dd891087855071cabb8855242a12d70c
 FileChecksum: SHA256: 4f0963796aceade81b036d041df74657d1e7c6f066e7907253b6439b9d968cd1
@@ -3613,6 +3629,7 @@ FileSize: 489 bytes
 
 FileName: ./.cproject
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 3bcbe837eb492f746b9e3a81c7dec8bcaae85c81
 FileChecksum: SHA256: 1c02a6167bed296fa7f535720518d3308d2873cff821e916f0ea198a8008aeb2

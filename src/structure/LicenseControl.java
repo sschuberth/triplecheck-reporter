@@ -102,6 +102,17 @@ public final class LicenseControl {
         }
         return null;
     }
+    
+        
+    
+    public License getAsTitle(final String licenseTitle) {
+        for(License license : list){
+            if(utils.text.equals(licenseTitle, license.getTitle())){
+                return license;
+            }
+        }
+        return null;
+    }
 
     /**
      * When given a search term, looks inside our archived licenses and provides

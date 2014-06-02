@@ -14,13 +14,16 @@
 package licenses;
 
 import GUI.TreeNodeSPDX;
+import GUI.TreeviewUtils;
 import GUI.swingUtils;
 import definitions.Messages;
 import definitions.is;
 import main.core;
 import script.Plugin;
 import script.log;
+import spdxlib.FileInfo2;
 import spdxlib.License;
+import spdxlib.SPDXfile2;
 import utils.html;
 import www.RequestOrigin;
 import www.WebRequest;
@@ -87,9 +90,14 @@ public class choose extends Plugin{
         final String link = "/licenses/choose?x=applyLicense"
                 + "&uid=" + listUID
                 + "&lic=";
-        result += html.h3("Choose a license");
+        result += html.h2("Choose a license");
+        
+        
+        result += getRecentlyUsedLicenses(listUID, "Choose", link);
+        
+        result += html.h3("Licenses available");
         for(License license : core.licenses.getList()){
-            final String thisLink = link + license.getId();
+             String thisLink = link + license.getId();
              result += license.getPrettyText("Choose", thisLink);
         }
         
@@ -107,6 +115,26 @@ public class choose extends Plugin{
             core.temp.put("TreeviewLicenseSelectedFilesLink", link);
         }
         
+    }
+    
+    
+    /**
+     * Place the most recently used licenses on top of the list
+     * @param listUID   A list of nodes to change
+     * @return          An HTML text ready to display on the end-user
+     */
+    private String getRecentlyUsedLicenses(String listUID, 
+            String title, String link){
+        String[] listArray = listUID.split(";");
+        // get the node based on the first entry (there is at minimum one entry)
+        TreeNodeSPDX node = TreeviewUtils.getNode(listArray[0]);
+        // get the file info object
+        FileInfo2 fileInfo = (FileInfo2) node.getUserObject();
+        // get the respective spdx
+        SPDXfile2 spdx = fileInfo.getSPDX();
+        // now go through all file info and find licenses
+        String result = core.popularity.processReport(spdx, title, link);
+        return result;
     }
     
     /**
