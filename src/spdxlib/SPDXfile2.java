@@ -27,9 +27,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.tree.MutableTreeNode;
 import main.core;
-import script.FileExtension;
 import script.log;
 import structure.LanguageCounter;
 import structure.LicenseCounter;
@@ -56,6 +54,7 @@ public class SPDXfile2 implements Serializable{
     // the node where all info about files is stored
     private TreeNodeSPDX nodeFiles = new TreeNodeSPDX("Files");
     private TreeNodeSPDX nodeAuthorship = new TreeNodeSPDX("Authorship");
+    private TreeNodeSPDX nodeSettings = new TreeNodeSPDX("Settings");
     
     // temporary values only used during the initial processing
     FileInfo2 tempInfo;
@@ -446,7 +445,7 @@ public class SPDXfile2 implements Serializable{
             return null;
         }
         // get the title
-        String title = id.SOURCEFOLDER + file.getName();
+        final String title = id.SOURCEFOLDER + file.getName();
         
         if(core.settings.hasKey(title)==false){
             System.err.println("SPDXfile344: Didn't found " + title);
@@ -461,6 +460,21 @@ public class SPDXfile2 implements Serializable{
         }
         // all done!
         return folder;
+    }
+    
+    /**
+     * Defines the folder where the source code files are located. This method
+     * will save the value on the disk settings
+     * @param folder    A folder on disk
+     */
+    public void setSourceFolder(final File folder){
+        if(file== null){
+            return;
+        }
+        // get the title
+        final String title = id.SOURCEFOLDER + file.getName();
+        core.settings.write(title, folder.getAbsolutePath());
+            
     }
     
     /**
@@ -732,6 +746,11 @@ public class SPDXfile2 implements Serializable{
         return nodeAuthorship;
     }
     
+    public TreeNodeSPDX getNodeSettings() {
+        return nodeSettings;
+    }
+    
+    
     public boolean hasVersioningFilesPresent() {
         System.err.println("Missing to implement VersioningFilesPresent");
         return false;
@@ -753,6 +772,7 @@ public class SPDXfile2 implements Serializable{
             nodeFiles.setTitle("Files");
         }
         
+        // create the authorship node
         final File scriptFile = new File(core.getPluginsFolder(), "/spdx/authorship.java");
         nodeAuthorship.scriptFile = scriptFile;
         nodeAuthorship.scriptFolder = scriptFile.getParentFile();
@@ -761,6 +781,16 @@ public class SPDXfile2 implements Serializable{
         nodeAuthorship.nodeType = NodeType.sectionCreator;
         // Set as object the file pointer
         nodeAuthorship.setUserObject(file);
+        
+        // create the settings node
+        final File settingsFile = new File(core.getPluginsFolder(), "/spdx/settings.java");
+        nodeSettings.scriptFile = settingsFile;
+        nodeSettings.scriptFolder = settingsFile.getParentFile();
+        nodeSettings.scriptMethod = "main";
+        nodeSettings.icon = core.iconCONFIG;
+        nodeSettings.nodeType = NodeType.sectionSettings;
+        // Set as object the file pointer
+        nodeSettings.setUserObject(this);
         
         
         

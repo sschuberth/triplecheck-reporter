@@ -101,6 +101,9 @@ public class TreeRenderer extends DefaultTreeCellRenderer {
             case sectionCreator:
                 setIcon(core.iconFingerprint);
                 break;
+            case sectionSettings:
+                setIcon(core.iconCONFIG);
+                break;
             default:
                 setIcon(core.iconUNKNOWN);
                 break;

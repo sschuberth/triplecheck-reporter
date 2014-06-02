@@ -107,7 +107,7 @@ public class create extends Plugin{
      */
     public void mainFolder(WebRequest request){
         // load our template
-         request.setTemplate(templateFolderHTML);
+        request.setTemplate(templateFolderHTML);
         // get the value used before
         String selectedFolder = settings.read(myFolder, "");
         // if nothign is chosen, just show it as "none"
