@@ -16,7 +16,6 @@ import GUI.SearchType;
 import GUI.TreeNodeSPDX;
 import GUI.swingUtils;
 import definitions.Messages;
-import definitions.is;
 import java.io.File;
 import main.core;
 import script.Plugin;
@@ -38,9 +37,6 @@ public class showComponents extends Plugin{
     public void startup(){
         // add our node to the tree right after the "Tools" node is added
         log.hooks.addAction(Messages.AddingTools, thisFile, "addNode");
-        // get our hook working for the specific license search
-        log.hooks.addAction(SearchType.Components_Show.getHook(), 
-                thisFile, "doFindComponents");  
     }
     
     /**
@@ -79,22 +75,5 @@ public class showComponents extends Plugin{
         request.setAnswer(result);
         
     }
-
-  
-      /**
-     * When a given search term is available, show the licenses that are
-     * a possible match
-     */ 
-    public void doFindComponents() {
-        final String searchTerm = core.studio.getSearch().getText();
-        // no need to worry about empty searches or less than two characters
-        if(searchTerm.length() < 2){
-            return;
-        }
-        final String link = "/components/showComponent?name=";
-
-        String output = "nothing yet to show";//core.components.search(searchTerm , "read", link);
-        core.studio.editorPane(is.contentHTML, false, 0, output);
-    }
-    
+   
 }

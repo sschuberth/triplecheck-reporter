@@ -4,7 +4,7 @@
   "referenceURL": "http://triplecheck.de",
   "downloadURL": "http://triplecheck.de/download",
   "authors": "Nuno Brito",
-  "descriptionOneLine": "A test component",
+  "desc": "A test component",
   "descriptionLarge": "This test component helps to debug the component functionality",
   "organization": "TripleCheck",
   "version": "1.0",

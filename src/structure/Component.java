@@ -35,12 +35,13 @@ public class Component {
             referenceURL,   // the home page or website that explains component
             downloadURL,    // when available, from where it can be downloaded    
             authors,        // main authors and contributors (separated by \n)
-            descriptionOneLine,// one line summary about the component
-            descriptionLarge,  // a more complete description in detail 
+            desc,// one line summary about the component
+            summary,  // a more complete description in detail 
             organization,   // to which company, foundation (...) is the code related
             version,        // in some cases, the applicable version
             dateCreated,        // when this component was first created
-            dateLastModified;   // last time it was modified
+            dateLastModified,   // last time it was modified
+            lic;    // the license declared by the author
             
     protected ArrayList<License> applicableLicenses;  // set of applicable licenses
     protected ArrayList<Component> subComponents;  // components included within
@@ -62,11 +63,11 @@ public class Component {
     }
 
     public void setDescriptionLarge(String descriptionLarge) {
-        this.descriptionLarge = descriptionLarge;
+        this.summary = descriptionLarge;
     }
 
     public void setDescriptionOneLine(String descriptionOneLine) {
-        this.descriptionOneLine = descriptionOneLine;
+        this.desc = descriptionOneLine;
     }
 
     public void setDownloadURL(String downloadURL) {
@@ -96,6 +97,10 @@ public class Component {
     public void setVersion(String version) {
         this.version = version;
     }
+
+    public void setDeclaredLicense(String declaredLicense) {
+        this.lic = declaredLicense;
+    }
     
     
     
@@ -113,6 +118,17 @@ public class Component {
         utils.files.SaveStringToFile(file, jsonOutput);
     }
 
+  
+    /**
+     * Returns a gson string with the contents of this object
+     * @return  A json text
+     */
+    public String getJsonString(){
+        Gson gson = new GsonBuilder().create();
+        return gson.toJson(this);
+    }
+    
+    
     /**
      * Outputs a simple HTML report about this component to the end user
      * @return  An HTML text
@@ -121,7 +137,7 @@ public class Component {
         return ""
                 + html.div()
                 + html.h2(title)
-                + descriptionOneLine
+                + desc
                 + html._div
                 ;
     }
@@ -139,7 +155,7 @@ public class Component {
                 + " "
                 + html.link(title, link + id)
                 + html.br
-                + html.textGrey("<i>" + descriptionOneLine + "</i>")
+                + html.textGrey("<i>" + desc + "</i>")
                 ;
     }
     

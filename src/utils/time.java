@@ -166,7 +166,17 @@ public class time {
         return dateFormat.format(date);
         }
 
-
+    /** 
+     * get the current time in a human readable manner
+     * @return 
+     */
+   public static String getDateTimeISO() {
+       // code adapted from http://goo.gl/rZ716
+        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        Date date = new Date();
+        return dateFormat.format(date);
+   }
+   
    /** 
     * Returns the age of a given file using days as value
     * A result of "1" means today, "2" means more than 24 hours and so forth

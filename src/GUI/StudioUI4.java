@@ -65,7 +65,7 @@ public class StudioUI4 extends javax.swing.JFrame {
     // what was the last product that was marked as selected?
 //    public SPDXfile productSelected = null;
     
-    private final SearchType searchTextDefault = SearchType.Files;
+    private final SearchType searchTextDefault = SearchType.Components_Show;
     // we can permit our search box to do different actions
     private SearchType searchProvider = SearchType.Files;
     

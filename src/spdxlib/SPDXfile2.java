@@ -814,7 +814,7 @@ public class SPDXfile2 implements Serializable{
      */
     public void writeLines(ArrayList<FileInfo2> fileInfoList,
             final String tagId, final String tagValue, Boolean overwrite){
-        System.err.println("SP434 - Writing in " + file.getName());
+        System.out.println("SP434 - Writing in " + file.getName());
         // first we need to sort theses values according to line position    
         Map<FileInfo2, Integer> originalList = new HashMap();
         for(FileInfo2 fileInfo : fileInfoList){
