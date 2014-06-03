@@ -13,11 +13,10 @@
 
 package basic;
 
+import GUI.SearchType;
 import definitions.Messages;
 import definitions.definition;
 import definitions.is;
-import spdxlib.FileInfo2;
-import spdxlib.SPDXfile2;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -25,6 +24,8 @@ import main.controller;
 import main.core;
 import script.Plugin;
 import script.log;
+import spdxlib.FileInfo2;
+import spdxlib.SPDXfile2;
 import ssdeep.SpamSumSignature;
 import ssdeep.ssdeep;
 import utils.html;
@@ -49,7 +50,7 @@ public class pluginSearch extends Plugin{
     @Override
     public void startup(){
         
-        log.hooks.addAction(Messages.SearchBoxPressedENTER,
+        log.hooks.addAction(SearchType.Files.getHook(),
                thisFile, "doKeyPress");
 
         log.hooks.addAction(Messages.SearchBoxPressedKey,

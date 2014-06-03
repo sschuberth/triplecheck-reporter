@@ -65,9 +65,9 @@ public class StudioUI4 extends javax.swing.JFrame {
     // what was the last product that was marked as selected?
 //    public SPDXfile productSelected = null;
     
-    private final String searchTextDefault = "Search..";
+    private final SearchType searchTextDefault = SearchType.Files;
     // we can permit our search box to do different actions
-    public String searchProvider = Messages.SearchBoxPressedENTER;
+    private SearchType searchProvider = SearchType.Files;
     
     // where we store a track of the previous page
     private Page 
@@ -502,7 +502,7 @@ public class StudioUI4 extends javax.swing.JFrame {
         doSearchMouseClicked();
         // reset back to the default value when empty
         if(search.getText().isEmpty()){
-            search.setText(searchTextDefault);
+            search.setText(searchTextDefault.getSearchBoxText());
         }
         core.searchBoxActive = false;
     }//GEN-LAST:event_searchFocusLost
@@ -681,6 +681,7 @@ public class StudioUI4 extends javax.swing.JFrame {
 //            thread.start();
             
             // ensure that the search box is the selected component
+            setSearchProvider(this.searchTextDefault);
             search.requestFocusInWindow();
          
             button.setEnabled(false);
@@ -709,7 +710,7 @@ public class StudioUI4 extends javax.swing.JFrame {
      */
     private void doSearchMouseClicked() {
         String currentTerm = search.getText();
-        if(currentTerm.equals(searchTextDefault)){
+        if(currentTerm.equals(searchProvider.getSearchBoxText())){
             search.setText("");
         }
     }
@@ -724,13 +725,13 @@ public class StudioUI4 extends javax.swing.JFrame {
             search.transferFocus();
             //System.err.println("SU00 - Pressed ESCAPE on search box");
             log.write(is.COMMAND, Messages.SearchBoxPressedESCAPE);
-            search.setText(searchTextDefault);
+            search.setText(searchTextDefault.getSearchBoxText());
             return;
         }
         
         // ENTER means that we are serious about the current search term
         if(evt.getKeyCode() == KeyEvent.VK_ENTER){
-            log.write(is.COMMAND, searchProvider);
+            log.write(is.COMMAND, searchProvider.getHook());
             return;
         } 
 
@@ -746,7 +747,7 @@ public class StudioUI4 extends javax.swing.JFrame {
         
         // there is a bug that allows people to write over the "search" default
         if(search.getText().isEmpty()){
-            search.setText(searchTextDefault);
+            search.setText(searchTextDefault.getSearchBoxText());
             core.key.clear();
             return;
         }
@@ -754,8 +755,8 @@ public class StudioUI4 extends javax.swing.JFrame {
         
         
         // there is a bug that allows people to write over the "search" default
-        if(search.getText().startsWith(searchTextDefault)){
-            String temp = search.getText().replace(searchTextDefault, "");
+        if(search.getText().startsWith(searchTextDefault.getSearchBoxText())){
+            String temp = search.getText().replace(searchTextDefault.getSearchBoxText(), "");
             search.setText(temp);
         }
         
@@ -1009,6 +1010,22 @@ public class StudioUI4 extends javax.swing.JFrame {
         }
         // now execute the addon actions
         log.write(is.INFO, Messages.TreeNodeChanged, node.getUID());
+        
+        // change the search provider if needed
+        switch(node.nodeType){
+            case sectionFile:
+            case none:
+            case root:
+            case sectionCreator:
+            case sectionPackage:
+            case sectionSettings:
+            case sectionReview:
+            case home:
+            case SPDX:
+            case folder:
+            case file: this.setSearchProvider(SearchType.Files);break;
+        
+        }
     }
 
     /**
@@ -1428,14 +1445,23 @@ public class StudioUI4 extends javax.swing.JFrame {
     /**
      * Changes the default search text that is currently placed on the search
      * box
-     * @param text The next text. If empty, shows the default "Search..." text 
+     * @param provider The next text. If empty, shows the default "Search..." text 
      */
-    public void setSearchText(final String text){
-        if(text.isEmpty()){
-            search.setText(searchTextDefault);
+    public void setSearchProvider(final SearchType provider){
+        if(provider == null){
+            search.setText(searchTextDefault.getSearchBoxText());
+            searchProvider = searchTextDefault;
         }else{
-            search.setText(text);
+            search.setText(provider.getSearchBoxText());
+            searchProvider = provider;
         }
     }
+
+    public SearchType getSearchProvider() {
+        return searchProvider;
+    }
+    
+    
+    
     
 }

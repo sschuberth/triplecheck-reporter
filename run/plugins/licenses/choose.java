@@ -13,6 +13,7 @@
 
 package licenses;
 
+import GUI.SearchType;
 import GUI.TreeNodeSPDX;
 import GUI.TreeviewUtils;
 import GUI.swingUtils;
@@ -39,7 +40,7 @@ public class choose extends Plugin{
     
     @Override
     public void startup(){
-        log.hooks.addAction(Messages.SearchBoxLicenseSelect, 
+        log.hooks.addAction(SearchType.License_Choose.getHook(), 
                 thisFile, "doFindLicense");    
     }
 
@@ -107,7 +108,7 @@ public class choose extends Plugin{
         
         // specific to the GUI
         if(request.requestOrigin == RequestOrigin.GUI_tree){
-            core.studio.searchProvider = Messages.SearchBoxLicenseSelect;
+            core.studio.setSearchProvider(SearchType.License_Choose);
             // save in the common space the treeview with selected links
             core.temp.put("TreeviewLicenseSelectedFilesLink", link);
         }
@@ -161,8 +162,7 @@ public class choose extends Plugin{
             // update the selected node
             log.write(is.INFO, Messages.TreeNodeChanged, node.getUID());
             // change back to the default search provider
-            core.studio.searchProvider = Messages.SearchBoxPressedENTER;
-            core.studio.setSearchText("");
+            core.studio.setSearchProvider(SearchType.License_Choose);
             //node.update(false);
         }
     

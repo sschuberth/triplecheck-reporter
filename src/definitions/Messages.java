@@ -47,11 +47,11 @@ public class Messages {
             ClickedOnLibraryComponent = "Clicked at a library component",
             
             // search box related
-            SearchBoxPressedENTER = "Pressed ENTER on search box",
+//            SearchBoxPressedENTER = "Pressed ENTER on search box",
             SearchBoxPressedKey = "Pressed KEY on search box",
             SearchBoxPressedESCAPE = "Pressed ESCAPE on search box",
-            SearchBoxLicenseSelect = "Looking to select a license on the search box",
-            SearchBoxLicenseSearch = "Searching for a specific a license",
+//            SearchBoxLicenseSelect = "Looking to select a license on the search box",
+//            SearchBoxLicenseSearch = "Searching for a specific a license",
             
             NodeSelected = "Node Selected: %1",
             RefreshSPDX = "Refreshed the list of SPDX documents",

@@ -12,6 +12,7 @@
 
 package licenses;
 
+import GUI.SearchType;
 import definitions.Messages;
 import definitions.is;
 import java.io.File;
@@ -36,7 +37,7 @@ public class search extends Plugin{
         // add our node to the tree right after the "Tools" node is added
         log.hooks.addAction(Messages.AddingTools, thisFile, "addNode");
         // get our hook working for the specific license search
-        log.hooks.addAction(Messages.SearchBoxLicenseSearch, 
+        log.hooks.addAction(SearchType.License_Show.getHook(), 
                 thisFile, "doFindLicense");  
     }
     
@@ -56,7 +57,7 @@ public class search extends Plugin{
     public void main(WebRequest request){
         // specific to the GUI
         if(request.requestOrigin == RequestOrigin.GUI_tree){
-            core.studio.searchProvider = Messages.SearchBoxLicenseSearch;
+            core.studio.setSearchProvider(SearchType.License_Show);
         }
         // show up our search page
         File tempFile = new File(thisFolder, "searchLicenses.html");

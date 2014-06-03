@@ -87,7 +87,7 @@ public final class KeyStroke {
                             // has more than one second passed without pressing?
                             if(timeNow > waitingTime){                            
                                 //log.write(is.COMMAND, message);
-                                log.write(is.COMMAND, core.studio.searchProvider);
+                                log.write(is.COMMAND, core.studio.getSearchProvider().getHook());
                                 buffer = "";
                             }
                         }

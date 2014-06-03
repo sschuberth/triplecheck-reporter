@@ -12,6 +12,7 @@
 
 package old;
 
+import GUI.SearchType;
 import definitions.Messages;
 import definitions.is;
 import java.awt.Toolkit;
@@ -300,7 +301,7 @@ public final class LicenseNavigator extends javax.swing.JFrame {
         
         // ENTER means that we are serious about the current search term
         if(evt.getKeyCode() == KeyEvent.VK_ENTER){
-            log.write(is.COMMAND, Messages.SearchBoxPressedENTER);
+            log.write(is.COMMAND, SearchType.Files.getHook());
             return;
         } 
 
