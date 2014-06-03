@@ -1,0 +1,15 @@
+{
+  "id": "default",
+  "title": "The default component",
+  "referenceURL": "http://triplecheck.de",
+  "downloadURL": "http://triplecheck.de/download",
+  "authors": "Nuno Brito",
+  "descriptionOneLine": "A test component",
+  "descriptionLarge": "This test component helps to debug the component functionality",
+  "organization": "TripleCheck",
+  "version": "1.0",
+  "dateCreated": "2014-6-03 11:45:51",
+  "dateLastModified": "2014-6-03 12:05:22",
+  "applicableLicenses": [],
+  "subComponents": []
+}

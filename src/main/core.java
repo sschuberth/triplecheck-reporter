@@ -25,10 +25,7 @@ import java.util.HashMap;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import script.RunningTask;
-import structure.LicenseControl;
-import structure.LicensePopularity;
-import structure.ReportsControl;
-import structure.TriggerControl;
+import structure.*;
 import utils.Settings;
 
 
@@ -80,6 +77,8 @@ public class core {
     public static LicensePopularity
             popularity = new LicensePopularity();
    
+    public static ComponentControl components = new ComponentControl();
+    
     public static ArrayList<RunningTask> 
             runningTasks = new ArrayList();
     
@@ -168,6 +167,10 @@ public class core {
     
     public static File getLibraryFolder(){
         return new File(getWorkFolder(), "library");
+    }
+    
+    public static File getComponentFolder(){
+        return new File(getWorkFolder(), "components");
     }
     
     public static File getProductsFolder(){

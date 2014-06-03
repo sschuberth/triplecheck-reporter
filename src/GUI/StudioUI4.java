@@ -570,33 +570,22 @@ public class StudioUI4 extends javax.swing.JFrame {
         if(nodeList.isEmpty()){
             return;
         }
-//        TreeNodeSPDX node = nodeList.get(0);
-        
-        // we only care about SPDX files and folders here
-//        if((node.nodeType == NodeType.file)
-//                ||(node.nodeType == NodeType.folder
-//                ||(node.nodeType == NodeType.sectionFile))){
-            // make the main window disabled and show the licensing window
-            log.write(is.INFO, "Opening license dialog");
-//            setEnabled(false);
-//            LicenseNavigator licUI = new LicenseNavigator();
-//            licUI.setVisible(true);
-            File script = new File(core.getPluginsFolder(), "licenses/choose.java");
-            // now do the parameters
-            ArrayList<String[]> parameters = new ArrayList();
-            String nodeUID = "";
-            // do the list of nodes that we would like to change
-            for(TreeNodeSPDX thisNode : nodeList){
-                nodeUID += thisNode.getUID() + ";";
-            }
-            // add them up as parameter to our request
-            String[] param = new String[]{nodeUID};
-            parameters.add(param);
-            // fire up the request
-            TreeviewUtils.doRequest(script, "selectLicense", parameters);
-//        }
+
+        log.write(is.INFO, "Opening license dialog");
+        File script = new File(core.getPluginsFolder(), "licenses/choose.java");
+        // now do the parameters
+        ArrayList<String[]> parameters = new ArrayList();
+        String nodeUID = "";
+        // do the list of nodes that we would like to change
+        for(TreeNodeSPDX thisNode : nodeList){
+            nodeUID += thisNode.getUID() + ";";
+        }
+        // add them up as parameter to our request
+        String[] param = new String[]{nodeUID};
+        parameters.add(param);
+        // fire up the request
+        TreeviewUtils.doRequest(script, "selectLicense", parameters);
     }
-    // all done
     
     
     /**
