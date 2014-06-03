@@ -21,6 +21,7 @@ PackageName: adblockplusandroid-2014-06-01
 ##-------------------------
 FileName: ./jni/Android.mk
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: b6dc4317e55b58bfd0335c2061d196b9e23cf6c3
 FileChecksum: SHA256: b216565b3df2cb4bbba033f61ce78417d4b377ae0b5a19ddb15ab98343ce7ba5
@@ -30,6 +31,7 @@ FileSize: 1 Kb (1082 bytes)
 
 FileName: ./jni/Utils.h
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: a9ad24c1b904ea68567db961e49c6d2ed11f82af
 FileChecksum: SHA256: ba080f2fa7fa2e7b5b50cd7cb2d201e7ea05bcf398c22412840c3361e52df56a
@@ -42,6 +44,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./jni/JniSubscription.cpp
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: ac5c8e58dcc8bf2dceaacd99b0cf00b5730f11af
 FileChecksum: SHA256: c5b1059018569f55c72269e5a825b6a242c05199d22d6a89e0fff7d3d0987218
@@ -54,6 +57,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./jni/JniUpdaterCallback.cpp
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 767e6a7d5c52233aa6f56fd501867c3764722f6d
 FileChecksum: SHA256: 8b45b212ebf90152d5e2b66701691fd41b94527154612c6069d1c274ac01284b
@@ -66,6 +70,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./jni/JniEventCallback.cpp
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: f4ee623d6ae603c1ac4f3546e2ad299b10e88370
 FileChecksum: SHA256: 04bb077b3961a05c99c06867760ad38facb2fec44939afb8b476d26e6d2f8da2
@@ -78,6 +83,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./jni/v8/libv8_base.a
 FileType: BINARY
+FileLicenseConcluded: BSD-3-Clause-Clear
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: f342e5a32d1d9a6771fbfe5014a5d38b2789b3c7
 FileChecksum: SHA256: fdee3d9c34b949b2ff295ec3ad03183088fa8bc3e6f59e107b0cf502087f46f4
@@ -87,6 +93,7 @@ FileSize: 12 Mb (12721868 bytes)
 
 FileName: ./jni/v8/libv8_snapshot.a
 FileType: BINARY
+FileLicenseConcluded: BSD-3-Clause-Clear
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: 91ee822867a70b2682d608adc921da6aa9762b6e
 FileChecksum: SHA256: 2f1ff263ce98c58359da0ab07f8293f32a9e287fc8c2a72311f5deee99c4d78d
@@ -96,6 +103,7 @@ FileSize: 572 Kb (585868 bytes)
 
 FileName: ./jni/v8/libv8_nosnapshot.a
 FileType: BINARY
+FileLicenseConcluded: BSD-3-Clause-Clear
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: 11cb89402d1930517d1b54db3bce5a629a929c6b
 FileChecksum: SHA256: 34836ec6fa770e33e8fe836830d107091e8dddb07cc682d4b12e524e71a2ce14
@@ -105,6 +113,7 @@ FileSize: 257 Kb (263472 bytes)
 
 FileName: ./jni/v8/libpreparser_lib.a
 FileType: BINARY
+FileLicenseConcluded: BSD-3-Clause-Clear
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: 3eacfd339a82982728626e7554fce83b3098fbc4
 FileChecksum: SHA256: adfcee65e7d9dba13b8d5114a81b1d3d73a2fa6d3eab29f4082b3ff7e63e1a06
@@ -114,6 +123,7 @@ FileSize: 377 Kb (386530 bytes)
 
 FileName: ./jni/v8/v8stdint.h
 FileType: SOURCE
+FileLicenseConcluded: BSD-3-Clause-Clear
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: 621d34cbdf0880c4ad1c8258af246bd06d7decef
 FileChecksum: SHA256: 06b28c4150484e8512a73897bc9992db11d7fd852e1baa990572dc0f0e407074
@@ -126,6 +136,7 @@ FileCopyrightText: <text>Copyright 2012 the V8 project authors. All rights reser
 
 FileName: ./jni/v8/v8.h
 FileType: SOURCE
+FileLicenseConcluded: BSD-3-Clause-Clear
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: dc794e7c8d53a45642ee56b2afa75e3dc5b7bcc8
 FileChecksum: SHA256: d59382aedcdc973584679a5422b33d50756f857fd32e91b671214fc2d33dd3d8
@@ -138,6 +149,7 @@ FileCopyrightText: <text>Copyright 2011 the V8 project authors. All rights reser
 
 FileName: ./jni/JniWebRequest.cpp
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 26ba932b15d5a6385da0f0e10044d7d1cd0b5af2
 FileChecksum: SHA256: a5adf9e136519c4f37b31d0445112d95eeb22ab76b58c9b5402b4b2e734ec1be
@@ -150,6 +162,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./jni/JniFilter.cpp
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 3cd960d029372159bf3485a71e2f7cc34a3a7d42
 FileChecksum: SHA256: 707c0d6d7260d3fab8206fe9d04cdcfa787288078a2e2fdde3ec174d3d3c1ac4
@@ -162,6 +175,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./jni/JniLogSystem.cpp
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 7944d2766784b65c9491577f1677b71321048ba4
 FileChecksum: SHA256: 9b5610af9521c613288c1c69ea511c41bd45256b785674aeb2f7b056cd367cb2
@@ -174,6 +188,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./jni/JniFilterEngine.cpp
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: cdebd12ef7e2913b42a733082ffb9e7194cf2153
 FileChecksum: SHA256: d1abb8ce12c011226f387ce75e9790e8f14a0242396208dff2327b1f69661db4
@@ -186,6 +201,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./jni/Utils.cpp
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: a0e96bb38812a2d06ee514fd5724049fc70b7d5a
 FileChecksum: SHA256: cb7c0c588943f11a944940baf8643efeaa40f1d8f9c6320c81b37f0c6d277c0d
@@ -198,6 +214,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./jni/Application.mk
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 8a88e6dc95089850868fab0c1ad435779313cc00
 FileChecksum: SHA256: 48da2bcd95b8b2b54ed476f88c0748118e042c6f8d664b8ac7c6b3d95729f4fa
@@ -207,6 +224,7 @@ FileSize: 99 bytes
 
 FileName: ./jni/JniFilterChangeCallback.cpp
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 93145c5e266f4a7dd4de0ffc51f0c695db253007
 FileChecksum: SHA256: ac9a1ef7a0c5206319b463fb428a8ddc3b46ebb141cdd23b32bccb42a65917e5
@@ -219,6 +237,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./jni/JniJsEngine.cpp
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: d7cd858ed2e6b5e0a0feb6c0699a36f5e00c438f
 FileChecksum: SHA256: 41d37c0057bf5585b70a59861b0bd8ec8946423824d0ed17fd25fdfaa7a979eb
@@ -231,6 +250,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./jni/JniCallbacks.cpp
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: e1225460df85fa507466ea0bd1d98f135d61d3ac
 FileChecksum: SHA256: 241d991161f28dd2f9a093da24f4d8385a91f845e9f3a1cb66cf0d2296d8c622
@@ -243,6 +263,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./jni/JniJsValue.cpp
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 0bda98f71c478d5a27cf2b4770bcf5be2f8063e3
 FileChecksum: SHA256: 0db5871b3a3de4027deb665086d1543eefc34f278707a1318aec35d9672b37a1
@@ -255,6 +276,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./jni/JniJsValue.h
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 25e919fc002c915b44018e10c3ac1945e01a1e5d
 FileChecksum: SHA256: adfbabe1efbf9b131de8927b08979a820f2fdb0e63359c9cf82b4473c338bbdc
@@ -267,6 +289,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./jni/JniCallbacks.h
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 61f851232bb53825b14f133050e43fbe8d0fe52f
 FileChecksum: SHA256: d820f459ec998f07e632f2127162ec5efdf83491de618470aa39dba8299f8c70
@@ -699,6 +722,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/libadblockplus/FilterChangeCallback.java
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 324ff759938250ee79d1902ea298ba23cb93d2d5
 FileChecksum: SHA256: fd1bade2cd604d0c11d76eb50910809e6b951b60f9fd4dc77347893db774a261
@@ -711,6 +735,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/libadblockplus/FilterEngine.java
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 80699668df406ad38c07d1002fc7411d2b91b2eb
 FileChecksum: SHA256: 9e5d914af7f430ea6a6270fe5b89a2b6ade3252c46b05954f7679e72789d8b73
@@ -723,6 +748,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/libadblockplus/ServerResponse.java
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 3d882f1ded1e85e5d73423458d05b838afd848e9
 FileChecksum: SHA256: 060d83fd1f1ceef82774f97495a57c916b904e01e79abfedc4147826089b2ef5
@@ -735,6 +761,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/libadblockplus/HeaderEntry.java
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: d1bd14fdaa395d463639c0a38be236a0c910e538
 FileChecksum: SHA256: fc90967615b8745d318839558794f1401f2283efb11a31603ba7ccbd1b2ce88d
@@ -747,6 +774,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/libadblockplus/Filter.java
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 128e1af13637cc8bf12ad06af7d59af6ab84294c
 FileChecksum: SHA256: 34351b4f6aad00d7a9b5b552a7edde3656788ce78d09b29bac408a79aff71a66
@@ -759,6 +787,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/libadblockplus/AdblockPlusException.java
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 85b5b862601f0ce14f497cc435a7067de4e47b8c
 FileChecksum: SHA256: 44bf6afe55f8844979d7b2a438fc9a56808c75e2c56dff6780ac12f36d953d26
@@ -771,6 +800,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/libadblockplus/UpdaterCallback.java
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: c0e0350adb4a6457839d54f77089f973d50e51dc
 FileChecksum: SHA256: 8e5cb960e386f15abf0e7531add150f40f04304dabb93bf86e4e90bc623b1717
@@ -783,6 +813,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/libadblockplus/Subscription.java
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 64f309317dfeca8538489de5192918196386be92
 FileChecksum: SHA256: bc0dd0dd60a104dbbe7cc29873fa15600e3a5e67dc1b44cc0f1a705a0afbb6a7
@@ -795,6 +826,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/libadblockplus/Disposer.java
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 0c0e092f3d957f458ffbfb1b6926a2fd100dee9c
 FileChecksum: SHA256: 0f18f8269db48ecf33fe4af7e95d0944a57ae08a29b491337c06f5f5c904c945
@@ -807,6 +839,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/libadblockplus/EventCallback.java
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 158def4550d3a20e0621e11d25597bc0a8142778
 FileChecksum: SHA256: f15dc95b78a8cbc2b24ad5ac8573511f1a6b802dc6b857ba19e38e5fa29b2307
@@ -819,6 +852,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/libadblockplus/LogSystem.java
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 25c41e2c9bf3cd013745f1c6333475ee8636e4af
 FileChecksum: SHA256: 17dec1df12e35c4aa3fcca71ec5093bfe14d513f9f2b0ef2260cf34055df8cef
@@ -831,6 +865,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/libadblockplus/WebRequest.java
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: dce1e6de70519d4766d51b59eef4a8ce58320c3f
 FileChecksum: SHA256: 58ac6cd0acc701f1b7a08ba5e32a76472675afdc186ccd2cfc4b3475cc59093d
@@ -843,6 +878,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/libadblockplus/JniExceptionHandler.java
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 56d0a2c1ee614a9e131d930014c21d3c17388601
 FileChecksum: SHA256: 07cdb4c54117838bfb6a9185a6e0a5ff6028708df0221022d0175f31ccaaadcc
@@ -855,6 +891,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/libadblockplus/JsValue.java
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 30060b22c2ef36c00b93156f27ae0d97b68ffcec
 FileChecksum: SHA256: 63702093307ebb57f1bb3ca8cf9bd523ae74762f5b334aefc3a104f03801b523
@@ -867,6 +904,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/libadblockplus/Disposable.java
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: da96f89027ccf9f25612df0b308a8621864a57f1
 FileChecksum: SHA256: d7a73eef006bd759c2d71ccc21a39f11665db077f32b159a5f1b0e7f564a2230
@@ -879,6 +917,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/libadblockplus/JsEngine.java
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: f285c0481856afb350ad60b6341a71ad89151d5a
 FileChecksum: SHA256: 4457a5347e8d752a0b9f91fc608905742faae2756caf943cc40c5e21b7fa8353
@@ -891,6 +930,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/libadblockplus/AppInfo.java
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 4a2b35adcb3c3e5026ecc3f7fc3bded004509e25
 FileChecksum: SHA256: fa913c3322ff1a75731f03da16c57eb61a8aac2d1b58c709d80e0d5f2e8b727a
@@ -903,6 +943,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/apache/commons/lang/StringEscapeUtils.java
 FileType: SOURCE
+FileLicenseConcluded: Apache-2.0
 FileOrigin: MODIFIED
 FileChecksum: SHA1: 00617958b057d8adef07b66711bb726b0494d0a0
 FileChecksum: SHA256: ae7da1d38b1d028ff5e44e15595aeac9c277c551b5d9b231f223462c95bc5bf5
@@ -914,6 +955,7 @@ LicenseInfoInFile: Apache-2.0
 
 FileName: ./src/org/apache/commons/lang/StringUtils.java
 FileType: SOURCE
+FileLicenseConcluded: Apache-2.0
 FileOrigin: MODIFIED
 FileChecksum: SHA1: d337c94d2260f315e62140529349388100114342
 FileChecksum: SHA256: 21d59aeeded48ec2988f42f4bd2159e4b22969a85fc67c2fbcff881d7391f687
@@ -925,6 +967,7 @@ LicenseInfoInFile: Apache-2.0
 
 FileName: ./src/org/apache/commons/lang/CharUtils.java
 FileType: SOURCE
+FileLicenseConcluded: Apache-2.0
 FileOrigin: MODIFIED
 FileChecksum: SHA1: ae40721e7fac52f1eef26a8131e5fb240291cc29
 FileChecksum: SHA256: 1f75850f1cacbcf922e8b8389fafcc007f3b15aa97b36d92d058d6873e9f0da6
@@ -936,6 +979,7 @@ LicenseInfoInFile: Apache-2.0
 
 FileName: ./src/org/literateprograms/BoyerMoore.java
 FileType: SOURCE
+FileLicenseConcluded: MIT
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: 6a1b2f365c2ed43e18d0f7eb5b63677a2123eb2e
 FileChecksum: SHA256: c74f2dd8a747985f996380c3bc55183817ccec84d406a8bf1da956b91ff60784
@@ -948,6 +992,7 @@ FileCopyrightText: <text>Copyright (c) 2012 the authors listed at the following 
 
 FileName: ./src/sunlabs/brazil/server/Handler.java
 FileType: SOURCE
+FileLicenseConcluded: SPL-1.0
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: 34a4f5ebaf98c2b895cb98bb087262feffb5110b
 FileChecksum: SHA256: 926ff9c469644868814d1c3b3f54c9dcbe5f039f91ee3ebb665129d033615968
@@ -960,6 +1005,7 @@ FileCopyrightText: <text>Copyright (c) 1998-2004 Sun Microsystems, Inc.</text>
 
 FileName: ./src/sunlabs/brazil/server/Server.java
 FileType: SOURCE
+FileLicenseConcluded: SPL-1.0
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: 277b9a45306ee7a5801a7452c3d23afd6921baa9
 FileChecksum: SHA256: 64e81a00a9c8582631141d7bef6a4be4174a2b79c60878bbd43bef82bb15a8a1
@@ -972,6 +1018,7 @@ FileCopyrightText: <text>Copyright (c) 1998-2005 Sun Microsystems, Inc.</text>
 
 FileName: ./src/sunlabs/brazil/server/Connection.java
 FileType: SOURCE
+FileLicenseConcluded: SPL-1.0
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: ff48b9d43f1a33e7696e12a39fb30d64625d08ef
 FileChecksum: SHA256: 02367b8fee5575ffd50cfd20086dae880b0396aaf4aa62023e789349e2f6e500
@@ -984,6 +1031,7 @@ FileCopyrightText: <text>Copyright (c) 1998-2006 Sun Microsystems, Inc.</text>
 
 FileName: ./src/sunlabs/brazil/server/Request.java
 FileType: SOURCE
+FileLicenseConcluded: SPL-1.0
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: 3ba9a6653f9ede764cdb4f57240e01c3adc1c5cd
 FileChecksum: SHA256: 4dfb5738338d33df43c5cf894e39823f2153838c1a982e5e197c7fb40c75cdd9
@@ -996,6 +1044,7 @@ FileCopyrightText: <text>Copyright (c) 1998-2007 Sun Microsystems, Inc.</text>
 
 FileName: ./src/sunlabs/brazil/server/ChainHandler.java
 FileType: SOURCE
+FileLicenseConcluded: SPL-1.0
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: de210b5c8601d38d1521705d4371e42ade1f0185
 FileChecksum: SHA256: ee8641f78f3e4c64dae9ff9299067009a5125d8afd6fc67aefa7246e0c52135c
@@ -1008,6 +1057,7 @@ FileCopyrightText: <text>Copyright (c) 1998-2006 Sun Microsystems, Inc.</text>
 
 FileName: ./src/sunlabs/brazil/properties/PropertiesList.java
 FileType: SOURCE
+FileLicenseConcluded: SPL-1.0
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: 8c29c4598a43f27bacdfcf446a49f740ecb07ac3
 FileChecksum: SHA256: 5f2207a048874bc2205c1eb05e0352141ad99af76964521e03d3e15192246f44
@@ -1020,6 +1070,7 @@ FileCopyrightText: <text>Copyright (c) 2001-2006 Sun Microsystems, Inc.</text>
 
 FileName: ./src/sunlabs/brazil/util/StringMap.java
 FileType: SOURCE
+FileLicenseConcluded: SPL-1.0
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: 9eae5bffc322e6b6f545885c531d049cb3881d1b
 FileChecksum: SHA256: b162d42f233da66feb8d05e56dc8e932b3ebd03336d5ac30826b7f627aab16d7
@@ -1032,6 +1083,7 @@ FileCopyrightText: <text>Copyright (c) 1999-2007 Sun Microsystems, Inc.</text>
 
 FileName: ./src/sunlabs/brazil/util/MatchString.java
 FileType: SOURCE
+FileLicenseConcluded: SPL-1.0
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: 4a5c48a0da113c77e618fc5f51baf9fb084afc6d
 FileChecksum: SHA256: addcb6d40105cad11dc62be425712c08476c9f38d1ef6bb1c914efd712a9275a
@@ -1044,6 +1096,7 @@ FileCopyrightText: <text>Copyright (c) 2001-2006 Sun Microsystems, Inc.</text>
 
 FileName: ./src/sunlabs/brazil/util/Base64.java
 FileType: SOURCE
+FileLicenseConcluded: SPL-1.0
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: 331e0299b16fe31f708f0524288acec63dc71c85
 FileChecksum: SHA256: 9fb4adfc50fd2dce6b38c03cae18ba232cb76b4e6be46c13d95db750eafdeba9
@@ -1056,6 +1109,7 @@ FileCopyrightText: <text>Copyright (c) 2000-2004 Sun Microsystems, Inc.</text>
 
 FileName: ./src/sunlabs/brazil/util/regexp/Regexp.java
 FileType: SOURCE
+FileLicenseConcluded: SPL-1.0
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: db2acc4841e76b3cddddba5e826e5dead03d6586
 FileChecksum: SHA256: c77aef2be80d3fa4083f1244310cfc47f99bb2258fbd9f588a984ff7c5b7a321
@@ -1068,6 +1122,7 @@ FileCopyrightText: <text>Copyright (c) 1999-2004 Sun Microsystems, Inc.</text>
 
 FileName: ./src/sunlabs/brazil/util/regexp/Regsub.java
 FileType: SOURCE
+FileLicenseConcluded: SPL-1.0
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: cd9b0a36c97ec369a20fe34dc9fd0e365b5249be
 FileChecksum: SHA256: 5846d19d1c3847adde2b2e9288c7d0b2b2472a358a39d12572d164f4a8a0121b
@@ -1080,6 +1135,7 @@ FileCopyrightText: <text>Copyright (c) 1999-2004 Sun Microsystems, Inc.</text>
 
 FileName: ./src/sunlabs/brazil/util/Glob.java
 FileType: SOURCE
+FileLicenseConcluded: SPL-1.0
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: 400fa9bd1aa3e5f74aa98c84f90237acf8820136
 FileChecksum: SHA256: 1fb6181711b06ad76b3bae818ae03150974939a7096af2535f368bafe112e2e8
@@ -1092,6 +1148,7 @@ FileCopyrightText: <text>Copyright (c) 1999-2004 Sun Microsystems, Inc.</text>
 
 FileName: ./src/sunlabs/brazil/util/SocketFactory.java
 FileType: SOURCE
+FileLicenseConcluded: SPL-1.0
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: c74400e18c19b8f6b0d571d5d514ed22c59b3f94
 FileChecksum: SHA256: 2c8ad9a744494861c65189f5bd8b9e6d0dbeda2ae3653cfe80542caf1fa20e3d
@@ -1104,6 +1161,7 @@ FileCopyrightText: <text>Copyright (c) 1999-2004 Sun Microsystems, Inc.</text>
 
 FileName: ./src/sunlabs/brazil/util/Format.java
 FileType: SOURCE
+FileLicenseConcluded: SPL-1.0
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: 201f84d811617e9e02c75682cf232863c8c33f9d
 FileChecksum: SHA256: 7c88387a89e0a47098957fe326d2fd7e929fdac7f6b1eca2fc235eda3db50241
@@ -1116,6 +1174,7 @@ FileCopyrightText: <text>Copyright (c) 2000-2006 Sun Microsystems, Inc.</text>
 
 FileName: ./src/sunlabs/brazil/util/http/HttpRequest.java
 FileType: SOURCE
+FileLicenseConcluded: SPL-1.0
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: 5d2b6f601c0a1502cdf9f30916d4367fa53364c1
 FileChecksum: SHA256: 7a26ee7b5e3d1d261037815eeaec6bc3b774c6ca0fe96c0c13478bbd3c18119c
@@ -1128,6 +1187,7 @@ FileCopyrightText: <text>Copyright (c) 1999-2007 Sun Microsystems, Inc.</text>
 
 FileName: ./src/sunlabs/brazil/util/http/HttpSocket.java
 FileType: SOURCE
+FileLicenseConcluded: SPL-1.0
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: 3b7fc7ff0a850666621669fc4f5ed63153e568e1
 FileChecksum: SHA256: dd82e21241f1aebbce7f85f8121c6ae3988d86dcb882279e9feaed6bfc1b51cd
@@ -1140,6 +1200,7 @@ FileCopyrightText: <text>Copyright (c) 1999-2002 Sun Microsystems, Inc.</text>
 
 FileName: ./src/sunlabs/brazil/util/http/HttpUtil.java
 FileType: SOURCE
+FileLicenseConcluded: SPL-1.0
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: c4833fdc9f0a23ff4ec9342c7d4b1d7a93ed0973
 FileChecksum: SHA256: 4984c7be18674390f694c385c4b2134771d9651c83250af320fc6ac4613d7be6
@@ -1152,6 +1213,7 @@ FileCopyrightText: <text>Copyright (c) 1999-2004 Sun Microsystems, Inc.</text>
 
 FileName: ./src/sunlabs/brazil/util/http/HttpSocketPool.java
 FileType: SOURCE
+FileLicenseConcluded: SPL-1.0
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: 31089e0e8cbed023d06eed08f8842d33792623d2
 FileChecksum: SHA256: 9648548d009cf9ee8247c1e68402fef8cacf1b4d4b228eceefa9366d4e15a28d
@@ -1164,6 +1226,7 @@ FileCopyrightText: <text>Copyright (c) 1999-2004 Sun Microsystems, Inc.</text>
 
 FileName: ./src/sunlabs/brazil/util/http/MimeHeaders.java
 FileType: SOURCE
+FileLicenseConcluded: SPL-1.0
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: 83709e631e2abe02bdd12253b1a17b7d482d1623
 FileChecksum: SHA256: 699bb69fb726c206a3ff360d35e8d50f5d5a7a6ed3666526e61cdd6cde2bb1b1
@@ -1176,6 +1239,7 @@ FileCopyrightText: <text>Copyright (c) 1999-2005 Sun Microsystems, Inc.</text>
 
 FileName: ./src/sunlabs/brazil/util/http/HttpInputStream.java
 FileType: SOURCE
+FileLicenseConcluded: SPL-1.0
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: ffe183a098fe71e32b44552261157a921299ebd8
 FileChecksum: SHA256: a7521692599d8a6720514c409b9a4876ac7894a38639b4c97b3afdd1a59c780f
@@ -1188,6 +1252,7 @@ FileCopyrightText: <text>Copyright (c) 1999-2004 Sun Microsystems, Inc.</text>
 
 FileName: ./res/drawable-xhdpi-v11/ic_stat_warning.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 8b67811547b464afb7b53c7ba6491f15b85f69ce
 FileChecksum: SHA256: dc8443d8cbb07ec842ab7d79b189ef00ffd01273c63ec42402e1561a90a5f67f
@@ -1197,6 +1262,7 @@ FileSize: 571 bytes
 
 FileName: ./res/drawable-xhdpi-v11/ic_stat_blocking.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 625b95ea28a689b767382d763becded2d6fed2f2
 FileChecksum: SHA256: d7814ae9ebf6ff3f06ce40cf11d174a51ff54ad28d49e6eed2e52eec6590c9a7
@@ -1206,6 +1272,7 @@ FileSize: 926 bytes
 
 FileName: ./res/drawable-xhdpi-v11/ic_stat_download.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: dba4c8035f7ddfc32de0e434757a79aa98018cd4
 FileChecksum: SHA256: 5e58ff285b6f63f0e5a0731fdebe42784279bada37061daf1c1ef3690627e4d4
@@ -1215,6 +1282,7 @@ FileSize: 380 bytes
 
 FileName: ./res/values-ru/strings.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 43973a80da79e3e718106b576a8dc5c01f509424
 FileChecksum: SHA256: f0b02fc71111a2b8ffac7160c9b03f383c987df5fa7e023615e7aeea06b09b32
@@ -1224,6 +1292,7 @@ FileSize: 8 Kb (9111 bytes)
 
 FileName: ./res/values-ru/arrays.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 8ab779a41bd84ad44f161f0aade073d25eb9e458
 FileChecksum: SHA256: fbdb0488e0bd25602d30eb39ec2c65ca0d09b6db9384adfc8425d358946a67d7
@@ -1233,6 +1302,7 @@ FileSize: 265 bytes
 
 FileName: ./res/raw-nb/proxysettings.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: f28df7e45a70bf49c93723606d579d2e89fe2c68
 FileChecksum: SHA256: 5a9b4a46730491093e5d34500e9f70da5e40a67ff4c6dc12f6c3252f8b73037a
@@ -1243,6 +1313,7 @@ FileLOC: 10
 
 FileName: ./res/raw-nb/info.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 32315c4c38142cec96f34ccdf90f80aa1581c1d3
 FileChecksum: SHA256: f776b5ee77e681e1e095feb4c9dd17130947fc22373c00d66fe5fdab38156e00
@@ -1253,6 +1324,7 @@ FileLOC: 4
 
 FileName: ./res/raw-nb/proxysettings_old.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: dea9d8b3a744898761c2670a024c5951c68111e4
 FileChecksum: SHA256: de2291c2a19afbffe8bf663eb69dd46cfb250e6291c998a24eae7ecfbcdc6cc1
@@ -1263,6 +1335,7 @@ FileLOC: 8
 
 FileName: ./res/raw-nb/legal.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 294f9eb2d8a9025ae4b265b7a2c32b2269bbc35b
 FileChecksum: SHA256: 97baf7cd05dc24fba1083c066071b4289550257a78436a78637646a19e33b2d2
@@ -1275,6 +1348,7 @@ LicenseInfoInFile: GPL-3.0
 
 FileName: ./res/drawable-ldpi-v9/ic_stat_warning.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: f0e815787fde38410f0bbc71d51bd2d417a18470
 FileChecksum: SHA256: 0369338ec32d2fbae6d3f3db4377ce1c80876287184954206c88a4fc6e0289f6
@@ -1284,6 +1358,7 @@ FileSize: 323 bytes
 
 FileName: ./res/drawable-ldpi-v9/ic_stat_blocking.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 560ec21446c44febaf8a70af1d5daedfe077a37e
 FileChecksum: SHA256: 9b05a58a6276aa285a67477c540b9c0b7e9647c01bb8eaeef5861944237c65b4
@@ -1293,6 +1368,7 @@ FileSize: 343 bytes
 
 FileName: ./res/drawable-ldpi-v9/ic_stat_download.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: c824657f8286f602cda4c378644f5c51d8592a68
 FileChecksum: SHA256: 22283995f6852ef75d8b25603c9c200ff24062aa77ebacfbe68e727e01765352
@@ -1302,6 +1378,7 @@ FileSize: 237 bytes
 
 FileName: ./res/values-nb/strings.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 9b1540509507a87cfb30b55398d785d825e787ea
 FileChecksum: SHA256: 6cca38ef2049df86355b1b1634c9f3327ae3e730919563b9e2f117a2bbf47832
@@ -1311,6 +1388,7 @@ FileSize: 6 Kb (6764 bytes)
 
 FileName: ./res/values-nb/arrays.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 3c4a9f22bd4df28747e5ffef492597cb2daecd3e
 FileChecksum: SHA256: ed97f788929393a5fe3537a084468453cacc0d047972ebb043f7dfc9f98b92f6
@@ -1320,6 +1398,7 @@ FileSize: 230 bytes
 
 FileName: ./res/drawable-hdpi-v11/ic_stat_warning.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 3dffac2eec9788ed69b77e4a458e474cf058c841
 FileChecksum: SHA256: e832970b551fedd26b78fca0bf65d28f1d489ab5ad45b7ab552b69bdbacddbd3
@@ -1329,6 +1408,7 @@ FileSize: 435 bytes
 
 FileName: ./res/drawable-hdpi-v11/ic_stat_blocking.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 82a58af12bbdfc6ef4cd7471cb77734fe19a41b4
 FileChecksum: SHA256: 0f667f46abf456a5e2f265f250ca8ae98df64e42cb6dc534dba83b7190539b32
@@ -1338,6 +1418,7 @@ FileSize: 627 bytes
 
 FileName: ./res/drawable-hdpi-v11/ic_stat_download.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 7114a05b6f2c3bf1761d672a1e4b72822647f34d
 FileChecksum: SHA256: 765bc48130d4075e05223ca1b9ee05804f11987235e6e52ef2c931dc128ecda2
@@ -1347,6 +1428,7 @@ FileSize: 298 bytes
 
 FileName: ./res/raw-es/proxysettings.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 91425d6323f1c802120f02cdc24b852a4a58b4fd
 FileChecksum: SHA256: 6ba6f2da3e3ce7ae841dd144f513dec15cd3d9a31406270045ca39a9a0035ea5
@@ -1357,6 +1439,7 @@ FileLOC: 10
 
 FileName: ./res/raw-es/info.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: ea740746b301f6199016ff7029f349bcae4264ed
 FileChecksum: SHA256: 1f87e0a75c71d96592250ceb070245e0cf0e4da9892c8f55841772564d7dbc72
@@ -1367,6 +1450,7 @@ FileLOC: 4
 
 FileName: ./res/raw-es/proxysettings_old.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 00034cdc35618f16e3ff8e8f18713d42f4d2b910
 FileChecksum: SHA256: 3435d68a92f4fe5ad716c194affe5915566860874674f27f339045ea2386f0e9
@@ -1377,6 +1461,7 @@ FileLOC: 10
 
 FileName: ./res/raw-es/legal.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: bdf8726de79636deac642c67bbbc577727d0d94b
 FileChecksum: SHA256: 5a313a9ddb5d02e7de41ced25e891e1fd75a496ccee9166b7c2ba1fb39e3bef6
@@ -1389,6 +1474,7 @@ LicenseInfoInFile: GPL-3.0
 
 FileName: ./res/values-uk/strings.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 8584ff808b599f7aab68db65ae8bf0674c9a684e
 FileChecksum: SHA256: 67798dfe2d7a75150e8fb4b29527a280c0885ea774692e59e11340632ccde5b1
@@ -1398,6 +1484,7 @@ FileSize: 9 Kb (9456 bytes)
 
 FileName: ./res/values-uk/arrays.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 8f014b3fa6fcfee12379b267e543138e78ce01f2
 FileChecksum: SHA256: 64c8c35692b442763971af5e9e13ef83e0d4a91a006a67b67b52e21794bf9715
@@ -1407,6 +1494,7 @@ FileSize: 259 bytes
 
 FileName: ./res/drawable/transparent.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: fb0637ade1dcaba0537e339975a427f1b2e64491
 FileChecksum: SHA256: 7436765923159089702ead554ce1f403b8893e8535dc258191c554f82018ffff
@@ -1416,6 +1504,7 @@ FileSize: 122 bytes
 
 FileName: ./res/raw-cs/proxysettings.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: dab0c320a4b5fdb3254edb23cb57d3e21ca719fc
 FileChecksum: SHA256: 889fd7346365c8768b8ad71b9d7da31fdc9beba395f4cc08ba4d362674f15dd9
@@ -1426,6 +1515,7 @@ FileLOC: 5
 
 FileName: ./res/raw-cs/info.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 0b31bc1324104fddc1f1dc93da5bbd61760239ea
 FileChecksum: SHA256: f4199775b110b9a0e1f5677e5a1e4b0995d0643ce67e5b388651066287eb9f2e
@@ -1436,6 +1526,7 @@ FileLOC: 4
 
 FileName: ./res/raw-cs/proxysettings_old.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 0d1395ae97d139a7bf36aeed37897305a74fce74
 FileChecksum: SHA256: b1502b697379f3c212201febbd7adefb7e0cb75888cdfa3eccf49e9e767cf855
@@ -1446,6 +1537,7 @@ FileLOC: 8
 
 FileName: ./res/raw-cs/legal.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: df3688917c76f2f20b3aa790197e6ef743415bdf
 FileChecksum: SHA256: 897cc39a3b349f34966b3e598ed333694f04d8b42f7b94ecbd6ac29dbe58efc5
@@ -1457,6 +1549,7 @@ LicenseInfoInFile: Apache-2.0
 
 FileName: ./res/drawable-mdpi-v11/ic_stat_warning.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 5b7922aae6dc34aecbffa4971eae0e79f1e4282d
 FileChecksum: SHA256: 0ef43ad376b2c7b15649328c0384d004d2a6f499750057498bfb5c84fa2c11cd
@@ -1466,6 +1559,7 @@ FileSize: 320 bytes
 
 FileName: ./res/drawable-mdpi-v11/ic_stat_blocking.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: ee821c0cb99e0e3dccbd179d51382acdb3a18b26
 FileChecksum: SHA256: 83b6e952f0be891f06e7a76a12489ae73c1e141d406b8199aa5f21527d2692db
@@ -1475,6 +1569,7 @@ FileSize: 369 bytes
 
 FileName: ./res/drawable-mdpi-v11/ic_stat_download.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 2943df3fe0c49383628eb1abd841cd802550bb31
 FileChecksum: SHA256: c3c138698513839344fe64d12271a4b2c38ab1beb5929a43a5b10e152ac2f0f6
@@ -1484,6 +1579,7 @@ FileSize: 235 bytes
 
 FileName: ./res/values-ar/strings.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 65c2fd7e721e584b6c1ce889b6b813a569896d8b
 FileChecksum: SHA256: 98623d264caa65eda71778e184be33cdba98eb009f6012f7b1be40c07fd14359
@@ -1493,6 +1589,7 @@ FileSize: 8 Kb (8295 bytes)
 
 FileName: ./res/values-ar/arrays.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 5631c2ca3295548cdfde936919eb78149cf52375
 FileChecksum: SHA256: 01d16f34eeacebd2e04b2299a8a0824f0ed343ece92955082dc5618d6b4844ad
@@ -1502,6 +1599,7 @@ FileSize: 254 bytes
 
 FileName: ./res/raw-fr/proxysettings.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: f8742fef9d6d1c72cacb11b6d30ed1391fbdbcb6
 FileChecksum: SHA256: 6d3dba9c19a13065d6f6af26fdf5d69eaa6260216e871742acb084070c3a8d72
@@ -1512,6 +1610,7 @@ FileLOC: 10
 
 FileName: ./res/raw-fr/info.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 04893d653166ea0e24aaddfa764c825e8203a2e0
 FileChecksum: SHA256: 414adceadd022bc4ae327e89fcc2f3d1fe3cc7614b56e11132475dba22034999
@@ -1522,6 +1621,7 @@ FileLOC: 6
 
 FileName: ./res/raw-fr/proxysettings_old.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 4fba4f52adead9d260334edd8cc06f1cf9ccaa9a
 FileChecksum: SHA256: c25d19af1adfa1999381e63d94529a9449ad317cfdf3d5251e526ef7eaee8cf4
@@ -1532,6 +1632,7 @@ FileLOC: 10
 
 FileName: ./res/raw-fr/legal.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 6f6530757709a1513d2af3d92de2807cdea27556
 FileChecksum: SHA256: 35d2e0d1c39575b6e3259aa027707b7d45b555b3709d47cc45e44157cf779078
@@ -1544,6 +1645,7 @@ LicenseInfoInFile: GPL-3.0
 
 FileName: ./res/raw-sk/proxysettings.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 0bc9bb560e11b8d3ef20a92116046044c814f2ad
 FileChecksum: SHA256: 3245240743d254e41691c4289df4f325efe05a9cf3a7f2814f2f2679dd4d53a3
@@ -1554,6 +1656,7 @@ FileLOC: 5
 
 FileName: ./res/raw-sk/info.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: bf4250870e28d3ef34833f6137875cf5af3c4bde
 FileChecksum: SHA256: 2db7bfa8460915daac3422e40a6754fb74070f0d9ab2f4301077332124d2242d
@@ -1564,6 +1667,7 @@ FileLOC: 4
 
 FileName: ./res/raw-sk/proxysettings_old.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 920b040655871ad90ddd7e19e5b2725b60597cd6
 FileChecksum: SHA256: d984583117679e109d844b212c986d986b6b0c447290aedbb5a93c128eb6695e
@@ -1574,6 +1678,7 @@ FileLOC: 8
 
 FileName: ./res/raw-sk/legal.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 88c44987f233c5eef3e009ddfd614de256276ff9
 FileChecksum: SHA256: 2fcfb184f183a355c6d4dec3cf58728117e59095d7d7f7fae70285a3cbaaf0ef
@@ -1586,6 +1691,7 @@ LicenseInfoInFile: GPL-3.0
 
 FileName: ./res/values-ja/strings.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: c468a2926952dde4330cfad31149dee7f1a4a870
 FileChecksum: SHA256: d2362a3dd732d4402b948aef582e38af6904bb3d2ccb08f70f5eac7c205c70da
@@ -1595,6 +1701,7 @@ FileSize: 7 Kb (7477 bytes)
 
 FileName: ./res/values-ja/arrays.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 51ad88f7ce762b3caa6867c5fc7a67525b64e597
 FileChecksum: SHA256: de789cf434c9bf733571429173d248ecf1774bd9e8e5e49d76e56ad7f2cfbd59
@@ -1604,6 +1711,7 @@ FileSize: 230 bytes
 
 FileName: ./res/raw-it/proxysettings.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: c6a21b83520eec05e21cc9134cba4a31faf6c9f8
 FileChecksum: SHA256: 13f3f1dffff30c9a4059ec00f1a7dac64bc3d5b62dbe24adbdcf700b00ae0290
@@ -1614,6 +1722,7 @@ FileLOC: 5
 
 FileName: ./res/raw-it/info.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 8a37214441b7252f827f94dff8db1299e0607f66
 FileChecksum: SHA256: 976bbd0fe6e94a94a173bc8c94c0238db2edd6ecffe6c2d226f3d1c91de6a9ba
@@ -1624,6 +1733,7 @@ FileLOC: 4
 
 FileName: ./res/raw-it/proxysettings_old.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 2df8a3c7fd654edcb98c69de597883388a667d00
 FileChecksum: SHA256: 35ebc1ad26690e0413014d10562d876dcd4d8bcda09c05c5c85a5e02480971e4
@@ -1634,6 +1744,7 @@ FileLOC: 8
 
 FileName: ./res/raw-it/legal.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 899dcf15206068e5a546340e65d7b6753cc1ca25
 FileChecksum: SHA256: f6bc4a309cd5742ebed6257dc273e83af8b5e9eff2c6ece065b59cffab8a066d
@@ -1646,6 +1757,7 @@ LicenseInfoInFile: GPL-3.0
 
 FileName: ./res/values-it/strings.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 81980cbe3c9d14bde4c39cbd332c2249016dbaf4
 FileChecksum: SHA256: c6aa31b556949a1b9b2cc4fa5b9c77112b8a561b714b76135d88b1623533625f
@@ -1655,6 +1767,7 @@ FileSize: 6 Kb (7119 bytes)
 
 FileName: ./res/values-it/arrays.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 706c107a003beea54e71302bb7039e43b8c18f28
 FileChecksum: SHA256: d657153f3c30f9d4f2202d201abddf5e227007be90a9b0c59f6ea2e2dbb5d87e
@@ -1664,6 +1777,7 @@ FileSize: 241 bytes
 
 FileName: ./res/xml/preferences.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 3f5bf6211020956c2b7055d01718b65b7f8ec99c
 FileChecksum: SHA256: 289a098425dfe8837f0bc213f2173488c5b0b1cae049565409455c9b54a1cf02
@@ -1673,6 +1787,7 @@ FileSize: 1 Kb (1218 bytes)
 
 FileName: ./res/xml/preferences_advanced.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 0dd18f71101fd348b633b1ebe430ade149e60707
 FileChecksum: SHA256: b0d7024d4ce5dac6e41bd07c1befac72df52e1057fe2a2e3f15c5412245f4c09
@@ -1682,6 +1797,7 @@ FileSize: 3 Kb (3449 bytes)
 
 FileName: ./res/drawable-xhdpi/ic_menu_refresh.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 17f7de649b19a39f52f95a249efb202054518fd5
 FileChecksum: SHA256: f1b36670d7a93e7dc7e86f7d55eeb7a79948154f0ad1e4aebfaceb4c4e3cc894
@@ -1691,6 +1807,7 @@ FileSize: 2 Kb (2857 bytes)
 
 FileName: ./res/drawable-xhdpi/ic_stat_warning.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 7424a115bedd035fca0d225037f43a04ad842e2c
 FileChecksum: SHA256: 49aac8684fc43b602c7d7a35597506376d9726b2a269a1bc5bb1b5d38e9b6bc6
@@ -1700,6 +1817,7 @@ FileSize: 1 Kb (1511 bytes)
 
 FileName: ./res/drawable-xhdpi/ic_menu_preferences.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: bdc811bce30d7f1b962ab94dc1fbf8da1acd5e1a
 FileChecksum: SHA256: 84c8d787a0a8c035c0a29e049e79d256b60b7420757f5b4ca49042db9c7be764
@@ -1709,6 +1827,7 @@ FileSize: 2 Kb (2507 bytes)
 
 FileName: ./res/drawable-xhdpi/ic_stat_blocking.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 4fdbfb2ededdc4889352bc405c75bf7487e965a3
 FileChecksum: SHA256: 2ddb20741fc6ffc8f294bfdccadbce8ebbfcaeb940d0bcc92312bac4a3b6cf23
@@ -1718,6 +1837,7 @@ FileSize: 2 Kb (2221 bytes)
 
 FileName: ./res/drawable-xhdpi/ic_menu_help.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 3b39b000f5ceb06c405bd8d625afa49f74f60fca
 FileChecksum: SHA256: 717017f4ef09ed0f2feec601a38d5520b02d13c3bf3db3b861f4275f4e9e7fc7
@@ -1727,6 +1847,7 @@ FileSize: 1 Kb (1840 bytes)
 
 FileName: ./res/drawable-xhdpi/ic_launcher.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 78156b16b44484e8380d25195b969e9f0c9f018e
 FileChecksum: SHA256: 9381de0c81ca29cef0356400c4731dea0cbdd49d78eb8353f99a793f98842b03
@@ -1736,6 +1857,7 @@ FileSize: 16 Kb (16829 bytes)
 
 FileName: ./res/drawable-xhdpi/ic_menu_info_details.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 862a5a35432248d213e6f6d34c35df0e53d0c1ae
 FileChecksum: SHA256: 189afaf4fe970c068e4e81f44cd5fa510b733e9290ce0c7bb2d27bba29191160
@@ -1745,6 +1867,7 @@ FileSize: 2 Kb (2763 bytes)
 
 FileName: ./res/drawable-xhdpi/ic_stat_download.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 1cafaf05cc6d606e9e33e892c2f938906a512054
 FileChecksum: SHA256: a529b9de6d7d8ede6ed45b39cb27478bf26fc8327d7109a26a5626c42d191c39
@@ -1754,6 +1877,7 @@ FileSize: 1 Kb (1297 bytes)
 
 FileName: ./res/values-cs/strings.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 2d5c8747e4519b5c2316185313c9af6f71fedd28
 FileChecksum: SHA256: 56358a8f00b54a556186f20c1d4adaadeceebae02c64d71a2b3b0e3c554692ae
@@ -1763,6 +1887,7 @@ FileSize: 6 Kb (7087 bytes)
 
 FileName: ./res/values-cs/arrays.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: edb5c628db57f78d89adb76ae4accc216412f97d
 FileChecksum: SHA256: 21701951ce90b23676258be7cc2487b4e5e03b475651e87723dd306d52022e35
@@ -1772,6 +1897,7 @@ FileSize: 235 bytes
 
 FileName: ./res/raw-he/proxysettings.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 696afe06ce47a0c1aa7a8d965560ce15a42e27c3
 FileChecksum: SHA256: 494388fe0fd9dc16f8bd51c2cf3c1c92116570701696f040af5d25dbfae1daae
@@ -1782,6 +1908,7 @@ FileLOC: 5
 
 FileName: ./res/raw-he/info.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: ea247b9096351a8685a7e26cd0a04be1ed8a42aa
 FileChecksum: SHA256: 9369f7c1c0e3f1f3aa5febd01a015c66b7a7ca64a6b6be3238917f85338c8dc3
@@ -1792,6 +1919,7 @@ FileLOC: 4
 
 FileName: ./res/raw-he/proxysettings_old.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 3a7699e83ae792a2ca619eef27d2087664e2862c
 FileChecksum: SHA256: 5464f39dac371f24e3f76d1370ca70c3ef48de17989a9022eaa17e7a97403e24
@@ -1802,6 +1930,7 @@ FileLOC: 8
 
 FileName: ./res/raw-he/legal.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 9468438ec1946c7cbe9cc0a4c02f597664f2043c
 FileChecksum: SHA256: 1fcc1280a5bc44509ee3d377ba6bda37c6cf56b883478408cce72f285cf75ee7
@@ -1814,6 +1943,7 @@ LicenseInfoInFile: GPL-3.0
 
 FileName: ./res/raw-ko/proxysettings.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: f8742fef9d6d1c72cacb11b6d30ed1391fbdbcb6
 FileChecksum: SHA256: 6d3dba9c19a13065d6f6af26fdf5d69eaa6260216e871742acb084070c3a8d72
@@ -1824,6 +1954,7 @@ FileLOC: 10
 
 FileName: ./res/raw-ko/info.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 04893d653166ea0e24aaddfa764c825e8203a2e0
 FileChecksum: SHA256: 414adceadd022bc4ae327e89fcc2f3d1fe3cc7614b56e11132475dba22034999
@@ -1834,6 +1965,7 @@ FileLOC: 6
 
 FileName: ./res/raw-ko/proxysettings_old.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 4fba4f52adead9d260334edd8cc06f1cf9ccaa9a
 FileChecksum: SHA256: c25d19af1adfa1999381e63d94529a9449ad317cfdf3d5251e526ef7eaee8cf4
@@ -1844,6 +1976,7 @@ FileLOC: 10
 
 FileName: ./res/raw-ko/legal.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 6f6530757709a1513d2af3d92de2807cdea27556
 FileChecksum: SHA256: 35d2e0d1c39575b6e3259aa027707b7d45b555b3709d47cc45e44157cf779078
@@ -1856,6 +1989,7 @@ LicenseInfoInFile: GPL-3.0
 
 FileName: ./res/drawable-mdpi/ic_menu_refresh.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 8a919181214e95955843e28516a22e50bf5475db
 FileChecksum: SHA256: 2e65a0d26b9690ac6a603de42ac99b8c3c6ca66207e33aa1ba2a4ab578119942
@@ -1865,6 +1999,7 @@ FileSize: 1 Kb (1278 bytes)
 
 FileName: ./res/drawable-mdpi/ic_stat_warning.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: abf45ace0e2eb0753307130a9d88be761f60dab4
 FileChecksum: SHA256: 1cd3b0278afc3d834b7a4580270e481cc41375fc00541b71676a95721bd7d9ba
@@ -1874,6 +2009,7 @@ FileSize: 705 bytes
 
 FileName: ./res/drawable-mdpi/ic_menu_preferences.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 7f9f3fe2e52efbe8d9a86e14befc7d60d00ba792
 FileChecksum: SHA256: 8717c24c84b3c94bab5f2f1d02fb1e316f5ea355a9fe8b61e4198184cd25f23c
@@ -1883,6 +2019,7 @@ FileSize: 1 Kb (1142 bytes)
 
 FileName: ./res/drawable-mdpi/ic_stat_blocking.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: e708b6edb422cc952787f84868ec5290d6c8e2a1
 FileChecksum: SHA256: 5b6be27b140c9764430c8355419fe4ce9798fcb47b61037edd28a901f20ee85e
@@ -1892,6 +2029,7 @@ FileSize: 786 bytes
 
 FileName: ./res/drawable-mdpi/ic_menu_help.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: e82f8c60aab77561e4a0a542ada5f057db33d5e2
 FileChecksum: SHA256: c901af5b800d687784b4074d6f45abcc9c54d294656f7ccad67512fc88ee0124
@@ -1901,6 +2039,7 @@ FileSize: 951 bytes
 
 FileName: ./res/drawable-mdpi/ic_launcher.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 42584b23e8ea6ea8e152e842e5fca7d7695d24e4
 FileChecksum: SHA256: e5148c7b749db854689c2e30c2c78179dd50bcc2f9593082b05ae771f271a93f
@@ -1910,6 +2049,7 @@ FileSize: 3 Kb (3387 bytes)
 
 FileName: ./res/drawable-mdpi/ic_menu_info_details.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 59aa927d4ba6b7a448165f2c13876cbd3ded0e2b
 FileChecksum: SHA256: a22b4832509ba168526cee239b7d502ad5c3ee5a82a21a32c69365955d30be2d
@@ -1919,6 +2059,7 @@ FileSize: 1 Kb (1237 bytes)
 
 FileName: ./res/drawable-mdpi/ic_stat_download.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 0e71ef393e5339dca21c8fb06d6362202d2673df
 FileChecksum: SHA256: 3e4b84877b0ba9248ecebf1ef869b8c0e8d6db7d9539898164aaaf1eda991c10
@@ -1928,6 +2069,7 @@ FileSize: 582 bytes
 
 FileName: ./res/values-hr/strings.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 160f13afa585077c18a75990bc519b1495a314e8
 FileChecksum: SHA256: 8ac01ff8dac2b37febb9c3ecdc54f475ba81129e765841d49f9adb86757d75ae
@@ -1937,6 +2079,7 @@ FileSize: 6 Kb (6941 bytes)
 
 FileName: ./res/values-hr/arrays.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: e702e57c5e01a86437ceca319a7f16e4cafd0e7c
 FileChecksum: SHA256: 3fcd0bb8ccb3d1b1c5ebf46f91d3cdd2efa38c56090ccc77631462ec24043ea4
@@ -1946,6 +2089,7 @@ FileSize: 235 bytes
 
 FileName: ./res/values-de/strings.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 42f7ec635629c5422de6b1d6d305568b2c6a3545
 FileChecksum: SHA256: 1ce12fb9a07ca3233f89ea7d42736e5476a7579b851d0cecbc9159f4ba41ca49
@@ -1955,6 +2099,7 @@ FileSize: 7 Kb (7262 bytes)
 
 FileName: ./res/values-de/arrays.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 2ae58b2fe89e53d4f68ad6753e3e585bcc7eaf2f
 FileChecksum: SHA256: 37b0650186e05447eb4501acca3f3ec7a254a36ee25617029332b05a4d6129ac
@@ -1964,6 +2109,7 @@ FileSize: 251 bytes
 
 FileName: ./res/values-es/strings.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 6158410ff935b5895fe4f8db67a041fa26ec8fa1
 FileChecksum: SHA256: 398b039ddf9765406384dcb55052f370892168842d596a84ec4334a2ad81f7cf
@@ -1973,6 +2119,7 @@ FileSize: 7 Kb (7427 bytes)
 
 FileName: ./res/values-es/arrays.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 079c3b65536a9f3b464a5da405fcb64ed47ad38f
 FileChecksum: SHA256: 4ddd75f9a7ec62bc6a652d4b05e10f4060c8fc60430152076cc11d60342aa2fc
@@ -1982,6 +2129,7 @@ FileSize: 242 bytes
 
 FileName: ./res/values-hu/strings.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: dcaa72c175d62daed8f5a7b809fe2489481a2b78
 FileChecksum: SHA256: 7accb972e5c4ef59a01c673b77953e847a8d239b3e014c27467bf266c502025f
@@ -1991,6 +2139,7 @@ FileSize: 7 Kb (7380 bytes)
 
 FileName: ./res/values-hu/arrays.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 08fa14833fbdeebca9073c4247d05c80f512e13e
 FileChecksum: SHA256: 103fa3a7ebeedec955f6e0310b16239be93cf85cf593c6b0f06eaf4b4d05f195
@@ -2000,6 +2149,7 @@ FileSize: 238 bytes
 
 FileName: ./res/raw-hr/proxysettings.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 258362dd4f495ff8b79c03f0957e3dc09eb3b7ee
 FileChecksum: SHA256: 949639a5336206a4fa8aa2753639e766a7dfddcb61f53f320a7a2cdaf1d1d971
@@ -2010,6 +2160,7 @@ FileLOC: 5
 
 FileName: ./res/raw-hr/info.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 73c5d23a87b560799dc9666fcaf831732beabf57
 FileChecksum: SHA256: 3a385c35419c29027047e84240f911598863f89d689ea60035c33c02212c5937
@@ -2020,6 +2171,7 @@ FileLOC: 4
 
 FileName: ./res/raw-hr/proxysettings_old.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 2d32d57f13d628e8a9538d5bba726670a5cee166
 FileChecksum: SHA256: 1ec3d4d7d35b5768e0b2d009ae78f821016ffd903aa5f904d78bdf1d1079b34b
@@ -2030,6 +2182,7 @@ FileLOC: 8
 
 FileName: ./res/raw-hr/legal.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 1ed894bf109f122334be252ce7ea8dc8d03610db
 FileChecksum: SHA256: b8786da0d51578935b4cc7cda6fc552fea444c7b07874b15048ed05ad9919981
@@ -2041,6 +2194,7 @@ LicenseInfoInFile: Apache-2.0
 
 FileName: ./res/drawable-hdpi/ic_menu_refresh.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 830e0d9ebe31bb8c08d2eaa9f229e5f5d8f84c3a
 FileChecksum: SHA256: 5cce61b07314ea8c3b0adad1a76bba81b9e4199af2a60ae72dd8fc83484ad685
@@ -2050,6 +2204,7 @@ FileSize: 1 Kb (2025 bytes)
 
 FileName: ./res/drawable-hdpi/ic_stat_warning.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: d6e1ce098736aae9467496915f6fa49b33c435d6
 FileChecksum: SHA256: 97c5d82ecb0b7e32d0f267cae0b33d3476e8c58ce02671cc8c02b335f5f4d2b3
@@ -2059,6 +2214,7 @@ FileSize: 1 Kb (1064 bytes)
 
 FileName: ./res/drawable-hdpi/ic_menu_preferences.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 4ced46eb0b42bca27b062ac9d980e20e9ab96bf0
 FileChecksum: SHA256: 981bde58b2f9d53843434ef0cbc3c52bf39581c25f08af6fa7d11be226dd9382
@@ -2068,6 +2224,7 @@ FileSize: 1 Kb (1851 bytes)
 
 FileName: ./res/drawable-hdpi/ic_stat_blocking.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 380f13d357300aef99f27d1cdb5c2d823196e010
 FileChecksum: SHA256: 03a3bc1282d87c3a810499db7e54b9b80a974faa3205405c98a6963da07e4bc4
@@ -2077,6 +2234,7 @@ FileSize: 1 Kb (1422 bytes)
 
 FileName: ./res/drawable-hdpi/ic_menu_help.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 55b558b2247005704dcf24667e9ada3cd2cf2c34
 FileChecksum: SHA256: bd4f6e99d96eae754beba5bfffa13ce407380761b162cbb4deb83d38d0dc6a23
@@ -2086,6 +2244,7 @@ FileSize: 1 Kb (1391 bytes)
 
 FileName: ./res/drawable-hdpi/ic_launcher.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 2e32108409fbf74c8f03c35fcad21a06195324cd
 FileChecksum: SHA256: 777f1890851866dcb94b3b692e49da69ab9184935a3a62e1289af9784eaaacee
@@ -2095,6 +2254,7 @@ FileSize: 11 Kb (11359 bytes)
 
 FileName: ./res/drawable-hdpi/ic_menu_info_details.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 24a6cc5004f1e5b0833fd595410bd306219412fa
 FileChecksum: SHA256: 063633beb09f9d544b0597fb33bcab13f6750111d7ec46ae2970801e7fbb5731
@@ -2104,6 +2264,7 @@ FileSize: 1 Kb (1983 bytes)
 
 FileName: ./res/drawable-hdpi/ic_stat_download.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 8502be56f71ce5b086ab218055436d4512bbc78a
 FileChecksum: SHA256: a2d1d92f68b3047715c0a71f2f2d603f2a8b504add36a7dcccb0930c4a9b58db
@@ -2113,6 +2274,7 @@ FileSize: 878 bytes
 
 FileName: ./res/values-el/strings.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: a71d2abd68bc975d3aeff77f6410c6bc0918c2d6
 FileChecksum: SHA256: b07dff6c360e5460319bf10a9fe3a3503597535c3dfab54c3c252f8e25f96ea9
@@ -2122,6 +2284,7 @@ FileSize: 9 Kb (10162 bytes)
 
 FileName: ./res/values-el/arrays.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 3391beba2f254592660d473b12938a8259b41e47
 FileChecksum: SHA256: 608b039248370af81201aa9989c435c0a366397311f5790008c8c87a41ba8971
@@ -2131,6 +2294,7 @@ FileSize: 278 bytes
 
 FileName: ./res/values-ko/strings.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 0f16820c2855c143814f203049d73f879969f9cc
 FileChecksum: SHA256: db8144ec8e6c86b6f0bd545d67298ad3a035a11e2c936bb0d6b2ece38612d101
@@ -2140,6 +2304,7 @@ FileSize: 6 Kb (6711 bytes)
 
 FileName: ./res/values-ko/arrays.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 91cde598f3bc0076f476b6943be06f7b3619ed8e
 FileChecksum: SHA256: 6526bd849defc581d1a131288619f80b243a7c9916f80de80feef68de9770a6e
@@ -2149,6 +2314,7 @@ FileSize: 234 bytes
 
 FileName: ./res/drawable-ldpi-v11/ic_stat_warning.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: fbd26a301b7965e43c6da09e88339f5f4701eb5a
 FileChecksum: SHA256: 527abe997a9bed40a62eee0ba59a7e175e89cd5b72e98d10a751d1630bb42e97
@@ -2158,6 +2324,7 @@ FileSize: 259 bytes
 
 FileName: ./res/drawable-ldpi-v11/ic_stat_blocking.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: a53df75eb4a4ea1f8cc0ae642ab8d9aa6a6bfff7
 FileChecksum: SHA256: 2c215a14107290cb9986953fb1e5056cf3f967364ec54c5dd401c0f8fc42b31a
@@ -2167,6 +2334,7 @@ FileSize: 278 bytes
 
 FileName: ./res/drawable-ldpi-v11/ic_stat_download.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: bccfbceeecd7b3e5c850597f486ef629f43cfdbe
 FileChecksum: SHA256: 688a208d44e3d766a9088b03d94a9cd59d2f5beac218aafb8273098591f1d3eb
@@ -2176,6 +2344,7 @@ FileSize: 198 bytes
 
 FileName: ./res/values-nl/strings.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 70a0a1c497a4d32831873fbfee17fbca1198c261
 FileChecksum: SHA256: 82205f85b54f901c9aeeefed2f04b02db4db6bddcb40cb74b03b24498173383d
@@ -2185,6 +2354,7 @@ FileSize: 6 Kb (7164 bytes)
 
 FileName: ./res/values-nl/arrays.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: d115d5cc340835fbb41b4ae7441068a9767b64eb
 FileChecksum: SHA256: 9449031c2b01337ee6ba9dcb763ea2625e9da54e4896d3e8a71fd60ab71f8555
@@ -2194,6 +2364,7 @@ FileSize: 233 bytes
 
 FileName: ./res/drawable-xhdpi-v9/ic_stat_warning.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 412d9664679b65d4b4fd5583102d99bfa0fcfc27
 FileChecksum: SHA256: 50735ecb565e51290e7ff0d56f66eac1198987056cc73d8d64b6bc8fab03abe0
@@ -2203,6 +2374,7 @@ FileSize: 728 bytes
 
 FileName: ./res/drawable-xhdpi-v9/ic_stat_blocking.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 57e6bae4642e30fb1789a3335a256d0d5522fcf2
 FileChecksum: SHA256: 10740af0421be080980019b1487198ca02a7e11ac408ab4a48d468f665dd726a
@@ -2212,6 +2384,7 @@ FileSize: 1 Kb (1090 bytes)
 
 FileName: ./res/drawable-xhdpi-v9/ic_stat_download.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 2e026c323cd3e16bbde93ef43336a9d08358e401
 FileChecksum: SHA256: 33c88d879161fcb5ee72a057c5c5468782584421f544ef8f428755faab52289f
@@ -2221,6 +2394,7 @@ FileSize: 398 bytes
 
 FileName: ./res/raw-pt/proxysettings.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 620c310ed2bcaac01c355a508c166e0acdf53515
 FileChecksum: SHA256: 414606db9be4d18949d817c4b1fb2e4ed20dbf051e0e21f74ec5afb6c13fced5
@@ -2231,6 +2405,7 @@ FileLOC: 5
 
 FileName: ./res/raw-pt/info.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 15ccd7befe06bdd7dbd7142ca2b1ae889c4c5cfe
 FileChecksum: SHA256: d43fe3f65b35f6170369a725befedc6cd241136ca72b4105caa7ab90ed90b5f0
@@ -2241,6 +2416,7 @@ FileLOC: 4
 
 FileName: ./res/raw-pt/proxysettings_old.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 6216bbf7a84368186f71d349b80a5c97e7ae119b
 FileChecksum: SHA256: 07f2dc07d705d1a8377f5ab1580490892cdea4deafc2830c45db77b072ba57b7
@@ -2251,6 +2427,7 @@ FileLOC: 8
 
 FileName: ./res/raw-pt/legal.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: a123bd70d5b21cf113be908cc85fb2338b49726d
 FileChecksum: SHA256: 5abdc7c66da24b9a40bab23db0aa5407eb9c9ddc876eda369a3bf32afb189c8a
@@ -2263,6 +2440,7 @@ LicenseInfoInFile: GPL-3.0
 
 FileName: ./res/raw-lt/proxysettings.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: ed0f3de63f6be2dde1fb782f407588380c43f2dc
 FileChecksum: SHA256: 36e529b5f7a4235887dc5ad63d27fde093d042ceab0157fdc7542ec9f3b82d07
@@ -2273,6 +2451,7 @@ FileLOC: 5
 
 FileName: ./res/raw-lt/info.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 3269ed2c92e42d2257c5d1786c26036f69fdc20d
 FileChecksum: SHA256: be879ad68824c283804a27a43070992ac33c759125324bb221bb9567d85544d0
@@ -2283,6 +2462,7 @@ FileLOC: 4
 
 FileName: ./res/raw-lt/proxysettings_old.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: db28b6a3f804967d28cdce418eba98b35a0362f4
 FileChecksum: SHA256: 77891599e79e66a0e4a73661922a2e9a48527acb795c02a1064508ac447f660b
@@ -2293,6 +2473,7 @@ FileLOC: 10
 
 FileName: ./res/raw-lt/legal.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: b76b22f2bcdfbcd99cc25c2cd241c1185b7a70b3
 FileChecksum: SHA256: 25494f494a4b8371c024e3bbe5ac16f5661ab59b2ece153e45ddce76b94af70b
@@ -2304,6 +2485,7 @@ LicenseInfoInFile: Apache-2.0
 
 FileName: ./res/raw-zh-rCN/proxysettings.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: c394e3d7155e238c45f7015d81b5cfe49e565371
 FileChecksum: SHA256: 23f91af4000c8ea6fd9e26deaac88949bbbed3f19a9cb5ad89f2f3796660e833
@@ -2314,6 +2496,7 @@ FileLOC: 5
 
 FileName: ./res/raw-zh-rCN/info.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 77270e8c4b10f91daf7ecee1d6219f92e8002e4b
 FileChecksum: SHA256: b9c3e8373c1ff6f05e61047e64dffafc28fedc3a3e7d5aea3ae6078dc8814553
@@ -2324,6 +2507,7 @@ FileLOC: 4
 
 FileName: ./res/raw-zh-rCN/proxysettings_old.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 5c7c09c44889c095b8d2cc6401d275358d25d787
 FileChecksum: SHA256: ce4453a476d76d32cb8fdd2da55029e4066a2eb9753a3c3a829813b89ff4a6ed
@@ -2334,6 +2518,7 @@ FileLOC: 8
 
 FileName: ./res/raw-zh-rCN/legal.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 8db9087de63d8d2c5e530c32393778f58e5fd84a
 FileChecksum: SHA256: f940ce0768c29c344392fdb7f0c14e86939fa06cd3e55f8a2624ccf8b5cafb37
@@ -2345,6 +2530,7 @@ LicenseInfoInFile: Apache-2.0
 
 FileName: ./res/raw-sr/proxysettings.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 1da305ebfd293b7bb5ac3255d128296d6eee21f6
 FileChecksum: SHA256: 825398bc6c0c82707ea79d5dfc2311522c55f2bc8cfc31cf5bc4b0c0ea8bff58
@@ -2355,6 +2541,7 @@ FileLOC: 5
 
 FileName: ./res/raw-sr/info.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 83dc3aecb897c35a24254d16d15c3c08729d7eaa
 FileChecksum: SHA256: ac858790c472ff4eef35d943692d78ff93314a1cf5c1cff31f741a42b04d224c
@@ -2365,6 +2552,7 @@ FileLOC: 4
 
 FileName: ./res/raw-sr/proxysettings_old.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 18b7c6538d5c4ab1bcfcfc968d9b2d8c59585e91
 FileChecksum: SHA256: 8640502641e66b5315e8a39a6e1e9fa133662386fae0e59c112bda0e883f2310
@@ -2375,6 +2563,7 @@ FileLOC: 8
 
 FileName: ./res/raw-sr/legal.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 071fc6efcb57a43bceb0d6b85e790dfc9addb45b
 FileChecksum: SHA256: 7cf43e0b3fe58ad107f42535498ea1ccb77ae424a89ef6e90d64971559150699
@@ -2386,6 +2575,7 @@ LicenseInfoInFile: Apache-2.0
 
 FileName: ./res/drawable-ldpi/ic_menu_refresh.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 2c0240d177c7978fed9141ce3f7434a46c4c2e5a
 FileChecksum: SHA256: ac81e7bd2ecb7ec212b5cc00a100f98b6432b9b81d72ad379560fb4674676ab1
@@ -2395,6 +2585,7 @@ FileSize: 1 Kb (1695 bytes)
 
 FileName: ./res/drawable-ldpi/ic_stat_warning.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 9d10d11a97766181f2fad5272ba702d5017fa3ca
 FileChecksum: SHA256: f6d6e7f08c1a37719e6d5b369c4721fe900fd340edc6c0b968a7081a83496b87
@@ -2404,6 +2595,7 @@ FileSize: 507 bytes
 
 FileName: ./res/drawable-ldpi/ic_menu_preferences.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: a289ea5cabd59e82451e2303bae82cdd93c089eb
 FileChecksum: SHA256: 10005c15fd490f06267e2b5dade59c659048edd11ef9703bcffde4f0811b86a2
@@ -2413,6 +2605,7 @@ FileSize: 1 Kb (1601 bytes)
 
 FileName: ./res/drawable-ldpi/ic_stat_blocking.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: cce3add18108aad0768fa7e740fb057a24b59971
 FileChecksum: SHA256: 89183b7300409031a5d66f30f5ba110bd3836a9923abd5a7d547f71d7558eb7d
@@ -2422,6 +2615,7 @@ FileSize: 509 bytes
 
 FileName: ./res/drawable-ldpi/ic_menu_help.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 8fef213cdb977aba412cabc3671125e65711b354
 FileChecksum: SHA256: 13bcdb48ad7c7c53847aefa9dc5c2a8525e18f4a68b60a4e8c1cfd626cef6610
@@ -2431,6 +2625,7 @@ FileSize: 1 Kb (1624 bytes)
 
 FileName: ./res/drawable-ldpi/ic_launcher.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: af08ee7acbf46e1c740dcd5f137d2d1938b51ae6
 FileChecksum: SHA256: fb1dd0b5c1b2e181aaf9db9635f9beaf519b03169aacafbc110891ec32e2dc79
@@ -2440,6 +2635,7 @@ FileSize: 5 Kb (5799 bytes)
 
 FileName: ./res/drawable-ldpi/ic_menu_info_details.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: f2bc2563f1fb8fe8ae52c8a12d36c1794b329850
 FileChecksum: SHA256: c7e29ef2f886674e6bc46079fe2e4865b7f114a6aa971cf5a8b369ae553a4408
@@ -2449,6 +2645,7 @@ FileSize: 1 Kb (1499 bytes)
 
 FileName: ./res/drawable-ldpi/ic_stat_download.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 23ee9b27b87ede21db2a458362dd77dad4c268e3
 FileChecksum: SHA256: cd6025871b97dcafb36023e4d798be1ed3c84e387f4e3b7f4371f87e27b7bea3
@@ -2458,6 +2655,7 @@ FileSize: 413 bytes
 
 FileName: ./res/raw-th/proxysettings.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 0e23ee2c2cc113e51b24439f577b5f6377187d84
 FileChecksum: SHA256: ae4c6120aae35c862bcebe519b4d2d008b1597124c4d2afdde3b9774054b39c4
@@ -2468,6 +2666,7 @@ FileLOC: 5
 
 FileName: ./res/raw-th/info.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 6beef86baa3f6a04014baf1e23284b0af1260edd
 FileChecksum: SHA256: 7653311d5656acecfeab52110d030b6c54b38ac769d7f52f1a379fbe3d9dd346
@@ -2478,6 +2677,7 @@ FileLOC: 6
 
 FileName: ./res/raw-th/proxysettings_old.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 4fba4f52adead9d260334edd8cc06f1cf9ccaa9a
 FileChecksum: SHA256: c25d19af1adfa1999381e63d94529a9449ad317cfdf3d5251e526ef7eaee8cf4
@@ -2488,6 +2688,7 @@ FileLOC: 10
 
 FileName: ./res/raw-th/legal.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 728b701b789c15d4f92b7132d782d9acf849e8df
 FileChecksum: SHA256: f7eb96f96370f70907e3c3c475e54fbb01e48965c3f58d470bd45afe0bd45ab8
@@ -2500,6 +2701,7 @@ LicenseInfoInFile: GPL-3.0
 
 FileName: ./res/raw-pl/proxysettings.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 0d3c44bba4219a0dabcd4fc0ef316d1ad2e00b3d
 FileChecksum: SHA256: 6ac24abce97fffc56df56eeab5279e144fb48db178d90cb24a934f749f60d615
@@ -2510,6 +2712,7 @@ FileLOC: 10
 
 FileName: ./res/raw-pl/info.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 27396e4806533a1b472bf95f347a0ad0d4697d0b
 FileChecksum: SHA256: a262464621cf32742ba0cf705e00292bcbf3a987c81d6bf40062ca292ab5512f
@@ -2520,6 +2723,7 @@ FileLOC: 6
 
 FileName: ./res/raw-pl/proxysettings_old.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 0212c2cbe34be204e722a11d5a44ab7911e889ca
 FileChecksum: SHA256: 72a1f23bc083307c1155e4b5ced7143e1b79be84b9184fbe5e62076488f20678
@@ -2530,6 +2734,7 @@ FileLOC: 9
 
 FileName: ./res/raw-pl/legal.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 15d0631de7b759c3f0c6a6352164eee9fb11c824
 FileChecksum: SHA256: 925db509ca291992e218e90392dacca7b2ebbe0912065f8683d57821769a83c8
@@ -2542,6 +2747,7 @@ LicenseInfoInFile: GPL-3.0
 
 FileName: ./res/raw-ar/proxysettings.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: ab68050159c06377af610fb1524f43c513b5ff2e
 FileChecksum: SHA256: 0ab542ab248e8423e49839e6713d75e51328b199716092e9977e453a9606b64b
@@ -2552,6 +2758,7 @@ FileLOC: 5
 
 FileName: ./res/raw-ar/info.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 086190e24e38ea03ae13b950aaa242a52a929dbe
 FileChecksum: SHA256: 4c10fd991c4a693cb93ea2f197c88b8914ea9760a4780ada0ac81ab1260b9e37
@@ -2562,6 +2769,7 @@ FileLOC: 5
 
 FileName: ./res/raw-ar/proxysettings_old.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: b2eaf65f7c41b21635fce994db93cf253fde6b25
 FileChecksum: SHA256: 2a8f9b9dab7b92389eb67e56462346ba91a07ce43c07b2b2ad1d24996290b75c
@@ -2572,6 +2780,7 @@ FileLOC: 8
 
 FileName: ./res/raw-ar/legal.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 18244c42a3198952c47a8373510bbe39f2653472
 FileChecksum: SHA256: 96e084a8118df15e04e7d6e09cfb07d1045006cb89b68c348241e10c8de867b7
@@ -2583,6 +2792,7 @@ LicenseInfoInFile: Apache-2.0
 
 FileName: ./res/drawable-mdpi-v9/ic_stat_warning.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: b4b227eb2a829324504244332f4e639073697cd4
 FileChecksum: SHA256: 859b9901d84faecc6629cb368ffc792204b7e195e9333709ffd83f7f25d80d9e
@@ -2592,6 +2802,7 @@ FileSize: 400 bytes
 
 FileName: ./res/drawable-mdpi-v9/ic_stat_blocking.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 224172f810313d08654043030971a05df4f46262
 FileChecksum: SHA256: 3467a0d95b930982bbf9c1421970c29c248d745e38b833f9801db1ec09f166b1
@@ -2601,6 +2812,7 @@ FileSize: 482 bytes
 
 FileName: ./res/drawable-mdpi-v9/ic_stat_download.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 78c57d9c8f9a2d4df7c4d762ee498b34d3534dc3
 FileChecksum: SHA256: 7b77da581fc605c99afa34ebfb96d72a8f511b38c9e1d9a470912fb56bd06be4
@@ -2610,6 +2822,7 @@ FileSize: 270 bytes
 
 FileName: ./res/values-tr/strings.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 84daa2be0e83bf489dfb6d12cf022bcb694cf31a
 FileChecksum: SHA256: bec77790d7799abc47edc9f08ba424c2a9a13614d3e9ae90f974eb9bc6975f90
@@ -2619,6 +2832,7 @@ FileSize: 6 Kb (6953 bytes)
 
 FileName: ./res/values-tr/arrays.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 012d1d7f3ca757df86b4af133871552e2b8998cb
 FileChecksum: SHA256: 838139f3a1e0b0896f4ee61ad71b697ad5a87a99738febf45943b7949a539b2d
@@ -2628,6 +2842,7 @@ FileSize: 234 bytes
 
 FileName: ./res/raw/proxysettings.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: f8742fef9d6d1c72cacb11b6d30ed1391fbdbcb6
 FileChecksum: SHA256: 6d3dba9c19a13065d6f6af26fdf5d69eaa6260216e871742acb084070c3a8d72
@@ -2638,6 +2853,7 @@ FileLOC: 10
 
 FileName: ./res/raw/info.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 04893d653166ea0e24aaddfa764c825e8203a2e0
 FileChecksum: SHA256: 414adceadd022bc4ae327e89fcc2f3d1fe3cc7614b56e11132475dba22034999
@@ -2648,6 +2864,7 @@ FileLOC: 6
 
 FileName: ./res/raw/proxysettings_old.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 4fba4f52adead9d260334edd8cc06f1cf9ccaa9a
 FileChecksum: SHA256: c25d19af1adfa1999381e63d94529a9449ad317cfdf3d5251e526ef7eaee8cf4
@@ -2658,6 +2875,7 @@ FileLOC: 10
 
 FileName: ./res/raw/legal.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 6f6530757709a1513d2af3d92de2807cdea27556
 FileChecksum: SHA256: 35d2e0d1c39575b6e3259aa027707b7d45b555b3709d47cc45e44157cf779078
@@ -2670,6 +2888,7 @@ LicenseInfoInFile: GPL-3.0
 
 FileName: ./res/values-th/strings.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 5d1836d800018b184f0ebb6247f00ca5d256e23b
 FileChecksum: SHA256: bacf7fcfb3643ec5e24585d7c6dbeb37c7093ef5ea7f0f98b27df687d6ae1107
@@ -2679,6 +2898,7 @@ FileSize: 8 Kb (9090 bytes)
 
 FileName: ./res/values-th/arrays.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: fd5d238727a6859b63bc1fb3e1afb35819d3ab03
 FileChecksum: SHA256: 35c11b2bb2377cdc34dc95ba58191795177814edb70d8c59b1b2e1c4807f1716
@@ -2688,6 +2908,7 @@ FileSize: 275 bytes
 
 FileName: ./res/raw-de/proxysettings.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 098a3eee87491499cae32daac61d1e46b1d5350c
 FileChecksum: SHA256: e84770cf4efedffe80d46ec18cfdb41936434517a8d15addbecef9c7518bb7ae
@@ -2698,6 +2919,7 @@ FileLOC: 10
 
 FileName: ./res/raw-de/info.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 1075c10ef8010dca8669c0ea01583a4c78be6d56
 FileChecksum: SHA256: 2516794e0a3984d7ea7b8d7813fab3459ff70559c202105dc8c6339f4202b076
@@ -2708,6 +2930,7 @@ FileLOC: 6
 
 FileName: ./res/raw-de/proxysettings_old.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 4097cca51db4d651f41122bbe255d02159678557
 FileChecksum: SHA256: 902feb5dde350d4efb62ccfb6651a36736487b93b77ed2ae36db0b40c16e3cd0
@@ -2718,6 +2941,7 @@ FileLOC: 10
 
 FileName: ./res/raw-de/legal.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: eb721171f52ff582dbd4ed1fbeb50347b620f441
 FileChecksum: SHA256: 24cc4b7b36416750b8bd01b2b2da52fec804ecd0346eec7174986d1bfc5154f5
@@ -2730,6 +2954,7 @@ LicenseInfoInFile: GPL-3.0
 
 FileName: ./res/drawable-hdpi-v9/ic_stat_warning.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 51b4f9a2bd13f67aea9b27558acd26015d3f9e7e
 FileChecksum: SHA256: 342a29bf3b9186afbe93d0e04f7afd0d94c702a0824ae902cede257f4ac34d41
@@ -2739,6 +2964,7 @@ FileSize: 573 bytes
 
 FileName: ./res/drawable-hdpi-v9/ic_stat_blocking.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 7e0df531d8a0e1781b852fb5aa5de70a22d7912b
 FileChecksum: SHA256: a86568c6f91e3a4f0952c921d8276b695371bb2d13f5cbb3d3f46dd23219f67c
@@ -2748,6 +2974,7 @@ FileSize: 766 bytes
 
 FileName: ./res/drawable-hdpi-v9/ic_stat_download.png
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: cf2bd091d64ae8babc1235d122eff31548fc0b06
 FileChecksum: SHA256: f8d704d68c64b2e67ff9dd4927188a3f3f6f15cfb958e831746afc0e127d4d50
@@ -2757,6 +2984,7 @@ FileSize: 355 bytes
 
 FileName: ./res/values-sv/strings.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 9c37229536d706acd52237cb2505b2ae3cb016bd
 FileChecksum: SHA256: 4cc86497b9331cf6de9b66ece997a2828e6658ee4a2e2ad7115f956cf6baef20
@@ -2766,6 +2994,7 @@ FileSize: 6 Kb (7008 bytes)
 
 FileName: ./res/values-sv/arrays.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 3ee6b66f809795802ca6b519f5f2fe8aa4471b39
 FileChecksum: SHA256: d43bbc3eca2366895f2eb1f8fd5e7a500b21684ff7f4506ed76d8eb9ec91408d
@@ -2775,6 +3004,7 @@ FileSize: 233 bytes
 
 FileName: ./res/raw-tr/proxysettings.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 769c28910e4c0a77a1b803e12f564c7675a6f35c
 FileChecksum: SHA256: f022ae203c8c946b011a21be28a8ec9f735c05f987a4017aeed6b0e7b472277f
@@ -2785,6 +3015,7 @@ FileLOC: 5
 
 FileName: ./res/raw-tr/info.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 2dba08d1b31cc7c303d0decd902e2d28be2edbae
 FileChecksum: SHA256: 3ba1d2310f0ac418a687f6422b970d16fa8acb27a0ac331ed2124ac1a2f4d6fd
@@ -2795,6 +3026,7 @@ FileLOC: 4
 
 FileName: ./res/raw-tr/proxysettings_old.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: a03cfafff4155abcf7d6b59226419c96d49aaa47
 FileChecksum: SHA256: fdface0f7dbeb982ba42da7444efbac930b1b8a9c13367f2a2e44d307d58252f
@@ -2805,6 +3037,7 @@ FileLOC: 8
 
 FileName: ./res/raw-tr/legal.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 761941b77e6a65320d2c1d58dbf544b534e677df
 FileChecksum: SHA256: 460d0d71e3a8a882d137c13b3fce3b38573c61a57ffd1f5573b691198a695c7e
@@ -2817,6 +3050,7 @@ LicenseInfoInFile: GPL-3.0
 
 FileName: ./res/raw-uk/proxysettings.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: ba39748d2068b33642f236498aa236d7eb4ff2d6
 FileChecksum: SHA256: ed1ffdfb4c496ceb2caaaea1a28c68cf41de4a8eb6f9fc5e9dbc7dcdacf5f44d
@@ -2827,6 +3061,7 @@ FileLOC: 5
 
 FileName: ./res/raw-uk/info.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 88602060574f7aafbd7558b08f2b68d996a049ae
 FileChecksum: SHA256: 1cdb0092f434eb82d5a99c6060b5fa0cab5aa6cfb02063a891a8cd29aa7e19ca
@@ -2837,6 +3072,7 @@ FileLOC: 4
 
 FileName: ./res/raw-uk/proxysettings_old.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 9ce741858c2985536ba695c7736e102b4170645a
 FileChecksum: SHA256: d7707fa25bc0a9b3fd235cc1adffadd87459070be03f828af307d53eeccdb8e8
@@ -2847,6 +3083,7 @@ FileLOC: 8
 
 FileName: ./res/raw-uk/legal.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 09708a189a969feeee0354eca2e81542ebebfddd
 FileChecksum: SHA256: 16c28d6936e86897c8c3e7174384e860ca65d188b81a6382ea2d5c7aaeb1f946
@@ -2859,6 +3096,7 @@ LicenseInfoInFile: GPL-3.0
 
 FileName: ./res/raw-sv/proxysettings.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: f8742fef9d6d1c72cacb11b6d30ed1391fbdbcb6
 FileChecksum: SHA256: 6d3dba9c19a13065d6f6af26fdf5d69eaa6260216e871742acb084070c3a8d72
@@ -2869,6 +3107,7 @@ FileLOC: 10
 
 FileName: ./res/raw-sv/info.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 04893d653166ea0e24aaddfa764c825e8203a2e0
 FileChecksum: SHA256: 414adceadd022bc4ae327e89fcc2f3d1fe3cc7614b56e11132475dba22034999
@@ -2879,6 +3118,7 @@ FileLOC: 6
 
 FileName: ./res/raw-sv/proxysettings_old.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 4fba4f52adead9d260334edd8cc06f1cf9ccaa9a
 FileChecksum: SHA256: c25d19af1adfa1999381e63d94529a9449ad317cfdf3d5251e526ef7eaee8cf4
@@ -2889,6 +3129,7 @@ FileLOC: 10
 
 FileName: ./res/raw-sv/legal.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 6f6530757709a1513d2af3d92de2807cdea27556
 FileChecksum: SHA256: 35d2e0d1c39575b6e3259aa027707b7d45b555b3709d47cc45e44157cf779078
@@ -2901,6 +3142,7 @@ LicenseInfoInFile: GPL-3.0
 
 FileName: ./res/raw-nl/proxysettings.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: b232126490090f2b61dc66aaea20abae62cf3e04
 FileChecksum: SHA256: 91ab4ec17dfb39d01a88ca00ba255c7e753c9595263e6449c8d8fc4378de8cf1
@@ -2911,6 +3153,7 @@ FileLOC: 5
 
 FileName: ./res/raw-nl/info.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 7456a7fdec3b46bbdd718590249bf20f7a9d1dbd
 FileChecksum: SHA256: 5517507e0fa92a1e8bcd639f51b01ef7f1167e955823566a754ef23cea40b60c
@@ -2921,6 +3164,7 @@ FileLOC: 4
 
 FileName: ./res/raw-nl/proxysettings_old.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 3824cfba84f3cb2ce3de0d209f7ae30e5dd81bc0
 FileChecksum: SHA256: bbf6a2687edca5b7ef7ecf5a709fba37e0c81ffb1cf43ca784a965e84899aabd
@@ -2931,6 +3175,7 @@ FileLOC: 8
 
 FileName: ./res/raw-nl/legal.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 689b7066abd3f660e7a29bdf3c3c1e89fcd4214f
 FileChecksum: SHA256: 7142a56f9597f4e5a0de33e9bf9b63db00eabbcb0376a45431e8a528881ca5f2
@@ -2943,6 +3188,7 @@ LicenseInfoInFile: GPL-3.0
 
 FileName: ./res/values-fr/strings.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 7454f7449aa9842315c6c78889d00d647bdec615
 FileChecksum: SHA256: 76b5d54a261ec0ddd3e55b4e5b9a7884fdad222c730155b406a75dd4a0250aad
@@ -2952,6 +3198,7 @@ FileSize: 6 Kb (6690 bytes)
 
 FileName: ./res/values-fr/arrays.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 91cde598f3bc0076f476b6943be06f7b3619ed8e
 FileChecksum: SHA256: 6526bd849defc581d1a131288619f80b243a7c9916f80de80feef68de9770a6e
@@ -2961,6 +3208,7 @@ FileSize: 234 bytes
 
 FileName: ./res/menu/menu_preferences.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: a17dbbfcc7ada32e2191ef1d51f0c2af8484dab9
 FileChecksum: SHA256: 7dc8028d3b8351e65a2d8db32c6c5cab6cb7c511ff0bbf2f116c10c3cbe12c36
@@ -2970,6 +3218,7 @@ FileSize: 647 bytes
 
 FileName: ./res/values-sr/strings.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: f4c5cb280e59732224334044bae83dc48d9c1391
 FileChecksum: SHA256: d43a74056fa57f388f100f41c6196357372bf61c7a4b6b120d134f54ce1cbe29
@@ -2979,6 +3228,7 @@ FileSize: 8 Kb (9176 bytes)
 
 FileName: ./res/values-sr/arrays.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 91748b5c502433b701dd4107e29db3c612364b1d
 FileChecksum: SHA256: 3d102af9590c16cd261db6e00286d551bb2ef6b2cf2abb690002f61b92ed4a4b
@@ -2988,6 +3238,7 @@ FileSize: 255 bytes
 
 FileName: ./res/values-sk/strings.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 799b4b93e781b631c36b36f6e79f79469d24fd14
 FileChecksum: SHA256: 861ba6dc7d5c90ab728bcd4643388cedfb3c9d2faf74b10c37424eb814bb9ee0
@@ -2997,6 +3248,7 @@ FileSize: 6 Kb (7049 bytes)
 
 FileName: ./res/values-sk/arrays.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: e48781bdf8644c8a8b791ec95f70376ab0c6261c
 FileChecksum: SHA256: d1614a89cb49de7866194e2f2be726e5b78c1cc3018cb64d26e71937251fb676
@@ -3006,6 +3258,7 @@ FileSize: 236 bytes
 
 FileName: ./res/raw-ja/proxysettings.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 4f870fd244a074b788a615daf5a95d60632570a2
 FileChecksum: SHA256: db720d50205f08c812711085ce50d32357564ca9bc7e07fa9553fbb3c915667e
@@ -3016,6 +3269,7 @@ FileLOC: 10
 
 FileName: ./res/raw-ja/info.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 62066f524a3338bd1429d626321e045f1ea94c14
 FileChecksum: SHA256: 4f98d8d76a2df5e6e9078590700f28e6a0480b250be11e17b9905aed93a969c8
@@ -3026,6 +3280,7 @@ FileLOC: 6
 
 FileName: ./res/raw-ja/proxysettings_old.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 96926ed768056f4384f659b1e5dc20ce5e24f6ed
 FileChecksum: SHA256: 1991818b91b77b68a3a1d676b221408a056514385ed67c0f5c39c7a635e5b66d
@@ -3036,6 +3291,7 @@ FileLOC: 8
 
 FileName: ./res/raw-ja/legal.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: d62827a68c6a8eb2de2411bd4db64f402f226267
 FileChecksum: SHA256: 3e65d8771323e48d3ee9d0552a677e1ed0a02cdf721e21f4f82eca9b2d7872b7
@@ -3048,6 +3304,7 @@ LicenseInfoInFile: GPL-3.0
 
 FileName: ./res/values-pt/strings.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: b5c7001d9b7524c2aad8378d787ed08333e7e958
 FileChecksum: SHA256: 6cbc6a513bd4cae7b5f8471d228e5d384b616e1dec4ab1d37af6a04543b817ef
@@ -3057,6 +3314,7 @@ FileSize: 7 Kb (7176 bytes)
 
 FileName: ./res/values-pt/arrays.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 15801ea6fca4cb53c69d95d7ec5b5e616f14abb8
 FileChecksum: SHA256: f017964b4f1b3257200ad0f610251c4f9fb8ad8745b57e7864290eec07f5161a
@@ -3066,6 +3324,7 @@ FileSize: 241 bytes
 
 FileName: ./res/values-pl/strings.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: a0be54f33eb96d4caf269504c1eab15eb341a249
 FileChecksum: SHA256: 8bacec5e8e202e591eda029b6a532ac9f8365957ff655834bea7f4cd3e959b07
@@ -3075,6 +3334,7 @@ FileSize: 7 Kb (7299 bytes)
 
 FileName: ./res/values-pl/arrays.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 1f1b23736dea081b30e93608c936ad69a950e037
 FileChecksum: SHA256: 2e19605a690a92405d7ae0a505ff39223e0e1140c0b16142475541176c60ef80
@@ -3084,6 +3344,7 @@ FileSize: 242 bytes
 
 FileName: ./res/values-he/strings.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 7c6440c39d45241c31c831d6022af2d5d08bf3e0
 FileChecksum: SHA256: 6a9c943331e4a12b5f03621f90c86949d63557231d640f9b1d553f59f2371f45
@@ -3093,6 +3354,7 @@ FileSize: 7 Kb (7855 bytes)
 
 FileName: ./res/values-he/arrays.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 82a380410cb8657218758339c24c8832382e0230
 FileChecksum: SHA256: 18102957354b81a088c2e235cbc0fc599629ef5e7751e76ca0af663d0469cd88
@@ -3102,6 +3364,7 @@ FileSize: 244 bytes
 
 FileName: ./res/values/strings.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: d42acb6d5b60f7e6062c25e5c0d463738dbb12e6
 FileChecksum: SHA256: d864ba8de74f07e0b25cfd6c2f1d494c14fc348cd9c4fcf53a03368cbc5fe328
@@ -3111,6 +3374,7 @@ FileSize: 6 Kb (6767 bytes)
 
 FileName: ./res/values/bools.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 5ac81fa9195c3186a7ccdd7e605312b0286b2a7f
 FileChecksum: SHA256: 6f3c8ee8a72cf14eea2f919d55f6a2d6cd4b20c74331e80c598659e64847394f
@@ -3120,6 +3384,7 @@ FileSize: 291 bytes
 
 FileName: ./res/values/sysarrays.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 72921c4ccc1f4eeff20464f13134a364a69f88c9
 FileChecksum: SHA256: 1714391ea631ade3abbfb4972f80531671f0e94f7d7ef800bb142bc856c902f5
@@ -3129,6 +3394,7 @@ FileSize: 179 bytes
 
 FileName: ./res/values/sysstrings.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: d6cc74798b4a14aa7be9353a0dd2f1e0228035a7
 FileChecksum: SHA256: a6f52d5a0ce8ece5892051ff281bb8b5e3f44eaf3770fe5e08b274045f96415c
@@ -3138,6 +3404,7 @@ FileSize: 1 Kb (1629 bytes)
 
 FileName: ./res/values/styles.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 15e3ed7d4e71a6b99798619ce5097599332b8db2
 FileChecksum: SHA256: d559e94df9d513fd8c4a3fc79cc9edb4ee647e6bb23a2052876e0d0447a275e2
@@ -3147,6 +3414,7 @@ FileSize: 582 bytes
 
 FileName: ./res/values/integers.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 4110fd09cdb0bfcf1e73246b8768d24ae19ae889
 FileChecksum: SHA256: 2601d73598b9813dfbbc14c4b756bf84332d283c26647c424d9f12caf6fb92aa
@@ -3156,6 +3424,7 @@ FileSize: 156 bytes
 
 FileName: ./res/values/arrays.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: e924b53e7c452b812ec6dcaa72acdb0ae24685e7
 FileChecksum: SHA256: 7f724f05f66e5c6a895408c1244060231b4cf27a8cd86b71343c7dcf7339e1c8
@@ -3165,6 +3434,7 @@ FileSize: 208 bytes
 
 FileName: ./res/raw-hu/proxysettings.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 7cb2208db883fafc7e45d19879d4ead8a0edeaf4
 FileChecksum: SHA256: 3969b3ae48614ab05ef7beb32525ae224b9bc2c91b7020519112e1e3fa1074ce
@@ -3175,6 +3445,7 @@ FileLOC: 10
 
 FileName: ./res/raw-hu/info.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 7e65156132cf72f98386f42cffbce75ce8fa4c04
 FileChecksum: SHA256: a95d42f98896e42dd0ecdb7076911892189bc59171ea1b17c282b42ab6aed965
@@ -3185,6 +3456,7 @@ FileLOC: 6
 
 FileName: ./res/raw-hu/proxysettings_old.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: c3c43fa60f23867d2ec5b40cef41ac4dc7ef8ddc
 FileChecksum: SHA256: d2793e9d3435285c1d83feab08cdb6cc8abd3d34843f9579aa31d2b1ec056def
@@ -3195,6 +3467,7 @@ FileLOC: 10
 
 FileName: ./res/raw-hu/legal.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: d51aded116a7d044acc62ff94becfc378453af2b
 FileChecksum: SHA256: d7c75b92f6a90cb854ca0fd7f7b27e5f02d226f8f280e7ff77466102b41c9083
@@ -3207,6 +3480,7 @@ LicenseInfoInFile: GPL-3.0
 
 FileName: ./res/layout/configuration.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 2623a73b7d313dde5eaaeb8551d87c36c48fec28
 FileChecksum: SHA256: 98e092e5eab5104e4684df9845749ba4e1ec27ae3f1b6895038696c9e3987aba
@@ -3216,6 +3490,7 @@ FileSize: 1 Kb (1187 bytes)
 
 FileName: ./res/layout/preferences.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 07607d58e386a05c4231ba66253e0cd59d4aa119
 FileChecksum: SHA256: 96195a31a5739c8e95c84417250788af32a196f81be4a3051472d532f0bdb8aa
@@ -3225,6 +3500,7 @@ FileSize: 1 Kb (1315 bytes)
 
 FileName: ./res/layout/notif_hidden.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 59731d9d2c34311b7b710d6ab32474fdbcea44b8
 FileChecksum: SHA256: 0f65e305ebda0723f12d673250d15c78d9958b83b9db100f37212c31f8f2f39c
@@ -3234,6 +3510,7 @@ FileSize: 275 bytes
 
 FileName: ./res/layout/about.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 9f5a03c36a36fb898116e01434305cf8aaacdd13
 FileChecksum: SHA256: 1449554efe2bee9c7a020a53be53193fd91ecdf334f411820bf1f8f4bff26e18
@@ -3243,6 +3520,7 @@ FileSize: 564 bytes
 
 FileName: ./res/layout/crashreport.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 1b248e1d2fb18759d4a3f8e164ab7e46584168cd
 FileChecksum: SHA256: 09cf9344f62e69c4643ab5a9edb95cca4c421b72619b69c17c76b319fa4fdd9c
@@ -3252,6 +3530,7 @@ FileSize: 1 Kb (1719 bytes)
 
 FileName: ./res/layout/proxyconfiguration.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: cd2cb4aa24e0e68ee0b2671519d9dfcc790ca2fa
 FileChecksum: SHA256: 4d1f20dfd37ef24b0378dca0a7d60da2b242a43bebe1691875d03998a7b8bec2
@@ -3261,6 +3540,7 @@ FileSize: 1 Kb (1247 bytes)
 
 FileName: ./res/raw-el/proxysettings.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: a9e06beb0a0673d952bb5fe34a7959b72d6c34a7
 FileChecksum: SHA256: 00212803c106a7c4959d6ba9718023e24940e9042381bc27783c369f0c105f17
@@ -3271,6 +3551,7 @@ FileLOC: 5
 
 FileName: ./res/raw-el/info.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 0aa04a87c320191a8028837d05a15aa34e9c5a4d
 FileChecksum: SHA256: a69c3f85695df85cc5348260b5c9c988c696c743604acb6afd61697c1a73fe7a
@@ -3281,6 +3562,7 @@ FileLOC: 4
 
 FileName: ./res/raw-el/proxysettings_old.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 173bcadb83460c177edfee702eb7c8be61f385c8
 FileChecksum: SHA256: f10822d2db742ebd0cac3e13a508e96234963c39290b7d58e64f12086ec54674
@@ -3291,6 +3573,7 @@ FileLOC: 8
 
 FileName: ./res/raw-el/legal.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 1e4984dc89fdfebe4cf8e5b377a8a7b1f84ab787
 FileChecksum: SHA256: 6578ee06c6d91c277bffac49d1b7504ae7bc04c3b0b8602876ba3dd4b20c33d3
@@ -3303,6 +3586,7 @@ LicenseInfoInFile: GPL-3.0
 
 FileName: ./res/raw-ru/proxysettings.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 9ea2ddf9364a32defffc1fb90ff37b13aa2e15b0
 FileChecksum: SHA256: 06c3a5ed2a5caa3aa6f3f618cb73e98d543d538f7499f0da1a150a273e6d0c2e
@@ -3313,6 +3597,7 @@ FileLOC: 5
 
 FileName: ./res/raw-ru/info.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 38ad527dc4081ff927df53e594c65698acae237d
 FileChecksum: SHA256: 0727c569dfe9d738354d0a22b69f61be862dcc326e548be7b7abe0c4243b8705
@@ -3323,6 +3608,7 @@ FileLOC: 4
 
 FileName: ./res/raw-ru/proxysettings_old.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 7ac62a289b27f1e4d8b1d15d742cf964babb57b4
 FileChecksum: SHA256: d00f32386f5a0b8fcc90e331e420454700f3768b36cc08cdd9f3f420346c2856
@@ -3333,6 +3619,7 @@ FileLOC: 8
 
 FileName: ./res/raw-ru/legal.html
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 000ee643ac73f30637977d9d7b77c06495f0878b
 FileChecksum: SHA256: 61c7962679aed1e761c85d21e4ed8dfc49df3e7960cdaa7d5a12773360decbbf
@@ -3345,6 +3632,7 @@ LicenseInfoInFile: GPL-3.0
 
 FileName: ./res/values-lt/strings.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 00bf476406fd01c43a18b6333326c21f6b60fce0
 FileChecksum: SHA256: 2f8d496b0fde4078e33299588ae60c208bccd45f282dbb7ef84c12a4a887b2e1
@@ -3354,6 +3642,7 @@ FileSize: 6 Kb (7090 bytes)
 
 FileName: ./res/values-lt/arrays.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 2c6c9f14323a8f3b5b966fba08a9b36c03cb2d22
 FileChecksum: SHA256: 2ba4a6f94ea7160ffd8d7b5e7f3c6ef60a48665dbcb0567c3ecb33bdd2de8401
@@ -3363,6 +3652,7 @@ FileSize: 244 bytes
 
 FileName: ./res/values-zh-rCN/strings.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 409fc5a36d02b3cd64490febebd36066db04dff3
 FileChecksum: SHA256: 30966a6153c88a1b087dc9a7f5058f977192e42cb797fac341bde6a1ca7cba59
@@ -3372,6 +3662,7 @@ FileSize: 5 Kb (5761 bytes)
 
 FileName: ./res/values-zh-rCN/arrays.xml
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 6fd985c2828544d1db3c2cf9bf84e67a8e221a9e
 FileChecksum: SHA256: 414b53f0ea2a4a62f130ff9debab611ae9327e0fce4799bc5ddbf9b1c174768a
@@ -3391,6 +3682,7 @@ FileSize: 3 Kb (3873 bytes)
 
 FileName: ./.externalToolBuilders/Adblock Plus Native Builder.launch
 FileType: OTHER
+FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 6d263aa058b8d11d2d6308c83f4ba9f2a72267a9
 FileChecksum: SHA256: 1b3f00f641ea38489a10a609d4ed8c2ab1c5ce6ee4d428c9487cce78ecfb48ec

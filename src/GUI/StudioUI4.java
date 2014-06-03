@@ -550,17 +550,32 @@ public class StudioUI4 extends javax.swing.JFrame {
      */
     void licenseSelectOpenDialog(){
         // get the selected node
-        ArrayList<TreeNodeSPDX> nodeList = swingUtils.getSelectedNodes(tree);
+        ArrayList<TreeNodeSPDX> selectedNodes = swingUtils.getSelectedNodes(tree);
+        
+        ArrayList<TreeNodeSPDX> nodeList = new ArrayList();
+        // get only the relevant nodes
+        for(TreeNodeSPDX node : selectedNodes){
+              // crawl into folders as needed
+            if((node.nodeType == NodeType.folder)
+                    ||(node.nodeType == NodeType.sectionFile)){
+                TreeviewUtils.getNodes(node, nodeList, NodeType.file);
+            }else
+            // add the files directly
+            if(node.nodeType == NodeType.file){
+                nodeList.add(node);
+            }
+        }
+        
         // just need to open one
         if(nodeList.isEmpty()){
             return;
         }
-        TreeNodeSPDX node = nodeList.get(0);
+//        TreeNodeSPDX node = nodeList.get(0);
         
         // we only care about SPDX files and folders here
-        if((node.nodeType == NodeType.file)
-                ||(node.nodeType == NodeType.folder
-                ||(node.nodeType == NodeType.sectionFile))){
+//        if((node.nodeType == NodeType.file)
+//                ||(node.nodeType == NodeType.folder
+//                ||(node.nodeType == NodeType.sectionFile))){
             // make the main window disabled and show the licensing window
             log.write(is.INFO, "Opening license dialog");
 //            setEnabled(false);
@@ -579,7 +594,7 @@ public class StudioUI4 extends javax.swing.JFrame {
             parameters.add(param);
             // fire up the request
             TreeviewUtils.doRequest(script, "selectLicense", parameters);
-        }
+//        }
     }
     // all done
     
@@ -1261,18 +1276,18 @@ public class StudioUI4 extends javax.swing.JFrame {
         }
     
     
-    /**
-     * Given a set of nodes, update their licenses
-     * @param nodeList  An array with the nodes we want to change
-     */
-    private void licenseUpdateNodes(ArrayList<TreeNodeSPDX> nodeList, 
-        String selectedLicense){
-        System.err.println("SU1263 - License Update nodes: Fix me..");
-        // preflight check
-        if(nodeList == null || nodeList.isEmpty()){
-            System.err.println("SU1296 - Empty array, can't update licenses");
-            return;
-        }
+//    /**
+//     * Given a set of nodes, update their licenses
+//     * @param nodeList  An array with the nodes we want to change
+//     */
+//    private void licenseUpdateNodes(ArrayList<TreeNodeSPDX> nodeList, 
+//        String selectedLicense){
+//        System.err.println("SU1263 - License Update nodes: Fix me..");
+//        // preflight check
+//        if(nodeList == null || nodeList.isEmpty()){
+//            System.err.println("SU1296 - Empty array, can't update licenses");
+//            return;
+//        }
 //        
 //        // create the temp-holder, necessary to grab the first FileInfo
 //        FileInfo2 tempFileInfo = (FileInfo2) nodeList.get(0).getUserObject();
@@ -1305,7 +1320,7 @@ public class StudioUI4 extends javax.swing.JFrame {
 //                    + utils.text.pluralize(nodeList.size(), "file"));
 //            
         // all done
-    }
+//    }
     
    
 //    /**
@@ -1340,7 +1355,7 @@ public class StudioUI4 extends javax.swing.JFrame {
      * Marks a file as original, modified or third-party resource
      */
     private void markFileOriginAs(FileOrigin value) {
-        System.err.println("SU1263 - License Update nodes: Fix me..");
+//        System.err.println("SU1263 - License Update nodes: Fix me..");
 //         // get the selected node
 //        TreeNodeSPDX nodeLastSelected = swingUtils.getSelectedNode();
 //        // preflight check

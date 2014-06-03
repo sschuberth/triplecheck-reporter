@@ -54,6 +54,10 @@ public final class LicenseControl {
     }
 
     
+    /**
+     * Gets the list of licenses available
+     * @return 
+     */
     public ArrayList<License> getList() {
         // only provide back a list after the licensing processing was made
         if(list.isEmpty() && hasNotProcessed){
@@ -61,6 +65,22 @@ public final class LicenseControl {
         }
         return list;
     }
+    
+    /**
+     * Provides a nice summary of the licenses available to end-users
+     * through an HTML formatted text
+     * @return 
+     */
+    public String getListHTML(final String chooseTitle, final String link){
+        String result = "";
+        for(License license : getList()){
+             String thisLink = link + license.getId();
+             result += license.getPrettyText(chooseTitle, thisLink);
+        }
+        return result;
+    }
+    
+    
     
      /**
      * Add up all the extensions that we have available on disk

@@ -95,11 +95,8 @@ public class choose extends Plugin{
         
         result += getRecentlyUsedLicenses(listUID, "Choose", link);
         
-        result += html.h3("Licenses available");
-        for(License license : core.licenses.getList()){
-             String thisLink = link + license.getId();
-             result += license.getPrettyText("Choose", thisLink);
-        }
+        result += html.h3("Licenses available")
+                + core.licenses.getListHTML("Choose", link);
         
          // give a left-side margin on the output
         result = html.div(3)
@@ -154,7 +151,8 @@ public class choose extends Plugin{
         // finish this up by changing the licenses
         core.licenses.changeDeclaredLicense(listUID, license);
         
-        request.setAnswer("All done");
+        request.setAnswer("Applied the " + license.getId() 
+                + " to " + utils.text.pluralize(listUID.length, "file"));
         
         // if we are clicking from a tree view, go back to last selected node
         if(request.requestOrigin == RequestOrigin.GUI_tree 

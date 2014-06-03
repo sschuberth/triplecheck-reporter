@@ -56,7 +56,7 @@ public class show extends Plugin{
        String result = core.popularity.getPopularitySummary(); 
        
        // get the summary
-       result += core.popularity.getAuthorStatsSummary();
+//       result += core.popularity.getAuthorStatsSummary();
        
        // give a left-side margin on the output
        result = html.div()

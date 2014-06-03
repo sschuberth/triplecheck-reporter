@@ -151,7 +151,7 @@ public class FileInfo2 {
         this.fileSize = fileSize;
     }
 
-    public ArrayList<LicenseType> getLicenseInfoInFile() {
+    public final ArrayList<LicenseType> getLicenseInfoInFile() {
         return licenseInfoInFile;
     }
 

@@ -484,7 +484,10 @@ public class SPDXfile2 implements Serializable{
     public int getLicensesDeclaredCount() {
         int counter = 0;
         for(FileInfo2 fileInfo : files){
-            counter += fileInfo.getLicenseInfoInFileCounter();
+            //counter += //fileInfo.getLicenseInfoInFileCounter();
+            if(fileInfo.hasLicenseConcluded() || fileInfo.hasLicenseInfoInFile()){
+                counter++;
+            }
         }
         return counter;
     }

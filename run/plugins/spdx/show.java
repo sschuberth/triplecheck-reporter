@@ -18,8 +18,6 @@ package spdx;
 import GUI.swingUtils;
 import definitions.Messages;
 import definitions.is;
-import spdxlib.FileInfo2;
-import spdxlib.SPDXfile2;
 import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
@@ -27,9 +25,11 @@ import java.text.DecimalFormat;
 import java.util.ArrayList;
 import main.core;
 import main.param;
+import old.tools;
 import script.Plugin;
 import script.log;
-import old.tools;
+import spdxlib.FileInfo2;
+import spdxlib.SPDXfile2;
 import utils.Graphs;
 import utils.html;
 import www.RequestOrigin;
@@ -96,6 +96,7 @@ public class show extends Plugin{
             counterFiles += spdx.getFiles().size();
 //            counterCreators += spdx.creatorSection.people.size();
             counterLicensesDeclared += spdx.getLicensesDeclaredCount();
+                    
         }
         
         String reviewerList = "";
