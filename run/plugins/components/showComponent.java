@@ -12,22 +12,16 @@
 
 package components;
 
-import GUI.SearchType;
-import definitions.Messages;
-import definitions.is;
-import java.io.File;
 import main.core;
 import script.Plugin;
-import script.log;
 import spdxlib.License;
 import structure.Component;
-import www.RequestOrigin;
 import www.WebRequest;
 
 
 /**
  *
- * @author Nuno Brito, 3rd of May 2014 in Darsmtadt, Germany
+ * @author Nuno Brito, 3rd of May 2014 in Darmstadt, Germany
  */
 public class showComponent extends Plugin{
     

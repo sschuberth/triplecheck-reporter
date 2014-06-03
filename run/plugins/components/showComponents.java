@@ -13,13 +13,14 @@
 package components;
 
 import GUI.SearchType;
+import GUI.TreeNodeSPDX;
+import GUI.swingUtils;
 import definitions.Messages;
 import definitions.is;
 import java.io.File;
 import main.core;
 import script.Plugin;
 import script.log;
-import spdxlib.License;
 import utils.html;
 import www.RequestOrigin;
 import www.WebRequest;
@@ -27,7 +28,7 @@ import www.WebRequest;
 
 /**
  *
- * @author Nuno Brito, 3rd of May 2014 in Darsmtadt, Germany
+ * @author Nuno Brito, 3rd of May 2014 in Darmstadt, Germany
  */
 public class showComponents extends Plugin{
      
@@ -46,7 +47,14 @@ public class showComponents extends Plugin{
      * Add our toolbox node to the treeview.
      */
     public void addNode(){
-        addTreeNode(id, "blue-document-node.png", "main");
+        TreeNodeSPDX baseNode = addTreeNode(id, "blue-document-node.png", "main");
+        
+        TreeNodeSPDX nodeCreateComponent = swingUtils.addNode("Create new", 
+                "box--plus.png", baseNode);
+        // set the associated script that we want to run
+        nodeCreateComponent.scriptFile = new File(thisFolder, "createNew.java");
+        nodeCreateComponent.scriptFolder = thisFolder;
+        nodeCreateComponent.scriptMethod = "createNew";
     }
     
      
@@ -88,6 +96,5 @@ public class showComponents extends Plugin{
         String output = "nothing yet to show";//core.components.search(searchTerm , "read", link);
         core.studio.editorPane(is.contentHTML, false, 0, output);
     }
-    
     
 }

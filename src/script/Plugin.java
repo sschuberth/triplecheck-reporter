@@ -71,7 +71,7 @@ public class Plugin {
      * @param iconName Icon from our archive that is used for the node
      * @param methodName The method that is called when the node is clicked
       */
-     protected void addTreeNode(String title, String iconName, 
+     protected TreeNodeSPDX addTreeNode(String title, String iconName, 
              String methodName){
      // get the saved node on our temporary storage
         TreeNodeSPDX nodeRoot = (TreeNodeSPDX) core.temp.get("nodeTree");
@@ -84,6 +84,7 @@ public class Plugin {
         
         // all done
         log.write(is.COMPLETED, "Added tool: %1", title);
+        return thisNode;
      }
  
      

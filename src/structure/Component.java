@@ -17,7 +17,6 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import java.io.File;
 import java.util.ArrayList;
-import java.util.Date;
 import main.core;
 import spdxlib.License;
 import utils.html;
@@ -45,6 +44,61 @@ public class Component {
             
     protected ArrayList<License> applicableLicenses;  // set of applicable licenses
     protected ArrayList<Component> subComponents;  // components included within
+
+    public void setApplicableLicenses(ArrayList<License> applicableLicenses) {
+        this.applicableLicenses = applicableLicenses;
+    }
+
+    public void setAuthors(String authors) {
+        this.authors = authors;
+    }
+
+    public void setDateCreated(String dateCreated) {
+        this.dateCreated = dateCreated;
+    }
+
+    public void setDateLastModified(String dateLastModified) {
+        this.dateLastModified = dateLastModified;
+    }
+
+    public void setDescriptionLarge(String descriptionLarge) {
+        this.descriptionLarge = descriptionLarge;
+    }
+
+    public void setDescriptionOneLine(String descriptionOneLine) {
+        this.descriptionOneLine = descriptionOneLine;
+    }
+
+    public void setDownloadURL(String downloadURL) {
+        this.downloadURL = downloadURL;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public void setOrganization(String organization) {
+        this.organization = organization;
+    }
+
+    public void setReferenceURL(String referenceURL) {
+        this.referenceURL = referenceURL;
+    }
+
+    public void setSubComponents(ArrayList<Component> subComponents) {
+        this.subComponents = subComponents;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setVersion(String version) {
+        this.version = version;
+    }
+    
+    
+    
     
     /**
      * Writes this component to disk
