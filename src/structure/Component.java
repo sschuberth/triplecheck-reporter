@@ -20,6 +20,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import main.core;
 import spdxlib.License;
+import utils.html;
 
 
 /**
@@ -56,6 +57,36 @@ public class Component {
         File file = new File(core.getComponentFolder(), id + ".json");
         // now write it up
         utils.files.SaveStringToFile(file, jsonOutput);
+    }
+
+    /**
+     * Outputs a simple HTML report about this component to the end user
+     * @return  An HTML text
+     */
+    public String getSummaryHTML() {
+        return ""
+                + html.div()
+                + html.h2(title)
+                + descriptionOneLine
+                + html._div
+                ;
+    }
+
+    /**
+     * this method is used on lists where we can pick this component
+     * @param title The title to show on the link
+     * @param link  The base URL where the link points to
+     * @return 
+     */
+    String getOneLineHTML(String title, String link) {
+        return this.title
+                + " "
+                + html.textGrey("("+ id +")")
+                + " "
+                + html.link(title, link + id)
+                + html.br
+                + html.textGrey("<i>" + descriptionOneLine + "</i>")
+                ;
     }
     
 }
