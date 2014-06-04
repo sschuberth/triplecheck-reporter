@@ -255,7 +255,7 @@ public class WebRequest {
     /**
      * Retrieves a specific parameter from this request
      * @param key the title of the parameter
-     * @return A string with the requested parameter or null as reply
+     * @return A string with the requested parameter or null as reply if doesn't exist
      */
     public String getParameter(String key){
         String result = null;

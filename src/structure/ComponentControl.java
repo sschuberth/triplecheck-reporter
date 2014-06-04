@@ -35,7 +35,7 @@ import utils.html;
  */
 public class ComponentControl {
 
-  
+
     enum SearchType {exactId, report, anyText};
     
     int componentCounter = 0;
@@ -73,10 +73,6 @@ public class ComponentControl {
     public Component get(final String id) {
         // try to find a custom component first
         Component result = findId(id, SearchType.exactId, core.getComponentFolder(), 25);
-        // if the result is null, let's try to find details at a database
-        if(result == null){
-          //  findRepositoryId
-        }
         return result;
     }
     
@@ -166,36 +162,38 @@ public class ComponentControl {
      */
     private String getListRepositoriesHTML(final String id, final String title,
             final String link, File where, int maxDeep){
-    // get an array with the files on the current folder
-    File[] files = where.listFiles();
+        // get an array with the files on the current folder
+        File[] files = where.listFiles();
 
-    String output = "";
-    
-    if(files != null)
-        // iterate through each file
-        for (File file : files) {
-            final String name = file.getName();
-//            System.out.println(name);
-            if (file.isFile() && name.endsWith(".jsons")){
-//                output += file.getName() + html.br;
-                // read the contents of this file
-                output += processJsonsLineFind(id, file, title, link);
-//                final String input = utils.files.readAsString(file);
-//                final Component result = gson.fromJson(input, Component.class);
-//                output += result.getOneLineHTML(title, link) + html.br;
-//                componentCounter++;
+        String output = "";
+
+        if(files != null)
+            // iterate through each file
+            for (File file : files) {
+                final String name = file.getName();
+                if (file.isFile() && name.endsWith(".jsons")){
+                    // read the contents of this file
+                    output += processJsonsLineFind(id, file, title, link);
+                }
+                else
+                if ( (file.isDirectory())
+                    &&( maxDeep-1 > 0 ) ){
+                    // do the recursive crawling
+                    output += getListRepositoriesHTML(id, title, link, file, maxDeep-1);
+                }
             }
-            else
-            if ( (file.isDirectory())
-                &&( maxDeep-1 > 0 ) ){
-                // do the recursive crawling
-                output += getListRepositoriesHTML(id, title, link, file, maxDeep-1);
-            }
-        }
-    return output;
-  }   
+        return output;
+    }   
     
-    
+    /**
+     * Gets a specific component from a specific project
+     * @param path
+     * @param param
+     * @return 
+     */
+    public Component getFromRepository(final String path, final String param) {
+        return repositoryFindId(param, new File(core.getComponentFolder(), path));
+    }
     /**
      * Shows an HTML list of all the components that we have available on disk
      * @param title  The title show on the HTML link for further details
@@ -231,6 +229,18 @@ public class ComponentControl {
             long countTime = System.currentTimeMillis();
             // interpret the header line
             String line = reader.readLine();
+            Repository rep = new Repository();
+            rep.read(line);
+            // get the relative path
+//            final String path = file.getAbsolutePath()
+//                    .replace(core.getComponentFolder().getAbsolutePath(), "").replace("\\", "/");
+//            // now define the type of dataset we are using to help with the link
+            final String type = "&type=" + rep.getType()
+//                    + "&path=" + path
+                    + "&license=" + rep.getLicense()
+                    ;
+            
+            //System.out.println("----------->" + path);
             
             // iterate all the lines
             while( (line = reader.readLine()) != null){
@@ -245,7 +255,7 @@ public class ComponentControl {
                                     + result.desc
                                     + ")")
                                 + " "
-                                + html.link(title, link)
+                                + html.link(title, link + result.id + type)
                                 + html.br
                                 ;
                     }
@@ -271,6 +281,38 @@ public class ComponentControl {
         return output;
     }
       
+     /**
+     * Given a file containing a json haystack, try to find a needle
+     * @param searchTerm    the search term
+     * @param file          the file with the set of json records per line
+     * @return 
+     */
+    private Component repositoryFindId(final String id, final File file){
+        // create the gson builder
+        Gson gson = new Gson();
+        System.err.println("CC297 - Retrieving component from " + file.getName());
+        try {
+            BufferedReader reader = new BufferedReader(new FileReader(file));
+            // interpret the header line
+            reader.readLine();
+            String line;
+            // iterate all the lines
+            while( (line = reader.readLine()) != null){
+                // transform into a component
+                final Component result = gson.fromJson(line, Component.class);
+                // do we have a match?
+                if(utils.text.equals(id, result.id)){
+                    return result;
+                }
+            }
+           
+        }catch (Exception e){
+            System.err.println("CC314 - Exception occurred");
+        }
+        return null;
+    }
+    
+    
   /**
    * 
    * @param searchTerm  What we want to find

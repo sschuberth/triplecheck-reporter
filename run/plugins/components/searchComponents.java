@@ -13,17 +13,10 @@
 package components;
 
 import GUI.SearchType;
-import GUI.TreeNodeSPDX;
-import GUI.swingUtils;
-import definitions.Messages;
 import definitions.is;
-import java.io.File;
 import main.core;
 import script.Plugin;
 import script.log;
-import utils.html;
-import www.RequestOrigin;
-import www.WebRequest;
 
 
 /**
