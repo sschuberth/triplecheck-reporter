@@ -33,8 +33,8 @@ public class showComponent extends Plugin{
     public void main(WebRequest request){
        final String param = request.getParameter("name");
        Component component = core.components.get(param);
-        final String result = component.getSummaryHTML();
-        request.setAnswer(result);
+       final String result = component.getSummaryHTML();
+       request.setAnswer(result);
     }
 
   

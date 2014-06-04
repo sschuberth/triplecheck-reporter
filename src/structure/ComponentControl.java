@@ -71,7 +71,13 @@ public class ComponentControl {
      * @param id    The unique identification for the component
      */
     public Component get(final String id) {
-        return findId(id, SearchType.exactId, core.getComponentFolder(), 25);
+        // try to find a custom component first
+        Component result = findId(id, SearchType.exactId, core.getComponentFolder(), 25);
+        // if the result is null, let's try to find details at a database
+        if(result == null){
+          //  findRepositoryId
+        }
+        return result;
     }
     
     /**
@@ -221,11 +227,12 @@ public class ComponentControl {
         System.err.println("CC219 - Processing " + file.getName());
         try {
             BufferedReader reader = new BufferedReader(new FileReader(file));
-            String line;
             int counter = 0;
             long countTime = System.currentTimeMillis();
-            // remove the header line
-            reader.readLine();
+            // interpret the header line
+            String line = reader.readLine();
+            
+            // iterate all the lines
             while( (line = reader.readLine()) != null){
                 final Component result = gson.fromJson(line, Component.class);
 

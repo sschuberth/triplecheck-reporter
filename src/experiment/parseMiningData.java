@@ -19,6 +19,7 @@ import java.util.logging.Logger;
 import main.core;
 import script.log;
 import structure.Component;
+import structure.Repository;
 
 
 /**
@@ -40,8 +41,8 @@ public class parseMiningData {
         parseMiningData parser = new parseMiningData();
         
         // parse the google code repository
-        parser.parseGoogleCode(new File("D:\\triplechecksoftware\\datamining\\gcProjectInfo2012-Nov.txt\\gcProjectInfo2012-Nov.txt"),
-                new File(core.getMiscFolder(), "gc.jsons"));
+        parser.parseGoogleCode(new File("D:\\triplechecksoftware\\datamining\\gc\\gcProjectInfo2012-Nov.txt\\gcProjectInfo2012-Nov.txt"),
+                new File(core.getComponentFolder(), "googlecode/gc.jsons"), "Google code (2012-Nov)");
         
         System.exit(1981);
     }
@@ -50,14 +51,14 @@ public class parseMiningData {
      * Opens up a FLOSSMole archive to extract the required information
      * that we will use on the component list
      */
-    public void parseGoogleCode(File sourceFile, File outputFile){
+    public void parseGoogleCode(File sourceFile, File outputFile, String title){
         try {
           reader = new BufferedReader(new FileReader(sourceFile));
           fileWriter = new FileWriter(outputFile);
             
           // we don't need to interpret the header
           readAndSkipHeader();
-          createHeaderLine(sourceFile);
+          createHeaderLine(sourceFile, title, "gc");
           String line;
             // now iterate through all lines
             while ((line = reader.readLine()) != null) {
@@ -156,15 +157,27 @@ public class parseMiningData {
      * Create the initial line in our data file
      * @param sourceFile 
      */
-    private void createHeaderLine(File sourceFile) throws IOException {
-        String line = "Created in "
-                + utils.time.getDateTimeISO()
-                + " | CC-BY-4.0 license"
-                + " | Copyright (c) 2014 Nuno Brito"
-                + " | Data based on "
-                + sourceFile.getName()
-                + " by FLOSSmole at http://flossmole.org"
-                + is.lineBreak;
+    private void createHeaderLine(File sourceFile, final String title, 
+            final String repType) throws IOException {
+        
+        Repository rep = new Repository();
+        rep.setTitle(title);
+        rep.setCopyright("Copyright (c) 2014 Nuno Brito");
+        rep.setCreated(utils.time.getDateTimeISO());
+        rep.setType(repType);
+        rep.setLicense("CC-BY-4.0 license");
+        rep.setComments("Data provided by FLOSSmole at http://flossmole.org");
+        
+        final String line = rep.getJsonString() + is.lineBreak;
+        
+//        String line = "Created in "
+//                + utils.time.getDateTimeISO()
+//                + " | CC-BY-4.0 license"
+//                + " | Copyright (c) 2014 Nuno Brito"
+//                + " | Data based on "
+//                + sourceFile.getName()
+//                + " by FLOSSmole at http://flossmole.org"
+//                + is.lineBreak;
         fileWriter.append(line);
     }
     
