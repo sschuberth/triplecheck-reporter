@@ -38,6 +38,7 @@ public class FileInfo2 {
     private FileCategory fileCategory;  // our own categories for files
     private FileOrigin fileOrigin = FileOrigin.UNKNOWN;
     private FileExtension fileExtensionObject;
+    private String fileComponent;       // to which component this file belongs?
     
     // in which line of the text file is this file placed?
     private int linePosition;
@@ -147,6 +148,8 @@ public class FileInfo2 {
         return fileSize;
     }
 
+    
+    
     public void setFileSize(final long fileSize) {
         this.fileSize = fileSize;
     }
@@ -197,7 +200,16 @@ public class FileInfo2 {
     public void setFileOrigin(FileOrigin fileOrigin) {
         this.fileOrigin = fileOrigin;
     }
+    
+    public void setFileComponent(String componentName) {
+        this.fileComponent = componentName;
+    }
 
+    public String getFileComponent() {
+        return fileComponent;
+    }
+
+    
     public LicenseType getLicenseConcluded() {
         return licenseConcluded;
     }
@@ -392,6 +404,8 @@ public class FileInfo2 {
     public String getLicenseInfoInFileSummary() {
         return licenseInfoInFileSummary;
     }
+
+    
     
     
 }

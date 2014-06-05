@@ -32,7 +32,17 @@ import www.WebServer;
  */
 public class controller {
  
-    
+     /**
+     * Places a web request on the queue to be processed. This is an important
+     * step to ensure that each web request is handled in the same manner. There
+     * is no more direct contact with the location where the web request is
+     * displayed, there is this controller class that will know and decide when
+     * to present the message.
+     * @param request The object with details about the request
+     */   
+    public static void display(WebRequest request) {
+        display(request, true);
+    }
     
     /**
      * Places a web request on the queue to be processed. This is an important
@@ -42,7 +52,7 @@ public class controller {
      * to present the message.
      * @param request The object with details about the request
      */
-    public static void display(WebRequest request) {
+    public static void display(WebRequest request, final boolean cache) {
         // preflight checking, we need an answer to be available
         if(request.hasAnswer() == false){
             return;
@@ -50,13 +60,13 @@ public class controller {
         
         // is this request intended for the web or for the Swing UI?
         if(request.requestOrigin == RequestOrigin.GUI){
-            displayRequestGUI(request);
+            displayRequestGUI(request, cache);
             return;
         }
         
         // is this request intended for the web or for the Swing UI?
         if(request.requestOrigin == RequestOrigin.GUI_tree){
-            displayRequestGUI(request);
+            displayRequestGUI(request, cache);
             return;
         }
         
@@ -74,9 +84,9 @@ public class controller {
      * Handle a given request that we want to display on the Swing UI
      * @param request 
      */
-    private static void displayRequestGUI(WebRequest request) {
+    private static void displayRequestGUI(WebRequest request, boolean cache) {
         core.studio.editorPane(is.contentHTML, false, 0, 
-                request.getAnswer(), Boolean.TRUE, request);
+                request.getAnswer(), cache, request);
     }
 
     /**

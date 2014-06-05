@@ -46,6 +46,7 @@ public class is {
             tagFileCopyrightText = "FileCopyrightText:",
             tagLicenseConcluded = "FileLicenseConcluded:",
             tagFileOrigin = "FileOrigin:",
+            tagFileComponent = "ArtifactOfProjectName:",
 
             valueSource =  "SOURCE",
             valueBinary =  "BINARY",

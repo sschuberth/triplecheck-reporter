@@ -123,6 +123,7 @@ public class StudioUI4 extends javax.swing.JFrame {
 
         menuItem_Delete = new javax.swing.JMenuItem();
         popupMenuFile = new javax.swing.JPopupMenu();
+        menuItem_AddToComponent = new javax.swing.JMenuItem();
         menuItem_DefineLicense = new javax.swing.JMenuItem();
         menuItem_MarkFileAuthored = new javax.swing.JMenuItem();
         menuItem_MarkFileExternal = new javax.swing.JMenuItem();
@@ -149,8 +150,18 @@ public class StudioUI4 extends javax.swing.JFrame {
 
         popupMenuFile.setLabel("Mark as..");
 
+        menuItem_AddToComponent.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/paper-bag--plus.png"))); // NOI18N
+        menuItem_AddToComponent.setText("Add to component");
+        menuItem_AddToComponent.setToolTipText("Add selected files to a software component");
+        menuItem_AddToComponent.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuItem_AddToComponentActionPerformed(evt);
+            }
+        });
+        popupMenuFile.add(menuItem_AddToComponent);
+
         menuItem_DefineLicense.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/medal--plus.png"))); // NOI18N
-        menuItem_DefineLicense.setText("Define license..");
+        menuItem_DefineLicense.setText("Define license");
         menuItem_DefineLicense.setToolTipText("What is the license concluded as applicable to this resource?");
         menuItem_DefineLicense.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -543,6 +554,10 @@ public class StudioUI4 extends javax.swing.JFrame {
         markFileOriginAs(FileOrigin.MODIFIED);
     }//GEN-LAST:event_menuItem_MarkFileModifiedActionPerformed
 
+    private void menuItem_AddToComponentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuItem_AddToComponentActionPerformed
+        showDialogAddFilesToComponent();
+    }//GEN-LAST:event_menuItem_AddToComponentActionPerformed
+
     
     /**
      * Has the end-user clicked on the option to open the right-click menu
@@ -635,6 +650,7 @@ public class StudioUI4 extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JSplitPane jSplitPane1;
+    private javax.swing.JMenuItem menuItem_AddToComponent;
     private javax.swing.JMenuItem menuItem_DefineLicense;
     private javax.swing.JMenuItem menuItem_Delete;
     private javax.swing.JMenuItem menuItem_MarkFileAuthored;
@@ -1282,94 +1298,11 @@ public class StudioUI4 extends javax.swing.JFrame {
         }
     
     
-//    /**
-//     * Given a set of nodes, update their licenses
-//     * @param nodeList  An array with the nodes we want to change
-//     */
-//    private void licenseUpdateNodes(ArrayList<TreeNodeSPDX> nodeList, 
-//        String selectedLicense){
-//        System.err.println("SU1263 - License Update nodes: Fix me..");
-//        // preflight check
-//        if(nodeList == null || nodeList.isEmpty()){
-//            System.err.println("SU1296 - Empty array, can't update licenses");
-//            return;
-//        }
-//        
-//        // create the temp-holder, necessary to grab the first FileInfo
-//        FileInfo2 tempFileInfo = (FileInfo2) nodeList.get(0).getUserObject();
-//        //SPDXfile2 spdx = tempFileInfo.getSPDX();
-//        //System.out.println("Writing to " + nodeList.size() + " nodes");
-//        // iterate through the provided list
-//        for(TreeNodeSPDX newNode : nodeList){
-//            // we only want files around here
-//            if(newNode.nodeType != NodeType.file){
-//                continue;
-//            }
-//            // get the object
-//            FileInfo fileInfo = (FileInfo) newNode.getUserObject();
-//            // change the license
-//            fileInfo.setConcludedLicense(selectedLicense);
-//            // all done in terms of writing the changes
-//            log.write(is.COMPLETED, "Applied license %1 to %2",
-//                    selectedLicense, fileInfo.getName());
-//        }
-//        
-//            // mandatory refresh on the SPDX object in our memory
-//            spdx.commitChanges();
-//            spdx.refresh();
-//            // now, update all the tree nodes with the new information
-//            TreeviewUtils.spdxUpdateAllNodes(spdx);
-//            // show some feedback
-//            swingUtils.showMessage("Applied the "
-//                    + selectedLicense
-//                    +" to "
-//                    + utils.text.pluralize(nodeList.size(), "file"));
-//            
-        // all done
-//    }
-    
-   
-//    /**
-//     * This method will change the license from the tree node that is
-//     * currently selected
-//     * @param selectedLicense   the identifier of the license to be applied 
-//     */
-//    void licenseMarkSelectedNodes(String selectedLicense) {
-//        // get the list of nodes that were selected
-//        ArrayList<TreeNodeSPDX> nodeSelected = swingUtils.getSelectedNodes(tree);
-//        // create a list of nodes to process
-//        ArrayList<TreeNodeSPDX> nodeListAccepted = new ArrayList();
-//
-//        // go through each one of these selected nodes
-//        for(TreeNodeSPDX node : nodeSelected){
-//                        // only files and folders are supported at the moment
-//            if((node.nodeType == NodeType.folder)
-//                    ||(node.nodeType == NodeType.sectionFile)){
-//                //System.err.println("Changing the whole folder");
-//                TreeviewUtils.getNodes(node, nodeListAccepted, NodeType.file);
-//            }
-//            // only files are supported at the moment
-//            if(node.nodeType == NodeType.file){
-//                nodeListAccepted.add(node);
-//            }
-//        }
-//            // update the licenses
-//            licenseUpdateNodes(nodeListAccepted, selectedLicense);
-//    }
 
     /**
      * Marks a file as original, modified or third-party resource
      */
     private void markFileOriginAs(FileOrigin value) {
-//        System.err.println("SU1263 - License Update nodes: Fix me..");
-//         // get the selected node
-//        TreeNodeSPDX nodeLastSelected = swingUtils.getSelectedNode();
-//        // preflight check
-//        if(nodeLastSelected == null){
-//            System.err.println("SU1326: Node is null");
-//            return;
-//        }
-//
         // create a list of nodes to process
         ArrayList<TreeNodeSPDX> selectedNodes = swingUtils.getSelectedNodes(tree);
         ArrayList<TreeNodeSPDX> nodeList = new ArrayList();
@@ -1451,6 +1384,45 @@ public class StudioUI4 extends javax.swing.JFrame {
     }
     
     
+    /**
+     * Showing the dialog that permits to choose a new component for the
+     * selected files
+     */
+    private void showDialogAddFilesToComponent(){
+        log.write(is.INFO, "Opening the components dialog");
+        File script = new File(core.getPluginsFolder(), "components/choose.java");
+        // now do the parameters
+        ArrayList<String[]> parameters = new ArrayList();
+        // fire up the request
+        TreeviewUtils.doRequest(script, "showDialog", parameters);
+    }
+    
+    
+    /**
+     * We want to specify to which components a specific file belongs
+     */
+    public void setFilesWithComponent(String componentName) {
+
+        // get the locally selected components
+        HashMap<String, ArrayList<FileInfo2>> spdxList = TreeviewUtils.getSelectedFiles();
+        // now that we splitted all the fileInfo, it is time to write them
+        for(ArrayList<FileInfo2> fileInfoList : spdxList.values()){
+            // get the SPDX object
+            SPDXfile2 spdx = fileInfoList.get(0).getSPDX();
+            // write the lines for this list
+            spdx.writeLines(fileInfoList, is.tagFileComponent, componentName.toString(), true);
+            // after writing the changes to disk, it is time to update the nodes
+            for(FileInfo2 fileInfo : fileInfoList){
+                fileInfo.setFileComponent(componentName);
+            }
+        }
+        
+        // grab the currently selected node
+        TreeNodeSPDX selectedNode = swingUtils.getSelectedNode();
+        // update the selected node
+        log.write(is.INFO, Messages.TreeNodeChanged, selectedNode.getUID());
+    }
+
     
     
 }

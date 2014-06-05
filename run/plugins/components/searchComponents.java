@@ -17,6 +17,7 @@ import definitions.is;
 import main.core;
 import script.Plugin;
 import script.log;
+import www.Link;
 
 
 /**
@@ -44,10 +45,14 @@ public class searchComponents extends Plugin{
         if(searchTerm.length() < 2){
             return;
         }
-        final String link = "/components/showComponent?name=";
 
-        String output = core.components.search(searchTerm , "details", link);
-        core.studio.editorPane(is.contentHTML, false, 0, output);
+        // create the link
+        Link link = new Link();
+        link.setTitle("details");
+        link.setUrl("/components/showComponent?name=");
+        
+        String output = core.components.search(searchTerm , link);
+        core.studio.editorPane(is.contentHTML, true, 0, output);
     }
     
 }

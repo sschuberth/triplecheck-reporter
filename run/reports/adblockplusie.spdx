@@ -21,6 +21,7 @@ PackageName: adblockplusie
 ##-------------------------
 FileName: ./.hgignore
 FileType: OTHER
+FileComponent: v8
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 0dd27d1c6a8e3a52ac0cf395c5425b8bc6f9dc31
 FileChecksum: SHA256: 27294c15f50a922f96a45f240498a4babb541ac613750a3e3b0d9fa3d4a28a20
@@ -40,6 +41,7 @@ FileSize: 180 bytes
 
 FileName: ./adblockplus.gyp
 FileType: OTHER
+FileComponent: remedium
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 1d000bbfb271a69762d0a42c52824601e6dcd60b
@@ -50,6 +52,7 @@ FileSize: 4 Kb (4712 bytes)
 
 FileName: ./adblockplusie - Atalho.lnk
 FileType: OTHER
+FileComponent: remedium
 FileChecksum: SHA1: f52a14e4cdf0e6ef87c71ac56725d5c6378b6988
 FileChecksum: SHA256: db25881d650dbdb53de0589c1741a8ff00a878857ce623e5af4be30c18bc8e6c
 FileChecksum: MD5: 8e3d193baa6e03b8ef72369f4d2ada21
@@ -58,6 +61,7 @@ FileSize: 1 Kb (1033 bytes)
 
 FileName: ./build_release.py
 FileType: SOURCE
+FileComponent: remedium
 FileLicenseConcluded: GPL-3.0
 FileChecksum: SHA1: 4ef9765519cdee7eb9d07858e6adc8579f3e3586
 FileChecksum: SHA256: 9cd60d16dc03d8960ec7eb4de0847e27ec6f189b27e34e84cce3adf891ad4fbc
@@ -68,6 +72,7 @@ FileLOC: 58
 
 FileName: ./createsolution.bat
 FileType: SOURCE
+FileComponent: remedium
 FileLicenseConcluded: GPL-3.0
 FileChecksum: SHA1: 632cd4d41a4c4698bd4953e8ccb0d0a4a181a9b5
 FileChecksum: SHA256: 3bb5479e02f42892a0474f510660173ac2648523eb20d931487080ce69669626

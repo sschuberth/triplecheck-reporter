@@ -23,6 +23,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import main.core;
 import utils.html;
+import www.Link;
 
 
 
@@ -160,8 +161,8 @@ public class ComponentControl {
      * @param maxDeep   How deep in the folder structure can we go?
      * @return          A component if exact match is found, null otherwise
      */
-    private String getListRepositoriesHTML(final String id, final String title,
-            final String link, File where, int maxDeep){
+    private String getListRepositoriesHTML(final String id, final Link link, 
+            File where, int maxDeep){
         // get an array with the files on the current folder
         File[] files = where.listFiles();
 
@@ -173,13 +174,13 @@ public class ComponentControl {
                 final String name = file.getName();
                 if (file.isFile() && name.endsWith(".jsons")){
                     // read the contents of this file
-                    output += processJsonsLineFind(id, file, title, link);
+                    output += processJsonsLineFind(id, file, link);
                 }
                 else
                 if ( (file.isDirectory())
                     &&( maxDeep-1 > 0 ) ){
                     // do the recursive crawling
-                    output += getListRepositoriesHTML(id, title, link, file, maxDeep-1);
+                    output += getListRepositoriesHTML(id, link, file, maxDeep-1);
                 }
             }
         return output;
@@ -217,7 +218,7 @@ public class ComponentControl {
      * @return 
      */
     private String processJsonsLineFind(final String searchTerm, final File file,
-            final String title, final String link){
+            final Link link){
         // create the gson builder
         Gson gson = new Gson();
         String output = "";
@@ -232,15 +233,13 @@ public class ComponentControl {
             Repository rep = new Repository();
             rep.read(line);
             // get the relative path
-//            final String path = file.getAbsolutePath()
-//                    .replace(core.getComponentFolder().getAbsolutePath(), "").replace("\\", "/");
-//            // now define the type of dataset we are using to help with the link
+            final String path = file.getAbsolutePath()
+                    .replace(core.getComponentFolder().getAbsolutePath(), "").replace("\\", "/");
+            // now define the type of dataset we are using to help with the link
             final String type = "&type=" + rep.getType()
-//                    + "&path=" + path
+                    + "&path=" + path
                     + "&license=" + rep.getLicense()
                     ;
-            
-            //System.out.println("----------->" + path);
             
             // iterate all the lines
             while( (line = reader.readLine()) != null){
@@ -249,13 +248,14 @@ public class ComponentControl {
                 if(result.id.contains(searchTerm)){
                     counter++;
                     if(counter < maxValue){
+                        link.addParameters(result.id + type);
                         output += result.id
                                 + " "
                                 + html.textGrey("("
                                     + result.desc
                                     + ")")
                                 + " "
-                                + html.link(title, link + result.id + type)
+                                + link.getLink()
                                 + html.br
                                 ;
                     }
@@ -320,10 +320,13 @@ public class ComponentControl {
    * @param link        The link location
    * @return 
    */
-    public String search(String searchTerm, String title, String link) {
+    public String search(String searchTerm, Link link) {
         String result = 
-                getListRepositoriesHTML
-                    (searchTerm, title, link, core.getComponentFolder(), 25);
+                html.div()
+                + getListRepositoriesHTML
+                    (searchTerm, link, core.getComponentFolder(), 25)
+                + html._div
+                ;
         return result;
     }
     

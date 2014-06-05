@@ -20,6 +20,7 @@ import definitions.is;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Enumeration;
+import java.util.HashMap;
 import javax.swing.JTree;
 import javax.swing.SwingUtilities;
 import javax.swing.tree.TreePath;
@@ -28,6 +29,7 @@ import main.controller;
 import main.core;
 import main.param;
 import script.log;
+import spdxlib.FileInfo2;
 import spdxlib.SPDXfile2;
 import www.RequestOrigin;
 import www.RequestType;
@@ -768,5 +770,60 @@ public class TreeviewUtils {
         newRequest.parameters = parameters;
         controller.process(newRequest);
     }
+    
+    
+    /**
+     * Looking on the treeview of the main user interface form, we will first
+     * get all the selected tree nodes, then pick only the ones that belong
+     * to files and in the end group each file according to the SPDX document
+     * where it belongs to.
+     * @return  An array of SPDX documents and selected files within, null otherwise
+     */
+    public static HashMap<String, ArrayList<FileInfo2>> getSelectedFiles(){
+    // create a list of nodes to process
+        ArrayList<TreeNodeSPDX> selectedNodes = swingUtils.getSelectedNodes(core.studio.getTree());
+        ArrayList<TreeNodeSPDX> nodeList = new ArrayList();
+        // get only the relevant nodes
+        for(TreeNodeSPDX node : selectedNodes){
+              // only files and folders are supported at the moment
+            if((node.nodeType == NodeType.folder)
+                    ||(node.nodeType == NodeType.sectionFile)){
+                //System.err.println("Changing the whole folder");
+                TreeviewUtils.getNodes(node, nodeList, NodeType.file);
+            }
+            // only files are supported at the moment
+            if(node.nodeType == NodeType.file){
+                nodeList.add(node);
+            }
+        }
+        
+        // now update the licenses
+        if(nodeList.isEmpty()){
+            // nothing to do, just leave
+            System.err.println("TU803 - No nodes available to change");
+            return null;
+        }
+        
+        // on this operation we need to account that an end-user might choose
+        // nodes from different SPDX documents, therefore we need to split these
+        HashMap<String, ArrayList<FileInfo2>> spdxList = new HashMap();
+        // now iterate each node and split them into respective SPDX
+        for(TreeNodeSPDX node : nodeList){
+            FileInfo2 fileInfo = (FileInfo2) node.getUserObject();
+            // we use the id as unique identifier
+            final String id = fileInfo.getSPDX().getId();
+            if(spdxList.containsKey(id)){
+                spdxList.get(id).add(fileInfo);
+            }else{
+                // didn't existed before, create a list for this spdx
+                ArrayList<FileInfo2> list = new ArrayList();
+                list.add(fileInfo);
+                spdxList.put(id, list);
+            }
+        }
+        // all done
+        return spdxList;
+    }
+    
     
 }

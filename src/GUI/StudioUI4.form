@@ -22,12 +22,24 @@
         <Property name="useNullLayout" type="boolean" value="true"/>
       </Layout>
       <SubComponents>
+        <MenuItem class="javax.swing.JMenuItem" name="menuItem_AddToComponent">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/icons/paper-bag--plus.png"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Add to component"/>
+            <Property name="toolTipText" type="java.lang.String" value="Add selected files to a software component"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menuItem_AddToComponentActionPerformed"/>
+          </Events>
+        </MenuItem>
         <MenuItem class="javax.swing.JMenuItem" name="menuItem_DefineLicense">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/icons/medal--plus.png"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Define license.."/>
+            <Property name="text" type="java.lang.String" value="Define license"/>
             <Property name="toolTipText" type="java.lang.String" value="What is the license concluded as applicable to this resource?"/>
           </Properties>
           <Events>

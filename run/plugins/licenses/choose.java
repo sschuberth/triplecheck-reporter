@@ -4,7 +4,7 @@
  * Creator: Organization: TripleCheck (contact@triplecheck.de)
  * Created: 2014-05-31T18:55:10Z
  * LicenseName: EUPL-1.1-without-appendix
- * FileName: actions.java  
+ * FileName: choose.java  
  * FileType: SOURCE
  * FileCopyrightText: <text> Copyright 2014 Nuno Brito, TripleCheck </text>
  * FileComment: <text> Allows the end-user to choose different licenses
@@ -32,7 +32,7 @@ import www.WebRequest;
 
 /**
  *
- * @author Nuno Brito, 08th of April 2014 in Darmstadt, Germany.
+ * @author Nuno Brito, 31st of May 2014 in Darmstadt, Germany.
  *  nuno.brito@triplecheck.de | http://nunobrito.eu
  */
 public class choose extends Plugin{

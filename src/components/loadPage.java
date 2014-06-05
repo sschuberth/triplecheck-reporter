@@ -32,19 +32,24 @@ public class loadPage {
      */
     public static void googleCode(final String name, final String license, 
             final WebRequest request){
+         
         
-        final String loadingMessage = ""
-                        + html.div()
-                        + html.textGrey("Loading, please wait..")
-                        + html._div
-                        + "";
-        // place the loading message 
-        //core.studio.editorPane(is.contentHTML, false, 0, loadingMessage);
-        request.setAnswer(loadingMessage);
+//        Thread thread = new Thread(){
+//            @Override
+//            public void run(){
+//                final String loadingMessage = ""
+//                                + html.div()
+//                                + html.textGrey("Loading webpage, please wait..")
+//                                + html._div
+//                                + "";
+//                // place the loading message 
+//                core.studio.editorPane(is.contentHTML, false, 0, loadingMessage);
+//            };
+//        };
+//        thread.start();
+        
+        
                
-        Thread thread = new Thread(){
-            @Override
-            public void run(){
                 String result = getGoogleCodeDescription(name);
                 String link = "https://code.google.com/p/" + name;
                 String output = html.br
@@ -59,18 +64,22 @@ public class loadPage {
                         + html.br
                         ;
                 
-                // did we got any meaningful text?
-                if(result.isEmpty() || result.equals(loadingMessage)){
-                    //System.out.println(output);
-                    core.studio.editorPane(is.contentHTML, false, 0, output);
-                }else{
-                    //System.out.println(result);
-                    core.studio.editorPane(is.contentHTML, false, 0, result);
-                }
-                //request.setAnswer(result);
-         }
-        };
-        thread.start();
+                //System.out.println(result);
+                request.setAnswer(result + output, false);
+        
+                
+//                // did we got any meaningful text?
+//                if(result.isEmpty() || result.equals(loadingMessage)){
+//                    //System.out.println(output);
+//                    core.studio.editorPane(is.contentHTML, true, 0, output);
+//                }else{
+//                    //System.out.println(result);
+//                    core.studio.editorPane(is.contentHTML, true, 0, result);
+//                }
+//                //request.setAnswer(result);
+//         }
+//        };
+//        thread.start();
     }
     
     

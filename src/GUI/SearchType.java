@@ -20,7 +20,8 @@ public enum SearchType {
     Files,
     License_Choose,
     License_Show, 
-    Components_Show;
+    Components_Show,
+    Components_Choose;
     
     
     /**
@@ -33,6 +34,7 @@ public enum SearchType {
         case License_Choose: return "Find licenses..";
         case License_Show: return "Find licenses..";
         case Components_Show: return "Find components..";
+        case Components_Choose: return "Find a component..";
         }
         return "Search";
     }
@@ -48,6 +50,7 @@ public enum SearchType {
         case License_Choose: return "Searching licenses";
         case License_Show: return "Showing licenses";
         case Components_Show: return "Showing components";
+        case Components_Choose: return "Choosing a component";
         }
         return "Search";
     }

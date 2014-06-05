@@ -97,15 +97,23 @@ public class WebRequest {
         return wasAnswered;
     }
     
-    
-  
-    
+        
     /**
      * When we have an answer ready, the next step is storing it inside
      * using this method.
      * @param text The HTML text that will be provided as answer
      */
     public void setAnswer(String text){
+        setAnswer(text, false);
+    }
+    
+    
+    /**
+     * When we have an answer ready, the next step is storing it inside
+     * using this method.
+     * @param text The HTML text that will be provided as answer
+     */
+    public void setAnswer(String text, boolean cache){
         // don't allow more than one answer to exist
         if(wasAnswered){
             System.err.println("WR001 - Answer for request was already given");
@@ -117,7 +125,7 @@ public class WebRequest {
         wasAnswered = true;
         timeEnd = System.currentTimeMillis();
         // place this answer on the queue to be solved
-        controller.display(this);
+        controller.display(this, cache);
         // all done in our side
     }
             

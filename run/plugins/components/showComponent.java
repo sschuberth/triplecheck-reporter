@@ -12,11 +12,9 @@
 
 package components;
 
-import definitions.is;
 import main.core;
 import script.Plugin;
 import spdxlib.License;
-import utils.html;
 import www.WebRequest;
 
 

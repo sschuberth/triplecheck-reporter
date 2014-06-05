@@ -11,17 +11,16 @@
  */
 package GUI;
 
-import old.Person;
-import old.TagValue;
 import definitions.Messages;
 import definitions.is;
-import spdxlib.FileInfo2;
-import spdxlib.SPDXfile2;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.List;
-import javax.swing.*;
+import javax.swing.JEditorPane;
+import javax.swing.JFileChooser;
+import javax.swing.JOptionPane;
+import javax.swing.JTree;
 import javax.swing.text.Element;
 import javax.swing.tree.DefaultTreeModel;
 import javax.swing.tree.TreePath;
@@ -30,8 +29,11 @@ import main.controller;
 import main.core;
 import net.htmlparser.jericho.HTMLElementName;
 import net.htmlparser.jericho.Source;
+import old.Person;
+import old.TagValue;
 import script.log;
-import spdxlib.*;
+import spdxlib.FileInfo2;
+import spdxlib.SPDXfile2;
 import utils.html;
 import www.RequestOrigin;
 import www.RequestType;
@@ -710,5 +712,20 @@ public class swingUtils {
         controller.process(newRequest);
     }
     
+    
+    /**
+     * A threaded method that permits to change the text on our main text
+     * interface
+     */
+    static public void setText(final String text){
+        Thread thread = new Thread(){
+            @Override
+            public void run(){
+                core.studio.editorPane(is.contentHTML, false, 0, text, false,
+                null);
+            }
+        };
+        thread.start();
+    }
     
 }
