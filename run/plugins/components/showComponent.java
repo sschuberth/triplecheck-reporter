@@ -12,10 +12,10 @@
 
 package components;
 
+import definitions.is;
 import main.core;
 import script.Plugin;
 import spdxlib.License;
-import structure.Component;
 import utils.html;
 import www.WebRequest;
 
@@ -46,45 +46,12 @@ public class showComponent extends Plugin{
        
        // can we get the details without further delay?
        if(type.equals("gc")){
-           String result = Component.getGoogleCodeDescription(name);
-           
-           String link = "https://code.google.com/p/" + name;
-           
-           result += html.br
-                   + html.br
-                   + html.div()
-                   + "License: " + license
-                   + html.br
-                   + "Project page: "
-                   + html.link(link, link)
-                   + html._div
-                   + html.br
-                   + html.br
-                   ;
-           
-           request.setAnswer(result);
-           return;
+           components.loadPage.googleCode(name, license, request);
+           //return;
        }
        
-//       // otherwise, we are dealing from a repository component t
-//       Component component = core.components.getFromRepository(path, name);
-//       // no need to continue if we found nothing
-//       if(component == null){
-//           request.setAnswer("Error: Couldn't find " + name + " in " + path);
-//           return;
-//       }
-//       // get the data from the component
-//       String result = component.getSummaryHTML();
-//       
-//       // if this is google code project, we can show some more info
-//       if(type.equals("gc")){
-//           result += component.getGoogleCodeDescription();
-//       }
-//       
-//       request.setAnswer(result);
     }
-
-  
+    
     /**
      * View the specific details for a selected license
      * @param request 

@@ -11,7 +11,7 @@
  * is later used for grouping files under a single component/license(s)</text> 
  */
 
-package structure;
+package components;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -163,27 +163,4 @@ public class Component {
                 ;
     }
     
-    /**
-     * Returns the HTML description of a given project on google code.
-     * @param projectID The project ID on google code
-     * @return          An HTML summary ready for display to the end-user
-     */
-    static public String getGoogleCodeDescription(String title){
-        String result;
-        // define the specifics of google code web pages
-        final String tag1 = "<td id=\"wikicontent\" class=\"psdescription\">";
-        final String tag2 = "</td> </tr></table>";
-        final String url = "https://code.google.com/p/";
-        // get the web page
-        final String page = utils.internet.webget(url + title);
-        //System.err.println(page);
-        final int i1 = page.indexOf(tag1) + tag1.length();
-        final String temp = page.substring(i1, page.length());
-        final int i2 = temp.indexOf(tag2);
-        // get the related 
-        result = html.div()
-                + temp.substring(0, i2)
-                + html._div;
-        return result;
-    }
 }

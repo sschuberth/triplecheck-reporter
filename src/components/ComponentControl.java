@@ -11,7 +11,7 @@
  * have available. </text> 
  */
 
-package structure;
+package components;
 
 import com.google.gson.Gson;
 import java.io.BufferedReader;
@@ -222,7 +222,7 @@ public class ComponentControl {
         Gson gson = new Gson();
         String output = "";
         final int maxValue = 100;
-        System.err.println("CC219 - Processing " + file.getName());
+        //System.err.println("CC219 - Processing " + file.getName());
         try {
             BufferedReader reader = new BufferedReader(new FileReader(file));
             int counter = 0;
@@ -275,7 +275,7 @@ public class ComponentControl {
             output += html.br 
                     + "Search time: " 
                     + utils.time.timeNumberToHumanReadable(result);
-            System.err.println("CC235 - " + output);
+           // System.err.println("CC235 - " + output);
             
         }catch (Exception e){}
         return output;

@@ -18,9 +18,6 @@ import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import main.core;
 import script.log;
-import utils.vogella.Feed;
-import utils.vogella.FeedMessage;
-import utils.vogella.RSSFeedParser;
 import www.RequestOrigin;
 import www.WebRequest;
 
@@ -128,6 +125,20 @@ public class html {
                 + "102);\">" 
                 + text 
                 + "</span>";
+
+    }
+    
+    
+    /**
+     * HTML string that shows text on a given color
+     * @param text text to be displayed
+     * @return An HTML text prepared to be displayed on a web page
+     */
+    public static String textGreyAligned(String text){
+        return ""
+                + html.div()
+                + html.textGrey("Loading, please wait..")
+                + html._div;
 
     }
     

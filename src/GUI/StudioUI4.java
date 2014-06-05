@@ -858,7 +858,7 @@ public class StudioUI4 extends javax.swing.JFrame {
             // disable this box if you don't need to see the output on a file
             //utils.files.SaveStringToFile(new File("output.html"), content);
                     
-            // should the button enabled?
+            // should the "go back" button be enabled?
             button.setEnabled(true);
         
             // change the cursor position

@@ -13,7 +13,6 @@
 package components;
 
 import script.Plugin;
-import structure.Component;
 import www.WebRequest;
 
 

@@ -18,8 +18,8 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import main.core;
 import script.log;
-import structure.Component;
-import structure.Repository;
+import components.Component;
+import components.Repository;
 
 
 /**

@@ -14,6 +14,7 @@
 
 package main;
 
+import components.ComponentControl;
 import FileExtension.ExtensionControl;
 import GUI.StartupScreen;
 import GUI.StudioUI4;
