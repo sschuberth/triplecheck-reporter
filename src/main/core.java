@@ -107,6 +107,7 @@ public class core {
         iconOTHER = new ImageIcon(getIcon("document-xaml.png").getAbsolutePath()),
         iconTEMP = new ImageIcon(getIcon("document-clock.png").getAbsolutePath()),
         iconUNKNOWN = new ImageIcon(getIcon("document.png").getAbsolutePath()),
+        iconCOMPONENTS = new ImageIcon(getIcon("blue-document-node.png").getAbsolutePath()),
     
         iconFolderClosed = new ImageIcon(getIcon("folder-horizontal.png").getAbsolutePath()),
         iconFolderOpen = new ImageIcon(getIcon("folder-horizontal-open.png").getAbsolutePath()),

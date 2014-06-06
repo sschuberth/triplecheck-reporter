@@ -21,7 +21,8 @@ PackageName: adblockplusie
 ##-------------------------
 FileName: ./.hgignore
 FileType: OTHER
-FileComponent: v8
+ArtifactOfProjectName: re7zip
+FileComponent: re7zip
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 0dd27d1c6a8e3a52ac0cf395c5425b8bc6f9dc31
 FileChecksum: SHA256: 27294c15f50a922f96a45f240498a4babb541ac613750a3e3b0d9fa3d4a28a20

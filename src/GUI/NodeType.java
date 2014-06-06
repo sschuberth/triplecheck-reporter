@@ -21,6 +21,7 @@ public enum NodeType {
     sectionFile,
     sectionReview,
     sectionSettings,
+    sectionComponents,
     dependency,
     reportsHome,
     person, // this node holds data about a person

@@ -104,6 +104,9 @@ public class TreeRenderer extends DefaultTreeCellRenderer {
             case sectionSettings:
                 setIcon(core.iconCONFIG);
                 break;
+            case sectionComponents:
+                setIcon(core.iconCOMPONENTS);
+                break;
             default:
                 setIcon(core.iconUNKNOWN);
                 break;

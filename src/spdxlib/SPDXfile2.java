@@ -55,6 +55,7 @@ public class SPDXfile2 implements Serializable{
     private TreeNodeSPDX nodeFiles = new TreeNodeSPDX("Files");
     private TreeNodeSPDX nodeAuthorship = new TreeNodeSPDX("Authorship");
     private TreeNodeSPDX nodeSettings = new TreeNodeSPDX("Settings");
+    private TreeNodeSPDX nodeComponents = new TreeNodeSPDX("Components");
     
     // temporary values only used during the initial processing
     FileInfo2 tempInfo;
@@ -179,7 +180,7 @@ public class SPDXfile2 implements Serializable{
             return what + counter + html.br;
         }
     }
-    
+
     // used for tags with multiple lines, such as:
     // FileCopyrightText -> COPYRIGHT
     enum mTypes {COPYRIGHT};
@@ -325,6 +326,12 @@ public class SPDXfile2 implements Serializable{
         if(tagStartsWith(is.tagFileOrigin, line)){
             final String temp = tagGetValue(is.tagFileOrigin, line);
             tempInfo.setFileOrigin(FileOrigin.valueOf(temp));
+        }
+        else
+       // Was an origin defined for this file?
+        if(tagStartsWith(is.tagFileComponent, line)){
+            final String temp = tagGetValue(is.tagFileComponent, line);
+            tempInfo.setFileComponent(temp);
         }
         else
         // Is a license defined for this file?
@@ -753,6 +760,10 @@ public class SPDXfile2 implements Serializable{
         return nodeSettings;
     }
     
+    public TreeNodeSPDX getNodeComponents() {
+        return nodeComponents;
+    }
+    
     
     public boolean hasVersioningFilesPresent() {
         System.err.println("Missing to implement VersioningFilesPresent");
@@ -794,6 +805,16 @@ public class SPDXfile2 implements Serializable{
         nodeSettings.nodeType = NodeType.sectionSettings;
         // Set as object the file pointer
         nodeSettings.setUserObject(this);
+        
+        // create the settings node
+        final File componentsFile = new File(core.getPluginsFolder(), "/components/summary.java");
+        nodeComponents.scriptFile = componentsFile;
+        nodeComponents.scriptFolder = componentsFile.getParentFile();
+        nodeComponents.scriptMethod = "main";
+        nodeComponents.icon = core.iconCOMPONENTS;
+        nodeComponents.nodeType = NodeType.sectionComponents;
+        // Set as object the file pointer
+        nodeComponents.setUserObject(this);
         
         
         
@@ -954,4 +975,69 @@ public class SPDXfile2 implements Serializable{
             System.err.println("SP562 - Exception occurred " + e.getMessage());
         }    
     }
+    
+    /**
+     * Goes throught all the file nodes on this document and output a list
+     * of components and respective files
+     * @return  An HTML report ready for end-users
+     */
+    public String getComponentSummary() {
+        String result = "";
+        HashMap<String, Integer> components = new HashMap();
+        int counterNull = 0;
+        // iterate all files
+        for(FileInfo2 fileInfo : this.files){
+            // get the component name
+            String component = fileInfo.getFileComponent();
+            // avoid the files without a component specified
+            if(component == null){
+                // increase the counter to later use this value
+                counterNull++;
+                continue;
+            }
+            // process all the rest, have we already indexed this component?
+            if(components.containsKey(component)){
+                // then just increase its value
+                int value = components.get(component);
+                value++;
+                components.put(component, value);
+            }else{
+            // first time doing this, add a new one
+                components.put(component, 1);
+            }
+        }
+        
+        // now do the output messages
+        if(counterNull == files.size()){
+        // no components were found
+            result = "No files associated to any components (yet)";
+            return result;
+        }
+        // add the group of non-categorized files
+        if(counterNull > 0){
+            components.put("Not associated to component", counterNull);
+        }
+        
+        
+        // now we categorize them
+        result += html.h2("Components used in this project");
+        
+        // sort these groups according to their size 
+        Map<String, Integer> map = ThirdParty.MiscMethods.sortByComparator(components);
+        
+        // now iterate each group
+        for(String component : map.keySet()){
+            
+            int value = map.get(component);
+            
+            result += component
+                    + " "
+                    + value
+                    + html.br;
+        }
+        
+        return result;
+    }
+  
+    
 }

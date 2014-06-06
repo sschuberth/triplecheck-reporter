@@ -129,8 +129,13 @@ public class TreeviewUtils {
         
         // provide for some authorship stats / tooling
         node.add(spdx.getNodeAuthorShip());
+        
+        // add up the components node
+        node.add(spdx.getNodeComponents());
+        
         // add up the settings node
         node.add(spdx.getNodeSettings());
+        
         
         // create the correct parameters
         final String relativePath = 

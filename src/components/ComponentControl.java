@@ -205,7 +205,7 @@ public class ComponentControl {
         componentCounter = 0;
         String result = getListCustomHTML(title, link, core.getComponentFolder(), 25);
         
-        result = html.h2("Components available (" + componentCounter + ")")
+        result = html.h2("Custom components available (" + componentCounter + ")")
                 + result;
         
         return result;
