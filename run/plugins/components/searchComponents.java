@@ -40,7 +40,7 @@ public class searchComponents extends Plugin{
      * a possible match
      */ 
     public void doFindComponents() {
-        final String searchTerm = core.studio.getSearch().getText();
+        String searchTerm = core.studio.getSearch().getText();
         // no need to worry about empty searches or less than two characters
         if(searchTerm.length() < 2){
             return;

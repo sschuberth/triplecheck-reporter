@@ -137,7 +137,7 @@ public class html {
     public static String textGreyAligned(String text){
         return ""
                 + html.div()
-                + html.textGrey("Loading, please wait..")
+                + html.textGrey(text)
                 + html._div;
 
     }
@@ -414,5 +414,12 @@ public class html {
         input = input.replace("&amp;", "&");
         input = input.replace("&quot;", "\"");
         return input;
+    }
+
+    /**
+     * Outputs an error message about something that went wrong
+     */
+    public static String errorMessage(String error_message) {
+        return "<b>" + error_message + "</b>";
     }
 }

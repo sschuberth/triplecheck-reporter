@@ -478,7 +478,7 @@ public class create extends Plugin{
         }catch (Exception e){
             log.write(is.ERROR, "CR301- Exception occurred when creating SPDX"
                     + ": %1",e.toString());
-            e.printStackTrace();
+//            e.printStackTrace();
         }
         // count the time it took to run this task
         long time = System.currentTimeMillis() - task.getUID();

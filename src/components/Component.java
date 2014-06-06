@@ -35,13 +35,14 @@ public class Component {
             referenceURL,   // the home page or website that explains component
             downloadURL,    // when available, from where it can be downloaded    
             authors,        // main authors and contributors (separated by \n)
-            desc,// one line summary about the component
-            summary,  // a more complete description in detail 
+            desc,           // one line summary about the component
+            summary,        // a more complete description in detail 
             organization,   // to which company, foundation (...) is the code related
             version,        // in some cases, the applicable version
-            dateCreated,        // when this component was first created
+            dateCreated,    // when this component was first created
             dateLastModified,   // last time it was modified
-            lic;    // the license declared by the author
+            lic,            // the license declared by the author
+            remarks;        // special remarks to be included in reports
             
     protected ArrayList<License> applicableLicenses;  // set of applicable licenses
     protected ArrayList<Component> subComponents;  // components included within
@@ -161,6 +162,10 @@ public class Component {
                 + html.br
                 + html.textGrey("<i>" + desc + "</i>")
                 ;
+    }
+
+    void setRemarks(String remarks) {
+        this.remarks = remarks;
     }
     
 }

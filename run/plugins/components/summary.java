@@ -16,10 +16,8 @@ import GUI.NodeType;
 import GUI.TreeNodeSPDX;
 import GUI.swingUtils;
 import definitions.is;
-import main.core;
 import script.Plugin;
 import script.log;
-import spdxlib.License;
 import spdxlib.SPDXfile2;
 import www.WebRequest;
 

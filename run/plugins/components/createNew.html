@@ -1,50 +1,139 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
-
 </head>
 
-    <body>
+
+<body>
+
 
 <form action="createNew?x=doCreate" method="post">
+  
   <div style="margin-left: 20px;">
+  
   <h2>template-pagetitle</h2>
 
-  <span style="font-weight: bold;"><br>
 
-  </span>Short identification <span style="font-style: italic;">(only alphabet letters and
-numbers, no spaces)</span><br>
+  
+  <table style="text-align: left; height: 74px; width: 363px;" border="0" cellpadding="2" cellspacing="2">
 
-  <input value="template-id" size="55" name="id"><br>
+
+    <tbody>
+
+
+      <tr>
+
+
+        <td style="vertical-align: middle; text-align: left; width: 135px;">Short
+name<br>
+
+
+&nbsp;<input value="template-id" size="10" name="id"></td>
+
+
+        <td style="text-align: center; vertical-align: middle; width: 210px;">
+        
+        <div style="text-align: left;">License<br>
+
+
+&nbsp;
+        
+        <select name="license">
+        <option>template-license</option>
+        </select>
+
+
+        </div>
+
+
+        </td>
+
+
+      </tr>
+
+
+    
+    </tbody>
+  
+  </table>
+
 
   <br>
 
-Title for this component <span style="font-style: italic;">(full
-title of the software)</span><br>
+
+Title for this component <span style="font-style: italic;">(optional)</span><br>
+
 
   <input value="template-title" size="55" name="title"><br>
 
+
   <br>
 
-Reference website<span style="font-style: italic;">
-(homepage, wiki-page, ..)</span><br>
+
+Description<br>
+
+
+  <textarea wrap="normal" cols="53" rows="3" name="description">template-description</textarea><br>
+
+
+  <br>
+
+
+Homepage<span style="font-style: italic;"> (optional)</span><br>
+
 
   <input value="template-website" size="55" name="website"><br>
 
+
   <br>
 
-Where it can be downloaded<span style="font-style: italic;">
-(zip file, repository, ..)</span><br>
+
+Download URL<span style="font-style: italic;"> (optional)</span><br>
+
 
   <input value="template-download" size="55" name="download"><br>
 
-  <br>
 
   <br>
 
-  <input value="template-button" name="SubmitButton" type="submit"> </div>
+
+Main authors<span style="font-style: italic;"> (optional,
+separated by commas)</span><br>
+
+
+  <input value="template-author" size="55" name="author"><br>
+
+
+  <br>
+
+
+Versions<span style="font-style: italic;"> (optional,
+separated by commas)</span><br>
+
+
+  <input value="template-versions" size="55" name="versions"><br>
+
+
+  <br>
+
+
+Remarks<br>
+
+
+  <textarea wrap="normal" cols="53" rows="5" name="remarks">template-remarks</textarea><br>
+
+
+  <br>
+
+
+  <input value="template-button" name="SubmitButton" type="submit"><br>
+
+
+  </div>
+
 
 </form>
+
 
 </body>
 </html>

@@ -1008,9 +1008,16 @@ public class SPDXfile2 implements Serializable{
         }
         
         // now do the output messages
+        result +=
+                  html.div()
+                + html.h2("Components used in this project")
+                + html._div;
+       
         if(counterNull == files.size()){
         // no components were found
-            result = "No files associated to any components (yet)";
+            result += html.div()
+                    + html.textGreyAligned("No files associated to any components (yet)")
+                    + html._div;
             return result;
         }
         // add the group of non-categorized files
@@ -1019,8 +1026,6 @@ public class SPDXfile2 implements Serializable{
         }
         
         
-        // now we categorize them
-        result += html.h2("Components used in this project");
         
         // sort these groups according to their size 
         Map<String, Integer> map = ThirdParty.MiscMethods.sortByComparator(components);

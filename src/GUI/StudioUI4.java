@@ -1202,7 +1202,7 @@ public class StudioUI4 extends javax.swing.JFrame {
         for(String[] parameter : parameters){
             //request.parameters.add(parameter);
             // define what is the method that we want to run
-            if(parameter[0].equals(is.methodExecute)){
+            if(parameter[0]!= null && parameter[0].equals(is.methodExecute)){
                 request.scriptMethod = utils.text.safeString(parameter[1]);
             }
         }
