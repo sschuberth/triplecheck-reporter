@@ -12,8 +12,8 @@
 
 package experiment;
 
-import components.Component;
-import components.Repository;
+import comp.Component;
+import comp.Repository;
 import definitions.is;
 import java.io.*;
 import java.util.logging.Level;

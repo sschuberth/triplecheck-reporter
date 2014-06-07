@@ -12,6 +12,7 @@
 
 package components;
 
+import comp.Component;
 import main.core;
 import script.Plugin;
 import spdxlib.License;
@@ -44,7 +45,7 @@ public class showComponent extends Plugin{
        
        // can we get the details without further delay?
        if(type.equals("gc")){
-           components.loadPage.googleCode(name, license, request);
+           comp.loadPage.googleCode(name, license, request);
            //return;
        }
        

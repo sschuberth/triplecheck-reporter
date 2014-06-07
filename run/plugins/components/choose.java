@@ -15,6 +15,8 @@ package components;
 
 import GUI.SearchType;
 import GUI.swingUtils;
+import comp.LinkType;
+import definitions.is;
 import java.util.ArrayList;
 import main.core;
 import script.Plugin;
@@ -119,7 +121,7 @@ public class choose extends Plugin{
         final String path = request.getParameter("path");
         final String name = request.getParameter("name");
 //        final String type = request.getParameter("license");
-//        System.err.println("Marking files as belonging to : " + name);
+        log.write(is.INFO, "Marking files as belonging to : %1", name);
         request.setAnswer("Modified selected files as part of component ->" + path + "->" + name);
         core.studio.setFilesWithComponent(name);
         

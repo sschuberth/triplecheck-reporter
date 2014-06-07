@@ -12,6 +12,7 @@
 
 package components;
 
+import comp.LinkType;
 import GUI.SearchType;
 import GUI.TreeNodeSPDX;
 import GUI.swingUtils;

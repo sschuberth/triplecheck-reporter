@@ -11,7 +11,7 @@
  * have available. </text> 
  */
 
-package components;
+package comp;
 
 import com.google.gson.Gson;
 import java.io.BufferedReader;
@@ -125,33 +125,33 @@ public class ComponentControl {
      */
     private String getReportCustomComponents(final ArrayList<LinkType> link,
             File where, int maxDeep){
-    // create the gson builder
-    Gson gson = new Gson();
-    // get an array with the files on the current folder
-    File[] files = where.listFiles();
+        // create the gson builder
+        Gson gson = new Gson();
+        // get an array with the files on the current folder
+        File[] files = where.listFiles();
 
-    String output = "";
-    
-    if(files != null)
-        // iterate through each file
-        for (File file : files) {
-            final String name = file.getName();
-            if (file.isFile() && name.endsWith(".json")){
-                // read the contents of this file
-                final String input = utils.files.readAsString(file);
-                final Component result = gson.fromJson(input, Component.class);
-                output += result.getOneLineHTML(link) 
-                        //+ html.br
-                        ;
-                componentCounter++;
+        String output = "";
+
+        if(files != null)
+            // iterate through each file
+            for (File file : files) {
+                final String name = file.getName();
+                if (file.isFile() && name.endsWith(".json")){
+                    // read the contents of this file
+                    final String input = utils.files.readAsString(file);
+                    final Component result = gson.fromJson(input, Component.class);
+                    output += result.getOneLineHTML(link) 
+                            + html.br
+                            ;
+                    componentCounter++;
+                }
+                else
+                if ( (file.isDirectory())
+                    &&( maxDeep-1 > 0 ) ){
+                    // do the recursive crawling
+                    output += getReportCustomComponents(link, file, maxDeep-1);
+                }
             }
-            else
-            if ( (file.isDirectory())
-                &&( maxDeep-1 > 0 ) ){
-                // do the recursive crawling
-                output += getReportCustomComponents(link, file, maxDeep-1);
-            }
-        }
     return output;
   }
 

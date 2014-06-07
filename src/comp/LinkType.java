@@ -9,7 +9,7 @@
  * FileCopyrightText: <text> Copyright 2014 Nuno Brito, TripleCheck </text>
  * FileComment: <text> Defines the types of links used with component lists </text> 
  */
-package components;
+package comp;
 
 /**
  *

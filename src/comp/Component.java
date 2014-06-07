@@ -11,7 +11,7 @@
  * is later used for grouping files under a single component/license(s)</text> 
  */
 
-package components;
+package comp;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

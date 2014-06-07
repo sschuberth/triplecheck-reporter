@@ -1402,7 +1402,8 @@ public class StudioUI4 extends javax.swing.JFrame {
      * We want to specify to which components a specific file belongs
      */
     public void setFilesWithComponent(String componentName) {
-
+           
+        int counter = 0;
         // get the locally selected components
         HashMap<String, ArrayList<FileInfo2>> spdxList = TreeviewUtils.getSelectedFiles();
         // now that we splitted all the fileInfo, it is time to write them
@@ -1414,15 +1415,17 @@ public class StudioUI4 extends javax.swing.JFrame {
             // after writing the changes to disk, it is time to update the nodes
             for(FileInfo2 fileInfo : fileInfoList){
                 fileInfo.setFileComponent(componentName);
+                counter++;
             }
         }
-        
         // grab the currently selected node
         TreeNodeSPDX selectedNode = swingUtils.getSelectedNode();
         // update the selected node
         log.write(is.INFO, Messages.TreeNodeChanged, selectedNode.getUID());
+        // output the dialog box as feedback
+        swingUtils.showMessage("Marked " + utils.text.pluralize(counter, "file") 
+                + " as part of " + componentName);
     }
-
     
     
 }

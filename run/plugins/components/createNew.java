@@ -76,7 +76,7 @@ public class createNew extends Plugin{
         
         System.out.println("CN76 got here");
         // now write our component
-        components.Component component = new components.Component();
+        comp.Component component = new comp.Component();
         component.setId(id);
         component.setTitle(title);
         component.setDescriptionOneLine(descriptionOneLine);

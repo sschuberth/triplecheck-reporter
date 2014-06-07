@@ -17,10 +17,12 @@
 package utils;
 
 import java.io.File;
+import java.lang.reflect.Method;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.codehaus.commons.compiler.CompileException;
 import org.codehaus.janino.SimpleCompiler;
+import script.Plugin;
 
 /**
  *
@@ -56,13 +58,78 @@ public class bytecode {
     }
     
     /**
+     * Given a file on disk, this method will try to convert a source code
+     * file into a compiled bytecode class
+     * @param sourceFile    Location of the file on disk
+     * @return              The compiled object
+     */
+    public static Object getObjectNoPackage(File sourceFile, final String className){
+        Class clazz;
+        try {
+            String sourceCode = utils.files.readAsString(sourceFile);
+            SimpleCompiler compiler = new SimpleCompiler();
+            compiler.cook(sourceCode);
+            clazz = compiler.getClassLoader().loadClass(className);
+            return clazz.newInstance();
+            
+        } catch (CompileException ex) {
+            Logger.getLogger(Object.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            Logger.getLogger(Object.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            Logger.getLogger(Object.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(Object.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return null;
+    }
+    
+    
+    
+    /**
+     * Compiles a Java source code on disk and runs a specific method
+     * @param scriptFile
+     * @param methodName
+     * @param className 
+     */
+    public static void runJava(File scriptFile, String methodName) {
+        Object object = getObjectNoPackage(scriptFile, "basic.home");
+        System.out.println(object.getClass().getCanonicalName());
+        
+        invoke("basic.home", methodName, new Class[] {String.class}, 
+           new Object[]{"Hello"});
+        
+     
+        
+    }
+    
+  static void invoke(String aClass, String aMethod, Class[] params, Object[] args) {
+    try {
+      Class c = Class.forName(aClass);
+      
+      for(Method method : c.getDeclaredMethods()){
+          System.err.println("--------->" + method.getName());
+      }
+      
+      
+      Method m = c.getDeclaredMethod(aMethod, params);
+      Object i = c.newInstance();
+      Object r = m.invoke(i, args);
+      } 
+    catch (Exception e) {
+      e.printStackTrace();
+      } 
+    }
+    
+    
+    /**
      * Given a source code file, this method will try to extract the declared
      * package name in order to build a class name that will be used by the
      * class loader.
      * @param sourceCode
      * @return      The Class name
      */
-    static String buildClassName(final String sourceCode, File file){
+    private static String buildClassName(final String sourceCode, File file){
         // we expect to find the package declaration on the first line
         int index = sourceCode.indexOf(";");
         final String name = "." + file.getName().substring(0, file.getName().indexOf("."));

@@ -17,7 +17,7 @@ package main;
 import FileExtension.ExtensionControl;
 import GUI.StartupScreen;
 import GUI.StudioUI4;
-import components.ComponentControl;
+import comp.ComponentControl;
 import definitions.folder;
 import definitions.is;
 import java.io.File;

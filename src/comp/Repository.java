@@ -10,7 +10,7 @@
  * FileComment: <text> Defines the parameters for a basic repository.</text> 
  */
 
-package components;
+package comp;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

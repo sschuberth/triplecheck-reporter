@@ -10,7 +10,7 @@
  * FileComment: <text>  </text> 
  */
 
-package components;
+package comp;
 
 import definitions.is;
 import main.core;

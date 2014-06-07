@@ -160,6 +160,8 @@ public class controller {
             // run the script file
             core.script.runJava(newRequest.scriptFile, command, is.plugin);
             
+            
+            
             WebRequest processedRequest = (WebRequest) core.temp.get(randomId);
             
             // we might have cases where the request is null
