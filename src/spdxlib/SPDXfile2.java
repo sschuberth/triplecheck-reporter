@@ -29,6 +29,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import main.core;
 import script.log;
+import spdxlib.summary.SummaryControl;
 import structure.LanguageCounter;
 import structure.LicenseCounter;
 import utils.files;
@@ -47,6 +48,8 @@ public class SPDXfile2 implements Serializable{
     
     // what is the information within?
     ArrayList<FileInfo2> files = new ArrayList();
+    
+    public SummaryControl summary = new SummaryControl(this);
 
     // which file was used for reading this document?
     public File file;
@@ -989,73 +992,6 @@ public class SPDXfile2 implements Serializable{
         }    
     }
     
-    /**
-     * Goes throught all the file nodes on this document and output a list
-     * of components and respective files
-     * @return  An HTML report ready for end-users
-     */
-    public String getComponentSummary() {
-        String result = "";
-        HashMap<String, Integer> components = new HashMap();
-        int counterNull = 0;
-        // iterate all files
-        for(FileInfo2 fileInfo : this.files){
-            // get the component name
-            String component = fileInfo.getFileComponent();
-            // avoid the files without a component specified
-            if(component == null){
-                // increase the counter to later use this value
-                counterNull++;
-                continue;
-            }
-            // process all the rest, have we already indexed this component?
-            if(components.containsKey(component)){
-                // then just increase its value
-                int value = components.get(component);
-                value++;
-                components.put(component, value);
-            }else{
-            // first time doing this, add a new one
-                components.put(component, 1);
-            }
-        }
-        
-        // now do the output messages
-        result +=
-                  html.div()
-                + html.h2("Components used in this project")
-                + html._div;
-       
-        if(counterNull == files.size()){
-        // no components were found
-            result += html.div()
-                    + html.textGreyAligned("No files associated to any components (yet)")
-                    + html._div;
-            return result;
-        }
-        // add the group of non-categorized files
-        if(counterNull > 0){
-            components.put("Not associated to component", counterNull);
-        }
-        
-        
-        
-        // sort these groups according to their size 
-        Map<String, Integer> map = ThirdParty.MiscMethods.sortByComparator(components);
-        
-        // now iterate each group
-        for(String component : map.keySet()){
-            
-            int value = map.get(component);
-            
-            result += component
-                    + " "
-                    + value
-                    + html.br;
-        }
-        
-        return result;
-    }
-  
+    
     
 }

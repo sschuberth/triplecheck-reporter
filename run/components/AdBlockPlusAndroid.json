@@ -1,0 +1,12 @@
+{
+  "id": "AdBlockPlusAndroid",
+  "title": "Adblock Plus for Android",
+  "referenceURL": "https://adblockplus.org",
+  "downloadURL": "https://github.com/adblockplus/adblockplusandroid",
+  "authors": "Eyeo GmbH",
+  "desc": "",
+  "summary": "An Android app that runs a proxy to block ads.",
+  "version": "",
+  "lic": "GPL-3.0",
+  "remarks": ""
+}

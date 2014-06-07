@@ -35,7 +35,7 @@ public class summary extends Plugin{
     @Override
     public void main(WebRequest request){
         TreeNodeSPDX node = swingUtils.getSelectedNode();
-        // only accept component nodes
+        // only accept components nodes
         if(node == null || node.nodeType != NodeType.sectionComponents){
             log.write(is.ERROR, "No component node selected");
             return;
@@ -45,7 +45,7 @@ public class summary extends Plugin{
         SPDXfile2 spdx = (SPDXfile2) node.getUserObject();
         
         // and now with the spdx summary, get the list of components
-        String result = spdx.getComponentSummary();
+        String result = spdx.summary.components();
         
         request.setAnswer(result);       
     }

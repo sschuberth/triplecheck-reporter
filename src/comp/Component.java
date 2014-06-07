@@ -107,6 +107,70 @@ public class Component {
     public void setRemarks(String remarks) {
         this.remarks = remarks;
     }
+
+    public ArrayList<License> getApplicableLicenses() {
+        return applicableLicenses;
+    }
+
+    public String getAuthors() {
+        return authors;
+    }
+
+    public String getDateCreated() {
+        return dateCreated;
+    }
+
+    public String getDateLastModified() {
+        return dateLastModified;
+    }
+
+    public String getDesc() {
+        return desc;
+    }
+
+    public String getDownloadURL() {
+        return downloadURL;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public String getLic() {
+        return lic;
+    }
+
+    public String getOrganization() {
+        return organization;
+    }
+
+    public String getReferenceURL() {
+        return referenceURL;
+    }
+
+    public String getRemarks() {
+        return remarks;
+    }
+
+    public ArrayList<Component> getSubComponents() {
+        return subComponents;
+    }
+
+    public String getSummary() {
+        return summary;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public String getVersion() {
+        return version;
+    }
     
     
     

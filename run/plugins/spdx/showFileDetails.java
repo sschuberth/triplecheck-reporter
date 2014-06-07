@@ -251,6 +251,10 @@ public class showFileDetails extends Plugin{
                     + "Origin: " + fileInfo.getFileOrigin();
         }
      
+        if(fileInfo.getFileComponent() != null){
+            summary = html.br + "Contains code from: " + fileInfo.getFileComponent();
+        }
+        
         
         // do the date creation
         //TODO We need to archive file date information

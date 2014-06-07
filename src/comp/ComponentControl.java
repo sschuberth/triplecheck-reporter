@@ -210,6 +210,8 @@ public class ComponentControl {
         result = html.h3("Custom components available (" + componentCounter + ")")
                 + result;
         
+        result = html.div() + result + html._div;
+        
         return result;
     }
     

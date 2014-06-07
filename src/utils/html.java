@@ -29,7 +29,8 @@ import www.WebRequest;
  */
 public class html {
 
-    public static final String 
+    public static final String
+            line = "<hr style=\"width: 90%; height: 2px;\">",
             br = "\n<br>",
             _div = "</div>\n",
             space = "&nbsp",

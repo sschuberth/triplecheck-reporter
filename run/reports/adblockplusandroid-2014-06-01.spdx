@@ -21,6 +21,7 @@ PackageName: adblockplusandroid-2014-06-01
 ##-------------------------
 FileName: ./jni/Android.mk
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: b6dc4317e55b58bfd0335c2061d196b9e23cf6c3
@@ -31,6 +32,7 @@ FileSize: 1 Kb (1082 bytes)
 
 FileName: ./jni/Utils.h
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: a9ad24c1b904ea68567db961e49c6d2ed11f82af
@@ -44,6 +46,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./jni/JniSubscription.cpp
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: ac5c8e58dcc8bf2dceaacd99b0cf00b5730f11af
@@ -57,6 +60,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./jni/JniUpdaterCallback.cpp
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 767e6a7d5c52233aa6f56fd501867c3764722f6d
@@ -70,6 +74,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./jni/JniEventCallback.cpp
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: f4ee623d6ae603c1ac4f3546e2ad299b10e88370
@@ -83,6 +88,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./jni/v8/libv8_base.a
 FileType: BINARY
+ArtifactOfProjectName: V8
 FileLicenseConcluded: BSD-3-Clause-Clear
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: f342e5a32d1d9a6771fbfe5014a5d38b2789b3c7
@@ -93,6 +99,7 @@ FileSize: 12 Mb (12721868 bytes)
 
 FileName: ./jni/v8/libv8_snapshot.a
 FileType: BINARY
+ArtifactOfProjectName: V8
 FileLicenseConcluded: BSD-3-Clause-Clear
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: 91ee822867a70b2682d608adc921da6aa9762b6e
@@ -103,6 +110,7 @@ FileSize: 572 Kb (585868 bytes)
 
 FileName: ./jni/v8/libv8_nosnapshot.a
 FileType: BINARY
+ArtifactOfProjectName: V8
 FileLicenseConcluded: BSD-3-Clause-Clear
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: 11cb89402d1930517d1b54db3bce5a629a929c6b
@@ -113,6 +121,7 @@ FileSize: 257 Kb (263472 bytes)
 
 FileName: ./jni/v8/libpreparser_lib.a
 FileType: BINARY
+ArtifactOfProjectName: V8
 FileLicenseConcluded: BSD-3-Clause-Clear
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: 3eacfd339a82982728626e7554fce83b3098fbc4
@@ -123,6 +132,7 @@ FileSize: 377 Kb (386530 bytes)
 
 FileName: ./jni/v8/v8stdint.h
 FileType: SOURCE
+ArtifactOfProjectName: V8
 FileLicenseConcluded: BSD-3-Clause-Clear
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: 621d34cbdf0880c4ad1c8258af246bd06d7decef
@@ -136,6 +146,7 @@ FileCopyrightText: <text>Copyright 2012 the V8 project authors. All rights reser
 
 FileName: ./jni/v8/v8.h
 FileType: SOURCE
+ArtifactOfProjectName: V8
 FileLicenseConcluded: BSD-3-Clause-Clear
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: dc794e7c8d53a45642ee56b2afa75e3dc5b7bcc8
@@ -149,6 +160,7 @@ FileCopyrightText: <text>Copyright 2011 the V8 project authors. All rights reser
 
 FileName: ./jni/JniWebRequest.cpp
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 26ba932b15d5a6385da0f0e10044d7d1cd0b5af2
@@ -162,6 +174,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./jni/JniFilter.cpp
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 3cd960d029372159bf3485a71e2f7cc34a3a7d42
@@ -175,6 +188,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./jni/JniLogSystem.cpp
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 7944d2766784b65c9491577f1677b71321048ba4
@@ -188,6 +202,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./jni/JniFilterEngine.cpp
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: cdebd12ef7e2913b42a733082ffb9e7194cf2153
@@ -201,6 +216,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./jni/Utils.cpp
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: a0e96bb38812a2d06ee514fd5724049fc70b7d5a
@@ -214,6 +230,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./jni/Application.mk
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 8a88e6dc95089850868fab0c1ad435779313cc00
@@ -224,6 +241,7 @@ FileSize: 99 bytes
 
 FileName: ./jni/JniFilterChangeCallback.cpp
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 93145c5e266f4a7dd4de0ffc51f0c695db253007
@@ -237,6 +255,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./jni/JniJsEngine.cpp
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: d7cd858ed2e6b5e0a0feb6c0699a36f5e00c438f
@@ -250,6 +269,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./jni/JniCallbacks.cpp
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: e1225460df85fa507466ea0bd1d98f135d61d3ac
@@ -263,6 +283,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./jni/JniJsValue.cpp
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 0bda98f71c478d5a27cf2b4770bcf5be2f8063e3
@@ -276,6 +297,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./jni/JniJsValue.h
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 25e919fc002c915b44018e10c3ac1945e01a1e5d
@@ -289,6 +311,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./jni/JniCallbacks.h
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 61f851232bb53825b14f133050e43fbe8d0fe52f
@@ -302,6 +325,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./.hgtags
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: fd150175a132c07d7ed4cab463898aa9f009bfd9
@@ -312,6 +336,7 @@ FileSize: 417 bytes
 
 FileName: ./.hgignore
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 21cf9fea5bc516d5638c6f5d262050e7e14d85d8
@@ -322,6 +347,7 @@ FileSize: 98 bytes
 
 FileName: ./iptables.patch
 FileType: BINARY
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 48f8a8f8bc6dbf6aacaa74bd1666701c8977cedc
@@ -332,6 +358,7 @@ FileSize: 5 Kb (5297 bytes)
 
 FileName: ./.classpath
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 5b0c4e7d17c558e90ebf892517e9e8f7be511dbf
@@ -342,6 +369,7 @@ FileSize: 526 bytes
 
 FileName: ./AndroidManifest.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: c0d0c451a84a5dc73b7f158b88ac672582d39e86
@@ -352,6 +380,7 @@ FileSize: 2 Kb (2960 bytes)
 
 FileName: ./src/org/adblockplus/ChunkedOutputStream.java
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 6ca73ef570a11214b0e0b18eb281768ab5d1aa19
 FileChecksum: SHA256: aef59dd0af6cf5716e2fb26a3f4b6cabb7b7ade57562341dc8bee1538cef2887
@@ -674,6 +703,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/brazil/SSLConnectionHandler.java
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileOrigin: AUTHORED
 FileChecksum: SHA1: f455e26c37ada33cbdb7276a038662707e0fa670
 FileChecksum: SHA256: 31e5456fd55ec15adde3c81813e1be55baab1a9fb894b2d2a3a603c58437e9c2
@@ -686,6 +716,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/brazil/TransparentProxyHandler.java
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 9fa9430213feac1807c599dbf242d5c13a69790e
 FileChecksum: SHA256: 3b3e6a5e64ffcf274958b00616fd99fdd8e7cc7f77c3a7b33d6ad07a2fe5e892
@@ -698,6 +729,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/brazil/BaseRequestHandler.java
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 8b55a4dccad79f204f2e0ada8a5b5110abdf5b04
 FileChecksum: SHA256: dc5af5ac1b3e2dc98a553eadfabeae06551675662b2a6f6c3b36fb11326f59f7
@@ -710,6 +742,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/brazil/RequestHandler.java
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileOrigin: AUTHORED
 FileChecksum: SHA1: ab53816357c2981e0e6d807a2c042f05279f4c1e
 FileChecksum: SHA256: bc577bfb8642267da95618e1fc133dbc2654bc60a3c2b74188621e6bdbe404ae
@@ -722,6 +755,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/libadblockplus/FilterChangeCallback.java
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 324ff759938250ee79d1902ea298ba23cb93d2d5
@@ -735,6 +769,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/libadblockplus/FilterEngine.java
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 80699668df406ad38c07d1002fc7411d2b91b2eb
@@ -748,6 +783,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/libadblockplus/ServerResponse.java
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 3d882f1ded1e85e5d73423458d05b838afd848e9
@@ -761,6 +797,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/libadblockplus/HeaderEntry.java
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: d1bd14fdaa395d463639c0a38be236a0c910e538
@@ -774,6 +811,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/libadblockplus/Filter.java
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 128e1af13637cc8bf12ad06af7d59af6ab84294c
@@ -787,6 +825,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/libadblockplus/AdblockPlusException.java
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 85b5b862601f0ce14f497cc435a7067de4e47b8c
@@ -800,6 +839,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/libadblockplus/UpdaterCallback.java
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: c0e0350adb4a6457839d54f77089f973d50e51dc
@@ -813,6 +853,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/libadblockplus/Subscription.java
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 64f309317dfeca8538489de5192918196386be92
@@ -826,6 +867,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/libadblockplus/Disposer.java
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 0c0e092f3d957f458ffbfb1b6926a2fd100dee9c
@@ -839,6 +881,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/libadblockplus/EventCallback.java
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 158def4550d3a20e0621e11d25597bc0a8142778
@@ -852,6 +895,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/libadblockplus/LogSystem.java
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 25c41e2c9bf3cd013745f1c6333475ee8636e4af
@@ -865,6 +909,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/libadblockplus/WebRequest.java
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: dce1e6de70519d4766d51b59eef4a8ce58320c3f
@@ -878,6 +923,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/libadblockplus/JniExceptionHandler.java
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 56d0a2c1ee614a9e131d930014c21d3c17388601
@@ -891,6 +937,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/libadblockplus/JsValue.java
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 30060b22c2ef36c00b93156f27ae0d97b68ffcec
@@ -904,6 +951,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/libadblockplus/Disposable.java
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: da96f89027ccf9f25612df0b308a8621864a57f1
@@ -917,6 +965,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/libadblockplus/JsEngine.java
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: f285c0481856afb350ad60b6341a71ad89151d5a
@@ -930,6 +979,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/libadblockplus/AppInfo.java
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 4a2b35adcb3c3e5026ecc3f7fc3bded004509e25
@@ -943,6 +993,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/apache/commons/lang/StringEscapeUtils.java
 FileType: SOURCE
+ArtifactOfProjectName: ApacheCommons
 FileLicenseConcluded: Apache-2.0
 FileOrigin: MODIFIED
 FileChecksum: SHA1: 00617958b057d8adef07b66711bb726b0494d0a0
@@ -955,6 +1006,7 @@ LicenseInfoInFile: Apache-2.0
 
 FileName: ./src/org/apache/commons/lang/StringUtils.java
 FileType: SOURCE
+ArtifactOfProjectName: ApacheCommons
 FileLicenseConcluded: Apache-2.0
 FileOrigin: MODIFIED
 FileChecksum: SHA1: d337c94d2260f315e62140529349388100114342
@@ -967,6 +1019,7 @@ LicenseInfoInFile: Apache-2.0
 
 FileName: ./src/org/apache/commons/lang/CharUtils.java
 FileType: SOURCE
+ArtifactOfProjectName: ApacheCommons
 FileLicenseConcluded: Apache-2.0
 FileOrigin: MODIFIED
 FileChecksum: SHA1: ae40721e7fac52f1eef26a8131e5fb240291cc29
@@ -979,6 +1032,7 @@ LicenseInfoInFile: Apache-2.0
 
 FileName: ./src/org/literateprograms/BoyerMoore.java
 FileType: SOURCE
+ArtifactOfProjectName: boyer
 FileLicenseConcluded: MIT
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: 6a1b2f365c2ed43e18d0f7eb5b63677a2123eb2e
@@ -992,6 +1046,7 @@ FileCopyrightText: <text>Copyright (c) 2012 the authors listed at the following 
 
 FileName: ./src/sunlabs/brazil/server/Handler.java
 FileType: SOURCE
+ArtifactOfProjectName: Brazil
 FileLicenseConcluded: SPL-1.0
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: 34a4f5ebaf98c2b895cb98bb087262feffb5110b
@@ -1005,6 +1060,7 @@ FileCopyrightText: <text>Copyright (c) 1998-2004 Sun Microsystems, Inc.</text>
 
 FileName: ./src/sunlabs/brazil/server/Server.java
 FileType: SOURCE
+ArtifactOfProjectName: Brazil
 FileLicenseConcluded: SPL-1.0
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: 277b9a45306ee7a5801a7452c3d23afd6921baa9
@@ -1018,6 +1074,7 @@ FileCopyrightText: <text>Copyright (c) 1998-2005 Sun Microsystems, Inc.</text>
 
 FileName: ./src/sunlabs/brazil/server/Connection.java
 FileType: SOURCE
+ArtifactOfProjectName: Brazil
 FileLicenseConcluded: SPL-1.0
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: ff48b9d43f1a33e7696e12a39fb30d64625d08ef
@@ -1031,6 +1088,7 @@ FileCopyrightText: <text>Copyright (c) 1998-2006 Sun Microsystems, Inc.</text>
 
 FileName: ./src/sunlabs/brazil/server/Request.java
 FileType: SOURCE
+ArtifactOfProjectName: Brazil
 FileLicenseConcluded: SPL-1.0
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: 3ba9a6653f9ede764cdb4f57240e01c3adc1c5cd
@@ -1044,6 +1102,7 @@ FileCopyrightText: <text>Copyright (c) 1998-2007 Sun Microsystems, Inc.</text>
 
 FileName: ./src/sunlabs/brazil/server/ChainHandler.java
 FileType: SOURCE
+ArtifactOfProjectName: Brazil
 FileLicenseConcluded: SPL-1.0
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: de210b5c8601d38d1521705d4371e42ade1f0185
@@ -1057,6 +1116,7 @@ FileCopyrightText: <text>Copyright (c) 1998-2006 Sun Microsystems, Inc.</text>
 
 FileName: ./src/sunlabs/brazil/properties/PropertiesList.java
 FileType: SOURCE
+ArtifactOfProjectName: Brazil
 FileLicenseConcluded: SPL-1.0
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: 8c29c4598a43f27bacdfcf446a49f740ecb07ac3
@@ -1070,6 +1130,7 @@ FileCopyrightText: <text>Copyright (c) 2001-2006 Sun Microsystems, Inc.</text>
 
 FileName: ./src/sunlabs/brazil/util/StringMap.java
 FileType: SOURCE
+ArtifactOfProjectName: Brazil
 FileLicenseConcluded: SPL-1.0
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: 9eae5bffc322e6b6f545885c531d049cb3881d1b
@@ -1083,6 +1144,7 @@ FileCopyrightText: <text>Copyright (c) 1999-2007 Sun Microsystems, Inc.</text>
 
 FileName: ./src/sunlabs/brazil/util/MatchString.java
 FileType: SOURCE
+ArtifactOfProjectName: Brazil
 FileLicenseConcluded: SPL-1.0
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: 4a5c48a0da113c77e618fc5f51baf9fb084afc6d
@@ -1096,6 +1158,7 @@ FileCopyrightText: <text>Copyright (c) 2001-2006 Sun Microsystems, Inc.</text>
 
 FileName: ./src/sunlabs/brazil/util/Base64.java
 FileType: SOURCE
+ArtifactOfProjectName: Brazil
 FileLicenseConcluded: SPL-1.0
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: 331e0299b16fe31f708f0524288acec63dc71c85
@@ -1109,6 +1172,7 @@ FileCopyrightText: <text>Copyright (c) 2000-2004 Sun Microsystems, Inc.</text>
 
 FileName: ./src/sunlabs/brazil/util/regexp/Regexp.java
 FileType: SOURCE
+ArtifactOfProjectName: Brazil
 FileLicenseConcluded: SPL-1.0
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: db2acc4841e76b3cddddba5e826e5dead03d6586
@@ -1122,6 +1186,7 @@ FileCopyrightText: <text>Copyright (c) 1999-2004 Sun Microsystems, Inc.</text>
 
 FileName: ./src/sunlabs/brazil/util/regexp/Regsub.java
 FileType: SOURCE
+ArtifactOfProjectName: Brazil
 FileLicenseConcluded: SPL-1.0
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: cd9b0a36c97ec369a20fe34dc9fd0e365b5249be
@@ -1135,6 +1200,7 @@ FileCopyrightText: <text>Copyright (c) 1999-2004 Sun Microsystems, Inc.</text>
 
 FileName: ./src/sunlabs/brazil/util/Glob.java
 FileType: SOURCE
+ArtifactOfProjectName: Brazil
 FileLicenseConcluded: SPL-1.0
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: 400fa9bd1aa3e5f74aa98c84f90237acf8820136
@@ -1148,6 +1214,7 @@ FileCopyrightText: <text>Copyright (c) 1999-2004 Sun Microsystems, Inc.</text>
 
 FileName: ./src/sunlabs/brazil/util/SocketFactory.java
 FileType: SOURCE
+ArtifactOfProjectName: Brazil
 FileLicenseConcluded: SPL-1.0
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: c74400e18c19b8f6b0d571d5d514ed22c59b3f94
@@ -1161,6 +1228,7 @@ FileCopyrightText: <text>Copyright (c) 1999-2004 Sun Microsystems, Inc.</text>
 
 FileName: ./src/sunlabs/brazil/util/Format.java
 FileType: SOURCE
+ArtifactOfProjectName: Brazil
 FileLicenseConcluded: SPL-1.0
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: 201f84d811617e9e02c75682cf232863c8c33f9d
@@ -1174,6 +1242,7 @@ FileCopyrightText: <text>Copyright (c) 2000-2006 Sun Microsystems, Inc.</text>
 
 FileName: ./src/sunlabs/brazil/util/http/HttpRequest.java
 FileType: SOURCE
+ArtifactOfProjectName: Brazil
 FileLicenseConcluded: SPL-1.0
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: 5d2b6f601c0a1502cdf9f30916d4367fa53364c1
@@ -1187,6 +1256,7 @@ FileCopyrightText: <text>Copyright (c) 1999-2007 Sun Microsystems, Inc.</text>
 
 FileName: ./src/sunlabs/brazil/util/http/HttpSocket.java
 FileType: SOURCE
+ArtifactOfProjectName: Brazil
 FileLicenseConcluded: SPL-1.0
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: 3b7fc7ff0a850666621669fc4f5ed63153e568e1
@@ -1200,6 +1270,7 @@ FileCopyrightText: <text>Copyright (c) 1999-2002 Sun Microsystems, Inc.</text>
 
 FileName: ./src/sunlabs/brazil/util/http/HttpUtil.java
 FileType: SOURCE
+ArtifactOfProjectName: Brazil
 FileLicenseConcluded: SPL-1.0
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: c4833fdc9f0a23ff4ec9342c7d4b1d7a93ed0973
@@ -1213,6 +1284,7 @@ FileCopyrightText: <text>Copyright (c) 1999-2004 Sun Microsystems, Inc.</text>
 
 FileName: ./src/sunlabs/brazil/util/http/HttpSocketPool.java
 FileType: SOURCE
+ArtifactOfProjectName: Brazil
 FileLicenseConcluded: SPL-1.0
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: 31089e0e8cbed023d06eed08f8842d33792623d2
@@ -1226,6 +1298,7 @@ FileCopyrightText: <text>Copyright (c) 1999-2004 Sun Microsystems, Inc.</text>
 
 FileName: ./src/sunlabs/brazil/util/http/MimeHeaders.java
 FileType: SOURCE
+ArtifactOfProjectName: Brazil
 FileLicenseConcluded: SPL-1.0
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: 83709e631e2abe02bdd12253b1a17b7d482d1623
@@ -1239,6 +1312,7 @@ FileCopyrightText: <text>Copyright (c) 1999-2005 Sun Microsystems, Inc.</text>
 
 FileName: ./src/sunlabs/brazil/util/http/HttpInputStream.java
 FileType: SOURCE
+ArtifactOfProjectName: Brazil
 FileLicenseConcluded: SPL-1.0
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: ffe183a098fe71e32b44552261157a921299ebd8
@@ -3672,6 +3746,7 @@ FileSize: 227 bytes
 
 FileName: ./build.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 8ac8319a37b2d24834bbb861942ee6395fa4485e
@@ -3692,6 +3767,7 @@ FileSize: 1 Kb (1298 bytes)
 
 FileName: ./assets/subscriptions.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: d8b332820173e143166c31bfd10bdaeb5e59959e
@@ -3704,6 +3780,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./assets/js/FilterClasses.jsm
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 02a4f45437935c4542b45b6e6b990781eacf831f
 FileChecksum: SHA256: 75b2a9f8b853b5b4e603c769ba74aca5219a0731c98f17c447ccfd2fd75f1e1a
@@ -3716,6 +3793,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./assets/js/FilterStorage.jsm
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileOrigin: AUTHORED
 FileChecksum: SHA1: d7f1e68711fd6f9c9a280677753e28d58dcb4b90
 FileChecksum: SHA256: 9fcd32b347327a8ff466458598dcd2bfb36c2b5074ae177bbd63b60693a3a7d1
@@ -3728,6 +3806,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./assets/js/Matcher.jsm
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileOrigin: AUTHORED
 FileChecksum: SHA1: ee336626fffa1330b0120600b387e0b3b4e8b4b6
 FileChecksum: SHA256: c94950b95b502b97b353d84a5bb883d7eba008a63bcd0492470eea188436b4bb
@@ -3740,6 +3819,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./assets/js/basedomain.js
 FileType: SOURCE
+ArtifactOfProjectName: ipv6
 FileLicenseConcluded: MIT
 FileOrigin: MODIFIED
 FileChecksum: SHA1: 4e1665372aef16fc0006986b5a89b971548a140a
@@ -3753,6 +3833,7 @@ FileCopyrightText: <text>Copyright 2011 Beau Gunderson</text>
 
 FileName: ./assets/js/ElemHide.jsm
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 6e259b0aed211812b59c90d08ba966187988dd31
 FileChecksum: SHA256: e3f8829a4c87966575fac8028aeccf3fcd3b3675a9aaff0bdd6384fcb11b07fa
@@ -3765,6 +3846,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./assets/js/publicSuffixList.js
 FileType: SOURCE
+ArtifactOfProjectName: PublicSuffixList
 FileLicenseConcluded: GPL-3.0
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: d16a23f167166776a13d17ea2305fda516e2dea4
@@ -3776,6 +3858,7 @@ FileLOC: 4030
 
 FileName: ./assets/js/SubscriptionClasses.jsm
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileOrigin: AUTOMIXED
 FileChecksum: SHA1: f0258a26547d67c15d817c313cf6690cdcc5853f
 FileChecksum: SHA256: 5c707b8c1410a365446d8b539a03b29c3db95b3b23d018af6ff424443d16ca81
@@ -3788,6 +3871,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./assets/js/XMLHttpRequest.jsm
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 61e710ace07492c5f9bd9029e184e02042af7ae6
 FileChecksum: SHA256: 674e3de890529bd122a1de995ca14221ef1df662b38fb2ab756a002c6aa02fe2
@@ -3800,6 +3884,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./assets/js/FilterNotifier.jsm
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileOrigin: AUTOMIXED
 FileChecksum: SHA1: 9ef64327966b0397bb1d73ba2d7385e8d50688e9
 FileChecksum: SHA256: bb63140fc87a48f3159f02d483c0f78b00363b606222916bbcf1add9faa7f849
@@ -3812,6 +3897,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./assets/js/FilterListener.jsm
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileOrigin: AUTOMIXED
 FileChecksum: SHA1: 638de3161455f2fe6d04058864df7403f847d38e
 FileChecksum: SHA256: 95844892a58ddba0f68ece2892b76488a91333b24901e679cd76b6f5a59aee1c
@@ -3824,6 +3910,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./assets/js/punycode.js
 FileType: SOURCE
+ArtifactOfProjectName: Punycode
 FileLicenseConcluded: MIT
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: 404e9b4e2fae3fd856beb62d5f3227f0616db859
@@ -3837,6 +3924,7 @@ FileCopyrightText: <text>Copyright 2011 Mathias Bynens <http://mathiasbynens.be/
 
 FileName: ./assets/js/start.js
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 183438b2fc813d40a256fdb275fe876a977de462
 FileChecksum: SHA256: 3f18afb5297df1e7b090719a9a0478a67c0d505a7c1093b598ba861b0657bef4
@@ -3849,6 +3937,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./assets/js/Synchronizer.jsm
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileOrigin: AUTOMIXED
 FileChecksum: SHA1: ad19c156b6c434e9d8072ca6c633f0151bb5962a
 FileChecksum: SHA256: 6a857d58b701f3998c7b0ae05b4c8ef05c478912d56eaa429b5b460623060520
@@ -3861,6 +3950,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./assets/install/iptables
 FileType: OTHER
+ArtifactOfProjectName: IPTables
 FileLicenseConcluded: GPL-3.0
 FileOrigin: MODIFIED
 FileChecksum: SHA1: 69156408878bdf0346cbb5bc3d56f81954ec7fca
@@ -3871,6 +3961,7 @@ FileSize: 86 Kb (88352 bytes)
 
 FileName: ./README.md
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: b8963f64dd1e8d74a17f3ecdb8395b9ec6f29c37
@@ -3881,6 +3972,7 @@ FileSize: 1 Kb (1699 bytes)
 
 FileName: ./.project
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 0a62f23cc2ef8a59961c4a82b3adf03eeeb59bdf
@@ -3891,6 +3983,7 @@ FileSize: 1 Kb (1759 bytes)
 
 FileName: ./.settings/org.eclipse.jdt.core.prefs
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 7a0601abc2a9c2244c2532f55ede36f775c9d533
@@ -3901,6 +3994,7 @@ FileSize: 587 bytes
 
 FileName: ./libs/RootTools-1.7.jar
 FileType: ARCHIVE
+ArtifactOfProjectName: RootTools
 FileLicenseConcluded: Apache-2.0
 FileOrigin: EXTERNAL
 FileChecksum: SHA1: 4c3510225cb56d187e5f378576e144bc58a6a868
@@ -3911,6 +4005,7 @@ FileSize: 67 Kb (68664 bytes)
 
 FileName: ./project.properties
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 94b5e717dd891087855071cabb8855242a12d70c
@@ -3921,6 +4016,7 @@ FileSize: 489 bytes
 
 FileName: ./.cproject
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 3bcbe837eb492f746b9e3a81c7dec8bcaae85c81

@@ -12,10 +12,10 @@
 
 package components;
 
-import comp.LinkType;
 import GUI.SearchType;
 import GUI.TreeNodeSPDX;
 import GUI.swingUtils;
+import comp.LinkType;
 import definitions.Messages;
 import java.io.File;
 import java.util.ArrayList;
@@ -23,7 +23,6 @@ import main.core;
 import script.Plugin;
 import script.log;
 import utils.html;
-import www.Link;
 import www.RequestOrigin;
 import www.WebRequest;
 
@@ -72,10 +71,6 @@ public class showComponents extends Plugin{
         link.add(LinkType.View);
         
         String result = core.components.getReport(link);
-        
-        result = html.div()
-                + result
-                + html._div;
         
         request.setAnswer(result);
     }
