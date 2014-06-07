@@ -1,0 +1,12 @@
+{
+  "id": "RootTools",
+  "title": "RootTools",
+  "referenceURL": "https://code.google.com/p/roottools/",
+  "downloadURL": "https://code.google.com/p/roottools/downloads/detail?name\u003dRootTools-1.7.jar ",
+  "authors": "Stephen Ericson (Stericson.g1@gmail.com) ",
+  "desc": "",
+  "summary": "RootTools is a library that developers can include in their apps to simplify using root on Android devices.",
+  "version": "1.7",
+  "lic": "Apache-2.0",
+  "remarks": ""
+}

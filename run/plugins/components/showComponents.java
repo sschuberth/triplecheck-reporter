@@ -17,10 +17,12 @@ import GUI.TreeNodeSPDX;
 import GUI.swingUtils;
 import definitions.Messages;
 import java.io.File;
+import java.util.ArrayList;
 import main.core;
 import script.Plugin;
 import script.log;
 import utils.html;
+import www.Link;
 import www.RequestOrigin;
 import www.WebRequest;
 
@@ -64,16 +66,17 @@ public class showComponents extends Plugin{
         if(request.requestOrigin == RequestOrigin.GUI_tree){
             core.studio.setSearchProvider(SearchType.Components_Show);
         }
-        // show up our search page
-        final String link = "/components/showComponent?name=";
-        String result = core.components.getPrettyListHTML("View", link);
+        
+        ArrayList<LinkType> link = new ArrayList();
+        link.add(LinkType.View);
+        
+        String result = core.components.getReport(link);
         
         result = html.div()
                 + result
                 + html._div;
         
         request.setAnswer(result);
-        
     }
    
 }

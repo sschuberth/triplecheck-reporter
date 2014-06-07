@@ -16,7 +16,6 @@ package script;
 
 import definitions.is;
 import java.util.ArrayList;
-import java.util.HashMap;
 import main.core;
 
 /**
@@ -37,11 +36,7 @@ public class RunningTask{
     private String title;
     // is this task running or not?
     protected Boolean isProcessing = false;
-    
-    // where we keep our shared objects
-    public HashMap
-            temp = new HashMap<String, Object>();
-    
+      
      // the text that is repeated across these messages
     private String getHeader(){
         return "Task \"" + title //+ "\" ("+ UID + ")"

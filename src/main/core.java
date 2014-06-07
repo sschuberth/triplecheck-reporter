@@ -14,10 +14,10 @@
 
 package main;
 
-import components.ComponentControl;
 import FileExtension.ExtensionControl;
 import GUI.StartupScreen;
 import GUI.StudioUI4;
+import components.ComponentControl;
 import definitions.folder;
 import definitions.is;
 import java.io.File;
@@ -26,7 +26,10 @@ import java.util.HashMap;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import script.RunningTask;
-import structure.*;
+import structure.LicenseControl;
+import structure.LicensePopularity;
+import structure.ReportsControl;
+import structure.TriggerControl;
 import utils.Settings;
 
 

@@ -15,6 +15,7 @@ package components;
 
 import GUI.SearchType;
 import GUI.swingUtils;
+import java.util.ArrayList;
 import main.core;
 import script.Plugin;
 import script.log;
@@ -22,6 +23,13 @@ import utils.html;
 import www.Link;
 import www.WebRequest;
 
+/**
+ * View component
+ * Choose component
+ * 
+ * 
+ * 
+ */
 
 /**
  *
@@ -89,6 +97,16 @@ public class choose extends Plugin{
         core.studio.setSearchProvider(SearchType.Components_Choose);
         // show a simple template (might be replaced with better in the future)
         request.setTemplate("chooseComponent.html");
+        
+        ArrayList<LinkType> link = new ArrayList();
+        link.add(LinkType.Choose);
+        
+        String listOfComponents =// html.h3("Local components")
+                //+ 
+                core.components.getReport(link);
+              
+        request.changeTemplate("[template]", listOfComponents);
+        
         request.closeTemplate();
     }
     

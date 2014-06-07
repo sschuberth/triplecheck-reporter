@@ -42,7 +42,8 @@ public class Component {
             dateCreated,    // when this component was first created
             dateLastModified,   // last time it was modified
             lic,            // the license declared by the author
-            remarks;        // special remarks to be included in reports
+            remarks,        // special remarks to be included in reports
+            type;           // comes from a public repository or is it local?
             
     protected ArrayList<License> applicableLicenses;  // set of applicable licenses
     protected ArrayList<Component> subComponents;  // components included within
@@ -103,6 +104,9 @@ public class Component {
         this.lic = declaredLicense;
     }
     
+    public void setRemarks(String remarks) {
+        this.remarks = remarks;
+    }
     
     
     
@@ -153,19 +157,35 @@ public class Component {
      * @param link  The base URL where the link points to
      * @return 
      */
-    String getOneLineHTML(String title, String link) {
-        return this.title
+    String getOneLineHTML(ArrayList<LinkType> links) {
+        
+        if(title == null || title.isEmpty()){
+            title = id;
+        }
+        
+        String result = this.title
                 + " "
                 + html.textGrey("("+ id +")")
-                + " "
-                + html.link(title, link + id)
-                + html.br
-                + html.textGrey("<i>" + desc + "</i>")
-                ;
+                + " ";
+        
+        for(LinkType link : links){
+            switch(link){
+                case View:
+                    result += " | " + html.link("view", "showComponent/?&name=" + id 
+                            + "&type=" + type);
+                    break;
+                case Choose:
+                    result += " | " + html.link("choose", "choose/?x=select&name=" + id);
+                    break;
+                    
+            }
+        }
+        
+        // add the description
+        result += html.textGrey("<i>" + desc + "</i>");
+        
+        // all done
+        return result;
     }
 
-    void setRemarks(String remarks) {
-        this.remarks = remarks;
-    }
-    
 }

@@ -123,8 +123,8 @@ public class ComponentControl {
      * @param maxDeep   How deep in the folder structure can we go?
      * @return          A component if exact match is found, null otherwise
      */
-    private String getListCustomHTML(final String title,
-            final String link, File where, int maxDeep){
+    private String getReportCustomComponents(final ArrayList<LinkType> link,
+            File where, int maxDeep){
     // create the gson builder
     Gson gson = new Gson();
     // get an array with the files on the current folder
@@ -140,14 +140,16 @@ public class ComponentControl {
                 // read the contents of this file
                 final String input = utils.files.readAsString(file);
                 final Component result = gson.fromJson(input, Component.class);
-                output += result.getOneLineHTML(title, link) + html.br;
+                output += result.getOneLineHTML(link) 
+                        //+ html.br
+                        ;
                 componentCounter++;
             }
             else
             if ( (file.isDirectory())
                 &&( maxDeep-1 > 0 ) ){
                 // do the recursive crawling
-                output += getListCustomHTML(title, link, file, maxDeep-1);
+                output += getReportCustomComponents(link, file, maxDeep-1);
             }
         }
     return output;
@@ -161,7 +163,7 @@ public class ComponentControl {
      * @param maxDeep   How deep in the folder structure can we go?
      * @return          A component if exact match is found, null otherwise
      */
-    private String getListRepositoriesHTML(final String id, final Link link, 
+    private String searchRepositoriesHTML(final String id, final Link link, 
             File where, int maxDeep){
         // get an array with the files on the current folder
         File[] files = where.listFiles();
@@ -180,7 +182,7 @@ public class ComponentControl {
                 if ( (file.isDirectory())
                     &&( maxDeep-1 > 0 ) ){
                     // do the recursive crawling
-                    output += getListRepositoriesHTML(id, link, file, maxDeep-1);
+                    output += searchRepositoriesHTML(id, link, file, maxDeep-1);
                 }
             }
         return output;
@@ -201,11 +203,11 @@ public class ComponentControl {
      * @param link  The initial part of the link used on the view details
      * @return      An HTML page ready for display to end-users
      */
-    public String getPrettyListHTML(String title, String link) {
+    public String getReport(ArrayList<LinkType> link) {
         componentCounter = 0;
-        String result = getListCustomHTML(title, link, core.getComponentFolder(), 25);
+        String result = getReportCustomComponents(link, core.getComponentFolder(), 25);
         
-        result = html.h2("Custom components available (" + componentCounter + ")")
+        result = html.h3("Custom components available (" + componentCounter + ")")
                 + result;
         
         return result;
@@ -321,9 +323,13 @@ public class ComponentControl {
    * @return 
    */
     public String search(String searchTerm, Link link) {
-        String result = 
-                html.div()
-                + getListRepositoriesHTML
+        String result = "" 
+//                + html.h3("Local components")
+//                + this.getListCustomHTML(link, core.getComponentFolder(), 25)
+//                
+                + html.h3("On public repositories")
+                + html.div()
+                + searchRepositoriesHTML
                     (searchTerm, link, core.getComponentFolder(), 25)
                 + html._div
                 ;

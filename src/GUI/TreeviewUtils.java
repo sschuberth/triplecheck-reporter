@@ -107,7 +107,7 @@ public class TreeviewUtils {
      * @param UID   Unique identification for this spdx
      * @param file  its location on disk
      */
-    private static TreeNodeSPDX spdxAddNode2(final SPDXfile2 spdx, 
+    public static TreeNodeSPDX spdxAddNode2(final SPDXfile2 spdx, 
             final TreeNodeSPDX rootNode) {
         final File file = spdx.file;
         final String fileName = file.getName();
@@ -138,8 +138,7 @@ public class TreeviewUtils {
         
         
         // create the correct parameters
-        final String relativePath = 
-        file.getAbsolutePath().replace(core.getProductsFolder().getAbsolutePath(), "");
+        final String relativePath = spdx.getRelativePath();
         node.scriptParameters.add(new String[]{param.spdx, relativePath});
         rootNode.add(node);
         return node;

@@ -69,8 +69,6 @@ public class createNew extends Plugin{
         String versions = request.getParameter("versions");
        
         
-        
-        
         if(id == null || id.isEmpty()){
             request.setAnswer(html.errorMessage("The short name can't be empty"));
             return;

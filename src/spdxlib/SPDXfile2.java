@@ -110,10 +110,14 @@ public class SPDXfile2 implements Serializable{
      * The name for this SPDX document
      * @return  The name of this SPDX document without the .SPDX extension
      */
-    public final String getId() {
+    public final String getId(){
         return file.getName().replace(".spdx", "");
     }
 
+    public final String getUID(){
+        return ">> "+file.getName()+" >> Reports ";
+    }
+    
     /**
      * Provides details about the author ship of this SPDX document
      * @return An HTML document ready to be shown at the end-user
@@ -179,6 +183,15 @@ public class SPDXfile2 implements Serializable{
         }else{
             return what + counter + html.br;
         }
+    }
+
+    /**
+     * Returns the path related to the reports folder
+     * @return 
+     */
+    public String getRelativePath() {
+        return file.getAbsolutePath().replace(core.getProductsFolder().
+                getAbsolutePath(), "").replace("\\", "/");
     }
 
     // used for tags with multiple lines, such as:

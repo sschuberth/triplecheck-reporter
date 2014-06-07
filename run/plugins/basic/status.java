@@ -160,17 +160,17 @@ public class status extends Plugin{
         // include the log history so far
         String logHistory = "";
         if(task.getLogHistory().size() > 1){
-            logHistory = html.h3("Log");
-            String lastItem = "";
-            for(String logItem : task.getLogHistory()){
-                lastItem = "- " + logItem + html.br;
-                logHistory += lastItem;
-            }
-            // remove the last log line, it is repeated on the "current status"
-            if(lastItem.isEmpty() == false){
-                logHistory = logHistory.substring
-                    (0, logHistory.lastIndexOf(lastItem));
-            }
+//            logHistory = html.h3("Log");
+//            String lastItem = "";
+//            for(String logItem : task.getLogHistory()){
+//                lastItem = "- " + logItem + html.br;
+//                logHistory += lastItem;
+//            }
+//            // remove the last log line, it is repeated on the "current status"
+//            if(lastItem.isEmpty() == false){
+//                logHistory = logHistory.substring
+//                    (0, logHistory.lastIndexOf(lastItem));
+//            }
         }
         
         // get the next step to show users what to do
@@ -206,12 +206,12 @@ public class status extends Plugin{
                 + html.br
                 + "Temporary Id number: " + task.getUID()
                 + html.br
-                + "Percentage complete: " + task.getPercentage() + "%"
+//                + "Percentage complete: " + task.getPercentage() + "%"
                 + html.br
                 + html.br
                 + status
                 + nextStep
-                + logHistory
+//                + logHistory
                 + html._div
                 + "</body></html>";
         request.setAnswer(result);

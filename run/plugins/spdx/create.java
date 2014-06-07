@@ -12,6 +12,7 @@
 
 package spdx;
 
+import GUI.TreeviewUtils;
 import GUI.swingUtils;
 import definitions.Messages;
 import definitions.is;
@@ -31,6 +32,7 @@ import script.Plugin;
 import script.RunningTask;
 import script.log;
 import spdxlib.DocumentCreate2;
+import spdxlib.SPDXfile2;
 import utils.html;
 import www.RequestOrigin;
 import www.WebRequest;
@@ -210,10 +212,17 @@ public class create extends Plugin{
                          html.link("See report", 
                         "/spdx/show?x=summary&"
                         + param.spdx + "=" + result)
-                       + " | " +
-                       html.link("Show in text mode", 
-                        "/spdx/show?x=full&"
-                        + param.spdx + "=" + result)
+                       
+//                       + html.redirect(
+//                               "/spdx/show?x=summary&"
+//                                + param.spdx + "=" + result
+//                               , 
+//                               2
+//                               , "Redirecting..")
+//                       + " | " +
+//                       html.link("Show in text mode", 
+//                        "/spdx/show?x=full&"
+//                        + param.spdx + "=" + result)
                        ;
              //  swingUtils.doRequest(result);
              }
@@ -275,10 +284,10 @@ public class create extends Plugin{
                          html.link("See report", 
                         "/spdx/show?x=summary&"
                         + param.spdx + "=" + result)
-                       + " | " +
-                       html.link("Show in text mode", 
-                        "/spdx/show?x=full&"
-                        + param.spdx + "=" + result)
+//                       + " | " +
+//                       html.link("Show in text mode", 
+//                        "/spdx/show?x=full&"
+//                        + param.spdx + "=" + result)
                        ;
                     
                 }
@@ -497,20 +506,20 @@ public class create extends Plugin{
         task.setPercentageComplete(100);
         task.setStatus("All done!");
             
-        String result = extractedFolder.getName() + ".spdx";
+        String result = "/" + extractedFolder.getName() + ".spdx";
         
         // all done here, explain where the SPDX document can be found
                task.nextStep = 
 //                       "";
 //               System.err.println("CR505 - No next steps implemented yet");
-                         html.link("SPDX summary", 
+                         html.link("View report", 
                         "/spdx/show?x=summary&"
                         + param.spdx + "=" + result
                          )
-                       + " | " +
-                       html.link("Show full text", 
-                        "/spdx/show?x=full&"
-                        + param.spdx + "=" + result)
+//                       + " | " +
+//                       html.link("Show full text", 
+//                        "/spdx/show?x=full&"
+//                        + param.spdx + "=" + result)
                        + html.redirect(
                                "/spdx/show?x=summary&"
                                 + param.spdx + "=" + result
@@ -524,7 +533,7 @@ public class create extends Plugin{
                // when all things said and done
                concludeCreation(newSPDX);
         
-        return "";
+        return result;
     }
     
      private File extractFile(File downloadedFile, RunningTask task){
@@ -640,8 +649,11 @@ public class create extends Plugin{
  * updating the tree view
  */
 private void concludeCreation(DocumentCreate2 newSPDX){
-    System.err.println("CR641 - Missing to implement SPDX conclude creation");
-   // String UID = newSPDX.getUID();
+    //System.err.println("CR641 - Missing to implement SPDX conclude creation");
+    SPDXfile2 spdx = new SPDXfile2(newSPDX.getOutputFile());
+    core.reports.add(spdx.file, spdx);
+    TreeviewUtils.spdxAddNode2(spdx, TreeviewUtils.getNodeReports());
+    swingUtils.setSelectedNode(spdx.getUID());
     // refresh the tree
 //    TreeviewUtils.spdxAddOrUpdate(UID, newSPDX.file);
 }

@@ -48,6 +48,9 @@ public class DocumentCreate2 {
             filesProcessed,
             filesTotal;
     
+    private File
+            outputFile;
+    
     // misc variables
     
     // the generic file writer (where we store the results on disk)
@@ -66,6 +69,12 @@ public class DocumentCreate2 {
     public int getFilesTotal() {
         return filesTotal;
     }
+
+    public File getOutputFile() {
+        return outputFile;
+    }
+    
+    
     /**
      * From a given folder on disk, create an SPDX report
      * @param folderToAnalyze   The folder on disk
@@ -74,8 +83,8 @@ public class DocumentCreate2 {
     public boolean create(final File folderToAnalyze) {
         String filename = folderToAnalyze.getName() + ".spdx";
         // create the file pointer
-        File document = new File(core.getProductsFolder(), filename);
-        return create(folderToAnalyze, document);
+        outputFile = new File(core.getProductsFolder(), filename);
+        return create(folderToAnalyze, outputFile);
     }
     /**
      * From a given folder on disk, create an SPDX report
@@ -182,7 +191,13 @@ public class DocumentCreate2 {
      // increase the counter
      filesProcessed++;
  }
+
+    public SPDXfile2 getSpdx() {
+        return spdx;
+    }
     
+ 
+ 
      /**
      * Returns the SSDEEP checksum for a given file
      * @param file  A file on disk
