@@ -111,7 +111,7 @@ public class core {
         iconTEMP = new ImageIcon(getIcon("document-clock.png").getAbsolutePath()),
         iconUNKNOWN = new ImageIcon(getIcon("document.png").getAbsolutePath()),
         iconCOMPONENTS = new ImageIcon(getIcon("blue-document-node.png").getAbsolutePath()),
-    
+        iconEXPORT = new ImageIcon(getIcon("application-dock-270.png").getAbsolutePath()),
         iconFolderClosed = new ImageIcon(getIcon("folder-horizontal.png").getAbsolutePath()),
         iconFolderOpen = new ImageIcon(getIcon("folder-horizontal-open.png").getAbsolutePath()),
         iconFiles = new ImageIcon(getIcon("documents-stack.png").getAbsolutePath()),
@@ -138,6 +138,20 @@ public class core {
         }
         return result;
     }
+    
+       /**
+     * Gets the folder where misc settings are placed
+     * @return The folder from where the main application is running
+     */
+    public static File getFolderExport(){
+        File result = new File(getWorkFolder(), "export");
+        // if the folder doesn't exist, create one
+        if(result.exists() == false){
+            utils.files.mkdirs(result);
+        }
+        return result;
+    }
+
     
      /**
      * Where are all the github related files placed?

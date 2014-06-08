@@ -101,9 +101,7 @@ public class settings extends Plugin{
         // all done, let's go back
         String output = html.redirect("/spdx/settings", 0, 
                        " Returning to previous page..");
-        
         request.setAnswer(output);
-        
     }
   
     

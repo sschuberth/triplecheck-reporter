@@ -45,7 +45,7 @@ public class TreeRenderer extends DefaultTreeCellRenderer {
 //            sectionCreator = get("fingerprint.png"),
 //            sectionPackage = get("box.png"),
 //            sectionFile = get("documents-stack.png"),
-//            sectionReview = get("geolocation.png"),
+//            sectionExport = get("geolocation.png"),
 //            //dependency = get("envelope.png"),
 //            file = get("document-number.png"),
 //            home = get("home.png"),
@@ -106,6 +106,9 @@ public class TreeRenderer extends DefaultTreeCellRenderer {
                 break;
             case sectionComponents:
                 setIcon(core.iconCOMPONENTS);
+                break;
+            case sectionExport:
+                setIcon(core.iconEXPORT);
                 break;
             default:
                 setIcon(core.iconUNKNOWN);

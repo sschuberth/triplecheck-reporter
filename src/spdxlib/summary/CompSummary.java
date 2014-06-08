@@ -115,6 +115,10 @@ public class CompSummary {
                         fileList = fileList.concat(
                                 "<i>" 
                                 + fileInfo.getFileName()
+                                + html.textGrey(
+                                    " ("
+                                    + fileInfo.getFileOrigin().getLowercase()
+                                    + ")")
                                 + "</i>"
                                 + html.br);
                     }
@@ -144,7 +148,8 @@ public class CompSummary {
                         + " (" 
                         + utils.text.pluralize(count, "file")
                         + ")")
-                    + addIfNotEmpty("Description", component.getDesc(), true)
+                    //+ addIfNotEmpty("Description", component.getDesc(), true)
+                    + addIfNotEmpty("Description", component.getSummary(), true)
                     + addIfNotEmpty("Declared license", component.getLic(), false)
                     + addIfNotEmpty("Main author(s)", component.getAuthors(), false)
                     + addLinkIfNotEmpty("Reference URL", component.getReferenceURL())

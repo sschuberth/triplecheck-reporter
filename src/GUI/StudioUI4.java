@@ -1024,7 +1024,7 @@ public class StudioUI4 extends javax.swing.JFrame {
             case sectionCreator:
             case sectionPackage:
             case sectionSettings:
-            case sectionReview:
+            case sectionExport:
             case home:
             case SPDX:
             case folder:

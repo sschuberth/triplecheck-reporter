@@ -1,0 +1,2189 @@
+##-------------------------
+## SPDX Document Information
+##-------------------------
+SPDXVersion: SPDX-1.2
+DataLicense: CC-BY-4.0
+
+##-------------------------
+## Creation Information
+##-------------------------
+Creator: Nuno Brito
+Creator: Tool: TripleCheck 0.8
+Created: 2014-05-14T19:29:30Z
+
+##-------------------------
+## Package Information
+##-------------------------
+PackageName: adblockplusie
+
+##-------------------------
+## File Information
+##-------------------------
+FileName: ./.hgignore
+FileType: OTHER
+ArtifactOfProjectName: re7zip
+FileComponent: re7zip
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 0dd27d1c6a8e3a52ac0cf395c5425b8bc6f9dc31
+FileChecksum: SHA256: 27294c15f50a922f96a45f240498a4babb541ac613750a3e3b0d9fa3d4a28a20
+FileChecksum: MD5: abae912c1e6dbac6639dd2105e5bbf7d
+FileChecksum: SSDEEP: 3:xR5Q/Uy4yPNzvUJmPLDAiMVGNobSMdKHkmMdVBIv:n41PN8mzDrUGNo2MdHmMdVBS
+FileSize: 95 bytes
+
+FileName: ./.hgtags
+FileType: OTHER
+ArtifactOfProjectName: 7z
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 6eb748ba5dbee01f32f143a78ddc9aae9ea153d9
+FileChecksum: SHA256: e2fc584b7e32a034f649d343bd9ce0dc8da1295abf402bf3dd97abb737f54cab
+FileChecksum: MD5: b356ee82db4d95e9485d6d9236175a15
+FileChecksum: SSDEEP: 3:nhQqVRaeuaRWWUZfnHiV9chHMSUvyAfnHiV9chHMSUvzJSuLB90U8LBrgH3FUq:nlRqaR1wRh2yuRh2NBqUCBrgH9
+FileSize: 180 bytes
+
+FileName: ./adblockplus.gyp
+FileType: OTHER
+ArtifactOfProjectName: PublicSuffixList
+FileComponent: remedium
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 1d000bbfb271a69762d0a42c52824601e6dcd60b
+FileChecksum: SHA256: fd71d7db5c93bdb8d1df5366796bb1e3896f78778dcc03008d79f159073f6485
+FileChecksum: MD5: 0a1862bde6e08292c9fa414315fd01af
+FileChecksum: SSDEEP: 96:0+CfMLM20ymvNManm1ksQ3DSMS+7yY9ZQX7pbsQ648CTTTr42S62CS+qp1WpzSSH:wOTaNMFksQTS+eY9ZQXtbsX48CTn1o+B
+FileSize: 4 Kb (4712 bytes)
+
+FileName: ./adblockplusie - Atalho.lnk
+FileType: OTHER
+ArtifactOfProjectName: PublicSuffixList
+FileComponent: remedium
+FileChecksum: SHA1: f52a14e4cdf0e6ef87c71ac56725d5c6378b6988
+FileChecksum: SHA256: db25881d650dbdb53de0589c1741a8ff00a878857ce623e5af4be30c18bc8e6c
+FileChecksum: MD5: 8e3d193baa6e03b8ef72369f4d2ada21
+FileChecksum: SSDEEP: 24:8d6oimEQEllmnrcPsXI7VaKlBhvPmEKyamE3gjf:8gRzQElKAEXIDhHzKFzwz
+FileSize: 1 Kb (1033 bytes)
+
+FileName: ./build_release.py
+FileType: SOURCE
+ArtifactOfProjectName: PublicSuffixList
+FileComponent: remedium
+FileLicenseConcluded: GPL-3.0
+FileChecksum: SHA1: 4ef9765519cdee7eb9d07858e6adc8579f3e3586
+FileChecksum: SHA256: 9cd60d16dc03d8960ec7eb4de0847e27ec6f189b27e34e84cce3adf891ad4fbc
+FileChecksum: MD5: 86c592064e34ce52d54dd599bc25c2bc
+FileChecksum: SSDEEP: 48:98JVCUmezN9kzNWG61KkdLmVa/pKl/pNRxaLHjfBEFtm:98LNWhWG61KkMrRxyDfBEFtm
+FileSize: 2 Kb (2550 bytes)
+FileLOC: 58
+
+FileName: ./createsolution.bat
+FileType: SOURCE
+ArtifactOfProjectName: PublicSuffixList
+FileComponent: remedium
+FileLicenseConcluded: GPL-3.0
+FileChecksum: SHA1: 632cd4d41a4c4698bd4953e8ccb0d0a4a181a9b5
+FileChecksum: SHA256: 3bb5479e02f42892a0474f510660173ac2648523eb20d931487080ce69669626
+FileChecksum: MD5: 9d737d778c13e585928bfb30c21c8f16
+FileChecksum: SSDEEP: 12:LQS5Ll/dvQKq5gI0A9O45QWZ5gINAyO45GyWAn:MSjdoN0A9O459NAyO45Nn
+FileSize: 722 bytes
+FileLOC: 10
+
+FileName: ./defaults.gypi
+FileType: OTHER
+ArtifactOfProjectName: PublicSuffixList
+FileLicenseConcluded: GPL-3.0
+FileChecksum: SHA1: f045d1bd1d6954d9e8e830b7f88f14dae4c54b01
+FileChecksum: SHA256: 88e2de6f5874035c39bfadb72ed2a7519214e0598d1f7bc4eb72cf18276e95f2
+FileChecksum: MD5: b3c5278498c8b6d8e001513f87dc029e
+FileChecksum: SSDEEP: 48:BHrKAzU2MOKHzU2O1XSS4AQfAw5SkFlEDU25SP62HUdkUb8UN:BHrKAzPMOKHzPiXSSNQowM8GDP5SXHU5
+FileSize: 2 Kb (2118 bytes)
+
+FileName: ./files/settings.ini
+FileType: OTHER
+FileChecksum: SHA1: 9e444c0b0c09f39dfa3dbab3a9cca1f8782c36c0
+FileChecksum: SHA256: d64d66e17790dd14db66ee4c09600f361c4e45ccbd97eb2de4c10ebf237ce8f2
+FileChecksum: MD5: 469a541dd199a7de3a5ce7725af7791e
+FileChecksum: SSDEEP: 3:Q+slALqRIivClLtlEllcEC4pAcLLmXlzlLlUF:Q+slAmPClxellcEC6AcLU8F
+FileSize: 98 bytes
+
+FileName: ./html/static/css/firstRun.css
+FileType: SOURCE
+FileChecksum: SHA1: 16c426138b5f03f982b8bde230289ceb499d02c9
+FileChecksum: SHA256: 1a2f8dad0235b2a18b2f92ac810e373d025d7a4b27ef99a60691cb61c336a9be
+FileChecksum: MD5: 03beafb82c5c3b33b5f4d2f46569d54f
+FileChecksum: SSDEEP: 48:5d/5ahWWvh5AG/rmzj5yVckxFX3Q7yqfP55dO5z5M5s2s+Xaxbn:vhaEWvbAG/rWlGDFXg7T3DdENKNsHbn
+FileSize: 2 Kb (2433 bytes)
+FileLOC: 147
+
+FileName: ./html/static/css/settings.css
+FileType: SOURCE
+FileChecksum: SHA1: 5271799026a9dd8c7372e2c66dfad62000a04ed2
+FileChecksum: SHA256: ac5949d06a20cd7c0353567aa13a20ba1df4d83b04d962c3b1e0c06d9fe2f0c0
+FileChecksum: MD5: bcff83ec0ea192cecff4b375359a8e3c
+FileChecksum: SSDEEP: 96:6VOj1TvWDrWHC7G4UwNNp+ICNNo9Cr3acwlFwftrvLvK7s126YP3jYk:vvDH4Ntszr3aVYrTrIrYk
+FileSize: 4 Kb (5042 bytes)
+FileLOC: 269
+
+FileName: ./html/static/img/abp-128.png
+FileType: OTHER
+FileChecksum: SHA1: 000ded6c7af992258afc867f337cfd500a074d09
+FileChecksum: SHA256: da4dd1f7fa7862727c794a98ad4a13b8f14bd68b63724acc85f7572f0b46c59e
+FileChecksum: MD5: 908d6a49105f6c48180b6a860bf2ff6e
+FileChecksum: SSDEEP: 384:cRC0j97ty9t2ZiujzIcCm90sGWzcdoGViRVtT3N:vwCoZjjDrestYdBArZ3N
+FileSize: 14 Kb (14723 bytes)
+
+FileName: ./html/static/img/ajax-loader.gif
+FileType: OTHER
+FileChecksum: SHA1: 2e11650d93658d3f04412f61244493e5a3e18a07
+FileChecksum: SHA256: 34aa188e907c43f48ddc6a6dbcd648d9c2677eb4279172d47920bc43521107c7
+FileChecksum: MD5: d9a519c2a0e65f3bf4149e36ccf9b885
+FileChecksum: SSDEEP: 48:3/wXprWPLjhl4TRpiPvZmjkzpB0IdmXgl7gpx2DgG1LyZtngoA/3zlSMilKNhGZ:3Y5CPxl9hUQipx2k3ZtgoC3sMnNhOQ
+FileSize: 3 Kb (3208 bytes)
+
+FileName: ./html/static/img/background.png
+FileType: OTHER
+FileChecksum: SHA1: 6808478315324943c1d5a3c150a3436ed4d6842b
+FileChecksum: SHA256: f6a1606f8223a9c261694e3382486182a50ebfb52d128b3ba27c6707b9a7ea93
+FileChecksum: MD5: f3b21cf1d4b581b885161641196ef31c
+FileChecksum: SSDEEP: 3:yionv//thPlplhmtLNtxg/dyUI5KkAJnkIkxW3jJW6G3RoWQP3vtwZuSE6e3rx7j:6v/lhPGt6VyG7FkgzJj32C6kytWbp
+FileSize: 255 bytes
+
+FileName: ./html/static/img/button-background/disable.png
+FileType: OTHER
+FileChecksum: SHA1: 677909a67d196660708e29e136e392a5155b7592
+FileChecksum: SHA256: b5b92ef3d8f3b1c967b99b9aad5f3d07c4a03bdf3ed60a4ec7b94f361b3b198b
+FileChecksum: MD5: 9de50608540466a1f8d88a04a4ef6b2d
+FileChecksum: SSDEEP: 3:yionv//thPlJhtnlxlsVLts4d2o1pUIgJ0R+j7P2wvSkyJJFu1RiKkg1p:6v/lhPCVRLd2Wtc7P2wvSTFu1RiKkup
+FileSize: 141 bytes
+
+FileName: ./html/static/img/button-background/disable_active.png
+FileType: OTHER
+FileChecksum: SHA1: fd4953bd0440d7efdd7d95dc8462f2cc501bd5a1
+FileChecksum: SHA256: 0347dcbded55c750e3874eeaa5cc7dd09a18cb30df2672c0fae0a3043a811344
+FileChecksum: MD5: 59a8815da39c002fb973d3f65f716b23
+FileChecksum: SSDEEP: 3:yionv//thPlJhtjll+l0Lts5ADGYCR87ci5L3+n05BMGp:6v/lhPe0RRDM7i5rTWGp
+FileSize: 140 bytes
+
+FileName: ./html/static/img/button-background/donate.png
+FileType: OTHER
+FileChecksum: SHA1: 6c465f17c917e2ac14099f0a076b2fcc015e38e4
+FileChecksum: SHA256: 1bc07c92cf116fd1a9dc56907f125ce40b62e41bfa89a7e53a74be557fa89a39
+FileChecksum: MD5: bf9a43519e384383d07bab2f98183ca8
+FileChecksum: SSDEEP: 3:yionv//thPlrptjT2iLtsas4HiWzoquUXg+nsuRO21SnYKtkK2e+CS9Y8UsG3vBw:6v/lhPHRpsOx3uUwaRZMnYKWEZwJG3Zw
+FileSize: 171 bytes
+
+FileName: ./html/static/img/button-background/enable.png
+FileType: OTHER
+FileChecksum: SHA1: b291cb48e42a51d046dbd56106f7da786dc88a67
+FileChecksum: SHA256: a4cef8fabdb194ff746c894a0b12ff59572c698ddbe6d0db9772aabd30a706cd
+FileChecksum: MD5: 6adaecd17f36bf972e771562565fd6ac
+FileChecksum: SSDEEP: 3:yionv//thPlJhtjll+l0LtstADwqhlVaVqWnfr/tHKxUERi/eXU2L/8up:6v/lhPe0RNDfhlJifLtHKxNiGXU2L/8c
+FileSize: 152 bytes
+
+FileName: ./html/static/img/button-background/enable_active.png
+FileType: OTHER
+FileChecksum: SHA1: 8730257dac56b991a738b5151ceaa2270a367366
+FileChecksum: SHA256: 95d603586c83251e3e9fee89bb8a00bb7d2fa4c3bc65afa95cf78e9e3e685289
+FileChecksum: MD5: 00f3585b06c3aec75d7a55b2ea7f9b4f
+FileChecksum: SSDEEP: 3:yionv//thPlJhtjll+l0LtstADHCQOGjjhPKJa8EPg4SjDSDgHy2zOtVp:6v/lhPe0RNDHCQDjpKUPg46SD2zOTp
+FileSize: 152 bytes
+
+FileName: ./html/static/img/checkmark.png
+FileType: OTHER
+FileChecksum: SHA1: 39e20c55040df494b43a5e36b16a8fec63d39c37
+FileChecksum: SHA256: 9f18f74af5e14076e2ecc46b0522fd25610bc9c48dd54afbe4e4ef8616a02cc8
+FileChecksum: MD5: e6bf524ad020965a889057d6134a4719
+FileChecksum: SSDEEP: 6:6v/lhPhtn1Ar1XZ24nDMB/j0+3o0J1P1030oMmjp:6v/7z6r1XYSm0+40XmEvmN
+FileSize: 368 bytes
+
+FileName: ./html/static/img/features/adblocking.png
+FileType: OTHER
+FileChecksum: SHA1: fe65daa00092096b6d1fc0e6ee2de2f24b809d7e
+FileChecksum: SHA256: 2c123707495eb3126fdeb0f926d4e843ca87905727a0436ca3a778e498d0bf9f
+FileChecksum: MD5: b7d854524772ba96dd80fab2c1f25213
+FileChecksum: SSDEEP: 48:M2VaNND+cTkI/zpIFld1/qXLZ6vhFRCaM24SGfd+aFyKZYxMoBhm4prO6Y:M2yDPWdxULZ6p62Hu+impBhmCY
+FileSize: 2 Kb (2683 bytes)
+
+FileName: ./html/static/img/features/language.png
+FileType: OTHER
+FileChecksum: SHA1: 70fe10f1fbcee8e1d96522d19c5f7e0079195d0a
+FileChecksum: SHA256: e1d854c17c277f86d2bbad6cdb5852a86d5548cba024d5fd90637bd6236b5985
+FileChecksum: MD5: f9199005041979b8cdcc19a4bf959654
+FileChecksum: SSDEEP: 24:CIWLuu3/1SBnEod6Z4qGUPdNrBTlzIF9nb7vaHrQ8Hp2EyqTRq78e5mfXDkO3:yiuvr9ZBGWNrBt4tbbiQZgUmTkO3
+FileSize: 1 Kb (1628 bytes)
+
+FileName: ./html/static/img/social/facebook-old.png
+FileType: OTHER
+FileChecksum: SHA1: 12a27fdd7d903f6338efa7a7eaa197bb1d672161
+FileChecksum: SHA256: 56d4967c0bfaeaf946593168cc2099927f816065ffbaebf16b24d3c017d4b2ba
+FileChecksum: MD5: a5993cee1a2b356402e77a7679fcd042
+FileChecksum: SSDEEP: 192:3JSvpHWtI8MElymOg4SQulGR5fTSK50jtjKxHBxO0/mg0XB0:36B0I8M/mOg4i4THUqmRG
+FileSize: 8 Kb (8672 bytes)
+
+FileName: ./html/static/img/social/facebook.png
+FileType: OTHER
+FileChecksum: SHA1: 3ad38040b2c7138c144610566109e30aa26b19ba
+FileChecksum: SHA256: 6f6083d4541a6a0bbe0adc7df7426342e22bfd45a1b48ba2b9bc485d41c5fd29
+FileChecksum: MD5: cb84a652e094fd1b3751e80f9e2cf157
+FileChecksum: SSDEEP: 48:DKmsiCYZ6lVK6n6TV+ygyPUf7IZNxoWP36KuS1:DpzoiJV+ygycEZNfv+S1
+FileSize: 1 Kb (1623 bytes)
+
+FileName: ./html/static/img/social/gplus-old.png
+FileType: OTHER
+FileChecksum: SHA1: 1f62b4699fa35bc38edd604d3334272bbfe1176a
+FileChecksum: SHA256: 762156bd4baf4f437d250b4f8bcca9d57fecd762318403875bf25312267455a8
+FileChecksum: MD5: 0237baf65f587cfdea51e3cdf7a83215
+FileChecksum: SSDEEP: 96:Yan90+dVxi97qqQlA7cg9CQnPTZ7mAEdYrPSjJCLTrdlINsZppA:T9hDso7Agg9rTxmQ2JCLTrIsZppA
+FileSize: 5 Kb (5877 bytes)
+
+FileName: ./html/static/img/social/gplus.png
+FileType: OTHER
+FileChecksum: SHA1: 0cadd5675a59bfc140a78cbd1bafb76bbf318232
+FileChecksum: SHA256: 9db86691ed37d515a7311851fd81600013fa981f06999a2fc7eeb34bc82948bf
+FileChecksum: MD5: cfd56e3c2becbcc9aa51a232255ad720
+FileChecksum: SSDEEP: 48:c89WTBCGluFXLqCLtf27E3WSTGrXUaoGnS:vm9I14ENTGrXEZ
+FileSize: 2 Kb (2231 bytes)
+
+FileName: ./html/static/img/social/twitter-old.png
+FileType: OTHER
+FileChecksum: SHA1: 37b1c557c3816e3be1e9e2448969ea645ff21730
+FileChecksum: SHA256: ce5547a6f855deb6f66e0fff94b97e7b1127e0f0c26638a864c9d18bf1cf0763
+FileChecksum: MD5: e8d3b84e5ee9127a80682ff728b29d98
+FileChecksum: SSDEEP: 192:wEROzJSU0a2w7jr4OJdAgUnrD0IYPmrk0G4I3P/Mv9:wQ6b97jr4OXED01PmrMxk1
+FileSize: 7 Kb (7383 bytes)
+
+FileName: ./html/static/img/social/twitter.png
+FileType: OTHER
+FileChecksum: SHA1: 3b5dffbf92deb2a5c1d97fd5b737120246cd8006
+FileChecksum: SHA256: 5cbefaca6669f9f4e3f55cae16d1c0311a9a2344e5a1ccc184e2d9928f851a1b
+FileChecksum: MD5: 325e8872744791a3f441b69a32110acb
+FileChecksum: SSDEEP: 24:0BpRDaYgWDQC0MMPaf+NWGRYr4Ol/55dO4V+BJlDSWbGT6G/7VPlvzL+xXtzKJ9D:0bPgV9MLcvOB55IO+DlrGuGj9GuJ92+
+FileSize: 1 Kb (1757 bytes)
+
+FileName: ./html/static/js/firstRun.js
+FileType: SOURCE
+FileChecksum: SHA1: 3f0dae31cb271b1281c8487a738b73fcb6c46404
+FileChecksum: SHA256: 3d398df97ce6b1163a24e9f6ac11a4946f250a92ea5cd13dabb41ed1ab632bf0
+FileChecksum: MD5: c05168c15fda87a2092d27e0675447f1
+FileChecksum: SSDEEP: 96:CQyaO9TF8ENviD3oKQ+hr8uwTSiTSU6X+cVCYQ5jJuCX7ty5hIVQV:CQ9ETF8EQ3oKQcrSIJ8N5gCXI5hIVQV
+FileSize: 4 Kb (5003 bytes)
+FileLOC: 163
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH
+</text>
+LicenseInfoInFile: GPL-3.0
+
+FileName: ./html/static/js/ieFirstRun.js
+FileType: SOURCE
+FileChecksum: SHA1: c9f375345dad3477939099e63539c9100a0fd7ee
+FileChecksum: SHA256: c6000caa5372d22e967ea6b3b4fbb830eb90be7e025d59dd9fd8136a98d7b617
+FileChecksum: MD5: 80c72bbb03e65709d867dbc4afa4fb11
+FileChecksum: SSDEEP: 12:LcagWlA1FFW7h/A1g1RpA15FR9G1EuFXO1fIcI4w5h6wtHI5FYaJGByP6Y:LcagmmY/V90sO6zhcfVPz
+FileSize: 1 Kb (1214 bytes)
+FileLOC: 50
+
+FileName: ./html/static/js/IESettings.js
+FileType: SOURCE
+FileChecksum: SHA1: 056a47fc1c7e2c8a71ec35172807cf34ac7e62e1
+FileChecksum: SHA256: 967babe19f5ebd6de560b0c6d09569971491d3ddc52ffcff0deb3796037f00cb
+FileChecksum: MD5: 1594227d1fcd338d96c077e3db05c7da
+FileChecksum: SSDEEP: 48:5MUqTNko7RNB1xIfeRZIFjfXvJ97B85xlk6A7n/aDUycMad3WXc/dcUrxxVDmKZs:5a66s9b6A7y9a/31jJOP
+FileSize: 3 Kb (3755 bytes)
+FileLOC: 150
+
+FileName: ./html/static/js/settings.js
+FileType: SOURCE
+FileChecksum: SHA1: bdf12df461b30393faa250133c089b60ca3bc410
+FileChecksum: SHA256: 5b379ff3ebda897babc3a47668b7b7fe85c552e6c664017d6e4a15757be4d2b7
+FileChecksum: MD5: 7f62902b929b086df52e5cd27726cfd3
+FileChecksum: SSDEEP: 24:RVRq8b1xQ3q35x2H25Ytq7RRqq31PYXRR5Vsa8haAkAAPaiAvJ:RV1xQSxX5Dd1P2TF8vzASlvJ
+FileSize: 907 bytes
+FileLOC: 40
+
+FileName: ./html/static/js/vendor/DD_belatedPNG.js
+FileType: SOURCE
+FileChecksum: SHA1: 259443c65bc4ee48c81b3907b6284170edac269e
+FileChecksum: SHA256: 8264ddfd433ca1fe3e54b7fe9c1cae8d662da9f689aeda62472049a20383d939
+FileChecksum: MD5: dd609ef37195cf004e010d7c753f355e
+FileChecksum: SSDEEP: 192:dgOpwokIf2iY2MhU7SJSMhcU6GoT6krSwwZEdtLsMi2oph/FUKS:7f2T2uU7SJSMSU3oGvwwKdtfHoz/CKS
+FileSize: 6 Kb (7033 bytes)
+FileLOC: 13
+
+FileName: ./html/static/js/vendor/html5shiv.js
+FileType: SOURCE
+FileChecksum: SHA1: 08491746f67d5028b2817578a20963b0f38a349b
+FileChecksum: SHA256: 84e69e527e237e8af573ce4dfc252e05e6d4554782e7d2a4af8f7dbc3ead067b
+FileChecksum: MD5: edadcd38965def795be632de13b47714
+FileChecksum: SSDEEP: 48:apBdOftbeY8RkhwZuV6v9VHLlsSnjcvknzrrk08JFDLL:a9OlVcYVI9QvarktL
+FileSize: 2 Kb (2384 bytes)
+FileLOC: 8
+
+FileName: ./html/templates/firstRun.html
+FileType: SOURCE
+FileChecksum: SHA1: 25d037f1a136437d06cef60361d97e12047dcfb9
+FileChecksum: SHA256: 1e802f509e0fe6bb00de643dc705bec7c5160516ad7d777e71f36cbc7e5a3f76
+FileChecksum: MD5: 9c21caa629b4a12ccc866a3aa7e4fe7b
+FileChecksum: SSDEEP: 48:gAyQyzH/wOBVelT3iXMRdICcEnid3VmDpKLQy5DW5:m/+d/SVgpKLBK
+FileSize: 2 Kb (2818 bytes)
+FileLOC: 73
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH
+</text>
+LicenseInfoInFile: GPL-3.0
+
+FileName: ./html/templates/index.html
+FileType: SOURCE
+FileChecksum: SHA1: c9ad991291dfb7b56208f2b9a17b2d2d916b1823
+FileChecksum: SHA256: 5b21d67e50eca8e75d3aad0fed76b2123a3db120bba7360d70332dd7ea9f021c
+FileChecksum: MD5: 1ecdb6b2e007652dad549c6128bb36b5
+FileChecksum: SSDEEP: 48:g9HiiF2FYF7QfIGoQ2ltfxoEyLsfWzWS:IjIK7QwGoQ2lhxTy4f+9
+FileSize: 3 Kb (3480 bytes)
+FileLOC: 88
+
+FileName: ./installer/createsolutions.bat
+FileType: SOURCE
+FileChecksum: SHA1: c038ff88844217be8a48accfe3d7f4ea34b40b23
+FileChecksum: SHA256: 7927fe83df065eb775858b8018ed768a56681b6dc1b86aa5a7f1479b4610b4a1
+FileChecksum: MD5: dd18fe0acbcaefaa3549ab0bd2f76db9
+FileChecksum: SSDEEP: 6:hZ6aIT4bcChIKNVQZf3MVUXTc5COXLdaIT4bcChIOyVQEMVUXTc5GMVOXLAn:aao5gIa9O45bXJao5gIOyAO45GM8X0n
+FileSize: 339 bytes
+FileLOC: 5
+
+FileName: ./installer/Doxyfile
+FileType: OTHER
+FileChecksum: SHA1: 309857a6bcc1278ec3009554480a2374cb95844d
+FileChecksum: SHA256: 8292f6065cd59a5d7ff0d7cbf266d1d45c4439abf0b2418acb560fac2182462c
+FileChecksum: MD5: 9c306702b0a108996f02ae4dc18e3479
+FileChecksum: SSDEEP: 1536:ejfZOJ77dByPHJ9V2dDKlJxnaCxKTaHTPWoAoLwyLka8SE83+jyg:QBOJ7ZwPH7V2dDKlJxnaCxK+HyQwygpX
+FileSize: 81 Kb (83360 bytes)
+
+FileName: ./installer/emb.vbs
+FileType: OTHER
+FileChecksum: SHA1: 8cd5d0a055b72f329a4d7815c29c7d90ada3b53a
+FileChecksum: SHA256: ba2e8b8faa4402398d41eaba9afc15fbd4470742343ace178d2e471dbae938f7
+FileChecksum: MD5: c11017427def8982258562a4a961b8bb
+FileChecksum: SSDEEP: 24:gWuVzM77XWqR5+vmcjELXhW3qSCcA+hxKtsBGF9/df1zm0lMRMuKXpndGttg9oew:grYH7suOjnAcxIsBc1zrMRRQndGttg9O
+FileSize: 1 Kb (1448 bytes)
+
+FileName: ./installer/googletest.gyp
+FileType: OTHER
+FileChecksum: SHA1: 73fa09b82d452d09b175b5cdd784cc4e87f50459
+FileChecksum: SHA256: a1ab7531142f22102b34b72e4f74d43f8ea448be7e637a006e1fbf68ff5d3f6d
+FileChecksum: MD5: 52f78bdbb8b64ebb43b4cdd952f7baeb
+FileChecksum: SSDEEP: 48:urPBVUFU/m63VzJIk3/3c3IImYVKZUPPUKFWwF4aG8E/AF59:uDBVeS3tJDvcYImYVKmkKF1F4aGnoF59
+FileSize: 2 Kb (2350 bytes)
+
+FileName: ./installer/index.html
+FileType: SOURCE
+FileChecksum: SHA1: bfd714ff9ac195bd97f558952041b0731a147d78
+FileChecksum: SHA256: e6aaf98e46140f01cf7bec6f1c1b60ec0fee5f53909dd4a6b4815c8ea06e88f6
+FileChecksum: MD5: 1544936293957e6db329699b4a939e38
+FileChecksum: SSDEEP: 96:HJVtc/9vAH2XAWXyYd+9h9VXTAm9ASSuJFQGH+:HJY2H2QAyYd+/79ASC4+
+FileSize: 11 Kb (11467 bytes)
+FileLOC: 207
+
+FileName: ./installer/installer.gyp
+FileType: OTHER
+FileChecksum: SHA1: b2c23f7c8162176d9c6e7a5757c318922e697863
+FileChecksum: SHA256: 8d4c30acee4e5fa53937c7ead5846c242835c26f72681701b777614c00b6b4ea
+FileChecksum: MD5: b6d2bf4384eaf569baacad6fd8326045
+FileChecksum: SSDEEP: 384:bIXHf3UOhnO3fGsjYpqe1wK76GLLDwWLNco/8DitcrooCiMQCEvYP:8Xv9hO3usjYp71xvv/0lCEvYP
+FileSize: 29 Kb (30379 bytes)
+
+FileName: ./installer/Makefile
+FileType: OTHER
+FileChecksum: SHA1: be173d53cec31f95b814e84a4947c0c364f0acdc
+FileChecksum: SHA256: ae4f1170f25f0a74f75b7c631d9d51e30efa2ed307a001d0360dc68e28e7accc
+FileChecksum: MD5: beae2d4a54d7ba68183d2c8326ecb5ef
+FileChecksum: SSDEEP: 48:DNULQMcd4M+FtxcTv4l4m4YXPtOgLPMskjECPtCdrc4HJNVl4OnN74rmgTii1fA6:DCsMcT+Fga4mUG0Eym19Wn7Q6V7
+FileSize: 3 Kb (3684 bytes)
+
+FileName: ./installer/msibuild.cmd
+FileType: SOURCE
+FileChecksum: SHA1: 8cdc62a85a84658a453f022749e4c942338e148c
+FileChecksum: SHA256: 758152636729948edad5d339176b08c28cd95b270bbae4d07155eec8659e4324
+FileChecksum: MD5: cb6ddfae9c85c8351a57e7ca3419f926
+FileChecksum: SSDEEP: 48:9XktLPQGEEW3RWVsCUN1XeomTh6PjsrANW762mprxLfj/5v8m6iM:gEECRWVsZLX6IcANG62mpVP/5v8h
+FileSize: 2 Kb (2390 bytes)
+FileLOC: 81
+
+FileName: ./installer/src/custom-action/abp_ca.cpp
+FileType: SOURCE
+FileChecksum: SHA1: 265a7aa0bcfcb0a80bba83f01865edf54673330c
+FileChecksum: SHA256: 6e2050aa73743324443a104b4df448daba7d62e19f1b4539b8ba1c0c1b67a3bc
+FileChecksum: MD5: 9daa644f86c5e8cde8831fe7f7ad031d
+FileChecksum: SSDEEP: 48:3vEp+wueOG+9if7fJDRNztTEY73bLX5jpt07SQDsnCIDKdRLXWs8rlUr:3vEc2fJDnr7339uSIsnsdRLms8xUr
+FileSize: 2 Kb (2269 bytes)
+FileLOC: 71
+
+FileName: ./installer/src/custom-action/abp_ca.def
+FileType: OTHER
+FileChecksum: SHA1: e26a302b23f5ae31324241db82866ab9e5a0a71c
+FileChecksum: SHA256: 565a1e2ffc38959f703990d37d2980739bbdab1087329c9d611b580124dbe3c5
+FileChecksum: MD5: 5b920f6040ab0c0e57302aef7d7fd750
+FileChecksum: SSDEEP: 3:a1nSGK2c+SWJo7In28NFFuwXIeyg6BqeNf8jMdMQGVyK7NfByn:a1SMqbUuwXbyg6BrOvySYn
+FileSize: 317 bytes
+
+FileName: ./installer/src/custom-action/abp_ca.rc
+FileType: OTHER
+FileChecksum: SHA1: b3fcc50d7b8393b098725bc613eb97d0b4f93a2b
+FileChecksum: SHA256: b8d35e84f93fc396633ed8638eba8925b93fd5338567f0d785629baaddc66e0e
+FileChecksum: MD5: 7ae2c83410a38b3df3dae305ddf09d75
+FileChecksum: SSDEEP: 12:j28ADy85U0w0yNffrzy6Ej4tNfLNDOXgXFWFJoNDLcNKCpXENPPXqNcspLnu:S8f85U0w0yNffvy6E8t5LJaSA3oJLcgn
+FileSize: 653 bytes
+
+FileName: ./installer/src/custom-action/close_application.cpp
+FileType: SOURCE
+FileChecksum: SHA1: 76233f85aa04a960add6a34edcd22e819a10d10f
+FileChecksum: SHA256: f64e2de30003a809674d09c064002b730876318599716fb024ea2b3f0e8bfb67
+FileChecksum: MD5: 134673e4f99e23df380910cb5aeb576b
+FileChecksum: SSDEEP: 384:OSSgFTqsxdgVUtSL/wlrUx5xUig4X+zGhh8KWhHfo/0g4:JTf7rTiY8AUI
+FileSize: 14 Kb (14503 bytes)
+FileLOC: 460
+
+FileName: ./installer/src/custom-action/close_ie.wxi
+FileType: OTHER
+FileChecksum: SHA1: beac3aea0847476539d9fedc81b922e23884b139
+FileChecksum: SHA256: 653e8137ae1ff00233cf5fa749394c15c88fec64765f1f7750a8cf8f83a6aa52
+FileChecksum: MD5: da443d8358a621c67c1b735bf26823d3
+FileChecksum: SSDEEP: 24:3m74+9RDKSdBfeiy25jS5SlgKAydjpSlgKAyvsgKAye/SAgK+v:WXiSTfu25jS5MgC5SgCvsgCe/SAg/
+FileSize: 1 Kb (1124 bytes)
+
+FileName: ./installer/src/custom-action/close_ie_default.wxl
+FileType: OTHER
+FileChecksum: SHA1: 8776f7e9ce1e10637c75938edc449b11eb23890b
+FileChecksum: SHA256: 90bd4cb30057f640c61b95d81a2ef4d84f2a0d9ce9b971189daa336e9b20789f
+FileChecksum: MD5: da00fe12affa4cc0f78c0a0e57d8b446
+FileChecksum: SSDEEP: 24:2dHsJubzv8z4+QGREJAKF5nfsfRweagNbrpSc8nfM2fsfRGl:c5reTOJfF5nk5weaurpS3nfM2kw
+FileSize: 895 bytes
+
+FileName: ./installer/src/custom-action/test/test-close-application.wxs
+FileType: OTHER
+FileChecksum: SHA1: 49e733b3126b8f882eb250989dbe31d22cfba6e1
+FileChecksum: SHA256: f5b1a656df69d82b86d922187f74574ed113605af37436045c8008557516b329
+FileChecksum: MD5: 84d728cbcf1f3522d21573ab88e61759
+FileChecksum: SSDEEP: 768:/5mcFJfOFyXL4kcRZwKU9aAIPczdImD+iqdfNa5V+alfWpi6jyJ7hPrEtoD6:gccyXVcRZwKU9aAIPczdImD+iqdfNa5i
+FileSize: 40 Kb (41544 bytes)
+
+FileName: ./installer/src/documentation/build_process.dox
+FileType: OTHER
+FileChecksum: SHA1: 525d428f3044e85682fcb3d375585adfe0fa4b15
+FileChecksum: SHA256: 1cbd35deb2d9056cd2775c563cf1e99fa4981781bc2c49f7322f73a21713877f
+FileChecksum: MD5: 58b259c0dc6d1634186a064dfb91c1b7
+FileChecksum: SSDEEP: 96:+p0z5IDzBr8Dbw97LuKjrcJBSKhW/5XE7dmaoznL7PhBL9rWRw1pVh7vWiN4f0Wb:+CVInBr83IN4YNEsaobL7PhBLdWRwLng
+FileSize: 4 Kb (4770 bytes)
+
+FileName: ./installer/src/documentation/localization.dox
+FileType: OTHER
+FileChecksum: SHA1: d2aedb03fde91afed5e23d463150b073f3c5ced2
+FileChecksum: SHA256: 2f11bd3eeb44c54addd098013c407ea019eaee2ee8e3810413257f77842eafc0
+FileChecksum: MD5: b236b0be015f50a86a3ecec2c3782863
+FileChecksum: SSDEEP: 384:Ed4e4ek7sJPkcHSONt399srQklwHGX4Yo:ObisPk0v3zsrW
+FileSize: 13 Kb (13323 bytes)
+
+FileName: ./installer/src/documentation/mainpage.dox
+FileType: OTHER
+FileChecksum: SHA1: 281a41f312d2b4fd443c127f7813fb90c6ff7c6c
+FileChecksum: SHA256: 2d3dc41cab3830dd14b9765b975563c831cfb71502b18402d06146cbad420674
+FileChecksum: MD5: 81c13b87bb5b4520da341bfc553c31b8
+FileChecksum: SSDEEP: 48:JQh0P/cxw9oQtCjTGoxjpmw8r0UnF+79zt4Pm0tVJ:5P/SURETGwGlFq9zgnnJ
+FileSize: 1 Kb (1729 bytes)
+
+FileName: ./installer/src/documentation/source_code.dox
+FileType: OTHER
+FileChecksum: SHA1: b33303071613a26c61fa4474e9f26ca14785c67e
+FileChecksum: SHA256: bd3f9af99288233f9ab2f11ac5c7b87a6a8b4290ba70e0c982637074ab73acd5
+FileChecksum: MD5: 9d7dfe4d8daee1e12a785e7d4bb33e8c
+FileChecksum: SSDEEP: 96:+HDYnXSvJtBn5aAmkKzSvqFCKjkzu/SrSHw/JzmkMFij:+HDYiBtR56dzhFCKw6/3QIkMFij
+FileSize: 4 Kb (4676 bytes)
+
+FileName: ./installer/src/installer-lib/custom-i18n.h
+FileType: SOURCE
+FileChecksum: SHA1: 29645209a2b3c8ea9c0fe05a0163f5babcf88d36
+FileChecksum: SHA256: dde234b9f9f57ecec19e0ffdbc6d82c1f6eda47daf18f84523fe56427308a49b
+FileChecksum: MD5: ed020d198d215285360aa55e9f26f4c7
+FileChecksum: SSDEEP: 24:3JLw3hZxdV/L7/B0A5ytS0SvVY5KEKcqCopZGF:3JIbVT2zH5FKQYZU
+FileSize: 1 Kb (1201 bytes)
+FileLOC: 44
+
+FileName: ./installer/src/installer-lib/custom-i18n.wxi
+FileType: OTHER
+FileChecksum: SHA1: 92bb42b0dc2848b434da1c1984eab43cd53e5aca
+FileChecksum: SHA256: d32845486c41f060340cd2002cbbf03fe06c0b09b5ac4e50017dc078e4878f9d
+FileChecksum: MD5: b8628f9fcb30bd10182fcaba2bc5861b
+FileChecksum: SSDEEP: 24:3m74+r7Vmfe+KfHKopmEM/JKopPpzdKOuQ8bvQmH:WXr7VmfMv6p0dbvT
+FileSize: 802 bytes
+
+FileName: ./installer/src/installer-lib/database.cpp
+FileType: SOURCE
+FileChecksum: SHA1: a21401abe874c0bff1b3f20800a7b6ff3644c546
+FileChecksum: SHA256: 41f9359c787a682d84b29925270fcbabe888b339db0cce140d6417a45c299f8e
+FileChecksum: MD5: aeec263878fe3aad8b832f82fd005869
+FileChecksum: SSDEEP: 48:37CmfnMfIRpiPcOL04WPe6+fLflYf1w80hMUqQ4xJALOpHu6Fw1AIzj:37hSIRpocOLtLJYf1OUXxlFbFw1AI3
+FileSize: 2 Kb (2587 bytes)
+FileLOC: 89
+
+FileName: ./installer/src/installer-lib/database.h
+FileType: SOURCE
+FileChecksum: SHA1: dc6ad411bd17ec5ebd18cb2814979c8795f8d05b
+FileChecksum: SHA256: e574ce4678633339205373892300b77ad845551855131419646c00615e71bd47
+FileChecksum: MD5: b2440bfefedb32054da25fe7dff0a2ac
+FileChecksum: SSDEEP: 96:3wD4O2UoXaeD6CguhdlmeSeMl/sGjEN0pa744ju8zQqwjFOUjF4+q+x0Ljqvgtaa:gD4O2/MCgIdls0kE2paVBQqCFrF30Lmk
+FileSize: 5 Kb (5382 bytes)
+FileLOC: 180
+
+FileName: ./installer/src/installer-lib/DLL.cpp
+FileType: SOURCE
+FileChecksum: SHA1: c92826b6cb4ed6615ef18b0df756df1971147c3b
+FileChecksum: SHA256: fcb64cc7b717cca3c130627cee0c91035f3a7dad64f153bf5f8eb897ace1ba7a
+FileChecksum: MD5: c638a631eeaa7b2d07646bf242bcc4a6
+FileChecksum: SSDEEP: 24:3vE7FPl4DAgf3MugSeZ4LqtHt9dcgIBv4OZqc+PNHZnVlvB3hh:3vEpRgf3M9S+9P/cqc853B3hh
+FileSize: 1 Kb (1419 bytes)
+FileLOC: 57
+
+FileName: ./installer/src/installer-lib/DLL.h
+FileType: SOURCE
+FileChecksum: SHA1: e8db05045504a6e57311186cef666f3cbbeae0fb
+FileChecksum: SHA256: 8d1c39aea70aed5a2addc189f5176cca8fed5d9a135fee8d880d3f4b2fd4127c
+FileChecksum: MD5: 4a4842150fb8bc16598259350af65527
+FileChecksum: SSDEEP: 24:3kBN19W8J5Db/ZBUcmG+2pjLviXZj4NTUOh6WmXPaitKioGP1XtqBDfrQMTBNxF:3kBpjDTUcmGuaiZfXKbGNt6D8S9
+FileSize: 1 Kb (1430 bytes)
+FileLOC: 65
+
+FileName: ./installer/src/installer-lib/handle.h
+FileType: SOURCE
+FileChecksum: SHA1: e9642ed1aecd1de8fc1ab765db4935f4b44e8e12
+FileChecksum: SHA256: 02fa023496af8c7b6de93c9f875bc97a0e7ecd304e640b53012dbd04fb1d44ba
+FileChecksum: MD5: 2bd56520705fc97bc4242c334886bab2
+FileChecksum: SSDEEP: 96:3uudM7SRU3DBYUtOceORpivErJV+FQsY5055:FdM2RiDBYUtKORpi8r7NsY4
+FileSize: 4 Kb (4633 bytes)
+FileLOC: 195
+
+FileName: ./installer/src/installer-lib/interaction.cpp
+FileType: SOURCE
+FileChecksum: SHA1: f2aca34301526c575f516f6e043ca1a8669e3597
+FileChecksum: SHA256: f71a0bb269d0853541477a1250875f55e19cd3da8500f3b6e1b278b80b727634
+FileChecksum: MD5: e955deda291ead5fe95c025bd98bf902
+FileChecksum: SSDEEP: 24:3yhMPg40gD4SKhU6U07MRNMRtlR/jcU6UxMRNMRtlR/jC:3yhYgA0BU6U3WFrcU6U2WFrC
+FileSize: 774 bytes
+FileLOC: 28
+
+FileName: ./installer/src/installer-lib/interaction.h
+FileType: SOURCE
+FileChecksum: SHA1: d05ae1d06bb6c2bbd12ff9febd93e900ddd2adfb
+FileChecksum: SHA256: dbd49c6624a5c74f9186e4e9984599b091a3c8c4da872f9e82176a256137fe6a
+FileChecksum: MD5: 2c94a57867a87c6dc191a3521767e485
+FileChecksum: SSDEEP: 48:3pSWjmWuyxPnZXtUZHtMUedHzOn03QY+EXIPrKWpVd0j/MWtU4QW+0g9tUnQW+0W:3fjdPnpUMdOn03R+ljZU/MiqowOwU6
+FileSize: 2 Kb (3047 bytes)
+FileLOC: 93
+
+FileName: ./installer/src/installer-lib/process.cpp
+FileType: SOURCE
+FileChecksum: SHA1: b9e54515abf987ba5ac2e7816bdd418092a7523e
+FileChecksum: SHA256: f119113dfaaae0a2f1506b6aa7adc0ca5504bcac308f7b62c41ce532c502470f
+FileChecksum: MD5: 8169e62a11a3671f42ad33994c2fe45e
+FileChecksum: SSDEEP: 384:9DYnELKSgN+X2fDAuEcyxipUXFV6xIMSKJyTRq7gSs2sQ4zi8hF/:gNSuvxPPNMx
+FileSize: 13 Kb (13640 bytes)
+FileLOC: 454
+
+FileName: ./installer/src/installer-lib/process.h
+FileType: SOURCE
+FileChecksum: SHA1: c784fac456d3d078f9544f72f886d1b7cb057eea
+FileChecksum: SHA256: 327089b9211cbbae1e2d34a7f2843923b26254401f2088ccd1aa78f8d13581a7
+FileChecksum: MD5: 525530ec27ce6ecd84156d85a56434aa
+FileChecksum: SSDEEP: 384:vAyy+Z7IyNkyBRfZnhKHEcvlFqUkXo20rHjo3nLQ1:8yBR56flFqqo3nLQ
+FileSize: 15 Kb (16244 bytes)
+FileLOC: 607
+
+FileName: ./installer/src/installer-lib/property.cpp
+FileType: SOURCE
+FileChecksum: SHA1: 96500e64878a154b83d25a3530b48d9bf1bdc34e
+FileChecksum: SHA256: 8e1904a18db4c828a91785b06970d743173f8698f367fac3749ea43f592cfcda
+FileChecksum: MD5: daef98a4897697c42f01ae91e331ae99
+FileChecksum: SSDEEP: 48:3awSpmG64ftd9iFsyIEsjyqYsCP36IK8o9ftkoNPqOb:31SPBfPw+lByqYZP3u8o9fWoNPqOb
+FileSize: 2 Kb (2519 bytes)
+FileLOC: 62
+
+FileName: ./installer/src/installer-lib/property.h
+FileType: SOURCE
+FileChecksum: SHA1: 02d259138d5204d8338c8aceac8449aaf15331a0
+FileChecksum: SHA256: 6d9e003b3fda4bda05d8fd016181ea81d4b031d6df75a95e9ed568bfa0968de8
+FileChecksum: MD5: 5679adbd819ca1fe21ad4f4772a3fe4d
+FileChecksum: SSDEEP: 96:31wHG3glyOSsFvU47HjCGclqo+y1F03YLp/2I3LTx35pAeILUxrnI8:Fwm3KyOdfjCpf0QBH5nELUv
+FileSize: 5 Kb (5342 bytes)
+FileLOC: 116
+
+FileName: ./installer/src/installer-lib/record.cpp
+FileType: SOURCE
+FileChecksum: SHA1: 34639a192674710d0515c01ada4c6350fc5b66ff
+FileChecksum: SHA256: 24780c4ec6141bdecc0613aade99988efbc500bfb952aeea5ac5935461d4841a
+FileChecksum: MD5: 8ac1df9059d742934690006a86019d7e
+FileChecksum: SSDEEP: 48:3d+VCmiRoFhyb3UshWtpn1jFE4En7ASQx3wb:3d0Eq23UshWtpn1ji4En7ASA3wb
+FileSize: 1 Kb (1949 bytes)
+FileLOC: 70
+
+FileName: ./installer/src/installer-lib/record.h
+FileType: SOURCE
+FileChecksum: SHA1: 680b37efccdda28937fb1e294d05d43919ca3522
+FileChecksum: SHA256: 0ae9dd62f1b1697ed3c08cbf3f5668f85044e5dd06882a258da57c88fc401001
+FileChecksum: MD5: 0ee25ece42b2f59490df4a46f77518d5
+FileChecksum: SSDEEP: 96:33eTViCwmaop/+Xo7e9A84ztMM3mKVMS/5kdRf7iX8a/1lZYoxa:HeToCw9IGqe9qpMM34S/uRfAV3ZPa
+FileSize: 5 Kb (5706 bytes)
+FileLOC: 217
+
+FileName: ./installer/src/installer-lib/run-tests.cmd
+FileType: SOURCE
+FileChecksum: SHA1: c2944d6a8e52070afa1fe8b459c5ebed3be4ff73
+FileChecksum: SHA256: 463425c916cbb98f240f1dfa33aec1e84644a193041bb643e8dbb237d42f4672
+FileChecksum: MD5: 42c9364bf8386b3979b731f6b69994cb
+FileChecksum: SSDEEP: 6:hQBzbNJOXFJTQPTWMRxQntHs5R47Kluv9TJhIPZOX8OB:8nyXFJ0LWMXQSR4VVTkwX8OB
+FileSize: 198 bytes
+FileLOC: 7
+
+FileName: ./installer/src/installer-lib/session.cpp
+FileType: SOURCE
+FileChecksum: SHA1: 8e9a1f6076607a0b9afeb0da9ed9d9c454164548
+FileChecksum: SHA256: 4b11f9f98578442bf762e812cc402b0c06b6d47aa488b9e43ecb1a9c9e4dba60
+FileChecksum: MD5: c0755f63fd7551dacbbf93b3c05edf4b
+FileChecksum: SSDEEP: 48:3+/hS0CmPBYPwaQWwzJS0MAB41SjnLd9VEZqqk4BEIq1V8kulGlGrmo27Tc:3+JS0rGKJ9PEZxBa1V8kulGljoWTc
+FileSize: 2 Kb (2737 bytes)
+FileLOC: 89
+
+FileName: ./installer/src/installer-lib/session.h
+FileType: SOURCE
+FileChecksum: SHA1: 7275d5f888123e42ebeb28a70664bb60e8fa12a3
+FileChecksum: SHA256: b463fc32220c34b3285fb51be37da1c9a97a401d6dcd1eca53b7defc323fed5f
+FileChecksum: MD5: bb829ee32f400d4f7dcee2e80adb3f08
+FileChecksum: SSDEEP: 192:tsMrmP7bitiHiVwhifL7iP7M0cXiYw4YQbwH:yMr07bitiHiVwhifL7m7M0cXiYw4q
+FileSize: 8 Kb (8668 bytes)
+FileLOC: 226
+
+FileName: ./installer/src/installer-lib/test/custom-action-fail.cpp
+FileType: SOURCE
+FileChecksum: SHA1: c21bc6d313a295a49c7209ae2da9cdfdac70a09d
+FileChecksum: SHA256: cb51a95f16793b505d795e3bc888ab52017d9fa3a322af935c6d3059fd20aa8a
+FileChecksum: MD5: 51500596e05b7f8f82f40e0cd9e5bfd4
+FileChecksum: SSDEEP: 24:3tywZSvibr3HD4A9RdAj3m3BTgmeuk2UGz:3tvuirT4A/qjmpleyUS
+FileSize: 840 bytes
+FileLOC: 29
+
+FileName: ./installer/src/installer-lib/test/database_test.cpp
+FileType: SOURCE
+FileChecksum: SHA1: aebfbe67395e089d5330c99ac83b79f751e4741a
+FileChecksum: SHA256: a7fe111c9e7f866c0ab21590850ef0219b0d46498b33c8d011b9869e97cf0b4f
+FileChecksum: MD5: 251804372786c28709223422ff85489c
+FileChecksum: SSDEEP: 48:UEq5He+QEK/93stqEKty5v9cnY5onKePK65UinY5oj:2w/mOty5v2nWoKel5UinWoj
+FileSize: 1 Kb (1813 bytes)
+FileLOC: 66
+
+FileName: ./installer/src/installer-lib/test/process_test.cpp
+FileType: SOURCE
+FileChecksum: SHA1: 3febd39fee9f08e1a1b797d8abb71d79c87cc929
+FileChecksum: SHA256: 033888b19ce5056f55cfb3b38ca238a3a67ee078626fa5bbc55ed5771c257a72
+FileChecksum: MD5: 66fbd68c27ef8e5b59c950720710e4ce
+FileChecksum: SSDEEP: 192:Mgemm/pTvevTrPwruPA5sGHtUIJ2EAHgiRaHzJnDp4MBVWqr9vr:Zemm/dmLEruPA5sGHtUy2bHRRWzVDp4a
+FileSize: 9 Kb (9522 bytes)
+FileLOC: 283
+
+FileName: ./installer/src/installer-lib/test/property_test.cpp
+FileType: SOURCE
+FileChecksum: SHA1: 2eca7357c5d134f8a3f163db4e2d2ee19ae2102b
+FileChecksum: SHA256: 0d74b6e75a9ff59a130b368a89ae3a451040907a678aa0779d9d11fb2c58befa
+FileChecksum: MD5: 86540080a49c567e4df0d6fe94193bb8
+FileChecksum: SSDEEP: 24:R9b9EIlrG40naDuQYSxmQ9PFFtopg60kOSnqxEb4TKByEFzXc6nqvnYKpb9zYK:BEIlCaKSgQ99oib/xfTKBpMVv5LN
+FileSize: 1 Kb (1467 bytes)
+FileLOC: 40
+
+FileName: ./installer/src/installer-lib/test/record_test.cpp
+FileType: SOURCE
+FileChecksum: SHA1: 8f7fd665057d221a86053e00809a5785b713bbf5
+FileChecksum: SHA256: ecc5d24e10d59cb5aa2a17f2404c03b904e16af040243e1be4b8a36c73631434
+FileChecksum: MD5: cf1b7b00ef40afdba9fc89f834915690
+FileChecksum: SSDEEP: 3:XBAjS9KClyoZA9CXjKXB1vxd2XMBdGsk32jXNUfL:RAu9KClyoZACjMB1LBdGN3GNUD
+FileSize: 106 bytes
+FileLOC: 8
+
+FileName: ./installer/src/installer-lib/test/test-installer-lib-ca.cpp
+FileType: SOURCE
+FileChecksum: SHA1: 265a7aa0bcfcb0a80bba83f01865edf54673330c
+FileChecksum: SHA256: 6e2050aa73743324443a104b4df448daba7d62e19f1b4539b8ba1c0c1b67a3bc
+FileChecksum: MD5: 9daa644f86c5e8cde8831fe7f7ad031d
+FileChecksum: SSDEEP: 48:3vEp+wueOG+9if7fJDRNztTEY73bLX5jpt07SQDsnCIDKdRLXWs8rlUr:3vEc2fJDnr7339uSIsnsdRLms8xUr
+FileSize: 2 Kb (2269 bytes)
+FileLOC: 71
+
+FileName: ./installer/src/installer-lib/test/test-installer-lib-ca.def
+FileType: OTHER
+FileChecksum: SHA1: 8d6cae0d48f2fc7b4dd024f0c87d79c9f2bf3d1a
+FileChecksum: SHA256: 4de3cbcdae1959310479ae6ca86162992403d04d0d0ef8d834db29b1df73ba78
+FileChecksum: MD5: 29cb311c24ceaaeb1833d45a1169ccda
+FileChecksum: SSDEEP: 12:USMqbUuwX+oWQ/7BhXcBaHxqvySpj2IIy:USMNuindBw8+yQjtIy
+FileSize: 424 bytes
+
+FileName: ./installer/src/installer-lib/test/test-installer-lib-ca.rc
+FileType: OTHER
+FileChecksum: SHA1: bf24a20b68fe9318cba6c2ed5ba71a5d64bfabdb
+FileChecksum: SHA256: 681d7559aa392c0013f18058523544a571cbee6614e4764a3326bdcf9692267c
+FileChecksum: MD5: 6c294942742613171721042d67c138c9
+FileChecksum: SSDEEP: 12:j28ADy85U0w0yNffrzy6Ej4tNfLNDruTXFJeNDLcNKCpX+oWQ/hNPPX+oWQ/toA5:S8f85U0w0yNffvy6E8t5LJKbzeJLcgaR
+FileSize: 731 bytes
+
+FileName: ./installer/src/installer-lib/test/test-installer-lib-sandbox.cpp
+FileType: SOURCE
+FileChecksum: SHA1: ac97528995f80362d88f9d9b15527aecfbfbd6d6
+FileChecksum: SHA256: fa1c522ffb2d3163ce0504ca8ae9265926aaeeb41eb6852be44aa213e253d460
+FileChecksum: MD5: 567b4058e2aae3d1e9dde15b7fb1795b
+FileChecksum: SSDEEP: 96:3chByJY0o4RHCJIG/dHlkdo3woilj+o57J6gBr:PKLHC6RiFnxBr
+FileSize: 4 Kb (4198 bytes)
+FileLOC: 141
+
+FileName: ./installer/src/installer-lib/test/test-installer-lib.wxs
+FileType: OTHER
+FileChecksum: SHA1: df951ea3e3bab29a423a1961504623f9338ce15f
+FileChecksum: SHA256: ba493ffedaa2125ca0da766898078723c76211d9ca83eb3c4413c4f60b565552
+FileChecksum: MD5: b365b887d447b5b9c18282c35321571d
+FileChecksum: SSDEEP: 96:PHRGbEmlhXMmj+Rp+kBMU0kguHfX4+aCXtGJYQW:xEjkYkGU0kgKfI+RQW
+FileSize: 4 Kb (4949 bytes)
+
+FileName: ./installer/src/msi/adblockplusie.wxs
+FileType: OTHER
+FileChecksum: SHA1: 5f62961e9aedf54f52f1e931b45e7f0f3208f9c5
+FileChecksum: SHA256: d8c5c5ffa717a13095931202bf89669134ee1565758a0880d1b488905856d5eb
+FileChecksum: MD5: 01775387889fbb56167f7d7ad01955ec
+FileChecksum: SSDEEP: 768:/5mcCJaOFyXL4kcRZwKU9aAIPczdImD+iqdfNa5V+alfWpi6jyJ7hPrEtoD6:gJryXVcRZwKU9aAIPczdImD+iqdfNa5i
+FileSize: 40 Kb (41716 bytes)
+
+FileName: ./installer/src/msi/bho_registry_value.wxi
+FileType: OTHER
+FileChecksum: SHA1: 6257543a78ae9a44cd6c30aca189078696c1d533
+FileChecksum: SHA256: 4351bb259fd37c83c61c79b9285e3e36cd37af0812bc0edb0d3bbd7f112e66a5
+FileChecksum: MD5: c34ff8636711e08f1023ba57d9d278ea
+FileChecksum: SSDEEP: 24:3m74+JuV7aYWCrlupPYWahYWsYvYVYWAMmx0GYWhQx8jzYg/v:WXJuIfCxuhfUfR6fwqGfQ8j0e
+FileSize: 1 Kb (1272 bytes)
+
+FileName: ./installer/src/msi/custom_WixUI_InstallDir.wxs
+FileType: OTHER
+FileChecksum: SHA1: 441dbc61b968335543191e3445055cf493278980
+FileChecksum: SHA256: 8cb727064b48dd306f18fdd6548254b0e894f193b341bb67bc4e3241cec533d1
+FileChecksum: MD5: 022a88dc150e54aafdcecdd7e601563d
+FileChecksum: SSDEEP: 48:c8T6KBujSqGwsWw9wKMPRRYdYDkvk958Ct2kr2k5xMl:nGGLWMTqRQk58U9nS
+FileSize: 3 Kb (3248 bytes)
+
+FileName: ./installer/src/msi/dll_class.wxi
+FileType: OTHER
+FileChecksum: SHA1: 362804f9c2211698a68694cbb01cca89350e1620
+FileChecksum: SHA256: 43cfaa1d9f1c5bf6d1fce76cafb3fc0d4557790cdea2b6d8efa151675a5f1baf
+FileChecksum: MD5: fe690e27187538f75f7b0a2d3d1561ef
+FileChecksum: SSDEEP: 48:WXOLjgvc9egQFuqaW6e572w1hKek1ifSkg8Ep:SOHgcQuqL6q75Pq1xkg8U
+FileSize: 1 Kb (1596 bytes)
+
+FileName: ./installer/src/msi/locale/ar.wxl
+FileType: OTHER
+FileChecksum: SHA1: 9745e889592ec8081a3e1e9a44a01614adf82fe0
+FileChecksum: SHA256: 46d081e6adfda32028557e76257faaec7fa7cf0e9e424e2e47f1f2836cabfcab
+FileChecksum: MD5: 266335a98ae4460d7a62953bbb4d1980
+FileChecksum: SSDEEP: 24:2dE4+QGRmSOypBiayR+53CdldhHBZfA+DiPR6LQ9F5nfsfRweygNbrZScknfM2fF:ciT5p8aTtCDrHBZfA9PR6LQ9F5nk5weg
+FileSize: 1 Kb (1437 bytes)
+
+FileName: ./installer/src/msi/locale/bg-BG.wxl
+FileType: OTHER
+FileChecksum: SHA1: 15d2df5505bec278cd4ef92d6e665d2a2a7c5c6e
+FileChecksum: SHA256: 64b7da60c5cccc8205f31773e24eb3cda96baa65f0bab37b85c3a69d6d8323d7
+FileChecksum: MD5: a8630fb813b5f7f23429042db13c421a
+FileChecksum: SSDEEP: 48:cFjTOdi8aY9rZxTBTlv6qQ7F5mJDSNmnfNy:sjTYL/ihR5mcsy
+FileSize: 1 Kb (1611 bytes)
+
+FileName: ./installer/src/msi/locale/ca-ES.wxl
+FileType: OTHER
+FileChecksum: SHA1: 8e97b3ee810098e821014e090b8eaba4b4c3b4e5
+FileChecksum: SHA256: 33346657ae445b2ac467227bc4b01b69d57e8fc3851b4153ed246bfbe01b1cd6
+FileChecksum: MD5: 8bab9157e65686921d1608e237963eda
+FileChecksum: SSDEEP: 24:2dM4+QGRmSVYIrVCBIZaRy+53CdldhHBZfA+DiPR6LQ9F5nfsfRweygNbrZScknZ:c6T/YIhCqaXtCDrHBZfA9PR6LQ9F5nkS
+FileSize: 1 Kb (1444 bytes)
+
+FileName: ./installer/src/msi/locale/cs-CZ.wxl
+FileType: OTHER
+FileChecksum: SHA1: 9060548bc9efa8b8ab273df90ff6c503208de5c9
+FileChecksum: SHA256: 1a77c2828295a03d7ce4023fb36c2985620c5a95d0d9c61e9fdabac62368a719
+FileChecksum: MD5: e456a661fbc01e685aef3a01caa66ae3
+FileChecksum: SSDEEP: 24:2dB4+QGRmSVPBqau+53CdldhHBZfA+DiPR6LQ9F5nfsfRweygNbrZScknfM2fsfI:c1T/P0aptCDrHBZfA9PR6LQ9F5nk5weg
+FileSize: 1 Kb (1451 bytes)
+
+FileName: ./installer/src/msi/locale/da-DK.wxl
+FileType: OTHER
+FileChecksum: SHA1: 5402977654fa26f59b2d3898d6ad434ea9361333
+FileChecksum: SHA256: 2cd6c1ecb7b9ba49d60bf2079721bc1bd050cbfafb5985f39bd07da1fdf6b27b
+FileChecksum: MD5: a555094af0cf441012a0d3e95f56936d
+FileChecksum: SSDEEP: 24:2d504+QGRmSVmBs6aRy+53CdldhHBZfA+DiPR6LQ9F5nfsfRweygNbrZScknfM2t:c5ST/mq6aXtCDrHBZfA9PR6LQ9F5nk5A
+FileSize: 1 Kb (1445 bytes)
+
+FileName: ./installer/src/msi/locale/de.wxl
+FileType: OTHER
+FileChecksum: SHA1: 51d3c69d1955aaec1a103b6daa8af890f8ebd053
+FileChecksum: SHA256: c9c06d24515eed04212f3ac422573f42e0679c5a547bed1656fdc9f463076cf3
+FileChecksum: MD5: 2c2ff16541e4a7c995a9e7017b2fe21a
+FileChecksum: SSDEEP: 24:2db7tf4+QGREyQB1aR3dUdhJlEBV1/yD3uMQdNq06SQqWF5dkgckEErSEnflykEJ:cFjTOyQPaVyrJlEBVk3uMKh6SQqWF5av
+FileSize: 1 Kb (1502 bytes)
+
+FileName: ./installer/src/msi/locale/el-GR.wxl
+FileType: OTHER
+FileChecksum: SHA1: df3cf9b365aa11af81186924bde9a396e68d9d49
+FileChecksum: SHA256: 08c35c4ff348442860bde4bb9b00ae65216b3d5d3a16529b59724128eda5eb22
+FileChecksum: MD5: 67feb0002e86fb44505739e40c88b643
+FileChecksum: SSDEEP: 24:2dDY4+QGRmSVxcBXaz+53CdldhHBZfA+DiPR6LQ9F5nfsfRweygNbrZScknfM2fF:cDuT/xchaqtCDrHBZfA9PR6LQ9F5nk5A
+FileSize: 1 Kb (1443 bytes)
+
+FileName: ./installer/src/msi/locale/en.wxl
+FileType: OTHER
+FileChecksum: SHA1: 0ee5ac4f0c24ba29d4c9e0da3a1bea64228fbed8
+FileChecksum: SHA256: d5dae2be580ee56c87c4e34b12799a9336391794cde426d74a1ff7ec5fc3c574
+FileChecksum: MD5: a1091c25680ce2dff6999d82a05f44c1
+FileChecksum: SSDEEP: 24:2dq/4+QGRmapBKaRy+53CdldhHBZfA+DiPR6LQ9F5nfsfRweygNbrZScknfM2fsw:cqDTdpkaXtCDrHBZfA9PR6LQ9F5nk5wR
+FileSize: 1 Kb (1438 bytes)
+
+FileName: ./installer/src/msi/locale/es-ES.wxl
+FileType: OTHER
+FileChecksum: SHA1: 03018bd0a278be675acf21f75399374e60d3a441
+FileChecksum: SHA256: b6a0d76d2abdee4f51f00d5a0d31da546079d4c43b92a2bbb24dd347cf0611aa
+FileChecksum: MD5: 28457397cd4d99b76ba4d5f7b5c21b5a
+FileChecksum: SSDEEP: 24:2dgJ4+QGRmSVW+CBuaRy+53CdldhHBZfA+DiPR6LQ9F5nfsfRweygNbrZScknfM2:cgNT/bCQaXtCDrHBZfA9PR6LQ9F5nk5A
+FileSize: 1 Kb (1444 bytes)
+
+FileName: ./installer/src/msi/locale/et-EE.wxl
+FileType: OTHER
+FileChecksum: SHA1: eb371e0b69b772448eca1c11146bd71a52bb90a5
+FileChecksum: SHA256: ef1c54ff83cd295ef7301347000c574e2b66c1b7dde5040f1b6a011f0b67769e
+FileChecksum: MD5: 5c86b9d6de1947b3ec0b9cafe4e83ae0
+FileChecksum: SSDEEP: 24:2dAQj4+QGRmSVT1Befa/+53CdldhHBZfA+DiPR6LQ9F5nfsfRweygNbrZScknfM2:cAuT/xma2tCDrHBZfA9PR6LQ9F5nk5wR
+FileSize: 1 Kb (1447 bytes)
+
+FileName: ./installer/src/msi/locale/fi-FI.wxl
+FileType: OTHER
+FileChecksum: SHA1: 5ea20096c68797235112a7a208258825dc512868
+FileChecksum: SHA256: 7ffdc8d00268e2a165ddd5d19282bf525f49d11af5f5b464b3d341b4bbb2abb1
+FileChecksum: MD5: 39ad4f37ad47bfbfebb64ca6d29a9bd5
+FileChecksum: SSDEEP: 24:2d3Fy4+QGRmSVi6B46aRy+53CdldhHBZfA+DiPR6LQ9F5nfsfRweygNbrZScknfh:c3CT/FraXtCDrHBZfA9PR6LQ9F5nk5wR
+FileSize: 1 Kb (1446 bytes)
+
+FileName: ./installer/src/msi/locale/fil-PH.wxl
+FileType: OTHER
+FileChecksum: SHA1: 2b42c754237514bdd61f7d7cd2734093fc77f486
+FileChecksum: SHA256: a49bce730456556bae073a66fab8657afb9d7a9cf5a9b42cbab7c471e4a2e0b0
+FileChecksum: MD5: c9c8dbaa09fcaf433308205714ba9064
+FileChecksum: SSDEEP: 24:2dE4+QGRmS/BNaRy+53CdldhHBZfA+DiPR6LQ9F5nfsfRweygNbrZScknfM2fsfI:ciTh7aXtCDrHBZfA9PR6LQ9F5nk5weyF
+FileSize: 1 Kb (1452 bytes)
+
+FileName: ./installer/src/msi/locale/fr.wxl
+FileType: OTHER
+FileChecksum: SHA1: d18393a5867ec2b429a714d4b13f93e6057cd014
+FileChecksum: SHA256: 1ed3c70f4852bae26cc9fd378fb508ff96abbebf974339f0315c32dc35e5d19e
+FileChecksum: MD5: 7c687e01ba40bd9cc8684005fe46ce8d
+FileChecksum: SSDEEP: 24:2db7tf4+QGREyRWuBmmaR3di53dh5z3TBmlq+Uni49Ku64mQpP4mF5TkJg0ggPaW:cFjTOynDaV63rp3TIA+Ui076rQpPrF5G
+FileSize: 1 Kb (1388 bytes)
+
+FileName: ./installer/src/msi/locale/he-IL.wxl
+FileType: OTHER
+FileChecksum: SHA1: 7472770c5bf166976c3afb1c58f791e9d734b18f
+FileChecksum: SHA256: dd722da6e1c77e144d6ca67762b3417e173f194e0dd3065a030539c5bbca1cd8
+FileChecksum: MD5: 90ae1a89149239c8f8cf53381f23e22a
+FileChecksum: SSDEEP: 24:2d5b+4+QGRmSV1Brah+53CdldhHBZfA+DiPR6LQ9F5nfsfRweygNbrZScknfM2fF:c5wT/19aItCDrHBZfA9PR6LQ9F5nk5wR
+FileSize: 1 Kb (1444 bytes)
+
+FileName: ./installer/src/msi/locale/hi-IN.wxl
+FileType: OTHER
+FileChecksum: SHA1: 5dcf39e01993454f109a7aea1cbf3c5fd25d48f5
+FileChecksum: SHA256: ef7706805277ec24bdff9ff0f743547220b9074830db5625e04e98d5d5ca3107
+FileChecksum: MD5: fdbd19f131e3b2375be2e0ea777da37e
+FileChecksum: SSDEEP: 48:cCT/w62tCDrHBZfA9PR6LQ9F5nk5weyurZS3nfM2kw:DTut+XcX5nk5Hckw
+FileSize: 1 Kb (1609 bytes)
+
+FileName: ./installer/src/msi/locale/hr-HR.wxl
+FileType: OTHER
+FileChecksum: SHA1: 3bc677ef676745c3999d8fb32d0e870e91323cbc
+FileChecksum: SHA256: bb2774b595fffe9d878ab2d19f5f91f2224e199c8994f3d6be95d7f740f3149f
+FileChecksum: MD5: 8791bc1f200b8febbcb2492a9206c872
+FileChecksum: SSDEEP: 24:2db7tf4+QGREWV1BWajdsdhOz1ygZ+QQqE69gQBgF5kVsggp1SjWnfnKW:cFjTOS18ajirC1dZS56CQuF5xgC1SjWJ
+FileSize: 1 Kb (1319 bytes)
+
+FileName: ./installer/src/msi/locale/hu-HU.wxl
+FileType: OTHER
+FileChecksum: SHA1: d5b4f32bd657ee25d3686dd5179a9a07ac5c688b
+FileChecksum: SHA256: 207ae73b2143f792d1cf8db850f4e63edcf917ccf9f0cce3572b76d570144380
+FileChecksum: MD5: 18049aa4eeb5ba9b919e45933e0070c5
+FileChecksum: SSDEEP: 24:2db7tf4+QGREYBVrB3ajdjdhrja3awOEbpVbm6zQiF5rxeKgrUS0tEnfGY5r:cFjTOkrNajdrrcawlbzbm6zQiF5rgK1+
+FileSize: 1 Kb (1357 bytes)
+
+FileName: ./installer/src/msi/locale/it.wxl
+FileType: OTHER
+FileChecksum: SHA1: afb4d2348a1c3b510219e7b435aa6572f6a715d9
+FileChecksum: SHA256: 9c71b618eaa4ecaf7971af2226d47d29687cd831ee8ce0af6eb6af7ea8fb3475
+FileChecksum: MD5: 7b9af223d2d746e2a1a4ce598cd96170
+FileChecksum: SSDEEP: 24:2dG4+QGRmSnWaRy+53CdldhHBZfA+DiPR6LQ9F5nfsfRweygNbrZScknfM2fsfRa:ccTtWaXtCDrHBZfA9PR6LQ9F5nk5weyF
+FileSize: 1 Kb (1439 bytes)
+
+FileName: ./installer/src/msi/locale/ja-JP.wxl
+FileType: OTHER
+FileChecksum: SHA1: 5e07df9139e16367af38e357fa5825830f9b8b90
+FileChecksum: SHA256: 9f2e5658f42e94beb6937d4931b9e86af2e8a92cfdb482b6631a62a724cc159c
+FileChecksum: MD5: 8c8ae788bb160ee9ff9c1e4553b6d3d7
+FileChecksum: SSDEEP: 24:2db7tf4+QGREsfuVzBGSDdadhoV5Imz6xd6MQr3F54UaQg7QS0sdu1nfXF:cFjTOsfazsskroV5Imz26MQjF5uQ6QSK
+FileSize: 1 Kb (1476 bytes)
+
+FileName: ./installer/src/msi/locale/kn-IN.wxl
+FileType: OTHER
+FileChecksum: SHA1: 2078d2a623d633769cca6d2ba05bc36867daea5a
+FileChecksum: SHA256: 19932983c543b823e9fe505e6eda14df5b36e5c5f3a859c203c8f1617b41760f
+FileChecksum: MD5: 369051fa394eff490d81c485d8a70a4a
+FileChecksum: SSDEEP: 48:ceT/pb5otCDrHBZfA9PR6LQ9F5nk5weyurZS3nfM2kw:7TMt+XcX5nk5Hckw
+FileSize: 1 Kb (1608 bytes)
+
+FileName: ./installer/src/msi/locale/mr-IN.wxl
+FileType: OTHER
+FileChecksum: SHA1: 7eea0d2f236ea486232df95f0de275fa025f250e
+FileChecksum: SHA256: 7fa097d17336ab08767733bc40c0baa4c0d9cb79204e3622e1e558d748013f87
+FileChecksum: MD5: be2b4c94c9a85ea78843fe6fde74c048
+FileChecksum: SSDEEP: 48:cJOTOPAtCDrHBZfA9PR6LQ9F5nk5weyurZS3nfM2kw:JTLt+XcX5nk5Hckw
+FileSize: 1 Kb (1611 bytes)
+
+FileName: ./installer/src/msi/locale/ms.wxl
+FileType: OTHER
+FileChecksum: SHA1: c6b8bb740cf432d220606b0b686cb58538f3b9c0
+FileChecksum: SHA256: 508b0d20f1c95869fc5941468fe9be65a543466621029c5bb454effc1441f5b9
+FileChecksum: MD5: 929477b86bc42b9925884eb39ed46f50
+FileChecksum: SSDEEP: 48:cgT/BztCDrHBZfA9PR6LQ9F5nk5weyurZS3nfM2kw:hTdt+XcX5nk5Hckw
+FileSize: 1 Kb (1603 bytes)
+
+FileName: ./installer/src/msi/locale/nb-NO.wxl
+FileType: OTHER
+FileChecksum: SHA1: f62525028014d92f74dbfc5d49fb8a167eea4c67
+FileChecksum: SHA256: 25380f1a514fa8042616d2f7055ab1e175fb174e7faab6ee37a77ca1ce8ff6ec
+FileChecksum: MD5: 87a90dad43c24442d55924a481724078
+FileChecksum: SSDEEP: 24:2drw4+QGRmSVCfBcaRy+53CdldhHBZfA+DiPR6LQ9F5nfsfRweygNbrZScknfM2t:cr2T/MuaXtCDrHBZfA9PR6LQ9F5nk5wR
+FileSize: 1 Kb (1456 bytes)
+
+FileName: ./installer/src/msi/locale/nl.wxl
+FileType: OTHER
+FileChecksum: SHA1: 92ae6bbfeb9e703742308fa1d5a765237455f010
+FileChecksum: SHA256: 8af3b6a0b4fca9e0e96ab0e7c618921a26724af2d6ff707138bda40899a1401f
+FileChecksum: MD5: adfdc51ec0ca83473fd5c232492867c4
+FileChecksum: SSDEEP: 24:2db7tf4+QGREyOuK6aR3dLdh8gl7HDgDuzm6zQWF5gyT1g5e7yFStYgnfg7e:cFjTOyS6aVtrTl7HDgDuzm6zQWF53T1V
+FileSize: 1 Kb (1331 bytes)
+
+FileName: ./installer/src/msi/locale/nn-NO.wxl
+FileType: OTHER
+FileChecksum: SHA1: f575e8b1d3e80b57b345f5b6528b8aa4a543b639
+FileChecksum: SHA256: a2003200b6ac4b0256f5c55f56709d34ed333dd43055e113d68a2af119fc6115
+FileChecksum: MD5: d100bdf11e330b419a587f9a65822371
+FileChecksum: SSDEEP: 24:2dl4+QGRmPCBW3aRy+53CdldhHBZfA+DiPR6LQ9F5nfsfRweygNbrZScknfM2fsw:cRTnCaXtCDrHBZfA9PR6LQ9F5nk5weyF
+FileSize: 1 Kb (1456 bytes)
+
+FileName: ./installer/src/msi/locale/pl-PL.wxl
+FileType: OTHER
+FileChecksum: SHA1: 46eab6207d78dbfec3e9db75ebd32ca3a24a7b03
+FileChecksum: SHA256: aee80e59ab103edcdd92fed8f3265ab54f63082ef7edbff6a7f11edf48f22ce5
+FileChecksum: MD5: 6edcaefc9869b06a9a60afb89e83d288
+FileChecksum: SSDEEP: 24:2db7tf4+QGRE2VPBqaR3dq8dhi5QE9o+YT6S6gQPF5o21W1gXSCJlqonfO:cFjTOyPwaV48rsQE9lYTl6gQPF53MWSR
+FileSize: 1 Kb (1378 bytes)
+
+FileName: ./installer/src/msi/locale/pt-BR.wxl
+FileType: OTHER
+FileChecksum: SHA1: fc2e885cec44f180dbae3568beb09360f49a048f
+FileChecksum: SHA256: 5f1f044a61a8e4a0d53ba9e2d6ce4603a32cb5645ee3d44c2fbeb22349bbe57b
+FileChecksum: MD5: a2a53b1e8da3c87a6fb00488abc59947
+FileChecksum: SSDEEP: 24:2db7tf4+QGREyfVYBTaR3d+Ak3dhPA93gEnzQ2cp6gzQOzF5fK6N9gufRpSs6K/M:cFjTOy9YNaVI3re3gEzQ2M6kQOF5x7pm
+FileSize: 1 Kb (1348 bytes)
+
+FileName: ./installer/src/msi/locale/pt-PT.wxl
+FileType: OTHER
+FileChecksum: SHA1: 27399c3abf029e6291848766fabdca63ab50252e
+FileChecksum: SHA256: ca54ff593229b92f06a80b5884077b62ee8dc1633d88564daa9d3bae3b294a5d
+FileChecksum: MD5: 449da93212998d08846d3b574c862d21
+FileChecksum: SSDEEP: 24:2db7tf4+QGREygBWaaR3d+Ak3dhPA93gEnzQ2cp6gzQOzF5fK6N9gufRpSs6K/2H:cFjTOygRaVI3re3gEzQ2M6kQOF5x7pf+
+FileSize: 1 Kb (1348 bytes)
+
+FileName: ./installer/src/msi/locale/ro-RO.wxl
+FileType: OTHER
+FileChecksum: SHA1: b6cdd7f72ed0fd614c9526e9805db8ea832c3c96
+FileChecksum: SHA256: be7811884b2c49731c0ea05d5ab067dd393da0eb3cd765ffde902b9fdba66d58
+FileChecksum: MD5: 5a499f4a3636af6ea9368b1a9a77b981
+FileChecksum: SSDEEP: 48:cFjTOUKvajcpbpBDlYwrrBwOWt+69Q1F5tj5VdSRE1WZnfV7:sjT0pRfUZq/5tdYEA
+FileSize: 1 Kb (1802 bytes)
+
+FileName: ./installer/src/msi/locale/ru-RU.wxl
+FileType: OTHER
+FileChecksum: SHA1: 84273566621265810a827cbd79301298804fc57d
+FileChecksum: SHA256: eba90a45f43a4b4706a26a592029d56cac0bdaad4f4af116d3ed8d5c9e50991d
+FileChecksum: MD5: 4893e5a7923dc8a80dd54604da2d47ad
+FileChecksum: SSDEEP: 48:cFjTOtLEaYrroKFCiH16mQ5F5k3USAnfclI:sjTBMrFr5kM
+FileSize: 1 Kb (1753 bytes)
+
+FileName: ./installer/src/msi/locale/sk-SK.wxl
+FileType: OTHER
+FileChecksum: SHA1: 3b1b27805df0b59d5d825dd87ef21a0ec5d32adf
+FileChecksum: SHA256: 67f1fe1bf60e0c222c6b088fc972fd2cc3d0c8cf312afd7077c4c84bf82d2796
+FileChecksum: MD5: 7f46d11504dc25f6182633cde5f65c1d
+FileChecksum: SSDEEP: 24:2diDIl4+QGRmSV9BCau+53CdldhHBZfA+DiPR6LQ9F5nfsfRweygNbrZScknfM2t:ci8RT/9AaptCDrHBZfA9PR6LQ9F5nk5A
+FileSize: 1 Kb (1446 bytes)
+
+FileName: ./installer/src/msi/locale/sv-SE.wxl
+FileType: OTHER
+FileChecksum: SHA1: 5d8027bb818bce96f9dd4999a5fc42d73d360dda
+FileChecksum: SHA256: c8c3045716883feeb984981bbfa3ee6e98bc6c4b898612381137ca232fc4ddd8
+FileChecksum: MD5: 1b6904127fa15a6067c27734bdac7e95
+FileChecksum: SSDEEP: 24:2db7tf4+QGREyMBViBVaR3dGdhxfBs3H0dYuNx6MQUF5HDPEmRgMnECSpknfBE2K:cFjTOyQiraVUrxfBeHKYuNx6MQUF5nR6
+FileSize: 1 Kb (1362 bytes)
+
+FileName: ./installer/src/msi/locale/th-TH.wxl
+FileType: OTHER
+FileChecksum: SHA1: 107c975ff243a93f876b32eac2094b297a5a99ae
+FileChecksum: SHA256: 1573edb6db68d584cb09db4dcbf54f5fe76120d75e21e23189fa9f22ee2d5d18
+FileChecksum: MD5: 737c415837e9d308959fbdf13cd37bc1
+FileChecksum: SSDEEP: 24:2dpC4+QGRmSVkBFA+53CdldhHBZfA+DiPR6LQ9F5nfsfRweygNbrZScknfM2fsfI:cpAT/k/7tCDrHBZfA9PR6LQ9F5nk5weg
+FileSize: 1 Kb (1443 bytes)
+
+FileName: ./installer/src/msi/locale/tr-TR.wxl
+FileType: OTHER
+FileChecksum: SHA1: cafbed6052ab0b29c68ed9e7c206c238c85accd3
+FileChecksum: SHA256: 554711c89f835a9f2daa1d0091c1260da1ab96c46f6fff2c4eab205d4a75f972
+FileChecksum: MD5: e08e6a0aebb35ad5a3fa1dcb28b872ee
+FileChecksum: SSDEEP: 24:2db7tf4+QGRE4gkV9LFsBja/dMCdhd2WykwA2Qd3F5gjDmev3gG8vq3S8j3sINhq:cFjTO4gcoda/Rrd2WjwA2Qd3F5imY0Ae
+FileSize: 1 Kb (1371 bytes)
+
+FileName: ./installer/src/msi/locale/uk-UA.wxl
+FileType: OTHER
+FileChecksum: SHA1: f9d7dd338e23505f093e633652cc2d806231af68
+FileChecksum: SHA256: 1e468a86b91ecb2b1dfb129b84c36c7b8cf49927c1d966f60e609290cfd23e65
+FileChecksum: MD5: f11a996c9f35376956330228c3ca6d36
+FileChecksum: SSDEEP: 48:cFjTO5NGaYurfmFAwW06mQJF5ANSp3DXSHFinfs5:sjTQ6aFb5AQhDiFl
+FileSize: 1 Kb (1677 bytes)
+
+FileName: ./installer/src/msi/locale/ur-PK.wxl
+FileType: OTHER
+FileChecksum: SHA1: f569eb3522b038f73f619f8dc48fb7901f4ff85c
+FileChecksum: SHA256: 1157728e8442a569aba1a48e36f8f00b0e67474bb1717a7710dc5b67e4da6c77
+FileChecksum: MD5: 0b03cf52b247b7ea5eb79ddeace52627
+FileChecksum: SSDEEP: 24:2d7w4+QGRj3ayBnaR1+5PdydhwBZop+DfPe60QdF5nfsfRwePgNbrmSc9nfM2fsk:c72Twy9aKtMrwBZopqPe60QdF5nk5wev
+FileSize: 1 Kb (1415 bytes)
+
+FileName: ./installer/src/msi/locale/zh-CN.wxl
+FileType: OTHER
+FileChecksum: SHA1: 531425431499e5cd20ee8d6c2757a1ec20f5ff05
+FileChecksum: SHA256: 302c63347fbe17914dde8e6353d1179a5667db08c08c6275e6c91dba4418c719
+FileChecksum: MD5: 456e3c4169654f4b86b7ae602f2e70c7
+FileChecksum: SSDEEP: 48:cpT8O8VUtCDrHBZfA9PR6LQ9F5nk5weyurZS3nfM2kw:sTj8et+XcX5nk5Hckw
+FileSize: 1 Kb (1868 bytes)
+
+FileName: ./installer/src/msi/locale/zh-TW.wxl
+FileType: OTHER
+FileChecksum: SHA1: 957428772b771487674ba40270508d21c228de0e
+FileChecksum: SHA256: 27ba0b899df3a927a1a6921f4ebced1e5e3c7ead7138fff3870940c8836255bf
+FileChecksum: MD5: 4977c95fb580538e068c33281411ab3e
+FileChecksum: SSDEEP: 48:cFjTO3AVtmgG+yrZEqZ0hx8QzQprz65I5TX6MQOF5qmQLStWNnf0jp8:sjTltmT+yFVWxYUny5qeTO
+FileSize: 1 Kb (1805 bytes)
+
+FileName: ./installer/src/setup-exe/abp-64.png
+FileType: OTHER
+FileChecksum: SHA1: 3838220f20f4db286fafc40c8d5bd8261c88a2f9
+FileChecksum: SHA256: 475eb4e972bb75b3e57442c6f6381a6e9f618bb78e80099d40bc0002aa78f121
+FileChecksum: MD5: 9534fe360ca15934a094718ed8bd848e
+FileChecksum: SSDEEP: 96:0zJsWBuFEESwvqBYUovBxQItsr9YG60M6IL5Wcp9bYwkMBsG47fY:0JB8THvEYUoZOwsSG6BpSdG4k
+FileSize: 4 Kb (5102 bytes)
+
+FileName: ./installer/src/setup-exe/bootstrap-theme.wxl
+FileType: OTHER
+FileChecksum: SHA1: 50280824eda4dd3cfa110787e61fb8faa6fbee74
+FileChecksum: SHA256: 96e33397de9a66e673485262df1c049e591292b1a7fc1e69aa5da08ab4aab893
+FileChecksum: MD5: 073b3e30f77bbccc5a9aab826d5c7852
+FileChecksum: SSDEEP: 48:cyMT8/rdesK19hDUNKw/zqq8bJIDmCNuNbVueXNN1NGCLPDHVSyK8KUKiKTKjKMk:MTiWbo3UMkbbvx9Kv/ATps
+FileSize: 2 Kb (2957 bytes)
+
+FileName: ./installer/src/setup-exe/bootstrap-theme.xml
+FileType: OTHER
+FileChecksum: SHA1: 65f8c621da7c46b13ee2ae85f9e8d2551651080a
+FileChecksum: SHA256: 0e79f24ab344744410176a17de1406dba4110e9093acae57aa5d06a2ba1f9ed3
+FileChecksum: MD5: aba979399542f2bc660354fb95d36c82
+FileChecksum: SSDEEP: 96:4JFefO6ZMTl1DaFhikExTPFCnQo8BoP3qsM2:4JMu56
+FileSize: 4 Kb (4710 bytes)
+
+FileName: ./installer/src/setup-exe/setup.wxs
+FileType: OTHER
+FileChecksum: SHA1: cd556d0629a1850892f7e7801bc76be487e7f840
+FileChecksum: SHA256: 873494def60e8fd52b31b9ee177ef892b7043eeb5728ca48f2fc518e57bd1221
+FileChecksum: MD5: 3650bb1ab025a4f3ed95065a410dcfc2
+FileChecksum: SSDEEP: 48:UBv5vYofvDs0KhveddqtJSNWzZ/q5ZZzEiDeP1BbI310G:6BvYofrs0KhGrqtLFq9DoiF3
+FileSize: 2 Kb (2897 bytes)
+
+FileName: ./locales/ar.ini
+FileType: OTHER
+FileChecksum: SHA1: 82901a871ac29f8a0b3b98202ae759ce3183f9ff
+FileChecksum: SHA256: 1d896707e84b5c3d5926d5f7939dd0bc284d5ac616416c92f6253f4033027ddf
+FileChecksum: MD5: 5bd3c897b8db15287c311af4a83c134d
+FileChecksum: SSDEEP: 48:V6wEkRvwemV6qbupWJoj8nySkS99cR6/W1ByJ0Wtmis/nSaFY2f5cK+HRy0X:V6wI7buQCAnySkScR71ByZY/69yM
+FileSize: 2 Kb (3055 bytes)
+
+FileName: ./locales/bg.ini
+FileType: OTHER
+FileChecksum: SHA1: 54d40eae39cb616dbd24afda33228677a60b5474
+FileChecksum: SHA256: 0507777a735f501b8faaf7e756e1a9acc20b1d996acccd156e0e6307aef74999
+FileChecksum: MD5: 1d88e3bb5ef932bb541f7e3aeb949264
+FileChecksum: SSDEEP: 48:V652+NU4Kg6zhhlguLR5ig4qa8LICzLW9l96Ew51EP7LZql47jtLSQJm+OlisplI:V652+B+zhdfQqsCXNqS4ftLp3y/I
+FileSize: 3 Kb (3632 bytes)
+
+FileName: ./locales/ca.ini
+FileType: OTHER
+FileChecksum: SHA1: 68c4bc351b48d760762b828fc3f4e080c2cd5d4a
+FileChecksum: SHA256: e6d0779ed7a5bab24d4c91886ebc9459fe3fb3b77fa835e37b3722cce31bb3e8
+FileChecksum: MD5: 901a84a2d86ab9d7c497ba2cf81932de
+FileChecksum: SSDEEP: 48:V68BZ/7/2Sm8dRsbBGmlqYQux7cyj6oMn0YisgT0fMwHF6E:V6e7NwBVP3x7cWrDd3wHFJ
+FileSize: 2 Kb (2318 bytes)
+
+FileName: ./locales/cs.ini
+FileType: OTHER
+FileChecksum: SHA1: e0df5031ad6f482a7c63b66d57af8be7185ba13a
+FileChecksum: SHA256: 1d27d0e7039faa11631fb0a0436c23a5255db72ffcb9e451e948d0f3460d6704
+FileChecksum: MD5: 27b7f4d555ff256e0624b1f4c1eb38de
+FileChecksum: SSDEEP: 48:V6y/ouBG8R+xYHkk9rb0L4eylLiQI6kgn3iis7O9eDydr8S:V6+ow3QYEz/yBSdsjqyd9
+FileSize: 2 Kb (2469 bytes)
+
+FileName: ./locales/da.ini
+FileType: OTHER
+FileChecksum: SHA1: 20022ebc0a80dbb1270af24ad3ec968cd8f7d169
+FileChecksum: SHA256: 2a5f3e8ab58dad993012df91042f2aa2dc2d051e4e53f77ed63f7b510ab4bdd9
+FileChecksum: MD5: 837639f3d75919f2dd7917d0f6170882
+FileChecksum: SSDEEP: 48:V6otIeey90sFOghR06Z9Adg7LM/IL/mMcMFEuEisCi0PXwmy5Rr:V6oGeeyT3Zedx/ITzNFWAXC
+FileSize: 2 Kb (2150 bytes)
+
+FileName: ./locales/de.ini
+FileType: OTHER
+FileChecksum: SHA1: 187734a2daf78270bcbbdeff18f98f33c512f9aa
+FileChecksum: SHA256: 6dbc63c333fca24460961bc8c24b50c302c92cf0a873478a3512799c9804226a
+FileChecksum: MD5: 2f820b639150d9f1588f77d672775190
+FileChecksum: SSDEEP: 48:V697EqJBqzqDa3bbH2M+cR6UzWdw7BS+lGzXLQe0E8jqLWOsisFgCtHYG2XhgdhB:V697EqJBqzhbrN+ItWd0BS+lGzbQ3Eql
+FileSize: 2 Kb (2355 bytes)
+
+FileName: ./locales/el.ini
+FileType: OTHER
+FileChecksum: SHA1: 9ff7c3d4421c7e42a948cadfa377b24e62beede2
+FileChecksum: SHA256: 63c0a1ea94d99768cc761fc815efda11295b7a7b5a6ff25fefd3b1b8b459f30f
+FileChecksum: MD5: 33eb79366605916df5a2099a7a9d29ba
+FileChecksum: SSDEEP: 96:V6tsHnVBZFNnakqNNwqC01PNuXOTkLPdA9GASh6rxommI7pNY7A:ItsHnVNNnakq4qC01PNuXOTkLmQAS2yA
+FileSize: 4 Kb (4112 bytes)
+
+FileName: ./locales/en.ini
+FileType: OTHER
+FileChecksum: SHA1: 242611966103e98b2e1761e34d02080bd3f73156
+FileChecksum: SHA256: dc1375693e95c335561785aab55894244fdb6b313836ccbf8be1ba311f38df14
+FileChecksum: MD5: 5fd297e8b7a411f88f9cc00bc5359bcb
+FileChecksum: SSDEEP: 48:V6rALSFgIwR8Vg+SBs9bFB5oQwDGkj2DqIisCr8u24:V6rANN1+JFfoQw6sHX
+FileSize: 2 Kb (2333 bytes)
+
+FileName: ./locales/es-ES.ini
+FileType: OTHER
+FileChecksum: SHA1: db4017297ba0d9321f470f0c17a4b802b9ea3d65
+FileChecksum: SHA256: 9ab893255e51598ef243b0c81b0a5dde67087d610a79e42137743d1b4a5c8515
+FileChecksum: MD5: fc2712af4ec08e1e83a18c0116926c41
+FileChecksum: SSDEEP: 48:V6u9+fi2k23U5dk2xSfRmFj9uCZ7Eo2XWhDn5C7va2isRTIJQva+shrf:V6xcuf6ZKFXWhN4CfJQCpb
+FileSize: 2 Kb (2608 bytes)
+
+FileName: ./locales/et.ini
+FileType: OTHER
+FileChecksum: SHA1: 6e4c6337f03cc0c2cf8516cfd4aa1287aa3524eb
+FileChecksum: SHA256: d2b4a1f8998a85df586e4710953ece5e0153b9d28286a245e0d920192ea758c3
+FileChecksum: MD5: 65a653f23d688f783d48072c15d5e5ff
+FileChecksum: SSDEEP: 48:V6x78Wdn4HVS46P9txDRlEHLNeL3vdTu4CiszLDWAthpzH:V6x4z6pTErsLf0tnbT
+FileSize: 2 Kb (2285 bytes)
+
+FileName: ./locales/fi.ini
+FileType: OTHER
+FileChecksum: SHA1: ca61bbf966027d449f4a0a6dc12a17b29eaeec6a
+FileChecksum: SHA256: c1db9f28a4b9b700f6508bba8a3a353248bc7cf57b941985bf9c53abd04979c0
+FileChecksum: MD5: 0a6341810c82fd9b31c92f4a5bf9fc95
+FileChecksum: SSDEEP: 48:V6/QBAs2XXXv+vMiWKj0K5yH3KmJupagisMl02x+XN:V6/+AHaDWKAK5yHa5pa9vx+d
+FileSize: 2 Kb (2240 bytes)
+
+FileName: ./locales/fil.ini
+FileType: OTHER
+FileChecksum: SHA1: a187b07f2201ad806cd30065a605e0a201595be3
+FileChecksum: SHA256: 49de43536eab8034330977f4fea9ae1da7f40b3017c8a9d5c4242bdec23c2b53
+FileChecksum: MD5: 1b5ece7907454711f77414e93fa84def
+FileChecksum: SSDEEP: 12:V6+IoHQnvxfr+QnhMufSt6MvmJ2GjKRGPINRYGCDh1j92pRXzeaFh0iKpKG/:V6oHQnFr+Qn03mcLRwIUFjjAK8G/
+FileSize: 942 bytes
+
+FileName: ./locales/fr.ini
+FileType: OTHER
+FileChecksum: SHA1: f425e45d69a1851126640c2b12b56a05271eb7bd
+FileChecksum: SHA256: 228172b1cdd3480a24d7b2bc42c5934038080306bf44f7e40f991902a7fd2cca
+FileChecksum: MD5: 7d4dab4499cdfe85564557f9e402ca24
+FileChecksum: SSDEEP: 48:V6IJRJFFeAsRut2IOtdR1qOdkfIt09glRDfy542smH0+dVyXlvKI4I1NEisJgLNK:V6IJO1ch8dqOdCuJBy6RmH0+dVy1f51u
+FileSize: 2 Kb (2739 bytes)
+
+FileName: ./locales/he.ini
+FileType: OTHER
+FileChecksum: SHA1: 1827937d0c30f6bec8fcebdf585ed056fa4caf9d
+FileChecksum: SHA256: 0c628268ffbff522e7b9c3138f4a2570f3519632e203a9d7888df8b24c727ae9
+FileChecksum: MD5: c13489e583a30f0cccc107837144b843
+FileChecksum: SSDEEP: 48:V6UyzS13EmCI6GIHMwLbRqc380H94PnALVj1yAVNSxSiUPgnYV4isrN8Srd:V6U4ys9YWP+PxAVcSieSprd
+FileSize: 2 Kb (2839 bytes)
+
+FileName: ./locales/hi.ini
+FileType: OTHER
+FileChecksum: SHA1: f25dadd7de58bb823912cc3451c93de064ab984b
+FileChecksum: SHA256: 947550d479c7b6c5b532e1a23c6b5a2767908e470ab3f5e03176ad217cf7947b
+FileChecksum: MD5: f5627b4a9ec641ade31c26191d12d4bf
+FileChecksum: SSDEEP: 24:VjsFAu0DTFAIFAuQ4DTiINdr+66/iBRcT4CcULBZ6YtbbLtANZ614+Wkw6E1avNy:VBuhJuOfD/GRcRBj6APpAH6Wfh/k6v
+FileSize: 1 Kb (1470 bytes)
+
+FileName: ./locales/hr.ini
+FileType: OTHER
+FileChecksum: SHA1: ce98b5d6b6b21858e7b6ef12124e3f2f281d8324
+FileChecksum: SHA256: 578a34c289850764375ebe8c8a26d0cc797fb95222e6a7740c3450226b95eb00
+FileChecksum: MD5: 853ee00c7444e629ff4db5cfe47b0398
+FileChecksum: SSDEEP: 6:V6eYFRRP+4h0iNYv5c+xWha976iANueu/WJUaJqDLLg4v:V6hR9h0iKxc+ghgiNuezUaJE3fv
+FileSize: 343 bytes
+
+FileName: ./locales/hu.ini
+FileType: OTHER
+FileChecksum: SHA1: 627bf10eeb066cb92eb069fc439796c8c01adc51
+FileChecksum: SHA256: f0d9fc3b1820f3bec4212b77932319a4731776149248aec3ebe7dc2527945932
+FileChecksum: MD5: 19d35e6247bfe2e021d9cdefb6a51409
+FileChecksum: SSDEEP: 48:V667LJkPsyEo2rKi9Vv2muQ2rRs9xuQzWYPu5atK5yRCSIpmGK/ONZpUPF6Fis5m:V64L8tEoMRFLM4aQAamyR5IgrCrJvEo+
+FileSize: 2 Kb (2793 bytes)
+
+FileName: ./locales/it.ini
+FileType: OTHER
+FileChecksum: SHA1: e5bd3fca608e1467118ca58accc16a54cd497a1e
+FileChecksum: SHA256: d53be47a31eef85424a534ee62bfa94f52acb9e30ebb75914794e737d80e23c7
+FileChecksum: MD5: 357c412c2e1c9503ae59b606701eb5af
+FileChecksum: SSDEEP: 48:V6wJ1OjQdgvLyJThR6i1+RhymAO2I7+b/kblSuK2HMZy9DjWisEmjEIjIJvjfhrd:V6xjc9AmQ722b4uK2sZejZ/I0JvjH
+FileSize: 2 Kb (2687 bytes)
+
+FileName: ./locales/ja.ini
+FileType: OTHER
+FileChecksum: SHA1: f8fb994c56949814ac10ee54d67a6925c58901ef
+FileChecksum: SHA256: d2027332804cb0e0e275678ac019b705db4bb03d18816efd302c05f9edc032ff
+FileChecksum: MD5: 0b479072770310da83a8cd092d4b2502
+FileChecksum: SSDEEP: 6:VfeTUB1fWTGJ3v3kyIMXou/db7JCm4GR4v:VN6GJ3vStu/Jom4Gi
+FileSize: 223 bytes
+
+FileName: ./locales/kn.ini
+FileType: OTHER
+FileChecksum: SHA1: 25ebca60453a876014af14c90bc9da0d7eee1228
+FileChecksum: SHA256: 2dab22d32b8998d64a5a4815169c16d98f2f5c1b5b2aae354555561706394192
+FileChecksum: MD5: 2554bd4c9a61cb64d8d76b955d3f2b4d
+FileChecksum: SSDEEP: 96:V6qhr5QS7uiMyQp4QDuqjMuKQZuSQneulRzsE/pqKUdhNirdgZrSRZnIu1s/wSL:IqhraS7Cy/0LjMJSHSdlRzsEqrbNir6D
+FileSize: 4 Kb (4986 bytes)
+
+FileName: ./locales/mr.ini
+FileType: OTHER
+FileChecksum: SHA1: 22a6987f8e157490e31ae949de721574ca5148a9
+FileChecksum: SHA256: 1c7aed7975551297ee3ac7a629672a0ced81b9ffbd4d6d5cf5ae315f32c7b40e
+FileChecksum: MD5: 4611aa25b39aa0cf97e75af753715225
+FileChecksum: SSDEEP: 96:V68A6TAfhQE2y5OlPIEA4Yb2HT72xJI3hYHEoso3mYRzyslnPMkkfKQb1TjM2L8z:I8NTymHbg4nuFrK8yYn0k0XK
+FileSize: 4 Kb (4356 bytes)
+
+FileName: ./locales/ms.ini
+FileType: OTHER
+FileChecksum: SHA1: 8966815a1f59fad67dd8a9b92e6ab8c50b4cc88d
+FileChecksum: SHA256: 059b0287e80cb311fcf5428abcb1e0578616d02edec065544a6f9f8894ff54d4
+FileChecksum: MD5: 3245985b2985ce3a236f305468fb0a21
+FileChecksum: SSDEEP: 48:V6DZhkbyelRl4LzvfTFAQDkAdlN/g673TVjis6cp4QCg:V6DPkmOczxAkldlpFoM
+FileSize: 2 Kb (2246 bytes)
+
+FileName: ./locales/nb.ini
+FileType: OTHER
+FileChecksum: SHA1: 3e46f3671e805c9e6c2f378370d0f7db26b97209
+FileChecksum: SHA256: 6da6f961fbc0229528069c4eee72197490729e4f44e06f27c80d4cb4a410636b
+FileChecksum: MD5: 1f8c4de608196f48cc78690478c7fe6f
+FileChecksum: SSDEEP: 48:V6Nefz96lcg6gR9xR5xgkgK9Ln9urtWD0sY6JLCELcoUqF9WjkisTb2TPme8kGN:V6NSXKdRrpTqtWD0lpEIw9YPCkm
+FileSize: 2 Kb (2450 bytes)
+
+FileName: ./locales/nl.ini
+FileType: OTHER
+FileChecksum: SHA1: c625832334146e80d47d3f9b2eb2b132721c7005
+FileChecksum: SHA256: fb741fa32a536931d4918314f5aabfff533314368c70eee5382c07be0c8e1665
+FileChecksum: MD5: 2fac4db30230061382f524a9fe458d2b
+FileChecksum: SSDEEP: 48:V6sG8+Qw/nZRFSweRa+Ptry9w6OdxOAj1SataisbIQCcxt6:V6s0u4g6OdxO8Jp
+FileSize: 2 Kb (2483 bytes)
+
+FileName: ./locales/nn-NO.ini
+FileType: OTHER
+FileChecksum: SHA1: a017e8e991beb31ffd0fe97ca312a153c0da80b4
+FileChecksum: SHA256: 8e8cabdb46303f05a8c93e328d92b0a2fb3622027fca351092005d42fbb8f888
+FileChecksum: MD5: d4a5c64ee6dd6d1f57c0a15e24ac7185
+FileChecksum: SSDEEP: 48:V6zvzufktzhYrzj9u9v51W9LWW1DHAz579bTELcqF0IjEisgqWS5VgbM:V6TzuGwzGvjSDHE/TEI+0ILSnx
+FileSize: 2 Kb (2382 bytes)
+
+FileName: ./locales/pl.ini
+FileType: OTHER
+FileChecksum: SHA1: 4f11f8fdc6749922a3547ce46aca0e74a9941bfa
+FileChecksum: SHA256: 602d36ec5d2a8bcdec3a4cbf7a9505c699281c6fcc533217af19ed3dce878506
+FileChecksum: MD5: 82b4a1e79def240bce126f50c47a573c
+FileChecksum: SSDEEP: 48:V6u/Si+5cD/7AgNJ2bgXXm7RX8C7Y7f890a7XzdCQXaZgQUSXise4w39jXC4vJD:V6uicxb/miC7Y7na7Xz8QKZY4SpC4vJD
+FileSize: 2 Kb (2512 bytes)
+
+FileName: ./locales/pt-BR.ini
+FileType: OTHER
+FileChecksum: SHA1: bfbdfa863d74becabd9c63949542ad7ca500c1cc
+FileChecksum: SHA256: 993b3d7fe6caeea8b372c896af23f6bffc114c64b65cf1e59f4033cee8f443d1
+FileChecksum: MD5: 4a1730bc153508d2e5ce12c93417eaed
+FileChecksum: SSDEEP: 48:V6BdxHLwwJHRUpgu+ZiAIQFmanA7TYisc9Xu1C6/D:V6XN16X/ImTS
+FileSize: 2 Kb (2623 bytes)
+
+FileName: ./locales/pt-PT.ini
+FileType: OTHER
+FileChecksum: SHA1: d7165c09ff85ad67bd7a9643f6bbe19f411862e7
+FileChecksum: SHA256: 7a29991b40526f932e1a3b3dcd017d39fe8c4910f09d9e3b503785638b7100b6
+FileChecksum: MD5: a85c83a6662c0bfa51d1afb45a910482
+FileChecksum: SSDEEP: 48:V6wHwwlwobREKPIO9iCE4Qoc8MEcSRisgpywRtCi8:V60PIsA8rLr
+FileSize: 2 Kb (2567 bytes)
+
+FileName: ./locales/ro.ini
+FileType: OTHER
+FileChecksum: SHA1: c0627beead277903a9388502ac34abac7c4847d1
+FileChecksum: SHA256: 4f80a8a002267f6faea7e408fff0cb9179a9885f671202bcf45810e75232d729
+FileChecksum: MD5: a62e520c22283b21aa3218c532b50e63
+FileChecksum: SSDEEP: 48:V6h25Q/pmWBweRowsKUg+9u1rNxl5GYYJaBuQ7DeSis2ES35LgjGSn:V6OQsufsQnluawoQFah
+FileSize: 2 Kb (2532 bytes)
+
+FileName: ./locales/ru.ini
+FileType: OTHER
+FileChecksum: SHA1: 076115dcd2c3f6e8856dda22a54232c47f7c3645
+FileChecksum: SHA256: f7510a9552253def3751a86de6fc643b0d32f40d5fa3d1b4ca0d6ec3ca5ee917
+FileChecksum: MD5: ba882d2295379ece8801282eb48827f8
+FileChecksum: SSDEEP: 48:V6UxpwsEp1PeZQcRxp7YP7BJ57qeSol8TQGBD7D0bWusis15dPlxC440:V6U/wJcODzB5DmQGB2Cn980
+FileSize: 3 Kb (3613 bytes)
+
+FileName: ./locales/sk.ini
+FileType: OTHER
+FileChecksum: SHA1: 1470413a1b5e65464e8e8d34d997bd8f93c4c4ce
+FileChecksum: SHA256: 170a7a684191233a1a22fa8b3427bcad2e43a54c976ac1f2339f2b4551a0d55c
+FileChecksum: MD5: bad154180cffb28862861757eb3fdcbd
+FileChecksum: SSDEEP: 48:V6diZyfZRULguGYJteCF/U+V3o7is8KO4Ll:V61fuGYJteIbTY
+FileSize: 2 Kb (2238 bytes)
+
+FileName: ./locales/sv-SE.ini
+FileType: OTHER
+FileChecksum: SHA1: 7ed689d755532b391afa7e6d46a66f56e0666e83
+FileChecksum: SHA256: af1ff7cac4d22f82e11b76b13b684d2e7a5e33aff3ea2156bb8996b8aa75307a
+FileChecksum: MD5: 70ad0b67f9861d483bfd234e7ec92ee6
+FileChecksum: SSDEEP: 48:V6o7bHnXdN36t1CRhPlwhq9LIq0kWaHW2dZ6eBLxdMJaIist2QBJmNyUL:V6o7bHXiCjlwhkPWaHW2dZ6eBc1HY
+FileSize: 2 Kb (2491 bytes)
+
+FileName: ./locales/th.ini
+FileType: OTHER
+FileChecksum: SHA1: 4b021f63edcc3eaa71f246eaf5ecc050a4a2efa8
+FileChecksum: SHA256: 9b8eb7fbbd9cb0b32ad80a31ac31b591eda269ee6913ede54f6b56aa8067bc2e
+FileChecksum: MD5: a7c977c44ae2f37641acbc26e064c2f1
+FileChecksum: SSDEEP: 96:V6Eta79k4Z4fqmf/GZ/coflVVNuovLoa9j8bPQBjEFK5bSE4SjQjl2L:IyjE4MEof/XuovLoa9j8bPQBjYebSExL
+FileSize: 3 Kb (3730 bytes)
+
+FileName: ./locales/tr.ini
+FileType: OTHER
+FileChecksum: SHA1: d60aaf6f5e46bc642f1b1ac39bccb96684288cef
+FileChecksum: SHA256: 37b1f234bc19e5c8cd5fc02b4fb86510bda12878a7924d72693fce86982f08b4
+FileChecksum: MD5: 4edca3618becfafedb906d86ad959e43
+FileChecksum: SSDEEP: 48:V6WrSVo7z/E9zcM6r7orCAJWG6tisqB6YF5skB+OVw4LSCF3/:V6FiecHr7i6+ZFR+02CN
+FileSize: 2 Kb (2608 bytes)
+
+FileName: ./locales/uk.ini
+FileType: OTHER
+FileChecksum: SHA1: 5a4b2d8fe34d56eabb5f29a2f97e08f1fbcda185
+FileChecksum: SHA256: 72a7e98fa953346e8eb0f393ec8cf34db33edc57fa6dac0c4d856c15d1d1eb25
+FileChecksum: MD5: 0215a0e7c3ea3015aa2890b7d687ce61
+FileChecksum: SSDEEP: 48:V6FsaV/aO34i+MtRURX7UjIy9wZLYewVXsBVjymVZ2OU6NtisFZkg7PqNCIaqaPH:V6F10OFxtmdUjIDgsvyWNx7eNq3K/LW
+FileSize: 3 Kb (3517 bytes)
+
+FileName: ./locales/ur-PK.ini
+FileType: OTHER
+FileChecksum: SHA1: 7973bb0b73bd4f5b321a69917a3d04c507f57d5a
+FileChecksum: SHA256: a1ae8f4ed0d2be2eacc827066c517024f90e5f679eceef8495e815636afde73a
+FileChecksum: MD5: 88a16d143f4aa316ac103d37c77f54aa
+FileChecksum: SSDEEP: 48:V6NZHJwH0Ea/HfPFn5apTap6x2QHDp/JHjgeCl3J9hYABnXSj5i4is7yzIcO5iR/:V6NX3HNnkpOpXcJHklZ9hfZgmV++n
+FileSize: 3 Kb (3282 bytes)
+
+FileName: ./locales/zh-CN.ini
+FileType: OTHER
+FileChecksum: SHA1: ba1b8f2bbae607a955625e8aa54ee97dfe86185d
+FileChecksum: SHA256: 8a88197415ea0a4a714d8166f17292f543787c7eed3283bceab8e69425885129
+FileChecksum: MD5: 5fc288689cb4a1f0f1c9c254cc854d36
+FileChecksum: SSDEEP: 48:V6c+rRUpe/rFVJRcbEkzyQVi9p1rSCio9R3isgh75cRyt4BTBban:V6c+r2pe/rbcbDHVOpxHDKhqQIYn
+FileSize: 2 Kb (2288 bytes)
+
+FileName: ./locales/zh-TW.ini
+FileType: OTHER
+FileChecksum: SHA1: 7cfcb00f67528442e54838af1eec8ebde850b842
+FileChecksum: SHA256: c1b16cb22522cfd0426ca363336d599b37d47f8529b12d85223eb6563c59f41c
+FileChecksum: MD5: 84a6cea742aa63a4328fbf8a76e498dd
+FileChecksum: SSDEEP: 48:V67zoba2vFWowrp2O13+6NpZSuBW5o9um3isXRW4o6mTy:V6nzmwo+2D6NpZsuEc86m+
+FileSize: 2 Kb (2187 bytes)
+
+FileName: ./README.md
+FileType: OTHER
+ArtifactOfProjectName: PublicSuffixList
+FileLicenseConcluded: GPL-3.0
+FileChecksum: SHA1: 4fb4898389b1fe530cf6c5665067fac9a364e0de
+FileChecksum: SHA256: 9f12ab3ea0121c0b909ea70748cc91343f926764fdbc02ab38617c732a6dc382
+FileChecksum: MD5: 24f123ebcc62d0fecb061a7724005536
+FileChecksum: SSDEEP: 24:ccu9LnPUYiyXrpOIqhWU17FUXaFPu+XJeTMevZ+t0/yr6FTEfZi33:C9LnPmyXyJ9F6GkMiEOFn3
+FileSize: 1 Kb (1270 bytes)
+
+FileName: ./src/engine/Debug.cpp
+FileType: SOURCE
+FileChecksum: SHA1: a23600531c856d088fde4a138fb35e931bfc96d2
+FileChecksum: SHA256: e348e05c84ef6db485f1c4de4c04e1842c1ac8174303179b905e229cdfa563bd
+FileChecksum: MD5: aedb87180bc01e0747c7bf1fcaf3250a
+FileChecksum: SSDEEP: 24:RerN46KZKGJBjwqwoIl7JfAdTzZ36nXa7cWmlS+It+P+Nl7gPQcWmAIf:/kGJdwdN2dJ377c7s+mNNg4c7A4
+FileSize: 1 Kb (1124 bytes)
+FileLOC: 39
+
+FileName: ./src/engine/Debug.h
+FileType: SOURCE
+FileChecksum: SHA1: 3227ed6d9d87aca06e9c411488b935d05955cb96
+FileChecksum: SHA256: 09759e8fa520debdf7357f7c899f249f16469a905239069ad2b74b349f51dbc1
+FileChecksum: MD5: 3d59db07e3e1cb01876fb713cbfef2fb
+FileChecksum: SSDEEP: 6:x3Q05Aqivo1CUGB7oz1CtGGBz6Jbz1CY5pBoFRSBo0:x3xAqMGCl7opCcWz6JbpCevoFw
+FileSize: 221 bytes
+FileLOC: 10
+
+FileName: ./src/engine/engine.rc
+FileType: OTHER
+FileChecksum: SHA1: d6b79c0546e153bdb520cf52a34a93a5aeeb6cc4
+FileChecksum: SHA256: ddb1681f551fbd300edfd63a5f35258bd1249b12350d75605f87ed98be5e0b59
+FileChecksum: MD5: bc624731b1b3fe95651ddee4302309b6
+FileChecksum: SSDEEP: 24:RKcWam85YkbmvGbmvag8ukRpxwzSdzlL+65LZmjdEp/ZmGvrNx:cdam85RbmvGbmvag8HRpqzEzF3mjAhms
+FileSize: 904 bytes
+
+FileName: ./src/engine/Main.cpp
+FileType: SOURCE
+FileChecksum: SHA1: 37bc329925ea2ecc5d33d7baab5605e8e8eb3c4d
+FileChecksum: SHA256: 680890605e10adc3e458b83f0a426a648530325fc97d2836cbd19c3065d71736
+FileChecksum: MD5: cb9ffb66dc307cdac3c0af52fefdde0c
+FileChecksum: SSDEEP: 192:Sbv0/TcWmvFFQi2RZbHiGfHx7GWMaPqMMdwkyqPBu3qSK0uUujKUuEoBiQazpG+4:S728M6cNG9fVQFaXy
+FileSize: 11 Kb (12213 bytes)
+FileLOC: 394
+
+FileName: ./src/engine/Resource.h
+FileType: SOURCE
+FileChecksum: SHA1: ddf2317e3358c66e91d7d9513eb551b628f1418c
+FileChecksum: SHA256: 80e3e0fa827535ff4028e70a81992f866c5a382b82d927d718607f9d526463b4
+FileChecksum: MD5: 1dc9a12d564badf9bc581349bb43a9c7
+FileChecksum: SSDEEP: 6:HeAWv6HQ0WlKB70Wz5Gw0WrGfWrHNKGkbWrTDWrQCq3WPZNFZQ0W6JrvNFq:HeJ6M897TtKGkiDCvZeMY
+FileSize: 397 bytes
+FileLOC: 9
+
+FileName: ./src/engine/UpdateInstallDialog.cpp
+FileType: SOURCE
+FileChecksum: SHA1: cb1eeb21ca2d6489d9c3e207992cbce03f0860f2
+FileChecksum: SHA256: fb1e817fee1af9dfa030ad4c6b0047bd664865996dca2763be731917d58fa0ee
+FileChecksum: MD5: 013990c3665b0ceff0f9cc91c63e69d4
+FileChecksum: SSDEEP: 192:5B+QcQNy+7NHDmpnFodrR/aSvdxmYUaGuTm4aPv:5PaSvjmE8Pv
+FileSize: 6 Kb (6370 bytes)
+FileLOC: 170
+
+FileName: ./src/engine/UpdateInstallDialog.h
+FileType: SOURCE
+FileChecksum: SHA1: 532862b13a7291bdce1cd46c2cefe1a4e6f2917a
+FileChecksum: SHA256: 2e0f47aab7a93a0cec66225ada39cdddcbf09772c492cc6665353582d398d303
+FileChecksum: MD5: fbe9c935371fdff8f1aa68a5589c3dc8
+FileChecksum: SSDEEP: 6:HhSE6F0K2EmsRP9GNigI9eO9ewUafgPpI9UKm9Qej9Cz89QeRs:zs/mKMNZIUOUuIPpI0VjTVRs
+FileSize: 317 bytes
+FileLOC: 14
+
+FileName: ./src/engine/Updater.cpp
+FileType: SOURCE
+FileChecksum: SHA1: 2d2149bcc39bddc5f49950ee7e996e83009cd78c
+FileChecksum: SHA256: 35d9d4e9b480d45d072811cf47b5602947f11c7beb4f5cf89cbc843fe246a743
+FileChecksum: MD5: 8357d3ccf9d633728bea7342fe9aa920
+FileChecksum: SSDEEP: 96:dZE3tKbFOGWdDTGQSd3W1vC+Nm1gKK5bZ7nbr5eBR5/L:HEQBOGDQKW1vCqb3uRNL
+FileSize: 3 Kb (4025 bytes)
+FileLOC: 125
+
+FileName: ./src/engine/Updater.h
+FileType: SOURCE
+FileChecksum: SHA1: 03b57470ffd5161a113f11a81a45a32310320499
+FileChecksum: SHA256: 42fbc7864c7bafa011337c6adc213490f74a69c0ea1a02bb7652512ee125af48
+FileChecksum: MD5: 1dec76ee677844fe1eca52231fc49517
+FileChecksum: SSDEEP: 12:FeAqcIATgA1INa8JKDkxFrWMAo+p6aw1c:FeiI4gFMYYGqMAmc
+FileSize: 397 bytes
+FileLOC: 19
+
+FileName: ./src/plugin/abp.h
+FileType: SOURCE
+FileChecksum: SHA1: 385e2afb49f706648fc4fee98fe620fd9ffc5cd5
+FileChecksum: SHA256: b2088af721b1ba5eedc8aa9cf46a3c29ebd126a7c1fe6d6c2152a6ceb687f7a0
+FileChecksum: MD5: d61d62d5e5c40bbfc9e26ff20adf6047
+FileChecksum: SSDEEP: 3:RLMPCEJJrEFVuREq6GkM0S7OYgurpmCu:dI3zEa0SHBu
+FileSize: 84 bytes
+FileLOC: 2
+
+FileName: ./src/plugin/AdblockPlus.def
+FileType: OTHER
+FileChecksum: SHA1: 21f398e3083b4e9be9ea3de0a8050c160b6f24d6
+FileChecksum: SHA256: c22922e0ca6176a970d8de5a7990d265841557592dae2c487042ab65bf9ffe38
+FileChecksum: MD5: dc6761a23e882add07c7818b5e069bde
+FileChecksum: SSDEEP: 6:aJ9Q7TnBQ8UGhpdCevmBwL2FxNUzthOOzt5mXycztn37mJJmk49n:lTnBQ8UGhp5OBlFxNUhUOh4Xych3qGkE
+FileSize: 245 bytes
+
+FileName: ./src/plugin/AdblockPlus.idl
+FileType: OTHER
+FileChecksum: SHA1: 8d837979d067eae2bf2897ad43caa04849e8952d
+FileChecksum: SHA256: 6728b3c8fe40a4f903ee13e4dd0533c5fe066a391b611412b7bc7ae3d1edf7e3
+FileChecksum: MD5: 0d967408d540125a92c6b6a6e23ed5c5
+FileChecksum: SSDEEP: 12:jMG/qAGLMC6f61T+wfEQZ8GPnEk7wfx7miAJ8kIOD1JvVdwflOVBi:g3nLML6N+wVsuwlhAjIM1JPwV
+FileSize: 609 bytes
+
+FileName: ./src/plugin/AdblockPlus.rc
+FileType: OTHER
+FileChecksum: SHA1: 9ce3d9dfe0f878dc0f310ccbd8a66dfe9740b2e7
+FileChecksum: SHA256: 9b7720dd29c26435f41b3e756c30a73955da1a6f2acafc56e6fb609caf0545b0
+FileChecksum: MD5: 5d6e3060b44d8477f79222f8e9d715bd
+FileChecksum: SSDEEP: 48:fP5oo4X8fp85RbmvGbmvag8HRpqzEzFZmj0hmGx8s8FjJrXQaHzZ78/SKWiAibLZ:fDUayRbm+bmCnHRgojmEmvbX7HF7qSy
+FileSize: 2 Kb (2717 bytes)
+
+FileName: ./src/plugin/AdblockPlus.rgs
+FileType: OTHER
+FileChecksum: SHA1: b1517f561d9ea840a9a40b40f7a312306e6bdf8d
+FileChecksum: SHA256: 5d96dca7e542b51b748aedb1ab46d410560ee6de815dc71e8ec6b36532836217
+FileChecksum: MD5: 846af0e9237b93fc8df4c8bf68760589
+FileChecksum: SSDEEP: 48:8vrfovrfWsgnhf5EsUn+Qjp9j4qfYGf5EIAq:GfEx+QjpZFEIx
+FileSize: 1 Kb (1635 bytes)
+
+FileName: ./src/plugin/AdblockPlusClient.cpp
+FileType: SOURCE
+FileChecksum: SHA1: db3a322aaa90ca2d4ae8163fad9e69e4756d3412
+FileChecksum: SHA256: 249e1472f2080d564866701708fa43c4dda28f9efe58a2e0a6f83e8abc0b9f6d
+FileChecksum: MD5: 3f1ca9501e22b6eb540e52d8e09fe424
+FileChecksum: SSDEEP: 384:YkvSGKGcm37HMSq2dMmGa2kaocCo4ymnuFYNG:YkKGh37HpGaDaPr4FuT
+FileSize: 14 Kb (14603 bytes)
+FileLOC: 444
+
+FileName: ./src/plugin/AdblockPlusClient.h
+FileType: SOURCE
+FileChecksum: SHA1: cfeadd2b9a05a434452ba0f7ffc58de0c082718a
+FileChecksum: SHA256: 3c498201ab510882e3c5e4091ada6a07013ab1f14579d6283ed41e33df93d7d8
+FileChecksum: MD5: 2c25af773dd261609cc71457d8fe4254
+FileChecksum: SSDEEP: 48:CIst0MMQhGJQC032qtcATOgigh9lzTVSumcuQy1ezfxQ86xQVNQZ7/9erM06V:CIo1M3ejigigSvvetQQDQZh2M06V
+FileSize: 2 Kb (2867 bytes)
+FileLOC: 83
+
+FileName: ./src/plugin/AdblockPlusDomTraverser.cpp
+FileType: SOURCE
+FileChecksum: SHA1: f2a1bc218632201b0c897c6fd4c0a26d036474e7
+FileChecksum: SHA256: 865f866fdfb18bf2b4197ef3a7a964cb85ea744ddfd91622f193753546c81d4b
+FileChecksum: MD5: a3619cdb0eac77bcf610f06d6de924f0
+FileChecksum: SSDEEP: 48:fOnhiQvAJdcyJUQDg9lNwHrDFbiHARXyrt5a+lNRnoBuobPXyD+3z7xrGQbM5nYd:fogu9lNuFF3YNRnkukJ3z7/e8
+FileSize: 3 Kb (3862 bytes)
+FileLOC: 146
+
+FileName: ./src/plugin/AdblockPlusDomTraverser.h
+FileType: SOURCE
+FileChecksum: SHA1: c5c57444963fb3cd4073820643b9e681e41ec805
+FileChecksum: SHA256: b3c1b76742f6e3b35a4765f8699f789063efe2babcd7b2fb107694a226cb848d
+FileChecksum: MD5: 3f5939b39c9072a7522b0c3b92383724
+FileChecksum: SSDEEP: 24:CdmEqnmEqtlHdUNmxbTk139CoMVNwcZQPx5YcZLgQUcTcZLoTX1QsTcZLQQXmEqH:CIEhESy2VzQ1iQuUQbGQWEQ
+FileSize: 970 bytes
+FileLOC: 42
+
+FileName: ./src/plugin/AdblockPlusGuids.h
+FileType: SOURCE
+FileChecksum: SHA1: bb263c83b9524b15717211b8faa603b805ae3d23
+FileChecksum: SHA256: 8d0fed523aab958cdf57ea0bd3242bc33ffabeb7e74761720c40ad57460ef8ab
+FileChecksum: MD5: af2639749fe513b03bdbab915b83d997
+FileChecksum: SSDEEP: 12:HenhpQCzEfJw6mjhsDBWYWH0DBQQDmMWdjGol3M:YpefNmj/YWHDlM
+FileSize: 494 bytes
+FileLOC: 9
+
+FileName: ./src/plugin/AdblockPlusTab.cpp
+FileType: SOURCE
+FileChecksum: SHA1: 480f8610fd95730ac06bd732ab2a30260a5862ff
+FileChecksum: SHA256: 89de24c4e286e9c34ddc7959becbb6d9b65dd05bdefb6f9f5f1d4056760d5b59
+FileChecksum: MD5: 6bce8a607409e58b238794de81365400
+FileChecksum: SSDEEP: 6:RAcAvOA7olAZLmlAllA9yWAGxJKGTPgPFeFyjOuedePFao:RAWA7olAZylAllAJAGydoRuededao
+FileSize: 292 bytes
+FileLOC: 17
+
+FileName: ./src/plugin/AdblockPlusTab.h
+FileType: SOURCE
+FileChecksum: SHA1: 690fa9c3272b6d93f6a12338d7179f9fa0af0144
+FileChecksum: SHA256: f2ff775c89dd2f000fc1e33f26c59464e03287561d75d0a76276100690c7f4bb
+FileChecksum: MD5: 6deb68131a903cfd2ba791a0585bb936
+FileChecksum: SSDEEP: 6:Cdm26hw0AIm26hNAoD5Qd0SiaHBQ0cuyjfFA4kcdm26hn:CdmvoImvNAoCd0gHBQ+yXVmvn
+FileSize: 247 bytes
+FileLOC: 17
+
+FileName: ./src/plugin/BuildVariant.h
+FileType: SOURCE
+FileChecksum: SHA1: 2c99ed604d52695e918ab2e4b95b2f73ccbaf014
+FileChecksum: SHA256: 9781fbb5b325c77b82a7c302524588e15c75f3df9bfc837f0f2ac7cfe3b3ab8c
+FileChecksum: MD5: a7fdfaf63ad03f99bcc49658441cd966
+FileChecksum: SSDEEP: 3:XBA91J3lA9CWNEUI/sn:RANlARJssn
+FileSize: 53 bytes
+FileLOC: 2
+
+FileName: ./src/plugin/Config.h
+FileType: SOURCE
+FileChecksum: SHA1: efbdd70cef3203fccc3d22969be1119c42301af2
+FileChecksum: SHA256: 54242f53d43460ad6d6e9d764f3bd4355817c101b41ccb72db986922bdae10d6
+FileChecksum: MD5: 3bd99968371c3ea707f7ff62a08fcc62
+FileChecksum: SSDEEP: 48:623SJ8Pzmcc6xkFQAWV0UOrZNs2HFMD02eQXhr9EcekeFmWeFEn:/k8Pzmcc6x4QAE0Uw26FAV/1W/
+FileSize: 4 Kb (4363 bytes)
+FileLOC: 156
+
+FileName: ./src/plugin/Console.h
+FileType: SOURCE
+FileChecksum: SHA1: 56763d662c68768e2158aec72e8a58be6b74c43a
+FileChecksum: SHA256: 1844c6ca94240ec417b219909da0ea8e7e3b7a28e09ad3708dd03b9601cf3ba8
+FileChecksum: MD5: abe0429e4e20e1035fe979e6cfdd712d
+FileChecksum: SSDEEP: 96:wPhRsX2j4+IiaHz+jFiBrRnvfN26MFupKrN3e:wpj4+RaT+hsrZN2yow
+FileSize: 4 Kb (4533 bytes)
+FileLOC: 170
+
+FileName: ./src/plugin/NotificationMessage.cpp
+FileType: SOURCE
+FileChecksum: SHA1: 9b82389766ac4515d03b21ed9764945f53e63497
+FileChecksum: SHA256: 34d0d0345929d3ecf66708533f7d52d64871008b499eb9d5c70d6c1735b7be95
+FileChecksum: MD5: 0e9e456e88a1035c422227f061ea06a9
+FileChecksum: SSDEEP: 48:Ch/pP5C/nAjuhS5pOImBiyQ8r3mSJ1/TZIoyWEr3gaq/H9:C/mPUaSXO3ih8rWSHLSoyWErtq/H9
+FileSize: 2 Kb (2826 bytes)
+FileLOC: 100
+
+FileName: ./src/plugin/NotificationMessage.h
+FileType: SOURCE
+FileChecksum: SHA1: cbfbd9976e0770b7fac02d0851ae2ab4ec9e4dfa
+FileChecksum: SHA256: f87750b2f4aeeac1fed9f96a982d63b323ddfe1bbd1448293e6a6f684f6b0f13
+FileChecksum: MD5: 9e57eaf7060d4d7bef1b38b4d06446bf
+FileChecksum: SSDEEP: 12:LeR2PeR5lAqMNgb6Gr9vL4ISvFMV+jOgvFMEzHPsIPlQKd9+6K3Rd1s:6gmJHbrh8bQgVUIJGRs
+FileSize: 566 bytes
+FileLOC: 21
+
+FileName: ./src/plugin/Plugin.cpp
+FileType: SOURCE
+FileChecksum: SHA1: a38b2715ac84c442ab13175042561c49bf5fec9d
+FileChecksum: SHA256: 6c4e695abdad207cff2a98a3a68a9e300f9041d39f0cdc24d8f8f4b9296d2beb
+FileChecksum: MD5: 32c8c4dada820d0880ff7cbbd1805b18
+FileChecksum: SSDEEP: 96:QGNb/vMnJzDXUIKL02KVmv/uwbMlhbdHExESc6ZFj:ani0Bc/RbMjbdkeBmj
+FileSize: 3 Kb (3481 bytes)
+FileLOC: 148
+
+FileName: ./src/plugin/Plugin.h
+FileType: SOURCE
+FileChecksum: SHA1: 357105a56f90b52ef82e1f210d0b65392bf0a242
+FileChecksum: SHA256: eaaa41177df95733d9f5f3c9a7aa53d4ba630b369f18c30bd115457b622fa93f
+FileChecksum: MD5: 8ed4562ae2a62771d2f94c1f9455cfd2
+FileChecksum: SSDEEP: 6:jLc0AMKaAm1ZyGMnjK5AF8BHvT9rqaZAFKidT9rq1Gsz:MMXAmBMjIAFQPIaZAFHdI1Lz
+FileSize: 208 bytes
+FileLOC: 11
+
+FileName: ./src/plugin/PluginClass.cpp
+FileType: SOURCE
+FileChecksum: SHA1: eaeda15dc5800991aebb5500165df3597e3f17f6
+FileChecksum: SHA256: e4f3124eac0fa2edc05dbaa3b45d50b8a26d695f560ae9a8676a600cf27eb272
+FileChecksum: MD5: f2603641b719d7a5f88b4909d40905d2
+FileChecksum: SSDEEP: 768:nG/Dvl8PVtVh15oVRIVgPNYvTm3+umyjoFp:n+DvlcVtoRsgPCvSuumF
+FileSize: 48 Kb (49332 bytes)
+FileLOC: 1646
+
+FileName: ./src/plugin/PluginClass.h
+FileType: SOURCE
+FileChecksum: SHA1: 1b34d883dbe6a29828c277b0c7dba30b4cba978a
+FileChecksum: SHA256: 1b3dc76178afca9b5fefe351635a2f745f773d3db6b8ed07b192f4722f331e5d
+FileChecksum: MD5: aa2fcc691d9c522323d4130eb064d28e
+FileChecksum: SSDEEP: 96:IOHvF91K/84s1n10dRfLldlmldlWCp/mbsdeY1v:bT1K/Fs110DLTcTACp/0nO
+FileSize: 4 Kb (4673 bytes)
+FileLOC: 133
+
+FileName: ./src/plugin/PluginClient.h
+FileType: SOURCE
+FileChecksum: SHA1: cbc1b69a633c2c6c9549f0991f0f17d2541305a3
+FileChecksum: SHA256: 38c4824a98d82fd54f163e5dc1a4fcbac0b9a9a0665ef8e8d3398c43740db465
+FileChecksum: MD5: b8fd6b8e2d81d4ca80acf994ce6a8f1b
+FileChecksum: SSDEEP: 6:jBeF0AMWw0BcICXAGxJKGTh97JDcAhzuKWv:0JMacIuAG9JYiTo
+FileSize: 209 bytes
+FileLOC: 11
+
+FileName: ./src/plugin/PluginClientBase.cpp
+FileType: SOURCE
+FileChecksum: SHA1: b8202bb040c05de718dca5f7ee9d0b47aa168659
+FileChecksum: SHA256: 4f4390e3ff5f9fca97204a42ce5e3958bda135f30d1d4b7aa3ca4667e4a4771e
+FileChecksum: MD5: 1750bb4a51ab2535441326c7f469c47a
+FileChecksum: SSDEEP: 48:3xW0ygMVm3W4sTe+RL7D9Azag9CgM3MbHMvLB2R8MKMOMFK8:hWbgMVSWbd7KbMF28MKMOMI8
+FileSize: 2 Kb (2828 bytes)
+FileLOC: 127
+
+FileName: ./src/plugin/PluginClientBase.h
+FileType: SOURCE
+FileChecksum: SHA1: fa09cbca8f5d58fa13d6b8798c9a2058d45cdad5
+FileChecksum: SHA256: 0d2c12fd9feff49020e0e6cbf0531fddf033b9ffb16d8965c6995c0b82a99a3a
+FileChecksum: MD5: b18b6769887464650bae6f9ee5884fde
+FileChecksum: SSDEEP: 48:a2TwtuPF/N/dogzQiktvHzbCgGCEqzK/M4C0AbgRQf:a2ctuN/NRYbBESK/Mb+8
+FileSize: 2 Kb (2192 bytes)
+FileLOC: 80
+
+FileName: ./src/plugin/PluginClientFactory.cpp
+FileType: SOURCE
+FileChecksum: SHA1: 4f059902af1b6065a159d2755b43b03dbda43583
+FileChecksum: SHA256: 560b8ffcf3197f7c0db89cd3314523ee7bfb2aac1bb18b5ae6bafd075da7d33c
+FileChecksum: MD5: 5d6a9abd08093dfb0b80e1e78b4b86a9
+FileChecksum: SSDEEP: 24:RFdlR1ymgW2V/ftCILQpioGJX+G3AJmfLtBR8Idyd/f3+PBj:pf1P2V3t/LGGJX+GQJmfaX33EBj
+FileSize: 1 Kb (1052 bytes)
+FileLOC: 44
+
+FileName: ./src/plugin/PluginClientFactory.h
+FileType: SOURCE
+FileChecksum: SHA1: d553da6926baad43581420cebe0541eccd96141e
+FileChecksum: SHA256: 1f2fd11282e006f089be7c06182b663843d680cc538fff155d926844f281207e
+FileChecksum: MD5: 482c9ba6e462d0b72b282322514b121d
+FileChecksum: SSDEEP: 6:jfsxY0AMcsxmQJDrQEIe7NQR2S1DQiboDtM3v2SuDtM3vyuImfr2S1DQtTIacSR2:42MPhJope7NQ4YX8ftrmqYgTEFoePp
+FileSize: 442 bytes
+FileLOC: 24
+
+FileName: ./src/plugin/PluginDebug.cpp
+FileType: SOURCE
+FileChecksum: SHA1: f2aef422359913ac4ebea5899058cf544fc44603
+FileChecksum: SHA256: 5374661c6f10dd6c33cefd11c033947cc4addd78a21185b639906b29fe43bdb1
+FileChecksum: MD5: 8bf677d74045dd48c06f19f2f9c9b585
+FileChecksum: SSDEEP: 96:hgMLTF+pGlEaXJ6nsIDg/HndEVLBvHBvopVBk:9TF+sESJ6nsIeIB2D2
+FileSize: 6 Kb (6754 bytes)
+FileLOC: 246
+
+FileName: ./src/plugin/PluginDebug.h
+FileType: SOURCE
+FileChecksum: SHA1: e91db444f0fb84430ca4ca97e03928002732c503
+FileChecksum: SHA256: 76032441094b31e18a5dcdfdae24ffb8e87f195ce94642b72244ecf3c836bd5b
+FileChecksum: MD5: 4a3c7389a7e74a3bd890edc15a169f52
+FileChecksum: SSDEEP: 24:hhCNGQ1mVgQ0MSzSXVgQCuGLw/spstINUQuW/MTpk:3CkQ14gXMUEgruGLw/spstgNuTTm
+FileSize: 978 bytes
+FileLOC: 31
+
+FileName: ./src/plugin/PluginDebugMacros.h
+FileType: SOURCE
+FileChecksum: SHA1: 2cd0a731eed06d0371f177ec20dd375f207aaa60
+FileChecksum: SHA256: e9466e2ec940752861863bc1363e22abac4fdab175b8a92b638d3cb0f64918d3
+FileChecksum: MD5: 13f8a4cd9a9116aa6ba65197763dc7b8
+FileChecksum: SSDEEP: 24:RXiDNnZruJJo93Fel17X/W/xFQ1l9XQDc4iOpn+:IGcSV2Q
+FileSize: 1 Kb (1109 bytes)
+FileLOC: 47
+
+FileName: ./src/plugin/PluginDomTraverser.h
+FileType: SOURCE
+FileChecksum: SHA1: 4e285535013034330dfcc5e95cc1727e9d4038eb
+FileChecksum: SHA256: 525aca32ade8a00131c3c3ba1d80fdf89a4053f47b19204d0f9e42a523a38b1f
+FileChecksum: MD5: 98dfb5d55d2a2f1d7d0b6b71d68b25fc
+FileChecksum: SSDEEP: 6:jHwqmF0AMGwqI0BcICXAGxJKGT0HVA1KGwqH:cqmJM3qVcIuAG+1Ao3qH
+FileSize: 193 bytes
+FileLOC: 10
+
+FileName: ./src/plugin/PluginDomTraverserBase.h
+FileType: SOURCE
+FileChecksum: SHA1: 5f0fc920f0078c933e050c3797f81dd27f278990
+FileChecksum: SHA256: aac9f86a92ad77e1a9b01c87255e468d082ecbdd1bfa1946865f437532d8934f
+FileChecksum: MD5: 0101e2a94ac04722defeca2abe99a9db
+FileChecksum: SSDEEP: 192:stKuHj2E52La8K39g5ta1aMeh4NQztTmADhpFOVsheCOVrJSCoubhvKk4prwJy9Y:stKuHj2E52La8K39g5wehsQZtDhGWhy/
+FileSize: 11 Kb (12035 bytes)
+FileLOC: 469
+
+FileName: ./src/plugin/PluginErrorCodes.h
+FileType: SOURCE
+FileChecksum: SHA1: a7cb0331218d964ac98ce21c80b4c2f7c7b764f8
+FileChecksum: SHA256: a115d0b4a6caa507bde82680c34b5e9b8d737dc89974ceecde5201f4bd3aa9f9
+FileChecksum: MD5: 7981b9cae07230a17b1eb3de80d9e0fe
+FileChecksum: SSDEEP: 96:MszRzRzrwA0vk/yF0zJ8MEoGXpl6DnosEIvJ:lV1PwFch8M91Dnost
+FileSize: 6 Kb (7132 bytes)
+FileLOC: 198
+
+FileName: ./src/plugin/PluginFilter.cpp
+FileType: SOURCE
+FileChecksum: SHA1: 9882dd008d46d7e0e9f51af3ecc29afa2fb0cd71
+FileChecksum: SHA256: a027adccf4b5acf85a707396feee75d4563b7c7bdae6893a75aee685904a2ddc
+FileChecksum: MD5: c5a7efb28b6dcff687d88375045e4c94
+FileChecksum: SSDEEP: 384:CvgNcAKdvxlAFmKjh/uMjXtlZuseHdwqCp4qKR8HNhee2IipR:CvgNcZdvxlAFmKjxXtlGfCp5KIor
+FileSize: 24 Kb (25140 bytes)
+FileLOC: 873
+
+FileName: ./src/plugin/PluginFilter.h
+FileType: SOURCE
+FileChecksum: SHA1: 3c8e44e9d9d7c10291f863d56bf353067b49d522
+FileChecksum: SHA256: e94e66282134a2909e173662c6551c23d3d438bb6202c3e7eca8f0f5e2277ff1
+FileChecksum: MD5: 274f922b0edb4f79d10998a2e37ac41a
+FileChecksum: SSDEEP: 48:1MgGkMPkeHQ9rd8cQUAhPzpQQDK3q91AcJeQb5GqryE3jNj06ICgYCEhjn/McYm6:GtPHy+1hPhTecryE3ROCf4RX
+FileSize: 4 Kb (4385 bytes)
+FileLOC: 179
+
+FileName: ./src/plugin/PluginMimeFilterClient.cpp
+FileType: SOURCE
+FileChecksum: SHA1: a61faa85b7de7b95b71e299099af53babc288621
+FileChecksum: SHA256: ccd7c711f1256a4ed8ebb13f8f1b33a3b2ca0c9c754d92ed88f9fe851e2aa949
+FileChecksum: MD5: 4e051497c254164c7b7bf98bffded9c8
+FileChecksum: SSDEEP: 48:F3NTne3EmEs1vB8F2P0CjNBHr2VBgeRP/xjgBoru2BgTRhH6mKVDLUkZNgVUMVDT:JNrJs1zP08r20eRP/1ruRTREccjw51
+FileSize: 2 Kb (2590 bytes)
+FileLOC: 88
+
+FileName: ./src/plugin/PluginMimeFilterClient.h
+FileType: SOURCE
+FileChecksum: SHA1: b800812dcd030ddc8e16e9abf10fa39748814887
+FileChecksum: SHA256: c59f9c2ce162617929579f22a8e9d0cf5d320c0161472079ad33045fde62d99e
+FileChecksum: MD5: e5d4cc8a05228bf7715cd7ea2736c31a
+FileChecksum: SSDEEP: 6:jPz2Q0AMCdNQJD4NQRtDSeAADSDFvNAaFxp+jpk9pkSCw:P2IMjJ8NQvmeXm9ewUkfkSj
+FileSize: 381 bytes
+FileLOC: 21
+
+FileName: ./src/plugin/PluginMutex.cpp
+FileType: SOURCE
+FileChecksum: SHA1: 58d1ff3dd7814e9f8d6d32eeba241d16eb27c88a
+FileChecksum: SHA256: cc4cff56efaf6f2d18ac546fe378282dfd4111854f9cfe8944fffec9850b297e
+FileChecksum: MD5: 8fad4ea4b622b06dc789410c0b8f61e9
+FileChecksum: SSDEEP: 48:CMN1yyNzD/hHH4dl5yH84H/VHs4bVHc4zQSVNLaY9CVNrqyNz5sSs4kO68w:CMN1yqhHs5yHPVH7VHDQuYx68w
+FileSize: 2 Kb (2814 bytes)
+FileLOC: 102
+
+FileName: ./src/plugin/PluginMutex.h
+FileType: SOURCE
+FileChecksum: SHA1: f6dc01a43a4adb033919e729e566fe06aa59945a
+FileChecksum: SHA256: 9461b3a8ce9b101e17ecae22453a082f4c015a17fead3003fec88d7ea8f4ab8c
+FileChecksum: MD5: e377b3ae38c8da238d7f744e07a6ccab
+FileChecksum: SSDEEP: 6:jityw0AMrtyuQgcImfrUop6QsGyX+n3cBIAp8YjAAqOfAaF7Eofrtyn:aLMZugnmVp6syXKcB9JAnVyfZy
+FileSize: 332 bytes
+FileLOC: 24
+
+FileName: ./src/plugin/PluginPassthroughObject.h
+FileType: SOURCE
+FileChecksum: SHA1: 4f817375570004bbacdc53e110a8e1a1ba80c560
+FileChecksum: SHA256: d1da853e13a7da6cd36aa35044835968219a16f693ec6a657ba302660fbc7400
+FileChecksum: MD5: c84337e6a4553430b6fee6c78196c89d
+FileChecksum: SSDEEP: 12:5z1Jm1uN9ZfsqrSoPv7dRsat5Q98Zfsg2PUCcmAoZeNO1x:91Jm1uN9ZEqrX3Q98ZEgnMAoZcO1x
+FileSize: 670 bytes
+FileLOC: 23
+
+FileName: ./src/plugin/PluginSettings.cpp
+FileType: SOURCE
+FileChecksum: SHA1: 910ac1b51f22e94e78de6967cfee5ded85f78d71
+FileChecksum: SHA256: a93df5702c98b1ed7a1a5f52def1d27e8381fc7003dab5583b0369641fdaf103
+FileChecksum: MD5: 22296c25d4db453b50bf76693c559bf7
+FileChecksum: SSDEEP: 192:PhkjV+l0tOnsdo95hQbKQmcl/XanWjx2SpXtfQkqgPB:JkjV+yEFrQmlgtfn
+FileSize: 6 Kb (7141 bytes)
+FileLOC: 255
+
+FileName: ./src/plugin/PluginSettings.h
+FileType: SOURCE
+FileChecksum: SHA1: 993f14c8defe9b023e3661683a4c3b904878d937
+FileChecksum: SHA256: 4671016e75d479831991f4b9ce0b46839c1bec62d94aa0bbabae9be8beee3ab1
+FileChecksum: MD5: d89958722817e9fcd71f10bff8b470d6
+FileChecksum: SSDEEP: 48:PKr3PzPbT1Pv4PNPGgP817P2cPASPtPuKP1KPSePKMP5iPgZznPna8agPg16nzvN:PSTbxveFL81b2aAIlfW3KK5YgZzPna89
+FileSize: 2 Kb (3050 bytes)
+FileLOC: 85
+
+FileName: ./src/plugin/PluginStdAfx.cpp
+FileType: SOURCE
+FileChecksum: SHA1: 6727566a2f0e43cfd81c817e0240f0c8b0d670a4
+FileChecksum: SHA256: 44a673c95d30d01fb2053d3819d54a6e0d42f0579b140e32c3219fa3d7ebd21c
+FileChecksum: MD5: 4172541e12d667ea76c5d8145be5ab55
+FileChecksum: SSDEEP: 6:jD2aH+5AMRNT15eAGuFm+ylqIFdllZ+sMKcaGIAcAvDZAqsc:jDtHJYx5fFE+yNJlZ+4cWANAqsc
+FileSize: 287 bytes
+FileLOC: 9
+
+FileName: ./src/plugin/PluginStdAfx.h
+FileType: SOURCE
+FileChecksum: SHA1: b147fb4d3be44758b908820954ab47718ebd78b7
+FileChecksum: SHA256: 8447c07b0b8cd6ac585a95ac31d27f33171f9eb600c754de8f654bd05771337d
+FileChecksum: MD5: b15c0a5c0b907ea1650985c55e1b20f2
+FileChecksum: SSDEEP: 48:wbxt7bNglmUUal/mPYl7ebB5KbvgFkEhikRy:wbxtubJ/mQl72B5wvOwkA
+FileSize: 2 Kb (2101 bytes)
+FileLOC: 100
+
+FileName: ./src/plugin/PluginSystem.cpp
+FileType: SOURCE
+FileChecksum: SHA1: d29da77a02ce4b676cf499b51786538a6f294a6a
+FileChecksum: SHA256: a98b13f75b3ae0a0b822dcd144d0f372018a9f698d3311acba2c5197fe27e3b6
+FileChecksum: MD5: 6d52f2785cbee8d3e0897a2e21057050
+FileChecksum: SSDEEP: 96:hqN10VYfLCAlklxXuKAldm/+nOWzLzqzLzr:hszm5+OWnGnH
+FileSize: 3 Kb (3081 bytes)
+FileLOC: 137
+
+FileName: ./src/plugin/PluginSystem.h
+FileType: SOURCE
+FileChecksum: SHA1: 3e582f65d4ff6a4f7225076c2abb3603a8a8e068
+FileChecksum: SHA256: 3d047e10112c1139cdaaf122fe5fa5fca60edb8e838f55f751fc668d6b6780be
+FileChecksum: MD5: 439688ce51f42dc2841bcd4fa1227d6a
+FileChecksum: SSDEEP: 12:AMKGWmqsxcbxaG+VrYnRZleRKVWwYojjMQPjRK2:hKGHHCbgNGZl+KVWwTpVK2
+FileSize: 492 bytes
+FileLOC: 27
+
+FileName: ./src/plugin/PluginTab.h
+FileType: SOURCE
+FileChecksum: SHA1: 0df31cabe6a3141cb294086329c5e0ae49a16f26
+FileChecksum: SHA256: 51717e7991509733c8f3facc3cf622419883a9cc088ad658b8b12f6b8ff15f8b
+FileChecksum: MD5: 4c27ec3cf94e34c0800be602aea8a691
+FileChecksum: SSDEEP: 3:Y86anzw0AMTanz7ZA91JaJNHrFNBE15onPCNRA9kxJKGO1e2ENK1MClMpXTanzn:jXnzw0AMWnzNAoDrBcICXAGxJKGTPA1R
+FileSize: 184 bytes
+FileLOC: 12
+
+FileName: ./src/plugin/PluginTabBase.cpp
+FileType: SOURCE
+FileChecksum: SHA1: 1dd766502430d99992e07401b700e7f5d0e497a6
+FileChecksum: SHA256: ba87cbac3f452be95b63c4748bb9ed6364055591e367c7b4b25806cee86ac649
+FileChecksum: MD5: 68b4a3d785c8c4d71b4f62e732551b30
+FileChecksum: SSDEEP: 192:zRcfU/ANTnnv9srNN/KHAk0fkLEBRuMs1S3/kIk0fmbDfyky5O3j4h0vttk5:ufZvAwoj/kIk0Q2keO3j4Z
+FileSize: 9 Kb (10119 bytes)
+FileLOC: 320
+
+FileName: ./src/plugin/PluginTabBase.h
+FileType: SOURCE
+FileChecksum: SHA1: 093e2ad666ec3b0451ad876e9e52c913f974be64
+FileChecksum: SHA256: 2e316d7b3b481e44aa113859cc94303e0ce1c9091b362ddd395e890d09d591a9
+FileChecksum: MD5: b132a4e06202ee9c07dbb76c58e3b92b
+FileChecksum: SSDEEP: 24:pCqfNiGlM6MlKGJ/FdhzguEukI0qdEjHoK4QdLbq95TaOhdXKAzYI7btE9ZHg6:cWlOnQGJ/FHz6I0v7Lbq9fjkYb29ZHr
+FileSize: 1 Kb (1997 bytes)
+FileLOC: 91
+
+FileName: ./src/plugin/PluginTypedef.h
+FileType: SOURCE
+FileChecksum: SHA1: 3c994e93075cfc3f9418eb92bb8480bb7456b1c3
+FileChecksum: SHA256: 15c6b344746e609ecfe88e44e1b30d1211e38fb896b9aa39af3501c81dc6b707
+FileChecksum: MD5: ec5f8ebdd44028b8353b3d24bd139e1d
+FileChecksum: SSDEEP: 3:Y86aaoeF0AMTaaowwMMpXTaaov:jXaVF0AMWa7eWay
+FileSize: 92 bytes
+FileLOC: 6
+
+FileName: ./src/plugin/PluginUserSettings.cpp
+FileType: SOURCE
+FileChecksum: SHA1: fc968906414de38133e2a39d13a8e221e1271609
+FileChecksum: SHA256: b7d355b31401ee0a9522a97801d7ec17017b443cb40f5fb9a47b4c853b5ca106
+FileChecksum: MD5: f5edafea36bbe6d8855a7c0025108984
+FileChecksum: SSDEEP: 192:wXPtVxXAN/4VaYG03ychGO87oQAQewop1oy:YzOEDH58Vp/op1t
+FileSize: 8 Kb (8767 bytes)
+FileLOC: 331
+
+FileName: ./src/plugin/PluginUserSettings.h
+FileType: SOURCE
+FileChecksum: SHA1: 40ae1315127bf3d38197f14a6f98117eb78b5708
+FileChecksum: SHA256: 721dedb3b8ff6623a8a0f0101831fde03ca083d64340fe2a89a9116537cff592
+FileChecksum: MD5: 24d66ba25470ac6a5cb5e5ef750c8b5c
+FileChecksum: SSDEEP: 24:l9gRvWNJDL+7k6cyXnQogUJmYHmARh3HqMsT3jO:TDLhMXnQtUJ1BXqMyi
+FileSize: 1 Kb (1035 bytes)
+FileLOC: 27
+
+FileName: ./src/plugin/PluginUtil.cpp
+FileType: SOURCE
+FileChecksum: SHA1: f01e35330c95a8eca1bf559c74cfdeba1b2eff32
+FileChecksum: SHA256: a89c4be4b8f741f964436b92911725d0699b0d6ce19ceb22c249b079ac94b424
+FileChecksum: MD5: 66ec7c13b31a2de29dabfc6768a95cd8
+FileChecksum: SSDEEP: 24:Rxx4B3KZbA1k0j+JibY6LtOlpJ8eRKVrnemFORhT1oh7bgh7pq:5Ck0KJiMetKGV5KQiq
+FileSize: 997 bytes
+FileLOC: 46
+
+FileName: ./src/plugin/PluginUtil.h
+FileType: SOURCE
+FileChecksum: SHA1: 90f75a83e5704e182d31d4056cbae2cff9ee3704
+FileChecksum: SHA256: f8c6f53cec7b507b1cbfadfc61ba143f6f5c20205624d7aa7564cb59531feec3
+FileChecksum: MD5: dc37ed19e6724c75d31c851d09e7e99d
+FileChecksum: SSDEEP: 12:l/blAqMN+HLgZPmkYsZojM7fFJZfLZvMyf2nUchEw:ljllLgMhqPFJNLRNenUchf
+FileSize: 517 bytes
+FileLOC: 19
+
+FileName: ./src/plugin/PluginWbPassThrough.cpp
+FileType: SOURCE
+FileChecksum: SHA1: b52b23d0447cc4b1f9878add2fb4e6f7755b12a1
+FileChecksum: SHA256: 5e62a00ea0c4b56c106d90b22c9ff56d632ec0cdc21b7ce19045d3863da46bff
+FileChecksum: MD5: 6675bc9f046d9d2e478e8e0eed114206
+FileChecksum: SSDEEP: 192:SiHf4pWVarZsZ8Yrs4iD4QZMWRC/dMWwvtkF1AELo5GnkDC5mlbhfoz9bSRKlnaB:ESWRC/dMWwlkF1KGnMumlbhfO2uneUS
+FileSize: 11 Kb (11607 bytes)
+FileLOC: 376
+
+FileName: ./src/plugin/PluginWbPassThrough.h
+FileType: SOURCE
+FileChecksum: SHA1: 77ed9470f339a7cc23d1d5be9d0512f02d0c3ed2
+FileChecksum: SHA256: 63f468fbd4d8f87dd9ed4cc8d8993cf74ca0895f63083f43ca6f46023158db3a
+FileChecksum: MD5: b0d4f733dbcb862a61121fe1685c4ade
+FileChecksum: SSDEEP: 48:Bo0HOxuByAaW5gE5AIQ5AAnVopkP3oWaeuoxlc700:Bo0fByEAIyAQCm3CP
+FileSize: 1 Kb (1805 bytes)
+FileLOC: 64
+
+FileName: ./src/plugin/ProtocolCF.h
+FileType: SOURCE
+FileChecksum: SHA1: 9329c7b7e3bbafab0819ea17d7dce9743171a685
+FileChecksum: SHA256: beb0cacf03284f5fa19b045a195a5f3ce83b9a136e162802dc60aa939e04ec94
+FileChecksum: MD5: a5842d89e3ef9faecfe36cc454254378
+FileChecksum: SSDEEP: 48:YXAx4QR07mH31voeSmGSmtMAwdXWfdAjeSHhfn26v4G0+u2nM4oZMO+Smn:YXAx40UmHFvoaShqG4F2yMyY6n
+FileSize: 3 Kb (3177 bytes)
+FileLOC: 94
+LicenseInfoInFile: Apache-2.0
+FileCopyrightText: <text>Copyright 2007 Igor Tandetnik
+</text>
+
+FileName: ./src/plugin/ProtocolCF.inl
+FileType: OTHER
+FileChecksum: SHA1: d433ae1c534773c89d219279c0c677ddcbce29b7
+FileChecksum: SHA256: 00739a32e26bef3f98961d8b312db8e9a8ec6be641b10210bac4ee6a5b96f473
+FileChecksum: MD5: 7f55ad941d1e558cd010617fb9660461
+FileChecksum: SSDEEP: 96:YXAx40UmHFvoarOh9Z34mvgTfwuNcvYb3b+AfyRu2vRo4aRz7U:GAxtPH1wun3yAfyDpLAE
+FileSize: 5 Kb (6091 bytes)
+LicenseInfoInFile: Apache-2.0
+FileCopyrightText: <text>Copyright 2007 Igor Tandetnik
+</text>
+
+FileName: ./src/plugin/ProtocolImpl.h
+FileType: SOURCE
+FileChecksum: SHA1: 712e82cd7571ce0c4002f1b2513e507f876bcbbe
+FileChecksum: SHA256: 629e07f9049dc6c5cc14d36caec04fc25257e86a9cf7f0431985158a32bb157b
+FileChecksum: MD5: 64d5dcd2e7e9ee686bc940ff4ad7f85b
+FileChecksum: SSDEEP: 192:GAxtPHxYN+XlR/CpkBBeS2mHug5+bmmyj/m1mYBOWZhdZqr28qI9bx3/Z2lIw3i:G8t711dD+m77mau1RDMnhx3h26w3i
+FileSize: 13 Kb (13847 bytes)
+FileLOC: 449
+LicenseInfoInFile: Apache-2.0
+FileCopyrightText: <text>Copyright 2007 Igor Tandetnik
+</text>
+
+FileName: ./src/plugin/ProtocolImpl.inl
+FileType: OTHER
+FileChecksum: SHA1: 20aca01ffd5adf14317ea643cb3d3972e80022b9
+FileChecksum: SHA256: 024ae943032bcfdb0906b70970b3c3edc4319147c44e2f208563052ec7a9d1b4
+FileChecksum: MD5: 887ccc9c6528e72026abeafea6bf0dd1
+FileChecksum: SSDEEP: 384:G8tRsRTbwaMcHRaB5Kqew5BFyoW3RDRlh6zxbSPqWPtDp2gGpHwZlBSv3HD24k2u:G87gT8aMWRaB5KK5BFyoW3RDRlh6Qtll
+FileSize: 22 Kb (23330 bytes)
+LicenseInfoInFile: Apache-2.0
+FileCopyrightText: <text>Copyright 2007 Igor Tandetnik
+</text>
+
+FileName: ./src/plugin/Resource.h
+FileType: SOURCE
+FileChecksum: SHA1: a21864114cf9c5b69aa4f2b546e1166a173f8991
+FileChecksum: SHA256: 52bec20593765a06926871af4426a7b46cce8881393f53a1647a76001924f49d
+FileChecksum: MD5: 7135e8a710711e1ec81292eeb32b9f4c
+FileChecksum: SSDEEP: 24:mfPUyqBRWwrJHHtpgAchirXIjCEu0Ltckc2TqcfIcbE:4P4uCJHHtuA5r4zuMXlE
+FileSize: 1 Kb (1288 bytes)
+FileLOC: 35
+
+FileName: ./src/res/blocking.ico
+FileType: OTHER
+FileChecksum: SHA1: a2d432fa36924a2e4010026348ca33a04a4223e2
+FileChecksum: SHA256: b823e8d4b5c00c1371e30dc62261325df05857cda89f5c72ffc9080bd5dbfcd8
+FileChecksum: MD5: db0d129e776476f79e29a41ad8eb502c
+FileChecksum: SSDEEP: 12:73q+ZgaA3hN3G212CaixexaXjIavGBloaenmsP+qclCfHusEIuKayrUN8nXEYdwt:7i3PG21baixexaBeLeembDbYNEU3TN
+FileSize: 1 Kb (1150 bytes)
+
+FileName: ./src/res/deactivated.ico
+FileType: OTHER
+FileChecksum: SHA1: 4f134ea3e65a13b4dad9d0eebab67ce8b2bdac9a
+FileChecksum: SHA256: 04dc011a9b5865c14a95e5ba5443dd3271e1ea08e3971fda370eb04e5d3bf447
+FileChecksum: MD5: 160a514a19c1e72eea865a78d4a44289
+FileChecksum: SSDEEP: 12:7p0J990j6VD9oRXap+vj2X83aHRatga7GeXbz8+dmdSq55555555555555R:7p0h0epaRXap+vj2XyQRatyes+8dRN
+FileSize: 1 Kb (1150 bytes)
+
+FileName: ./src/res/not-blocking.ico
+FileType: OTHER
+FileChecksum: SHA1: 4f134ea3e65a13b4dad9d0eebab67ce8b2bdac9a
+FileChecksum: SHA256: 04dc011a9b5865c14a95e5ba5443dd3271e1ea08e3971fda370eb04e5d3bf447
+FileChecksum: MD5: 160a514a19c1e72eea865a78d4a44289
+FileChecksum: SSDEEP: 12:7p0J990j6VD9oRXap+vj2X83aHRatga7GeXbz8+dmdSq55555555555555R:7p0h0epaRXap+vj2XyQRatyes+8dRN
+FileSize: 1 Kb (1150 bytes)
+
+FileName: ./src/shared/AutoHandle.cpp
+FileType: SOURCE
+FileChecksum: SHA1: 2e82ff8515315c1e5bba911307f4b3f7746e34a0
+FileChecksum: SHA256: a13d7833b145dd1b6bf42bdeec1a7e694dc5c833f46cbb2ad0a83efc56125dc9
+FileChecksum: MD5: 3f186941499b3cbe89206c4d498af44c
+FileChecksum: SSDEEP: 6:RAGrovEqhPpl30RoPkQ3iBQvXg3BEvXw73BzYXAU9:RAGrLaPpl0R8tyBQ4BE47B5q
+FileSize: 324 bytes
+FileLOC: 25
+
+FileName: ./src/shared/AutoHandle.h
+FileType: SOURCE
+FileChecksum: SHA1: 1e7f943035197e38ad89214f2ea036a39137238f
+FileChecksum: SHA256: 2e541009516e6b339643fad9acd9d46e72aafddbe80cd3bc9ebff37c18da9766
+FileChecksum: MD5: b58c5232f060d017b6de47b612dbf997
+FileChecksum: SSDEEP: 6:3AQ0etRATPyJ6y1hPdSeyHI2CI+CIFyruImf/o67RPFQqJpBzo8A:wYATa0oPdSeyHrC5Cbpmo6Zt6
+FileSize: 353 bytes
+FileLOC: 22
+
+FileName: ./src/shared/Communication.cpp
+FileType: SOURCE
+FileChecksum: SHA1: 67c3c958260cff66c2042e64a6e652f7bde8ee7f
+FileChecksum: SHA256: 598b94527b30d6dbc5183340d30142c5fea510718cb2dd1505fe4502d5e0fdfd
+FileChecksum: MD5: 7bde25327440e8661df66f2a5e32172a
+FileChecksum: SSDEEP: 192:I50GY4x+EI7Ui4AvAY1+LE/8iw50bIreAI4nDgthgIm4naii0q:IxiJAY1+LE0bKrv4ImDR
+FileSize: 9 Kb (9989 bytes)
+FileLOC: 239
+
+FileName: ./src/shared/Communication.h
+FileType: SOURCE
+FileChecksum: SHA1: 76383b9dee1cec4c9a0750766002ed9d92e94a38
+FileChecksum: SHA256: 15b529e217598f0ac823cd6d4379f5a7afa3ee4f861d2601194bd32b5d5597f6
+FileChecksum: MD5: f55aee8713ffed045e874e0c1bbb2540
+FileChecksum: SSDEEP: 96:ni8vZrE+Epd+oTN3S0p9FJHPvNgAgGGAL4vdto6NPnSwpPYdLK:nz6/pd+oTN3S0p9FVmxvdto6NPnSwpPF
+FileSize: 5 Kb (5353 bytes)
+FileLOC: 168
+
+FileName: ./src/shared/CriticalSection.h
+FileType: SOURCE
+FileChecksum: SHA1: 43f9640e73968e48016415a139559f8790f2f8a1
+FileChecksum: SHA256: 4af5a3b49411c3266ee5f731b7c5400600edc10f4902a49bd1373255752cefec
+FileChecksum: MD5: e91476263489faed9295ceb8be26eab2
+FileChecksum: SSDEEP: 6:gGF0cAsaKNZFG9J+seSiXHWK+SSxZd79zFjsLsRMF6xSX6dSNf0GRG+TLz/G+gfi:DF3JVjwn9JeLsLSNcGRxTPxg4G2R5/
+FileSize: 671 bytes
+FileLOC: 36
+
+FileName: ./src/shared/Dictionary.cpp
+FileType: SOURCE
+FileChecksum: SHA1: 7efb9506fa9dc4bc28b25572db32e55c56d6bfb8
+FileChecksum: SHA256: f922f40ae54fce774ea079a681fe7e8c2980fd6511f34c0a30cfaf2d9f567037
+FileChecksum: MD5: 09f9f7c28d07b120cabb08d964d68db3
+FileChecksum: SSDEEP: 48:OjwB/hlT1XhXWOjWcsGNEcoOuGTS36HF+jDq+ItUa/B72A9CdCtwhp:TZ1xXWOqWEPv3IF+jDJItUadGM2p
+FileSize: 2 Kb (2243 bytes)
+FileLOC: 76
+
+FileName: ./src/shared/Dictionary.h
+FileType: SOURCE
+FileChecksum: SHA1: 80b15d33d4bd7d356597ec33f6b9bc6a6c7a8986
+FileChecksum: SHA256: 96dd022834f3d9e6c5673cdcce86a36aaafc28b52e698c1f6038d0d9343a3ad9
+FileChecksum: MD5: 1d3c228fb13ea7554ddb0ab33449a7a1
+FileChecksum: SSDEEP: 12:9G13AdAqcIAcVvcqiJLEFdv2X95i/xWdGr/g92bUv4T+WdvX6WzJdv5s:9G13aiIRqqkidvM9A/x0Gr/K244yWdvq
+FileSize: 621 bytes
+FileLOC: 21
+
+FileName: ./src/shared/Utils.cpp
+FileType: SOURCE
+FileChecksum: SHA1: a2aed7b78190792418c913f4947b53ef43f41a3c
+FileChecksum: SHA256: 548d72b7b7abe2c4f41ab8a651986eb475e0741aa4db1645ae74420c055a09ef
+FileChecksum: MD5: 391646b791941c6235103010b098c721
+FileChecksum: SSDEEP: 96:Wowv17aZVkf1YJ4uHliJtg9QJ+KA42Yp4+7QfPutdkYvxChmnaTFmhqBgZf7dL:WOnkf18hKWKAMBQetdkDwaTFMM8hL
+FileSize: 3 Kb (4095 bytes)
+FileLOC: 122
+
+FileName: ./src/shared/Utils.h
+FileType: SOURCE
+FileChecksum: SHA1: d38f19df50109036c4ffce43cdefb18c8f35f04b
+FileChecksum: SHA256: 1a83ff43ba0368fc44ff2f6f70eb9abdc85eb87fece30a098544b7b977195d2c
+FileChecksum: MD5: 077143e58f3f5a9d33b6f76fc68f30cb
+FileChecksum: SSDEEP: 48:PvyL9iOclEscA5o8ynVZhMgPwzHGSK5xv:SBuPEV0GXfv
+FileSize: 1 Kb (1675 bytes)
+FileLOC: 45
+
+FileName: ./src/shared/Version.h
+FileType: SOURCE
+FileChecksum: SHA1: 6d26c6360af73b9afc2ff12d3c70a8436328414b
+FileChecksum: SHA256: 20f57277b4aec44fdb1cd9b203b99e81b5ba9926dd13864477c85560aeed0b3d
+FileChecksum: MD5: fb4d7c954dd18cffe372803ae63336e5
+FileChecksum: SSDEEP: 6:qVy2fv/WSy2fFpn+OnfKTv/oQKTF5NfKTLHfoQKTh3jy:qV5vh57dfmvjmdmLHDm8
+FileSize: 218 bytes
+FileLOC: 9
+
+FileName: ./test/CommunicationTest.cpp
+FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
+FileChecksum: SHA1: 75f855eb7817214cd9f1e8c0fcc73340c8b3162c
+FileChecksum: SHA256: 63e1dde8255fa88cdd7f82a49cc2a7329980bfeb8dc92eb84b923f1559618b90
+FileChecksum: MD5: a5e982792494b51cbf64a8f125195b85
+FileChecksum: SSDEEP: 48:gtYyxH2bjFg9bBmFekm4aDOtDbTQLnlpQSwrAd9dLWb92DybfHQLOL:gnr9lIekPcOtTMlpzwkdWY27HBL
+FileSize: 3 Kb (3410 bytes)
+FileLOC: 89
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+LicenseInfoInFile: GPL-3.0
+
+FileName: ./test/DictionaryTest.cpp
+FileType: SOURCE
+FileChecksum: SHA1: 7672e64970330c1d185a9080288fb68a94a60cb6
+FileChecksum: SHA256: b0ed943e46443930b267c1e5c16c319684531eeccc0a7e3f9f94cf7402db3f08
+FileChecksum: MD5: f8c737cb2670e958a35a9af2a4d264e1
+FileChecksum: SSDEEP: 48:gtYyxH2QUbnG7RRbAsf+p75UUqzVPdiVo4QkpPSgKpRvCpPrFpPN:gnMG7RRbpUqzko4pRSgKjKRrFRN
+FileSize: 3 Kb (3154 bytes)
+FileLOC: 92
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+LicenseInfoInFile: GPL-3.0
+

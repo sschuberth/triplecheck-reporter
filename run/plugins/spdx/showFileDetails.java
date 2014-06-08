@@ -252,7 +252,7 @@ public class showFileDetails extends Plugin{
         }
      
         if(fileInfo.getFileComponent() != null){
-            summary = html.br + "Contains code from: " + fileInfo.getFileComponent();
+            summary += html.br + "Contains code from: " + fileInfo.getFileComponent();
         }
         
         

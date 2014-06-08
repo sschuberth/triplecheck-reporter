@@ -19,7 +19,7 @@ public enum NodeType {
     sectionCreator, // section with SPDX creation details
     sectionPackage,
     sectionFile,
-    sectionReview,
+    sectionExport,
     sectionSettings,
     sectionComponents,
     dependency,

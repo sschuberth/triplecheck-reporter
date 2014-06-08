@@ -1,0 +1,4281 @@
+##-------------------------
+## SPDX Document Information
+##-------------------------
+SPDXVersion: SPDX-1.2
+DataLicense: CC-BY-4.0
+
+##-------------------------
+## Creation Information
+##-------------------------
+Creator: nuno
+Creator: Tool: TripleCheck 0.9
+Created: 2014-06-01T22:39:15Z
+
+##-------------------------
+## Package Information
+##-------------------------
+PackageName: adblockplusandroid-2014-06-01
+
+##-------------------------
+## File Information
+##-------------------------
+FileName: ./jni/Android.mk
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: b6dc4317e55b58bfd0335c2061d196b9e23cf6c3
+FileChecksum: SHA256: b216565b3df2cb4bbba033f61ce78417d4b377ae0b5a19ddb15ab98343ce7ba5
+FileChecksum: MD5: 51fa92b548a6db078d92669521605587
+FileChecksum: SSDEEP: 24:RddyxKPqdMgSqdudu0qd5S8f2ht+vs/AdVjcxv8CT2rnq:jdyxKPqdMgSqdudLqdg6KtQs/AdVAxvT
+FileSize: 1 Kb (1082 bytes)
+
+FileName: ./jni/Utils.h
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: a9ad24c1b904ea68567db961e49c6d2ed11f82af
+FileChecksum: SHA256: ba080f2fa7fa2e7b5b50cd7cb2d201e7ea05bcf398c22412840c3361e52df56a
+FileChecksum: MD5: 14592d527490a05c46b719e8a32e1ace
+FileChecksum: SSDEEP: 96:gnkUFPwqlP3eYPZcglAKcP8YQT2zHVc2X833763GT:gndqqlPusJ7NzqhPM762T
+FileSize: 4 Kb (4798 bytes)
+FileLOC: 151
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./jni/JniSubscription.cpp
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: ac5c8e58dcc8bf2dceaacd99b0cf00b5730f11af
+FileChecksum: SHA256: c5b1059018569f55c72269e5a825b6a242c05199d22d6a89e0fff7d3d0987218
+FileChecksum: MD5: 544b2d8a88e32e6fefe924fac8c40b2c
+FileChecksum: SSDEEP: 48:gtYyxH2tN4PiLYTuE9Se6CayhCE//yKjVCHjs:gn4aPiLNEAyyKpCHQ
+FileSize: 2 Kb (3070 bytes)
+FileLOC: 95
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./jni/JniUpdaterCallback.cpp
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 767e6a7d5c52233aa6f56fd501867c3764722f6d
+FileChecksum: SHA256: 8b45b212ebf90152d5e2b66701691fd41b94527154612c6069d1c274ac01284b
+FileChecksum: MD5: 63d715e6ed907ec891a00bb5f448d34a
+FileChecksum: SSDEEP: 24:IMYO870XyXOkHm2TbVoRhvduQKvyKuWI0wOlGWZ/wtAoeY/S09jVsDuTm8lzMyEO:gtYyxH2kGepUS09jVsqntMy3jVCHjs
+FileSize: 1 Kb (1954 bytes)
+FileLOC: 54
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./jni/JniEventCallback.cpp
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: f4ee623d6ae603c1ac4f3546e2ad299b10e88370
+FileChecksum: SHA256: 04bb077b3961a05c99c06867760ad38facb2fec44939afb8b476d26e6d2f8da2
+FileChecksum: MD5: 5c380916d63f45fc87b27ec048d88bbb
+FileChecksum: SSDEEP: 24:IMYO870XyXOkHm2TbVoRhvduQKvbrKuWIrHwDNAlGbpAoeY/2ANV00R4CJuTm8lw:gtYyxH2kF3Uc0IntMyejVCHjO
+FileSize: 1 Kb (1928 bytes)
+FileLOC: 53
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./jni/v8/libv8_base.a
+FileType: BINARY
+ArtifactOfProjectName: V8
+FileLicenseConcluded: BSD-3-Clause-Clear
+FileOrigin: EXTERNAL
+FileChecksum: SHA1: f342e5a32d1d9a6771fbfe5014a5d38b2789b3c7
+FileChecksum: SHA256: fdee3d9c34b949b2ff295ec3ad03183088fa8bc3e6f59e107b0cf502087f46f4
+FileChecksum: MD5: c351988577c4677b8b317dff5be3a0e4
+FileChecksum: SSDEEP: 49152:AAvelAhKqtpxwHlDofqz2GZSk3oPLgZvsBszifawNemyGdBuEzGlYLZyqt3u:S7GeVoPLgZvvzifXNemyGKExZyqt3u
+FileSize: 12 Mb (12721868 bytes)
+
+FileName: ./jni/v8/libv8_snapshot.a
+FileType: BINARY
+ArtifactOfProjectName: V8
+FileLicenseConcluded: BSD-3-Clause-Clear
+FileOrigin: EXTERNAL
+FileChecksum: SHA1: 91ee822867a70b2682d608adc921da6aa9762b6e
+FileChecksum: SHA256: 2f1ff263ce98c58359da0ab07f8293f32a9e287fc8c2a72311f5deee99c4d78d
+FileChecksum: MD5: 1c5ef26c98584dadbecc0aa79fd67cfb
+FileChecksum: SSDEEP: 12288:pEagYB0Q7saLYd1oe4whnRo3hCUDZXVilkH9H1Uh:pEagYB0+sIlK
+FileSize: 572 Kb (585868 bytes)
+
+FileName: ./jni/v8/libv8_nosnapshot.a
+FileType: BINARY
+ArtifactOfProjectName: V8
+FileLicenseConcluded: BSD-3-Clause-Clear
+FileOrigin: EXTERNAL
+FileChecksum: SHA1: 11cb89402d1930517d1b54db3bce5a629a929c6b
+FileChecksum: SHA256: 34836ec6fa770e33e8fe836830d107091e8dddb07cc682d4b12e524e71a2ce14
+FileChecksum: MD5: c17543d32d7750ec841bfff974586877
+FileChecksum: SSDEEP: 6144:2aEappgYB0QNp7f2FysaLGc4Ifm2RQHd4:5EagYB0Q7saLY4
+FileSize: 257 Kb (263472 bytes)
+
+FileName: ./jni/v8/libpreparser_lib.a
+FileType: BINARY
+ArtifactOfProjectName: V8
+FileLicenseConcluded: BSD-3-Clause-Clear
+FileOrigin: EXTERNAL
+FileChecksum: SHA1: 3eacfd339a82982728626e7554fce83b3098fbc4
+FileChecksum: SHA256: adfcee65e7d9dba13b8d5114a81b1d3d73a2fa6d3eab29f4082b3ff7e63e1a06
+FileChecksum: MD5: 42554778c181512cb3b50832a8f89326
+FileChecksum: SSDEEP: 3072:vqbLsnHqs2AQ7HFb1r6vu/U7kxurz5kW54wAhcRNE7YnU+XPVq:SgnHPkFbt68KmwA6HUv
+FileSize: 377 Kb (386530 bytes)
+
+FileName: ./jni/v8/v8stdint.h
+FileType: SOURCE
+ArtifactOfProjectName: V8
+FileLicenseConcluded: BSD-3-Clause-Clear
+FileOrigin: EXTERNAL
+FileChecksum: SHA1: 621d34cbdf0880c4ad1c8258af246bd06d7decef
+FileChecksum: SHA256: 06b28c4150484e8512a73897bc9992db11d7fd852e1baa990572dc0f0e407074
+FileChecksum: MD5: 67eda2b242af75ae4aacf75b3401e966
+FileChecksum: SSDEEP: 48:K3OyrYJmrYJH5CLPDy43HV713XEyMmZ3teTHe3mO:1yrYJmrYJH5C/Z3Z13XtdUTOmO
+FileSize: 2 Kb (2140 bytes)
+FileLOC: 45
+LicenseInfoInFile: BSD-3-Clause-Clear
+FileCopyrightText: <text>Copyright 2012 the V8 project authors. All rights reserved.</text>
+
+FileName: ./jni/v8/v8.h
+FileType: SOURCE
+ArtifactOfProjectName: V8
+FileLicenseConcluded: BSD-3-Clause-Clear
+FileOrigin: EXTERNAL
+FileChecksum: SHA1: dc794e7c8d53a45642ee56b2afa75e3dc5b7bcc8
+FileChecksum: SHA256: d59382aedcdc973584679a5422b33d50756f857fd32e91b671214fc2d33dd3d8
+FileChecksum: MD5: b6f25196a506730aaaa120a1cb837c82
+FileChecksum: SSDEEP: 3072:nB7jR/rKuIsCs06C8NtVye0nkk0GAOZUnuKQYtTy+:b/rdCmC8Ntukk0GJ1+D
+FileSize: 134 Kb (137596 bytes)
+FileLOC: 3654
+LicenseInfoInFile: BSD-3-Clause-Clear
+FileCopyrightText: <text>Copyright 2011 the V8 project authors. All rights reserved.</text>
+
+FileName: ./jni/JniWebRequest.cpp
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 26ba932b15d5a6385da0f0e10044d7d1cd0b5af2
+FileChecksum: SHA256: a5adf9e136519c4f37b31d0445112d95eeb22ab76b58c9b5402b4b2e734ec1be
+FileChecksum: MD5: f5eb5ea60fe24f8d23cbc436ab0ac68e
+FileChecksum: SSDEEP: 48:gtYyxH2kNpbVs5kk7oX5JcUaxhCQ0YbUpbajHBRKdDAT1ZntMyIvjVCHjs:gnfg70cUaxIJYFHBRKd0B/MyEpCHQ
+FileSize: 3 Kb (3403 bytes)
+FileLOC: 75
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./jni/JniFilter.cpp
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 3cd960d029372159bf3485a71e2f7cc34a3a7d42
+FileChecksum: SHA256: 707c0d6d7260d3fab8206fe9d04cdcfa787288078a2e2fdde3ec174d3d3c1ac4
+FileChecksum: MD5: acdaba5800362e0f0b8b1235707748ad
+FileChecksum: SSDEEP: 48:gtYyxH2jNxPot/KIovW0NQvQTJFfwe5seiBT8CaThCUyljVCHjs:gnGHPoxKTO0CoTrNyqHylpCHQ
+FileSize: 3 Kb (3491 bytes)
+FileLOC: 112
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./jni/JniLogSystem.cpp
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 7944d2766784b65c9491577f1677b71321048ba4
+FileChecksum: SHA256: 9b5610af9521c613288c1c69ea511c41bd45256b785674aeb2f7b056cd367cb2
+FileChecksum: MD5: 1eaf94acd93b19f2585e6fef25cb6dca
+FileChecksum: SSDEEP: 48:gtYyxH2kALs7fP2VylU4P900RCcyQq2PhHF4deyweVPrssegC5m5ntMy2jVCHjs:gnfcUjUA1dG6wRfMy2pCHQ
+FileSize: 3 Kb (3146 bytes)
+FileLOC: 82
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./jni/JniFilterEngine.cpp
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: cdebd12ef7e2913b42a733082ffb9e7194cf2153
+FileChecksum: SHA256: d1abb8ce12c011226f387ce75e9790e8f14a0242396208dff2327b1f69661db4
+FileChecksum: MD5: f485faf95ae539af26253d2d1f71c485
+FileChecksum: SSDEEP: 192:gn3op7MzT7AU2yE88GuH24W2GDqau4/JmklQyOg6c+SMapcicRoBA17M6pSQ:gn3ol3yT+m/Jm2+wcR4AUQ
+FileSize: 9 Kb (9861 bytes)
+FileLOC: 235
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./jni/Utils.cpp
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: a0e96bb38812a2d06ee514fd5724049fc70b7d5a
+FileChecksum: SHA256: cb7c0c588943f11a944940baf8643efeaa40f1d8f9c6320c81b37f0c6d277c0d
+FileChecksum: MD5: 0bf8658b8c20b75b3619d484db8eacb3
+FileChecksum: SSDEEP: 24:IMYO870XyXOkHm2TbVoRhtYhMrIFMd2hb1eYDfYu/J7bj/YYl7umlE7UvulBlWof:gtYyxH2GMcFKgsm97bEsfFcbgu5P
+FileSize: 2 Kb (2401 bytes)
+FileLOC: 74
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./jni/Application.mk
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 8a88e6dc95089850868fab0c1ad435779313cc00
+FileChecksum: SHA256: 48da2bcd95b8b2b54ed476f88c0748118e042c6f8d664b8ac7c6b3d95729f4fa
+FileChecksum: MD5: 79b31b74ee3bcb3adadfbf4a61ecfd96
+FileChecksum: SSDEEP: 3:kFFw20WuhweQok/PnkwF+IUke4wxiHBvv:CFpv1F3UX4wxgBvv
+FileSize: 99 bytes
+
+FileName: ./jni/JniFilterChangeCallback.cpp
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 93145c5e266f4a7dd4de0ffc51f0c695db253007
+FileChecksum: SHA256: ac9a1ef7a0c5206319b463fb428a8ddc3b46ebb141cdd23b32bccb42a65917e5
+FileChecksum: MD5: 6e390d1a903c53b7f2c1979be944c26c
+FileChecksum: SSDEEP: 24:IMYO870XyXOkHm2TbVoRhvduQKvbKuWIHwSlGQoXM/CwtAoeY/Nj09jN6BDuTm88:gtYyxH2kZ7uzU909j+qntMyqjVCHjs
+FileSize: 2 Kb (2214 bytes)
+FileLOC: 55
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./jni/JniJsEngine.cpp
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: d7cd858ed2e6b5e0a0feb6c0699a36f5e00c438f
+FileChecksum: SHA256: 41d37c0057bf5585b70a59861b0bd8ec8946423824d0ed17fd25fdfaa7a979eb
+FileChecksum: MD5: 1e630352d9183bf61e8321dc4b105d90
+FileChecksum: SSDEEP: 192:gnzrbruWEur+wLZ670q/x1hxX9mhrR9MALjpSQ:gnzrbruWEurte1/x1hxtpQ
+FileSize: 8 Kb (8677 bytes)
+FileLOC: 208
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./jni/JniCallbacks.cpp
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: e1225460df85fa507466ea0bd1d98f135d61d3ac
+FileChecksum: SHA256: 241d991161f28dd2f9a093da24f4d8385a91f845e9f3a1cb66cf0d2296d8c622
+FileChecksum: MD5: d8810506ddbbbc6af374b0fc9c2ed8d9
+FileChecksum: SSDEEP: 24:IMYO870XyXOkHm2TbVoRhTdHqkuoXzfucw0QUqLmHH0:gtYyxH2Zy3cdQ/60
+FileSize: 1 Kb (1574 bytes)
+FileLOC: 43
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./jni/JniJsValue.cpp
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 0bda98f71c478d5a27cf2b4770bcf5be2f8063e3
+FileChecksum: SHA256: 0db5871b3a3de4027deb665086d1543eefc34f278707a1318aec35d9672b37a1
+FileChecksum: MD5: 33f45e1436d373f48e15145fc5ee1902
+FileChecksum: SSDEEP: 96:gnXWKmMuvKjc9IidhQWR6TmkaYIoS7bjrEMyJpCHQ:gnXWxMuvKjAIidVemkIokrEMipSQ
+FileSize: 5 Kb (6012 bytes)
+FileLOC: 178
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./jni/JniJsValue.h
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 25e919fc002c915b44018e10c3ac1945e01a1e5d
+FileChecksum: SHA256: adfbabe1efbf9b131de8927b08979a820f2fdb0e63359c9cf82b4473c338bbdc
+FileChecksum: MD5: 0c50db32e6db4b24ca74919d16dd954e
+FileChecksum: SSDEEP: 12:UxSFTYOC2477X0kkp4McGTyOUhOkHmlfwTbVZ7d8w69OlAyA1CJFs2M1nFlqECWF:IMYO870XyXOkHm2TbVoR9GxzxmNy4
+FileSize: 1 Kb (1100 bytes)
+FileLOC: 25
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./jni/JniCallbacks.h
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 61f851232bb53825b14f133050e43fbe8d0fe52f
+FileChecksum: SHA256: d820f459ec998f07e632f2127162ec5efdf83491de618470aa39dba8299f8c70
+FileChecksum: MD5: 178137be20fada53efd584f6b63eeb3f
+FileChecksum: SSDEEP: 48:gtYyxH2DrRpivMjWstkCWN40RVyDm5Q+tN3VQc:gnirOvMjFiVN40Q2Vv
+FileSize: 2 Kb (2770 bytes)
+FileLOC: 80
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./.hgtags
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: fd150175a132c07d7ed4cab463898aa9f009bfd9
+FileChecksum: SHA256: 3db04109b9b21de36496d924e8c34255eacd33bf3c5761478298395684e43163
+FileChecksum: MD5: 1a8406af2f5d3cc6af9aa1dbd4a06621
+FileChecksum: SSDEEP: 12:tX1dSB9UBpksL7LdbT5dXNoWqjUQ9v2kTLZT/HOs8TDdcY34:NospddXNor58TDd34
+FileSize: 417 bytes
+
+FileName: ./.hgignore
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 21cf9fea5bc516d5638c6f5d262050e7e14d85d8
+FileChecksum: SHA256: bbdd9a4de5d663fb3465186b906a13dfe504a06d1e0df92c20b7119e33b099c3
+FileChecksum: MD5: ac5c4af7371fad5adfb41bb9e5a1bd52
+FileChecksum: SSDEEP: 3:xwy8wroVCnT+LyBEIJvHwMtwjw:OMICBhhQMtmw
+FileSize: 98 bytes
+
+FileName: ./iptables.patch
+FileType: BINARY
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 48f8a8f8bc6dbf6aacaa74bd1666701c8977cedc
+FileChecksum: SHA256: 1d17b68e0316d10bc1ef54f067791a3f1611ac1350eaa086855fbd1619eeaeaf
+FileChecksum: MD5: 755f4105ed1146b3bfdadbda4ac81097
+FileChecksum: SSDEEP: 96:zulVSKX/8VkSX19Qr0r1wrw7bWMKrqr2kr4DOWryr94r8/bJW5ONexlEJWc4Inx7:qT3cbXKSg/QNe4QJ5ONexOx5B
+FileSize: 5 Kb (5297 bytes)
+
+FileName: ./.classpath
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 5b0c4e7d17c558e90ebf892517e9e8f7be511dbf
+FileChecksum: SHA256: 57bcbd67d767724c9295b20c31368ec91f0870ed7942896d90c88a69869c826c
+FileChecksum: MD5: e213a8352e19ae97960347c440797ad9
+FileChecksum: SSDEEP: 12:TMHdZGCAyjieEtmHcpyjieDNlo4CpyjieCbvwQ:2d4deM7veJlofveCbvR
+FileSize: 526 bytes
+
+FileName: ./AndroidManifest.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: c0d0c451a84a5dc73b7f158b88ac672582d39e86
+FileChecksum: SHA256: 3bca484a6d91506feb4768658f4ad3fdb22c0389f6da4e1520578eeedfcda6f0
+FileChecksum: MD5: 85d30f23f86d25cf0bdfed0f34780218
+FileChecksum: SSDEEP: 48:cXF1ey4QUbhHdWZ7yZK5lq915qL1sF1zqS99hC:WF1iQUbh8Z+ZK5lq9TqLyF9qU6
+FileSize: 2 Kb (2960 bytes)
+
+FileName: ./src/org/adblockplus/ChunkedOutputStream.java
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 6ca73ef570a11214b0e0b18eb281768ab5d1aa19
+FileChecksum: SHA256: aef59dd0af6cf5716e2fb26a3f4b6cabb7b7ade57562341dc8bee1538cef2887
+FileChecksum: MD5: c16aedce9aa3dda8bed551de55138f9d
+FileChecksum: SSDEEP: 48:gtYyxH2qsjuuLdgP2pLm8bfY84YO269Z977G1MPUe2qH7S:gnrsjnLdC2pm8bfYLYQ21MX2qG
+FileSize: 2 Kb (2836 bytes)
+FileLOC: 94
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./src/org/adblockplus/android/AndroidUpdaterCallback.java
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 146e703548a3a6a2a89c330a29463d93f64f5995
+FileChecksum: SHA256: 2881157a442cddd20bc7641eea6e885fccb74b3d7160e51da8336ce8db3c10c3
+FileChecksum: MD5: 577bf2b7a5f4c08cc25be21dd153f1ad
+FileChecksum: SSDEEP: 48:gtYyxH2ETRzFAxqfJBMeLSDS4I/HS1Xxzmfh:gnZ93fJBMe22t/y1Gh
+FileSize: 1 Kb (1983 bytes)
+FileLOC: 50
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./src/org/adblockplus/android/RefreshableListPreference.java
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileOrigin: AUTHORED
+FileChecksum: SHA1: b34565a562188a32b174b73be8a408273fa1cbf4
+FileChecksum: SHA256: 771075e20130c4ace0693a165fd964571fc8a94d93989f20a4d85aa7aad47df6
+FileChecksum: MD5: 0abc3ad852698f3fbaa26968eee5e296
+FileChecksum: SSDEEP: 48:gtYyxH2C0AJIC6cEhayiVlWZ0mKwNP3zZ+lELGb2+Wa/Dau8wstav0e/gqOxN:gnWAJIXcWoVlWZfNP9D8WWBoOeqOxN
+FileSize: 2 Kb (2554 bytes)
+FileLOC: 68
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./src/org/adblockplus/android/AboutDialog.java
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 6cea002558de27b01101a7ca05b0b5c4a7eff8ef
+FileChecksum: SHA256: 01d9095ae9f202138ee78bc2f8bbc186d7e67d01bccce3f4660ebb004c3930f4
+FileChecksum: MD5: 134ef120eb48d1b0fc9935cd348573f5
+FileChecksum: SSDEEP: 48:gtYyxH2qOW65+lbTZCzQzQVvtlG4sJRkLuO7W:gnesTZCkUVnG4sJs57W
+FileSize: 2 Kb (2615 bytes)
+FileLOC: 74
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./src/org/adblockplus/android/updater/AlarmReceiver.java
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileOrigin: AUTHORED
+FileChecksum: SHA1: d6981cb661a80144a3a41197ec51d30fa5f666fc
+FileChecksum: SHA256: cb2aa2bfc6a88afb3c845a3df9e909da30cb9a53debab9a4f76a8eca56cae7fc
+FileChecksum: MD5: 024f52033fd359a262ba28b628f5b15b
+FileChecksum: SSDEEP: 192:gnWiYQ2pONK801yd8VSVdODykF1Oao66EX36E9RnlSJnUniNSMCWyllaGNys6:gnFY8NK80cS1OD58KVMJsH
+FileSize: 8 Kb (8934 bytes)
+FileLOC: 204
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./src/org/adblockplus/android/updater/UpdaterService.java
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 6395727731e38bd2dfca0b00be7020005a372798
+FileChecksum: SHA256: a61f668beac47a4208dd37b8409fb0a24a7b52f30192275762a04e6f8812c101
+FileChecksum: MD5: bb4540277ee68b43e6b6d99015a9fb20
+FileChecksum: SSDEEP: 96:gnRwoAoWWrRoyZ9BiSwYckn2ut9lZfxoOow6dfn4QgC3LBoz4oe:gnRxWglZ9YSHn2ulCw6dfn4Qgc84oe
+FileSize: 6 Kb (6157 bytes)
+FileLOC: 169
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./src/org/adblockplus/android/updater/UpdaterActivity.java
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileOrigin: AUTHORED
+FileChecksum: SHA1: a982e696f57d18ea40f6c85bbec09baaccdd3057
+FileChecksum: SHA256: f92264b97c86bd08a79760091b79eaa21223434c31f41867cdd1d225c0fa10c3
+FileChecksum: MD5: d8b676777ce6eab869f86a2280cdabd3
+FileChecksum: SSDEEP: 96:gndl7O4E5Ru6VqgFgAdkEsxJ5WDeCEqaVN1DBk60PSu:gnGyuS2a78enV/Da60PSu
+FileSize: 3 Kb (3314 bytes)
+FileLOC: 91
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./src/org/adblockplus/android/AndroidLogSystem.java
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 3be6e045c3c01c7dfd966b15351113bb5f1b1e1f
+FileChecksum: SHA256: e2c9f837b932b7fd0648b5874c08f06b0c99e266c41ba6b8b6d3dd16c9a45a60
+FileChecksum: MD5: ac9ca7a72d2c80d94a00974712fce403
+FileChecksum: SSDEEP: 24:IMYO870XyXOkHm2TbVoRsk9PkvO59MEseFF/T7MNToZl8+ZVwaQITTxly:gtYyxH2EOL5f/ThveITTy
+FileSize: 1 Kb (1338 bytes)
+FileLOC: 43
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./src/org/adblockplus/android/HelpfulCheckBoxPreference.java
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 36eb189be25431d89e04557a15c0359ebac7928e
+FileChecksum: SHA256: 17370d13eb4cdd916ab5f259da6b32247dd060dc73da98fea7854374e1b4118d
+FileChecksum: MD5: 5cb6cd380fd8f7137498afa963e120b6
+FileChecksum: SSDEEP: 48:gtYyxH2COdRJIC6cEsrTPIDpZ0uywNP3zZ+oELGb2+9Ix0e/99lCUwlRb0qahame:gnWJIXc7PIZJNP9A82xf9lCUc0qahame
+FileSize: 2 Kb (2912 bytes)
+FileLOC: 81
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./src/org/adblockplus/android/CrashReportDialog.java
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileOrigin: AUTHORED
+FileChecksum: SHA1: b683954855402e57c0832276bc191c11261dd1aa
+FileChecksum: SHA256: c465efedbf00f5b20a05de48f24549595f22bcaf6a879931712df7f5c2516165
+FileChecksum: MD5: 003beb9274c7f906bb8a7f165ed5a0fb
+FileChecksum: SSDEEP: 192:gn6wOQm4E05UM3G2aBAL1q1WNil/uNqz:gn634S3aL1q1WOugz
+FileSize: 6 Kb (6432 bytes)
+FileLOC: 163
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./src/org/adblockplus/android/AdblockPlus.java
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 19e37695390a4ebd21a5cea9ad31b268add43b12
+FileChecksum: SHA256: d7f7b3e0050f7b214efb8733e5a6e22093a6f101d3721f8f1c96a966e994b547
+FileChecksum: MD5: 91039b38a81a2f9dfbdce26d08f9501f
+FileChecksum: SSDEEP: 192:gnwDJ/ZtkOkXnQjawaxYnA7MwYYQhVQob/bVnTkEgt5KWp38CgGYciYARtZlQIHO:gnwd/kPM08nTIKWRfIYY+OPHhscbk
+FileSize: 15 Kb (16163 bytes)
+FileLOC: 493
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./src/org/adblockplus/android/ABPEngine.java
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 82a34abfc6cc4621f5d184e9ba958c8b2cc5475c
+FileChecksum: SHA256: 3d0f5b5dce953547909ec69ea52e7f2d3c156d5d094e863a99d52631803de74b
+FileChecksum: MD5: 210c7a102875878614270ac66933362a
+FileChecksum: SSDEEP: 192:gnyX8+F2tew1iIM1u/oxOlLwHhLdRlaCC8YyDebtPwYBg/HOw0CHICmD:gnyX8Gy/oxOlLwHhLvRCpgE
+FileSize: 8 Kb (8404 bytes)
+FileLOC: 233
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./src/org/adblockplus/android/AndroidFilterChangeCallback.java
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 9cc71062f135152ff8d10a9b7fd51356cc958d4f
+FileChecksum: SHA256: 8e24fdad1a2a482d921c99efa6084e192e2b8a185cf618811e3c4c4c8e90d063
+FileChecksum: MD5: a844e275598a77ca4ac9761748cdb4cc
+FileChecksum: SSDEEP: 24:IMYO870XyXOkHm2TbVoRsk9Pkv4kvVkvzmXFqxhjiLb0FHf9RDEW:gtYyxH2EZGzvSb0F/Hd
+FileSize: 1 Kb (1452 bytes)
+FileLOC: 38
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./src/org/adblockplus/android/ProxyService.java
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileOrigin: AUTHORED
+FileChecksum: SHA1: f995a36247112a264a011e3c7f5a449fdb267b30
+FileChecksum: SHA256: a83941dce894f5a1bc700b6bbf4edfba71c1c97480895c416c6875b1cb7d80d2
+FileChecksum: MD5: 573d61e3d1a5bf7108880c90e5899b74
+FileChecksum: SSDEEP: 768:gn15+OvBOFOuOwO6/u47mGjEjZpqsw7V7q7fJ7NOTmWei:g1xvBOFOuOwO6/u47ipqsw7V7mG
+FileSize: 29 Kb (30099 bytes)
+FileLOC: 836
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./src/org/adblockplus/android/ConfigurationActivity.java
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 2fffe20d087672644c1fc127aa1b7ed9b97155fd
+FileChecksum: SHA256: 0db736da8fd41aaa5fbacbd15864375c5c31ef383271af29650fcc19484860ec
+FileChecksum: MD5: 3dedd867bc6d39fbb9b844b33b069de3
+FileChecksum: SSDEEP: 48:gtYyxH2SWygxR7OLeLfMzSRouC0dzH0dZdtja/XwF4h04zL:gnbzuRYeQzko3iCdFaPA4h08
+FileSize: 1 Kb (1939 bytes)
+FileLOC: 60
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./src/org/adblockplus/android/SubscriptionParser.java
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileOrigin: AUTHORED
+FileChecksum: SHA1: a259338cb6aa71985396a92366c09a7a02dddfc9
+FileChecksum: SHA256: 0824813114a041371dc513f878e5528becc821a5e31ba24a0ea096eebe2dc4ac
+FileChecksum: MD5: e8048c299cdb2a3fc03dcca91d5e9bd2
+FileChecksum: SSDEEP: 48:gtYyxH2DLx/VC3gJd01JV+xeXe6budVwSNF:gnI2jXtENF
+FileSize: 2 Kb (2767 bytes)
+FileLOC: 71
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./src/org/adblockplus/android/ProxySettings.java
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 7fdc02838fc7888779d04274a8033552a425da90
+FileChecksum: SHA256: 7da2958a228dd5e3048cf990d0f959e611b4136106264aa7a7e9deaf006a364e
+FileChecksum: MD5: 572b5e1b8610e79f6b34f8c06010afd6
+FileChecksum: SSDEEP: 192:gn98C4DjXOeT6w1I/RV08cGK4EOSd0L4T8FCFvWdwEh:gnWv6waff7L2s
+FileSize: 6 Kb (7126 bytes)
+FileLOC: 228
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./src/org/adblockplus/android/Subscription.java
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 79583d377546d99ab1b75ee9bfa06188e93c77aa
+FileChecksum: SHA256: 1ebdc385b441eb68375bfb7fc68d576b98f3e6d88a0d707dddd8d05a52b19436
+FileChecksum: MD5: 37edcbb3eee8f027f255ab9df263c674
+FileChecksum: SSDEEP: 12:UxSFTYOC2477X0kkp4McGTyOUhOkHmlfwTbVZ7d8w6ePk9AaI0k1lEWBv:IMYO870XyXOkHm2TbVoRsk980k1am
+FileSize: 911 bytes
+FileLOC: 26
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./src/org/adblockplus/android/AndroidUpdateAvailableCallback.java
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 9c23306fca21bc5e720fc1d283ffcf0b6eb411e6
+FileChecksum: SHA256: b91e81e93267bef340b7fc61109c9152d470a45fe57555a6e1c38e9eee12a457
+FileChecksum: MD5: e89e76de6faee7fdc9329df6dfc8e029
+FileChecksum: SSDEEP: 24:IMYO870XyXOkHm2TbVoRsk9PkvdGRkvhnRhkOtFm0qeRIFqRqOhjql+OSePnTrEC:gtYyxH2UnpRzFmewk+S2wfI
+FileSize: 1 Kb (1767 bytes)
+FileLOC: 43
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./src/org/adblockplus/android/Preferences.java
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileOrigin: AUTHORED
+FileChecksum: SHA1: cda9613506b2e210f4b94a235952a501beee1a2c
+FileChecksum: SHA256: 324247162bd74fbd7066e725a5e3bbb43c3244c5fcb29bdfd395351fa243bc6c
+FileChecksum: MD5: 4d0917ffae04c2e4e7ec408c95b71715
+FileChecksum: SSDEEP: 384:gnvoo4v03dtj1qZJATb3chfP6paOlN72F7ZmB5F9miCWqVRVMns88q9SVtSe4p9O:gngo4vkfj1mAH3chfP6gOlN72F7Zu5F2
+FileSize: 19 Kb (19518 bytes)
+FileLOC: 533
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./src/org/adblockplus/android/Utils.java
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileOrigin: AUTHORED
+FileChecksum: SHA1: e1a8338345b1b872a3877dd56c0804f4ff3b937f
+FileChecksum: SHA256: a82d113ca76bcac93cad2c7eada24544525990a2084774441b2240361792bd2c
+FileChecksum: MD5: 3930d498d4af6b6a19e33fef9c0dd767
+FileChecksum: SSDEEP: 96:gnqgGuASbdCS818f8Wc8G828BLJ4oBHALHTaAH2AHNEW3vJlioP2yW0:gn2STlArTaA2Atb3vJlJz
+FileSize: 3 Kb (3957 bytes)
+FileLOC: 103
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./src/org/adblockplus/android/ProxyConfigurationActivity.java
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 2342c4b98ae8d1ab54875a05d645bb651fac0409
+FileChecksum: SHA256: a6e834c523c1f4a4dc52565fd9c272f87943e7aaabf65fc70c720b0325125c2d
+FileChecksum: MD5: 1cc1983dcf8fd73ff7d42703783bcc7d
+FileChecksum: SSDEEP: 24:ck96cDk2ErXRVcLycEvXdcXbf2eEcL6AtMjk2e2keLm1KzkLukN9xRomKeT70Agz:CWOnRzOLee7dtkkckeLm1CkLukL3nd7m
+FileSize: 1 Kb (1399 bytes)
+FileLOC: 38
+
+FileName: ./src/org/adblockplus/android/AndroidWebRequest.java
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 7a6587bd9d8281cee2540a321cc9f412f2beeca2
+FileChecksum: SHA256: 4670010897315648074b466369a63478dce2e261a7062475f885126b849d822a
+FileChecksum: MD5: 81df19538f22ccba7461d99bc7bc1343
+FileChecksum: SSDEEP: 48:gtYyxH2x6vbWplC1lRG1d/jzK11/udSRnURXk+QfOpOEOy8C/PGcRwd:gnG6vbWDfDzKqdSM+fOpOXXCnGcRg
+FileSize: 2 Kb (2895 bytes)
+FileLOC: 82
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./src/org/adblockplus/android/AdvancedPreferences.java
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileOrigin: AUTHORED
+FileChecksum: SHA1: c92f195aced8b5ad16ccd0454493459b9d875ee1
+FileChecksum: SHA256: 5d49ccbecb7571865b5e45569a9a81a2632d060a493822dcfb918c509cb997fe
+FileChecksum: MD5: 54ab6eb5b43589a73c2dba551fb97bad
+FileChecksum: SSDEEP: 192:gnFpikAeLLiL5Daqss7OEEOao/iNCpJiiOaYiCcOIiY7MCqzP6mqzKrO3fF3Qdt:gnFAkAS4ts6zEOao/ikZOaJCcXt4
+FileSize: 9 Kb (9477 bytes)
+FileLOC: 257
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./src/org/adblockplus/android/SummarizedPreferences.java
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 16fe0c4cb44944cbcfb37ff91c5419862db627da
+FileChecksum: SHA256: 4c0cc48b891fb86d03d00dc469b07b7d7f5b0fb507f80d40de1de36f0473be4f
+FileChecksum: MD5: 5d9f2a97f0ebc91fbef8f69e0cd4c971
+FileChecksum: SSDEEP: 48:gtYyxH2g+cdJymv2O/zNMZDkvGK0ZGbE11i6Gb/1KKw3GblGbhC/emu:gnJRy+2qzNMF11il1KvC3u
+FileSize: 2 Kb (2803 bytes)
+FileLOC: 85
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./src/org/adblockplus/android/CrashHandler.java
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 30f5088c921c7a6d7ccef94f553b1770d520dd71
+FileChecksum: SHA256: 76e839ceaf89cbfb5a8118e8642a6bd6f8b8f067e966b5970be645c717806b77
+FileChecksum: MD5: f77209efbe868fd35191af2747b62fd2
+FileChecksum: SSDEEP: 96:gn3TcSCN3ufmIMmOSJni1SMFdtJU+U44UZ+Se82RfXQLIpIDXFgFkFJFvkjdKSw6:gn38SmIMoBi1jJ8SgSgMSjm0lfX
+FileSize: 4 Kb (4790 bytes)
+FileLOC: 158
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./src/org/adblockplus/android/Starter.java
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 6056c1c48ecb960e29a3ebdf6cda721db2147c7c
+FileChecksum: SHA256: 1d2bf0a744461d28aef891022450b29ff40ffe60c8a4eec521b2a52567da8d5c
+FileChecksum: MD5: abdb274acc4e61867a6526eeb67f28f0
+FileChecksum: SSDEEP: 48:gtYyxH2CcCFOVvlHzVbJgjHQMSDeroQEVEtsm2NZxkTjC7brU:gn+xlHhGjHfSDeroQmKsm2NZxkPC7bQ
+FileSize: 2 Kb (2345 bytes)
+FileLOC: 55
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./src/org/adblockplus/brazil/SSLConnectionHandler.java
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileOrigin: AUTHORED
+FileChecksum: SHA1: f455e26c37ada33cbdb7276a038662707e0fa670
+FileChecksum: SHA256: 31e5456fd55ec15adde3c81813e1be55baab1a9fb894b2d2a3a603c58437e9c2
+FileChecksum: MD5: 4d98e74566d04e79bee04bea4c4b3af2
+FileChecksum: SSDEEP: 96:gnWp/0gOYTBD0PcaCl2/cG5ICjIskNGUKXksI+cZiPqSOe:gnWl0gtTBIPcaCk/cG5ICjUNfEksZtqk
+FileSize: 4 Kb (4901 bytes)
+FileLOC: 160
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./src/org/adblockplus/brazil/TransparentProxyHandler.java
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 9fa9430213feac1807c599dbf242d5c13a69790e
+FileChecksum: SHA256: 3b3e6a5e64ffcf274958b00616fd99fdd8e7cc7f77c3a7b33d6ad07a2fe5e892
+FileChecksum: MD5: b35bc774c234eeca37cada8284989843
+FileChecksum: SSDEEP: 24:IMYO870XyXOkHm2TbVoRskm/mNH86AHXq1uWqhu9pQwwre2TNMAQk:gtYyxH2AuNH8ZX6chu9d6x3Qk
+FileSize: 1 Kb (1367 bytes)
+FileLOC: 42
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./src/org/adblockplus/brazil/BaseRequestHandler.java
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 8b55a4dccad79f204f2e0ada8a5b5110abdf5b04
+FileChecksum: SHA256: dc5af5ac1b3e2dc98a553eadfabeae06551675662b2a6f6c3b36fb11326f59f7
+FileChecksum: MD5: ceb3c7297bd8aee3dc5f3b021f7e35db
+FileChecksum: SSDEEP: 48:gtYyxH2WuNH/hVXKSA3HTYBiqpyMvudtEgIhi3D3flEhKYZ1a//lQW:gnOXt6ztYufsaflgZ1a1QW
+FileSize: 2 Kb (2507 bytes)
+FileLOC: 76
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./src/org/adblockplus/brazil/RequestHandler.java
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileOrigin: AUTHORED
+FileChecksum: SHA1: ab53816357c2981e0e6d807a2c042f05279f4c1e
+FileChecksum: SHA256: bc577bfb8642267da95618e1fc133dbc2654bc60a3c2b74188621e6bdbe404ae
+FileChecksum: MD5: c5859bf8e6721009676825cb0e8b3ea1
+FileChecksum: SSDEEP: 192:gn7O10gdCritulcSh55cTqbWJOClZuMrXKeIZ6E64KLaREA0GBiI3yOt9yKebvdJ:gn7u0YCiqbEZfjzIgvGyGBLHEsTtl9v+
+FileSize: 11 Kb (11800 bytes)
+FileLOC: 356
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./src/org/adblockplus/libadblockplus/FilterChangeCallback.java
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 324ff759938250ee79d1902ea298ba23cb93d2d5
+FileChecksum: SHA256: fd1bade2cd604d0c11d76eb50910809e6b951b60f9fd4dc77347893db774a261
+FileChecksum: MD5: 70fa7cd2e9db453bc874bbb0c96c7edd
+FileChecksum: SSDEEP: 24:IMYO870XyXOkHm2TbVoRskvFxF9/mbgTMnKLXTSgFrHJFGSybFfwFxzrMFU:gtYyxH2lFR/VTMaXTS4aSKMn9
+FileSize: 1 Kb (1667 bytes)
+FileLOC: 54
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./src/org/adblockplus/libadblockplus/FilterEngine.java
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 80699668df406ad38c07d1002fc7411d2b91b2eb
+FileChecksum: SHA256: 9e5d914af7f430ea6a6270fe5b89a2b6ade3252c46b05954f7679e72789d8b73
+FileChecksum: MD5: ab066adad819a370bfb453c3a351cf28
+FileChecksum: SSDEEP: 96:gnuuR/vTM+W64GnV45TLbt23E0TS4JKlvA2:gn7R/7xWXGnV45J23ECS4wlvA2
+FileSize: 4 Kb (4493 bytes)
+FileLOC: 128
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./src/org/adblockplus/libadblockplus/ServerResponse.java
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 3d882f1ded1e85e5d73423458d05b838afd848e9
+FileChecksum: SHA256: 060d83fd1f1ceef82774f97495a57c916b904e01e79abfedc4147826089b2ef5
+FileChecksum: MD5: 5c0674e344a508b26ccca47f82459095
+FileChecksum: SSDEEP: 96:gnu0vvpxRxsAT6EMFkq6L2aVXamFnGayge:gn3vYEWR6L2aVXamFnGa7e
+FileSize: 3 Kb (3534 bytes)
+FileLOC: 112
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./src/org/adblockplus/libadblockplus/HeaderEntry.java
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: d1bd14fdaa395d463639c0a38be236a0c910e538
+FileChecksum: SHA256: fc90967615b8745d318839558794f1401f2283efb11a31603ba7ccbd1b2ce88d
+FileChecksum: MD5: 801aa9c544b959449be68e798c171ecf
+FileChecksum: SSDEEP: 48:gtYyxH2l1uoYqUvolApX1HDPPGbQQbGTa3:gnuOqHAF1jPZiz3
+FileSize: 1 Kb (1610 bytes)
+FileLOC: 59
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./src/org/adblockplus/libadblockplus/Filter.java
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 128e1af13637cc8bf12ad06af7d59af6ab84294c
+FileChecksum: SHA256: 34351b4f6aad00d7a9b5b552a7edde3656788ce78d09b29bac408a79aff71a66
+FileChecksum: MD5: 556b4d395140053f05d3a1244b608436
+FileChecksum: SSDEEP: 48:gtYyxH2lIv/x0FS9nDjKWplPhl5uGb8hVD2iyaoGZk:gnuIv/x0g9nDjKWpZhl52fokk
+FileSize: 2 Kb (2075 bytes)
+FileLOC: 74
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./src/org/adblockplus/libadblockplus/AdblockPlusException.java
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 85b5b862601f0ce14f497cc435a7067de4e47b8c
+FileChecksum: SHA256: 44bf6afe55f8844979d7b2a438fc9a56808c75e2c56dff6780ac12f36d953d26
+FileChecksum: MD5: ff5fd03cf51b4e582db842bb5f54ff36
+FileChecksum: SSDEEP: 24:IMYO870XyXOkHm2TbVoRskvTvF1jDOlGaKyaU:gtYyxH2lTvyAny5
+FileSize: 1 Kb (1155 bytes)
+FileLOC: 33
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./src/org/adblockplus/libadblockplus/UpdaterCallback.java
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: c0e0350adb4a6457839d54f77089f973d50e51dc
+FileChecksum: SHA256: 8e5cb960e386f15abf0e7531add150f40f04304dabb93bf86e4e90bc623b1717
+FileChecksum: MD5: f07131a8c340596720d3fd78b9b90f9c
+FileChecksum: SSDEEP: 24:IMYO870XyXOkHm2TbVoRskv2xF9/NgTMq3XaTSgFrHJFGSybFfwFxzrMFU:gtYyxH2l2R/6TMqHaTS4aSKMn9
+FileSize: 1 Kb (1634 bytes)
+FileLOC: 54
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./src/org/adblockplus/libadblockplus/Subscription.java
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 64f309317dfeca8538489de5192918196386be92
+FileChecksum: SHA256: bc0dd0dd60a104dbbe7cc29873fa15600e3a5e67dc1b44cc0f1a705a0afbb6a7
+FileChecksum: MD5: d774520546642087712866523174e968
+FileChecksum: SSDEEP: 48:gtYyxH2lVv/PFSfWplPhlgVYWDWuGb42hVN/+ENk:gnuVv/PgfWpZhlgqWibB2ak
+FileSize: 2 Kb (2133 bytes)
+FileLOC: 75
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./src/org/adblockplus/libadblockplus/Disposer.java
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 0c0e092f3d957f458ffbfb1b6926a2fd100dee9c
+FileChecksum: SHA256: 0f18f8269db48ecf33fe4af7e95d0944a57ae08a29b491337c06f5f5c904c945
+FileChecksum: MD5: dda37f5faa50691524579240305ebba2
+FileChecksum: SSDEEP: 48:gtYyxH2lyBsKvsLDXDaT3QDTUThrJWdk7STyb4emi19bB7ae:gnuZKvwDXDaT3QDTUThrJGTa4diXbB7v
+FileSize: 2 Kb (2287 bytes)
+FileLOC: 84
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./src/org/adblockplus/libadblockplus/EventCallback.java
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 158def4550d3a20e0621e11d25597bc0a8142778
+FileChecksum: SHA256: f15dc95b78a8cbc2b24ad5ac8573511f1a6b802dc6b857ba19e38e5fa29b2307
+FileChecksum: MD5: 034f902554323dd185db65f6ed6772ce
+FileChecksum: SSDEEP: 24:IMYO870XyXOkHm2TbVoRskvwExF9/vOgTMqyM9+39TSgFrHJFGSybFfwFx7FU:gtYyxH2l3R/JTMecTS4aSKM2
+FileSize: 1 Kb (1649 bytes)
+FileLOC: 55
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./src/org/adblockplus/libadblockplus/LogSystem.java
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 25c41e2c9bf3cd013745f1c6333475ee8636e4af
+FileChecksum: SHA256: 17dec1df12e35c4aa3fcca71ec5093bfe14d513f9f2b0ef2260cf34055df8cef
+FileChecksum: MD5: 3074ae548f5f115dca5feadd38c82f16
+FileChecksum: SSDEEP: 24:IMYO870XyXOkHm2TbVoRskvqixF9/JHTM7VZPTzlTSgFrHJFGSybFfwFxzrMFU:gtYyxH2l/R/xTM7HPTpTS4aSKMn9
+FileSize: 1 Kb (1725 bytes)
+FileLOC: 58
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./src/org/adblockplus/libadblockplus/WebRequest.java
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: dce1e6de70519d4766d51b59eef4a8ce58320c3f
+FileChecksum: SHA256: 58ac6cd0acc701f1b7a08ba5e32a76472675afdc186ccd2cfc4b3475cc59093d
+FileChecksum: MD5: 98156006adb67f059e27aeabce374c63
+FileChecksum: SSDEEP: 24:IMYO870XyXOkHm2TbVoRskvZ5xF9/gaTMgSTSgFrHJFGSybFfwFxzrMFU:gtYyxH2lZ5R/gaTMgSTS4aSKMn9
+FileSize: 1 Kb (1675 bytes)
+FileLOC: 55
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./src/org/adblockplus/libadblockplus/JniExceptionHandler.java
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 56d0a2c1ee614a9e131d930014c21d3c17388601
+FileChecksum: SHA256: 07cdb4c54117838bfb6a9185a6e0a5ff6028708df0221022d0175f31ccaaadcc
+FileChecksum: MD5: 4d5699a09ee86c5ac83314e94ef9ba94
+FileChecksum: SSDEEP: 48:gtYyxH2lwLwR6uwJ8sYWCxt/tToaJBwwae:gnuyoKY/xxtToaJBwwae
+FileSize: 1 Kb (1887 bytes)
+FileLOC: 64
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./src/org/adblockplus/libadblockplus/JsValue.java
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 30060b22c2ef36c00b93156f27ae0d97b68ffcec
+FileChecksum: SHA256: 63702093307ebb57f1bb3ca8cf9bd523ae74762f5b334aefc3a104f03801b523
+FileChecksum: MD5: 8769bb418b44c2c76776fa880bea0788
+FileChecksum: SSDEEP: 96:gnuaR/aTMpTSFWPWcWklW1WlWAVW5tWUPSDB3MmAlOPrJKdYKr:gndR/8qSFWPWcWAW1WlWAVW5tWUYB8pv
+FileSize: 3 Kb (3297 bytes)
+FileLOC: 123
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./src/org/adblockplus/libadblockplus/Disposable.java
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: da96f89027ccf9f25612df0b308a8621864a57f1
+FileChecksum: SHA256: d7a73eef006bd759c2d71ccc21a39f11665db077f32b159a5f1b0e7f564a2230
+FileChecksum: MD5: 1304cf2c560e41c6a9b4c5de7678bb85
+FileChecksum: SSDEEP: 12:UxSFTYOC2477X0kkp4McGTyOUhOkHmlfwTbVZ7d8w6ePkvpjXLv:IMYO870XyXOkHm2TbVoRskvZv
+FileSize: 791 bytes
+FileLOC: 21
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./src/org/adblockplus/libadblockplus/JsEngine.java
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: f285c0481856afb350ad60b6341a71ad89151d5a
+FileChecksum: SHA256: 4457a5347e8d752a0b9f91fc608905742faae2756caf943cc40c5e21b7fa8353
+FileChecksum: MD5: 5042b992d3dc1176721b5c60c3f48527
+FileChecksum: SSDEEP: 96:gnuLR/j6TMfuEGpwdCIXjv+lTS4JK4Dv2Ydvv:gnWR/jcTCdXjv+FS4w4Rdvv
+FileSize: 4 Kb (4261 bytes)
+FileLOC: 131
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./src/org/adblockplus/libadblockplus/AppInfo.java
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 4a2b35adcb3c3e5026ecc3f7fc3bded004509e25
+FileChecksum: SHA256: fa913c3322ff1a75731f03da16c57eb61a8aac2d1b58c709d80e0d5f2e8b727a
+FileChecksum: MD5: aab440d228f35a3d8aeeae88525af684
+FileChecksum: SSDEEP: 24:IMYO870XyXOkHm2TbVoRskvd1dGPFYaPg3G4mvwTNQxF2FHFkeF0FFFo0Fe+cFBW:gtYyxH2ld/5aPg3VQCsrbqeXMrcx+I1
+FileSize: 2 Kb (2885 bytes)
+FileLOC: 94
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./src/org/apache/commons/lang/StringEscapeUtils.java
+FileType: SOURCE
+ArtifactOfProjectName: ApacheCommons
+FileLicenseConcluded: Apache-2.0
+FileOrigin: MODIFIED
+FileChecksum: SHA1: 00617958b057d8adef07b66711bb726b0494d0a0
+FileChecksum: SHA256: ae7da1d38b1d028ff5e44e15595aeac9c277c551b5d9b231f223462c95bc5bf5
+FileChecksum: MD5: 6117578daa50430b4e1699174bd33c27
+FileChecksum: SSDEEP: 384:UDV+m8tVnhr+2koQ6nVqA43XInPFC9Ki9f/wl5b+/nEu5gPjo5SoOhC:U5oVkoQkVdAJu5EnEWgPjokomC
+FileSize: 22 Kb (22977 bytes)
+FileLOC: 587
+LicenseInfoInFile: Apache-2.0
+
+FileName: ./src/org/apache/commons/lang/StringUtils.java
+FileType: SOURCE
+ArtifactOfProjectName: ApacheCommons
+FileLicenseConcluded: Apache-2.0
+FileOrigin: MODIFIED
+FileChecksum: SHA1: d337c94d2260f315e62140529349388100114342
+FileChecksum: SHA256: 21d59aeeded48ec2988f42f4bd2159e4b22969a85fc67c2fbcff881d7391f687
+FileChecksum: MD5: f5ec3400aede14e50edc954c2580dbe0
+FileChecksum: SSDEEP: 1536:UqKXlAz15mojgbYEUB+BnBHBpBS2/u9jtlRvmhV6swBDD+g1djbmw:UqKXlAz15mojgbz1wJz1Bbmw
+FileSize: 177 Kb (181744 bytes)
+FileLOC: 4525
+LicenseInfoInFile: Apache-2.0
+
+FileName: ./src/org/apache/commons/lang/CharUtils.java
+FileType: SOURCE
+ArtifactOfProjectName: ApacheCommons
+FileLicenseConcluded: Apache-2.0
+FileOrigin: MODIFIED
+FileChecksum: SHA1: ae40721e7fac52f1eef26a8131e5fb240291cc29
+FileChecksum: SHA256: 1f75850f1cacbcf922e8b8389fafcc007f3b15aa97b36d92d058d6873e9f0da6
+FileChecksum: MD5: d29322854f467cc918ffadef4827ca79
+FileChecksum: SSDEEP: 192:UDXHZZNd3PSqzodl3oxFqXmUdFkCFlafOtAaiSKAy4MZ4CvMf/lbIL4EebI4U+Ik:UDpZNdaiEntFq4i74p+ceLZTuYuv
+FileSize: 18 Kb (19330 bytes)
+FileLOC: 558
+LicenseInfoInFile: Apache-2.0
+
+FileName: ./src/org/literateprograms/BoyerMoore.java
+FileType: SOURCE
+ArtifactOfProjectName: boyer
+FileLicenseConcluded: MIT
+FileOrigin: EXTERNAL
+FileChecksum: SHA1: 6a1b2f365c2ed43e18d0f7eb5b63677a2123eb2e
+FileChecksum: SHA256: c74f2dd8a747985f996380c3bc55183817ccec84d406a8bf1da956b91ff60784
+FileChecksum: MD5: 9d4dd7091be548f5c7c31682c0d5d0e9
+FileChecksum: SSDEEP: 96:ZY0Put0CQHXOgTwSzxLxDxVdxLw6upI+OcCL8uzZr:uTbQHXn5zVV3d9wBpxJuzJ
+FileSize: 3 Kb (3728 bytes)
+FileLOC: 105
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>Copyright (c) 2012 the authors listed at the following URL, and/or</text>
+
+FileName: ./src/sunlabs/brazil/server/Handler.java
+FileType: SOURCE
+ArtifactOfProjectName: Brazil
+FileLicenseConcluded: SPL-1.0
+FileOrigin: EXTERNAL
+FileChecksum: SHA1: 34a4f5ebaf98c2b895cb98bb087262feffb5110b
+FileChecksum: SHA256: 926ff9c469644868814d1c3b3f54c9dcbe5f039f91ee3ebb665129d033615968
+FileChecksum: MD5: be463ec9efb3492381a36542e4f18056
+FileChecksum: SSDEEP: 96:iopZg+JzWnALDiP1ysvOIz2vYy35wAtR3DL81GwNwObgJTfXcbzn:iDwzWnAL2os2Iy5vTL819wOch/cP
+FileSize: 5 Kb (5438 bytes)
+FileLOC: 150
+LicenseInfoInFile: SPL-1.0
+FileCopyrightText: <text>Copyright (c) 1998-2004 Sun Microsystems, Inc.</text>
+
+FileName: ./src/sunlabs/brazil/server/Server.java
+FileType: SOURCE
+ArtifactOfProjectName: Brazil
+FileLicenseConcluded: SPL-1.0
+FileOrigin: EXTERNAL
+FileChecksum: SHA1: 277b9a45306ee7a5801a7452c3d23afd6921baa9
+FileChecksum: SHA256: 64e81a00a9c8582631141d7bef6a4be4174a2b79c60878bbd43bef82bb15a8a1
+FileChecksum: MD5: dabc48c2d607d9500a370ee201818214
+FileChecksum: SSDEEP: 384:XHzWALiAHFCTYkJDOTu6qULqETQnuFZwG1h2zX3bT1bot67mzPlVpNrV:XHzWALiAMnDgxqEMWCQIdo8G
+FileSize: 18 Kb (19102 bytes)
+FileLOC: 596
+LicenseInfoInFile: SPL-1.0
+FileCopyrightText: <text>Copyright (c) 1998-2005 Sun Microsystems, Inc.</text>
+
+FileName: ./src/sunlabs/brazil/server/Connection.java
+FileType: SOURCE
+ArtifactOfProjectName: Brazil
+FileLicenseConcluded: SPL-1.0
+FileOrigin: EXTERNAL
+FileChecksum: SHA1: ff48b9d43f1a33e7696e12a39fb30d64625d08ef
+FileChecksum: SHA256: 02367b8fee5575ffd50cfd20086dae880b0396aaf4aa62023e789349e2f6e500
+FileChecksum: MD5: 6868fdb19bf904eca8b2ae5925648d24
+FileChecksum: SSDEEP: 192:eBwzWnALglKVR9M2quq9POsf3TN0j4RNDuMiznbuvoMxY7C5C:euzWALglt2nq9PO+DuRznbugA9C
+FileSize: 6 Kb (6807 bytes)
+FileLOC: 229
+LicenseInfoInFile: SPL-1.0
+FileCopyrightText: <text>Copyright (c) 1998-2006 Sun Microsystems, Inc.</text>
+
+FileName: ./src/sunlabs/brazil/server/Request.java
+FileType: SOURCE
+ArtifactOfProjectName: Brazil
+FileLicenseConcluded: SPL-1.0
+FileOrigin: EXTERNAL
+FileChecksum: SHA1: 3ba9a6653f9ede764cdb4f57240e01c3adc1c5cd
+FileChecksum: SHA256: 4dfb5738338d33df43c5cf894e39823f2153838c1a982e5e197c7fb40c75cdd9
+FileChecksum: MD5: 2bbce8cb5767435e58fd7b3c3ad3e4c9
+FileChecksum: SSDEEP: 1536:FLmNeJDfvsC9rQbYnzW/3A32C2QBZJ2kJRu8PMs2:FLm4JzP9rQbYnzW/3A32C2QBZnJRu8PI
+FileSize: 56 Kb (57360 bytes)
+FileLOC: 1683
+LicenseInfoInFile: SPL-1.0
+FileCopyrightText: <text>Copyright (c) 1998-2007 Sun Microsystems, Inc.</text>
+
+FileName: ./src/sunlabs/brazil/server/ChainHandler.java
+FileType: SOURCE
+ArtifactOfProjectName: Brazil
+FileLicenseConcluded: SPL-1.0
+FileOrigin: EXTERNAL
+FileChecksum: SHA1: de210b5c8601d38d1521705d4371e42ade1f0185
+FileChecksum: SHA256: ee8641f78f3e4c64dae9ff9299067009a5125d8afd6fc67aefa7246e0c52135c
+FileChecksum: MD5: feee8066a6aaf648753109e3c1233e6d
+FileChecksum: SSDEEP: 384:ruzWALHBETji3/qyOBmFPplAeBxDG+de0iDSQpb8KMhv:ruzWALHL3/qyO+plAmlGMKMhv
+FileSize: 13 Kb (13411 bytes)
+FileLOC: 388
+LicenseInfoInFile: SPL-1.0
+FileCopyrightText: <text>Copyright (c) 1998-2006 Sun Microsystems, Inc.</text>
+
+FileName: ./src/sunlabs/brazil/properties/PropertiesList.java
+FileType: SOURCE
+ArtifactOfProjectName: Brazil
+FileLicenseConcluded: SPL-1.0
+FileOrigin: EXTERNAL
+FileChecksum: SHA1: 8c29c4598a43f27bacdfcf446a49f740ecb07ac3
+FileChecksum: SHA256: 5f2207a048874bc2205c1eb05e0352141ad99af76964521e03d3e15192246f44
+FileChecksum: MD5: 74f814bace47b52fc8441a62e2f17e47
+FileChecksum: SSDEEP: 384:N8zWUL2K8RSRb8StFE0YULPSW+xrBc2hmQec50mpTxSj1qHZVbrHjqtyvbf:N8zWULbo0tLPSW+zUbcfpb3Djiyzf
+FileSize: 24 Kb (25255 bytes)
+FileLOC: 789
+LicenseInfoInFile: SPL-1.0
+FileCopyrightText: <text>Copyright (c) 2001-2006 Sun Microsystems, Inc.</text>
+
+FileName: ./src/sunlabs/brazil/util/StringMap.java
+FileType: SOURCE
+ArtifactOfProjectName: Brazil
+FileLicenseConcluded: SPL-1.0
+FileOrigin: EXTERNAL
+FileChecksum: SHA1: 9eae5bffc322e6b6f545885c531d049cb3881d1b
+FileChecksum: SHA256: b162d42f233da66feb8d05e56dc8e932b3ebd03336d5ac30826b7f627aab16d7
+FileChecksum: MD5: 1f1e90e029e6065ae16854a60bab3c13
+FileChecksum: SSDEEP: 384:ZwzWMLJ8Fh91KXewz2lGdayEIAxx3sWt/YF85uK80NXdBSU1UXhxz5BSgzfx1TtO:ZwzWMLJGhrKXewz2lGdayEIAxxfuK80d
+FileSize: 14 Kb (14829 bytes)
+FileLOC: 540
+LicenseInfoInFile: SPL-1.0
+FileCopyrightText: <text>Copyright (c) 1999-2007 Sun Microsystems, Inc.</text>
+
+FileName: ./src/sunlabs/brazil/util/MatchString.java
+FileType: SOURCE
+ArtifactOfProjectName: Brazil
+FileLicenseConcluded: SPL-1.0
+FileOrigin: EXTERNAL
+FileChecksum: SHA1: 4a5c48a0da113c77e618fc5f51baf9fb084afc6d
+FileChecksum: SHA256: addcb6d40105cad11dc62be425712c08476c9f38d1ef6bb1c914efd712a9275a
+FileChecksum: MD5: 7e09ad2fe6bf73c1e4bb84f4381f2c83
+FileChecksum: SSDEEP: 96:aoZZg+JzWnALCgyISrrUhWo/DUGBsSEd/UwbuAR5UTYAzq7dlW:aLwzWnALjywVrOlUPNTpqZ8
+FileSize: 5 Kb (5418 bytes)
+FileLOC: 180
+LicenseInfoInFile: SPL-1.0
+FileCopyrightText: <text>Copyright (c) 2001-2006 Sun Microsystems, Inc.</text>
+
+FileName: ./src/sunlabs/brazil/util/Base64.java
+FileType: SOURCE
+ArtifactOfProjectName: Brazil
+FileLicenseConcluded: SPL-1.0
+FileOrigin: EXTERNAL
+FileChecksum: SHA1: 331e0299b16fe31f708f0524288acec63dc71c85
+FileChecksum: SHA256: 9fb4adfc50fd2dce6b38c03cae18ba232cb76b4e6be46c13d95db750eafdeba9
+FileChecksum: MD5: 974a9ba7ec2bdac87af768feb870237a
+FileChecksum: SSDEEP: 96:zoCZg+JzWnMLD4k8zZkht2Ma5pBz9UazjDho5cch4C1UlxsUgxERhp70:ziwzWnML8k8zZvpBzbYxURgxERhp70
+FileSize: 5 Kb (5753 bytes)
+FileLOC: 215
+LicenseInfoInFile: SPL-1.0
+FileCopyrightText: <text>Copyright (c) 2000-2004 Sun Microsystems, Inc.</text>
+
+FileName: ./src/sunlabs/brazil/util/regexp/Regexp.java
+FileType: SOURCE
+ArtifactOfProjectName: Brazil
+FileLicenseConcluded: SPL-1.0
+FileOrigin: EXTERNAL
+FileChecksum: SHA1: db2acc4841e76b3cddddba5e826e5dead03d6586
+FileChecksum: SHA256: c77aef2be80d3fa4083f1244310cfc47f99bb2258fbd9f588a984ff7c5b7a321
+FileChecksum: MD5: c84a19ff912bad738ed0101c75d5e749
+FileChecksum: SSDEEP: 768:xFzWMLM+vKmfAfPNOehGJG7Ahaeu3LYqvisl13Yd3Kgi6EiL:JLMDEed7kaeu7zvLSKgi6Eo
+FileSize: 44 Kb (45484 bytes)
+FileLOC: 1505
+LicenseInfoInFile: SPL-1.0
+FileCopyrightText: <text>Copyright (c) 1999-2004 Sun Microsystems, Inc.</text>
+
+FileName: ./src/sunlabs/brazil/util/regexp/Regsub.java
+FileType: SOURCE
+ArtifactOfProjectName: Brazil
+FileLicenseConcluded: SPL-1.0
+FileOrigin: EXTERNAL
+FileChecksum: SHA1: cd9b0a36c97ec369a20fe34dc9fd0e365b5249be
+FileChecksum: SHA256: 5846d19d1c3847adde2b2e9288c7d0b2b2472a358a39d12572d164f4a8a0121b
+FileChecksum: MD5: 043245fcdaa5ed989d5d42ee4419cf53
+FileChecksum: SSDEEP: 192:OEwzWnMLpm7BI9L18tMcyiKjVLVz3xxta0FwU9vw:OFzWMLCSL1RHiKjhV3xxhQ
+FileSize: 6 Kb (6820 bytes)
+FileLOC: 241
+LicenseInfoInFile: SPL-1.0
+FileCopyrightText: <text>Copyright (c) 1999-2004 Sun Microsystems, Inc.</text>
+
+FileName: ./src/sunlabs/brazil/util/Glob.java
+FileType: SOURCE
+ArtifactOfProjectName: Brazil
+FileLicenseConcluded: SPL-1.0
+FileOrigin: EXTERNAL
+FileChecksum: SHA1: 400fa9bd1aa3e5f74aa98c84f90237acf8820136
+FileChecksum: SHA256: 1fb6181711b06ad76b3bae818ae03150974939a7096af2535f368bafe112e2e8
+FileChecksum: MD5: 41a491f6e865c1b6595e91e23b7c9bef
+FileChecksum: SSDEEP: 192:wEwzWnALqXvJWeICVMk6ulahBQwMyCj5:wFzWALq/ZR6ulahBQwy
+FileSize: 6 Kb (7051 bytes)
+FileLOC: 273
+LicenseInfoInFile: SPL-1.0
+FileCopyrightText: <text>Copyright (c) 1999-2004 Sun Microsystems, Inc.</text>
+
+FileName: ./src/sunlabs/brazil/util/SocketFactory.java
+FileType: SOURCE
+ArtifactOfProjectName: Brazil
+FileLicenseConcluded: SPL-1.0
+FileOrigin: EXTERNAL
+FileChecksum: SHA1: c74400e18c19b8f6b0d571d5d514ed22c59b3f94
+FileChecksum: SHA256: 2c8ad9a744494861c65189f5bd8b9e6d0dbeda2ae3653cfe80542caf1fa20e3d
+FileChecksum: MD5: 9378b4dc30d4dabaaccd90d6e6fd913f
+FileChecksum: SSDEEP: 96:loUZg+JzWnMLDHAOEswiXDcKm5RuWnHipX3AYDjAqWqGTAky8HA9J+n1uo:lEwzWnMLjAXXqouWunF4qUyJa13
+FileSize: 5 Kb (5464 bytes)
+FileLOC: 151
+LicenseInfoInFile: SPL-1.0
+FileCopyrightText: <text>Copyright (c) 1999-2004 Sun Microsystems, Inc.</text>
+
+FileName: ./src/sunlabs/brazil/util/Format.java
+FileType: SOURCE
+ArtifactOfProjectName: Brazil
+FileLicenseConcluded: SPL-1.0
+FileOrigin: EXTERNAL
+FileChecksum: SHA1: 201f84d811617e9e02c75682cf232863c8c33f9d
+FileChecksum: SHA256: 7c88387a89e0a47098957fe326d2fd7e929fdac7f6b1eca2fc235eda3db50241
+FileChecksum: MD5: b2a3323dfd97ce143a7df840f016c6e7
+FileChecksum: SSDEEP: 192:HQwzWnMLZQyHwJOEnMY73fSEBGHuj1Tp//KsnvbhFxcVoPRQYDhdpZax9weF030:H5zWMLZtwwEMYzbDKsjXDXDf2jweF030
+FileSize: 10 Kb (11159 bytes)
+FileLOC: 418
+LicenseInfoInFile: SPL-1.0
+FileCopyrightText: <text>Copyright (c) 2000-2006 Sun Microsystems, Inc.</text>
+
+FileName: ./src/sunlabs/brazil/util/http/HttpRequest.java
+FileType: SOURCE
+ArtifactOfProjectName: Brazil
+FileLicenseConcluded: SPL-1.0
+FileOrigin: EXTERNAL
+FileChecksum: SHA1: 5d2b6f601c0a1502cdf9f30916d4367fa53364c1
+FileChecksum: SHA256: 7a26ee7b5e3d1d261037815eeaec6bc3b774c6ca0fe96c0c13478bbd3c18119c
+FileChecksum: MD5: 06527ecc66e8fd131af4e798563dfd34
+FileChecksum: SSDEEP: 768:FwzWMLppCD0YqOqJtkoSfrbhd0JL7dLhLSRyBw32uzzbX0RCIZn:6LppyqOqJu90JL7dLhLSRyefbEMIN
+FileSize: 51 Kb (52394 bytes)
+FileLOC: 1717
+LicenseInfoInFile: SPL-1.0
+FileCopyrightText: <text>Copyright (c) 1999-2007 Sun Microsystems, Inc.</text>
+
+FileName: ./src/sunlabs/brazil/util/http/HttpSocket.java
+FileType: SOURCE
+ArtifactOfProjectName: Brazil
+FileLicenseConcluded: SPL-1.0
+FileOrigin: EXTERNAL
+FileChecksum: SHA1: 3b7fc7ff0a850666621669fc4f5ed63153e568e1
+FileChecksum: SHA256: dd82e21241f1aebbce7f85f8121c6ae3988d86dcb882279e9feaed6bfc1b51cd
+FileChecksum: MD5: df491250e5ba6bd251eb050e403fb6e5
+FileChecksum: SSDEEP: 96:NoaZg+JzWnMLDniL+PvcXD2CLV5FRfr31:NCwzWnMLD502ER3
+FileSize: 3 Kb (3377 bytes)
+FileLOC: 118
+LicenseInfoInFile: SPL-1.0
+FileCopyrightText: <text>Copyright (c) 1999-2002 Sun Microsystems, Inc.</text>
+
+FileName: ./src/sunlabs/brazil/util/http/HttpUtil.java
+FileType: SOURCE
+ArtifactOfProjectName: Brazil
+FileLicenseConcluded: SPL-1.0
+FileOrigin: EXTERNAL
+FileChecksum: SHA1: c4833fdc9f0a23ff4ec9342c7d4b1d7a93ed0973
+FileChecksum: SHA256: 4984c7be18674390f694c385c4b2134771d9651c83250af320fc6ac4613d7be6
+FileChecksum: MD5: d06bde7b6f46615f115f914cbf41e5cc
+FileChecksum: SSDEEP: 192:Cu+zcnMbcJP7nt04gX8Xeh2uRrofWuemfOEYlnbPRln6ljx4bFkODKAwD4FYnLAi:CVzcMbcJDt0JMkELUdN0bYwU5Jdm7J
+FileSize: 12 Kb (12414 bytes)
+FileLOC: 431
+LicenseInfoInFile: SPL-1.0
+FileCopyrightText: <text>Copyright (c) 1999-2004 Sun Microsystems, Inc.</text>
+
+FileName: ./src/sunlabs/brazil/util/http/HttpSocketPool.java
+FileType: SOURCE
+ArtifactOfProjectName: Brazil
+FileLicenseConcluded: SPL-1.0
+FileOrigin: EXTERNAL
+FileChecksum: SHA1: 31089e0e8cbed023d06eed08f8842d33792623d2
+FileChecksum: SHA256: 9648548d009cf9ee8247c1e68402fef8cacf1b4d4b228eceefa9366d4e15a28d
+FileChecksum: MD5: 59f27ff8f3b654e6c051a8689b641810
+FileChecksum: SSDEEP: 96:ToUZg+JzWnMLDvyGogdFv4XtIJkxiLrA4Qv+84eu+SlcqbDXekEkAjoAyeSX:TEwzWnML9ogdFrnIu9LDukx4SX
+FileSize: 4 Kb (5083 bytes)
+FileLOC: 147
+LicenseInfoInFile: SPL-1.0
+FileCopyrightText: <text>Copyright (c) 1999-2004 Sun Microsystems, Inc.</text>
+
+FileName: ./src/sunlabs/brazil/util/http/MimeHeaders.java
+FileType: SOURCE
+ArtifactOfProjectName: Brazil
+FileLicenseConcluded: SPL-1.0
+FileOrigin: EXTERNAL
+FileChecksum: SHA1: 83709e631e2abe02bdd12253b1a17b7d482d1623
+FileChecksum: SHA256: 699bb69fb726c206a3ff360d35e8d50f5d5a7a6ed3666526e61cdd6cde2bb1b1
+FileChecksum: MD5: d1bae7102a33811c68ab1a0db23a71a4
+FileChecksum: SSDEEP: 192:oFwzWnMLN2QkH6xTxiCNLHpyLulzcVfzKrqU6rCETuBzuqBzjcGPBS7n4KlBqyMm:oazWMLNi6xbRHoLWgB3uBDB3cGPBSD4G
+FileSize: 10 Kb (10431 bytes)
+FileLOC: 330
+LicenseInfoInFile: SPL-1.0
+FileCopyrightText: <text>Copyright (c) 1999-2005 Sun Microsystems, Inc.</text>
+
+FileName: ./src/sunlabs/brazil/util/http/HttpInputStream.java
+FileType: SOURCE
+ArtifactOfProjectName: Brazil
+FileLicenseConcluded: SPL-1.0
+FileOrigin: EXTERNAL
+FileChecksum: SHA1: ffe183a098fe71e32b44552261157a921299ebd8
+FileChecksum: SHA256: a7521692599d8a6720514c409b9a4876ac7894a38639b4c97b3afdd1a59c780f
+FileChecksum: MD5: 619bf151b324205ebe54a7daedb74263
+FileChecksum: SSDEEP: 192:yEwzWnMLwyrkLDszNywDNLUmNLUhn2LMcnfLMahiCitgL8F:yFzWMLwbUz5rmshW/F
+FileSize: 10 Kb (10844 bytes)
+FileLOC: 344
+LicenseInfoInFile: SPL-1.0
+FileCopyrightText: <text>Copyright (c) 1999-2004 Sun Microsystems, Inc.</text>
+
+FileName: ./res/drawable-xhdpi-v11/ic_stat_warning.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 8b67811547b464afb7b53c7ba6491f15b85f69ce
+FileChecksum: SHA256: dc8443d8cbb07ec842ab7d79b189ef00ffd01273c63ec42402e1561a90a5f67f
+FileChecksum: MD5: 1de0b81915a72ce9ef8983fb0ae64576
+FileChecksum: SSDEEP: 12:6v/7hh1IuWgt6JzLblAUBDm8I0BWhx0oRRCK9tLLmUjXgZMzV62cBQd4L+n2V:CjnXt6VFPs50onxtOUU66Am+ns
+FileSize: 571 bytes
+
+FileName: ./res/drawable-xhdpi-v11/ic_stat_blocking.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 625b95ea28a689b767382d763becded2d6fed2f2
+FileChecksum: SHA256: d7814ae9ebf6ff3f06ce40cf11d174a51ff54ad28d49e6eed2e52eec6590c9a7
+FileChecksum: MD5: fe05ba924bfeab2ec6fdec4953665ed5
+FileChecksum: SSDEEP: 12:6v/7A/4klGSBM2uvibregyXG8DPn2062qhnsxPQ1bahdXwXFjYh9SzMzgioNBP0w:5Akl9ZM2D9hnok6YRUCioN9xL
+FileSize: 926 bytes
+
+FileName: ./res/drawable-xhdpi-v11/ic_stat_download.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: dba4c8035f7ddfc32de0e434757a79aa98018cd4
+FileChecksum: SHA256: 5e58ff285b6f63f0e5a0731fdebe42784279bada37061daf1c1ef3690627e4d4
+FileChecksum: MD5: 4abe502718d2967270bfa913c41cb3f0
+FileChecksum: SSDEEP: 6:6v/lhPFIOLl3y6AWn5zblZksvRiovz/OvW0Xtroe9YHepmei0bs+saiPAf2ISm0J:6v/79IOFy6AWntMs3vz/+3VYHeiXpUHE
+FileSize: 380 bytes
+
+FileName: ./res/values-ru/strings.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 43973a80da79e3e718106b576a8dc5c01f509424
+FileChecksum: SHA256: f0b02fc71111a2b8ffac7160c9b03f383c987df5fa7e023615e7aeea06b09b32
+FileChecksum: MD5: 6367e03321139b2cdeddcc8e2e21f458
+FileChecksum: SSDEEP: 192:Mh2G9Kn/Ex2g2tEnQ1ECcN8WH2MbZ2cVTUx:Mh2uKnLLtEfCcN8MTUx
+FileSize: 8 Kb (9111 bytes)
+
+FileName: ./res/values-ru/arrays.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 8ab779a41bd84ad44f161f0aade073d25eb9e458
+FileChecksum: SHA256: fbdb0488e0bd25602d30eb39ec2c65ca0d09b6db9384adfc8425d358946a67d7
+FileChecksum: MD5: 3f8361d2e3699165d0b374cf991148ba
+FileChecksum: SSDEEP: 6:TMVBd77+8EatWpWYf/K/ZGt19fbIZGtWy1fJB3KWX06f:TMHd77aaxjhIEZgWoJNKWX0C
+FileSize: 265 bytes
+
+FileName: ./res/raw-nb/proxysettings.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: f28df7e45a70bf49c93723606d579d2e89fe2c68
+FileChecksum: SHA256: 5a9b4a46730491093e5d34500e9f70da5e40a67ff4c6dc12f6c3252f8b73037a
+FileChecksum: MD5: 2bc62795d06de8889bad1990f6b051a0
+FileChecksum: SSDEEP: 12:QfCiY4+GicoAro5IeQCwSmLRpF9kpvLY5A2pUBIdC/p4zI:Ii2Je/wt0pvse2p7C/p4E
+FileSize: 718 bytes
+FileLOC: 10
+
+FileName: ./res/raw-nb/info.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 32315c4c38142cec96f34ccdf90f80aa1581c1d3
+FileChecksum: SHA256: f776b5ee77e681e1e095feb4c9dd17130947fc22373c00d66fe5fdab38156e00
+FileChecksum: MD5: 6dc018af9ecb870b63dff3d7aa5880ec
+FileChecksum: SSDEEP: 6:dgcipn+iyjpJIGWCXPpUB5jr18exCXPpUB7je0zwxCXPpoAOKt92:dkn+nIGb/pUB5n1y/pUBWUn/poAOKt92
+FileSize: 317 bytes
+FileLOC: 4
+
+FileName: ./res/raw-nb/proxysettings_old.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: dea9d8b3a744898761c2670a024c5951c68111e4
+FileChecksum: SHA256: de2291c2a19afbffe8bf663eb69dd46cfb250e6291c998a24eae7ecfbcdc6cc1
+FileChecksum: MD5: 1319b85d6c1aa125a016fedf8cb3ad01
+FileChecksum: SSDEEP: 12:NQvkkO4iHqhspUB11wx7BxO5+396Cx/I:NOkt4iHqeprxFG+wm/I
+FileSize: 473 bytes
+FileLOC: 8
+
+FileName: ./res/raw-nb/legal.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 294f9eb2d8a9025ae4b265b7a2c32b2269bbc35b
+FileChecksum: SHA256: 97baf7cd05dc24fba1083c066071b4289550257a78436a78637646a19e33b2d2
+FileChecksum: MD5: a4f988f46a561895bf3207ea8c1d4b9d
+FileChecksum: SSDEEP: 24:ds/PHGHOgBDANqQBkAG/wKmiaPLIrKmRP1Z+tePPmdBUPAMpqCP1L58P5FW:W3qpB6qQGdY1v21Xe2msoQV
+FileSize: 1 Kb (1335 bytes)
+FileLOC: 11
+LicenseInfoInFile: Apache-2.0
+LicenseInfoInFile: GPL-3.0
+
+FileName: ./res/drawable-ldpi-v9/ic_stat_warning.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: f0e815787fde38410f0bbc71d51bd2d417a18470
+FileChecksum: SHA256: 0369338ec32d2fbae6d3f3db4377ce1c80876287184954206c88a4fc6e0289f6
+FileChecksum: MD5: 753ae53d3d04620b60b1e802451bd629
+FileChecksum: SSDEEP: 6:6v/lhP7JAvBKWwuR2ZPnJjNwen0FVdew11luO2YtSG52yUAZxe9BqHFt8cEdp:6v/78QQR2ZVNwe0FVnuOZoGcYeqHFrEz
+FileSize: 323 bytes
+
+FileName: ./res/drawable-ldpi-v9/ic_stat_blocking.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 560ec21446c44febaf8a70af1d5daedfe077a37e
+FileChecksum: SHA256: 9b05a58a6276aa285a67477c540b9c0b7e9647c01bb8eaeef5861944237c65b4
+FileChecksum: MD5: 9f737c4fc59dcc192fcc89f5b9e84c20
+FileChecksum: SSDEEP: 6:6v/lhP7H2FLWp0EKd4NuiPCz7nlMMD4Ou2saNpJMe0PBbwezXL3c0GfIoJtjp:6v/7b2JW5IPnNDxu2r/JfOaerkZtN
+FileSize: 343 bytes
+
+FileName: ./res/drawable-ldpi-v9/ic_stat_download.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: c824657f8286f602cda4c378644f5c51d8592a68
+FileChecksum: SHA256: 22283995f6852ef75d8b25603c9c200ff24062aa77ebacfbe68e727e01765352
+FileChecksum: MD5: 279c06c32cbff53127d16c7bf5217502
+FileChecksum: SSDEEP: 6:6v/lhPbBn7IdE7Z6gonXs9XSPRKg5v2P3YgDZUUp:6v/7V7IEjgXUGKg5I3YgP
+FileSize: 237 bytes
+
+FileName: ./res/values-nb/strings.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 9b1540509507a87cfb30b55398d785d825e787ea
+FileChecksum: SHA256: 6cca38ef2049df86355b1b1634c9f3327ae3e730919563b9e2f117a2bbf47832
+FileChecksum: MD5: 649f171981ff8fd700db793a7730c599
+FileChecksum: SSDEEP: 96:Mh+Kvx33NVEx28Vb2IlDCY8P4RLopyoMz+URkJD:Mh+K13NVEx2g2GCMuyopURCD
+FileSize: 6 Kb (6764 bytes)
+
+FileName: ./res/values-nb/arrays.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 3c4a9f22bd4df28747e5ffef492597cb2daecd3e
+FileChecksum: SHA256: ed97f788929393a5fe3537a084468453cacc0d047972ebb043f7dfc9f98b92f6
+FileChecksum: MD5: 39e4dcfe11885b7daccb1dbd195776ec
+FileChecksum: SSDEEP: 6:TMVBd77+8EatWpWYfFkAxBtZGMDZGRWOk0KWX06f:TMHd77aaxCk8r30dKWX0C
+FileSize: 230 bytes
+
+FileName: ./res/drawable-hdpi-v11/ic_stat_warning.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 3dffac2eec9788ed69b77e4a458e474cf058c841
+FileChecksum: SHA256: e832970b551fedd26b78fca0bf65d28f1d489ab5ad45b7ab552b69bdbacddbd3
+FileChecksum: MD5: 33e29c2141b66785f47b56e2c9ec83e3
+FileChecksum: SSDEEP: 12:6v/7/YdV3BWC3nkLsRCIvdvGaUJ4uWYZIVS:F3BBXWsRCI1vlUJ42mU
+FileSize: 435 bytes
+
+FileName: ./res/drawable-hdpi-v11/ic_stat_blocking.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 82a58af12bbdfc6ef4cd7471cb77734fe19a41b4
+FileChecksum: SHA256: 0f667f46abf456a5e2f265f250ca8ae98df64e42cb6dc534dba83b7190539b32
+FileChecksum: MD5: 22cd101622e6dbc917b56900c1d6bbc9
+FileChecksum: SSDEEP: 12:6v/7LgkQmhqRcYcwZU2myjw/wOpUyfAOEbcEmWoC/rHqGBAVch1:eQmhqRVm2myifAOscEj/rKGy6h1
+FileSize: 627 bytes
+
+FileName: ./res/drawable-hdpi-v11/ic_stat_download.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 7114a05b6f2c3bf1761d672a1e4b72822647f34d
+FileChecksum: SHA256: 765bc48130d4075e05223ca1b9ee05804f11987235e6e52ef2c931dc128ecda2
+FileChecksum: MD5: 3d0a38282f23accb92c92efb9699e3ce
+FileChecksum: SSDEEP: 6:6v/lhPiVPcRztgvPR9P8mMiS3LgPfbMN5zluzzVwCC4EVPiQdp:6v/7MPgzk8NMnbMN5zSeCw/
+FileSize: 298 bytes
+
+FileName: ./res/raw-es/proxysettings.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 91425d6323f1c802120f02cdc24b852a4a58b4fd
+FileChecksum: SHA256: 6ba6f2da3e3ce7ae841dd144f513dec15cd3d9a31406270045ca39a9a0035ea5
+FileChecksum: MD5: e3f0dac17685bad86279c8267c61c9e1
+FileChecksum: SSDEEP: 12:c3DsZwSvINWxekuAU0Ab9EJdimJAjy9lpD2wVboLo990L4P/pUBIyS5p4zI:czsuOhruUdifjkDv7P/plp4E
+FileSize: 816 bytes
+FileLOC: 10
+
+FileName: ./res/raw-es/info.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: ea740746b301f6199016ff7029f349bcae4264ed
+FileChecksum: SHA256: 1f87e0a75c71d96592250ceb070245e0cf0e4da9892c8f55841772564d7dbc72
+FileChecksum: MD5: c551ab08a16de652b504820ff0d7c036
+FileChecksum: SSDEEP: 6:2g7lv32cxJIGWCXPpUB5cw02CXPpUB71bK9g02CXPpoAWQey:plf25Gb/pUB5cw07/pUB5bx07/poAW3y
+FileSize: 369 bytes
+FileLOC: 4
+
+FileName: ./res/raw-es/proxysettings_old.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 00034cdc35618f16e3ff8e8f18713d42f4d2b910
+FileChecksum: SHA256: 3435d68a92f4fe5ad716c194affe5915566860874674f27f339045ea2386f0e9
+FileChecksum: MD5: 85ad15547c663c5de451d469bed6009b
+FileChecksum: SSDEEP: 12:+Bw15AmICKJjFpUBNQ0RI1Wo9II3icn7:QWAmICKtFp6Pmjig
+FileSize: 506 bytes
+FileLOC: 10
+
+FileName: ./res/raw-es/legal.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: bdf8726de79636deac642c67bbbc577727d0d94b
+FileChecksum: SHA256: 5a313a9ddb5d02e7de41ced25e891e1fd75a496ccee9166b7c2ba1fb39e3bef6
+FileChecksum: MD5: 63bb3d27a9de001964f111ad0b41e801
+FileChecksum: SSDEEP: 24:bd3nmCBxPHGHOufB+QNqQBmAqimKmiaPLIrsmRP1LZ2tePPmm+BUPAM3qCP1H58s:b1tHqD82qQgHim1v23XLZ42mmz6QL
+FileSize: 1 Kb (1370 bytes)
+FileLOC: 17
+LicenseInfoInFile: Apache-2.0
+LicenseInfoInFile: GPL-3.0
+
+FileName: ./res/values-uk/strings.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 8584ff808b599f7aab68db65ae8bf0674c9a684e
+FileChecksum: SHA256: 67798dfe2d7a75150e8fb4b29527a280c0885ea774692e59e11340632ccde5b1
+FileChecksum: MD5: 77f2f04237e5ca976eb081fc665bc908
+FileChecksum: SSDEEP: 192:MhUgxerGor1UAVo30rwuPBexa3jJ127yvNADQOp5EB6RK0MU4m:MhFWGorSV30jJexazq7yvNA2EHMUJ
+FileSize: 9 Kb (9456 bytes)
+
+FileName: ./res/values-uk/arrays.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 8f014b3fa6fcfee12379b267e543138e78ce01f2
+FileChecksum: SHA256: 64c8c35692b442763971af5e9e13ef83e0d4a91a006a67b67b52e21794bf9715
+FileChecksum: MD5: 6f3a3cb40aeea61156b8988143c38c8e
+FileChecksum: SSDEEP: 6:TMVBd77+8EatWpWYf/fGt19fPGrKWGtFKWX06f:TMHd77aaxSI3XWG3KWX0C
+FileSize: 259 bytes
+
+FileName: ./res/drawable/transparent.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: fb0637ade1dcaba0537e339975a427f1b2e64491
+FileChecksum: SHA256: 7436765923159089702ead554ce1f403b8893e8535dc258191c554f82018ffff
+FileChecksum: MD5: 3a0e1b5cc433d75ee35ed8b04b44f4ed
+FileChecksum: SSDEEP: 3:yionv//thPlE+tnM+wMLts5OCAadCmy42/uDlhlKxty2FR7WPVVp:6v/lhPfZM+wMRfC19s/6TIy2FRSPVVp
+FileSize: 122 bytes
+
+FileName: ./res/raw-cs/proxysettings.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: dab0c320a4b5fdb3254edb23cb57d3e21ca719fc
+FileChecksum: SHA256: 889fd7346365c8768b8ad71b9d7da31fdc9beba395f4cc08ba4d362674f15dd9
+FileChecksum: MD5: 2bb3c36c6af636e781cc7c8f489dde80
+FileChecksum: SSDEEP: 24:WtFtHMK1LaO4mu0osMGGwbvXIe2pNp4E:EFtsyjP7Mnw7h2/4E
+FileSize: 788 bytes
+FileLOC: 5
+
+FileName: ./res/raw-cs/info.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 0b31bc1324104fddc1f1dc93da5bbd61760239ea
+FileChecksum: SHA256: f4199775b110b9a0e1f5677e5a1e4b0995d0643ce67e5b388651066287eb9f2e
+FileChecksum: MD5: ea6ba18f528cabf0103d5b1d84893df6
+FileChecksum: SSDEEP: 6:gId+s/MtyhG7JIGWCXPpUB5Zh22QxCXPpUB7je0zwxCXPpoAjGMCy:gId+sZ4uGb/pUB5T/pUBWUn/poAqMCy
+FileSize: 331 bytes
+FileLOC: 4
+
+FileName: ./res/raw-cs/proxysettings_old.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 0d1395ae97d139a7bf36aeed37897305a74fce74
+FileChecksum: SHA256: b1502b697379f3c212201febbd7adefb7e0cb75888cdfa3eccf49e9e767cf855
+FileChecksum: MD5: 9ea33149f8e31febea6495c709c09c3a
+FileChecksum: SSDEEP: 12:rB3I1x49Q6mZq4exHQapUBInJS13z6wWx49QymFAL9xB7RFfXXBW:rwxWmZq1wapdnQhQx2O25RFfXX8
+FileSize: 501 bytes
+FileLOC: 8
+
+FileName: ./res/raw-cs/legal.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: df3688917c76f2f20b3aa790197e6ef743415bdf
+FileChecksum: SHA256: 897cc39a3b349f34966b3e598ed333694f04d8b42f7b94ecbd6ac29dbe58efc5
+FileChecksum: MD5: 5a91ba954e2215937e07f586aece3d42
+FileChecksum: SSDEEP: 24:ET9FPHGHOR++HpdNqQBGAj3NKmiaPLIrpmRP1m+tePPmIBUPAMOqCP1y58P5+W:YTq2RJXqQwa91v2IXP2md/Q3
+FileSize: 1 Kb (1335 bytes)
+FileLOC: 10
+LicenseInfoInFile: Apache-2.0
+
+FileName: ./res/drawable-mdpi-v11/ic_stat_warning.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 5b7922aae6dc34aecbffa4971eae0e79f1e4282d
+FileChecksum: SHA256: 0ef43ad376b2c7b15649328c0384d004d2a6f499750057498bfb5c84fa2c11cd
+FileChecksum: MD5: b45590adc2e9caa5f1c1bb37ffffa044
+FileChecksum: SSDEEP: 6:6v/lhPZ9navqNWxSv8QQyUkoLwkNeqJDlrzUoOOsBx1WHrs3VsVpavLWoz+Ip:6v/7fnakWxSXQ7kMRNeKJrzUoOOsj1iO
+FileSize: 320 bytes
+
+FileName: ./res/drawable-mdpi-v11/ic_stat_blocking.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: ee821c0cb99e0e3dccbd179d51382acdb3a18b26
+FileChecksum: SHA256: 83b6e952f0be891f06e7a76a12489ae73c1e141d406b8199aa5f21527d2692db
+FileChecksum: MD5: 57dc2ff285bfc36cae8debee097d72d0
+FileChecksum: SSDEEP: 6:6v/lhPZ6V+t9hs3RmxJn1HJL75e7dD6TQQi9BjZKTCCn1+w7GafmrIonp:6v/7Qct9hs3Yxp1HJhed2T6sCCnP7fId
+FileSize: 369 bytes
+
+FileName: ./res/drawable-mdpi-v11/ic_stat_download.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 2943df3fe0c49383628eb1abd841cd802550bb31
+FileChecksum: SHA256: c3c138698513839344fe64d12271a4b2c38ab1beb5929a43a5b10e152ac2f0f6
+FileChecksum: MD5: d8e0c80112427c2e1e5a39de0ad056fa
+FileChecksum: SSDEEP: 6:6v/lhPZEDAxdVqzKrjRFA+nmSHaa/cGIjXmxpp:6v/7t3gzKJm+WqTemt
+FileSize: 235 bytes
+
+FileName: ./res/values-ar/strings.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 65c2fd7e721e584b6c1ce889b6b813a569896d8b
+FileChecksum: SHA256: 98623d264caa65eda71778e184be33cdba98eb009f6012f7b1be40c07fd14359
+FileChecksum: MD5: 6342dc058ec23c0d3f217dbded7e61ea
+FileChecksum: SSDEEP: 96:MhRXUce8Gai7K/w+urcvJIN7lv2/HOQZJcUfc9sKGyp5KUm8:Mh1Uce8h4KIfrYJkZIuKcqc+KG9UV
+FileSize: 8 Kb (8295 bytes)
+
+FileName: ./res/values-ar/arrays.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 5631c2ca3295548cdfde936919eb78149cf52375
+FileChecksum: SHA256: 01d16f34eeacebd2e04b2299a8a0824f0ed343ece92955082dc5618d6b4844ad
+FileChecksum: MD5: 3de8823822714d6036d48b17757f9a4f
+FileChecksum: SSDEEP: 6:TMVBd77+8EatWpWYf+KgGU/9XZG3kNKWX06f:TMHd77aaxP3Z7NKWX0C
+FileSize: 254 bytes
+
+FileName: ./res/raw-fr/proxysettings.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: f8742fef9d6d1c72cacb11b6d30ed1391fbdbcb6
+FileChecksum: SHA256: 6d3dba9c19a13065d6f6af26fdf5d69eaa6260216e871742acb084070c3a8d72
+FileChecksum: MD5: 5fcdd1457bcb9056898081039e11babc
+FileChecksum: SSDEEP: 12:QfCiY4+GicoAro5IeQCwSmLRpF9kpvLYj9pUBIuWEPp4zI:Ii2Je/wt0pvsBpsW2p4E
+FileSize: 716 bytes
+FileLOC: 10
+
+FileName: ./res/raw-fr/info.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 04893d653166ea0e24aaddfa764c825e8203a2e0
+FileChecksum: SHA256: 414adceadd022bc4ae327e89fcc2f3d1fe3cc7614b56e11132475dba22034999
+FileChecksum: MD5: e6e2182721757b4fdf4c4d10faeda636
+FileChecksum: SSDEEP: 6:nYpqEsXJ46vGWCXPpUB5elCXPpUB7je0zIlCXPpoAIFI92:Ni6vGb/pUB5//pUBWUR/poASI92
+FileSize: 317 bytes
+FileLOC: 6
+
+FileName: ./res/raw-fr/proxysettings_old.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 4fba4f52adead9d260334edd8cc06f1cf9ccaa9a
+FileChecksum: SHA256: c25d19af1adfa1999381e63d94529a9449ad317cfdf3d5251e526ef7eaee8cf4
+FileChecksum: MD5: 30d941b78eadc1758d132c5cf8da31ca
+FileChecksum: SSDEEP: 12:hQiNwCnvFewyzxpFkPpUBsbWjNFeMFoG9Gvb:hXbvFevupH6NFeM8vb
+FileSize: 476 bytes
+FileLOC: 10
+
+FileName: ./res/raw-fr/legal.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 6f6530757709a1513d2af3d92de2807cdea27556
+FileChecksum: SHA256: 35d2e0d1c39575b6e3259aa027707b7d45b555b3709d47cc45e44157cf779078
+FileChecksum: MD5: 6bb669bbc2af3e80375c0bfa85230db5
+FileChecksum: SSDEEP: 24:pzPHGHOhBDANqQBkAOKmiaPLIrPmRP1kZ2tePPmt+BUPAMIqCP1K58P5+W:NqGB6qQGx1v2eXkZ42mtzlQ/
+FileSize: 1 Kb (1334 bytes)
+FileLOC: 17
+LicenseInfoInFile: Apache-2.0
+LicenseInfoInFile: GPL-3.0
+
+FileName: ./res/raw-sk/proxysettings.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 0bc9bb560e11b8d3ef20a92116046044c814f2ad
+FileChecksum: SHA256: 3245240743d254e41691c4289df4f325efe05a9cf3a7f2814f2f2679dd4d53a3
+FileChecksum: MD5: 9eeaa6d08705da8fbbaa91a5831177c8
+FileChecksum: SSDEEP: 12:EReUnVFWaQzqE+yw5WKjyW8LKUWUo1PWXxVWMSXo9i7/GAPpUBIkp4zI:EReQkqE+BQLRge67/GQpCp4E
+FileSize: 782 bytes
+FileLOC: 5
+
+FileName: ./res/raw-sk/info.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: bf4250870e28d3ef34833f6137875cf5af3c4bde
+FileChecksum: SHA256: 2db7bfa8460915daac3422e40a6754fb74070f0d9ab2f4301077332124d2242d
+FileChecksum: MD5: 92308dbe330148034f2899b514ab62b0
+FileChecksum: SSDEEP: 6:u0mOCJ8RsIGWCXPpUB5Zh22lWG92CXPpUB7j7fPHQxCXPpoA+mA8:vrRHGb/pUB5kW7/pUBD3n/poA+mt
+FileSize: 343 bytes
+FileLOC: 4
+
+FileName: ./res/raw-sk/proxysettings_old.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 920b040655871ad90ddd7e19e5b2725b60597cd6
+FileChecksum: SHA256: d984583117679e109d844b212c986d986b6b0c447290aedbb5a93c128eb6695e
+FileChecksum: MD5: 0b7ae0b241b6902ae75ed9e8b584158b
+FileChecksum: SSDEEP: 6:gfnXfrLwEBRcAMiJaxrfEggpUB7cfTVKACWCBRAhdG9VSOYWRcE0zBeBKp:anXJMiJ0fKpUBkTVKdqhA9cOVcEK8BW
+FileSize: 477 bytes
+FileLOC: 8
+
+FileName: ./res/raw-sk/legal.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 88c44987f233c5eef3e009ddfd614de256276ff9
+FileChecksum: SHA256: 2fcfb184f183a355c6d4dec3cf58728117e59095d7d7f7fae70285a3cbaaf0ef
+FileChecksum: MD5: a0998790a3ac30c73e9f8aec0e8e74ae
+FileChecksum: SSDEEP: 24:ERViPcPHGH4u+reVNqQB5RA7xKmiaPLIr8mRP1qtePPmXBUPAMfqCP1h58P5vW:4ViQqhPqQPRq1v2HXE2mmCQ5
+FileSize: 1 Kb (1374 bytes)
+FileLOC: 11
+LicenseInfoInFile: Apache-2.0
+LicenseInfoInFile: GPL-3.0
+
+FileName: ./res/values-ja/strings.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: c468a2926952dde4330cfad31149dee7f1a4a870
+FileChecksum: SHA256: d2362a3dd732d4402b948aef582e38af6904bb3d2ccb08f70f5eac7c205c70da
+FileChecksum: MD5: c925cb37cd8cba7963f6d91b3e6270bd
+FileChecksum: SSDEEP: 96:MhNmHrt/hNIXCqmOGqndwRMSbShIOCA6alsQj/qqAOadTUSU4:MhNmHrtMCq0qd+WfReQ7qqAnZUh4
+FileSize: 7 Kb (7477 bytes)
+
+FileName: ./res/values-ja/arrays.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 51ad88f7ce762b3caa6867c5fc7a67525b64e597
+FileChecksum: SHA256: de789cf434c9bf733571429173d248ecf1774bd9e8e5e49d76e56ad7f2cfbd59
+FileChecksum: MD5: 6e35fff0082ec680b2d4d1a11c2e19c7
+FileChecksum: SSDEEP: 6:TMVBd77+8EatWpWYf4/ZRGtA/iZvZG8fPB3KWX06f:TMHd77aaxPn0EifdfPNKWX0C
+FileSize: 230 bytes
+
+FileName: ./res/raw-it/proxysettings.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: c6a21b83520eec05e21cc9134cba4a31faf6c9f8
+FileChecksum: SHA256: 13f3f1dffff30c9a4059ec00f1a7dac64bc3d5b62dbe24adbdcf700b00ae0290
+FileChecksum: MD5: c9869e70618e5a1da6d457e23b96b40a
+FileChecksum: SSDEEP: 12:Au+QvZ00Ii6Yt0+ANqIg0eQLiv0zEDsoO0EKDjWRMg9scQgs9pUBIyIE70NZPp4E:AVCdoEeTCnWMncQxp4IPp4E
+FileSize: 769 bytes
+FileLOC: 5
+
+FileName: ./res/raw-it/info.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 8a37214441b7252f827f94dff8db1299e0607f66
+FileChecksum: SHA256: 976bbd0fe6e94a94a173bc8c94c0238db2edd6ecffe6c2d226f3d1c91de6a9ba
+FileChecksum: MD5: 561c41221af3eb52da79511d779d784f
+FileChecksum: SSDEEP: 6:4EZyhqpxJIGWCXPpUB5GxCXPpUB7je0zwxCXPpoAS0I/:Xc/Gb/pUB51/pUBWUn/poA2
+FileSize: 323 bytes
+FileLOC: 4
+
+FileName: ./res/raw-it/proxysettings_old.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 2df8a3c7fd654edcb98c69de597883388a667d00
+FileChecksum: SHA256: 35ebc1ad26690e0413014d10562d876dcd4d8bcda09c05c5c85a5e02480971e4
+FileChecksum: MD5: 3ef0ab209fbae83dbafc615f2740472b
+FileChecksum: SSDEEP: 12:WRzy6QiEFDE5MxcOpppUBh0sWtSL9TaovE:WRzy+5MJPpW0sWEpaf
+FileSize: 531 bytes
+FileLOC: 8
+
+FileName: ./res/raw-it/legal.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 899dcf15206068e5a546340e65d7b6753cc1ca25
+FileChecksum: SHA256: f6bc4a309cd5742ebed6257dc273e83af8b5e9eff2c6ece065b59cffab8a066d
+FileChecksum: MD5: 2889d0cf13f2ce7d181078a5bd704878
+FileChecksum: SSDEEP: 24:M9uPHGHOMtW8DeoAPNqQBaAqhKmiaPLIrymRP16tePPmfBUPAM1qCP1x58P5dW:PqbtsqQAHh1v2tX02m+sQ1
+FileSize: 1 Kb (1379 bytes)
+FileLOC: 10
+LicenseInfoInFile: Apache-2.0
+LicenseInfoInFile: GPL-3.0
+
+FileName: ./res/values-it/strings.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 81980cbe3c9d14bde4c39cbd332c2249016dbaf4
+FileChecksum: SHA256: c6aa31b556949a1b9b2cc4fa5b9c77112b8a561b714b76135d88b1623533625f
+FileChecksum: MD5: 9d695d2daaff0ed2900cae22c3bff229
+FileChecksum: SSDEEP: 96:Mh4PnconEx28Vb2IpO+R6EoaZcRIRb6PtJ3rHUPY:Mh4PHEx2g2l+OaZgIRuPtJbHUw
+FileSize: 6 Kb (7119 bytes)
+
+FileName: ./res/values-it/arrays.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 706c107a003beea54e71302bb7039e43b8c18f28
+FileChecksum: SHA256: d657153f3c30f9d4f2202d201abddf5e227007be90a9b0c59f6ea2e2dbb5d87e
+FileChecksum: MD5: 4d005dbc291989c2fd6af6d5ae970a69
+FileChecksum: SSDEEP: 6:TMVBd77+8EatWpWYfFkEGHGL8BZGRGEp0KWX06f:TMHd77aaxCkZeSZ0Tp0KWX0C
+FileSize: 241 bytes
+
+FileName: ./res/xml/preferences.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 3f5bf6211020956c2b7055d01718b65b7f8ec99c
+FileChecksum: SHA256: 289a098425dfe8837f0bc213f2173488c5b0b1cae049565409455c9b54a1cf02
+FileChecksum: MD5: 573ae9adf19f5208f98d40b77e4514e2
+FileChecksum: SSDEEP: 12:TMHdDAyvASpBXvASQSKZQk2QPxzaQPc4QmJ5y9AvERdsZ0v40QJ5y9A5dZtFvxsi:2dBtvdk5Rl+Ky9q4P1Qfy9PE96Lc
+FileSize: 1 Kb (1218 bytes)
+
+FileName: ./res/xml/preferences_advanced.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 0dd18f71101fd348b633b1ebe430ade149e60707
+FileChecksum: SHA256: b0d7024d4ce5dac6e41bd07c1befac72df52e1057fe2a2e3f15c5412245f4c09
+FileChecksum: MD5: 6d23a6dd913e4c51675744351083ac51
+FileChecksum: SSDEEP: 24:2dyXfvB9wo1etyszPrylDQ0T3mvXrxEE2dS+2Rd6hKdF69d2xkZaMLnOZSN0NU6Z:cyx670T3APJaB0UYPa8
+FileSize: 3 Kb (3449 bytes)
+
+FileName: ./res/drawable-xhdpi/ic_menu_refresh.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 17f7de649b19a39f52f95a249efb202054518fd5
+FileChecksum: SHA256: f1b36670d7a93e7dc7e86f7d55eeb7a79948154f0ad1e4aebfaceb4c4e3cc894
+FileChecksum: MD5: ce0bb65c390385155828aa401d9ddbdb
+FileChecksum: SSDEEP: 48:HfcigzZISsqiPnuSqJdL4oCfx89x+tQd/yQnN1WA06vQmsCsZCmErS:Eigzxsqi2ndzC58f+CjnNgA06vjDJVS
+FileSize: 2 Kb (2857 bytes)
+
+FileName: ./res/drawable-xhdpi/ic_stat_warning.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 7424a115bedd035fca0d225037f43a04ad842e2c
+FileChecksum: SHA256: 49aac8684fc43b602c7d7a35597506376d9726b2a269a1bc5bb1b5d38e9b6bc6
+FileChecksum: MD5: 56f70cd5c56e90ca9aadaa6bb2c8a6da
+FileChecksum: SSDEEP: 24:s5WfiqNswb8uDz1zYBh6xwifHjH1hIxJDLu4EVfqL8a/tzfLBM6di4nlkkmKJEK3:sUfiQTbOBQn1hEVUyL8a1zOEnCkOKh1/
+FileSize: 1 Kb (1511 bytes)
+
+FileName: ./res/drawable-xhdpi/ic_menu_preferences.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: bdc811bce30d7f1b962ab94dc1fbf8da1acd5e1a
+FileChecksum: SHA256: 84c8d787a0a8c035c0a29e049e79d256b60b7420757f5b4ca49042db9c7be764
+FileChecksum: MD5: 558a801ad802b318e18f1435745dab2f
+FileChecksum: SSDEEP: 48:Hf+H5WhgxQYyBTZf1EwfsaxDkfxwWXKAaMMh/KZqFSMGRcqTCmErS:AK1xUiDkfSGUFfGS7VS
+FileSize: 2 Kb (2507 bytes)
+
+FileName: ./res/drawable-xhdpi/ic_stat_blocking.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 4fdbfb2ededdc4889352bc405c75bf7487e965a3
+FileChecksum: SHA256: 2ddb20741fc6ffc8f294bfdccadbce8ebbfcaeb940d0bcc92312bac4a3b6cf23
+FileChecksum: MD5: 42f7780bee2be31d812fd963d506428d
+FileChecksum: SSDEEP: 48:qz9TOUJkN0DVSwfFW7a4zzuHkKsOsw76BxBgz4ujryHC2cn:qz9TOUJkiVbFW7Xz7bOsQLjHyHEn
+FileSize: 2 Kb (2221 bytes)
+
+FileName: ./res/drawable-xhdpi/ic_menu_help.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 3b39b000f5ceb06c405bd8d625afa49f74f60fca
+FileChecksum: SHA256: 717017f4ef09ed0f2feec601a38d5520b02d13c3bf3db3b861f4275f4e9e7fc7
+FileChecksum: MD5: 31202c2c5abba309e7ec38d520e338bd
+FileChecksum: SSDEEP: 48:HfFCF7TgLzPT8grIPUqIPK+cdJJGWRTU1K1jCB26k2CmErS:MaL7lrIcxPK+AfGWRTSKikjVS
+FileSize: 1 Kb (1840 bytes)
+
+FileName: ./res/drawable-xhdpi/ic_launcher.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 78156b16b44484e8380d25195b969e9f0c9f018e
+FileChecksum: SHA256: 9381de0c81ca29cef0356400c4731dea0cbdd49d78eb8353f99a793f98842b03
+FileChecksum: MD5: 51c5ab3ce822a27ab74d879e67148811
+FileChecksum: SSDEEP: 384:+XE05wZM36ioKGloKozXwMHMK95Pw4yW3gA0QqEfPANj8vHD:U35kZ9KGlG/PxffVHf4R6D
+FileSize: 16 Kb (16829 bytes)
+
+FileName: ./res/drawable-xhdpi/ic_menu_info_details.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 862a5a35432248d213e6f6d34c35df0e53d0c1ae
+FileChecksum: SHA256: 189afaf4fe970c068e4e81f44cd5fa510b733e9290ce0c7bb2d27bba29191160
+FileChecksum: MD5: 2b8362db1de8568d0f25f108a5f75b1a
+FileChecksum: SSDEEP: 48:Hfzr8WId42WHNmQ+QkYKNt59aqWJl6S+ijCWVCM/q4J+OfcLmGlCmErS:v8Wi42WHNmShKNt5gx7DVRdU9mGIVS
+FileSize: 2 Kb (2763 bytes)
+
+FileName: ./res/drawable-xhdpi/ic_stat_download.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 1cafaf05cc6d606e9e33e892c2f938906a512054
+FileChecksum: SHA256: a529b9de6d7d8ede6ed45b39cb27478bf26fc8327d7109a26a5626c42d191c39
+FileChecksum: MD5: e6da66e56dfd7d144b893dc424a28108
+FileChecksum: SSDEEP: 24:RPiCtJ45kU3fbStSPrbvcpDOvl+GsvSrgnoXHND3j:RP3J45kyfutaVlyvSrgnodDT
+FileSize: 1 Kb (1297 bytes)
+
+FileName: ./res/values-cs/strings.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 2d5c8747e4519b5c2316185313c9af6f71fedd28
+FileChecksum: SHA256: 56358a8f00b54a556186f20c1d4adaadeceebae02c64d71a2b3b0e3c554692ae
+FileChecksum: MD5: df362ba02140d8856c0d6081eb65fb2b
+FileChecksum: SSDEEP: 96:MhJPt/ClqI82e/laPACmXAx1N67j/UxFKxgtNchUqD:MhJPtKqI8IdmQx1N0j/UxFKGt2hUy
+FileSize: 6 Kb (7087 bytes)
+
+FileName: ./res/values-cs/arrays.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: edb5c628db57f78d89adb76ae4accc216412f97d
+FileChecksum: SHA256: 21701951ce90b23676258be7cc2487b4e5e03b475651e87723dd306d52022e35
+FileChecksum: MD5: 8cf532d9eba88b39c2021b311b60e8a3
+FileChecksum: SSDEEP: 6:TMVBd77+8EatWpWYfGZBrGrMwxXhGZ2JUR3KWX06f:TMHd77aaxLfPcXhM2JU9KWX0C
+FileSize: 235 bytes
+
+FileName: ./res/raw-he/proxysettings.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 696afe06ce47a0c1aa7a8d965560ce15a42e27c3
+FileChecksum: SHA256: 494388fe0fd9dc16f8bd51c2cf3c1c92116570701696f040af5d25dbfae1daae
+FileChecksum: MD5: 9e919439fb6e47cdd4844dda8d03baa6
+FileChecksum: SSDEEP: 24:zhN7IkM07iozz6mqGeg6WxhpissilupVp4E:Z6mDevQiH4E
+FileSize: 859 bytes
+FileLOC: 5
+
+FileName: ./res/raw-he/info.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: ea247b9096351a8685a7e26cd0a04be1ed8a42aa
+FileChecksum: SHA256: 9369f7c1c0e3f1f3aa5febd01a015c66b7a7ca64a6b6be3238917f85338c8dc3
+FileChecksum: MD5: 59d2732a0268d79b6c2a1e1d4ee8f828
+FileChecksum: SSDEEP: 6:CIdcpI8ueyI9KtNVeyxJIGWCXPpUB54x09mxCXPpUB7fDggc8MmxCXPpoAy33IZb:CIYvyIItNVDMGb/pUB5r/pUBzDch/pou
+FileSize: 380 bytes
+FileLOC: 4
+
+FileName: ./res/raw-he/proxysettings_old.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 3a7699e83ae792a2ca619eef27d2087664e2862c
+FileChecksum: SHA256: 5464f39dac371f24e3f76d1370ca70c3ef48de17989a9022eaa17e7a97403e24
+FileChecksum: MD5: e80484a4ad8c81aa2cc7a30c775f7b83
+FileChecksum: SSDEEP: 12:mtPGRdFy1qb5J20ydyAa9Az5u9pUB6UCtEBFsS0y7RyT9TOY:mthW5Jya9M5mpOCtELs+IOY
+FileSize: 560 bytes
+FileLOC: 8
+
+FileName: ./res/raw-he/legal.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 9468438ec1946c7cbe9cc0a4c02f597664f2043c
+FileChecksum: SHA256: 1fcc1280a5bc44509ee3d377ba6bda37c6cf56b883478408cce72f285cf75ee7
+FileChecksum: MD5: 223984d871759be57816f83584fc2f5c
+FileChecksum: SSDEEP: 24:dp3PHGHO5FDXNqQBsAsKmiaPLIrNmRP1Y+tn9PPmSBUPAMWqCP1o58P5SW:Tqux9qQ6Z1v2cXNnBmXnQV
+FileSize: 1 Kb (1421 bytes)
+FileLOC: 11
+LicenseInfoInFile: Apache-2.0
+LicenseInfoInFile: GPL-3.0
+
+FileName: ./res/raw-ko/proxysettings.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: f8742fef9d6d1c72cacb11b6d30ed1391fbdbcb6
+FileChecksum: SHA256: 6d3dba9c19a13065d6f6af26fdf5d69eaa6260216e871742acb084070c3a8d72
+FileChecksum: MD5: 5fcdd1457bcb9056898081039e11babc
+FileChecksum: SSDEEP: 12:QfCiY4+GicoAro5IeQCwSmLRpF9kpvLYj9pUBIuWEPp4zI:Ii2Je/wt0pvsBpsW2p4E
+FileSize: 716 bytes
+FileLOC: 10
+
+FileName: ./res/raw-ko/info.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 04893d653166ea0e24aaddfa764c825e8203a2e0
+FileChecksum: SHA256: 414adceadd022bc4ae327e89fcc2f3d1fe3cc7614b56e11132475dba22034999
+FileChecksum: MD5: e6e2182721757b4fdf4c4d10faeda636
+FileChecksum: SSDEEP: 6:nYpqEsXJ46vGWCXPpUB5elCXPpUB7je0zIlCXPpoAIFI92:Ni6vGb/pUB5//pUBWUR/poASI92
+FileSize: 317 bytes
+FileLOC: 6
+
+FileName: ./res/raw-ko/proxysettings_old.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 4fba4f52adead9d260334edd8cc06f1cf9ccaa9a
+FileChecksum: SHA256: c25d19af1adfa1999381e63d94529a9449ad317cfdf3d5251e526ef7eaee8cf4
+FileChecksum: MD5: 30d941b78eadc1758d132c5cf8da31ca
+FileChecksum: SSDEEP: 12:hQiNwCnvFewyzxpFkPpUBsbWjNFeMFoG9Gvb:hXbvFevupH6NFeM8vb
+FileSize: 476 bytes
+FileLOC: 10
+
+FileName: ./res/raw-ko/legal.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 6f6530757709a1513d2af3d92de2807cdea27556
+FileChecksum: SHA256: 35d2e0d1c39575b6e3259aa027707b7d45b555b3709d47cc45e44157cf779078
+FileChecksum: MD5: 6bb669bbc2af3e80375c0bfa85230db5
+FileChecksum: SSDEEP: 24:pzPHGHOhBDANqQBkAOKmiaPLIrPmRP1kZ2tePPmt+BUPAMIqCP1K58P5+W:NqGB6qQGx1v2eXkZ42mtzlQ/
+FileSize: 1 Kb (1334 bytes)
+FileLOC: 17
+LicenseInfoInFile: Apache-2.0
+LicenseInfoInFile: GPL-3.0
+
+FileName: ./res/drawable-mdpi/ic_menu_refresh.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 8a919181214e95955843e28516a22e50bf5475db
+FileChecksum: SHA256: 2e65a0d26b9690ac6a603de42ac99b8c3c6ca66207e33aa1ba2a4ab578119942
+FileChecksum: MD5: 7c848846df23659b070f0b03d95fdb9e
+FileChecksum: SSDEEP: 24:UfOMc/+zyFAeZEI0JYEcup7g+QShgJdGdRLKdvQHzjgnVuGJCoGlJmoVCOMzjhEq:UfVgPaI8Xci2GzL+vYz+QGJxGZCOMREq
+FileSize: 1 Kb (1278 bytes)
+
+FileName: ./res/drawable-mdpi/ic_stat_warning.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: abf45ace0e2eb0753307130a9d88be761f60dab4
+FileChecksum: SHA256: 1cd3b0278afc3d834b7a4580270e481cc41375fc00541b71676a95721bd7d9ba
+FileChecksum: MD5: 8117f149450b0f996d5498da88665544
+FileChecksum: SSDEEP: 12:6v/7oTE+t9eGbq7A7UU2jlM7r9gmLJ9AjLZc0XZvjn4iSJYdebMKgEWq7:+UgpJF2xRJ94j74iSJNbLSw
+FileSize: 705 bytes
+
+FileName: ./res/drawable-mdpi/ic_menu_preferences.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 7f9f3fe2e52efbe8d9a86e14befc7d60d00ba792
+FileChecksum: SHA256: 8717c24c84b3c94bab5f2f1d02fb1e316f5ea355a9fe8b61e4198184cd25f23c
+FileChecksum: MD5: 7caa5eec7fbe5ace5d8a74b8e487f670
+FileChecksum: SSDEEP: 24:UfOKbe1uUPb6rlRmXiyscyYonY2kL7QhzjhEMH:UfFe1nPbk/rl/YwYchREq
+FileSize: 1 Kb (1142 bytes)
+
+FileName: ./res/drawable-mdpi/ic_stat_blocking.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: e708b6edb422cc952787f84868ec5290d6c8e2a1
+FileChecksum: SHA256: 5b6be27b140c9764430c8355419fe4ce9798fcb47b61037edd28a901f20ee85e
+FileChecksum: MD5: e10c3b31b70a76d8794f86a628691714
+FileChecksum: SSDEEP: 12:6v/7yDsAOI4XRkbgjimlVW8C75br3p7qclSnFFUL86VBMy31rEcLTrJ3GRwzuMX:xKoced8orZVlS+xXMkpZPJMWX
+FileSize: 786 bytes
+
+FileName: ./res/drawable-mdpi/ic_menu_help.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: e82f8c60aab77561e4a0a542ada5f057db33d5e2
+FileChecksum: SHA256: c901af5b800d687784b4074d6f45abcc9c54d294656f7ccad67512fc88ee0124
+FileChecksum: MD5: 6a7c9430b426c21bb0d37e8e7bb92920
+FileChecksum: SSDEEP: 24:UfOxEIvlArlTBOLlA9P4eLam3b92HfWDzjT6EM9w:Ufid8QlA9wunL9Eoj6ET
+FileSize: 951 bytes
+
+FileName: ./res/drawable-mdpi/ic_launcher.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 42584b23e8ea6ea8e152e842e5fca7d7695d24e4
+FileChecksum: SHA256: e5148c7b749db854689c2e30c2c78179dd50bcc2f9593082b05ae771f271a93f
+FileChecksum: MD5: 9948c262f0acdbdddfe3cba6d6196bd1
+FileChecksum: SSDEEP: 48:I389Ft8M1GKik9f0KhlAMNwkNu1k22PblZtO3Rinx2vjIRLIIouLtI:sYXGfk9s8lA/kY1SblZtMREx2vjIe6I
+FileSize: 3 Kb (3387 bytes)
+
+FileName: ./res/drawable-mdpi/ic_menu_info_details.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 59aa927d4ba6b7a448165f2c13876cbd3ded0e2b
+FileChecksum: SHA256: a22b4832509ba168526cee239b7d502ad5c3ee5a82a21a32c69365955d30be2d
+FileChecksum: MD5: 9db8668c51c00120cf544b1e2e98e072
+FileChecksum: SSDEEP: 24:UfODZQy9d8fxBOQmY4U/TUoaV1X8vz/Yzm6rU8IKN7Tx4ztcYLf3zjhEMH:UfwP8ZBbm1U7UoaV1w/JPEhCtcYL3REq
+FileSize: 1 Kb (1237 bytes)
+
+FileName: ./res/drawable-mdpi/ic_stat_download.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 0e71ef393e5339dca21c8fb06d6362202d2673df
+FileChecksum: SHA256: 3e4b84877b0ba9248ecebf1ef869b8c0e8d6db7d9539898164aaaf1eda991c10
+FileChecksum: MD5: 212c749d8857619c6ab90b69c31f07f8
+FileChecksum: SSDEEP: 12:6v/7MiPSCVzwPCY2b+vA3e9u5mLkACZg75LP+gUfvBvpUuTLc:4SYz6zvAUAmL3NLP+Xj8
+FileSize: 582 bytes
+
+FileName: ./res/values-hr/strings.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 160f13afa585077c18a75990bc519b1495a314e8
+FileChecksum: SHA256: 8ac01ff8dac2b37febb9c3ecdc54f475ba81129e765841d49f9adb86757d75ae
+FileChecksum: MD5: a6cd1cdce663ec8b39afa098eaf49db4
+FileChecksum: SSDEEP: 192:MhJO6d+UEx2g2kqQzKJ7dvS2xqbtOU0hE:MhJO2LBzhq5OUwE
+FileSize: 6 Kb (6941 bytes)
+
+FileName: ./res/values-hr/arrays.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: e702e57c5e01a86437ceca319a7f16e4cafd0e7c
+FileChecksum: SHA256: 3fcd0bb8ccb3d1b1c5ebf46f91d3cdd2efa38c56090ccc77631462ec24043ea4
+FileChecksum: MD5: 9a35b456598eac2fbb549ce0a45f1524
+FileChecksum: SSDEEP: 6:TMVBd77+8EatWpWYfkBZGkJoG3mvFKWX06f:TMHd77aax9Z6ZFKWX0C
+FileSize: 235 bytes
+
+FileName: ./res/values-de/strings.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 42f7ec635629c5422de6b1d6d305568b2c6a3545
+FileChecksum: SHA256: 1ce12fb9a07ca3233f89ea7d42736e5476a7579b851d0cecbc9159f4ba41ca49
+FileChecksum: MD5: c17e1bb8feb8f198ee4d3859cf7b8365
+FileChecksum: SSDEEP: 192:MhUzswwPXgQyNPw4he7G+HCRbJDXumUu:MhUABENYHCDUu
+FileSize: 7 Kb (7262 bytes)
+
+FileName: ./res/values-de/arrays.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 2ae58b2fe89e53d4f68ad6753e3e585bcc7eaf2f
+FileChecksum: SHA256: 37b0650186e05447eb4501acca3f3ec7a254a36ee25617029332b05a4d6129ac
+FileChecksum: MD5: cb0458c660242cc46b35d305442f1131
+FileChecksum: SSDEEP: 6:TMVBd77+8EatWpWYfFkA5XhG93iZG5i66/KWX06f:TMHd77aaxCkwhyWzvKWX0C
+FileSize: 251 bytes
+
+FileName: ./res/values-es/strings.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 6158410ff935b5895fe4f8db67a041fa26ec8fa1
+FileChecksum: SHA256: 398b039ddf9765406384dcb55052f370892168842d596a84ec4334a2ad81f7cf
+FileChecksum: MD5: 6623ca7bee95ee304f1d26f0c81a6643
+FileChecksum: SSDEEP: 96:Mhg4h2ZUdk0kYR9/slggxZOEoejSehC/r2p1prv6/8/aZYUNDB:Mh6ZU6/YzEl1xvVyyJv+vCUNl
+FileSize: 7 Kb (7427 bytes)
+
+FileName: ./res/values-es/arrays.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 079c3b65536a9f3b464a5da405fcb64ed47ad38f
+FileChecksum: SHA256: 4ddd75f9a7ec62bc6a652d4b05e10f4060c8fc60430152076cc11d60342aa2fc
+FileChecksum: MD5: 439198d90a6f670c4e88dd45697d1062
+FileChecksum: SSDEEP: 6:TMVBd77+8EatWpWYfFkEGHGlXhGi9L0KWX06f:TMHd77aaxCkZiRZ9L0KWX0C
+FileSize: 242 bytes
+
+FileName: ./res/values-hu/strings.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: dcaa72c175d62daed8f5a7b809fe2489481a2b78
+FileChecksum: SHA256: 7accb972e5c4ef59a01c673b77953e847a8d239b3e014c27467bf266c502025f
+FileChecksum: MD5: 6e6516da1d8663a0ef8f7684a3921c57
+FileChecksum: SSDEEP: 192:MhLT9iv/rQ1svupMtjxJs3Z5+Tho/5EIUl:MhLRmzQ1UupMtjxJITioREIUl
+FileSize: 7 Kb (7380 bytes)
+
+FileName: ./res/values-hu/arrays.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 08fa14833fbdeebca9073c4247d05c80f512e13e
+FileChecksum: SHA256: 103fa3a7ebeedec955f6e0310b16239be93cf85cf593c6b0f06eaf4b4d05f195
+FileChecksum: MD5: 29c93ac048ea45d984bf1e6d538f0043
+FileChecksum: SSDEEP: 6:TMVBd77+8EatWpWYfFkmE1GFhGd4KWX06f:TMHd77aaxCkmKqhu4KWX0C
+FileSize: 238 bytes
+
+FileName: ./res/raw-hr/proxysettings.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 258362dd4f495ff8b79c03f0957e3dc09eb3b7ee
+FileChecksum: SHA256: 949639a5336206a4fa8aa2753639e766a7dfddcb61f53f320a7a2cdaf1d1d971
+FileChecksum: MD5: 7c7f906560d9eb8b379c141d56edc43d
+FileChecksum: SSDEEP: 12:gPD8cl0YSyb0yZLo0DQFvyg0qIfK0+RqbDPXN0SywXo9rp0QTX4HPpUBIUfp4zI:kyJyZLgyXAqP4wY6SIvpufp4E
+FileSize: 760 bytes
+FileLOC: 5
+
+FileName: ./res/raw-hr/info.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 73c5d23a87b560799dc9666fcaf831732beabf57
+FileChecksum: SHA256: 3a385c35419c29027047e84240f911598863f89d689ea60035c33c02212c5937
+FileChecksum: MD5: c16bbc1d9145d4190c6010b9a3ad108c
+FileChecksum: SSDEEP: 6:Ys6ijzXeI4yi7JV+WCXPpUB5QoLD02CXPpUB7qDY02CXPpoASE4t:YsHnFw+b/pUB5H07/pUBuDY07/poAQt
+FileSize: 348 bytes
+FileLOC: 4
+
+FileName: ./res/raw-hr/proxysettings_old.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 2d32d57f13d628e8a9538d5bba726670a5cee166
+FileChecksum: SHA256: 1ec3d4d7d35b5768e0b2d009ae78f821016ffd903aa5f904d78bdf1d1079b34b
+FileChecksum: MD5: 7591a6d629761044d4f152ac286de0ba
+FileChecksum: SSDEEP: 12:ZVEpOe2B4sxAd4PVNrESpUBFLEUsxt59vX48s:0+diSpUOX48s
+FileSize: 483 bytes
+FileLOC: 8
+
+FileName: ./res/raw-hr/legal.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 1ed894bf109f122334be252ce7ea8dc8d03610db
+FileChecksum: SHA256: b8786da0d51578935b4cc7cda6fc552fea444c7b07874b15048ed05ad9919981
+FileChecksum: MD5: 53862cd77098ff23d61e45efa009bc8d
+FileChecksum: SSDEEP: 24:XEPPHGHONBUaXfNqQBsIAw+HKmiaPLIrqYPmRP1nNtePPmLgBUPAMkjqCP1nO58x:XEHq6PXVqQaIJI1v2qYeXnD2mLFkeQnH
+FileSize: 1 Kb (1336 bytes)
+FileLOC: 10
+LicenseInfoInFile: Apache-2.0
+
+FileName: ./res/drawable-hdpi/ic_menu_refresh.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 830e0d9ebe31bb8c08d2eaa9f229e5f5d8f84c3a
+FileChecksum: SHA256: 5cce61b07314ea8c3b0adad1a76bba81b9e4199af2a60ae72dd8fc83484ad685
+FileChecksum: MD5: 0876d6757135e15ccc7671f973a0a771
+FileChecksum: SSDEEP: 48:OfX+YNKpxviiZDEqHS42F8EremnXPV6osD3+5FXLREq:pJpwiZDEqybDemn/V6E
+FileSize: 1 Kb (2025 bytes)
+
+FileName: ./res/drawable-hdpi/ic_stat_warning.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: d6e1ce098736aae9467496915f6fa49b33c435d6
+FileChecksum: SHA256: 97c5d82ecb0b7e32d0f267cae0b33d3476e8c58ce02671cc8c02b335f5f4d2b3
+FileChecksum: MD5: 7cb265c62f7ec65a744794f9dafe5637
+FileChecksum: SSDEEP: 24:y59t/JmzAvdPvONlNyZhUemwgYOKqfEtkKEj/GtlJitS7:yxJmzsdPEOOYcfQkKE8lV7
+FileSize: 1 Kb (1064 bytes)
+
+FileName: ./res/drawable-hdpi/ic_menu_preferences.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 4ced46eb0b42bca27b062ac9d980e20e9ab96bf0
+FileChecksum: SHA256: 981bde58b2f9d53843434ef0cbc3c52bf39581c25f08af6fa7d11be226dd9382
+FileChecksum: MD5: d06bede3e101b0288a12962867e45112
+FileChecksum: SSDEEP: 48:OfPpRBrZL/1zCIA9xAqq1LgHZH50ZOiA6WH0WREq:irZL9zCIAfAH1s53LUE
+FileSize: 1 Kb (1851 bytes)
+
+FileName: ./res/drawable-hdpi/ic_stat_blocking.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 380f13d357300aef99f27d1cdb5c2d823196e010
+FileChecksum: SHA256: 03a3bc1282d87c3a810499db7e54b9b80a974faa3205405c98a6963da07e4bc4
+FileChecksum: MD5: f40bad91bd6e606d0d8144a7b0e8d9f6
+FileChecksum: SSDEEP: 24:Ztv6HWFGv4ZnVYrBp/gfaDSixPKNyYOOA9ZSTmryrwzWaUv2vNOPu3c:LyHWwCirBpUa+ixiNyYOOEZSTm3zWaUj
+FileSize: 1 Kb (1422 bytes)
+
+FileName: ./res/drawable-hdpi/ic_menu_help.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 55b558b2247005704dcf24667e9ada3cd2cf2c34
+FileChecksum: SHA256: bd4f6e99d96eae754beba5bfffa13ce407380761b162cbb4deb83d38d0dc6a23
+FileChecksum: MD5: 764a3d110a3896f0ce60680d444e3cf0
+FileChecksum: SSDEEP: 24:Ofe4bDWt8w3T3sWlDXs1V5liOmmy4VgjfBexmB2ozsc8HCT7tZLagAzjT6EM9w:Ofpbc37ZpIV5/VVoZexmBBb3vazj6ET
+FileSize: 1 Kb (1391 bytes)
+
+FileName: ./res/drawable-hdpi/ic_launcher.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 2e32108409fbf74c8f03c35fcad21a06195324cd
+FileChecksum: SHA256: 777f1890851866dcb94b3b692e49da69ab9184935a3a62e1289af9784eaaacee
+FileChecksum: MD5: 2cc8f565e721ff130d616424646c66d9
+FileChecksum: SSDEEP: 192:iS0tKg9E05TKGHwcDc0nWX5Z0Qa+ZCCGRwJ1SWJjG6UYspBFKZbYyqRL:WXE05mXocTX5ZDZ5GRoPNUYsTFgYv1
+FileSize: 11 Kb (11359 bytes)
+
+FileName: ./res/drawable-hdpi/ic_menu_info_details.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 24a6cc5004f1e5b0833fd595410bd306219412fa
+FileChecksum: SHA256: 063633beb09f9d544b0597fb33bcab13f6750111d7ec46ae2970801e7fbb5731
+FileChecksum: MD5: fb29bb0546c29c25f8becbc72a16af7c
+FileChecksum: SSDEEP: 48:Of8xll4Cg6o1J2RvpElikw82UlEskr98xtYJlbosFCyhHkomN8fenREq:CD6q2VgikJ2UxW98XmlbrCmHPmN8feD
+FileSize: 1 Kb (1983 bytes)
+
+FileName: ./res/drawable-hdpi/ic_stat_download.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 8502be56f71ce5b086ab218055436d4512bbc78a
+FileChecksum: SHA256: a2d1d92f68b3047715c0a71f2f2d603f2a8b504add36a7dcccb0930c4a9b58db
+FileChecksum: MD5: 319b723e0d1481131d70c26da11c9931
+FileChecksum: SSDEEP: 24:ydsi19aT8kWhBFPbWNMcUwFG7W6N/suVhKRm:yH19f1WXBG7W6N/tVim
+FileSize: 878 bytes
+
+FileName: ./res/values-el/strings.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: a71d2abd68bc975d3aeff77f6410c6bc0918c2d6
+FileChecksum: SHA256: b07dff6c360e5460319bf10a9fe3a3503597535c3dfab54c3c252f8e25f96ea9
+FileChecksum: MD5: 62e6f2e617be7e99759bc0edf480fc74
+FileChecksum: SSDEEP: 96:MhcV0KmLyEiYDVeTlUKRamtQimkFgquMITalVieB6pGnY9TdT8TnTAmPvm+RUxWy:Mhc2VFKRFXuMHln4UuGNlEsUTl
+FileSize: 9 Kb (10162 bytes)
+
+FileName: ./res/values-el/arrays.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 3391beba2f254592660d473b12938a8259b41e47
+FileChecksum: SHA256: 608b039248370af81201aa9989c435c0a366397311f5790008c8c87a41ba8971
+FileChecksum: MD5: d7ed99a4e79035d11d17d34040515abd
+FileChecksum: SSDEEP: 6:TMVBd77+8EatWpWYfIahkhG5HatqvZGcKKWX06f:TMHd77aaxBah+KHatsZqKWX0C
+FileSize: 278 bytes
+
+FileName: ./res/values-ko/strings.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 0f16820c2855c143814f203049d73f879969f9cc
+FileChecksum: SHA256: db8144ec8e6c86b6f0bd545d67298ad3a035a11e2c936bb0d6b2ece38612d101
+FileChecksum: MD5: 95aa08b3aaee62f9a477857bf078771e
+FileChecksum: SSDEEP: 96:MhhawXbXrVEx28Vb2IlDzzI0wspboLEMUueq:MhhzLbVEx2g2Gz7boFUi
+FileSize: 6 Kb (6711 bytes)
+
+FileName: ./res/values-ko/arrays.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 91cde598f3bc0076f476b6943be06f7b3619ed8e
+FileChecksum: SHA256: 6526bd849defc581d1a131288619f80b243a7c9916f80de80feef68de9770a6e
+FileChecksum: MD5: 38d9c81bc3b906ccfd38a46c73a6c035
+FileChecksum: SSDEEP: 6:TMVBd77+8EatWpWYfFkESZGMDZGRGEJJyFKWX06f:TMHd77aaxCk7Z30THyFKWX0C
+FileSize: 234 bytes
+
+FileName: ./res/drawable-ldpi-v11/ic_stat_warning.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: fbd26a301b7965e43c6da09e88339f5f4701eb5a
+FileChecksum: SHA256: 527abe997a9bed40a62eee0ba59a7e175e89cd5b72e98d10a751d1630bb42e97
+FileChecksum: MD5: 6e5722b87c4843f33c9088e0e400f2c1
+FileChecksum: SSDEEP: 6:6v/lhPW/CK3mMxPwT71RcIIQ5KNsVa7VglM+mxMywjYUoCLljp:6v/7u7meY/bfxsWMZxMyU4iN
+FileSize: 259 bytes
+
+FileName: ./res/drawable-ldpi-v11/ic_stat_blocking.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: a53df75eb4a4ea1f8cc0ae642ab8d9aa6a6bfff7
+FileChecksum: SHA256: 2c215a14107290cb9986953fb1e5056cf3f967364ec54c5dd401c0f8fc42b31a
+FileChecksum: MD5: c12785c99dd1ae665d707729ec7d4846
+FileChecksum: SSDEEP: 6:6v/lhPW/4ADuH51CIF7Eu9LS3Ndw3IYIdX0+9md0AH0pB/lVp:6v/7uwADuH51CaEzNGYnX0uqRIB9
+FileSize: 278 bytes
+
+FileName: ./res/drawable-ldpi-v11/ic_stat_download.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: bccfbceeecd7b3e5c850597f486ef629f43cfdbe
+FileChecksum: SHA256: 688a208d44e3d766a9088b03d94a9cd59d2f5beac218aafb8273098591f1d3eb
+FileChecksum: MD5: 3daf1ecd75591298fe334f9dae87f3a3
+FileChecksum: SSDEEP: 6:6v/lhPW/o9cUw0TxP0WL6REIaDttkoIllkup:6v/7ug6rgPrLWEJDtioIkc
+FileSize: 198 bytes
+
+FileName: ./res/values-nl/strings.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 70a0a1c497a4d32831873fbfee17fbca1198c261
+FileChecksum: SHA256: 82205f85b54f901c9aeeefed2f04b02db4db6bddcb40cb74b03b24498173383d
+FileChecksum: MD5: ea1fb8b6aec86284b787f4772aaa37ef
+FileChecksum: SSDEEP: 192:MhtahkYIu4Ex2g2qgjmMjP/I1MbocyUnfUp:MhUh+Lqy+YUp
+FileSize: 6 Kb (7164 bytes)
+
+FileName: ./res/values-nl/arrays.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: d115d5cc340835fbb41b4ae7441068a9767b64eb
+FileChecksum: SHA256: 9449031c2b01337ee6ba9dcb763ea2625e9da54e4896d3e8a71fd60ab71f8555
+FileChecksum: MD5: 8671d4914c778b723566ed11d4f0abd0
+FileChecksum: SSDEEP: 6:TMVBd77+8EatWpWYfqfGoZGRA2NKWX06f:TMHd77aaxTfr0A2NKWX0C
+FileSize: 233 bytes
+
+FileName: ./res/drawable-xhdpi-v9/ic_stat_warning.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 412d9664679b65d4b4fd5583102d99bfa0fcfc27
+FileChecksum: SHA256: 50735ecb565e51290e7ff0d56f66eac1198987056cc73d8d64b6bc8fab03abe0
+FileChecksum: MD5: 068da9942270f6ab2d935c3c8202f76b
+FileChecksum: SSDEEP: 12:6v/7fUO84FlaSQvecnzXoAIKk/iKp+mk74WN4B1w0QzLsaCHPPBdkvI26zDq/k6s:SrFlrmeczX9IKk/i/maYykaQ3ovI2HYb
+FileSize: 728 bytes
+
+FileName: ./res/drawable-xhdpi-v9/ic_stat_blocking.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 57e6bae4642e30fb1789a3335a256d0d5522fcf2
+FileChecksum: SHA256: 10740af0421be080980019b1487198ca02a7e11ac408ab4a48d468f665dd726a
+FileChecksum: MD5: f4f4367e3c9ab385bf9ab91d832cd791
+FileChecksum: SSDEEP: 24:xCQ+k1A5UKASs0S5mDDPcQGh/LGBCUumXDoVd:xj65Z4SDPcvFGBCff
+FileSize: 1 Kb (1090 bytes)
+
+FileName: ./res/drawable-xhdpi-v9/ic_stat_download.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 2e026c323cd3e16bbde93ef43336a9d08358e401
+FileChecksum: SHA256: 33c88d879161fcb5ee72a057c5c5468782584421f544ef8f428755faab52289f
+FileChecksum: MD5: b96e78e80d5c4cacb9b5f1a666d0d685
+FileChecksum: SSDEEP: 12:6v/71gLGsypD/g6Zl1p+JHRGelh63lkgz:rLKD/gUwPlh61Fz
+FileSize: 398 bytes
+
+FileName: ./res/raw-pt/proxysettings.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 620c310ed2bcaac01c355a508c166e0acdf53515
+FileChecksum: SHA256: 414606db9be4d18949d817c4b1fb2e4ed20dbf051e0e21f74ec5afb6c13fced5
+FileChecksum: MD5: bb880954c6c5c871fbfb11f5f3e41403
+FileChecksum: SSDEEP: 12:cp/0zyOYDQBb00IJQlAw7AFds80+AEUl0cWpAhhC0JzCU9HIn0Ttoxcu9sW02pUN:cB4oDCbbApXUspAVzCwIOnlW02p0p4E
+FileSize: 772 bytes
+FileLOC: 5
+
+FileName: ./res/raw-pt/info.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 15ccd7befe06bdd7dbd7142ca2b1ae889c4c5cfe
+FileChecksum: SHA256: d43fe3f65b35f6170369a725befedc6cd241136ca72b4105caa7ab90ed90b5f0
+FileChecksum: MD5: 7c0d09dc48b6f4641f0f4be2620bf76a
+FileChecksum: SSDEEP: 6:KWgxDzzK79AFS9JIGWCXPpUB5NB9202CXPpUB7je0z202CXPpoAjf25y:lCz+LwGb/pUB5NBg07/pUBWU207/poAH
+FileSize: 351 bytes
+FileLOC: 4
+
+FileName: ./res/raw-pt/proxysettings_old.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 6216bbf7a84368186f71d349b80a5c97e7ae119b
+FileChecksum: SHA256: 07f2dc07d705d1a8377f5ab1580490892cdea4deafc2830c45db77b072ba57b7
+FileChecksum: MD5: 51248e04315d1c126a4f48094a360573
+FileChecksum: SSDEEP: 6:kFzkxLFe+Q1yAWwt2QkP8YGKKTQyMAEGT8Nk4/pUB74sv97XKyVQXQkPoqG9VOx0:+zkxQ+yyAg8hBc5pUBj+oqG9cOc5vE
+FileSize: 533 bytes
+FileLOC: 8
+
+FileName: ./res/raw-pt/legal.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: a123bd70d5b21cf113be908cc85fb2338b49726d
+FileChecksum: SHA256: 5abdc7c66da24b9a40bab23db0aa5407eb9c9ddc876eda369a3bf32afb189c8a
+FileChecksum: MD5: 45751195495915a3a38d77db928b4429
+FileChecksum: SSDEEP: 24:GEogPHGHOoS7TdNqQBmvHQXKmiaPLIr0PmRP1wtePPm5BUPAMRqCP1v58P55W:/Fq1mXqQgvHm1v20eXC2m4QQd
+FileSize: 1 Kb (1374 bytes)
+FileLOC: 10
+LicenseInfoInFile: Apache-2.0
+LicenseInfoInFile: GPL-3.0
+
+FileName: ./res/raw-lt/proxysettings.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: ed0f3de63f6be2dde1fb782f407588380c43f2dc
+FileChecksum: SHA256: 36e529b5f7a4235887dc5ad63d27fde093d042ceab0157fdc7542ec9f3b82d07
+FileChecksum: MD5: f9f6402fc5e1c48bc6b5b17a15b7f46a
+FileChecksum: SSDEEP: 12:n83iZV61eVr0fhnFPYXKX806BjZDg0Lvajxl0zJZ+8S0Oa+r9AbSm5A2pUBIGl9P:SiZV8eVuFPLgb5wiiHw3e2pk/p4E
+FileSize: 847 bytes
+FileLOC: 5
+
+FileName: ./res/raw-lt/info.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 3269ed2c92e42d2257c5d1786c26036f69fdc20d
+FileChecksum: SHA256: be879ad68824c283804a27a43070992ac33c759125324bb221bb9567d85544d0
+FileChecksum: MD5: 10865c6c8e6acec959d0466bbc5ccf72
+FileChecksum: SSDEEP: 6:Uc8nhIkwxJKxJZdvGWCXPpUB59KPY02CXPpUB7hKb02CXPpoAzUysB:UjVVdvGb/pUB5f07/pUBtY07/poAzM
+FileSize: 317 bytes
+FileLOC: 4
+
+FileName: ./res/raw-lt/proxysettings_old.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: db28b6a3f804967d28cdce418eba98b35a0362f4
+FileChecksum: SHA256: 77891599e79e66a0e4a73661922a2e9a48527acb795c02a1064508ac447f660b
+FileChecksum: MD5: afcf0cb0f1df19eca124f3a9226a63c0
+FileChecksum: SSDEEP: 6:15TudKU1MIerxATDv0CcKslmwMnvXPpUB74nLKyFXDWudKqDyuk3Mf6c9Ve70mt:1SerxlCmlmwMn3pUBobXDw3MCc9A7zt
+FileSize: 486 bytes
+FileLOC: 10
+
+FileName: ./res/raw-lt/legal.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: b76b22f2bcdfbcd99cc25c2cd241c1185b7a70b3
+FileChecksum: SHA256: 25494f494a4b8371c024e3bbe5ac16f5661ab59b2ece153e45ddce76b94af70b
+FileChecksum: MD5: b936fba426294272bf003029c55f3648
+FileChecksum: SSDEEP: 24:WPHGHOMJ2jlJNqQBiUA47KmiaPLIrUPmRP1StePPmHBUPAM1qCP1p58P55W:uqzJ6lDqQhd1v2UeXc2mWsQJ
+FileSize: 1 Kb (1360 bytes)
+FileLOC: 11
+LicenseInfoInFile: Apache-2.0
+
+FileName: ./res/raw-zh-rCN/proxysettings.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: c394e3d7155e238c45f7015d81b5cfe49e565371
+FileChecksum: SHA256: 23f91af4000c8ea6fd9e26deaac88949bbbed3f19a9cb5ad89f2f3796660e833
+FileChecksum: MD5: 56902f48150e770b7f89528afd55175a
+FileChecksum: SSDEEP: 12:x7Zr/lvvIcK/FhpHYYVpYsbPzkVpn9sCZ5A2pPQzlpzBIi:LrdHA/FYYpb4SCZe2pYRpV
+FileSize: 689 bytes
+FileLOC: 5
+
+FileName: ./res/raw-zh-rCN/info.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 77270e8c4b10f91daf7ecee1d6219f92e8002e4b
+FileChecksum: SHA256: b9c3e8373c1ff6f05e61047e64dffafc28fedc3a3e7d5aea3ae6078dc8814553
+FileChecksum: MD5: e756cee3260d447dfd7a6c70a046f5f1
+FileChecksum: SSDEEP: 6:hixJqpYUEqp7uBBGWCXPphxB51eq0ua2phxB7QQnNa2poAdYWn:hie+d07q8b/pzB51epu3pzBh3poA3
+FileSize: 314 bytes
+FileLOC: 4
+
+FileName: ./res/raw-zh-rCN/proxysettings_old.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 5c7c09c44889c095b8d2cc6401d275358d25d787
+FileChecksum: SHA256: ce4453a476d76d32cb8fdd2da55029e4066a2eb9753a3c3a829813b89ff4a6ed
+FileChecksum: MD5: d65c96d063b29da8603858941e78f49f
+FileChecksum: SSDEEP: 12:KKtI2bw54b7HZr9pzBK9MAURzPZxwxJW49stuT:KKCiS4LpW4zPZxXG
+FileSize: 472 bytes
+FileLOC: 8
+
+FileName: ./res/raw-zh-rCN/legal.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 8db9087de63d8d2c5e530c32393778f58e5fd84a
+FileChecksum: SHA256: f940ce0768c29c344392fdb7f0c14e86939fa06cd3e55f8a2624ccf8b5cafb37
+FileChecksum: MD5: 49c10802e8178bd7969709be0987a1a4
+FileChecksum: SSDEEP: 24:9APHGHWfLrFPNqWQOAIuvWKmiaPLIrJmRP1ptePPmJI9BUPAMsPqCP1S58P5+W:Gq6LpFqG7YW1v2oX32mJIMsyQX
+FileSize: 1 Kb (1327 bytes)
+FileLOC: 10
+LicenseInfoInFile: Apache-2.0
+
+FileName: ./res/raw-sr/proxysettings.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 1da305ebfd293b7bb5ac3255d128296d6eee21f6
+FileChecksum: SHA256: 825398bc6c0c82707ea79d5dfc2311522c55f2bc8cfc31cf5bc4b0c0ea8bff58
+FileChecksum: MD5: 4070de510dfb18624e787915428d169d
+FileChecksum: SSDEEP: 24:/tFln4L5bv2E8KoYOTs3P1u3HntfTe2phYhJPp4E:/p4L5bv2E8bNY3Pc3s2yhJx4E
+FileSize: 1 Kb (1085 bytes)
+FileLOC: 5
+
+FileName: ./res/raw-sr/info.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 83dc3aecb897c35a24254d16d15c3c08729d7eaa
+FileChecksum: SHA256: ac858790c472ff4eef35d943692d78ff93314a1cf5c1cff31f741a42b04d224c
+FileChecksum: MD5: f602dbdd49b68b7ba23823789b7da0bf
+FileChecksum: SSDEEP: 12:o05Nyk8pYAlUb/pUB5RV5807/pUBSh107/poALKyvd:ckc2/p835/pLU/poALKyl
+FileSize: 442 bytes
+FileLOC: 4
+
+FileName: ./res/raw-sr/proxysettings_old.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 18b7c6538d5c4ab1bcfcfc968d9b2d8c59585e91
+FileChecksum: SHA256: 8640502641e66b5315e8a39a6e1e9fa133662386fae0e59c112bda0e883f2310
+FileChecksum: MD5: 5d7176d5fa0caaec9c9296559b5e3d3a
+FileChecksum: SSDEEP: 12:YEj9LX6WHQMXrfk6Lmky9Ac1jU1pUBgBK20alERzHQMXrfkj9lDFfToGsL:9j9LXzHJDkemkymmup9BKzRzHJDknRfu
+FileSize: 711 bytes
+FileLOC: 8
+
+FileName: ./res/raw-sr/legal.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 071fc6efcb57a43bceb0d6b85e790dfc9addb45b
+FileChecksum: SHA256: 7cf43e0b3fe58ad107f42535498ea1ccb77ae424a89ef6e90d64971559150699
+FileChecksum: MD5: ed4d6675777addc52ec0f5866c0d4e7f
+FileChecksum: SSDEEP: 48:gDqYqFZJbOFwJFqQeTt9f1v25eX352mzrQ39:gEygoJyk2mz6
+FileSize: 1 Kb (1544 bytes)
+FileLOC: 10
+LicenseInfoInFile: Apache-2.0
+
+FileName: ./res/drawable-ldpi/ic_menu_refresh.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 2c0240d177c7978fed9141ce3f7434a46c4c2e5a
+FileChecksum: SHA256: ac81e7bd2ecb7ec212b5cc00a100f98b6432b9b81d72ad379560fb4674676ab1
+FileChecksum: MD5: ebea52232254d0fa8bdcc8f21f4dc195
+FileChecksum: SSDEEP: 48:VWOOnZJEKepLvlwVFyNqUE/iBaPwKAwQzssXE9V:GJEKeRgFPUE/iYwYV
+FileSize: 1 Kb (1695 bytes)
+
+FileName: ./res/drawable-ldpi/ic_stat_warning.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 9d10d11a97766181f2fad5272ba702d5017fa3ca
+FileChecksum: SHA256: f6d6e7f08c1a37719e6d5b369c4721fe900fd340edc6c0b968a7081a83496b87
+FileChecksum: MD5: 80082bc90af58fd918ec0ecb3f49ace6
+FileChecksum: SSDEEP: 12:6v/7ni5NzKEpRDHEYquXRlVufqTHX8XethoBskoXh4GMBlHa/685T:oUzB3Lvh7TM8+LeaGMD6LT
+FileSize: 507 bytes
+
+FileName: ./res/drawable-ldpi/ic_menu_preferences.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: a289ea5cabd59e82451e2303bae82cdd93c089eb
+FileChecksum: SHA256: 10005c15fd490f06267e2b5dade59c659048edd11ef9703bcffde4f0811b86a2
+FileChecksum: MD5: ea6b6f9dcd6d7fce5c375797c9c827d0
+FileChecksum: SSDEEP: 24:VWM7R7YG+Htc/9y8Ef8upZRLRe9nLJXpNNCpQ2/AulB3Q0J2zjPPEMbIhv:VWM7KEQf8+jcLVpupeujQ04XE9V
+FileSize: 1 Kb (1601 bytes)
+
+FileName: ./res/drawable-ldpi/ic_stat_blocking.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: cce3add18108aad0768fa7e740fb057a24b59971
+FileChecksum: SHA256: 89183b7300409031a5d66f30f5ba110bd3836a9923abd5a7d547f71d7558eb7d
+FileChecksum: MD5: fdbd2c7be9b26224f02d99096e166153
+FileChecksum: SSDEEP: 12:6v/7ndMMF1uObyLanKqYi5L/lhh5vW20bJMFEtXv9XYeW2XN:od3dRnJC20t2EtVV9
+FileSize: 509 bytes
+
+FileName: ./res/drawable-ldpi/ic_menu_help.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 8fef213cdb977aba412cabc3671125e65711b354
+FileChecksum: SHA256: 13bcdb48ad7c7c53847aefa9dc5c2a8525e18f4a68b60a4e8c1cfd626cef6610
+FileChecksum: MD5: dd2484b710c368e82b8a761e2d89a6ae
+FileChecksum: SSDEEP: 48:VWgHhQc1vm3t/sE6RvfpwrUhJHPxdc/GVhXE9V:NM3SXvRSUhJvouV4V
+FileSize: 1 Kb (1624 bytes)
+
+FileName: ./res/drawable-ldpi/ic_launcher.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: af08ee7acbf46e1c740dcd5f137d2d1938b51ae6
+FileChecksum: SHA256: fb1dd0b5c1b2e181aaf9db9635f9beaf519b03169aacafbc110891ec32e2dc79
+FileChecksum: MD5: 381f1c6f6b58eb6c0a7316944c762c7e
+FileChecksum: SSDEEP: 96:2SDZ/I09Da01l+gmkyTt6Hk8nTa4cX+m8q9OFiq4nhuVXSXSaoyUJy+dCyK6:2SDS0tKg9E05Ta938Rwq4MVCiaSJy+d3
+FileSize: 5 Kb (5799 bytes)
+
+FileName: ./res/drawable-ldpi/ic_menu_info_details.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: f2bc2563f1fb8fe8ae52c8a12d36c1794b329850
+FileChecksum: SHA256: c7e29ef2f886674e6bc46079fe2e4865b7f114a6aa971cf5a8b369ae553a4408
+FileChecksum: MD5: efdfed17a9a32a20e182364fe4de9b06
+FileChecksum: SSDEEP: 24:VWyGem/Eke3OaYWqN/V8NKxuFA637S+7/6jvicVjT8P4TmTQGsL6tTgzjPPEMbIV:VWyvmcke3O7dxxl637L1wjT8P4OQGsmV
+FileSize: 1 Kb (1499 bytes)
+
+FileName: ./res/drawable-ldpi/ic_stat_download.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 23ee9b27b87ede21db2a458362dd77dad4c268e3
+FileChecksum: SHA256: cd6025871b97dcafb36023e4d798be1ed3c84e387f4e3b7f4371f87e27b7bea3
+FileChecksum: MD5: c12fa992e12adadb88f94c7a5b218db6
+FileChecksum: SSDEEP: 6:6v/lhP/Iay4CmKxS9Xu84KzXCU3+moxZ/Kv+8GbcispLUxBMXVFNXt5Y8wKP/RWG:6v/7n9yJ0E8rgxh++BciOUPgX1ozAd
+FileSize: 413 bytes
+
+FileName: ./res/raw-th/proxysettings.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 0e23ee2c2cc113e51b24439f577b5f6377187d84
+FileChecksum: SHA256: ae4c6120aae35c862bcebe519b4d2d008b1597124c4d2afdde3b9774054b39c4
+FileChecksum: MD5: 16571dcd7d8f1c79a69d16d46adad924
+FileChecksum: SSDEEP: 24:mGw1s0DSBeD7LmQcTj6YGw1XZGw1KVcWyXEEG0UXE4vZF6JvPpzLU0Gwxyp4E:mGR0DSBeSQbYGcGMWTtZFQvxzNG14E
+FileSize: 1 Kb (1475 bytes)
+FileLOC: 5
+
+FileName: ./res/raw-th/info.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 6beef86baa3f6a04014baf1e23284b0af1260edd
+FileChecksum: SHA256: 7653311d5656acecfeab52110d030b6c54b38ac769d7f52f1a379fbe3d9dd346
+FileChecksum: MD5: c83eb22ef57787dd19a714382dc23d75
+FileChecksum: SSDEEP: 12:kVnGoLuw+1wdErbYJqdMjb/pUB5v/pUBkQ4nx/poAnwl7ilzy:kFGoaw+1wSrbYWM//pk/pCC/poAu7i9y
+FileSize: 534 bytes
+FileLOC: 6
+
+FileName: ./res/raw-th/proxysettings_old.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 4fba4f52adead9d260334edd8cc06f1cf9ccaa9a
+FileChecksum: SHA256: c25d19af1adfa1999381e63d94529a9449ad317cfdf3d5251e526ef7eaee8cf4
+FileChecksum: MD5: 30d941b78eadc1758d132c5cf8da31ca
+FileChecksum: SSDEEP: 12:hQiNwCnvFewyzxpFkPpUBsbWjNFeMFoG9Gvb:hXbvFevupH6NFeM8vb
+FileSize: 476 bytes
+FileLOC: 10
+
+FileName: ./res/raw-th/legal.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 728b701b789c15d4f92b7132d782d9acf849e8df
+FileChecksum: SHA256: f7eb96f96370f70907e3c3c475e54fbb01e48965c3f58d470bd45afe0bd45ab8
+FileChecksum: MD5: ead5e1883f8a86bff3e67d158a4cd048
+FileChecksum: SSDEEP: 24:8U1hIdqPHGHOATM/BDANqQBkAOKmiaPLIrPmRP1kZ2tePPmt+BUPAMIqCP1K58Pt:8UAyqQ/B6qQGx1v2eXkZ42mtzlQ/
+FileSize: 1 Kb (1421 bytes)
+FileLOC: 17
+LicenseInfoInFile: Apache-2.0
+LicenseInfoInFile: GPL-3.0
+
+FileName: ./res/raw-pl/proxysettings.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 0d3c44bba4219a0dabcd4fc0ef316d1ad2e00b3d
+FileChecksum: SHA256: 6ac24abce97fffc56df56eeab5279e144fb48db178d90cb24a934f749f60d615
+FileChecksum: MD5: 5f017e6d9a9b2f1bd07baf6ab15586ed
+FileChecksum: SSDEEP: 12:4i0eI9uVRu6lDlJMDZ7RrhiMA079XZpwXo9r8vLTX45A2pUBItbHA2p4zI:e5kbrvMNRrUMAc9JpwY8vXIe2pv/p4E
+FileSize: 782 bytes
+FileLOC: 10
+
+FileName: ./res/raw-pl/info.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 27396e4806533a1b472bf95f347a0ad0d4697d0b
+FileChecksum: SHA256: a262464621cf32742ba0cf705e00292bcbf3a987c81d6bf40062ca292ab5512f
+FileChecksum: MD5: fa6ada67ec2a1b4c2f7dc9f3888f73d6
+FileChecksum: SSDEEP: 6:BrOdWVizeJIGWCXPpUB5ZcFlCXPpUB7r8vwGlCXPpoAh2u92:BCdYiz5Gb/pUB5L/pUB8e/poAh2W2
+FileSize: 339 bytes
+FileLOC: 6
+
+FileName: ./res/raw-pl/proxysettings_old.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 0212c2cbe34be204e722a11d5a44ab7911e889ca
+FileChecksum: SHA256: 72a1f23bc083307c1155e4b5ced7143e1b79be84b9184fbe5e62076488f20678
+FileChecksum: MD5: 36d8942697eaa3d2d8aaa78fcdac894e
+FileChecksum: SSDEEP: 12:3WXWu1s4NOVJOSiYc2pUBpRKEh7YF59xCX4fGGBW:mGD4NOVJ9m2p2KEhUFFCX4fJ8
+FileSize: 532 bytes
+FileLOC: 9
+
+FileName: ./res/raw-pl/legal.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 15d0631de7b759c3f0c6a6352164eee9fb11c824
+FileChecksum: SHA256: 925db509ca291992e218e90392dacca7b2ebbe0912065f8683d57821769a83c8
+FileChecksum: MD5: 6fe45174452145d33c9b7a0de1b3311e
+FileChecksum: SSDEEP: 24:wUOjEPPHGHOd+E3iJ/nivNqQB2ABnnOxKKmiaPLIrDmRP1yZ2tePPm7+BUPAM8qY:wUUEHqQB/qQgsP1v2SXyZ42m7zxQh
+FileSize: 1 Kb (1333 bytes)
+FileLOC: 16
+LicenseInfoInFile: Apache-2.0
+LicenseInfoInFile: GPL-3.0
+
+FileName: ./res/raw-ar/proxysettings.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: ab68050159c06377af610fb1524f43c513b5ff2e
+FileChecksum: SHA256: 0ab542ab248e8423e49839e6713d75e51328b199716092e9977e453a9606b64b
+FileChecksum: MD5: 8489a9b4b2272c04fd037e9da7096b3b
+FileChecksum: SSDEEP: 12:ewPc+MogU/0+2TIdYe0vJKKL0KAy80v3+ogNsmNQmRQ0mSss9TQF7IpUBI30i/p1:v5bP2cEJKOAyNOoNPsQFMph/p4E
+FileSize: 888 bytes
+FileLOC: 5
+
+FileName: ./res/raw-ar/info.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 086190e24e38ea03ae13b950aaa242a52a929dbe
+FileChecksum: SHA256: 4c10fd991c4a693cb93ea2f197c88b8914ea9760a4780ada0ac81ab1260b9e37
+FileChecksum: MD5: a015cd656e32a20b07e8cc6f85b4ced2
+FileChecksum: SSDEEP: 12:niusi9q8b/pUB5s/pUB+n8i9I/poAx8B6y2:9T9l/pF/prI/poAx8T2
+FileSize: 442 bytes
+FileLOC: 5
+
+FileName: ./res/raw-ar/proxysettings_old.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: b2eaf65f7c41b21635fce994db93cf253fde6b25
+FileChecksum: SHA256: 2a8f9b9dab7b92389eb67e56462346ba91a07ce43c07b2b2ad1d24996290b75c
+FileChecksum: MD5: 87bad768f2f0ef687435bd1263d066b2
+FileChecksum: SSDEEP: 12:8geb91rS0ICEDd2tQogXtuK/pUBBZDVEeNCG80CaY9hgvZW:K9HbEDd2tQoituK/p+EeQZxqE
+FileSize: 667 bytes
+FileLOC: 8
+
+FileName: ./res/raw-ar/legal.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 18244c42a3198952c47a8373510bbe39f2653472
+FileChecksum: SHA256: 96e084a8118df15e04e7d6e09cfb07d1045006cb89b68c348241e10c8de867b7
+FileChecksum: MD5: d147643a80a366b68170640db9b20b5f
+FileChecksum: SSDEEP: 24:/7PHGHOAIxr6mmM3jcNqQBAIbNvVKmiaPLIrDa6PmRP19vtePPm6aeBUPAMoxqCb:7qIxrnz3jSqQ3bNvV1v2+6eX9F2m6aT8
+FileSize: 1 Kb (1508 bytes)
+FileLOC: 10
+LicenseInfoInFile: Apache-2.0
+
+FileName: ./res/drawable-mdpi-v9/ic_stat_warning.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: b4b227eb2a829324504244332f4e639073697cd4
+FileChecksum: SHA256: 859b9901d84faecc6629cb368ffc792204b7e195e9333709ffd83f7f25d80d9e
+FileChecksum: MD5: 81ae9c7fa12808adbc89a0331b4089ef
+FileChecksum: SSDEEP: 12:6v/7SygrqMQ1JOBwfLjow7mDoGhZBZu7gGgvtI/94YUhQ9Dqc:L/rozUw5GTBZuMK/ajeX
+FileSize: 400 bytes
+
+FileName: ./res/drawable-mdpi-v9/ic_stat_blocking.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 224172f810313d08654043030971a05df4f46262
+FileChecksum: SHA256: 3467a0d95b930982bbf9c1421970c29c248d745e38b833f9801db1ec09f166b1
+FileChecksum: MD5: 62ca5600b2b1b48c9eeb9e7f7d1fd5ca
+FileChecksum: SSDEEP: 12:6v/7Sy3oLW6Dxp6OZXn0T6D2+hQ5Y92dWWtgKTDfX2dYhPlWiWI6c1:L8oLW6DSwkclQGAdhgKTDfX2dIlZN1
+FileSize: 482 bytes
+
+FileName: ./res/drawable-mdpi-v9/ic_stat_download.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 78c57d9c8f9a2d4df7c4d762ee498b34d3534dc3
+FileChecksum: SHA256: 7b77da581fc605c99afa34ebfb96d72a8f511b38c9e1d9a470912fb56bd06be4
+FileChecksum: MD5: 92c7a1654e7af8c9199393dc628a3657
+FileChecksum: SSDEEP: 6:6v/lhPGtyWA7NU6OM6zO1yukVZJJh12bmfe9E7dFK5op:6v/7Sy/7T6zO4BV3QqfeaF1
+FileSize: 270 bytes
+
+FileName: ./res/values-tr/strings.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 84daa2be0e83bf489dfb6d12cf022bcb694cf31a
+FileChecksum: SHA256: bec77790d7799abc47edc9f08ba424c2a9a13614d3e9ae90f974eb9bc6975f90
+FileChecksum: MD5: 4e0663dc68fa28ab3284c331ababbae7
+FileChecksum: SSDEEP: 96:MhfmWAvELOEx28Vb2Ir6hNVB5IWgoD5sUBt6AW:MhfaEx2g2umngoiU8
+FileSize: 6 Kb (6953 bytes)
+
+FileName: ./res/values-tr/arrays.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 012d1d7f3ca757df86b4af133871552e2b8998cb
+FileChecksum: SHA256: 838139f3a1e0b0896f4ee61ad71b697ad5a87a99738febf45943b7949a539b2d
+FileChecksum: MD5: 9f02bb8a9d20be4d40630c2cbc08be74
+FileChecksum: SSDEEP: 6:TMVBd77+8EatWpWYfFkABGoxKw2IZGe6R3KWX06f:TMHd77aaxCk27jZlgKWX0C
+FileSize: 234 bytes
+
+FileName: ./res/raw/proxysettings.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: f8742fef9d6d1c72cacb11b6d30ed1391fbdbcb6
+FileChecksum: SHA256: 6d3dba9c19a13065d6f6af26fdf5d69eaa6260216e871742acb084070c3a8d72
+FileChecksum: MD5: 5fcdd1457bcb9056898081039e11babc
+FileChecksum: SSDEEP: 12:QfCiY4+GicoAro5IeQCwSmLRpF9kpvLYj9pUBIuWEPp4zI:Ii2Je/wt0pvsBpsW2p4E
+FileSize: 716 bytes
+FileLOC: 10
+
+FileName: ./res/raw/info.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 04893d653166ea0e24aaddfa764c825e8203a2e0
+FileChecksum: SHA256: 414adceadd022bc4ae327e89fcc2f3d1fe3cc7614b56e11132475dba22034999
+FileChecksum: MD5: e6e2182721757b4fdf4c4d10faeda636
+FileChecksum: SSDEEP: 6:nYpqEsXJ46vGWCXPpUB5elCXPpUB7je0zIlCXPpoAIFI92:Ni6vGb/pUB5//pUBWUR/poASI92
+FileSize: 317 bytes
+FileLOC: 6
+
+FileName: ./res/raw/proxysettings_old.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 4fba4f52adead9d260334edd8cc06f1cf9ccaa9a
+FileChecksum: SHA256: c25d19af1adfa1999381e63d94529a9449ad317cfdf3d5251e526ef7eaee8cf4
+FileChecksum: MD5: 30d941b78eadc1758d132c5cf8da31ca
+FileChecksum: SSDEEP: 12:hQiNwCnvFewyzxpFkPpUBsbWjNFeMFoG9Gvb:hXbvFevupH6NFeM8vb
+FileSize: 476 bytes
+FileLOC: 10
+
+FileName: ./res/raw/legal.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 6f6530757709a1513d2af3d92de2807cdea27556
+FileChecksum: SHA256: 35d2e0d1c39575b6e3259aa027707b7d45b555b3709d47cc45e44157cf779078
+FileChecksum: MD5: 6bb669bbc2af3e80375c0bfa85230db5
+FileChecksum: SSDEEP: 24:pzPHGHOhBDANqQBkAOKmiaPLIrPmRP1kZ2tePPmt+BUPAMIqCP1K58P5+W:NqGB6qQGx1v2eXkZ42mtzlQ/
+FileSize: 1 Kb (1334 bytes)
+FileLOC: 17
+LicenseInfoInFile: Apache-2.0
+LicenseInfoInFile: GPL-3.0
+
+FileName: ./res/values-th/strings.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 5d1836d800018b184f0ebb6247f00ca5d256e23b
+FileChecksum: SHA256: bacf7fcfb3643ec5e24585d7c6dbeb37c7093ef5ea7f0f98b27df687d6ae1107
+FileChecksum: MD5: 3974d783176ee8eadfbfba5df45e44ee
+FileChecksum: SSDEEP: 192:MhXmDakWiFuigjPOic61Ex2g2G4375v68Bf1D216g5ay6wMFAMTj2+iTUooFj3is:Mh+ak5Fhgz9c65LGY75v64f1S16g5ayE
+FileSize: 8 Kb (9090 bytes)
+
+FileName: ./res/values-th/arrays.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: fd5d238727a6859b63bc1fb3e1afb35819d3ab03
+FileChecksum: SHA256: 35c11b2bb2377cdc34dc95ba58191795177814edb70d8c59b1b2e1c4807f1716
+FileChecksum: MD5: 2303889ccc5b4d8eccb0c72843cda4ff
+FileChecksum: SSDEEP: 6:TMVBd77+8EatWpWYfFhdcnw/ZGIo/MRrGRGEJJyFKWX06f:TMHd77aaxqcw/ZgMh0THyFKWX0C
+FileSize: 275 bytes
+
+FileName: ./res/raw-de/proxysettings.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 098a3eee87491499cae32daac61d1e46b1d5350c
+FileChecksum: SHA256: e84770cf4efedffe80d46ec18cfdb41936434517a8d15addbecef9c7518bb7ae
+FileChecksum: MD5: 16785bc166efd32078a768a8647d47e7
+FileChecksum: SSDEEP: 12:2/2M1IF0CzwXyCpd8RJGzlsa9ABdxQ/xA2pUBIOBmfPp4zI:rM1IFBzwxAJglstSG2pwYHp4E
+FileSize: 833 bytes
+FileLOC: 10
+
+FileName: ./res/raw-de/info.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 1075c10ef8010dca8669c0ea01583a4c78be6d56
+FileChecksum: SHA256: 2516794e0a3984d7ea7b8d7813fab3459ff70559c202105dc8c6339f4202b076
+FileChecksum: MD5: f872c5b8d16de7de0422cd2cfda8b570
+FileChecksum: SSDEEP: 6:TNvLuUQsESJ4qYLGWCXPpUB5elCXPpUB7tkRBprW1IlCXPpoA/f2:hLTQgb/pUB5//pUBhkn5oR/poA/f2
+FileSize: 340 bytes
+FileLOC: 6
+
+FileName: ./res/raw-de/proxysettings_old.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 4097cca51db4d651f41122bbe255d02159678557
+FileChecksum: SHA256: 902feb5dde350d4efb62ccfb6651a36736487b93b77ed2ae36db0b40c16e3cd0
+FileChecksum: MD5: 8f9044c117a11039999263a4062d1abe
+FileChecksum: SSDEEP: 12:rmJf6/y/GxZa49nRZUPXKpUBZKzV2DxOZ906L:rmJYy/Gra+RyKpRzWPa
+FileSize: 489 bytes
+FileLOC: 10
+
+FileName: ./res/raw-de/legal.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: eb721171f52ff582dbd4ed1fbeb50347b620f441
+FileChecksum: SHA256: 24cc4b7b36416750b8bd01b2b2da52fec804ecd0346eec7174986d1bfc5154f5
+FileChecksum: MD5: 6d461fda9277ea459cd2f8ee43bc75f1
+FileChecksum: SSDEEP: 24:E/UPHGHOaaSAcNqQBgtAD47KmiaPLIrImRP1/Z2tePPm6+BUPAMbqCP1b58P5jW:E/wqPDqQCd1v2zX/Z42m6zWQj
+FileSize: 1 Kb (1317 bytes)
+FileLOC: 17
+LicenseInfoInFile: Apache-2.0
+LicenseInfoInFile: GPL-3.0
+
+FileName: ./res/drawable-hdpi-v9/ic_stat_warning.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 51b4f9a2bd13f67aea9b27558acd26015d3f9e7e
+FileChecksum: SHA256: 342a29bf3b9186afbe93d0e04f7afd0d94c702a0824ae902cede257f4ac34d41
+FileChecksum: MD5: 4b9cac4abf772d86221488a35b3e2087
+FileChecksum: SSDEEP: 12:6v/7Y8OBLQqwZuHNRju9RteaxHHg0tyv2eaXl14jTEt:kg8qsC7atVty/clmTM
+FileSize: 573 bytes
+
+FileName: ./res/drawable-hdpi-v9/ic_stat_blocking.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 7e0df531d8a0e1781b852fb5aa5de70a22d7912b
+FileChecksum: SHA256: a86568c6f91e3a4f0952c921d8276b695371bb2d13f5cbb3d3f46dd23219f67c
+FileChecksum: MD5: ee7b1f09f112a9b742b7ebad61d92112
+FileChecksum: SSDEEP: 12:6v/76awcDlDZkq0xzHJDaylBhmYhA/GqWbSW9JbIRAQFFtyRhr7n1:ZRQDZr0BHJDayboYhA/9WGW9JsRAQTtM
+FileSize: 766 bytes
+
+FileName: ./res/drawable-hdpi-v9/ic_stat_download.png
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: cf2bd091d64ae8babc1235d122eff31548fc0b06
+FileChecksum: SHA256: f8d704d68c64b2e67ff9dd4927188a3f3f6f15cfb958e831746afc0e127d4d50
+FileChecksum: MD5: a7b4e676d25b454a944ada4ff87b055d
+FileChecksum: SSDEEP: 6:6v/lhPfhGnHT+F4+k2mB9yD/TDut2y3XWTI0Y8qKxnYZ7LkvK27Id3b3bb6l9rRy:6v/7MTT+kl8ut2yM9Y8qWnYZ7LkiCIdp
+FileSize: 355 bytes
+
+FileName: ./res/values-sv/strings.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 9c37229536d706acd52237cb2505b2ae3cb016bd
+FileChecksum: SHA256: 4cc86497b9331cf6de9b66ece997a2828e6658ee4a2e2ad7115f956cf6baef20
+FileChecksum: MD5: a3207437cbed47eaa94a16a3a5967e87
+FileChecksum: SSDEEP: 96:MhitDRhEx28Vb2IsBVLPXJVqnzjVYP7u7NUk9i:MhitDRhEx2g2dBdXqzRYPqpUkY
+FileSize: 6 Kb (7008 bytes)
+
+FileName: ./res/values-sv/arrays.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 3ee6b66f809795802ca6b519f5f2fe8aa4471b39
+FileChecksum: SHA256: d43bbc3eca2366895f2eb1f8fd5e7a500b21684ff7f4506ed76d8eb9ec91408d
+FileChecksum: MD5: 9b13935a7f28af775466447f75c16ab9
+FileChecksum: SSDEEP: 6:TMVBd77+8EatWpWYfFkAxbtZGwWQZGRWOHFKWX06f:TMHd77aaxCkWSg0bKWX0C
+FileSize: 233 bytes
+
+FileName: ./res/raw-tr/proxysettings.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 769c28910e4c0a77a1b803e12f564c7675a6f35c
+FileChecksum: SHA256: f022ae203c8c946b011a21be28a8ec9f735c05f987a4017aeed6b0e7b472277f
+FileChecksum: MD5: b71e4182065c36b3acb3ebec52edfc98
+FileChecksum: SSDEEP: 12:cPDJdiUhMO0MAaY00+Aro5Ig0aQCg0kSmLf0mpF9kpvLY5A2pUBIIucp4zz:cPDSUhsh0uJU/OF0pvse2pmp4P
+FileSize: 718 bytes
+FileLOC: 5
+
+FileName: ./res/raw-tr/info.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 2dba08d1b31cc7c303d0decd902e2d28be2edbae
+FileChecksum: SHA256: 3ba1d2310f0ac418a687f6422b970d16fa8acb27a0ac331ed2124ac1a2f4d6fd
+FileChecksum: MD5: 70fe646c446bdd9e2b7efe291bfaa6f3
+FileChecksum: SSDEEP: 6:ORnXXJakXhSgPEP6L+WCXPpUB5JW02CXPpUB7Sz202CXPpoAjxyc0:aIkxSKEP6qb/pUB5I07/pUB2z207/pob
+FileSize: 323 bytes
+FileLOC: 4
+
+FileName: ./res/raw-tr/proxysettings_old.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: a03cfafff4155abcf7d6b59226419c96d49aaa47
+FileChecksum: SHA256: fdface0f7dbeb982ba42da7444efbac930b1b8a9c13367f2a2e44d307d58252f
+FileChecksum: MD5: dc34f7d28b2c46c3e302a3816543b574
+FileChecksum: SSDEEP: 12:ZDLY0t+HBbSG/W7AQY/pUBfgfr4chQFfV595lM:5LVEBFUAQGp381dM
+FileSize: 520 bytes
+FileLOC: 8
+
+FileName: ./res/raw-tr/legal.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 761941b77e6a65320d2c1d58dbf544b534e677df
+FileChecksum: SHA256: 460d0d71e3a8a882d137c13b3fce3b38573c61a57ffd1f5573b691198a695c7e
+FileChecksum: MD5: 5080966fc985fdf6ef554e62f990f08b
+FileChecksum: SSDEEP: 24:ZdcPHGHOcXmvu9NqQB1JLAPQyPdKmiaPLIrfPmRP1VtePPmsBUPAMMqCP1W58P5N:Z6ql2vu3qQbFvG1v2feXb2mhBQl
+FileSize: 1 Kb (1356 bytes)
+FileLOC: 10
+LicenseInfoInFile: Apache-2.0
+LicenseInfoInFile: GPL-3.0
+
+FileName: ./res/raw-uk/proxysettings.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: ba39748d2068b33642f236498aa236d7eb4ff2d6
+FileChecksum: SHA256: ed1ffdfb4c496ceb2caaaea1a28c68cf41de4a8eb6f9fc5e9dbc7dcdacf5f44d
+FileChecksum: MD5: a827f7ec54515ee3312bdca90e86e8e7
+FileChecksum: SSDEEP: 12:STc/degtVl0OeaFVNK0YDwVD07sXx5REsC00D2iVfAegNhfYg9yH0mNL9bNNqBtK:Ac05aHx3Ni5HJV1Wzsp4wSPpg
+FileSize: 1 Kb (1099 bytes)
+FileLOC: 5
+
+FileName: ./res/raw-uk/info.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 88602060574f7aafbd7558b08f2b68d996a049ae
+FileChecksum: SHA256: 1cdb0092f434eb82d5a99c6060b5fa0cab5aa6cfb02063a891a8cd29aa7e19ca
+FileChecksum: MD5: 486bb1c78ffd7e576aea72d38810e5a0
+FileChecksum: SSDEEP: 12:GVSeQhoYGhQYif8wGb/pUB5Jc07/pUBgcNa007/poALK1LB0:GOoYEa0/pUZ/p4NaR/poALKty
+FileSize: 470 bytes
+FileLOC: 4
+
+FileName: ./res/raw-uk/proxysettings_old.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 9ce741858c2985536ba695c7736e102b4170645a
+FileChecksum: SHA256: d7707fa25bc0a9b3fd235cc1adffadd87459070be03f828af307d53eeccdb8e8
+FileChecksum: MD5: c06a51a3ffb370b47316aaa9a8ad17d1
+FileChecksum: SSDEEP: 24:htAsfqkmRUlg51N8IysFvkpcyGCsZX+UtRkmqbFvNZP7iGE:h2YY8U1NAsFMcFCscUobFg
+FileSize: 813 bytes
+FileLOC: 8
+
+FileName: ./res/raw-uk/legal.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 09708a189a969feeee0354eca2e81542ebebfddd
+FileChecksum: SHA256: 16c28d6936e86897c8c3e7174384e860ca65d188b81a6382ea2d5c7aaeb1f946
+FileChecksum: MD5: ac7d75378350f24b074ba60cf07d0bf8
+FileChecksum: SSDEEP: 24:CwNjKPHGHOnMxceAONqQBQMLAiOKmiaPLIrfbfPmRP13W0tePPmKJBUPAMRWqCPP:PNGqKuYQqQLLQ1v2TeX372mhpQ35
+FileSize: 1 Kb (1572 bytes)
+FileLOC: 10
+LicenseInfoInFile: Apache-2.0
+LicenseInfoInFile: GPL-3.0
+
+FileName: ./res/raw-sv/proxysettings.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: f8742fef9d6d1c72cacb11b6d30ed1391fbdbcb6
+FileChecksum: SHA256: 6d3dba9c19a13065d6f6af26fdf5d69eaa6260216e871742acb084070c3a8d72
+FileChecksum: MD5: 5fcdd1457bcb9056898081039e11babc
+FileChecksum: SSDEEP: 12:QfCiY4+GicoAro5IeQCwSmLRpF9kpvLYj9pUBIuWEPp4zI:Ii2Je/wt0pvsBpsW2p4E
+FileSize: 716 bytes
+FileLOC: 10
+
+FileName: ./res/raw-sv/info.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 04893d653166ea0e24aaddfa764c825e8203a2e0
+FileChecksum: SHA256: 414adceadd022bc4ae327e89fcc2f3d1fe3cc7614b56e11132475dba22034999
+FileChecksum: MD5: e6e2182721757b4fdf4c4d10faeda636
+FileChecksum: SSDEEP: 6:nYpqEsXJ46vGWCXPpUB5elCXPpUB7je0zIlCXPpoAIFI92:Ni6vGb/pUB5//pUBWUR/poASI92
+FileSize: 317 bytes
+FileLOC: 6
+
+FileName: ./res/raw-sv/proxysettings_old.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 4fba4f52adead9d260334edd8cc06f1cf9ccaa9a
+FileChecksum: SHA256: c25d19af1adfa1999381e63d94529a9449ad317cfdf3d5251e526ef7eaee8cf4
+FileChecksum: MD5: 30d941b78eadc1758d132c5cf8da31ca
+FileChecksum: SSDEEP: 12:hQiNwCnvFewyzxpFkPpUBsbWjNFeMFoG9Gvb:hXbvFevupH6NFeM8vb
+FileSize: 476 bytes
+FileLOC: 10
+
+FileName: ./res/raw-sv/legal.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 6f6530757709a1513d2af3d92de2807cdea27556
+FileChecksum: SHA256: 35d2e0d1c39575b6e3259aa027707b7d45b555b3709d47cc45e44157cf779078
+FileChecksum: MD5: 6bb669bbc2af3e80375c0bfa85230db5
+FileChecksum: SSDEEP: 24:pzPHGHOhBDANqQBkAOKmiaPLIrPmRP1kZ2tePPmt+BUPAMIqCP1K58P5+W:NqGB6qQGx1v2eXkZ42mtzlQ/
+FileSize: 1 Kb (1334 bytes)
+FileLOC: 17
+LicenseInfoInFile: Apache-2.0
+LicenseInfoInFile: GPL-3.0
+
+FileName: ./res/raw-nl/proxysettings.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: b232126490090f2b61dc66aaea20abae62cf3e04
+FileChecksum: SHA256: 91ab4ec17dfb39d01a88ca00ba255c7e753c9595263e6449c8d8fc4378de8cf1
+FileChecksum: MD5: af0b17112917baef2a8c40ca9051de69
+FileChecksum: SSDEEP: 12:qRtu/mWnS0ahkTAzNBNdJ0+AHWNl0aQwQc0RnruWpXJdK0LS9Q/vLnwpcpUBI2Nb:qREKhk2dkYDwLnamHzNvTwpcpgbPp4E
+FileSize: 773 bytes
+FileLOC: 5
+
+FileName: ./res/raw-nl/info.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 7456a7fdec3b46bbdd718590249bf20f7a9d1dbd
+FileChecksum: SHA256: 5517507e0fa92a1e8bcd639f51b01ef7f1167e955823566a754ef23cea40b60c
+FileChecksum: MD5: 7838f7d6b180d590d74cdb9a01ce2335
+FileChecksum: SSDEEP: 6:TbxO+DxJIGWCXPpUB5qWCxCXPpUB7zwzU3wxCXPpoAMKt92:/xOLGb/pUB5jZ/pUBOU3n/poAp92
+FileSize: 315 bytes
+FileLOC: 4
+
+FileName: ./res/raw-nl/proxysettings_old.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 3824cfba84f3cb2ce3de0d209f7ae30e5dd81bc0
+FileChecksum: SHA256: bbf6a2687edca5b7ef7ecf5a709fba37e0c81ffb1cf43ca784a965e84899aabd
+FileChecksum: MD5: e4f83777e51e809ccc30bb8c2405d4b3
+FileChecksum: SSDEEP: 12:WTMXKHiauYm2aAAG3/pUBMwWeyXwFSI29BKDsL:WTFIYFpvteyXqFLDE
+FileSize: 540 bytes
+FileLOC: 8
+
+FileName: ./res/raw-nl/legal.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 689b7066abd3f660e7a29bdf3c3c1e89fcd4214f
+FileChecksum: SHA256: 7142a56f9597f4e5a0de33e9bf9b63db00eabbcb0376a45431e8a528881ca5f2
+FileChecksum: MD5: 14b2f18440eb4b91f67a9a1867c9d83a
+FileChecksum: SSDEEP: 24:0mPPHGHOvGewLJvPNqQBkAIKmiaPLIrkYPmRP13NtePPmzgBUPAMejqCP13O58Pj:fHqCG7VvFqQGp1v2kYeX3D2mzFeeQ3kI
+FileSize: 1 Kb (1366 bytes)
+FileLOC: 10
+LicenseInfoInFile: Apache-2.0
+LicenseInfoInFile: GPL-3.0
+
+FileName: ./res/values-fr/strings.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 7454f7449aa9842315c6c78889d00d647bdec615
+FileChecksum: SHA256: 76b5d54a261ec0ddd3e55b4e5b9a7884fdad222c730155b406a75dd4a0250aad
+FileChecksum: MD5: 75a1e2882df04b20cf877a811878b09f
+FileChecksum: SSDEEP: 96:MhR0TXmx33NVEx28Vb2IlDzzI0wspboLEMUueq:MhR0T03NVEx2g2Gz7boFUi
+FileSize: 6 Kb (6690 bytes)
+
+FileName: ./res/values-fr/arrays.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 91cde598f3bc0076f476b6943be06f7b3619ed8e
+FileChecksum: SHA256: 6526bd849defc581d1a131288619f80b243a7c9916f80de80feef68de9770a6e
+FileChecksum: MD5: 38d9c81bc3b906ccfd38a46c73a6c035
+FileChecksum: SSDEEP: 6:TMVBd77+8EatWpWYfFkESZGMDZGRGEJJyFKWX06f:TMHd77aaxCk7Z30THyFKWX0C
+FileSize: 234 bytes
+
+FileName: ./res/menu/menu_preferences.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: a17dbbfcc7ada32e2191ef1d51f0c2af8484dab9
+FileChecksum: SHA256: 7dc8028d3b8351e65a2d8db32c6c5cab6cb7c511ff0bbf2f116c10c3cbe12c36
+FileChecksum: MD5: b5381883799b31c108225d73198cf7e6
+FileChecksum: SSDEEP: 12:TMHdr1EAyvASpBpGPhfES1gIl3sPhNvES1Dl3IKPhf/s1ZIpn:2dZm4hMSUh6SvIch3qIpn
+FileSize: 647 bytes
+
+FileName: ./res/values-sr/strings.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: f4c5cb280e59732224334044bae83dc48d9c1391
+FileChecksum: SHA256: d43a74056fa57f388f100f41c6196357372bf61c7a4b6b120d134f54ce1cbe29
+FileChecksum: MD5: a55d1add000cdec9f54de80e3fadb59c
+FileChecksum: SSDEEP: 96:MhlMkZx1yHYPK33EqrbMnZBT21lEP/ptcCu7uuFcb6oo9AlvydbZnChoTpUKOUt2:MhFvKyfTAa+qMQAEvydNnCcPUb
+FileSize: 8 Kb (9176 bytes)
+
+FileName: ./res/values-sr/arrays.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 91748b5c502433b701dd4107e29db3c612364b1d
+FileChecksum: SHA256: 3d102af9590c16cd261db6e00286d551bb2ef6b2cf2abb690002f61b92ed4a4b
+FileChecksum: MD5: db1f8f49f8ddaa7c51f92b7aca69fa81
+FileChecksum: SSDEEP: 6:TMVBd77+8EatWpWYf3MbtZGt18moGqTitFKWX06f:TMHd77aaxXrVLG3KWX0C
+FileSize: 255 bytes
+
+FileName: ./res/values-sk/strings.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 799b4b93e781b631c36b36f6e79f79469d24fd14
+FileChecksum: SHA256: 861ba6dc7d5c90ab728bcd4643388cedfb3c9d2faf74b10c37424eb814bb9ee0
+FileChecksum: MD5: c657e533f57599d4c122ccc46b072b3d
+FileChecksum: SSDEEP: 192:MhC+dqEx2g2glFStdNApuEq7d2OLZDWUJ:MhzsLglFStdjsgZDWUJ
+FileSize: 6 Kb (7049 bytes)
+
+FileName: ./res/values-sk/arrays.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: e48781bdf8644c8a8b791ec95f70376ab0c6261c
+FileChecksum: SHA256: d1614a89cb49de7866194e2f2be726e5b78c1cc3018cb64d26e71937251fb676
+FileChecksum: MD5: fd0843e1df977c2934b26c7793c977da
+FileChecksum: SSDEEP: 6:TMVBd77+8EatWpWYfFkmECAoGQPbrGZ2JoA0KWX06f:TMHd77aaxCkmTr1PfM2Jo3KWX0C
+FileSize: 236 bytes
+
+FileName: ./res/raw-ja/proxysettings.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 4f870fd244a074b788a615daf5a95d60632570a2
+FileChecksum: SHA256: db720d50205f08c812711085ce50d32357564ca9bc7e07fa9553fbb3c915667e
+FileChecksum: MD5: b7eb08366ba5907e8299fd44eb3c1685
+FileChecksum: SSDEEP: 12:cPSWLHJJgK0nGhvk56PkCtIuVUy7098ZMLplOmA2pUBI7Dp4zWn:cPSIJg5GSMDn7Ypli2pNp4i
+FileSize: 843 bytes
+FileLOC: 10
+
+FileName: ./res/raw-ja/info.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 62066f524a3338bd1429d626321e045f1ea94c14
+FileChecksum: SHA256: 4f98d8d76a2df5e6e9078590700f28e6a0480b250be11e17b9905aed93a969c8
+FileChecksum: MD5: d4366d6baf693183d065a18104da6b4f
+FileChecksum: SSDEEP: 6:cPKxJ+QMxm/6NWQxhGGWCXPpUB5dz55olCXPpUB7uuGaolCXPpoAGauVw5ix2I0:cPiMi6NWaZb/pUB5dN5x/pUBvGk/poAX
+FileSize: 382 bytes
+FileLOC: 6
+
+FileName: ./res/raw-ja/proxysettings_old.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 96926ed768056f4384f659b1e5dc20ce5e24f6ed
+FileChecksum: SHA256: 1991818b91b77b68a3a1d676b221408a056514385ed67c0f5c39c7a635e5b66d
+FileChecksum: MD5: 14fc42c8815ad8e53ebd6ea1cec29e62
+FileChecksum: SSDEEP: 12:/PKx8CSW6VkbIPuXOJsEMC4GpUB46M2pN0hFuMKIPuXOlj9A7NGPC5S5:A8ZW6VRbFMmpI6jblGkMS5
+FileSize: 589 bytes
+FileLOC: 8
+
+FileName: ./res/raw-ja/legal.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: d62827a68c6a8eb2de2411bd4db64f402f226267
+FileChecksum: SHA256: 3e65d8771323e48d3ee9d0552a677e1ed0a02cdf721e21f4f82eca9b2d7872b7
+FileChecksum: MD5: 50e15ad7989ca2739d3e26e8ba52ace6
+FileChecksum: SSDEEP: 24:FYshUPHGHOmC3DDe8MWNqQB8N8ATSdKmiaPLIrHmRP1QZ2tePPmh+BUPAMEqCP1z:FRwqe3DJMIqQaygSd1v2GXQZ42mhzZQz
+FileSize: 1 Kb (1448 bytes)
+FileLOC: 17
+LicenseInfoInFile: Apache-2.0
+LicenseInfoInFile: GPL-3.0
+
+FileName: ./res/values-pt/strings.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: b5c7001d9b7524c2aad8378d787ed08333e7e958
+FileChecksum: SHA256: 6cbc6a513bd4cae7b5f8471d228e5d384b616e1dec4ab1d37af6a04543b817ef
+FileChecksum: MD5: 5b5aeaa547da501294e23e5825248161
+FileChecksum: SSDEEP: 96:MhEKjzn4Ex28Vb2IW+OZ9WIsJCJZhR4UGQ:MhEKP4Ex2g2Z9W9CJZhSUX
+FileSize: 7 Kb (7176 bytes)
+
+FileName: ./res/values-pt/arrays.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 15801ea6fca4cb53c69d95d7ec5b5e616f14abb8
+FileChecksum: SHA256: f017964b4f1b3257200ad0f610251c4f9fb8ad8745b57e7864290eec07f5161a
+FileChecksum: MD5: a224a0c9bee2229bbb5f4bdc11e505a9
+FileChecksum: SSDEEP: 6:TMVBd77+8EatWpWYfFkEGHGvAhGRGEp0KWX06f:TMHd77aaxCkZH0Tp0KWX0C
+FileSize: 241 bytes
+
+FileName: ./res/values-pl/strings.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: a0be54f33eb96d4caf269504c1eab15eb341a249
+FileChecksum: SHA256: 8bacec5e8e202e591eda029b6a532ac9f8365957ff655834bea7f4cd3e959b07
+FileChecksum: MD5: cae941e321329518a5706ddec6a8a696
+FileChecksum: SSDEEP: 96:MhwQ+sw5xQBj7Gc0PJPOu6b/uvIDXFXP0eGEVylrRKMHwUcsPw:MhwQ+s6Q10PnUuvIX1P0eGZlrRLQU3w
+FileSize: 7 Kb (7299 bytes)
+
+FileName: ./res/values-pl/arrays.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 1f1b23736dea081b30e93608c936ad69a950e037
+FileChecksum: SHA256: 2e19605a690a92405d7ae0a505ff39223e0e1140c0b16142475541176c60ef80
+FileChecksum: MD5: d7bf36d71b76bfc5ee31a98142290b9a
+FileChecksum: SSDEEP: 6:TMVBd77+8EatWpWYfxL+oGY35ZG2WE0iFKWX06f:TMHd77aax5oj5ZyiFKWX0C
+FileSize: 242 bytes
+
+FileName: ./res/values-he/strings.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 7c6440c39d45241c31c831d6022af2d5d08bf3e0
+FileChecksum: SHA256: 6a9c943331e4a12b5f03621f90c86949d63557231d640f9b1d553f59f2371f45
+FileChecksum: MD5: 933375ceef5adba29a980681118ee4fa
+FileChecksum: SSDEEP: 96:MhepskOSLWc+ShnX5t43bAah1SNyUTHvy+bMEd0KGqGI9lUEy:MheuJSyNSFX5t4UOUTqBaJHUZ
+FileSize: 7 Kb (7855 bytes)
+
+FileName: ./res/values-he/arrays.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 82a380410cb8657218758339c24c8832382e0230
+FileChecksum: SHA256: 18102957354b81a088c2e235cbc0fc599629ef5e7751e76ca0af663d0469cd88
+FileChecksum: MD5: 72d7f75e384da1d86e3e3b5f507669ca
+FileChecksum: SSDEEP: 6:TMVBd77+8EatWpWYfUFMoG4fG0G99KWX06f:TMHd77aax9FMoX6rKWX0C
+FileSize: 244 bytes
+
+FileName: ./res/values/strings.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: d42acb6d5b60f7e6062c25e5c0d463738dbb12e6
+FileChecksum: SHA256: d864ba8de74f07e0b25cfd6c2f1d494c14fc348cd9c4fcf53a03368cbc5fe328
+FileChecksum: MD5: cfdfa98bc7c9927dd9b6b02b42792f31
+FileChecksum: SSDEEP: 96:t6D4cHx3T0IEx28mb2I8Dq1J5I7wGbmQKUrnj:t6D4yT0IEx2v23qjGbeUH
+FileSize: 6 Kb (6767 bytes)
+
+FileName: ./res/values/bools.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 5ac81fa9195c3186a7ccdd7e605312b0286b2a7f
+FileChecksum: SHA256: 6f3c8ee8a72cf14eea2f919d55f6a2d6cd4b20c74331e80c598659e64847394f
+FileChecksum: MD5: 227db856d98771c8de067e65c773c1f2
+FileChecksum: SSDEEP: 6:TMVBdoLWCXFxh9KH3b5xFxh97EAjFxh97hdQ8xFxh9iDxFxh9kR46Cn:TMHd4Dh9KH/Dh97hDh97LQqDh9i9Dh9F
+FileSize: 291 bytes
+
+FileName: ./res/values/sysarrays.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 72921c4ccc1f4eeff20464f13134a364a69f88c9
+FileChecksum: SHA256: 1714391ea631ade3abbfb4972f80531671f0e94f7d7ef800bb142bc856c902f5
+FileChecksum: MD5: 7f27a47d3b9e844374f3ccdb8d4595f1
+FileChecksum: SSDEEP: 3:YHXZWksQvoIeAAbvFNkvhFkrM/ZFkAWFk7IZFvRXbKXnW3:YcYqrbd+vh2uZ2D27IZXXbMW3
+FileSize: 179 bytes
+
+FileName: ./res/values/sysstrings.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: d6cc74798b4a14aa7be9353a0dd2f1e0228035a7
+FileChecksum: SHA256: a6f52d5a0ce8ece5892051ff281bb8b5e3f44eaf3770fe5e08b274045f96415c
+FileChecksum: MD5: 3610430b1c46b24ad49a026f04488e3f
+FileChecksum: SSDEEP: 24:2d94AYNcNYApmTskhjZsUuXMpk004TI3yWKLxR2:cWR8WjZ1NbpTZWKLxR2
+FileSize: 1 Kb (1629 bytes)
+
+FileName: ./res/values/styles.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 15e3ed7d4e71a6b99798619ce5097599332b8db2
+FileChecksum: SHA256: d559e94df9d513fd8c4a3fc79cc9edb4ee647e6bb23a2052876e0d0447a275e2
+FileChecksum: MD5: bc664ff48f688ded2355e26a22871899
+FileChecksum: SSDEEP: 12:TMHdaAyvASpBZFgGMigUSnzIJRXjXYuFPLQZP/XR:2dI5/LTqRR
+FileSize: 582 bytes
+
+FileName: ./res/values/integers.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 4110fd09cdb0bfcf1e73246b8768d24ae19ae889
+FileChecksum: SHA256: 2601d73598b9813dfbbc14c4b756bf84332d283c26647c424d9f12caf6fb92aa
+FileChecksum: MD5: 6a689b61edeea92ef5e77694b302fcf0
+FileChecksum: SSDEEP: 3:vFWWMNHU8LdgCZLWt/uA4qE0cLATkA4qIXWl2H2oXAWLWf:TMVBdJW120cLATAXWkWKAW6f
+FileSize: 156 bytes
+
+FileName: ./res/values/arrays.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: e924b53e7c452b812ec6dcaa72acdb0ae24685e7
+FileChecksum: SHA256: 7f724f05f66e5c6a895408c1244060231b4cf27a8cd86b71343c7dcf7339e1c8
+FileChecksum: MD5: b194d92dfdb3e9159691162eb516e70c
+FileChecksum: SSDEEP: 3:hWt/6ksQvowIAALX0FkEJJXiZF0MDBkIZF0gGGEJJyZF/RX1/uzLWf:hW16YfFkESZmMDZmRGEJJyZHX12z6f
+FileSize: 208 bytes
+
+FileName: ./res/raw-hu/proxysettings.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 7cb2208db883fafc7e45d19879d4ead8a0edeaf4
+FileChecksum: SHA256: 3969b3ae48614ab05ef7beb32525ae224b9bc2c91b7020519112e1e3fa1074ce
+FileChecksum: MD5: f543b838eb47bec8d781a3c388aa7c82
+FileChecksum: SSDEEP: 24:8WJQeLs/yGH3GWMA4dAfo4XCWSyu92pul5Pp4kS:8WI/yGCqfyW+2ul5x4r
+FileSize: 875 bytes
+FileLOC: 10
+
+FileName: ./res/raw-hu/info.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 7e65156132cf72f98386f42cffbce75ce8fa4c04
+FileChecksum: SHA256: a95d42f98896e42dd0ecdb7076911892189bc59171ea1b17c282b42ab6aed965
+FileChecksum: MD5: 30aa1d3bee91c3fa4ef6a38a9cc92e9d
+FileChecksum: SSDEEP: 6:coAqh7XKmtLK4XUyxJDGvUGWCXPpUB51b6olCXPpUB7IlCXPpoA1CU8:coAqh7X95KReGb/pUB5N6x/pUBN/poA2
+FileSize: 340 bytes
+FileLOC: 6
+
+FileName: ./res/raw-hu/proxysettings_old.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: c3c43fa60f23867d2ec5b40cef41ac4dc7ef8ddc
+FileChecksum: SHA256: d2793e9d3435285c1d83feab08cdb6cc8abd3d34843f9579aa31d2b1ec056def
+FileChecksum: MD5: 1348a90f80084a048f7850116d6e2902
+FileChecksum: SSDEEP: 12:oZK+oWaCwjSe0V7nUOHAxIeUj5pUB0K/jMW2ISeQfLzv9zWKQ:oMkei7nUdOe45pobX21eKFWKQ
+FileSize: 555 bytes
+FileLOC: 10
+
+FileName: ./res/raw-hu/legal.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: d51aded116a7d044acc62ff94becfc378453af2b
+FileChecksum: SHA256: d7c75b92f6a90cb854ca0fd7f7b27e5f02d226f8f280e7ff77466102b41c9083
+FileChecksum: MD5: 67b8a6081bf83aa1b15b4a4850ee2ac0
+FileChecksum: SSDEEP: 24:BCLPHGHOAr5MDb2NqQBFNvSKmiaPLIrSmRP11Z2tePPmw+BUPAMZqCP1R58P5lW:YqJWDboqQLU1v2NX1Z42mwzYQH
+FileSize: 1 Kb (1367 bytes)
+FileLOC: 17
+LicenseInfoInFile: Apache-2.0
+LicenseInfoInFile: GPL-3.0
+
+FileName: ./res/layout/configuration.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 2623a73b7d313dde5eaaeb8551d87c36c48fec28
+FileChecksum: SHA256: 98e092e5eab5104e4684df9845749ba4e1ec27ae3f1b6895038696c9e3987aba
+FileChecksum: MD5: 2c7e7a0298299ed46f61544ea61a9d5c
+FileChecksum: SSDEEP: 12:TMHdLSAyvASpBMHvgnAsHvgf6AsHcymJsHBylHtHiVMAR6vgX+Kvgf6AHsvgX+KG:2dkAHy46VclEl/G6+oVM9Ko1zaJ
+FileSize: 1 Kb (1187 bytes)
+
+FileName: ./res/layout/preferences.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 07607d58e386a05c4231ba66253e0cd59d4aa119
+FileChecksum: SHA256: 96195a31a5739c8e95c84417250788af32a196f81be4a3051472d532f0bdb8aa
+FileChecksum: MD5: f2939a1a3b06f4ffa7740d3ee8f23e23
+FileChecksum: SSDEEP: 12:TMHd3RAyvASpBi8vgX+hvgfY+hcymJNinCxR12vgX+hvgf6AXhs54VMAAcmx/vgU:2djpEFqy4J+Es4V9sEh8dtK+EFwh
+FileSize: 1 Kb (1315 bytes)
+
+FileName: ./res/layout/notif_hidden.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 59731d9d2c34311b7b710d6ab32474fdbcea44b8
+FileChecksum: SHA256: 0f65e305ebda0723f12d673250d15c78d9958b83b9db100f37212c31f8f2f39c
+FileChecksum: MD5: 3a351d01281a3b3ad05b904a2d03f9eb
+FileChecksum: SSDEEP: 6:TMVBdLEXKaAyiUzA7WpBMxBvg5J+/mxBvgW+6fYsxBEzyRkJsxBruolb0i1Ky:TMHdLSAyvASpBMHvgX+uHvgf6AsHcymk
+FileSize: 275 bytes
+
+FileName: ./res/layout/about.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 9f5a03c36a36fb898116e01434305cf8aaacdd13
+FileChecksum: SHA256: 1449554efe2bee9c7a020a53be53193fd91ecdf334f411820bf1f8f4bff26e18
+FileChecksum: MD5: 06d7cb35f2d2f5f9250f7c28112a9ea5
+FileChecksum: SSDEEP: 12:TMHdbRxAyvASpBMHvgX+uHvgfY+GsvgnAMvgf6AMcymJMLVMARU3vgX+avgf6AA2:2dVzAVFD3y46VgP1eXgr
+FileSize: 564 bytes
+
+FileName: ./res/layout/crashreport.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 1b248e1d2fb18759d4a3f8e164ab7e46584168cd
+FileChecksum: SHA256: 09cf9344f62e69c4643ab5a9edb95cca4c421b72619b69c17c76b319fa4fdd9c
+FileChecksum: MD5: c590ab4d11bb2087d409657047b7d41e
+FileChecksum: SSDEEP: 24:2dVzAVFLl3y4+Vb1dufVb1CuMXC1T1iIFp7IFrTN1Ngr:cl4+V4VCXxI6E
+FileSize: 1 Kb (1719 bytes)
+
+FileName: ./res/layout/proxyconfiguration.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: cd2cb4aa24e0e68ee0b2671519d9dfcc790ca2fa
+FileChecksum: SHA256: 4d1f20dfd37ef24b0378dca0a7d60da2b242a43bebe1691875d03998a7b8bec2
+FileChecksum: MD5: 1911ef1487dbf0f3aadf6bea4ebb8ab2
+FileChecksum: SSDEEP: 12:TMHdLSAyvASpBMHvgnAsHvgf6AsHcymJsHBylHtHiVMAR6vgX+Kvgf6AHsvgX+Kz:2dkAHy46VclEl/G6LGL7M9ze7sEJ
+FileSize: 1 Kb (1247 bytes)
+
+FileName: ./res/raw-el/proxysettings.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: a9e06beb0a0673d952bb5fe34a7959b72d6c34a7
+FileChecksum: SHA256: 00212803c106a7c4959d6ba9718023e24940e9042381bc27783c369f0c105f17
+FileChecksum: MD5: 1e3c0476a911f96455c79439d029887c
+FileChecksum: SSDEEP: 24:nAV7dsYIitTbcrbGa9qkYv3xYahtxtx4wipJrEwp4E:nAV5moTQrh8veasJrh4E
+FileSize: 1 Kb (1080 bytes)
+FileLOC: 5
+
+FileName: ./res/raw-el/info.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 0aa04a87c320191a8028837d05a15aa34e9c5a4d
+FileChecksum: SHA256: a69c3f85695df85cc5348260b5c9c988c696c743604acb6afd61697c1a73fe7a
+FileChecksum: MD5: 70eb2568030bacb3294c18272eb4407e
+FileChecksum: SSDEEP: 12:hVzfrYX2au4Kf2wGb/pUB5Ig07/pUBMw+9207/poAPIZR:hXP0/p3V/pTV/poAPIb
+FileSize: 479 bytes
+FileLOC: 4
+
+FileName: ./res/raw-el/proxysettings_old.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 173bcadb83460c177edfee702eb7c8be61f385c8
+FileChecksum: SHA256: f10822d2db742ebd0cac3e13a508e96234963c39290b7d58e64f12086ec54674
+FileChecksum: MD5: 1cd2b57657990c27cdbd504fa1048a94
+FileChecksum: SSDEEP: 12:gb5fvshZUPu7C54cDrjxi09qxqSbuMYqqmpUBu9M9V5C7JFQS5koVQo9/brICLW:gF3ufctTqsCTBpBWfQjQYyuLq
+FileSize: 875 bytes
+FileLOC: 8
+
+FileName: ./res/raw-el/legal.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 1e4984dc89fdfebe4cf8e5b377a8a7b1f84ab787
+FileChecksum: SHA256: 6578ee06c6d91c277bffac49d1b7504ae7bc04c3b0b8602876ba3dd4b20c33d3
+FileChecksum: MD5: cd3b61dafcc7b9c9460e5966cdbd7755
+FileChecksum: SSDEEP: 24:431kqjrPHGHOFbueF+642GNqQBIL7TKKmiaPLIrFlTPmRP1btePPmOBUPAMQqCPx:43tqibueUqQqLXK1v2FleXZ2mDtQT
+FileSize: 1 Kb (1723 bytes)
+FileLOC: 10
+LicenseInfoInFile: Apache-2.0
+LicenseInfoInFile: GPL-3.0
+
+FileName: ./res/raw-ru/proxysettings.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 9ea2ddf9364a32defffc1fb90ff37b13aa2e15b0
+FileChecksum: SHA256: 06c3a5ed2a5caa3aa6f3f618cb73e98d543d538f7499f0da1a150a273e6d0c2e
+FileChecksum: MD5: 108a5b3ec4d1c62f49d5f687659891ec
+FileChecksum: SSDEEP: 24:8WK0XKd/djelJBS8l4Flxl9p4s9pxngDW:dKEKbjwvG425
+FileSize: 1 Kb (1139 bytes)
+FileLOC: 5
+
+FileName: ./res/raw-ru/info.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 38ad527dc4081ff927df53e594c65698acae237d
+FileChecksum: SHA256: 0727c569dfe9d738354d0a22b69f61be862dcc326e548be7b7abe0c4243b8705
+FileChecksum: MD5: bee83a3133d4373790aac3fdfbccb752
+FileChecksum: SSDEEP: 12:kVHYbdKGb/pUB5J7V5qW7/pUBwyq/poALKqFRXB0:pK0/pU73z/pFr/poALKqFRXy
+FileSize: 452 bytes
+FileLOC: 4
+
+FileName: ./res/raw-ru/proxysettings_old.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 7ac62a289b27f1e4d8b1d15d742cf964babb57b4
+FileChecksum: SHA256: d00f32386f5a0b8fcc90e331e420454700f3768b36cc08cdd9f3f420346c2856
+FileChecksum: MD5: 3276fb602e54b6a870a68d4ea99a049a
+FileChecksum: SSDEEP: 24:QZLjCPFRTVFjrHnEnPpYs32xRTJGof+CGE:QNCdTF3HnEnxYsgjnN
+FileSize: 795 bytes
+FileLOC: 8
+
+FileName: ./res/raw-ru/legal.html
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 000ee643ac73f30637977d9d7b77c06495f0878b
+FileChecksum: SHA256: 61c7962679aed1e761c85d21e4ed8dfc49df3e7960cdaa7d5a12773360decbbf
+FileChecksum: MD5: 9a8a9e85ee35fe4d43096b4c483a0882
+FileChecksum: SSDEEP: 24:r9gEQIfrAUPHGHOzUIZNqQB1QoGAQSCKmiaPLIrlmRP13W+tePPmoBUPAM+qCP1h:PDAwqOUyqQoR0C1v2kX3/2m9vQ3x
+FileSize: 1 Kb (1607 bytes)
+FileLOC: 10
+LicenseInfoInFile: Apache-2.0
+LicenseInfoInFile: GPL-3.0
+
+FileName: ./res/values-lt/strings.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 00bf476406fd01c43a18b6333326c21f6b60fce0
+FileChecksum: SHA256: 2f8d496b0fde4078e33299588ae60c208bccd45f282dbb7ef84c12a4a887b2e1
+FileChecksum: MD5: 5cc9ecb9e3d4e3e8a456279cb93cb577
+FileChecksum: SSDEEP: 96:MCExRGMK5INUzX4iZZrDboJ2fuz0yQq41TScqU32:MCETGMK5HrbJs0yQq49qUm
+FileSize: 6 Kb (7090 bytes)
+
+FileName: ./res/values-lt/arrays.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 2c6c9f14323a8f3b5b966fba08a9b36c03cb2d22
+FileChecksum: SHA256: 2ba4a6f94ea7160ffd8d7b5e7f3c6ef60a48665dbcb0567c3ecb33bdd2de8401
+FileChecksum: MD5: 5860a5e7fb1a720455c379ad14b4519a
+FileChecksum: SSDEEP: 6:TMVBd77+8EatWpWYfi4jG82PRtZGRBrKKWX06f:TMHd77aaxb4j6Ph0JKKWX0C
+FileSize: 244 bytes
+
+FileName: ./res/values-zh-rCN/strings.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 409fc5a36d02b3cd64490febebd36066db04dff3
+FileChecksum: SHA256: 30966a6153c88a1b087dc9a7f5058f977192e42cb797fac341bde6a1ca7cba59
+FileChecksum: MD5: 9b142240f89dd1931fef1dd8cfae91a0
+FileChecksum: SSDEEP: 96:Mh3QvoClQz9357L4Fdj4MePs+chtjsd7vUZ2d:MhWHlY1h4Fd8NchE7vUW
+FileSize: 5 Kb (5761 bytes)
+
+FileName: ./res/values-zh-rCN/arrays.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 6fd985c2828544d1db3c2cf9bf84e67a8e221a9e
+FileChecksum: SHA256: 414b53f0ea2a4a62f130ff9debab611ae9327e0fce4799bc5ddbf9b1c174768a
+FileChecksum: MD5: 97e5b50ce8a4a940ea1d8484f8f193a7
+FileChecksum: SSDEEP: 6:TMVBd77+8EatWpWYf4V1hGoCG8I/FKWX06f:TMHd77aaxP7h8dI/FKWX0C
+FileSize: 227 bytes
+
+FileName: ./build.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 8ac8319a37b2d24834bbb861942ee6395fa4485e
+FileChecksum: SHA256: fd0e611e04087e553d3bcaafb619178e8692a0582aa2270bec4007645c85b896
+FileChecksum: MD5: 1e513c7ddd306645f84b98d0973a476b
+FileChecksum: SSDEEP: 96:Nfwq+Bh02D/+GGV/qVw+lmwRmbDidn98:NIq+M2D/Y+lmw0nf
+FileSize: 3 Kb (3873 bytes)
+
+FileName: ./.externalToolBuilders/Adblock Plus Native Builder.launch
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 6d263aa058b8d11d2d6308c83f4ba9f2a72267a9
+FileChecksum: SHA256: 1b3f00f641ea38489a10a609d4ed8c2ab1c5ce6ee4d428c9487cce78ecfb48ec
+FileChecksum: MD5: 82ce1eea811673e824ab3d3b362f2505
+FileChecksum: SSDEEP: 24:2dt/N8c7wvDz+JPbKchp8lu8OqmvDzXJPU8WS98XV8d8pYh5:cpN8cSDiJTKcj8lu8OFDjJ88l8XV8d8k
+FileSize: 1 Kb (1298 bytes)
+
+FileName: ./assets/subscriptions.xml
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: d8b332820173e143166c31bfd10bdaeb5e59959e
+FileChecksum: SHA256: 46cfa220f58bca415850ce5e6cc4ee7b6e4a29c3b1bc254789c34cfe55173266
+FileChecksum: MD5: 6cf5d574f20a6108b08852c931eada73
+FileChecksum: SSDEEP: 48:eBGyGHZNkMCXkHkZkdB2hkKcTGfkoQcZSnq7kKPEokuU0bk8R3+5kcYovkCmZN/C:VZMHEqopcQI/C
+FileSize: 4 Kb (4753 bytes)
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./assets/js/FilterClasses.jsm
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 02a4f45437935c4542b45b6e6b990781eacf831f
+FileChecksum: SHA256: 75b2a9f8b853b5b4e603c769ba74aca5219a0731c98f17c447ccfd2fd75f1e1a
+FileChecksum: MD5: 776b652a4db2832032a54ecd098923e4
+FileChecksum: SSDEEP: 384:gnXmtqYary5+WGilVgPQkWPZDpECv1KeXgotGgDZa:gnXmQYarU+WGilV2lg1KagotGgDZa
+FileSize: 15 Kb (15749 bytes)
+FileLOC: 467
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./assets/js/FilterStorage.jsm
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileOrigin: AUTHORED
+FileChecksum: SHA1: d7f1e68711fd6f9c9a280677753e28d58dcb4b90
+FileChecksum: SHA256: 9fcd32b347327a8ff466458598dcd2bfb36c2b5074ae177bbd63b60693a3a7d1
+FileChecksum: MD5: a68e026d825a8b72aeaa864657573027
+FileChecksum: SSDEEP: 192:gnf/oIkSMBI7SDzyO6ZaiwGTlO5a/ATy+aWA4xqOIDs:gnmSTEsTl1+7A4xqOIA
+FileSize: 19 Kb (19982 bytes)
+FileLOC: 556
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./assets/js/Matcher.jsm
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileOrigin: AUTHORED
+FileChecksum: SHA1: ee336626fffa1330b0120600b387e0b3b4e8b4b6
+FileChecksum: SHA256: c94950b95b502b97b353d84a5bb883d7eba008a63bcd0492470eea188436b4bb
+FileChecksum: MD5: 5488ea712c9e0b47a9f3af920642f7bd
+FileChecksum: SSDEEP: 192:gnb2AD5uJRVgeYSAHPaojQeeNU9NpbdPE3K8MP5gC9MkY:gnb2M5wXgecPxjheGB1Ea8MPn9MkY
+FileSize: 11 Kb (12073 bytes)
+FileLOC: 393
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./assets/js/basedomain.js
+FileType: SOURCE
+ArtifactOfProjectName: ipv6
+FileLicenseConcluded: MIT
+FileOrigin: MODIFIED
+FileChecksum: SHA1: 4e1665372aef16fc0006986b5a89b971548a140a
+FileChecksum: SHA256: 27bbcf9a94b2bfea52abd9818c819966a82a9144332428d4d343aab5e809c17d
+FileChecksum: MD5: df0f25fadfffed88e9c05140923b0ac2
+FileChecksum: SSDEEP: 48:8/2E4xqYKkYp+gKEAkf9FLYUvNgEl+do62bo6g8SV6Y/2fs3mAK7ay/xH7q2X0B8:+NN+a+gokf9jCbo3omSVteUWT7ay/xbR
+FileSize: 2 Kb (2766 bytes)
+FileLOC: 102
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>Copyright 2011 Beau Gunderson</text>
+
+FileName: ./assets/js/ElemHide.jsm
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 6e259b0aed211812b59c90d08ba966187988dd31
+FileChecksum: SHA256: e3f8829a4c87966575fac8028aeccf3fcd3b3675a9aaff0bdd6384fcb11b07fa
+FileChecksum: MD5: 2c41d7145c46c2eab010b5980c8998e1
+FileChecksum: SSDEEP: 96:gnALxsW5NRtc+tXXdU2GOoU0GgNdGH2skyH3EfyQZwAaaaS2QzzdaB:gnAVB1BXXu2G5JGgNdGB0yQZH2azdaB
+FileSize: 9 Kb (9956 bytes)
+FileLOC: 315
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./assets/js/publicSuffixList.js
+FileType: SOURCE
+ArtifactOfProjectName: PublicSuffixList
+FileLicenseConcluded: GPL-3.0
+FileOrigin: EXTERNAL
+FileChecksum: SHA1: d16a23f167166776a13d17ea2305fda516e2dea4
+FileChecksum: SHA256: f6c4422f43e0e7b27dec23532d66206278f6516e7cd06f0ddd6136767c057258
+FileChecksum: MD5: a42f9d608eaccf5f94740e5ef4045e2c
+FileChecksum: SSDEEP: 1536:AfViD/0UXbtuuwCZRnFKXvczHbr19gwzFQnGQ:AfViD/0UXbtbwCZRnFKXvczHbr19gwzy
+FileSize: 90 Kb (92476 bytes)
+FileLOC: 4030
+
+FileName: ./assets/js/SubscriptionClasses.jsm
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileOrigin: AUTOMIXED
+FileChecksum: SHA1: f0258a26547d67c15d817c313cf6690cdcc5853f
+FileChecksum: SHA256: 5c707b8c1410a365446d8b539a03b29c3db95b3b23d018af6ff424443d16ca81
+FileChecksum: MD5: f726859b85948079989d4e7866894af1
+FileChecksum: SSDEEP: 192:gnlKu+Yl9jDpVw3DU/UIk84/GnegWuyq+:gnlKdEzwg9bMqd+
+FileSize: 11 Kb (11391 bytes)
+FileLOC: 344
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./assets/js/XMLHttpRequest.jsm
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 61e710ace07492c5f9bd9029e184e02042af7ae6
+FileChecksum: SHA256: 674e3de890529bd122a1de995ca14221ef1df662b38fb2ab756a002c6aa02fe2
+FileChecksum: MD5: fff3a65a68b223380f6041eaafb6c458
+FileChecksum: SSDEEP: 96:gnDRMFENNSCCYLJZSrdFNcgzvaAEBbClSDzha4uh0/9GzEbVpzE2RsoK:gnDRMFENNSCCYFZSrdF1aAEBbClSDzh2
+FileSize: 4 Kb (5057 bytes)
+FileLOC: 169
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./assets/js/FilterNotifier.jsm
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileOrigin: AUTOMIXED
+FileChecksum: SHA1: 9ef64327966b0397bb1d73ba2d7385e8d50688e9
+FileChecksum: SHA256: bb63140fc87a48f3159f02d483c0f78b00363b606222916bbcf1add9faa7f849
+FileChecksum: MD5: 70fd991e3734e8aa428db7f0e57f1223
+FileChecksum: SSDEEP: 24:IMYO870XyXOkHm2TbVoRiW7sTotcpxdhFXtpcFCpbZLvbLGmr+S:gtYyxH2baTTX30C1JyE+S
+FileSize: 1 Kb (1639 bytes)
+FileLOC: 51
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./assets/js/FilterListener.jsm
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileOrigin: AUTOMIXED
+FileChecksum: SHA1: 638de3161455f2fe6d04058864df7403f847d38e
+FileChecksum: SHA256: 95844892a58ddba0f68ece2892b76488a91333b24901e679cd76b6f5a59aee1c
+FileChecksum: MD5: f0d4e4e8a6fa3e4ee2275a5a59007d5f
+FileChecksum: SSDEEP: 192:gnYBB/8ekhkekpazv/x35IHpu0JQp/W/zKh/oXCN/oE:gntSfO/x5apG/W/zu/j
+FileSize: 9 Kb (10238 bytes)
+FileLOC: 280
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./assets/js/punycode.js
+FileType: SOURCE
+ArtifactOfProjectName: Punycode
+FileLicenseConcluded: MIT
+FileOrigin: EXTERNAL
+FileChecksum: SHA1: 404e9b4e2fae3fd856beb62d5f3227f0616db859
+FileChecksum: SHA256: 3cd452108a17103d0332c2034a940bb74afef0874d49e07c9f8f42544129abeb
+FileChecksum: MD5: 0ed38ac63eb44b037da73dcba9423e4a
+FileChecksum: SSDEEP: 192:o70S5WxLuHcbjUiIju3F3uSPIwwPlz+3FZz+BudPY+f5iu4dKyduN:oV5AuHOjU3jek6z+BudPY+f5D0KyUN
+FileSize: 13 Kb (13945 bytes)
+FileLOC: 450
+LicenseInfoInFile: MIT
+FileCopyrightText: <text>Copyright 2011 Mathias Bynens <http://mathiasbynens.be/></text>
+
+FileName: ./assets/js/start.js
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 183438b2fc813d40a256fdb275fe876a977de462
+FileChecksum: SHA256: 3f18afb5297df1e7b090719a9a0478a67c0d505a7c1093b598ba861b0657bef4
+FileChecksum: MD5: ac9488bfe21da3bff0aafa6ad7321b9c
+FileChecksum: SSDEEP: 192:gnbtXZ5oigoHlXp+Qs8/+vyaTqbLLi1N8o03aivOXsyLXHWTyEvveJoYU2afwf2u:gnpZduyDMIYARwfS+h2vWXjBSq
+FileSize: 13 Kb (14145 bytes)
+FileLOC: 558
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./assets/js/Synchronizer.jsm
+FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileOrigin: AUTOMIXED
+FileChecksum: SHA1: ad19c156b6c434e9d8072ca6c633f0151bb5962a
+FileChecksum: SHA256: 6a857d58b701f3998c7b0ae05b4c8ef05c478912d56eaa429b5b460623060520
+FileChecksum: MD5: dc3a99d4375977fd80580e174340e223
+FileChecksum: SSDEEP: 192:gnTSWhwWLOCINkTK+oB7Rxdli+iV2MhDAawv9BKn3lNtM:gnuWeWENRt9BiV2MWiPtM
+FileSize: 17 Kb (17460 bytes)
+FileLOC: 413
+LicenseInfoInFile: GPL-3.0
+FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+
+FileName: ./assets/install/iptables
+FileType: OTHER
+ArtifactOfProjectName: IPTables
+FileLicenseConcluded: GPL-3.0
+FileOrigin: MODIFIED
+FileChecksum: SHA1: 69156408878bdf0346cbb5bc3d56f81954ec7fca
+FileChecksum: SHA256: daf2e9240bc104100ca8be09713fd34598f1ac68494752cb9f39c31b224d2ccf
+FileChecksum: MD5: cb4df350399910e488da5186f987f830
+FileChecksum: SSDEEP: 1536:pt2zVr3476L0l52h/bgbKIcb+jOrc9RH02OtGAAAAAAAAAAAAAAAAAAAAAAAAAA:ptO47A0l52Cbzcb+jj9RH02jAAAAAAA
+FileSize: 86 Kb (88352 bytes)
+
+FileName: ./README.md
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: b8963f64dd1e8d74a17f3ecdb8395b9ec6f29c37
+FileChecksum: SHA256: 878dc324d8e7c77395ce593116c7e34cea63c7b923c13db55cad68cedc368048
+FileChecksum: MD5: 163d0aa66870580b7463d3c8571a97ae
+FileChecksum: SSDEEP: 48:Q6Te6r616pFYlH8GK/16pFYNYv7ObrC+s:D6OZ+lfORs
+FileSize: 1 Kb (1699 bytes)
+
+FileName: ./.project
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 0a62f23cc2ef8a59961c4a82b3adf03eeeb59bdf
+FileChecksum: SHA256: 41e7643e66f15fd6ff058c291f937291ce1716bca734946cf830a596c940f067
+FileChecksum: MD5: 31a816334bffeb70ee33406f7ab8c262
+FileChecksum: SSDEEP: 24:2d9aXewZ+VeGVerwq+VehwFEOJWpwZjZeeKGvc5mW5QAXz:c9aOZBUH+2OEOMp+KGvcZqyz
+FileSize: 1 Kb (1759 bytes)
+
+FileName: ./.settings/org.eclipse.jdt.core.prefs
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 7a0601abc2a9c2244c2532f55ede36f775c9d533
+FileChecksum: SHA256: 5d08c846e201cbafb6cbc0138a7287bdb5a62bbcf34a4902f93164fb81d14b9c
+FileChecksum: MD5: 16b4fbdbd9fbb7e296eb946f1ab147e4
+FileChecksum: SSDEEP: 12:r74qpREMSmuPpRE4JbpREQnGHF2p3pcnPpFoA6Ppl6PpXPpEpPpi:PbEZnPbE4dbEQGHIdynPYnPmPZPmpPc
+FileSize: 587 bytes
+
+FileName: ./libs/RootTools-1.7.jar
+FileType: ARCHIVE
+ArtifactOfProjectName: RootTools
+FileLicenseConcluded: Apache-2.0
+FileOrigin: EXTERNAL
+FileChecksum: SHA1: 4c3510225cb56d187e5f378576e144bc58a6a868
+FileChecksum: SHA256: 84f46eed5aa855b03807cbf7e3a37a1539357ec3fae1446452b43e75700cea61
+FileChecksum: MD5: f8a3bb70ac6b8d805cac115cc9dd4e39
+FileChecksum: SSDEEP: 1536:HIdxxlIHpLKOhaTnaE3Sc2DvSdZ7oNc/ZDMm1:I1okOon9ScqvSL7UchDx1
+FileSize: 67 Kb (68664 bytes)
+
+FileName: ./project.properties
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 94b5e717dd891087855071cabb8855242a12d70c
+FileChecksum: SHA256: 4f0963796aceade81b036d041df74657d1e7c6f066e7907253b6439b9d968cd1
+FileChecksum: MD5: 480a6cd4d8bd8082ccce0344ca3cdb32
+FileChecksum: SSDEEP: 12:q0AimPab6LFCARrjWOlx4ZhO7BpWhfRD21yAfRDfBl:q0AvPE6LUAR3WUaO7+BaX
+FileSize: 489 bytes
+
+FileName: ./.cproject
+FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
+FileLicenseConcluded: GPL-3.0
+FileOrigin: AUTHORED
+FileChecksum: SHA1: 3bcbe837eb492f746b9e3a81c7dec8bcaae85c81
+FileChecksum: SHA256: 1c02a6167bed296fa7f535720518d3308d2873cff821e916f0ea198a8008aeb2
+FileChecksum: MD5: 753f987b7460f2b6b8acd24c8cd70d64
+FileChecksum: SSDEEP: 96:aOsd/V3gbjZ8TgbLQapN3UFgZSrUFn+aPF7:aOsdN3mZ8TQQapN3UFAgUFn+aPF7
+FileSize: 3 Kb (3840 bytes)
+

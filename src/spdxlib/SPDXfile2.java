@@ -27,6 +27,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.Icon;
+import javax.swing.tree.MutableTreeNode;
 import main.core;
 import script.log;
 import spdxlib.summary.SummaryControl;
@@ -56,9 +58,12 @@ public class SPDXfile2 implements Serializable{
     
     // the node where all info about files is stored
     private TreeNodeSPDX nodeFiles = new TreeNodeSPDX("Files");
-    private TreeNodeSPDX nodeAuthorship = new TreeNodeSPDX("Authorship");
-    private TreeNodeSPDX nodeSettings = new TreeNodeSPDX("Settings");
-    private TreeNodeSPDX nodeComponents = new TreeNodeSPDX("Components");
+    
+    private TreeNodeSPDX 
+            nodeAuthorship,
+            nodeSettings,
+            nodeComponents,
+            nodeExport;
     
     // temporary values only used during the initial processing
     FileInfo2 tempInfo;
@@ -195,6 +200,10 @@ public class SPDXfile2 implements Serializable{
     public String getRelativePath() {
         return file.getAbsolutePath().replace(core.getProductsFolder().
                 getAbsolutePath(), "").replace("\\", "/");
+    }
+
+    public TreeNodeSPDX getNodeExport() {
+        return nodeExport;
     }
 
     // used for tags with multiple lines, such as:
@@ -803,34 +812,17 @@ public class SPDXfile2 implements Serializable{
         }
         
         // create the authorship node
-        final File scriptFile = new File(core.getPluginsFolder(), "/spdx/authorship.java");
-        nodeAuthorship.scriptFile = scriptFile;
-        nodeAuthorship.scriptFolder = scriptFile.getParentFile();
-        nodeAuthorship.scriptMethod = "main";
-        nodeAuthorship.icon = core.iconFingerprint;
-        nodeAuthorship.nodeType = NodeType.sectionCreator;
-        // Set as object the file pointer
-        nodeAuthorship.setUserObject(file);
-        
+        nodeAuthorship = createNode("Authorship", "/spdx/authorship.java",
+                NodeType.sectionCreator);
         // create the settings node
-        final File settingsFile = new File(core.getPluginsFolder(), "/spdx/settings.java");
-        nodeSettings.scriptFile = settingsFile;
-        nodeSettings.scriptFolder = settingsFile.getParentFile();
-        nodeSettings.scriptMethod = "main";
-        nodeSettings.icon = core.iconCONFIG;
-        nodeSettings.nodeType = NodeType.sectionSettings;
-        // Set as object the file pointer
-        nodeSettings.setUserObject(this);
-        
-        // create the settings node
-        final File componentsFile = new File(core.getPluginsFolder(), "/components/summary.java");
-        nodeComponents.scriptFile = componentsFile;
-        nodeComponents.scriptFolder = componentsFile.getParentFile();
-        nodeComponents.scriptMethod = "main";
-        nodeComponents.icon = core.iconCOMPONENTS;
-        nodeComponents.nodeType = NodeType.sectionComponents;
-        // Set as object the file pointer
-        nodeComponents.setUserObject(this);
+        nodeSettings = createNode("Settings", "/spdx/settings.java",
+                NodeType.sectionSettings);
+        // create the node for reporting components
+        nodeComponents = createNode("Components", "/components/summary.java",
+                NodeType.sectionComponents);
+        // node for exporting the compliance data
+        nodeExport = createNode("Export", "/components/export.java",
+                NodeType.sectionExport);
         
         
         
@@ -838,6 +830,28 @@ public class SPDXfile2 implements Serializable{
         computeStats();
     }
 
+
+    /**
+     * This method permits to add new features for each SPDX document tree
+     * @param title         The title of the node
+     * @param scriptPath    Where the script will be executed
+     * @param icon          The icon image to display on the tree
+     * @param nodeType      The type of node that represents the content
+     * @return              A tree Node
+     */
+    private TreeNodeSPDX createNode(final String title, final String scriptPath, 
+            final NodeType nodeType){
+        // create the tree node
+        final File componentsFile = new File(core.getPluginsFolder(), scriptPath);
+        TreeNodeSPDX node = new TreeNodeSPDX(title);
+        node.scriptFile = componentsFile;
+        node.scriptFolder = componentsFile.getParentFile();
+        node.scriptMethod = "main";
+        node.nodeType = nodeType;
+        // Set as object the file pointer
+        node.setUserObject(this);
+        return node;
+    }
     
     
     /**

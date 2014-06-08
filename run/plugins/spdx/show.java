@@ -407,7 +407,7 @@ public class show extends Plugin{
         
         // if we are on Windows, permit to open the folder
         String openFolder = "";
-        if(isWindows()){
+        if(utils.misc.isWindows()){
             openFolder = ""
                     //+ html.br
                     + html.link("Open folder in Windows explorer", 
@@ -495,26 +495,7 @@ public class show extends Plugin{
             } catch (IOException ex) {
             }
          
-//         String output = "A window showing the folder where the SPDX documents"
-//                 + "are placed should now be visible. "
-//                 + html.br
-//                 + "Press the back button "
-//                 + "to return on the previous page.";
-        
-//         request.setAnswer(utils.html.redirect("/spdx/show"
-//                + "?x=summary&"  
-//                 + param.spdx + "=" 
-//                 + request.getParameter(param.spdx)
-//                 , 0, ""));
-         
-         String output = "Opening the folder on Windows explorer";
-         
-//         
-//                 "?x=openFolder&"
-//                        + paramString.file + "=" + file.getAbsolutePath()
-//                        + paramString.spdx + "=" + spdxTarget)
-                 
-                 
+        String output = "Opening the folder on Windows explorer";
         request.setAnswer(output);
     }
     
@@ -635,14 +616,5 @@ public class show extends Plugin{
     }
 
 
-    /**
-     * Are we running under a Windows machine or not?
-     * @return      True when we are running Windows as host
-     */
-    public boolean isWindows(){
-            String os = System.getProperty("os.name").toLowerCase();
-            //windows
-        return (os.contains("win"));
-    }
-    
+
 }
