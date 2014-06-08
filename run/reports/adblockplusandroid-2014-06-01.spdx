@@ -393,6 +393,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/android/AndroidUpdaterCallback.java
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 146e703548a3a6a2a89c330a29463d93f64f5995
 FileChecksum: SHA256: 2881157a442cddd20bc7641eea6e885fccb74b3d7160e51da8336ce8db3c10c3
@@ -405,6 +406,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/android/RefreshableListPreference.java
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileOrigin: AUTHORED
 FileChecksum: SHA1: b34565a562188a32b174b73be8a408273fa1cbf4
 FileChecksum: SHA256: 771075e20130c4ace0693a165fd964571fc8a94d93989f20a4d85aa7aad47df6
@@ -417,6 +419,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/android/AboutDialog.java
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 6cea002558de27b01101a7ca05b0b5c4a7eff8ef
 FileChecksum: SHA256: 01d9095ae9f202138ee78bc2f8bbc186d7e67d01bccce3f4660ebb004c3930f4
@@ -429,6 +432,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/android/updater/AlarmReceiver.java
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileOrigin: AUTHORED
 FileChecksum: SHA1: d6981cb661a80144a3a41197ec51d30fa5f666fc
 FileChecksum: SHA256: cb2aa2bfc6a88afb3c845a3df9e909da30cb9a53debab9a4f76a8eca56cae7fc
@@ -441,6 +445,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/android/updater/UpdaterService.java
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 6395727731e38bd2dfca0b00be7020005a372798
 FileChecksum: SHA256: a61f668beac47a4208dd37b8409fb0a24a7b52f30192275762a04e6f8812c101
@@ -453,6 +458,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/android/updater/UpdaterActivity.java
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileOrigin: AUTHORED
 FileChecksum: SHA1: a982e696f57d18ea40f6c85bbec09baaccdd3057
 FileChecksum: SHA256: f92264b97c86bd08a79760091b79eaa21223434c31f41867cdd1d225c0fa10c3
@@ -465,6 +471,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/android/AndroidLogSystem.java
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 3be6e045c3c01c7dfd966b15351113bb5f1b1e1f
 FileChecksum: SHA256: e2c9f837b932b7fd0648b5874c08f06b0c99e266c41ba6b8b6d3dd16c9a45a60
@@ -477,6 +484,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/android/HelpfulCheckBoxPreference.java
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 36eb189be25431d89e04557a15c0359ebac7928e
 FileChecksum: SHA256: 17370d13eb4cdd916ab5f259da6b32247dd060dc73da98fea7854374e1b4118d
@@ -489,6 +497,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/android/CrashReportDialog.java
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileOrigin: AUTHORED
 FileChecksum: SHA1: b683954855402e57c0832276bc191c11261dd1aa
 FileChecksum: SHA256: c465efedbf00f5b20a05de48f24549595f22bcaf6a879931712df7f5c2516165
@@ -501,6 +510,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/android/AdblockPlus.java
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 19e37695390a4ebd21a5cea9ad31b268add43b12
 FileChecksum: SHA256: d7f7b3e0050f7b214efb8733e5a6e22093a6f101d3721f8f1c96a966e994b547
@@ -513,6 +523,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/android/ABPEngine.java
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 82a34abfc6cc4621f5d184e9ba958c8b2cc5475c
 FileChecksum: SHA256: 3d0f5b5dce953547909ec69ea52e7f2d3c156d5d094e863a99d52631803de74b
@@ -525,6 +536,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/android/AndroidFilterChangeCallback.java
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 9cc71062f135152ff8d10a9b7fd51356cc958d4f
 FileChecksum: SHA256: 8e24fdad1a2a482d921c99efa6084e192e2b8a185cf618811e3c4c4c8e90d063
@@ -537,6 +549,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/android/ProxyService.java
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileOrigin: AUTHORED
 FileChecksum: SHA1: f995a36247112a264a011e3c7f5a449fdb267b30
 FileChecksum: SHA256: a83941dce894f5a1bc700b6bbf4edfba71c1c97480895c416c6875b1cb7d80d2
@@ -549,6 +562,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/android/ConfigurationActivity.java
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 2fffe20d087672644c1fc127aa1b7ed9b97155fd
 FileChecksum: SHA256: 0db736da8fd41aaa5fbacbd15864375c5c31ef383271af29650fcc19484860ec
@@ -561,6 +575,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/android/SubscriptionParser.java
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileOrigin: AUTHORED
 FileChecksum: SHA1: a259338cb6aa71985396a92366c09a7a02dddfc9
 FileChecksum: SHA256: 0824813114a041371dc513f878e5528becc821a5e31ba24a0ea096eebe2dc4ac
@@ -573,6 +588,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/android/ProxySettings.java
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 7fdc02838fc7888779d04274a8033552a425da90
 FileChecksum: SHA256: 7da2958a228dd5e3048cf990d0f959e611b4136106264aa7a7e9deaf006a364e
@@ -585,6 +601,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/android/Subscription.java
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 79583d377546d99ab1b75ee9bfa06188e93c77aa
 FileChecksum: SHA256: 1ebdc385b441eb68375bfb7fc68d576b98f3e6d88a0d707dddd8d05a52b19436
@@ -597,6 +614,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/android/AndroidUpdateAvailableCallback.java
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 9c23306fca21bc5e720fc1d283ffcf0b6eb411e6
 FileChecksum: SHA256: b91e81e93267bef340b7fc61109c9152d470a45fe57555a6e1c38e9eee12a457
@@ -609,6 +627,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/android/Preferences.java
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileOrigin: AUTHORED
 FileChecksum: SHA1: cda9613506b2e210f4b94a235952a501beee1a2c
 FileChecksum: SHA256: 324247162bd74fbd7066e725a5e3bbb43c3244c5fcb29bdfd395351fa243bc6c
@@ -621,6 +640,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/android/Utils.java
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileOrigin: AUTHORED
 FileChecksum: SHA1: e1a8338345b1b872a3877dd56c0804f4ff3b937f
 FileChecksum: SHA256: a82d113ca76bcac93cad2c7eada24544525990a2084774441b2240361792bd2c
@@ -633,6 +653,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/android/ProxyConfigurationActivity.java
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 2342c4b98ae8d1ab54875a05d645bb651fac0409
 FileChecksum: SHA256: a6e834c523c1f4a4dc52565fd9c272f87943e7aaabf65fc70c720b0325125c2d
@@ -643,6 +664,7 @@ FileLOC: 38
 
 FileName: ./src/org/adblockplus/android/AndroidWebRequest.java
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 7a6587bd9d8281cee2540a321cc9f412f2beeca2
 FileChecksum: SHA256: 4670010897315648074b466369a63478dce2e261a7062475f885126b849d822a
@@ -655,6 +677,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/android/AdvancedPreferences.java
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileOrigin: AUTHORED
 FileChecksum: SHA1: c92f195aced8b5ad16ccd0454493459b9d875ee1
 FileChecksum: SHA256: 5d49ccbecb7571865b5e45569a9a81a2632d060a493822dcfb918c509cb997fe
@@ -667,6 +690,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/android/SummarizedPreferences.java
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 16fe0c4cb44944cbcfb37ff91c5419862db627da
 FileChecksum: SHA256: 4c0cc48b891fb86d03d00dc469b07b7d7f5b0fb507f80d40de1de36f0473be4f
@@ -679,6 +703,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/android/CrashHandler.java
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 30f5088c921c7a6d7ccef94f553b1770d520dd71
 FileChecksum: SHA256: 76e839ceaf89cbfb5a8118e8642a6bd6f8b8f067e966b5970be645c717806b77
@@ -691,6 +716,7 @@ FileCopyrightText: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileName: ./src/org/adblockplus/android/Starter.java
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 6056c1c48ecb960e29a3ebdf6cda721db2147c7c
 FileChecksum: SHA256: 1d2bf0a744461d28aef891022450b29ff40ffe60c8a4eec521b2a52567da8d5c
@@ -1326,6 +1352,7 @@ FileCopyrightText: <text>Copyright (c) 1999-2004 Sun Microsystems, Inc.</text>
 
 FileName: ./res/drawable-xhdpi-v11/ic_stat_warning.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 8b67811547b464afb7b53c7ba6491f15b85f69ce
@@ -1336,6 +1363,7 @@ FileSize: 571 bytes
 
 FileName: ./res/drawable-xhdpi-v11/ic_stat_blocking.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 625b95ea28a689b767382d763becded2d6fed2f2
@@ -1346,6 +1374,7 @@ FileSize: 926 bytes
 
 FileName: ./res/drawable-xhdpi-v11/ic_stat_download.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: dba4c8035f7ddfc32de0e434757a79aa98018cd4
@@ -1356,6 +1385,7 @@ FileSize: 380 bytes
 
 FileName: ./res/values-ru/strings.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 43973a80da79e3e718106b576a8dc5c01f509424
@@ -1366,6 +1396,7 @@ FileSize: 8 Kb (9111 bytes)
 
 FileName: ./res/values-ru/arrays.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 8ab779a41bd84ad44f161f0aade073d25eb9e458
@@ -1376,6 +1407,7 @@ FileSize: 265 bytes
 
 FileName: ./res/raw-nb/proxysettings.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: f28df7e45a70bf49c93723606d579d2e89fe2c68
@@ -1387,6 +1419,7 @@ FileLOC: 10
 
 FileName: ./res/raw-nb/info.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 32315c4c38142cec96f34ccdf90f80aa1581c1d3
@@ -1398,6 +1431,7 @@ FileLOC: 4
 
 FileName: ./res/raw-nb/proxysettings_old.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: dea9d8b3a744898761c2670a024c5951c68111e4
@@ -1409,6 +1443,7 @@ FileLOC: 8
 
 FileName: ./res/raw-nb/legal.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 294f9eb2d8a9025ae4b265b7a2c32b2269bbc35b
@@ -1422,6 +1457,7 @@ LicenseInfoInFile: GPL-3.0
 
 FileName: ./res/drawable-ldpi-v9/ic_stat_warning.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: f0e815787fde38410f0bbc71d51bd2d417a18470
@@ -1432,6 +1468,7 @@ FileSize: 323 bytes
 
 FileName: ./res/drawable-ldpi-v9/ic_stat_blocking.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 560ec21446c44febaf8a70af1d5daedfe077a37e
@@ -1442,6 +1479,7 @@ FileSize: 343 bytes
 
 FileName: ./res/drawable-ldpi-v9/ic_stat_download.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: c824657f8286f602cda4c378644f5c51d8592a68
@@ -1452,6 +1490,7 @@ FileSize: 237 bytes
 
 FileName: ./res/values-nb/strings.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 9b1540509507a87cfb30b55398d785d825e787ea
@@ -1462,6 +1501,7 @@ FileSize: 6 Kb (6764 bytes)
 
 FileName: ./res/values-nb/arrays.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 3c4a9f22bd4df28747e5ffef492597cb2daecd3e
@@ -1472,6 +1512,7 @@ FileSize: 230 bytes
 
 FileName: ./res/drawable-hdpi-v11/ic_stat_warning.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 3dffac2eec9788ed69b77e4a458e474cf058c841
@@ -1482,6 +1523,7 @@ FileSize: 435 bytes
 
 FileName: ./res/drawable-hdpi-v11/ic_stat_blocking.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 82a58af12bbdfc6ef4cd7471cb77734fe19a41b4
@@ -1492,6 +1534,7 @@ FileSize: 627 bytes
 
 FileName: ./res/drawable-hdpi-v11/ic_stat_download.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 7114a05b6f2c3bf1761d672a1e4b72822647f34d
@@ -1502,6 +1545,7 @@ FileSize: 298 bytes
 
 FileName: ./res/raw-es/proxysettings.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 91425d6323f1c802120f02cdc24b852a4a58b4fd
@@ -1513,6 +1557,7 @@ FileLOC: 10
 
 FileName: ./res/raw-es/info.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: ea740746b301f6199016ff7029f349bcae4264ed
@@ -1524,6 +1569,7 @@ FileLOC: 4
 
 FileName: ./res/raw-es/proxysettings_old.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 00034cdc35618f16e3ff8e8f18713d42f4d2b910
@@ -1535,6 +1581,7 @@ FileLOC: 10
 
 FileName: ./res/raw-es/legal.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: bdf8726de79636deac642c67bbbc577727d0d94b
@@ -1548,6 +1595,7 @@ LicenseInfoInFile: GPL-3.0
 
 FileName: ./res/values-uk/strings.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 8584ff808b599f7aab68db65ae8bf0674c9a684e
@@ -1558,6 +1606,7 @@ FileSize: 9 Kb (9456 bytes)
 
 FileName: ./res/values-uk/arrays.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 8f014b3fa6fcfee12379b267e543138e78ce01f2
@@ -1568,6 +1617,7 @@ FileSize: 259 bytes
 
 FileName: ./res/drawable/transparent.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: fb0637ade1dcaba0537e339975a427f1b2e64491
@@ -1578,6 +1628,7 @@ FileSize: 122 bytes
 
 FileName: ./res/raw-cs/proxysettings.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: dab0c320a4b5fdb3254edb23cb57d3e21ca719fc
@@ -1589,6 +1640,7 @@ FileLOC: 5
 
 FileName: ./res/raw-cs/info.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 0b31bc1324104fddc1f1dc93da5bbd61760239ea
@@ -1600,6 +1652,7 @@ FileLOC: 4
 
 FileName: ./res/raw-cs/proxysettings_old.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 0d1395ae97d139a7bf36aeed37897305a74fce74
@@ -1611,6 +1664,7 @@ FileLOC: 8
 
 FileName: ./res/raw-cs/legal.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: df3688917c76f2f20b3aa790197e6ef743415bdf
@@ -1623,6 +1677,7 @@ LicenseInfoInFile: Apache-2.0
 
 FileName: ./res/drawable-mdpi-v11/ic_stat_warning.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 5b7922aae6dc34aecbffa4971eae0e79f1e4282d
@@ -1633,6 +1688,7 @@ FileSize: 320 bytes
 
 FileName: ./res/drawable-mdpi-v11/ic_stat_blocking.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: ee821c0cb99e0e3dccbd179d51382acdb3a18b26
@@ -1643,6 +1699,7 @@ FileSize: 369 bytes
 
 FileName: ./res/drawable-mdpi-v11/ic_stat_download.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 2943df3fe0c49383628eb1abd841cd802550bb31
@@ -1653,6 +1710,7 @@ FileSize: 235 bytes
 
 FileName: ./res/values-ar/strings.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 65c2fd7e721e584b6c1ce889b6b813a569896d8b
@@ -1663,6 +1721,7 @@ FileSize: 8 Kb (8295 bytes)
 
 FileName: ./res/values-ar/arrays.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 5631c2ca3295548cdfde936919eb78149cf52375
@@ -1673,6 +1732,7 @@ FileSize: 254 bytes
 
 FileName: ./res/raw-fr/proxysettings.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: f8742fef9d6d1c72cacb11b6d30ed1391fbdbcb6
@@ -1684,6 +1744,7 @@ FileLOC: 10
 
 FileName: ./res/raw-fr/info.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 04893d653166ea0e24aaddfa764c825e8203a2e0
@@ -1695,6 +1756,7 @@ FileLOC: 6
 
 FileName: ./res/raw-fr/proxysettings_old.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 4fba4f52adead9d260334edd8cc06f1cf9ccaa9a
@@ -1706,6 +1768,7 @@ FileLOC: 10
 
 FileName: ./res/raw-fr/legal.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 6f6530757709a1513d2af3d92de2807cdea27556
@@ -1719,6 +1782,7 @@ LicenseInfoInFile: GPL-3.0
 
 FileName: ./res/raw-sk/proxysettings.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 0bc9bb560e11b8d3ef20a92116046044c814f2ad
@@ -1730,6 +1794,7 @@ FileLOC: 5
 
 FileName: ./res/raw-sk/info.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: bf4250870e28d3ef34833f6137875cf5af3c4bde
@@ -1741,6 +1806,7 @@ FileLOC: 4
 
 FileName: ./res/raw-sk/proxysettings_old.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 920b040655871ad90ddd7e19e5b2725b60597cd6
@@ -1752,6 +1818,7 @@ FileLOC: 8
 
 FileName: ./res/raw-sk/legal.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 88c44987f233c5eef3e009ddfd614de256276ff9
@@ -1765,6 +1832,7 @@ LicenseInfoInFile: GPL-3.0
 
 FileName: ./res/values-ja/strings.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: c468a2926952dde4330cfad31149dee7f1a4a870
@@ -1775,6 +1843,7 @@ FileSize: 7 Kb (7477 bytes)
 
 FileName: ./res/values-ja/arrays.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 51ad88f7ce762b3caa6867c5fc7a67525b64e597
@@ -1785,6 +1854,7 @@ FileSize: 230 bytes
 
 FileName: ./res/raw-it/proxysettings.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: c6a21b83520eec05e21cc9134cba4a31faf6c9f8
@@ -1796,6 +1866,7 @@ FileLOC: 5
 
 FileName: ./res/raw-it/info.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 8a37214441b7252f827f94dff8db1299e0607f66
@@ -1807,6 +1878,7 @@ FileLOC: 4
 
 FileName: ./res/raw-it/proxysettings_old.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 2df8a3c7fd654edcb98c69de597883388a667d00
@@ -1818,6 +1890,7 @@ FileLOC: 8
 
 FileName: ./res/raw-it/legal.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 899dcf15206068e5a546340e65d7b6753cc1ca25
@@ -1831,6 +1904,7 @@ LicenseInfoInFile: GPL-3.0
 
 FileName: ./res/values-it/strings.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 81980cbe3c9d14bde4c39cbd332c2249016dbaf4
@@ -1841,6 +1915,7 @@ FileSize: 6 Kb (7119 bytes)
 
 FileName: ./res/values-it/arrays.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 706c107a003beea54e71302bb7039e43b8c18f28
@@ -1851,6 +1926,7 @@ FileSize: 241 bytes
 
 FileName: ./res/xml/preferences.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 3f5bf6211020956c2b7055d01718b65b7f8ec99c
@@ -1861,6 +1937,7 @@ FileSize: 1 Kb (1218 bytes)
 
 FileName: ./res/xml/preferences_advanced.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 0dd18f71101fd348b633b1ebe430ade149e60707
@@ -1871,6 +1948,7 @@ FileSize: 3 Kb (3449 bytes)
 
 FileName: ./res/drawable-xhdpi/ic_menu_refresh.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 17f7de649b19a39f52f95a249efb202054518fd5
@@ -1881,6 +1959,7 @@ FileSize: 2 Kb (2857 bytes)
 
 FileName: ./res/drawable-xhdpi/ic_stat_warning.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 7424a115bedd035fca0d225037f43a04ad842e2c
@@ -1891,6 +1970,7 @@ FileSize: 1 Kb (1511 bytes)
 
 FileName: ./res/drawable-xhdpi/ic_menu_preferences.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: bdc811bce30d7f1b962ab94dc1fbf8da1acd5e1a
@@ -1901,6 +1981,7 @@ FileSize: 2 Kb (2507 bytes)
 
 FileName: ./res/drawable-xhdpi/ic_stat_blocking.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 4fdbfb2ededdc4889352bc405c75bf7487e965a3
@@ -1911,6 +1992,7 @@ FileSize: 2 Kb (2221 bytes)
 
 FileName: ./res/drawable-xhdpi/ic_menu_help.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 3b39b000f5ceb06c405bd8d625afa49f74f60fca
@@ -1921,6 +2003,7 @@ FileSize: 1 Kb (1840 bytes)
 
 FileName: ./res/drawable-xhdpi/ic_launcher.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 78156b16b44484e8380d25195b969e9f0c9f018e
@@ -1931,6 +2014,7 @@ FileSize: 16 Kb (16829 bytes)
 
 FileName: ./res/drawable-xhdpi/ic_menu_info_details.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 862a5a35432248d213e6f6d34c35df0e53d0c1ae
@@ -1941,6 +2025,7 @@ FileSize: 2 Kb (2763 bytes)
 
 FileName: ./res/drawable-xhdpi/ic_stat_download.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 1cafaf05cc6d606e9e33e892c2f938906a512054
@@ -1951,6 +2036,7 @@ FileSize: 1 Kb (1297 bytes)
 
 FileName: ./res/values-cs/strings.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 2d5c8747e4519b5c2316185313c9af6f71fedd28
@@ -1961,6 +2047,7 @@ FileSize: 6 Kb (7087 bytes)
 
 FileName: ./res/values-cs/arrays.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: edb5c628db57f78d89adb76ae4accc216412f97d
@@ -1971,6 +2058,7 @@ FileSize: 235 bytes
 
 FileName: ./res/raw-he/proxysettings.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 696afe06ce47a0c1aa7a8d965560ce15a42e27c3
@@ -1982,6 +2070,7 @@ FileLOC: 5
 
 FileName: ./res/raw-he/info.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: ea247b9096351a8685a7e26cd0a04be1ed8a42aa
@@ -1993,6 +2082,7 @@ FileLOC: 4
 
 FileName: ./res/raw-he/proxysettings_old.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 3a7699e83ae792a2ca619eef27d2087664e2862c
@@ -2004,6 +2094,7 @@ FileLOC: 8
 
 FileName: ./res/raw-he/legal.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 9468438ec1946c7cbe9cc0a4c02f597664f2043c
@@ -2017,6 +2108,7 @@ LicenseInfoInFile: GPL-3.0
 
 FileName: ./res/raw-ko/proxysettings.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: f8742fef9d6d1c72cacb11b6d30ed1391fbdbcb6
@@ -2028,6 +2120,7 @@ FileLOC: 10
 
 FileName: ./res/raw-ko/info.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 04893d653166ea0e24aaddfa764c825e8203a2e0
@@ -2039,6 +2132,7 @@ FileLOC: 6
 
 FileName: ./res/raw-ko/proxysettings_old.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 4fba4f52adead9d260334edd8cc06f1cf9ccaa9a
@@ -2050,6 +2144,7 @@ FileLOC: 10
 
 FileName: ./res/raw-ko/legal.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 6f6530757709a1513d2af3d92de2807cdea27556
@@ -2063,6 +2158,7 @@ LicenseInfoInFile: GPL-3.0
 
 FileName: ./res/drawable-mdpi/ic_menu_refresh.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 8a919181214e95955843e28516a22e50bf5475db
@@ -2073,6 +2169,7 @@ FileSize: 1 Kb (1278 bytes)
 
 FileName: ./res/drawable-mdpi/ic_stat_warning.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: abf45ace0e2eb0753307130a9d88be761f60dab4
@@ -2083,6 +2180,7 @@ FileSize: 705 bytes
 
 FileName: ./res/drawable-mdpi/ic_menu_preferences.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 7f9f3fe2e52efbe8d9a86e14befc7d60d00ba792
@@ -2093,6 +2191,7 @@ FileSize: 1 Kb (1142 bytes)
 
 FileName: ./res/drawable-mdpi/ic_stat_blocking.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: e708b6edb422cc952787f84868ec5290d6c8e2a1
@@ -2103,6 +2202,7 @@ FileSize: 786 bytes
 
 FileName: ./res/drawable-mdpi/ic_menu_help.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: e82f8c60aab77561e4a0a542ada5f057db33d5e2
@@ -2113,6 +2213,7 @@ FileSize: 951 bytes
 
 FileName: ./res/drawable-mdpi/ic_launcher.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 42584b23e8ea6ea8e152e842e5fca7d7695d24e4
@@ -2123,6 +2224,7 @@ FileSize: 3 Kb (3387 bytes)
 
 FileName: ./res/drawable-mdpi/ic_menu_info_details.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 59aa927d4ba6b7a448165f2c13876cbd3ded0e2b
@@ -2133,6 +2235,7 @@ FileSize: 1 Kb (1237 bytes)
 
 FileName: ./res/drawable-mdpi/ic_stat_download.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 0e71ef393e5339dca21c8fb06d6362202d2673df
@@ -2143,6 +2246,7 @@ FileSize: 582 bytes
 
 FileName: ./res/values-hr/strings.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 160f13afa585077c18a75990bc519b1495a314e8
@@ -2153,6 +2257,7 @@ FileSize: 6 Kb (6941 bytes)
 
 FileName: ./res/values-hr/arrays.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: e702e57c5e01a86437ceca319a7f16e4cafd0e7c
@@ -2163,6 +2268,7 @@ FileSize: 235 bytes
 
 FileName: ./res/values-de/strings.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 42f7ec635629c5422de6b1d6d305568b2c6a3545
@@ -2173,6 +2279,7 @@ FileSize: 7 Kb (7262 bytes)
 
 FileName: ./res/values-de/arrays.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 2ae58b2fe89e53d4f68ad6753e3e585bcc7eaf2f
@@ -2183,6 +2290,7 @@ FileSize: 251 bytes
 
 FileName: ./res/values-es/strings.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 6158410ff935b5895fe4f8db67a041fa26ec8fa1
@@ -2193,6 +2301,7 @@ FileSize: 7 Kb (7427 bytes)
 
 FileName: ./res/values-es/arrays.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 079c3b65536a9f3b464a5da405fcb64ed47ad38f
@@ -2203,6 +2312,7 @@ FileSize: 242 bytes
 
 FileName: ./res/values-hu/strings.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: dcaa72c175d62daed8f5a7b809fe2489481a2b78
@@ -2213,6 +2323,7 @@ FileSize: 7 Kb (7380 bytes)
 
 FileName: ./res/values-hu/arrays.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 08fa14833fbdeebca9073c4247d05c80f512e13e
@@ -2223,6 +2334,7 @@ FileSize: 238 bytes
 
 FileName: ./res/raw-hr/proxysettings.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 258362dd4f495ff8b79c03f0957e3dc09eb3b7ee
@@ -2234,6 +2346,7 @@ FileLOC: 5
 
 FileName: ./res/raw-hr/info.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 73c5d23a87b560799dc9666fcaf831732beabf57
@@ -2245,6 +2358,7 @@ FileLOC: 4
 
 FileName: ./res/raw-hr/proxysettings_old.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 2d32d57f13d628e8a9538d5bba726670a5cee166
@@ -2256,6 +2370,7 @@ FileLOC: 8
 
 FileName: ./res/raw-hr/legal.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 1ed894bf109f122334be252ce7ea8dc8d03610db
@@ -2268,6 +2383,7 @@ LicenseInfoInFile: Apache-2.0
 
 FileName: ./res/drawable-hdpi/ic_menu_refresh.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 830e0d9ebe31bb8c08d2eaa9f229e5f5d8f84c3a
@@ -2278,6 +2394,7 @@ FileSize: 1 Kb (2025 bytes)
 
 FileName: ./res/drawable-hdpi/ic_stat_warning.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: d6e1ce098736aae9467496915f6fa49b33c435d6
@@ -2288,6 +2405,7 @@ FileSize: 1 Kb (1064 bytes)
 
 FileName: ./res/drawable-hdpi/ic_menu_preferences.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 4ced46eb0b42bca27b062ac9d980e20e9ab96bf0
@@ -2298,6 +2416,7 @@ FileSize: 1 Kb (1851 bytes)
 
 FileName: ./res/drawable-hdpi/ic_stat_blocking.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 380f13d357300aef99f27d1cdb5c2d823196e010
@@ -2308,6 +2427,7 @@ FileSize: 1 Kb (1422 bytes)
 
 FileName: ./res/drawable-hdpi/ic_menu_help.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 55b558b2247005704dcf24667e9ada3cd2cf2c34
@@ -2318,6 +2438,7 @@ FileSize: 1 Kb (1391 bytes)
 
 FileName: ./res/drawable-hdpi/ic_launcher.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 2e32108409fbf74c8f03c35fcad21a06195324cd
@@ -2328,6 +2449,7 @@ FileSize: 11 Kb (11359 bytes)
 
 FileName: ./res/drawable-hdpi/ic_menu_info_details.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 24a6cc5004f1e5b0833fd595410bd306219412fa
@@ -2338,6 +2460,7 @@ FileSize: 1 Kb (1983 bytes)
 
 FileName: ./res/drawable-hdpi/ic_stat_download.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 8502be56f71ce5b086ab218055436d4512bbc78a
@@ -2348,6 +2471,7 @@ FileSize: 878 bytes
 
 FileName: ./res/values-el/strings.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: a71d2abd68bc975d3aeff77f6410c6bc0918c2d6
@@ -2358,6 +2482,7 @@ FileSize: 9 Kb (10162 bytes)
 
 FileName: ./res/values-el/arrays.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 3391beba2f254592660d473b12938a8259b41e47
@@ -2368,6 +2493,7 @@ FileSize: 278 bytes
 
 FileName: ./res/values-ko/strings.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 0f16820c2855c143814f203049d73f879969f9cc
@@ -2378,6 +2504,7 @@ FileSize: 6 Kb (6711 bytes)
 
 FileName: ./res/values-ko/arrays.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 91cde598f3bc0076f476b6943be06f7b3619ed8e
@@ -2388,6 +2515,7 @@ FileSize: 234 bytes
 
 FileName: ./res/drawable-ldpi-v11/ic_stat_warning.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: fbd26a301b7965e43c6da09e88339f5f4701eb5a
@@ -2398,6 +2526,7 @@ FileSize: 259 bytes
 
 FileName: ./res/drawable-ldpi-v11/ic_stat_blocking.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: a53df75eb4a4ea1f8cc0ae642ab8d9aa6a6bfff7
@@ -2408,6 +2537,7 @@ FileSize: 278 bytes
 
 FileName: ./res/drawable-ldpi-v11/ic_stat_download.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: bccfbceeecd7b3e5c850597f486ef629f43cfdbe
@@ -2418,6 +2548,7 @@ FileSize: 198 bytes
 
 FileName: ./res/values-nl/strings.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 70a0a1c497a4d32831873fbfee17fbca1198c261
@@ -2428,6 +2559,7 @@ FileSize: 6 Kb (7164 bytes)
 
 FileName: ./res/values-nl/arrays.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: d115d5cc340835fbb41b4ae7441068a9767b64eb
@@ -2438,6 +2570,7 @@ FileSize: 233 bytes
 
 FileName: ./res/drawable-xhdpi-v9/ic_stat_warning.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 412d9664679b65d4b4fd5583102d99bfa0fcfc27
@@ -2448,6 +2581,7 @@ FileSize: 728 bytes
 
 FileName: ./res/drawable-xhdpi-v9/ic_stat_blocking.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 57e6bae4642e30fb1789a3335a256d0d5522fcf2
@@ -2458,6 +2592,7 @@ FileSize: 1 Kb (1090 bytes)
 
 FileName: ./res/drawable-xhdpi-v9/ic_stat_download.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 2e026c323cd3e16bbde93ef43336a9d08358e401
@@ -2468,6 +2603,7 @@ FileSize: 398 bytes
 
 FileName: ./res/raw-pt/proxysettings.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 620c310ed2bcaac01c355a508c166e0acdf53515
@@ -2479,6 +2615,7 @@ FileLOC: 5
 
 FileName: ./res/raw-pt/info.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 15ccd7befe06bdd7dbd7142ca2b1ae889c4c5cfe
@@ -2490,6 +2627,7 @@ FileLOC: 4
 
 FileName: ./res/raw-pt/proxysettings_old.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 6216bbf7a84368186f71d349b80a5c97e7ae119b
@@ -2501,6 +2639,7 @@ FileLOC: 8
 
 FileName: ./res/raw-pt/legal.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: a123bd70d5b21cf113be908cc85fb2338b49726d
@@ -2514,6 +2653,7 @@ LicenseInfoInFile: GPL-3.0
 
 FileName: ./res/raw-lt/proxysettings.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: ed0f3de63f6be2dde1fb782f407588380c43f2dc
@@ -2525,6 +2665,7 @@ FileLOC: 5
 
 FileName: ./res/raw-lt/info.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 3269ed2c92e42d2257c5d1786c26036f69fdc20d
@@ -2536,6 +2677,7 @@ FileLOC: 4
 
 FileName: ./res/raw-lt/proxysettings_old.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: db28b6a3f804967d28cdce418eba98b35a0362f4
@@ -2547,6 +2689,7 @@ FileLOC: 10
 
 FileName: ./res/raw-lt/legal.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: b76b22f2bcdfbcd99cc25c2cd241c1185b7a70b3
@@ -2559,6 +2702,7 @@ LicenseInfoInFile: Apache-2.0
 
 FileName: ./res/raw-zh-rCN/proxysettings.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: c394e3d7155e238c45f7015d81b5cfe49e565371
@@ -2570,6 +2714,7 @@ FileLOC: 5
 
 FileName: ./res/raw-zh-rCN/info.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 77270e8c4b10f91daf7ecee1d6219f92e8002e4b
@@ -2581,6 +2726,7 @@ FileLOC: 4
 
 FileName: ./res/raw-zh-rCN/proxysettings_old.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 5c7c09c44889c095b8d2cc6401d275358d25d787
@@ -2592,6 +2738,7 @@ FileLOC: 8
 
 FileName: ./res/raw-zh-rCN/legal.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 8db9087de63d8d2c5e530c32393778f58e5fd84a
@@ -2604,6 +2751,7 @@ LicenseInfoInFile: Apache-2.0
 
 FileName: ./res/raw-sr/proxysettings.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 1da305ebfd293b7bb5ac3255d128296d6eee21f6
@@ -2615,6 +2763,7 @@ FileLOC: 5
 
 FileName: ./res/raw-sr/info.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 83dc3aecb897c35a24254d16d15c3c08729d7eaa
@@ -2626,6 +2775,7 @@ FileLOC: 4
 
 FileName: ./res/raw-sr/proxysettings_old.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 18b7c6538d5c4ab1bcfcfc968d9b2d8c59585e91
@@ -2637,6 +2787,7 @@ FileLOC: 8
 
 FileName: ./res/raw-sr/legal.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 071fc6efcb57a43bceb0d6b85e790dfc9addb45b
@@ -2649,6 +2800,7 @@ LicenseInfoInFile: Apache-2.0
 
 FileName: ./res/drawable-ldpi/ic_menu_refresh.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 2c0240d177c7978fed9141ce3f7434a46c4c2e5a
@@ -2659,6 +2811,7 @@ FileSize: 1 Kb (1695 bytes)
 
 FileName: ./res/drawable-ldpi/ic_stat_warning.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 9d10d11a97766181f2fad5272ba702d5017fa3ca
@@ -2669,6 +2822,7 @@ FileSize: 507 bytes
 
 FileName: ./res/drawable-ldpi/ic_menu_preferences.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: a289ea5cabd59e82451e2303bae82cdd93c089eb
@@ -2679,6 +2833,7 @@ FileSize: 1 Kb (1601 bytes)
 
 FileName: ./res/drawable-ldpi/ic_stat_blocking.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: cce3add18108aad0768fa7e740fb057a24b59971
@@ -2689,6 +2844,7 @@ FileSize: 509 bytes
 
 FileName: ./res/drawable-ldpi/ic_menu_help.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 8fef213cdb977aba412cabc3671125e65711b354
@@ -2699,6 +2855,7 @@ FileSize: 1 Kb (1624 bytes)
 
 FileName: ./res/drawable-ldpi/ic_launcher.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: af08ee7acbf46e1c740dcd5f137d2d1938b51ae6
@@ -2709,6 +2866,7 @@ FileSize: 5 Kb (5799 bytes)
 
 FileName: ./res/drawable-ldpi/ic_menu_info_details.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: f2bc2563f1fb8fe8ae52c8a12d36c1794b329850
@@ -2719,6 +2877,7 @@ FileSize: 1 Kb (1499 bytes)
 
 FileName: ./res/drawable-ldpi/ic_stat_download.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 23ee9b27b87ede21db2a458362dd77dad4c268e3
@@ -2729,6 +2888,7 @@ FileSize: 413 bytes
 
 FileName: ./res/raw-th/proxysettings.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 0e23ee2c2cc113e51b24439f577b5f6377187d84
@@ -2740,6 +2900,7 @@ FileLOC: 5
 
 FileName: ./res/raw-th/info.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 6beef86baa3f6a04014baf1e23284b0af1260edd
@@ -2751,6 +2912,7 @@ FileLOC: 6
 
 FileName: ./res/raw-th/proxysettings_old.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 4fba4f52adead9d260334edd8cc06f1cf9ccaa9a
@@ -2762,6 +2924,7 @@ FileLOC: 10
 
 FileName: ./res/raw-th/legal.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 728b701b789c15d4f92b7132d782d9acf849e8df
@@ -2775,6 +2938,7 @@ LicenseInfoInFile: GPL-3.0
 
 FileName: ./res/raw-pl/proxysettings.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 0d3c44bba4219a0dabcd4fc0ef316d1ad2e00b3d
@@ -2786,6 +2950,7 @@ FileLOC: 10
 
 FileName: ./res/raw-pl/info.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 27396e4806533a1b472bf95f347a0ad0d4697d0b
@@ -2797,6 +2962,7 @@ FileLOC: 6
 
 FileName: ./res/raw-pl/proxysettings_old.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 0212c2cbe34be204e722a11d5a44ab7911e889ca
@@ -2808,6 +2974,7 @@ FileLOC: 9
 
 FileName: ./res/raw-pl/legal.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 15d0631de7b759c3f0c6a6352164eee9fb11c824
@@ -2821,6 +2988,7 @@ LicenseInfoInFile: GPL-3.0
 
 FileName: ./res/raw-ar/proxysettings.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: ab68050159c06377af610fb1524f43c513b5ff2e
@@ -2832,6 +3000,7 @@ FileLOC: 5
 
 FileName: ./res/raw-ar/info.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 086190e24e38ea03ae13b950aaa242a52a929dbe
@@ -2843,6 +3012,7 @@ FileLOC: 5
 
 FileName: ./res/raw-ar/proxysettings_old.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: b2eaf65f7c41b21635fce994db93cf253fde6b25
@@ -2854,6 +3024,7 @@ FileLOC: 8
 
 FileName: ./res/raw-ar/legal.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 18244c42a3198952c47a8373510bbe39f2653472
@@ -2866,6 +3037,7 @@ LicenseInfoInFile: Apache-2.0
 
 FileName: ./res/drawable-mdpi-v9/ic_stat_warning.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: b4b227eb2a829324504244332f4e639073697cd4
@@ -2876,6 +3048,7 @@ FileSize: 400 bytes
 
 FileName: ./res/drawable-mdpi-v9/ic_stat_blocking.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 224172f810313d08654043030971a05df4f46262
@@ -2886,6 +3059,7 @@ FileSize: 482 bytes
 
 FileName: ./res/drawable-mdpi-v9/ic_stat_download.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 78c57d9c8f9a2d4df7c4d762ee498b34d3534dc3
@@ -2896,6 +3070,7 @@ FileSize: 270 bytes
 
 FileName: ./res/values-tr/strings.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 84daa2be0e83bf489dfb6d12cf022bcb694cf31a
@@ -2906,6 +3081,7 @@ FileSize: 6 Kb (6953 bytes)
 
 FileName: ./res/values-tr/arrays.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 012d1d7f3ca757df86b4af133871552e2b8998cb
@@ -2916,6 +3092,7 @@ FileSize: 234 bytes
 
 FileName: ./res/raw/proxysettings.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: f8742fef9d6d1c72cacb11b6d30ed1391fbdbcb6
@@ -2927,6 +3104,7 @@ FileLOC: 10
 
 FileName: ./res/raw/info.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 04893d653166ea0e24aaddfa764c825e8203a2e0
@@ -2938,6 +3116,7 @@ FileLOC: 6
 
 FileName: ./res/raw/proxysettings_old.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 4fba4f52adead9d260334edd8cc06f1cf9ccaa9a
@@ -2949,6 +3128,7 @@ FileLOC: 10
 
 FileName: ./res/raw/legal.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 6f6530757709a1513d2af3d92de2807cdea27556
@@ -2962,6 +3142,7 @@ LicenseInfoInFile: GPL-3.0
 
 FileName: ./res/values-th/strings.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 5d1836d800018b184f0ebb6247f00ca5d256e23b
@@ -2972,6 +3153,7 @@ FileSize: 8 Kb (9090 bytes)
 
 FileName: ./res/values-th/arrays.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: fd5d238727a6859b63bc1fb3e1afb35819d3ab03
@@ -2982,6 +3164,7 @@ FileSize: 275 bytes
 
 FileName: ./res/raw-de/proxysettings.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 098a3eee87491499cae32daac61d1e46b1d5350c
@@ -2993,6 +3176,7 @@ FileLOC: 10
 
 FileName: ./res/raw-de/info.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 1075c10ef8010dca8669c0ea01583a4c78be6d56
@@ -3004,6 +3188,7 @@ FileLOC: 6
 
 FileName: ./res/raw-de/proxysettings_old.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 4097cca51db4d651f41122bbe255d02159678557
@@ -3015,6 +3200,7 @@ FileLOC: 10
 
 FileName: ./res/raw-de/legal.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: eb721171f52ff582dbd4ed1fbeb50347b620f441
@@ -3028,6 +3214,7 @@ LicenseInfoInFile: GPL-3.0
 
 FileName: ./res/drawable-hdpi-v9/ic_stat_warning.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 51b4f9a2bd13f67aea9b27558acd26015d3f9e7e
@@ -3038,6 +3225,7 @@ FileSize: 573 bytes
 
 FileName: ./res/drawable-hdpi-v9/ic_stat_blocking.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 7e0df531d8a0e1781b852fb5aa5de70a22d7912b
@@ -3048,6 +3236,7 @@ FileSize: 766 bytes
 
 FileName: ./res/drawable-hdpi-v9/ic_stat_download.png
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: cf2bd091d64ae8babc1235d122eff31548fc0b06
@@ -3058,6 +3247,7 @@ FileSize: 355 bytes
 
 FileName: ./res/values-sv/strings.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 9c37229536d706acd52237cb2505b2ae3cb016bd
@@ -3068,6 +3258,7 @@ FileSize: 6 Kb (7008 bytes)
 
 FileName: ./res/values-sv/arrays.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 3ee6b66f809795802ca6b519f5f2fe8aa4471b39
@@ -3078,6 +3269,7 @@ FileSize: 233 bytes
 
 FileName: ./res/raw-tr/proxysettings.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 769c28910e4c0a77a1b803e12f564c7675a6f35c
@@ -3089,6 +3281,7 @@ FileLOC: 5
 
 FileName: ./res/raw-tr/info.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 2dba08d1b31cc7c303d0decd902e2d28be2edbae
@@ -3100,6 +3293,7 @@ FileLOC: 4
 
 FileName: ./res/raw-tr/proxysettings_old.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: a03cfafff4155abcf7d6b59226419c96d49aaa47
@@ -3111,6 +3305,7 @@ FileLOC: 8
 
 FileName: ./res/raw-tr/legal.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 761941b77e6a65320d2c1d58dbf544b534e677df
@@ -3124,6 +3319,7 @@ LicenseInfoInFile: GPL-3.0
 
 FileName: ./res/raw-uk/proxysettings.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: ba39748d2068b33642f236498aa236d7eb4ff2d6
@@ -3135,6 +3331,7 @@ FileLOC: 5
 
 FileName: ./res/raw-uk/info.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 88602060574f7aafbd7558b08f2b68d996a049ae
@@ -3146,6 +3343,7 @@ FileLOC: 4
 
 FileName: ./res/raw-uk/proxysettings_old.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 9ce741858c2985536ba695c7736e102b4170645a
@@ -3157,6 +3355,7 @@ FileLOC: 8
 
 FileName: ./res/raw-uk/legal.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 09708a189a969feeee0354eca2e81542ebebfddd
@@ -3170,6 +3369,7 @@ LicenseInfoInFile: GPL-3.0
 
 FileName: ./res/raw-sv/proxysettings.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: f8742fef9d6d1c72cacb11b6d30ed1391fbdbcb6
@@ -3181,6 +3381,7 @@ FileLOC: 10
 
 FileName: ./res/raw-sv/info.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 04893d653166ea0e24aaddfa764c825e8203a2e0
@@ -3192,6 +3393,7 @@ FileLOC: 6
 
 FileName: ./res/raw-sv/proxysettings_old.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 4fba4f52adead9d260334edd8cc06f1cf9ccaa9a
@@ -3203,6 +3405,7 @@ FileLOC: 10
 
 FileName: ./res/raw-sv/legal.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 6f6530757709a1513d2af3d92de2807cdea27556
@@ -3216,6 +3419,7 @@ LicenseInfoInFile: GPL-3.0
 
 FileName: ./res/raw-nl/proxysettings.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: b232126490090f2b61dc66aaea20abae62cf3e04
@@ -3227,6 +3431,7 @@ FileLOC: 5
 
 FileName: ./res/raw-nl/info.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 7456a7fdec3b46bbdd718590249bf20f7a9d1dbd
@@ -3238,6 +3443,7 @@ FileLOC: 4
 
 FileName: ./res/raw-nl/proxysettings_old.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 3824cfba84f3cb2ce3de0d209f7ae30e5dd81bc0
@@ -3249,6 +3455,7 @@ FileLOC: 8
 
 FileName: ./res/raw-nl/legal.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 689b7066abd3f660e7a29bdf3c3c1e89fcd4214f
@@ -3262,6 +3469,7 @@ LicenseInfoInFile: GPL-3.0
 
 FileName: ./res/values-fr/strings.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 7454f7449aa9842315c6c78889d00d647bdec615
@@ -3272,6 +3480,7 @@ FileSize: 6 Kb (6690 bytes)
 
 FileName: ./res/values-fr/arrays.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 91cde598f3bc0076f476b6943be06f7b3619ed8e
@@ -3282,6 +3491,7 @@ FileSize: 234 bytes
 
 FileName: ./res/menu/menu_preferences.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: a17dbbfcc7ada32e2191ef1d51f0c2af8484dab9
@@ -3292,6 +3502,7 @@ FileSize: 647 bytes
 
 FileName: ./res/values-sr/strings.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: f4c5cb280e59732224334044bae83dc48d9c1391
@@ -3302,6 +3513,7 @@ FileSize: 8 Kb (9176 bytes)
 
 FileName: ./res/values-sr/arrays.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 91748b5c502433b701dd4107e29db3c612364b1d
@@ -3312,6 +3524,7 @@ FileSize: 255 bytes
 
 FileName: ./res/values-sk/strings.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 799b4b93e781b631c36b36f6e79f79469d24fd14
@@ -3322,6 +3535,7 @@ FileSize: 6 Kb (7049 bytes)
 
 FileName: ./res/values-sk/arrays.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: e48781bdf8644c8a8b791ec95f70376ab0c6261c
@@ -3332,6 +3546,7 @@ FileSize: 236 bytes
 
 FileName: ./res/raw-ja/proxysettings.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 4f870fd244a074b788a615daf5a95d60632570a2
@@ -3343,6 +3558,7 @@ FileLOC: 10
 
 FileName: ./res/raw-ja/info.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 62066f524a3338bd1429d626321e045f1ea94c14
@@ -3354,6 +3570,7 @@ FileLOC: 6
 
 FileName: ./res/raw-ja/proxysettings_old.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 96926ed768056f4384f659b1e5dc20ce5e24f6ed
@@ -3365,6 +3582,7 @@ FileLOC: 8
 
 FileName: ./res/raw-ja/legal.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: d62827a68c6a8eb2de2411bd4db64f402f226267
@@ -3378,6 +3596,7 @@ LicenseInfoInFile: GPL-3.0
 
 FileName: ./res/values-pt/strings.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: b5c7001d9b7524c2aad8378d787ed08333e7e958
@@ -3388,6 +3607,7 @@ FileSize: 7 Kb (7176 bytes)
 
 FileName: ./res/values-pt/arrays.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 15801ea6fca4cb53c69d95d7ec5b5e616f14abb8
@@ -3398,6 +3618,7 @@ FileSize: 241 bytes
 
 FileName: ./res/values-pl/strings.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: a0be54f33eb96d4caf269504c1eab15eb341a249
@@ -3408,6 +3629,7 @@ FileSize: 7 Kb (7299 bytes)
 
 FileName: ./res/values-pl/arrays.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 1f1b23736dea081b30e93608c936ad69a950e037
@@ -3418,6 +3640,7 @@ FileSize: 242 bytes
 
 FileName: ./res/values-he/strings.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 7c6440c39d45241c31c831d6022af2d5d08bf3e0
@@ -3428,6 +3651,7 @@ FileSize: 7 Kb (7855 bytes)
 
 FileName: ./res/values-he/arrays.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 82a380410cb8657218758339c24c8832382e0230
@@ -3438,6 +3662,7 @@ FileSize: 244 bytes
 
 FileName: ./res/values/strings.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: d42acb6d5b60f7e6062c25e5c0d463738dbb12e6
@@ -3448,6 +3673,7 @@ FileSize: 6 Kb (6767 bytes)
 
 FileName: ./res/values/bools.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 5ac81fa9195c3186a7ccdd7e605312b0286b2a7f
@@ -3458,6 +3684,7 @@ FileSize: 291 bytes
 
 FileName: ./res/values/sysarrays.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 72921c4ccc1f4eeff20464f13134a364a69f88c9
@@ -3468,6 +3695,7 @@ FileSize: 179 bytes
 
 FileName: ./res/values/sysstrings.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: d6cc74798b4a14aa7be9353a0dd2f1e0228035a7
@@ -3478,6 +3706,7 @@ FileSize: 1 Kb (1629 bytes)
 
 FileName: ./res/values/styles.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 15e3ed7d4e71a6b99798619ce5097599332b8db2
@@ -3488,6 +3717,7 @@ FileSize: 582 bytes
 
 FileName: ./res/values/integers.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 4110fd09cdb0bfcf1e73246b8768d24ae19ae889
@@ -3498,6 +3728,7 @@ FileSize: 156 bytes
 
 FileName: ./res/values/arrays.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: e924b53e7c452b812ec6dcaa72acdb0ae24685e7
@@ -3508,6 +3739,7 @@ FileSize: 208 bytes
 
 FileName: ./res/raw-hu/proxysettings.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 7cb2208db883fafc7e45d19879d4ead8a0edeaf4
@@ -3519,6 +3751,7 @@ FileLOC: 10
 
 FileName: ./res/raw-hu/info.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 7e65156132cf72f98386f42cffbce75ce8fa4c04
@@ -3530,6 +3763,7 @@ FileLOC: 6
 
 FileName: ./res/raw-hu/proxysettings_old.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: c3c43fa60f23867d2ec5b40cef41ac4dc7ef8ddc
@@ -3541,6 +3775,7 @@ FileLOC: 10
 
 FileName: ./res/raw-hu/legal.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: d51aded116a7d044acc62ff94becfc378453af2b
@@ -3554,6 +3789,7 @@ LicenseInfoInFile: GPL-3.0
 
 FileName: ./res/layout/configuration.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 2623a73b7d313dde5eaaeb8551d87c36c48fec28
@@ -3564,6 +3800,7 @@ FileSize: 1 Kb (1187 bytes)
 
 FileName: ./res/layout/preferences.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 07607d58e386a05c4231ba66253e0cd59d4aa119
@@ -3574,6 +3811,7 @@ FileSize: 1 Kb (1315 bytes)
 
 FileName: ./res/layout/notif_hidden.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 59731d9d2c34311b7b710d6ab32474fdbcea44b8
@@ -3584,6 +3822,7 @@ FileSize: 275 bytes
 
 FileName: ./res/layout/about.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 9f5a03c36a36fb898116e01434305cf8aaacdd13
@@ -3594,6 +3833,7 @@ FileSize: 564 bytes
 
 FileName: ./res/layout/crashreport.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 1b248e1d2fb18759d4a3f8e164ab7e46584168cd
@@ -3604,6 +3844,7 @@ FileSize: 1 Kb (1719 bytes)
 
 FileName: ./res/layout/proxyconfiguration.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: cd2cb4aa24e0e68ee0b2671519d9dfcc790ca2fa
@@ -3614,6 +3855,7 @@ FileSize: 1 Kb (1247 bytes)
 
 FileName: ./res/raw-el/proxysettings.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: a9e06beb0a0673d952bb5fe34a7959b72d6c34a7
@@ -3625,6 +3867,7 @@ FileLOC: 5
 
 FileName: ./res/raw-el/info.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 0aa04a87c320191a8028837d05a15aa34e9c5a4d
@@ -3636,6 +3879,7 @@ FileLOC: 4
 
 FileName: ./res/raw-el/proxysettings_old.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 173bcadb83460c177edfee702eb7c8be61f385c8
@@ -3647,6 +3891,7 @@ FileLOC: 8
 
 FileName: ./res/raw-el/legal.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 1e4984dc89fdfebe4cf8e5b377a8a7b1f84ab787
@@ -3660,6 +3905,7 @@ LicenseInfoInFile: GPL-3.0
 
 FileName: ./res/raw-ru/proxysettings.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 9ea2ddf9364a32defffc1fb90ff37b13aa2e15b0
@@ -3671,6 +3917,7 @@ FileLOC: 5
 
 FileName: ./res/raw-ru/info.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 38ad527dc4081ff927df53e594c65698acae237d
@@ -3682,6 +3929,7 @@ FileLOC: 4
 
 FileName: ./res/raw-ru/proxysettings_old.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 7ac62a289b27f1e4d8b1d15d742cf964babb57b4
@@ -3693,6 +3941,7 @@ FileLOC: 8
 
 FileName: ./res/raw-ru/legal.html
 FileType: SOURCE
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 000ee643ac73f30637977d9d7b77c06495f0878b
@@ -3706,6 +3955,7 @@ LicenseInfoInFile: GPL-3.0
 
 FileName: ./res/values-lt/strings.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 00bf476406fd01c43a18b6333326c21f6b60fce0
@@ -3716,6 +3966,7 @@ FileSize: 6 Kb (7090 bytes)
 
 FileName: ./res/values-lt/arrays.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 2c6c9f14323a8f3b5b966fba08a9b36c03cb2d22
@@ -3726,6 +3977,7 @@ FileSize: 244 bytes
 
 FileName: ./res/values-zh-rCN/strings.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 409fc5a36d02b3cd64490febebd36066db04dff3
@@ -3736,6 +3988,7 @@ FileSize: 5 Kb (5761 bytes)
 
 FileName: ./res/values-zh-rCN/arrays.xml
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 6fd985c2828544d1db3c2cf9bf84e67a8e221a9e
@@ -3757,6 +4010,7 @@ FileSize: 3 Kb (3873 bytes)
 
 FileName: ./.externalToolBuilders/Adblock Plus Native Builder.launch
 FileType: OTHER
+ArtifactOfProjectName: AdBlockPlusAndroid
 FileLicenseConcluded: GPL-3.0
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 6d263aa058b8d11d2d6308c83f4ba9f2a72267a9

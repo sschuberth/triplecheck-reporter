@@ -170,7 +170,10 @@ public class CompSummary {
         return result;
     }
   
-    
+    /**
+     * Provides an HTML list of the files that are NOT associated to a component
+     * @return An HTML portion of text ready for display to end-user
+     */
     private String getListNonAssignedFiles(){
         int counterNull= 0;
         String fileList = "";
@@ -219,7 +222,9 @@ public class CompSummary {
          String result =  html.h2("Uncategorized files: " + counterNull);
             
         // all done
-        return result + fileList;
+        return result + fileList
+                + html.br
+                + html.br;
     }
     
     

@@ -122,7 +122,7 @@ public class choose extends Plugin{
         final String name = request.getParameter("name");
 //        final String type = request.getParameter("license");
         log.write(is.INFO, "Marking files as belonging to : %1", name);
-        request.setAnswer("Modified selected files as part of component ->" + path + "->" + name);
+        request.setAnswer("Marked selected files as part of " + name);
         core.studio.setFilesWithComponent(name);
         
     }
