@@ -51,11 +51,11 @@ public class export extends Plugin{
             return;
         }
         
-        String export = "\"export\"";
+        String export = " at the \"export\" folder.";
         
         // add a link on the export link if the host is windows
         if(utils.misc.isWindows()){
-             export = html.link("export", "?x=folder&folder="
+             export = html.link("here", "?x=folder&folder="
                      + core.getFolderExport());
         }
         
@@ -64,16 +64,15 @@ public class export extends Plugin{
                 + html.div()
                 + html.h2("Export the licensing data")
                 + "Use this menu to export the documentation and files of this"
-                + " project. The exported data can be found inside the "
+                + " project. After exporting, the result can be found "
                 + export
-                + " folder."
                 + html.br
                 + html.br
                 + html.div()
-                + html.link("Report", "?x=export&type=report")
+                + html.link("Create report", "?x=export&type=report")
                 + html.br
-                + html.br
-                + html.link("Files", "?x=export&type=files")
+//                + html.br
+//                + html.link("Files", "?x=export&type=files")
                 + html._div
                 + ""
                 + html._div;
@@ -115,16 +114,42 @@ public class export extends Plugin{
         SPDXfile2 spdx = (SPDXfile2) node.getUserObject();
         // now create the folders related to what was requested
         String whatWasAsked = request.getParameter("type");
+        String result = "";
         // avoid mal-formed requests
         if(whatWasAsked == null){
             request.setAnswer(redirect);
         }else
         if(whatWasAsked.equals("report")){
-            request.setAnswer(doReport(spdx));
+            result = doReport(spdx);
         }else
         if(whatWasAsked.equals("files")){
-            request.setAnswer(doReport(spdx));
+            result = doReport(spdx);
         }
+        
+        // show the end-user where the report files were placed
+        File folderExport = new File(core.getFolderExport(), spdx.getId());
+        String locationFolder = "." + folderExport.getAbsolutePath()
+                .replace(core.getWorkFolder().getAbsolutePath(), "")
+                .replace("\\", "/"); // replace the annoying Windows paths
+        // now create a link in case we have File Explorer available
+        if(utils.misc.isWindows()){
+            locationFolder = html.link(locationFolder, "?x=folder&folder="
+                     + folderExport.getAbsolutePath());
+        }
+        
+        result = html.div()
+                + html.h2("Exporting the license information")
+                + "A report was created at "
+                + locationFolder
+                + " with the following result: "
+                + html.div()
+                + html.br
+                + result
+                + html._div
+                + html._div;
+        
+        request.setAnswer(result);
+        
     }
 
     /**
@@ -133,7 +158,7 @@ public class export extends Plugin{
      * @return 
      */
     private String doReport(SPDXfile2 spdx) {
-        String result = "Report written!";
+        String result = "";
         // start by creating our export directory
         File folderExport = new File(core.getFolderExport(), spdx.getId());
         // if the folder doesn't exist, create one
@@ -141,22 +166,33 @@ public class export extends Plugin{
         // now create the report folder
         File folderReport = new File(folderExport, "report");
         // create this folder if it doesn't exist already
-        utils.files.mkdirs(folderReport);
+        if(utils.files.mkdirs(folderReport)){
+            result += "- Created export folder" + html.br;
+        }else{
+            if(folderReport.exists() == false){
+                return "- Error: Failed to create export folder";
+            }
+        }
         
         // get the component report
         String reportComponents = spdx.summary.components();
         // save it to disk
         File fileComponents = new File(folderReport, "components.html");
         utils.files.SaveStringToFile(fileComponents, reportComponents);
+        result += "- Generated an HTML list of components" + html.br;
+       
         // make a copy of the SPDX document to this folder too
         File fileSPDX = new File(folderReport, "files.spdx");
         try {
             // copy the file to "files.spdx"
             FileUtils.copyFile(spdx.file, fileSPDX);
+            result += "- Copied the SPDX document" + html.br;
        
             // all seems done, now create the zipped archive with all files inside
             File fileZip = new File(folderExport, "report.zip");
             ThirdParty.zip.createZip(folderReport, fileZip);
+            result += "- Created a zip file with the export contents" + html.br;
+       
         
         } catch (IOException ex) {
             Logger.getLogger(export.class.getName()).log(Level.SEVERE, null, ex);

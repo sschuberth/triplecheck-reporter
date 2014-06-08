@@ -27,8 +27,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import javax.swing.Icon;
-import javax.swing.tree.MutableTreeNode;
 import main.core;
 import script.log;
 import spdxlib.summary.SummaryControl;
