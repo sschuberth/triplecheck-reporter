@@ -18,7 +18,7 @@
  * FileComment: <text> The editor of SPDX </text>
  */
 
-package GUI;
+package old;
 
 import definitions.is;
 import java.awt.Toolkit;
@@ -680,7 +680,7 @@ public class Editor extends javax.swing.JFrame {
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel9Layout.createSequentialGroup()
                         .addComponent(jLabel30)
-                        .addGap(200, 277, Short.MAX_VALUE))
+                        .addGap(200, 284, Short.MAX_VALUE))
                     .addComponent(jScrollPane7)
                     .addComponent(jScrollPane17)
                     .addComponent(jScrollPane16)
@@ -765,9 +765,8 @@ public class Editor extends javax.swing.JFrame {
                     .addGroup(panelFilesLayout.createSequentialGroup()
                         .addComponent(jButton3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jButton4)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addComponent(jSplitPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 522, Short.MAX_VALUE))
+                        .addComponent(jButton4))
+                    .addComponent(jSplitPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 532, Short.MAX_VALUE))
                 .addContainerGap())
         );
         panelFilesLayout.setVerticalGroup(

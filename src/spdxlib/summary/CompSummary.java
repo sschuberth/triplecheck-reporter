@@ -30,6 +30,7 @@ import utils.html;
 public class CompSummary {
 
     private SPDXfile2 spdx;
+    private final int max = 10;
     
     public CompSummary(SPDXfile2 input){
         spdx = input;
@@ -67,22 +68,20 @@ public class CompSummary {
         }
         
         // now do the output messages
-        result +=
-                  html.div()
-                + html.h2("Components used in " + spdx.getId())
-                + html._div;
+        result += html.h2("Components used in " + spdx.getId());
        
         if(counterNull == spdx.getFiles().size()){
         // no components were found
-            result += html.div()
+            result = html.div()
+                    + result
                     + html.textGreyAligned("No files associated to any components (yet)")
                     + html._div;
             return result;
         }
         // add the group of non-categorized files
-        if(counterNull > 0){
-            components.put("Not associated to component", counterNull);
-        }
+//        if(counterNull > 0){
+//            components.put("Not associated to component", counterNull);
+//        }
         
         
         
@@ -105,7 +104,7 @@ public class CompSummary {
             // initialize the file tracking
             String fileList = "";
             int thisCounter = 0;
-            int max = 10;
+            
             // iterate through all files in our spdx
             for(FileInfo2 fileInfo : spdx.getFiles()){
                 // if it belongs to our component
@@ -126,7 +125,7 @@ public class CompSummary {
                 fileList = fileList.concat(
                                 "<i> ..more " 
                                 + utils.text.pluralize(thisCounter - max, "file")
-                                + " under this component.."
+                                + " on this list.."
                                 + "</i>"
                                 + html.br);
             } 
@@ -139,10 +138,8 @@ public class CompSummary {
                 }
             
             
-            
-            
             // all good
-            result += html.div()
+            result += ""
                     + html.h2(component.getTitle() 
                         + " (" 
                         + utils.text.pluralize(count, "file")
@@ -155,19 +152,76 @@ public class CompSummary {
                     + fileList
                     + html.br
                     + html.line
-                    + html._div
                     ;
-//            result += html.h2(component.getTitle())
-//                    + 
-//                    + value
-//                    + html.line
-//                    + html.br
-//                    ;
         }
+        
+        
+        // give a short report about non-assigned files
+        if(counterNull > 0){
+            result += getListNonAssignedFiles();
+        }
+        
+        // add the spacing
+        result = html.div()
+                + result
+                + html._div;
+        
         
         return result;
     }
   
+    
+    private String getListNonAssignedFiles(){
+        int counterNull= 0;
+        String fileList = "";
+            
+        // iterate all files to find the ones without a component assigned
+        for(FileInfo2 fileInfo : spdx.getFiles()){
+            // get the component name
+            String component = fileInfo.getFileComponent();
+            // avoid the files without a component specified
+            if(component == null){
+                // increase the counter to later use this value
+                counterNull++;
+                // add new names while the list is short
+                if(counterNull < max){
+                        // add it to our list
+                        fileList = fileList.concat(
+                                "<i>" 
+                                + fileInfo.getFileName()
+                                + "</i>"
+                                + html.br);
+                    }
+                // all done, move to the next
+                continue;
+            }
+        }
+    
+        // were more than 10 files found?
+            if(counterNull >= max){
+                fileList = fileList.concat(
+                                "<i> ..more " 
+                                + utils.text.pluralize(counterNull - max, "file")
+                                + " on this list.."
+                                + "</i>"
+                                + html.br);
+            } 
+            
+            // now do the pretty output
+            if(counterNull==1){
+                fileList = "File: " + fileList;
+            }else
+                if(counterNull > 1){
+                     fileList = "Files: " + html.br + fileList;
+                }
+        
+            
+         String result =  html.h2("Uncategorized files: " + counterNull);
+            
+        // all done
+        return result + fileList;
+    }
+    
     
     /**
      * Add the key/value text when the value is not empty (or null)
