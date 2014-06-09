@@ -209,8 +209,9 @@ public class Component {
         
         String details = "";
         
-        details += addItem(authors, "Authors");
         details += addItem(desc, "Description");
+        details += addItem(summary, "Summary");
+        details += addItem(authors, "Authors");
         details += addItem(lic, "License");
         details += addItem(organization, "Organization");
         details += addItem(downloadURL, "Download URL");
@@ -218,7 +219,6 @@ public class Component {
         details += addItem(remarks, "Remarks");
         details += addItem(dateCreated, "Date when record was created");
         details += addItem(dateLastModified, "Date when record was modified");
-        
         
         return ""
                 + html.div()
@@ -241,7 +241,11 @@ public class Component {
             
         }
         // output the text
-        return title + ": " + field + html.br;
+        return html.h3(title) 
+                + html.div()
+                + field
+                + html._div
+                ;
     }
     
     
