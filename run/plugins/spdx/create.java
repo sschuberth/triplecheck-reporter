@@ -15,6 +15,7 @@ package spdx;
 import GUI.TreeviewUtils;
 import GUI.swingUtils;
 import definitions.Messages;
+import definitions.id;
 import definitions.is;
 import java.io.File;
 import java.io.IOException;
@@ -208,11 +209,14 @@ public class create extends Plugin{
                String result = createDocument(source, this, newSPDX);
                
                // all done here, explain where the SPDX document can be found
-               nextStep = 
-                         html.link("See report", 
+               nextStep =  html.link("See report", 
                         "/spdx/show?x=summary&"
-                        + param.spdx + "=" + result)
-                       
+                        + param.spdx + "=" + result);
+               
+               // now save the source location
+               final String title = definitions.id.SOURCEFOLDER 
+                       + source.getName() + ".spdx";
+               core.settings.write(title, source.getAbsolutePath());
 //                       + html.redirect(
 //                               "/spdx/show?x=summary&"
 //                                + param.spdx + "=" + result
@@ -223,7 +227,7 @@ public class create extends Plugin{
 //                       html.link("Show in text mode", 
 //                        "/spdx/show?x=full&"
 //                        + param.spdx + "=" + result)
-                       ;
+                       
              //  swingUtils.doRequest(result);
              }
         };

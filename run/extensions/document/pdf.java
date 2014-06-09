@@ -64,7 +64,7 @@ public class pdf extends FileExtension{
      */
     @Override
     public String getDescription() {
-        return null; // file type description
+        return "Adobe Portable Document File"; // file type description
     }
     
     /**

@@ -375,6 +375,7 @@ public class ComponentControl {
         links.add(LinkType.View);
         
         String result = "" 
+                + html.div()
                 + html.h2("Local components")
                 + searchLocalRepository(links, core.getComponentFolder(), searchTerm, 25)
                 + html.br
@@ -382,6 +383,7 @@ public class ComponentControl {
                 + html.div()
                 + searchRepositoriesHTML
                     (searchTerm, link, core.getComponentFolder(), 25)
+                + html._div
                 + html._div
                 ;
         return result;

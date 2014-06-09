@@ -120,10 +120,10 @@ public class export extends Plugin{
             request.setAnswer(redirect);
         }else
         if(whatWasAsked.equals("report")){
-            result = doReport(spdx);
+            result = exportReport(spdx);
         }else
         if(whatWasAsked.equals("files")){
-            result = doReport(spdx);
+            result = exportFiles(spdx);
         }
         
         // show the end-user where the report files were placed
@@ -154,10 +154,10 @@ public class export extends Plugin{
 
     /**
      * Create the report for this SPDX project
-     * @param spdx
-     * @return 
+     * @param spdx  An SPDX object
+     * @return      An html log with the actions that happened
      */
-    private String doReport(SPDXfile2 spdx) {
+    private String exportReport(SPDXfile2 spdx) {
         String result = "";
         // start by creating our export directory
         File folderExport = new File(core.getFolderExport(), spdx.getId());
@@ -192,13 +192,35 @@ public class export extends Plugin{
             File fileZip = new File(folderExport, "report.zip");
             ThirdParty.zip.createZip(folderReport, fileZip);
             result += "- Created a zip file with the export contents" + html.br;
-       
         
         } catch (IOException ex) {
             Logger.getLogger(export.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
-       
+        // all done
+        return result;
+    }
+
+    /**
+     * Export the respective files associated with this project
+     * @param spdx  An SPDX object
+     * @return      An HTML text with the log of actions
+     */
+    private String exportFiles(SPDXfile2 spdx) {
+        String result = "";
+        // start by creating our export directory
+        File folderExport = new File(core.getFolderExport(), spdx.getId());
+        // if the folder doesn't exist, create one
+        utils.files.mkdirs(folderExport);
+        // now create the report folder
+        File folderReport = new File(folderExport, "report");
+        // create this folder if it doesn't exist already
+        if(utils.files.mkdirs(folderReport)){
+            result += "- Created export folder" + html.br;
+        }else{
+            if(folderReport.exists() == false){
+                return "- Error: Failed to create export folder";
+            }
+        }
         
         return result;
     }
