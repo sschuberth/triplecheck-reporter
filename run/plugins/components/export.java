@@ -189,7 +189,12 @@ public class export extends Plugin{
             result += "- Copied the SPDX document" + html.br;
        
             // all seems done, now create the zipped archive with all files inside
-            File fileZip = new File(folderExport, "report.zip");
+            File fileZip = new File(folderExport, "report-"
+                    + spdx.getId()
+                    + "("
+                    + utils.time.getDate()
+                    + ")"
+                    +".lex.zip");
             ThirdParty.zip.createZip(folderReport, fileZip);
             result += "- Created a zip file with the export contents" + html.br;
         
