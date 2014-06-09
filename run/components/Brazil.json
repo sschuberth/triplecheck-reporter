@@ -4,8 +4,7 @@
   "referenceURL": "http://brazildocs.homeip.net/",
   "downloadURL": "",
   "authors": "Sun Microsystems, Inc. (cstevens, suhler)",
-  "desc": "",
-  "summary": "The Brazil server began as an extremely small footprint HTTP stack, originally designed to provide a URL based interface to smartcards, so the smartcards could be accessed more easily from an ordinary web browser.",
+  "desc": "The Brazil server began as an extremely small footprint HTTP stack, originally designed to provide a URL based interface to smartcards, so the smartcards could be accessed more easily from an ordinary web browser.",
   "version": "",
   "lic": "SPL-1.0",
   "remarks": ""

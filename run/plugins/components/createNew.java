@@ -59,7 +59,6 @@ public class createNew extends Plugin{
         // get the parameters
         String id = request.getParameter("id");
         String title = request.getParameter("title");
-        String descriptionOneLine = "";
         String website = request.getParameter("website");
         String download = request.getParameter("download");
         String license = request.getParameter("license");
@@ -79,8 +78,7 @@ public class createNew extends Plugin{
         comp.Component component = new comp.Component();
         component.setId(id);
         component.setTitle(title);
-        component.setDescriptionOneLine(descriptionOneLine);
-        component.setDescriptionLarge(description);
+        component.setDescription(description);
         component.setDeclaredLicense(license);
         component.setAuthors(author);
         component.setVersion(versions);

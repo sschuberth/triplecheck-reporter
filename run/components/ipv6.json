@@ -4,8 +4,7 @@
   "referenceURL": "https://github.com/beaugunderson/javascript-ipv6",
   "downloadURL": "",
   "authors": "Beau Gunderson",
-  "desc": "",
-  "summary": "Javascript-ipv6 is a library for manipulating IPv6 addresses in JavaScript.",
+  "desc": "Javascript-ipv6 is a library for manipulating IPv6 addresses in JavaScript.",
   "version": "",
   "lic": "MIT",
   "remarks": ""

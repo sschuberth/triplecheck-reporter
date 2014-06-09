@@ -18,6 +18,7 @@ import java.util.HashMap;
 import java.util.Map;
 import main.core;
 import spdxlib.FileInfo2;
+import spdxlib.FileOrigin;
 import spdxlib.SPDXfile2;
 import utils.html;
 
@@ -68,7 +69,7 @@ public class CompSummary {
         }
         
         // now do the output messages
-        result += html.h2("Components used in " + spdx.getId());
+        result += html.h2("Components associated to " + spdx.getId());
        
         if(counterNull == spdx.getFiles().size()){
         // no components were found
@@ -111,13 +112,19 @@ public class CompSummary {
                 if(utils.text.equals(fileInfo.getFileComponent(), componentID)){
                     thisCounter++;
                     if(thisCounter < max){
+                        
+                        String origin = fileInfo.getFileOrigin().getLowercase();
+                        if(fileInfo.getFileOrigin() == FileOrigin.UNKNOWN){
+                            origin = "unknown origin";
+                        }
+                        
                         // add it to our list
                         fileList = fileList.concat(
                                 "<i>" 
                                 + fileInfo.getFileName()
                                 + html.textGrey(
                                     " ("
-                                    + fileInfo.getFileOrigin().getLowercase()
+                                    + origin
                                     + ")")
                                 + "</i>"
                                 + html.br);
@@ -148,8 +155,8 @@ public class CompSummary {
                         + " (" 
                         + utils.text.pluralize(count, "file")
                         + ")")
-                    //+ addIfNotEmpty("Description", component.getDesc(), true)
-                    + addIfNotEmpty("Description", component.getSummary(), true)
+                    //+ addIfNotEmpty("Description", component.getDescription(), true)
+                    + addIfNotEmpty("Description", component.getDescription(), true)
                     + addIfNotEmpty("Declared license", component.getLic(), false)
                     + addIfNotEmpty("Main author(s)", component.getAuthors(), false)
                     + addLinkIfNotEmpty("Reference URL", component.getReferenceURL())

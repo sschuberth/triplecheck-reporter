@@ -4,8 +4,7 @@
   "referenceURL": "https://publicsuffix.org/learn/",
   "downloadURL": "https://github.com/gorhill/publicsuffixlist.js",
   "authors": "Mozilla Foundation and respective volunteers",
-  "desc": "",
-  "summary": "Cross-vendor initiative to provide an accurate list of domain name suffixes.",
+  "desc": "Cross-vendor initiative to provide an accurate list of domain name suffixes.",
   "version": "",
   "lic": "GPL-3.0+",
   "remarks": ""

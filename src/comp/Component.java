@@ -35,8 +35,7 @@ public class Component {
             referenceURL,   // the home page or website that explains component
             downloadURL,    // when available, from where it can be downloaded    
             authors,        // main authors and contributors (separated by \n)
-            desc,           // one line summary about the component
-            summary,        // a more complete description in detail 
+            desc,           // short summary about the component
             organization,   // to which company, foundation (...) is the code related
             version,        // in some cases, the applicable version
             dateCreated,    // when this component was first created
@@ -64,11 +63,9 @@ public class Component {
         this.dateLastModified = dateLastModified;
     }
 
-    public void setDescriptionLarge(String descriptionLarge) {
-        this.summary = descriptionLarge;
-    }
+    
 
-    public void setDescriptionOneLine(String descriptionOneLine) {
+    public void setDescription(String descriptionOneLine) {
         this.desc = descriptionOneLine;
     }
 
@@ -124,7 +121,7 @@ public class Component {
         return dateLastModified;
     }
 
-    public String getDesc() {
+    public String getDescription() {
         return desc;
     }
 
@@ -156,11 +153,11 @@ public class Component {
         return subComponents;
     }
 
-    public String getSummary() {
-        return summary;
-    }
-
     public String getTitle() {
+        if(title == null){
+            return id;
+        }
+        
         return title;
     }
 
@@ -210,7 +207,6 @@ public class Component {
         String details = "";
         
         details += addItem(desc, "Description");
-        details += addItem(summary, "Summary");
         details += addItem(authors, "Authors");
         details += addItem(lic, "License");
         details += addItem(organization, "Organization");
@@ -280,10 +276,26 @@ public class Component {
         }
         
         // add the description
-        result += html.textGrey(" <i>" + desc + "</i>");
+        final int max = 70;
+        String descOutput;
+        if(desc.length() > max){
+            descOutput = desc.substring(0, max);
+            int lastSpace = descOutput.lastIndexOf(" ");
+            descOutput = descOutput.substring(0, lastSpace) + " (..)";
+        }else{
+            descOutput = desc;
+        }
+        
+        
+        result += html.textGrey(" <i>" + descOutput + "</i>");
         
         // all done
         return result;
     }
+
+    void setType(final String typeRepository) {
+        type = typeRepository;
+    }
+    
 
 }

@@ -4,8 +4,7 @@
   "referenceURL": "",
   "downloadURL": "http://commons.apache.org/proper/commons-lang/",
   "authors": "The Apache Foundation",
-  "desc": "",
-  "summary": "Lang provides a host of helper utilities for the java.lang API, notably String manipulation methods, basic numerical methods, object reflection, concurrency, creation and serialization and System properties.",
+  "desc": "Lang provides a host of helper utilities for the java.lang API, notably String manipulation methods, basic numerical methods, object reflection, concurrency, creation and serialization and System properties.",
   "version": "",
   "lic": "Apache-2.0",
   "remarks": ""

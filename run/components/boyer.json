@@ -4,8 +4,7 @@
   "referenceURL": "",
   "downloadURL": "http://en.literateprograms.org/Special:DownloadCode/Boyer-Moore_string_search_algorithm_%28Java%29",
   "authors": "Robert S. Boyer and J Strother Moore",
-  "desc": "",
-  "summary": "In computer science, the Boyer–Moore string search algorithm is an efficient string searching algorithm that is the standard benchmark for practical string search literature.",
+  "desc": "In computer science, the Boyer–Moore string search algorithm is an efficient string searching algorithm that is the standard benchmark for practical string search literature.",
   "version": "",
   "lic": "MIT",
   "remarks": ""

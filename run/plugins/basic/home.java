@@ -29,7 +29,7 @@ import www.WebRequest;
 
 /**
  *
- * @author Nuno Brito, 21st of December 2013 in Darsmtadt, Germany
+ * @author Nuno Brito, 21st of December 2013 in Darmstadt, Germany
  */
 public class home extends Plugin{
 

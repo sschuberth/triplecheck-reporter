@@ -21,6 +21,7 @@ PackageName: ether-etherpad-lite-8fffe47
 ##-------------------------
 FileName: ./.gitignore
 FileType: OTHER
+ArtifactOfProjectName: remedium
 FileChecksum: SHA1: 8d98fee5d83f9b309b1eb11c99d71f2bbd4f070c
 FileChecksum: SHA256: 61ce0c94b4c8fffbc75a16a2feac89f1b061e8c357175643c572559cdef6a742
 FileChecksum: MD5: 0bb499eb2473d90358f8d63fb938b930
@@ -188,6 +189,7 @@ FileLOC: 59
 
 FileName: ./CHANGELOG.md
 FileType: OTHER
+ArtifactOfProjectName: remedium
 FileChecksum: SHA1: 19fda061738489796c52b144d90b9f8c4c85066b
 FileChecksum: SHA256: ad3edca144d9d04084e10a021e890408f4845fb9b6509ce1c391f6c1fda24393
 FileChecksum: MD5: 32b8010f05b0a2f1f3a66d39a09c8ee2
@@ -196,6 +198,7 @@ FileSize: 12 Kb (12397 bytes)
 
 FileName: ./CONTRIBUTING.md
 FileType: OTHER
+ArtifactOfProjectName: remedium
 FileChecksum: SHA1: a46a2d829e6e53400bf10d24f83f30ab1bc18dc0
 FileChecksum: SHA256: d77a4fb3cdb30b92fdd2828e186f4c9e2be37e6e5e1bf5304c2e12cbb1a0062a
 FileChecksum: MD5: 966072a78c072722251184558868cafa
@@ -390,6 +393,7 @@ FileLOC: 20
 
 FileName: ./LICENSE
 FileType: OTHER
+ArtifactOfProjectName: remedium
 FileChecksum: SHA1: 702545b2c8ccbd217cca4ac7c0c93df806f01a30
 FileChecksum: SHA256: 9bb380ff448a820820bf4351a3dbc68355d81e2bd936187f15528ae52cf12fc3
 FileChecksum: MD5: fd9ef771d64068aa0cf0333e8539b25a
@@ -406,6 +410,7 @@ FileSize: 634 bytes
 
 FileName: ./README.md
 FileType: OTHER
+ArtifactOfProjectName: 7z
 FileChecksum: SHA1: 1be2b62a886e7b8d202ed604728ce3daaa10f32d
 FileChecksum: SHA256: 78635cb1cf0c2b83dcfe9e2451da07efdb506e88e3b4de40fd3ec71aea1db50d
 FileChecksum: MD5: 1713fbd5d0f9b143ce15c2ea1f2ea27e

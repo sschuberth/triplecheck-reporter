@@ -351,6 +351,15 @@ public class ComponentControl {
                 final Component result = gson.fromJson(line, Component.class);
                 // do we have a match?
                 if(utils.text.equals(id, result.id)){
+                    // add up the type of repository that we are using
+                    final String name = file.getName();
+                    // is it the google code repository?
+                    if(name.contains("gc.jsons")){
+                        result.setType("gc");
+                        result.setReferenceURL("https://code.google.com/p/" 
+                                + id + "/");
+                    }
+                    
                     return result;
                 }
             }
@@ -398,7 +407,7 @@ class Default extends Component{
         downloadURL = "http://triplecheck.de/download";    
         authors = "Nuno Brito";
         desc = "A test component";
-        summary = "This test component helps to debug the component functionality";
+        //summary = "This test component helps to debug the component functionality";
         organization = "TripleCheck";
         version = "1.0";
 

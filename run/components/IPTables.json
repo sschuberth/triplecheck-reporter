@@ -4,8 +4,7 @@
   "referenceURL": "",
   "downloadURL": "https://android.googlesource.com/platform/external/iptables/+/android-4.4.2_r2/iptables/iptables.c",
   "authors": "Paul.Russell@rustcorp.com.au, mneuling@radlogic.com.au",
-  "desc": "",
-  "summary": "Code to take an iptables-style command line and do it.",
+  "desc": "Code to take an iptables-style command line and do it.",
   "version": "",
   "lic": "GPL-2.0+",
   "remarks": ""

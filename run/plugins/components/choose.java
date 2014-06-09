@@ -15,6 +15,7 @@ package components;
 
 import GUI.SearchType;
 import GUI.swingUtils;
+import comp.Component;
 import comp.LinkType;
 import definitions.is;
 import java.util.ArrayList;
@@ -120,10 +121,35 @@ public class choose extends Plugin{
     public void select(WebRequest request) {
         final String path = request.getParameter("path");
         final String name = request.getParameter("name");
+        
+        // do we need to create a new Json?
+        if(path != null && path.endsWith(".jsons")){
+            createJsonFromDatabase(path, name);
+        }
+        
 //        final String type = request.getParameter("license");
         log.write(is.INFO, "Marking files as belonging to : %1", name);
         request.setAnswer("Marked selected files as part of " + name);
         core.studio.setFilesWithComponent(name);
+        
+    }
+
+    /**
+     * Given a path and project name of something that was chosen from a
+     * repository, we now work to create a separate component that we can
+     * further customize as needed
+     * @param path  Path to the repository
+     * @param id    Identification of the project we want to extract
+     */
+    private void createJsonFromDatabase(String path, String id) {
+        Component component = core.components.getFromRepository(path, id);
+        if(component == null){
+            log.write(is.ERROR, "CH147 - Didn't found component %1 at repository %2",
+                    id, path);
+        }
+        // write the component to disk
+        component.writeToDisk();
+        log.write(is.INFO, "Wrote component %1 from %2 to disk", id, path);
         
     }
     

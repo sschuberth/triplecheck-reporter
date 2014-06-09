@@ -135,7 +135,7 @@ public class parseMiningData {
         component.setId(fields[0]);
         
         if(fields.length > 7){
-            component.setDescriptionOneLine(fields[7]);
+            component.setDescription(fields[7]);
             component.setDeclaredLicense(fields[2]);
         }
                
