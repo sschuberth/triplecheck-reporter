@@ -155,6 +155,51 @@ public class ComponentControl {
     return output;
   }
 
+     /**
+     * The iterative method that will get all the custom created components
+     * @param id        The id to match
+     * @param where     The folder where we want to look
+     * @param maxDeep   How deep in the folder structure can we go?
+     * @return          A component if exact match is found, null otherwise
+     */
+    private String searchLocalRepository(final ArrayList<LinkType> link,
+            File where,final String searchTerm, int maxDeep){
+        // create the gson builder
+        Gson gson = new Gson();
+        // get an array with the files on the current folder
+        File[] files = where.listFiles();
+
+        String output = "";
+
+        if(files != null)
+            // iterate through each file
+            for (File file : files) {
+                final String name = file.getName();
+                if (file.isFile() && name.endsWith(".json")){
+                    // read the contents of this file
+                    final String input = utils.files.readAsString(file);
+                    final Component result = gson.fromJson(input, Component.class);
+                    // only continue if the id contain part of the search term
+                    if(result.id.contains(searchTerm) == false){
+                        continue;
+                    }
+                    output += result.getOneLineHTML(link) 
+                            + html.br
+                            ;
+                    componentCounter++;
+                }
+                else
+                if ( (file.isDirectory())
+                    &&( maxDeep-1 > 0 ) ){
+                    // do the recursive crawling
+                    output += searchLocalRepository(link, file, searchTerm, maxDeep-1);
+                }
+            }
+    return output;
+  }
+
+    
+    
        
     /**
      * The iterative method that will match a specific ID
@@ -325,11 +370,15 @@ public class ComponentControl {
    * @return 
    */
     public String search(String searchTerm, Link link) {
+        
+        ArrayList<LinkType> links = new ArrayList();
+        links.add(LinkType.View);
+        
         String result = "" 
-//                + html.h3("Local components")
-//                + this.getListCustomHTML(link, core.getComponentFolder(), 25)
-//                
-                + html.h3("On public repositories")
+                + html.h2("Local components")
+                + searchLocalRepository(links, core.getComponentFolder(), searchTerm, 25)
+                + html.br
+                + html.h2("Results on public repositories")
                 + html.div()
                 + searchRepositoriesHTML
                     (searchTerm, link, core.getComponentFolder(), 25)

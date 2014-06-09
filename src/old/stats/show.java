@@ -10,7 +10,7 @@
  * FileComment: <text> Provides generic stats for end-users </text> 
  */
 
-package stats;
+package old.stats;
 
 import definitions.Messages;
 import main.core;

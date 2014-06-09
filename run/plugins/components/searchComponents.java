@@ -52,7 +52,7 @@ public class searchComponents extends Plugin{
         link.setUrl("/components/showComponent?name=");
         
         String output = core.components.search(searchTerm , link);
-        core.studio.editorPane(is.contentHTML, false, 0, output);
+        core.studio.editorPane(is.contentHTML, false, 0, output, Boolean.TRUE, null);
     }
     
 }

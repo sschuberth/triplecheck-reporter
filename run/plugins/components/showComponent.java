@@ -36,7 +36,7 @@ public class showComponent extends Plugin{
        final String path = request.getParameter("path");
        final String license = request.getParameter("license");
        // no type means that we are dealing with a custom component
-       if(type == null){
+       if(type == null || type.equals("null")){
            Component component = core.components.get(name);
            final String result = component.getSummaryHTML();
            request.setAnswer(result);

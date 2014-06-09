@@ -207,14 +207,44 @@ public class Component {
             title = id;
         }
         
+        String details = "";
+        
+        details += addItem(authors, "Authors");
+        details += addItem(desc, "Description");
+        details += addItem(lic, "License");
+        details += addItem(organization, "Organization");
+        details += addItem(downloadURL, "Download URL");
+        details += addItem(referenceURL, "Reference URL");
+        details += addItem(remarks, "Remarks");
+        details += addItem(dateCreated, "Date when record was created");
+        details += addItem(dateLastModified, "Date when record was modified");
+        
+        
         return ""
                 + html.div()
                 + html.h2(title)
-                + desc
+                + details
                 + html._div
                 ;
     }
 
+    
+    /**
+     * Adds a field of the component object if it is not empty
+     * @return  A string ready to be added on the output, or an empty string
+     * if the value itself is empty or null
+     */
+    private String addItem(final String field, final String title){
+        // preflight check
+        if(field == null || field.isEmpty()){
+            return "";
+            
+        }
+        // output the text
+        return title + ": " + field + html.br;
+    }
+    
+    
     /**
      * this method is used on lists where we can pick this component
      * @param title The title to show on the link
@@ -235,7 +265,7 @@ public class Component {
         for(LinkType link : links){
             switch(link){
                 case View:
-                    result += " | " + html.link("view", "showComponent/?&name=" + id 
+                    result += " | " + html.link("view", "/components/showComponent.java?name=" + id 
                             + "&type=" + type);
                     break;
                 case Choose:
@@ -246,7 +276,7 @@ public class Component {
         }
         
         // add the description
-        result += html.textGrey("<i>" + desc + "</i>");
+        result += html.textGrey(" <i>" + desc + "</i>");
         
         // all done
         return result;
