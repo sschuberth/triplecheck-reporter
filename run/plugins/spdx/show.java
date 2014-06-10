@@ -381,7 +381,7 @@ public class show extends Plugin{
                 + html.br
                 + textLOC + " lines of code"
                 + html.br
-                + counterFiles + " files"
+                + counterFiles + " files in total"
 //                + " (" 
 //                + counterLicensesDeclared + " declared licenses)"
                 + html.br

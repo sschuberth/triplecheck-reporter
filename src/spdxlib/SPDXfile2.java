@@ -664,7 +664,7 @@ public class SPDXfile2 implements Serializable{
         
         String result = ""
                 + countFilesWithCopyright
-                + " files copyright declared" 
+                + " files with copyright declared" 
                 + html.br
                 + countLicensesDeclared
                 + " files with declared licenses" 
