@@ -13,7 +13,6 @@ package create;
  */
 
 import java.io.File;
-import old.actions;
 import org.junit.*;
 import spdxlib.DocumentCreate2;
 

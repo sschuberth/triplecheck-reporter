@@ -25,14 +25,12 @@ import java.text.DecimalFormat;
 import java.util.ArrayList;
 import main.core;
 import main.param;
-import old.tools;
 import script.Plugin;
 import script.log;
 import spdxlib.FileInfo2;
 import spdxlib.SPDXfile2;
 import utils.Graphs;
 import utils.html;
-import www.RequestOrigin;
 import www.Table;
 import www.WebRequest;
 
@@ -277,48 +275,6 @@ public class show extends Plugin{
     
     
     /**
-     * Shows the full text of an SPDX document
-     * @param request
-     */
-    public void full(WebRequest request) {
-        // we need the "file" parameter to tell us what to detail
-        String spdxTarget = request.getParameter(param.spdx);
-        // does this file exists?
-        File file = tools.getFile(spdxTarget, request);
-        if(file == null){
-            return;
-        }
-        // readLines the whole file
-        String result = utils.files.readAsString(file);
-        
-        
-        
-        // what happens when we want to see this file from a browser?
-        if(request.requestOrigin == RequestOrigin.BROWSER){
-        // we have to make it web-ready, replace break lines with BR tags
-        result = 
-                "<p>" 
-                + result.replace("\n", "<br>")
-                + "</p>";
-        // output the file
-        request.setAnswer(result);
-        return;
-        }
-        
-        // now do this properly on our desktop interface
-        request.setAnswer("Loading text..");
-        // we just want to just this on the GUI
-        core.studio.editorPane(is.contentText, false, 0, result);
-        
-    }
-    
-    
-    
-    
-    
-    
-    
-    /**
      * Show the summary for a given SPDX document
      * @param request
      */
@@ -326,7 +282,7 @@ public class show extends Plugin{
         // we need the "file" parameter to tell us what to detail
         String spdxTarget = request.getParameter(param.spdx);
         // does this file exists?
-        File file = tools.getFile(spdxTarget, request);
+        File file = getFile(spdxTarget, request);
         if(file == null){
             return;
         }
@@ -335,6 +291,7 @@ public class show extends Plugin{
         //System.err.println("DBG-S342 Reading SPDX");
         //SPDXfile spdx = new SPDXfile(file);
         SPDXfile2 spdx = core.reports.get(file);
+        
         
         // compute some of our useful statistics about the SPDX document
         int counterLicensesDeclared = spdx.getLicensesDeclaredCount();
@@ -507,7 +464,7 @@ public class show extends Plugin{
         // we need the "file" parameter to tell us what to detail
         String spdxTarget = request.getParameter(param.spdx);
         // does this file exists?
-        File file = tools.getFile(spdxTarget, request);
+        File file = getFile(spdxTarget, request);
         if(file == null){
             return;
         }
@@ -584,7 +541,27 @@ public class show extends Plugin{
     }
    
     
-    
+   /**
+* Verifies if a given SPDX document exists inside our archive or or not
+* @param spdxTarget The file inside the SPDX Archive
+* @param request
+* @return null if the file does not exists, otherwise return a pointer
+*/
+    public static File getFile(String spdxTarget, WebRequest request){
+         if(spdxTarget == null){
+            request.setAnswer("No file specified");
+            return null;
+        }
+        // does this file exists?
+        File file = new File(core.getProductsFolder(), spdxTarget);
+        // this file needs to exist
+        if((file.exists() == false) || (file.isDirectory())){
+            request.setAnswer("Sorry, the file was not found: " + spdxTarget);
+            return null;
+        }
+        // all done
+        return file;
+    } 
    
     
     

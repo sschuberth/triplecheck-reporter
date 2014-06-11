@@ -12,8 +12,6 @@ package trigger;
  * FileComment: <text> Test the detection of GPL v3 licenses </text> 
  */
 
-import java.util.ArrayList;
-import old.actions;
 import main.core;
 import org.junit.*;
 import static org.junit.Assert.*;

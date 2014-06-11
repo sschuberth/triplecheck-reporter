@@ -29,8 +29,6 @@ import main.controller;
 import main.core;
 import net.htmlparser.jericho.HTMLElementName;
 import net.htmlparser.jericho.Source;
-import old.Person;
-import old.TagValue;
 import script.log;
 import spdxlib.FileInfo2;
 import spdxlib.SPDXfile2;
@@ -132,23 +130,7 @@ public class swingUtils {
     }
     
     
-    /**
-     * Creates a new under under a given root node.
-     * The new node contains the details about a person
-     * @param root the parent of the new node
-     * @param person the object that will be used to populate the new node
-     * @return The node with the person details
-     */
-    static public TreeNodeSPDX addNodePerson(TreeNodeSPDX root, Person person){
-        TreeNodeSPDX nodePerson = 
-                   createNodeChild(person.getTitle(),root);
-        // add the object
-           nodePerson.nodeType = NodeType.person;
-           nodePerson.id = person.getTitle();
-           nodePerson.setUserObject(person);
-           return nodePerson;
-    } 
-    
+  
     
     /**
      * Method to ease the creation of new nodes on the tree list
@@ -191,20 +173,6 @@ public class swingUtils {
                 //+ "<br>"
                 + html.br;
         return result;
-    }
-    
-     /**
-      * Adds the output when the given tag is not null
-     * @param title the title of this entry
-     * @param tag the value of this entry
-     * @return a printable string using the format "key: value"
-      */
-    static public String addIfNotEmpty(String title, TagValue tag){
-        // preflight checks
-        if(tag == null){
-            return "";
-        }
-        return addIfNotEmpty(title, tag.toString());
     }
     
     /**

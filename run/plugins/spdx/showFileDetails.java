@@ -21,7 +21,6 @@ import definitions.is;
 import java.io.File;
 import main.core;
 import main.param;
-import old.tools;
 import script.FileExtension;
 import script.Plugin;
 import script.log;
@@ -52,7 +51,7 @@ public class showFileDetails extends Plugin{
         // we need the "file" parameter to tell us what to detail
         String spdxTarget = request.getParameter(param.spdx);
         // does this file exists?
-        File spdxFile = tools.getFile(spdxTarget, request);
+        File spdxFile = getFile(spdxTarget, request);
         if(spdxFile == null){
             return;
         }
@@ -77,7 +76,27 @@ public class showFileDetails extends Plugin{
         request.setAnswer("Didn't found " + targetFile);
     }
     
-    
+    /**
+* Verifies if a given SPDX document exists inside our archive or or not
+* @param spdxTarget The file inside the SPDX Archive
+* @param request
+* @return null if the file does not exists, otherwise return a pointer
+*/
+    public static File getFile(String spdxTarget, WebRequest request){
+         if(spdxTarget == null){
+            request.setAnswer("No file specified");
+            return null;
+        }
+        // does this file exists?
+        File file = new File(core.getProductsFolder(), spdxTarget);
+        // this file needs to exist
+        if((file.exists() == false) || (file.isDirectory())){
+            request.setAnswer("Sorry, the file was not found: " + spdxTarget);
+            return null;
+        }
+        // all done
+        return file;
+    }
    
     
     /**

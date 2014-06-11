@@ -15,7 +15,6 @@ package spdx;
 import GUI.TreeviewUtils;
 import GUI.swingUtils;
 import definitions.Messages;
-import definitions.id;
 import definitions.is;
 import java.io.File;
 import java.io.IOException;
@@ -217,18 +216,6 @@ public class create extends Plugin{
                final String title = definitions.id.SOURCEFOLDER 
                        + source.getName() + ".spdx";
                core.settings.write(title, source.getAbsolutePath());
-//                       + html.redirect(
-//                               "/spdx/show?x=summary&"
-//                                + param.spdx + "=" + result
-//                               , 
-//                               2
-//                               , "Redirecting..")
-//                       + " | " +
-//                       html.link("Show in text mode", 
-//                        "/spdx/show?x=full&"
-//                        + param.spdx + "=" + result)
-                       
-             //  swingUtils.doRequest(result);
              }
         };
         task.launch();
@@ -236,7 +223,6 @@ public class create extends Plugin{
         //request.setAnswer("Process launched as " + task.getUID());
         request.setAnswer(utils.html.redirect("/basic/status"
                 + "?ID=" + task.getUID(), 0, ""));
-        
     }
 
     
