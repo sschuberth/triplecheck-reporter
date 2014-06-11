@@ -100,4 +100,10 @@ public class Apache_v2 implements Trigger {
     public TriggerType getType(){
         return TriggerType.LICENSE;
     }
+    
+    @Override
+    public String getTriggerTitle() {
+        return "Apache-2.0";
+    }
+    
 }

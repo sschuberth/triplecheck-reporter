@@ -9,7 +9,7 @@ DataLicense: CC-BY-4.0
 ##-------------------------
 Creator: nuno
 Creator: Tool: TripleCheck 0.9
-Created: 2014-06-11T10:58:06Z
+Created: 2014-06-11T13:46:52Z
 
 ##-------------------------
 ## Package Information
@@ -34,7 +34,7 @@ FileChecksum: SHA256: 768131f11194f036a60a06b53d942f58cf5500ab731a45a9504b5a6caf
 FileChecksum: MD5: 6c3c0af9e9eda3d470c7869fba803d73
 FileChecksum: SSDEEP: 96:isCu5NQwcsXw0ExfE/pU6xa65/jKBTvKGE9ewgYgyzRI9V/e1OJn7ZYZ4Zk4NK75:kuz5gZxc/pnamOIgyO9DN3k4No
 FileSize: 6 Kb (6568 bytes)
-LicenseInfoInFile: LGPL
+LicenseInfoInFile: LGPL-3.0+
 LicenseInfoInFile: GPL-3.0+
 FileCopyrightText: <text>Copyright (C) 2013 KO GmbH <copyright@kogmbh.com></text>
 
@@ -54,7 +54,7 @@ FileChecksum: MD5: f4f971f3bd32858c74a69eb6864d754a
 FileChecksum: SSDEEP: 192:YbWX277xAIpnsTBP1rtLAHL2KAtRV+5UNtstJvfjxt9zrYSYs2wyNCylyisF:YbWX277xAIpeB16HiKCt0p7xfzUSYTq
 FileSize: 10 Kb (10906 bytes)
 FileLOC: 290
-LicenseInfoInFile: LGPL
+LicenseInfoInFile: LGPL-3.0+
 FileCopyrightText: <text>Copyright (C) 2013-2014 KO GmbH <copyright@kogmbh.com></text>
 
 FileName: ./README.md
@@ -115,6 +115,6 @@ FileChecksum: MD5: 8f1da7c4fc5811d7f8f586e9607f8f70
 FileChecksum: SSDEEP: 96:RsQbWnwBsKxXrV9xcrZIphSUsKurWxsnKm3qojU4LqX:HbWX277xAIpnsKuHaL4LqX
 FileSize: 3 Kb (3108 bytes)
 FileLOC: 79
-LicenseInfoInFile: LGPL
+LicenseInfoInFile: LGPL-3.0+
 FileCopyrightText: <text>Copyright (C) 2012 KO GmbH <copyright@kogmbh.com></text>
 

@@ -45,7 +45,7 @@ public final class TriggerControl {
             Trigger result = (Trigger) utils.bytecode.getObject(file);
             
             if(result != null){
-                log.write(is.ADDING, "Trigger: " + result.getShortIdentifier());
+                log.write(is.ADDING, "Trigger: " + result.getTriggerTitle());
                 list.add(result);
             }
         }

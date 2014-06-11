@@ -105,7 +105,7 @@ public class PublicDomain implements Trigger {
 
     @Override
     public String getFullName() {
-        return "Apache License 2.0";
+        return "Public Domain";
     }
 
     @Override
@@ -113,4 +113,8 @@ public class PublicDomain implements Trigger {
         return LicenseInfoInFile + getShortIdentifier();
     }
     
+    @Override
+    public String getTriggerTitle() {
+        return "Public Domain finder";
+    }
 }

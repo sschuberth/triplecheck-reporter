@@ -182,7 +182,7 @@ public class LGPL implements Trigger {
 
     @Override
     public String getShortIdentifier() {
-        return "LGPL";
+        return defaultId;
     }
 
     @Override
@@ -216,4 +216,8 @@ public class LGPL implements Trigger {
         return LicenseInfoInFile.concat(getShortIdentifier());
     }
   
+    @Override
+    public String getTriggerTitle() {
+        return "LGPL";
+    }
 }

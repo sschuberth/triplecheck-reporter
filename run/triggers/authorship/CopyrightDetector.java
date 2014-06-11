@@ -214,5 +214,9 @@ public class CopyrightDetector implements Trigger {
                 + "</text>";
     }
 
+    @Override
+    public String getTriggerTitle() {
+        return "Copyright finder";
+    }
   
 }

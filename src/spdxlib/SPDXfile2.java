@@ -231,22 +231,27 @@ public class SPDXfile2 implements Serializable{
      */
     private void readLines(final File file){
         // iterate through all lines
-        charPosition = 0;  
+        charPosition = 0;
+        int lineCounter = 0;
       try {
           BufferedReader reader = new BufferedReader(new FileReader(file));
           String line;
             while ((line = reader.readLine()) != null) {
                try {
+                    // increase the line counter
+                    lineCounter++;
                     // read the tag/value information
                     processFileLine(line, charPosition);
-                
                } catch (Exception ex) {
                     log.write(is.ERROR, "Error reading line: %1 of file %2"
-                            ,charPosition + "", file.getAbsolutePath());
+                            + " with content: %3"
+                            ,lineCounter + "", file.getAbsolutePath(),
+                            line);
+                   //System.err.println("SP246 - Line Exception: " + line);
                     // no need to stop, continue to the next item
                     continue;
                 }
-                // increase the line counter
+                // increase the char counting
                 charPosition+= line.length() + 1;
             }
             reader.close();

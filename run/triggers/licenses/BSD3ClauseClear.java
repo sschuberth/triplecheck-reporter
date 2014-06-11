@@ -3,7 +3,6 @@ package licenses;
 
 import definitions.TriggerType;
 import java.io.File;
-import java.util.Date;
 import script.Trigger;
 
 /*
@@ -90,6 +89,11 @@ public class BSD3ClauseClear implements Trigger {
     @Override
     public String getResult() {
         return LicenseInfoInFile + getShortIdentifier();
+    }
+    
+    @Override
+    public String getTriggerTitle() {
+        return "BSD";
     }
     
 }

@@ -91,4 +91,8 @@ public class MIT implements Trigger {
         return LicenseInfoInFile + getShortIdentifier();
     }
     
+    @Override
+    public String getTriggerTitle() {
+        return "MIT";
+    }
 }

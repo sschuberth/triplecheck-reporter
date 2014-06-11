@@ -234,4 +234,8 @@ public class MPL implements Trigger {
         return LicenseInfoInFile + getShortIdentifier();
     }
   
+    @Override
+    public String getTriggerTitle() {
+        return "MPL";
+    }
 }

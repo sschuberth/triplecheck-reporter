@@ -2,7 +2,6 @@ package licenses;
 
 import definitions.TriggerType;
 import java.io.File;
-import java.util.Date;
 import script.Trigger;
 
 /*
@@ -100,4 +99,10 @@ public class Apache_v1 implements Trigger {
     public String getResult() {
         return LicenseInfoInFile + getShortIdentifier();
     }
+
+    @Override
+    public String getTriggerTitle() {
+        return "Apache v1";
+    }
+   
 }

@@ -126,12 +126,9 @@ public class DocumentCreate2 {
         return true;
     }
 
-    /**
-     * This method will find all the available files on the folder
-     * and start indexing them
-     */
-    /**
- * Find all files in a given folder and respective subfolders
+/**
+ * Find all files in a given folder and respective subfolders to
+ * start indexing them.
  * @param where A file object of the start folder
  * @param maxDeep How deep is the crawl allowed to proceed
  * @throws java.io.IOException

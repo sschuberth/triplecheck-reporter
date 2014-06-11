@@ -87,4 +87,6 @@ public interface Trigger {
     // what should be given as result?
     public String getResult();
     
+    public String getTriggerTitle();
+    
 }

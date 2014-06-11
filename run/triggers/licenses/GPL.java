@@ -228,4 +228,8 @@ public class GPL implements Trigger {
         return LicenseInfoInFile.concat(getShortIdentifier());
     }
   
+    @Override
+    public String getTriggerTitle() {
+        return "GPL";
+    }
 }
