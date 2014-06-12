@@ -250,6 +250,9 @@ public class TestingUI extends javax.swing.JFrame {
 //                    if(!thisTrigger.getResult().equals("LicenseInfoInFile: LGPL-2.1")){
 //                        continue;
 //                    }
+                      if(!thisTrigger.getResult().contains(" GPL")){
+                        continue;
+                    }
                     
                    //result = result.concat(thisTrigger.getResult()).concat("\n");
                      counter++;

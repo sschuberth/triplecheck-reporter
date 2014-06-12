@@ -35,7 +35,8 @@ public class GNU implements Trigger {
                 "general public license"
             },
             keywordsAGPL = {"agpl", "affero"},
-            keywordsLGPL = {"lgpl", "lesser general"},
+            keywordsLGPL = {"lgpl", "lesser general", "library public license"},
+            keywordsGPL = {"gpl", "gnu general public license"},
             listEvidenceLGPL = {
                 "under lgpl license"
 //                "lgpl/",
@@ -118,6 +119,7 @@ public class GNU implements Trigger {
         // go through each possible type of license
         checkAGPL(contentLowerCase);
         checkLGPL(contentLowerCase);
+        checkGPL(contentLowerCase);
         // it is applicable when either one of these indicators is true
         return isGPL || isLGPL || isAGPL;
     }
@@ -154,7 +156,32 @@ public class GNU implements Trigger {
             }
         }
      }
-    
+   
+
+    /**
+     * Check if GPL content is present. This is the most trickiest value to
+     * detect accurately. It is easy to confuse this license with either
+     * LGPL or AGPL simply because of "GPL". Our strategy is to first detect
+     * the other two license types, if any of them were detected before then
+     * we have a better idea about how to prepare. Still, there might be cases
+     * of false negatives when someone includes a file as dual licensed under
+     * LGPL and GPL. In either case, our accuracy is still precise and it would
+     * at most report the file as LGPL, which isn't necessarily a drama.
+     * @param contentLowerCase 
+     */
+     private void checkGPL(final String contentLowerCase){
+          // iterate all our keywords
+        for(final String keyword : keywordsGPL){
+            // do we have a match inside the content?
+            if(contentLowerCase.contains(keyword)){
+                checkForTermsGPL(contentLowerCase);
+                //checkForEvidenceAndVersionLGPL(contentLowerCase);
+                break;
+            }
+        }
+     }
+     
+     
      
      /**
       * Verifies if this file is just mentioning the AGPL or if this is the
@@ -165,7 +192,7 @@ public class GNU implements Trigger {
         ("patent license was granted, prior to 28 march 2007");
      }
      
-      /**
+     /**
       * Verifies if this file is just mentioning the LGPL or if this is the
       * license text. We use a specific term that is only found on this context.
       */
@@ -173,20 +200,42 @@ public class GNU implements Trigger {
          // version 2.0 of the LGPL?
          if(contentLowerCase.contains("copyright (c) 1991 free software foundation")){
              isTermsLGPL = true;
-             isGPL = true;
+             isLGPL = true;
              addLicense(LGPL2_0);
          }
          // version 2.1 of the LGPL?
          if(contentLowerCase.contains("copyright (c) 1991, 1999 free software foundation")){
              isTermsLGPL = true;
-             isGPL = true;
+             isLGPL = true;
              addLicense(LGPL2_1);
          }
          // version 3.0 of the LGPL?
          if(contentLowerCase.contains("1. exception to section 3 of the gnu gpl.")){
              isTermsLGPL = true;
-             isGPL = true;
+             isLGPL = true;
              addLicense(LGPL3_0);
+         }
+     }
+     
+     /**
+      * Verifies if this file is just mentioning the LGPL or if this is the
+      * license text. We use a specific term that is only found on this context.
+      */
+     void checkForTermsGPL(final String contentLowerCase){
+         // version 1.0 of the GPL?
+         if(contentLowerCase.contains("version 1, february 1989")){
+             isGPL = true;
+             addLicense(GPL1_0);
+         }
+         // version 2.0 of the GPL?
+         if(contentLowerCase.contains("copyright (c) 1989, 1991 free software foundation")){
+             isGPL = true;
+             addLicense(GPL2_0);
+         }
+         // version 3.0 of the GPL?
+         if(contentLowerCase.contains("the gpl, as needed to protect")){
+             isGPL = true;
+             addLicense(GPL3_0);
          }
      }
      
@@ -202,15 +251,15 @@ public class GNU implements Trigger {
      */ 
     private void checkForEvidenceAndVersionLGPL(final String contentLowerCase){
         // certain definitions for each LGPL edition
-        if(checkForLicense("lgpl", "2.0", contentLowerCase)){
+        if(checkForLicense("lgpl", "2", ".0", contentLowerCase)){
              isLGPL = true;
              addLicense(LGPL2_0);
         }
-        if(checkForLicense("lgpl", "2.1", contentLowerCase)){
+        if(checkForLicense("lgpl", "2", ".1", contentLowerCase)){
              isLGPL = true;
              addLicense(LGPL2_1);
         }
-        if(checkForLicense("lgpl", "3.0", contentLowerCase)){
+        if(checkForLicense("lgpl", "3", ".0", contentLowerCase)){
              isLGPL = true;
              addLicense(LGPL3_0);
         }
@@ -235,11 +284,23 @@ public class GNU implements Trigger {
      * @param contentLowerCase  The content where we look for this info
      */
     private boolean checkForLicense(final String licenseAbbreviation, 
-            final String version, final String contentLowerCase){
+            final String versionMajor, final String versionMinor, 
+            final String contentLowerCase){
         // iterate some commons variations of how people list licenses
         for(final String variation : listVersionVariations){
             // now build the keyword using the license abbreviation and version
-            final String keyword = licenseAbbreviation + variation + version;
+            final String keyword = licenseAbbreviation + variation 
+                    + versionMajor + versionMinor;
+            if(contentLowerCase.contains(keyword)){
+                // we have a match
+               return true;
+           }
+        }
+        // second round, using only the major versions without the minor version
+        for(final String variation : listVersionVariations){
+            // now build the keyword using the license abbreviation and version
+            final String keyword = licenseAbbreviation + variation 
+                    + versionMajor;
             if(contentLowerCase.contains(keyword)){
                 // we have a match
                return true;
