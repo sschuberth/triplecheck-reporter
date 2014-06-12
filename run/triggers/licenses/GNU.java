@@ -137,9 +137,11 @@ public class GNU implements Trigger {
                 containsTermsLGPL(contentLowerCase);
                 if(isTermsLGPL){
                     isLGPL = true;
-                    System.out.println("Yupii");
-                    addLicense(LGPL2_1);
+                    
                 }
+                
+                containsEvidenceLGPL(contentLowerCase);
+                
                 break;
             }
         }
@@ -160,11 +162,27 @@ public class GNU implements Trigger {
       * license text. We use a specific term that is only found on this context.
       */
      void containsTermsLGPL(final String contentLowerCase){
-         isTermsLGPL = contentLowerCase.contains
-        ("we call this license the \"lesser\" general public license");
+         // version 2.0 of the LGPL?
+         if(contentLowerCase.contains("copyright (c) 1991 free software foundation")){
+             isTermsLGPL = true;
+             addLicense(LGPL2_0);
+         }
+         // version 2.1 of the LGPL?
+         if(contentLowerCase.contains("copyright (c) 1991, 1999 free software foundation")){
+             isTermsLGPL = true;
+             addLicense(LGPL2_1);
+         }
+         // version 3.0 of the LGPL?
+         if(contentLowerCase.contains("1. exception to section 3 of the gnu gpl.")){
+             isTermsLGPL = true;
+             addLicense(LGPL3_0);
+         }
      }
      
      
+    private void containsEvidenceLGPL(final String contentLowerCase){
+    
+    } 
     
       
      /**
