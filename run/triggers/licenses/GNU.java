@@ -49,7 +49,8 @@ public class GNU implements Trigger {
             isGPL, 
             isLGPL, 
             isAGPL,
-            isTermsAGPL;
+            isTermsAGPL,
+            isTermsLGPL;
 
     
     // public constructor
@@ -90,6 +91,7 @@ public class GNU implements Trigger {
         isLGPL = false;
         isAGPL = false;
         isTermsAGPL = false;
+        isTermsLGPL = false;
         licenses = new ArrayList();
     }
     
@@ -117,10 +119,8 @@ public class GNU implements Trigger {
             if(contentLowerCase.contains(keyword)){
                 isAGPL = true;
                 containsTermsAGPL(contentLowerCase);
-//                if(isTermsAGPL){
-//                    System.out.println("Yupii");
-//                }
                 addLicense(AGPL3_0);
+                break;
             }
         }
      }
@@ -134,18 +134,39 @@ public class GNU implements Trigger {
         for(String keyword : keywordsLGPL){
             // do we have a match inside the content?
             if(contentLowerCase.contains(keyword)){
-                isLGPL = true;
-//                containsTermsAGPL(contentLowerCase);
-//                if(isTermsAGPL){
-//                    System.out.println("Yupii");
-//                }
-//                addLicense(AGPL3_0);
+                containsTermsLGPL(contentLowerCase);
+                if(isTermsLGPL){
+                    isLGPL = true;
+                    System.out.println("Yupii");
+                    addLicense(LGPL2_1);
+                }
+                break;
             }
         }
      }
     
      
+     /**
+      * Verifies if this file is just mentioning the AGPL or if this is the
+      * license text. We use a specific term that is only found on this context.
+      */
+     void containsTermsAGPL(final String contentLowerCase){
+         isTermsAGPL = contentLowerCase.contains
+        ("patent license was granted, prior to 28 march 2007");
+     }
      
+      /**
+      * Verifies if this file is just mentioning the LGPL or if this is the
+      * license text. We use a specific term that is only found on this context.
+      */
+     void containsTermsLGPL(final String contentLowerCase){
+         isTermsLGPL = contentLowerCase.contains
+        ("we call this license the \"lesser\" general public license");
+     }
+     
+     
+    
+      
      /**
       * Adds a new license to list if not added before
       * @param license  A valid LicenseGNU object
@@ -160,16 +181,8 @@ public class GNU implements Trigger {
          licenses.add(newLicense.getId());
      }
      
-     /**
-      * Verifies if this file is just mentioning the AGPL or if this is the
-      * license text. We use a specific term that is only found on this context.
-      */
-     void containsTermsAGPL(final String contentLowerCase){
-         isTermsAGPL = contentLowerCase.contains
-        ("patent license was granted, prior to 28 march 2007");
-     }
-     
-    
+            
+             
     @Override
     public Boolean isApplicable(File file) {
         return false;
@@ -177,7 +190,7 @@ public class GNU implements Trigger {
 
     @Override
     public String getShortIdentifier() {
-        return "N/A";
+        return "GNU";
     }
 
     @Override
