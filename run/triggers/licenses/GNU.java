@@ -68,8 +68,11 @@ public class GNU implements Trigger {
             isLGPL, 
             isAGPL,
             isTermsAGPL,
-            isTermsLGPL;
+            isTermsLGPL,
+            isTermsGPL;
 
+    // how big is the default GPL header across different reincarnations?
+    final int headerSize = 1000;
     
     // public constructor
     public GNU(){
@@ -112,6 +115,7 @@ public class GNU implements Trigger {
         isAGPL = false;
         isTermsAGPL = false;
         isTermsLGPL = false;
+        isTermsGPL = false;
         licenses = new ArrayList();
     }
     
@@ -181,6 +185,7 @@ public class GNU implements Trigger {
             if(contentLowerCase.contains(keyword)){
                 checkForTermsGPL(contentLowerCase);
                 checkForEvidenceAndVersionGPL(contentLowerCase);
+                checkForDefaultHeaderGPL(contentLowerCase);
                 break;
             }
         }
@@ -230,20 +235,63 @@ public class GNU implements Trigger {
          // version 1.0 of the GPL?
          if(contentLowerCase.contains("version 1, february 1989")){
              isGPL = true;
+             isTermsGPL = true;
              addLicense(GPL1_0);
          }
          // version 2.0 of the GPL?
          if(contentLowerCase.contains("copyright (c) 1989, 1991 free software foundation")){
              isGPL = true;
+             isTermsGPL = true;
              addLicense(GPL2_0);
          }
          // version 3.0 of the GPL?
          if(contentLowerCase.contains("the gpl, as needed to protect")){
              isGPL = true;
+             isTermsGPL = true;
              addLicense(GPL3_0);
          }
      }
      
+     
+     /**
+      * Looks for the default GPL headers placed on source code 
+      * @param contentLowerCase     The content to analyse
+      */
+     void checkForDefaultHeaderGPL(final String contentLowerCase){
+         // for the moment we won't proceed if another license was already here
+         if(isGPL || isAGPL || isLGPL){
+             return;
+         }
+         
+         // we expect the header to be on top of the content
+         if(contentLowerCase.length() < headerSize){
+             // not big enough to be the default GPL header, let's exit
+             return;             
+         }
+         
+         // we have content big enough, let's extract the header lines
+         final String header = contentLowerCase.substring(0, headerSize);
+         
+         // now let's look for matches, are we on the right track?
+         if(header.contains("gnu general public license as published")==false){
+             // doesn't seem that way, exit here
+             return;
+         }
+         
+         // now let's fetch the version
+         if(header.contains("either version 1")){
+             isGPL = true;
+             addLicense(GPL1_0 + "+");
+         }else
+         if(header.contains("either version 2")){
+             isGPL = true;
+             addLicense(GPL2_0 + "+");
+         }else
+         if(header.contains("either version 2")){
+             isGPL = true;
+             addLicense(GPL3_0 + "+");
+         }
+     };
      
     /**
      * We call this method after determining if the content are the license
@@ -256,17 +304,14 @@ public class GNU implements Trigger {
      */ 
     private void checkForEvidenceAndVersionLGPL(final String contentLowerCase){
         // certain definitions for each LGPL edition
-        if(checkForLicense("lgpl", "2", ".0", contentLowerCase)){
+        if(checkForLicense("LGPL", "lgpl", "2", ".0", contentLowerCase)){
              isLGPL = true;
-             addLicense(LGPL2_0);
         }
-        if(checkForLicense("lgpl", "2", ".1", contentLowerCase)){
+        if(checkForLicense("LGPL", "lgpl", "2", ".1", contentLowerCase)){
              isLGPL = true;
-             addLicense(LGPL2_1);
         }
-        if(checkForLicense("lgpl", "3", ".0", contentLowerCase)){
+        if(checkForLicense("LGPL", "lgpl", "3", ".0", contentLowerCase)){
              isLGPL = true;
-             addLicense(LGPL3_0);
         }
         // non-conclusive definitions. There is no prescription in SPDX
         // for LGPL without a version declared. Yet, we do have a solid
@@ -303,15 +348,15 @@ public class GNU implements Trigger {
             //return;
         }
             
-        if(checkForLicense(keyword, "1", ".0", contentLowerCase)){
+        if(checkForLicense("GPL", keyword, "1", ".0", contentLowerCase)){
              isGPL = true;
              addLicense(GPL1_0);
         }
-        if(checkForLicense(keyword, "2", ".0", contentLowerCase)){
+        if(checkForLicense("GPL", keyword, "2", ".0", contentLowerCase)){
              isGPL = true;
              addLicense(GPL2_0);
         }
-        if(checkForLicense(keyword, "3", ".0", contentLowerCase)){
+        if(checkForLicense("GPL", keyword, "3", ".0", contentLowerCase)){
              isGPL = true;
              addLicense(GPL3_0);
         }
@@ -339,9 +384,20 @@ public class GNU implements Trigger {
      * @param version           The version we want to pinpoint
      * @param contentLowerCase  The content where we look for this info
      */
-    private boolean checkForLicense(final String licenseAbbreviation, 
+    private boolean checkForLicense(final String licenseUpperCase, final String licenseAbbreviation, 
             final String versionMajor, final String versionMinor, 
             final String contentLowerCase){
+        
+        // it is difficult to spot SPDX cases such as GPL-2.0+ declared
+        // inside the source code so we need to find at this specific point
+        final String spdxID = licenseUpperCase
+                + "-" + versionMajor + versionMinor;
+        
+        if(contentLowerCase.contains(spdxID + "+")){
+            addLicense(spdxID + "+");
+            return true;
+        }
+        
         // iterate some commons variations of how people list licenses
         for(final String variation : listVersionVariations){
             // now build the keyword using the license abbreviation and version
@@ -349,6 +405,7 @@ public class GNU implements Trigger {
                     + versionMajor + versionMinor;
             if(contentLowerCase.contains(keyword)){
                 // we have a match
+               addLicense(spdxID);
                return true;
            }
         }
@@ -359,6 +416,7 @@ public class GNU implements Trigger {
                     + versionMajor;
             if(contentLowerCase.contains(keyword)){
                 // we have a match
+               addLicense(spdxID);
                return true;
            }
         }
@@ -367,22 +425,25 @@ public class GNU implements Trigger {
     }
     
     
-    
-      
      /**
       * Adds a new license to list if not added before
       * @param license  A valid LicenseGNU object
       */
-     private void addLicense(final LicenseGNU newLicense){
+     private void addLicense(final String newLicense){
          for(final String license : licenses){
-             if(utils.text.equals(license, newLicense.getId())){
+             if(utils.text.equals(license, newLicense)){
                  return;
              }
          }
          // no duplicates, add it up
-         licenses.add(newLicense.getId());
+         licenses.add(newLicense);
      }
      
+     private void addLicense(final LicenseGNU newLicense){
+         addLicense(newLicense.getId());
+     }
+    
+      
             
              
     @Override
@@ -478,6 +539,9 @@ class LicenseGNU{
         this.hasException = hasException;
     }
     
-    
+    @Override
+    public String toString(){
+        return id;
+    }
     
 }
