@@ -29,18 +29,31 @@ public class GNU implements Trigger {
 
         
     // the list of keywords that we use to identify a possible license match
-    String[] keywordsFirstFilter = {
-        "gpl",
-        "general public license"
-    };
-    
     String[] 
+            keywordsFirstFilter = {
+                "gpl",
+                "general public license"
+            },
             keywordsAGPL = {"agpl", "affero"},
-            keywordsLGPL = {"lesser general public license", ""};
+            keywordsLGPL = {"lgpl", "lesser general"},
+            listEvidenceLGPL = {
+                "under lgpl license"
+//                "lgpl/",
+//                "/lgpl"
+                },
+            listVersionVariations = {
+                " ",
+                "-",
+                " v",
+                "v"
+                };
     
     
     // list the available licenses available
-    LicenseGNU GPL1_0, GPL2_0, GPL3_0, LGPL2_0, LGPL2_1, LGPL3_0, AGPL3_0;
+    LicenseGNU 
+            GPL1_0, GPL2_0, GPL3_0, 
+            LGPL, LGPL2_0, LGPL2_1, LGPL3_0, 
+            AGPL3_0;
     
     // to list all the different GNU variants that we might find.
     ArrayList<String> licenses;
@@ -59,6 +72,7 @@ public class GNU implements Trigger {
         GPL2_0 = new LicenseGNU("GPL-2.0", "GNU General Public License v2.0");
         GPL3_0 = new LicenseGNU("GPL-3.0", "GNU General Public License v3.0");
    
+        LGPL = new LicenseGNU("LGPL", "GNU Library General Public License");
         LGPL2_0 = new LicenseGNU("LGPL-2.0", "GNU Library General Public License v2.0");
         LGPL2_1 = new LicenseGNU("LGPL-2.1", "GNU Library General Public License v2.1");
         LGPL3_0 = new LicenseGNU("LGPL-3.0", "GNU Lesser General Public License v3.0");
@@ -104,7 +118,7 @@ public class GNU implements Trigger {
         // go through each possible type of license
         checkAGPL(contentLowerCase);
         checkLGPL(contentLowerCase);
-        
+        // it is applicable when either one of these indicators is true
         return isGPL || isLGPL || isAGPL;
     }
     
@@ -118,7 +132,7 @@ public class GNU implements Trigger {
             // do we have a match inside the content?
             if(contentLowerCase.contains(keyword)){
                 isAGPL = true;
-                containsTermsAGPL(contentLowerCase);
+                checkForTermsAGPL(contentLowerCase);
                 addLicense(AGPL3_0);
                 break;
             }
@@ -131,17 +145,11 @@ public class GNU implements Trigger {
      */
      private void checkLGPL(final String contentLowerCase){
           // iterate all our keywords
-        for(String keyword : keywordsLGPL){
+        for(final String keyword : keywordsLGPL){
             // do we have a match inside the content?
             if(contentLowerCase.contains(keyword)){
-                containsTermsLGPL(contentLowerCase);
-                if(isTermsLGPL){
-                    isLGPL = true;
-                    
-                }
-                
-                containsEvidenceLGPL(contentLowerCase);
-                
+                checkForTermsLGPL(contentLowerCase);
+                checkForEvidenceAndVersionLGPL(contentLowerCase);
                 break;
             }
         }
@@ -152,7 +160,7 @@ public class GNU implements Trigger {
       * Verifies if this file is just mentioning the AGPL or if this is the
       * license text. We use a specific term that is only found on this context.
       */
-     void containsTermsAGPL(final String contentLowerCase){
+     void checkForTermsAGPL(final String contentLowerCase){
          isTermsAGPL = contentLowerCase.contains
         ("patent license was granted, prior to 28 march 2007");
      }
@@ -161,28 +169,87 @@ public class GNU implements Trigger {
       * Verifies if this file is just mentioning the LGPL or if this is the
       * license text. We use a specific term that is only found on this context.
       */
-     void containsTermsLGPL(final String contentLowerCase){
+     void checkForTermsLGPL(final String contentLowerCase){
          // version 2.0 of the LGPL?
          if(contentLowerCase.contains("copyright (c) 1991 free software foundation")){
              isTermsLGPL = true;
+             isGPL = true;
              addLicense(LGPL2_0);
          }
          // version 2.1 of the LGPL?
          if(contentLowerCase.contains("copyright (c) 1991, 1999 free software foundation")){
              isTermsLGPL = true;
+             isGPL = true;
              addLicense(LGPL2_1);
          }
          // version 3.0 of the LGPL?
          if(contentLowerCase.contains("1. exception to section 3 of the gnu gpl.")){
              isTermsLGPL = true;
+             isGPL = true;
              addLicense(LGPL3_0);
          }
      }
      
      
-    private void containsEvidenceLGPL(final String contentLowerCase){
-    
+    /**
+     * We call this method after determining if the content are the license
+     * terms of LGPL. Now our concern is to attempt discovering file fragments
+     * that might indicate a declaration of LGPL. This is not a bullet-proof
+     * detection. In some cases no LGPL version is indicated, needs to be
+     * manually concluded by an auditor or analysed in the context of the
+     * component to where it belongs.
+     * @param contentLowerCase 
+     */ 
+    private void checkForEvidenceAndVersionLGPL(final String contentLowerCase){
+        // certain definitions for each LGPL edition
+        if(checkForLicense("lgpl", "2.0", contentLowerCase)){
+             isLGPL = true;
+             addLicense(LGPL2_0);
+        }
+        if(checkForLicense("lgpl", "2.1", contentLowerCase)){
+             isLGPL = true;
+             addLicense(LGPL2_1);
+        }
+        if(checkForLicense("lgpl", "3.0", contentLowerCase)){
+             isLGPL = true;
+             addLicense(LGPL3_0);
+        }
+        
+        // non-conclusive definitions. There is no prescription in SPDX
+        // for LGPL without a version declared. Yet, we do have a solid
+        // indication that LGPL can be applicable and this should be brought
+        // up to attention. Would be nice if the SPDX license list would
+        // not be strict to the point of disallowing non-listed license types.
+        for(final String evidence : listEvidenceLGPL){
+            if(contentLowerCase.contains(evidence)){
+                isLGPL = true;
+                addLicense(LGPL);
+            }
+        }
     } 
+    
+    /**
+     * Try to pinpoint which license version is being used when only a part
+     * of the license designation is provided.
+     * @param version           The version we want to pinpoint
+     * @param contentLowerCase  The content where we look for this info
+     */
+    private boolean checkForLicense(final String licenseAbbreviation, 
+            final String version, final String contentLowerCase){
+        // iterate some commons variations of how people list licenses
+        for(final String variation : listVersionVariations){
+            // now build the keyword using the license abbreviation and version
+            final String keyword = licenseAbbreviation + variation + version;
+            if(contentLowerCase.contains(keyword)){
+                // we have a match
+               return true;
+           }
+        }
+        // nothing to return 
+      return false;  
+    }
+    
+    
     
       
      /**

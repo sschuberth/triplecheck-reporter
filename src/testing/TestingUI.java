@@ -231,6 +231,11 @@ public class TestingUI extends javax.swing.JFrame {
 //        }
         
         
+//         if(file.getName().toLowerCase().contains("license")){
+//                    System.out.println("--->" + file.getAbsolutePath());
+//                }
+                
+        
         // try to identify some of the most common triggers
             for(Trigger thisTrigger: core.triggers.getList()){
                 // we only want the license triggers
@@ -238,8 +243,14 @@ public class TestingUI extends javax.swing.JFrame {
                     continue;
                 }
 
+               
                 // does our text contains an applicable trigger?
                 if(thisTrigger.isApplicable(contentNormalCase, contentLowerCase)){
+                    
+//                    if(!thisTrigger.getResult().equals("LicenseInfoInFile: LGPL-2.1")){
+//                        continue;
+//                    }
+                    
                    //result = result.concat(thisTrigger.getResult()).concat("\n");
                      counter++;
                      
