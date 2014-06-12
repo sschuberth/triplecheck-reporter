@@ -69,6 +69,8 @@ public final class LicenseControl {
     /**
      * Provides a nice summary of the licenses available to end-users
      * through an HTML formatted text
+     * @param chooseTitle
+     * @param link
      * @return 
      */
     public String getListHTML(final String chooseTitle, final String link){
@@ -138,6 +140,7 @@ public final class LicenseControl {
      * When given a search term, looks inside our archived licenses and provides
      * a list with possible results
      * @param searchTerm    Portion of text to be found
+     * @param title
      * @param link          The URL link that permits selecting a license
      * @return              HTML code ready to display to the user
      */
@@ -153,21 +156,20 @@ public final class LicenseControl {
         
         // go through each found license
         for(License license : list){
-            boolean hasRankedFirst = false;
+//            boolean hasRankedFirst = false;
             
             // look on the ids
             if(license.getId().toLowerCase().contains(searchTerm)){
                 rankFirst += license.getPrettyText(title, link + license.getId());
-                hasRankedFirst = true;
                 continue;
             }
             
             // look inside the text
             if(license.getTerms().toLowerCase().contains(searchTerm)){
                 // no need to repeat the result if already ranked
-                if(hasRankedFirst){
-                    continue;
-                }
+//                if(hasRankedFirst){
+//                    continue;
+//                }
                 rankSecond += license.getPrettyText(title, link + license.getId());
                 //continue;
            }

@@ -182,7 +182,7 @@ public class MPL implements Trigger {
      * @return 
      */
     @Override
-    public Boolean isApplicable(String text){
+    public Boolean isApplicable(final String text, final String textLowerCase){
         //String test = text.toLowerCase();
         // iterate all our ids
         for(String id : list){
@@ -201,12 +201,6 @@ public class MPL implements Trigger {
     @Override
     public String getShortIdentifier() {
         return defaultId;
-    }
-
-    @Override
-    public String getURL() {
-        return "http://spdx.org/licenses/" 
-                + getShortIdentifier() + "#licenseText";
     }
 
     @Override

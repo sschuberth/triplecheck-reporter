@@ -39,7 +39,7 @@ public class BSD3ClauseClear implements Trigger {
      * @return 
      */
     @Override
-    public Boolean isApplicable(String text){
+    public Boolean isApplicable(final String text, final String textLowerCase){
         // iterate all our ids
         for(String id : list){
             if(text.contains(id)){
@@ -57,11 +57,6 @@ public class BSD3ClauseClear implements Trigger {
     @Override
     public String getShortIdentifier() {
         return "BSD-3-Clause-Clear";
-    }
-
-    @Override
-    public String getURL() {
-        return "http://spdx.org/licenses/BSD-3-Clause-Clear";
     }
 
     @Override

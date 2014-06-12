@@ -65,7 +65,7 @@ public class CopyrightDetector implements Trigger {
      * @return 
      */
     @Override
-    public Boolean isApplicable(String text){
+    public Boolean isApplicable(final String text, final String textLowerCase){
         // the mega-super expression to catch copyright statements
         String patternString = ""
              + "(\\((C|c)\\) |)"    // detect a (c) before the copyright text
@@ -167,11 +167,6 @@ public class CopyrightDetector implements Trigger {
     @Override
     public String getShortIdentifier() {
         return "Copyright detection";
-    }
-
-    @Override
-    public String getURL() {
-        return null;
     }
 
     @Override

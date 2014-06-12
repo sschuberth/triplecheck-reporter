@@ -334,13 +334,14 @@ public class DocumentCreate2 {
      */
     private String getCodeInsight(File file) {        
         // read this file from disk onto local memory
-        String content = utils.files.readAsString(file);
+        final String contentNormalCase = utils.files.readAsString(file);
+        final String contentLowerCase = contentNormalCase.toLowerCase();
         String result = "";
         
         // when the file has source code, we count the lines of code
         if(tempInfo.getFileType() == FileType.SOURCE){
             // calculate the lines of code
-            final int LOC = getLOC(content);
+            final int LOC = getLOC(contentNormalCase);
             // get the tag to be written on the SPDX
             final String fileLOC = is.tagFileLOC.concat(" " + LOC + "\n");
             // save this value to the file info object
@@ -357,7 +358,7 @@ public class DocumentCreate2 {
             // try to identify some of the most common triggers
             for(Trigger thisTrigger: core.triggers.getList()){
                 // does our text contains an applicable trigger?
-                if(thisTrigger.isApplicable(content)){
+                if(thisTrigger.isApplicable(contentNormalCase, contentLowerCase)){
                    result = result.concat(thisTrigger.getResult()).concat("\n");
                 }
             }

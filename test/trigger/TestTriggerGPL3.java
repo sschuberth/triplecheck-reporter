@@ -59,7 +59,7 @@ public class TestTriggerGPL3 {
          
          String lowerCaseContent = content.toLowerCase();
          for(Trigger thisLicense: core.triggers.getList()){
-            if(thisLicense.isApplicable(lowerCaseContent )){
+            if(thisLicense.isApplicable(content, lowerCaseContent)){
                 assertEquals("GPL-3.0", thisLicense.getShortIdentifier());
                 System.out.println("Found GPL v3 license");
             }

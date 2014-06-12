@@ -21,7 +21,6 @@ package script;
 
 import definitions.TriggerType;
 import java.io.File;
-import java.util.Date;
 
 
 /**
@@ -43,9 +42,10 @@ public interface Trigger {
      * Verifies if the provided text applies to the triggers that
      * included on this license.
      * @param text Text to be analysed
+     * @param textLowerCase same text but fully in lowercase
      * @return 
      */
-    public Boolean isApplicable(String text);
+    public Boolean isApplicable(final String text, final String textLowerCase);
     
     /**
      * Verifies if the provided file apply to the triggers that
@@ -57,7 +57,7 @@ public interface Trigger {
     
     /**
      * How this file should be identified. Use the SPDX identifier when possible
-     * @return Short text identiyfing the license name
+     * @return Short text identifying the license name
      */
     public String getShortIdentifier();
     
@@ -66,14 +66,6 @@ public interface Trigger {
      * @return 
      */
     public TriggerType getType();
-    
-    /**
-     * From where it is possible to download a text file with this license.
-     * If not possible to download a text file, at least some web page where
-     * the license terms are specified
-     * @return Internet address pointing to the text file (when possible)
-     */
-    public String getURL();
     
     // the types of file formats that are supported on detection
     public Boolean supportsBinaries();

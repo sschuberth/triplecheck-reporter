@@ -45,7 +45,7 @@ public class PublicDomain implements Trigger {
      * @return 
      */
     @Override
-    public Boolean isApplicable(String text){
+    public Boolean isApplicable(final String text, final String textLowerCase){
         String lowerCaseText = text.toLowerCase();
         // iterate all our ids
         for(String id : list){
@@ -81,11 +81,6 @@ public class PublicDomain implements Trigger {
     @Override
     public String getShortIdentifier() {
         return "Public Domain";
-    }
-
-    @Override
-    public String getURL() {
-        return "http://en.wikipedia.org/wiki/Public_domain";
     }
 
     @Override

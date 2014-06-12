@@ -247,7 +247,6 @@ public class SPDXfile2 implements Serializable{
                             + " with content: %3"
                             ,lineCounter + "", file.getAbsolutePath(),
                             line);
-                   //System.err.println("SP246 - Line Exception: " + line);
                     // no need to stop, continue to the next item
                     continue;
                 }

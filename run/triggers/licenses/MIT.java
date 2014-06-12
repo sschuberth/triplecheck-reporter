@@ -41,7 +41,7 @@ public class MIT implements Trigger {
      * @return 
      */
     @Override
-    public Boolean isApplicable(String text){
+    public Boolean isApplicable(final String text, final String textLowerCase){
         // iterate all our ids
         for(String id : list){
             if(text.contains(id)){
@@ -59,11 +59,6 @@ public class MIT implements Trigger {
     @Override
     public String getShortIdentifier() {
         return "MIT";
-    }
-
-    @Override
-    public String getURL() {
-        return "http://spdx.org/licenses/MIT";
     }
 
     @Override

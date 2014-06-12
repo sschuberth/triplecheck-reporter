@@ -16,7 +16,6 @@ package main;
 import definitions.is;
 import java.io.File;
 import script.Plugin;
-import script.log;
 
 /**
  *

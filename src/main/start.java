@@ -19,9 +19,8 @@ public class start {
      */
     public static void main(String[] args) {
         
-        // show the starup screen
+        // show the startup screen
         core.startupScreen.kickoff();
-//       log.EnableTranslator("EN", "English (US)");
         log.write(is.CREDITS, "TripleCheck (c) %1, "
                 + "http://triplecheck.de", utils.time.getCurrentYear());
         log.write(is.RUNNING, "Version %1 %2", core.version,
