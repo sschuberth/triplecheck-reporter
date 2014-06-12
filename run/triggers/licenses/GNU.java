@@ -34,23 +34,23 @@ public class GNU implements Trigger {
         "general public license"
     };
     
-    String[] keywordsAGPL = {
-        "agpl",
-        "affero"
-    };
+    String[] 
+            keywordsAGPL = {"agpl", "affero"},
+            keywordsLGPL = {"lesser general public license", ""};
     
     
     // list the available licenses available
     LicenseGNU GPL1_0, GPL2_0, GPL3_0, LGPL2_0, LGPL2_1, LGPL3_0, AGPL3_0;
     
-    ArrayList<LicenseGNU> licenses;
+    // to list all the different GNU variants that we might find.
+    ArrayList<String> licenses;
     
     boolean 
             isGPL, 
             isLGPL, 
             isAGPL,
             isTermsAGPL;
-    
+
     
     // public constructor
     public GNU(){
@@ -101,6 +101,7 @@ public class GNU implements Trigger {
     private Boolean detectLicenseTerms(final String contentLowerCase){
         // go through each possible type of license
         checkAGPL(contentLowerCase);
+        checkLGPL(contentLowerCase);
         
         return isGPL || isLGPL || isAGPL;
     }
@@ -110,38 +111,58 @@ public class GNU implements Trigger {
      * @param contentLowerCase 
      */
      private void checkAGPL(final String contentLowerCase){
-          // iterate all our keywords
+        // iterate all our keywords
         for(String keyword : keywordsAGPL){
             // do we have a match inside the content?
             if(contentLowerCase.contains(keyword)){
                 isAGPL = true;
                 containsTermsAGPL(contentLowerCase);
-                if(isTermsAGPL){
+//                if(isTermsAGPL){
 //                    System.out.println("Yupii");
-                }
+//                }
                 addLicense(AGPL3_0);
             }
         }
      }
     
+    /**
+     * Check if LGPL content is present
+     * @param contentLowerCase 
+     */
+     private void checkLGPL(final String contentLowerCase){
+          // iterate all our keywords
+        for(String keyword : keywordsLGPL){
+            // do we have a match inside the content?
+            if(contentLowerCase.contains(keyword)){
+                isLGPL = true;
+//                containsTermsAGPL(contentLowerCase);
+//                if(isTermsAGPL){
+//                    System.out.println("Yupii");
+//                }
+//                addLicense(AGPL3_0);
+            }
+        }
+     }
+    
+     
      
      /**
       * Adds a new license to list if not added before
       * @param license  A valid LicenseGNU object
       */
      private void addLicense(final LicenseGNU newLicense){
-         for(final LicenseGNU license : licenses){
-             if(utils.text.equals(license.id, newLicense.id)){
+         for(final String license : licenses){
+             if(utils.text.equals(license, newLicense.getId())){
                  return;
              }
          }
          // no duplicates, add it up
-         licenses.add(newLicense);
+         licenses.add(newLicense.getId());
      }
      
      /**
       * Verifies if this file is just mentioning the AGPL or if this is the
-      * license text
+      * license text. We use a specific term that is only found on this context.
       */
      void containsTermsAGPL(final String contentLowerCase){
          isTermsAGPL = contentLowerCase.contains
@@ -183,8 +204,8 @@ public class GNU implements Trigger {
     public String getResult() {
         String result = "";
          // list the detected licenses
-        for(LicenseGNU license : licenses){
-            result = result.concat(LicenseInfoInFile.concat(license.id));
+        for(String license : licenses){
+            result = result.concat(LicenseInfoInFile.concat(license));
         }
         if(licenses.size() > 1){
             result = result.replace(LicenseInfoInFile, "\n" + LicenseInfoInFile).substring(1);
@@ -204,9 +225,31 @@ public class GNU implements Trigger {
  * Define the identifiers specific to each GNU license
  */
 class LicenseGNU{
-    final String id, title;
-    private boolean hasException = false;
+    private final String id, title;
+    private boolean 
+            hasException = false,
+            orLater = false;
 
+    public String getId() {
+        if(orLater){
+            return id + "+";
+        }
+        return id;
+    }
+
+    public void reset(){
+        hasException = false;
+        orLater = false;
+    }
+    
+    public void setOrLater(){
+        orLater = true;
+    }
+    
+    public String getTitle() {
+        return title;
+    }
+    
     public LicenseGNU(final String assignedID, final String assignedTitle){
         this.id = assignedID;
         this.title = assignedTitle;

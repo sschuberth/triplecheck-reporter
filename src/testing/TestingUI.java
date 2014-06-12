@@ -31,6 +31,9 @@ import spdxlib.ContentType;
  */
 public class TestingUI extends javax.swing.JFrame {
 
+     int counter = 0; 
+     String basePath = "";  
+    
     /**
      * Creates new form TestingUI
      */
@@ -49,7 +52,7 @@ public class TestingUI extends javax.swing.JFrame {
         setLocationRelativeTo(null);
         log.write(is.RUNNING, "Version %1 %2", core.version,
                 utils.misc.getDate(this.getClass()));
-//        doTesting();
+        doTesting();
     }
 
     /**
@@ -171,7 +174,9 @@ public class TestingUI extends javax.swing.JFrame {
      */
     private void doTesting() {
         File folderBase = new File(textField.getText());
+        basePath = folderBase.getAbsolutePath();
         processFiles(folderBase, 25);
+        System.out.println("Found licenses: " + counter);
         System.exit(1981);
     }
     
@@ -225,7 +230,7 @@ public class TestingUI extends javax.swing.JFrame {
 //            return;
 //        }
         
-         
+        
         // try to identify some of the most common triggers
             for(Trigger thisTrigger: core.triggers.getList()){
                 // we only want the license triggers
@@ -236,14 +241,16 @@ public class TestingUI extends javax.swing.JFrame {
                 // does our text contains an applicable trigger?
                 if(thisTrigger.isApplicable(contentNormalCase, contentLowerCase)){
                    //result = result.concat(thisTrigger.getResult()).concat("\n");
-                    System.out.println(file.getName() + "->" +thisTrigger.getResult());
+                     counter++;
+                     
+                    System.out.println("#" + counter + " " 
+                            + thisTrigger.getResult()
+                            + " -> "
+                            + file.getAbsolutePath().replace(basePath, "") 
+                            );
                 }
             }
-       
-            
-            
-            
-            
+      
     }
     
 }
