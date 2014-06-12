@@ -38,9 +38,13 @@ public class GNU implements Trigger {
             keywordsLGPL = {"lgpl", "lesser general", "library public license"},
             keywordsGPL = {"gpl", "gnu general public license"},
             listEvidenceLGPL = {
-                "under lgpl license"
-//                "lgpl/",
-//                "/lgpl"
+                "under lgpl license",
+                "lgpl/",
+                "/lgpl"
+                },
+            listEvidenceGPL = {
+                " gpl",
+                "/gpl"
                 },
             listVersionVariations = {
                 " ",
@@ -52,7 +56,7 @@ public class GNU implements Trigger {
     
     // list the available licenses available
     LicenseGNU 
-            GPL1_0, GPL2_0, GPL3_0, 
+            GPL, GPL1_0, GPL2_0, GPL3_0, 
             LGPL, LGPL2_0, LGPL2_1, LGPL3_0, 
             AGPL3_0;
     
@@ -69,6 +73,7 @@ public class GNU implements Trigger {
     
     // public constructor
     public GNU(){
+        GPL = new LicenseGNU("GPL", "GNU General Public License");
         GPL1_0 = new LicenseGNU("GPL-1.0", "GNU General Public License v1.0");
         GPL2_0 = new LicenseGNU("GPL-2.0", "GNU General Public License v2.0");
         GPL3_0 = new LicenseGNU("GPL-3.0", "GNU General Public License v3.0");
@@ -309,6 +314,18 @@ public class GNU implements Trigger {
         if(checkForLicense(keyword, "3", ".0", contentLowerCase)){
              isGPL = true;
              addLicense(GPL3_0);
+        }
+        
+        
+        // now go for the non-conclusive evidence that some GPL exists
+        // this is only permitted if neither GPL, LGPL nor AGPL were detected before
+        if(!isGPL && !isLGPL && !isAGPL){
+            for(final String evidence : listEvidenceGPL){
+                if(contentLowerCase.contains(evidence)){
+                    isGPL = true;
+                    addLicense(GPL);
+                }
+            }
         }
         
     }
