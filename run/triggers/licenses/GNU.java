@@ -3,6 +3,7 @@ package licenses;
 
 import definitions.TriggerType;
 import java.io.File;
+import java.util.ArrayList;
 import script.Trigger;
 
 /*
@@ -33,27 +34,120 @@ public class GNU implements Trigger {
         "general public license"
     };
     
+    String[] keywordsAGPL = {
+        "agpl",
+        "affero"
+    };
+    
+    
+    // list the available licenses available
+    LicenseGNU GPL1_0, GPL2_0, GPL3_0, LGPL2_0, LGPL2_1, LGPL3_0, AGPL3_0;
+    
+    ArrayList<LicenseGNU> licenses;
+    
+    boolean 
+            isGPL, 
+            isLGPL, 
+            isAGPL,
+            isTermsAGPL;
+    
+    
+    // public constructor
+    public GNU(){
+        GPL1_0 = new LicenseGNU("GPL-1.0", "GNU General Public License v1.0");
+        GPL2_0 = new LicenseGNU("GPL-2.0", "GNU General Public License v2.0");
+        GPL3_0 = new LicenseGNU("GPL-3.0", "GNU General Public License v3.0");
+   
+        LGPL2_0 = new LicenseGNU("LGPL-2.0", "GNU Library General Public License v2.0");
+        LGPL2_1 = new LicenseGNU("LGPL-2.1", "GNU Library General Public License v2.1");
+        LGPL3_0 = new LicenseGNU("LGPL-3.0", "GNU Lesser General Public License v3.0");
+   
+        AGPL3_0 = new LicenseGNU("AGPL-3.0", "GNU Affero General Public License v3.0");
+    }
+    
+    
     @Override
     public Boolean isApplicable(String content, String contentLowerCase) {
-        // iterate all our ids
+        // reset the detection variables
+        preFlightCheck();
+        // iterate all our keywords
         for(String keyword : keywordsFirstFilter){
             if(contentLowerCase.contains(keyword)){
                 return detectLicenseTerms(contentLowerCase);
             }
         }
+        // can only return true when either licenses were detected
         return false;
     }
 
+    
+    /**
+     * initialize the singleton variables
+     * back to default values
+     */
+    private void preFlightCheck(){
+        isGPL = false; 
+        isLGPL = false;
+        isAGPL = false;
+        isTermsAGPL = false;
+        licenses = new ArrayList();
+    }
     
     /**
      * Attempts to detect any applicable license terms
      * @param contentLowerCase
      * @return 
      */
-    Boolean detectLicenseTerms(final String contentLowerCase){
+    private Boolean detectLicenseTerms(final String contentLowerCase){
+        // go through each possible type of license
+        checkAGPL(contentLowerCase);
         
-        return false;
+        return isGPL || isLGPL || isAGPL;
     }
+    
+    /**
+     * Check if AGPL content is present
+     * @param contentLowerCase 
+     */
+     private void checkAGPL(final String contentLowerCase){
+          // iterate all our keywords
+        for(String keyword : keywordsAGPL){
+            // do we have a match inside the content?
+            if(contentLowerCase.contains(keyword)){
+                isAGPL = true;
+                containsTermsAGPL(contentLowerCase);
+                if(isTermsAGPL){
+//                    System.out.println("Yupii");
+                }
+                addLicense(AGPL3_0);
+            }
+        }
+     }
+    
+     
+     /**
+      * Adds a new license to list if not added before
+      * @param license  A valid LicenseGNU object
+      */
+     private void addLicense(final LicenseGNU newLicense){
+         for(final LicenseGNU license : licenses){
+             if(utils.text.equals(license.id, newLicense.id)){
+                 return;
+             }
+         }
+         // no duplicates, add it up
+         licenses.add(newLicense);
+     }
+     
+     /**
+      * Verifies if this file is just mentioning the AGPL or if this is the
+      * license text
+      */
+     void containsTermsAGPL(final String contentLowerCase){
+         isTermsAGPL = contentLowerCase.contains
+        ("patent license was granted, prior to 28 march 2007");
+     }
+     
     
     @Override
     public Boolean isApplicable(File file) {
@@ -87,7 +181,16 @@ public class GNU implements Trigger {
 
     @Override
     public String getResult() {
-        return "Result: N/A";
+        String result = "";
+         // list the detected licenses
+        for(LicenseGNU license : licenses){
+            result = result.concat(LicenseInfoInFile.concat(license.id));
+        }
+        if(licenses.size() > 1){
+            result = result.replace(LicenseInfoInFile, "\n" + LicenseInfoInFile).substring(1);
+        }
+        // all done
+        return result;
     }
 
     @Override
@@ -102,10 +205,21 @@ public class GNU implements Trigger {
  */
 class LicenseGNU{
     final String id, title;
+    private boolean hasException = false;
 
     public LicenseGNU(final String assignedID, final String assignedTitle){
         this.id = assignedID;
         this.title = assignedTitle;
     }
+
+    public boolean isHasException() {
+        return hasException;
+    }
+
+    public void setHasException(boolean hasException) {
+        this.hasException = hasException;
+    }
+    
+    
     
 }

@@ -236,7 +236,7 @@ public class TestingUI extends javax.swing.JFrame {
                 // does our text contains an applicable trigger?
                 if(thisTrigger.isApplicable(contentNormalCase, contentLowerCase)){
                    //result = result.concat(thisTrigger.getResult()).concat("\n");
-                    System.out.println(thisTrigger.getResult());
+                    System.out.println(file.getName() + "->" +thisTrigger.getResult());
                 }
             }
        
