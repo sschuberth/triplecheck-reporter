@@ -175,7 +175,7 @@ public class GNU implements Trigger {
             // do we have a match inside the content?
             if(contentLowerCase.contains(keyword)){
                 checkForTermsGPL(contentLowerCase);
-                //checkForEvidenceAndVersionLGPL(contentLowerCase);
+                checkForEvidenceAndVersionGPL(contentLowerCase);
                 break;
             }
         }
@@ -263,7 +263,6 @@ public class GNU implements Trigger {
              isLGPL = true;
              addLicense(LGPL3_0);
         }
-        
         // non-conclusive definitions. There is no prescription in SPDX
         // for LGPL without a version declared. Yet, we do have a solid
         // indication that LGPL can be applicable and this should be brought
@@ -276,6 +275,46 @@ public class GNU implements Trigger {
             }
         }
     } 
+
+
+
+    /**
+     * This method is scary. Needs to find possible hints where authors
+     * declare the GPL as applicable and somehow avoid mixing it with
+     * any of the other GNU licenses that coincidentally uses the same
+     * abbreviations.
+     * @param contentLowerCase      The content to be analysed
+     */
+    private void checkForEvidenceAndVersionGPL(final String contentLowerCase){
+        // define the gpl keyword in its most complete manner
+        String keyword = "gpl";
+
+        // if we have a LGPL or AGPL inside the content, decrease
+        // our accuracy but still try to fish some valid results.
+        if(isLGPL || isAGPL){
+            // we add a space, helps a bit to avoid false positives
+            // but increases false negatives too.
+            keyword = " gpl";
+            //return;
+        }
+            
+        if(checkForLicense(keyword, "1", ".0", contentLowerCase)){
+             isGPL = true;
+             addLicense(GPL1_0);
+        }
+        if(checkForLicense(keyword, "2", ".0", contentLowerCase)){
+             isGPL = true;
+             addLicense(GPL2_0);
+        }
+        if(checkForLicense(keyword, "3", ".0", contentLowerCase)){
+             isGPL = true;
+             addLicense(GPL3_0);
+        }
+        
+    }
+
+    
+    
     
     /**
      * Try to pinpoint which license version is being used when only a part
