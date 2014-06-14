@@ -207,14 +207,14 @@ public class TestingUI extends javax.swing.JFrame {
         final String contentNormalCase = utils.files.readAsString(file);
         final String contentLowerCase = contentNormalCase.toLowerCase();
         // there is a path available, let's get it
-        final String fileName = file.getAbsolutePath();
+//        final String fileName = file.getAbsolutePath();
         
-        final int lastDot = fileName.lastIndexOf(".");
-        
-        if(lastDot == -1){
-            System.err.println("TU199 - Didn't processed: " + fileName);
-            return;
-        }
+//        final int lastDot = fileName.lastIndexOf(".");
+//        
+//        if(lastDot == -1){
+//            System.err.println("TU199 - Didn't processed: " + fileName);
+//            return;
+//        }
             
 //        final String extension = fileName.substring(lastDot+1).toLowerCase();
 //        final int fileExtensionIndex = core.extensions.getIndex(extension);

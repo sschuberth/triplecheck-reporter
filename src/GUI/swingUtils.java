@@ -406,6 +406,11 @@ public class swingUtils {
             
             if(child != null){
             path = new TreePath(child.getPath());
+            
+            if(selectedNode == null){
+               System.err.println("SU411 - Selected node is null"); 
+            }
+            
             // now out tree will expand the first child
             model.addSelectionPath(path);
             m_tree.setExpandsSelectedPaths(true);
@@ -422,7 +427,7 @@ public class swingUtils {
             m_tree.scrollPathToVisible(path);    
             
             }catch(Exception ex){
-                System.err.println("SU497 - Failed to select the treeview path");
+                System.err.println("SU430 - Failed to select the treeview path");
             }
         }
     }

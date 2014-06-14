@@ -352,9 +352,9 @@ public class DocumentCreate2 {
         
         // when the file is identified as containing text, we'd like to take
         // a look inside and identify its content where possible
-        if(tempInfo.getExtensionObject() != null 
-                && tempInfo.getExtensionObject()
-                        .getContentType() == ContentType.TEXT){
+//        if(tempInfo.getExtensionObject() != null 
+//                && tempInfo.getExtensionObject()
+//                        .getContentType() == ContentType.TEXT){
             // try to identify some of the most common triggers
             for(Trigger thisTrigger: core.triggers.getList()){
                 // does our text contains an applicable trigger?
@@ -362,7 +362,8 @@ public class DocumentCreate2 {
                    result = result.concat(thisTrigger.getResult()).concat("\n");
                 }
             }
-        }
+//        }
+            System.err.println("---> " + file.getName());
         return result;
     }
 

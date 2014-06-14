@@ -40,21 +40,23 @@ public class BSD implements Trigger {
     
     // the keywordPreFilter of id's that we can use to identify a license
     final String[] keywordPreFilter = {
-        "following disclaimer.",
+        "following disclaimer",
+        "use in source and binary forms",
         "bsd"
     };
    
     // BSD-4-Clause-UC
     final String[] keywordsBSD4ClauseUC = {
         "name of the university",
+        "university nor",
         "bsd-4-clause-uc"
     };
     
     // BSD-4-Clause
-    final String[] keywordsBSD4Clause = {
-        "name of the university",
-        "bsd-4-clause"
-    };
+//    final String[] keywordsBSD4Clause = {
+//        "name of the university",
+//        "bsd-4-clause"
+//    };
     
     
     
@@ -82,7 +84,7 @@ public class BSD implements Trigger {
         preFlight();
         // iterate all our ids
         for(String keyword : keywordPreFilter){
-            if(text.contains(keyword)){
+            if(textLowerCase.contains(keyword)){
                 detectKindOfBSD(textLowerCase);
                 return true;
             }
@@ -94,7 +96,7 @@ public class BSD implements Trigger {
      * Reset all the settings to start again
      */
     void preFlight(){
-        result = "";
+        result = "BSD-3-Clause";
     }
     
     /**
@@ -108,11 +110,13 @@ public class BSD implements Trigger {
             // there's a trick, the Sleepy Cat contains the same contents
             if(textLowerCase.contains("the sleepycat license")){
                 result = "Sleepycat";
+                return;
             }
+            return;
         }
 //        else
 //        if(
-         isBSD("BSD-4-Clause", textLowerCase, keywordsBSD4Clause);
+//         isBSD("BSD-4-Clause", textLowerCase, keywordsBSD4Clause);
 //                ){
 //        }
         
@@ -126,7 +130,7 @@ public class BSD implements Trigger {
     private Boolean isBSD(final String spdxId, final String textLowerCase,
             final String[] keywords){
         // iterate throught the keywords for this license
-        for(String keyword : keywords){
+        for(final String keyword : keywords){
             if(textLowerCase.contains(keyword)){
                 result = spdxId;
                 return true;
