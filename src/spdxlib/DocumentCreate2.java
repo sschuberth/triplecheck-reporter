@@ -356,14 +356,17 @@ public class DocumentCreate2 {
 //                && tempInfo.getExtensionObject()
 //                        .getContentType() == ContentType.TEXT){
             // try to identify some of the most common triggers
+        
+        if(file.length() < 5000000){
             for(Trigger thisTrigger: core.triggers.getList()){
                 // does our text contains an applicable trigger?
                 if(thisTrigger.isApplicable(contentNormalCase, contentLowerCase)){
                    result = result.concat(thisTrigger.getResult()).concat("\n");
                 }
             }
-//        }
-            System.err.println("---> " + file.getName());
+        }else{
+            System.err.println("DC368 - File too big for processing: " + file.getAbsolutePath());
+        }
         return result;
     }
 
