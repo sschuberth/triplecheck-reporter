@@ -13,7 +13,9 @@ package spdxlib;
 public enum LicenseType {
         // added for own use
 	Public_Domain,                                 
-        MPL_2_0_plus,                                 
+        MPL_2_0_plus,
+        GPL,
+        BSD,
         // from the SPDX site
 	AFL_1_1,                                 // Academic Free License v1.1
 	AFL_1_2,                                 // Academic Free License v1.2
@@ -237,6 +239,8 @@ public enum LicenseType {
         // own usage    
 	case Public_Domain: return "Public Domain";
         case MPL_2_0_plus: return "Mozilla Public License 2.0 or later";                                 
+        case GPL: return "General Public License (version not defined)";                                 
+        case BSD: return "BSD-like license (type not defined)";                                 
         
         // SPDX list    
 	case AFL_1_1: return "Academic Free License v1.1";
@@ -463,6 +467,8 @@ public enum LicenseType {
         // own usage
         case Public_Domain: return "Public Domain";
         case MPL_2_0_plus: return "MPL-2.0+";                                 
+        case GPL: return "GPL";                                 
+        case BSD: return "BSD";                                 
         
 	// SPDX list 
 	case AFL_1_1: return "AFL-1.1";

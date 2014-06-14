@@ -9,7 +9,7 @@ DataLicense: CC-BY-4.0
 ##-------------------------
 Creator: nuno
 Creator: Tool: TripleCheck 0.9
-Created: 2014-06-14T10:16:00Z
+Created: 2014-06-14T12:03:31Z
 
 ##-------------------------
 ## Package Information
@@ -41,7 +41,6 @@ FileCopyrightText: <text>Copyright (c) 1994, 1996, 1997</text>
 
 FileName: ./config.h.in
 FileType: OTHER
-FileOrigin: AUTOMATED
 FileChecksum: SHA1: 5a9877a2fb86b231791884ebc2c0fdc66377f59b
 FileChecksum: SHA256: 5310a76facb5c52bab6baae9b60ac80f393b40220f9d06fb286353045a236825
 FileChecksum: MD5: 0b5636e7bc78e49258b2aab3b4fd20bb
@@ -158,7 +157,6 @@ FileChecksum: MD5: 3099b9653189df8a664aa0c3329a75da
 FileChecksum: SSDEEP: 48:Fe2OarYJArYJ1idsPjG437Vx3/EZm93thsTHjaZcUvro:F+arYJArYJIWt3Zx3/nQTDXd
 FileSize: 1 Kb (1899 bytes)
 FileLOC: 39
-LicenseInfoInFile: BSD-3-Clause
 FileCopyrightText: <text>Copyright (c) 2006 Paolo Abeni (Italy)</text>
 
 FileName: ./missing/snprintf.c
@@ -169,7 +167,6 @@ FileChecksum: MD5: c4bcdf9d052d4dba5e086a5078e07946
 FileChecksum: SSDEEP: 384:2ursarsIe+roG94NeFCgf554br6oBtFVeQDj:2ufO+r/9EeFRKv
 FileSize: 12 Kb (13087 bytes)
 FileLOC: 560
-LicenseInfoInFile: BSD-3-Clause
 FileCopyrightText: <text>Copyright (c) 1995-1999 Kungliga Tekniska H�gskolan</text>
 
 FileName: ./LICENSE
@@ -179,7 +176,7 @@ FileChecksum: SHA256: 9b03d5d13e66d6de02a4bb2d0dd1cb9f41808d045962cdcc42350d5291
 FileChecksum: MD5: 1d4b0366557951c84a94fabe3529f867
 FileChecksum: SSDEEP: 24:TSUnowbOIprYFTJJyprYFTcQLe/R3SBTP1V9TVoEOk3:pOorYJCrYJte3GPFTV/3
 FileSize: 873 bytes
-LicenseInfoInFile: BSD-3-Clause
+LicenseInfoInFile: BSD
 
 FileName: ./pcap-septel.h
 FileType: SOURCE
@@ -219,7 +216,6 @@ FileChecksum: MD5: ba128c7d99c4dd6b910c3a85cd7dfa03
 FileChecksum: SSDEEP: 96:F+arYJArYJIWt3Zx3/nQTiYY9ydz4lWxgo4lWMUnG:sarsArsIWt373/CvddE4xgD4e
 FileSize: 4 Kb (4659 bytes)
 FileLOC: 135
-LicenseInfoInFile: BSD-3-Clause
 FileCopyrightText: <text>Copyright (c) 2006 Paolo Abeni (Italy)</text>
 
 FileName: ./pcap/vlan.h
@@ -241,7 +237,6 @@ FileChecksum: MD5: b6f7954ec53b959a06ed2b7749ee2b27
 FileChecksum: SSDEEP: 48:Fe2OarYJArYJ1idsPjG437Vx3/EZm93thsTHMK7BJ:F+arYJArYJIWt3Zx3/nQTs4
 FileSize: 1 Kb (2016 bytes)
 FileLOC: 45
-LicenseInfoInFile: BSD-3-Clause
 FileCopyrightText: <text>Copyright (c) 2006 Paolo Abeni (Italy)</text>
 
 FileName: ./pcap/namedb.h
@@ -323,7 +318,7 @@ FileChecksum: SHA256: 217d9d814a9fbabd2b6ebc141b53e94eab70d216b67580da48462720ec
 FileChecksum: MD5: 54c1d89c2499f8980aad6cc5874f5b39
 FileChecksum: SSDEEP: 768:qk/J5J7pZIRk26BWhYAN1vL+tzq3X8cuyl9Y7YMWCl:PuSLqpTlKYMfl
 FileSize: 24 Kb (25442 bytes)
-LicenseInfoInFile: BSD-3-Clause
+LicenseInfoInFile: BSD
 
 FileName: ./pcap-tstamp.manmisc.in
 FileType: OTHER
@@ -352,7 +347,7 @@ FileChecksum: SHA256: aa60d0cba38b04cd06a70b1019b59b2c51cbfcc727adccccd67b69625f
 FileChecksum: MD5: b041d619e12cd73c311eefacdffa8a02
 FileChecksum: SSDEEP: 6144:yZShrw6snYsKfXiTPlHpT8VM2oWHd34Tq+4B7WUqTvK16uF3DAWS8mjO4RSY0AfW:X6haLn24
 FileSize: 350 Kb (359135 bytes)
-LicenseInfoInFile: BSD-3-Clause
+LicenseInfoInFile: BSD
 FileCopyrightText: <text>
 Copyright (C) 1992, 1993, 1994, 1995, 1996, 1998, 1999, 2000, 2001,
 Copyright (C) 2006 Free Software Foundation, Inc.
@@ -376,7 +371,7 @@ FileChecksum: MD5: 216dd726a19adad21c2361c5082beb4d
 FileChecksum: SSDEEP: 96:COrYJArYJy/CD3lxnsnsmmm5mwaAnCDKsWk6DlH1+Guc/wf9Dl+t46pd1nAOK+b6:COrsArsyKD3lBs5Kvmbq
 FileSize: 5 Kb (5439 bytes)
 FileLOC: 133
-LicenseInfoInFile: BSD-3-Clause
+LicenseInfoInFile: BSD
 FileCopyrightText: <text>
 Copyright (c) 2001 Atsushi Onoe
 Copyright (c) 2002-2005 Sam Leffler, Errno Consulting
@@ -503,7 +498,6 @@ FileChecksum: MD5: 7220be5355fcad0abd281fb8a9fb3e6f
 FileChecksum: SSDEEP: 384:FrsArsIWVT/yvbHmbPb5MWLNXKODswLsfA4YpO7qDCHJ48qw7lJZI:F5ZmT/AbHMMKdNDsRfA9pxCplrlw
 FileSize: 22 Kb (23529 bytes)
 FileLOC: 778
-LicenseInfoInFile: BSD-3-Clause
 FileCopyrightText: <text>Copyright (c) 2006 Paolo Abeni (Italy)</text>
 
 FileName: ./pcap-usb-linux.h
@@ -514,7 +508,6 @@ FileChecksum: MD5: 7e22a209ad36e6594c5cc5d434777bcd
 FileChecksum: SSDEEP: 48:Fe2OarYJArYJ1idsPjG437Vx3/EZm93thsTHSYauUvno:F+arYJArYJIWt3Zx3/nQTyYV9
 FileSize: 1 Kb (1890 bytes)
 FileLOC: 39
-LicenseInfoInFile: BSD-3-Clause
 FileCopyrightText: <text>Copyright (c) 2006 Paolo Abeni (Italy)</text>
 
 FileName: ./ethertype.h
@@ -557,7 +550,6 @@ FileChecksum: MD5: c97cdc6c0e0764567a29a4c139debf85
 FileChecksum: SSDEEP: 48:2gOOrYJArYJ3RKhP4Ebt432shw32s3Mtm13oAaTp4iO5y4r:2ZOrYJArYJgdG3i3zX4TKf5yc
 FileSize: 1 Kb (1760 bytes)
 FileLOC: 38
-LicenseInfoInFile: BSD-3-Clause
 FileCopyrightText: <text>Copyright (C) 1999 WIDE Project.</text>
 
 FileName: ./Win32/Include/Gnuc.h
@@ -577,7 +569,6 @@ FileChecksum: MD5: 1440398d2b5eb48f010ccfe6332ae543
 FileChecksum: SSDEEP: 96:XZOrYJArYJgdG3i3zX4TXdS6yKMAyDb0ofW9S0Z/hHIt:XZOrsArsgdG3i3r6XdSRR3nt
 FileSize: 4 Kb (5093 bytes)
 FileLOC: 129
-LicenseInfoInFile: BSD-3-Clause
 FileCopyrightText: <text>Copyright (C) 1995, 1996, 1997, 1998, and 1999 WIDE Project.</text>
 
 FileName: ./Win32/Include/cdecl_ext.h
@@ -588,7 +579,6 @@ FileChecksum: MD5: a19c2b6833c2cacbfc2d7b7601728fa9
 FileChecksum: SSDEEP: 48:2gOOrYJArYJ3RKhP4Ebt432shw32s3Mtm13oAaTpChDpkTCim44:2ZOrYJArYJgdG3i3zX4TIhtkTCimx
 FileSize: 1 Kb (1795 bytes)
 FileLOC: 35
-LicenseInfoInFile: BSD-3-Clause
 FileCopyrightText: <text>Copyright (C) 1999 WIDE Project.</text>
 
 FileName: ./Win32/Include/arpa/nameser.h
@@ -613,7 +603,6 @@ FileChecksum: MD5: 8897adb39c2073de607162e8a4812ee9
 FileChecksum: SSDEEP: 48:2gOOrYJArYJ3RKhP4Ebt432shw32s3Mtm13oAaTpkgoZS4Ye5Y+4H3uoVp47Jrzb:2ZOrYJArYJgdG3i3zX4TagoPj4XuX7Jb
 FileSize: 2 Kb (2852 bytes)
 FileLOC: 80
-LicenseInfoInFile: BSD-3-Clause
 FileCopyrightText: <text>Copyright (C) 1999 WIDE Project.</text>
 
 FileName: ./Win32/Include/net/paths.h
@@ -660,7 +649,6 @@ FileChecksum: MD5: f6fa882f5d701e6964fbe8184943dfa7
 FileChecksum: SSDEEP: 48:7+e2OarYJArYJ1RgFzG437Vx3/EZm93thsTHuJEZ+u+88jMGqCGzG8eml:7++arYJArYJ8ht3Zx3/nQTNZc88jr+ay
 FileSize: 2 Kb (2873 bytes)
 FileLOC: 65
-LicenseInfoInFile: BSD-3-Clause
 FileCopyrightText: <text>Copyright (c) 1999 - 2003</text>
 
 FileName: ./Win32/Include/ip6_misc.h
@@ -682,7 +670,6 @@ FileChecksum: MD5: 1738141f5a6acba7c44760ba4ca4636b
 FileChecksum: SSDEEP: 48:ebLmeM/TbRXalNdA8MQT/kMZS0NcNqlhAjdAyfmXO:eVYoTdMQT/zIfGO
 FileSize: 2 Kb (2523 bytes)
 FileLOC: 108
-LicenseInfoInFile: BSD-3-Clause
 FileCopyrightText: <text>Copyright (c) 1983 Regents of the University of California.</text>
 
 FileName: ./Win32/Src/getopt.c
@@ -704,7 +691,6 @@ FileChecksum: MD5: e218313839f7ac7a0b2cbea8bacc94b2
 FileChecksum: SSDEEP: 384:j8rsArs84Mr6CUTwic9alVpyDzNwpQloXQAHKFvZ3xJxNP:j8/sMr/p9mcDzNwpQl5AHQvvNP
 FileSize: 24 Kb (25521 bytes)
 FileLOC: 1009
-LicenseInfoInFile: BSD-3-Clause
 FileCopyrightText: <text>Copyright (C) 1995, 1996, 1997, and 1998 WIDE Project.</text>
 
 FileName: ./Win32/Src/inet_aton.c
@@ -715,7 +701,7 @@ FileChecksum: MD5: 7cfb286ab3f2a83c7fcb75329e4a952e
 FileChecksum: SSDEEP: 48:YQOOrYJQrYJex4Uy+hP4ENt432sha32s3Mtm13oAaTpA6M9Tz6sMJOayVF:YpOrYJQrYJe4+dM3s3zX4TS6kTz6sNb/
 FileSize: 2 Kb (2473 bytes)
 FileLOC: 55
-LicenseInfoInFile: BSD-3-Clause
+LicenseInfoInFile: BSD-4-Clause
 FileCopyrightText: <text>Copyright (c) 1995, 1996, 1997 Kungliga Tekniska H�gskolan</text>
 
 FileName: ./Win32/Src/ffs.c
@@ -748,7 +734,6 @@ FileChecksum: MD5: 73f53760f09d0b259c8afae76a8ffd85
 FileChecksum: SSDEEP: 24:msMb9/UHNqokpaRJPGKB119TbecOkXGybj2c5Pxa5Q/05UxWAQeiVR5r4:ebLmeM/TbRXxlNIQ/4U4yi/R4
 FileSize: 1 Kb (1370 bytes)
 FileLOC: 39
-LicenseInfoInFile: BSD-3-Clause
 FileCopyrightText: <text>Copyright (c) 1983 Regents of the University of California.</text>
 
 FileName: ./Win32/Src/inet_pton.c
@@ -759,7 +744,7 @@ FileChecksum: MD5: 17628d7c6fa9dbfabf5dfe3fe3a477e6
 FileChecksum: SSDEEP: 48:jQOOrYJQrYJex4Uy+hP4ENt432sha32s3Mtm13oAaTp7J9T41DFJ2UIfdZQb:jpOrYJQrYJe4+dM3s3zX4Tt/T41DFJ2u
 FileSize: 2 Kb (2572 bytes)
 FileLOC: 63
-LicenseInfoInFile: BSD-3-Clause
+LicenseInfoInFile: BSD-4-Clause
 FileCopyrightText: <text>Copyright (c) 1999 Kungliga Tekniska H�gskolan</text>
 
 FileName: ./Win32/Src/getservent.c
@@ -781,7 +766,7 @@ FileChecksum: MD5: 99070f7931b7bb10c89c12219568c051
 FileChecksum: SSDEEP: 48:jb0OOrYJArYJ3RKhP42bt432shw32s3Mtm13oAaTpU37MhU00EdH9nEpLaIB04SQ:jJOrYJArYJgtG3i3zX4Te34hRDddu/m+
 FileSize: 2 Kb (3060 bytes)
 FileLOC: 70
-LicenseInfoInFile: BSD-3-Clause
+LicenseInfoInFile: BSD
 FileCopyrightText: <text>Copyright (C) 1995, 1996, 1997, and 1998 WIDE Project.</text>
 
 FileName: ./Win32/Prj/libpcap.dsw
@@ -868,7 +853,6 @@ FileChecksum: MD5: eb1ff9409149dd9d8b81f9bda48e44a2
 FileChecksum: SSDEEP: 384:HrsArsIWVT//0e/Yo/YZ1LdF3TbcuBLWLH7:H5ZmT//vO1ZRcqLu7
 FileSize: 12 Kb (12655 bytes)
 FileLOC: 388
-LicenseInfoInFile: BSD-3-Clause
 FileCopyrightText: <text>Copyright (c) 2011 Jakub Zawadzki</text>
 
 FileName: ./packaging/pcap.spec.in
@@ -878,7 +862,7 @@ FileChecksum: SHA256: 3e4690f5088e2a4f0ab63a04bc24a2f620fd765bcb9ed2c6018fae0080
 FileChecksum: MD5: dffb179473861442926f433df5a2c5b1
 FileChecksum: SSDEEP: 48:82i92X4UR8UpXjvCr7mV64DNH1QXjvCr7mV6kKNuNrXi0j87d9K:8UDRpjaAx1ujaMGgdj87dM
 FileSize: 2 Kb (2182 bytes)
-LicenseInfoInFile: BSD-3-Clause
+LicenseInfoInFile: BSD
 
 FileName: ./Makefile.in
 FileType: OTHER
@@ -907,7 +891,6 @@ FileChecksum: MD5: 56bf8e7b9b4ff83098fc606c471b1795
 FileChecksum: SSDEEP: 48:iQ+5kh2OarYJArYJ1RgFzG437Vx3/EZm93thsTH0OqI7JTIMDL2mqLazEVN2kfq:T+ytarYJArYJ8ht3Zx3/nQTtV8alh
 FileSize: 2 Kb (2819 bytes)
 FileLOC: 79
-LicenseInfoInFile: BSD-3-Clause
 FileCopyrightText: <text>
 Copyright (c) 2002 - 2005 NetGroup, Politecnico di Torino (Italy)
 Copyright (c) 2005 - 2009 CACE Technologies, Inc. Davis (California)
@@ -983,7 +966,6 @@ FileChecksum: MD5: cb2b98e0a4b19036a60604460ac3e1ab
 FileChecksum: SSDEEP: 48:EjTI4tKfYBpP4UTzbM+tN6jSfEeO9CMgQtq0OQtxu:Ew4t2G9dc7gQtq0OQtxu
 FileSize: 1 Kb (1797 bytes)
 FileLOC: 55
-LicenseInfoInFile: BSD-3-Clause
 
 FileName: ./pcap-dos.h
 FileType: SOURCE
@@ -1002,7 +984,7 @@ FileChecksum: MD5: 66045cbe9967e4e112303598f1e0d619
 FileChecksum: SSDEEP: 192:Ku7F5ztpBqHMPmx42l2tjhcVkMIVxkAIDGsT9m7Q+y8PGd2ASmK/DLhUNdl:K+F1XBqHRxARhcHE9IDGEAkTSG6mK790
 FileSize: 8 Kb (8827 bytes)
 FileLOC: 318
-LicenseInfoInFile: BSD-3-Clause
+LicenseInfoInFile: BSD
 
 FileName: ./pcap_get_selectable_fd.3pcap
 FileType: OTHER
@@ -1083,7 +1065,6 @@ FileChecksum: MD5: 26982b06a2d791c00692a6843ac72ad3
 FileChecksum: SSDEEP: 48:m2OarYJArYJ1idsPjG437Vx3/EZm93thsTH2Yro:GarYJArYJIWt3Zx3/nQT0
 FileSize: 1 Kb (1696 bytes)
 FileLOC: 34
-LicenseInfoInFile: BSD-3-Clause
 FileCopyrightText: <text>Copyright (c) 2011 Jakub Zawadzki</text>
 
 FileName: ./pcap_set_datalink.3pcap
@@ -1103,7 +1084,6 @@ FileChecksum: SHA256: a3b0f84dbdcb03bd782753761bf28898f8a5a1294b8d73dc8fd5efc0cb
 FileChecksum: MD5: b757c42eced2481aeac44286bd35b860
 FileChecksum: SSDEEP: 48:4j/eaWuFhyhScJ/dTs0Zpjy5ImrslJgUzitjInYkW5W5K4/K:YQOcVd1Gvr2zzyBW84/K
 FileSize: 2 Kb (2363 bytes)
-LicenseInfoInFile: BSD-4-Clause-UC
 FileCopyrightText: <text>Copyright (c) 1994, 1996</text>
 
 FileName: ./config.guess
@@ -1114,7 +1094,7 @@ FileChecksum: MD5: 53e3c407f215246c9ca5bbb4ddd3b958
 FileChecksum: SSDEEP: 768:Cv9VADWZuC7oD978MGDsv5a5JHqXuy4DmZrZuqAmgg195buZ91r4nc:EKb78M4sv5a54XbnuM5buZ91r5
 FileSize: 43 Kb (44959 bytes)
 LicenseInfoInFile: GPL-2.0+
-LicenseInfoInFile: BSD-3-Clause
+LicenseInfoInFile: BSD
 FileCopyrightText: <text>
 Copyright (C) 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999,
 Copyright (C) 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000,
@@ -1165,7 +1145,7 @@ FileChecksum: SHA256: 3ab46738d2836981acef1c3d9a703e24cde04e944f21c7f8a8b13fe5bf
 FileChecksum: MD5: 039c7067d2c0562bf265946c79a2ffee
 FileChecksum: SSDEEP: 12:a4K82kWJLoOIWBheB4EQyuF2tjbIXjChv26VFRq0XBHw1cK+LWrTEQ1/rkgzgQOe:aN82k3YEQyPtjcXjMq0RHY+LgTEnQOU1
 FileSize: 760 bytes
-LicenseInfoInFile: BSD-3-Clause
+LicenseInfoInFile: BSD
 
 FileName: ./README.dag
 FileType: OTHER
@@ -1174,7 +1154,7 @@ FileChecksum: SHA256: d4e6942e1770761e2c072a6b7f3598ba8041cc88e3d4d8009141d174fd
 FileChecksum: MD5: b4790c02e0b3a871f0a9564e53f0eb0e
 FileChecksum: SSDEEP: 96:U5Kh3Z/5hq0L4O0tPE603naodxsAf/zzNQ:U5mZ/PKY60JdlzzC
 FileSize: 4 Kb (4960 bytes)
-LicenseInfoInFile: BSD-3-Clause
+LicenseInfoInFile: BSD
 
 FileName: ./pcap_offline_filter.3pcap
 FileType: OTHER
@@ -1325,7 +1305,7 @@ FileChecksum: MD5: ba3a8e22fd5c9755c9bda2b4bac1efce
 FileChecksum: SSDEEP: 768:DWKSw1ih7u9yGh0TX6STB3NQ24N7/5XBmuwyxX6isJI/l:6t7yh0TX6STB3NQ24N7xXBmuyisJI/l
 FileSize: 30 Kb (30722 bytes)
 FileLOC: 1011
-LicenseInfoInFile: BSD-3-Clause
+LicenseInfoInFile: BSD
 
 FileName: ./fad-win32.c
 FileType: SOURCE
@@ -1335,7 +1315,6 @@ FileChecksum: MD5: b527232fcc8faa42a89db61a94caca51
 FileChecksum: SSDEEP: 192:TUarsArs8Jlt373/CUtbS/SfS/SzknBoq2BT6+qsvNfknZm2T3B:TNrsArs87VT/5tbmIUgknBo5TvqsvN8v
 FileSize: 8 Kb (8297 bytes)
 FileLOC: 305
-LicenseInfoInFile: BSD-3-Clause
 FileCopyrightText: <text>
 Copyright (c) 2002 - 2005 NetGroup, Politecnico di Torino (Italy)
 Copyright (c) 2005 - 2006 CACE Technologies, Davis (California)
@@ -1349,7 +1328,6 @@ FileChecksum: MD5: edb5af7a5e08828cb196794df77d8240
 FileChecksum: SSDEEP: 192:9arsArsI0t373/C9vGmnpa/9/1PVtE+Q+oWnzmW:YrsArsI0VT/qemnp83tTQs
 FileSize: 6 Kb (6759 bytes)
 FileLOC: 221
-LicenseInfoInFile: BSD-3-Clause
 FileCopyrightText: <text>Copyright (c) 2009 Felix Obenhuber</text>
 
 FileName: ./config.sub
@@ -1360,7 +1338,7 @@ FileChecksum: MD5: bb712d42883591dd40cbf059709bac00
 FileChecksum: SSDEEP: 768:cxf1lVZSImoTuJb77Cxm1hVduMD7/13c:cXZtAhduMD7/1s
 FileSize: 33 Kb (34469 bytes)
 LicenseInfoInFile: GPL-2.0+
-LicenseInfoInFile: BSD-3-Clause
+LicenseInfoInFile: BSD
 FileCopyrightText: <text>
 Copyright (C) 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999,
 Copyright (C) 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999, 2000,
@@ -1383,7 +1361,7 @@ FileChecksum: SHA256: 0214cfacbfa8f33ec5e31dd5a7cc67a0cbfe3f7efb564cafb29ba97d5a
 FileChecksum: MD5: fe1b457f2eba7565172e33c6d611e3e7
 FileChecksum: SSDEEP: 96:0WyvrAf+SG5FrTYSmi6Ye1YETE1LikRj:qzAGSG59JmimTE1OkV
 FileSize: 3 Kb (3521 bytes)
-LicenseInfoInFile: BSD-3-Clause
+LicenseInfoInFile: BSD
 
 FileName: ./pcap-win32.c
 FileType: SOURCE
@@ -1393,7 +1371,6 @@ FileChecksum: MD5: a086c90b29b484c078eb4e82d30ed93e
 FileChecksum: SSDEEP: 384:vbrsArs87VT/5QIhu4tgAJmAiZculozgkvCNBHBN2Oc5dP7w3NABXhCm+9VL7B0i:D5lT/WIhgyXvewdP7w3NABXkmcsJXYhr
 FileSize: 19 Kb (20472 bytes)
 FileLOC: 778
-LicenseInfoInFile: BSD-3-Clause
 FileCopyrightText: <text>
 Copyright (c) 1999 - 2005 NetGroup, Politecnico di Torino (Italy)
 Copyright (c) 2005 - 2008 CACE Technologies, Davis (California)
@@ -1407,7 +1384,6 @@ FileChecksum: MD5: 84051d5d03a86327892fd38ecaadcbb3
 FileChecksum: SSDEEP: 192:sarsArsIWt373/Cw/+h7MG6t4WvXaBu4uVXdVF9T6glq3SWfx6zmu:FrsArsIWVT/3Wh7MG6t4KW43uglQ67
 FileSize: 10 Kb (10250 bytes)
 FileLOC: 331
-LicenseInfoInFile: BSD-3-Clause
 FileCopyrightText: <text>Copyright (c) 2006 Paolo Abeni (Italy)</text>
 
 FileName: ./pcap_freecode.3pcap
@@ -1428,7 +1404,7 @@ FileChecksum: MD5: a6b5afb5f6f9ea6e6fe20ad1f492fc63
 FileChecksum: SSDEEP: 48:fAZO6rYJWrYJHD+EPm+TYchFRu08TapOLui85rW:fAM6rYJWrYJHD+9+MgEb
 FileSize: 2 Kb (2216 bytes)
 FileLOC: 53
-LicenseInfoInFile: BSD-3-Clause
+LicenseInfoInFile: BSD
 FileCopyrightText: <text>Copyright (c) 2007 Fulko Hew, SITA INC Canada, Inc <fulko.hew@sita.aero></text>
 
 FileName: ./sf-pcap-ng.c
@@ -1470,7 +1446,7 @@ FileChecksum: SHA256: 697253b38834c418cc0a26dd6112cf3ec9097d826f71ab3eac856a1118
 FileChecksum: MD5: 0c8b18c7eb494044f20e7491e18d5fcd
 FileChecksum: SSDEEP: 384:wqMcW3ZH8LZesI0EcCQg/p4jADpwHWQCfJUYo4Qwm25bZu4ATIX12X:wVcWWL4A32w2QCfKP45v5bZ3ATIl2X
 FileSize: 17 Kb (17769 bytes)
-LicenseInfoInFile: BSD-3-Clause
+LicenseInfoInFile: BSD
 
 FileName: ./configure.in
 FileType: OTHER
@@ -1479,7 +1455,7 @@ FileChecksum: SHA256: b449bc5b110b7a5fccd2201fc4830ad742dc463ccfb04efd04d8dc1bd9
 FileChecksum: MD5: 386fa29737070163a75a0537d62e8d96
 FileChecksum: SSDEEP: 768:8zYAyuHJVDJ8qMKae1JKKIlo/AjEvic36oKIBINHBnG+heeSZhusiHdHN1g0sreo:eDJ8qMvebKKIlo/AjEvic36oKIBIhBnw
 FileSize: 37 Kb (38076 bytes)
-LicenseInfoInFile: BSD-3-Clause
+LicenseInfoInFile: BSD
 FileCopyrightText: <text>Copyright (c) 1994, 1995, 1996, 1997</text>
 
 FileName: ./pcap-dos.c
@@ -1533,7 +1509,7 @@ FileChecksum: SHA256: 7f06db3f1166f40c87ebd2c24739f05f2f8cb1f65378c3a352f1e948aa
 FileChecksum: MD5: 8220cbb5ec7e481c0225100149273944
 FileChecksum: SSDEEP: 48:7PiOWIHBcBY3Zhw7BXZJwDDH6B22MBTQ:7PiJEP3HeEuB22MO
 FileSize: 1 Kb (1555 bytes)
-LicenseInfoInFile: BSD-3-Clause
+LicenseInfoInFile: BSD
 
 FileName: ./pcap-libdlpi.c
 FileType: SOURCE
@@ -1586,7 +1562,7 @@ FileChecksum: MD5: 550e98c30aeeb139d02815ebe8f3fe45
 FileChecksum: SSDEEP: 96:FOrYJArYJOJ+D3x3z9wJk/UDeqx8l1CJjoZr7Bkb:FOrsArsa+D3x3BeAUyG8m
 FileSize: 3 Kb (4057 bytes)
 FileLOC: 80
-LicenseInfoInFile: BSD-3-Clause
+LicenseInfoInFile: BSD-4-Clause
 FileCopyrightText: <text>Copyright (c) 1997 Yen Yen Lim and North Dakota State University</text>
 
 FileName: ./pcap_can_set_rfmon.3pcap
@@ -1649,7 +1625,7 @@ FileChecksum: MD5: bac0043df53d693b3a7aafbf0e52bf77
 FileChecksum: SSDEEP: 768:BVZD6/dRHeWJCgs72+iyuJgVD3p2Invxw5s1d0uzmITEex/OFAPYvuDaPJwTR9a4:3ZD6/dRHeIsZueVD3p2InpwsnlmITEeX
 FileSize: 33 Kb (33934 bytes)
 FileLOC: 861
-LicenseInfoInFile: BSD-3-Clause
+LicenseInfoInFile: BSD
 FileCopyrightText: <text>Copyright (c) 2007 Fulko Hew, SITA INC Canada, Inc <fulko.hew@sita.aero></text>
 
 FileName: ./pcap_strerror.3pcap
@@ -1680,7 +1656,7 @@ FileChecksum: MD5: 16288ddc5ede195db9577a92af8b61ba
 FileChecksum: SSDEEP: 3072:OZDvvlBubsyKdJwS0PFOvAME0CIT9ib+svQBE/XjrRGnFi7GGfBhZNz1wYGZNqN/:GujKdJwd9OvAME0CIT90vQBE/XjrRGn6
 FileSize: 150 Kb (154583 bytes)
 FileLOC: 5070
-LicenseInfoInFile: BSD-3-Clause
+LicenseInfoInFile: BSD
 FileCopyrightText: <text>
 Copyright (c) 2000 Torsten Landschoff <torsten@debian.org>
 Copyright (c) 2007, 2008
@@ -1717,7 +1693,7 @@ FileChecksum: SHA256: 594cdeec7dd812c70fec0c72d7686fffc277af1d2866e74aa8640c973c
 FileChecksum: MD5: ca4c8e08be31723608758c97c4001862
 FileChecksum: SSDEEP: 96:KbtKu3dJP3/nfWYSXngsE36sE0sEJ1j9yN0H3thy3GmonUfJtaRru5cpLaX+Ufdb:fwdJP3PfWYSXhEjEtEJ1j9yN0H3thy3R
 FileSize: 5 Kb (5585 bytes)
-LicenseInfoInFile: BSD-3-Clause
+LicenseInfoInFile: BSD
 FileCopyrightText: <text>Copyright 1991 by the Massachusetts Institute of Technology</text>
 
 FileName: ./lbl/os-sunos4.h
@@ -1824,8 +1800,7 @@ FileChecksum: SSDEEP: 384:ZrsMrsa5YTdPylKRBYrTUfFW4C0s9LFpxmb8A6IHUo7p2pj8PRvy:Z
 FileSize: 23 Kb (24166 bytes)
 FileLOC: 860
 LicenseInfoInFile: BSD-4-Clause-UC
-FileCopyrightText: <text>Copyright (c) 1993,1994
-</text>
+FileCopyrightText: <text>Copyright (c) 1993,1994</text>
 
 FileName: ./msdos/pkt_rx1.s
 FileType: OTHER
@@ -1895,8 +1870,7 @@ FileChecksum: SSDEEP: 384:ZrsMrsa5YTd1y8UWurzFhoquPnzyrzmlYVFDpfoSAeeMjKF5diYzO9
 FileSize: 17 Kb (17922 bytes)
 FileLOC: 559
 LicenseInfoInFile: BSD-4-Clause-UC
-FileCopyrightText: <text>Copyright (c) 1993,1994
-</text>
+FileCopyrightText: <text>Copyright (c) 1993,1994</text>
 
 FileName: ./msdos/readme.dos
 FileType: OTHER
@@ -2068,7 +2042,7 @@ FileChecksum: MD5: c5ee4f03e3a42c382c790320f3958e5a
 FileChecksum: SSDEEP: 48:/0OOrYJArYJ3ex4IWPzin432spz32s3Stm13TcJH0xIuK3LFFNQWzl:FOrYJArYJOJ+D3x3z9wJYs1B
 FileSize: 2 Kb (2234 bytes)
 FileLOC: 43
-LicenseInfoInFile: BSD-3-Clause
+LicenseInfoInFile: BSD-4-Clause
 FileCopyrightText: <text>Copyright (c) 1997 Yen Yen Lim and North Dakota State University</text>
 
 FileName: ./pcap_lookupdev.3pcap
@@ -2149,7 +2123,6 @@ FileChecksum: MD5: ebfe8f16d5f094582fe4d545160efe10
 FileChecksum: SSDEEP: 48:3B2OarYJArYJ1iUPZG437Vx3/EZm93thsTHMso:9arYJArYJI0t3Zx3/nQTY
 FileSize: 1 Kb (1628 bytes)
 FileLOC: 34
-LicenseInfoInFile: BSD-3-Clause
 FileCopyrightText: <text>Copyright (c) 2009 Felix Obenhuber</text>
 
 FileName: ./nametoaddr.c
@@ -2220,7 +2193,7 @@ FileChecksum: SHA256: 188921fcff4f5ee170ed430cdecf1422c8359822a6574ab7f7822531d1
 FileChecksum: MD5: bd6841c723ff01c9897d6a14e2f9fecc
 FileChecksum: SSDEEP: 96:IY7VsnN+gObZx7NbKfIr2E+Z6O1KWkjVGB4RdUl9/AMjqDSPou7QOPU5op/8NcJ1:Ijw7pKIC3QjHSPfU540WsKRosljZR7
 FileSize: 9 Kb (9474 bytes)
-LicenseInfoInFile: BSD-3-Clause
+LicenseInfoInFile: BSD
 
 FileName: ./pcap_setnonblock.3pcap
 FileType: OTHER
@@ -2247,7 +2220,7 @@ FileChecksum: SHA256: 9ffb2e713966d49b6146b8acfb9f2395e61847fc839a7e0d14ed7b8e17
 FileChecksum: MD5: 16de9f1e49d8f7f38109d94c46cd95c8
 FileChecksum: SSDEEP: 24:aGL+32kgTXEQyj4tjdjxq0RHKv+L5TEeQOFExhRXtHDP5Ql:c35gYQxdVzRHKv+L5YeQOohRXtHDP5Ql
 FileSize: 900 bytes
-LicenseInfoInFile: BSD-3-Clause
+LicenseInfoInFile: BSD
 
 FileName: ./pcap-pf.c
 FileType: SOURCE
@@ -2277,7 +2250,7 @@ FileChecksum: SHA256: 3f89a5d4fe6fb86b62401cc0002afc4ec0a67abd47bbb1e87600cb8160
 FileChecksum: MD5: 68ae700c71061a9caec0b69ebcf0a532
 FileChecksum: SSDEEP: 96:fViPkP2OpRKvcc8W9fzymbKxoU50WZas:oPM2D9embKxL0Rs
 FileSize: 4 Kb (4191 bytes)
-LicenseInfoInFile: BSD-3-Clause
+LicenseInfoInFile: BSD
 
 FileName: ./fad-getad.c
 FileType: SOURCE

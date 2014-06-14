@@ -39,30 +39,48 @@ import script.Trigger;
 public class BSD implements Trigger {
     
     // the keywordPreFilter of id's that we can use to identify a license
-    final String[] keywordPreFilter = {
-        "following disclaimer",
+    final String[] keywordPreFilter = {     // text snippets common to BSD
+        "following disclaimer",             
         "use in source and binary forms",
         "bsd"
     };
    
-    // BSD-4-Clause-UC
+    // BSD-4-Clause
+    final String[] keywordsBSD4Clause = {
+        "all advertising",      // the advertisement clause
+        "bsd-4-clause"
+    };
+    
+    // BSD-4-Clause specific to the University of Berkley
     final String[] keywordsBSD4ClauseUC = {
-        "name of the university",
-        "university nor",
+        "name of the university", // unique identification
+        "university nor",         // accommodate when text is broken
         "bsd-4-clause-uc"
     };
     
-    // BSD-4-Clause
-//    final String[] keywordsBSD4Clause = {
-//        "name of the university",
-//        "bsd-4-clause"
-//    };
+    // BSD-3-Clause-Clear
+    final String[] keywordsBSD3ClauseClear = {
+        "no express or", // the last paragraph is unique to this license
+        "bsd-3-clause-clear"
+    };
     
+    // BSD-3-Clause-Clear
+    final String[] keywordsBSD3Clause = {
+        // this text is common to bigger BSD, but they were filtered before
+        "names of its contributors",
+        "specific prior written permission",
+        "bsd-3-clause"
+    };
+    
+    // non determined type of BSD, we just know it is a BSD-like license
+    final String[] keywordsBSD= {
+        "bsd"
+    };
     
     
     final String bsd4ClauseSpecificUC = "4. neither the name of the university";
     
-    String result = "";
+    String result = null;
     
     LicenseBSD 
             bsd2Clause = new LicenseBSD("BSD-2-Clause"),
@@ -86,7 +104,7 @@ public class BSD implements Trigger {
         for(String keyword : keywordPreFilter){
             if(textLowerCase.contains(keyword)){
                 detectKindOfBSD(textLowerCase);
-                return true;
+                return result != null;
             }
         }
         return false;
@@ -96,7 +114,7 @@ public class BSD implements Trigger {
      * Reset all the settings to start again
      */
     void preFlight(){
-        result = "BSD-3-Clause";
+        result = null;
     }
     
     /**
@@ -105,20 +123,38 @@ public class BSD implements Trigger {
      * @param textLowerCase 
      */
     private void detectKindOfBSD(final String textLowerCase){
-        // find the BSD-4-Clause-UC license
-        if(isBSD("BSD-4-Clause-UC", textLowerCase, keywordsBSD4ClauseUC)){
+        // is this a BSD-4-Clause type of license?
+        if(isBSD(textLowerCase, keywordsBSD4Clause)){
             // there's a trick, the Sleepy Cat contains the same contents
-            if(textLowerCase.contains("the sleepycat license")){
-                result = "Sleepycat";
-                return;
+//            if(textLowerCase.contains("the sleepycat license")){
+//                result = "Sleepycat";
+//                return;
+//            }
+            
+            // is it the original berkley license?
+            if(isBSD(textLowerCase, keywordsBSD4ClauseUC)){
+                result = "BSD-4-Clause-UC";
+            }else{
+                // seems like this is the old, but generic version
+                result = "BSD-4-Clause";
             }
-            return;
+            
+//            
+////            if(textLowerCase.contains("all advertising") == false)
+//                result = "BSD-4-Clause-UC";
         }
 //        else
-//        if(
-//         isBSD("BSD-4-Clause", textLowerCase, keywordsBSD4Clause);
-//                ){
+//        if(isBSD(textLowerCase, keywordsBSD3ClauseClear)){
+//            result = "BSD-3-Clause-Clear";
 //        }
+//        else
+//        if(isBSD(textLowerCase, keywordsBSD3Clause)){
+//            result = "BSD-3-Clause";
+//        }
+        else
+        if(isBSD(textLowerCase, keywordsBSD)){
+            result = "BSD";
+        }
         
     }
     
@@ -127,12 +163,11 @@ public class BSD implements Trigger {
      * @param spdxId    The designation as provided by SPDX when available
      * @return          True if a match was found, otherwise return false
      */
-    private Boolean isBSD(final String spdxId, final String textLowerCase,
+    private Boolean isBSD(final String textLowerCase,
             final String[] keywords){
         // iterate throught the keywords for this license
         for(final String keyword : keywords){
             if(textLowerCase.contains(keyword)){
-                result = spdxId;
                 return true;
             }
         }
