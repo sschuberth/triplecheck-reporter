@@ -86,9 +86,24 @@ public class BSD implements Trigger {
     
     
     // non determined type of BSD, we just know it is a BSD-like license
-    final String[] keywordsBSD= {
-        "bsd"
-    };
+    final String[] 
+            keywordsBSD= {
+                "bsd"
+                    },
+            // we use this list to reduce false positives on random BSD search
+            // in other words, reduce chances of false needles in the haystack
+            keywordsWhiteListed = {
+                "under bsd ",
+                "bsd-license",
+                "bsd license",
+                "bsd-like",
+                "bsd licence"
+                    },
+            keywordsBlackListed = {
+                "change the bsd license"
+            };
+    
+    
     
     
     final String bsd4ClauseSpecificUC = "4. neither the name of the university";
@@ -184,11 +199,23 @@ public class BSD implements Trigger {
                result = "ISC";
                return;
            } 
-                
-        // someone is declaring the BSD but we lack further detail.
-        result = "BSD";
-            
-            
+             
+           // first check the permitted list of keywords
+           if(isBSD(textLowerCase, keywordsWhiteListed)){
+               // we got a match, but was it blacklisted before?
+               if(isBSD(textLowerCase, keywordsBlackListed)){
+                   // no point in continuing
+                   result = null;
+                   return;
+               }
+               
+               // someone is declaring BSD but we lack further detail
+               result = "BSD";
+               return;
+           }
+        
+           // no conclusive results, better safe than sorry. Don't mention BSD
+           result = null;
             
         }
         
