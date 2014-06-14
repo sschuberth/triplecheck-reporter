@@ -72,6 +72,19 @@ public class BSD implements Trigger {
         "bsd-3-clause"
     };
     
+     // BSD-3-Clause-Clear
+    final String[] keywordsFreeBSD = {
+        "freebsd project",
+        "bsd-2-clause-freebsd"
+    };
+     // BSD-3-Clause-Clear
+    final String[] keywordsNetBSD = {
+        "netbsd foundation",
+        "bsd-2-clause-netbsd"
+    };
+    
+    
+    
     // non determined type of BSD, we just know it is a BSD-like license
     final String[] keywordsBSD= {
         "bsd"
@@ -138,22 +151,45 @@ public class BSD implements Trigger {
                 // seems like this is the old, but generic version
                 result = "BSD-4-Clause";
             }
-            
-//            
-////            if(textLowerCase.contains("all advertising") == false)
-//                result = "BSD-4-Clause-UC";
         }
-//        else
-//        if(isBSD(textLowerCase, keywordsBSD3ClauseClear)){
-//            result = "BSD-3-Clause-Clear";
-//        }
-//        else
-//        if(isBSD(textLowerCase, keywordsBSD3Clause)){
-//            result = "BSD-3-Clause";
-//        }
+        else
+        if(isBSD(textLowerCase, keywordsBSD3ClauseClear)){
+            result = "BSD-3-Clause-Clear";
+        }
+        else
+        if(isBSD(textLowerCase, keywordsBSD3Clause)){
+            result = "BSD-3-Clause";
+        }
+        else
+        if(isBSD(textLowerCase, keywordsFreeBSD)){
+            result = "BSD-2-Clause-FreeBSD";
+        }
+        else
+        if(isBSD(textLowerCase, keywordsNetBSD)){
+            result = "BSD-2-Clause-NetBSD";
+        }
         else
         if(isBSD(textLowerCase, keywordsBSD)){
-            result = "BSD";
+            // is this a declared BSD license with at least 2 clauses?
+            if((textLowerCase.contains("redistributions of source")
+              &&(textLowerCase.contains("redistributions in binary"))
+                    || textLowerCase.contains("BSD-2-Clause"))
+                    ){
+                result = "BSD-2-Clause";
+                return;
+            }
+                
+        // in some remote case, this might be an ISC license
+           if(textLowerCase.contains("copyright notice and this permission notice appear in all copies.")){
+               result = "ISC";
+               return;
+           } 
+                
+        // someone is declaring the BSD but we lack further detail.
+        result = "BSD";
+            
+            
+            
         }
         
     }
