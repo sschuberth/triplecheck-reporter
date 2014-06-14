@@ -184,8 +184,8 @@ public class GNU implements Trigger {
             // do we have a match inside the content?
             if(contentLowerCase.contains(keyword)){
                 checkForTermsGPL(contentLowerCase);
-                checkForEvidenceAndVersionGPL(contentLowerCase);
                 checkForDefaultHeaderGPL(contentLowerCase);
+                checkForEvidenceAndVersionGPL(contentLowerCase);
                 break;
             }
         }
@@ -262,35 +262,57 @@ public class GNU implements Trigger {
          if(isGPL || isAGPL || isLGPL){
              return;
          }
+ 
+         // let's find the header license attribution (sometimes not on top)
+         final String anchorText = "this program is free software";
+         final int anchorId = contentLowerCase.indexOf(anchorText);
          
-         // we expect the header to be on top of the content
-         if(contentLowerCase.length() < headerSize){
-             // not big enough to be the default GPL header, let's exit
-             return;             
+         // wasn't found, no need to proceed
+         if(anchorId == -1){
+             return;
          }
          
-         // we have content big enough, let's extract the header lines
-         final String header = contentLowerCase.substring(0, headerSize);
+         // is the header big enough to get a sample?
+         if((anchorId + headerSize) > contentLowerCase.length()){
+             return;
+         }
+         
+         // since we have some content big enough, let's extract the header lines
+         final String header = contentLowerCase.substring(anchorId, anchorId +headerSize);
          
          // now let's look for matches, are we on the right track?
-         if(header.contains("gnu general public license as published")==false){
+         if(header.contains("gnu general public license")==false){
              // doesn't seem that way, exit here
              return;
          }
          
-         // now let's fetch the version
+         // now let's fetch the version and the "or later" part
+         String result;
          if(header.contains("either version 1")){
-             isGPL = true;
-             addLicense(GPL1_0 + "+");
+             result = GPL1_0 + "+";
          }else
          if(header.contains("either version 2")){
-             isGPL = true;
-             addLicense(GPL2_0 + "+");
+             result = GPL2_0 + "+";
          }else
-         if(header.contains("either version 2")){
-             isGPL = true;
-             addLicense(GPL3_0 + "+");
+         if(header.contains("either version 3")){
+             result = GPL3_0 + "+";
+         }else{
+             result =GPL.getId();
          }
+         
+         // check for exception declarations
+         if(header.contains("exception, the respective autoconf")){
+             // replace the "plus" and add the autoconf exception attribute
+             result = result.replace("+", "") +  "-with-autoconf-exception";
+             isGPL = true;
+         }
+         
+         // add the license as detected
+         addLicense(result);
+         isGPL = true;
+         
+         
+         
      };
      
     /**
@@ -336,6 +358,11 @@ public class GNU implements Trigger {
      * @param contentLowerCase      The content to be analysed
      */
     private void checkForEvidenceAndVersionGPL(final String contentLowerCase){
+        // no need to proceed if a former test was done on this file
+        if(isGPL){
+            return;
+        }
+        
         // define the gpl keyword in its most complete manner
         String keyword = "gpl";
 
@@ -347,20 +374,16 @@ public class GNU implements Trigger {
             keyword = " gpl";
             //return;
         }
-            
-        if(checkForLicense("GPL", keyword, "1", ".0", contentLowerCase)){
-             isGPL = true;
-             addLicense(GPL1_0);
-        }
-        if(checkForLicense("GPL", keyword, "2", ".0", contentLowerCase)){
-             isGPL = true;
-             addLicense(GPL2_0);
-        }
-        if(checkForLicense("GPL", keyword, "3", ".0", contentLowerCase)){
-             isGPL = true;
-             addLicense(GPL3_0);
-        }
         
+            if(checkForLicense("GPL", keyword, "1", ".0", contentLowerCase)){
+                 isGPL = true;
+            }
+            if(checkForLicense("GPL", keyword, "2", ".0", contentLowerCase)){
+                 isGPL = true;
+            }
+            if(checkForLicense("GPL", keyword, "3", ".0", contentLowerCase)){
+                 isGPL = true;
+            }
         
         // now go for the non-conclusive evidence that some GPL exists
         // this is only permitted if neither GPL, LGPL nor AGPL were detected before
@@ -397,6 +420,8 @@ public class GNU implements Trigger {
             addLicense(spdxID + "+");
             return true;
         }
+        
+        //TODO add here the Autoconf exception detection
         
         // iterate some commons variations of how people list licenses
         for(final String variation : listVersionVariations){
@@ -480,7 +505,7 @@ public class GNU implements Trigger {
     public String getResult() {
         String result = "";
          // list the detected licenses
-        for(String license : licenses){
+        for(final String license : licenses){
             result = result.concat(LicenseInfoInFile.concat(license));
         }
         if(licenses.size() > 1){

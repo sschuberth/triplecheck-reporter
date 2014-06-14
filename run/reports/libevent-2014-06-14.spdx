@@ -9,7 +9,7 @@ DataLicense: CC-BY-4.0
 ##-------------------------
 Creator: nuno
 Creator: Tool: TripleCheck 0.9
-Created: 2014-06-14T11:57:40Z
+Created: 2014-06-14T12:32:32Z
 
 ##-------------------------
 ## Package Information
@@ -39,6 +39,7 @@ FileChecksum: SHA256: 9c6497f30ca0e318157a7e532f9b018fae7ab3a2dfbe1c4f248b0f34fe
 FileChecksum: MD5: 3ea8ede9ecc6ea7c25f4e48cae311711
 FileChecksum: SSDEEP: 384:+mslFU/J2cNtDaVJr4enRohANI6YD0xbPAWGWe6BtXhZ10Tf4o:eU/JqrNOKlDTGIR2TfR
 FileSize: 25 Kb (26344 bytes)
+LicenseInfoInFile: BSD
 
 FileName: ./signal.c
 FileType: SOURCE
@@ -48,6 +49,7 @@ FileChecksum: MD5: 46daa023466c5ee7dbdec65047ab3129
 FileChecksum: SSDEEP: 192:wOrsArsy+D3lBs6dI/7Kc80VSAu0pmM2uc36vHhataAYDoTU5vmmuMQ:vrsArsy+bTldONTVS+W3R0SToBg
 FileSize: 12 Kb (12512 bytes)
 FileLOC: 417
+LicenseInfoInFile: BSD
 FileCopyrightText: <text>
 Copyright 2000-2007 Niels Provos <provos@citi.umich.edu>
 Copyright 2007-2012 Niels Provos and Nick Mathewson
@@ -60,6 +62,7 @@ FileChecksum: SHA256: 9d79623a3cedef562d5f3604bfa174f046acbebd9f53e60c1d2ac51d42
 FileChecksum: MD5: 672e56ac797037485084a0a5f9076500
 FileChecksum: SSDEEP: 384:EMrsarscOoJbBA0XdpOCyyja+qj/pbkzYZC+jxGl:EMZ3hJbHdpOCyyja593ZCJl
 FileSize: 17 Kb (17705 bytes)
+LicenseInfoInFile: BSD
 FileCopyrightText: <text>Copyright (c) 2000 Artur Grabowski <art@openbsd.org></text>
 
 FileName: ./evbuffer-internal.h
@@ -84,6 +87,7 @@ FileChecksum: SSDEEP: 384:OrsArsy+bTGjTAfvC962jdzlu/bat4KCxBNcwu1Tk6jlqMWlDBcb14
 FileSize: 14 Kb (15294 bytes)
 FileLOC: 429
 LicenseInfoInFile: MIT
+LicenseInfoInFile: BSD
 FileCopyrightText: <text>
 Copyright (c) 2007-2012 Niels Provos and Nick Mathewson
 Copyright (c) 2010 BitTorrent, Inc.
@@ -118,6 +122,7 @@ FileChecksum: MD5: e596b36aa708b159dc1bbb52b8ff525c
 FileChecksum: SSDEEP: 96:XJ+MmOrYJArYJ653P3n0J7pekYR70uJb+qbLe3Su8jYU9i:5+LOrsArs653P3S7pZIb+qeaja
 FileSize: 4 Kb (4230 bytes)
 FileLOC: 133
+LicenseInfoInFile: BSD
 FileCopyrightText: <text>Copyright (c) 1987, 1993, 1994, 1995</text>
 
 FileName: ./WIN32-Code/tree.h
@@ -128,6 +133,7 @@ FileChecksum: MD5: 1ba5466fde50b1a3ef3382542aa2a87e
 FileChecksum: SSDEEP: 384:rrsArslbTiGQO+RYeJoVxqBbzVxPBXE2ktljLc4Lc7438bpWKoc72qhsYTNpW5aw:r/gTiGQNRYenE22pcOc7438bpWK772qo
 FileSize: 22 Kb (22646 bytes)
 FileLOC: 643
+LicenseInfoInFile: BSD
 FileCopyrightText: <text>Copyright 2002 Niels Provos <provos@citi.umich.edu></text>
 
 FileName: ./WIN32-Code/getopt_long.c
@@ -166,6 +172,7 @@ FileChecksum: MD5: 07f8e4e9e3459ca63613104376cad5b3
 FileChecksum: SSDEEP: 192:mOrsArsy+D3lBsWd31BIfU17rD6alR9h3LGqF2U2a4vILRO3tZspKjT8z:prsArsy+bT731BIfMfDfLGklLRO38p5
 FileSize: 14 Kb (14645 bytes)
 FileLOC: 481
+LicenseInfoInFile: BSD
 FileCopyrightText: <text>
 Copyright 2000-2007 Niels Provos <provos@citi.umich.edu>
 Copyright 2007-2012 Niels Provos and Nick Mathewson
@@ -224,6 +231,7 @@ FileChecksum: MD5: 17f20574c0b154d12236d5fbe964f549
 FileChecksum: SSDEEP: 96:kI/bgorYJKrYJs873jZpC94AMauMrwie6jeOG6upQHToG:worsKrss873jjC6AMVMUx6je1QHTf
 FileSize: 4 Kb (4528 bytes)
 LicenseInfoInFile: MIT
+LicenseInfoInFile: BSD
 FileCopyrightText: <text>
 Copyright (c) 2000-2007 Niels Provos <provos@citi.umich.edu>
 Copyright (c) 2007-2012 Niels Provos and Nick Mathewson
@@ -246,6 +254,7 @@ FileChecksum: SHA256: fc8d417b9bf8665334e980071344fca60cfc9814d4a130956d8eb18783
 FileChecksum: MD5: 7a67137daf319f13687011eaf785e061
 FileChecksum: SSDEEP: 384:AOro7xVzY34Cw4qPOqpJcXXEZVZFLTFil8pFUvPLsQ6N1WGWWy2AHKV5A58tXlEF:xMYICRFeq/Gp7I54XlEpb
 FileSize: 29 Kb (30216 bytes)
+LicenseInfoInFile: BSD
 
 FileName: ./ipv6-internal.h
 FileType: SOURCE
@@ -348,6 +357,7 @@ FileChecksum: SHA256: abac540596e0d6eecf20a1e3bd7bf0e2acd75a91f7981494d88f51cc0a
 FileChecksum: MD5: 07e21ab2cc3c6203861c1ac44c73fc22
 FileChecksum: SSDEEP: 768:PEAW7kU7r72TYTqxhYJGnc8lSeDHAOZKkMA:ny2TnxWMnc8QeDHAWMA
 FileSize: 40 Kb (41359 bytes)
+LicenseInfoInFile: BSD
 
 FileName: ./m4/acx_pthread.m4
 FileType: OTHER
@@ -357,6 +367,7 @@ FileChecksum: MD5: 992dee4d8b7ca66ed4e680f39def1b9a
 FileChecksum: SSDEEP: 192:6ZZVlTLG/0Ul7P650HsF5ETT+Crqd6oPViuUuw5KUxRD5kPr50mvwt5L/5GWO/0S:6ZDJGsu7PiL/D6opUJTxRtkP1/vwfNG1
 FileSize: 10 Kb (10928 bytes)
 LicenseInfoInFile: GPL
+LicenseInfoInFile: BSD
 FileCopyrightText: <text>Copyright (c) 2007 Steven G. Johnson <stevenj@alum.mit.edu></text>
 
 FileName: ./m4/libevent_openssl.m4
@@ -390,6 +401,7 @@ FileChecksum: SHA256: 01ee6525ebed38f2097b979c58d6a1749f54307c5afdee810bd6db42b2
 FileChecksum: MD5: 16e7f136bbf8789040c025e5bca03c3d
 FileChecksum: SSDEEP: 384:F3hbRsQ08nrr3qa6EGaNe4whqj3HaPBwKnIUJbH:vbRn3qfEGZ4rj3HaJwKnRtH
 FileSize: 16 Kb (17369 bytes)
+LicenseInfoInFile: BSD
 
 FileName: ./autogen.sh
 FileType: SOURCE
@@ -639,6 +651,7 @@ FileChecksum: MD5: e2cc587a664934be6a8abf0c6f03eedf
 FileChecksum: SSDEEP: 1536:N/l07QwXA1kLWtk+5OOdqoguGC+8/AcXD3M:N/lUQwXAeLWt55zdqowC+8/JXD3M
 FileSize: 78 Kb (80159 bytes)
 FileLOC: 2931
+LicenseInfoInFile: BSD
 FileCopyrightText: <text>
 Copyright (c) 2002-2007 Niels Provos <provos@citi.umich.edu>
 Copyright (c) 2007-2012 Niels Provos and Nick Mathewson
@@ -713,6 +726,7 @@ FileChecksum: SHA256: 125fb64c7e4bee6b3de6666f9dfae424b412d10558c2ae1559e234e76a
 FileChecksum: MD5: 454fa9a8928c90b29b4b8ee256ed6efb
 FileChecksum: SSDEEP: 1536:xutsMx1PEPE3B5giXIr1oEGjjcf79VkXhGl4ZOAYhvCJ43A/uH2i7lGXziIYjVlb:xuRgi414/cf7SPZOAYFCd/uHd2ODhkeD
 FileSize: 81 Kb (83347 bytes)
+LicenseInfoInFile: BSD
 
 FileName: ./ratelim-internal.h
 FileType: SOURCE
@@ -740,6 +754,7 @@ FileChecksum: MD5: 9a5a2cfcd5c5e60dbd49a155340d1e09
 FileChecksum: SSDEEP: 384:KrsArsy+bTZRsrR9Ge9LlqlsVIGkl9HjqBDw9R+qRD4+Kdv3vzMDyuZbumfjD0vN:K/lAT4fG40s8TS0T+wDC3vzMDyE7w84n
 FileSize: 17 Kb (18205 bytes)
 FileLOC: 607
+LicenseInfoInFile: BSD
 FileCopyrightText: <text>
 Copyright (c) 2007-2012 Niels Provos and Nick Mathewson
 Copyright (c) 2002-2006 Niels Provos <provos@citi.umich.edu>
@@ -753,6 +768,7 @@ FileChecksum: MD5: 828e4a5d4f9107ab06235c610d6a2ac3
 FileChecksum: SSDEEP: 96:1IFKOrYJArYJltf3F3zX4TSJ0w+Of/XyW9VvHaWU0N7Fvf0KUHy0/mUmfB:3OrsArsltf3F3r6o0w+Of/XyW9Vv6WH1
 FileSize: 5 Kb (5641 bytes)
 FileLOC: 218
+LicenseInfoInFile: BSD
 FileCopyrightText: <text>
 Copyright (c) 2005-2012 Niels Provos and Nick Mathewson
 Copyright (c) 2000 Dug Song <dugsong@monkey.org>
@@ -825,6 +841,7 @@ FileChecksum: MD5: 9302e3f861041c914cda06da2739eb08
 FileChecksum: SSDEEP: 192:GT8zWs/l3SWd3tEFvLGFmUxX0IjMP+AOtOrnbMldPNJgyR6Yyc0YhieK8:GT86oDbMPYtOzbOsyRtycYf8
 FileSize: 12 Kb (13136 bytes)
 FileLOC: 496
+LicenseInfoInFile: BSD
 FileCopyrightText: <text>
 Copyright (c) 2010 Chris Davis, Niels Provos, and Nick Mathewson
 Copyright (c) 2010-2012 Niels Provos and Nick Mathewson
@@ -869,6 +886,7 @@ FileChecksum: MD5: 89c1ae508566a45d4a1387cb2389ff27
 FileChecksum: SSDEEP: 48:6ocM0OOrYJArYJ3iWPzTW932sXH32s5Et81ZtmVHvUoWk+Jb+Tin8Nu07AZiKQyY:6ocUOrYJArYJy+693L3d/gVcoWZ8Nu0t
 FileSize: 2 Kb (2582 bytes)
 FileLOC: 66
+LicenseInfoInFile: BSD
 FileCopyrightText: <text>Copyright (c) 1998 Todd C. Miller <Todd.Miller@courtesan.com></text>
 
 FileName: ./http.c
@@ -1098,6 +1116,7 @@ FileChecksum: MD5: ffdee61f896ca552f926f96ce56710ee
 FileChecksum: SSDEEP: 768:Z/lATa+MglqtoAr4ZVYnuN5NBriFrkYwdrCXqYoFPS:Z/l0IglqtoAr4ZVYnuN5NBriFrkddCC4
 FileSize: 25 Kb (26205 bytes)
 FileLOC: 588
+LicenseInfoInFile: BSD
 LicenseInfoInFile: Public Domain
 FileCopyrightText: <text>
 Copyright (c) 2006-2007 Niels Provos <provos@citi.umich.edu>
@@ -1126,6 +1145,7 @@ FileChecksum: MD5: 563ae0f22c070019cc4c8966dbfb93f0
 FileChecksum: SSDEEP: 384:OrsArsy+bTFl9y2e/bfZf9+MDKf1cFo0i6IeDzjFQ43rR:O/lATr+Zf9+rc6kPjFQU1
 FileSize: 24 Kb (25125 bytes)
 FileLOC: 691
+LicenseInfoInFile: BSD
 FileCopyrightText: <text>Copyright (c) 2007-2012 Niels Provos and Nick Mathewson</text>
 
 FileName: ./include/event2/http_compat.h
@@ -1211,6 +1231,7 @@ FileChecksum: MD5: 23bf77830a0757ac45d5ffb5ffc5625a
 FileChecksum: SSDEEP: 1536:H/l0DJg8Dd926iV3vdA6g4PxFzTGby/3zFTMnDpTzl:H/laJg8Df26I3/g4b+byLl+NTzl
 FileSize: 60 Kb (62211 bytes)
 FileLOC: 1376
+LicenseInfoInFile: BSD
 FileCopyrightText: <text>
 Copyright (c) 2000-2007 Niels Provos <provos@citi.umich.edu>
 Copyright (c) 2007-2012 Niels Provos and Nick Mathewson
@@ -1648,6 +1669,7 @@ FileChecksum: MD5: e0980facb140097150c7217128dcd7bf
 FileChecksum: SSDEEP: 384:orsArsy+bTTOM2O+Szl07Uf4SNRwGXZTjDO18sD73BjSYiIc6ceM6McTlKRqvFCi:o/lATTOHJgjj453tCl/2Pd1f
 FileSize: 27 Kb (27931 bytes)
 FileLOC: 853
+LicenseInfoInFile: BSD
 FileCopyrightText: <text>
 Copyright (c) 2003-2007 Niels Provos <provos@citi.umich.edu>
 Copyright (c) 2007-2012 Niels Provos and Nick Mathewson
@@ -1843,6 +1865,7 @@ FileChecksum: MD5: 753924b3b40b98f6c41325d523f36a72
 FileChecksum: SSDEEP: 192:1OrsArsy+D3lBsTPgF/ePWf8WGPKuqT0RbW88SLIE:wrsArsy+bTrePQ8CuaYB
 FileSize: 7 Kb (8168 bytes)
 FileLOC: 287
+LicenseInfoInFile: BSD
 FileCopyrightText: <text>
 Copyright 2000-2007 Niels Provos <provos@citi.umich.edu>
 Copyright 2007-2012 Niels Provos and Nick Mathewson
@@ -1869,6 +1892,7 @@ FileChecksum: MD5: d3abcf7ca36676e6af6a2c2ea1faaa64
 FileChecksum: SSDEEP: 192:wOrsArsy+D3lBsdZjnyyHrFCWfeNNqEByZXfeCShb4Ra1:vrsArsy+bTKfkFMeC2
 FileSize: 8 Kb (8707 bytes)
 FileLOC: 283
+LicenseInfoInFile: BSD
 FileCopyrightText: <text>
 Copyright 2000-2007 Niels Provos <provos@citi.umich.edu>
 Copyright 2007-2012 Niels Provos and Nick Mathewson
@@ -1895,6 +1919,7 @@ FileChecksum: SHA256: a4585687d09b5968ee6c327a1ac152f19526a7a0c1e91cdcc1ba1cc032
 FileChecksum: MD5: bcdb69c83110c7cd6901ee3f90bc7462
 FileChecksum: SSDEEP: 384:uGkhd5Vn83oKfTmWF3RHOO/XYF4ndZQQII3Lr55D8eNot7XOCSY/cYT/5v2pbQIQ:RkJ+3o8bRuO/XcodZQQII3Lr5J8vt7XH
 FileSize: 22 Kb (23329 bytes)
+LicenseInfoInFile: BSD
 FileCopyrightText: <text>
 Copyright 2000-2007 Niels Provos
 Copyright 2007-2012 Niels Provos and Nick Mathewson
@@ -1921,6 +1946,7 @@ FileChecksum: MD5: 403449e60c57740bdec0509055e3ad28
 FileChecksum: SSDEEP: 384:5rsArs3vtr3S7Rr5Ywww0N8Ey0HPT1eZUiSTCqSTCLem2Dc82uTjLCh:5/6trC7J5Ywh3Ey071eZUbCTCz
 FileSize: 16 Kb (16674 bytes)
 FileLOC: 428
+LicenseInfoInFile: BSD
 FileCopyrightText: <text>Copyright (c) 1991, 1993</text>
 
 FileName: ./epoll.c
@@ -1967,6 +1993,7 @@ FileChecksum: SHA256: df48f17cf71e561ba7622129584c7a7435502206a6f452312ff87c0c21
 FileChecksum: MD5: 76b72ef605d5dbbbff95f7b5a50adbca
 FileChecksum: SSDEEP: 48:csy+LQIS9blI5u7MrvkyHiINj1vll+j+Bjd17btHY7mT:csy+LQp9hI5u7MrCFu7bNY7mT
 FileSize: 3 Kb (3242 bytes)
+LicenseInfoInFile: BSD
 FileCopyrightText: <text>Copyright 2002-2011 Kitware, Inc.</text>
 
 FileName: ./cmake/CheckPrototypeDefinition.cmake
@@ -2009,6 +2036,7 @@ FileChecksum: SHA256: 85b6dc5fbea3505c9d6774195700cd6ef846503013ac3e9f6b03b776f6
 FileChecksum: MD5: befd15c8d1e62ed3487362314d5c0374
 FileChecksum: SSDEEP: 48:ceuqYwlIXt5iD0CX34qabIobi5iS/euq4CWhiS/guq4CN0iSJSO7:ce4mIXqD0c4qWIo+5r/eY1hr/gYK0rJ/
 FileSize: 1 Kb (1975 bytes)
+LicenseInfoInFile: BSD
 FileCopyrightText: <text>Copyright (c) 2009, Michihiro NAKAJIMA</text>
 
 FileName: ./cmake/LibeventConfig.cmake.in
@@ -2098,6 +2126,7 @@ FileChecksum: SHA256: 3c64190ea1b9ceba1ae2e9fd619c7074c1f76c5c0d2db4fc15e0603c12
 FileChecksum: MD5: 29876bd8a7f1cf23864c3106aaeb2722
 FileChecksum: SSDEEP: 768:xn+0AXFPVHU2z125ADxCrRFjgVyQ16Md/kgou+dIHGdpBhg4wzGsiiGXEUo1GO3y:xnwFPVHU62zFjgL16Mdh+emthg4wzGdr
 FileSize: 42 Kb (43050 bytes)
+LicenseInfoInFile: BSD
 FileCopyrightText: <text>copyright and licensing files for CMake modules. (c259d53</text>
 
 FileName: ./buffer_iocp.c
@@ -2118,6 +2147,7 @@ FileChecksum: MD5: c80dd73ef86810fc3a643132a5549915
 FileChecksum: SSDEEP: 1536:O/l0gRbfLy84JYGMTlSI6zYnq5UTB3B/0KtLhFBGBmvkf30FeL17vcNw5lNw5HPk:O/lNRLy84cfTtp0KdzMeeD
 FileSize: 67 Kb (69383 bytes)
 FileLOC: 2427
+LicenseInfoInFile: BSD
 FileCopyrightText: <text>Copyright (c) 2007-2012 Niels Provos and Nick Mathewson</text>
 
 FileName: ./http-internal.h

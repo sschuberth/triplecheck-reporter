@@ -9,7 +9,7 @@ DataLicense: CC-BY-4.0
 ##-------------------------
 Creator: nuno
 Creator: Tool: TripleCheck 0.9
-Created: 2014-06-14T12:03:31Z
+Created: 2014-06-14T12:32:01Z
 
 ##-------------------------
 ## Package Information
@@ -1093,7 +1093,6 @@ FileChecksum: SHA256: 90063746c9099b104af2fb1161e2c4d136298f1ada234a45400dfca87d
 FileChecksum: MD5: 53e3c407f215246c9ca5bbb4ddd3b958
 FileChecksum: SSDEEP: 768:Cv9VADWZuC7oD978MGDsv5a5JHqXuy4DmZrZuqAmgg195buZ91r4nc:EKb78M4sv5a54XbnuM5buZ91r5
 FileSize: 43 Kb (44959 bytes)
-LicenseInfoInFile: GPL-2.0+
 LicenseInfoInFile: BSD
 FileCopyrightText: <text>
 Copyright (C) 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999,
@@ -1337,7 +1336,6 @@ FileChecksum: SHA256: ee5e20f2c2951571c7f85cf2eb29bf5139361632ebf885c35240e449bf
 FileChecksum: MD5: bb712d42883591dd40cbf059709bac00
 FileChecksum: SSDEEP: 768:cxf1lVZSImoTuJb77Cxm1hVduMD7/13c:cXZtAhduMD7/1s
 FileSize: 33 Kb (34469 bytes)
-LicenseInfoInFile: GPL-2.0+
 LicenseInfoInFile: BSD
 FileCopyrightText: <text>
 Copyright (C) 1992, 1993, 1994, 1995, 1996, 1997, 1998, 1999,
