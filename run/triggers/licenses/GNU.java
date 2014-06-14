@@ -191,8 +191,6 @@ public class GNU implements Trigger {
         }
      }
      
-     
-     
      /**
       * Verifies if this file is just mentioning the AGPL or if this is the
       * license text. We use a specific term that is only found on this context.
@@ -310,9 +308,6 @@ public class GNU implements Trigger {
          // add the license as detected
          addLicense(result);
          isGPL = true;
-         
-         
-         
      };
      
     /**
@@ -347,7 +342,6 @@ public class GNU implements Trigger {
             }
         }
     } 
-
 
 
     /**
@@ -420,9 +414,7 @@ public class GNU implements Trigger {
             addLicense(spdxID + "+");
             return true;
         }
-        
-        //TODO add here the Autoconf exception detection
-        
+
         // iterate some commons variations of how people list licenses
         for(final String variation : listVersionVariations){
             // now build the keyword using the license abbreviation and version
