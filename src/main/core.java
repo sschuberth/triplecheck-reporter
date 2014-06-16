@@ -212,18 +212,6 @@ public class core {
         return new File(getExtensionsFolder(), "unknown");
     }
     
-    
-//    /**
-//     * Send out a warning that our SPDX's have been modified somehow
-//     */
-//    public static void refreshSPDX(){
-//        // find all SPDX files inside our archive
-//        reports.index();
-//        // send a message to the world, warning that things changed
-//        log.write(is.INFO, Messages.RefreshSPDX);
-//    }
-    
-   
-    
+  
     
 }

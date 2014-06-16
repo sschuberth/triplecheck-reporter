@@ -9,7 +9,7 @@ DataLicense: CC-BY-4.0
 ##-------------------------
 Creator: nuno
 Creator: Tool: TripleCheck 0.9
-Created: 2014-06-14T13:56:12Z
+Created: 2014-06-16T12:34:15Z
 
 ##-------------------------
 ## Package Information
@@ -40,7 +40,6 @@ FileChecksum: SHA256: 9c6497f30ca0e318157a7e532f9b018fae7ab3a2dfbe1c4f248b0f34fe
 FileChecksum: MD5: 3ea8ede9ecc6ea7c25f4e48cae311711
 FileChecksum: SSDEEP: 384:+mslFU/J2cNtDaVJr4enRohANI6YD0xbPAWGWe6BtXhZ10Tf4o:eU/JqrNOKlDTGIR2TfR
 FileSize: 25 Kb (26344 bytes)
-LicenseInfoInFile: BSD
 
 FileName: ./signal.c
 FileType: SOURCE
@@ -260,7 +259,6 @@ FileChecksum: SHA256: fc8d417b9bf8665334e980071344fca60cfc9814d4a130956d8eb18783
 FileChecksum: MD5: 7a67137daf319f13687011eaf785e061
 FileChecksum: SSDEEP: 384:AOro7xVzY34Cw4qPOqpJcXXEZVZFLTFil8pFUvPLsQ6N1WGWWy2AHKV5A58tXlEF:xMYICRFeq/Gp7I54XlEpb
 FileSize: 29 Kb (30216 bytes)
-LicenseInfoInFile: BSD
 
 FileName: ./ipv6-internal.h
 FileType: SOURCE
@@ -370,7 +368,6 @@ FileChecksum: SHA256: abac540596e0d6eecf20a1e3bd7bf0e2acd75a91f7981494d88f51cc0a
 FileChecksum: MD5: 07e21ab2cc3c6203861c1ac44c73fc22
 FileChecksum: SSDEEP: 768:PEAW7kU7r72TYTqxhYJGnc8lSeDHAOZKkMA:ny2TnxWMnc8QeDHAWMA
 FileSize: 40 Kb (41359 bytes)
-LicenseInfoInFile: BSD
 
 FileName: ./m4/acx_pthread.m4
 FileType: OTHER
@@ -380,7 +377,6 @@ FileChecksum: MD5: 992dee4d8b7ca66ed4e680f39def1b9a
 FileChecksum: SSDEEP: 192:6ZZVlTLG/0Ul7P650HsF5ETT+Crqd6oPViuUuw5KUxRD5kPr50mvwt5L/5GWO/0S:6ZDJGsu7PiL/D6opUJTxRtkP1/vwfNG1
 FileSize: 10 Kb (10928 bytes)
 LicenseInfoInFile: GPL-3.0-with-autoconf-exception
-LicenseInfoInFile: BSD
 FileCopyrightText: <text>Copyright (c) 2007 Steven G. Johnson <stevenj@alum.mit.edu></text>
 
 FileName: ./m4/libevent_openssl.m4
@@ -414,7 +410,6 @@ FileChecksum: SHA256: 01ee6525ebed38f2097b979c58d6a1749f54307c5afdee810bd6db42b2
 FileChecksum: MD5: 16e7f136bbf8789040c025e5bca03c3d
 FileChecksum: SSDEEP: 384:F3hbRsQ08nrr3qa6EGaNe4whqj3HaPBwKnIUJbH:vbRn3qfEGZ4rj3HaJwKnRtH
 FileSize: 16 Kb (17369 bytes)
-LicenseInfoInFile: BSD
 
 FileName: ./autogen.sh
 FileType: SOURCE
@@ -752,7 +747,6 @@ FileChecksum: SHA256: 125fb64c7e4bee6b3de6666f9dfae424b412d10558c2ae1559e234e76a
 FileChecksum: MD5: 454fa9a8928c90b29b4b8ee256ed6efb
 FileChecksum: SSDEEP: 1536:xutsMx1PEPE3B5giXIr1oEGjjcf79VkXhGl4ZOAYhvCJ43A/uH2i7lGXziIYjVlb:xuRgi414/cf7SPZOAYFCd/uHd2ODhkeD
 FileSize: 81 Kb (83347 bytes)
-LicenseInfoInFile: BSD
 
 FileName: ./ratelim-internal.h
 FileType: SOURCE
@@ -862,22 +856,6 @@ LicenseInfoInFile: BSD-3-Clause
 FileCopyrightText: <text>
 Copyright (c) 2000-2007 Niels Provos <provos@citi.umich.edu>
 Copyright (c) 2007-2012 Niels Provos and Nick Mathewson
-</text>
-
-FileName: ./arc4random.c
-FileType: SOURCE
-FileChecksum: SHA1: 47039d66501842376eef291c2214a6f735b3f1da
-FileChecksum: SHA256: 1c171a2f0db4a11d44fed4a4801ab5e220f3ed92529dd27af3776b9be7f5a9b3
-FileChecksum: MD5: 9302e3f861041c914cda06da2739eb08
-FileChecksum: SSDEEP: 192:GT8zWs/l3SWd3tEFvLGFmUxX0IjMP+AOtOrnbMldPNJgyR6Yyc0YhieK8:GT86oDbMPYtOzbOsyRtycYf8
-FileSize: 12 Kb (13136 bytes)
-FileLOC: 496
-LicenseInfoInFile: ISC
-FileCopyrightText: <text>
-Copyright (c) 2010 Chris Davis, Niels Provos, and Nick Mathewson
-Copyright (c) 2010-2012 Niels Provos and Nick Mathewson
-Copyright (c) 1996, David Mazieres <dm@uun.org>
-Copyright (c) 2008, Damien Miller <djm@openbsd.org>
 </text>
 
 FileName: ./evthread_pthread.c
@@ -2023,7 +2001,6 @@ FileChecksum: SHA256: a4585687d09b5968ee6c327a1ac152f19526a7a0c1e91cdcc1ba1cc032
 FileChecksum: MD5: bcdb69c83110c7cd6901ee3f90bc7462
 FileChecksum: SSDEEP: 384:uGkhd5Vn83oKfTmWF3RHOO/XYF4ndZQQII3Lr55D8eNot7XOCSY/cYT/5v2pbQIQ:RkJ+3o8bRuO/XcodZQQII3Lr5J8vt7XH
 FileSize: 22 Kb (23329 bytes)
-LicenseInfoInFile: BSD
 FileCopyrightText: <text>
 Copyright 2000-2007 Niels Provos
 Copyright 2007-2012 Niels Provos and Nick Mathewson
@@ -2234,7 +2211,6 @@ FileChecksum: SHA256: 3c64190ea1b9ceba1ae2e9fd619c7074c1f76c5c0d2db4fc15e0603c12
 FileChecksum: MD5: 29876bd8a7f1cf23864c3106aaeb2722
 FileChecksum: SSDEEP: 768:xn+0AXFPVHU2z125ADxCrRFjgVyQ16Md/kgou+dIHGdpBhg4wzGsiiGXEUo1GO3y:xnwFPVHU62zFjgL16Mdh+emthg4wzGdr
 FileSize: 42 Kb (43050 bytes)
-LicenseInfoInFile: BSD
 FileCopyrightText: <text>copyright and licensing files for CMake modules. (c259d53</text>
 
 FileName: ./buffer_iocp.c
