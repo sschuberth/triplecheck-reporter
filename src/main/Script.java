@@ -238,7 +238,6 @@ public class Script {
             // run the code        
             runScript.eval(sourceCode);
             
-            
             // react to the case that this is a normal plugin
             if(className.equals(is.plugin)){
                 // extract the plugin object from the script
