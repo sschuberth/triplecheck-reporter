@@ -12,7 +12,10 @@
 
 package main;
 
+import definitions.is;
 import java.io.File;
+import script.log;
+import spdxlib.DocumentCreate2;
 
 /**
  *
@@ -47,6 +50,7 @@ public class cmdLine {
             System.out.println("Processing an SPDX folder/file:");
             createCmdLineSPDX(args[1], args[2]);
             result = true;
+            System.exit(0);
         }
         
         // all done
@@ -63,7 +67,33 @@ public class cmdLine {
         
         // the output file where we store the SPDX information
         final File spdxFile = new File(spdxFileOutput);
+        final File sourceTarget = new File(sourceCodeFolderOrFile);
+
+        // if this is a directory, we can't proceed
+        if(spdxFile.isDirectory()){
+            log.write(is.ERROR, "SPDX file is a folder: %1", 
+                    spdxFile.getAbsolutePath());
+            return;
+        }
+        // if this is a directory, we can't proceed
+        if(sourceTarget.isFile()){
+            log.write(is.ERROR, "Target file not yet supported: %1", 
+                    sourceTarget.getAbsolutePath());
+            return;
+        }
         
+        // delete any previous output file if it exists
+        if(spdxFile.exists()){
+            spdxFile.delete();
+        }
+        
+        // generate the SPDX document
+        log.write(is.INFO, "Generating an SPDX as %1. Using as source: %2"
+                , spdxFile.getName(), sourceTarget.getName());
+        // create the SPDX
+        DocumentCreate2 spdx = new DocumentCreate2();
+        spdx.create(sourceTarget, spdxFile);
+        System.out.println("Processed files: " + spdx.getFilesProcessed());
     }
     
     

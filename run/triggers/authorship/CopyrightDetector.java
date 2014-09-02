@@ -116,6 +116,9 @@ public class CopyrightDetector implements Trigger {
             }
         }
         
+        // clean up some text that is not needed
+        copyright = copyright.replaceAll("( |)</text>", "");
+        
          // lock this value
         copyrightText = copyright;
    

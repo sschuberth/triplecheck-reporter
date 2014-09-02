@@ -1,0 +1,531 @@
+##-------------------------
+## SPDX Document Information
+##-------------------------
+SPDXVersion: SPDX-1.2
+DataLicense: CC-BY-4.0
+
+##-------------------------
+## Creation Information
+##-------------------------
+Creator: nuno
+Creator: Tool: TripleCheck 0.9
+Created: 2014-09-02T17:45:26Z
+
+##-------------------------
+## Package Information
+##-------------------------
+PackageName: plugins
+
+##-------------------------
+## File Information
+##-------------------------
+FileName: ./basic/gear.png
+FileType: OTHER
+FileChecksum: SHA1: 143ff96999ba5bc5ad6c7ccac78b78d2da754eee
+FileChecksum: SHA256: 544f3d92a4e47518a9c85789696e65b4bf84075db2f13469e6233a22bdbd8d3e
+FileChecksum: MD5: b5a63644725182b7b8eb3faf2b24188e
+FileChecksum: SSDEEP: 24:L74EbdX7UlRknzUEPyiFqRY1ZHrAbcc07ztqLf/3ESNb4hL:LnbdX740ZP7AREZLg8JqNNb4hL
+FileSize: 1 Kb (1341 bytes)
+
+FileName: ./basic/help.html
+FileType: SOURCE
+FileChecksum: SHA1: dc3a7e279047d935fd772fcdc37d596eda18b861
+FileChecksum: SHA256: 6fb0949df72263849c647c0fff972f0b2f386e870a2dca01e3fe86c56960c2e1
+FileChecksum: MD5: 8447171837527bc8610fd5c3482f1ee6
+FileChecksum: SSDEEP: 96:KTdgyQdViOApRHqpwhI97gp9yXOECW3+78ii0/H4l4yj1hTePk2ujZgXv/0ivPXk:KTdgVViXpRHs70/U3+QCHxupjSjkz
+FileSize: 6 Kb (6717 bytes)
+FileLOC: 115
+FileCopyrightText: <text>copyright on the provided</text>
+
+FileName: ./basic/home.java
+FileType: SOURCE
+FileChecksum: SHA1: 4e049cb88f150588c97e5785f8a5c81f87a0e688
+FileChecksum: SHA256: 6e696bfaff527501c742fe38e7815db5295b2ed00eaf1e649d970afa77a629ad
+FileChecksum: MD5: 4f118fe2ac39861b2da9d576846f68f6
+FileChecksum: SSDEEP: 96:lhajUdgvhf7yor13wBPrbhzmERBRfhBEwf:TajUdAhf7y+13avhdRBR5BEwf
+FileSize: 4 Kb (4531 bytes)
+FileLOC: 141
+FileCopyrightText: <text>Copyright (c) 2014 Nuno Brito, TripleCheck</text>
+LicenseInfoInFile: GPL-2.0
+
+FileName: ./basic/logo.png
+FileType: OTHER
+FileChecksum: SHA1: 14e99211761165b07526c7139be2c88fa6410c52
+FileChecksum: SHA256: 7da3c402e19aadf4a36449e22112bec4867600290b7ee222f615df962556f11a
+FileChecksum: MD5: d69974bfbb399f4b08cc507520778efd
+FileChecksum: SSDEEP: 96:2SpgRTV5ciLN9SFNCH45ZiIFhlp+jasM5ArG2lgO:2SpgRT1Z9wY4GUDsF6Ai2lgO
+FileSize: 3 Kb (3433 bytes)
+
+FileName: ./basic/nodeTools.java
+FileType: SOURCE
+FileChecksum: SHA1: b9813716a3cefbd0bfa864845c86cf64ded2ee88
+FileChecksum: SHA256: 880c4f07b9866bd85380f84e4f88b6194c94dcb80c41299d94261d3528292a28
+FileChecksum: MD5: b97ab882111eefb41b7a0f21e3907a85
+FileChecksum: SSDEEP: 96:XhYDUjnf6xuihtXzCwYV0RNixuTM5qfuCFjekvCdRKLHz1r:xYDUz6wogwgKN6uTM5qvFjmdRQT9
+FileSize: 3 Kb (3769 bytes)
+FileLOC: 115
+FileCopyrightText: <text>Copyright 2013 Nuno Brito, TripleCheck</text>
+
+FileName: ./basic/notasks.html
+FileType: SOURCE
+FileChecksum: SHA1: dff08eeb81ce1847a25cca4911c51d6d6e298226
+FileChecksum: SHA256: 09ad7a9249b2f3204cd3cf7e993ab5a76e9e86a0ec1eeb9250c4d497e036bf3b
+FileChecksum: MD5: f2bafa3d95033161166ca170c3b28b6f
+FileChecksum: SSDEEP: 12:hnMQtJOo9qvygpf7rmwbechvhkonZvWVLVrKsxGu:hMC6vy6z7Zhfqb
+FileSize: 464 bytes
+FileLOC: 26
+
+FileName: ./basic/pluginDeletePerson.old
+FileType: OTHER
+FileChecksum: SHA1: 1fbb65fe1c5a4a21619597751e09cfdc71f296c8
+FileChecksum: SHA256: e733e044a4553a39d176baef4a2b9c8380794b8f342db2931071f40b0abd4f13
+FileChecksum: MD5: 54fead1600e4d91fcd5374a1c920ef09
+FileChecksum: SSDEEP: 96:XLAG736SWjgSxTg04sFsFB0GWD6fOnia6zlU6F0TE85v:7A47yPNg0F6FB0GW+fOnia6z70TE4v
+FileSize: 3 Kb (3788 bytes)
+FileCopyrightText: <text>Copyright 2013 Nuno Brito, TripleCheck</text>
+
+FileName: ./basic/pluginSearch.java
+FileType: SOURCE
+FileChecksum: SHA1: 9ccca45b7b5601636f1c9f7a1a71088310c6864d
+FileChecksum: SHA256: a29aae1b6d39a4a4216e026303d911dc882a97f1391fcf2e748350ce05898646
+FileChecksum: MD5: c62565cca823413fd90006a31589207a
+FileChecksum: SSDEEP: 192:xYpU2BIIipK6qc/grysuGphyJB2WqurN03sbqjbcHQYRD011Ez6yU96YEhpUkUi1:xYmGIIPVDAPr4MuY96wAffaF
+FileSize: 16 Kb (16474 bytes)
+FileLOC: 463
+FileCopyrightText: <text>Copyright 2013 Nuno Brito, TripleCheck</text>
+
+FileName: ./basic/status.java
+FileType: SOURCE
+FileChecksum: SHA1: 2f0c1a294e45de37673b06a889712a357acce4e2
+FileChecksum: SHA256: b2bb0812d51055c1d9722ee9b3ee1790b952cf924c9f052749c965d0aba97bf7
+FileChecksum: MD5: db417be590087cb27dd5c000ffba8e33
+FileChecksum: SSDEEP: 192:Ta2UYhGmo15eVDC1z7nOc+J8y6OY6ulT86GyNFGERDAv:TaNYyYuBU
+FileSize: 6 Kb (6671 bytes)
+FileLOC: 213
+FileCopyrightText: <text>Copyright (c) 2013 Nuno Brito, TripleCheck</text>
+
+FileName: ./basic/ToolsLog.java
+FileType: SOURCE
+FileChecksum: SHA1: cb2401c18168d4408a91728a620072766d87bf3e
+FileChecksum: SHA256: 11a3aadf4d46a04b79c6b85d2721a7a63702e128585c184060f624dd5bf008f4
+FileChecksum: MD5: 3657d14fc531acb539e54be88b50523f
+FileChecksum: SSDEEP: 48:XhYAmzw4Uh/6jrwhoiI6/HuTEy1U/HcSbx:XhYjUhyj0iih2TI0Ex
+FileSize: 1 Kb (1938 bytes)
+FileLOC: 59
+FileCopyrightText: <text>Copyright 2013 Nuno Brito, TripleCheck</text>
+
+FileName: ./basic/triplecheck-logo.png
+FileType: OTHER
+FileChecksum: SHA1: 2be7804adc0926aff3f86bd44d9ccc40c20730a8
+FileChecksum: SHA256: 3ff828b0fc56b16b0f13b5475b5d970fb529af8fb1beee2bcf3323bd15580088
+FileChecksum: MD5: 3e7d6907ec95e7ab08f111913ef85a25
+FileChecksum: SSDEEP: 96:sAnpbjVasOH4czcIIofbssSj/cg3smiyS9y8/m/CMiCLi:sAbAGofbsPt+NGC4i
+FileSize: 4 Kb (4507 bytes)
+
+FileName: ./components/choose.java
+FileType: SOURCE
+FileChecksum: SHA1: 2bf5a86d75559207ae9f8b61e9856a1b55899475
+FileChecksum: SHA256: 4850fa39d395b7a09980231c377926e9ef2947079d49fb6142bdc71bb2b029b8
+FileChecksum: MD5: 9f732ae8a5f48e1f77b9c4e9eaf96fd5
+FileChecksum: SSDEEP: 96:XhYkUvFpOv2uexKmmLMqDYFhF70aO3yIMkcKmO8KaCfQgGh4v:xYkUHOuuexKZJDYddO3YkcKZRQph4v
+FileSize: 4 Kb (4828 bytes)
+FileLOC: 149
+FileCopyrightText: <text>Copyright 2014 Nuno Brito, TripleCheck</text>
+
+FileName: ./components/chooseComponent.html
+FileType: SOURCE
+FileChecksum: SHA1: 81105e1e9bd9a4471260b2dd93629edabe79dda6
+FileChecksum: SHA256: e34a8464b071cc8f3331f39d5d87385db06ea63471743e8afbcb1611787743aa
+FileChecksum: MD5: b7d6fc035b249b3dc999a2c5581273d5
+FileChecksum: SSDEEP: 6:hn8FQtJCc4svmo9qvyW3tmNWR0NNEXW0YXlpNrOzUKfK4Mw+BKH0QiQLo35ZXWXJ:hnMQtJOo9qvyg0f1TrKKvdq0W85GGu
+FileSize: 352 bytes
+FileLOC: 20
+
+FileName: ./components/createNew.html
+FileType: SOURCE
+FileChecksum: SHA1: 3ec0309724262909d675febe6210850978300075
+FileChecksum: SHA256: 07c22112ac158721638bc5744e4969120812cbf319d671536bc10a1f35b4c5ce
+FileChecksum: MD5: ae6b35b396ad7ba8c2da4c93037ea626
+FileChecksum: SSDEEP: 24:Wc+HztidXSDarkbGxpD9sHDIZTOv3KhhspsYj9huTYqV/YqVzc39WhhWf:X+Tr7DATO3ghUqFNc3qq
+FileSize: 2 Kb (2125 bytes)
+FileLOC: 139
+
+FileName: ./components/createNew.java
+FileType: SOURCE
+FileChecksum: SHA1: bb564b088e9726982d436d9999503b0626ab5c5c
+FileChecksum: SHA256: ae936bcc938f718b282eecbf48b367cc843cbd44c27de89924e546a64925d578
+FileChecksum: MD5: abc5f250ccfe04c8a32c9f598b6a3e93
+FileChecksum: SSDEEP: 96:lhaJU8jNUgfk3C77wOq2m9XcPqFRCaOSAv:TaJU8jNUgfk3C77wOq2m9XcPqGaOSAv
+FileSize: 3 Kb (3254 bytes)
+FileLOC: 93
+FileCopyrightText: <text>Copyright (c) 2014 Nuno Brito, TripleCheck</text>
+
+FileName: ./components/export.java
+FileType: SOURCE
+FileChecksum: SHA1: 2d9f535b90ffce084fecba7cb4598e311acebcfa
+FileChecksum: SHA256: 07f7d1b077835bfc9eed3b9b5af29f35caca19ea66a35693d697a62097e9c16d
+FileChecksum: MD5: 1c449baffa3e115f1a89ac82ab86f1a9
+FileChecksum: SSDEEP: 192:TayUkO7ezJfO0O2UjDsIEEGcoUyNmXRfDoUyC4v:TaBNaV74+mXBm
+FileSize: 8 Kb (8279 bytes)
+FileLOC: 228
+FileCopyrightText: <text>Copyright (c) 2014 Nuno Brito, TripleCheck</text>
+
+FileName: ./components/searchComponents.java
+FileType: SOURCE
+FileChecksum: SHA1: 8ff17f3820e5306ed6cf2033486cd13f6e41a905
+FileChecksum: SHA256: 413745233437096820b135b93ea5baca1582f09b268508135a1d14333939323f
+FileChecksum: MD5: 92f90166012d818107ce3d975e5875ba
+FileChecksum: SSDEEP: 24:lhh4bIzwvUq/9IPbyYgMFscrkmylaRQl/pLMHytRtN1aQQIAv:lhabIzwvUqpYgErjyqaLMHAfAv
+FileSize: 1 Kb (1648 bytes)
+FileLOC: 53
+FileCopyrightText: <text>Copyright (c) 2014 Nuno Brito, TripleCheck</text>
+
+FileName: ./components/showComponent.java
+FileType: SOURCE
+FileChecksum: SHA1: 4b6ec58b515d312e10cefb70a81da5f68dd472e3
+FileChecksum: SHA256: 6166688ca3f807587ec32a26859dca5f4c18df806061a9584dda2de2c6e1db38
+FileChecksum: MD5: 67777dc6df8012fb073f3fe38053304b
+FileChecksum: SSDEEP: 48:lhabIzwvUq5TTEb/0QHXikXeLEk0SM/Kwe:lha3UqdeVSkuQk0rC
+FileSize: 1 Kb (1944 bytes)
+FileLOC: 63
+FileCopyrightText: <text>Copyright (c) 2014 Nuno Brito, TripleCheck</text>
+
+FileName: ./components/showComponents.java
+FileType: SOURCE
+FileChecksum: SHA1: 3938bcc307e08fae56a591708fe4c2b88da343ce
+FileChecksum: SHA256: 355df967088e0c928fe02eeecee123d523b0eb8ebc7aba8189e3e51921ce6621
+FileChecksum: MD5: 763525ac8a77049c8308c8acdcc84d9e
+FileChecksum: SSDEEP: 48:lhabIzwvUqWL/TlPhoiI6/HgTVicdg/lFGC5Eb/0bb0lPk:lha3UqYhPiihuGeC5e40lc
+FileSize: 2 Kb (2224 bytes)
+FileLOC: 74
+FileCopyrightText: <text>Copyright (c) 2014 Nuno Brito, TripleCheck</text>
+
+FileName: ./components/summary.java
+FileType: SOURCE
+FileChecksum: SHA1: deab65e1a324c3af28ddad29a42187148c858636
+FileChecksum: SHA256: c2e932ab769506ed9f59b917b2099fa29d4a5c53515a323c2e92f4f45c3c1fd0
+FileChecksum: MD5: 902b7131ef4a21a890b3a65fa7e6ac7a
+FileChecksum: SSDEEP: 24:lhh427zwvUnsQoOZZmiyk2E4RE/0KgX6RPzGCIGuxFr+ti:lha27zwvUnsQX6TfEb/096J6CwFGi
+FileSize: 1 Kb (1523 bytes)
+FileLOC: 51
+FileCopyrightText: <text>Copyright (c) 2014 Nuno Brito, TripleCheck</text>
+
+FileName: ./components/temp.html
+FileType: SOURCE
+FileChecksum: SHA1: 015db3a872e29ff62fa747d4eec11d0364051425
+FileChecksum: SHA256: 1b582dead236ad35be92ab38b4e2961a09b24ed48b855e0240a653de45de4dd6
+FileChecksum: MD5: 9e5e9d3b062b41ce063a29f58b8c9e1b
+FileChecksum: SSDEEP: 96:CxVMq5ib+c6+j2nwWYkaHDYhR0PPGFCKVcgYAOGLjy:CxVMiCJ6+anekajkAKvGgpXL2
+FileSize: 3 Kb (3336 bytes)
+FileLOC: 33
+
+FileName: ./favicon.ico
+FileType: OTHER
+FileChecksum: SHA1: e4765d69ff749edf9baf079d824ec2099512bf9b
+FileChecksum: SHA256: ab4f9d8623ac8fced8fd3110105b44308e0c5fb43bf181568aa8f74c25125d4e
+FileChecksum: MD5: 380e01137f1e9633c2ab68d52d2c555f
+FileChecksum: SSDEEP: 12:7TwHJNcraFg3wtLfs4DutaDJWjxavkB1YmAxpNW3Xpq55555555555555R:7T+NcraS3w/Aw2xavk/YpmkN
+FileSize: 1 Kb (1150 bytes)
+
+FileName: ./licenses/choose.java
+FileType: SOURCE
+FileChecksum: SHA1: 53976e574a77d067b2f993c53e55b9c9ea580550
+FileChecksum: SHA256: f0ae23d39d64fe7399e02d68c3f32c15bde6a795752aea44903d7e7c195234e4
+FileChecksum: MD5: c887c19ab42d43bb35f7b17fe77f0bae
+FileChecksum: SSDEEP: 96:XhYkUaTFexKm6LMC8+FAc49KdCs6JKZgYGi2x02Xi1iq0xYpwxgzFr2HWtUO1NWY:xYkUaTFexKFh8+Fh49KYs+KZUxnigqMe
+FileSize: 5 Kb (5934 bytes)
+FileLOC: 171
+FileCopyrightText: <text>Copyright 2014 Nuno Brito, TripleCheck</text>
+
+FileName: ./licenses/search-licenses-02.png
+FileType: OTHER
+FileChecksum: SHA1: 7a1abd3a455584627fd1cdd7e48712d3f156be4f
+FileChecksum: SHA256: 0fd6fcd368bde88ef964236e3f54e697aa9e2c132e419c9bb3dc1a12524f7ec8
+FileChecksum: MD5: be4efb61a2b5542522d658de1189dd77
+FileChecksum: SSDEEP: 384:cqU1nIzJeNwGZgGmSgvrmcDBmSzGCzED7DXFHx+9cMSk:bUIteWUmDvrTNkCgD7Rgd
+FileSize: 18 Kb (18963 bytes)
+
+FileName: ./licenses/search.java
+FileType: SOURCE
+FileChecksum: SHA1: 49a8803656e0ee21df29a7301b287b2b3f41a9af
+FileChecksum: SHA256: 81834f4fb0efa5130b80b41893fd4dc55d5dc692d7a35b479084d068a17e780a
+FileChecksum: MD5: 6a3dacd998053c58b7f09a53e28534ed
+FileChecksum: SSDEEP: 48:lhat7P7zwvUwDm1hZErviI6/H0t5Eb/0bb08C1aLMCFcHv0qM/Kw54v:lhaAUh1Mjihy5e408xLMCFkcjl4v
+FileSize: 2 Kb (2785 bytes)
+FileLOC: 92
+FileCopyrightText: <text>Copyright (c) 2014 Nuno Brito, TripleCheck</text>
+
+FileName: ./licenses/searchLicenses.html
+FileType: SOURCE
+FileChecksum: SHA1: 8751f2767a0371117b815b118ec586b2fa11b261
+FileChecksum: SHA256: ec031f0434f3afac2117cf23c6b1be1466545fb9fae5059a88896c68d4673daa
+FileChecksum: MD5: 478294c77d5734a8c8796bfbdb21733b
+FileChecksum: SSDEEP: 12:BMQbwNxMtAmo3+q+jk64VAo65mn4wTvEA/6WhX:WTymt+7jk6qKAnlLEASu
+FileSize: 563 bytes
+FileLOC: 15
+
+FileName: ./spdx/actions.java
+FileType: SOURCE
+FileChecksum: SHA1: c771ce9e074db98e1b77a6d0f1e8a2a8c0ac1ea6
+FileChecksum: SHA256: 387c9781608c5b60e83e1e78c202214f74974194c1d624232b197e21a02947eb
+FileChecksum: MD5: 8606749e63577d3599c206e1119acaa2
+FileChecksum: SSDEEP: 96:XhYhUokZMexKN3pZitki7mRxsbIxFPmsDGqfIVCGNC+bnC8mCWKWsuiAv:xYhUokZMexKFpZi+i7m/sbUFPmsDGqI+
+FileSize: 5 Kb (5713 bytes)
+FileLOC: 182
+FileCopyrightText: <text>Copyright 2014 Nuno Brito, TripleCheck</text>
+
+FileName: ./spdx/authorship.java
+FileType: SOURCE
+FileChecksum: SHA1: abc80ec8f19bb9b2fb6648f81e43af29f46cedc8
+FileChecksum: SHA256: da9e53e060f1cde9d3e4bd01adaed3f0cabb6918ca95ff2920b050b13fdb1855
+FileChecksum: MD5: 8ab8cdf3786eac552eb29f7accbd25cc
+FileChecksum: SSDEEP: 24:lhh4sT0zwvUt3cAbu8gykmUE4RE/0KywsYiRkdy6mifvJtt1dyv:lhasT0zwvUt39DUEb/00sDkdy6n38v
+FileSize: 1 Kb (1499 bytes)
+FileLOC: 49
+FileCopyrightText: <text>Copyright (c) 2014 Nuno Brito, TripleCheck</text>
+
+FileName: ./spdx/chart.png
+FileType: OTHER
+FileChecksum: SHA1: 5704e270a1b069560489d9025f4276f296c0c2bf
+FileChecksum: SHA256: 2ee0ea8e549400bd80172d04c8996fbd62f78500accdf90b5ed33cd9cc5f1f91
+FileChecksum: MD5: 36e388637244add2a63b2a2cf1d87634
+FileChecksum: SSDEEP: 192:amyiraaVzyLW8ZwsMHriVIs7iWACTvrlxV:PVrHxGZwV0IyhNb
+FileSize: 6 Kb (7038 bytes)
+
+FileName: ./spdx/create.java
+FileType: SOURCE
+FileChecksum: SHA1: 171ed0c02f9098b21aa91975b752057959bf37f5
+FileChecksum: SHA256: fd4c376fbce053c2c0b986ae03781a7f8245e9f6a003b87850c2666214fe492e
+FileChecksum: MD5: 0a100e551f291fe2bae66c03ca9ebc89
+FileChecksum: SSDEEP: 192:xYZUjD281No6TzCB5TaX1PnQWxUIl2KkCU/bEsCc+I7Q67sap4KOmaooRDGOtMSa:xYW3281aqYnKkCKOB/oEXFKuCenC
+FileSize: 23 Kb (23644 bytes)
+FileLOC: 632
+FileCopyrightText: <text>Copyright 2013 Nuno Brito, TripleCheck</text>
+
+FileName: ./spdx/document-text.png
+FileType: OTHER
+FileChecksum: SHA1: 6c6d3eebe55990d10f300c45908b89c7cc61400f
+FileChecksum: SHA256: db8de7edff04844dd005aa3be7089f9f16c2fe3a9f03149018d4476c1de6b388
+FileChecksum: MD5: 31af871006b00e312cf6636945fb3661
+FileChecksum: SSDEEP: 12:6v/7gr9sDX6V+hxYA6tL15KiBxgTLEo2r0n5QrWX569d3wdSU6RGd/nrwWG4zyE:R98XQ+/YA0L/PxgTQo2gnke6bwcGRF5
+FileSize: 758 bytes
+
+FileName: ./spdx/exclamation.png
+FileType: OTHER
+FileChecksum: SHA1: af648552ed018d5f54543fb78201cd06117ced36
+FileChecksum: SHA256: a99dc1bb8724245ecb3fff10a6ff39e4b1c5064e11229bbfd7a509922f550640
+FileChecksum: MD5: a0eba467cf03bdc2b5ed8c62ab65983c
+FileChecksum: SSDEEP: 24:j3pud+9/mhP5RfgwGe6G9nHYqsPA+rU3uZVCFODGg3ePPdy/RcQvrz:jEI9ehPXof3cn4qs4+o3yDGgMdy5cU
+FileSize: 1 Kb (1440 bytes)
+
+FileName: ./spdx/folder-horizontal-open.png
+FileType: OTHER
+FileChecksum: SHA1: 67f3ec796257c535895232129f7f791dbe33c13f
+FileChecksum: SHA256: 1156160b25c900ff4e425b1a8c2c995636ffdc08efbc71f5c2027d791edee573
+FileChecksum: MD5: 838cb1eedd8fa64c941fc3a49fd0cc82
+FileChecksum: SSDEEP: 12:6v/72hnkl5i2peUHYXXNS5a4mr/4HQkFiYY4cu3nRJtsc:Fklw2puXd+z8QH1FC4fhJtsc
+FileSize: 511 bytes
+
+FileName: ./spdx/geolocation.png
+FileType: OTHER
+FileChecksum: SHA1: b4ab8c748314fe9f7c86de6b5f793f9fe2be2755
+FileChecksum: SHA256: 6992aa7cd8632b05547ece1280b3a6a4b3e94d4fe83e8976cb5d05ea586b12b8
+FileChecksum: MD5: 87e10dd0119ef1af9a4a5bfcfde66882
+FileChecksum: SSDEEP: 12:6v/72jideLPH2sIIhcNkCgVVop0dkKDCYmbTJODYtaYaN:3qeIjtgVVop0dkKDCYm2Yk
+FileSize: 436 bytes
+
+FileName: ./spdx/refresh.java
+FileType: SOURCE
+FileChecksum: SHA1: 6fbd17afa14610311b321be5da81cedd59e4c399
+FileChecksum: SHA256: f8bd9bcb66a1c76623fff4bcf99bc81bdc58b92d508f31ab3157dd05ee570959
+FileChecksum: MD5: c03099a3934e55aa717a73e14eee45a2
+FileChecksum: SSDEEP: 24:lhh4AGzwvUNoj0HdLZZmmyrcE4RE/0KgX6RPzHCIxmuoFoXti:lhaAGzwvUNJ6nIEb/096JDCCeFSi
+FileSize: 1 Kb (1556 bytes)
+FileLOC: 52
+FileCopyrightText: <text>Copyright (c) 2014 Nuno Brito, TripleCheck</text>
+
+FileName: ./spdx/settings.java
+FileType: SOURCE
+FileChecksum: SHA1: 7bbefdbb5f14a3f73e116c901f76e69113c220a2
+FileChecksum: SHA256: 2192b7c05920a1ca3b0bdd98d7c17504e1320ea91431f5658a61189ca6f58d34
+FileChecksum: MD5: 2336be0b4ac46870de4eea8e3ba3a1c9
+FileChecksum: SSDEEP: 48:lhaXMzwvUtfz/SnJE//00spkjhK0BXeuj/Uy6ch9xf8KtztM/R+b3cCK9Cdq2iR4:lhaXUtb+MepkjhKWeEsS6sOTCGRGv
+FileSize: 3 Kb (3421 bytes)
+FileLOC: 102
+FileCopyrightText: <text>Copyright (c) 2014 Nuno Brito, TripleCheck</text>
+
+FileName: ./spdx/show.java
+FileType: SOURCE
+FileChecksum: SHA1: 4abf6fd5dcd44a2fb357b9eb891802193713da96
+FileChecksum: SHA256: 9084a83de2e70c00737721abe67253ecb68ae3552adae4adbc4f709b336669dd
+FileChecksum: MD5: a441d022f2b738de0b5b7919d11713c4
+FileChecksum: SSDEEP: 192:xYOUFNPpEUZI5DeLbG8CD8gnV537zkiLwWriGMBzUy00f8lyQfLqlq1Qozbt2JR8:xY1Kss7TeBrSZYJ/Rwy3kViM4LvGN
+FileSize: 19 Kb (19825 bytes)
+FileLOC: 574
+FileCopyrightText: <text>Copyright 2013 Nuno Brito, TripleCheck</text>
+
+FileName: ./spdx/showFileDetails.java
+FileType: SOURCE
+FileChecksum: SHA1: 69fbc0255ba491c30508f46036cee7b5581235b7
+FileChecksum: SHA256: 8f95fbe0439c0117fa59b7a463171ce4da37e896441105eebce4f153aa11dce3
+FileChecksum: MD5: 58b60651b6725c332ab27675256b85bf
+FileChecksum: SSDEEP: 192:xYuTBUGxSlpJTWtMSYVTiyTzo7mwOeEqhtcT9cBcfA9mLTRUFT/v8knZ3X3VzksE:xYFGkn7xQ/HvMUdvnkj2jVfTAfqgb
+FileSize: 15 Kb (15753 bytes)
+FileLOC: 439
+FileCopyrightText: <text>
+Copyright 2013 Nuno Brito, TripleCheck
+Copyright text",file.tagFileCopyrightText.toString())
+copyright data when it is available
+copyright = fileInfo.getFileCopyrightText();
+copyright == null || copyright.isEmpty()){
+copyright = html.br
+</text>
+
+FileName: ./spdx/showProductDetails.java
+FileType: SOURCE
+FileChecksum: SHA1: ab7c34147c8c501b2deb919db429f2e711bf02a5
+FileChecksum: SHA256: a1af26a29dff1f1414b4dd93fb8db528cb398aa8841c3793871964061209774e
+FileChecksum: MD5: 410a88ba8fe93945f0f9f07e11d9ff99
+FileChecksum: SSDEEP: 384:xYcOXU6ShOfK/cLUZ6aWKJSKrr+XsSBDdUQ:v0U6S8fK/AUZlBHr+XsSBDdUQ
+FileSize: 15 Kb (16362 bytes)
+FileLOC: 455
+FileCopyrightText: <text>Copyright 2013 Nuno Brito, TripleCheck</text>
+
+FileName: ./spdx/spdxBatch.html
+FileType: SOURCE
+FileChecksum: SHA1: b60261d47ee52d8cbe9bfc6dcd30faf66c6913e0
+FileChecksum: SHA256: 61df9ea39e4cc216405850bc4e192d83a079642a0a1688729586e6a3a5f3ecc3
+FileChecksum: MD5: 1b31f14b57c6be1e65aee3ed576c2126
+FileChecksum: SSDEEP: 12:BMQbwGg2hsEsPK9o1xBFOQLOw3VxPXj7Am4IfdZ0vRL7Jg5SwhlPt3MvYZSmEBZ3:Wcvh7s3fiw3VtPAmPDCFg5SwXt/ABZ3
+FileSize: 885 bytes
+FileLOC: 40
+
+FileName: ./spdx/spdxDialog.html
+FileType: SOURCE
+FileChecksum: SHA1: d98d04aa98469597dce3503f9843574f8a618225
+FileChecksum: SHA256: 026d86d6f16039a1bf3d3b58aebc21e2fdb5b1f3bb8819a1c030598d7b5084b1
+FileChecksum: MD5: 4be2f69acb201f56b1fd1b4ba6710d28
+FileChecksum: SSDEEP: 24:Wc6Z4fQKL0SYHkQ3xfSIygSTgxSbpRx/nDLsayMxm6+BDBZidR:X6+fbggQhvSTgGRt+MxF+hKv
+FileSize: 1 Kb (1213 bytes)
+FileLOC: 41
+
+FileName: ./spdx/spdxFolder.html
+FileType: SOURCE
+FileChecksum: SHA1: 71f9df3d4c9661fc18ac3f43e6636bbceb62ade0
+FileChecksum: SHA256: f910d61dc3dad7babecbf444d04989e66583296ec9bdcb0483e2a5d2c87ea7e8
+FileChecksum: MD5: a0260085ddb170fc8a3abef4031edad6
+FileChecksum: SSDEEP: 12:VVqbXK9o1x1hLZ0veeL7Jg5Swhl8Vt3MvYZSmEBZS9l9dXVCv0vGu:6f1DoFg5SwKt/ABZU9X
+FileSize: 598 bytes
+FileLOC: 32
+
+FileName: ./spdx/spdxMain.html
+FileType: SOURCE
+FileChecksum: SHA1: 1c312d40405962aaf332383a4491470656ec3e56
+FileChecksum: SHA256: 9df4705118518e4e6bb9ad21b18998575d2e543424785533ee860f064e38bbe8
+FileChecksum: MD5: 1c778770e592b2930e095e3da525fb81
+FileChecksum: SSDEEP: 12:BMQbwNxDhT6QTPQHbxJb01NodLcaJlvDqx1gDoAYpSwnEAYsKZ6:WT1ZvQHzb0ILhJ1Dqx6fYAMYhE
+FileSize: 584 bytes
+FileLOC: 10
+
+FileName: ./spdx/spdxSettings.html
+FileType: SOURCE
+FileChecksum: SHA1: 59b482c31c697e0055c80d1cdc3092f416e4cca1
+FileChecksum: SHA256: ad6ebfa536af64e59d70349f641866c91c6ae3a7c58c06eaa973fbf909bf602d
+FileChecksum: MD5: 64762bb867346dbe2a2fd8b4d8d75046
+FileChecksum: SSDEEP: 12:BMQbwNxY9FbAAR72kkoBw6ZBaumneLBqEL2E/Gt3MeoPlLFMy6C:WTO7kAZxTBa8BqEL2HtcZ9Ky6C
+FileSize: 599 bytes
+FileLOC: 17
+
+FileName: ./spdx/temp.html
+FileType: SOURCE
+FileChecksum: SHA1: 6bcda53483c741aa2a0db601e0e7aa184f6c89ae
+FileChecksum: SHA256: a0f5b3afeb5b70be186fdb215a23b5d209d857dd36ff33cd5219b94804c07ed3
+FileChecksum: MD5: 9f714a8049ad8214fcc8b4bbebad58c7
+FileChecksum: SSDEEP: 12:BMQbwNxY9FbAAR72kkoBw6ZBaumneLBqEL2E/dt3MeoPlLFMy6C:WTO7kAZxTBa8BqEL26tcZ9Ky6C
+FileSize: 586 bytes
+FileLOC: 17
+
+FileName: ./spdx/wand.png
+FileType: OTHER
+FileChecksum: SHA1: 426d93e3f0e8bc53d765951e0315806e5d4ad7ef
+FileChecksum: SHA256: b34e1ca6a220f1f5eb655c06e832fb95320f4c284c8c00dfcf5cf7bff79a319a
+FileChecksum: MD5: a490e15903150bcfbb3ceac04f45634e
+FileChecksum: SSDEEP: 24:JYQqnvOMb9BYdXT9mrAV7qa7NY9RnMmYEDu8v9:SQYxMRc6ea7Ath9
+FileSize: 983 bytes
+
+FileName: ./spdx/wooden-box-label.png
+FileType: OTHER
+FileChecksum: SHA1: a19a906de59d88fa142bc6c5d6959f4d1ef37ee9
+FileChecksum: SHA256: 8b5eb0659fd7cb72ce7557de0d529ac463d6af1a6f2b0a2503a0e4988c601539
+FileChecksum: MD5: 522d1c57d2e8adfc950c2d18d4072227
+FileChecksum: SSDEEP: 12:6v/7grhQSdn0LybPUf0Dl2i70ylvXnWZnhQ7tCpbVmauhbHqBl86zu+k7c:RhX0qWaQi70MfWVOJCpsbKBl86zyc
+FileSize: 861 bytes
+
+FileName: ./webserver/image-map.png
+FileType: OTHER
+FileChecksum: SHA1: d30804ac6bffa2349aac3c8e33d73ced59671960
+FileChecksum: SHA256: f6e22123aa8776ef291860f939e9bb572ca9fea55d9c13e18ef580c6e8e531a6
+FileChecksum: MD5: 9080fd579711f4a584b1419cb6ff4e71
+FileChecksum: SSDEEP: 48:1rXLbkgeGGr25cCTvQoFk5uz4d//4wX1NO7moV:d7bkgra25vrQdW4dIE1NOqoV
+FileSize: 1 Kb (1869 bytes)
+
+FileName: ./webserver/intro.html
+FileType: SOURCE
+FileChecksum: SHA1: 2b8f76734c77db811ba4ddc105694c22ad3f519c
+FileChecksum: SHA256: f84763c8fc9fac24fe4a9084b6918f3ba097907c9ad388a8e9a9ae813b864de0
+FileChecksum: MD5: fa412e8fc4c2e2ab8e32c9d098f26f6c
+FileChecksum: SSDEEP: 12:BMQbwNxD/6QXNKCbxJb2Nodamn9hW/o70dYLn52A9TxLZ8A9wBVN6:WT1/5KCzbTD9h2dYLn5tX5uBu
+FileSize: 600 bytes
+FileLOC: 10
+
+FileName: ./webserver/server.java
+FileType: SOURCE
+FileChecksum: SHA1: b85e62a34fd68819cebca2aba51c1d71769fb88f
+FileChecksum: SHA256: d45550cbf484d8f0488ccde252e2a27c2ee93bb4f10cfcf9c663020fccbbce38
+FileChecksum: MD5: 1911390f367796866924a1ed53b75a8c
+FileChecksum: SSDEEP: 48:bWxQrgy0fyHrpMTPGMJB+1iiakjMFgeWs9olkyqg0BCd0WChVHD8yCyUl:bWxnrfcM/B+17gFgtLqNBK3yC3
+FileSize: 3 Kb (3373 bytes)
+FileLOC: 110
+
+FileName: ./webserver/serverSettings.html
+FileType: SOURCE
+FileChecksum: SHA1: 8af0c6d1a599251d986324edea3ddaba34deae97
+FileChecksum: SHA256: 7fb0e428b184dde2ba13673311c328248ae55e134e73aedaf5f32a624c8e162a
+FileChecksum: MD5: 2a1b07d7efd65978346b41f10d462b78
+FileChecksum: SSDEEP: 24:WT1/1TzRAfP5sxe+jhANeArhZMKzyHzJMylfslosJ:0S+cveKzyTJMylfslVJ
+FileSize: 1 Kb (1341 bytes)
+FileLOC: 38
+
+FileName: ./webserver/settings.xml
+FileType: OTHER
+FileChecksum: SHA1: a1449a1a458f155f11b3a50559ad6c9c6f8e2bfd
+FileChecksum: SHA256: 6a977900edf229dc83f28ef2450704ac2b402ab84aee8246b876a8d1d7694e18
+FileChecksum: MD5: f4babbf7b4afb3863a0e04803200761f
+FileChecksum: SSDEEP: 6:TMVBd6Ojf6+xSURBHeqloqUIIuLDw8bFwDHRoTjhIn:TMHdtD6oRB+xapLLbDs
+FileSize: 338 bytes
+
+FileName: ./webserver/temp.html
+FileType: SOURCE
+FileChecksum: SHA1: 8af0c6d1a599251d986324edea3ddaba34deae97
+FileChecksum: SHA256: 7fb0e428b184dde2ba13673311c328248ae55e134e73aedaf5f32a624c8e162a
+FileChecksum: MD5: 2a1b07d7efd65978346b41f10d462b78
+FileChecksum: SSDEEP: 24:WT1/1TzRAfP5sxe+jhANeArhZMKzyHzJMylfslosJ:0S+cveKzyTJMylfslVJ
+FileSize: 1 Kb (1341 bytes)
+FileLOC: 38
+
+FileName: ./webserver/triplecheck-logo.png
+FileType: OTHER
+FileChecksum: SHA1: 2be7804adc0926aff3f86bd44d9ccc40c20730a8
+FileChecksum: SHA256: 3ff828b0fc56b16b0f13b5475b5d970fb529af8fb1beee2bcf3323bd15580088
+FileChecksum: MD5: 3e7d6907ec95e7ab08f111913ef85a25
+FileChecksum: SSDEEP: 96:sAnpbjVasOH4czcIIofbssSj/cg3smiyS9y8/m/CMiCLi:sAbAGofbsPt+NGC4i
+FileSize: 4 Kb (4507 bytes)
+
+FileName: ./webserver/wand.png
+FileType: OTHER
+FileChecksum: SHA1: 426d93e3f0e8bc53d765951e0315806e5d4ad7ef
+FileChecksum: SHA256: b34e1ca6a220f1f5eb655c06e832fb95320f4c284c8c00dfcf5cf7bff79a319a
+FileChecksum: MD5: a490e15903150bcfbb3ceac04f45634e
+FileChecksum: SSDEEP: 24:JYQqnvOMb9BYdXT9mrAV7qa7NY9RnMmYEDu8v9:SQYxMRc6ea7Ath9
+FileSize: 983 bytes
+

@@ -4,6 +4,7 @@
  * Creator: Organization: TripleCheck (http://triplecheck.de)
  * Created: 2014-01-16T00:00:00Z
  * LicenseName: EUPL-1.1-without-appendix
+ * LicenseName: GPL-2.0+
  * FileName: frontPage.java  
  * FileType: SOURCE
  * FileCopyrightText: <text> Copyright (c) 2014 Nuno Brito, TripleCheck </text>
