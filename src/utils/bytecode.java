@@ -17,12 +17,12 @@
 package utils;
 
 import java.io.File;
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.codehaus.commons.compiler.CompileException;
 import org.codehaus.janino.SimpleCompiler;
-import script.Plugin;
 
 /**
  *
@@ -61,6 +61,7 @@ public class bytecode {
      * Given a file on disk, this method will try to convert a source code
      * file into a compiled bytecode class
      * @param sourceFile    Location of the file on disk
+     * @param className     The name of the class
      * @return              The compiled object
      */
     public static Object getObjectNoPackage(File sourceFile, final String className){
@@ -89,8 +90,7 @@ public class bytecode {
     /**
      * Compiles a Java source code on disk and runs a specific method
      * @param scriptFile
-     * @param methodName
-     * @param className 
+     * @param methodName 
      */
     public static void runJava(File scriptFile, String methodName) {
         Object object = getObjectNoPackage(scriptFile, "basic.home");
@@ -98,9 +98,6 @@ public class bytecode {
         
         invoke("basic.home", methodName, new Class[] {String.class}, 
            new Object[]{"Hello"});
-        
-     
-        
     }
     
   static void invoke(String aClass, String aMethod, Class[] params, Object[] args) {
@@ -116,9 +113,21 @@ public class bytecode {
       Object i = c.newInstance();
       Object r = m.invoke(i, args);
       } 
-    catch (Exception e) {
+    catch (ClassNotFoundException e) {
       e.printStackTrace();
-      } 
+      } catch (IllegalAccessException e) { 
+          e.printStackTrace();
+        } catch (IllegalArgumentException e) {
+            e.printStackTrace();
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+        } catch (NoSuchMethodException e) {
+            e.printStackTrace();
+        } catch (SecurityException e) {
+            e.printStackTrace();
+        } catch (InvocationTargetException e) {
+            e.printStackTrace();
+        } 
     }
     
     

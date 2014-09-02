@@ -1,17 +1,23 @@
 /*
- * Makes possible the web user interface. Allows users to control the program
- * using a web browser.
+ * SPDXVersion: SPDX-1.1
+ * Creator: Person: Nuno Brito (nuno.brito@triplecheck.de)
+ * Creator: Organization: TripleCheck (contact@triplecheck.de)
+ * Created: 2013-01-09T14:04:22Z
+ * LicenseName: EUPL-1.1-without-appendix
+ * FileName: WebServer.java  
+ * FileType: SOURCE
+ * FileCopyrightText: <text> Copyright 2014 Nuno Brito, TripleCheck </text>
+ * FileComment: <text> Makes possible the web user interface. Allows users to 
+ * control the program using a web browser.</text>
  */
 package www;
 
-import definitions.definition;
 import definitions.is;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.io.PrintStream;
 import java.net.InetSocketAddress;
 import java.net.SocketAddress;
 import java.util.Set;

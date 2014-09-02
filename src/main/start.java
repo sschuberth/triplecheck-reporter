@@ -1,6 +1,13 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * SPDXVersion: SPDX-1.1
+ * Creator: Person: Nuno Brito (nuno.brito@triplecheck.de)
+ * Creator: Organization: TripleCheck (http://triplecheck.de)
+ * Created: 2013-12-10T00:00:00Z
+ * LicenseName: EUPL-1.1-without-appendix
+ * FileName: start.java  
+ * FileType: SOURCE
+ * FileCopyrightText: <text> Copyright (c) 2013 Nuno Brito, TripleCheck </text>
+ * FileComment: <text> The file that launches the software into action.</text> 
  */
 package main;
 
@@ -18,6 +25,11 @@ public class start {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        
+        // watch out for the case when we launch the command line version
+        if(cmdLine.isCommandLineUsed(args)){
+            return;
+        }
         
         // show the startup screen
         core.startupScreen.kickoff();
@@ -43,6 +55,7 @@ public class start {
             System.exit(-1981);
         }
     }
+
     
     
     
