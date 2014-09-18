@@ -11,6 +11,7 @@
  */
 package main;
 
+import GUI.StartupScreen;
 import GUI.StudioUI4;
 import definitions.is;
 import script.log;
@@ -32,7 +33,9 @@ public class start {
         }
         
         // show the startup screen
-        core.startupScreen.kickoff();
+        StartupScreen startupScreen = new StartupScreen();
+    
+        startupScreen.kickoff();
         log.write(is.CREDITS, "TripleCheck (c) %1, "
                 + "http://triplecheck.de", utils.time.getCurrentYear());
         log.write(is.RUNNING, "Version %1 %2", core.version,
@@ -46,7 +49,7 @@ public class start {
             core.studio.doSettings();
 
             // remove the startup screen
-            core.startupScreen.dispose();
+            startupScreen.dispose();
 
             core.studio.setVisible(true);
             core.studio.hasFocus();

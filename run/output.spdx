@@ -9,7 +9,7 @@ DataLicense: CC-BY-4.0
 ##-------------------------
 Creator: nuno
 Creator: Tool: TripleCheck 0.9
-Created: 2014-09-02T17:45:26Z
+Created: 2014-09-18T12:16:09Z
 
 ##-------------------------
 ## Package Information
@@ -263,6 +263,14 @@ FileChecksum: MD5: 478294c77d5734a8c8796bfbdb21733b
 FileChecksum: SSDEEP: 12:BMQbwNxMtAmo3+q+jk64VAo65mn4wTvEA/6WhX:WTymt+7jk6qKAnlLEASu
 FileSize: 563 bytes
 FileLOC: 15
+
+FileName: ./publish/triplecheck.exe
+FileType: BINARY
+FileChecksum: SHA1: 47da38a00908c76db63d4982262b4aee3e02c438
+FileChecksum: SHA256: 70179a299454f1bffc394745f944c5bddd7b041d6a3f421d43b9b6e755b61b84
+FileChecksum: MD5: 46144620414e31e3f158ae322ef31f8e
+FileChecksum: SSDEEP: 98304:PbgN2pHB2eVBpHDDQTQG4vkxX+Km7WvN0Er1uCzkVGUuTH/URJqD6I+:PbuQ5DQTQG91f1v1uCzkVGxTHcRJqD6z
+FileSize: 5 Mb (6278730 bytes)
 
 FileName: ./spdx/actions.java
 FileType: SOURCE

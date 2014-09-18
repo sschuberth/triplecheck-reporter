@@ -51,7 +51,6 @@ public class core {
     //public static StudioUI2 studio2 = null;
     public static StudioUI4 studio = null;
     
-    public static StartupScreen startupScreen = new StartupScreen();
     
     public static utils.KeyStroke key = new utils.KeyStroke();
     
