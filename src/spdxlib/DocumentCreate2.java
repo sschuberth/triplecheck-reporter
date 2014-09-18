@@ -142,12 +142,37 @@ public class DocumentCreate2 {
         else
             if ( (file.isDirectory())
                     &&( maxDeep-1 > 0 ) ){
+                
+                // ignore intentionally the repository folders
+                if(isRepositoryFolder(file)){
+                    continue;
+                }
+                
                 // do the recursive crawling
                 processFiles(file, maxDeep-1);
             }
         }
  }
 
+ /**
+  * Avoid the indexing of folders that belong to popular versioning systems
+  * @param folder   The folder on disk to evaluate
+  * @return True is this is a repository folder, false otherwise
+  */
+     boolean isRepositoryFolder(final File folder){
+         final String folderName = folder.getName();
+         if(utils.text.equals(folderName, ".git")){
+             return true;
+         }else
+             if(utils.text.equals(folderName, ".svn")){
+                 return true;
+         }else
+             if(utils.text.equals(folderName, ".hg")){
+                 return true;
+         }
+         // not one of those folders. All good to go.
+         return false;
+     }
  
 
  /**

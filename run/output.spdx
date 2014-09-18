@@ -9,7 +9,7 @@ DataLicense: CC-BY-4.0
 ##-------------------------
 Creator: nuno
 Creator: Tool: TripleCheck 0.9
-Created: 2014-09-18T12:46:18Z
+Created: 2014-09-18T13:16:39Z
 
 ##-------------------------
 ## Package Information
@@ -46,6 +46,7 @@ FileChecksum: SSDEEP: 96:lhajUdgvhf7yor13wBPrbhzmERBRfhBEwf:TajUdAhf7y+13avhdRBR
 FileSize: 4 Kb (4531 bytes)
 FileLOC: 141
 FileCopyrightText: <text>Copyright (c) 2014 Nuno Brito, TripleCheck</text>
+LicenseInfoInFile: EUPL-1.1
 LicenseInfoInFile: GPL-2.0
 
 FileName: ./basic/logo.png
@@ -65,6 +66,7 @@ FileChecksum: SSDEEP: 96:XhYDUjnf6xuihtXzCwYV0RNixuTM5qfuCFjekvCdRKLHz1r:xYDUz6w
 FileSize: 3 Kb (3769 bytes)
 FileLOC: 115
 FileCopyrightText: <text>Copyright 2013 Nuno Brito, TripleCheck</text>
+LicenseInfoInFile: EUPL-1.1
 
 FileName: ./basic/notasks.html
 FileType: SOURCE
@@ -83,6 +85,7 @@ FileChecksum: MD5: 54fead1600e4d91fcd5374a1c920ef09
 FileChecksum: SSDEEP: 96:XLAG736SWjgSxTg04sFsFB0GWD6fOnia6zlU6F0TE85v:7A47yPNg0F6FB0GW+fOnia6z70TE4v
 FileSize: 3 Kb (3788 bytes)
 FileCopyrightText: <text>Copyright 2013 Nuno Brito, TripleCheck</text>
+LicenseInfoInFile: EUPL-1.1
 
 FileName: ./basic/pluginSearch.java
 FileType: SOURCE
@@ -93,6 +96,7 @@ FileChecksum: SSDEEP: 192:xYpU2BIIipK6qc/grysuGphyJB2WqurN03sbqjbcHQYRD011Ez6yU9
 FileSize: 16 Kb (16474 bytes)
 FileLOC: 463
 FileCopyrightText: <text>Copyright 2013 Nuno Brito, TripleCheck</text>
+LicenseInfoInFile: EUPL-1.1
 
 FileName: ./basic/status.java
 FileType: SOURCE
@@ -103,6 +107,7 @@ FileChecksum: SSDEEP: 192:Ta2UYhGmo15eVDC1z7nOc+J8y6OY6ulT86GyNFGERDAv:TaNYyYuBU
 FileSize: 6 Kb (6671 bytes)
 FileLOC: 213
 FileCopyrightText: <text>Copyright (c) 2013 Nuno Brito, TripleCheck</text>
+LicenseInfoInFile: EUPL-1.1
 
 FileName: ./basic/ToolsLog.java
 FileType: SOURCE
@@ -113,6 +118,7 @@ FileChecksum: SSDEEP: 48:XhYAmzw4Uh/6jrwhoiI6/HuTEy1U/HcSbx:XhYjUhyj0iih2TI0Ex
 FileSize: 1 Kb (1938 bytes)
 FileLOC: 59
 FileCopyrightText: <text>Copyright 2013 Nuno Brito, TripleCheck</text>
+LicenseInfoInFile: EUPL-1.1
 
 FileName: ./basic/triplecheck-logo.png
 FileType: OTHER
@@ -131,6 +137,7 @@ FileChecksum: SSDEEP: 96:XhYkUvFpOv2uexKmmLMqDYFhF70aO3yIMkcKmO8KaCfQgGh4v:xYkUH
 FileSize: 4 Kb (4828 bytes)
 FileLOC: 149
 FileCopyrightText: <text>Copyright 2014 Nuno Brito, TripleCheck</text>
+LicenseInfoInFile: EUPL-1.1
 
 FileName: ./components/chooseComponent.html
 FileType: SOURCE
@@ -159,6 +166,7 @@ FileChecksum: SSDEEP: 96:lhaJU8jNUgfk3C77wOq2m9XcPqFRCaOSAv:TaJU8jNUgfk3C77wOq2m
 FileSize: 3 Kb (3254 bytes)
 FileLOC: 93
 FileCopyrightText: <text>Copyright (c) 2014 Nuno Brito, TripleCheck</text>
+LicenseInfoInFile: EUPL-1.1
 
 FileName: ./components/export.java
 FileType: SOURCE
@@ -169,6 +177,7 @@ FileChecksum: SSDEEP: 192:TayUkO7ezJfO0O2UjDsIEEGcoUyNmXRfDoUyC4v:TaBNaV74+mXBm
 FileSize: 8 Kb (8279 bytes)
 FileLOC: 228
 FileCopyrightText: <text>Copyright (c) 2014 Nuno Brito, TripleCheck</text>
+LicenseInfoInFile: EUPL-1.1
 
 FileName: ./components/searchComponents.java
 FileType: SOURCE
@@ -179,6 +188,7 @@ FileChecksum: SSDEEP: 24:lhh4bIzwvUq/9IPbyYgMFscrkmylaRQl/pLMHytRtN1aQQIAv:lhabI
 FileSize: 1 Kb (1648 bytes)
 FileLOC: 53
 FileCopyrightText: <text>Copyright (c) 2014 Nuno Brito, TripleCheck</text>
+LicenseInfoInFile: EUPL-1.1
 
 FileName: ./components/showComponent.java
 FileType: SOURCE
@@ -189,6 +199,7 @@ FileChecksum: SSDEEP: 48:lhabIzwvUq5TTEb/0QHXikXeLEk0SM/Kwe:lha3UqdeVSkuQk0rC
 FileSize: 1 Kb (1944 bytes)
 FileLOC: 63
 FileCopyrightText: <text>Copyright (c) 2014 Nuno Brito, TripleCheck</text>
+LicenseInfoInFile: EUPL-1.1
 
 FileName: ./components/showComponents.java
 FileType: SOURCE
@@ -199,6 +210,7 @@ FileChecksum: SSDEEP: 48:lhabIzwvUqWL/TlPhoiI6/HgTVicdg/lFGC5Eb/0bb0lPk:lha3UqYh
 FileSize: 2 Kb (2224 bytes)
 FileLOC: 74
 FileCopyrightText: <text>Copyright (c) 2014 Nuno Brito, TripleCheck</text>
+LicenseInfoInFile: EUPL-1.1
 
 FileName: ./components/summary.java
 FileType: SOURCE
@@ -209,6 +221,7 @@ FileChecksum: SSDEEP: 24:lhh427zwvUnsQoOZZmiyk2E4RE/0KgX6RPzGCIGuxFr+ti:lha27zwv
 FileSize: 1 Kb (1523 bytes)
 FileLOC: 51
 FileCopyrightText: <text>Copyright (c) 2014 Nuno Brito, TripleCheck</text>
+LicenseInfoInFile: EUPL-1.1
 
 FileName: ./components/temp.html
 FileType: SOURCE
@@ -236,6 +249,7 @@ FileChecksum: SSDEEP: 96:XhYkUaTFexKm6LMC8+FAc49KdCs6JKZgYGi2x02Xi1iq0xYpwxgzFr2
 FileSize: 5 Kb (5934 bytes)
 FileLOC: 171
 FileCopyrightText: <text>Copyright 2014 Nuno Brito, TripleCheck</text>
+LicenseInfoInFile: EUPL-1.1
 
 FileName: ./licenses/search-licenses-02.png
 FileType: OTHER
@@ -254,6 +268,7 @@ FileChecksum: SSDEEP: 48:lhat7P7zwvUwDm1hZErviI6/H0t5Eb/0bb08C1aLMCFcHv0qM/Kw54v
 FileSize: 2 Kb (2785 bytes)
 FileLOC: 92
 FileCopyrightText: <text>Copyright (c) 2014 Nuno Brito, TripleCheck</text>
+LicenseInfoInFile: EUPL-1.1
 
 FileName: ./licenses/searchLicenses.html
 FileType: SOURCE
@@ -281,6 +296,7 @@ FileChecksum: SSDEEP: 96:XhYhUokZMexKN3pZitki7mRxsbIxFPmsDGqfIVCGNC+bnC8mCWKWsui
 FileSize: 5 Kb (5713 bytes)
 FileLOC: 182
 FileCopyrightText: <text>Copyright 2014 Nuno Brito, TripleCheck</text>
+LicenseInfoInFile: EUPL-1.1
 
 FileName: ./spdx/authorship.java
 FileType: SOURCE
@@ -291,6 +307,7 @@ FileChecksum: SSDEEP: 24:lhh4sT0zwvUt3cAbu8gykmUE4RE/0KywsYiRkdy6mifvJtt1dyv:lha
 FileSize: 1 Kb (1499 bytes)
 FileLOC: 49
 FileCopyrightText: <text>Copyright (c) 2014 Nuno Brito, TripleCheck</text>
+LicenseInfoInFile: EUPL-1.1
 
 FileName: ./spdx/chart.png
 FileType: OTHER
@@ -309,6 +326,7 @@ FileChecksum: SSDEEP: 192:xYZUjD281No6TzCB5TaX1PnQWxUIl2KkCU/bEsCc+I7Q67sap4KOma
 FileSize: 23 Kb (23644 bytes)
 FileLOC: 632
 FileCopyrightText: <text>Copyright 2013 Nuno Brito, TripleCheck</text>
+LicenseInfoInFile: EUPL-1.1
 
 FileName: ./spdx/document-text.png
 FileType: OTHER
@@ -351,6 +369,7 @@ FileChecksum: SSDEEP: 24:lhh4AGzwvUNoj0HdLZZmmyrcE4RE/0KgX6RPzHCIxmuoFoXti:lhaAG
 FileSize: 1 Kb (1556 bytes)
 FileLOC: 52
 FileCopyrightText: <text>Copyright (c) 2014 Nuno Brito, TripleCheck</text>
+LicenseInfoInFile: EUPL-1.1
 
 FileName: ./spdx/settings.java
 FileType: SOURCE
@@ -361,6 +380,7 @@ FileChecksum: SSDEEP: 48:lhaXMzwvUtfz/SnJE//00spkjhK0BXeuj/Uy6ch9xf8KtztM/R+b3cC
 FileSize: 3 Kb (3421 bytes)
 FileLOC: 102
 FileCopyrightText: <text>Copyright (c) 2014 Nuno Brito, TripleCheck</text>
+LicenseInfoInFile: EUPL-1.1
 
 FileName: ./spdx/show.java
 FileType: SOURCE
@@ -371,6 +391,7 @@ FileChecksum: SSDEEP: 192:xYOUFNPpEUZI5DeLbG8CD8gnV537zkiLwWriGMBzUy00f8lyQfLqlq
 FileSize: 19 Kb (19825 bytes)
 FileLOC: 574
 FileCopyrightText: <text>Copyright 2013 Nuno Brito, TripleCheck</text>
+LicenseInfoInFile: EUPL-1.1
 
 FileName: ./spdx/showFileDetails.java
 FileType: SOURCE
@@ -388,6 +409,7 @@ copyright = fileInfo.getFileCopyrightText();
 copyright == null || copyright.isEmpty()){
 copyright = html.br
 </text>
+LicenseInfoInFile: EUPL-1.1
 
 FileName: ./spdx/showProductDetails.java
 FileType: SOURCE
@@ -398,6 +420,7 @@ FileChecksum: SSDEEP: 384:xYcOXU6ShOfK/cLUZ6aWKJSKrr+XsSBDdUQ:v0U6S8fK/AUZlBHr+X
 FileSize: 15 Kb (16362 bytes)
 FileLOC: 455
 FileCopyrightText: <text>Copyright 2013 Nuno Brito, TripleCheck</text>
+LicenseInfoInFile: EUPL-1.1
 
 FileName: ./spdx/spdxBatch.html
 FileType: SOURCE
