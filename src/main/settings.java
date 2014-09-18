@@ -30,7 +30,6 @@ public class settings extends Plugin{
         Thread thread = new Thread(){
         @Override
         public void run(){
-           
         // process the list of licenses
         core.licenses.find();
             

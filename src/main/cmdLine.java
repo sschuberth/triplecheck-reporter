@@ -47,7 +47,10 @@ public class cmdLine {
                 System.out.println("Expecting the correct parameters. #magicstuff");
                 return true;
             }
-            System.out.println("Processing an SPDX folder/file:");
+            
+            
+            
+            log.write(is.INFO, "Processing an SPDX folder/file:");
             createCmdLineSPDX(args[1], args[2]);
             result = true;
             System.exit(0);

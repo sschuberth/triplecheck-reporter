@@ -11,10 +11,14 @@
  */
 package main;
 
+import FileExtension.ExtensionControl;
 import GUI.StartupScreen;
 import GUI.StudioUI4;
 import definitions.is;
 import script.log;
+import structure.LicenseControl;
+import structure.ReportsControl;
+import structure.TriggerControl;
 
 /**
  *
@@ -23,16 +27,32 @@ import script.log;
 public class start {
 
     /**
+     * The method that we need to call in order to initialize the license
+     * and file extension detection. Basically, finding all the dynamic
+     * scripts and loading them up to memory.
+     */
+    public static void basicStart(){
+        core.extensions = new ExtensionControl();
+        core.triggers = new TriggerControl();
+        core.reports = new ReportsControl();
+        core.licenses = new LicenseControl();
+    }
+    
+    
+    /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+         
+        // do the basic start
+        basicStart();
         
         // watch out for the case when we launch the command line version
         if(cmdLine.isCommandLineUsed(args)){
             return;
         }
         
-        // show the startup screen
+       // show the startup screen
         StartupScreen startupScreen = new StartupScreen();
     
         startupScreen.kickoff();

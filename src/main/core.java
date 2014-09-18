@@ -65,17 +65,17 @@ public class core {
 
 
     public static ExtensionControl
-            extensions = new ExtensionControl();
+            extensions; // = new ExtensionControl();
 
     public static TriggerControl
-            triggers = new TriggerControl();
+            triggers; // = new TriggerControl();
    
     public static ReportsControl
-            reports = new ReportsControl();
+            reports; // = new ReportsControl();
    
     // find the licenses available on disk
     public static LicenseControl
-            licenses = new LicenseControl();
+            licenses; // = new LicenseControl();
     
     public static LicensePopularity
             popularity = new LicensePopularity();
