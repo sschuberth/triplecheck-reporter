@@ -486,7 +486,7 @@ public class SPDXfile2 implements Serializable{
             return null;
         }
         // create the folder pointer
-        File folder = new File(core.settings.read(title));
+        File folder = new File(core.getWorkFolder(), core.settings.read(title));
         
         // doesn't exist?
         if(folder.exists() == false){

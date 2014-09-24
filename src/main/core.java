@@ -15,7 +15,6 @@
 package main;
 
 import FileExtension.ExtensionControl;
-import GUI.StartupScreen;
 import GUI.StudioUI4;
 import comp.ComponentControl;
 import definitions.folder;
@@ -41,7 +40,7 @@ public class core {
             Script script = new Script();
     
     public static
-            Settings settings = new Settings(new File("settings.xml"), "");
+            Settings settings;
     
     
     // where we keep our shared objects
@@ -85,6 +84,9 @@ public class core {
     public static ArrayList<RunningTask> 
             runningTasks = new ArrayList();
     
+    // where we define that we are working
+    public static File workFolder;
+    
     // define the icon used on the tree view
     public static final Icon
             // this might seem an overwhelming wall of text but it important
@@ -122,7 +124,27 @@ public class core {
      * @return The folder from where the main application is running
      */
     public static File getWorkFolder(){
-            return new File(".").getAbsoluteFile().getParentFile();
+        // if it hasn't been defined before, set this value right now
+        if(workFolder == null){
+            defineWorkFolder();
+        }
+
+        // otherwise return the basic work folder that has been defined
+        return workFolder;
+    }
+    
+    static void defineWorkFolder(){
+           // we need to switch between base path in IDE mode and real-usage mode
+        final File f = new File(start.class.getProtectionDomain().getCodeSource().getLocation().getPath());
+        final String currentPath = f.getAbsolutePath().replaceAll("\\\\", "/");
+        // are we running in IDE mode?
+        if(currentPath.endsWith("/build/classes")){
+            workFolder = new File(".").getAbsoluteFile().getParentFile();
+        }else{
+            // define it as the currently running folder
+            workFolder = new File(start.class.getProtectionDomain()
+                    .getCodeSource().getLocation().getPath()).getParentFile();
+         }
     }
     
     /**

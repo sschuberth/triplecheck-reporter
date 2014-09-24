@@ -62,6 +62,13 @@ public final class TriggerControl {
         return list;
     }
 
+    /**
+     * How many triggers to we have available?
+     * @return the number of triggers 
+     */
+    public int size(){
+        return list.size();
+    }
     
     
 }

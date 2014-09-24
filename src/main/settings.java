@@ -41,7 +41,7 @@ public class settings extends Plugin{
             return;
         }
         // save the contents to a file on disk
-        File startSettings = new File("settings.java");
+        File startSettings = new File(core.getWorkFolder(), "settings.java");
         utils.files.SaveStringToFile(startSettings, text);
         if(startSettings.exists()==false){
             // do nothing for now

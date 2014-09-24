@@ -28,15 +28,19 @@ import script.Trigger;
 public class GNU implements Trigger {
 
         
+    // how big is the default GPL header across different reincarnations?
+    final int headerSize = 150;
+    
     // the list of keywords that we use to identify a possible license match
     String[] 
             keywordsFirstFilter = {
                 "gpl",
-                "general public license"
+                "general public license",
+                "gnu general"
             },
             keywordsAGPL = {"agpl", "affero"},
             keywordsLGPL = {"lgpl", "lesser general", "library public license"},
-            keywordsGPL = {"gpl", "gnu general public license"},
+            keywordsGPL = {"gpl", "gnu general public license", "gnu general"},
             listEvidenceLGPL = {
                 "under lgpl license",
                 "lgpl/",
@@ -71,9 +75,6 @@ public class GNU implements Trigger {
             isTermsLGPL,
             isTermsGPL;
 
-    // how big is the default GPL header across different reincarnations?
-    final int headerSize = 1000;
-    
     // public constructor
     public GNU(){
         GPL = new LicenseGNU("GPL", "GNU General Public License");
@@ -262,12 +263,18 @@ public class GNU implements Trigger {
          }
  
          // let's find the header license attribution (sometimes not on top)
-         final String anchorText = "this program is free software";
-         final int anchorId = contentLowerCase.indexOf(anchorText);
+         //final String anchorText = "this program is free software";
+         final String anchorText = " free software";
+         int anchorId = contentLowerCase.indexOf(anchorText);
          
          // wasn't found, no need to proceed
          if(anchorId == -1){
-             return;
+             // give it a second try
+             anchorId = contentLowerCase.indexOf("gnu general");
+             if(anchorId == -1){
+                 return;
+             }
+//             return;
          }
          
          // is the header big enough to get a sample?
@@ -279,7 +286,7 @@ public class GNU implements Trigger {
          final String header = contentLowerCase.substring(anchorId, anchorId +headerSize);
          
          // now let's look for matches, are we on the right track?
-         if(header.contains("gnu general public license")==false){
+         if(header.contains("gnu general")==false){
              // doesn't seem that way, exit here
              return;
          }
@@ -294,7 +301,18 @@ public class GNU implements Trigger {
          }else
          if(header.contains("either version 3")){
              result = GPL3_0 + "+";
-         }else{
+         }else
+         // now iterate for single GPL (no automatic upgrade)
+         if(header.contains("version 1")){
+             result = GPL1_0.getId() + "";
+         }else
+         if(header.contains("version 2")){
+             result = GPL2_0.getId() + "";
+         }else
+         if(header.contains("version 3")){
+             result = GPL3_0.getId() + "";
+         }
+         else{
              result =GPL.getId();
          }
          

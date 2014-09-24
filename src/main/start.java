@@ -15,10 +15,12 @@ import FileExtension.ExtensionControl;
 import GUI.StartupScreen;
 import GUI.StudioUI4;
 import definitions.is;
+import java.io.File;
 import script.log;
 import structure.LicenseControl;
 import structure.ReportsControl;
 import structure.TriggerControl;
+import utils.Settings;
 
 /**
  *
@@ -32,6 +34,9 @@ public class start {
      * scripts and loading them up to memory.
      */
     public static void basicStart(){
+        // initialize the settings
+        core.settings = new Settings(
+                    new File(core.getWorkFolder(), "settings.xml"), "");
         core.extensions = new ExtensionControl();
         core.triggers = new TriggerControl();
         core.reports = new ReportsControl();
@@ -44,6 +49,9 @@ public class start {
      */
     public static void main(String[] args) {
          
+ 
+       
+        
         // do the basic start
         basicStart();
         
