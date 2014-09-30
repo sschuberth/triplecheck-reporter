@@ -22,7 +22,11 @@ import spdxlib.DocumentCreate2;
  * @author Nuno Brito, 2nd of September 2014 in Darmstadt, Germany
  */
 public class cmdLine {
-
+    
+    // the SPDX document that we are about to create    
+    static DocumentCreate2 spdx = new DocumentCreate2();
+    
+        
     /**
      * Are we calling command line parameters? If so, start them up
      * @param args  The arguments provided on command line
@@ -43,16 +47,30 @@ public class cmdLine {
         // are we being asked to create an SPDX document?
         if(cmdAction.equals("spdx")){
             // do we have the right amount of parameters?
-            if(args.length != 3){
-                System.out.println("Expecting the correct parameters. #magicstuff");
+            if(args.length < 3){
+                System.out.println("Expecting more parameters.");
                 return true;
             }
             
             
-            
             log.write(is.INFO, "Processing an SPDX folder/file:");
+//            if(args.length == 3){
+//            }
+//            else
+            // do we have a parameter for the package name?
+            if(args.length == 4){
+                spdx.setPackageName(args[3]);
+            }
+            else
+            // do we want to define an URL?
+            if(args.length == 5){
+                spdx.setPackageURL(args[4]);
+            }
+          
+            // now create the document      
             createCmdLineSPDX(args[1], args[2]);
-            result = true;
+           
+            //result = true;
             System.exit(0);
         }
         
@@ -94,7 +112,6 @@ public class cmdLine {
         log.write(is.INFO, "Generating an SPDX as %1. Using as source: %2"
                 , spdxFile.getName(), sourceTarget.getName());
         // create the SPDX
-        DocumentCreate2 spdx = new DocumentCreate2();
         spdx.create(sourceTarget, spdxFile);
         System.out.println("Processed files: " + spdx.getFilesProcessed());
     }

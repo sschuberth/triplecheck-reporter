@@ -51,6 +51,11 @@ public class DocumentCreate2 {
     private File
             outputFile;
     
+    // define the name for the SPDX document
+    private String 
+            packageName = "",
+            packageURL = "";
+    
     // misc variables
     
     // the generic file writer (where we store the results on disk)
@@ -448,6 +453,19 @@ public class DocumentCreate2 {
      * @param folderSource  The folder from where we get information
      */
     private void createHeader(File folderSourceCode) {
+        
+        // define the package name if still empty at this stage
+        if(packageName.isEmpty()){
+            packageName = folderSourceCode.getName();
+        }
+        
+        // add the URL when available
+        String textPackageURL = "";
+        if(packageURL.isEmpty() == false){
+            textPackageURL = "\nPackageDownloadLocation: " + packageURL;
+        }
+        
+        
         final String header =  
                   addParagraph("SPDX Document Information")
                 + addText("SPDXVersion: SPDX-1.2")
@@ -461,9 +479,9 @@ public class DocumentCreate2 {
                 + "\n"
                 
                 + addParagraph("Package Information")
-                + "PackageName: "  + folderSourceCode.getName()
+                + "PackageName: "  + packageName
                 //+ "\nPackageFileName: " + folderSourceCode.getName()
-                //+ "\nPackageDownloadLocation: " + packageDownloadLocation
+                + textPackageURL
                 //+ "\nPackageLicenseConcluded: " + PackageLicenseConcluded
                 + "\n"
                 + "\n"
@@ -499,6 +517,27 @@ public class DocumentCreate2 {
             return "";
         }
         return text + "\n";
+    }
+
+    /**
+     * Defines the package name for this SPDX document
+     * @param packageName The value to be written. If empty then the value is
+     * ignored and no change takes place.
+     */
+    public void setPackageName(final String packageName) {
+        if(packageName == null || packageName.isEmpty()){
+            return;
+        }
+        // define the package name
+        this.packageName = packageName;
+    }
+
+    public void setPackageURL(final String packageURL) {
+        if(packageURL == null || packageURL.isEmpty()){
+            return;
+        }
+        // define the package location on the network (public or private)
+        this.packageURL = packageURL;
     }
     
     

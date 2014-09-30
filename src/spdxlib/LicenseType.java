@@ -15,6 +15,7 @@ public enum LicenseType {
 	Public_Domain,                                 
         MPL_2_0_plus,
         GPL,
+        LGPL,
         BSD,
         // from the SPDX site
 	AFL_1_1,                                 // Academic Free License v1.1
@@ -239,7 +240,8 @@ public enum LicenseType {
         // own usage    
 	case Public_Domain: return "Public Domain";
         case MPL_2_0_plus: return "Mozilla Public License 2.0 or later";                                 
-        case GPL: return "General Public License (version not defined)";                                 
+        case GPL: return "GNU General Public License (version not defined)";                                 
+        case LGPL: return "GNU Lesser General Public License (version not defined)";                                 
         case BSD: return "BSD-like license (type not defined)";                                 
         
         // SPDX list    
@@ -468,6 +470,7 @@ public enum LicenseType {
         case Public_Domain: return "Public Domain";
         case MPL_2_0_plus: return "MPL-2.0+";                                 
         case GPL: return "GPL";                                 
+        case LGPL: return "LGPL";                                 
         case BSD: return "BSD";                                 
         
 	// SPDX list 
