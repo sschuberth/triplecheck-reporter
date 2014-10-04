@@ -1,0 +1,11 @@
+{
+  "id": "libdatrie",
+  "title": "Double-Array Trie Library",
+  "referenceURL": "http://linux.thai.net/~thep/datrie/datrie.html",
+  "downloadURL": "",
+  "authors": "Theppitak Karoonboonyanan",
+  "desc": "Trie is a kind of digital search tree. (See [Knuth1972] for the detail of digital search tree.) [Fredkin1960] introduced the trie terminology, which is abbreviated from \"Retrieval\".",
+  "version": "",
+  "lic": "LGPL-2.1+",
+  "remarks": ""
+}

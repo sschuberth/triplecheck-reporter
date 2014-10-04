@@ -21,7 +21,7 @@ import definitions.is;
 import main.controller;
 import script.Plugin;
 import script.log;
-import utils.html;
+import utils_deprecated.html;
 import www.RequestOrigin;
 import www.Table;
 import www.WebRequest;

@@ -702,7 +702,7 @@ public class TreeviewUtils {
             continue;
         }
         // do we have a match?
-        if(utils.text.equals(child.getTitle(), find)){
+        if(utils_deprecated.text.equals(child.getTitle(), find)){
             return child;
         }
     }

@@ -51,7 +51,7 @@ public class TestingUI extends javax.swing.JFrame {
          // place the frame on the middle of the screen
         setLocationRelativeTo(null);
         log.write(is.RUNNING, "Version %1 %2", core.version,
-                utils.misc.getDate(this.getClass()));
+                utils_deprecated.misc.getDate(this.getClass()));
         doTesting();
     }
 
@@ -204,7 +204,7 @@ public class TestingUI extends javax.swing.JFrame {
 
     private void processFile(File file) {
         // read this file from disk onto local memory
-        final String contentNormalCase = utils.files.readAsString(file);
+        final String contentNormalCase = utils_deprecated.files.readAsString(file);
         final String contentLowerCase = contentNormalCase.toLowerCase();
         // there is a path available, let's get it
 //        final String fileName = file.getAbsolutePath();

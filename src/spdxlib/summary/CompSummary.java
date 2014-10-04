@@ -20,7 +20,7 @@ import main.core;
 import spdxlib.FileInfo2;
 import spdxlib.FileOrigin;
 import spdxlib.SPDXfile2;
-import utils.html;
+import utils_deprecated.html;
 
 
 /**
@@ -109,7 +109,7 @@ public class CompSummary {
             // iterate through all files in our spdx
             for(FileInfo2 fileInfo : spdx.getFiles()){
                 // if it belongs to our component
-                if(utils.text.equals(fileInfo.getFileComponent(), componentID)){
+                if(utils_deprecated.text.equals(fileInfo.getFileComponent(), componentID)){
                     thisCounter++;
                     if(thisCounter < max){
                         
@@ -135,7 +135,7 @@ public class CompSummary {
             if(thisCounter >= max){
                 fileList = fileList.concat(
                                 "<i> ..more " 
-                                + utils.text.pluralize(thisCounter - max, "file")
+                                + utils_deprecated.text.pluralize(thisCounter - max, "file")
                                 + " on this list.."
                                 + "</i>"
                                 + html.br);
@@ -153,7 +153,7 @@ public class CompSummary {
             result += ""
                     + html.h2(component.getTitle() 
                         + " (" 
-                        + utils.text.pluralize(count, "file")
+                        + utils_deprecated.text.pluralize(count, "file")
                         + ")")
                     //+ addIfNotEmpty("Description", component.getDescription(), true)
                     + addIfNotEmpty("Description", component.getDescription(), true)
@@ -216,7 +216,7 @@ public class CompSummary {
             if(counterNull >= max){
                 fileList = fileList.concat(
                                 "<i> ..more " 
-                                + utils.text.pluralize(counterNull - max, "file")
+                                + utils_deprecated.text.pluralize(counterNull - max, "file")
                                 + " on this list.."
                                 + "</i>"
                                 + html.br);

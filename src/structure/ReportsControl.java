@@ -62,7 +62,7 @@ public final class ReportsControl {
     private void findSPDX(){
         File folder = new File(core.getWorkFolder(), is.reports);
         // only find the SPDX documents with .SPDX extension
-        ArrayList<File> files = utils.files.findFilesFiltered(folder, ".spdx", 25);
+        ArrayList<File> files = utils_deprecated.files.findFilesFiltered(folder, ".spdx", 25);
         int counter = 0;
         // go through all the files that were found
         for(File file: files){

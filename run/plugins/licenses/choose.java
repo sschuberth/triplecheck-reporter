@@ -25,7 +25,7 @@ import script.log;
 import spdxlib.FileInfo2;
 import spdxlib.License;
 import spdxlib.SPDXfile2;
-import utils.html;
+import utils_deprecated.html;
 import www.RequestOrigin;
 import www.WebRequest;
 
@@ -132,6 +132,12 @@ public class choose extends Plugin{
         SPDXfile2 spdx = fileInfo.getSPDX();
         // now go through all file info and find licenses
         String result = core.popularity.processReport(spdx, title, link);
+        
+        // avoid the null results, replace with an empty string instead
+        if(result==null){
+            result = "";
+        }
+        
         return result;
     }
     
@@ -153,7 +159,7 @@ public class choose extends Plugin{
         core.licenses.changeDeclaredLicense(listUID, license);
         
         request.setAnswer("Applied the " + license.getId() 
-                + " to " + utils.text.pluralize(listUID.length, "file"));
+                + " to " + utils_deprecated.text.pluralize(listUID.length, "file"));
         
         // if we are clicking from a tree view, go back to last selected node
         if(request.requestOrigin == RequestOrigin.GUI_tree 

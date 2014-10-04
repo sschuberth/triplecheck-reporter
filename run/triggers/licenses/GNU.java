@@ -466,7 +466,7 @@ public class GNU implements Trigger {
       */
      private void addLicense(final String newLicense){
          for(final String license : licenses){
-             if(utils.text.equals(license, newLicense)){
+             if(utils_deprecated.text.equals(license, newLicense)){
                  return;
              }
          }

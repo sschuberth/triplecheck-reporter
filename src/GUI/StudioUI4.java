@@ -42,8 +42,8 @@ import script.log;
 import spdxlib.FileInfo2;
 import spdxlib.FileOrigin;
 import spdxlib.SPDXfile2;
-import utils.html;
-import utils.internet;
+import utils_deprecated.html;
+import utils_deprecated.internet;
 import www.RequestOrigin;
 import www.RequestType;
 import www.WebRequest;
@@ -941,7 +941,7 @@ public class StudioUI4 extends javax.swing.JFrame {
                     }
                   
                     // mandatory waiting by the refresh tag
-                    utils.time.wait(meta.delay);
+                    utils_deprecated.time.wait(meta.delay);
                     // if there is no .java URL mentioned, add one
                     String processedURL = meta.url;
                     if(processedURL.endsWith(".java")== false){
@@ -1203,7 +1203,7 @@ public class StudioUI4 extends javax.swing.JFrame {
             //request.parameters.add(parameter);
             // define what is the method that we want to run
             if(parameter[0]!= null && parameter[0].equals(is.methodExecute)){
-                request.scriptMethod = utils.text.safeString(parameter[1]);
+                request.scriptMethod = utils_deprecated.text.safeString(parameter[1]);
             }
         }
     // submit the request to be executed
@@ -1257,7 +1257,7 @@ public class StudioUI4 extends javax.swing.JFrame {
             //request.parameters.add(parameter);
             // define what is the method that we want to run
             if(parameter[0].equals(is.methodExecute)){
-                request.scriptMethod = utils.text.safeString(parameter[1]);
+                request.scriptMethod = utils_deprecated.text.safeString(parameter[1]);
                 //System.err.println("SU007 - Found method: " 
                       //  + request.scriptMethod);
             }
@@ -1423,7 +1423,7 @@ public class StudioUI4 extends javax.swing.JFrame {
         // update the selected node
         log.write(is.INFO, Messages.TreeNodeChanged, selectedNode.getUID());
         // output the dialog box as feedback
-        swingUtils.showMessage("Marked " + utils.text.pluralize(counter, "file") 
+        swingUtils.showMessage("Marked " + utils_deprecated.text.pluralize(counter, "file") 
                 + " as part of " + componentName);
     }
     

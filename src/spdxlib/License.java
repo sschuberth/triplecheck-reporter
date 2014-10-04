@@ -16,7 +16,7 @@ import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import main.core;
-import utils.html;
+import utils_deprecated.html;
 
 
 /**
@@ -94,7 +94,7 @@ public class License {
         }
         
         // read the template content
-        String content = utils.files.readAsString(template);
+        String content = utils_deprecated.files.readAsString(template);
         
         // do the replacements as needed
         String term1 = "return \"\"; // short and unique id";
@@ -137,7 +137,7 @@ public class License {
         content = content.replace("class LicenseTemplate extends License{", 
                 "class "+ filename +" extends License{");
         // add date creation details
-        content = content.replace("#DATE#", utils.time.getDateSPDX());
+        content = content.replace("#DATE#", utils_deprecated.time.getDateSPDX());
         content = content.replace("#EXT#", file.getName());
         // get the year value for the copyright value
         Date date = new Date();
@@ -154,7 +154,7 @@ public class License {
         // for debug
         //System.out.println("Writing file: " + file.getAbsolutePath());
         // save everything on disk
-        utils.files.SaveStringToFile(file, content);
+        utils_deprecated.files.SaveStringToFile(file, content);
         
     }
     

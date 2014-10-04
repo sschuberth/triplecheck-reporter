@@ -29,7 +29,7 @@ import main.core;
 import script.FileExtension;
 import script.Plugin;
 import script.log;
-import utils.html;
+import utils_deprecated.html;
 import www.WebRequest;
 
 
@@ -102,7 +102,7 @@ public class actions extends Plugin{
      */
     String boringText(File targetFile){
             System.err.println("Reading: " + targetFile.getAbsolutePath());
-            String input = utils.files.readAsString(targetFile);
+            String input = utils_deprecated.files.readAsString(targetFile);
             // We don't what we have here, but display it anyways
             input = "<pre>" + input + "</pre>";
             input = html.div() + input + html._div;

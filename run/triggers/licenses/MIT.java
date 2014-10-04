@@ -31,7 +31,10 @@ public class MIT implements Trigger {
     String[] list = {
         "under MIT license",
         "Permission is hereby granted, free of charge, to any person obtaining",
-        "and associated documentation files"
+        "and associated documentation files",
+        " MIT-",
+        "Licensed MIT ",
+        "License: MIT"
     };
     
     /**

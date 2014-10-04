@@ -32,8 +32,8 @@ import script.log;
 import spdxlib.summary.SummaryControl;
 import structure.LanguageCounter;
 import structure.LicenseCounter;
-import utils.files;
-import utils.html;
+import utils_deprecated.files;
+import utils_deprecated.html;
 
 
 /**
@@ -458,7 +458,7 @@ public class SPDXfile2 implements Serializable{
          }
          System.out.println("Source files: " + counter);
          System.out.println("Total LOC: " + counterLOC);
-         System.out.println("Total Size: " + utils.files.humanReadableSize(counterSize));
+         System.out.println("Total Size: " + utils_deprecated.files.humanReadableSize(counterSize));
     }
 
     /**
@@ -486,7 +486,7 @@ public class SPDXfile2 implements Serializable{
             return null;
         }
         // create the folder pointer
-        File folder = new File(core.getWorkFolder(), core.settings.read(title));
+        File folder = new File(core.settings.read(title));
         
         // doesn't exist?
         if(folder.exists() == false){
@@ -549,11 +549,11 @@ public class SPDXfile2 implements Serializable{
                 continue;
             }
             result += 
-                    utils.text.pluralize(value, 
+                    utils_deprecated.text.pluralize(value, 
                              language.toString() 
                             + " file")
                     + " ("
-                    + utils.misc.getPercentage(value, total) + "%"
+                    + utils_deprecated.misc.getPercentage(value, total) + "%"
                     + ")"
                     + html.br;
         }
@@ -572,11 +572,11 @@ public class SPDXfile2 implements Serializable{
                 continue;
             }
             result += ""
-                    + utils.misc.getPercentage(value, totalLicenses) + "%"
+                    + utils_deprecated.misc.getPercentage(value, totalLicenses) + "%"
                     + " "
                     + license.toId()
                     + " ("
-                    + utils.text.pluralize(
+                    + utils_deprecated.text.pluralize(
                             value, 
                              "file")
                     + ")"
@@ -912,7 +912,7 @@ public class SPDXfile2 implements Serializable{
                 // check if should think about adding a line or not
                 if(hasMoreToProcess){
                     // verify if this line is what we want to write after
-                    if(utils.text.equals(id, line)){
+                    if(utils_deprecated.text.equals(id, line)){
                         
                         // if we should overwrite, we need use special code
                         if(overwrite == true){

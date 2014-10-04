@@ -1,0 +1,11 @@
+{
+  "id": "google-fonts",
+  "title": "Google fonts",
+  "referenceURL": "https://www.google.com/fonts",
+  "downloadURL": "https://developers.google.com/fonts/",
+  "authors": "",
+  "desc": "Fonts made available by Google, developed by multiple authors. License and copyright applicable is found at http://www.google.com/fonts/attribution",
+  "version": "",
+  "lic": "Apache-2.0",
+  "remarks": ""
+}

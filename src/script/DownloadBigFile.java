@@ -134,7 +134,7 @@ public class DownloadBigFile {
                    e.getLocalizedMessage());
        }
             // all done, finish here
-       String fullSize = utils.files.humanReadableSize(file.length());    
+       String fullSize = utils_deprecated.files.humanReadableSize(file.length());    
        log.write(is.INFO, "Download complete, %1"
                             ,fullSize);
        isDownloading = false;

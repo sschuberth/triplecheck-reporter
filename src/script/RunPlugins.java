@@ -39,11 +39,11 @@ public class RunPlugins {
         // pre-flight check
         if(folder.exists() == false){
             // folder doesn't exist, let's create a folder just in case
-            utils.files.mkdirs(folder);
+            utils_deprecated.files.mkdirs(folder);
             return null;
         }
         // find all RunPlugins available
-        ArrayList<File> foundFiles = utils.files.findFiles(folder);
+        ArrayList<File> foundFiles = utils_deprecated.files.findFiles(folder);
         // filter the ones that we don't want
         ArrayList<File> files = new ArrayList();
         for(File file : foundFiles){

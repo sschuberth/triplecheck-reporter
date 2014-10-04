@@ -15,7 +15,7 @@ package components;
 import main.core;
 import script.Plugin;
 import spdxlib.License;
-import utils.html;
+import utils_deprecated.html;
 import www.WebRequest;
 
 

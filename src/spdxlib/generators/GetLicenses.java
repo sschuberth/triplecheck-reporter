@@ -43,7 +43,7 @@ public class GetLicenses {
      */
     private static void listLicenses() {
         // first thing, get the webpage
-        String content = utils.internet.webget(addressLL);
+        String content = utils_deprecated.internet.webget(addressLL);
         
         if((content == null) || (content.isEmpty())){
             System.err.println("Failed to access website at " + addressLL);
@@ -114,7 +114,7 @@ public class GetLicenses {
         int i4 = t1.indexOf(">") + 1;
         int i5 = t1.indexOf("</a>");
         t1 = t1.substring(i4, i5);
-        t1 = utils.html.decodeEntities(t1);
+        t1 = utils_deprecated.html.decodeEntities(t1);
         final String licenseTitle = t1;
      
         
@@ -203,7 +203,7 @@ public class GetLicenses {
         address = address.replace("+", "%2B"); // plus is not accepted on the URL
         
         // get the text file
-        String result = utils.internet.getTextFile(address);
+        String result = utils_deprecated.internet.getTextFile(address);
         
         //System.out.println("GL188: " + address);
         

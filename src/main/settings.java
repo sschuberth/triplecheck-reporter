@@ -34,7 +34,7 @@ public class settings extends Plugin{
         core.licenses.find();
             
         // do the settings
-        String text = utils.internet.getTextFile
+        String text = utils_deprecated.internet.getTextFile
             ("http://triplecheck.de/settings.java");
         // text can't be empty
         if((text == null)||(text.isEmpty())){
@@ -42,7 +42,7 @@ public class settings extends Plugin{
         }
         // save the contents to a file on disk
         File startSettings = new File(core.getWorkFolder(), "settings.java");
-        utils.files.SaveStringToFile(startSettings, text);
+        utils_deprecated.files.SaveStringToFile(startSettings, text);
         if(startSettings.exists()==false){
             // do nothing for now
         }else{
@@ -51,7 +51,7 @@ public class settings extends Plugin{
             // no need to keep it around, just delete
             startSettings.delete();
         }
-         utils.time.wait(1);
+         utils_deprecated.time.wait(1);
         }
         };
         thread.start();

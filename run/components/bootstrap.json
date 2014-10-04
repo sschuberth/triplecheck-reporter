@@ -1,0 +1,11 @@
+{
+  "id": "bootstrap",
+  "title": "bootstrap",
+  "referenceURL": "http://getbootstrap.com",
+  "downloadURL": "",
+  "authors": "",
+  "desc": "Built at Twitter by @mdo and @fat, Bootstrap utilizes LESS CSS, is compiled via Node, and is managed through GitHub to help nerds do awesome stuff on the web.",
+  "version": "",
+  "lic": "Apache-2.0",
+  "remarks": ""
+}

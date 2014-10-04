@@ -27,7 +27,7 @@ import spdxlib.FileInfo2;
 import spdxlib.License;
 import spdxlib.LicenseType;
 import spdxlib.SPDXfile2;
-import utils.html;
+import utils_deprecated.html;
 
 
 /**
@@ -93,7 +93,7 @@ public final class LicenseControl {
         }
         // clear up the list to avoid duplicates
         File folder = core.getLicensesFolder();
-        ArrayList<File> files = utils.files.findFilesFiltered(folder, ".java", 2);
+        ArrayList<File> files = utils_deprecated.files.findFilesFiltered(folder, ".java", 2);
         log.write(is.INSTALLING, "Processing %1 licenses", "" + files.size());
         for(File file : files){
             //core.script.runJava(file, null, is.license);
@@ -118,7 +118,7 @@ public final class LicenseControl {
      */
     public License get(String licenseId) {
         for(License license : list){
-            if(utils.text.equals(licenseId, license.getId())){
+            if(utils_deprecated.text.equals(licenseId, license.getId())){
                 return license;
             }
         }
@@ -129,7 +129,7 @@ public final class LicenseControl {
     
     public License getAsTitle(final String licenseTitle) {
         for(License license : list){
-            if(utils.text.equals(licenseTitle, license.getTitle())){
+            if(utils_deprecated.text.equals(licenseTitle, license.getTitle())){
                 return license;
             }
         }
@@ -212,7 +212,7 @@ public final class LicenseControl {
                    @Override
                    public void run(){
                        // wait a little bit for things to start
-                       utils.time.wait(2);
+                       utils_deprecated.time.wait(2);
                        find(); 
                    }
             };

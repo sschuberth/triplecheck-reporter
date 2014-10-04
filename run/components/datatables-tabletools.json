@@ -1,0 +1,11 @@
+{
+  "id": "datatables-tabletools",
+  "title": "DataTables TableTools",
+  "referenceURL": "http://www.sprymedia.co.uk",
+  "downloadURL": "",
+  "authors": "Allan Jardine",
+  "desc": "TableTools container element and styles applying to all components.\nStyles for TableTools 2.",
+  "version": "",
+  "lic": "BSD-3-Clause",
+  "remarks": "License:     GPL v2 / 3 point BSD"
+}

@@ -18,7 +18,7 @@ import java.io.File;
 import main.core;
 import script.Plugin;
 import spdxlib.SPDXfile2;
-import utils.html;
+import utils_deprecated.html;
 import www.RequestOrigin;
 import www.WebRequest;
 

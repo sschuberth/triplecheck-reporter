@@ -1,0 +1,11 @@
+{
+  "id": "phpexcel",
+  "title": "PHPExcel",
+  "referenceURL": "http://www.codeplex.com/PHPExcel",
+  "downloadURL": "http://www.codeplex.com/PHPExcel",
+  "authors": "PHPExcel",
+  "desc": "PHPExcel - OpenXML - Read, Write and Create Excel documents in PHP - Spreadsheet engine",
+  "version": "",
+  "lic": "LGPL-2.1",
+  "remarks": "Current code development has moved to https://github.com/PHPOffice/PHPExcel"
+}

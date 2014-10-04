@@ -12,7 +12,8 @@ package spdxlib;
 
 public enum LicenseType {
         // added for own use
-	Public_Domain,                                 
+	Public_Domain,
+        Proprietary,
         MPL_2_0_plus,
         GPL,
         LGPL,
@@ -239,6 +240,7 @@ public enum LicenseType {
         switch(this){
         // own usage    
 	case Public_Domain: return "Public Domain";
+        case Proprietary: return "Proprietary";
         case MPL_2_0_plus: return "Mozilla Public License 2.0 or later";                                 
         case GPL: return "GNU General Public License (version not defined)";                                 
         case LGPL: return "GNU Lesser General Public License (version not defined)";                                 
@@ -468,6 +470,7 @@ public enum LicenseType {
         switch(this){
         // own usage
         case Public_Domain: return "Public Domain";
+        case Proprietary: return "Proprietary";
         case MPL_2_0_plus: return "MPL-2.0+";                                 
         case GPL: return "GPL";                                 
         case LGPL: return "LGPL";                                 

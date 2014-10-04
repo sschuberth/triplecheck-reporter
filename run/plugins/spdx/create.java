@@ -33,7 +33,7 @@ import script.RunningTask;
 import script.log;
 import spdxlib.DocumentCreate2;
 import spdxlib.SPDXfile2;
-import utils.html;
+import utils_deprecated.html;
 import www.RequestOrigin;
 import www.WebRequest;
 
@@ -193,10 +193,10 @@ public class create extends Plugin{
                    @Override
                    public void run(){
                        // wait a little bit for things to start
-                       utils.time.wait(3);
+                       utils_deprecated.time.wait(3);
                        // keep repearing while things are being processed
                        while(newSPDX.isProcessing()){
-                            utils.time.wait(3);
+                            utils_deprecated.time.wait(3);
                             setStatus("%1 files processed", 
                                     "" + newSPDX.getFilesProcessed());
                        }
@@ -221,7 +221,7 @@ public class create extends Plugin{
         task.launch();
         
         //request.setAnswer("Process launched as " + task.getUID());
-        request.setAnswer(utils.html.redirect("/basic/status"
+        request.setAnswer(utils_deprecated.html.redirect("/basic/status"
                 + "?ID=" + task.getUID(), 0, ""));
     }
 
@@ -259,7 +259,7 @@ public class create extends Plugin{
             public void doTask(){
                 setTitle("Creating reports");
                 // get a list of the folders to index
-                ArrayList<File> folderList = utils.files.findFolders(sourceBatch, 2);
+                ArrayList<File> folderList = utils_deprecated.files.findFolders(sourceBatch, 2);
                 int counter = 0;
                 for(File source : folderList){
                     // go through each one
@@ -329,7 +329,7 @@ public class create extends Plugin{
 //    }
 //        request.setAnswer(utils.html.redirect("/basic/status", 0, ""));
         
-        request.setAnswer(utils.html.redirect("/basic/status"
+        request.setAnswer(utils_deprecated.html.redirect("/basic/status"
                 + "?ID=" + task.getUID(), 0, ""));
     }
     
@@ -453,7 +453,7 @@ public class create extends Plugin{
         
         
         //request.setAnswer("Process launched as " + task.getUID());
-        request.setAnswer(utils.html.redirect("/basic/status"
+        request.setAnswer(utils_deprecated.html.redirect("/basic/status"
                 + "?ID=" + task.getUID(), 0, ""));
         
     }
@@ -481,7 +481,7 @@ public class create extends Plugin{
         }
         // count the time it took to run this task
         long time = System.currentTimeMillis() - task.getUID();
-        String timeCount = utils.time.timeNumberToHumanReadable(time) + " were "
+        String timeCount = utils_deprecated.time.timeNumberToHumanReadable(time) + " were "
                 + "necessary to complete this task";
         task.setStatus(timeCount);
         
@@ -520,7 +520,7 @@ public class create extends Plugin{
                
                
                
-               // when all things said and done
+               // when all things were said and done
                concludeCreation(newSPDX);
         
         return result;
@@ -533,7 +533,7 @@ public class create extends Plugin{
          File mainFolder = new File(downloadedFile.getParentFile(), "extracted");
          // create the specific folder for this file
          File destination = new File(mainFolder, fileName);
-         utils.files.mkdirs(destination);
+         utils_deprecated.files.mkdirs(destination);
          
          // get the name portion
          Archiver archiver = null;
@@ -594,7 +594,7 @@ public class create extends Plugin{
         File downloadFolder = new File(core.getWorkFolder(), "downloads");
         // we might need to create this folder
         if(downloadFolder.exists() == false){
-            utils.files.mkdirs(downloadFolder);
+            utils_deprecated.files.mkdirs(downloadFolder);
         }
         
         // now, get the filename portion of this file
@@ -623,7 +623,7 @@ public class create extends Plugin{
                     download.getFile();
         
         // get the file size
-        String targetSize = utils.files.humanReadableSize(targetFile.length());
+        String targetSize = utils_deprecated.files.humanReadableSize(targetFile.length());
         task.setStatus("File was downloaded as \"%1\" with an approximate"
                 + " size of %2"
                 ,targetFilename, targetSize);
@@ -639,7 +639,6 @@ public class create extends Plugin{
  * updating the tree view
  */
 private void concludeCreation(DocumentCreate2 newSPDX){
-    //System.err.println("CR641 - Missing to implement SPDX conclude creation");
     SPDXfile2 spdx = new SPDXfile2(newSPDX.getOutputFile());
     core.reports.add(spdx.file, spdx);
     TreeviewUtils.spdxAddNode2(spdx, TreeviewUtils.getNodeReports());

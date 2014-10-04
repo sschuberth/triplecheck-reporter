@@ -1,0 +1,11 @@
+{
+  "id": "hyphenator",
+  "title": "hyphenator",
+  "referenceURL": "http://code.google.com/p/hyphenator/",
+  "downloadURL": "https://code.google.com/p/hyphenator/downloads/list",
+  "authors": "Mathias Nater",
+  "desc": "Hyphenator.js …\n\n    automatically hyphenates texts on websites if either the webdeveloper has included the script on the website or you use it as a bookmarklet on any site.\n    runs on any modern browser that supports JavaScript and the soft hyphen (\u0026shy;).\n    automatically breaks URLs on any browser that supports the zero width space. ",
+  "version": "",
+  "lic": "LGPL-2.1",
+  "remarks": ""
+}

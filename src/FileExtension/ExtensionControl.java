@@ -67,7 +67,7 @@ public final class ExtensionControl {
         
              
         File folder = core.getExtensionsFolder();
-        ArrayList<File> files = utils.files.findFilesFiltered(folder, ".java", 2);
+        ArrayList<File> files = utils_deprecated.files.findFilesFiltered(folder, ".java", 2);
         for(File file : files){   
             // ignore the extensions inside the "unknown" folder
             if(file.getParentFile().getName().contains("unknown")){
@@ -79,7 +79,7 @@ public final class ExtensionControl {
             }
             
             // get the extension interpreted
-            FileExtension temp = (FileExtension) utils.bytecode.getObject(file);
+            FileExtension temp = (FileExtension) utils_deprecated.bytecode.getObject(file);
             
             // no need for null values
             if(temp == null){
@@ -101,7 +101,7 @@ public final class ExtensionControl {
      */
     public Boolean has(final String extension){
         for(String ext : listIndexes){
-            if(utils.text.equals(ext, extension)){
+            if(utils_deprecated.text.equals(ext, extension)){
                 return true;
             }
         }
@@ -116,7 +116,7 @@ public final class ExtensionControl {
     public FileExtension get(String extension){
         for(FileExtension ext : list){
             final String shortId = ext.getIdentifierShort();
-            if(utils.text.equals(shortId, extension)){
+            if(utils_deprecated.text.equals(shortId, extension)){
                 return ext;
             }
         }

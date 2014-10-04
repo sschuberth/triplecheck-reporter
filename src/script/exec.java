@@ -56,7 +56,7 @@ public class exec {
 
         
         // read the text file
-        String rawText = utils.files.readAsString(scriptFile);
+        String rawText = utils_deprecated.files.readAsString(scriptFile);
         String[] lines = rawText.split("\n");
         String codeText = "";
         

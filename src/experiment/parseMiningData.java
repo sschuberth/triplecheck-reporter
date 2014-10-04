@@ -163,7 +163,7 @@ public class parseMiningData {
         Repository rep = new Repository();
         rep.setTitle(title);
         rep.setCopyright("Copyright (c) 2014 Nuno Brito");
-        rep.setCreated(utils.time.getDateTimeISO());
+        rep.setCreated(utils_deprecated.time.getDateTimeISO());
         rep.setType(repType);
         rep.setLicense("CC-BY-4.0 license");
         rep.setComments("Data provided by FLOSSmole at http://flossmole.org");

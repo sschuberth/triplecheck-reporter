@@ -1,0 +1,11 @@
+{
+  "id": "ExtJS34",
+  "title": "Ext JS Library",
+  "referenceURL": "http://www.sencha.com/products/extjs/",
+  "downloadURL": "",
+  "authors": "Sencha Inc.",
+  "desc": "Deliver apps on the widest selection of browsers and operating systems with a single code base. Ext JS leverages HTML5 features on modern browsers while maintaining compatibility and functionality for legacy browsers. Confidently deliver apps to your end users regardless of what browser they are using.",
+  "version": "3.4.0",
+  "lic": "Proprietary",
+  "remarks": "License details at http://www.sencha.com/license"
+}

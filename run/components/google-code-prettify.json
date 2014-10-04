@@ -1,0 +1,11 @@
+{
+  "id": "google-code-prettify",
+  "title": "Google Code Prettify",
+  "referenceURL": "https://code.google.com/p/google-code-prettify/",
+  "downloadURL": "https://code.google.com/p/google-code-prettify/downloads/list",
+  "authors": "",
+  "desc": "A Javascript module and CSS file that allows syntax highlighting of source code snippets in an html page. ",
+  "version": "",
+  "lic": "Apache-2.0",
+  "remarks": ""
+}

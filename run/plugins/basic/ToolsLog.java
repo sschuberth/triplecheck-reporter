@@ -16,7 +16,7 @@ import definitions.Messages;
 import main.core;
 import script.Plugin;
 import script.log;
-import utils.html;
+import utils_deprecated.html;
 import www.RequestOrigin;
 import www.WebRequest;
 

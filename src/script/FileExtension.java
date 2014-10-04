@@ -25,7 +25,7 @@ import java.util.Date;
 import spdxlib.ContentType;
 import spdxlib.FileCategory;
 import spdxlib.FileLanguage;
-import utils.html;
+import utils_deprecated.html;
 
 
 /**
@@ -127,24 +127,27 @@ public class FileExtension {
         if((category == FileCategory.SOURCE)
                 ||(category == FileCategory.SCRIPT)){
             // read the contents of this file
-            String result = utils.files.readAsString(targetFile);
+            String result = utils_deprecated.files.readAsString(targetFile);
+            
+            
+            result = utils.code.convertToHTML(result);
             
             // try to add some nice and pretty formatting
 //            try{
                 
-                Java2HtmlOptionsPanel optionsPanel = new Java2HtmlOptionsPanel();
-                JavaSourceConversionSettings options = optionsPanel.getConversionSettings();
-                options.getConversionOptions().setShowJava2HtmlLink(false);
-                options.getConversionOptions().setShowTableBorder(false);
-                options.getConversionOptions().setShowFileName(false);
-                options.getConversionOptions().setAddLineAnchors(false);
-
-                String htmlText = Java2Html.convertToHtmlPage(result, options);
-
-                int pos1 = htmlText.indexOf("<!-- start source code -->");
-                int pos2 = htmlText.indexOf("<!-- end source code -->");
-
-                result = "<tr>" + htmlText.substring(pos1, pos2) + "</tr>";
+//                Java2HtmlOptionsPanel optionsPanel = new Java2HtmlOptionsPanel();
+//                JavaSourceConversionSettings options = optionsPanel.getConversionSettings();
+//                options.getConversionOptions().setShowJava2HtmlLink(false);
+//                options.getConversionOptions().setShowTableBorder(false);
+//                options.getConversionOptions().setShowFileName(false);
+//                options.getConversionOptions().setAddLineAnchors(false);
+//
+//                String htmlText = Java2Html.convertToHtmlPage(result, options);
+//
+//                int pos1 = htmlText.indexOf("<!-- start source code -->");
+//                int pos2 = htmlText.indexOf("<!-- end source code -->");
+//
+//                result = "<tr>" + htmlText.substring(pos1, pos2) + "</tr>";
 //            } catch (Exception e){
                 // something went wrong, show text without formatting
 //                String tag = "pre";
@@ -187,7 +190,7 @@ public class FileExtension {
         
         
         //throw new UnsupportedOperationException("Not yet implemented");
-        String result = utils.files.readAsString(targetFile);
+        String result = utils_deprecated.files.readAsString(targetFile);
         result = "<pre>" + result + "</pre>";
         result = html.div() + result + html._div;
         // We don't what we have here, but display it anyways

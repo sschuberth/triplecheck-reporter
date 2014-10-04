@@ -39,10 +39,10 @@ public final class TriggerControl {
      */
     private void addTriggers(){
         File folderTriggers = new File(core.getWorkFolder(), folder.triggers);
-        ArrayList<File> files = utils.files.findFilesFiltered(folderTriggers, ".java", 2);
+        ArrayList<File> files = utils_deprecated.files.findFilesFiltered(folderTriggers, ".java", 2);
         for(File file : files){
             //Trigger result = (Trigger) script.exec.runJava(file, is.trigger);
-            Trigger result = (Trigger) utils.bytecode.getObject(file);
+            Trigger result = (Trigger) utils_deprecated.bytecode.getObject(file);
             
             if(result != null){
                 log.write(is.ADDING, "Trigger: " + result.getTriggerTitle());

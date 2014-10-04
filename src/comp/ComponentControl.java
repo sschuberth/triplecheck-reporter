@@ -22,7 +22,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import main.core;
-import utils.html;
+import utils_deprecated.html;
 import www.Link;
 
 
@@ -97,9 +97,9 @@ public class ComponentControl {
             final String name = file.getName();
             if (file.isFile() && name.endsWith(".json")){
                 // read the contents of this file
-                final String input = utils.files.readAsString(file);
+                final String input = utils_deprecated.files.readAsString(file);
                 final Component result = gson.fromJson(input, Component.class);
-                if(utils.text.equals(result.id, id)){
+                if(utils_deprecated.text.equals(result.id, id)){
                     return result;
                 }
             }
@@ -135,6 +135,7 @@ public class ComponentControl {
         if(files != null)
             // iterate through each file
             for (File file : files) {
+                try{
                 final String name = file.getName();
                 if (file.isFile() && name.endsWith(".json")){
                     // read the contents of this file
@@ -150,6 +151,10 @@ public class ComponentControl {
                     &&( maxDeep-1 > 0 ) ){
                     // do the recursive crawling
                     output += getReportCustomComponents(link, file, maxDeep-1);
+                }
+                }catch (Exception e){
+                    System.err.println("CC156 - Invalid component: "
+                    + file.getName() + "\n" + e.getMessage());
                 }
             }
     return output;
@@ -177,7 +182,7 @@ public class ComponentControl {
                 final String name = file.getName();
                 if (file.isFile() && name.endsWith(".json")){
                     // read the contents of this file
-                    final String input = utils.files.readAsString(file);
+                    final String input = utils_deprecated.files.readAsString(file);
                     final Component result = gson.fromJson(input, Component.class);
                     // only continue if the id contain part of the search term
                     if(result.id.contains(searchTerm) == false){
@@ -323,7 +328,7 @@ public class ComponentControl {
             
             output += html.br 
                     + "Search time: " 
-                    + utils.time.timeNumberToHumanReadable(result);
+                    + utils_deprecated.time.timeNumberToHumanReadable(result);
            // System.err.println("CC235 - " + output);
             
         }catch (Exception e){}
@@ -350,7 +355,7 @@ public class ComponentControl {
                 // transform into a component
                 final Component result = gson.fromJson(line, Component.class);
                 // do we have a match?
-                if(utils.text.equals(id, result.id)){
+                if(utils_deprecated.text.equals(id, result.id)){
                     // add up the type of repository that we are using
                     final String name = file.getName();
                     // is it the google code repository?

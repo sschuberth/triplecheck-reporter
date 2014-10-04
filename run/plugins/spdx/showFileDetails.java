@@ -26,7 +26,7 @@ import script.Plugin;
 import script.log;
 import spdxlib.FileInfo2;
 import spdxlib.SPDXfile2;
-import utils.html;
+import utils_deprecated.html;
 import www.WebRequest;
 
 
@@ -217,9 +217,11 @@ public class showFileDetails extends Plugin{
             }
         }
         
-        String lookForExtensionInfo = ""
-                        //+ html.br
-                        + swingUtils.addIfNotEmpty("Info about file extension \""
+        // shall we add details about the file extension?
+        String lookForExtensionInfo = "";
+        if(shortExtension.isEmpty() == false){
+                        lookForExtensionInfo = 
+                                swingUtils.addIfNotEmpty("Info about file extension \""
                             + shortExtension
                             + "\"",
                             html.div() 
@@ -227,12 +229,13 @@ public class showFileDetails extends Plugin{
                             (shortExtension)
                             + html._div
                      );
+        }
         
         //summary += html.br;
         
          if(fileInfo.getFileSize() != 0){
             summary += ", sized in " 
-                    + utils.files.humanReadableSize(fileInfo.getFileSize());
+                    + utils_deprecated.files.humanReadableSize(fileInfo.getFileSize());
         }
          if(fileInfo.getFileLOC() != 0){
             summary += " with " + fileInfo.getFileLOC() + " lines of code"; 
@@ -271,20 +274,22 @@ public class showFileDetails extends Plugin{
         }
      
         if(fileInfo.getFileComponent() != null){
-            summary += html.br + "Has code from: " + fileInfo.getFileComponent();
+            summary += html.br + "Related to " + fileInfo.getFileComponent();
         }
         
         
-        // do the date creation
-        //TODO We need to archive file date information
-        //summary += "Created in " + file.;
-        
+      
         
         String resultIntroduction = ""
                 + "<h2>"
                 + filename
-//                + breadCrumb
                 + "</h2>"
+                + "<i>" 
+                // add the breadcrumb
+                + fileInfo.getFileName()
+                + "</i>"
+                + html.br
+                + html.br
                 + html.div()
                 + summary
                 + getCopyrightData(fileInfo)
@@ -298,10 +303,10 @@ public class showFileDetails extends Plugin{
                         + html.linkToSearchYandex("\"" + filename + "\"")
                         + html.divider
                         + html.linkToSearchGoogle(googleTerm)
-//                        + html.divider
-//                        + html.linkToSearchOhloh(file.tagFileName.toString())
                         + html.divider
                         + html.linkToSearchGitHub(fileInfo.getName())
+                        + html.divider
+                        + html.linkToSearchCode(fileInfo.getName())
                         + html._div;
         
         String resultSHA1 = "";

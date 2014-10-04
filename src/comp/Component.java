@@ -19,7 +19,7 @@ import java.io.File;
 import java.util.ArrayList;
 import main.core;
 import spdxlib.License;
-import utils.html;
+import utils_deprecated.html;
 
 
 /**
@@ -181,7 +181,7 @@ public class Component {
         // now get the file where the json will be written
         File file = new File(core.getComponentFolder(), id + ".json");
         // now write it up
-        utils.files.SaveStringToFile(file, jsonOutput);
+        utils_deprecated.files.SaveStringToFile(file, jsonOutput);
     }
 
   

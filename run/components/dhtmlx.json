@@ -1,0 +1,11 @@
+{
+  "id": "dhtmlx",
+  "title": "DHTMLX Suite",
+  "referenceURL": "http://dhtmlx.com/docs/products/dhtmlxSuite/",
+  "downloadURL": "http://dhtmlx.com/x/download/regular/dhtmlxSuite.zip",
+  "authors": "Dinamenta, UAB",
+  "desc": "JavaScript Component Library for Building Rich Web Apps",
+  "version": "",
+  "lic": "Proprietary",
+  "remarks": "Dual License, GPL or requests commercial license in alternative."
+}

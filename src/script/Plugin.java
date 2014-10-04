@@ -27,7 +27,7 @@ import main.core;
 import net.htmlparser.jericho.FormFields;
 import net.htmlparser.jericho.OutputDocument;
 import net.htmlparser.jericho.Source;
-import utils.Settings;
+import utils_deprecated.Settings;
 import www.WebRequest;
 
    
@@ -123,7 +123,7 @@ public class Plugin {
      // get our template page
        File templatePage = new File(thisFolder, templateFile);
        // place its contents inside a string
-       String webText = utils.files.readAsString(templatePage);
+       String webText = utils_deprecated.files.readAsString(templatePage);
        
         // instantiate our HTML manipulating class
         Source source = new net.htmlparser.jericho.Source(webText);
@@ -148,7 +148,7 @@ public class Plugin {
         String result = outputDocument.toString();
 
         File tempFile = new File(thisFolder, "temp.html");
-        utils.files.SaveStringToFile(tempFile, result);
+        utils_deprecated.files.SaveStringToFile(tempFile, result);
 
         request.setPage(tempFile);
      }

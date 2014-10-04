@@ -19,7 +19,7 @@ import main.core;
 import script.Plugin;
 import script.RunningTask;
 import script.log;
-import utils.html;
+import utils_deprecated.html;
 import www.Table;
 import www.WebRequest;
 
@@ -153,7 +153,7 @@ public class status extends Plugin{
 
         // add a page refresh in case the task is still processing
         if(task.isProcessing()){
-            meta = utils.html.redirectMetaTag("/basic/status?id=" 
+            meta = utils_deprecated.html.redirectMetaTag("/basic/status?id=" 
                     + task.getUID(), 3);
         }
         
@@ -202,7 +202,7 @@ public class status extends Plugin{
                         //+ 
                         task.getTitle() 
                         )
-                + "Started in " + utils.time.getTimeFromLong(task.getUID())
+                + "Started in " + utils_deprecated.time.getTimeFromLong(task.getUID())
                 + html.br
                 + "Temporary Id number: " + task.getUID()
                 + html.br

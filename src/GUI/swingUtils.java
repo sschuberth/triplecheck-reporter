@@ -32,7 +32,7 @@ import net.htmlparser.jericho.Source;
 import script.log;
 import spdxlib.FileInfo2;
 import spdxlib.SPDXfile2;
-import utils.html;
+import utils_deprecated.html;
 import www.RequestOrigin;
 import www.RequestType;
 import www.WebRequest;
@@ -156,7 +156,7 @@ public class swingUtils {
         if(text.isEmpty()){
             return "";
         }
-        if(text.isEmpty()){
+        if(title.isEmpty()){
             return "";
         }
         String result = ""
@@ -609,7 +609,7 @@ public class swingUtils {
             
             int pos = content.indexOf("=");
             // filter our number from the rest of the text
-            delay = utils.text.justNumbers(content.substring(0,pos));
+            delay = utils_deprecated.text.justNumbers(content.substring(0,pos));
             // we use -1 as indicator that something went wrong
             if(delay == -1){
                 System.err.println("META error 003: No delay value was found");

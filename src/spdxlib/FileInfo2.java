@@ -377,15 +377,17 @@ public class FileInfo2 {
      */
     public File getFile(){
         // what is the relative path?
-        String relativePath = getFileName();
+        final String relativePath = getFileName();
         // get our target file
-        File targetFile = new File(spdx.getSourceFolder(), relativePath);
+        final File targetFile = new File(spdx.getSourceFolder(), relativePath);
+        System.out.println("123-->" + targetFile.getAbsolutePath());
+        System.out.println("124-->" + relativePath);
         // doesn't exist? No need to continue
         if(targetFile.exists() == false){
-            System.err.println("FI342, getFile(): Didn't found: " + targetFile.getAbsolutePath());
+            System.err.println("FI385, getFile(): Didn't found: " + targetFile.getAbsolutePath());
             return null;
         }
-        System.err.println("FI344 - GetFile: " + targetFile.getAbsolutePath());
+        System.err.println("FI388 - GetFile: " + targetFile.getAbsolutePath());
         // all done
         return targetFile;
     }

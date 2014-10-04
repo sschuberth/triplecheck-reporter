@@ -29,7 +29,7 @@ import structure.LicenseControl;
 import structure.LicensePopularity;
 import structure.ReportsControl;
 import structure.TriggerControl;
-import utils.Settings;
+import utils_deprecated.Settings;
 
 
 public class core {
@@ -51,7 +51,7 @@ public class core {
     public static StudioUI4 studio = null;
     
     
-    public static utils.KeyStroke key = new utils.KeyStroke();
+    public static utils_deprecated.KeyStroke key = new utils_deprecated.KeyStroke();
     
     public static File thisFile;
     
@@ -155,7 +155,7 @@ public class core {
         File result = new File(getWorkFolder(), "misc");
         // if the folder doesn't exist, create one
         if(result.exists() == false){
-            utils.files.mkdirs(result);
+            utils_deprecated.files.mkdirs(result);
         }
         return result;
     }
@@ -168,7 +168,7 @@ public class core {
         File result = new File(getWorkFolder(), "export");
         // if the folder doesn't exist, create one
         if(result.exists() == false){
-            utils.files.mkdirs(result);
+            utils_deprecated.files.mkdirs(result);
         }
         return result;
     }
@@ -182,7 +182,7 @@ public class core {
         File result = new File(core.getMiscFolder(),"github");
         // if the folder doesn't exist, create one
         if(result.exists() == false){
-            utils.files.mkdirs(result);
+            utils_deprecated.files.mkdirs(result);
         }
         return result;
     }

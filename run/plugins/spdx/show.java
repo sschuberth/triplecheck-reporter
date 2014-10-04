@@ -29,8 +29,8 @@ import script.Plugin;
 import script.log;
 import spdxlib.FileInfo2;
 import spdxlib.SPDXfile2;
-import utils.Graphs;
-import utils.html;
+import utils_deprecated.Graphs;
+import utils_deprecated.html;
 import www.Table;
 import www.WebRequest;
 
@@ -315,7 +315,7 @@ public class show extends Plugin{
         // add the pretty text with a thousands separator
         DecimalFormat myFormatter = new DecimalFormat("###,###");
         String textLOC = myFormatter.format(countLOC);
-        String textOverallSize = utils.files.humanReadableSize(overallSize);
+        String textOverallSize = utils_deprecated.files.humanReadableSize(overallSize);
         
         // generate the nice graph
         String[] titles = new String[]{"No license declared", "License declared"};
@@ -364,7 +364,7 @@ public class show extends Plugin{
         
         // if we are on Windows, permit to open the folder
         String openFolder = "";
-        if(utils.misc.isWindows()){
+        if(utils_deprecated.misc.isWindows()){
             openFolder = ""
                     //+ html.br
                     + html.link("Open folder in Windows explorer", 

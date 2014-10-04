@@ -28,7 +28,7 @@ import spdxlib.FileInfo2;
 import spdxlib.SPDXfile2;
 import ssdeep.SpamSumSignature;
 import ssdeep.ssdeep;
-import utils.html;
+import utils_deprecated.html;
 import www.RequestOrigin;
 import www.Table;
 import www.WebRequest;
@@ -73,7 +73,7 @@ public class pluginSearch extends Plugin{
      */
     private void prepareFileLauncher(){
         // get all the java files that we are ready to launch if needed
-        ArrayList<File> files = utils.files.findFilesFiltered(core.getPluginsFolder(), 
+        ArrayList<File> files = utils_deprecated.files.findFilesFiltered(core.getPluginsFolder(), 
                 ".java", 25);
         
         // we need some filtering
@@ -226,7 +226,7 @@ public class pluginSearch extends Plugin{
                
                    // add the file size on the details
                    if(file.getFileSize() != 0){
-                       String fileSize = utils.files.humanReadableSize(file.getFileSize());
+                       String fileSize = utils_deprecated.files.humanReadableSize(file.getFileSize());
                         fileDetails =  fileDetails.concat(fileSize);
 //                       if(fileSize.contains("(")){
 //                           fileSize = fileSize.substring(0, 
@@ -433,7 +433,7 @@ public class pluginSearch extends Plugin{
         if(searchTerm.equalsIgnoreCase("help")){
             File helpFile = new File(thisFolder, "help.html");
             System.out.println(helpFile.getAbsoluteFile());
-            output = utils.files.readAsString(helpFile);
+            output = utils_deprecated.files.readAsString(helpFile);
             //System.out.println(output);
             return true;
         }

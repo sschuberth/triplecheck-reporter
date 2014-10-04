@@ -48,7 +48,7 @@ public class bytecodeCompile {
     
     public static void testPlugin(){
         File scriptFile = new File(core.getMiscFolder(), "home.java");
-        utils.bytecode.runJava(scriptFile, "say");
+        utils_deprecated.bytecode.runJava(scriptFile, "say");
     }
     
     

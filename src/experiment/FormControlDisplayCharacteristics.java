@@ -5,7 +5,7 @@ import java.util.*;
 import java.io.*;
 import java.net.*;
 import main.core;
-import utils.Settings;
+import utils_deprecated.Settings;
 
 public class FormControlDisplayCharacteristics {
 	public static void main(String[] args) throws Exception {
@@ -21,7 +21,7 @@ public class FormControlDisplayCharacteristics {
                 
                 File webPage = new File(thisFolder, "serverSettings.html");
                 sourceUrlString = webPage.getAbsolutePath();
-                String webText = utils.files.readAsString(webPage);
+                String webText = utils_deprecated.files.readAsString(webPage);
        
 		// instantiate our HTML manipulating class
                 Source source =  new Source(webText);

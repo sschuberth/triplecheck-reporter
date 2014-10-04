@@ -201,7 +201,7 @@ public class WebServer implements Container {
                 }
                 
                 String scriptMethod = 
-                        utils.internet.getHTMLparameter(request, is.methodExecute);
+                        utils_deprecated.internet.getHTMLparameter(request, is.methodExecute);
                 
 //                if(scriptMethod.equals("start")){
 //                    System.err.println("Listing all parameters:");

@@ -20,7 +20,7 @@ import script.log;
 import structure.LicenseControl;
 import structure.ReportsControl;
 import structure.TriggerControl;
-import utils.Settings;
+import utils_deprecated.Settings;
 
 /**
  *
@@ -66,8 +66,8 @@ public class start {
         startupScreen.kickoff();
         log.write(is.CREDITS, "TripleCheck (c) %1, "
                 + "http://triplecheck.de", utils.time.getCurrentYear());
-        log.write(is.RUNNING, "Version %1 %2", core.version,
-                utils.misc.getDate(start.class));
+//        log.write(is.RUNNING, "Version %1 %2", core.version,
+//                utils.misc.getDate(start.class));
         
         // do the startup
         settings.doStartup();

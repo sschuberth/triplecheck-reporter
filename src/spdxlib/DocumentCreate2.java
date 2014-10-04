@@ -166,13 +166,13 @@ public class DocumentCreate2 {
   */
      boolean isRepositoryFolder(final File folder){
          final String folderName = folder.getName();
-         if(utils.text.equals(folderName, ".git")){
+         if(utils_deprecated.text.equals(folderName, ".git")){
              return true;
          }else
-             if(utils.text.equals(folderName, ".svn")){
+             if(utils_deprecated.text.equals(folderName, ".svn")){
                  return true;
          }else
-             if(utils.text.equals(folderName, ".hg")){
+             if(utils_deprecated.text.equals(folderName, ".hg")){
                  return true;
          }
          // not one of those folders. All good to go.
@@ -297,7 +297,7 @@ public class DocumentCreate2 {
         final String SHA1 = is.tagFileChecksum
                 .concat(" ".concat(is.tagFileChecksumSHA1
                         .concat(" ".concat(
-                                utils.Checksum.generateFileChecksum("SHA-1", file)
+                                utils_deprecated.Checksum.generateFileChecksum("SHA-1", file)
                                 .concat("\n"
                         ))
                 )));
@@ -305,7 +305,7 @@ public class DocumentCreate2 {
         final String SHA256 = is.tagFileChecksum
                 .concat(" ".concat(is.tagFileChecksumSHA256
                         .concat(" ".concat(
-                                utils.Checksum.generateFileChecksum("SHA-256", file)
+                                utils_deprecated.Checksum.generateFileChecksum("SHA-256", file)
                                 .concat("\n"
                         ))
                 )));
@@ -313,7 +313,7 @@ public class DocumentCreate2 {
         final String MD5 = is.tagFileChecksum
                 .concat(" ".concat(is.tagFileChecksumMD5
                         .concat(" ".concat(
-                                utils.Checksum.generateFileChecksum("MD5", file)
+                                utils_deprecated.Checksum.generateFileChecksum("MD5", file)
                                 .concat("\n")
                         )
                 )));
@@ -341,7 +341,7 @@ public class DocumentCreate2 {
         // get the text for the SPDX tag
         final String tagFileSize = ( fileSize > 1000 ? 
                 is.tagFileSize.concat(" ".concat(
-                        utils.files.humanReadableSize( fileSize ).concat(
+                        utils_deprecated.files.humanReadableSize( fileSize ).concat(
                         " (".concat( fileSize + " bytes)")
                         )
                 ))
@@ -364,7 +364,7 @@ public class DocumentCreate2 {
      */
     private String getCodeInsight(File file) {        
         // read this file from disk onto local memory
-        final String contentNormalCase = utils.files.readAsString(file);
+        final String contentNormalCase = utils_deprecated.files.readAsString(file);
         final String contentLowerCase = contentNormalCase.toLowerCase();
         String result = "";
         
@@ -475,7 +475,7 @@ public class DocumentCreate2 {
                 + addParagraph("Creation Information")
                 + addText("Creator: " + System.getProperty("user.name"))
                 + addText("Creator: Tool: TripleCheck " + core.version)
-                + addText("Created: " + utils.time.getDateSPDX())
+                + addText("Created: " + utils_deprecated.time.getDateSPDX())
                 + "\n"
                 
                 + addParagraph("Package Information")

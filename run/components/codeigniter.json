@@ -1,0 +1,11 @@
+{
+  "id": "codeigniter",
+  "title": "CodeIgniter",
+  "referenceURL": "http://codeigniter.com",
+  "downloadURL": "https://ellislab.com/codeigniter/download",
+  "authors": "",
+  "desc": "CodeIgniter is a proven, agile \u0026 open PHP web application framework with a small footprint. It is powering the next generation of web apps.",
+  "version": "",
+  "lic": "Proprietary",
+  "remarks": "License available at http://codeigniter.com/user_guide/license.html"
+}

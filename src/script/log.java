@@ -14,7 +14,7 @@ package script;
 import definitions.is;
 import java.io.File;
 import java.util.ArrayList;
-import utils.Settings;
+import utils_deprecated.Settings;
 
 /**
  *  Modified in 2013-09-19, log.write now outputs the formatted string as result
@@ -74,7 +74,7 @@ public class log {
         // shall we print this out to the screen? (and avoid too much info)
         if(outputToScreen){
             System.out.println(
-                    utils.time.getTimeFromLong(newEntry.getTime())
+                    utils_deprecated.time.getTimeFromLong(newEntry.getTime())
                     + " " + newEntry.getMessage());
         }
         // process any hooks we might have
@@ -152,7 +152,7 @@ public class log {
                 }else{
                     output = output.concat(
                       // utils.time.getTimeFromLong(newEntry.getTime())
-                       utils.time.getTimeFromLongNoDate(newEntry.getTime())
+                       utils_deprecated.time.getTimeFromLongNoDate(newEntry.getTime())
                        + " " + newEntry.getMessage()
                        + "\n"); 
                 }

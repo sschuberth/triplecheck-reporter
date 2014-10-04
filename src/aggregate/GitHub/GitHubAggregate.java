@@ -95,7 +95,7 @@ public class GitHubAggregate {
      * @return 
      */    
     public GithubUser[] getUsers(int since){
-        String resultAPI = utils.internet.webget("https://api.github.com/users?since="
+        String resultAPI = utils_deprecated.internet.webget("https://api.github.com/users?since="
                 + since);
         Gson gson = new Gson();
         return gson.fromJson(resultAPI, GithubUser[].class); 
@@ -114,7 +114,7 @@ public class GitHubAggregate {
        String fileString = user.id + "-" + user.login;
        File file = new File(folder, fileString);
        // save the file to disk
-       utils.files.SaveStringToFile(file, text);
+       utils_deprecated.files.SaveStringToFile(file, text);
        //System.out.println(file.getAbsolutePath());
        // all done
        System.out.println("Saved: " + fileString);
@@ -141,7 +141,7 @@ public class GitHubAggregate {
         File result = new File(core.getMiscFolder(), "github");
         // if the folder doesn't exist, create one
         if(result.exists() == false){
-            utils.files.mkdirs(result);
+            utils_deprecated.files.mkdirs(result);
         }
         return result;
     }
@@ -170,7 +170,7 @@ public class GitHubAggregate {
                 }
             }
             // wait some time to respect rate limit
-            utils.time.wait(throttle);
+            utils_deprecated.time.wait(throttle);
         }
         
         

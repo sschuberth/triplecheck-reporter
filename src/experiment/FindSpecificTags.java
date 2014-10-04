@@ -88,7 +88,7 @@ public class FindSpecificTags {
             
                 int delay = -1; String url = null;
                         ArrayList<String[]> params = new ArrayList<String[]>();
-                String sourceURL = utils.files.readAsString(new File("test.html"));
+                String sourceURL = utils_deprecated.files.readAsString(new File("test.html"));
                 swingUtils.getMetaRefresh(sourceURL, delay, url, params);
                 
 //                Source source=new Source(new URL(sourceUrlString));

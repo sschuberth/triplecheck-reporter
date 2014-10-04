@@ -1,0 +1,11 @@
+{
+  "id": "mpdf",
+  "title": "mPDF",
+  "referenceURL": "http://mpdf.bpm1.com/",
+  "downloadURL": "http://mpdf.bpm1.com/index.php?page\u003dDownload",
+  "authors": "Ian Back",
+  "desc": "PHP class which generates PDF files from UTF-8 encoded HTML. mPDF is a PHP class which generates PDF files from UTF-8 encoded HTML. It is based on FPDF and HTML2FPDF, with a number of enhancements.",
+  "version": "",
+  "lic": "GPL-2.0",
+  "remarks": ""
+}

@@ -22,7 +22,7 @@ import javax.swing.tree.DefaultTreeModel;
 import script.Plugin;
 import script.log;
 import main.core;
-import utils.html;
+import utils_deprecated.html;
 
 
 /**

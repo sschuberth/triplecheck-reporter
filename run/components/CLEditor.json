@@ -1,0 +1,11 @@
+{
+  "id": "CLEditor",
+  "title": "CLEditor WYSIWYG HTML Editor",
+  "referenceURL": "http://premiumsoftware.net/CLEditor",
+  "downloadURL": "",
+  "authors": "Chris Landowski",
+  "desc": "CLEditor is an open source jQuery plug-in which provides a lightweight, full featured, cross browser, extensible, WYSIWYG HTML editor that can be easily added into any web site. ",
+  "version": "1.4.1",
+  "lic": "MIT",
+  "remarks": ""
+}

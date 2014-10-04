@@ -46,7 +46,7 @@ public class GetLicensesEnum {
      */
     private static void listLicenses() {
         // first thing, get the webpage
-        String content = utils.internet.webget(addressLL);
+        String content = utils_deprecated.internet.webget(addressLL);
         
         if((content == null) || (content.isEmpty())){
             System.err.println("Failed to access website at " + addressLL);
@@ -120,7 +120,7 @@ public class GetLicensesEnum {
         int i4 = t1.indexOf(">") + 1;
         int i5 = t1.indexOf("</a>");
         t1 = t1.substring(i4, i5);
-        t1 = utils.html.decodeEntities(t1);
+        t1 = utils_deprecated.html.decodeEntities(t1);
         final String licenseTitle = t1;
      
         
@@ -208,7 +208,7 @@ public class GetLicensesEnum {
         address = address.replace("+", "%2B"); // plus is not accepted on the URL
         
         // get the text file
-        String result = utils.internet.getTextFile(address);
+        String result = utils_deprecated.internet.getTextFile(address);
         
         //System.out.println("GL188: " + address);
         
@@ -364,12 +364,12 @@ public class GetLicensesEnum {
                 "/*\n" +
                 " * SPDXVersion: SPDX-1.1\n" +
                 " * Creator: Person: Nuno Brito\n" +
-                " * Created: "+utils.time.getDateSPDX()+"\n" +
+                " * Created: "+utils_deprecated.time.getDateSPDX()+"\n" +
                 " * LicenseName: EUPL-1.1-without-appendix\n" +
                 " * FileName: LicenseType.java \n" +
                 " * FileCategory: SOURCE\n" +
                 " * FileCopyrightText: <text> Copyright (c) "
-                + utils.time.getCurrentYear()+", Nuno Brito </text>\n" +
+                + utils_deprecated.time.getCurrentYear()+", Nuno Brito </text>\n" +
                 " */\n\n";
         
         // add up our header
@@ -377,7 +377,7 @@ public class GetLicensesEnum {
         
         System.out.println(enumTypes);
         File output = new File(core.getMiscFolder(), "LicenseType.java");
-        utils.files.SaveStringToFile(output, enumTypes);
+        utils_deprecated.files.SaveStringToFile(output, enumTypes);
         
     }
     

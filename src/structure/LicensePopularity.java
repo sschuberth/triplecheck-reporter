@@ -23,7 +23,7 @@ import spdxlib.FileInfo2;
 import spdxlib.License;
 import spdxlib.LicenseType;
 import spdxlib.SPDXfile2;
-import utils.html;
+import utils_deprecated.html;
 
 
 /**
@@ -67,14 +67,19 @@ public final class LicensePopularity {
         
         result += html.h3("Licenses used in this project");
         
+        if(popularityList.isEmpty() == false){
         for(LicenseType licenseType : popularityList.keySet()){
+            try{
             int popValue = popularityList.get(licenseType);
             License license = core.licenses.getAsTitle(licenseType.toTitle());
             result += 
                     "(" + popValue + ") "
                     + license.getPrettyText(title, link + license.getId());
+            }catch(Exception e){
+                System.err.println("LP79 - Invalid license: " + licenseType.toId());
+            }
         }
-        
+        }
         // all done
         result += html.br;
         

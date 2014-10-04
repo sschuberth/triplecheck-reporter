@@ -255,7 +255,7 @@ public class StartupScreen extends javax.swing.JFrame {
                         setMessage(log.getLatest().getMessageSimple());
                         int count = log.getCounter();
                         setProgress(count);
-                        utils.time.waitMs(150);
+                        utils_deprecated.time.waitMs(150);
                     }
                     // store the real value for later reuse
                     core.settings.write(counterValue, log.getCounter()+ "");
