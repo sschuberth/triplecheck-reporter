@@ -43,7 +43,7 @@ public class refresh extends Plugin{
         }
         
         // now that we have the correct node, get the spdx object
-//        SPDXfile2 spdx = (SPDXfile2) node.getUserObject();
+        SPDXfile2 spdx = (SPDXfile2) node.getUserObject();
         
         // and now with the spdx refresh, get the list of components
         String result = "RE49 - Not yet implemented";

@@ -288,10 +288,7 @@ public class show extends Plugin{
         }
       
         // get the SPDX file from the root node
-        //System.err.println("DBG-S342 Reading SPDX");
-        //SPDXfile spdx = new SPDXfile(file);
         SPDXfile2 spdx = core.reports.get(file);
-        
         
         // compute some of our useful statistics about the SPDX document
         int counterLicensesDeclared = spdx.getLicensesDeclaredCount();
@@ -387,49 +384,10 @@ public class show extends Plugin{
                  //+ html.br
                 + html._div
                 
-                
-                + html.div()
-                    
                 + html.br
                 + spdx.getCopyrightEvaluation()
                 + html.br
-                + swingUtils.addIfNotEmpty(""
-                        //html.getCommonFolderIcon("magnifier-zoom-fit.png")
-                        + "Look around the web"
-                        , searchEngines)
-                + html._div
-                
-                + html.div()
-                + "<b>" + "Other actions" + "</b>" + html.br
-                + html._div
-                + html.div(20)
-                + openFolder
-                //+ html.getCommonFolderIcon("receipt--pencil.png")
-                + html.link("Show full text", 
-                        "?x=full&"
-                        + param.spdx + "=" + spdxTarget)
-                + html._div
-                + html.br
-                //+ html.br
-                
-//                + html.div()
-//                + "<b>" + "List files" + "</b>" + html.br
-//                + html._div
-//                + html.div(20)
-//                //+ html.getCommonFolderIcon("folder-smiley-sad.png")
-//                //+ html.linkScript("Without a trigger", thisFile, "showFilesWithoutLicense")
-//                + html.link("Without license specified", "?x=list&"
-//                        + param.filter + "=nolicense&" 
-//                        + param.spdx + "=" + spdxTarget)
-//                
-//                + html.br
-                //+ html.getCommonFolderIcon("folder-smiley.png")
-                //+ html.linkScript("With a trigger reported", thisFile, "showFilesWithLicense")
-//                + html.link("With license", "?x=list&"
-//                        + param.filter + "=withlicense&"
-//                        + param.spdx + "=" + spdxTarget)
-//                + html._div
-                + "";
+                ;
         
         // save our cache for next time
         core.temp.put(showSPDX, result);
