@@ -143,9 +143,7 @@ public class GNU implements Trigger {
         for(String keyword : keywordsAGPL){
             // do we have a match inside the content?
             if(contentLowerCase.contains(keyword)){
-                isAGPL = true;
                 checkForTermsAGPL(contentLowerCase);
-                addLicense(AGPL3_0);
                 break;
             }
         }
@@ -199,6 +197,20 @@ public class GNU implements Trigger {
      void checkForTermsAGPL(final String contentLowerCase){
          isTermsAGPL = contentLowerCase.contains
         ("patent license was granted, prior to 28 march 2007");
+         
+         // avoid the GPL license terms which are similar
+         if(contentLowerCase.contains("13. use with the gnu affero general public license.")){
+             isTermsAGPL = false;
+         }
+         
+         
+         // not an AGPL license file
+         if(isTermsAGPL == false){
+             return;
+         }
+         
+         isAGPL = true;
+         addLicense(AGPL3_0);
      }
      
      /**

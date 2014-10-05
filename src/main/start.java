@@ -65,7 +65,7 @@ public class start {
     
         startupScreen.kickoff();
         log.write(is.CREDITS, "TripleCheck (c) %1, "
-                + "http://triplecheck.de", utils.time.getCurrentYear());
+                + "http://triplecheck.net", utils.time.getCurrentYear());
 //        log.write(is.RUNNING, "Version %1 %2", core.version,
 //                utils.misc.getDate(start.class));
         

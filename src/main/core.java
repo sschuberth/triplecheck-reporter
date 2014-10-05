@@ -34,7 +34,7 @@ import utils_deprecated.Settings;
 
 public class core {
 
-    public static String version = "0.9";
+    public static String version = "0.9.6";
     
     public static 
             Script script = new Script();
