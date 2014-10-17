@@ -107,7 +107,7 @@ public class LogEntry {
      */
     public String getTimeReadable(){
         String output;
-            output = utils_deprecated.time.getTimeFromLong(time);
+            output = utils.time.getTimeFromLong(time);
         return output;
     }
 

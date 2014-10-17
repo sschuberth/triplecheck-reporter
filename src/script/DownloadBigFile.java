@@ -11,7 +11,6 @@
  */
 package script;
 
-import main.start;
 import definitions.is;
 import java.io.File;
 import java.io.IOException;
@@ -20,7 +19,7 @@ import java.io.RandomAccessFile;
 import java.math.BigInteger;
 import java.net.URL;
 import java.net.URLConnection;
-import main.core;
+import main.engine;
 import script.log;
 
 /**
@@ -105,7 +104,7 @@ public class DownloadBigFile {
                 //out.flush();
                 bytesBuffered = 0;
                 // use the temporary holder to write the status of this thing
-                core.temp.put(sourceURL, bytesTotal);
+                engine.temp.put(sourceURL, bytesTotal);
                 
                 // calculate the percentage since last count
 //                long currentPercent = 
@@ -134,7 +133,7 @@ public class DownloadBigFile {
                    e.getLocalizedMessage());
        }
             // all done, finish here
-       String fullSize = utils_deprecated.files.humanReadableSize(file.length());    
+       String fullSize = utils.files.humanReadableSize(file.length());    
        log.write(is.INFO, "Download complete, %1"
                             ,fullSize);
        isDownloading = false;

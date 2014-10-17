@@ -32,8 +32,8 @@ public class exec {
     private static void addDefinitions(Interpreter runScript, File scriptFile) 
             throws EvalError{
             // inject our parameters object
-            runScript.set("temp", core.temp);
-            runScript.set("settings", core.settings);
+            runScript.set("temp", engine.temp);
+            runScript.set("settings", engine.settings);
             runScript.set("thisFile", scriptFile);
             runScript.set("thisDir", scriptFile.getParentFile());
             // define what we want to include by default
@@ -56,7 +56,7 @@ public class exec {
 
         
         // read the text file
-        String rawText = utils_deprecated.files.readAsString(scriptFile);
+        String rawText = utils.files.readAsString(scriptFile);
         String[] lines = rawText.split("\n");
         String codeText = "";
         
@@ -115,7 +115,7 @@ public class exec {
             return runScript.get("plugin");
 
         } catch (EvalError e){
-            script.log.write(is.ERROR, "SC224 Error interpreting %1"
+            script.log.write(is.ERROR, "EXEC118 Error interpreting %1"
                     , scriptFile.getName());
             e.printStackTrace();
         }

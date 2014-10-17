@@ -19,10 +19,11 @@ import comp.Component;
 import comp.LinkType;
 import definitions.is;
 import java.util.ArrayList;
-import main.core;
+import main.coreGUI;
+import main.engine;
 import script.Plugin;
 import script.log;
-import utils_deprecated.html;
+import utils.www.html;
 import www.Link;
 import www.WebRequest;
 
@@ -66,7 +67,7 @@ public class choose extends Plugin{
      * a possible match
      */ 
     public void doFindComponent() {
-        final String searchTerm = core.studio.getSearch().getText();
+        final String searchTerm = coreGUI.studio.getSearch().getText();
         // no need to worry about empty searches or less than two characters
         if(searchTerm.length() < 2){
             return;
@@ -86,7 +87,7 @@ public class choose extends Plugin{
 //        // add the link to our list
 //        link.addLink(linkDetails);
         
-        String result = core.components.search(searchTerm, link);
+        String result = engine.components.search(searchTerm, link);
         swingUtils.setText(result);
     }
        
@@ -97,7 +98,7 @@ public class choose extends Plugin{
      */
     public void showDialog(WebRequest request) {
         // set the default search provider to select components
-        core.studio.setSearchProvider(SearchType.Components_Choose);
+        coreGUI.studio.setSearchProvider(SearchType.Components_Choose);
         // show a simple template (might be replaced with better in the future)
         request.setTemplate("chooseComponent.html");
         
@@ -106,7 +107,7 @@ public class choose extends Plugin{
         
         String listOfComponents =// html.h3("Local components")
                 //+ 
-                core.components.getReport(link);
+                engine.components.getReport(link);
               
         request.changeTemplate("[template]", listOfComponents);
         
@@ -130,7 +131,7 @@ public class choose extends Plugin{
 //        final String type = request.getParameter("license");
         log.write(is.INFO, "Marking files as belonging to : %1", name);
         request.setAnswer("Marked selected files as part of " + name);
-        core.studio.setFilesWithComponent(name);
+        coreGUI.studio.setFilesWithComponent(name);
         
     }
 
@@ -142,7 +143,7 @@ public class choose extends Plugin{
      * @param id    Identification of the project we want to extract
      */
     private void createJsonFromDatabase(String path, String id) {
-        Component component = core.components.getFromRepository(path, id);
+        Component component = engine.components.getFromRepository(path, id);
         if(component == null){
             log.write(is.ERROR, "CH147 - Didn't found component %1 at repository %2",
                     id, path);

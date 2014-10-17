@@ -12,6 +12,7 @@
  */
 package www;
 
+import GUI.webUtils;
 import definitions.is;
 import java.io.File;
 import java.io.FileInputStream;
@@ -24,7 +25,7 @@ import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import main.controller;
-import main.core;
+import main.engine;
 import org.simpleframework.http.Request;
 import org.simpleframework.http.Response;
 import org.simpleframework.http.core.Container;
@@ -111,7 +112,7 @@ public class WebServer implements Container {
           
             try {
             // get the port number
-//            String portNumber = core.settings.read(definition.port, 
+//            String portNumber = engine.settings.read(definition.port, 
 //                    definition.portDefault);
             int serverPort = Integer.parseInt(portNumber);
             
@@ -185,13 +186,13 @@ public class WebServer implements Container {
             
             // do we just want to serve a file?
             if(targetScript.toLowerCase().endsWith(".java")==false){
-                File file = new File(core.getPluginsFolder(), rawText);
+                File file = new File(engine.getPluginsFolder(), rawText);
                 WebServer.giveFileDownload(request, response, file);
                 return;
             }
                
             
-                File scriptFile = new File(core.getPluginsFolder(), targetScript);
+                File scriptFile = new File(engine.getPluginsFolder(), targetScript);
                 File scriptFolder = scriptFile.getParentFile();
                 
                 // exit if a file was not found
@@ -201,7 +202,7 @@ public class WebServer implements Container {
                 }
                 
                 String scriptMethod = 
-                        utils_deprecated.internet.getHTMLparameter(request, is.methodExecute);
+                        webUtils.getHTMLparameter(request, is.methodExecute);
                 
 //                if(scriptMethod.equals("start")){
 //                    System.err.println("Listing all parameters:");

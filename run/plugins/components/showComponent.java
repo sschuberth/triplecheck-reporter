@@ -13,7 +13,8 @@
 package components;
 
 import comp.Component;
-import main.core;
+import main.engine;
+import main.coreGUI;
 import script.Plugin;
 import spdxlib.License;
 import www.WebRequest;
@@ -37,7 +38,7 @@ public class showComponent extends Plugin{
        final String license = request.getParameter("license");
        // no type means that we are dealing with a custom component
        if(type == null || type.equals("null")){
-           Component component = core.components.get(name);
+           Component component = engine.components.get(name);
            final String result = component.getSummaryHTML();
            request.setAnswer(result);
            return;
@@ -57,7 +58,7 @@ public class showComponent extends Plugin{
      */
     public void view(WebRequest request){
         final String param = request.getParameter("lic");
-        License license = core.licenses.get(param);
+        License license = coreGUI.licenses.get(param);
         final String result = license.getSummaryHTML();
         request.setAnswer(result);
     }

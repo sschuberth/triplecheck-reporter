@@ -26,11 +26,14 @@ import javax.swing.SwingUtilities;
 import javax.swing.tree.TreePath;
 import javax.swing.tree.TreeSelectionModel;
 import main.controller;
-import main.core;
+import main.engine;
+import main.coreGUI;
 import main.param;
 import script.log;
 import spdxlib.FileInfo2;
 import spdxlib.SPDXfile2;
+import spdxlib.swing.NodeType;
+import spdxlib.swing.TreeNodeSPDX;
 import www.RequestOrigin;
 import www.RequestType;
 import www.WebRequest;
@@ -52,7 +55,7 @@ public class TreeviewUtils {
      */ 
     public static TreeNodeSPDX getNode(String UID) {
         TreeNodeSPDX rootNode = (TreeNodeSPDX)
-                core.studio.getTree().getModel().getRoot();
+                coreGUI.studio.getTree().getModel().getRoot();
         Enumeration e = rootNode.preorderEnumeration();
         while(e.hasMoreElements()){
             TreeNodeSPDX currentNode = (TreeNodeSPDX) e.nextElement();
@@ -85,7 +88,7 @@ public class TreeviewUtils {
 //        // we now are sure that exists no such SPDX indexed yet 
 //        log.write(is.INSTALLING, "Adding new SPDX node");
 //        // add this new SPDX to our list
-//        SPDXfile2 spdx = core.reports.get(file);
+//        SPDXfile2 spdx = engine.reports.get(file);
 //        // preflight check
 //        if(spdx == null){
 //            log.write(is.ERROR, "TU79 - SPDX object is null: %1", 
@@ -117,7 +120,7 @@ public class TreeviewUtils {
         node.nodeType = NodeType.SPDX;
         node.id = fileName;
         // set here what we want to happen when the user clicks on it
-        final File scriptFile = new File(core.getPluginsFolder(), "/spdx/show.java");
+        final File scriptFile = new File(engine.getPluginsFolder(), "/spdx/show.java");
         node.scriptFile = scriptFile;
         node.scriptFolder = scriptFile.getParentFile();
         node.scriptMethod = "summary";
@@ -154,11 +157,11 @@ public class TreeviewUtils {
             return;
         }
         try{
-        core.studio.doSettings();
+        coreGUI.studio.doSettings();
         // get back to the previoulsy selected node
         swingUtils.setSelectedNode(UID);
         // refresh things up
-        core.studio.getTree().repaint();
+        coreGUI.studio.getTree().repaint();
         swingUtils.refreshTextBox();
         } catch (Exception e){
             System.err.println("SU526: Exception while refreshing the user "
@@ -182,7 +185,7 @@ public class TreeviewUtils {
         // get the respective object for this SPDX
         File file = (File) node.getUserObject();
         // do the refresh
-        boolean isOk = core.reports.refresh(file.getAbsolutePath());
+        boolean isOk = engine.reports.refresh(file.getAbsolutePath());
         // are we good to go?
         if(isOk == false){
             log.write(is.ERROR, "TU137 - Failed to refresh SPDX: %1", node.getUID());
@@ -202,7 +205,7 @@ public class TreeviewUtils {
      * folder and them as tree nodes 
      */
     public static void spdxAddFullTree() {
-        final JTree tree = core.studio.getTree();
+        final JTree tree = coreGUI.studio.getTree();
        
         // get the root node where we have our treeview
         final TreeNodeSPDX rootNode = swingUtils.getRootNode(tree);
@@ -216,7 +219,7 @@ public class TreeviewUtils {
         nodeReports.setIcon("box-label.png");
         
         // set here what we want to happen when the user clicks on it
-        File scriptFile = new File(core.getPluginsFolder(), "/basic/home.java");
+        File scriptFile = new File(engine.getPluginsFolder(), "/basic/home.java");
         nodeReports.scriptFile = scriptFile;
         nodeReports.scriptFolder = scriptFile.getParentFile();
         nodeReports.scriptMethod = "main";
@@ -225,7 +228,7 @@ public class TreeviewUtils {
         TreeNodeSPDX lastNode = null;
         int counter = 0;
         // create a tree based on folder tree on disk
-        for(SPDXfile2 spdx : core.reports.getList()){
+        for(SPDXfile2 spdx : engine.reports.getList()){
             lastNode = spdxAddNode2(spdx, nodeReports);
             counter++;
         }
@@ -249,7 +252,7 @@ public class TreeviewUtils {
         SwingUtilities.invokeLater(new Runnable() {
         @Override
         public void run() {
-            JTree tree = core.studio.getTree();
+            JTree tree = coreGUI.studio.getTree();
             tree.updateUI();
             tree.requestFocus();
             tree.setExpandsSelectedPaths(true);
@@ -282,10 +285,10 @@ public class TreeviewUtils {
 //     * folder and them as tree nodes 
 //     */
 //    public static void spdxCreateListFull() {
-//        JTree tree = core.studio.getTree();
+//        JTree tree = engine.studio.getTree();
 //        // only find the SPDX documents with .SPDX extension
 //        ArrayList<File> fileList = utils.files
-//                .findFilesFiltered(core.getProductsFolder(), ".spdx", 25);
+//                .findFilesFiltered(engine.getProductsFolder(), ".spdx", 25);
 //        
 //       
 //        // get the root node where we have our treeview
@@ -301,7 +304,7 @@ public class TreeviewUtils {
 //        nodeReports.setIcon("box-label.png");
 //        
 //        // set here what we want to happen when the user clicks on it
-//              File scriptFile = new File(core.getPluginsFolder(), "/basic/home.java");
+//              File scriptFile = new File(engine.getPluginsFolder(), "/basic/home.java");
 //              nodeReports.scriptFile = scriptFile;
 //              nodeReports.scriptFolder = scriptFile.getParentFile();
 //              nodeReports.scriptMethod = "main";
@@ -312,7 +315,7 @@ public class TreeviewUtils {
 //        }
 //       
 //        // create a tree based on folder tree on disk
-//        spdxAddFiles(core.getProductsFolder(), 25, nodeReports);
+//        spdxAddFiles(engine.getProductsFolder(), 25, nodeReports);
 //    }
 //    
      
@@ -361,11 +364,11 @@ public class TreeviewUtils {
 //
 //        
 //        
-//        core.studio.getTree().setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
+//        engine.studio.getTree().setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
 //        // create the tree structure
 //        node.add(spdx.getNodeFiles());
 //        // if an exception occurs, this next line doesn't happen..
-//        core.studio.getTree().setCursor(Cursor.getDefaultCursor());
+//        engine.studio.getTree().setCursor(Cursor.getDefaultCursor());
 //    }
 //    
      
@@ -536,7 +539,7 @@ public class TreeviewUtils {
 //        // all done, time to refresh things up
 //        swingUtils.setSelectedNode(node.getUID());
 //        // refresh things up
-//        core.studio.getTree().repaint();
+//        engine.studio.getTree().repaint();
 //        
 //    }
     
@@ -563,14 +566,14 @@ public class TreeviewUtils {
 //        // get the relative name of this file
 //        String spdxRelativePath = parameter[1];
 //        // now we get the file point, it needs to exist before we continue
-//        File spdxFile = new File(core.getProductsFolder(), spdxRelativePath);
+//        File spdxFile = new File(engine.getProductsFolder(), spdxRelativePath);
 //        if(spdxFile.exists() == false){
 //            log.write(is.NOTFOUND, "TN02 - Unable to find file %1", 
 //                    spdxFile.getAbsolutePath());
 //            return;
 //        }
 //        // now read the SPDX document
-//        SPDXfile2 spdx = core.reports.get(spdxFile);
+//        SPDXfile2 spdx = engine.reports.get(spdxFile);
 //        // basic parts were done, now add up the needed details
 //        spdxCreateFileSection(spdx, node);
 //        node.update(true);
@@ -613,13 +616,13 @@ public class TreeviewUtils {
 //        for(Person person : spdx.creatorSection.people){
 //            TreeNodeSPDX nodePerson = swingUtils.addNodePerson(node, person);
 //            // add here the action we want to happen when clicked
-//            File scriptFile = new File(core.getPluginsFolder(), "/people/show.java");
+//            File scriptFile = new File(engine.getPluginsFolder(), "/people/show.java");
 //            nodePerson.scriptFile = scriptFile;
 //            nodePerson.scriptFolder = scriptFile.getParentFile();
 //            nodePerson.scriptMethod = "details";
 //            // create the correct parameters
 //            String relativePath = 
-//                    spdx.file.getAbsolutePath().replace(core.getProductsFolder().getAbsolutePath(), "");
+//                    spdx.file.getAbsolutePath().replace(engine.getProductsFolder().getAbsolutePath(), "");
 //            // add the SPDX that we want to edit/show
 //            nodePerson.scriptParameters.add(new String[]{param.spdx, relativePath});
 //            // add the user name that we want to edit
@@ -702,7 +705,7 @@ public class TreeviewUtils {
             continue;
         }
         // do we have a match?
-        if(utils_deprecated.text.equals(child.getTitle(), find)){
+        if(utils.text.equals(child.getTitle(), find)){
             return child;
         }
     }
@@ -721,7 +724,7 @@ public class TreeviewUtils {
      */
     public static void nodeExpand(TreeNodeSPDX node){
     
-        JTree tree = core.studio.getTree();
+        JTree tree = coreGUI.studio.getTree();
         TreeSelectionModel model = tree.getSelectionModel();
         TreePath path;
         TreeNodeSPDX child;
@@ -784,7 +787,7 @@ public class TreeviewUtils {
      */
     public static HashMap<String, ArrayList<FileInfo2>> getSelectedFiles(){
     // create a list of nodes to process
-        ArrayList<TreeNodeSPDX> selectedNodes = swingUtils.getSelectedNodes(core.studio.getTree());
+        ArrayList<TreeNodeSPDX> selectedNodes = swingUtils.getSelectedNodes(coreGUI.studio.getTree());
         ArrayList<TreeNodeSPDX> nodeList = new ArrayList();
         // get only the relevant nodes
         for(TreeNodeSPDX node : selectedNodes){

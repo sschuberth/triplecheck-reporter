@@ -13,10 +13,10 @@
 package basic;
 
 import definitions.Messages;
-import main.core;
+import main.coreGUI;
 import script.Plugin;
 import script.log;
-import utils_deprecated.html;
+import utils.www.html;
 import www.RequestOrigin;
 import www.WebRequest;
 
@@ -59,7 +59,7 @@ public class ToolsLog extends Plugin{
        // move down to the bottom of the log window when looking through the GUI
        if((request.requestOrigin == RequestOrigin.GUI)
                ||(request.requestOrigin == RequestOrigin.GUI_tree)){
-           core.studio.textMoveToBottom();
+           coreGUI.studio.textMoveToBottom();
        }
     }
 

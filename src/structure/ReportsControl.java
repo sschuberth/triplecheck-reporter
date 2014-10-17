@@ -19,7 +19,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import main.core;
+import main.engine;
 import script.log;
 
 
@@ -60,9 +60,9 @@ public final class ReportsControl {
      * @return 
      */
     private void findSPDX(){
-        File folder = new File(core.getWorkFolder(), is.reports);
+        File folder = new File(engine.getWorkFolder(), is.reports);
         // only find the SPDX documents with .SPDX extension
-        ArrayList<File> files = utils_deprecated.files.findFilesFiltered(folder, ".spdx", 25);
+        ArrayList<File> files = utils.files.findFilesFiltered(folder, ".spdx", 25);
         int counter = 0;
         // go through all the files that were found
         for(File file: files){

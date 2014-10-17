@@ -13,15 +13,16 @@
 
 package basic;
 
-import GUI.TreeNodeSPDX;
 import GUI.TreeviewUtils;
 import GUI.swingUtils;
+import GUI.webUtils;
 import definitions.Messages;
 import definitions.is;
 import main.controller;
 import script.Plugin;
 import script.log;
-import utils_deprecated.html;
+import spdxlib.swing.TreeNodeSPDX;
+import utils.www.html;
 import www.RequestOrigin;
 import www.Table;
 import www.WebRequest;
@@ -90,12 +91,10 @@ public class home extends Plugin{
                 + "";
         
         
-        // get twitter new if available
-        String timeLine = html.getRSS("http://triplecheck.de/feed");
         
         
         String[] params = new String[]{
-            html.getIcon("logo.png", request)
+            webUtils.getIcon("logo.png", request)
                 , navigationMain
         };
         
@@ -108,13 +107,6 @@ public class home extends Plugin{
                 ;
         
         
-        // only show the time line title when there is something to show
-        if(timeLine.isEmpty() == false){
-            timeLine = 
-                    html.h3("Recent news")
-                    + timeLine;
-        }
-        
         String result = ""
                 + html.div()
                 + html.br
@@ -125,7 +117,6 @@ public class home extends Plugin{
                 + "<hr>"
                 + html.br
                 + navigationSub
-                + timeLine
                 
                 + html._div
                 ;

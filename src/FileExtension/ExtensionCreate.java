@@ -18,7 +18,7 @@ import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-import main.core;
+import main.engine;
 import script.FileExtension;
 
 
@@ -35,7 +35,7 @@ public class ExtensionCreate {
             descriptionText,
             descriptionURL,
             descriptionCopyright = "FileSuffix.com (c)" 
-                + utils_deprecated.time.getCurrentYear();
+                + utils.time.getCurrentYear();
     
     /**
      * An automated way of getting information for new file names.
@@ -47,23 +47,23 @@ public class ExtensionCreate {
      * @param overWrite
      */
     public void automatically(String extension, boolean overWrite) {
-        File template = new File(core.getExtensionsFolder(), "template.java");
+        File template = new File(engine.getExtensionsFolder(), "template.java");
         // preflight check
 //        String safeExt =
 //                utils.text.findRegEx( extension,"[a-zA-Z]+$", 0);
         // if the extension was just numbers, we need to make this compatible
 //        if(safeExt.isEmpty()){
         String safeExt = "ext_" 
-                   + utils_deprecated.text.findRegEx( extension,"[a-zA-Z0-9_]+$", 0);
+                   + utils.text.findRegEx( extension,"[a-zA-Z0-9_]+$", 0);
 //        }
         
-        File newExtension = new File(core.getExtensionsUnknown(), 
+        File newExtension = new File(engine.getExtensionsUnknown(), 
                 safeExt + ".java");
         // don't overwrite already existent unknown files
         if(overWrite == false){
             // don't add a registered extension
-            for(FileExtension thisExtension : core.extensions.getList()){
-                if(utils_deprecated.text.equals(thisExtension.getIdentifierShort(), extension))
+            for(FileExtension thisExtension : engine.extensions.getList()){
+                if(utils.text.equals(thisExtension.getIdentifierShort(), extension))
                     return;
                 }
             // don't overwrite files in "unknown" folder
@@ -78,7 +78,7 @@ public class ExtensionCreate {
             return;
         }
         // all done, let's create a new template
-        String text = utils_deprecated.files.readAsString(template);
+        String text = utils.files.readAsString(template);
         
         // edit that are necessary
         text = "package unknown;\n\n" + text;
@@ -89,7 +89,7 @@ public class ExtensionCreate {
         text = text.replace("#PERSON#", person);
         text = text.replace("LicenseName: NOASSERTION", 
                 "LicenseName: CC-BY-4.0");
-        text = text.replace("#DATE#", utils_deprecated.time.getDateSPDX());
+        text = text.replace("#DATE#", utils.time.getDateSPDX());
         // get the year value for the copyright value
         Date date = new Date();
         SimpleDateFormat simpleDateformat=new SimpleDateFormat("yyyy");
@@ -100,7 +100,7 @@ public class ExtensionCreate {
                 + person);
         
         // now save it automatically new file
-        utils_deprecated.files.SaveStringToFile(newExtension, text);
+        utils.files.SaveStringToFile(newExtension, text);
    
         System.out.println("EC134 - Added extension: " + safeExt);
     }
@@ -114,7 +114,7 @@ public class ExtensionCreate {
      */
     private void getWebInformation(String extension) {
         String www = sourceURL + extension;
-        String webContent = utils_deprecated.internet.getTextFile(www);
+        String webContent = utils.internet.getTextFile(www);
         if(webContent.isEmpty()){
             // nothing much to do, we just got an empty result
         }

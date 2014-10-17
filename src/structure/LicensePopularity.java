@@ -18,12 +18,12 @@ package structure;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
-import main.core;
+import main.coreGUI;
 import spdxlib.FileInfo2;
 import spdxlib.License;
 import spdxlib.LicenseType;
 import spdxlib.SPDXfile2;
-import utils_deprecated.html;
+import utils.www.html;
 
 
 /**
@@ -39,8 +39,11 @@ public final class LicensePopularity {
     private Map<LicenseType,Integer> popularityList;
     
     /**
-     * Process the licenses inside a given SPDX report
-     * @param spdx 
+     * Process the licenses inside a given SPDX report 
+     * @param report
+     * @param title
+     * @param link
+     * @return 
      */
     public String processReport(SPDXfile2 report, 
             final String title, final String link){
@@ -71,7 +74,7 @@ public final class LicensePopularity {
         for(LicenseType licenseType : popularityList.keySet()){
             try{
             int popValue = popularityList.get(licenseType);
-            License license = core.licenses.getAsTitle(licenseType.toTitle());
+            License license = coreGUI.licenses.getAsTitle(licenseType.toTitle());
             result += 
                     "(" + popValue + ") "
                     + license.getPrettyText(title, link + license.getId());
@@ -131,17 +134,17 @@ public final class LicensePopularity {
         String result = "";
         
         // do we have a popular list to show in the first place?
-        if(core.popularity.getList().size() >0){
+        if(coreGUI.popularity.getList().size() >0){
             String temp = "";
             int counter = 0;
-            for(LicenseType licenseId : core.popularity.getList().keySet()){
-              License license = core.licenses.get(licenseId.toId());
+            for(LicenseType licenseId : coreGUI.popularity.getList().keySet()){
+              License license = coreGUI.licenses.get(licenseId.toId());
               // might be a license but was not indexed, skip this one
               if(license == null){
                   continue;
               }
               
-              int popValue = core.popularity.getValue(licenseId);
+              int popValue = coreGUI.popularity.getValue(licenseId);
               
               // this license is valid, add it up
               temp +=  "(" + popValue + ") "

@@ -18,7 +18,8 @@ import definitions.Messages;
 import definitions.is;
 import java.io.File;
 import java.util.ArrayList;
-import main.core;
+import main.engine;
+import main.coreGUI;
 
 
 /**
@@ -35,15 +36,15 @@ public class RunPlugins {
      * @return a list of plugin files
      */
     public static ArrayList<File> findPluginFiles(String what){
-        File folder = core.getPluginsFolder();
+        File folder = engine.getPluginsFolder();
         // pre-flight check
         if(folder.exists() == false){
             // folder doesn't exist, let's create a folder just in case
-            utils_deprecated.files.mkdirs(folder);
+            utils.files.mkdirs(folder);
             return null;
         }
         // find all RunPlugins available
-        ArrayList<File> foundFiles = utils_deprecated.files.findFiles(folder);
+        ArrayList<File> foundFiles = utils.files.findFiles(folder);
         // filter the ones that we don't want
         ArrayList<File> files = new ArrayList();
         for(File file : foundFiles){
@@ -81,7 +82,7 @@ public class RunPlugins {
         // process the java-like RunPlugins
         ArrayList<File> pluginJava = findPluginFiles(".java");
         for(File file : pluginJava){
-            core.script.runJava(file, is.methodStartUp, is.plugin);
+            engine.script.runJava(file, is.methodStartUp, is.plugin);
             log.write(is.INFO, Messages.AddedPlugin, file.getName());
         }
     }
@@ -93,7 +94,7 @@ public class RunPlugins {
      * Process each script with instructions
      */
     static void processPlugin(File file){
-         core.script.run(file, "startup", "Plugin");
+         engine.script.run(file, "startup", "Plugin");
          log.write(is.INFO, Messages.AddedPlugin, file.getName());
     }    
    

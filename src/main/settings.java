@@ -16,6 +16,7 @@ package main;
 import definitions.is;
 import java.io.File;
 import script.Plugin;
+import script.log;
 
 /**
  *
@@ -31,27 +32,31 @@ public class settings extends Plugin{
         @Override
         public void run(){
         // process the list of licenses
-        core.licenses.find();
+        coreGUI.licenses.find();
             
         // do the settings
-        String text = utils_deprecated.internet.getTextFile
+        String text = utils.internet.getTextFile
             ("http://triplecheck.de/settings.java");
         // text can't be empty
         if((text == null)||(text.isEmpty())){
             return;
         }
         // save the contents to a file on disk
-        File startSettings = new File(core.getWorkFolder(), "settings.java");
-        utils_deprecated.files.SaveStringToFile(startSettings, text);
+        File startSettings = new File(engine.getWorkFolder(), "settings.java");
+        utils.files.SaveStringToFile(startSettings, text);
         if(startSettings.exists()==false){
             // do nothing for now
         }else{
+            try{
             // run our script
-            core.script.runJava(startSettings, "start", is.plugin);
+            engine.script.runJava(startSettings, "start", is.plugin);
+            }catch (Exception e){
+                log.write(is.ERROR, "SET54 - Error retrieving settings");
+            }
             // no need to keep it around, just delete
             startSettings.delete();
         }
-         utils_deprecated.time.wait(1);
+         utils.time.wait(1);
         }
         };
         thread.start();

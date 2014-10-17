@@ -17,7 +17,7 @@ import definitions.is;
 import java.io.File;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
-import main.core;
+import main.engine;
 import main.start;
 import script.FileExtension;
 import script.Trigger;
@@ -50,8 +50,8 @@ public class TestingUI extends javax.swing.JFrame {
         
          // place the frame on the middle of the screen
         setLocationRelativeTo(null);
-        log.write(is.RUNNING, "Version %1 %2", core.version,
-                utils_deprecated.misc.getDate(this.getClass()));
+        log.write(is.RUNNING, "Version %1 %2", engine.version,
+                utils.misc.getDate(this.getClass()));
         doTesting();
     }
 
@@ -204,7 +204,7 @@ public class TestingUI extends javax.swing.JFrame {
 
     private void processFile(File file) {
         // read this file from disk onto local memory
-        final String contentNormalCase = utils_deprecated.files.readAsString(file);
+        final String contentNormalCase = utils.files.readAsString(file);
         final String contentLowerCase = contentNormalCase.toLowerCase();
         // there is a path available, let's get it
 //        final String fileName = file.getAbsolutePath();
@@ -217,13 +217,13 @@ public class TestingUI extends javax.swing.JFrame {
 //        }
             
 //        final String extension = fileName.substring(lastDot+1).toLowerCase();
-//        final int fileExtensionIndex = core.extensions.getIndex(extension);
+//        final int fileExtensionIndex = engine.extensions.getIndex(extension);
 //        // add the file extension object
 //        FileExtension fileExtension;
 //        if(fileExtensionIndex != -1){
-//            fileExtension = core.extensions.get(fileExtensionIndex);
+//            fileExtension = engine.extensions.get(fileExtensionIndex);
 //        }else{
-//            fileExtension = core.extensions.getUnknownExtension();
+//            fileExtension = engine.extensions.getUnknownExtension();
 //        }        
 //        // only accept text files
 //        if(fileExtension.getContentType().TEXT != ContentType.TEXT){
@@ -237,7 +237,7 @@ public class TestingUI extends javax.swing.JFrame {
                 
         
         // try to identify some of the most common triggers
-            for(Trigger thisTrigger: core.triggers.getList()){
+            for(Trigger thisTrigger: engine.triggers.getList()){
                 // we only want the license triggers
                 if(thisTrigger.getType() != TriggerType.LICENSE){
                     continue;

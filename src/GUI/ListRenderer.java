@@ -17,7 +17,7 @@ import javax.swing.DefaultListCellRenderer;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JList;
-import main.core;
+import main.engine;
 
 
 public class ListRenderer 
@@ -25,7 +25,7 @@ public class ListRenderer
    
     // get our icons
     private Icon get(String what){
-        return new ImageIcon(core.getIcon(what).getAbsolutePath());
+        return new ImageIcon(engine.getIcon(what).getAbsolutePath());
     }
     
       Icon 

@@ -12,13 +12,13 @@
 
 package components;
 
-import GUI.NodeType;
-import GUI.TreeNodeSPDX;
 import GUI.swingUtils;
 import definitions.is;
 import script.Plugin;
 import script.log;
 import spdxlib.SPDXfile2;
+import spdxlib.swing.NodeType;
+import spdxlib.swing.TreeNodeSPDX;
 import www.WebRequest;
 
 

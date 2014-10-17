@@ -12,10 +12,11 @@
 
 package components;
 
-import main.core;
+import main.coreGUI;
+import main.engine;
 import script.Plugin;
 import spdxlib.License;
-import utils_deprecated.html;
+import utils.www.html;
 import www.WebRequest;
 
 
@@ -40,7 +41,7 @@ public class createNew extends Plugin{
         request.changeTemplate("template-remarks", "");
         
         String licenses = "";
-        for (License license : core.licenses.getList()) {
+        for (License license : coreGUI.licenses.getList()) {
             licenses = licenses.concat("<option>" + license.getId() + "</option>");
         }
         

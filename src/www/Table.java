@@ -146,7 +146,7 @@ public class Table {
         // we need items with the same size as available columns
         if(item.length != size){
             System.err.println("TB001 - Column sizes don't match: ["
-                    + utils_deprecated.text.arrayToString(item, "], [")+ "]");
+                    + utils.text.arrayToString(item, "], [")+ "]");
             return;
         }
         // all good, add up this item

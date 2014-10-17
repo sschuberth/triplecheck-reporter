@@ -23,8 +23,7 @@ import spdxlib.DocumentCreate2;
  */
 public class cmdLine {
     
-    // the SPDX document that we are about to create    
-    static DocumentCreate2 spdx = new DocumentCreate2();
+   
     
         
     /**
@@ -35,11 +34,21 @@ public class cmdLine {
     public static boolean isCommandLineUsed(final String[] args) {
         // what is the outcome of our processing?
         Boolean result = false;
+        String packageName = "";
+        String packageURL = "";
+        
         
         // no arguments? No need to continue
         if(args.length == 0){
             return result;
         }
+        
+        
+        if(args[0].equalsIgnoreCase("downloadSPDX")){
+            System.exit(0);
+            return true;
+        }
+        
         
         // get the first argument
         final String cmdAction = args[0].toLowerCase();
@@ -59,16 +68,16 @@ public class cmdLine {
 //            else
             // do we have a parameter for the package name?
             if(args.length == 4){
-                spdx.setPackageName(args[3]);
+                packageName = args[3];
             }
             else
             // do we want to define an URL?
             if(args.length == 5){
-                spdx.setPackageURL(args[4]);
+                packageURL = args[4];
             }
           
             // now create the document      
-            createCmdLineSPDX(args[1], args[2]);
+            createCmdLineSPDX(args[1], args[2], packageName, packageURL);
            
             //result = true;
             System.exit(0);
@@ -82,9 +91,15 @@ public class cmdLine {
      * Creates a new SPDX document from the command line
      * @param spdxFileOutput        The output from the SPDX generation
      * @param sourceCodeFolderOrFile The source used as input (files and folders)
+     * @param packageName           Is there a name assigned to this package?
+     * @param packageURL            Is there an URL associated with it?
      */
-    private static void createCmdLineSPDX(final String spdxFileOutput, 
-            final String sourceCodeFolderOrFile) {
+    public static void createCmdLineSPDX(final String spdxFileOutput, 
+            final String sourceCodeFolderOrFile,
+            final String packageName, final String packageURL) {
+        
+        // the SPDX document that we are about to create    
+        DocumentCreate2 spdx = new DocumentCreate2();
         
         // the output file where we store the SPDX information
         final File spdxFile = new File(spdxFileOutput);
@@ -107,6 +122,15 @@ public class cmdLine {
         if(spdxFile.exists()){
             spdxFile.delete();
         }
+        
+        // add some settings
+        if(packageName.isEmpty() == false){
+            spdx.setPackageName(packageName);
+        }
+        if(packageURL.isEmpty() == false){
+            spdx.setPackageURL(packageURL);
+        }
+        
         
         // generate the SPDX document
         log.write(is.INFO, "Generating an SPDX as %1. Using as source: %2"

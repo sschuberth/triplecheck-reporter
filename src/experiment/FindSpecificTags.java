@@ -4,7 +4,6 @@ import GUI.swingUtils;
 import net.htmlparser.jericho.*;
 import java.util.*;
 import java.io.*;
-import java.net.*;
 
 public class FindSpecificTags {
 	public static void main(String[] args) throws Exception {
@@ -88,7 +87,7 @@ public class FindSpecificTags {
             
                 int delay = -1; String url = null;
                         ArrayList<String[]> params = new ArrayList<String[]>();
-                String sourceURL = utils_deprecated.files.readAsString(new File("test.html"));
+                String sourceURL = utils.files.readAsString(new File("test.html"));
                 swingUtils.getMetaRefresh(sourceURL, delay, url, params);
                 
 //                Source source=new Source(new URL(sourceUrlString));

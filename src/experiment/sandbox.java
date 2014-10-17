@@ -14,7 +14,7 @@ package experiment;
 
 import definitions.is;
 import java.io.File;
-import main.core;
+import main.engine;
 import script.log;
 import spdxlib.DocumentCreate2;
 import spdxlib.SPDXfile2;
@@ -38,7 +38,7 @@ public class sandbox {
      //final String target = "javascript-ipv6-2014-04-22.spdx";
         final String target = "linux-coreos.spdx";
         // "linux-coreos.spdx"
-        File bigFile = new File (core.getMiscFolder(), target);
+        File bigFile = new File (engine.getMiscFolder(), target);
         if(bigFile.exists() == false){
             System.err.println("Not found: " + bigFile.getAbsolutePath());
             return;

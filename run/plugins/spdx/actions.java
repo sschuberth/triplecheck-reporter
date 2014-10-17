@@ -12,24 +12,22 @@
 
 package spdx;
 
-import GUI.NodeType;
-import GUI.TreeNodeSPDX;
 import GUI.swingUtils;
 import definitions.Messages;
 import definitions.is;
-import spdxlib.FileInfo2;
 import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
-import javax.swing.JTree;
 import javax.swing.SwingUtilities;
-import javax.swing.tree.TreePath;
-import javax.swing.tree.TreeSelectionModel;
-import main.core;
+import main.coreGUI;
+import main.engine;
 import script.FileExtension;
 import script.Plugin;
 import script.log;
-import utils_deprecated.html;
+import spdxlib.FileInfo2;
+import spdxlib.swing.NodeType;
+import spdxlib.swing.TreeNodeSPDX;
+import utils.www.html;
 import www.WebRequest;
 
 
@@ -82,7 +80,7 @@ public class actions extends Plugin{
      */
     private String readFile(File targetFile) {
         // get the extension object
-        FileExtension extension = core.extensions.get(targetFile);
+        FileExtension extension = engine.extensions.get(targetFile);
         
         // when we know the extension, make it pretty
         if(extension != null){
@@ -102,7 +100,7 @@ public class actions extends Plugin{
      */
     String boringText(File targetFile){
             System.err.println("Reading: " + targetFile.getAbsolutePath());
-            String input = utils_deprecated.files.readAsString(targetFile);
+            String input = utils.files.readAsString(targetFile);
             // We don't what we have here, but display it anyways
             input = "<pre>" + input + "</pre>";
             input = html.div() + input + html._div;
@@ -169,11 +167,11 @@ public class actions extends Plugin{
         try{
             final String content = result;
             
-//            core.studio.editorPane(is.contentHTML, false, 0, result);
+//            engine.studio.editorPane(is.contentHTML, false, 0, result);
             SwingUtilities.invokeLater(new Runnable() {
         @Override
         public void run(){
-            core.studio.editorPane(is.contentHTML, false, 0, content);
+            coreGUI.studio.editorPane(is.contentHTML, false, 0, content);
                 }
             });
             
@@ -182,7 +180,7 @@ public class actions extends Plugin{
             System.err.println("AC168 - Error when showing file: " + targetFile.getAbsolutePath());
             // activate plan B, just show the boring stuff
             result = boringText(targetFile);
-            core.studio.editorPane(is.contentHTML, false, 0, result);
+            coreGUI.studio.editorPane(is.contentHTML, false, 0, result);
         }
     }
     

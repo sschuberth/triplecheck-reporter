@@ -13,16 +13,16 @@
 package components;
 
 import GUI.SearchType;
-import GUI.TreeNodeSPDX;
 import GUI.swingUtils;
 import comp.LinkType;
 import definitions.Messages;
 import java.io.File;
 import java.util.ArrayList;
-import main.core;
+import main.engine;
+import main.coreGUI;
 import script.Plugin;
 import script.log;
-import utils_deprecated.html;
+import spdxlib.swing.TreeNodeSPDX;
 import www.RequestOrigin;
 import www.WebRequest;
 
@@ -64,13 +64,13 @@ public class showComponents extends Plugin{
     public void main(WebRequest request){
         // specific to the GUI
         if(request.requestOrigin == RequestOrigin.GUI_tree){
-            core.studio.setSearchProvider(SearchType.Components_Show);
+            coreGUI.studio.setSearchProvider(SearchType.Components_Show);
         }
         
         ArrayList<LinkType> link = new ArrayList();
         link.add(LinkType.View);
         
-        String result = core.components.getReport(link);
+        String result = engine.components.getReport(link);
         
         request.setAnswer(result);
     }

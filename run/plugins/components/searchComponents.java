@@ -14,7 +14,8 @@ package components;
 
 import GUI.SearchType;
 import definitions.is;
-import main.core;
+import main.engine;
+import main.coreGUI;
 import script.Plugin;
 import script.log;
 import www.Link;
@@ -40,7 +41,7 @@ public class searchComponents extends Plugin{
      * a possible match
      */ 
     public void doFindComponents() {
-        String searchTerm = core.studio.getSearch().getText();
+        String searchTerm = coreGUI.studio.getSearch().getText();
         // no need to worry about empty searches or less than two characters
         if(searchTerm.length() < 2){
             return;
@@ -51,8 +52,8 @@ public class searchComponents extends Plugin{
         link.setTitle("details");
         link.setUrl("/components/showComponent?name=");
         
-        String output = core.components.search(searchTerm , link);
-        core.studio.editorPane(is.contentHTML, false, 0, output, Boolean.TRUE, null);
+        String output = engine.components.search(searchTerm , link);
+        coreGUI.studio.editorPane(is.contentHTML, false, 0, output, Boolean.TRUE, null);
     }
     
 }

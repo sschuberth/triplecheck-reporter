@@ -36,14 +36,17 @@ import javax.swing.text.html.HTML;
 import javax.swing.text.html.HTMLDocument;
 import javax.swing.text.html.HTMLEditorKit;
 import main.controller;
-import main.core;
+import main.coreGUI;
+import main.engine;
 import script.RunPlugins;
 import script.log;
 import spdxlib.FileInfo2;
 import spdxlib.FileOrigin;
 import spdxlib.SPDXfile2;
-import utils_deprecated.html;
-import utils_deprecated.internet;
+import spdxlib.swing.NodeType;
+import spdxlib.swing.TreeNodeSPDX;
+import utils.internet;
+import utils.www.html;
 import www.RequestOrigin;
 import www.RequestType;
 import www.WebRequest;
@@ -65,7 +68,7 @@ public class StudioUI4 extends javax.swing.JFrame {
     // what was the last product that was marked as selected?
 //    public SPDXfile productSelected = null;
     
-    private final SearchType searchTextDefault = SearchType.Components_Show;
+    private final SearchType searchTextDefault = SearchType.Files;
     // we can permit our search box to do different actions
     private SearchType searchProvider = SearchType.Files;
     
@@ -505,8 +508,7 @@ public class StudioUI4 extends javax.swing.JFrame {
 
     private void searchFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_searchFocusGained
         doSearchMouseClicked();
-        //doGainedFocusHookMessage("Search Box");
-        core.searchBoxActive = true;
+        coreGUI.searchBoxActive = true;
     }//GEN-LAST:event_searchFocusGained
 
     private void searchFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_searchFocusLost
@@ -515,7 +517,7 @@ public class StudioUI4 extends javax.swing.JFrame {
         if(search.getText().isEmpty()){
             search.setText(searchTextDefault.getSearchBoxText());
         }
-        core.searchBoxActive = false;
+        coreGUI.searchBoxActive = false;
     }//GEN-LAST:event_searchFocusLost
 
     private void searchdoSearchKeypress(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_searchdoSearchKeypress
@@ -587,7 +589,7 @@ public class StudioUI4 extends javax.swing.JFrame {
         }
 
         log.write(is.INFO, "Opening license dialog");
-        File script = new File(core.getPluginsFolder(), "licenses/choose.java");
+        File script = new File(engine.getPluginsFolder(), "licenses/choose.java");
         // now do the parameters
         ArrayList<String[]> parameters = new ArrayList();
         String nodeUID = "";
@@ -631,13 +633,13 @@ public class StudioUI4 extends javax.swing.JFrame {
         // output the message that we are deleting an SPDX
         log.write(is.DELETING,"SPDX to remove: %1", file.getAbsolutePath());
         // now delete the file
-        core.reports.delete(file);
+        engine.reports.delete(file);
         
 //        // do the deletion
 //        file.delete();
         // refresh all the contents
         //node = tree.
-        //String UID = (String) core.temp.get(is.reports);
+        //String UID = (String) engine.temp.get(is.reports);
         String UID = TreeviewUtils.getNodeReports().getUID();
         
         TreeviewUtils.refreshAll(UID);
@@ -753,7 +755,7 @@ public class StudioUI4 extends javax.swing.JFrame {
         // there is a bug that allows people to write over the "search" default
         if(search.getText().isEmpty()){
             search.setText(searchTextDefault.getSearchBoxText());
-            core.key.clear();
+            coreGUI.key.clear();
             return;
         }
         
@@ -766,7 +768,7 @@ public class StudioUI4 extends javax.swing.JFrame {
         }
         
         // indicate that a key was pressed, this keeps the buffer alive
-        core.key.pressedKey("x");
+        coreGUI.key.pressedKey("x");
             
     }
     
@@ -941,14 +943,14 @@ public class StudioUI4 extends javax.swing.JFrame {
                     }
                   
                     // mandatory waiting by the refresh tag
-                    utils_deprecated.time.wait(meta.delay);
+                    utils.time.wait(meta.delay);
                     // if there is no .java URL mentioned, add one
                     String processedURL = meta.url;
                     if(processedURL.endsWith(".java")== false){
                        processedURL += ".java";
                     }
                     // create our jump
-                    File jump = new File(core.getPluginsFolder(), processedURL);
+                    File jump = new File(engine.getPluginsFolder(), processedURL);
                     WebRequest newRequest = new WebRequest();
                     newRequest.requestType = RequestType.NONE;
                     newRequest.requestOrigin = RequestOrigin.GUI;
@@ -996,7 +998,7 @@ public class StudioUI4 extends javax.swing.JFrame {
 
         
         if(doubleClick){
-            core.temp.put(is.doubleClick, node);
+            engine.temp.put(is.doubleClick, node);
             log.write(is.INFO, Messages.TreeNodeDoubleClick, node.getUID());
             return;
         }
@@ -1098,7 +1100,7 @@ public class StudioUI4 extends javax.swing.JFrame {
             
             // the script can't have the full path defined, just a relative path
             String temp = baseFilePresent.getAbsolutePath();
-            String script = temp.replace(core.getPluginsFolder().getAbsolutePath(), "");
+            String script = temp.replace(engine.getPluginsFolder().getAbsolutePath(), "");
 //            request.
                 
             // execute the link request
@@ -1138,14 +1140,14 @@ public class StudioUI4 extends javax.swing.JFrame {
             String filename = text.substring(0, pos);
             File scriptFile = new File(filename);
             String method = text.substring(pos + 2);
-            core.script.runJava(scriptFile, method, is.plugin);
+            engine.script.runJava(scriptFile, method, is.plugin);
             return;
         }
         
         // do a search inside our tool/library
         if(URL.startsWith("search://")){
             text = text.replace("search://", "");
-            core.searchTerm = text;
+            coreGUI.searchTerm = text;
             log.write(is.COMMAND, "Search: %1", text);
             //return;
         }
@@ -1161,7 +1163,7 @@ public class StudioUI4 extends javax.swing.JFrame {
             
             // the script can't have the full path defined, just a relative path
             String temp = baseFilePresent.getAbsolutePath();
-            String script = temp.replace(core.getPluginsFolder().getAbsolutePath(), "") 
+            String script = temp.replace(engine.getPluginsFolder().getAbsolutePath(), "") 
                     //+ "/" + URL.substring(0, sep)
                     ;
 //            request.
@@ -1178,7 +1180,7 @@ public class StudioUI4 extends javax.swing.JFrame {
     private void processFormSubmit2(WebRequest request, 
             String targetScript, String rawParameters) {
         // add parameters to our web request object
-        ArrayList<String[]> parameters = html.cleanParameters(rawParameters);
+        ArrayList<String[]> parameters = webUtils.cleanParameters(rawParameters);
         for(String[] parameter : parameters){
             request.parameters.add(parameter);
         }
@@ -1189,7 +1191,7 @@ public class StudioUI4 extends javax.swing.JFrame {
             targetScript += ".java";
         }
         // now we need to know what is the script intended to process
-        request.scriptFile = new File(core.getPluginsFolder(), targetScript);
+        request.scriptFile = new File(engine.getPluginsFolder(), targetScript);
         
         if(request.scriptFile.exists() == false){
             log.write(is.ERROR, "SU002 - Requested script doesn't exist: %1",
@@ -1198,12 +1200,12 @@ public class StudioUI4 extends javax.swing.JFrame {
         }
          
         // now process the request parameters
-        parameters = html.cleanParameters(rawParameters);
+        parameters = webUtils.cleanParameters(rawParameters);
         for(String[] parameter : parameters){
             //request.parameters.add(parameter);
             // define what is the method that we want to run
             if(parameter[0]!= null && parameter[0].equals(is.methodExecute)){
-                request.scriptMethod = utils_deprecated.text.safeString(parameter[1]);
+                request.scriptMethod = utils.text.safeString(parameter[1]);
             }
         }
     // submit the request to be executed
@@ -1223,7 +1225,7 @@ public class StudioUI4 extends javax.swing.JFrame {
         String data = form.getData();
         
         // add parameters to our web request object
-        ArrayList<String[]> parameters = html.cleanParameters(data);
+        ArrayList<String[]> parameters = webUtils.cleanParameters(data);
         for(String[] parameter : parameters){
             request.parameters.add(parameter);
         }
@@ -1252,12 +1254,12 @@ public class StudioUI4 extends javax.swing.JFrame {
         }
          
         // now process the request parameters
-        parameters = html.cleanParameters(e.getURL().getQuery());
+        parameters = webUtils.cleanParameters(e.getURL().getQuery());
         for(String[] parameter : parameters){
             //request.parameters.add(parameter);
             // define what is the method that we want to run
             if(parameter[0].equals(is.methodExecute)){
-                request.scriptMethod = utils_deprecated.text.safeString(parameter[1]);
+                request.scriptMethod = utils.text.safeString(parameter[1]);
                 //System.err.println("SU007 - Found method: " 
                       //  + request.scriptMethod);
             }
@@ -1390,7 +1392,7 @@ public class StudioUI4 extends javax.swing.JFrame {
      */
     private void showDialogAddFilesToComponent(){
         log.write(is.INFO, "Opening the components dialog");
-        File script = new File(core.getPluginsFolder(), "components/choose.java");
+        File script = new File(engine.getPluginsFolder(), "components/choose.java");
         // now do the parameters
         ArrayList<String[]> parameters = new ArrayList();
         // fire up the request
@@ -1400,6 +1402,7 @@ public class StudioUI4 extends javax.swing.JFrame {
     
     /**
      * We want to specify to which components a specific file belongs
+     * @param componentName
      */
     public void setFilesWithComponent(String componentName) {
            
@@ -1411,7 +1414,7 @@ public class StudioUI4 extends javax.swing.JFrame {
             // get the SPDX object
             SPDXfile2 spdx = fileInfoList.get(0).getSPDX();
             // write the lines for this list
-            spdx.writeLines(fileInfoList, is.tagFileComponent, componentName.toString(), true);
+            spdx.writeLines(fileInfoList, is.tagFileComponent, componentName, true);
             // after writing the changes to disk, it is time to update the nodes
             for(FileInfo2 fileInfo : fileInfoList){
                 fileInfo.setFileComponent(componentName);
@@ -1423,7 +1426,7 @@ public class StudioUI4 extends javax.swing.JFrame {
         // update the selected node
         log.write(is.INFO, Messages.TreeNodeChanged, selectedNode.getUID());
         // output the dialog box as feedback
-        swingUtils.showMessage("Marked " + utils_deprecated.text.pluralize(counter, "file") 
+        swingUtils.showMessage("Marked " + utils.text.pluralize(counter, "file") 
                 + " as part of " + componentName);
     }
     

@@ -16,7 +16,7 @@ import GUI.SearchType;
 import definitions.Messages;
 import definitions.is;
 import java.io.File;
-import main.core;
+import main.coreGUI;
 import script.Plugin;
 import script.log;
 import spdxlib.License;
@@ -45,6 +45,7 @@ public class search extends Plugin{
      * Add our toolbox node to the treeview.
      */
     public void addNode(){
+        log.write(is.INSTALLING, "Adding the license search tool");
         addTreeNode(id, "magnifier-left.png", "main");
     }
     
@@ -57,7 +58,7 @@ public class search extends Plugin{
     public void main(WebRequest request){
         // specific to the GUI
         if(request.requestOrigin == RequestOrigin.GUI_tree){
-            core.studio.setSearchProvider(SearchType.License_Show);
+            coreGUI.studio.setSearchProvider(SearchType.License_Show);
         }
         // show up our search page
         File tempFile = new File(thisFolder, "searchLicenses.html");
@@ -71,15 +72,15 @@ public class search extends Plugin{
      * a possible match
      */ 
     public void doFindLicense() {
-        final String searchTerm = core.studio.getSearch().getText();
+        final String searchTerm = coreGUI.studio.getSearch().getText();
         // no need to worry about empty searches or less than two characters
         if(searchTerm.length() < 2){
             return;
         }
         final String link = "/licenses/search?x=view&lic=";
 
-        String output = core.licenses.search(searchTerm , "read", link);
-        core.studio.editorPane(is.contentHTML, false, 0, output);
+        String output = coreGUI.licenses.search(searchTerm , "read", link);
+        coreGUI.studio.editorPane(is.contentHTML, false, 0, output);
     }
     
     
@@ -89,7 +90,7 @@ public class search extends Plugin{
      */
     public void view(WebRequest request){
         final String param = request.getParameter("lic");
-        License license = core.licenses.get(param);
+        License license = coreGUI.licenses.get(param);
         final String result = license.getSummaryHTML();
         request.setAnswer(result);
     }

@@ -178,7 +178,7 @@ public class WebRequest {
                     + " %1", file.getAbsolutePath());
         }
                
-        templateText = utils_deprecated.files.readAsString(file);
+        templateText = utils.files.readAsString(file);
     }
     
     
@@ -204,7 +204,7 @@ public class WebRequest {
      */
     public void closeTemplate(){
         File file = new File(BaseFolder, "temp.html");
-        utils_deprecated.files.SaveStringToFile(file, templateText);
+        utils.files.SaveStringToFile(file, templateText);
         setPage(file);
     }
     
@@ -236,7 +236,7 @@ public class WebRequest {
         } catch (MalformedURLException ex) {
             Logger.getLogger(WebRequest.class.getName()).log(Level.SEVERE, null, ex);
         }
-        String fileText = utils_deprecated.files.readAsString(page);
+        String fileText = utils.files.readAsString(page);
         setAnswer(fileText);
     }
     

@@ -12,12 +12,12 @@
 
 package spdx;
 
-import GUI.TreeNodeSPDX;
 import GUI.swingUtils;
 import java.io.File;
-import main.core;
+import main.engine;
 import script.Plugin;
 import spdxlib.SPDXfile2;
+import spdxlib.swing.TreeNodeSPDX;
 import www.RequestOrigin;
 import www.WebRequest;
 
@@ -43,7 +43,7 @@ public class authorship extends Plugin{
        // get the SPDX node
        TreeNodeSPDX node = (TreeNodeSPDX) swingUtils.getSelectedNode().getParent();
        File spdxFile = (File) node.getUserObject();
-       SPDXfile2 spdx = core.reports.get(spdxFile);
+       SPDXfile2 spdx = engine.reports.get(spdxFile);
        // get the summary of authorship out of this spdx object
        String output = spdx.computeAuthorship();
        // all done, output the answer 

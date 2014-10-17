@@ -17,7 +17,7 @@
 package experiment;
 
 import java.io.File;
-import main.core;
+import main.engine;
 import org.codehaus.janino.SimpleCompiler;
 import script.FileExtension;
         
@@ -33,7 +33,7 @@ public class bytecodeCompile {
      * @throws java.lang.Exception
      */
     public static void main(String[] args) throws Exception {
-//        File sourceFile = new File(core.getMiscFolder(), "cpp.java");
+//        File sourceFile = new File(engine.getMiscFolder(), "cpp.java");
 //        String sourceCode = utils.files.readAsString(sourceFile);
 //        SimpleCompiler compiler = new SimpleCompiler();
 //        compiler.cook(sourceCode);
@@ -47,8 +47,8 @@ public class bytecodeCompile {
     
     
     public static void testPlugin(){
-        File scriptFile = new File(core.getMiscFolder(), "home.java");
-        utils_deprecated.bytecode.runJava(scriptFile, "say");
+        File scriptFile = new File(engine.getMiscFolder(), "home.java");
+        utils.bytecode.runJava(scriptFile, "say");
     }
     
     

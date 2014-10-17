@@ -12,13 +12,13 @@
 
 package spdx;
 
-import GUI.TreeNodeSPDX;
 import GUI.swingUtils;
 import java.io.File;
-import main.core;
+import main.engine;
 import script.Plugin;
 import spdxlib.SPDXfile2;
-import utils_deprecated.html;
+import spdxlib.swing.TreeNodeSPDX;
+import utils.www.html;
 import www.RequestOrigin;
 import www.WebRequest;
 
@@ -84,7 +84,7 @@ public class settings extends Plugin{
         String selectedFolder = getFolderString();
 
         // do we want to use the default location or do we have an older choice?
-        File startFolder = core.getWorkFolder();
+        File startFolder = engine.getWorkFolder();
         if(selectedFolder != null){
             startFolder = new File(selectedFolder);
         }

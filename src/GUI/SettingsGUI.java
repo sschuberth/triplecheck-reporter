@@ -13,7 +13,7 @@ import javax.swing.event.HyperlinkEvent;
 import javax.swing.event.HyperlinkListener;
 import javax.swing.text.html.FormSubmitEvent;
 import javax.swing.text.html.HTMLEditorKit;
-import utils_deprecated.Settings;
+import utils.Settings;
 import definitions.is;
 import net.htmlparser.jericho.*;
 import script.log;

@@ -13,20 +13,21 @@
 
 package spdx;
 
-import GUI.NodeType;
-import GUI.TreeNodeSPDX;
 import GUI.swingUtils;
 import definitions.Messages;
 import definitions.is;
 import java.io.File;
-import main.core;
+import main.coreGUI;
+import main.engine;
 import main.param;
 import script.FileExtension;
 import script.Plugin;
 import script.log;
 import spdxlib.FileInfo2;
 import spdxlib.SPDXfile2;
-import utils_deprecated.html;
+import spdxlib.swing.NodeType;
+import spdxlib.swing.TreeNodeSPDX;
+import utils.www.html;
 import www.WebRequest;
 
 
@@ -63,7 +64,7 @@ public class showFileDetails extends Plugin{
             return;
         }
         // start the processing
-        SPDXfile2 spdx = core.reports.get(spdxFile);
+        SPDXfile2 spdx = engine.reports.get(spdxFile);
         // go through all files inside the document
         for(FileInfo2 file : spdx.getFiles()){
             // have we (finally) found a match?
@@ -88,7 +89,7 @@ public class showFileDetails extends Plugin{
             return null;
         }
         // does this file exists?
-        File file = new File(core.getProductsFolder(), spdxTarget);
+        File file = new File(engine.getProductsFolder(), spdxTarget);
         // this file needs to exist
         if((file.exists() == false) || (file.isDirectory())){
             request.setAnswer("Sorry, the file was not found: " + spdxTarget);
@@ -117,7 +118,7 @@ public class showFileDetails extends Plugin{
         // create the summary for the requested file
         String output = showFileDetails(fileInfo);
         // this only applies to calls from the treeview
-        core.studio.editorPane(is.contentHTML, Boolean.FALSE, 0, output);
+        coreGUI.studio.editorPane(is.contentHTML, Boolean.FALSE, 0, output);
         
     }
 
@@ -235,7 +236,7 @@ public class showFileDetails extends Plugin{
         
          if(fileInfo.getFileSize() != 0){
             summary += ", sized in " 
-                    + utils_deprecated.files.humanReadableSize(fileInfo.getFileSize());
+                    + utils.files.humanReadableSize(fileInfo.getFileSize());
         }
          if(fileInfo.getFileLOC() != 0){
             summary += " with " + fileInfo.getFileLOC() + " lines of code"; 

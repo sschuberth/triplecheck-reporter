@@ -18,16 +18,15 @@
 
 package script;
 
-import GUI.TreeNodeSPDX;
 import GUI.swingUtils;
 import definitions.is;
 import java.io.File;
 import java.util.Enumeration;
-import main.core;
+import main.engine;
 import net.htmlparser.jericho.FormFields;
 import net.htmlparser.jericho.OutputDocument;
 import net.htmlparser.jericho.Source;
-import utils_deprecated.Settings;
+import spdxlib.swing.TreeNodeSPDX;
 import www.WebRequest;
 
    
@@ -35,29 +34,11 @@ import www.WebRequest;
  *
  * @author Nuno Brito, 8th of November 2013 in Darmstadt, Germany.
  */
-public class Plugin {
+public class Plugin extends PluginVanilla{
 
     // where we will store and retrieve the settings for this page
     private final String settingsFileName = "settings.xml";
-    private File settingsFile;
-    protected Settings settings; 
-   
     
-     public File 
-             thisFile = null, // pointer to this beanshell file being executed
-             thisFolder = null; // pointer to the beanshell directory on disk
-
-     public Plugin(){
-          settingsFile = new File(thisFolder, settingsFileName);
-          settings = new Settings(settingsFile, "Settings for this folder");
-     }
-     
-     public TreeNodeSPDX
-             thisNode = null; // our pointer for the treeview node (if used)
-     
-     
-     public void startup(){
-     }
      
      public void main(WebRequest request){
          request.setAnswer("<h1>In construction</h1>"
@@ -70,11 +51,12 @@ public class Plugin {
      * @param title Title for the tree node that is shown to user
      * @param iconName Icon from our archive that is used for the node
      * @param methodName The method that is called when the node is clicked
+     * @return 
       */
      protected TreeNodeSPDX addTreeNode(String title, String iconName, 
              String methodName){
      // get the saved node on our temporary storage
-        TreeNodeSPDX nodeRoot = (TreeNodeSPDX) core.temp.get("nodeTree");
+        TreeNodeSPDX nodeRoot = (TreeNodeSPDX) engine.temp.get("nodeTree");
         // add it up to our tree
         thisNode = swingUtils.addNode(title, iconName, nodeRoot);
         // set the associated script that we want to run
@@ -123,7 +105,7 @@ public class Plugin {
      // get our template page
        File templatePage = new File(thisFolder, templateFile);
        // place its contents inside a string
-       String webText = utils_deprecated.files.readAsString(templatePage);
+       String webText = utils.files.readAsString(templatePage);
        
         // instantiate our HTML manipulating class
         Source source = new net.htmlparser.jericho.Source(webText);
@@ -148,7 +130,7 @@ public class Plugin {
         String result = outputDocument.toString();
 
         File tempFile = new File(thisFolder, "temp.html");
-        utils_deprecated.files.SaveStringToFile(tempFile, result);
+        utils.files.SaveStringToFile(tempFile, result);
 
         request.setPage(tempFile);
      }

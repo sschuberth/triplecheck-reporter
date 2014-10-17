@@ -18,10 +18,10 @@
 
 package ThirdParty;
 
-import GUI.TreeNodeSPDX;
 import java.util.*;
 import javax.swing.JTree;
 import javax.swing.tree.TreePath;
+import spdxlib.swing.TreeNodeSPDX;
 
 
 /**

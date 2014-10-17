@@ -20,8 +20,10 @@ import java.util.HashMap;
 import java.util.Map;
 import javax.swing.JTree;
 import javax.swing.tree.DefaultTreeCellRenderer;
-import main.core;
+import main.engine;
 import spdxlib.FileInfo2;
+import spdxlib.swing.NodeType;
+import spdxlib.swing.TreeNodeSPDX;
 
 
 public class TreeRenderer extends DefaultTreeCellRenderer {
@@ -35,7 +37,7 @@ public class TreeRenderer extends DefaultTreeCellRenderer {
     
 //    // get our icons
 //    private Icon get(String what){
-//        return new ImageIcon(core.getIcon(what).getAbsolutePath());
+//        return new ImageIcon(engine.getIcon(what).getAbsolutePath());
 //    }
     
 //    Icon 
@@ -90,28 +92,28 @@ public class TreeRenderer extends DefaultTreeCellRenderer {
             setIcon(node.icon);
         }
         else // do the switch based on type of icon
-        switch(node.nodeType){
+                switch(node.nodeType){
             case folder:
-                setIcon(core.iconFolderClosed);
-                node.iconWhenSelected = core.iconFolderOpen;
+                setIcon(engine.iconFolderClosed);
+                node.iconWhenSelected = engine.iconFolderOpen;
                 break;
             case sectionFile:
-                setIcon(core.iconFiles);
+                setIcon(engine.iconFiles);
                 break;
             case sectionCreator:
-                setIcon(core.iconFingerprint);
+                setIcon(engine.iconFingerprint);
                 break;
             case sectionSettings:
-                setIcon(core.iconCONFIG);
+                setIcon(engine.iconCONFIG);
                 break;
             case sectionComponents:
-                setIcon(core.iconCOMPONENTS);
+                setIcon(engine.iconCOMPONENTS);
                 break;
             case sectionExport:
-                setIcon(core.iconEXPORT);
+                setIcon(engine.iconEXPORT);
                 break;
             default:
-                setIcon(core.iconUNKNOWN);
+                setIcon(engine.iconUNKNOWN);
                 break;
         }
             

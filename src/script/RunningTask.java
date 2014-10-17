@@ -16,7 +16,8 @@ package script;
 
 import definitions.is;
 import java.util.ArrayList;
-import main.core;
+import main.engine;
+import main.coreGUI;
 
 /**
  *
@@ -51,7 +52,7 @@ public class RunningTask{
      */
     public void launch(){
          // add up this object to the list of running tasks
-        core.runningTasks.add(this);
+        coreGUI.runningTasks.add(this);
         log.write(is.INFO, "Added a new task to our queue with the id: %1", "" 
                 + UID);
         run();

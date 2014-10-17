@@ -45,7 +45,7 @@ public class googleScrap {
         final String tag2 = "</td> </tr></table>";
         final String url = "https://code.google.com/p/";
         // get the web page
-        final String page = utils_deprecated.internet.webget(url + projectID);
+        final String page = utils.internet.webget(url + projectID);
         //System.err.println(page);
         final int i1 = page.indexOf(tag1) + tag1.length();
         final String temp = page.substring(i1, page.length());

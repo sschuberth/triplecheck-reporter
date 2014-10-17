@@ -1,17 +1,16 @@
 package experiment;
 
-import net.htmlparser.jericho.*;
-import java.util.*;
 import java.io.*;
-import java.net.*;
-import main.core;
-import utils_deprecated.Settings;
+import java.util.*;
+import main.engine;
+import net.htmlparser.jericho.*;
+import utils.Settings;
 
 public class FormControlDisplayCharacteristics {
 	public static void main(String[] args) throws Exception {
                      // where we will store and retrieve the settings for this page
     String fileName = "settings.xml";
-    File thisFolder = new File(core.getPluginsFolder(), "/webserver");
+    File thisFolder = new File(engine.getPluginsFolder(), "/webserver");
     File settingsFile = new File(thisFolder, fileName);
     Settings settings = new Settings(settingsFile, "Settings for the "
             + "server");
@@ -21,7 +20,7 @@ public class FormControlDisplayCharacteristics {
                 
                 File webPage = new File(thisFolder, "serverSettings.html");
                 sourceUrlString = webPage.getAbsolutePath();
-                String webText = utils_deprecated.files.readAsString(webPage);
+                String webText = utils.files.readAsString(webPage);
        
 		// instantiate our HTML manipulating class
                 Source source =  new Source(webText);

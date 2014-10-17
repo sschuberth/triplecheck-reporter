@@ -15,11 +15,11 @@ package basic;
 
 import definitions.Messages;
 import definitions.is;
-import main.core;
+import main.coreGUI;
 import script.Plugin;
 import script.RunningTask;
 import script.log;
-import utils_deprecated.html;
+import utils.www.html;
 import www.Table;
 import www.WebRequest;
 
@@ -53,7 +53,7 @@ public class status extends Plugin{
     @Override
     public void main(WebRequest request){
        // are there any tasks happening right now?
-        if(core.runningTasks.isEmpty()){
+        if(coreGUI.runningTasks.isEmpty()){
             request.setPage("notasks.html");
             return;
         }
@@ -82,7 +82,7 @@ public class status extends Plugin{
         Table table = new Table(line);
         
         // list all the tasks
-        for(RunningTask task : core.runningTasks){
+        for(RunningTask task : coreGUI.runningTasks){
             // gather the details
             line[0] = task.getPercentage() + "%";
             line[1] = task.getTitle();
@@ -124,7 +124,7 @@ public class status extends Plugin{
             return;
         }
         // go through all the tasks, try to find the one that is intended
-        for(RunningTask thisTask : core.runningTasks){
+        for(RunningTask thisTask : coreGUI.runningTasks){
             //System.err.println(thisTask.getUID());
             if(thisTask.getUID() == UID){
                 task = thisTask;
@@ -153,7 +153,7 @@ public class status extends Plugin{
 
         // add a page refresh in case the task is still processing
         if(task.isProcessing()){
-            meta = utils_deprecated.html.redirectMetaTag("/basic/status?id=" 
+            meta = html.redirectMetaTag("/basic/status?id=" 
                     + task.getUID(), 3);
         }
         
@@ -202,7 +202,7 @@ public class status extends Plugin{
                         //+ 
                         task.getTitle() 
                         )
-                + "Started in " + utils_deprecated.time.getTimeFromLong(task.getUID())
+                + "Started in " + utils.time.getTimeFromLong(task.getUID())
                 + html.br
                 + "Temporary Id number: " + task.getUID()
                 + html.br

@@ -13,7 +13,7 @@
 package www;
 
 import java.util.ArrayList;
-import utils_deprecated.html;
+import utils.www.html;
 
 
 /**

@@ -26,13 +26,16 @@ import javax.swing.tree.DefaultTreeModel;
 import javax.swing.tree.TreePath;
 import javax.swing.tree.TreeSelectionModel;
 import main.controller;
-import main.core;
+import main.coreGUI;
+import main.engine;
 import net.htmlparser.jericho.HTMLElementName;
 import net.htmlparser.jericho.Source;
 import script.log;
 import spdxlib.FileInfo2;
 import spdxlib.SPDXfile2;
-import utils_deprecated.html;
+import spdxlib.swing.NodeType;
+import spdxlib.swing.TreeNodeSPDX;
+import utils.www.html;
 import www.RequestOrigin;
 import www.RequestType;
 import www.WebRequest;
@@ -66,7 +69,7 @@ public class swingUtils {
         
         // write the key
         if(key.isEmpty() == false){
-            core.settings.write(key, fc.getSelectedFile().getAbsolutePath());
+            engine.settings.write(key, fc.getSelectedFile().getAbsolutePath());
         }
             
         log.write(is.ACCEPTED, "Folder chosen: %1"
@@ -82,7 +85,7 @@ public class swingUtils {
      * @return the currently selected tree node or null if nothing is selected
      */
     public static TreeNodeSPDX getSelectedNode(){
-        JTree tree = core.studio.getTree();
+        JTree tree = coreGUI.studio.getTree();
         return swingUtils.getSelectedNode(tree);
     }
     
@@ -184,7 +187,7 @@ public class swingUtils {
      */
     public static TreeNodeSPDX nodeCreate(String title, NodeType nodeType,
             TreeNodeSPDX root){
-            TreeNodeSPDX node = swingUtils.createNodeChild(title,root);
+            TreeNodeSPDX node = createNodeChild(title,root);
             node.nodeType = nodeType;
             node.id = title;
             return node;
@@ -312,7 +315,7 @@ public class swingUtils {
       */
      static public void showMessage(String message){
         JOptionPane.showMessageDialog
-                                (core.studio, message);
+                                (coreGUI.studio, message);
      }
      
      /**
@@ -377,7 +380,7 @@ public class swingUtils {
         
         
         TreeNodeSPDX rootNode = (TreeNodeSPDX)
-                core.studio.getTree().getModel().getRoot();
+                coreGUI.studio.getTree().getModel().getRoot();
         Enumeration e = rootNode.preorderEnumeration();
         TreeNodeSPDX selectedNode = null;
         while(e.hasMoreElements()){
@@ -390,7 +393,7 @@ public class swingUtils {
         }
         if(selectedNode != null){
             // make the node visible again on the tree
-            JTree m_tree = core.studio.getTree();
+            JTree m_tree = coreGUI.studio.getTree();
             TreeSelectionModel model = m_tree.getSelectionModel();
             TreePath path;
             
@@ -437,10 +440,10 @@ public class swingUtils {
     
 //    // find all components inside our common library
 //        File baseFolder = new File(".");
-////        core.components = actions.findSPDX(new File(baseFolder, 
+////        engine.components = actions.findSPDX(new File(baseFolder, 
 ////                is.library));
 //        // now find our reports
-//        core.reports = actions.findSPDX(new File(baseFolder, 
+//        engine.reports = actions.findSPDX(new File(baseFolder, 
 //                is.reports));
 //        
 //        // get the current UID of the selected node
@@ -508,7 +511,7 @@ public class swingUtils {
      */
     public static TreeNodeSPDX addNode(String title, String iconImage, 
             TreeNodeSPDX nodeRoot) {
-        JTree tree = core.studio.getTree();
+        JTree tree = coreGUI.studio.getTree();
         TreeNodeSPDX node = swingUtils.nodeCreate(title, NodeType.other, nodeRoot);
         node.setIcon(iconImage);
         // all finished, write this data on GUI tree list
@@ -543,7 +546,7 @@ public class swingUtils {
         String result = 
                 html.div()
                 + "<h2>"
-                + html.getCommonFolderIcon("wooden-box-label.png")
+                + webUtils.getCommonFolderIcon("wooden-box-label.png")
                 + breadCrumb
                 + "</h2>"
                 + html._div
@@ -609,7 +612,7 @@ public class swingUtils {
             
             int pos = content.indexOf("=");
             // filter our number from the rest of the text
-            delay = utils_deprecated.text.justNumbers(content.substring(0,pos));
+            delay = utils.text.justNumbers(content.substring(0,pos));
             // we use -1 as indicator that something went wrong
             if(delay == -1){
                 System.err.println("META error 003: No delay value was found");
@@ -694,7 +697,7 @@ public class swingUtils {
         Thread thread = new Thread(){
             @Override
             public void run(){
-                core.studio.editorPane(is.contentHTML, false, 0, text, false,
+                coreGUI.studio.editorPane(is.contentHTML, false, 0, text, false,
                 null);
             }
         };

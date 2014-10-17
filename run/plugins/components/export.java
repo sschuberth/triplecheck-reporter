@@ -12,8 +12,6 @@
 
 package components;
 
-import GUI.NodeType;
-import GUI.TreeNodeSPDX;
 import GUI.swingUtils;
 import definitions.is;
 import java.awt.Desktop;
@@ -21,12 +19,14 @@ import java.io.File;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import main.core;
+import main.engine;
 import org.apache.commons.io.FileUtils;
 import script.Plugin;
 import script.log;
 import spdxlib.SPDXfile2;
-import utils_deprecated.html;
+import spdxlib.swing.NodeType;
+import spdxlib.swing.TreeNodeSPDX;
+import utils.www.html;
 import www.RequestOrigin;
 import www.WebRequest;
 
@@ -54,9 +54,9 @@ public class export extends Plugin{
         String export = " at the \"export\" folder.";
         
         // add a link on the export link if the host is windows
-        if(utils_deprecated.misc.isWindows()){
+        if(utils.misc.isWindows()){
              export = html.link("here", "?x=folder&folder="
-                     + core.getFolderExport());
+                     + engine.getFolderExport());
         }
         
         // and now with the spdx summary, get the list of components
@@ -127,12 +127,12 @@ public class export extends Plugin{
         }
         
         // show the end-user where the report files were placed
-        File folderExport = new File(core.getFolderExport(), spdx.getId());
+        File folderExport = new File(engine.getFolderExport(), spdx.getId());
         String locationFolder = "." + folderExport.getAbsolutePath()
-                .replace(core.getWorkFolder().getAbsolutePath(), "")
+                .replace(engine.getWorkFolder().getAbsolutePath(), "")
                 .replace("\\", "/"); // replace the annoying Windows paths
         // now create a link in case we have File Explorer available
-        if(utils_deprecated.misc.isWindows()){
+        if(utils.misc.isWindows()){
             locationFolder = html.link(locationFolder, "?x=folder&folder="
                      + folderExport.getAbsolutePath());
         }
@@ -160,13 +160,13 @@ public class export extends Plugin{
     private String exportReport(SPDXfile2 spdx) {
         String result = "";
         // start by creating our export directory
-        File folderExport = new File(core.getFolderExport(), spdx.getId());
+        File folderExport = new File(engine.getFolderExport(), spdx.getId());
         // if the folder doesn't exist, create one
-        utils_deprecated.files.mkdirs(folderExport);
+        utils.files.mkdirs(folderExport);
         // now create the report folder
         File folderReport = new File(folderExport, "report");
         // create this folder if it doesn't exist already
-        if(utils_deprecated.files.mkdirs(folderReport)){
+        if(utils.files.mkdirs(folderReport)){
             result += "- Created export folder" + html.br;
         }else{
             if(folderReport.exists() == false){
@@ -178,7 +178,7 @@ public class export extends Plugin{
         String reportComponents = spdx.summary.components();
         // save it to disk
         File fileComponents = new File(folderReport, "components.html");
-        utils_deprecated.files.SaveStringToFile(fileComponents, reportComponents);
+        utils.files.SaveStringToFile(fileComponents, reportComponents);
         result += "- Generated an HTML list of components" + html.br;
        
         // make a copy of the SPDX document to this folder too
@@ -192,7 +192,7 @@ public class export extends Plugin{
             File fileZip = new File(folderExport, "report-"
                     + spdx.getId()
                     + "("
-                    + utils_deprecated.time.getDate()
+                    + utils.time.getDate()
                     + ")"
                     +".lex.zip");
             ThirdParty.zip.createZip(folderReport, fileZip);
@@ -213,13 +213,13 @@ public class export extends Plugin{
     private String exportFiles(SPDXfile2 spdx) {
         String result = "";
         // start by creating our export directory
-        File folderExport = new File(core.getFolderExport(), spdx.getId());
+        File folderExport = new File(engine.getFolderExport(), spdx.getId());
         // if the folder doesn't exist, create one
-        utils_deprecated.files.mkdirs(folderExport);
+        utils.files.mkdirs(folderExport);
         // now create the report folder
         File folderReport = new File(folderExport, "report");
         // create this folder if it doesn't exist already
-        if(utils_deprecated.files.mkdirs(folderReport)){
+        if(utils.files.mkdirs(folderReport)){
             result += "- Created export folder" + html.br;
         }else{
             if(folderReport.exists() == false){

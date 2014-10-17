@@ -12,7 +12,9 @@ package trigger;
  * FileComment: <text> Test the detection of EUPL licenses </text> 
  */
 
-import main.core;
+
+
+import main.engine;
 import main.start;
 import org.junit.*;
 import static org.junit.Assert.*;
@@ -67,7 +69,7 @@ public class TestTriggerEUPL {
          boolean didNotFind = true;
          
          String lowerCaseContent = content.toLowerCase();
-         for(Trigger thisLicense: core.triggers.getList()){
+         for(Trigger thisLicense: engine.triggers.getList()){
             if(thisLicense.isApplicable(content, lowerCaseContent)){
                 assertEquals("EUPL-1.1", thisLicense.getShortIdentifier());
                 System.out.println("Found EUPL-1.1 license");

@@ -21,7 +21,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import main.core;
+import main.engine;
 import main.param;
 import org.rauschig.jarchivelib.ArchiveFormat;
 import org.rauschig.jarchivelib.Archiver;
@@ -33,7 +33,7 @@ import script.RunningTask;
 import script.log;
 import spdxlib.DocumentCreate2;
 import spdxlib.SPDXfile2;
-import utils_deprecated.html;
+import utils.www.html;
 import www.RequestOrigin;
 import www.WebRequest;
 
@@ -193,10 +193,10 @@ public class create extends Plugin{
                    @Override
                    public void run(){
                        // wait a little bit for things to start
-                       utils_deprecated.time.wait(3);
+                       utils.time.wait(3);
                        // keep repearing while things are being processed
                        while(newSPDX.isProcessing()){
-                            utils_deprecated.time.wait(3);
+                            utils.time.wait(3);
                             setStatus("%1 files processed", 
                                     "" + newSPDX.getFilesProcessed());
                        }
@@ -215,13 +215,13 @@ public class create extends Plugin{
                // now save the source location
                final String title = definitions.id.SOURCEFOLDER 
                        + source.getName() + ".spdx";
-               core.settings.write(title, source.getAbsolutePath());
+               engine.settings.write(title, source.getAbsolutePath());
              }
         };
         task.launch();
         
         //request.setAnswer("Process launched as " + task.getUID());
-        request.setAnswer(utils_deprecated.html.redirect("/basic/status"
+        request.setAnswer(utils.www.html.redirect("/basic/status"
                 + "?ID=" + task.getUID(), 0, ""));
     }
 
@@ -259,7 +259,7 @@ public class create extends Plugin{
             public void doTask(){
                 setTitle("Creating reports");
                 // get a list of the folders to index
-                ArrayList<File> folderList = utils_deprecated.files.findFolders(sourceBatch, 2);
+                ArrayList<File> folderList = utils.files.findFolders(sourceBatch, 2);
                 int counter = 0;
                 for(File source : folderList){
                     // go through each one
@@ -329,7 +329,7 @@ public class create extends Plugin{
 //    }
 //        request.setAnswer(utils.html.redirect("/basic/status", 0, ""));
         
-        request.setAnswer(utils_deprecated.html.redirect("/basic/status"
+        request.setAnswer(utils.www.html.redirect("/basic/status"
                 + "?ID=" + task.getUID(), 0, ""));
     }
     
@@ -350,7 +350,7 @@ public class create extends Plugin{
         String selectedFolder = settings.read(myFolder);
 
         // do we want to use the default location or do we have an older choice?
-        File startFolder = core.getWorkFolder();
+        File startFolder = engine.getWorkFolder();
         if(selectedFolder != null){
             startFolder = new File(selectedFolder);
         }
@@ -392,7 +392,7 @@ public class create extends Plugin{
         String selectedFolder = settings.read(batchFolder);
 
         // do we want to use the default location or do we have an older choice?
-        File startFolder = core.getWorkFolder();
+        File startFolder = engine.getWorkFolder();
         if(selectedFolder != null){
             startFolder = new File(selectedFolder);
         }
@@ -453,7 +453,7 @@ public class create extends Plugin{
         
         
         //request.setAnswer("Process launched as " + task.getUID());
-        request.setAnswer(utils_deprecated.html.redirect("/basic/status"
+        request.setAnswer(utils.www.html.redirect("/basic/status"
                 + "?ID=" + task.getUID(), 0, ""));
         
     }
@@ -481,7 +481,7 @@ public class create extends Plugin{
         }
         // count the time it took to run this task
         long time = System.currentTimeMillis() - task.getUID();
-        String timeCount = utils_deprecated.time.timeNumberToHumanReadable(time) + " were "
+        String timeCount = utils.time.timeNumberToHumanReadable(time) + " were "
                 + "necessary to complete this task";
         task.setStatus(timeCount);
         
@@ -533,7 +533,7 @@ public class create extends Plugin{
          File mainFolder = new File(downloadedFile.getParentFile(), "extracted");
          // create the specific folder for this file
          File destination = new File(mainFolder, fileName);
-         utils_deprecated.files.mkdirs(destination);
+         utils.files.mkdirs(destination);
          
          // get the name portion
          Archiver archiver = null;
@@ -591,10 +591,10 @@ public class create extends Plugin{
         }
         
         
-        File downloadFolder = new File(core.getWorkFolder(), "downloads");
+        File downloadFolder = new File(engine.getWorkFolder(), "downloads");
         // we might need to create this folder
         if(downloadFolder.exists() == false){
-            utils_deprecated.files.mkdirs(downloadFolder);
+            utils.files.mkdirs(downloadFolder);
         }
         
         // now, get the filename portion of this file
@@ -623,7 +623,7 @@ public class create extends Plugin{
                     download.getFile();
         
         // get the file size
-        String targetSize = utils_deprecated.files.humanReadableSize(targetFile.length());
+        String targetSize = utils.files.humanReadableSize(targetFile.length());
         task.setStatus("File was downloaded as \"%1\" with an approximate"
                 + " size of %2"
                 ,targetFilename, targetSize);
@@ -640,7 +640,7 @@ public class create extends Plugin{
  */
 private void concludeCreation(DocumentCreate2 newSPDX){
     SPDXfile2 spdx = new SPDXfile2(newSPDX.getOutputFile());
-    core.reports.add(spdx.file, spdx);
+    engine.reports.add(spdx.file, spdx);
     TreeviewUtils.spdxAddNode2(spdx, TreeviewUtils.getNodeReports());
     swingUtils.setSelectedNode(spdx.getUID());
     // refresh the tree

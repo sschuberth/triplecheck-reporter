@@ -15,7 +15,7 @@ specific document is mentioned.
 
 package spdx;
 
-import GUI.swingUtils;
+import GUI.webUtils;
 import definitions.Messages;
 import definitions.is;
 import java.awt.Desktop;
@@ -23,14 +23,14 @@ import java.io.File;
 import java.io.IOException;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
-import main.core;
+import main.engine;
 import main.param;
 import script.Plugin;
 import script.log;
 import spdxlib.FileInfo2;
 import spdxlib.SPDXfile2;
-import utils_deprecated.Graphs;
-import utils_deprecated.html;
+import utils.Graphs;
+import utils.www.html;
 import www.Table;
 import www.WebRequest;
 
@@ -71,7 +71,7 @@ public class show extends Plugin{
                 ;
         
         // no reports found..
-        if(core.reports==null){
+        if(engine.reports==null){
             String result = ""
                     + html.div()
                     + html.br
@@ -86,7 +86,7 @@ public class show extends Plugin{
             return;
         }
         
-        ArrayList<SPDXfile2> spdxList = core.reports.getList();
+        ArrayList<SPDXfile2> spdxList = engine.reports.getList();
         
         // get some statistical data
         for(Object object : spdxList){
@@ -119,7 +119,7 @@ public class show extends Plugin{
         // we don't like SPDX documents without declared triggers
         if(counterLicensesDeclared == 00){
             warnings = ""
-                    + html.getIcon("exclamation.png", request)
+                    + webUtils.getIcon("exclamation.png", request)
                     + "No licenses declared";
         }
         
@@ -163,7 +163,7 @@ public class show extends Plugin{
         
         String[] header = new String[]{summary, 
               html.br
-            + html.getIcon("chart.png", request)};
+            + webUtils.getIcon("chart.png", request)};
         values = new int[]{270, 180};
         
         summary = Table.alignedTable(header, values);
@@ -186,7 +186,7 @@ public class show extends Plugin{
      * List all the files that are on the disk
      */
     private String listFilesSPDX(WebRequest request){
-        String result = findFiles(core.getProductsFolder(), 25, request);
+        String result = findFiles(engine.getProductsFolder(), 25, request);
         return result;           
     }
   
@@ -217,7 +217,7 @@ public class show extends Plugin{
 
                 // remove the local disk path with a generic one
                  String filteredPath = "." 
-                         + file.getAbsolutePath().replace(core.getProductsFolder()
+                         + file.getAbsolutePath().replace(engine.getProductsFolder()
                                  .getAbsolutePath(), "");
 
                  //filteredPath = filteredPath.replace(" ", "%20");
@@ -230,7 +230,7 @@ public class show extends Plugin{
                  //System.err.println("MSG SH23 - " + fileLink);
 
                result +=  Table.alignedTable(new String[]{
-                     html.getIcon("document-text.png", request), 
+                     webUtils.getIcon("document-text.png", request), 
                      fileLink},
                      sizes);
 
@@ -250,7 +250,7 @@ public class show extends Plugin{
                 }
 
                 String folderText = Table.alignedTable(new String[]{
-                     html.getIcon("folder-horizontal-open.png", request), 
+                     webUtils.getIcon("folder-horizontal-open.png", request), 
                      folderName},
                      sizes);
 
@@ -288,7 +288,7 @@ public class show extends Plugin{
         }
       
         // get the SPDX file from the root node
-        SPDXfile2 spdx = core.reports.get(file);
+        SPDXfile2 spdx = engine.reports.get(file);
         
         // compute some of our useful statistics about the SPDX document
         int counterLicensesDeclared = spdx.getLicensesDeclaredCount();
@@ -312,7 +312,7 @@ public class show extends Plugin{
         // add the pretty text with a thousands separator
         DecimalFormat myFormatter = new DecimalFormat("###,###");
         String textLOC = myFormatter.format(countLOC);
-        String textOverallSize = utils_deprecated.files.humanReadableSize(overallSize);
+        String textOverallSize = utils.files.humanReadableSize(overallSize);
         
         // generate the nice graph
         String[] titles = new String[]{"No license declared", "License declared"};
@@ -330,7 +330,7 @@ public class show extends Plugin{
                 + "";
         
         String column2 = ""
-                + html.getIcon("chart.png", request)
+                + webUtils.getIcon("chart.png", request)
                 + html.br
                 + html.br
                 + textLOC + " lines of code"
@@ -361,7 +361,7 @@ public class show extends Plugin{
         
         // if we are on Windows, permit to open the folder
         String openFolder = "";
-        if(utils_deprecated.misc.isWindows()){
+        if(utils.misc.isWindows()){
             openFolder = ""
                     //+ html.br
                     + html.link("Open folder in Windows explorer", 
@@ -390,7 +390,7 @@ public class show extends Plugin{
                 ;
         
         // save our cache for next time
-        core.temp.put(showSPDX, result);
+        engine.temp.put(showSPDX, result);
         
         // write everything on our UI text area
         request.setAnswer(result);
@@ -436,7 +436,7 @@ public class show extends Plugin{
         
         // start the processing
         //System.err.println("DBG-S569 Reading SPDX");
-        SPDXfile2 spdx = core.reports.get(file);
+        SPDXfile2 spdx = engine.reports.get(file);
         // create the place holder for the results
         ArrayList<FileInfo2> list = new ArrayList();
         
@@ -511,7 +511,7 @@ public class show extends Plugin{
             return null;
         }
         // does this file exists?
-        File file = new File(core.getProductsFolder(), spdxTarget);
+        File file = new File(engine.getProductsFolder(), spdxTarget);
         // this file needs to exist
         if((file.exists() == false) || (file.isDirectory())){
             request.setAnswer("Sorry, the file was not found: " + spdxTarget);

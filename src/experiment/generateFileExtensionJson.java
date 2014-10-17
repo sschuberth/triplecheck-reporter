@@ -18,7 +18,7 @@ package experiment;
 
 import com.google.gson.Gson;
 import java.io.File;
-import main.core;
+import main.engine;
 
 /**
  *
@@ -27,10 +27,10 @@ import main.core;
 public class generateFileExtensionJson {
     public static void main(String[] args) {
         // where to we want to store the files?
-        File targetFolder = new File(core.getMiscFolder(), "extensions");
+        File targetFolder = new File(engine.getMiscFolder(), "extensions");
         
-//        core.extensions.generateJsonFiles(targetFolder);
-//        core.extensions.readJsonFiles(targetFolder);
+//        engine.extensions.generateJsonFiles(targetFolder);
+//        engine.extensions.readJsonFiles(targetFolder);
         
         System.exit(0);
     }

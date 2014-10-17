@@ -6,10 +6,10 @@ package webserver;
 
 import definitions.Messages;
 import definitions.definition;
-import main.core;
+import main.engine;
 import script.Plugin;
 import script.log;
-import utils_deprecated.html;
+import utils.www.html;
 import www.WebRequest;
 import www.WebServer;
 
@@ -44,7 +44,7 @@ public class server extends Plugin{
        // if we are supposed to be offline, don't start the server
        if(status.equals("offline")){
            // we might have started before and need to now place it offline
-           WebServer server = (WebServer) core.temp.get("server");
+           WebServer server = (WebServer) engine.temp.get("server");
            if(server != null){
                server.stopServer();
            }
@@ -54,7 +54,7 @@ public class server extends Plugin{
        WebServer server = new WebServer();
        String portNumber = settings.read("port", definition.portDefault);
        server.startServer(portNumber);
-       core.temp.put("server", server);
+       engine.temp.put("server", server);
    }
     
    /**
@@ -69,7 +69,7 @@ public class server extends Plugin{
         startServer();
         // all done
         String message = html.h3("Settings saved!");
-        request.setAnswer(utils_deprecated.html.redirect("/webserver/server", 2, message));
+        request.setAnswer(html.redirect("/webserver/server", 2, message));
     }
    
     
@@ -82,7 +82,7 @@ public class server extends Plugin{
        // if we are supposed to be offline, we can't use this thing
        if(status.equals("offline")){
            String message = html.h3("You need to first activate the server..");
-           request.setAnswer(utils_deprecated.html.redirect("/webserver/server", 2, message));
+           request.setAnswer(html.redirect("/webserver/server", 2, message));
            return;
        }
        
@@ -90,11 +90,11 @@ public class server extends Plugin{
        String portNumber = settings.read("port", definition.portDefault);
        
        // All checked, let's open the front page
-       utils_deprecated.internet.openURL("http://127.0.0.1:" + portNumber 
+       utils.internet.openURL("http://127.0.0.1:" + portNumber 
                + "/basic/home");
        
        String message = html.h3("Opening your web browser..");
-       request.setAnswer(utils_deprecated.html.redirect("/webserver/server", 2, message));
+       request.setAnswer(html.redirect("/webserver/server", 2, message));
     }
     
    /**

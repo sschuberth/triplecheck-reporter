@@ -12,9 +12,7 @@
 
 package comp;
 
-import definitions.is;
-import main.core;
-import utils_deprecated.html;
+import utils.www.html;
 import www.WebRequest;
 
 
@@ -43,7 +41,7 @@ public class loadPage {
 //                                + html._div
 //                                + "";
 //                // place the loading message 
-//                core.studio.editorPane(is.contentHTML, false, 0, loadingMessage);
+//                engine.studio.editorPane(is.contentHTML, false, 0, loadingMessage);
 //            };
 //        };
 //        thread.start();
@@ -71,10 +69,10 @@ public class loadPage {
 //                // did we got any meaningful text?
 //                if(result.isEmpty() || result.equals(loadingMessage)){
 //                    //System.out.println(output);
-//                    core.studio.editorPane(is.contentHTML, true, 0, output);
+//                    engine.studio.editorPane(is.contentHTML, true, 0, output);
 //                }else{
 //                    //System.out.println(result);
-//                    core.studio.editorPane(is.contentHTML, true, 0, result);
+//                    engine.studio.editorPane(is.contentHTML, true, 0, result);
 //                }
 //                //request.setAnswer(result);
 //         }
@@ -97,7 +95,7 @@ public class loadPage {
         final String tag2 = "</td> </tr></table>";
         final String url = "https://code.google.com/p/";
         // get the web page
-        final String page = utils_deprecated.internet.webget(url + title);
+        final String page = utils.internet.webget(url + title);
         //System.err.println(page);
         final int i1 = page.indexOf(tag1) + tag1.length();
         final String temp = page.substring(i1, page.length());

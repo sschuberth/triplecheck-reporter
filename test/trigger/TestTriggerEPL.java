@@ -12,7 +12,9 @@ package trigger;
  * FileComment: <text> Test the detection of GPL terms. </text> 
  */
 
-import main.core;
+
+
+import main.engine;
 import main.start;
 import org.junit.*;
 import static org.junit.Assert.*;
@@ -61,7 +63,7 @@ public class TestTriggerEPL {
          
          System.out.println("------------------------");
          
-         System.out.println("Number of triggers: " + core.triggers.size());
+         System.out.println("Number of triggers: " + engine.triggers.size());
          System.out.println("------------------------");
          
          // now test the licenses
@@ -77,7 +79,7 @@ public class TestTriggerEPL {
     private void testLicense(final String title, final String codeSnippet, final String licenseId) {
          String lowerCaseContent = codeSnippet.toLowerCase();
          boolean didNotFind = true;
-         for(Trigger thisLicense: core.triggers.getList()){
+         for(Trigger thisLicense: engine.triggers.getList()){
             if(thisLicense.isApplicable(codeSnippet, lowerCaseContent)){
                 assertEquals(licenseId, thisLicense.getResult());
                 //System.out.println(thisLicense.getResult());

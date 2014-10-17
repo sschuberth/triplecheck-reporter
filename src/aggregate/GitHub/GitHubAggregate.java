@@ -19,7 +19,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.concurrent.ConcurrentNavigableMap;
-import main.core;
+import main.engine;
 
 
 /**
@@ -95,7 +95,7 @@ public class GitHubAggregate {
      * @return 
      */    
     public GithubUser[] getUsers(int since){
-        String resultAPI = utils_deprecated.internet.webget("https://api.github.com/users?since="
+        String resultAPI = utils.internet.webget("https://api.github.com/users?since="
                 + since);
         Gson gson = new Gson();
         return gson.fromJson(resultAPI, GithubUser[].class); 
@@ -114,7 +114,7 @@ public class GitHubAggregate {
        String fileString = user.id + "-" + user.login;
        File file = new File(folder, fileString);
        // save the file to disk
-       utils_deprecated.files.SaveStringToFile(file, text);
+       utils.files.SaveStringToFile(file, text);
        //System.out.println(file.getAbsolutePath());
        // all done
        System.out.println("Saved: " + fileString);
@@ -138,10 +138,10 @@ public class GitHubAggregate {
      * @return The folder from where the main application is running
      */
     public static File getFolder(){
-        File result = new File(core.getMiscFolder(), "github");
+        File result = new File(engine.getMiscFolder(), "github");
         // if the folder doesn't exist, create one
         if(result.exists() == false){
-            utils_deprecated.files.mkdirs(result);
+            utils.files.mkdirs(result);
         }
         return result;
     }
@@ -170,7 +170,7 @@ public class GitHubAggregate {
                 }
             }
             // wait some time to respect rate limit
-            utils_deprecated.time.wait(throttle);
+            utils.time.wait(throttle);
         }
         
         

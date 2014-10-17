@@ -14,6 +14,7 @@
 package basic;
 
 import GUI.SearchType;
+import GUI.webUtils;
 import definitions.Messages;
 import definitions.definition;
 import definitions.is;
@@ -21,14 +22,15 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
 import main.controller;
-import main.core;
+import main.coreGUI;
+import main.engine;
 import script.Plugin;
 import script.log;
 import spdxlib.FileInfo2;
 import spdxlib.SPDXfile2;
 import ssdeep.SpamSumSignature;
 import ssdeep.ssdeep;
-import utils_deprecated.html;
+import utils.www.html;
 import www.RequestOrigin;
 import www.Table;
 import www.WebRequest;
@@ -73,7 +75,7 @@ public class pluginSearch extends Plugin{
      */
     private void prepareFileLauncher(){
         // get all the java files that we are ready to launch if needed
-        ArrayList<File> files = utils_deprecated.files.findFilesFiltered(core.getPluginsFolder(), 
+        ArrayList<File> files = utils.files.findFilesFiltered(engine.getPluginsFolder(), 
                 ".java", 25);
         
         // we need some filtering
@@ -91,14 +93,14 @@ public class pluginSearch extends Plugin{
         }
         
         // place the list available for the future
-        core.temp.put(definition.searchList, list);
+        engine.temp.put(definition.searchList, list);
     }
     
     /**
      * Reacts to the case when users press the ENTER key
      */
     void doKeyPress(){
-        String searchTerm = core.studio.getSearch().getText();
+        String searchTerm = coreGUI.studio.getSearch().getText();
         // no need to worry about empty searches or less than two characters
         if(searchTerm.length() < 2){
             return;
@@ -128,7 +130,7 @@ public class pluginSearch extends Plugin{
         if(internalCommand(searchTerm)==false){
             // start by looking at the components
 //            String matchComponentName =
-//                searchListSPDX(core.components, searchTerm, "Library");
+//                searchListSPDX(engine.components, searchTerm, "Library");
             
             // add the grey text with a short summary
             output = 
@@ -138,7 +140,7 @@ public class pluginSearch extends Plugin{
                     + html._div
                     + output;
         // do the final output, everything done
-        core.studio.editorPane(is.contentHTML, false, 0, output);
+        coreGUI.studio.editorPane(is.contentHTML, false, 0, output);
             
         try{    
             // look in reports now
@@ -174,7 +176,7 @@ public class pluginSearch extends Plugin{
                     + html._div
                     + output;
         // do the final output, everything done
-        core.studio.editorPane(is.contentHTML, false, 0, output);
+        coreGUI.studio.editorPane(is.contentHTML, false, 0, output);
     }
     
    
@@ -191,16 +193,16 @@ public class pluginSearch extends Plugin{
         String result = ""; 
         String keyword = searchTerm.toLowerCase();
         // create the icons that might be displayed on the results
-        String iconPackage = html.getCommonFolderIcon("box.png");
-        final String iconFile = html.getCommonFolderIcon("document-number.png");
+        String iconPackage = webUtils.getCommonFolderIcon("box.png");
+        final String iconFile = webUtils.getCommonFolderIcon("document-number.png");
            
-        if(core.reports.getList().isEmpty()){
+        if(engine.reports.getList().isEmpty()){
             System.err.println("PluginSearch198: No reports to search");
             return "";
         }
                
         
-        for(SPDXfile2 spdx : core.reports.getList()){
+        for(SPDXfile2 spdx : engine.reports.getList()){
             String matchTitle = "";
         // first search, find components we have with the same name
             String spdxId = spdx.getId().toLowerCase();
@@ -226,7 +228,7 @@ public class pluginSearch extends Plugin{
                
                    // add the file size on the details
                    if(file.getFileSize() != 0){
-                       String fileSize = utils_deprecated.files.humanReadableSize(file.getFileSize());
+                       String fileSize = utils.files.humanReadableSize(file.getFileSize());
                         fileDetails =  fileDetails.concat(fileSize);
 //                       if(fileSize.contains("(")){
 //                           fileSize = fileSize.substring(0, 
@@ -343,10 +345,10 @@ public class pluginSearch extends Plugin{
      */
     void launchNewSearch(){
         // update the search box
-        core.studio.getSearch().setText(core.searchTerm);
-        core.studio.getSearch().setCaretPosition(0);
+        coreGUI.studio.getSearch().setText(coreGUI.searchTerm);
+        coreGUI.studio.getSearch().setCaretPosition(0);
         // do the hard work now
-        doSearch(core.searchTerm);
+        doSearch(coreGUI.searchTerm);
     }
 
   
@@ -433,13 +435,13 @@ public class pluginSearch extends Plugin{
         if(searchTerm.equalsIgnoreCase("help")){
             File helpFile = new File(thisFolder, "help.html");
             System.out.println(helpFile.getAbsoluteFile());
-            output = utils_deprecated.files.readAsString(helpFile);
+            output = utils.files.readAsString(helpFile);
             //System.out.println(output);
             return true;
         }
         // check for internal pages we can run
         HashMap list = 
-                (HashMap) core.temp.get(definition.searchList);
+                (HashMap) engine.temp.get(definition.searchList);
 
         // no need to continue if empty
         if(list == null){

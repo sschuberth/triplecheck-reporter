@@ -9,12 +9,12 @@
 
 package experiment;
 
-import GUI.NodeType;
-import GUI.TreeNodeSPDX;
 import GUI.TreeRenderer;
 import java.util.Enumeration;
 import javax.swing.JTree;
 import javax.swing.tree.DefaultTreeModel;
+import spdxlib.swing.NodeType;
+import spdxlib.swing.TreeNodeSPDX;
 
 /**
  *
@@ -186,7 +186,7 @@ static TreeNodeSPDX mkdirNode(final TreeNodeSPDX parentNode, final String find){
             continue;
         }
         // do we have a match?
-        if(utils_deprecated.text.equals(child.getTitle(), find)){
+        if(utils.text.equals(child.getTitle(), find)){
             return child;
         }
     }

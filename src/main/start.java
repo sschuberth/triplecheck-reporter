@@ -11,16 +11,11 @@
  */
 package main;
 
-import FileExtension.ExtensionControl;
 import GUI.StartupScreen;
 import GUI.StudioUI4;
 import definitions.is;
-import java.io.File;
 import script.log;
 import structure.LicenseControl;
-import structure.ReportsControl;
-import structure.TriggerControl;
-import utils_deprecated.Settings;
 
 /**
  *
@@ -34,13 +29,19 @@ public class start {
      * scripts and loading them up to memory.
      */
     public static void basicStart(){
+        
+        // express that third-party projects need to initialize as libraries
+        System.setProperty(is.methodStartUp, is.library);
+        
+        engine.warmUp();
         // initialize the settings
-        core.settings = new Settings(
-                    new File(core.getWorkFolder(), "settings.xml"), "");
-        core.extensions = new ExtensionControl();
-        core.triggers = new TriggerControl();
-        core.reports = new ReportsControl();
-        core.licenses = new LicenseControl();
+//        engine.settings = new Settings(
+//                    new File(engine.getWorkFolder(), "settings.xml"), "");
+//        engine.extensions = new ExtensionControl();
+//        engine.triggers = new TriggerControl();
+//        engine.reports = new ReportsControl();
+        
+        coreGUI.licenses = new LicenseControl();
     }
     
     
@@ -48,10 +49,7 @@ public class start {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-         
- 
-       
-        
+      
         // do the basic start
         basicStart();
         
@@ -66,23 +64,24 @@ public class start {
         startupScreen.kickoff();
         log.write(is.CREDITS, "TripleCheck (c) %1, "
                 + "http://triplecheck.net", utils.time.getCurrentYear());
-//        log.write(is.RUNNING, "Version %1 %2", core.version,
+//        log.write(is.RUNNING, "Version %1 %2", engine.version,
 //                utils.misc.getDate(start.class));
         
         // do the startup
         settings.doStartup();
         
         try{
-            core.studio = new StudioUI4();
-            core.studio.doSettings();
+            coreGUI.studio = new StudioUI4();
+            coreGUI.studio.doSettings();
 
             // remove the startup screen
             startupScreen.dispose();
 
-            core.studio.setVisible(true);
-            core.studio.hasFocus();
+            coreGUI.studio.setVisible(true);
+            coreGUI.studio.hasFocus();
         }catch (Exception e){
             log.write(is.ERROR, "ST60 - Exception occurred: %1", e.getLocalizedMessage());
+            e.printStackTrace();
             System.exit(-1981);
         }
     }

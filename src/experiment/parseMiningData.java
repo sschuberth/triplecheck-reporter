@@ -18,7 +18,7 @@ import definitions.is;
 import java.io.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import main.core;
+import main.engine;
 import script.log;
 
 
@@ -42,7 +42,7 @@ public class parseMiningData {
         
         // parse the google code repository
         parser.parseGoogleCode(new File("D:\\triplechecksoftware\\datamining\\gc\\gcProjectInfo2012-Nov.txt\\gcProjectInfo2012-Nov.txt"),
-                new File(core.getComponentFolder(), "googlecode/gc.jsons"), "Google code (2012-Nov)");
+                new File(engine.getComponentFolder(), "googlecode/gc.jsons"), "Google code (2012-Nov)");
         
         System.exit(1981);
     }
@@ -163,7 +163,7 @@ public class parseMiningData {
         Repository rep = new Repository();
         rep.setTitle(title);
         rep.setCopyright("Copyright (c) 2014 Nuno Brito");
-        rep.setCreated(utils_deprecated.time.getDateTimeISO());
+        rep.setCreated(utils.time.getDateTimeISO());
         rep.setType(repType);
         rep.setLicense("CC-BY-4.0 license");
         rep.setComments("Data provided by FLOSSmole at http://flossmole.org");

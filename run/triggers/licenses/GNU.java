@@ -143,7 +143,13 @@ public class GNU implements Trigger {
         for(String keyword : keywordsAGPL){
             // do we have a match inside the content?
             if(contentLowerCase.contains(keyword)){
-                checkForTermsAGPL(contentLowerCase);
+                // did we found a license file with the AGPL terms?
+                if(checkForTermsAGPL(contentLowerCase)){
+                    // no need to continue
+                    break;
+                }
+                // proceed, let's see if find some AGPL evidence
+                checkForEvidenceAndVersionAGPL(contentLowerCase);
                 break;
             }
         }
@@ -194,7 +200,7 @@ public class GNU implements Trigger {
       * Verifies if this file is just mentioning the AGPL or if this is the
       * license text. We use a specific term that is only found on this context.
       */
-     void checkForTermsAGPL(final String contentLowerCase){
+     boolean checkForTermsAGPL(final String contentLowerCase){
          isTermsAGPL = contentLowerCase.contains
         ("patent license was granted, prior to 28 march 2007");
          
@@ -206,11 +212,12 @@ public class GNU implements Trigger {
          
          // not an AGPL license file
          if(isTermsAGPL == false){
-             return;
+             return false;
          }
          
          isAGPL = true;
          addLicense(AGPL3_0);
+         return true;
      }
      
      /**
@@ -478,7 +485,7 @@ public class GNU implements Trigger {
       */
      private void addLicense(final String newLicense){
          for(final String license : licenses){
-             if(utils_deprecated.text.equals(license, newLicense)){
+             if(utils.text.equals(license, newLicense)){
                  return;
              }
          }
@@ -490,8 +497,6 @@ public class GNU implements Trigger {
          addLicense(newLicense.getId());
      }
     
-      
-            
              
     @Override
     public Boolean isApplicable(File file) {
@@ -540,6 +545,21 @@ public class GNU implements Trigger {
     @Override
     public String getTriggerTitle() {
         return "GNU license terms";
+    }
+
+    /**
+     * Verify if we have some evidence that the content being analysed contains
+     * something that resembles AGPL.
+     * @param contentLowerCase The content to be analysed
+     */
+    private void checkForEvidenceAndVersionAGPL(final String contentLowerCase) {
+        for(final String evidence : keywordsAGPL){
+            if(contentLowerCase.contains(evidence)){
+                isAGPL = true;
+                // only one mainstream AGPL version to consider at this moment
+                addLicense(AGPL3_0);
+            }
+        }
     }
     
 }

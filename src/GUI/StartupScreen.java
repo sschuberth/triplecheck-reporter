@@ -23,7 +23,7 @@ import java.net.URL;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
-import main.core;
+import main.engine;
 import script.log;
 
 /**
@@ -59,7 +59,7 @@ public class StartupScreen extends javax.swing.JFrame {
         // change the background to full white
         getContentPane().setBackground( Color.WHITE );
         // show the current version of our software
-        label.setText("Version " + core.version);
+        label.setText("Version " + engine.version);
     }
 
     /**
@@ -231,9 +231,9 @@ public class StartupScreen extends javax.swing.JFrame {
         int counter = 40;
         
         // do we have a value from a previous run?
-        if(core.settings.hasKey(counterValue)){
+        if(engine.settings.hasKey(counterValue)){
             // get the older value
-            String lastValue = core.settings.read(counterValue);
+            String lastValue = engine.settings.read(counterValue);
             // convert to integer
             int newValue = Integer.parseInt(lastValue);
             // is it worth to upgrade the counter?
@@ -255,10 +255,10 @@ public class StartupScreen extends javax.swing.JFrame {
                         setMessage(log.getLatest().getMessageSimple());
                         int count = log.getCounter();
                         setProgress(count);
-                        utils_deprecated.time.waitMs(150);
+                        utils.time.waitMs(150);
                     }
                     // store the real value for later reuse
-                    core.settings.write(counterValue, log.getCounter()+ "");
+                    engine.settings.write(counterValue, log.getCounter()+ "");
 //                    System.err.println("ST262 - Writing new value as " 
 //                            + log.getCounter() + "");
                 }};

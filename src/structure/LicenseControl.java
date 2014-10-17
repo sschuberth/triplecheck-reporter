@@ -12,22 +12,23 @@
 
 package structure;
 
-import GUI.NodeType;
-import GUI.TreeNodeSPDX;
 import GUI.TreeviewUtils;
 import definitions.is;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
 import javax.swing.tree.DefaultTreeModel;
-import main.core;
+import main.coreGUI;
+import main.engine;
 import script.exec;
 import script.log;
 import spdxlib.FileInfo2;
 import spdxlib.License;
 import spdxlib.LicenseType;
 import spdxlib.SPDXfile2;
-import utils_deprecated.html;
+import spdxlib.swing.NodeType;
+import spdxlib.swing.TreeNodeSPDX;
+import utils.www.html;
 
 
 /**
@@ -92,8 +93,8 @@ public final class LicenseControl {
             return;
         }
         // clear up the list to avoid duplicates
-        File folder = core.getLicensesFolder();
-        ArrayList<File> files = utils_deprecated.files.findFilesFiltered(folder, ".java", 2);
+        File folder = engine.getLicensesFolder();
+        ArrayList<File> files = utils.files.findFilesFiltered(folder, ".java", 2);
         log.write(is.INSTALLING, "Processing %1 licenses", "" + files.size());
         for(File file : files){
             //core.script.runJava(file, null, is.license);
@@ -118,7 +119,7 @@ public final class LicenseControl {
      */
     public License get(String licenseId) {
         for(License license : list){
-            if(utils_deprecated.text.equals(licenseId, license.getId())){
+            if(utils.text.equals(licenseId, license.getId())){
                 return license;
             }
         }
@@ -129,7 +130,7 @@ public final class LicenseControl {
     
     public License getAsTitle(final String licenseTitle) {
         for(License license : list){
-            if(utils_deprecated.text.equals(licenseTitle, license.getTitle())){
+            if(utils.text.equals(licenseTitle, license.getTitle())){
                 return license;
             }
         }
@@ -212,7 +213,7 @@ public final class LicenseControl {
                    @Override
                    public void run(){
                        // wait a little bit for things to start
-                       utils_deprecated.time.wait(2);
+                       utils.time.wait(2);
                        find(); 
                    }
             };
@@ -277,7 +278,7 @@ public final class LicenseControl {
                 continue;
             }
             DefaultTreeModel model = (DefaultTreeModel) 
-                    core.studio.getTree().getModel();
+                    coreGUI.studio.getTree().getModel();
             model.nodeChanged(node);
         }
         

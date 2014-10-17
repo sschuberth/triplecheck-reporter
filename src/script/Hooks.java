@@ -8,7 +8,8 @@ import definitions.is;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
-import main.core;
+import main.engine;
+import main.coreGUI;
 
 /**
  *
@@ -60,7 +61,7 @@ public class Hooks {
         ArrayList<Hook> selectedHooks = hookList.get(what);
         for(Hook hook : selectedHooks){
             //System.err.println("HK00 - Running hook " + hook.script);
-            core.script.run(hook.script, hook.method, is.plugin);
+            engine.script.run(hook.script, hook.method, is.plugin);
         }
     }
     

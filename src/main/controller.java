@@ -85,7 +85,7 @@ public class controller {
      * @param request 
      */
     private static void displayRequestGUI(WebRequest request, boolean cache) {
-        core.studio.editorPane(is.contentHTML, false, 0, 
+        coreGUI.studio.editorPane(is.contentHTML, false, 0, 
                 request.getAnswer(), cache, request);
     }
 
@@ -138,7 +138,7 @@ public class controller {
             
             // remove the details computer details from the log
             String relativePath = newRequest.scriptFile.getAbsolutePath()
-                    .replace(core.getWorkFolder().getAbsolutePath(), "");
+                    .replace(engine.getWorkFolder().getAbsolutePath(), "");
             
             log.write(is.OPENING, "Web request for \"%1\" in %2", 
                     newRequest.scriptMethod,
@@ -148,21 +148,21 @@ public class controller {
             long randomTime = System.currentTimeMillis();
             String randomId = "request" + randomTime;
             // place this request in our memory
-            core.temp.put(randomId, newRequest);
+            engine.temp.put(randomId, newRequest);
             // prepare our tricky command
             // basically, we first retrieve the object and then pass this as
             // parameter for the requested method
             String command = ""
-                    + "WebRequest webRequest = (WebRequest) core.temp.get(\"" 
+                    + "WebRequest webRequest = (WebRequest) engine.temp.get(\"" 
                     + randomId 
                     +"\");\n"
                     + "plugin." + newRequest.scriptMethod + "(webRequest);";
             // run the script file
-            core.script.runJava(newRequest.scriptFile, command, is.plugin);
+            engine.script.runJava(newRequest.scriptFile, command, is.plugin);
             
             
             
-            WebRequest processedRequest = (WebRequest) core.temp.get(randomId);
+            WebRequest processedRequest = (WebRequest) engine.temp.get(randomId);
             
             // we might have cases where the request is null
             String result = "";
@@ -172,14 +172,8 @@ public class controller {
             }
             
             // remove it from the memory
-            core.temp.remove(randomId);
+            engine.temp.remove(randomId);
             
             return result;
     }
-//            return;
-//        }
-//        System.err.println("CN001 - Request not processed");
-//    }
-
-    
 }

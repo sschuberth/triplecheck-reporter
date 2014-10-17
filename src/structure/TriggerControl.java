@@ -17,7 +17,7 @@ import definitions.folder;
 import definitions.is;
 import java.io.File;
 import java.util.ArrayList;
-import main.core;
+import main.engine;
 import script.Trigger;
 import script.log;
 
@@ -38,11 +38,11 @@ public final class TriggerControl {
      * This method adds up all the triggers found on the triggers folder
      */
     private void addTriggers(){
-        File folderTriggers = new File(core.getWorkFolder(), folder.triggers);
-        ArrayList<File> files = utils_deprecated.files.findFilesFiltered(folderTriggers, ".java", 2);
+        File folderTriggers = new File(engine.getWorkFolder(), folder.triggers);
+        ArrayList<File> files = utils.files.findFilesFiltered(folderTriggers, ".java", 2);
         for(File file : files){
             //Trigger result = (Trigger) script.exec.runJava(file, is.trigger);
-            Trigger result = (Trigger) utils_deprecated.bytecode.getObject(file);
+            Trigger result = (Trigger) utils.bytecode.getObject(file);
             
             if(result != null){
                 log.write(is.ADDING, "Trigger: " + result.getTriggerTitle());

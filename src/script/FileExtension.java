@@ -16,16 +16,13 @@
 
 package script;
 
-import de.java2html.Java2Html;
-import de.java2html.JavaSourceConversionSettings;
-import de.java2html.gui.Java2HtmlOptionsPanel;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.Date;
 import spdxlib.ContentType;
 import spdxlib.FileCategory;
 import spdxlib.FileLanguage;
-import utils_deprecated.html;
+import utils.www.html;
 
 
 /**
@@ -127,7 +124,7 @@ public class FileExtension {
         if((category == FileCategory.SOURCE)
                 ||(category == FileCategory.SCRIPT)){
             // read the contents of this file
-            String result = utils_deprecated.files.readAsString(targetFile);
+            String result = utils.files.readAsString(targetFile);
             
             
             result = utils.code.convertToHTML(result);
@@ -190,7 +187,7 @@ public class FileExtension {
         
         
         //throw new UnsupportedOperationException("Not yet implemented");
-        String result = utils_deprecated.files.readAsString(targetFile);
+        String result = utils.files.readAsString(targetFile);
         result = "<pre>" + result + "</pre>";
         result = html.div() + result + html._div;
         // We don't what we have here, but display it anyways

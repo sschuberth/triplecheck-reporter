@@ -14,18 +14,19 @@
 package licenses;
 
 import GUI.SearchType;
-import GUI.TreeNodeSPDX;
 import GUI.TreeviewUtils;
 import GUI.swingUtils;
 import definitions.Messages;
 import definitions.is;
-import main.core;
+import main.coreGUI;
+import main.engine;
 import script.Plugin;
 import script.log;
 import spdxlib.FileInfo2;
 import spdxlib.License;
 import spdxlib.SPDXfile2;
-import utils_deprecated.html;
+import spdxlib.swing.TreeNodeSPDX;
+import utils.www.html;
 import www.RequestOrigin;
 import www.WebRequest;
 
@@ -62,15 +63,15 @@ public class choose extends Plugin{
      * a possible match
      */ 
     public void doFindLicense() {
-        final String searchTerm = core.studio.getSearch().getText();
+        final String searchTerm = coreGUI.studio.getSearch().getText();
         // no need to worry about empty searches or less than two characters
         if(searchTerm.length() < 2){
             return;
         }
         System.out.println("Finding a license");
-        final String link = (String) core.temp.get("TreeviewLicenseSelectedFilesLink");
-        String output = core.licenses.search(searchTerm , "choose", link);
-        core.studio.editorPane(is.contentHTML, false, 0, output);
+        final String link = (String) engine.temp.get("TreeviewLicenseSelectedFilesLink");
+        String output = coreGUI.licenses.search(searchTerm , "choose", link);
+        coreGUI.studio.editorPane(is.contentHTML, false, 0, output);
     }
        
     /**
@@ -97,7 +98,7 @@ public class choose extends Plugin{
         result += getRecentlyUsedLicenses(listUID, "Choose", link);
         
         result += html.h3("Licenses available")
-                + core.licenses.getListHTML("Choose", link);
+                + coreGUI.licenses.getListHTML("Choose", link);
         
          // give a left-side margin on the output
         result = html.div(3)
@@ -108,9 +109,9 @@ public class choose extends Plugin{
         
         // specific to the GUI
         if(request.requestOrigin == RequestOrigin.GUI_tree){
-            core.studio.setSearchProvider(SearchType.License_Choose);
+            coreGUI.studio.setSearchProvider(SearchType.License_Choose);
             // save in the common space the treeview with selected links
-            core.temp.put("TreeviewLicenseSelectedFilesLink", link);
+            engine.temp.put("TreeviewLicenseSelectedFilesLink", link);
         }
         
     }
@@ -131,7 +132,7 @@ public class choose extends Plugin{
         // get the respective spdx
         SPDXfile2 spdx = fileInfo.getSPDX();
         // now go through all file info and find licenses
-        String result = core.popularity.processReport(spdx, title, link);
+        String result = coreGUI.popularity.processReport(spdx, title, link);
         
         // avoid the null results, replace with an empty string instead
         if(result==null){
@@ -152,14 +153,14 @@ public class choose extends Plugin{
 //        System.out.println(rawListUID);
 //        System.out.println(licenseId);
         // get the respective license object
-        License license = core.licenses.get(licenseId);
+        License license = coreGUI.licenses.get(licenseId);
         // now create the UID list
         String[] listUID = rawListUID.split(";");
         // finish this up by changing the licenses
-        core.licenses.changeDeclaredLicense(listUID, license);
+        coreGUI.licenses.changeDeclaredLicense(listUID, license);
         
         request.setAnswer("Applied the " + license.getId() 
-                + " to " + utils_deprecated.text.pluralize(listUID.length, "file"));
+                + " to " + utils.text.pluralize(listUID.length, "file"));
         
         // if we are clicking from a tree view, go back to last selected node
         if(request.requestOrigin == RequestOrigin.GUI_tree 
@@ -168,7 +169,7 @@ public class choose extends Plugin{
             // update the selected node
             log.write(is.INFO, Messages.TreeNodeChanged, node.getUID());
             // change back to the default search provider
-            core.studio.setSearchProvider(SearchType.License_Choose);
+            coreGUI.studio.setSearchProvider(SearchType.License_Choose);
             //node.update(false);
         }
     

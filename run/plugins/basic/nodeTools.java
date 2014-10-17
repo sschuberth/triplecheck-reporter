@@ -12,17 +12,18 @@
 
 package basic;
 
-import GUI.NodeType;
-import GUI.TreeNodeSPDX;
 import GUI.swingUtils;
 import definitions.Messages;
 import definitions.is;
 import javax.swing.JTree;
 import javax.swing.tree.DefaultTreeModel;
+import main.coreGUI;
+import main.engine;
 import script.Plugin;
 import script.log;
-import main.core;
-import utils_deprecated.html;
+import spdxlib.swing.NodeType;
+import spdxlib.swing.TreeNodeSPDX;
+import utils.www.html;
 
 
 /**
@@ -48,7 +49,7 @@ public class nodeTools extends Plugin{
      * Add our toolbox node to the treeview.
      */
     public void addNode(){
-        JTree tree = core.studio.getTree();
+        JTree tree = coreGUI.studio.getTree();
         // avoid empty null objects when there is nothing on the tree
         if(tree.getModel().getRoot()==null){
             return;
@@ -60,7 +61,7 @@ public class nodeTools extends Plugin{
         DefaultTreeModel treeModel = new DefaultTreeModel(nodeRoot);
         tree.setModel(treeModel);
         // store the tools node for future use
-        core.temp.put("nodeTree", node);
+        engine.temp.put("nodeTree", node);
         // all done. Signal that other plugins can now add their own tooling
         log.write(is.INSTALLING, Messages.AddingTools);
     }
@@ -81,7 +82,7 @@ public class nodeTools extends Plugin{
             return;
         }
         String content = getContent();
-        core.studio.editorPane(is.contentHTML, false, 0, content);
+        coreGUI.studio.editorPane(is.contentHTML, false, 0, content);
     }
 
     /**
@@ -108,7 +109,7 @@ public class nodeTools extends Plugin{
                 + "</h3>"
                 + html._div
                 + html.div(20)
-                + "You are using version " + core.version + " of TripleCheck"
+                + "You are using version " + engine.version + " of TripleCheck"
                 + html.br
                 + html._div
                 + "";

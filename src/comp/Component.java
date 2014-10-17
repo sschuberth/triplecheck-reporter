@@ -17,9 +17,9 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import java.io.File;
 import java.util.ArrayList;
-import main.core;
+import main.engine;
 import spdxlib.License;
-import utils_deprecated.html;
+import utils.www.html;
 
 
 /**
@@ -179,9 +179,9 @@ public class Component {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         String jsonOutput = gson.toJson(this);
         // now get the file where the json will be written
-        File file = new File(core.getComponentFolder(), id + ".json");
+        File file = new File(engine.getComponentFolder(), id + ".json");
         // now write it up
-        utils_deprecated.files.SaveStringToFile(file, jsonOutput);
+        utils.files.SaveStringToFile(file, jsonOutput);
     }
 
   
