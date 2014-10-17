@@ -1,6 +1,7 @@
-/dist/*
-/build/*
+/dist/
+/build/
 /nbproject/private/
-/publish/*
-/run/reports/*
-/run/export/*
+/publish/
+/run/reports/
+/run/export/
+/run/old/
