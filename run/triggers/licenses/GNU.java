@@ -544,7 +544,7 @@ public class GNU implements Trigger {
 
     @Override
     public String getTriggerTitle() {
-        return "GNU license terms";
+        return "GNU";
     }
 
     /**

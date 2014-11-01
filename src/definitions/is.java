@@ -11,7 +11,7 @@ package definitions;
  */
 public class is {
     final public static String
-            defaultIcon = "validation3check.png",
+            defaultIcon = "triplecheck-logo.png",
             plugin = "Plugin",
             extension = "FileExtension",
             trigger = "Trigger",
