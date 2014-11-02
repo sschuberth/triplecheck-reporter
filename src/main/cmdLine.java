@@ -52,6 +52,7 @@ public class cmdLine {
         
         // get the first argument
         final String cmdAction = args[0].toLowerCase();
+       
         
         // are we being asked to create an SPDX document?
         if(cmdAction.equals("spdx")){
@@ -139,7 +140,5 @@ public class cmdLine {
         spdx.create(sourceTarget, spdxFile);
         System.out.println("Processed files: " + spdx.getFilesProcessed());
     }
-    
-    
     
 }

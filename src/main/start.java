@@ -33,14 +33,8 @@ public class start {
         // express that third-party projects need to initialize as libraries
         System.setProperty(is.methodStartUp, is.library);
         
-        engine.warmUp();
         // initialize the settings
-//        engine.settings = new Settings(
-//                    new File(engine.getWorkFolder(), "settings.xml"), "");
-//        engine.extensions = new ExtensionControl();
-//        engine.triggers = new TriggerControl();
-//        engine.reports = new ReportsControl();
-        
+        engine.warmUp();
         coreGUI.licenses = new LicenseControl();
     }
     
