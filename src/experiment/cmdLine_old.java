@@ -10,7 +10,7 @@
  * FileComment: <text> Handle the command line parameters.  </text> 
  */
 
-package main;
+package experiment;
 
 import definitions.is;
 import java.io.File;
@@ -21,7 +21,7 @@ import spdxlib.DocumentCreate2;
  *
  * @author Nuno Brito, 2nd of September 2014 in Darmstadt, Germany
  */
-public class cmdLine {
+public class cmdLine_old {
     
    
     
@@ -64,9 +64,6 @@ public class cmdLine {
             
             
             log.write(is.INFO, "Processing an SPDX folder/file:");
-//            if(args.length == 3){
-//            }
-//            else
             // do we have a parameter for the package name?
             if(args.length == 4){
                 packageName = args[3];
