@@ -1,6 +1,4 @@
 --- Critical ------
-- License detection needs test projects to use as example
-- License detection needs to index at minimum the top 10 popular licenses
 - Files without recognizable extensions are not being processed
 
 
@@ -18,6 +16,8 @@
 - Report should not be generated if it does not contain all files in package
 
 --- Done ----------
+x License detection needs test projects to use as example
+x License detection needs to index at minimum the top 10 popular licenses
 x Need to refresh popularity list after some dozens of files were processed
 x We need cache generation to speed up loading times
 x where applicable files mentioned with copyright?
