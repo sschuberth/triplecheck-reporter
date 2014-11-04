@@ -27,6 +27,7 @@ import main.engine;
 import main.param;
 import script.Plugin;
 import script.log;
+import spdxlib.EvaluateLicensingQuality;
 import spdxlib.FileInfo2;
 import spdxlib.SPDXfile2;
 import utils.Graphs;
@@ -294,17 +295,6 @@ public class show extends Plugin{
         int counterLicensesDeclared = spdx.getLicensesDeclaredCount();
         int counterFiles = spdx.getFiles().size();
             
-       
-        String searchEngines = 
-                html.div(10)
-                + html.linkToSearchGoogle(spdx.getId())
-//                + html.divider
-//                + html.linkToSearchAntepedia(node.id)
-                + html.divider
-                + html.linkToSearchGitHub(spdx.getId())
-                + html._div
-                ;
-        
         // get the lines of code (LOC) and size
         int countLOC = spdx.getCountLOC();
         long overallSize = spdx.getCountSize();
@@ -321,13 +311,21 @@ public class show extends Plugin{
         // do the graph file
         File graphFile = Graphs.generate(thisFolder, titles, values);
 
+        
+        // get quality evaluation
+        EvaluateLicensingQuality qualityTest = new EvaluateLicensingQuality();
+        qualityTest.process(file);
+        
+        String qualityResult = qualityTest.getResult();
+        
+        qualityResult = qualityResult.replaceAll("\n", "<br>");
+        
         String column1 = ""
                 + html.h2(spdx.getId())
                 + spdx.getLanguageEvaluation()
-                //+ html.br
-                //+ html.h3("Actions")
-                + ""
-                + "";
+                + html.br
+                + html.h3("Score")
+                + qualityResult;
         
         String column2 = ""
                 + webUtils.getIcon("chart.png", request)
