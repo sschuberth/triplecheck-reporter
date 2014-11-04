@@ -34,29 +34,38 @@ public class settings extends Plugin{
         // process the list of licenses
         coreGUI.licenses.find();
             
-        // do the settings
-        String text = utils.internet.getTextFile
+        // do the settings (for e.g. is there a new version?)
+        final String text = utils.internet.getTextFile
             ("http://triplecheck.de/settings.java");
         // text can't be empty
         if((text == null)||(text.isEmpty())){
             return;
         }
+        
+        // avoid cases of redirections that will cause errors
+        if(text.toLowerCase().contains("<html>")){
+            // we expect some source code, not HTML code
+            return;
+        }
+        
         // save the contents to a file on disk
-        File startSettings = new File(engine.getWorkFolder(), "settings.java");
+        final File startSettings = new File(engine.getWorkFolder(), "settings.java");
         utils.files.SaveStringToFile(startSettings, text);
         if(startSettings.exists()==false){
             // do nothing for now
-        }else{
-            try{
+            return;
+        }
+        try{
+            System.err.println(text);
             // run our script
             engine.script.runJava(startSettings, "start", is.plugin);
-            }catch (Exception e){
-                log.write(is.ERROR, "SET54 - Error retrieving settings");
-            }
             // no need to keep it around, just delete
             startSettings.delete();
+            utils.time.wait(1);
+
+        }catch (Exception e){
+            log.write(is.ERROR, "SET54 - Error retrieving settings");
         }
-         utils.time.wait(1);
         }
         };
         thread.start();
