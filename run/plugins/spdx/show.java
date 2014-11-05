@@ -316,9 +316,7 @@ public class show extends Plugin{
         EvaluateLicensingQuality qualityTest = new EvaluateLicensingQuality();
         qualityTest.process(file);
         
-        String qualityResult = qualityTest.getResult();
-        
-        qualityResult = qualityResult.replaceAll("\n", "<br>");
+        String qualityResult = qualityTest.getResultHTML();
         
         String column1 = ""
                 + html.h2(spdx.getId())
