@@ -3,4 +3,6 @@
 <properties>
 <comment/>
 <entry key="startupcounter">50</entry>
+<entry key="SOURCEFOLDER---components.spdx">/mnt/06B6C215B6C20561/core/code/reporter/run/components</entry>
+<entry key="target">/mnt/06B6C215B6C20561/core/code/reporter/run/components</entry>
 </properties>

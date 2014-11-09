@@ -1,0 +1,320 @@
+##-------------------------
+## SPDX Document Information
+##-------------------------
+SPDXVersion: SPDX-1.2
+DataLicense: CC-BY-4.0
+
+##-------------------------
+## Creation Information
+##-------------------------
+Creator: nuno
+Creator: Tool: TripleCheck 0.9.6
+Created: 2014-11-05T23:14:51Z
+
+##-------------------------
+## Package Information
+##-------------------------
+PackageName: components
+PackageDownloadLocation: 
+
+##-------------------------
+## File Information
+##-------------------------
+FileName: ./7z.json
+FileType: OTHER
+FileChecksum: SHA1: 239e7bacbec300d942a621b4a8e12cc2d6aeacdc
+FileChecksum: SHA256: f9cb2e3a0ea9a88bc85d28509956f1d0dbab665c1788e834009f6f0f160df32b
+FileChecksum: MD5: 49f02d169fab18cbf4563f59b24dc354
+FileChecksum: SSDEEP: 3:c/xHScpHXALGAcRRAEKw0tBvRRAEKf1h/HxYxuT1HPBANWAIrA:4RQLGsEKgEKf1hWxMEWA+A
+FileSize: 172 bytes
+
+FileName: ./activegroup.json
+FileType: OTHER
+FileChecksum: SHA1: 2004a65b0113941fb04a1e8a0b043f333a20daec
+FileChecksum: SHA256: 9c98381db5ed81890ad082c1276a53593aa1fd7beb1d1c36d45171f24d52f5c5
+FileChecksum: MD5: 3017970e6cc9ee60e11c72a6f266b020
+FileChecksum: SSDEEP: 6:NwRqhELLQLGdhX8urn7KDzv9SQFxyIeGMEELQ1Fchc1Hg5YV4mWEiSS11kn:NnhC/hX8nBSQFcpbErkGN+kS11kn
+FileSize: 443 bytes
+LicenseInfoInFile: GPL
+
+FileName: ./AdBlockPlusAndroid.json
+FileType: OTHER
+FileChecksum: SHA1: 949d4beedfafd80fe372753432f8cc6666835f98
+FileChecksum: SHA256: a92acbfca15b7bb0ae29fcbfae8bc31e3ed8da70ecd2999753974bab46baafed
+FileChecksum: MD5: 4b5799cace45fe913fb4815b9084e2d1
+FileChecksum: SSDEEP: 6:DQj15okGOJqqQLG7UYicJecp6twyeMJzwgS11Wr:01KkVBvEcp6twyeMJzY11A
+FileSize: 326 bytes
+LicenseInfoInFile: GPL-3.0
+
+FileName: ./ApacheCommons.json
+FileType: OTHER
+FileChecksum: SHA1: 412908eaf7a02ef6d926e43303d0826fd90c4e96
+FileChecksum: SHA256: 529472ef6e534f1980d9a45b1072f7bc32b9e332dd29c868ce7904889cdc3c27
+FileChecksum: MD5: 4577615ec58eebed075f05791214d415
+FileChecksum: SSDEEP: 12:dzsqi4+slqeFt09pjZVPiVMAk2811BC7:95I9rwSV11m
+FileSize: 466 bytes
+LicenseInfoInFile: Apache-2.0
+
+FileName: ./barcodempdf.json
+FileType: OTHER
+FileChecksum: SHA1: 4152b947a5759db9c88bcbf89d854194a548f4fe
+FileChecksum: SHA256: 3b9a1d548f1d1e2ee983ec4f06ec1b51fcb50f2843256a7daa3d7edb0aa734e9
+FileChecksum: MD5: b227b1a58607e5de02f480098d32b419
+FileChecksum: SSDEEP: 6:hIXDamXGaA7EB1QLGsc4wUc4wMC2J/I83XqVTK0eDAWr6RRpxC1oS110VNn:eegGaJl/MC2J/IjKTDqR/E11In
+FileSize: 360 bytes
+LicenseInfoInFile: LGPL-2.0
+LicenseInfoInFile: LGPL-2.1
+
+FileName: ./bootstrap.json
+FileType: OTHER
+FileChecksum: SHA1: c84666cf04e6797640e67eff82ff8cb4f04f374e
+FileChecksum: SHA256: dd77ca365c9db9c4ce0c1285dd196d51d8ab28830b9720775d9fbf988faa337a
+FileChecksum: MD5: 6b1d4a39ffdcddd9e968a786dcb732e5
+FileChecksum: SSDEEP: 6:sEFgEDQLGs+7eEeQ33AfbLNyipZ3bbIMsrid0ZXKHiMqIHRrGv0S11BC7:Rl7aQcLrFIud0ZXKCMJGvH11BC7
+FileSize: 359 bytes
+LicenseInfoInFile: Apache-2.0
+
+FileName: ./boyer.json
+FileType: OTHER
+FileChecksum: SHA1: 032cd56633dc0bdc57896efabe47cf7e7ead231f
+FileChecksum: SHA256: e79e7f1d7557ec463c05efc86e8e045f087ac55973cdaae2edfa5c040ade8f3f
+FileChecksum: MD5: 517196d84410d56cd915b8b85e977ab1
+FileChecksum: SSDEEP: 12:QBFrJP4n0AYXgwB7IZt3jEMfEbYJP9fYxY+32FQu11L:QBFrF4mrB0Zt3xEbYFBYxY+211L
+FileSize: 510 bytes
+
+FileName: ./Brazil.json
+FileType: OTHER
+FileChecksum: SHA1: 401505b447a2fcf8b65f36625dcb3f4679d5bce3
+FileChecksum: SHA256: 5d995b75f8ea8ac68edab186224bd66c45d4c53383b6e379bed95b93c5a68151
+FileChecksum: MD5: a01de66fbcd9c66081a4c02546728de1
+FileChecksum: SSDEEP: 12:qj+GXPFSK5ZiUxU30A9HgKxTzq805rj11UJ9:1+iUxUkmHPlgh11G
+FileSize: 484 bytes
+
+FileName: ./CLEditor.json
+FileType: OTHER
+FileChecksum: SHA1: 45549734a306ffc1a117ceb176ef5894aa52cf9e
+FileChecksum: SHA256: 465e9627e4fa6a301d2a104d406260527d345d6a730db935df77a88deb80d4f4
+FileChecksum: MD5: 32ba036674855008187cb9585837d472
+FileChecksum: SSDEEP: 6:Vmnsyp9QLGsOX+dRhdyJ+eh0P+zvYlzMCvWyMBV0eyKRerNS1oU13Ln:lOH+PXyE4i+zwaxek1oU1bn
+FileSize: 423 bytes
+
+FileName: ./cloudwebfiltering.json
+FileType: OTHER
+FileChecksum: SHA1: a45a746936b525bf867baa0bfb0797d65c10a894
+FileChecksum: SHA256: e2584695d19faa2a7f31c74731c88da4b3020a0c9d73207a8a06006d0d2a3f8f
+FileChecksum: MD5: 08b3fe4d012248508cd6c91ef5da9f78
+FileChecksum: SSDEEP: 3:qCKKEJxHKIiFwJRfLEJnXALGAAUtBbZeQfbRYpHKS1pnXOFqhS:qz5JxqfjJnQLG7US11a
+FileSize: 197 bytes
+
+FileName: ./codeigniter.json
+FileType: OTHER
+FileChecksum: SHA1: f4c78d9a9acdcceac101a031974a78d9a0926265
+FileChecksum: SHA256: 4baa056e75c7e504c96987f562c9ba603fe3ffc800d3a149b6d5f056d8d51cc6
+FileChecksum: MD5: 840cafbfa957e7d25ea9b96b95f25c3c
+FileChecksum: SSDEEP: 12:hiIGLahcgO8TlP3Igm96GfFYxn11D20Tl:hi7WhcgO8TlP3ILfFU1160Tl
+FileSize: 457 bytes
+
+FileName: ./datatables-tabletools.json
+FileType: OTHER
+FileChecksum: SHA1: bfd1cffe03d193a4600d363fdb50ff6f95bec391
+FileChecksum: SHA256: eb07e5e2c4b5a203bbc62d068e5b27500f4d6a5aa761a905dcdb56c3bfa08d5d
+FileChecksum: MD5: 06dad186848cc839a6a115af700455d9
+FileChecksum: SSDEEP: 6:eXCinGyHQLGsc4VU01QFvESEgEvDbbEpdyFcjnKlqS112eDxAYr0qz:eSmnaQFjyvHgp5w11rx50c
+FileSize: 369 bytes
+LicenseInfoInFile: BSD-3-Clause
+LicenseInfoInFile: GPL-2.0
+
+FileName: ./default.json
+FileType: OTHER
+FileChecksum: SHA1: 52d25011e126342d8a585bddccd1fb14d54aef70
+FileChecksum: SHA256: 403e4d30bd14a4c1ec0d2d942134e5897071bcc3dafd0b9fff20d5670e05deee
+FileChecksum: MD5: 81b1e21e6d76bcaf7de046b0177d074d
+FileChecksum: SSDEEP: 6:aYQRRJ5PmPQLGsKXQOKpxKXQOKkhTp+POml7k7lKOHgXFrGyL1n9COHJdFKS1whf:a9vAb+pC+khTkPhMKbd7JF11wRioHkw
+FileSize: 483 bytes
+
+FileName: ./dhtmlx.json
+FileType: OTHER
+FileChecksum: SHA1: 81685e6b3825476af3cbf2edac416e62dbcfcf1a
+FileChecksum: SHA256: 6a830cc629c316f4ecdf0eac24fa0658ade2c6ead74bff175b64bbd78cb090ac
+FileChecksum: MD5: da818ebc5ac461c60e522775461f21bc
+FileChecksum: SSDEEP: 12:/gMPwo34BUfXWcy3kIB3t11LryFWR7UEa:/gMPH3MSXWckzj11vPha
+FileSize: 408 bytes
+LicenseInfoInFile: GPL
+
+FileName: ./extjs.json
+FileType: OTHER
+FileChecksum: SHA1: d92796b4eadfc0c04c1ee61415f2457a30b6c012
+FileChecksum: SHA256: 4095f9ad0a3c14409ff4374e925ef02b443996e3b951c695da85f4f1e938f2a6
+FileChecksum: MD5: 44b53abdbf48a6e367cbc69aa5c7b2f6
+FileChecksum: SSDEEP: 6:V4J2xQLGsS9SQaxyIeGMEELQ1Fchc1Hg5Yn3WEiSS11kn:uJ2xhSQacpbErkGN/S11kn
+FileSize: 355 bytes
+LicenseInfoInFile: GPL
+
+FileName: ./ExtJS34.json
+FileType: OTHER
+FileChecksum: SHA1: 3be9271a3f1403a0b668c62ed4366b5efb44db51
+FileChecksum: SHA256: 58bb131c546369800cae348e5ae96f308ef38ccdfdbbf412a806752c66c0b17e
+FileChecksum: MD5: 3df142b930a8ad192983ae76b49fa44d
+FileChecksum: SSDEEP: 12:y2WpvyuzijwbfHkej8MIV5M3LtXKDcXqP1mDjG:QByiijIfZIvV5MRoek1mO
+FileSize: 587 bytes
+
+FileName: ./fpdf.json
+FileType: OTHER
+FileChecksum: SHA1: 3404b6b18971d89a497900c435b635c9c13a0114
+FileChecksum: SHA256: 13076f1f1b2a5a371709634812dead0e228321b73f3b6bfed3bd9f9d3d11463e
+FileChecksum: MD5: f827cce4d6b6695206d8f3e37d76e8da
+FileChecksum: SSDEEP: 6:TlQLGsc4PaXnRc4PaXrgEGhtLkiyFiDAWM3uR15MFfLyFUEEwRmKWwgS11J+Fp:x93s7gEGWiyUD7MO7MFfyUVKWY11Y3
+FileSize: 459 bytes
+
+FileName: ./FPDI.json
+FileType: OTHER
+FileChecksum: SHA1: 55588512fc43d01e2f2e3d2e9c86a3fc47cdd02f
+FileChecksum: SHA256: 3a297f1969dc65e10406ddc31e084d834d5b2bd84d971e458eb9ced46b160294
+FileChecksum: MD5: c39f3cdeae8d9b19d055316b633a7d53
+FileChecksum: SSDEEP: 12:qdoLKAwtKAwGs+dwe1lZaTrdU/RZvRoSD50P0n11BCrn:qOhKJdwqlZC8RZvyyz11Yn
+FileSize: 563 bytes
+LicenseInfoInFile: Apache-2.0
+
+FileName: ./google-code-prettify.json
+FileType: OTHER
+FileChecksum: SHA1: 6f984dd0e8dab91dca4486b0d9be4e4d1851f702
+FileChecksum: SHA256: 51b1cf1dee238def4ea1546a9890661be09aed187c59d7622f0e39208e75261a
+FileChecksum: MD5: e29e82eea3305a80861842c965c1af9b
+FileChecksum: SSDEEP: 12:B7fFcmJZJHD4cmJZJHwsd+ntNEjEX+8MrBV11BC7:RFNZ4NesEDEJ8e11m
+FileSize: 414 bytes
+LicenseInfoInFile: Apache-2.0
+
+FileName: ./google-fonts.json
+FileType: OTHER
+FileChecksum: SHA1: a07b014c382d84ba48b42a59b121c42854de5085
+FileChecksum: SHA256: efcea6bbddea715b996aa8d48517f6f0d73f495499c97b8bcffe87acdd957a47
+FileChecksum: MD5: 1d9cc830420710e3a3a0c5aafe6230e4
+FileChecksum: SSDEEP: 6:OMpRrO5QaHQLGFLI5psIvG2R5i/k2TFc2aIyWD8KB7Fm4I5ftUS11BC7:OM25JU8IvzRokq1aFW4KBBqD11BC7
+FileSize: 395 bytes
+FileCopyrightText: <text>copyright applicable is found at http://www.google.com/fonts/attribution",</text>
+LicenseInfoInFile: Apache-2.0
+
+FileName: ./googlecode/gc.jsons
+FileType: OTHER
+FileChecksum: SHA1: 719e0a29b6f05294586af10fd88453a429dc37e0
+FileChecksum: SHA256: 7a439e32557a97e9e8e57b3038948fdd163acee86bb7b2001407ce705d94deed
+FileChecksum: MD5: bc66058c9f8a35d06526d4096bc52126
+FileChecksum: SSDEEP: 49152:6mINN1+sFsf/GY9Qn1z4vtZWG1zgqu5jeyqtI+BmZlgM8SMv4rFmqvmgYS/1tRbi:ZxD
+FileSize: 26 Mb (27590235 bytes)
+
+FileName: ./hyphenator.json
+FileType: OTHER
+FileChecksum: SHA1: 0e77c3bd4dc6fcf4d56f7fd6f4fe73b769bec7ce
+FileChecksum: SHA256: 19233d35eccd998d5c901212e907ac09f11fe8079fec2c3224b6d75c9fb63d1d
+FileChecksum: MD5: f2bf6152c16db2e3fd0bab4a52c9f9fa
+FileChecksum: SSDEEP: 12:yWicm3zcm35sdTaHZBHWtqG2eGAmFUhTSxgEk2CvQt11In:Ri9z95shYBHWLGA5DEk2qQt11In
+FileSize: 630 bytes
+LicenseInfoInFile: LGPL-2.0
+LicenseInfoInFile: LGPL-2.1
+
+FileName: ./IPTables.json
+FileType: OTHER
+FileChecksum: SHA1: 6e249780cd0b696bd24da885ea783566a2287e63
+FileChecksum: SHA256: a475e3503b9c6bc52b5b50e8c4ee839181b7fc1c762c765ec516f16f4a539c56
+FileChecksum: MD5: 950f8524b38c7d307ed8c1f376726138
+FileChecksum: SSDEEP: 6:IQp9PQLGyB8DTCXpBi8bvsf5F+00FvOLoUS11WOQ:h4BQTCXpBpK54Tm2117Q
+FileSize: 380 bytes
+LicenseInfoInFile: GPL-2.0
+
+FileName: ./ipv6.json
+FileType: OTHER
+FileChecksum: SHA1: 31286ec77e9cb6d89237f731423d9c13e1ef066d
+FileChecksum: SHA256: 6da3715501241916e42da4844211feea0a9c7e79efd3c15ef3271dca15a6a264
+FileChecksum: MD5: 8603f857607bdecebd290a0402a7e373
+FileChecksum: SSDEEP: 6:uR0sRQLG9LJKufkXpeckIfZXo71ApGqS113b:uesRXLJHfkXkcJfZOj11L
+FileSize: 301 bytes
+
+FileName: ./jquery.json
+FileType: OTHER
+FileChecksum: SHA1: 0eae3c0694a746492cc17ce2cd55a5dad30beb2e
+FileChecksum: SHA256: 32b0828569b2c480ba82859be17bb7daa3a007155dfcdf5c8246e1689ea2236e
+FileChecksum: MD5: cc219776a09e337efa9dd1d53fe53402
+FileChecksum: SSDEEP: 3:1PBpHsF32XALGAcRRAU4tGHhP0tBbZeQfbRYpHKS1pn3pghcn:dMB2QLGsU4OUS113Ln
+FileSize: 201 bytes
+
+FileName: ./libdatrie.json
+FileType: OTHER
+FileChecksum: SHA1: e2dd6f49c114a5c2c27afc3ecc3a554a16d99ed3
+FileChecksum: SHA256: e9110897449f15b3fbcee75a4d9ad1d2ac124aba1101de51fae7194d46764c88
+FileChecksum: MD5: 301076a4af70fb697a1590dcaec4c83f
+FileChecksum: SSDEEP: 12:+0VuHJ1Bi9xdYt9OE9MIy5TjMRont11Jfn:+z3i9xdeHuPJj2Ut11Jn
+FileSize: 448 bytes
+LicenseInfoInFile: LGPL-2.0
+LicenseInfoInFile: LGPL-2.1
+
+FileName: ./maximgb.json
+FileType: OTHER
+FileChecksum: SHA1: 044583325b3398169faf0dccf927bcd7400b6662
+FileChecksum: SHA256: 50184f0c28f4748162caba202a2f13eb4482f3caa3cc72529f254383284f1c66
+FileChecksum: MD5: b3a02e7b33efca11fdf51412b4eaeafa
+FileChecksum: SSDEEP: 6:+p4tQzHPQLGsVPU2T3nfCHsJweTAFgyaj2+SS112eDin:7t6HP2U03fCaweTAQt11rin
+FileSize: 290 bytes
+LicenseInfoInFile: BSD-3-Clause
+
+FileName: ./mpdf.json
+FileType: OTHER
+FileChecksum: SHA1: b7a5e822c094f756881fe462258e27f5964c90cc
+FileChecksum: SHA256: 902cda90a51be8cf306f317715c169018f4c426c9b148094dde35b29bf0b946d
+FileChecksum: MD5: 999f86fcd771f93bbb721975ad43cb22
+FileChecksum: SSDEEP: 12:/Khdb+gAihy+ujyhlSGjyhl9OPD0VH117J:/Khpjhy+u+/+mQx117J
+FileSize: 440 bytes
+LicenseInfoInFile: GPL-2.0
+
+FileName: ./phpexcel.json
+FileType: OTHER
+FileChecksum: SHA1: 63004ed2515120a58a7a504bcb6073a7eef0f43d
+FileChecksum: SHA256: aa3046f64e0a14818ff3c46a78644c84d457bd57820c7d3231635f4cf0f31f2a
+FileChecksum: MD5: ffa589829009df4f3b066d5e3c8ebf9d
+FileChecksum: SSDEEP: 6:ahKxQLGsc4c1/c4c1/AkqALW6A3ASudW2irqS110VTbBEASubhzY2g:v8BLVA3IWJV110bBEZyh02g
+FileSize: 408 bytes
+LicenseInfoInFile: LGPL-2.0
+LicenseInfoInFile: LGPL-2.1
+
+FileName: ./PublicSuffixList.json
+FileType: OTHER
+FileChecksum: SHA1: e612992d320dfa39fd0e39498d36668f69c2b92a
+FileChecksum: SHA256: dec83f886fb3b1c1d6bd71684f6e78464c7a03ed3b0857dac482448c07235ac4
+FileChecksum: MD5: 2c3dd5bd24af4d6c392f24a02871c4d7
+FileChecksum: SSDEEP: 6:2sQQ3csdtQLGxpMBrc0v/qkqp9PWFFprqEG8PxAXsZOCCQIpvSS11Wk9:2esqtTkc0KkePCfrqEVPF5Spvt1159
+FileSize: 389 bytes
+LicenseInfoInFile: GPL-3.0
+
+FileName: ./Punycode.json
+FileType: OTHER
+FileChecksum: SHA1: 1c8ebe5c4a39902ed4bacae001f9191160152eb7
+FileChecksum: SHA256: ec27c574bd94241c7dd60236dad7c39fa3f0b410fe8e00ac449cad153d9810db
+FileChecksum: MD5: 2cf16ce98e1d23d483bd4ee761b0184d
+FileChecksum: SSDEEP: 6:2hRZhPQLGqach3gVEWer+PGYj7g3qqeQSqTilqS113b:2hvREac6PGY/gFSCij11L
+FileSize: 370 bytes
+
+FileName: ./RootTools.json
+FileType: OTHER
+FileChecksum: SHA1: ff010a1dc665642dbf4948ce9c5596aabe7fe450
+FileChecksum: SHA256: de304011db30c3c8623d5aeb8077ca2e15e1540a2071735267deb8f3394312ac
+FileChecksum: MD5: 3be935cb30359ab741974c86f8fc2463
+FileChecksum: SSDEEP: 12:9IIFcmnN/ScmnYbRRaKSHxCMinyARkf3J+cJn1fBC7:xFiCvaKSkxm+6n1fm
+FileSize: 463 bytes
+LicenseInfoInFile: Apache-2.0
+
+FileName: ./spectrum-colorpicker.json
+FileType: OTHER
+FileChecksum: SHA1: a2f6b4a1872acd981ea19db6b053eadf0239a515
+FileChecksum: SHA256: a6bd02aca920ad9479a45ba50628e2c0830bada9e2981691a2ed74f442e296cf
+FileChecksum: MD5: b58eb6105f35bedbef6b3d5ca7c5b356
+FileChecksum: SSDEEP: 6:GTILV+TzGP7EtBQLG9mHTpqmHTpn06US103Ln:GTILVQC7OXQ4Qtxn10bn
+FileSize: 282 bytes
+
+FileName: ./V8.json
+FileType: OTHER
+FileChecksum: SHA1: ab8adc9ac905014ece68ad825414cfd0edc3a18f
+FileChecksum: SHA256: 03e12d2808141afb1d97d0461d3be5f3df761fa6033ce50597390c0bea94ee81
+FileChecksum: MD5: 1601159a590aeffc47d6d631558f1978
+FileChecksum: SSDEEP: 6:trOJP6EhI0xQLGDcmR3OpH+/RyWto7R+WFzNFMAgWwLEVjdBf0a9US112eDo:gJP6EO0xFcmQpH+vGR3NPl11ro
+FileSize: 432 bytes
+LicenseInfoInFile: BSD-3-Clause-Clear
+
