@@ -178,6 +178,9 @@
                     <EmptyBorder bottom="5" left="2" right="5" top="3"/>
                   </Border>
                 </Property>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="DejaVu Sans" size="14" style="0"/>
+                </Property>
                 <Property name="autoscrolls" type="boolean" value="true"/>
                 <Property name="largeModel" type="boolean" value="true"/>
                 <Property name="rootVisible" type="boolean" value="false"/>

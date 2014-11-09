@@ -15,6 +15,7 @@ import definitions.Messages;
 import definitions.is;
 import java.awt.Color;
 import java.awt.Cursor;
+import java.awt.Font;
 import java.awt.Toolkit;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
@@ -110,7 +111,6 @@ public class StudioUI4 extends javax.swing.JFrame {
             UIManager.setLookAndFeel("com.seaglasslookandfeel.SeaGlassLookAndFeel");
             //UIManager.setLookAndFeel("napkin.NapkinLookAndFeel");
             
-        
         } catch (ClassNotFoundException ex) {} catch (IllegalAccessException ex) {
         } catch (InstantiationException ex) {
         } catch (UnsupportedLookAndFeelException ex) {
@@ -253,6 +253,7 @@ public class StudioUI4 extends javax.swing.JFrame {
         panelWest.setPreferredSize(new java.awt.Dimension(172, 362));
 
         tree.setBorder(javax.swing.BorderFactory.createEmptyBorder(3, 2, 5, 5));
+        tree.setFont(new java.awt.Font("DejaVu Sans", 0, 14)); // NOI18N
         tree.setAutoscrolls(true);
         tree.setLargeModel(true);
         tree.setRootVisible(false);
@@ -708,8 +709,7 @@ public class StudioUI4 extends javax.swing.JFrame {
         // get the list of RunPlugins going
         RunPlugins.listPlugins();
         log.write(is.INFO, Messages.ReadyToUse);
-//        log.write(is.INFO, Messages.ReadyToUse);
-        
+
 //        Thread thread = new Thread(){
 //                @Override
 //                public void run(){
@@ -739,10 +739,9 @@ public class StudioUI4 extends javax.swing.JFrame {
         // select the tree as first topic
         tree.requestFocus();
         
-        // change colors
+        // change colors on the HTML background
         Color aColor = new Color(0xf8f8f8); 
         panelEast.setBackground(aColor);
-        //f8f8f8
         
         // add a border on the search bar
         search.setBorder(BorderFactory.createCompoundBorder(
@@ -752,8 +751,19 @@ public class StudioUI4 extends javax.swing.JFrame {
         text.setBorder(BorderFactory.createCompoundBorder(
             text.getBorder(), BorderFactory.createEmptyBorder(5, 12, 5, 12)));
         
+                
+        // expand the first treeview node by default
+        try{
+        //String showProducts = (String) core.temp.get(is.reports);
+        TreeNodeSPDX nodeReports = TreeviewUtils.getNodeReports();
+        if(nodeReports != null){
+              swingUtils.setSelectedNode(nodeReports.getUID());
+        }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
         
-        // change our title
+         // change our title
         setTitle("TripleCheck reporter");
         
     }

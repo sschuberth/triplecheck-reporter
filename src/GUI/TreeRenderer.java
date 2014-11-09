@@ -35,27 +35,6 @@ public class TreeRenderer extends DefaultTreeCellRenderer {
         fontAttributes.put(TextAttribute.UNDERLINE, TextAttribute.UNDERLINE_ON);
     }
     
-//    // get our icons
-//    private Icon get(String what){
-//        return new ImageIcon(engine.getIcon(what).getAbsolutePath());
-//    }
-    
-//    Icon 
-//            none = get("blue-document-node.png"),
-//            person = get("stickman.png"),
-//            //person = get("user-medium-silhouette.png"),
-//            sectionCreator = get("fingerprint.png"),
-//            sectionPackage = get("box.png"),
-//            sectionFile = get("documents-stack.png"),
-//            sectionExport = get("geolocation.png"),
-//            //dependency = get("envelope.png"),
-//            file = get("document-number.png"),
-//            home = get("home.png"),
-//    
-//            folderClosed = get("folder-horizontal.png"),
-//            folderOpen = get("folder-horizontal-open.png");
-    
-            // medal-premium.png
   
     @Override
     public Component getTreeCellRendererComponent(JTree tree, Object value,
@@ -68,8 +47,8 @@ public class TreeRenderer extends DefaultTreeCellRenderer {
         TreeNodeSPDX node = (TreeNodeSPDX) value;
         
         // write the title of this product
-            setText(node.toString());
-            setFont(getFont().deriveFont(Font.PLAIN));
+        setText(node.toString());
+        setFont(getFont().deriveFont(Font.PLAIN));
         
             
        // is this icon selected?
