@@ -65,32 +65,32 @@ public class home extends Plugin{
         String navigationMain = ""
                 + html.div()
                 + html.link("Create a new report", "/spdx/create?x=mainFolder")
+                + html.divider
+                + html.link("View reports", "/spdx/show")    
                 //+ html.link("Create new report", "/spdx/create")
                 + html._div
                 + "";
         
-                String navigationSub = ""
-//                + html.h2("Actions")
-//                + html.br
-                //+ html.br        
-                + html.div()
-                + "Other actions: "   
-                //+ html.link("Ask a question", "http://triplecheck.de/forum")
-                + html.divider
-                + html.link("View reports", "/spdx/show")        
-                + html.divider
-                + html.link("Log", "/basic/ToolsLog.java?x=showPage")
-                + html.divider
-                //+ html.link("Status", "/basic/status")
+//                String navigationSub = ""
+////                + html.h2("Actions")
+////                + html.br
+//                //+ html.br        
+//                + html.div()
+//                + "Other actions: "   
+//                //+ html.link("Ask a question", "http://triplecheck.de/forum")
 //                + html.divider
-//                + html.link("Server", "/webserver/server")
-                + html._div
-                + html.br
+//                + html.link("View reports", "/spdx/show")        
+//                + html.divider
+//                + html.link("Log", "/basic/ToolsLog.java?x=showPage")
+//                + html.divider
+//                //+ html.link("Status", "/basic/status")
+////                + html.divider
+////                + html.link("Server", "/webserver/server")
+//                + html._div
 //                + html.br
-//                + html.br
-                + "";
-        
-        
+////                + html.br
+////                + html.br
+//                + "";
         
         
         String[] params = new String[]{
@@ -100,13 +100,6 @@ public class home extends Plugin{
         
         int[] size = new int[]{60, 250};
         
-        String quickHelp = ""//html.br
-                + "<div style=\"text-align: right;\">Don't know how to start?\n" +
-                "Watch our <a href=\"https://www.youtube.com/watch?v=nljP6hC8xbc\" target=\"_blank\">quick\n" +
-                "guide</a>&nbsp&nbsp</div>"
-                ;
-        
-        
         String result = ""
                 + html.div()
                 + html.br
@@ -114,9 +107,9 @@ public class home extends Plugin{
                 //+ navigation
                 + html.br
                 //+ quickHelp
-                + "<hr>"
+//                + navigationSub
+                + "<hr style=\"height: 2px; width: 75%;\">"
                 + html.br
-                + navigationSub
                 
                 + html._div
                 ;
