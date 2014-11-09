@@ -748,6 +748,11 @@ public class StudioUI4 extends javax.swing.JFrame {
         search.setBorder(BorderFactory.createCompoundBorder(
             search.getBorder(), BorderFactory.createEmptyBorder(5, 12, 5, 5)));
         
+        // add a border on the HTML box
+        text.setBorder(BorderFactory.createCompoundBorder(
+            text.getBorder(), BorderFactory.createEmptyBorder(5, 12, 5, 12)));
+        
+        
         // change our title
         setTitle("TripleCheck reporter");
         
