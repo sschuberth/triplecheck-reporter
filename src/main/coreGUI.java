@@ -16,6 +16,7 @@ package main;
 
 import GUI.KeyStroke;
 import GUI.StudioUI4;
+import GUI.StudioUI51;
 import comp.ComponentControl;
 import java.io.File;
 import java.util.ArrayList;
@@ -27,7 +28,7 @@ import structure.ReportsControl;
 
 public class coreGUI {
 
-    public static String version = "0.9.6";
+    public static String version = "0.9.7";
     
     public static StudioUI4 studio = null;
     

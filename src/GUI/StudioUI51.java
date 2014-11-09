@@ -819,7 +819,7 @@ public class StudioUI51 extends javax.swing.JFrame {
             }
             
             // set the new content, first the type and then the text
-            text.setContentType(contentType);
+            //text.setContentType(contentType);
             
             try{
                 // now write the text

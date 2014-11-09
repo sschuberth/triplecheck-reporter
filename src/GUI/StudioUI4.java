@@ -253,9 +253,16 @@ public class StudioUI4 extends javax.swing.JFrame {
 
         jSplitPane1.setLeftComponent(panelWest);
 
+        panelEast.setBackground(java.awt.Color.white);
+        panelEast.setBorder(null);
+
+        jScrollPane2.setBorder(null);
         jScrollPane2.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);
         jScrollPane2.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
 
+        jPanel3.setBorder(null);
+
+        text.setBorder(null);
         text.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 textFocusGained(evt);
@@ -291,6 +298,7 @@ public class StudioUI4 extends javax.swing.JFrame {
 
         jScrollPane2.setViewportView(jPanel3);
 
+        button.setBackground(java.awt.Color.white);
         button.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/arrow-180.png"))); // NOI18N
         button.setBorder(null);
         button.setBorderPainted(false);
@@ -336,11 +344,11 @@ public class StudioUI4 extends javax.swing.JFrame {
         panelEastLayout.setVerticalGroup(
             panelEastLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelEastLayout.createSequentialGroup()
-                .addGap(5, 5, 5)
-                .addGroup(panelEastLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(button, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(search, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 34, Short.MAX_VALUE))
-                .addGap(11, 11, 11)
+                .addGap(10, 10, 10)
+                .addGroup(panelEastLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(button, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(search, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 440, Short.MAX_VALUE))
         );
 
