@@ -46,7 +46,6 @@ import spdxlib.SPDXfile2;
 import spdxlib.swing.NodeType;
 import spdxlib.swing.TreeNodeSPDX;
 import utils.internet;
-import utils.www.html;
 import www.RequestOrigin;
 import www.RequestType;
 import www.WebRequest;
@@ -56,6 +55,17 @@ import www.WebRequest;
  * @author Nuno Brito, 19th of September 2013 in Darmstadt, Germany.
  */
 public class StudioUI4 extends javax.swing.JFrame {
+
+    /**
+     * Is the mouse over the back-button?
+     */
+    private void doMouseOverButton() {
+        if(button.isEnabled()){
+            button.setCursor(new Cursor(Cursor.HAND_CURSOR));
+        }else{
+            button.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
+        }
+    }
 
     // what kind of clicks do we have?
     enum ClickType {LEFT, RIGHT, NONE}
@@ -95,7 +105,12 @@ public class StudioUI4 extends javax.swing.JFrame {
     public StudioUI4() {
         // adopt the default user interface menus and buttons
         try {
-            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+            
+            //UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+            UIManager.setLookAndFeel("com.seaglasslookandfeel.SeaGlassLookAndFeel");
+            //UIManager.setLookAndFeel("napkin.NapkinLookAndFeel");
+            
+        
         } catch (ClassNotFoundException ex) {} catch (IllegalAccessException ex) {
         } catch (InstantiationException ex) {
         } catch (UnsupportedLookAndFeelException ex) {
@@ -298,10 +313,15 @@ public class StudioUI4 extends javax.swing.JFrame {
         jScrollPane2.setViewportView(jPanel3);
 
         button.setBackground(java.awt.Color.white);
-        button.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/arrow-180.png"))); // NOI18N
+        button.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/arrow-180v4.png"))); // NOI18N
         button.setBorder(null);
         button.setBorderPainted(false);
         button.setEnabled(false);
+        button.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                buttonMouseEntered(evt);
+            }
+        });
         button.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 buttonActionPerformed(evt);
@@ -338,7 +358,7 @@ public class StudioUI4 extends javax.swing.JFrame {
                 .addGap(6, 6, 6)
                 .addComponent(button, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(search, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(search, javax.swing.GroupLayout.PREFERRED_SIZE, 417, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         panelEastLayout.setVerticalGroup(
@@ -348,7 +368,7 @@ public class StudioUI4 extends javax.swing.JFrame {
                 .addGroup(panelEastLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(button, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(search, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(6, 6, 6)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 440, Short.MAX_VALUE))
         );
 
@@ -358,7 +378,7 @@ public class StudioUI4 extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jSplitPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 714, Short.MAX_VALUE)
+            .addComponent(jSplitPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 714, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -568,6 +588,10 @@ public class StudioUI4 extends javax.swing.JFrame {
         showDialogAddFilesToComponent();
     }//GEN-LAST:event_menuItem_AddToComponentActionPerformed
 
+    private void buttonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonMouseEntered
+        doMouseOverButton();
+    }//GEN-LAST:event_buttonMouseEntered
+
     
     /**
      * Has the end-user clicked on the option to open the right-click menu
@@ -714,6 +738,11 @@ public class StudioUI4 extends javax.swing.JFrame {
         button.setEnabled(false);
         // select the tree as first topic
         tree.requestFocus();
+        
+        // change colors
+        Color aColor = new Color(0xf8f8f8); 
+        panelEast.setBackground(aColor);
+        //f8f8f8
         
         // add a border on the search bar
         search.setBorder(BorderFactory.createCompoundBorder(

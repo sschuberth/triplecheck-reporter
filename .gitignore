@@ -1,3 +1,4 @@
+*.class
 dist/
 build/
 build/classes/GUI/Studio*
@@ -9,4 +10,3 @@ run/export/
 run/old/
 run/plugins/spdx/temp.html
 run/plugins/spdx/chart.png
-

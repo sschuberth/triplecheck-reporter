@@ -18,6 +18,7 @@ package spdx;
 import GUI.webUtils;
 import definitions.Messages;
 import definitions.is;
+import java.awt.Color;
 import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
@@ -160,7 +161,8 @@ public class show extends Plugin{
         int noLicenses = counterFiles - counterLicensesDeclared;
         int[] values = new int[]{noLicenses, counterLicensesDeclared};
         // do the graph file
-        File graphFile = Graphs.generate(thisFolder, titles, values);
+        Color aColor = new Color(0xf8f8f8); 
+        File graphFile = Graphs.generate(thisFolder, titles, values, aColor);
         
         String[] header = new String[]{summary, 
               html.br
@@ -319,7 +321,8 @@ public class show extends Plugin{
         int noLicenses = counterFiles - counterLicensesDeclared;
         int[] values = new int[]{noLicenses, counterLicensesDeclared};
         // do the graph file
-        File graphFile = Graphs.generate(thisFolder, titles, values);
+        Color aColor = new Color(0xf8f8f8); 
+        File graphFile = Graphs.generate(thisFolder, titles, values, aColor);
 
         
         // get quality evaluation

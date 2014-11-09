@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties>
-<comment>Settings for this folder</comment>
+<comment/>
 <entry key="status">offline</entry>
 <entry key="port">10101</entry>
-<entry key="startupcounter">50</entry>
 <entry key="SubmitButton">Apply changes</entry>
+<entry key="startupcounter">50</entry>
 <entry key="SOURCEFOLDER---components.spdx">/mnt/06B6C215B6C20561/core/code/reporter/run/components</entry>
 <entry key="target">/mnt/06B6C215B6C20561/core/code/reporter/run/components</entry>
 </properties>
