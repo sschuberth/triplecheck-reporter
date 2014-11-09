@@ -309,7 +309,7 @@ public class StudioUI4 extends javax.swing.JFrame {
             }
         });
 
-        search.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        search.setFont(new java.awt.Font("Arial", 2, 14)); // NOI18N
         search.setText("Search..");
         search.setMargin(new java.awt.Insets(2, 8, 2, 2));
         search.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -333,13 +333,13 @@ public class StudioUI4 extends javax.swing.JFrame {
         panelEast.setLayout(panelEastLayout);
         panelEastLayout.setHorizontalGroup(
             panelEastLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane2)
+            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 509, Short.MAX_VALUE)
             .addGroup(panelEastLayout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(6, 6, 6)
                 .addComponent(button, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(search)
-                .addContainerGap())
+                .addComponent(search, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         panelEastLayout.setVerticalGroup(
             panelEastLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -695,24 +695,28 @@ public class StudioUI4 extends javax.swing.JFrame {
 //                };
 //            thread.start();
             
-            // ensure that the search box is the selected component
-            setSearchProvider(this.searchTextDefault);
-            search.requestFocusInWindow();
-         
-            button.setEnabled(false);
-            
-            // solve a bug we have on the screen
-            this.editorPane(is.contentHTML, true, 0, "");
-            
-            // do the front screen
-            callFrontScreen();
-            
-            // capture the clicks on HTML content
-            doFormInterception();
-            // this is needed to ensure we get line-wrapping
-            jScrollPane2.setViewportView(text);
-            // change our title
-            setTitle("TripleCheck");
+        // ensure that the search box is the selected component
+        setSearchProvider(this.searchTextDefault);
+        search.requestFocusInWindow();
+
+        // solve a bug we have on the screen
+        this.editorPane(is.contentHTML, true, 0, "");
+
+        // do the front screen
+        callFrontScreen();
+
+        // capture the clicks on HTML content
+        doFormInterception();
+        // this is needed to ensure we get line-wrapping
+        jScrollPane2.setViewportView(text);
+
+        // disable the back button
+        button.setEnabled(false);
+        // select the tree as first topic
+        tree.requestFocus();
+
+        // change our title
+        setTitle("TripleCheck Reporter");
         
     }
 

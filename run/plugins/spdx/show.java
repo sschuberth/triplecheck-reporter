@@ -288,8 +288,19 @@ public class show extends Plugin{
             return;
         }
       
+        // get the canonical form
+        String fileCanonical = utils.files.getCanonical(file);
+        file = new File(fileCanonical);
+        
         // get the SPDX file from the root node
         SPDXfile2 spdx = engine.reports.get(file);
+        System.out.println("SH293 - " + file.getAbsolutePath());
+        
+        if(spdx == null){
+            log.write(is.ERROR, "SH295 - Didn't found %1", file.getAbsolutePath());
+            request.setAnswer("");
+            return;
+        }
         
         // compute some of our useful statistics about the SPDX document
         int counterLicensesDeclared = spdx.getLicensesDeclaredCount();

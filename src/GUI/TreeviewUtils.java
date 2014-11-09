@@ -107,8 +107,9 @@ public class TreeviewUtils {
     /**
      * This method will add a given SPDX node to our treeview and select
      * the new node as default
-     * @param UID   Unique identification for this spdx
-     * @param file  its location on disk
+     * @param spdx
+     * @param rootNode
+     * @return 
      */
     public static TreeNodeSPDX spdxAddNode2(final SPDXfile2 spdx, 
             final TreeNodeSPDX rootNode) {
@@ -137,7 +138,6 @@ public class TreeviewUtils {
         node.add(spdx.getNodeSettings());
         // add up the settings node
         node.add(spdx.getNodeExport());
-        
         
         // create the correct parameters
         final String relativePath = spdx.getRelativePath();

@@ -75,13 +75,13 @@ public class home extends Plugin{
                 //+ html.br        
                 + html.div()
                 + "Other actions: "   
-                + html.link("Ask a question", "http://triplecheck.de/forum")
+                //+ html.link("Ask a question", "http://triplecheck.de/forum")
                 + html.divider
                 + html.link("View reports", "/spdx/show")        
                 + html.divider
                 + html.link("Log", "/basic/ToolsLog.java?x=showPage")
                 + html.divider
-                + html.link("Status", "/basic/status")
+                //+ html.link("Status", "/basic/status")
 //                + html.divider
 //                + html.link("Server", "/webserver/server")
                 + html._div
@@ -113,7 +113,7 @@ public class home extends Plugin{
                 + Table.alignedTable(params, size)
                 //+ navigation
                 + html.br
-                + quickHelp
+                //+ quickHelp
                 + "<hr>"
                 + html.br
                 + navigationSub
