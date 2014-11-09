@@ -2,11 +2,12 @@
  * SPDXVersion: SPDX-1.1
  * Creator: Person: Nuno Brito (nuno.brito@triplecheck.de)
  * Creator: Organization: TripleCheck (contact@triplecheck.de)
- * Created: 2014-11-09T12:54:00Z
+ * Created: 2014-01-13T00:00:00Z
  * LicenseName: EUPL-1.1-without-appendix
- * FileName: StudioUI5.java
- * FileCopyrightText: <text> Copyright 2014 Nuno Brito, TripleCheck </text>
- * FileComment: <text> The GUI for end-users </text>
+ * FileName: StudioUI4.java
+ * FileType: SOURCE
+ * FileCopyrightText: <text> Copyright 2013 Nuno Brito, TripleCheck </text>
+ * FileComment: <text> The initial GUI for the end-users </text>
  */
 package GUI;
 
@@ -18,14 +19,12 @@ import java.awt.Toolkit;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
 import java.io.File;
-import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Timer;
 import java.util.TimerTask;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import java.util.Vector;
 import javax.swing.*;
 import javax.swing.event.HyperlinkEvent;
 import javax.swing.event.HyperlinkListener;
@@ -33,10 +32,13 @@ import javax.swing.text.Element;
 import javax.swing.text.html.FormSubmitEvent;
 import javax.swing.text.html.HTML;
 import javax.swing.text.html.HTMLDocument;
-import javax.swing.text.html.HTMLEditorKit;
 import main.controller;
 import main.coreGUI;
 import main.engine;
+import org.fit.cssbox.swingbox.BrowserPane;
+import org.fit.cssbox.swingbox.util.GeneralEvent;
+import org.fit.cssbox.swingbox.util.GeneralEventListener;
+import org.fit.net.DataURLHandler;
 import script.RunPlugins;
 import script.log;
 import spdxlib.FileInfo2;
@@ -51,9 +53,9 @@ import www.WebRequest;
 
 /**
  *
- * @author Nuno Brito, 9th of November 2014 in Darmstadt, Germany.
+ * @author Nuno Brito, 19th of September 2013 in Darmstadt, Germany.
  */
-public class StudioUI5 extends javax.swing.JFrame {
+public class StudioUI51 extends javax.swing.JFrame {
 
     // what kind of clicks do we have?
     enum ClickType {LEFT, RIGHT, NONE}
@@ -71,7 +73,7 @@ public class StudioUI5 extends javax.swing.JFrame {
     private SearchType searchProvider = SearchType.Files;
     
     // where we store a track of the previous page
-    private Page 
+    private final Page 
             lastPage = new Page();
             //currentPage = new Page();
     
@@ -88,10 +90,16 @@ public class StudioUI5 extends javax.swing.JFrame {
     boolean firstClickActive = false;
     boolean secondClickActive = false;
     
+    // swing box related
+    BrowserPane text;
+    protected Vector<URL> history;
+    protected int historyPos;
+    
+    
     /**
      * Creates new form StudioUI2
      */
-    public StudioUI5() {
+    public StudioUI51() {
         // adopt the default user interface menus and buttons
         try {
             UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
@@ -137,7 +145,6 @@ public class StudioUI5 extends javax.swing.JFrame {
         panelEast = new javax.swing.JPanel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jPanel3 = new javax.swing.JPanel();
-        text = new javax.swing.JEditorPane();
         button = new javax.swing.JButton();
         search = new javax.swing.JTextField();
 
@@ -254,37 +261,15 @@ public class StudioUI5 extends javax.swing.JFrame {
         jScrollPane2.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);
         jScrollPane2.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
 
-        text.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusGained(java.awt.event.FocusEvent evt) {
-                textFocusGained(evt);
-            }
-            public void focusLost(java.awt.event.FocusEvent evt) {
-                textFocusLost(evt);
-            }
-        });
-        text.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
-            public void propertyChange(java.beans.PropertyChangeEvent evt) {
-                textPropertyChange(evt);
-            }
-        });
-        text.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                textKeyTyped(evt);
-            }
-        });
-
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(text)
+            .addGap(0, 487, Short.MAX_VALUE)
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(text, javax.swing.GroupLayout.PREFERRED_SIZE, 266, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(175, 175, 175))
+            .addGap(0, 453, Short.MAX_VALUE)
         );
 
         jScrollPane2.setViewportView(jPanel3);
@@ -488,18 +473,6 @@ public class StudioUI5 extends javax.swing.JFrame {
     }
     
     
-    private void textFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_textFocusGained
-    }//GEN-LAST:event_textFocusGained
-
-    private void textFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_textFocusLost
-    }//GEN-LAST:event_textFocusLost
-
-    private void textPropertyChange(java.beans.PropertyChangeEvent evt) {//GEN-FIRST:event_textPropertyChange
-    }//GEN-LAST:event_textPropertyChange
-
-    private void textKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_textKeyTyped
-    }//GEN-LAST:event_textKeyTyped
-
     private void buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonActionPerformed
         doBackButton();
     }//GEN-LAST:event_buttonActionPerformed
@@ -662,10 +635,11 @@ public class StudioUI5 extends javax.swing.JFrame {
     private javax.swing.JScrollPane panelWest;
     private javax.swing.JPopupMenu popupMenuFile;
     private javax.swing.JTextField search;
-    private javax.swing.JEditorPane text;
     private javax.swing.JTree tree;
     // End of variables declaration//GEN-END:variables
 
+
+    
     public void doSettings() {
         // the basic root node that is always needed
         swingUtils.nodeAddRoot(tree);
@@ -697,10 +671,8 @@ public class StudioUI5 extends javax.swing.JFrame {
             // do the front screen
             callFrontScreen();
             
-            // capture the clicks on HTML content
-            doFormInterception();
             // this is needed to ensure we get line-wrapping
-            jScrollPane2.setViewportView(text);
+            initializeSwingBox();
             // change our title
             setTitle("TripleCheck");
         
@@ -778,22 +750,6 @@ public class StudioUI5 extends javax.swing.JFrame {
         return search;
     }
     
-    /**
-     * Process the clicks on HTML hyperlinks at the text form
-     */
-    private void doFormInterception() {
-         // add the URL interception
-        HTMLEditorKit kit = (HTMLEditorKit) text.getEditorKit();
-        kit.setAutoFormSubmission(false);
-        text.addHyperlinkListener(new HyperlinkListener() {
-            @Override
-            public void hyperlinkUpdate(HyperlinkEvent e) {
-                processActionGUI(e);
-            }
-        });
-    }
-
-   
     /**
      * Moves the text box to the last line
      */
@@ -911,11 +867,7 @@ public class StudioUI5 extends javax.swing.JFrame {
 
             // important step, sometimes we just want to define a page on disk
             if(request.hasPage()){
-                try {
-                    text.setPage(request.getPage());
-                } catch (IOException ex) {
-                    Logger.getLogger(StudioUI5.class.getName()).log(Level.SEVERE, null, ex);
-                }
+                displayURL(request.getPage().toString());
             } 
             
             
@@ -970,17 +922,27 @@ public class StudioUI5 extends javax.swing.JFrame {
      */
     private void doBackButton() {
         // restore previous page
-        editorPane(
-                lastPage.contentType, 
-                lastPage.editable, 
-                lastPage.carotPosition, 
-                lastPage.getText());
-        // destroy the old page
-        lastPage = new Page();
-        baseFolderPresent = baseFolderPast;
-        baseFilePresent = baseFilePast;
-        // disable button
-        button.setEnabled(false);
+//        editorPane(
+//                lastPage.contentType, 
+//                lastPage.editable, 
+//                lastPage.carotPosition, 
+//                lastPage.getText());
+//        // destroy the old page
+//        lastPage = new Page();
+//        baseFolderPresent = baseFolderPast;
+//        baseFilePresent = baseFilePast;
+//        // disable button
+//        button.setEnabled(false);
+        
+        if (historyPos > 1){
+            historyPos--;
+            URL url = history.get(historyPos - 1);
+            displayURL(url.toString());
+        }
+        
+        // should the button be enabled or not?
+        button.setEnabled(historyPos > 1);
+        
     }
 
   
@@ -989,7 +951,7 @@ public class StudioUI5 extends javax.swing.JFrame {
      * Whenever a tree node has changed, fire up an action
      */
     private void doTreeNodeChanged(final Boolean doubleClick) {
-      
+        
         final TreeNodeSPDX node;
         
         try{  
@@ -1000,6 +962,7 @@ public class StudioUI5 extends javax.swing.JFrame {
         } catch (Exception e){
             return;
         }
+        
         
         if(doubleClick){
             engine.temp.put(is.doubleClick, node);
@@ -1434,10 +1397,99 @@ public class StudioUI5 extends javax.swing.JFrame {
                 + " as part of " + componentName);
     }
     
-  
+      
+        
+    private BrowserPane createSwingbox(){
+        final BrowserPane mySwingBox = new BrowserPane();
+        HyperlinkListener listener = new HyperlinkListener() {
+
+            
+            @Override
+            public void hyperlinkUpdate(HyperlinkEvent e) {
+                if(e.getEventType() == HyperlinkEvent.EventType.ENTERED){
+                    mySwingBox.setCursor(new Cursor(Cursor.HAND_CURSOR));
+                    return;
+                }
+
+                if(e.getEventType() == HyperlinkEvent.EventType.EXITED){
+                    mySwingBox.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
+                    return;
+                }
+
+                // only go events that activate a click
+                if(e.getEventType() != HyperlinkEvent.EventType.ACTIVATED){
+                    return;
+                }
+                //displayURL(e.getURL().toString());
+                displayURL(e.getURL().toString());
+                System.out.println("Click over " + e.getURL());
+            }
+        };
+        mySwingBox.addHyperlinkListener(listener);
+        mySwingBox.addGeneralEventListener(new GeneralEventListener()
+        {
+            private long time;
+
+            @Override
+            public void generalEventUpdate(GeneralEvent e){
+                if (e.event_type == GeneralEvent.EventType.page_loading_begin){
+                    time = System.currentTimeMillis();
+                }
+                else if (e.event_type == GeneralEvent.EventType.page_loading_end){
+                }
+            }
+        });
+        return mySwingBox;
+    }
+    
+    public void displayURL(String urlstring){
+        try {
+            if (!urlstring.startsWith("http:") &&
+                    !urlstring.startsWith("https:") &&
+                    !urlstring.startsWith("ftp:") &&
+                    !urlstring.startsWith("file:") &&
+                    !urlstring.startsWith("data:"))
+                        urlstring = "http://" + urlstring;
+                
+            URL url = DataURLHandler.createURL(null, urlstring);
+            
+            
+            while (historyPos < history.size())
+                history.remove(history.size() - 1);
+            history.add(url);
+            historyPos++;
+            // add the content on the text screen
+            text.setPage(url);
+            
+            // should the button be enabled or not?
+            button.setEnabled(historyPos > 1);
+            
+        } catch (Exception e) {
+            System.err.println("*** Error: "+e.getMessage());
+            e.printStackTrace();
+        }
+    }
+    
+    /**
+     * Initialize the elements related to the swing box
+     */
+    public void initializeSwingBox(){
+        text = createSwingbox();
+        history = new Vector<URL>();
+        historyPos = 0;
+        jScrollPane2.setViewportView(text);
+    } 
+
+    
+    
     public static void main(String[] args){
-        StudioUI5 UI = new StudioUI5();
+        StudioUI51 UI = new StudioUI51();
         UI.setVisible(true);
+        UI.initializeSwingBox();
+        
+        UI.displayURL("http://cssbox.sourceforge.net/swingbox");
+        
+        
     }
     
     

@@ -408,7 +408,7 @@ public class SwingBrowser
     {
         browser = new SwingBrowser();
         JFrame main = browser.getMainWindow();
-        main.setSize(1100, 850);
+        main.setSize(600, 450);
         main.setVisible(true);
         browser.displayURL("http://cssbox.sourceforge.net/swingbox");
     }
