@@ -56,7 +56,6 @@ public class settings extends Plugin{
             return;
         }
         try{
-            System.err.println(text);
             // run our script
             engine.script.runJava(startSettings, "start", is.plugin);
             // no need to keep it around, just delete
