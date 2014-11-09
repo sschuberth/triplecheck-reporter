@@ -1,6 +1,12 @@
 dist/
 build/
+build/classes/GUI/Studio*
+build/classes/spdx/show.class
+build/classes/spdx/temp.html
 nbproject/private/
 publish/
 run/export/
 run/old/
+run/plugins/spdx/temp.html
+run/plugins/spdx/chart.png
+

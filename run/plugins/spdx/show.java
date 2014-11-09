@@ -294,11 +294,10 @@ public class show extends Plugin{
         
         // get the SPDX file from the root node
         SPDXfile2 spdx = engine.reports.get(file);
-        System.out.println("SH293 - " + file.getAbsolutePath());
         
         if(spdx == null){
             log.write(is.ERROR, "SH295 - Didn't found %1", file.getAbsolutePath());
-            request.setAnswer("");
+            request.setAnswer("SH300 - File not found");
             return;
         }
         

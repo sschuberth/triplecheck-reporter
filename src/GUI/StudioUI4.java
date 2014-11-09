@@ -77,7 +77,6 @@ public class StudioUI4 extends javax.swing.JFrame {
             lastPage = new Page();
             //currentPage = new Page();
     
-    
     private File 
             baseFolderPresent = null,
             baseFolderPast = null,
@@ -311,7 +310,8 @@ public class StudioUI4 extends javax.swing.JFrame {
 
         search.setFont(new java.awt.Font("Arial", 2, 14)); // NOI18N
         search.setText("Search..");
-        search.setMargin(new java.awt.Insets(2, 8, 2, 2));
+        search.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        search.setMargin(new java.awt.Insets(2, 18, 2, 2));
         search.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusGained(java.awt.event.FocusEvent evt) {
                 searchFocusGained(evt);
@@ -333,7 +333,7 @@ public class StudioUI4 extends javax.swing.JFrame {
         panelEast.setLayout(panelEastLayout);
         panelEastLayout.setHorizontalGroup(
             panelEastLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 509, Short.MAX_VALUE)
+            .addComponent(jScrollPane2)
             .addGroup(panelEastLayout.createSequentialGroup()
                 .addGap(6, 6, 6)
                 .addComponent(button, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -714,9 +714,13 @@ public class StudioUI4 extends javax.swing.JFrame {
         button.setEnabled(false);
         // select the tree as first topic
         tree.requestFocus();
-
+        
+        // add a border on the search bar
+        search.setBorder(BorderFactory.createCompoundBorder(
+            search.getBorder(), BorderFactory.createEmptyBorder(5, 12, 5, 5)));
+        
         // change our title
-        setTitle("TripleCheck Reporter");
+        setTitle("TripleCheck reporter");
         
     }
 
