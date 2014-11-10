@@ -78,11 +78,11 @@ public class showFileDetails extends Plugin{
     }
     
     /**
-* Verifies if a given SPDX document exists inside our archive or or not
-* @param spdxTarget The file inside the SPDX Archive
-* @param request
-* @return null if the file does not exists, otherwise return a pointer
-*/
+    * Verifies if a given SPDX document exists inside our archive or or not
+    * @param spdxTarget The file inside the SPDX Archive
+    * @param request
+    * @return null if the file does not exists, otherwise return a pointer
+    */
     public static File getFile(String spdxTarget, WebRequest request){
          if(spdxTarget == null){
             request.setAnswer("No file specified");
@@ -349,19 +349,19 @@ public class showFileDetails extends Plugin{
         if(fileInfo.getTagFileChecksumSSDEEP()!= null){
             String text = fileInfo.getTagFileChecksumSSDEEP();
             // remove the tag header
-            text = text.replace("FileChecksum: SSDEEP: ", "");
+            resultSSDEEP = text.replace("FileChecksum: SSDEEP: ", "");
             
-            resultSSDEEP = text
-                        + html.div()
-                        // only possible when we have SHA256 hashes available
-                        + html.linkSearch("Find similar files", "SSDEEP: "
-                            + text)
-                        //+ html.link("Find similar files111", text)    
-                        + html._div;
+//            resultSSDEEP = text
+//                        + html.div()
+//                        // only possible when we have SHA256 hashes available
+//                        + html.linkSearch("Find similar files", "SSDEEP: "
+//                            + text)
+//                        //+ html.link("Find similar files111", text)    
+//                        + html._div;
         }
         
         
-      // the end result
+        // the end result
         String result = html.div()
                     + resultIntroduction
                     + sourceCodeActions(fileInfo, sourceFolder)
@@ -381,14 +381,22 @@ public class showFileDetails extends Plugin{
                     + html._div
                     + html.br
                     + html.br
-                      
-//                    + swingUtils.addIfNotEmpty("Copyright text",file.tagFileCopyrightText.toString())
                     ;
+      
+        // read the file from disk
+        result = utils.files.readAsString(new File(thisFolder, "file.html"));
         
-       /** missing to add:
-        * - File path
-        * - Applicable licenses (when available)
-        */
+        // do our changes
+        result = result.replaceAll("%title%", filename);
+        result = result.replaceAll("%path%", fileInfo.getFileName());
+        result = result.replaceAll("%extension%", shortExtension);
+        // add the hashes
+        result = result.replaceAll("%sha1%", fileInfo.getTagFileChecksumSHA1());
+        result = result.replaceAll("%md5%", fileInfo.getTagFileChecksumMD5());
+        result = result.replaceAll("%sha256%", fileInfo.getTagFileChecksumSHA256());
+        result = result.replaceAll("%ssdeep%", resultSSDEEP);
+        //utils.files.SaveStringToFile(new File("temp.html"), result);
+        
         return result;
     }
 
