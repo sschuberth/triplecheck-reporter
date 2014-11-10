@@ -51,33 +51,59 @@ public class export extends Plugin{
             return;
         }
         
-        String export = " at the \"export\" folder.";
+//        String export = " at the \"export\" folder.";
+//        
+//        // add a link on the export link if the host is windows
+//        if(utils.misc.isWindows()){
+//             export = html.link("here", "?x=folder&folder="
+//                     + engine.getFolderExport());
+//        }
         
-        // add a link on the export link if the host is windows
-        if(utils.misc.isWindows()){
-             export = html.link("here", "?x=folder&folder="
-                     + engine.getFolderExport());
-        }
+        request.setTemplate("export.html");
+        request.closeTemplate();
+        
+        
         
         // and now with the spdx summary, get the list of components
-        String result = ""
-                + html.div()
-                + html.h2("Export the licensing data")
-                + "Use this menu to export the documentation and files of this"
-                + " project. After exporting, the result can be found "
-                + export
-                + html.br
-                + html.br
-                + html.div()
-                + html.link("Create report", "?x=export&type=report")
-                + html.br
+//        String result = ""
+//                + html.div()
+//                + html.h2("Export the licensing data")
+//                + "Use this menu to export the documentation and files of this"
+//                + " project. After exporting, the result can be found "
+//                + exportString result = ""
+//                + html.div()
+//                + html.h2("Export the licensing data")
+//                + "Use this menu to export the documentation and files of this"
+//                + " project. After exporting, the result can be found "
+//                + export
 //                + html.br
-//                + html.link("Files", "?x=export&type=files")
-                + html._div
-                + ""
-                + html._div;
-        
-        request.setAnswer(result);       
+//                + html.br
+//                + html.div()
+//                + html.link("Create report", "?x=export&type=report")
+//                + html.br
+////                + html.br
+////                + html.link("Files", "?x=export&type=files")
+//                + html._div
+//                + ""
+//                + html._div;
+//        
+//        
+//        utils.files.SaveStringToFile(new File("temp.html"), result);
+//        request.setAnswer(result);       
+//                + html.br
+//                + html.br
+//                + html.div()
+//                + html.link("Create report", "?x=export&type=report")
+//                + html.br
+////                + html.br
+////                + html.link("Files", "?x=export&type=files")
+//                + html._div
+//                + ""
+//                + html._div;
+//        
+//        
+//        utils.files.SaveStringToFile(new File("temp.html"), result);
+//        request.setAnswer(result);       
     }
     
     /**
