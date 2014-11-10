@@ -30,7 +30,7 @@ import www.WebRequest;
 public class webUtils {
 
     public static String getIcon(String iconName, WebRequest request){
-        String result = iconName;
+        String result;
         if(request.requestOrigin == RequestOrigin.BROWSER){
                 result =
                 "<img align=\"middle;\" hspace=\"3\" src=\""

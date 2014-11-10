@@ -329,14 +329,27 @@ public class show extends Plugin{
         EvaluateLicensingQuality qualityTest = new EvaluateLicensingQuality();
         qualityTest.process(file);
         
-        String qualityResult = qualityTest.getResultHTML();
+        double j = qualityTest.getScore() / 10.0;
+        
+        String qualityDetails = qualityTest.getResultHTML();
+        String qualityValue = j + "";
         
         String column1 = ""
                 + html.h2(spdx.getId())
                 + spdx.getLanguageEvaluation()
                 + html.br
                 + html.h3("Score")
-                + qualityResult;
+                + qualityDetails;
+        
+        
+        String metrics = ""
+                + textLOC + " lines of code"
+                + html.br
+                + counterFiles + " files in total"
+                + html.br
+                + textOverallSize + " in size"
+                ;
+        
         
         String column2 = ""
                 + webUtils.getIcon("chart.png", request)
@@ -400,7 +413,23 @@ public class show extends Plugin{
         
         
         request.setTemplate("project.html");
+        // page title
         request.changeTemplate("%title%", spdx.getId());
+        // graph showing percentage of files with license headers
+        request.changeTemplate("%chartLic%", webUtils.getIcon("chart.png", request));
+        // list of concluded licenses
+        request.changeTemplate("%concludedLicenses%", spdx.summaryConcludedLicenses());
+        // list languages and resources that were found
+        request.changeTemplate("%languageEvaluation%", spdx.getLanguageEvaluation());
+        // list languages and resources that were found
+        request.changeTemplate("%licenseEvaluation%", spdx.getLicenseEvaluation());
+        // add the score given to this project
+        request.changeTemplate("%scoreDetails%", qualityDetails);
+        request.changeTemplate("%score%", qualityValue);
+        // metrics (number of files, lines of code)
+        request.changeTemplate("%metrics%", metrics);
+        
+        
         
         // all done
         request.closeTemplate();
