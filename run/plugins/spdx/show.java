@@ -398,11 +398,19 @@ public class show extends Plugin{
                 + html.br
                 ;
         
+        
+        request.setTemplate("project.html");
+        request.changeTemplate("%title%", spdx.getId());
+        
+        // all done
+        request.closeTemplate();
+        //utils.files.SaveStringToFile(new File("test.html"), result);
+        
+        
         // save our cache for next time
         engine.temp.put(showSPDX, result);
-        
         // write everything on our UI text area
-        request.setAnswer(result);
+        //request.setAnswer(result);
     }
     
     //           

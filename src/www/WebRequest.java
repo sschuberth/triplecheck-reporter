@@ -167,7 +167,7 @@ public class WebRequest {
     
     /**
      * Defines an HTML page as the template to be written as answer
-     * @param pageHTML an HTML file on disk
+     * @param pageHTML an HTML file on the same folder where the script runs
      */
     public void setTemplate(String pageHTML){
         File file = new File(BaseFolder, pageHTML);
