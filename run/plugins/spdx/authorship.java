@@ -46,8 +46,22 @@ public class authorship extends Plugin{
        SPDXfile2 spdx = engine.reports.get(spdxFile);
        // get the summary of authorship out of this spdx object
        String output = spdx.computeAuthorship();
-       // all done, output the answer 
-       request.setAnswer(output);
+
+       // load the template from disk
+       request.setTemplate("fileAuthorship.html");
+       
+       // the replacements
+       request.changeTemplate("%original%", spdx.getFilesAuthored() + "");
+       request.changeTemplate("%3rdparty%", spdx.getFilesExternal() + "");
+       request.changeTemplate("%modded3rdparty%", spdx.getFilesModified() + "");
+       request.changeTemplate("%automated%", spdx.getFilesAutomated() + "");
+       request.changeTemplate("%automixed%", spdx.getFilesAutomixed() + "");
+       request.changeTemplate("%unknown%", spdx.getFilesUnknown() + "");
+        
+       
+       // all done
+       request.closeTemplate();
+       
     }
 
     
