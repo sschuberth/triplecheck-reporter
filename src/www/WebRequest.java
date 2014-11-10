@@ -206,6 +206,7 @@ public class WebRequest {
         File file = new File(BaseFolder, "temp.html");
         utils.files.SaveStringToFile(file, templateText);
         setPage(file);
+        file.delete();
     }
     
     

@@ -131,8 +131,10 @@ public class Plugin extends PluginVanilla{
 
         File tempFile = new File(thisFolder, "temp.html");
         utils.files.SaveStringToFile(tempFile, result);
-
+        // load the page
         request.setPage(tempFile);
+        // delete the page
+        tempFile.delete();
      }
      
      /**
