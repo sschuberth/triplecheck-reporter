@@ -64,7 +64,7 @@ public class TestTriggerEUPL {
          //actions.addTriggers();
          
          // initialize the triggers
-         start.basicStart();
+         start.basicStart(new String[]{});
          
          boolean didNotFind = true;
          

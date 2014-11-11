@@ -59,7 +59,7 @@ public class TestTriggerEPL {
      public void findGPL() {
      
          // initialize the triggers
-         start.basicStart();
+         start.basicStart(new String[]{});
          
          System.out.println("------------------------");
          

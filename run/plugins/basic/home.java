@@ -13,18 +13,12 @@
 
 package basic;
 
-import GUI.TreeviewUtils;
-import GUI.swingUtils;
-import GUI.webUtils;
 import definitions.Messages;
 import definitions.is;
 import main.controller;
 import script.Plugin;
 import script.log;
-import spdxlib.swing.TreeNodeSPDX;
-import utils.www.html;
 import www.RequestOrigin;
-import www.Table;
 import www.WebRequest;
 
 

@@ -359,20 +359,7 @@ public class show extends Plugin{
 //            }
         }
         
-        // prepare the answer
-//        String result = ""
-//                //swingUtils.getBreadcrumb(node)
-//                + html.div(20)
-//                + column1
-//                 //+ html.br
-//                + html._div
-//                
-//                + html.br
-//                + spdx.getCopyrightEvaluation()
-//                + html.br
-//                ;
-//        
-        
+       
         request.setTemplate("project.html");
         // page title
         request.changeTemplate("%title%", spdx.getId());
