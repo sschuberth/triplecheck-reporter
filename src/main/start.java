@@ -23,19 +23,33 @@ import structure.LicenseControl;
  */
 public class start {
 
+     public static StartupScreen startupScreen = null;
+        
     /**
      * The method that we need to call in order to initialize the license
      * and file extension detection. Basically, finding all the dynamic
      * scripts and loading them up to memory.
+     * @param args Original args from command line
      */
-    public static void basicStart(){
-        
+    public static void basicStart(String[] args){
         // express that third-party projects need to initialize as libraries
         System.setProperty(is.methodStartUp, is.library);
         
-        // initialize the settings
+        // shall we create a start screen?
+        if(args.length == 0){
+             // show the startup screen
+            startupScreen = new StartupScreen();
+            log.write(is.CREDITS, "TripleCheck (c) %1, "
+                    + "http://triplecheck.net", utils.time.getCurrentYear());
+            startupScreen.kickoff();
+        }
+        
+        // get the engine running
         engine.warmUp();
+        
+        // index the licenses
         coreGUI.licenses = new LicenseControl();
+        
     }
     
     
@@ -43,23 +57,12 @@ public class start {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-      
         // do the basic start
-        basicStart();
-        
+        basicStart(args);
         // watch out for the case when we launch the command line version
         if(cmdLine.isCommandLineUsed(args)){
             return;
         }
-        
-       // show the startup screen
-        StartupScreen startupScreen = new StartupScreen();
-    
-        startupScreen.kickoff();
-        log.write(is.CREDITS, "TripleCheck (c) %1, "
-                + "http://triplecheck.net", utils.time.getCurrentYear());
-//        log.write(is.RUNNING, "Version %1 %2", engine.version,
-//                utils.misc.getDate(start.class));
         
         // do the startup
         settings.doStartup();
@@ -69,8 +72,10 @@ public class start {
             coreGUI.studio.doSettings();
 
             // remove the startup screen
-            startupScreen.dispose();
-
+            if(startupScreen != null){
+                startupScreen.dispose();
+            }
+            
             coreGUI.studio.setVisible(true);
             coreGUI.studio.hasFocus();
         }catch (Exception e){

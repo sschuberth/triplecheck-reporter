@@ -125,7 +125,7 @@ public class StudioUI4 extends javax.swing.JFrame {
         // place the frame on the middle of the screen
         setLocationRelativeTo(null);
         // change the background to full white
-        getContentPane().setBackground( Color.WHITE );
+        //getContentPane().setBackground( Color.WHITE );
         //doSettings();
     }
 

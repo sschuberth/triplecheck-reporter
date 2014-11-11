@@ -322,7 +322,7 @@ public class show extends Plugin{
         int[] values = new int[]{noLicenses, counterLicensesDeclared};
         // do the graph file
         Color aColor = new Color(0xf8f8f8); 
-        File graphFile = Graphs.generate(thisFolder, titles, values, aColor);
+        Graphs.generate(thisFolder, titles, values, aColor);
 
         
         // get quality evaluation
@@ -334,14 +334,6 @@ public class show extends Plugin{
         String qualityDetails = qualityTest.getResultHTML();
         String qualityValue = j + "";
         
-        String column1 = ""
-                + html.h2(spdx.getId())
-                + spdx.getLanguageEvaluation()
-                + html.br
-                + html.h3("Score")
-                + qualityDetails;
-        
-        
         String metrics = ""
                 + textLOC + " lines of code"
                 + html.br
@@ -349,37 +341,6 @@ public class show extends Plugin{
                 + html.br
                 + textOverallSize + " in size"
                 ;
-        
-        
-        String column2 = ""
-                + webUtils.getIcon("chart.png", request)
-                + html.br
-                + html.br
-                + textLOC + " lines of code"
-                + html.br
-                + counterFiles + " files in total"
-//                + " (" 
-//                + counterLicensesDeclared + " declared licenses)"
-                + html.br
-                + textOverallSize + " in size"
-                + html.br
-                + html.br
-                + spdx.summaryConcludedLicenses()
-                
-                //+ html.br
-                //+ html.getCommonFolderIcon("calculator.png")
-                
-                //+ percentage
-                //+ warnings
-                //+ evaluation
-                //+ html.br
-                ;
-        
-        
-        String[] header = new String[]{column1, column2};
-        values = new int[]{180, 180};
-        
-        column1 = Table.alignedTable(header, values);
         
         // if we are on Windows, permit to open the folder
         String openFolder = "";
@@ -399,18 +360,18 @@ public class show extends Plugin{
         }
         
         // prepare the answer
-        String result = ""
-                //swingUtils.getBreadcrumb(node)
-                + html.div(20)
-                + column1
-                 //+ html.br
-                + html._div
-                
-                + html.br
-                + spdx.getCopyrightEvaluation()
-                + html.br
-                ;
-        
+//        String result = ""
+//                //swingUtils.getBreadcrumb(node)
+//                + html.div(20)
+//                + column1
+//                 //+ html.br
+//                + html._div
+//                
+//                + html.br
+//                + spdx.getCopyrightEvaluation()
+//                + html.br
+//                ;
+//        
         
         request.setTemplate("project.html");
         // page title
@@ -431,11 +392,6 @@ public class show extends Plugin{
         
         // all done
         request.closeTemplate();
-
-        // save our cache for next time
-        engine.temp.put(showSPDX, result);
-        // write everything on our UI text area
-        //request.setAnswer(result);
     }
     
     //           

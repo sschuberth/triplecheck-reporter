@@ -20,6 +20,7 @@ import definitions.is;
 import java.awt.Color;
 import java.awt.Toolkit;
 import java.net.URL;
+import java.util.prefs.Preferences;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
@@ -230,22 +231,21 @@ public class StartupScreen extends javax.swing.JFrame {
         // initialize the counters
         int counter = 40;
         
-        // do we have a value from a previous run?
-        if(engine.settings.hasKey(counterValue)){
-            // get the older value
-            String lastValue = engine.settings.read(counterValue);
-            // convert to integer
-            int newValue = Integer.parseInt(lastValue);
-            // is it worth to upgrade the counter?
-            if(newValue > counter){
-                // setup the new value
-                counter = newValue;
-//                System.err.println("ST238 - Adjusted value to " + newValue);
-            }
+        // access the registry
+        final Preferences prefs = Preferences.userNodeForPackage(StartupScreen.class);
+        String counterText = prefs.get(counterValue, counter + "");
+        // convert to integer
+        int newValue = Integer.parseInt(counterText);
+        // is it worth to upgrade the counter?
+        if(newValue > counter){
+            // setup the new value
+            counter = newValue;
         }
         
         // what is maximum that we are expecting for our progress bar?
         progressBar.setMaximum(counter);
+        
+        log.write(is.INFO, "Launching the startup screen");
         
         // start a thread that will update itself with log messages
         Thread thread = new Thread(){
@@ -258,9 +258,7 @@ public class StartupScreen extends javax.swing.JFrame {
                         utils.time.waitMs(150);
                     }
                     // store the real value for later reuse
-                    engine.settings.write(counterValue, log.getCounter()+ "");
-//                    System.err.println("ST262 - Writing new value as " 
-//                            + log.getCounter() + "");
+                     prefs.put(counterValue, log.getCounter() + "");
                 }};
          thread.start();
     }
