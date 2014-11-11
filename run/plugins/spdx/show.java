@@ -425,7 +425,7 @@ public class show extends Plugin{
         request.changeTemplate("%licenseEvaluation%", spdx.getLicenseEvaluation());
         // add the score given to this project
         request.changeTemplate("%scoreDetails%", qualityDetails);
-        request.changeTemplate("%score%", qualityValue);
+        request.changeTemplate("%s%", qualityValue);
         // metrics (number of files, lines of code)
         request.changeTemplate("%metrics%", metrics);
         
