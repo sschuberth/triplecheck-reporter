@@ -24,6 +24,7 @@ import java.io.File;
 import java.io.IOException;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
+import main.coreGUI;
 import main.engine;
 import main.param;
 import script.Plugin;
@@ -161,8 +162,7 @@ public class show extends Plugin{
         int noLicenses = counterFiles - counterLicensesDeclared;
         int[] values = new int[]{noLicenses, counterLicensesDeclared};
         // do the graph file
-        Color aColor = new Color(0xf8f8f8); 
-        File graphFile = Graphs.generate(thisFolder, titles, values, aColor);
+        File graphFile = Graphs.generate(thisFolder, titles, values, coreGUI.backgroundColor);
         
         String[] header = new String[]{summary, 
               html.br
@@ -321,8 +321,7 @@ public class show extends Plugin{
         int noLicenses = counterFiles - counterLicensesDeclared;
         int[] values = new int[]{noLicenses, counterLicensesDeclared};
         // do the graph file
-        Color aColor = new Color(0xf8f8f8); 
-        Graphs.generate(thisFolder, titles, values, aColor);
+        Graphs.generate(thisFolder, titles, values, coreGUI.backgroundColor);
 
         
         // get quality evaluation

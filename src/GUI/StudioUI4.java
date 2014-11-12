@@ -740,8 +740,7 @@ public class StudioUI4 extends javax.swing.JFrame {
         tree.requestFocus();
         
         // change colors on the HTML background
-        Color aColor = new Color(0xf8f8f8); 
-        panelEast.setBackground(aColor);
+        panelEast.setBackground(coreGUI.backgroundColor);
         
         // add a border on the search bar
         search.setBorder(BorderFactory.createCompoundBorder(

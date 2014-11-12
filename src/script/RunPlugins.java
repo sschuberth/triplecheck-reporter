@@ -19,7 +19,6 @@ import definitions.is;
 import java.io.File;
 import java.util.ArrayList;
 import main.engine;
-import main.coreGUI;
 
 
 /**

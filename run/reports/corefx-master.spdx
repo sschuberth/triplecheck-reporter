@@ -9,7 +9,7 @@ DataLicense: CC-BY-4.0
 ##-------------------------
 Creator: nuno
 Creator: Tool: TripleCheck 0.9.6
-Created: 2014-11-12T18:55:28Z
+Created: 2014-11-12T19:24:13Z
 
 ##-------------------------
 ## Package Information
@@ -94,6 +94,7 @@ FileChecksum: SHA256: 11802d9418a9ef8ef27e4df705d06c2632a708e09dfa3ca0c7ca5598a1
 FileChecksum: MD5: 916ada8123dbc16887ecd96403e93763
 FileChecksum: SSDEEP: 48:Xjpr/paBHmj2HDUhgMw7EcBRqlyrvfMR0uRDrDRsNh9doGcyXoLyrRslhBtgrZ5h:zpkBXUhgMw7EuRPrv45R/DRsn9hcyXqw
 FileSize: 2 Kb (2262 bytes)
+LicenseInfoInFile: MIT
 
 FileName: ./src/nuget/Microsoft.Bcl.Immutable.nuspec
 FileType: OTHER
@@ -191,6 +192,7 @@ FileChecksum: SSDEEP: 24:W+SAotDCrUSdrlIsX+4Lwzdlbr++IDuZKxRr+3lO0u5:W+SAoDyJJl3
 FileSize: 995 bytes
 FileLOC: 13
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/Interfaces.cd
 FileType: OTHER
@@ -209,6 +211,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7jInK+F/JwrfvYrC+IDV+8DFLyRb+tAIP1KDHGuKDHGt7TBL
 FileSize: 1 Kb (1220 bytes)
 FileLOC: 25
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/Strings.Designer.cs
 FileType: SOURCE
@@ -236,6 +239,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7j4KbD26kZVZjKpw6XP8V+T7NO4wDt4L:W+SAoD7j4Y26KVl
 FileSize: 923 bytes
 FileLOC: 22
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Generic/ISortKeyCollection.cs
 FileType: SOURCE
@@ -246,6 +250,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7j4KbD1626kZVZjKpw6078X+T7NOgwsxL:W+SAoD7j4YM26K
 FileSize: 873 bytes
 FileLOC: 23
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1.cs
 FileType: SOURCE
@@ -256,6 +261,7 @@ FileChecksum: SSDEEP: 768:ceiSThclJhZBkYZO06SYcPNZlYrA90GxTfUzxmSkInllBHUN:LclJX
 FileSize: 58 Kb (60213 bytes)
 FileLOC: 1396
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1+HashBucket.cs
 FileType: SOURCE
@@ -266,6 +272,7 @@ FileChecksum: SSDEEP: 384:cWunjQugJ1QcJ0e6QAo991StIkhA+6EIdSk7/K2N8BqD:csugJ1QcJ
 FileSize: 14 Kb (15284 bytes)
 FileLOC: 337
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Immutable/AllocFreeConcurrentStack.cs
 FileType: SOURCE
@@ -276,6 +283,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7j4KbDN26k/jKDHvLTTW0J9FyIFsi1VZ6czo9d5bxbPj5jio
 FileSize: 1 Kb (1422 bytes)
 FileLOC: 44
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Immutable/DictionaryEnumerator.cs
 FileType: SOURCE
@@ -286,6 +294,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7j4KbD26kZVBmajKDHke2AF3WL+m2L5nZjafRNP7D0qNLlx/
 FileSize: 1 Kb (1299 bytes)
 FileLOC: 44
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Immutable/IBinaryTree.cs
 FileType: SOURCE
@@ -296,6 +305,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7j4KbD26k/jKDHJNGK/gC36oZtteDbUFvgdALdviAFB/IL:W
 FileSize: 1 Kb (1479 bytes)
 FileLOC: 41
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Immutable/IImmutableArray.cs
 FileType: SOURCE
@@ -306,6 +316,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7jKDHHvPV/QKGR1ux2DKGPLaTNN0Ta1aiBW+/6RnaM6U:W+S
 FileSize: 1 Kb (1128 bytes)
 FileLOC: 25
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Immutable/IImmutableDictionary.cs
 FileType: SOURCE
@@ -316,6 +327,7 @@ FileChecksum: SSDEEP: 96:W9Aovj4Y4iAMMr26+6Gfc0RKal9Lx0LCP6mrymVKPoINcB9OfkfKmqf
 FileSize: 5 Kb (6017 bytes)
 FileLOC: 105
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Immutable/IImmutableDictionaryInternal.cs
 FileType: SOURCE
@@ -326,6 +338,7 @@ FileChecksum: SSDEEP: 12:j9Y3kNSAoJHD26wuY4KDHOJ+Of0MkOf+GFiyIJyOf9ZNhxOf2OvinQe
 FileSize: 879 bytes
 FileLOC: 22
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Immutable/IImmutableList.cs
 FileType: SOURCE
@@ -336,6 +349,7 @@ FileChecksum: SSDEEP: 192:cAtjj/wKy766UQ1M0EzhEAqAX1Pm+5FfZzE:cWjj/e766UQ1M0EzhE
 FileSize: 8 Kb (8654 bytes)
 FileLOC: 177
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Immutable/IImmutableListQueries.cs
 FileType: SOURCE
@@ -346,6 +360,7 @@ FileChecksum: SSDEEP: 384:cWtYNzP3RlRfZPNe8lzQHPQl7D0gDt4OT1NBWkDyzZ+TPGv3zGXUe1
 FileSize: 16 Kb (17087 bytes)
 FileLOC: 314
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Immutable/IImmutableQueue.cs
 FileType: SOURCE
@@ -356,6 +371,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7j4YMK6GfUQW+AY+dxMNhapZY9KR/gvaJL9KRaI:W9Aovj4YM
 FileSize: 2 Kb (2103 bytes)
 FileLOC: 56
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Immutable/IImmutableSet.cs
 FileType: SOURCE
@@ -366,6 +382,7 @@ FileChecksum: SSDEEP: 96:W9Aov4YMK6gYXP+/jk6Cpj8X1rbgWTT0m2riiXtZWWYEeOID+:cAVwB
 FileSize: 6 Kb (7011 bytes)
 FileLOC: 133
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Immutable/IImmutableStack.cs
 FileType: SOURCE
@@ -376,6 +393,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7j4d4YMK6GfdQ1c+du+AVjN06It96jfj9KR6jcJN9KRM:W9Ao
 FileSize: 1 Kb (2033 bytes)
 FileLOC: 52
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray.cs
 FileType: SOURCE
@@ -386,6 +404,7 @@ FileChecksum: SSDEEP: 384:cWtwjDszgKX9qgPX8+U/evlVCbgdzmPxXdpad3x5PxXdW8HYU:cwzg
 FileSize: 26 Kb (26988 bytes)
 FileLOC: 516
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1+Builder.cs
 FileType: SOURCE
@@ -396,6 +415,7 @@ FileChecksum: SSDEEP: 768:c0a89bq4/mfXo5KmgCZKFnMH8Hir93EPmo4g/Xb4q4cTnGJefXl3A3
 FileSize: 26 Kb (27586 bytes)
 FileLOC: 633
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableArray`1+Enumerator.cs
 FileType: SOURCE
@@ -406,6 +426,7 @@ FileChecksum: SSDEEP: 96:W9Aovj4Y26KVzj6BkzqP27M7Bo6RtH8KPuyarWqRCyL:cAtFPzjFq77
 FileSize: 6 Kb (6293 bytes)
 FileLOC: 170
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableDictionary.cs
 FileType: SOURCE
@@ -416,6 +437,7 @@ FileChecksum: SSDEEP: 384:cWCwzjsOo7ViqIB3/3ic7Z1Clp/Sw70o97oIchJ:cA
 FileSize: 18 Kb (19102 bytes)
 FileLOC: 319
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableDictionary`2+Builder.cs
 FileType: SOURCE
@@ -426,6 +448,7 @@ FileChecksum: SSDEEP: 384:cWuj6+jvj00u9dNGdQGRqkIgrgZEfGURevUsgRKvI07AaYWyvw0W+v
 FileSize: 33 Kb (34442 bytes)
 FileLOC: 672
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableDictionary`2+Comparers.cs
 FileType: SOURCE
@@ -436,6 +459,7 @@ FileChecksum: SSDEEP: 96:W9Aovj4YN26KVzj6PKAvdn00xm+wD9n9FlAMKr+OrmW9OfqKElA35N9
 FileSize: 7 Kb (7543 bytes)
 FileLOC: 165
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableDictionary`2+DebuggerProxy.cs
 FileType: SOURCE
@@ -446,6 +470,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7j4YNM26sj6P69w4/0IyPYgLGesRSBv2mgCyL:W9Aovj4YNM2
 FileSize: 1 Kb (2023 bytes)
 FileLOC: 57
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableDictionary`2+Enumerator.cs
 FileType: SOURCE
@@ -456,6 +481,7 @@ FileChecksum: SSDEEP: 96:W9Aovj4d4Y26+6PgaNCWWMigaytyIyxdP2+hjEMtvLcOvfCyL:cAtuF
 FileSize: 5 Kb (5426 bytes)
 FileLOC: 120
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableDictionary`2+HashBucket.cs
 FileType: SOURCE
@@ -466,6 +492,7 @@ FileChecksum: SSDEEP: 384:cWunjhgJTJcJQe6+A/eRmrBNIgtGx+EedSkM3z3ZfgAExJbK2NvPM+
 FileSize: 20 Kb (20997 bytes)
 FileLOC: 429
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableDictionary`2+MutationInput.cs
 FileType: SOURCE
@@ -476,6 +503,7 @@ FileChecksum: SSDEEP: 96:W9Aovj4Y26+6P6eloEEVeY3htSG7XjlexVzobhWeqCyL:cAtFjoSnOy
 FileSize: 3 Kb (3852 bytes)
 FileLOC: 101
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableDictionary`2+MutationResult.cs
 FileType: SOURCE
@@ -486,6 +514,7 @@ FileChecksum: SSDEEP: 96:W9Aovj4YMr26sj6Pn7ue/9dLQrq8iIrVl8TjyXjnL1G+/czl6yL:cAt
 FileSize: 3 Kb (3412 bytes)
 FileLOC: 75
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableDictionary`2.cs
 FileType: SOURCE
@@ -496,6 +525,7 @@ FileChecksum: SSDEEP: 384:cWujbw3kstm8nZacaGfSnuMvFevFcce8R8y56K4oogR5ThR1WkgJ70
 FileSize: 41 Kb (43002 bytes)
 FileLOC: 965
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableExtensions.cs
 FileType: SOURCE
@@ -506,6 +536,7 @@ FileChecksum: SSDEEP: 384:cWuCFjePsEkLsEkcuTooRNqjH5f2H5f2sewoBi2Q:cZsEkLsEkcKtN
 FileSize: 15 Kb (15932 bytes)
 FileLOC: 374
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet.cs
 FileType: SOURCE
@@ -516,6 +547,7 @@ FileChecksum: SSDEEP: 192:cAttSPlQzSBQYKDDYZDjrehr/Brevr/t2zE2BM8Y9wd8c9QL:cWtwl
 FileSize: 7 Kb (7342 bytes)
 FileLOC: 160
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1+Builder.cs
 FileType: SOURCE
@@ -526,6 +558,7 @@ FileChecksum: SSDEEP: 384:cWuj6+j5fjVu9dNG3NvzSgrgZECKGMYtgmaHl1IYU2YltIdPkqVxqF
 FileSize: 18 Kb (18622 bytes)
 FileLOC: 385
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1+DebuggerProxy.cs
 FileType: SOURCE
@@ -536,6 +569,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7j4YNM28j6P6nw4/0QyygLGI4ns7rgCyL:W9Aovj4YNM28j6P
 FileSize: 1 Kb (1912 bytes)
 FileLOC: 56
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1+Enumerator.cs
 FileType: SOURCE
@@ -546,6 +580,7 @@ FileChecksum: SSDEEP: 96:W9Aovj4d4Y26+6PXSNCWW0IgaytyIexdP2+hjEMtvLcOvfCyL:cAtuF
 FileSize: 5 Kb (5348 bytes)
 FileLOC: 120
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1+MutationInput.cs
 FileType: SOURCE
@@ -556,6 +591,7 @@ FileChecksum: SSDEEP: 96:W9Aov4YMDj6P6o4oHR8nvDMixT7KXjijWeqCyL:cAVtDjPdvnmjiWNC
 FileSize: 3 Kb (3207 bytes)
 FileLOC: 80
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1+MutationResult.cs
 FileType: SOURCE
@@ -566,6 +602,7 @@ FileChecksum: SSDEEP: 96:W9AovMDj6Pn79pZfe/9OLGWB8DVXny8NjSXjgLGnqtk+LItb96yL:cA
 FileSize: 4 Kb (4615 bytes)
 FileLOC: 98
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1+NodeEnumerable.cs
 FileType: SOURCE
@@ -576,6 +613,7 @@ FileChecksum: SSDEEP: 48:W+SAoD74d4YMMWwj6PvzFBgLGIG7jy0uUfaHUfcyL:W9Aov4d4YMMDj
 FileSize: 2 Kb (2807 bytes)
 FileLOC: 67
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableHashSet`1.cs
 FileType: SOURCE
@@ -586,6 +624,7 @@ FileChecksum: SSDEEP: 384:cWuMFjtkBdUuVI0uf1e8R8rCWHvnmXP28P0ebUl5FAQ1kWCUn5AQ1k
 FileSize: 36 Kb (36948 bytes)
 FileLOC: 891
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableInterlocked.cs
 FileType: SOURCE
@@ -596,6 +635,7 @@ FileChecksum: SSDEEP: 384:cG03jdIJ+OIHVMrhzg4o552EtbEOpCjLY6sxCJYs:cdVMrhz5o5UEt
 FileSize: 23 Kb (23688 bytes)
 FileLOC: 390
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableList.cs
 FileType: SOURCE
@@ -606,6 +646,7 @@ FileChecksum: SSDEEP: 384:cWtwzjsPX9aCac+UBJUOn5cUoUhkUZ3zUgpqpn77Unr:cAPn5cUoUh
 FileSize: 14 Kb (14874 bytes)
 FileLOC: 325
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableList`1+Builder.cs
 FileType: SOURCE
@@ -616,6 +657,7 @@ FileChecksum: SSDEEP: 1536:JYgtVjW5Pyz/xh3fceVLeQjtw7thHQJ76T0876C0Y1Aj71kjQ1nxj
 FileSize: 52 Kb (53883 bytes)
 FileLOC: 1084
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableList`1.cs
 FileType: SOURCE
@@ -626,6 +668,7 @@ FileChecksum: SSDEEP: 1536:JHUQ5ltPqJVlvI4UZVPpl0CygZlzWZPszPRRHPsOl7OQDtALNBH76
 FileSize: 127 Kb (130799 bytes)
 FileLOC: 2886
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableQueue.cs
 FileType: SOURCE
@@ -636,6 +679,7 @@ FileChecksum: SSDEEP: 96:W9Aovj4YMMr26KVzj6DE/z9YKDore2ilMre7louQ19gxaXL:cAtCSPz
 FileSize: 3 Kb (3815 bytes)
 FileLOC: 91
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableQueue`1.cs
 FileType: SOURCE
@@ -646,6 +690,7 @@ FileChecksum: SSDEEP: 384:cWuj6+jtZf7Df+lQzBPYkqoxGBpeT+gbqeGBpLT+gbqQWoPwfOS:cb
 FileSize: 18 Kb (18823 bytes)
 FileLOC: 479
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableSortedDictionary.cs
 FileType: SOURCE
@@ -656,6 +701,7 @@ FileChecksum: SSDEEP: 384:cWCwzj20z0V2q6BTqEZDuVHuUipX60o96oFlX:cR
 FileSize: 14 Kb (14682 bytes)
 FileLOC: 236
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableSortedDictionary`2+Builder.cs
 FileType: SOURCE
@@ -666,6 +712,7 @@ FileChecksum: SSDEEP: 384:cWuj6VjVmqdNGyQ0JmBiGMYWx/07AaYWyvw0W+veltIAgP+50oFEAS
 FileSize: 26 Kb (27239 bytes)
 FileLOC: 615
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableSortedDictionary`2.cs
 FileType: SOURCE
@@ -676,6 +723,7 @@ FileChecksum: SSDEEP: 768:cKZx2H9Rmt2hPlpKmOxPAhNU5FJFY0tB7m4YoPmlray:nZgHTmtWPY
 FileSize: 81 Kb (83615 bytes)
 FileLOC: 1813
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableSortedSet.cs
 FileType: SOURCE
@@ -686,6 +734,7 @@ FileChecksum: SSDEEP: 192:cAttSPlGzMN0zpYKDRYVD7OKreprLygDredrL7dmz8NGY78ZJ2/z8c
 FileSize: 6 Kb (7118 bytes)
 FileLOC: 160
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableSortedSet`1+Builder.cs
 FileType: SOURCE
@@ -696,6 +745,7 @@ FileChecksum: SSDEEP: 384:cGuj6FjjQeXdNG8QWvkSeKYBImQIyNwnNiGMYZEfF+Coiwr81aHY1I
 FileSize: 21 Kb (22324 bytes)
 FileLOC: 477
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableSortedSet`1.cs
 FileType: SOURCE
@@ -706,6 +756,7 @@ FileChecksum: SSDEEP: 768:cM8+2KYeU6jC9AQCWdAQCW6U1pl8mPDRfMIzjxNZCEacbxlKYqk44+
 FileSize: 78 Kb (80222 bytes)
 FileLOC: 1945
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableStack.cs
 FileType: SOURCE
@@ -716,6 +767,7 @@ FileChecksum: SSDEEP: 96:W9Aovj4YMMr26KVzj6/2z/YKDgre/iXnreMXxg5gRsnBL:cAtCSPzj5
 FileSize: 3 Kb (3814 bytes)
 FileLOC: 94
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Immutable/ImmutableStack`1.cs
 FileType: SOURCE
@@ -726,6 +778,7 @@ FileChecksum: SSDEEP: 384:cWuj6Fjtmu3CCTZAG12kdeU8XN2nUQZN24uPw5xR:cS3CkuUePexR
 FileSize: 15 Kb (15446 bytes)
 FileLOC: 418
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Immutable/IOrderedCollection.cs
 FileType: SOURCE
@@ -736,6 +789,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7j4Km4KNjKDHYObCy3FVgKh1oL:W+SAoD7j4d4s64ObCy/gK
 FileSize: 794 bytes
 FileLOC: 23
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Immutable/KeysOrValuesCollectionAccessor.cs
 FileType: SOURCE
@@ -746,6 +800,7 @@ FileChecksum: SSDEEP: 192:cAtLPzjbybr8sUgNgEvyyTnCpXLvL28pYggBFXIyNMFL:cW7zjbJfg
 FileSize: 8 Kb (8319 bytes)
 FileLOC: 204
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Immutable/RefAsValueType.cs
 FileType: SOURCE
@@ -756,6 +811,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7j4KbDN26kZVZjKDHKHcRxuutft2tpCW6HGLLGPQNlOq4p:W
 FileSize: 1 Kb (1315 bytes)
 FileLOC: 38
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Collections/Immutable/SecureObjectPool.cs
 FileType: SOURCE
@@ -766,6 +822,7 @@ FileChecksum: SSDEEP: 96:W9Aovj4Y26KVvVzj6hKYhDqsAtPTHDjvFX6JFzLtGtZwjKXPT94iJhV
 FileSize: 3 Kb (3997 bytes)
 FileLOC: 123
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Diagnostics/CodeAnalysis/ExcludeFromCodeCoverageAttribute.cs
 FileType: SOURCE
@@ -776,6 +833,7 @@ FileChecksum: SSDEEP: 12:j9Y3kNSAoJHD2NuYtCW/Gg5+fOmtgkhyg4a:W+SAotD7YCW/jMtxhyg
 FileSize: 417 bytes
 FileLOC: 10
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Linq/ImmutableArrayExtensions.cs
 FileType: SOURCE
@@ -786,6 +844,7 @@ FileChecksum: SSDEEP: 384:cPjQwBlMI6IhAu59bJ8/8jI445ERz6jIdkERTb1xooX7AAQr4iHWBr
 FileSize: 26 Kb (26843 bytes)
 FileLOC: 601
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System/Runtime/InteropServices/ImmutableArrayInterop.cs
 FileType: SOURCE
@@ -796,6 +855,7 @@ FileChecksum: SSDEEP: 96:W9Aovj46KEJJgX7gP6sgFDPUgAgE5ogFIxfD0gy5Jtg3PyghgJ2egFU
 FileSize: 3 Kb (3522 bytes)
 FileLOC: 56
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/System.Collections.Immutable.csproj
 FileType: OTHER
@@ -822,6 +882,7 @@ FileChecksum: SSDEEP: 96:W9Aovj4Y46ANMx/oRqZmREoKqujpYRqYHm1dvinL26gq1gecyL:cAtj
 FileSize: 4 Kb (5115 bytes)
 FileLOC: 122
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/src/Validation/ValidatedNotNullAttribute.cs
 FileType: SOURCE
@@ -832,6 +893,7 @@ FileChecksum: SSDEEP: 12:j9Y3kNSAoJHD26TLD1Fu6yowcE0IJWKtgHMhyfkQ4k:W+SAotD7j1c6
 FileSize: 518 bytes
 FileLOC: 14
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/tests/ImmutableHashSetTest.cs
 FileType: SOURCE
@@ -842,6 +904,7 @@ FileChecksum: SSDEEP: 192:cAttSzJnPuy9gTk7pshrphhYpFaZp6Lg5b2TbL:cWt4JjpF4VHuELp
 FileSize: 7 Kb (7713 bytes)
 FileLOC: 170
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/tests/BadHasher.cs
 FileType: SOURCE
@@ -852,6 +915,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7j4KbD26k/jKDHmbPAeClF3bmVBecMkU8CKL:W+SAoD7j4Y2
 FileSize: 933 bytes
 FileLOC: 29
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/tests/ClassDiagram1.cd
 FileType: OTHER
@@ -870,6 +934,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7j4KbD26kZVZjKDHUsrhXeeuIFWFHAWt3LaU8CrEKCKL:W+S
 FileSize: 1 Kb (1189 bytes)
 FileLOC: 42
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/tests/GenericParameterHelper.cs
 FileType: SOURCE
@@ -880,6 +945,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7j4KbD26k/jKDHhO/oEgVJkbQrKL:W+SAoD7j4Y26+6Bd78c
 FileSize: 933 bytes
 FileLOC: 34
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/tests/ImmutableArrayBuilderTest.cs
 FileType: SOURCE
@@ -890,6 +956,7 @@ FileChecksum: SSDEEP: 192:cAtFPCrlLlrJrIQRaxmwegZwdXYd9tvfQm2q4K/StxzybEjJgg7FEj
 FileSize: 15 Kb (15432 bytes)
 FileLOC: 386
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/tests/ImmutableArrayExtensionsTest.cs
 FileType: SOURCE
@@ -900,6 +967,7 @@ FileChecksum: SSDEEP: 384:cWgCIGfY7SYpnb9GBF6FujBFKs8sTtut+HbOGz7WjRNFY1rZPya0z4
 FileSize: 18 Kb (19337 bytes)
 FileLOC: 322
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/tests/ImmutableArrayInteropTest.cs
 FileType: SOURCE
@@ -910,6 +978,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7j4Yh6VGeDkYeN4eC6fghSygXNKYFiPGePYeNCJ4J8dqiPWGz
 FileSize: 2 Kb (2178 bytes)
 FileLOC: 53
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/tests/ImmutableArrayTest.cs
 FileType: SOURCE
@@ -920,6 +989,7 @@ FileChecksum: SSDEEP: 1536:VHvgGwVxFraU/npp3pSpdYi1yCt1tHDPRl3FhWL3OF+0PxHwTzxSm
 FileSize: 55 Kb (57212 bytes)
 FileLOC: 1097
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/tests/ImmutableArrayTestBase.cs
 FileType: SOURCE
@@ -930,6 +1000,7 @@ FileChecksum: SSDEEP: 12:j9Y3kNSAoJHD26TLD4KbD26kMeVIuY4KDHO2OpkOy:W+SAotD7j4KbD
 FileSize: 412 bytes
 FileLOC: 13
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/tests/ImmutableDictionaryBuilderTest.cs
 FileType: SOURCE
@@ -940,6 +1011,7 @@ FileChecksum: SSDEEP: 192:cAVFz3QeaGFID1ZV5gVNgTGhW6inyFJQBD6F9rIp5Qd3ALUcdz6aQd
 FileSize: 11 Kb (11409 bytes)
 FileLOC: 232
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/tests/ImmutableDictionaryBuilderTestBase.cs
 FileType: SOURCE
@@ -950,6 +1022,7 @@ FileChecksum: SSDEEP: 192:cAtFPC4Tp8ITZwh/ummyjtNgx+jkB+WFh5gEnj1Q71i8cYV7XPxrPM
 FileSize: 11 Kb (11631 bytes)
 FileLOC: 250
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/tests/ImmutableDictionaryTest.cs
 FileType: SOURCE
@@ -960,6 +1033,7 @@ FileChecksum: SSDEEP: 192:cAtFPgMPdSqD18GYLcr6GYIcgyGYAc+7TYNhtgL2Y74E43c4a4M/y9
 FileSize: 17 Kb (17899 bytes)
 FileLOC: 340
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/tests/ImmutableDictionaryTestBase.cs
 FileType: SOURCE
@@ -970,6 +1044,7 @@ FileChecksum: SSDEEP: 384:cWtr+QoY+WA1WbaoCjBFA4UdFUq0c+UqR+:cg9BvU6
 FileSize: 23 Kb (24079 bytes)
 FileLOC: 500
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/tests/ImmutableHashSetBuilderTest.cs
 FileType: SOURCE
@@ -980,6 +1055,7 @@ FileChecksum: SSDEEP: 192:cAVFzoQBRG3LDZZA82scx6inyhErQFL+2xVN2yosL:cGRywx6iny+k
 FileSize: 10 Kb (10986 bytes)
 FileLOC: 243
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/tests/ImmutableInterlockedTests.cs
 FileType: SOURCE
@@ -990,6 +1066,7 @@ FileChecksum: SSDEEP: 96:W9Aovj4Y26KVC6TtIzg/IxMgua4rSaSerGrED+fkKmjIK7l48TbX4IU
 FileSize: 9 Kb (9654 bytes)
 FileLOC: 227
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/tests/ImmutableListBuilderTest.cs
 FileType: SOURCE
@@ -1000,6 +1077,7 @@ FileChecksum: SSDEEP: 384:cWRgVmmgKZgkh6inyP+C34lvBfgewEm3Qa:cJV7yt
 FileSize: 12 Kb (13033 bytes)
 FileLOC: 310
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/tests/ImmutableListTest.cs
 FileType: SOURCE
@@ -1010,6 +1088,7 @@ FileChecksum: SSDEEP: 192:cAtjYSzInMgdBb2OoReTAREKWv9pNqD1TCRgRgBwtwH2trz5XUM8v2
 FileSize: 24 Kb (24864 bytes)
 FileLOC: 539
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/tests/ImmutableListTestBase.cs
 FileType: SOURCE
@@ -1020,6 +1099,7 @@ FileChecksum: SSDEEP: 192:cAVFpBFENZhMZ9MWaq6yiSCQkaN6yiSC3jV4QOHCnCqFWa5SCWSCWT
 FileSize: 18 Kb (18565 bytes)
 FileLOC: 382
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/tests/ImmutableQueueTest.cs
 FileType: SOURCE
@@ -1030,6 +1110,7 @@ FileChecksum: SSDEEP: 192:cAttSEFGUNv6UEvtPLKiZ9OuWiWVI9iENTWKl+L:cWthFP4tlPLKiX
 FileSize: 9 Kb (10058 bytes)
 FileLOC: 210
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/tests/ImmutableSetTest.cs
 FileType: SOURCE
@@ -1040,6 +1121,7 @@ FileChecksum: SSDEEP: 192:cAttS8PY+zgwxGXM5CoRUL6VLKbj9DF7+9QqxZtN3DtiVY/oX8IEG9
 FileSize: 21 Kb (22161 bytes)
 FileLOC: 487
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/tests/ImmutableSortedDictionaryBuilderTest.cs
 FileType: SOURCE
@@ -1050,6 +1132,7 @@ FileChecksum: SSDEEP: 192:cAVFzlQeaGQID1ZVKgPZg7IJQBA6FQhN6inywrE65Qd3ALU/dz6HQd
 FileSize: 11 Kb (11417 bytes)
 FileLOC: 231
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/tests/ImmutableSortedDictionaryTest.cs
 FileType: SOURCE
@@ -1060,6 +1143,7 @@ FileChecksum: SSDEEP: 192:cAtJEBqi0TAKZdbLOR2dL/e/DXCY+c4FCYhcrhCYrcLOXYShQ874E4
 FileSize: 18 Kb (18475 bytes)
 FileLOC: 362
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/tests/ImmutableSortedSetBuilderTest.cs
 FileType: SOURCE
@@ -1070,6 +1154,7 @@ FileChecksum: SSDEEP: 192:cAVFzVQBRGYLDZZDBs6inygv6jEUQFL52xMNw2+aL:cGRets6inyKd
 FileSize: 12 Kb (12467 bytes)
 FileLOC: 284
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/tests/ImmutableSortedSetTest.cs
 FileType: SOURCE
@@ -1080,6 +1165,7 @@ FileChecksum: SSDEEP: 192:cAttSzXsqYVDULl0RXMS/OODjCbz5AdrtJ7pB4rpC4YpeNZpfHrhy9
 FileSize: 13 Kb (13838 bytes)
 FileLOC: 308
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/tests/ImmutableStackTest.cs
 FileType: SOURCE
@@ -1090,6 +1176,7 @@ FileChecksum: SSDEEP: 192:cAttS8EkWQ3/Xf1vdiYJACvha4L258d/nONWiWAyMKL:cWtFE6PXfv
 FileSize: 9 Kb (9327 bytes)
 FileLOC: 220
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/tests/ImmutableTestBase.cs
 FileType: SOURCE
@@ -1100,6 +1187,7 @@ FileChecksum: SSDEEP: 192:cAttD2jzZ6YjnYiJ8PMiRrQ1oxsDCjk5DnG9sXewyb:cWtajNH85BO
 FileSize: 7 Kb (7988 bytes)
 FileLOC: 186
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/tests/IndexOfTests.cs
 FileType: SOURCE
@@ -1110,6 +1198,7 @@ FileChecksum: SSDEEP: 192:cAtFPCnnmb3GCDED0yiSCJw9IqNyiSCoyL:cWtCnmb3rST1H
 FileSize: 8 Kb (8628 bytes)
 FileLOC: 140
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/tests/packages.config
 FileType: OTHER
@@ -1137,6 +1226,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7In+F/JwrfvYYuKDHoTI+tP1KDHoTt7T35eWrjXBOPIVj:W+
 FileSize: 1 Kb (1095 bytes)
 FileLOC: 20
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/tests/Settings.StyleCop
 FileType: OTHER
@@ -1155,6 +1245,7 @@ FileChecksum: SSDEEP: 12:j9Y3kNSAoJHD26TLD4KbD26kMeVbvNuY4KDHOBkOfKO5doPCCdJ35Te
 FileSize: 658 bytes
 FileLOC: 19
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable/tests/System.Collections.Immutable.Tests.csproj
 FileType: OTHER
@@ -1173,6 +1264,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7j4KbDMWe26kZVBmajKDH+WhKFWTXKhKfG7FWhhKfeAs/KdM
 FileSize: 1 Kb (1371 bytes)
 FileLOC: 35
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Collections.Immutable.sln
 FileType: OTHER
@@ -1191,6 +1283,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7jInK+F/JwrfvYrC+IDV+8DFLyRbfI+tP4t7TABL+ETVGW:W
 FileSize: 1 Kb (1137 bytes)
 FileLOC: 24
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Numerics.Vectors/src/Resources/Strings.Designer.cs
 FileType: SOURCE
@@ -1218,6 +1311,7 @@ FileChecksum: SSDEEP: 96:f9AonJ7CgzCgQqCg7qCgZCg8CgGxCgFxCgkCgZxCgb:FAsCgzCgzCgO
 FileSize: 3 Kb (3999 bytes)
 FileLOC: 140
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Numerics.Vectors/src/System/Numerics/ConstantHelper.tt
 FileType: OTHER
@@ -1235,6 +1329,7 @@ FileChecksum: MD5: a284b7603547f7a272c43d8907c4d88e
 FileChecksum: SSDEEP: 48:EAWsFDQ/FTjtbx966yeX7qVsBj1kB+SAoD174lGSZFfRfn7pffRQ:EATDqFl36yX7qVAj1S9AoWl5dY
 FileSize: 2 Kb (2586 bytes)
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Numerics.Vectors/src/System/Numerics/HashCodeHelper.cs
 FileType: SOURCE
@@ -1245,6 +1340,7 @@ FileChecksum: SSDEEP: 12:j9Y3kNSAoJHD2NuYFRWxQJl64AtgsHHHIJlW7cbIALCFxCb:W+SAotD
 FileSize: 503 bytes
 FileLOC: 15
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Numerics.Vectors/src/System/Numerics/JitIntrinsicAttribute.cs
 FileType: SOURCE
@@ -1255,6 +1351,7 @@ FileChecksum: SSDEEP: 12:j9Y3kNSAoJHD2NuYF0MFkvIJW+ROeNB4k:W+SAotD7SHwqOeNB4k
 FileSize: 405 bytes
 FileLOC: 12
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Numerics.Vectors/src/System/Numerics/Matrix3x2.cs
 FileType: SOURCE
@@ -1265,6 +1362,7 @@ FileChecksum: SSDEEP: 768:cR50cmmlr9wW8FmcQZUtxCInXBm3XBwfNsCkjUXDZXkByT7Zy4w2Kt
 FileSize: 27 Kb (28391 bytes)
 FileLOC: 696
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Numerics.Vectors/src/System/Numerics/Matrix4x4.cs
 FileType: SOURCE
@@ -1275,6 +1373,7 @@ FileChecksum: SSDEEP: 1536:zJc8X5+JjOqNxAyGK0aBJP5HSDSLNTK4qiq:Fc8X5+JjayGK0aBJP
 FileSize: 83 Kb (85941 bytes)
 FileLOC: 1931
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Numerics.Vectors/src/System/Numerics/Plane.cs
 FileType: SOURCE
@@ -1285,6 +1384,7 @@ FileChecksum: SSDEEP: 384:c6jIDsQoIWCBNMjO7MNWkfJc4/9cyebqO:c6jIDzNMj+c/9cyebqO
 FileSize: 14 Kb (14363 bytes)
 FileLOC: 328
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Numerics.Vectors/src/System/Numerics/Quaternion.cs
 FileType: SOURCE
@@ -1295,6 +1395,7 @@ FileChecksum: SSDEEP: 768:cnAmB3zMs+VrfrETqlrfrEtBiW7rfrEBqlrfrEPBiW7rfrElTwmqbb
 FileSize: 27 Kb (28512 bytes)
 FileLOC: 666
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Numerics.Vectors/src/System/Numerics/Register.cs
 FileType: SOURCE
@@ -1305,6 +1406,7 @@ FileChecksum: SSDEEP: 96:f9AonvuEITqed8FT5F4+FhzF25gFftFUyFNHFqUFrRFQJF+MFxDFIOF
 FileSize: 4 Kb (4940 bytes)
 FileLOC: 160
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Numerics.Vectors/src/System/Numerics/Register.tt
 FileType: OTHER
@@ -1323,6 +1425,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7InsSTFxkWlF7ZqVWF5hlNHmnmiL:W+SAoD7MjTHkeZOsPL6
 FileSize: 840 bytes
 FileLOC: 23
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Numerics.Vectors/src/System/Numerics/Vector.cs
 FileType: SOURCE
@@ -1333,6 +1436,7 @@ FileChecksum: SSDEEP: 6144:hzvQ8np/BFsgJ7ZUePjgx6xvxnxMxXxcxRxcxCxH:aw5xOhe/eYH
 FileSize: 269 Kb (276440 bytes)
 FileLOC: 4925
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Numerics.Vectors/src/System/Numerics/Vector.tt
 FileType: OTHER
@@ -1351,6 +1455,7 @@ FileChecksum: SSDEEP: 384:cz6JjWJNJOJYUYJW46NTTtH17E4lnLmkaBU7yv:cz6JjWJNJOJbYJW
 FileSize: 17 Kb (17411 bytes)
 FileLOC: 413
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Numerics.Vectors/src/System/Numerics/Vector2_Intrinsics.cs
 FileType: SOURCE
@@ -1361,6 +1466,7 @@ FileChecksum: SSDEEP: 192:cANf/xKAJ3yrQK0y8awgnjB/JpfRRt7xVA/tiLLwiqzpzdykq8lhF:
 FileSize: 11 Kb (11972 bytes)
 FileLOC: 266
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Numerics.Vectors/src/System/Numerics/Vector3.cs
 FileType: SOURCE
@@ -1371,6 +1477,7 @@ FileChecksum: SSDEEP: 384:cGLcxZJNJxJYUYJWmQOddWkQdWk5DenJQFH1uLDMzkbbZkEk6cAh:c
 FileSize: 18 Kb (18656 bytes)
 FileLOC: 430
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Numerics.Vectors/src/System/Numerics/Vector3_Intrinsics.cs
 FileType: SOURCE
@@ -1381,6 +1488,7 @@ FileChecksum: SSDEEP: 384:c/8Y93KAJJIeVpwg3RuJ6fJS6i13hbshKq3lG:cEY93KAJJIeVpwg3
 FileSize: 12 Kb (13063 bytes)
 FileLOC: 290
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Numerics.Vectors/src/System/Numerics/Vector4.cs
 FileType: SOURCE
@@ -1391,6 +1499,7 @@ FileChecksum: SSDEEP: 384:F+b7H4JNJQJYUYJW82tfdW4dWy8QZH16fUZh1ltOhkmCekCyXkCsk2
 FileSize: 20 Kb (21123 bytes)
 FileLOC: 472
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Numerics.Vectors/src/System/Numerics/Vector4_Intrinsics.cs
 FileType: SOURCE
@@ -1401,6 +1510,7 @@ FileChecksum: SSDEEP: 384:cOrKAJ3f4IeVwwgZ/nJJf9SeiuVuUvx0qylb:cOrKAJ3f4IeVwwgZ/
 FileSize: 13 Kb (14061 bytes)
 FileLOC: 320
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Numerics.Vectors/src/System/Numerics/Vector_Operations.cs
 FileType: SOURCE
@@ -1411,6 +1521,7 @@ FileChecksum: SSDEEP: 768:cSJBYBN9LafdFuapdFPatcJZUcJlaHuaH+aHkaHpaHjbMbObeaNGaN
 FileSize: 40 Kb (41983 bytes)
 FileLOC: 799
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Numerics.Vectors/src/System.Numerics.Vectors.csproj
 FileType: OTHER
@@ -1429,6 +1540,7 @@ FileChecksum: SSDEEP: 384:cbL09vl4uGxfMUyW5/jvrN97Y+fv9noHVKILZtzJlT5shxXzWUMYTr
 FileSize: 96 Kb (99302 bytes)
 FileLOC: 2139
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Numerics.Vectors/tests/GenericVectorTests.tt
 FileType: OTHER
@@ -1447,6 +1559,7 @@ FileChecksum: SSDEEP: 24:f+SAotD7j5SUNKTywclAc+kvNYuATcV1ET/LpcGRzKEycTDFLlFgjCt
 FileSize: 2 Kb (2529 bytes)
 FileLOC: 62
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Numerics.Vectors/tests/Matrix3x2Tests.cs
 FileType: SOURCE
@@ -1457,6 +1570,7 @@ FileChecksum: SSDEEP: 192:cAtzJ6IJHSPV6lPnC4ypxeLfn5jliKyjMCDKMlGN48Lbo4f3cfE7lR
 FileSize: 36 Kb (37737 bytes)
 FileLOC: 834
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Numerics.Vectors/tests/Matrix4x4Tests.cs
 FileType: SOURCE
@@ -1467,6 +1581,7 @@ FileChecksum: SSDEEP: 1536:PxBT+G3G8AeyGkQEYdhBK4rEgN+XCgfs:ZEG3GfeyS+XCgfs
 FileSize: 107 Kb (110499 bytes)
 FileLOC: 2148
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Numerics.Vectors/tests/packages.config
 FileType: OTHER
@@ -1485,6 +1600,7 @@ FileChecksum: SSDEEP: 192:cArKtuCNAeSUQIh7o7P93WIht3B3Wq716ybMujOYOJBmyFIC8vN3nZ
 FileSize: 12 Kb (12844 bytes)
 FileLOC: 303
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Numerics.Vectors/tests/Properties/AssemblyInfo.cs
 FileType: SOURCE
@@ -1495,6 +1611,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7KIn+F/JwrfvYYWRI+tPNRt7TAOan:W+SAoD7KM+5+jAYWRI
 FileSize: 795 bytes
 FileLOC: 16
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Numerics.Vectors/tests/QuaternionTests.cs
 FileType: SOURCE
@@ -1505,6 +1622,7 @@ FileChecksum: SSDEEP: 192:cAl1eu2Z/izm3yepd/mbF0eiK3bYg0U743SCP/izkwvTw80liVc/OK
 FileSize: 39 Kb (40018 bytes)
 FileLOC: 794
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Numerics.Vectors/tests/System.Numerics.Vectors.Tests.csproj
 FileType: OTHER
@@ -1523,6 +1641,7 @@ FileChecksum: SSDEEP: 96:f9Aovj4Y26KVit+kjzHY6yFKBsKHKeEKuVEQK3iaQK3yQK3JQK32QK3
 FileSize: 6 Kb (6562 bytes)
 FileLOC: 187
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Numerics.Vectors/tests/Vector2Tests.cs
 FileType: SOURCE
@@ -1533,6 +1652,7 @@ FileChecksum: SSDEEP: 192:FATn8sETDZ4MdkyT7AaHYhSAHP6/8IX9luV99lob6IxOKZl9wI2IPE
 FileSize: 37 Kb (38425 bytes)
 FileLOC: 940
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Numerics.Vectors/tests/Vector3Tests.cs
 FileType: SOURCE
@@ -1543,6 +1663,7 @@ FileChecksum: SSDEEP: 192:cAwbnWopBnBxvnB8WWWhpR/1zlE1M+8+TOsWysoAVKLhogZPR4o0zP
 FileSize: 39 Kb (40784 bytes)
 FileLOC: 961
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Numerics.Vectors/tests/Vector4Tests.cs
 FileType: SOURCE
@@ -1553,6 +1674,7 @@ FileChecksum: SSDEEP: 384:FTbWWYNQn+crVbu+ko+UyTfy8TjNZjNNDnVXhF2cecVJi9:FTbWWYN
 FileSize: 56 Kb (57696 bytes)
 FileLOC: 1293
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Numerics.Vectors.sln
 FileType: OTHER
@@ -1579,6 +1701,7 @@ FileChecksum: SSDEEP: 12:j9Y3kNSAoJHD26ZEInuE+IBFNH+ZeBFFLBKFRbQIL+3UCd:W+SAotD7
 FileSize: 654 bytes
 FileLOC: 12
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/Resources/MetadataResources.Designer.cs
 FileType: SOURCE
@@ -1606,6 +1729,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7j46A2vZgdcmE6fAb1WtFNReOVeNvL:W9Aovj46A2KemExZWu
 FileSize: 2 Kb (2143 bytes)
 FileLOC: 58
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Internal/MemoryBlocks/ByteArrayMemoryBlock.cs
 FileType: SOURCE
@@ -1616,6 +1740,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7j4KDHgbxnpnhyN6MFYFMF3Jp2F3JrFRX5Um8j8UE0acp3b:
 FileSize: 1 Kb (1392 bytes)
 FileLOC: 46
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Internal/MemoryBlocks/ByteArrayMemoryProvider.cs
 FileType: SOURCE
@@ -1626,6 +1751,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7j46APMVvXhyNX8JohCT28MySnCztCR/qIzUyL:W9Aovj46AP
 FileSize: 2 Kb (2166 bytes)
 FileLOC: 65
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Internal/MemoryBlocks/ExternalMemoryBlock.cs
 FileType: SOURCE
@@ -1636,6 +1762,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7j4KDHgNmxDxycs2Q+F3JuF3FfNUkUULsd/G9ErcYzPKb:W+
 FileSize: 1 Kb (1494 bytes)
 FileLOC: 45
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Internal/MemoryBlocks/ExternalMemoryBlockProvider.cs
 FileType: SOURCE
@@ -1646,6 +1773,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7jNqArxyE8k8HYq65cb48s/3OnhUyyL:W9AovjNqArME8ksYq
 FileSize: 1 Kb (1550 bytes)
 FileLOC: 51
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Internal/MemoryBlocks/MemoryBlockProvider.cs
 FileType: SOURCE
@@ -1656,6 +1784,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7jNP0gBsVZsPbIZ9mOt+RzoINkr3pZRei9/L:W9AovjNP0g6u
 FileSize: 2 Kb (2625 bytes)
 FileLOC: 54
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Internal/MemoryBlocks/MemoryMappedFileBlock.cs
 FileType: SOURCE
@@ -1666,6 +1795,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7j46AMVSnxyh9zmsRNPKPNu7k1KL:W9Aovj46AMVSnMhUmkML
 FileSize: 1 Kb (1708 bytes)
 FileLOC: 54
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Internal/MemoryBlocks/NativeHeapMemoryBlock.cs
 FileType: SOURCE
@@ -1676,6 +1806,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7j4KDHgKCMVSoxGSH2/txyuMF6F3JrlNN0l6kWe/VEAMcYNV
 FileSize: 1 Kb (1470 bytes)
 FileLOC: 49
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Internal/MemoryBlocks/StreamConstraints.cs
 FileType: SOURCE
@@ -1686,6 +1817,7 @@ FileChecksum: SSDEEP: 12:j9Y3kNSAoJHD2NuYIIWI03OTJFoiIVRA23vFXBnN0tL:W+SAotD7xIW
 FileSize: 578 bytes
 FileLOC: 17
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Internal/MemoryBlocks/StreamMemoryBlockProvider.cs
 FileType: SOURCE
@@ -1696,6 +1828,7 @@ FileChecksum: SSDEEP: 96:W9AovNPZVSNcb982xjly0S7t1A0H1eLH9JhbJuXS1LCUTRUF5Qb:cAs
 FileSize: 4 Kb (5017 bytes)
 FileLOC: 129
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Internal/Utilities/BitArithmetic.cs
 FileType: SOURCE
@@ -1706,6 +1839,7 @@ FileChecksum: SSDEEP: 12:j9Y3kNSAoJHD2NuYIIWtRW7c75fmcVqVe+2yDHZYVix5zAoLNl73zdN
 FileSize: 1 Kb (1643 bytes)
 FileLOC: 27
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Internal/Utilities/EmptyArray.cs
 FileType: SOURCE
@@ -1716,6 +1850,7 @@ FileChecksum: SSDEEP: 6:j9Y3kNSAe9DjX4GHDOMKnI0uYIYvwOWw9bvBWw3LOYx+vIAv:j9Y3kNS
 FileSize: 303 bytes
 FileLOC: 9
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Internal/Utilities/EncodingHelper.cs
 FileType: SOURCE
@@ -1726,6 +1861,7 @@ FileChecksum: SSDEEP: 192:cAtL2iDgdgXNHvGWs5zuEvNWiTdT9QIioRqPpWIAcClyGOEkFbiiW0
 FileSize: 11 Kb (11829 bytes)
 FileLOC: 236
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Internal/Utilities/FileStreamReadLightUp.cs
 FileType: SOURCE
@@ -1736,6 +1872,7 @@ FileChecksum: SSDEEP: 96:W9AovNPZEl2+q8Wtw3favy96tYmoySLjxDUXi1/v65HFC8CsL:cAhq8
 FileSize: 5 Kb (5601 bytes)
 FileLOC: 145
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Internal/Utilities/ImmutableMemoryStream.cs
 FileType: SOURCE
@@ -1746,6 +1883,7 @@ FileChecksum: SSDEEP: 96:W9Aovj46AN4cXfIAf8qS3lsf9pWi4CcaN7L:cAtzhf9S3O/Wi4CvL
 FileSize: 3 Kb (3108 bytes)
 FileLOC: 103
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Internal/Utilities/MemoryBlock.cs
 FileType: SOURCE
@@ -1756,6 +1894,7 @@ FileChecksum: SSDEEP: 384:cFXTzODuLxr0eEniF26VwKJ0wWpr11uYphqslGlO3HzzuJQ:cJzwQx
 FileSize: 27 Kb (28335 bytes)
 FileLOC: 727
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Internal/Utilities/MemoryMapLightUp.cs
 FileType: SOURCE
@@ -1766,6 +1905,7 @@ FileChecksum: SSDEEP: 192:cAXIVxTJKYp8CMmYRG3D56g+jjC+j+6qJL:cAJkYRGTUJQ
 FileSize: 8 Kb (8248 bytes)
 FileLOC: 186
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Internal/Utilities/ObjectPool`1.cs
 FileType: SOURCE
@@ -1776,6 +1916,7 @@ FileChecksum: SSDEEP: 96:W9AovVSUvBlPokc5lEEtRIwUi1DnVl3azbajIrS4bQPSeazbajIpipk
 FileSize: 4 Kb (4245 bytes)
 FileLOC: 102
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Internal/Utilities/ReadOnlyUnmanagedMemoryStream.cs
 FileType: SOURCE
@@ -1786,6 +1927,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7jPlxyRt7VAut8APXE2qY1aWiBbC+xQxaN7b:W9AovjPlMbJt
 FileSize: 3 Kb (3238 bytes)
 FileLOC: 115
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Internal/Utilities/StreamExtensions.cs
 FileType: SOURCE
@@ -1796,6 +1938,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7PZly0T8+5ojmYBNrIoRvRr/6dyL:W9AovPZly02mcLkyL
 FileSize: 1 Kb (1650 bytes)
 FileLOC: 36
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/GenericParameterConstraint.cs
 FileType: SOURCE
@@ -1806,6 +1949,7 @@ FileChecksum: SSDEEP: 48:W+SAoD70tuSjlSb0adccSvWcqVZZpSpDlYqQcb:W9AovejEb0gcrOcq
 FileSize: 2 Kb (2080 bytes)
 FileLOC: 49
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/MethodBodyBlock.cs
 FileType: SOURCE
@@ -1816,6 +1960,7 @@ FileChecksum: SSDEEP: 192:cAVrV6Bu0v65Gl46fGqYp6DX6qcC6jw5Ye3sQL:cGrsBu6GqLXMB4b
 FileSize: 8 Kb (8736 bytes)
 FileLOC: 199
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/AssemblyDefinition.cs
 FileType: SOURCE
@@ -1826,6 +1971,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7bxsF3UE5mdE6SGAFsxgcyXn5khA6VGQKw6mOeX3XDEXBZb:
 FileSize: 1 Kb (1943 bytes)
 FileLOC: 72
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/AssemblyFile.cs
 FileType: SOURCE
@@ -1836,6 +1982,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7bxZF3UE5ThyOaSrmF3QYEfA1GqvzF9Hby3QSoKx5u3S5XdS
 FileSize: 1 Kb (2041 bytes)
 FileLOC: 57
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/AssemblyReference.cs
 FileType: SOURCE
@@ -1846,6 +1993,7 @@ FileChecksum: SSDEEP: 96:W9AovNXxzlBBc1Xug/L5wAo8tJvvQvdFIR:cASuNu4L5wAo8t4dOR
 FileSize: 6 Kb (7074 bytes)
 FileLOC: 179
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/BlobReader.cs
 FileType: SOURCE
@@ -1856,6 +2004,7 @@ FileChecksum: SSDEEP: 192:cAVpTvVdagh6UcL9PjalLuhs+VA2NwI7hyycyAwwSkTcoTCOuqcmMU
 FileSize: 16 Kb (16617 bytes)
 FileLOC: 440
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/Constant.cs
 FileType: SOURCE
@@ -1866,6 +2015,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7buSjyVbWaSvjaZSTWNAPcloCS6gryb:W9AovPjyVbWxvjbmA
 FileSize: 1 Kb (2032 bytes)
 FileLOC: 65
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/ConstantTypeCode.cs
 FileType: SOURCE
@@ -1876,6 +2026,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7IxxwPlDltpiVJOAV8VgwGY+9u/tGiYt34mY0VmqjUQon0ZF
 FileSize: 1 Kb (1423 bytes)
 FileLOC: 30
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/CustomAttribute.cs
 FileType: SOURCE
@@ -1886,6 +2037,7 @@ FileChecksum: SSDEEP: 96:W9AovNDbSW+hBc1Xs3QW08DCquTo5xvimOWbsXGiaFM21fDa418s+nb
 FileSize: 7 Kb (7168 bytes)
 FileLOC: 160
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/CustomAttributeNamedArgumentKind.cs
 FileType: SOURCE
@@ -1896,6 +2048,7 @@ FileChecksum: SSDEEP: 6:j9Y3kNSAe9DjX4GHDOMKnI0uYI78bQvRhdofFLsB+QW+ZQAv:j9Y3kNS
 FileSize: 308 bytes
 FileLOC: 10
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/DeclarativeSecurityAttribute.cs
 FileType: SOURCE
@@ -1906,6 +2059,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7NIxxXXLZF3UE5ThyOaSrmF3QWWXRIEC92SJGqvRFiUFN1Fh
 FileSize: 1 Kb (1679 bytes)
 FileLOC: 53
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/Ecma335/EditAndContinueLogEntry.cs
 FileType: SOURCE
@@ -1916,6 +2070,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7xMVEBN1gClwwKdcdO+EHEpXEQph1pUWb:W+SAoD+VEBNTlK
 FileSize: 1 Kb (1040 bytes)
 FileLOC: 28
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/Ecma335/EditAndContinueOperation.cs
 FileType: SOURCE
@@ -1926,6 +2081,7 @@ FileChecksum: SSDEEP: 6:j9Y3kNSAe9DjX4GHDOMKnI0uYIUgGUdPLugF1UMNWMnNeMYiAv:j9Y3k
 FileSize: 393 bytes
 FileLOC: 14
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/Ecma335/ExportedTypeExtensions.cs
 FileType: SOURCE
@@ -1936,6 +2092,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7xM+ogBNIQMtMs4sOj4A/WHMHL:W+SAoD++HmCs4f9gMHL
 FileSize: 968 bytes
 FileLOC: 21
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/Ecma335/HeapIndex.cs
 FileType: SOURCE
@@ -1946,6 +2103,7 @@ FileChecksum: SSDEEP: 6:j9Y3kNSAe9DjX4GHDOMKnI0uYIUgGUuVgKDjWwaMLpXU5b9iZYAv:j9Y
 FileSize: 421 bytes
 FileLOC: 16
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/Ecma335/MetadataReaderExtensions.cs
 FileType: SOURCE
@@ -1956,6 +2114,7 @@ FileChecksum: SSDEEP: 384:cGhBMl19mS688wSM+E88gXoEPs0nSeeckeMMYC88MW8hmgAecc0Mos
 FileSize: 16 Kb (17401 bytes)
 FileLOC: 312
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/Ecma335/MetadataTokens.cs
 FileType: SOURCE
@@ -1966,6 +2125,7 @@ FileChecksum: SSDEEP: 192:cA+pypkpSpFSp4prmS+bBRBBv9BW61k3ODYrDbKDezSOWL:cVpypkp
 FileSize: 15 Kb (16193 bytes)
 FileLOC: 358
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/Ecma335/TableIndex.cs
 FileType: SOURCE
@@ -1976,6 +2136,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7xMGqpmW03osvtsdTUSBrJzFWtArZFm/SK4ojVWURMM:W+SA
 FileSize: 1 Kb (1605 bytes)
 FileLOC: 57
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/EventDefinition.cs
 FileType: SOURCE
@@ -1986,6 +2147,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7guSjZSbaSMiYQXFFFEsBlrRxvgBgB+qBeBn7qB+Bn7qBAXBn
 FileSize: 2 Kb (2690 bytes)
 FileLOC: 74
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/ExceptionRegion.cs
 FileType: SOURCE
@@ -1996,6 +2158,7 @@ FileChecksum: SSDEEP: 48:W+SAoDAE7HoMhWcsV/QNF/BzZfMo5P7lnM9+CyL:W9AoU6oMWckQNF/
 FileSize: 2 Kb (2506 bytes)
 FileLOC: 75
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/ExceptionRegionKind.cs
 FileType: SOURCE
@@ -2006,6 +2169,7 @@ FileChecksum: SSDEEP: 6:j9Y3kNSAe9DjX4GHDOMKnI0uYI78d7JmOtRQ21OoJajxlYAv:j9Y3kNS
 FileSize: 329 bytes
 FileLOC: 12
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/ExportedType.cs
 FileType: SOURCE
@@ -2016,6 +2180,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7NjDuSiArVbiiXiFlK/WIsKBLGmXQcb:W9AovNjniArVbiiXi
 FileSize: 2 Kb (2668 bytes)
 FileLOC: 66
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/FieldDefinition.cs
 FileType: SOURCE
@@ -2026,6 +2191,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7N+ctuSK5QgJjBcKUXknaY+SxXrHAtciZa5SFo9vzrYF41Vrs
 FileSize: 4 Kb (4580 bytes)
 FileLOC: 137
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/GenericParameter.cs
 FileType: SOURCE
@@ -2036,6 +2202,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7buSjtcCSbAcoc2vgS/R/MSOOTS+SSXFcb:W9AovPjtc7bAco
 FileSize: 2 Kb (2850 bytes)
 FileLOC: 83
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/HandleCollections.cs
 FileType: SOURCE
@@ -2046,6 +2213,7 @@ FileChecksum: SSDEEP: 768:cCp+eamGrbaNoOjmLs/Qjjh/mYztupG099r:P
 FileSize: 55 Kb (56934 bytes)
 FileLOC: 1607
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/HandleComparer.cs
 FileType: SOURCE
@@ -2056,6 +2224,7 @@ FileChecksum: SSDEEP: 24:W+SAotD74KbDIxxEyLDkMFbgREFs+vpaLjlu4fUCdzlua9b:W+SAoD7
 FileSize: 934 bytes
 FileLOC: 30
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/HandleKind.cs
 FileType: SOURCE
@@ -2066,6 +2235,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7KxFsQtwwW/83/9cyuaQfVTh3o2F3ZoqsIQJBQM05BwQZbXw8
 FileSize: 2 Kb (2936 bytes)
 FileLOC: 39
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/Handles.cs
 FileType: SOURCE
@@ -2076,6 +2246,7 @@ FileChecksum: SSDEEP: 768:cBZZVQqfuuVmnbO5UHUp7q7f7cDQHTrT2ruXLzXpFJ:ypfuombPHUp
 FileSize: 66 Kb (68256 bytes)
 FileLOC: 1977
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/InterfaceImplementation.cs
 FileType: SOURCE
@@ -2086,6 +2257,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7bxg1zF3UE5ThyOaSrmF3QT7E4A1GqvzFZyDfXGQKw6mOZb:
 FileSize: 1 Kb (1384 bytes)
 FileLOC: 35
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/Internal/COR20Constants.cs
 FileType: SOURCE
@@ -2096,6 +2268,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7xMoWeYXtp4suy9itvMy9C71rmVd3QvbSbXC6+Sg0KYOrZjy
 FileSize: 1 Kb (1053 bytes)
 FileLOC: 21
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/Internal/CorElementType.cs
 FileType: SOURCE
@@ -2106,6 +2279,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7QoaQh1vC3EOARJD3hKOGRlJVLNkXiLjWF0ApolpXNlU8KCjD
 FileSize: 2 Kb (2497 bytes)
 FileLOC: 47
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/Internal/CustomAttributeTypeTag.cs
 FileType: SOURCE
@@ -2116,6 +2290,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7YxMoWPKeIQs513esYslQsmkh0YQpPWbVBmjIVR5Id+eUoOC
 FileSize: 1 Kb (1370 bytes)
 FileLOC: 29
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/Internal/HasConstantTag.cs
 FileType: SOURCE
@@ -2126,6 +2301,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7NXo1Kaexx4BRQemEV9u07KNNNrAEqUqnb:W9AovNXo1KBxx4
 FileSize: 2 Kb (2059 bytes)
 FileLOC: 50
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/Internal/HasCustomAttributeTag.cs
 FileType: SOURCE
@@ -2136,6 +2312,7 @@ FileChecksum: SSDEEP: 96:W9AovXoSzBVCMoQOxa4PZOTToGciipUzQUITsmBBiRKEv0rFqFMN/Gr
 FileSize: 7 Kb (7597 bytes)
 FileLOC: 158
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/Internal/HasDeclSecurityTag.cs
 FileType: SOURCE
@@ -2146,6 +2323,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7XokgKaew2HBRQ9YbJ00iMJyKNN2pIAb:W9AovXorKBw2HBRQ
 FileSize: 2 Kb (2138 bytes)
 FileLOC: 46
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/Internal/HasFieldMarshalTag.cs
 FileType: SOURCE
@@ -2156,6 +2334,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7NXofnaexxBoe9EVW0jNN2kQkv2b:W9AovNXofnBxxBo0EVWC
 FileSize: 1 Kb (1736 bytes)
 FileLOC: 42
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/Internal/HasSemanticsTag.cs
 FileType: SOURCE
@@ -2166,6 +2345,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7Xo6BDnaedhBo2E4f0q4O0NNJ8wb:W9AovXo6lnBdhBo2E4fX
 FileSize: 1 Kb (1641 bytes)
 FileLOC: 37
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/Internal/Heaps.cs
 FileType: SOURCE
@@ -2176,6 +2356,7 @@ FileChecksum: SSDEEP: 384:cGj+RGKLUBaT5OfPQtYfBIVEn6xC4rILQfwxTEKK:c/FGPQefGVEn6
 FileSize: 23 Kb (24211 bytes)
 FileLOC: 478
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/Internal/ImplementationTag.cs
 FileType: SOURCE
@@ -2186,6 +2367,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7YxMoW0NKs513esOsWsLvsmRQsRLbGxYYvzLxPWbBhUGRrJ+
 FileSize: 1 Kb (1454 bytes)
 FileLOC: 31
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/Internal/MemberForwardedTag.cs
 FileType: SOURCE
@@ -2196,6 +2378,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7YxMoWrEegs513es+sBsmoYvksR1qpPWbUaX/CPiRACNeUoO
 FileSize: 1 Kb (1487 bytes)
 FileLOC: 33
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/Internal/MemberRefParentTag.cs
 FileType: SOURCE
@@ -2206,6 +2389,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7XomIQaewFsTQYBuYQkrX0LMiKNCb:W9AovXomIQBwFsTQYBu
 FileSize: 1 Kb (1772 bytes)
 FileLOC: 40
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/Internal/MetadataFlags.cs
 FileType: SOURCE
@@ -2216,6 +2400,7 @@ FileChecksum: SSDEEP: 192:cAaiY0m5ashiTVoVQoJycopKwJX9sP6FPHrAey+HRUHL7TL:cvrash
 FileSize: 9 Kb (9785 bytes)
 FileLOC: 215
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/Internal/MetadataHeader.cs
 FileType: SOURCE
@@ -2226,6 +2411,7 @@ FileChecksum: SSDEEP: 12:j9Y3kNSAoJHD2NuYI5GoWZJkY27Xd+23Xd+wNXQeKq5W5:W+SAotD7x
 FileSize: 468 bytes
 FileLOC: 14
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/Internal/MetadataStreamConstants.cs
 FileType: SOURCE
@@ -2236,6 +2422,7 @@ FileChecksum: SSDEEP: 6:j9Y3kNSAe9DjX4GHDOMKnI0uYIUgGoWwQH9i/FXUpe+lUb5UE4JmnAn:
 FileSize: 382 bytes
 FileLOC: 10
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/Internal/MetadataTableHeader.cs
 FileType: SOURCE
@@ -2246,6 +2433,7 @@ FileChecksum: SSDEEP: 12:j9Y3kNSAoJHD26IrzuYI5GoWFWoRXd+Q8Xd+ymQl04f+C9TCgeQ4ZEy
 FileSize: 710 bytes
 FileLOC: 21
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/Internal/MethodDefOrRefTag.cs
 FileType: SOURCE
@@ -2256,6 +2444,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7YxMoWuFegs513esSsssmoYHsRrqpPWbncwTRzxeUoOCb:W+
 FileSize: 1 Kb (1322 bytes)
 FileLOC: 29
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/Internal/NamespaceCache.cs
 FileType: SOURCE
@@ -2266,6 +2455,7 @@ FileChecksum: SSDEEP: 384:cGjFy6xTfunsNAyVNwBujXY4YgJM+kgqrx+ILIc1aOcOcOLD+i/ODb
 FileSize: 21 Kb (21947 bytes)
 FileLOC: 456
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/Internal/NamespaceData.cs
 FileType: SOURCE
@@ -2276,6 +2466,7 @@ FileChecksum: SSDEEP: 24:W+SAotD74KDHyxMohyh8AXAQokp2k92kv2koixrvMxlosLz3mb:W+SA
 FileSize: 1 Kb (1296 bytes)
 FileLOC: 30
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/Internal/ResolutionScopeTag.cs
 FileType: SOURCE
@@ -2286,6 +2477,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7YxMoWUBKs513esAsuszsnQsmRQsRdb7YatlWbJ4GR5xeUoO
 FileSize: 1 Kb (1549 bytes)
 FileLOC: 33
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/Internal/StreamHeader.cs
 FileType: SOURCE
@@ -2296,6 +2488,7 @@ FileChecksum: SSDEEP: 6:j9Y3kNSAe9DjX4GHDOMKnI0uYIUgGoW+fh5QeL74WjiAn:j9Y3kNSAoJ
 FileSize: 332 bytes
 FileLOC: 11
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/Internal/Tables.cs
 FileType: SOURCE
@@ -2306,6 +2499,7 @@ FileChecksum: SSDEEP: 1536:lBdmffbqO9y93TkK5ax9MiIsGoe1XXCFvsbOQg1dM8am9ZxT6dxAl
 FileSize: 104 Kb (106810 bytes)
 FileLOC: 2320
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/Internal/Treatments.cs
 FileType: SOURCE
@@ -2316,6 +2510,7 @@ FileChecksum: SSDEEP: 48:W+SAoD+zpWih4VvWrWiqy+Wihh1+j27kSWiWYeWiLieWiBnIWiy1:W9
 FileSize: 1 Kb (1903 bytes)
 FileLOC: 71
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/Internal/TypeDefOrRefTag.cs
 FileType: SOURCE
@@ -2326,6 +2521,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7YxMoW7FKs513esHsKs/smRQsR4bgYYSJxPWbzWZx/ZiRqP+
 FileSize: 1 Kb (1526 bytes)
 FileLOC: 32
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/Internal/TypeOrMethodDefTag.cs
 FileType: SOURCE
@@ -2336,6 +2532,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7Xoenaew2ByEB9h0zDIzNNdz0b:W9AovXoenBw2ByEB9h1NNd
 FileSize: 1 Kb (1654 bytes)
 FileLOC: 37
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/ManifestResource.cs
 FileType: SOURCE
@@ -2346,6 +2543,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7quSjtTSb8xQ03Sc5JTSamWn/3S3VSaO7Vm6Qcb:W9AovIjtG
 FileSize: 2 Kb (2712 bytes)
 FileLOC: 70
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/MemberReference.cs
 FileType: SOURCE
@@ -2356,6 +2554,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7NVuSK5NJjBcKUXDuxaEJWHCxxHgAHe2iZwutriKKQNOCRuC2
 FileSize: 3 Kb (3651 bytes)
 FileLOC: 109
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/MemberReferenceKind.cs
 FileType: SOURCE
@@ -2366,6 +2565,7 @@ FileChecksum: SSDEEP: 12:j9Y3kNSAoJHD2NuYI7mv1wfl5IJHDSN1wQHIJ5N1wQkIJnsBTKK:W+S
 FileSize: 579 bytes
 FileLOC: 19
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataAggregator.cs
 FileType: SOURCE
@@ -2376,6 +2576,7 @@ FileChecksum: SSDEEP: 192:cAVjicuwD6Ro1y5MnPWp9Taq7CPgqaQw6ifMSqwy6L:cGji60owmnP
 FileSize: 12 Kb (12531 bytes)
 FileLOC: 273
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataKind.cs
 FileType: SOURCE
@@ -2386,6 +2587,7 @@ FileChecksum: SSDEEP: 12:j9Y3kNSAoJHD2NuYI7a9TIJ5IJ2ZHvQjjdbdIJDHwK:W+SAotD7xpZP
 FileSize: 562 bytes
 FileLOC: 20
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.cs
 FileType: SOURCE
@@ -2396,6 +2598,7 @@ FileChecksum: SSDEEP: 1536:xAv+5SojUwwc+Yc6gT31S1GyRSH6Zm6FsnfqfZBX7KO2+ziYmF1tB
 FileSize: 58 Kb (59648 bytes)
 FileLOC: 1043
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReader.WinMD.cs
 FileType: SOURCE
@@ -2406,6 +2609,7 @@ FileChecksum: SSDEEP: 768:cwrh2p3pJtUe61iSJly3uWO3ePsg3g24moOoR:p4K53ePsg3g24moO
 FileSize: 41 Kb (42497 bytes)
 FileLOC: 699
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataReaderOptions.cs
 FileType: SOURCE
@@ -2416,6 +2620,7 @@ FileChecksum: SSDEEP: 12:j9Y3kNSAoJHD2NuYI7sA8YwIJKip23X9UFt7frIJDOudUqPIJBLL:W+
 FileSize: 806 bytes
 FileLOC: 23
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataStringComparer.cs
 FileType: SOURCE
@@ -2426,6 +2631,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7j4YN26+KVOtGIbXBGufIDg3d4bIXylV/06lAjN7m2jonGovw
 FileSize: 2 Kb (2966 bytes)
 FileLOC: 89
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/MetadataStringDecoder.cs
 FileType: SOURCE
@@ -2436,6 +2642,7 @@ FileChecksum: SSDEEP: 96:W9AovK9koXB/9mXfSd7XdCBQ2jDaKILNHVG8dyX/YzPIQqL:cAQo6Kd
 FileSize: 3 Kb (3789 bytes)
 FileLOC: 82
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/MethodDefinition.cs
 FileType: SOURCE
@@ -2446,6 +2653,7 @@ FileChecksum: SSDEEP: 96:W9AovNISehBc1X3wRsreunc/c7cxeg/M2uDZkQeZCVCn5yzugAR:cA5
 FileSize: 5 Kb (6092 bytes)
 FileLOC: 170
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/MethodImplementation.cs
 FileType: SOURCE
@@ -2456,6 +2664,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7bxCzF3UE5ThyOaSrmF3QPEmA1GqvzFTryDgGiJhi9rQKw6m
 FileSize: 1 Kb (1544 bytes)
 FileLOC: 48
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/MethodImport.cs
 FileType: SOURCE
@@ -2466,6 +2675,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7xPfF35Eo3F3cuF3A51EowSmv7EIDexbMb:W+SAoDVvEp51E
 FileSize: 845 bytes
 FileLOC: 20
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/MethodSpecification.cs
 FileType: SOURCE
@@ -2476,6 +2686,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7a4uSjuo/Sb83TD2wXZUzWqQ7Zx3KQcb:W9AovaGjuoqb83TD
 FileSize: 1 Kb (1704 bytes)
 FileLOC: 48
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/ModuleDefinition.cs
 FileType: SOURCE
@@ -2486,6 +2697,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7bx0F3UE5mFE6SGYu3FsaMTATyTwyb:W+SAoD76m40vMTATy
 FileSize: 1 Kb (1251 bytes)
 FileLOC: 50
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/ModuleReference.cs
 FileType: SOURCE
@@ -2496,6 +2708,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7bxuF3UE5ThyOaSrmF3Q6UEEA1GqvzFEGyswXQKw6mOZb:W+
 FileSize: 1 Kb (1121 bytes)
 FileLOC: 31
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/NamespaceDefinition.cs
 FileType: SOURCE
@@ -2506,6 +2719,7 @@ FileChecksum: SSDEEP: 48:W+SAoD746ANbX7RpeIojefluf9cvZcGooyL:W9Aov46ANb1pdojuluf
 FileSize: 1 Kb (1998 bytes)
 FileLOC: 57
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/Parameter.cs
 FileType: SOURCE
@@ -2516,6 +2730,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7iuSj1cCSbHc/c2k7+vrAiErYF41VrspUacb:W9AovQj1c7bH
 FileSize: 1 Kb (1932 bytes)
 FileLOC: 61
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/PEReaderExtensions.cs
 FileType: SOURCE
@@ -2526,6 +2741,7 @@ FileChecksum: SSDEEP: 96:W9Aov4G+TFnVhZxq4c1nAzXEHyXWQHQbWbXWQHQbesXWQHQbsKDJ7OL
 FileSize: 3 Kb (3589 bytes)
 FileLOC: 66
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/PropertyDefinition.cs
 FileType: SOURCE
@@ -2536,6 +2752,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7/uSjhSbOTWdAiYuAFAusBlr+xvgBgB+qBpsBn7qBCYsBnNQ8
 FileSize: 2 Kb (2662 bytes)
 FileLOC: 74
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/SerializationTypeCode.cs
 FileType: SOURCE
@@ -2546,6 +2763,7 @@ FileChecksum: SSDEEP: 96:W9Aov5imiMfelmqW/c9DWUofGWb6e76729JGK2agf+lZWolX:cA45Hr
 FileSize: 3 Kb (3085 bytes)
 FileLOC: 81
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureAttributes.cs
 FileType: SOURCE
@@ -2556,6 +2774,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7xK7bFjGRLtOnWTiSPitE9mHRHsoGm:W+SAoDcbFjALUneiS
 FileSize: 1 Kb (1055 bytes)
 FileLOC: 31
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureCallingConvention.cs
 FileType: SOURCE
@@ -2566,6 +2785,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7xy+7NY5jGRLLOnHLqcnqYn4GLB/D7rlLfw:W+SAoDp7NY5j
 FileSize: 1 Kb (1484 bytes)
 FileLOC: 37
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureHeader.cs
 FileType: SOURCE
@@ -2576,6 +2796,7 @@ FileChecksum: SSDEEP: 96:W9Aovx8QCsws+eukhpu0uuyDqYRlRRLB8Uv6Plb:cAk8iwsfh2F9TT+
 FileSize: 3 Kb (3637 bytes)
 FileLOC: 103
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureKind.cs
 FileType: SOURCE
@@ -2586,6 +2807,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7x7ZjGML2OnHXb4b6xBt2XQoTd4Skws:W+SAoDxZjTL5nHXL
 FileSize: 1 Kb (1039 bytes)
 FileLOC: 32
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/SignatureTypeCode.cs
 FileType: SOURCE
@@ -2596,6 +2818,7 @@ FileChecksum: SSDEEP: 96:W9AovOKSSYVfXvYyGAUVk3Sd5Okwl6XhMMm/dthqpcnm:cA/lVwyGAU
 FileSize: 7 Kb (7439 bytes)
 FileLOC: 153
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/StandaloneSignature.cs
 FileType: SOURCE
@@ -2606,6 +2829,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7bxE/F3UE5ThyOaSrmF3Q2JIEKm7+A1GqvzFK7pm7/yKjIQK
 FileSize: 1 Kb (1152 bytes)
 FileLOC: 31
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/TypeDefinition.cs
 FileType: SOURCE
@@ -2616,6 +2840,7 @@ FileChecksum: SSDEEP: 192:cAVOuNhaSmGm97TL5mnSoL9gWu/o8Qx71dR:cGOz/9FcSoL9gHtQx7
 FileSize: 8 Kb (8750 bytes)
 FileLOC: 219
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/TypeLayout.cs
 FileType: SOURCE
@@ -2626,6 +2851,7 @@ FileChecksum: SSDEEP: 12:j9Y3kNSAoJHD2NuYI7LxF3JRF3LhXteey2ENuNLj3yL:W+SAotD7xJF
 FileSize: 738 bytes
 FileLOC: 27
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/TypeReference.cs
 FileType: SOURCE
@@ -2636,6 +2862,7 @@ FileChecksum: SSDEEP: 96:W9AovNrSLhBc1X942KE4jrnmWSmW52tT56YF7R:cABuN94hEmnmFmD5
 FileSize: 5 Kb (5179 bytes)
 FileLOC: 123
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/Metadata/TypeSpecification.cs
 FileType: SOURCE
@@ -2646,6 +2873,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7bxJIzF3UE5ThyOaSrmF3Qv/EjSzA1GqvzFv7TuWyBXQKw6m
 FileSize: 1 Kb (1138 bytes)
 FileLOC: 31
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/CoffHeader.cs
 FileType: SOURCE
@@ -2656,6 +2884,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7PAyYEAuOpQBRF7/7WeqsiRHUs12WomTOeoib:W9AovP5Y+BR
 FileSize: 2 Kb (2375 bytes)
 FileLOC: 51
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/CorFlags.cs
 FileType: SOURCE
@@ -2666,6 +2895,7 @@ FileChecksum: SSDEEP: 12:j9Y3kNSAoJHD2NuYIXUPJIJjTYVdKjwo3etLRnmch0K:W+SAotD7xXk
 FileSize: 555 bytes
 FileLOC: 19
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/CorHeader.cs
 FileType: SOURCE
@@ -2676,6 +2906,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7PAya3NzlBsxbD22stbsZkbsJBgbsRbsyubsbk2o1lkr4sRAP
 FileSize: 1 Kb (1968 bytes)
 FileLOC: 37
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/DirectoryEntry.cs
 FileType: SOURCE
@@ -2686,6 +2917,7 @@ FileChecksum: SSDEEP: 12:j9Y3kNSAoJHD26KNuYIXU4mbpe7QaTCOoVE5Dgyb:W+SAotD7KkxXFm
 FileSize: 527 bytes
 FileLOC: 16
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/Machine.cs
 FileType: SOURCE
@@ -2696,6 +2928,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7xXgUfchaY/PxFAtYJvvwvHx7GIwavXwEbz6mLSc:W+SAoDi
 FileSize: 2 Kb (2638 bytes)
 FileLOC: 104
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEBinaryReader.cs
 FileType: SOURCE
@@ -2706,6 +2939,7 @@ FileChecksum: SSDEEP: 96:W9AovNPZ+hp8Oxhzwm9cOxdc/SDYkTIm6zy8i0K3vqL:cAxpPxhzwma
 FileSize: 5 Kb (5466 bytes)
 FileLOC: 137
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileConstants.cs
 FileType: SOURCE
@@ -2716,6 +2950,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7xXmWUXJEepsmgLRtvftvtr94tvtrLtvt4RtvtbPimCotvti
 FileSize: 1 Kb (1230 bytes)
 FileLOC: 23
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEFileFlags.cs
 FileType: SOURCE
@@ -2726,6 +2961,7 @@ FileChecksum: SSDEEP: 96:W9AoGJg020P5xmJeCNcg0aRQJPqr//BjTdqoZ5jVNaWHK:cAxJi0GUa
 FileSize: 5 Kb (6143 bytes)
 FileLOC: 113
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEHeader.cs
 FileType: SOURCE
@@ -2736,6 +2972,7 @@ FileChecksum: SSDEEP: 192:cAEBviOfTwShHDJtKRCKNXY+4lZFSvzbkb3bWK4xCKb0bqbRbttbZb
 FileSize: 11 Kb (12029 bytes)
 FileLOC: 240
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEHeaders.cs
 FileType: SOURCE
@@ -2746,6 +2983,7 @@ FileChecksum: SSDEEP: 192:cAVGyeqg7eUfkwTTNErGBV3IwOkl6Lb3Pgb3z1M7lpZbqgQC6dCcXN
 FileSize: 13 Kb (13744 bytes)
 FileLOC: 342
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEMemoryBlock.cs
 FileType: SOURCE
@@ -2756,6 +2994,7 @@ FileChecksum: SSDEEP: 24:W+SAotD74KDHgNI2xXFtMF3YF3rxECH5dVVWu6sBiL:W+SAoD746AN1
 FileSize: 1 Kb (1227 bytes)
 FileLOC: 39
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEReader.cs
 FileType: SOURCE
@@ -2766,6 +3005,7 @@ FileChecksum: SSDEEP: 384:cG4SBM0d8PQvTQ09BsU367LKKGKuG6q4Uw:ceDs89KCqy
 FileSize: 19 Kb (19595 bytes)
 FileLOC: 399
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/PEStreamOptions.cs
 FileType: SOURCE
@@ -2776,6 +3016,7 @@ FileChecksum: SSDEEP: 48:W+SAoDfeQQrgQfFYNlJWbQVQdQIq0C7ZQIYBKL:W9AoiQHQfFYNmQVQ
 FileSize: 1 Kb (1834 bytes)
 FileLOC: 41
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/PortableExecutable/SectionHeader.cs
 FileType: SOURCE
@@ -2786,6 +3027,7 @@ FileChecksum: SSDEEP: 96:W9AovPZHiwmEBzAkoAYHwvViqobnhFFwqH+uHQix+RCR3nR9NRnCcAg
 FileSize: 5 Kb (5233 bytes)
 FileLOC: 91
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System/Reflection/System.Reflection.cs
 FileType: SOURCE
@@ -2796,6 +3038,7 @@ FileChecksum: SSDEEP: 96:W9Aoe0Lc92dP0/l9jm6OAf6r65SmQoTGcgN9u6sbG4J5s8ar6dq6q7L
 FileSize: 9 Kb (9380 bytes)
 FileLOC: 213
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/src/System.Reflection.Metadata.csproj
 FileType: OTHER
@@ -2814,6 +3057,7 @@ FileChecksum: SSDEEP: 12:j9Y3kNSAoJHD26I5+uYIVWCNWRQDVWJiYm+/MTJkY9NhF7Skb:W+SAo
 FileSize: 661 bytes
 FileLOC: 18
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/tests/Metadata/Ecma335/MetadataAggregatorTests.cs
 FileType: SOURCE
@@ -2824,6 +3068,7 @@ FileChecksum: SSDEEP: 48:W+SAoD79SfDgZNIFMoeAaKA/gisA4IKvBjc7ngiX5MiWJCVyP51NwwS
 FileSize: 7 Kb (7545 bytes)
 FileLOC: 155
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/tests/Metadata/Ecma335/MetadataTokensTests.cs
 FileType: SOURCE
@@ -2834,6 +3079,7 @@ FileChecksum: SSDEEP: 96:W9AovXmSg/BAP+0DmhEDYdOGDDgYmX9S7wt57L:cAgYhGX9S7wt57L
 FileSize: 4 Kb (4404 bytes)
 FileLOC: 68
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/tests/Metadata/HandleComparerTests.cs
 FileType: SOURCE
@@ -2844,6 +3090,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7IjHcxIDeMB/tX7Nt9CRYis+9kL:W+SAoD7JQLNmpv9kL
 FileSize: 1 Kb (1485 bytes)
 FileLOC: 29
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/tests/Metadata/HandleTests.cs
 FileType: SOURCE
@@ -2854,6 +3101,7 @@ FileChecksum: SSDEEP: 192:cAVFZg9elrQo2tKBNQY773X2jU+7fbmSKx06yL:cGUAlr8YQ
 FileSize: 8 Kb (8540 bytes)
 FileLOC: 135
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/tests/Metadata/MetadataReaderTestHelpers.cs
 FileType: SOURCE
@@ -2864,6 +3112,7 @@ FileChecksum: SSDEEP: 48:W+SAoD74Y+KLWMOOy9lMhe9QdoJQNo83N5zL:W9Aov4Y+KLWzOy9lqe
 FileSize: 1 Kb (1686 bytes)
 FileLOC: 40
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/tests/Metadata/MetadataReaderTests.cs
 FileType: SOURCE
@@ -2874,6 +3123,7 @@ FileChecksum: SSDEEP: 3072:nJx2Ql8ywNnpgksz7bMhWPfsPrGYdYlfuN1qYSDdmj5wBzatDca4d
 FileSize: 101 Kb (103519 bytes)
 FileLOC: 2118
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/tests/Metadata/MethodImportRow.cs
 FileType: SOURCE
@@ -2884,6 +3134,7 @@ FileChecksum: SSDEEP: 12:j9Y3kNSAoJHD26I5+uYIVWJBDMW5BN2FRYkBNB6xRY9NNwbkL:W+SAo
 FileSize: 552 bytes
 FileLOC: 16
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/tests/Metadata/TagToTokenTests.cs
 FileType: SOURCE
@@ -2894,6 +3145,7 @@ FileChecksum: SSDEEP: 96:W9Aovj4Y269S+KVgO+yEy5IzYx6l0ZcJS6TfmPM1plMiBHgC9VTmLay
 FileSize: 7 Kb (7829 bytes)
 FileLOC: 136
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/tests/packages.config
 FileType: OTHER
@@ -2912,6 +3164,7 @@ FileChecksum: SSDEEP: 192:cAV003C8ySCrUoMFUFMYM7Nlb1oyU0PIC4yL:cGhoMeFnGL
 FileSize: 6 Kb (7032 bytes)
 FileLOC: 177
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/tests/PortableExecutable/BadImageFormat.cs
 FileType: SOURCE
@@ -2922,6 +3175,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7KCIXncxhYmtaiusFsrJ62k3dL:W+SAoD7PWmt1usF6o2k3d
 FileSize: 825 bytes
 FileLOC: 24
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/tests/PortableExecutable/PEReaderTests.cs
 FileType: SOURCE
@@ -2932,6 +3186,7 @@ FileChecksum: SSDEEP: 96:W9AovPSFo3mVAKEq0uNUAU0/52RePtrBCtg0sB2trQnE6tg9in9Jttu
 FileSize: 5 Kb (6022 bytes)
 FileLOC: 121
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/tests/PortableExecutable/StreamExtensionsTests.cs
 FileType: SOURCE
@@ -2942,6 +3197,7 @@ FileChecksum: SSDEEP: 96:W9AovPMu1nLA2hvTcY+ne0+x+fZduo+OZ2dLkDKLm9Bz8w+qJ2aqbZy
 FileSize: 4 Kb (5075 bytes)
 FileLOC: 128
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/tests/Resources/Interop/IndexerWithByRefParam.dll
 FileType: BINARY
@@ -3238,6 +3494,7 @@ FileChecksum: SSDEEP: 192:cAtuja/oyHcNKm2mc/J3yi+yBn66GnDCS6rqL6Fw/F66iCVy2qaF8w
 FileSize: 15 Kb (15700 bytes)
 FileLOC: 398
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/tests/TestUtilities/DiffUtil.cs
 FileType: SOURCE
@@ -3248,6 +3505,7 @@ FileChecksum: SSDEEP: 192:cAtLLbjqr7CF6st7RYSC14FZ9BZ2C5WMd3MaYssSQWPd3oaYsZUVI2
 FileSize: 10 Kb (10292 bytes)
 FileLOC: 233
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/tests/TestUtilities/WorkItemAttribute.cs
 FileType: SOURCE
@@ -3258,6 +3516,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7TcNhyAY4tmyNaRMnL8F3zF3lXkTsRnms6Odb:W+SAoD7Z4t
 FileSize: 1 Kb (1109 bytes)
 FileLOC: 35
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/tests/Utilities/BlobReaderTests.cs
 FileType: SOURCE
@@ -3268,6 +3527,7 @@ FileChecksum: SSDEEP: 96:W9Aov9Sv7cP7CTIBdrccycynhtf79WRcyOug3dicb/XsPd5iYOkXyIr
 FileSize: 14 Kb (15182 bytes)
 FileLOC: 240
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/tests/Utilities/CompressedIntegerTests.cs
 FileType: SOURCE
@@ -3278,6 +3538,7 @@ FileChecksum: SSDEEP: 96:W9Aovj4Y269KVIs/m7mGa66pLp2iaQunRR8nZfFkVWMJH6minppOlAr
 FileSize: 13 Kb (14117 bytes)
 FileLOC: 291
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata/tests/Utilities/MemoryBlockTests.cs
 FileType: SOURCE
@@ -3288,6 +3549,7 @@ FileChecksum: SSDEEP: 384:c+XRlfmWOmDdR+zmkdkTdhgAIGR9GXR237CfnK6a4Ejdq7CqjPBoZE
 FileSize: 17 Kb (17712 bytes)
 FileLOC: 343
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Reflection.Metadata.sln
 FileType: OTHER
@@ -3306,6 +3568,7 @@ FileChecksum: SSDEEP: 96:W9AovN4YYnC471Z0tBaG7Ddy0Gk1Bm/DosMDqCL:cAvnC471QkGlyOS
 FileSize: 3 Kb (3498 bytes)
 FileLOC: 72
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.Common/System/NotImplemented.cs
 FileType: SOURCE
@@ -3316,6 +3579,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7MusfYRsux/NAPHbLW3bWVMuuXa9WVMbiiuHb:W+SAoDBFNA
 FileSize: 1 Kb (1039 bytes)
 FileLOC: 30
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.Common/System/SR.cs
 FileType: SOURCE
@@ -3326,6 +3590,7 @@ FileChecksum: SSDEEP: 24:W+SAotD74epFcWlzH+jSkWl8dWlgqHWlm3MGt8L:W+SAoD8eobmkBde
 FileSize: 1020 bytes (1020 bytes)
 FileLOC: 31
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.Common/System/Xml/Base64Decoder.cs
 FileType: SOURCE
@@ -3336,6 +3601,7 @@ FileChecksum: SSDEEP: 192:cAqKq4YR3nBTCb3nPP7COLDwh3i2nSD+7L:c5xl/3r7
 FileSize: 6 Kb (7166 bytes)
 FileLOC: 211
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.Common/System/Xml/Base64Encoder.cs
 FileType: SOURCE
@@ -3346,6 +3612,7 @@ FileChecksum: SSDEEP: 96:W9AovKZZBHnHWU7LXLEZ8HsQlyfdZz97gyL:cATTLXLEZONlyfDztgy
 FileSize: 3 Kb (3379 bytes)
 FileLOC: 94
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.Common/System/Xml/BinHexDecoder.cs
 FileType: SOURCE
@@ -3356,6 +3623,7 @@ FileChecksum: SSDEEP: 96:W9AovjZI+RK9k49WR3nPJiiCB13nPBJ6iCBHkQLH+wI99h+7MDqLqrq
 FileSize: 5 Kb (5834 bytes)
 FileLOC: 174
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.Common/System/Xml/BinHexEncoder.cs
 FileType: SOURCE
@@ -3366,6 +3634,7 @@ FileChecksum: SSDEEP: 48:W+SAoD5RI1EAZQVMUsg/kVH039xCT6h9dKg592Kpf3WRdhC/B7:W9Ao
 FileSize: 2 Kb (2978 bytes)
 FileLOC: 82
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.Common/System/Xml/Bits.cs
 FileType: SOURCE
@@ -3376,6 +3645,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7j4UvOOArVb/m2qAWM0CBkC52IL:W9Aovj4BOAr5/m2qAWM1B
 FileSize: 2 Kb (2133 bytes)
 FileLOC: 48
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.Common/System/Xml/ExceptionType.cs
 FileType: SOURCE
@@ -3386,6 +3656,7 @@ FileChecksum: SSDEEP: 6:j9Y3kNSAe9DjX4GHDOMKnI0uYawFOF7sNaawAv:j9Y3kNSAoJHD2NuYF
 FileSize: 270 bytes
 FileLOC: 10
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.Common/System/Xml/IncrementalReadDecoders.cs
 FileType: SOURCE
@@ -3396,6 +3667,7 @@ FileChecksum: SSDEEP: 12:j9Y3kNSAoJHD26auYFzwFIz2Zw26DQVJx4MQGHg6vBDRSmg61gRSmgX
 FileSize: 701 bytes
 FileLOC: 18
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.Common/System/Xml/ReadContentAsBinaryHelper.cs
 FileType: SOURCE
@@ -3406,6 +3678,7 @@ FileChecksum: SSDEEP: 384:c+T3qg/3UJgIXYiTGIXV1TIz3qE3115WYamI:c+T3//3UJgIXYiTGI
 FileSize: 15 Kb (15904 bytes)
 FileLOC: 453
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.Common/System/Xml/Ref.cs
 FileType: SOURCE
@@ -3416,6 +3689,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7bsvWnGyXbbNpXn/8nLlhioRL:W+SAoD7w9UvEnLqoRL
 FileSize: 890 bytes
 FileLOC: 25
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.Common/System/Xml/Schema/XmlUntypedConverter.cs
 FileType: SOURCE
@@ -3426,6 +3700,7 @@ FileChecksum: SSDEEP: 384:c8RHc5u0uiSQ8sKKVd1SY4ZHkaFrZ72DnLyCqoaWR:c8Oc0uQ8sr4R
 FileSize: 21 Kb (22490 bytes)
 FileLOC: 333
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.Common/System/Xml/Schema/XsdDateTime.cs
 FileType: SOURCE
@@ -3436,6 +3711,7 @@ FileChecksum: SSDEEP: 384:c+Vt9m8gDWeX7AaNauNRq1nkYvEbDHeLIuf0O3Z8/FV5NToV9+0tW1
 FileSize: 36 Kb (37358 bytes)
 FileLOC: 890
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.Common/System/Xml/SecureStringHasher.cs
 FileType: SOURCE
@@ -3446,6 +3722,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7j4KNsslUAamGPUrIPYoluILAAHn00DewOjwHBgV/edK9PqU
 FileSize: 1 Kb (1776 bytes)
 FileLOC: 42
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.Common/System/Xml/ValidateNames.cs
 FileType: SOURCE
@@ -3456,6 +3733,7 @@ FileChecksum: SSDEEP: 192:cAda7/WC1XGLXqBHSwpHSdYSrA6MWyx6HxXOMS76Zy2+Lv76cq+RF5
 FileSize: 14 Kb (14968 bytes)
 FileLOC: 357
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.Common/System/Xml/XmlAttributeCollectionEx.cs
 FileType: SOURCE
@@ -3466,6 +3744,7 @@ FileChecksum: SSDEEP: 12:j9Y3kNSAoJHD2NuYFQWNXJhnAqJDh+P1BYsuWeHKCwjyL:W+SAotD7s
 FileSize: 698 bytes
 FileLOC: 21
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.Common/System/Xml/XmlCharType.cs
 FileType: SOURCE
@@ -3476,6 +3755,7 @@ FileChecksum: SSDEEP: 768:cd7M5JUuQgYDz0AStz0AYeaEaFUpIIOE:n5JUuQgYDz0AStzD
 FileSize: 33 Kb (34777 bytes)
 FileLOC: 699
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.Common/System/Xml/XmlConst.cs
 FileType: SOURCE
@@ -3486,6 +3766,7 @@ FileChecksum: SSDEEP: 96:W9AoS7MnjCuG0Rj+4hnF3aWERY6RB6lo4+Y5bfH6CccgQGe:cAOPZ3
 FileSize: 3 Kb (3224 bytes)
 FileLOC: 50
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.Common/System/Xml/XmlConvertEx.cs
 FileType: SOURCE
@@ -3496,6 +3777,7 @@ FileChecksum: SSDEEP: 192:cA+6+Q2eGpSjretlGdPOithVUgJCwCpu6onDSwd6IUUUCkUy+oWiqM
 FileSize: 9 Kb (9971 bytes)
 FileLOC: 247
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.Common/System/Xml/XmlNameHelper.cs
 FileType: SOURCE
@@ -3506,6 +3788,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7sQWuUpFEBUjo3GfqJSDShScFUhQL:W+SAoD58pGe4q+L
 FileSize: 778 bytes
 FileLOC: 25
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.Common/System/Xml/XmlParsingHelper.cs
 FileType: SOURCE
@@ -3516,6 +3799,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7KksQWOdPf++9hO9wIwbrX8knL2SvLt9OQPyL:W+SAoD7PrP
 FileSize: 1 Kb (1355 bytes)
 FileLOC: 35
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.Common/System/Xml/XmlRawWriter.cs
 FileType: SOURCE
@@ -3526,6 +3810,7 @@ FileChecksum: SSDEEP: 192:cA/IDBDGptNiLlllI2SGGykCtkwn1tPSxcxSWJIZb:cgIZxKEJp1tP
 FileSize: 11 Kb (12076 bytes)
 FileLOC: 267
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.Common/System/Xml/XmlRawWriterBase64Encoder.cs
 FileType: SOURCE
@@ -3536,6 +3821,7 @@ FileChecksum: SSDEEP: 12:j9Y3kNSAoJHD2NuYFQu+MuSmEMlmqMu1Eh26FNuYMFXU1NHqb:W+SAo
 FileSize: 569 bytes
 FileLOC: 17
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.Common/System/Xml/XmlReaderExtensions.cs
 FileType: SOURCE
@@ -3546,6 +3832,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7jPW5lchi19ALfVxxb119511tquKI119511tqDKOL:W9AovjP
 FileSize: 1 Kb (1771 bytes)
 FileLOC: 35
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.Common/System/Xml/XmlStandalone.cs
 FileType: SOURCE
@@ -3556,6 +3843,7 @@ FileChecksum: SSDEEP: 12:j9Y3kNSAoJHD264KbDNKCkMefA/TRuYFQvmBEgRdyIRK:W+SAotD74K
 FileSize: 473 bytes
 FileLOC: 17
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.Common/System/Xml/XmlTextWriter.cs
 FileType: SOURCE
@@ -3566,6 +3854,7 @@ FileChecksum: SSDEEP: 384:cWu3JA/Y0LdrozLa43llc2Q+Vg2+ANCVJ5JZ7K1fzy5hrX7LCH8Ug5
 FileSize: 59 Kb (61285 bytes)
 FileLOC: 1614
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.Common/System/Xml/XmlTextWriterBase64Encoder.cs
 FileType: SOURCE
@@ -3576,6 +3865,7 @@ FileChecksum: SSDEEP: 12:j9Y3kNSAoJHD2NuYFQu+grSKGmqgrnC4uYMFtNHqb:W+SAotD7sQuwt
 FileSize: 600 bytes
 FileLOC: 17
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.Common/System/Xml/XmlWriterExtensions.cs
 FileType: SOURCE
@@ -3586,6 +3876,7 @@ FileChecksum: SSDEEP: 96:W9AovS46syNFLNhv4fOsuNsQaaAHqLggg4a56XyieG+3aCyL:cAy6sy
 FileSize: 5 Kb (5492 bytes)
 FileLOC: 134
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.Common/System/Xml/XPathNavigatorEx.cs
 FileType: SOURCE
@@ -3596,6 +3887,7 @@ FileChecksum: SSDEEP: 48:W+SAoDySuhRRIIHWcap0pdP/2p/kZ/Gvvrppst90LN9AA3CpUg0MN79
 FileSize: 3 Kb (3340 bytes)
 FileLOC: 68
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.sln
 FileType: OTHER
@@ -3614,6 +3906,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7jInK+F/JwrfvYrC+IDV+8DFLyRblI+tPot7TABLqETVGy:W
 FileSize: 1 Kb (1135 bytes)
 FileLOC: 24
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XDocument/Resources/Strings.Designer.cs
 FileType: SOURCE
@@ -3641,6 +3934,7 @@ FileChecksum: SSDEEP: 192:cAtuq5aSZqAVCs6yTCSQAo9qa9PUgvCNEyfC6iCg4CFFSL:cWuciyT
 FileSize: 6 Kb (6993 bytes)
 FileLOC: 183
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XDocument/System/Xml/Linq/BaseUriAnnotation.cs
 FileType: SOURCE
@@ -3651,6 +3945,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7j4KbDKCySTS3KGhKgKDUL3mLRZdIwa4vXW7seb:W+SAoD7j
 FileSize: 999 bytes
 FileLOC: 28
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XDocument/System/Xml/Linq/Extensions.cs
 FileType: SOURCE
@@ -3661,6 +3956,7 @@ FileChecksum: SSDEEP: 192:cAtr/bsHBrv5UQuiBIvg1maSCv1nP1ngnHBndBnSvfAeX1mqieXnfo
 FileSize: 20 Kb (20573 bytes)
 FileLOC: 402
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XDocument/System/Xml/Linq/LineInfoAnnotation.cs
 FileType: SOURCE
@@ -3671,6 +3967,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7j4KbDKCySTS3KGhKgKDUL3mLRZdIwagbg6SN7qRmnGN8X9p
 FileSize: 1 Kb (1506 bytes)
 FileLOC: 38
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XDocument/System/Xml/Linq/LineInfoEndElementAnnotation.cs
 FileType: SOURCE
@@ -3681,6 +3978,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7j4KbDKCySTS3KGhKgKDUL3mLRZdIwagbHyUd8ZZETNEFb:W
 FileSize: 1 Kb (1251 bytes)
 FileLOC: 31
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XDocument/System/Xml/Linq/XAttribute.cs
 FileType: SOURCE
@@ -3691,6 +3989,7 @@ FileChecksum: SSDEEP: 384:FWr/bsQMZU/EXhTyOsmHCK4znWQ3HdOMUqc:F5fyQMUqc
 FileSize: 28 Kb (29407 bytes)
 FileLOC: 697
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XDocument/System/Xml/Linq/XCData.cs
 FileType: SOURCE
@@ -3701,6 +4000,7 @@ FileChecksum: SSDEEP: 48:f+SAoD7j4YPyL1hbsZdQSgLG6Ou+gLGAhBm0st8vgOgGQMAlCVL:f9A
 FileSize: 2 Kb (2416 bytes)
 FileLOC: 65
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XDocument/System/Xml/Linq/XComment.cs
 FileType: SOURCE
@@ -3711,6 +4011,7 @@ FileChecksum: SSDEEP: 96:f9Aovj4YPa1hbsZdnu92e9qCZ+3cZZx44BaqWJTLKQNq+V9uWL:FAtr
 FileSize: 3 Kb (4018 bytes)
 FileLOC: 116
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XDocument/System/Xml/Linq/XContainer.cs
 FileType: SOURCE
@@ -3721,6 +4022,7 @@ FileChecksum: SSDEEP: 768:FN8whFVULmMAnYLaZRJ4amsRZYzzl4Xo7aGr:38whFVULmMAnYLanJ
 FileSize: 40 Kb (41273 bytes)
 FileLOC: 1097
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XDocument/System/Xml/Linq/XDeclaration.cs
 FileType: SOURCE
@@ -3731,6 +4033,7 @@ FileChecksum: SSDEEP: 96:f9Aovj4YPa1hbsZdkyJDv687kJMJLJAvTdQFNTncTX8b9HzdL:FAtr/
 FileSize: 4 Kb (4583 bytes)
 FileLOC: 132
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XDocument/System/Xml/Linq/XDocument.cs
 FileType: SOURCE
@@ -3741,6 +4044,7 @@ FileChecksum: SSDEEP: 192:FAtr/bsNvPULh9ogT2Z7Z4VLo3zFEN9wCWECKD2ovOCkKKXCHYy3UN
 FileSize: 25 Kb (25826 bytes)
 FileLOC: 628
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XDocument/System/Xml/Linq/XDocumentType.cs
 FileType: SOURCE
@@ -3751,6 +4055,7 @@ FileChecksum: SSDEEP: 96:f9Aovj4YPa1hbsZddsMBWn09KfWJtnhvWdZriZKGWJzqKeWJpLYQNxl
 FileSize: 5 Kb (5969 bytes)
 FileLOC: 167
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XDocument/System/Xml/Linq/XElement.cs
 FileType: SOURCE
@@ -3761,6 +4066,7 @@ FileChecksum: SSDEEP: 768:F6XlCcncWRbfcERIRmb33AhyTsA35fe6:YXlz8Rmb33AhyTsA35j
 FileSize: 72 Kb (74046 bytes)
 FileLOC: 1707
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XDocument/System/Xml/Linq/XHashtable.cs
 FileType: SOURCE
@@ -3771,6 +4077,7 @@ FileChecksum: SSDEEP: 384:FWr/bsHLteXSqv0go6DJbtXnRftDFoKQQIPWGNlhHqE1zFoasBHKej
 FileSize: 24 Kb (24848 bytes)
 FileLOC: 402
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XDocument/System/Xml/Linq/XHelper.cs
 FileType: SOURCE
@@ -3781,6 +4088,7 @@ FileChecksum: SSDEEP: 24:f+SAotD7j4KbDKCySTS3KGhKgKDUL3mLRZdIwaqWAWwczHlIjb6EyJk
 FileSize: 1 Kb (1290 bytes)
 FileLOC: 34
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XDocument/System/Xml/Linq/XLinq.cs
 FileType: SOURCE
@@ -3791,6 +4099,7 @@ FileChecksum: SSDEEP: 192:cAtr/bsCcaTKJj6LyiS5qmaQSC/NCH01AnAi6WaqmahSA2QYkg6ByU
 FileSize: 20 Kb (20915 bytes)
 FileLOC: 618
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XDocument/System/Xml/Linq/XName.cs
 FileType: SOURCE
@@ -3801,6 +4110,7 @@ FileChecksum: SSDEEP: 96:f9Aovj4YPa1hbsZdXbBgozik7+L9hvvXYb6PJ9Fzei5vy+f3rf0ZNOw
 FileSize: 7 Kb (8101 bytes)
 FileLOC: 182
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XDocument/System/Xml/Linq/XNamespace.cs
 FileType: SOURCE
@@ -3811,6 +4121,7 @@ FileChecksum: SSDEEP: 192:FAtr/bsL2PGfkKR5y5PZoEsNMElXrtqHOhzLuUPtVkEyL:FWr/bsLU
 FileSize: 14 Kb (14395 bytes)
 FileLOC: 289
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XDocument/System/Xml/Linq/XNode.cs
 FileType: SOURCE
@@ -3821,6 +4132,7 @@ FileChecksum: SSDEEP: 768:FmcW2962Dsu/GYpbowljbn9leqSzlF19:4u962Dsu/GYpowljbn9le
 FileSize: 25 Kb (26247 bytes)
 FileLOC: 621
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XDocument/System/Xml/Linq/XNodeBuilder.cs
 FileType: SOURCE
@@ -3831,6 +4143,7 @@ FileChecksum: SSDEEP: 192:cAtr/bsuTUHRT+B6jiGxZClEnYxs6KeCNUl61yb:cWr/bsuT8DJnYL
 FileSize: 6 Kb (7134 bytes)
 FileLOC: 233
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XDocument/System/Xml/Linq/XNodeDocumentOrderComparer.cs
 FileType: SOURCE
@@ -3841,6 +4154,7 @@ FileChecksum: SSDEEP: 48:f+SAoD7j4YPyL1hbsZdwyZDkrw956qDkrw95IFWnGDjeNjTiL:f9Aov
 FileSize: 2 Kb (2905 bytes)
 FileLOC: 70
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XDocument/System/Xml/Linq/XNodeEqualityComparer.cs
 FileType: SOURCE
@@ -3851,6 +4165,7 @@ FileChecksum: SSDEEP: 96:f9Aovj4YPa1hbsZd7nWV6L4eE0xjLNyL4eE08CNHrijLnFL:FAtr/bs
 FileSize: 5 Kb (5660 bytes)
 FileLOC: 109
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XDocument/System/Xml/Linq/XNodeReader.cs
 FileType: SOURCE
@@ -3861,6 +4176,7 @@ FileChecksum: SSDEEP: 384:cWr/bsI/ya1kc5E92UIAKIkbiuAaGak38:cvaTeh38
 FileSize: 44 Kb (45160 bytes)
 FileLOC: 1357
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XDocument/System/Xml/Linq/XObject.cs
 FileType: SOURCE
@@ -3871,6 +4187,7 @@ FileChecksum: SSDEEP: 192:FAtr/bsNh3EA10E6fNqiZDC2tfqUSClLqiSCmiEjDQC50SqVSCXeEj
 FileSize: 17 Kb (17462 bytes)
 FileLOC: 496
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XDocument/System/Xml/Linq/XObjectChangeAnnotation.cs
 FileType: SOURCE
@@ -3881,6 +4198,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7j4KbDKCySTS3KGhKgKDUL3mLRZdIwa4JKWXz6zTK7b:W+SA
 FileSize: 1 Kb (1055 bytes)
 FileLOC: 28
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XDocument/System/Xml/Linq/XObjectChangeEventArgs.cs
 FileType: SOURCE
@@ -3891,6 +4209,7 @@ FileChecksum: SSDEEP: 96:f9Aovj4YPa1hbsZdYWZKILZgLZ0LZUNiyL:FAtr/bsenwyL
 FileSize: 3 Kb (3150 bytes)
 FileLOC: 61
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XDocument/System/Xml/Linq/XProcessingInstruction.cs
 FileType: SOURCE
@@ -3901,6 +4220,7 @@ FileChecksum: SSDEEP: 96:f9Aovj4YPa1hbsZdvlFeZnQHeU7BxueyrZZy4BCWJZt2palks3Eh9vW
 FileSize: 5 Kb (5501 bytes)
 FileLOC: 146
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XDocument/System/Xml/Linq/XStreamingElement.cs
 FileType: SOURCE
@@ -3911,6 +4231,7 @@ FileChecksum: SSDEEP: 96:W9Aovj4YPa1hbsZdvRHq4AtbVF4MtvhDYq6vO04co3ZFFC8bGNiIfKy
 FileSize: 8 Kb (8496 bytes)
 FileLOC: 207
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XDocument/System/Xml/Linq/XText.cs
 FileType: SOURCE
@@ -3921,6 +4242,7 @@ FileChecksum: SSDEEP: 96:f9Aovj4YPa1hbsZdQhjN608fqzW7u4BXWJQ4LKQNsR6d9HLBiL:FAtr
 FileSize: 3 Kb (3754 bytes)
 FileLOC: 114
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XDocument/System.Xml.XDocument.csproj
 FileType: OTHER
@@ -3939,6 +4261,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7jInK+F/JwrfvYrC+IDV+8DFLyRbUpI+tPHpt7TABL+ETVGy
 FileSize: 1 Kb (1137 bytes)
 FileLOC: 24
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XmlDocument/src/Resources/Strings.Designer.cs
 FileType: SOURCE
@@ -3966,6 +4289,7 @@ FileChecksum: SSDEEP: 192:cAapybZ6C54iQzkwfqBPCTmlNV+Kp/2tRXyL:c+Q6B
 FileSize: 6 Kb (7113 bytes)
 FileLOC: 189
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XmlDocument/src/System/Xml/Dom/DomNameTable.cs
 FileType: SOURCE
@@ -3976,6 +4300,7 @@ FileChecksum: SSDEEP: 96:W9AovjNFgA4a4j69Cmj69M8uTqrc2CML:cAhaa69Cw69DpCML
 FileSize: 3 Kb (3880 bytes)
 FileLOC: 108
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlAttribute.cs
 FileType: SOURCE
@@ -3986,6 +4311,7 @@ FileChecksum: SSDEEP: 192:cANmEzF1O4jfQhb8IL96cBqytCkCwvj6XqSWCThzY86KWl6LIOzI6R
 FileSize: 10 Kb (11212 bytes)
 FileLOC: 332
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlAttributeCollection.cs
 FileType: SOURCE
@@ -3996,6 +4322,7 @@ FileChecksum: SSDEEP: 192:cAti/eC5HIHyCcS6loysnhriuS6YSkqqOCfqOrOCOZJnNympOWInI8
 FileSize: 13 Kb (13771 bytes)
 FileLOC: 336
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlCDATASection.cs
 FileType: SOURCE
@@ -4006,6 +4333,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7jKglE4UN9+tIb+rAzb+rAAtJDanK3J9CebDPAxMAlAz6OhEq
 FileSize: 2 Kb (2891 bytes)
 FileLOC: 97
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlCharacterData.cs
 FileType: SOURCE
@@ -4016,6 +4344,7 @@ FileChecksum: SSDEEP: 96:W9AovNuIwGpbnhwTnkqqTXcq6THrWnQPwDQ6T8TMaYDMj6uTMwU0V5k
 FileSize: 5 Kb (5874 bytes)
 FileLOC: 157
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlChildEnumerator.cs
 FileType: SOURCE
@@ -4026,6 +4355,7 @@ FileChecksum: SSDEEP: 24:W+SAotD74KAsQhyWXxgPhRqze/FPIGxMee+YU94jFtvTyL:W+SAoD74
 FileSize: 1 Kb (1509 bytes)
 FileLOC: 56
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlChildNodes.cs
 FileType: SOURCE
@@ -4036,6 +4366,7 @@ FileChecksum: SSDEEP: 24:W+SAotD74KAsQepE+zF4n5Sp+bLJB26bebL4pCsjWS6/Evl6yL:W+SA
 FileSize: 1 Kb (1379 bytes)
 FileLOC: 49
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlComment.cs
 FileType: SOURCE
@@ -4046,6 +4377,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7bswjEBxgUFgYcb0KArqjb0KAwebd+SHuAxM7+SHefAzBb:W
 FileSize: 1 Kb (1504 bytes)
 FileLOC: 44
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDeclaration.cs
 FileType: SOURCE
@@ -4056,6 +4388,7 @@ FileChecksum: SSDEEP: 96:W9AovKlSlX7mgWTH40fK/uLba9TF2G5tAtJamvCIt9E8cXeU9R+L:cA
 FileSize: 5 Kb (5557 bytes)
 FileLOC: 147
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocument.cs
 FileType: SOURCE
@@ -4066,6 +4399,7 @@ FileChecksum: SSDEEP: 768:ckdBiu6e4vrSrtFMXFerDRClX9PUCEgn:f7FMXFcs2M
 FileSize: 45 Kb (46402 bytes)
 FileLOC: 1149
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocumentFragment.cs
 FileType: SOURCE
@@ -4076,6 +4410,7 @@ FileChecksum: SSDEEP: 192:cA3hrDdmkpi62tCTmgMKLyXmquuum+yL:cqivB
 FileSize: 7 Kb (7583 bytes)
 FileLOC: 175
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDocumentType.cs
 FileType: SOURCE
@@ -4086,6 +4421,7 @@ FileChecksum: SSDEEP: 96:W9Aov5IPvb7NjkqvkpctRKAP7xUYfRHochocL:cAj7NjT2cDK8751NT
 FileSize: 3 Kb (3756 bytes)
 FileLOC: 113
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlDomTextWriter.cs
 FileType: SOURCE
@@ -4096,6 +4432,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7jKCkZAos0eoseON15uG3Xar6BDR804BO+BDRZXar6Bu04BO
 FileSize: 1 Kb (1510 bytes)
 FileLOC: 37
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlElement.cs
 FileType: SOURCE
@@ -4106,6 +4443,7 @@ FileChecksum: SSDEEP: 192:cApVwn7QqtTZQACbLD/B7hbEAIwvD6XqSgSq1SCctmlBiDhdjL/yzs
 FileSize: 19 Kb (19538 bytes)
 FileLOC: 553
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlElementList.cs
 FileType: SOURCE
@@ -4116,6 +4454,7 @@ FileChecksum: SSDEEP: 384:cWc5cuL+PWnpYgL0P2ZIJAf+Zzw3l1mpxN4wH4N+juNdw:c/5zg4pY
 FileSize: 13 Kb (13794 bytes)
 FileLOC: 364
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlEntity.cs
 FileType: SOURCE
@@ -4126,6 +4465,7 @@ FileChecksum: SSDEEP: 96:W9Aov9uVPQHNiI1Z9W9igWZpCT95rCfd9YTknAocyVC9rL:cAz2NiI1
 FileSize: 4 Kb (4533 bytes)
 FileLOC: 129
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlEventChangedAction.cs
 FileType: SOURCE
@@ -4136,6 +4476,7 @@ FileChecksum: SSDEEP: 12:j9Y3kNSAoJHD2NuYFkNWw0xyCLvNnpz0MAsLvNCED1rc:W+SAotD7sk
 FileSize: 472 bytes
 FileLOC: 15
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlImplementation.cs
 FileType: SOURCE
@@ -4146,6 +4487,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7xasWHRqEMbGPu4zF4OGLLGPnyyTc/f0nnXlCAOMVsHjXyL:
 FileSize: 1 Kb (1457 bytes)
 FileLOC: 40
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlLinkedNode.cs
 FileType: SOURCE
@@ -4156,6 +4498,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7sB7E2dJQqag9dXmqLcb0ZHdqAIqrPeqyL:W+SAoDc7E2dJQ
 FileSize: 1 Kb (1671 bytes)
 FileLOC: 55
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlLoader.cs
 FileType: SOURCE
@@ -4166,6 +4509,7 @@ FileChecksum: SSDEEP: 384:ceMeoPnPfv+lLhz+mW6kqo8nVFGYgbCdmTTAXgDN/AXgDFCoMxNEx6
 FileSize: 31 Kb (31983 bytes)
 FileLOC: 722
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlName.cs
 FileType: SOURCE
@@ -4176,6 +4520,7 @@ FileChecksum: SSDEEP: 96:W9AovKNF2d9Q7SMedmivSQpCVCyK7CiaKaM2J2LyL:cAGDmiaQpCVCy
 FileSize: 3 Kb (3113 bytes)
 FileLOC: 115
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNamedNodeMap.cs
 FileType: SOURCE
@@ -4186,6 +4531,7 @@ FileChecksum: SSDEEP: 96:W9Aov4DO0qIFa6OJSMBMqJDwuKb6XM+NjDcZDhQ8h9xbTphHHpQedc6
 FileSize: 6 Kb (6477 bytes)
 FileLOC: 187
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNamedNodeMap.SmallXmlNodeList.cs
 FileType: SOURCE
@@ -4196,6 +4542,7 @@ FileChecksum: SSDEEP: 96:W9Aov4d4488qS7gyaTjtqAkYlxoqTAqiUiS0yL:cAVuf8qSzaThqATo
 FileSize: 5 Kb (5765 bytes)
 FileLOC: 170
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNode.cs
 FileType: SOURCE
@@ -4206,6 +4553,7 @@ FileChecksum: SSDEEP: 768:cT4JjqHA8XwkdPEJQs93NMOB5sS8M+aGNjYeFr:sA8XwkdPW3NMssS
 FileSize: 46 Kb (47212 bytes)
 FileLOC: 1212
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNodeChangedEventArgs.cs
 FileType: SOURCE
@@ -4216,6 +4564,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7sOGNFrF4jNF4XF4MQ2F4+2FpYFZ4wOpezOKbWBQdGBROchM
 FileSize: 1 Kb (1223 bytes)
 FileLOC: 29
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNodeChangedEventHandler.cs
 FileType: SOURCE
@@ -4226,6 +4575,7 @@ FileChecksum: SSDEEP: 6:j9Y3kNSAe9DjX4GHDOMKnI0uYawFy/6Qn6PohQUSCn:j9Y3kNSAoJHD2
 FileSize: 272 bytes
 FileLOC: 6
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlNodeList.cs
 FileType: SOURCE
@@ -4236,6 +4586,7 @@ FileChecksum: SSDEEP: 24:W+SAotD74KAsR4/K1qTC+HqqGK1D8MOFuLb:W+SAoD74+6K1qTC+H3G
 FileSize: 1 Kb (1037 bytes)
 FileLOC: 25
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlProcessingInstruction.cs
 FileType: SOURCE
@@ -4246,6 +4597,7 @@ FileChecksum: SSDEEP: 96:W9AovjPNHUDwoULtqwy+uxA2n7InnJwCHpMecycL:cAGO/ULtqwy+uC
 FileSize: 3 Kb (3127 bytes)
 FileLOC: 91
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlSignificantWhiteSpace.cs
 FileType: SOURCE
@@ -4256,6 +4608,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7jK8E4UN9Ibo9Aebo9AbJDCnK3J9CebkBNL/3joAxMkAz6OhE
 FileSize: 3 Kb (3408 bytes)
 FileLOC: 112
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlText.cs
 FileType: SOURCE
@@ -4266,6 +4619,7 @@ FileChecksum: SSDEEP: 96:W9AovjKyZzSjATvJ/J9C3ASC22AkGjcDnOhEqyL:cA8NDTvz9C3ASCJ
 FileSize: 4 Kb (4393 bytes)
 FileLOC: 137
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlUnspecifiedAttribute.cs
 FileType: SOURCE
@@ -4276,6 +4630,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7jed9UaYs7+K1vJYJC1vq+bU98+f9PUOZIjSyVhZnMGiL:W9A
 FileSize: 2 Kb (2547 bytes)
 FileLOC: 74
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XmlDocument/src/System/Xml/Dom/XmlWhitespace.cs
 FileType: SOURCE
@@ -4286,6 +4641,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7jKHE4Uhs9IbXAebXAoJDCnK3J9CTNL/3jebeAxMkAz6OhEqy
 FileSize: 3 Kb (3374 bytes)
 FileLOC: 112
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XmlDocument/src/System/Xml/EmptyEnumerator.cs
 FileType: SOURCE
@@ -4296,6 +4652,7 @@ FileChecksum: SSDEEP: 12:j9Y3kNSAoJHD26TLD4KpuYFQhy7Hd5EE4dzEoyL:W+SAotD7j4KAsQh
 FileSize: 600 bytes
 FileLOC: 24
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XmlDocument/src/System/Xml/XmlTextEncoder.cs
 FileType: SOURCE
@@ -4306,6 +4663,7 @@ FileChecksum: SSDEEP: 192:cA4tyPYqVCYFm/q6CuvZynDKveKpdKUkx6QyzKl+GwunrkG3sSH1Sq
 FileSize: 17 Kb (17643 bytes)
 FileLOC: 534
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XmlDocument/src/System.Xml.XmlDocument.csproj
 FileType: OTHER
@@ -4988,6 +5346,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7jInK+F/JwrfvYrC+IDV+8DFLyRbzI+tP6t7TABL+ETVGy:W
 FileSize: 1 Kb (1125 bytes)
 FileLOC: 24
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/Resources/Strings.Designer.cs
 FileType: SOURCE
@@ -5015,6 +5374,7 @@ FileChecksum: SSDEEP: 768:cc5nPtpuKtp2RqLkOOyJZu3XZ8xaAmv/Xc:3htEKtfOyUXnAms
 FileSize: 35 Kb (36076 bytes)
 FileLOC: 752
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/Cache/XPathDocumentIterator.cs
 FileType: SOURCE
@@ -5025,6 +5385,7 @@ FileChecksum: SSDEEP: 96:W9Aovjc7XIYiNyxpPkt7XoP6lycnFt1of65wPyajozYwS0ofreFTzYw
 FileSize: 9 Kb (9378 bytes)
 FileLOC: 258
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/Cache/XPathDocumentNavigator.cs
 FileType: SOURCE
@@ -5035,6 +5396,7 @@ FileChecksum: SSDEEP: 384:cg01DhWrDg1+LLwR+p+E3xXG3qlgd0gRCX1zBwMOUXZZjSQ0J/Q:cf
 FileSize: 41 Kb (42690 bytes)
 FileLOC: 905
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/Cache/XPathNode.cs
 FileType: SOURCE
@@ -5045,6 +5407,7 @@ FileChecksum: SSDEEP: 384:cw7NRwt1HPbrZziVoZRhSNqU/qVTpq3DaT:caKt1HsVoZRlC0
 FileSize: 18 Kb (19391 bytes)
 FileLOC: 445
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/Cache/XPathNodeHelper.cs
 FileType: SOURCE
@@ -5055,6 +5418,7 @@ FileChecksum: SSDEEP: 384:cfThGDwXtaSlvkKvhBbtzwRb3o2nl/lKNpk:cfTbaJK5Bbt0Rx
 FileSize: 26 Kb (27556 bytes)
 FileLOC: 594
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/Cache/XPathNodeInfoAtom.cs
 FileType: SOURCE
@@ -5065,6 +5429,7 @@ FileChecksum: SSDEEP: 192:cAn0VLTQfy8Ty9kszdzDpgJrj0Keq16BTLgrhDCZbR6j7RrkSdL:cy
 FileSize: 17 Kb (17716 bytes)
 FileLOC: 439
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XmlNodeOrder.cs
 FileType: SOURCE
@@ -5075,6 +5440,7 @@ FileChecksum: SSDEEP: 12:j9Y3kNSAoJHD2NuYFcSjLQSjCbSwSjrLESjgb8X+SjcYrt:W+SAotD7
 FileSize: 756 bytes
 FileLOC: 17
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/DocumentOrderQuery.cs
 FileType: SOURCE
@@ -5085,6 +5451,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7ncdhye0FFXThjMVJiUNPw6tUM4b:W+SAoD7cdhyegpWUXb
 FileSize: 989 bytes
 FileLOC: 26
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/NumberFunctions.cs
 FileType: SOURCE
@@ -5095,6 +5462,7 @@ FileChecksum: SSDEEP: 96:W9Aovj2hI4dc+Q4reAA52J9TQK5blpXUStCOAvVTTVLHhAN3sinL:cA
 FileSize: 3 Kb (4025 bytes)
 FileLOC: 115
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/AbsoluteQuery.cs
 FileType: SOURCE
@@ -5105,6 +5473,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7ncdhyW0FbXThjMVJ6jUQmDGxFM6L:W+SAoD7cdhyW25IKxF
 FileSize: 969 bytes
 FileLOC: 27
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/AstNode.cs
 FileType: SOURCE
@@ -5115,6 +5484,7 @@ FileChecksum: SSDEEP: 12:j9Y3kNSAoJHD26muczRVpAWCPgOFQnMgv/DML:W+SAotD7ncdVpARIO
 FileSize: 605 bytes
 FileLOC: 23
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/AttributeQuery.cs
 FileType: SOURCE
@@ -5125,6 +5495,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7N2cdhykOSdcyXKf8h+Mq//6aykSUmp9SCFML:W9AovN2cdck
 FileSize: 2 Kb (2350 bytes)
 FileLOC: 68
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/Axis.cs
 FileType: SOURCE
@@ -5135,6 +5506,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7NcdeCUHG+/0OT15n5/9/xWVk8hMIirlvL:W9AovNcdwJ9F1Z
 FileSize: 1 Kb (2033 bytes)
 FileLOC: 61
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/BaseAxisQuery.cs
 FileType: SOURCE
@@ -5145,6 +5517,7 @@ FileChecksum: SSDEEP: 96:W9AovN2hAd9ZOHVtIAX+S73kIDnSMluFlhXiSqsCWXuu4lKGtLhDsqO
 FileSize: 4 Kb (5085 bytes)
 FileLOC: 138
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/BooleanExpr.cs
 FileType: SOURCE
@@ -5155,6 +5528,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7N2ht+dhyAWvVWpE18h38ihMXO3Q8iXOvCh+EBDFyY/CXL:W9
 FileSize: 2 Kb (2278 bytes)
 FileLOC: 61
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/BooleanFunctions.cs
 FileType: SOURCE
@@ -5165,6 +5539,7 @@ FileChecksum: SSDEEP: 96:W9AovjN2hI4dc2EC/7z3YB03Q05NPIoNUhesynL:cAu27/7cCtx1nL
 FileSize: 3 Kb (3184 bytes)
 FileLOC: 88
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/CacheAxisQuery.cs
 FileType: SOURCE
@@ -5175,6 +5550,7 @@ FileChecksum: SSDEEP: 48:W+SAoD74YNcdf6OWJfdQlMkdGg5uXF5EQ2jIS4oXnlX3aXL:W9Aov4Y
 FileSize: 2 Kb (2065 bytes)
 FileLOC: 57
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/CacheChildrenQuery.cs
 FileType: SOURCE
@@ -5185,6 +5561,7 @@ FileChecksum: SSDEEP: 96:W9AovN2SuxujEahc+q0Iido9kKJvQPTpl4L+fu2gAZaBKi/q1W6qSoc
 FileSize: 5 Kb (5273 bytes)
 FileLOC: 147
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/CacheOutputQuery.cs
 FileType: SOURCE
@@ -5195,6 +5572,7 @@ FileChecksum: SSDEEP: 48:W+SAoD74YN2ht+dk/JfdoiMkSS75uXFBYlg/tQ2jIS4LhWXXXnlX3aL
 FileSize: 2 Kb (2739 bytes)
 FileLOC: 74
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/ChildrenQuery.cs
 FileType: SOURCE
@@ -5205,6 +5583,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7cdejO3XhrFIfW6a/HSq/1sUlmAEapGqCFtL:W9Aovcds4Ifp
 FileSize: 2 Kb (2357 bytes)
 FileLOC: 67
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/ClonableStack.cs
 FileType: SOURCE
@@ -5215,6 +5594,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7cdhyTwZKGrFXK+pJ382780aL:W+SAoD4dhyMZ1N3ppA0aL
 FileSize: 915 bytes
 FileLOC: 27
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/CompiledXpathExpr.cs
 FileType: SOURCE
@@ -5225,6 +5605,7 @@ FileChecksum: SSDEEP: 192:cAtVg2jFTpbep6F0T9siACVC4AcYilh6TyiL6zsvf83sZK:cWZbosc
 FileSize: 7 Kb (7935 bytes)
 FileLOC: 201
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/ContextQuery.cs
 FileType: SOURCE
@@ -5235,6 +5616,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7cde5kJXsOXw5dr+hWXXXAn3aXL:W9Aovcd/Jcjdah2HAnKL
 FileSize: 1 Kb (1732 bytes)
 FileLOC: 47
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/DescendantBaseQuery.cs
 FileType: SOURCE
@@ -5245,6 +5627,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7j2cdS2OoFYeiXwXgk+UaelHK7KKiSCuEBDFyuwJLOdfXL:W9
 FileSize: 2 Kb (2452 bytes)
 FileLOC: 71
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/DescendantOverDescendantQuery.cs
 FileType: SOURCE
@@ -5255,6 +5638,7 @@ FileChecksum: SSDEEP: 96:W9AovNcQacWzz7SukjlggSqzS/kVgyrgAgIQKlcTL:cAYDWX7SukhnS
 FileSize: 3 Kb (3210 bytes)
 FileLOC: 91
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/DescendantQuery.cs
 FileType: SOURCE
@@ -5265,6 +5649,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7cde7JWTmHKpKDwo/W/K/wia/eS0q/wCdlL:W9AovcdojHKpZ
 FileSize: 2 Kb (2255 bytes)
 FileLOC: 63
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/EmptyQuery.cs
 FileType: SOURCE
@@ -5275,6 +5660,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7ncdhyI2MEejMqEfbf3+knpl32lXCzVWXO9L:W+SAoD7cdhy
 FileSize: 961 bytes
 FileLOC: 18
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/ExtensionQuery.cs
 FileType: SOURCE
@@ -5285,6 +5671,7 @@ FileChecksum: SSDEEP: 96:W9Aovj2hAd/568A5enlFAu68P2j7g5xSMtZ2ChsL:cA78OenlFAu68P
 FileSize: 4 Kb (4227 bytes)
 FileLOC: 116
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/Filter.cs
 FileType: SOURCE
@@ -5295,6 +5682,7 @@ FileChecksum: SSDEEP: 12:j9Y3kNSAoJHD26muczReYFG6ZF9D6ZQZiKoyv/D5vWV/bXoSfL:W+SA
 FileSize: 763 bytes
 FileLOC: 20
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/FilterQuery.cs
 FileType: SOURCE
@@ -5305,6 +5693,7 @@ FileChecksum: SSDEEP: 192:cAH2v0wdKnvsCf0CZd9rlJmwi1uJm/iryXZVMIiSCAX3nL:cKlvJ9Y
 FileSize: 7 Kb (7543 bytes)
 FileLOC: 182
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/FollowingQuery.cs
 FileType: SOURCE
@@ -5315,6 +5704,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7cdhynOwffvSnGF/EFohmrBakq/UitGq/vClfjL:W9Aovcdcn
 FileSize: 2 Kb (2514 bytes)
 FileLOC: 73
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/FollSiblingQuery.cs
 FileType: SOURCE
@@ -5325,6 +5715,7 @@ FileChecksum: SSDEEP: 96:W9Aov4YSujdcr+V+dWzvQP3+7U2CwE6GkVhaaB0h+KSykSYQ0L:cAVH
 FileSize: 3 Kb (3603 bytes)
 FileLOC: 105
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/ForwardPositionQuery.cs
 FileType: SOURCE
@@ -5335,6 +5726,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7NncdeYJTLJXThjMVJiU0mnZtUMBb:W+SAoD7NcdeYJHfq3U
 FileSize: 1 Kb (1075 bytes)
 FileLOC: 30
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/Function.cs
 FileType: SOURCE
@@ -5345,6 +5737,7 @@ FileChecksum: SSDEEP: 96:W9Aov4YcdxyHjoRNCNsZnXMrXeA+AcAMDxlnBeQAHYmPlovLHxlAogL
 FileSize: 4 Kb (4603 bytes)
 FileLOC: 105
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/FunctionQuery.cs
 FileType: SOURCE
@@ -5355,6 +5748,7 @@ FileChecksum: SSDEEP: 96:W9Aovj4Y2hAdcgnxSgmEtDHJt4CaCW1rK5a0CVpHmg7JKZsVSnL:cAt
 FileSize: 4 Kb (4541 bytes)
 FileLOC: 124
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/Group.cs
 FileType: SOURCE
@@ -5365,6 +5759,7 @@ FileChecksum: SSDEEP: 12:j9Y3kNSAoJHD26muczReJFnFRr9X74ZVyv/D5vWGva3L:W+SAotD7nc
 FileSize: 628 bytes
 FileLOC: 17
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/GroupQuery.cs
 FileType: SOURCE
@@ -5375,6 +5770,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7ncdhyIgOUb0Fd/XTF0S/ZjMnwvtMcjCzc3+k/Xnj:W+SAoD
 FileSize: 1 Kb (1069 bytes)
 FileLOC: 27
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/IDQuery.cs
 FileType: SOURCE
@@ -5385,6 +5781,7 @@ FileChecksum: SSDEEP: 48:W+SAoD72cdhyeSgvXUHsgLtvg4ACgZNYgoEgyUgtmQXPCkGTCFHL:W9
 FileSize: 2 Kb (2467 bytes)
 FileLOC: 65
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/IteratorFilter.cs
 FileType: SOURCE
@@ -5395,6 +5792,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7ncdeMzMRF1MqMZFwluF+V9MqM4tMbMPmvjFVtJMa/vMCN6m
 FileSize: 1 Kb (1359 bytes)
 FileLOC: 38
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/LogicalExpr.cs
 FileType: SOURCE
@@ -5405,6 +5803,7 @@ FileChecksum: SSDEEP: 192:cAHRZeOf6pM5vRVGVZaVdzRVs/QaV1q1F1q1c1MbVGVZkVr9LVsBC0
 FileSize: 15 Kb (15650 bytes)
 FileLOC: 391
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/MergeFilterQuery.cs
 FileType: SOURCE
@@ -5415,6 +5814,7 @@ FileChecksum: SSDEEP: 48:W+SAoD72ht+dhymAtowg0H5RS4iCAvMMWBcEcFvKEBDFyCd/XL:W9Ao
 FileSize: 2 Kb (2329 bytes)
 FileLOC: 71
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/NamespaceQuery.cs
 FileType: SOURCE
@@ -5425,6 +5825,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7NcdhyxhO+ScczS0Xp8hBZq/+aykSeMaJjF8MR6/0dCWL:W9A
 FileSize: 2 Kb (2393 bytes)
 FileLOC: 70
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/NodeFunctions.cs
 FileType: SOURCE
@@ -5435,6 +5836,7 @@ FileChecksum: SSDEEP: 96:W9Aov2hI4dc6FlcqUFft6yia0imK7fsynL:cA06FlcvFft6yia0immn
 FileSize: 3 Kb (3729 bytes)
 FileLOC: 109
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/NumericExpr.cs
 FileType: SOURCE
@@ -5445,6 +5847,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7N2ht+dhyBiW1WpAMn1AhSSeXDihXQle30OChAv6EBDFyYxCX
 FileSize: 2 Kb (2959 bytes)
 FileLOC: 76
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/Operand.cs
 FileType: SOURCE
@@ -5455,6 +5858,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7ncdeDyEhFz7FgQlDlACZfvfC/DsUoL:W+SAoD7cdeDywaQl
 FileSize: 810 bytes
 FileLOC: 24
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/OperandQuery.cs
 FileType: SOURCE
@@ -5465,6 +5869,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7je2ncdhy7yEkBYjMn+tCzoC2MaNEBDRDyuK4BqL:W+SAoD7
 FileSize: 987 bytes
 FileLOC: 29
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/Operator.cs
 FileType: SOURCE
@@ -5475,6 +5880,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7NcdeDyPxd8TeVZ//t8rdnpC/1bdAB7/RG7BXHMX4L:W9AovN
 FileSize: 2 Kb (2211 bytes)
 FileLOC: 77
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/ParentQuery.cs
 FileType: SOURCE
@@ -5485,6 +5891,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7ncdhyjS3A0FaGXThjMVJinFh7EzEsdSCQMquL:W+SAoD7cd
 FileSize: 1 Kb (1083 bytes)
 FileLOC: 29
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/PrecedingQuery.cs
 FileType: SOURCE
@@ -5495,6 +5902,7 @@ FileChecksum: SSDEEP: 96:W9AovNSujJoXpx6rGUPQc1dfQ3DpvgSTryCZ0Ck2b:cAubaMLfQTxgS
 FileSize: 3 Kb (4045 bytes)
 FileLOC: 94
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/PreSiblingQuery.cs
 FileType: SOURCE
@@ -5505,6 +5913,7 @@ FileChecksum: SSDEEP: 96:W9Aov4YNcmVFdltKtBmdZT3CUtPeX6gfIyHyiSCY2L:cAVoP4tBmd53
 FileSize: 3 Kb (3652 bytes)
 FileLOC: 82
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/Query.cs
 FileType: SOURCE
@@ -5515,6 +5924,7 @@ FileChecksum: SSDEEP: 192:cAtlES+k67yR+Pptezh1w0Ct0Yy6XikOeXEXXI6bXdXdBa2SDk8wL:
 FileSize: 9 Kb (9428 bytes)
 FileLOC: 228
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/QueryBuilder.cs
 FileType: SOURCE
@@ -5525,6 +5935,7 @@ FileChecksum: SSDEEP: 192:cAt1MbChR9IgLq9w6SyzyOq7W4OuaTvaY6i3as6in+3agazaaTmcOK
 FileSize: 22 Kb (22989 bytes)
 FileLOC: 508
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/ResetableIterator.cs
 FileType: SOURCE
@@ -5535,6 +5946,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7ncdy9MZ/Vm7MAtokRyAgEkRWXbqUkRQzsJH5CgcEPbkrMJL
 FileSize: 1 Kb (1275 bytes)
 FileLOC: 38
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/ReversePositionQuery.cs
 FileType: SOURCE
@@ -5545,6 +5957,7 @@ FileChecksum: SSDEEP: 12:j9Y3kNSAoJHD26muczRhyXK/Q8KLnb0FmVKHKyXTS2MV4gKzXkzLESl
 FileSize: 737 bytes
 FileLOC: 14
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/Root.cs
 FileType: SOURCE
@@ -5555,6 +5968,7 @@ FileChecksum: SSDEEP: 12:j9Y3kNSAoJHD26muczReujbm4ZqXyv/D5vWXL:W+SAotD7ncdeadZqX
 FileSize: 451 bytes
 FileLOC: 12
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/SortQuery.cs
 FileType: SOURCE
@@ -5565,6 +5979,7 @@ FileChecksum: SSDEEP: 192:cAtuR1zYRX+Uqxs21US4I8sE9HG7AxsTTED58eS8NoEm/FgXm:cWuR
 FileSize: 7 Kb (7891 bytes)
 FileLOC: 201
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/StringFunctions.cs
 FileType: SOURCE
@@ -5575,6 +5990,7 @@ FileChecksum: SSDEEP: 192:cAtNbjJsyV6tXHY3Ctxiu9ApsGZfIMEEpC9VUmrhQk6HH6o61K6Cvh
 FileSize: 10 Kb (10268 bytes)
 FileLOC: 262
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/UnionExpr.cs
 FileType: SOURCE
@@ -5585,6 +6001,7 @@ FileChecksum: SSDEEP: 96:W9Aovj2hAdciMHUK8WZy+mxGmN1LB6eCq6uG36JXE76l1y7jhWlHsX6
 FileSize: 4 Kb (5027 bytes)
 FileLOC: 161
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/ValueQuery.cs
 FileType: SOURCE
@@ -5595,6 +6012,7 @@ FileChecksum: SSDEEP: 12:j9Y3kNSAoJHD26TLDmuczRdQNzbXJVYYXTSfDMJLfDMBgnDMPzQDMpD
 FileSize: 881 bytes
 FileLOC: 17
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/Variable.cs
 FileType: SOURCE
@@ -5605,6 +6023,7 @@ FileChecksum: SSDEEP: 12:j9Y3kNSAoJHD26muczReX6FzluFrTgNhvLT3ZaXnyv/D5vJznmZDMhM
 FileSize: 755 bytes
 FileLOC: 20
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/VariableQuery.cs
 FileType: SOURCE
@@ -5615,6 +6034,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7j2ht+dhy6o9VJnXX2OCzooJ2LJvDwBQmbEygVJXadWEBDFyV
 FileSize: 2 Kb (2567 bytes)
 FileLOC: 67
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/XPathAncestorIterator.cs
 FileType: SOURCE
@@ -5625,6 +6045,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7ncdeFMRYMwwX7vMwGuBRrBVvMUMpppEXvEqVCxMisMWb:W+
 FileSize: 1 Kb (1258 bytes)
 FileLOC: 34
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/XPathAncestorQuery.cs
 FileType: SOURCE
@@ -5635,6 +6056,7 @@ FileChecksum: SSDEEP: 48:W+SAoD72cdhyk5QOXrz1FE1t0JiSgCc50niSCQfqSr3yEBDFyuwJLOd
 FileSize: 2 Kb (2894 bytes)
 FileLOC: 76
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/XPathArrayIterator.cs
 FileType: SOURCE
@@ -5645,6 +6067,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7j4d4YNcsYYHDCegGW7SYPdMc4stxJeRMAtxMV4+6TCIQL:W9
 FileSize: 2 Kb (2184 bytes)
 FileLOC: 66
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/XPathAxisIterator.cs
 FileType: SOURCE
@@ -5655,6 +6078,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7jcd76O9Qw4dQRPCPIY86087h3rLQCaLtaDInAOmq/JJOCyL:
 FileSize: 2 Kb (2827 bytes)
 FileLOC: 79
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/XPathChildIterator.cs
 FileType: SOURCE
@@ -5665,6 +6089,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7ncdeJRWwRinwGu8rBAnSbMFc6VdAHxEqVCuL:W+SAoD7cde
 FileSize: 1 Kb (1085 bytes)
 FileLOC: 29
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/XPathDescendantIterator.cs
 FileType: SOURCE
@@ -5675,6 +6100,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7cdeNGZh35Mcnpqdg5q/L4rM+ZCyL:W9AovcdAGZh360Ydg5q
 FileSize: 1 Kb (1923 bytes)
 FileLOC: 60
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/XPathEmptyIterator.cs
 FileType: SOURCE
@@ -5685,6 +6111,7 @@ FileChecksum: SSDEEP: 12:j9Y3kNSAoJHD26muczRhyYeRF5aT2MVTgGxzo5lSGLLD1:W+SAotD7n
 FileSize: 910 bytes
 FileLOC: 30
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/XPathParser.cs
 FileType: SOURCE
@@ -5695,6 +6122,7 @@ FileChecksum: SSDEEP: 768:cb0OSEnZwNqkNgA0HEUMH1jTQZb5XDmicWn1YF5oVz852fC7V/yF:h
 FileSize: 35 Kb (36745 bytes)
 FileLOC: 814
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/XPathScanner.cs
 FileType: SOURCE
@@ -5705,6 +6133,7 @@ FileChecksum: SSDEEP: 192:cAa5vGA6Gw6xflbIchghafKEWepZ4JPd96C2CiqnWCCyKXiqnWCCyk
 FileSize: 12 Kb (13230 bytes)
 FileLOC: 385
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/XPathSelectionIterator.cs
 FileType: SOURCE
@@ -5715,6 +6144,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7cL1LFyXeNZPv4zsC1HX/Z2fjL:W9AovcvyXYZPv4zsC13/ZA
 FileSize: 1 Kb (1669 bytes)
 FileLOC: 48
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/XPathSelfQuery.cs
 FileType: SOURCE
@@ -5725,6 +6155,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7ncdhy9OmA0F5XTMyE/gv0CFMitL:W+SAoD7cdhy9OmAWa40
 FileSize: 911 bytes
 FileLOC: 24
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/Internal/XPathSingletonIterator.cs
 FileType: SOURCE
@@ -5735,6 +6166,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7NncdeQ3eRFO1Fx3wqx3wJbq+f333pKMFcv3iMLtMXHkL:W+
 FileSize: 1 Kb (1575 bytes)
 FileLOC: 58
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/IXPathNavigable.cs
 FileType: SOURCE
@@ -5745,6 +6177,7 @@ FileChecksum: SSDEEP: 6:j9Y3kNSAe9DjX4GHDOMKnI0uY+aeUTv+5EuOd9a4/AG8KKAn:j9Y3kNS
 FileSize: 273 bytes
 FileLOC: 9
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/XPathCompileTest.cs
 FileType: SOURCE
@@ -5755,6 +6188,7 @@ FileChecksum: SSDEEP: 12:hZ3kNSAoJHD2JB9ycXvCE8TLDpzuYnRWyZWU1EbL:f+SAotD69nqE8j
 FileSize: 589 bytes
 FileLOC: 20
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/XPathDocument.cs
 FileType: SOURCE
@@ -5765,6 +6199,7 @@ FileChecksum: SSDEEP: 192:cAM6GbOHgCYjQqc2nKLiafpJCqRShdClFfbfg1yL:cN6lHLuC24NNF
 FileSize: 14 Kb (15172 bytes)
 FileLOC: 332
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/XPathException.cs
 FileType: SOURCE
@@ -5775,6 +6210,7 @@ FileChecksum: SSDEEP: 96:W9AovjesVuHdodDq3MX++XIyGMI4G26OGia2Fi/my84F8g7ayyb:cAg
 FileSize: 3 Kb (3961 bytes)
 FileLOC: 94
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/XPathExpr.cs
 FileType: SOURCE
@@ -5785,6 +6221,7 @@ FileChecksum: SSDEEP: 24:W+SAotDhV4KAfDiupfGuYDzUPXSVLi9vh2/DKtRmWltsEhnvSjb6UL:
 FileSize: 1 Kb (1899 bytes)
 FileLOC: 59
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/XPathItem.cs
 FileType: SOURCE
@@ -5795,6 +6232,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7+VMmwCsG35Z/QuhhMiHZpsKLP+afWta3tz:W+SAoDKVnNxw
 FileSize: 1 Kb (1445 bytes)
 FileLOC: 32
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/XPathNamespaceScope.cs
 FileType: SOURCE
@@ -5805,6 +6243,7 @@ FileChecksum: SSDEEP: 6:j9Y3kNSAe9DjX4GHDOMKnI0uY+aeUQr0KqErv:j9Y3kNSAoJHD2NuYnM
 FileSize: 278 bytes
 FileLOC: 11
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/XPathNavigator.cs
 FileType: SOURCE
@@ -5815,6 +6254,7 @@ FileChecksum: SSDEEP: 768:cFcLtb1RSMXci6QSs4Iq4lJl88V71+nWk:XuIzl8s1+7
 FileSize: 55 Kb (56701 bytes)
 FileLOC: 1494
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/XPathNavigatorKeyComparer.cs
 FileType: SOURCE
@@ -5825,6 +6265,7 @@ FileChecksum: SSDEEP: 48:W+SAoDhy4ieAfRq0Knkbq/3TNMC6/j+L:W9Aoly4infRqRnUqGC6b+L
 FileSize: 1 Kb (1859 bytes)
 FileLOC: 55
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/XPathNavigatorReader.cs
 FileType: SOURCE
@@ -5835,6 +6276,7 @@ FileChecksum: SSDEEP: 768:csIAjhRqzoPnZD+N+1cKP2R1cKP2b1cKP2T1cKP2yai:2
 FileSize: 38 Kb (39698 bytes)
 FileLOC: 1082
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/XPathNodeIterator.cs
 FileType: SOURCE
@@ -5845,6 +6287,7 @@ FileChecksum: SSDEEP: 96:W9Aov4dNmnUc8mx16yX6+yBjsALJOGQUxDgcMJWm9RDqQdyL:cAVyUc
 FileSize: 4 Kb (4521 bytes)
 FileLOC: 113
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/XPath/XPathNodeType.cs
 FileType: SOURCE
@@ -5855,6 +6298,7 @@ FileChecksum: SSDEEP: 6:j9Y3kNSAe9DjX4GHDOMKnI0uY+aeUQlbqRKhRhFeQy0Bm+BZw5dAv:j9
 FileSize: 420 bytes
 FileLOC: 18
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System/Xml/Xsl/XsltContext.cs
 FileType: SOURCE
@@ -5865,6 +6309,7 @@ FileChecksum: SSDEEP: 24:W+SAotD74KmsnuUqetNmGOHnRWj/DMjWYVtk4WXTjFMvlEyAm7XY5Wa
 FileSize: 1 Kb (1472 bytes)
 FileLOC: 34
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath/System.Xml.XPath.csproj
 FileType: OTHER
@@ -5883,6 +6328,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7jInK+F/JwrfvYrC+IDV+8DFLyRbhOI+tPYOt7TABL+ETVGy
 FileSize: 1 Kb (1145 bytes)
 FileLOC: 24
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath.XDocument/Resources/Strings.Designer.cs
 FileType: SOURCE
@@ -5910,6 +6356,7 @@ FileChecksum: SSDEEP: 24:W+SAotD70mWhQzuIiduAYP5nzbZ4bZLL:W+SAoD7nR/RhSLL
 FileSize: 834 bytes
 FileLOC: 18
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath.XDocument/System/Xml/XPath/XDocumentExtensions.cs
 FileType: SOURCE
@@ -5920,6 +6367,7 @@ FileChecksum: SSDEEP: 12:j9Y3kNSAoJHD26c+uYnUzFMxu4FEYG0L0/I+C4HovHcyXuyauScY92k
 FileSize: 748 bytes
 FileLOC: 25
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath.XDocument/System/Xml/XPath/XNodeNavigator.cs
 FileType: SOURCE
@@ -5930,6 +6378,7 @@ FileChecksum: SSDEEP: 384:cWuQORgfDv6J89Dh1KqiomEMEsUJ4phqTph2R:cQGAj5mU4phqTph+
 FileSize: 36 Kb (37327 bytes)
 FileLOC: 1047
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath.XDocument/System/Xml/XPath/XObjectExtensions.cs
 FileType: SOURCE
@@ -5940,6 +6389,7 @@ FileChecksum: SSDEEP: 12:j9Y3kNSAoJHD26c+uYnRW5Xasy+Jv7Sw9L:W+SAotD70mWzhJv2CL
 FileSize: 502 bytes
 FileLOC: 18
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath.XDocument/System.Xml.XPath.XDocument.csproj
 FileType: OTHER
@@ -5958,6 +6408,7 @@ FileChecksum: SSDEEP: 24:W+SAotD7jInK+F/JwrfvYrC+IDV+8DFLyRbhdpI+tPYdpt7TABL+ETV
 FileSize: 1 Kb (1149 bytes)
 FileLOC: 24
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath.XmlDocument/Resources/Strings.Designer.cs
 FileType: SOURCE
@@ -5985,6 +6436,7 @@ FileChecksum: SSDEEP: 6:j9Y3kNSAe9DjX4GHDOMKnI0uYawFOWwCtwNV2S9StF9mwTF1FCEy/raK
 FileSize: 398 bytes
 FileLOC: 12
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath.XmlDocument/System/Xml/XmlDocumentEx.cs
 FileType: SOURCE
@@ -5995,6 +6447,7 @@ FileChecksum: SSDEEP: 24:W+SAotD74KNsQW8IjZQQ5z/F+M/uBniBUy0FMgBijgyNgEidF9opzwP
 FileSize: 1 Kb (1261 bytes)
 FileLOC: 28
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath.XmlDocument/System/Xml/XmlNodeEx.cs
 FileType: SOURCE
@@ -6005,6 +6458,7 @@ FileChecksum: SSDEEP: 96:W9AovNtxwQVZU38F14Enfe5chjF0C9K4i3hpvvFLvFtAEyL:cA4VYi1
 FileSize: 4 Kb (4959 bytes)
 FileLOC: 123
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath.XmlDocument/System/Xml/XmlWellformedWriter.cs
 FileType: SOURCE
@@ -6015,6 +6469,7 @@ FileChecksum: SSDEEP: 768:cfxcttOXj9RT6TNNInQsYTFTBLy512Q7rVpoaunwVjctdxX3RPTc:q
 FileSize: 85 Kb (87946 bytes)
 FileLOC: 2085
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath.XmlDocument/System/Xml/XmlWellformedWriterHelpers.cs
 FileType: SOURCE
@@ -6025,6 +6480,7 @@ FileChecksum: SSDEEP: 384:chJoK4mtKJ50+XRB5Vw00TT5VuXuRhVuMuW:cLoK5Kl6
 FileSize: 17 Kb (18314 bytes)
 FileLOC: 476
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath.XmlDocument/System/Xml/XPath/DocumentXmlWriter.cs
 FileType: SOURCE
@@ -6035,6 +6491,7 @@ FileChecksum: SSDEEP: 192:cAtuiJFLPzMEYt7Ul/titvU+i9S+bqIg1bwXh2IV6KUZwTTzQ9bN2I
 FileSize: 20 Kb (20543 bytes)
 FileLOC: 544
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath.XmlDocument/System/Xml/XPath/DocumentXPathNavigator.cs
 FileType: SOURCE
@@ -6045,6 +6502,7 @@ FileChecksum: SSDEEP: 384:cWuCAAfy6+cYuJxh4eL74uQJxoe9WZDZ0n9xTXoht7RWnaALmhoReR
 FileSize: 80 Kb (82043 bytes)
 FileLOC: 2248
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath.XmlDocument/System/Xml/XPath/XmlDocumentExtensions.cs
 FileType: SOURCE
@@ -6055,6 +6513,7 @@ FileChecksum: SSDEEP: 192:cAVPBvWqvWLCSrD8VP6nyWMkP6nyWMNhx65yK2cdCOL:cGJvhvjYDA
 FileSize: 6 Kb (7117 bytes)
 FileLOC: 181
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath.XmlDocument/System/Xml/XPath/XPathNodeList.cs
 FileType: SOURCE
@@ -6065,6 +6524,7 @@ FileChecksum: SSDEEP: 48:W+SAoD7hN4d4SeF+S+bSvkXZhSq//C0Lvljtee8iAisuIDqyL:W9Aov
 FileSize: 2 Kb (3026 bytes)
 FileLOC: 113
 FileCopyrightText: <text>Copyright (c) Microsoft. All rights reserved.</text>
+LicenseInfoInFile: MIT
 
 FileName: ./src/System.Xml.XPath.XmlDocument/System.Xml.XPath.XmlDocument.csproj
 FileType: OTHER

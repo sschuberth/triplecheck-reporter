@@ -134,7 +134,7 @@ public class Plugin extends PluginVanilla{
         // load the page
         request.setPage(tempFile);
         // delete the page
-        tempFile.delete();
+        //tempFile.delete();
      }
      
      /**

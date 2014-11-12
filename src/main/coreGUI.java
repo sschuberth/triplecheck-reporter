@@ -17,6 +17,7 @@ package main;
 import GUI.KeyStroke;
 import GUI.StudioUI4;
 import comp.ComponentControl;
+import java.awt.Color;
 import java.io.File;
 import java.util.ArrayList;
 import script.RunningTask;
@@ -28,6 +29,9 @@ import structure.ReportsControl;
 public class coreGUI {
 
     public static String version = "0.9.7";
+    
+    // default color used as background on the tool
+    public static final Color backgroundColor = new Color(0xf8f8f8);
     
     public static StudioUI4 studio = null;
     

@@ -115,7 +115,7 @@ public class FileExtension {
      * @param targetFile    the file on disk
      * @return              an HTML code ready for displaing the content
      */
-    public String format(File targetFile) {
+    public String format(final File targetFile) {
         
         // what kind of file do we have here?
         FileCategory category = getCategory();

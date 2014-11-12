@@ -109,6 +109,7 @@ public class actions extends Plugin{
     
     /**
      * Opens up a requested folder on disk
+     * @param request
      */
     public void folder(WebRequest request) {
     String paramString = request.getParameter("target");
@@ -143,7 +144,6 @@ public class actions extends Plugin{
        
         // we're talking about tree nodes, get the respective information
         FileInfo2 fileInfo = (FileInfo2) node.getUserObject();
-//        System.err.println("AC136 Need to implement double click");
         File targetFile = fileInfo.getFile();
         
         if(targetFile == null){
