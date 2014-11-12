@@ -27,7 +27,8 @@ cp ./LICENSE ./publish/
 mkdir ./publish/reports
 echo This folder contains the generated reports > ./publish/reports/readme.txt
 echo Copying the example report
-cp ./run/reports/adblockplusandroid.spdx ./publish/reports/example.spdx
+cp ./run/reports/example.spdx ./publish/reports/example.spdx
+cp ./run/reports/7z922.spdx ./publish/reports/7z922.spdx
 
 echo Create the zipped file
 cd ./publish

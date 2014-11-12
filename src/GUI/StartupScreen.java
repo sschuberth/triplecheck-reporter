@@ -24,6 +24,7 @@ import java.util.prefs.Preferences;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
+import main.coreGUI;
 import main.engine;
 import script.log;
 
@@ -60,7 +61,7 @@ public class StartupScreen extends javax.swing.JFrame {
         // change the background to full white
         getContentPane().setBackground( Color.WHITE );
         // show the current version of our software
-        label.setText("Version " + engine.version);
+        label.setText("Version " + coreGUI.version);
     }
 
     /**

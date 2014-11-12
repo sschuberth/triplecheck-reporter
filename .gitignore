@@ -1,6 +1,9 @@
 *.class
+triplecheck.zip
+triplecheck-1.0.0.zip
+store/*
 dist/
-build/
+build/*
 build/classes/GUI/Studio*
 build/classes/spdx/show.class
 build/classes/spdx/temp.html
