@@ -380,6 +380,7 @@ FileSize: 2 Kb (2960 bytes)
 
 FileName: ./src/org/adblockplus/ChunkedOutputStream.java
 FileType: SOURCE
+FileLicenseConcluded: GPL-3.0
 ArtifactOfProjectName: AdBlockPlusAndroid
 FileOrigin: AUTHORED
 FileChecksum: SHA1: 6ca73ef570a11214b0e0b18eb281768ab5d1aa19
