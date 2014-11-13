@@ -71,6 +71,12 @@ public final class ReportsControl {
             if(filePath.contains(".svn")){
                 continue;
             }
+            
+            // avoid empty files
+            if(file.length() == 0){
+                continue;
+            }
+            
             // increase the counter
             counter++;
             // read the file

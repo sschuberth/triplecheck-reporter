@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+<meta content="text/html;charset=UTF-8" http-equiv="Content-Type"><title>Web server settings</title>
+
+</head>
+<body>
+<form action="server?x=save" method="post">
+<div style="margin-left: 0px;"><span style="color: rgb(255, 255, 255); background-color: rgb(0, 0, 0); font-size: 24px; line-height: 33px;"><span style="font-family: serif;">&nbsp;Web server
+(experimental)&nbsp;</span>
+</span><br>
+<br>
+Enable the web portal version if you wish. To open the web portal on
+your browser, <a href="/webserver/server.java?x=open">click
+this link</a>.<br>
+<br>
+<br>
+<div style="margin-left: 10px;">Port to be used
+(default is 10101)<br>
+<input maxlength="5" name="port" style="width: 150px;" value="10101"><br>
+<br>
+<span style="font-weight: bold;">Status</span><br>
+<table style="text-align: left; width: 20%;" border="0" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td><input name="status" value="online" type="radio" checked="checked">
+</td>
+<td style="width: 120px;">Online</td>
+</tr>
+<tr>
+<td><input name="status" value="offline" type="radio">
+</td>
+<td>Offline</td>
+</tr>
+</tbody>
+</table>
+<br>
+</div>
+<br>
+Ready? Click on the button below to apply the changes. <br>
+<br>
+<img style="width: 24px; height: 24px;" alt="" src="wand.png" hspace="3">&nbsp;<input value="Apply changes" name="SubmitButton" type="submit"><br>
+</div>
+</form>
+</body></html>

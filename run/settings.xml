@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties>
-<comment>Settings for this folder</comment>
+<comment/>
 <entry key="SOURCEFOLDER---components.spdx">/mnt/06B6C215B6C20561/core/code/reporter/run/components</entry>
 <entry key="SOURCEFOLDER---corefx-master.spdx">/mnt/06B6C215B6C20561/core/code/source/corefx-master</entry>
 <entry key="port">10101</entry>

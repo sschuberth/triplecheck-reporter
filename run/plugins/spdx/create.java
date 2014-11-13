@@ -186,10 +186,10 @@ public class create extends Plugin{
                
 
                   // start the SPDX class
-        final DocumentCreate2 newSPDX = new DocumentCreate2();
+                final DocumentCreate2 newSPDX = new DocumentCreate2();
         
-         // launch a small thread to keep the progress updated
-               Thread thread = new Thread(){
+                // launch a small thread to keep the progress updated
+                Thread thread = new Thread(){
                    @Override
                    public void run(){
                        // wait a little bit for things to start
@@ -470,14 +470,15 @@ public class create extends Plugin{
 //        String result = "";
         
         try{
-        // do all the heavy work
-//        result = 
-                newSPDX.create(extractedFolder);
-//                System.err.println("CR479 - Create folder from GUI not yet implemented");
+            // do all the heavy work
+            newSPDX.create(extractedFolder);
         }catch (Exception e){
             log.write(is.ERROR, "CR301- Exception occurred when creating SPDX"
                     + ": %1",e.toString());
-//            e.printStackTrace();
+            // what happened?
+            e.printStackTrace();
+            // delete the empty file because it will be unusable
+            newSPDX.getOutputFile().delete();
         }
         // count the time it took to run this task
         long time = System.currentTimeMillis() - task.getUID();
