@@ -13,7 +13,6 @@
 package spdx;
 
 import GUI.swingUtils;
-import definitions.is;
 import java.io.File;
 import main.coreGUI;
 import main.engine;

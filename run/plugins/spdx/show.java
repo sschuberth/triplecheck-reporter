@@ -325,7 +325,16 @@ public class show extends Plugin{
         
         // get quality evaluation
         EvaluateLicensingQuality qualityTest = new EvaluateLicensingQuality();
-        qualityTest.setAuditMode(false);
+        
+        // are we using audit mode or permissive mode?
+        final String toggleValue = settings.read(coreGUI.toggleScore, "-1");
+        final int value = Integer.parseInt(toggleValue);
+        boolean rigidStyle = false;
+        if(value == 1){
+            rigidStyle= true;
+        }
+        // do the licensing quality test
+        qualityTest.setAuditMode(rigidStyle);
         qualityTest.process(file);
         
         double j = qualityTest.getScore() / 10.0;
