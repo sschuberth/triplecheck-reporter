@@ -37,6 +37,9 @@ public class coreGUI {
     
     public static KeyStroke key = new KeyStroke();
    
+    public static final String toggleScore = "toggleScore";
+            
+    
     static public boolean 
             searchBoxActive = false,
             textWasModified; // relates to the main text box

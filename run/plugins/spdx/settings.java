@@ -13,7 +13,9 @@
 package spdx;
 
 import GUI.swingUtils;
+import definitions.is;
 import java.io.File;
+import main.coreGUI;
 import main.engine;
 import script.Plugin;
 import spdxlib.SPDXfile2;
@@ -30,7 +32,7 @@ import www.WebRequest;
 public class settings extends Plugin{
      
     final String templateFolderHTML = "spdxSettings.html";
-     
+    
     /**
      * Display the current settings
      * @param request the request for this method
@@ -38,18 +40,50 @@ public class settings extends Plugin{
     @Override
     public void main(WebRequest request){
        // we only expect to be called from the treeview
-       if(request.requestOrigin != RequestOrigin.GUI_tree
-               && request.requestOrigin != RequestOrigin.GUI){
-           return;
+//       if(request.requestOrigin != RequestOrigin.GUI_tree
+//               && request.requestOrigin != RequestOrigin.GUI){
+//           return;
+//       }
+       
+       // get the toggle value
+       final String toggleValue = settings.read(coreGUI.toggleScore, "-1");
+       final int value = Integer.parseInt(toggleValue);
+       // where we create the link
+       String link;
+       String auditMode;
+       String linkText = "change";
+       if(value == 1){
+           link = utils.www.html.link(linkText, "settings.java?x=toggle&value=0");
+           auditMode = "ON";
+       }else{
+            link = utils.www.html.link(linkText, "settings.java?x=toggle&value=1");
+            auditMode = "OFF";
        }
+       
        // load our template
        request.setTemplate(templateFolderHTML);
        // add the value of our directory
        request.changeTemplate("none-template", getFolderString());
+       // 
+       request.changeTemplate("%auditMode%", auditMode);
+       request.changeTemplate("%toggle%", link);
+       
        // all done
        request.closeTemplate();
     }
 
+    /**
+     * Toggle on/off for the audit mode in the scoring mechanism
+     * @param request 
+     */
+    public void toggle(WebRequest request){
+        final String param = request.getParameter("value");
+        // write back this value on our settings
+        settings.write(coreGUI.toggleScore, param);
+        main(request);
+        
+    }
+    
     /**
      * Provides back the string for the folder where the source code files
      * are located (if any), or returns empty if nothing exists

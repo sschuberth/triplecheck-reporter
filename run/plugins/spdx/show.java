@@ -18,7 +18,6 @@ package spdx;
 import GUI.webUtils;
 import definitions.Messages;
 import definitions.is;
-import java.awt.Color;
 import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
@@ -326,6 +325,7 @@ public class show extends Plugin{
         
         // get quality evaluation
         EvaluateLicensingQuality qualityTest = new EvaluateLicensingQuality();
+        qualityTest.setAuditMode(false);
         qualityTest.process(file);
         
         double j = qualityTest.getScore() / 10.0;

@@ -6,9 +6,8 @@
 <form action="settings?x=save" method="post">
 <div style="margin-left: 0px;"> <span style="color: rgb(255, 255, 255); background-color: rgb(0, 0, 0); font-size: 24px; line-height: 33px;"><span style="font-family: serif;">&nbsp;Link to folder on
 disk&nbsp;</span>
-
-</span> <span style="font-weight: bold;"></span>
-<br><br>
+</span> <span style="font-weight: bold;"></span><br>
+<br>
 <a href="settings?x=folder">Click here</a>
 to choose the folder where the source code files that were used for
 creating the SPDX document are located. This is the setting that links
@@ -18,6 +17,22 @@ It is used when double-clicking on files from the treeview for viewing
 their content/source code.<br>
 <br>
 <input readonly="readonly" value="none-template" size="35" name="source"><br>
+<br>
+<span style="color: rgb(255, 255, 255); background-color: rgb(0, 0, 0); font-size: 24px; line-height: 33px;"><span style="font-family: serif;">&nbsp;Score
+settings&nbsp;</span>
+</span><br>
+<br>
+When this setting is ON, it evaluates if you have audited the code and
+verified the third-party components along with licensing details.
+Use this setting as OFF to evaluate the score of an open source project
+<span style="font-weight: bold;">without</span> an
+SPDX
+document or audit taking place.<br>
+<br>
+<span style="font-family: serif; color: rgb(0, 0, 0); background-color: rgb(255, 204, 51); font-size: 14px; line-height: 33px;">&nbsp;Audit
+mode is&nbsp;&nbsp;</span><span style="font-family: serif; color: rgb(0, 0, 0); background-color: rgb(180, 255, 148); font-size: 14px; line-height: 33px;">&nbsp;%auditMode%&nbsp;</span> &nbsp;&nbsp;&nbsp; &nbsp;<span style="font-family: serif; color: rgb(0, 0, 0); background-color: rgb(204, 204, 255); font-size: 14px; line-height: 33px;">
+&nbsp;%toggle%
+</span><br>
 <br>
 <br>
 <span style="color: rgb(255, 255, 255); background-color: rgb(0, 0, 0); font-size: 24px; line-height: 33px;"><span style="font-family: serif;">&nbsp;Experimental&nbsp;</span>

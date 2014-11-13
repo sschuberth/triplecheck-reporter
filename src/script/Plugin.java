@@ -133,7 +133,7 @@ public class Plugin extends PluginVanilla{
         utils.files.SaveStringToFile(tempFile, result);
         // load the page
         request.setPage(tempFile);
-        // delete the page
+        // delete the page -> this causes an error on HTML forms with settings
         //tempFile.delete();
      }
      

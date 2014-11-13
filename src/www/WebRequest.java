@@ -206,7 +206,7 @@ public class WebRequest {
         File file = new File(BaseFolder, "temp.html");
         utils.files.SaveStringToFile(file, templateText);
         setPage(file);
-        file.delete();
+        //file.delete();
     }
     
     
@@ -237,7 +237,7 @@ public class WebRequest {
         } catch (MalformedURLException ex) {
             Logger.getLogger(WebRequest.class.getName()).log(Level.SEVERE, null, ex);
         }
-        String fileText = utils.files.readAsString(page);
+        final String fileText = utils.files.readAsString(page);
         setAnswer(fileText);
     }
     
