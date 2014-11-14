@@ -49,7 +49,6 @@ public class start {
         
         // index the licenses
         coreGUI.licenses = new LicenseControl();
-        
     }
     
     
@@ -84,9 +83,5 @@ public class start {
             System.exit(-1981);
         }
     }
-
-    
-    
-    
 
 }

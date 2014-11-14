@@ -25,7 +25,6 @@ import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 import main.coreGUI;
-import main.engine;
 import script.log;
 
 /**

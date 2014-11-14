@@ -22,13 +22,15 @@ cp -R ../misc/java/ ./publish/misc/
 # Copy the licenses and other related files
 cp ./EUPL-1.1.txt ./publish/
 cp ./LICENSE ./publish/
+cp ./README.md ./publish/
 
 # add the example report
 mkdir ./publish/reports
 echo This folder contains the generated reports > ./publish/reports/readme.txt
 echo Copying the example report
-cp ./run/reports/example.spdx ./publish/reports/example.spdx
-cp ./run/reports/7z922.spdx ./publish/reports/7z922.spdx
+cp ./run/reports/example.spdx ./publish/reports/
+cp ./run/reports/7z922.spdx ./publish/reports/
+cp ./run/reports/corefx.spdx ./publish/reports/
 
 echo Create the zipped file
 cd ./publish

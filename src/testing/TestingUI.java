@@ -18,11 +18,8 @@ import java.io.File;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 import main.engine;
-import main.start;
-import script.FileExtension;
 import script.Trigger;
 import script.log;
-import spdxlib.ContentType;
 
 /**
  *

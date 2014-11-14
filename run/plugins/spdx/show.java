@@ -315,10 +315,17 @@ public class show extends Plugin{
         String textLOC = myFormatter.format(countLOC);
         String textOverallSize = utils.files.humanReadableSize(overallSize);
         
-        // generate the nice graph
-        String[] titles = new String[]{"No license declared", "License declared"};
+        // generate a nice graph, this score applies only to licenses
+        // that were declared on the SPDX document or found as license evidence
+        String[] titles = new String[]{
+            "License declared",
+            "No license declared"
+        };
         int noLicenses = counterFiles - counterLicensesDeclared;
-        int[] values = new int[]{noLicenses, counterLicensesDeclared};
+        int[] values = new int[]{
+            counterLicensesDeclared,
+            noLicenses
+        };
         // do the graph file
         Graphs.generate(thisFolder, titles, values, coreGUI.backgroundColor);
 
@@ -367,6 +374,19 @@ public class show extends Plugin{
 //            }
         }
         
+        // get the list of files with copyright and licenses
+        String concludedLicenses = ""
+                + spdx.getCountFilesWithCopyright()
+                + " files with copyright declared" 
+                + html.br
+                + spdx.getCountLicensesDeclared()
+                + " files with declared licenses";
+        
+        if(rigidStyle){
+            concludedLicenses += html.br
+                + spdx.getCountLicensesConcluded()
+                + " files with concluded licenses";
+        }
        
         request.setTemplate("project.html");
         // page title
@@ -374,7 +394,7 @@ public class show extends Plugin{
         // graph showing percentage of files with license headers
         request.changeTemplate("%chartLic%", webUtils.getIcon("chart.png", request));
         // list of concluded licenses
-        request.changeTemplate("%concludedLicenses%", spdx.summaryConcludedLicenses());
+        request.changeTemplate("%concludedLicenses%", concludedLicenses);
         // list languages and resources that were found
         request.changeTemplate("%languageEvaluation%", spdx.getLanguageEvaluation());
         // list languages and resources that were found
