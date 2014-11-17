@@ -51,8 +51,8 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/icons/fingerprint.png"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Mark file as authored"/>
             <Property name="toolTipText" type="java.lang.String" value="Resource developed by ourselves"/>
+            <Property name="label" type="java.lang.String" value="Mark file as authored (original)"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menuItem_MarkFileAuthoredActionPerformed"/>
@@ -63,8 +63,8 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/icons/box-label.png"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Mark file as external resource"/>
             <Property name="toolTipText" type="java.lang.String" value="Made externally by a third-party provider"/>
+            <Property name="label" type="java.lang.String" value="Mark file as 3rd party resource"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menuItem_MarkFileExternalActionPerformed"/>
@@ -75,8 +75,8 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/icons/box-resize.png"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Mark file as automated"/>
             <Property name="toolTipText" type="java.lang.String" value="Generated automatically, no changes by author"/>
+            <Property name="label" type="java.lang.String" value="Mark file as auto-generated"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menuItem_MarkFileAutomatedActionPerformed"/>
@@ -87,8 +87,8 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/icons/document-number.png"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Mark file as automixed"/>
             <Property name="toolTipText" type="java.lang.String" value="Generated automatically and then modified by author"/>
+            <Property name="label" type="java.lang.String" value="Mark as modified auto-generated file"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menuItem_MarkFileMixedActionPerformed"/>

@@ -188,8 +188,8 @@ public class StudioUI4 extends javax.swing.JFrame {
         popupMenuFile.add(menuItem_DefineLicense);
 
         menuItem_MarkFileAuthored.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/fingerprint.png"))); // NOI18N
-        menuItem_MarkFileAuthored.setText("Mark file as authored");
         menuItem_MarkFileAuthored.setToolTipText("Resource developed by ourselves");
+        menuItem_MarkFileAuthored.setLabel("Mark file as authored (original)");
         menuItem_MarkFileAuthored.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 menuItem_MarkFileAuthoredActionPerformed(evt);
@@ -198,8 +198,8 @@ public class StudioUI4 extends javax.swing.JFrame {
         popupMenuFile.add(menuItem_MarkFileAuthored);
 
         menuItem_MarkFileExternal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/box-label.png"))); // NOI18N
-        menuItem_MarkFileExternal.setText("Mark file as external resource");
         menuItem_MarkFileExternal.setToolTipText("Made externally by a third-party provider");
+        menuItem_MarkFileExternal.setLabel("Mark file as 3rd party resource");
         menuItem_MarkFileExternal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 menuItem_MarkFileExternalActionPerformed(evt);
@@ -208,8 +208,8 @@ public class StudioUI4 extends javax.swing.JFrame {
         popupMenuFile.add(menuItem_MarkFileExternal);
 
         menuItem_MarkFileAutomated.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/box-resize.png"))); // NOI18N
-        menuItem_MarkFileAutomated.setText("Mark file as automated");
         menuItem_MarkFileAutomated.setToolTipText("Generated automatically, no changes by author");
+        menuItem_MarkFileAutomated.setLabel("Mark file as auto-generated");
         menuItem_MarkFileAutomated.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 menuItem_MarkFileAutomatedActionPerformed(evt);
@@ -218,8 +218,8 @@ public class StudioUI4 extends javax.swing.JFrame {
         popupMenuFile.add(menuItem_MarkFileAutomated);
 
         menuItem_MarkFileMixed.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/document-number.png"))); // NOI18N
-        menuItem_MarkFileMixed.setText("Mark file as automixed");
         menuItem_MarkFileMixed.setToolTipText("Generated automatically and then modified by author");
+        menuItem_MarkFileMixed.setLabel("Mark as modified auto-generated file");
         menuItem_MarkFileMixed.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 menuItem_MarkFileMixedActionPerformed(evt);
