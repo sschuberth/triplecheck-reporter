@@ -29,6 +29,33 @@ FileChecksum: SHA256: b216565b3df2cb4bbba033f61ce78417d4b377ae0b5a19ddb15ab98343
 FileChecksum: MD5: 51fa92b548a6db078d92669521605587
 FileChecksum: SSDEEP: 24:RddyxKPqdMgSqdudu0qd5S8f2ht+vs/AdVjcxv8CT2rnq:jdyxKPqdMgSqdudLqdg6KtQs/AdVAxvT
 FileSize: 1 Kb (1082 bytes)
+## snippet #1
+CodeSnippet: LineStart: 10
+CodeSnippet: LineEnd: 86
+CodeSnippet: Copyright: <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+CodeSnippet: LicenseConcluded: GPL-3.0
+CodeSnippet: Origin: 3rdParty
+CodeSnippet: ArtifactOfProjectName: The Android project
+CodeSnippet: Comments: <text> File attribution for integers. </text>
+### similar code snippet #1
+CodeSnippet: Matches: Tool: F2F 1.9
+CodeSnippet: Matches: Algorithm: Bitmap Comparison
+CodeSnippet: Matches: FileChecksum: SHA1: b6dc4317e55b58bfd0335c2061d196b9e23cf6c3
+CodeSnippet: Matches: Source: b6dc4317e55b58bfd0335c2061d196b9e23cf6c3
+CodeSnippet: Matches: Similarity: 92%
+CodeSnippet: Matches: Source: http://github.com/triplecheck/src/myfile.java
+CodeSnippet: Matches: LineStart: 10
+CodeSnippet: Matches: LineEnd: 86
+### similar code snippet #2
+CodeSnippet: Matches: Tool: F2F v1.9
+CodeSnippet: Matches: Algorithm: Bitmap Comparison
+CodeSnippet: Matches: FileChecksum: SHA1: b6dc4317e55b58bfd0335c2061d196b9e23cf6c3
+CodeSnippet: Matches: Source: b6dc4317e55b58bfd0335c2061d196b9e23cf6c3
+CodeSnippet: Matches: Similarity: 92%
+CodeSnippet: Matches: Source: http://github.com/triplecheck/src/myfile.java
+CodeSnippet: Matches: LineStart: 10
+CodeSnippet: Matches: LineEnd: 86
+
 
 FileName: ./jni/Utils.h
 FileType: SOURCE
