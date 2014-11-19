@@ -4,7 +4,7 @@
  * Creator: Organization: TripleCheck (http://triplecheck.de)
  * Created: 2014-06-08T18:02:12Z
  * LicenseName: EUPL-1.1-without-appendix
- * FileName: export.java  
+ * FileName: compile.java  
  * FileType: SOURCE
  * FileCopyrightText: <text> Copyright (c) 2014 Nuno Brito, TripleCheck </text>
  * FileComment: <text> Exports the SPDX document to a given format </text> 
@@ -35,9 +35,9 @@ import www.WebRequest;
  *
  * @author Nuno Brito, 8th of June 2014 in Darmstadt, Germany
  */
-public class export extends Plugin{
+public class compile extends Plugin{
     
-    String redirect = html.redirect("/components/export", 0, " Returning..");
+    String redirect = html.redirect("/components/compile", 0, " Returning..");
     /**
      * Display the current list of tasks
      * @param request the request for this method
@@ -51,15 +51,15 @@ public class export extends Plugin{
             return;
         }
         
-//        String export = " at the \"export\" folder.";
+//        String compile = " at the \"compile\" folder.";
 //        
-//        // add a link on the export link if the host is windows
+//        // add a link on the compile link if the host is windows
 //        if(utils.misc.isWindows()){
-//             export = html.link("here", "?x=folder&folder="
+//             compile = html.link("here", "?x=folder&folder="
 //                     + engine.getFolderExport());
 //        }
         
-        request.setTemplate("export.html");
+        request.setTemplate("compile.html");
         request.closeTemplate();
         
         
@@ -68,21 +68,21 @@ public class export extends Plugin{
 //        String result = ""
 //                + html.div()
 //                + html.h2("Export the licensing data")
-//                + "Use this menu to export the documentation and files of this"
+//                + "Use this menu to compile the documentation and files of this"
 //                + " project. After exporting, the result can be found "
 //                + exportString result = ""
 //                + html.div()
 //                + html.h2("Export the licensing data")
-//                + "Use this menu to export the documentation and files of this"
+//                + "Use this menu to compile the documentation and files of this"
 //                + " project. After exporting, the result can be found "
-//                + export
+//                + compile
 //                + html.br
 //                + html.br
 //                + html.div()
-//                + html.link("Create report", "?x=export&type=report")
+//                + html.link("Create report", "?x=compile&type=report")
 //                + html.br
 ////                + html.br
-////                + html.link("Files", "?x=export&type=files")
+////                + html.link("Files", "?x=compile&type=files")
 //                + html._div
 //                + ""
 //                + html._div;
@@ -93,10 +93,10 @@ public class export extends Plugin{
 //                + html.br
 //                + html.br
 //                + html.div()
-//                + html.link("Create report", "?x=export&type=report")
+//                + html.link("Create report", "?x=compile&type=report")
 //                + html.br
 ////                + html.br
-////                + html.link("Files", "?x=export&type=files")
+////                + html.link("Files", "?x=compile&type=files")
 //                + html._div
 //                + ""
 //                + html._div;
@@ -130,7 +130,7 @@ public class export extends Plugin{
     }
  
      /**
-     * Performs the requested export
+     * Performs the requested compile
      * @param request 
      */
     public void export(WebRequest request){
@@ -185,7 +185,7 @@ public class export extends Plugin{
      */
     private String exportReport(SPDXfile2 spdx) {
         String result = "";
-        // start by creating our export directory
+        // start by creating our compile directory
         File folderExport = new File(engine.getFolderExport(), spdx.getId());
         // if the folder doesn't exist, create one
         utils.files.mkdirs(folderExport);
@@ -225,7 +225,7 @@ public class export extends Plugin{
             result += "- Created a zip file with the export contents" + html.br;
         
         } catch (IOException ex) {
-            Logger.getLogger(export.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(compile.class.getName()).log(Level.SEVERE, null, ex);
         }
         // all done
         return result;
@@ -238,7 +238,7 @@ public class export extends Plugin{
      */
     private String exportFiles(SPDXfile2 spdx) {
         String result = "";
-        // start by creating our export directory
+        // start by creating our compile directory
         File folderExport = new File(engine.getFolderExport(), spdx.getId());
         // if the folder doesn't exist, create one
         utils.files.mkdirs(folderExport);
