@@ -148,60 +148,11 @@ public class fix_suggestion extends Plugin{
      */
     private void evaluateCopyright(WebRequest request, SPDXfile2 spdx,
             EvaluateLicensingQuality test) {
-        // where we store the results
-        String result = "";
-        int counter = 0;
-        // do we really need an evaluation for this topic?
-        if(test.getMaxPointsForCopyright() == test.getScoreCopyright()){
-            result = "No action needed for this topic, looking good.";
-            request.changeTemplate(fixCopyright, result);
-            return;
-        }
-        
-        // it seems that we do have some work to be done here
-        for(FileInfo2 file : spdx.getFiles()){
-            
-            // we only want to process source code files
-            if(file.getExtensionObject().getCategory() != FileCategory.SOURCE){
-                continue;
-            }
-            // ignore the files that already have the copyright declared
-            if(file.hasCopyrightDeclared()){
-                continue;
-            }
-            
-            // if the file was automatically generated, then don't care about it
-            if(file.getFileOrigin() == FileOrigin.AUTOMATED){
-                continue;
-            }
-            
-            // list the ones that we still need to modify
-            result = result.concat(""
-                    + file.getFileName()
-                    + html.br
-            );
-            // increase the counter
-            counter++;
-        }
-        
-        // adapt accordingly to a single result or  multiple results
-        if(counter == 1){
-            result = "No copyright statement was found for "
-                    + result;
-        }else{
-            // show the list of results
-        result = "No copyright statement was found for the "
-                + "<b>"
-                + counter
-                + "</b>"
-                + " files listed below."
-                + html.br
-                + html.br
-                + result;
-        }
         
         // output the result to public
-        request.changeTemplate(fixCopyright, result);
+        request.changeTemplate(fixCopyright, test.getFixSuggestionCopyright());
+        request.changeTemplate(fixLicense, test.getFixSuggestionLicense());
+        
             
     }
     
