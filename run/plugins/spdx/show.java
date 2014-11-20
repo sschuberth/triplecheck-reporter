@@ -328,7 +328,6 @@ public class show extends Plugin{
         };
         // do the graph file
         Graphs.generate(thisFolder, titles, values, coreGUI.backgroundColor);
-
         
         // get quality evaluation
         EvaluateLicensingQuality qualityTest = new EvaluateLicensingQuality();
@@ -383,6 +382,12 @@ public class show extends Plugin{
                 + utils.text.convertToHumanNumbers(spdx.getCountLicensesDeclared())
                 + " files with declared licenses";
         
+        String packageLicenseDeclared = "[none]";
+        if(spdx.getPackageLicenseDeclared() != null){
+            packageLicenseDeclared = spdx.getPackageLicenseDeclared().getId();
+        }
+        
+        
         if(rigidStyle){
             concludedLicenses += html.br
                 + utils.text.convertToHumanNumbers(spdx.getCountLicensesConcluded())
@@ -412,6 +417,7 @@ public class show extends Plugin{
         // list languages and resources that were found
         request.changeTemplate("%languageEvaluation%", spdx.getLanguageEvaluation());
         // list languages and resources that were found
+        request.changeTemplate("%packageLicenseDeclared%", packageLicenseDeclared);
         request.changeTemplate("%licenseEvaluation%", spdx.getLicenseEvaluation());
         // add the score given to this project
         request.changeTemplate("%scoreDetails%", qualityDetails);

@@ -21,14 +21,13 @@ import java.awt.Color;
 import java.io.File;
 import java.util.ArrayList;
 import script.RunningTask;
-import structure.LicenseControl;
 import structure.LicensePopularity;
 import structure.ReportsControl;
 
 
 public class coreGUI {
 
-    public static String version = "0.9.8";
+    public static String version = "0.9.9";
     
     // default color used as background on the tool
     public static final Color backgroundColor = new Color(0xf8f8f8);
