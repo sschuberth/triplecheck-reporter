@@ -615,8 +615,10 @@ public class swingUtils {
             delay = utils.text.justNumbers(content.substring(0,pos));
             // we use -1 as indicator that something went wrong
             if(delay == -1){
-                System.err.println("META error 003: No delay value was found");
-                return null;
+//                System.err.println("META error 003: No delay value was found");
+//                return null;
+                //TODO HTML composer is buggy, adding fixed value when error happes
+                delay = 3;
             }
             // now go for the URL
             String temp = content.substring(pos +1);
