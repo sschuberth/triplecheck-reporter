@@ -133,7 +133,7 @@ public class compile extends Plugin{
      * Performs the requested compile
      * @param request 
      */
-    public void export(WebRequest request){
+    public void compile(WebRequest request){
         log.write(is.INFO, "Exporting documentation");
         // now that we have the correct node, get the spdx object
         TreeNodeSPDX node = swingUtils.getSelectedNode();

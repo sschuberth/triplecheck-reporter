@@ -387,6 +387,19 @@ public class show extends Plugin{
                 + spdx.getCountLicensesConcluded()
                 + " files with concluded licenses";
         }
+        
+        // enable (or not) the actions related to better scoring
+        String scoreAction = "";
+        // add a link for page with fixes when not perfect
+        if(j != 10){
+            // add a link to enable the list of fixes that can be made
+            scoreAction = html.link("See what can be fixed", "/spdx/fix_suggestion.java"
+                    + "?x=main"
+                    + "&"
+                    + param.spdx + "=" + spdxTarget
+            );
+        }
+        
        
         request.setTemplate("project.html");
         // page title
@@ -404,6 +417,8 @@ public class show extends Plugin{
         request.changeTemplate("%s%", qualityValue);
         // metrics (number of files, lines of code)
         request.changeTemplate("%metrics%", metrics);
+        // add the set of actions that we want to enable
+        request.changeTemplate("%scoreAction%", scoreAction);
         
         // all done
         request.closeTemplate();
