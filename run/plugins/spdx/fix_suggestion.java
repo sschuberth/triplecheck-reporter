@@ -21,11 +21,7 @@ import main.engine;
 import main.param;
 import script.Plugin;
 import spdxlib.EvaluateLicensingQuality;
-import spdxlib.FileCategory;
-import spdxlib.FileInfo2;
-import spdxlib.FileOrigin;
 import spdxlib.SPDXfile2;
-import utils.www.html;
 import www.WebRequest;
 
 
@@ -85,12 +81,29 @@ public class fix_suggestion extends Plugin{
         
         double score = qualityTest.getScore() / 10.0;
         
-        
         // get the template loaded
         request.setTemplate("webpage_fix.html");
-        // get the copyright evaluation
-        evaluateCopyright(request, spdx, qualityTest);
+        // get the fix suggestions
+        request.changeTemplate(fixCopyright, qualityTest.getSuggestionFixCopyright());
+        request.changeTemplate(fixLicense, qualityTest.getSuggestionFixLicense());
+        request.changeTemplate(fixDocumentation, qualityTest.getSuggestionFixDocumentation());
+       
+        // currently we have a rendering performance issue when too many
+        // files need to be listed, so we output the page to the browser
+        if(qualityTest.getCountCopyrightNotDeclared() > 100 
+                || qualityTest.getCountLicensesNotDeclared() > 100){
+            // create a new file on disk
+            File fileResult = new File(thisFolder, "temp-fix-suggestions.html");
+            utils.files.SaveStringToFile(fileResult, request.getTemplateText());
+            // open the URL on the browser
+            utils.internet.openURL("file:///" + fileResult.getAbsolutePath());
+            // all done
+            request.setAnswer("Too many files to list on this window, "
+                    + "opening your web browser to list them all.");
+            return;
+        }
         
+
         // all done
         request.closeTemplate();
     }
@@ -140,22 +153,5 @@ public class fix_suggestion extends Plugin{
         // all done
         return file;
     } 
-
-    /**
-     * Give advice regarding how well the copyright is documented. We expect
-     * this method to only be called when modifying the web template
-     * @param request 
-     */
-    private void evaluateCopyright(WebRequest request, SPDXfile2 spdx,
-            EvaluateLicensingQuality test) {
-        
-        // output the result to public
-        request.changeTemplate(fixCopyright, test.getFixSuggestionCopyright());
-        request.changeTemplate(fixLicense, test.getFixSuggestionLicense());
-        
-            
-    }
-    
-    
 
 }

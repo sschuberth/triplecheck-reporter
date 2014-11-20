@@ -280,6 +280,9 @@ public class WebRequest {
         }
         return result;
     }
-    
+
+    public String getTemplateText() {
+        return templateText;
+    }
     
 }
