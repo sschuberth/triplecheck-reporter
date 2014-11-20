@@ -17,7 +17,6 @@ import GUI.swingUtils;
 import definitions.Messages;
 import definitions.is;
 import java.io.File;
-import main.coreGUI;
 import main.engine;
 import main.param;
 import script.Plugin;

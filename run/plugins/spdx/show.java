@@ -352,7 +352,8 @@ public class show extends Plugin{
         String metrics = ""
                 + textLOC + " lines of code"
                 + html.br
-                + counterFiles + " files in total"
+                + utils.text.convertToHumanNumbers(counterFiles) 
+                + " files in total"
                 + html.br
                 + textOverallSize + " in size"
                 ;
@@ -376,15 +377,15 @@ public class show extends Plugin{
         
         // get the list of files with copyright and licenses
         String concludedLicenses = ""
-                + spdx.getCountFilesWithCopyright()
+                + utils.text.convertToHumanNumbers(spdx.getCountFilesWithCopyright())
                 + " files with copyright declared" 
                 + html.br
-                + spdx.getCountLicensesDeclared()
+                + utils.text.convertToHumanNumbers(spdx.getCountLicensesDeclared())
                 + " files with declared licenses";
         
         if(rigidStyle){
             concludedLicenses += html.br
-                + spdx.getCountLicensesConcluded()
+                + utils.text.convertToHumanNumbers(spdx.getCountLicensesConcluded())
                 + " files with concluded licenses";
         }
         

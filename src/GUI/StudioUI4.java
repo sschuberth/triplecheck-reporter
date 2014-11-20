@@ -5,7 +5,6 @@
  * Created: 2014-01-13T00:00:00Z
  * LicenseName: EUPL-1.1-without-appendix
  * FileName: StudioUI4.java
- * FileType: SOURCE
  * FileCopyrightText: <text> Copyright 2013 Nuno Brito, TripleCheck </text>
  * FileComment: <text> The initial GUI for the end-users </text>
  */
@@ -13,9 +12,7 @@ package GUI;
 
 import definitions.Messages;
 import definitions.is;
-import java.awt.Color;
 import java.awt.Cursor;
-import java.awt.Font;
 import java.awt.Toolkit;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
