@@ -29,8 +29,8 @@ import main.param;
 import script.Plugin;
 import script.log;
 import spdxlib.EvaluateLicensingQuality;
-import spdxlib.FileInfo2;
-import spdxlib.SPDXfile2;
+import spdxlib.FileInfo;
+import spdxlib.SPDXfile;
 import utils.Graphs;
 import utils.www.html;
 import www.Table;
@@ -88,11 +88,11 @@ public class show extends Plugin{
             return;
         }
         
-        ArrayList<SPDXfile2> spdxList = engine.reports.getList();
+        ArrayList<SPDXfile> spdxList = engine.reports.getList();
         
         // get some statistical data
         for(Object object : spdxList){
-            SPDXfile2 spdx = (SPDXfile2) object;
+            SPDXfile spdx = (SPDXfile) object;
             counterFiles += spdx.getFiles().size();
 //            counterCreators += spdx.creatorSection.people.size();
             counterLicensesDeclared += spdx.getLicensesDeclaredCount();
@@ -294,7 +294,7 @@ public class show extends Plugin{
         file = new File(fileCanonical);
         
         // get the SPDX file from the root node
-        SPDXfile2 spdx = engine.reports.get(file);
+        SPDXfile spdx = engine.reports.get(file);
         
         if(spdx == null){
             log.write(is.ERROR, "SH295 - Didn't found %1", file.getAbsolutePath());
@@ -464,14 +464,14 @@ public class show extends Plugin{
         
         // start the processing
         //System.err.println("DBG-S569 Reading SPDX");
-        SPDXfile2 spdx = engine.reports.get(file);
+        SPDXfile spdx = engine.reports.get(file);
         // create the place holder for the results
-        ArrayList<FileInfo2> list = new ArrayList();
+        ArrayList<FileInfo> list = new ArrayList();
         
         // get only the files without a declared trigger
         if(thisFilter.equalsIgnoreCase(param.noLicense)){
              // iterate through all files
-            for(FileInfo2 fileInfo : spdx.getFiles()){
+            for(FileInfo fileInfo : spdx.getFiles()){
             // if there is a trigger, no need to continue
             if(fileInfo.getLicenseInfoInFileCounter()>0){
                 continue;
@@ -482,7 +482,7 @@ public class show extends Plugin{
         // get the unlicensed files
         if(thisFilter.equalsIgnoreCase(param.withLicense)){
             // iterate through all files
-            for(FileInfo2 fileInfo : spdx.getFiles()){
+            for(FileInfo fileInfo : spdx.getFiles()){
             // if there is a trigger, no need to continue
             if(fileInfo.getLicenseInfoInFileCounter() == 0){
                 continue;
@@ -497,7 +497,7 @@ public class show extends Plugin{
         
         
         // iterate through all files
-        for(FileInfo2 fileInfo : list){
+        for(FileInfo fileInfo : list){
             // create a column with our file information
             String[] column = new String[]{
                 fileInfo.toString(),
@@ -558,7 +558,7 @@ public class show extends Plugin{
      * @param spdx an object from where we will readLines all data
      * @return A string used for the HTML output
      */
-    private String doEvaluation(SPDXfile2 spdx) {
+    private String doEvaluation(SPDXfile spdx) {
         String result = "";
       
         

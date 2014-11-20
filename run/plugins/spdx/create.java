@@ -17,11 +17,13 @@ import GUI.swingUtils;
 import definitions.Messages;
 import definitions.is;
 import java.io.File;
+import main.coreGUI;
 import main.engine;
+import main.param;
 import script.Plugin;
 import script.log;
-import spdxlib.DocumentCreate2;
-import spdxlib.SPDXfile2;
+import spdxlib.DocumentCreate;
+import spdxlib.SPDXfile;
 import utils.www.html;
 import www.RequestOrigin;
 import www.WebRequest;
@@ -91,36 +93,19 @@ public class create extends Plugin{
         request.closeTemplate();
     }
 
-       
-    
-    /**
-     * Do the things that are necessary after creating a new SPDX document, such as
-     * updating the tree view
-     */
-    private void concludeCreation(DocumentCreate2 newSPDX){
-        SPDXfile2 spdx = new SPDXfile2(newSPDX.getOutputFile());
-        engine.reports.add(spdx.file, spdx);
-        TreeviewUtils.spdxAddNode2(spdx, TreeviewUtils.getNodeReports());
-        swingUtils.setSelectedNode(spdx.getUID());
-    }
-    
-
-    
     /**
      * The method that the end-user calls when the "create SPDX" button is
      * pressed on the user interface.
      * @param request 
      */
     public void foldercreate(WebRequest request){
-        // load the template
-        request.setTemplate(templateProgressSPDX);
         // create the SPDX pointer
-        DocumentCreate2 newSPDX;
+        DocumentCreate newSPDX;
         
         // was it created previously?
         if(engine.temp.containsKey(id)){
             // get the previously created object
-            newSPDX = (DocumentCreate2) engine.temp.get(id);
+            newSPDX = (DocumentCreate) engine.temp.get(id);
         }else{
             // launch the creation of a new one
             newSPDX = launchNewSPDX();
@@ -131,13 +116,16 @@ public class create extends Plugin{
         
         // has the processing already terminated?
         if(newSPDX.isProcessing() == false){
-            actions = "<b>All done!</b>";
+            //actions = "<b>All done!</b>";
             // remove this process from memory
             engine.temp.remove(id);
             // load the report
-            concludeCreation(newSPDX);
+            concludeCreation(request, newSPDX);
+            return;
         }
         
+        // load the template
+        request.setTemplate(templateProgressSPDX);
         
         request.changeTemplate("%s%", newSPDX.getFilesProcessed() + "");
         request.changeTemplate("%actions%", actions);
@@ -146,12 +134,33 @@ public class create extends Plugin{
     }
     
     
+  /**
+     * Do the things that are necessary after creating a new SPDX document, such as
+     * updating the tree view
+     */
+    private void concludeCreation(WebRequest request, DocumentCreate newSPDX){
+        // read the newly generated document
+        SPDXfile spdx = new SPDXfile(newSPDX.getOutputFile());
+        // add this on our list of documents available
+        engine.reports.add(spdx.file, spdx);
+        // make sure it will show on the treeview
+        TreeviewUtils.refreshAll(spdx.getUID(), false);
+        
+        // create the link to open the new document
+        String link = "/spdx/show?x=summary&" + param.spdx + "=" 
+                + spdx.getRelativePath();
+        // add the redirect meta tag on the HTML page
+        String output = html.redirect(link, 0, "");
+//        String output = html.link("Open report", link);
+        request.setAnswer(output);
+    }
+    
     /**
      * Launch the thread that will be creating a new SPDX document
      * @param newSPDX 
      */
-    private DocumentCreate2 launchNewSPDX(){
-        final DocumentCreate2 spdx = new DocumentCreate2();
+    private DocumentCreate launchNewSPDX(){
+        final DocumentCreate spdx = new DocumentCreate();
         // launch a thread to create the document
         Thread thread = new Thread(){
             @Override
@@ -171,29 +180,9 @@ public class create extends Plugin{
         // all done
         return spdx;
     }
+   
     
     
-    
-//    /**
-//     * Displays the menu for creating new SPDX documents
-//     * @param request the request for this method
-//     */
-//    @Override
-//    public void main(WebRequest request){
-//       request.setPage(templateFolderHTML);
-//    }
-
-//    
-//    public void mainWeb(WebRequest request){
-//       request.setPage("spdxDialog.html");
-//    }
-//
-//    
-//    public void mainZip(WebRequest request){
-//        //request.setPage("spdxDialog.html");
-//        String result = "Hello there Zip!";
-//        request.setAnswer(result);
-//    }
     
    /**
      * Chooses a folder to be used as source for creating a new SPDX
@@ -226,6 +215,30 @@ public class create extends Plugin{
         
         request.setAnswer(output);
     }
+    
+
+    
+//    /**
+//     * Displays the menu for creating new SPDX documents
+//     * @param request the request for this method
+//     */
+//    @Override
+//    public void main(WebRequest request){
+//       request.setPage(templateFolderHTML);
+//    }
+
+//    
+//    public void mainWeb(WebRequest request){
+//       request.setPage("spdxDialog.html");
+//    }
+//
+//    
+//    public void mainZip(WebRequest request){
+//        //request.setPage("spdxDialog.html");
+//        String result = "Hello there Zip!";
+//        request.setAnswer(result);
+//    }
+        
     
 //    /**
 //     * Creates the new SPDX document based on a source code folder on disk
@@ -270,7 +283,7 @@ public class create extends Plugin{
 //               
 //
 //                  // start the SPDX class
-//                final DocumentCreate2 newSPDX = new DocumentCreate2();
+//                final DocumentCreate newSPDX = new DocumentCreate();
 //        
 //                // launch a small thread to keep the progress updated
 //                Thread thread = new Thread(){
@@ -350,7 +363,7 @@ public class create extends Plugin{
 //                    counter++;
 //                    setStatus("Processing %1 (%2)", source.getAbsolutePath(),
 //                    counter + "/" + folderList.size());
-//                    DocumentCreate2 newSPDX = new DocumentCreate2();
+//                    DocumentCreate newSPDX = new DocumentCreate();
 //                    String result = createDocument(source, this, newSPDX);
 //                    
 //                    // all done here, explain where the SPDX document can be found
@@ -484,7 +497,7 @@ public class create extends Plugin{
 //               }
 //
 //                
-//              final DocumentCreate2 newSPDX = new DocumentCreate2();
+//              final DocumentCreate newSPDX = new DocumentCreate();
 //
 //               // third step, create the SPDX document from the extracted files
 //               String result = createDocument(extractedFolder, this, newSPDX);
@@ -506,7 +519,7 @@ public class create extends Plugin{
 //     * @param task the running task that will hold the status update
 //     */
 //    private String createDocument(File extractedFolder, RunningTask task, 
-//            DocumentCreate2 newSPDX){
+//            DocumentCreate newSPDX){
 //            task.setStatus("Processing " + extractedFolder.getAbsolutePath());
 //        
 ////        String result = "";

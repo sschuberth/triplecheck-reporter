@@ -17,7 +17,7 @@ import GUI.swingUtils;
 import definitions.is;
 import script.Plugin;
 import script.log;
-import spdxlib.SPDXfile2;
+import spdxlib.SPDXfile;
 import spdxlib.swing.NodeType;
 import spdxlib.swing.TreeNodeSPDX;
 import www.WebRequest;
@@ -43,7 +43,7 @@ public class refresh extends Plugin{
         }
         
         // now that we have the correct node, get the spdx object
-        SPDXfile2 spdx = (SPDXfile2) node.getUserObject();
+        SPDXfile spdx = (SPDXfile) node.getUserObject();
         
         // and now with the spdx refresh, get the list of components
         String result = "RE49 - Not yet implemented";

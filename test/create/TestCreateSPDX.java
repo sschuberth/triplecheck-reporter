@@ -14,7 +14,7 @@ package create;
 
 import java.io.File;
 import org.junit.*;
-import spdxlib.DocumentCreate2;
+import spdxlib.DocumentCreate;
 
 /**
  *
@@ -49,7 +49,7 @@ public class TestCreateSPDX {
          File baseFolder = new File("../..", "source");
          File thisFolder = new File(baseFolder, "adblockplusie");
          
-         DocumentCreate2 spdx = new DocumentCreate2();
+         DocumentCreate spdx = new DocumentCreate();
          //spdx.create(spdx);
          
          // show all messages to let us know what is happening

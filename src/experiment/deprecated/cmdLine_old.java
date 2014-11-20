@@ -15,7 +15,7 @@ package experiment.deprecated;
 import script.log;
 import definitions.is;
 import java.io.File;
-import spdxlib.DocumentCreate2;
+import spdxlib.DocumentCreate;
 
 /**
  *
@@ -97,7 +97,7 @@ public class cmdLine_old {
             final String packageName, final String packageURL) {
         
         // the SPDX document that we are about to create    
-        DocumentCreate2 spdx = new DocumentCreate2();
+        DocumentCreate spdx = new DocumentCreate();
         
         // the output file where we store the SPDX information
         final File spdxFile = new File(spdxFileOutput);

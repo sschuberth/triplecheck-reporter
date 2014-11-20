@@ -41,7 +41,7 @@ public class nodeTools extends Plugin{
     public void startup(){
         // react whenever a tree node is changed
         log.hooks.addAction(Messages.ReadyToUse, thisFile, "addNode");
-        log.hooks.addAction(Messages.TreeNodeChanged, thisFile, "showTools");
+        //log.hooks.addAction(Messages.TreeNodeChanged, thisFile, "showTools");
         
     }
     

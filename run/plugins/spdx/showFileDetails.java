@@ -23,8 +23,8 @@ import main.param;
 import script.FileExtension;
 import script.Plugin;
 import script.log;
-import spdxlib.FileInfo2;
-import spdxlib.SPDXfile2;
+import spdxlib.FileInfo;
+import spdxlib.SPDXfile;
 import spdxlib.swing.NodeType;
 import spdxlib.swing.TreeNodeSPDX;
 import utils.www.html;
@@ -64,9 +64,9 @@ public class showFileDetails extends Plugin{
             return;
         }
         // start the processing
-        SPDXfile2 spdx = engine.reports.get(spdxFile);
+        SPDXfile spdx = engine.reports.get(spdxFile);
         // go through all files inside the document
-        for(FileInfo2 file : spdx.getFiles()){
+        for(FileInfo file : spdx.getFiles()){
             // have we (finally) found a match?
             if(targetFile.equals(file.getName())){
                 String result = showFileDetails(file);
@@ -113,7 +113,7 @@ public class showFileDetails extends Plugin{
         }
        
         // we're talking about tree nodes, get the respective information
-        FileInfo2 fileInfo = (FileInfo2) node.getUserObject();
+        FileInfo fileInfo = (FileInfo) node.getUserObject();
         
         // create the summary for the requested file
         String output = showFileDetails(fileInfo);
@@ -146,7 +146,7 @@ public class showFileDetails extends Plugin{
     /**
      * Do the actual part of showing the details for this file
      */
-    private String showFileDetails(FileInfo2 fileInfo) {
+    private String showFileDetails(FileInfo fileInfo) {
         System.out.println("SFD130 - Showing details for " + fileInfo.getName());
         String filename = fileInfo.getName();
         // get the file extension if available
@@ -289,7 +289,7 @@ public class showFileDetails extends Plugin{
      * folder where the source code of the SPDX report
      * @param fileInfo  The object containing the reference information 
      */
-    private String sourceCodeActions(FileInfo2 fileInfo, File folder){
+    private String sourceCodeActions(FileInfo fileInfo, File folder){
         String result;
         
         // first step, do we have a source code for this file?
@@ -328,7 +328,7 @@ public class showFileDetails extends Plugin{
      * @param fileInfo
      * @return      HTML code ready to display for the end user
      */
-    private String getCopyrightData(FileInfo2 fileInfo) {
+    private String getCopyrightData(FileInfo fileInfo) {
         String copyright = fileInfo.getFileCopyrightText();
         if(copyright == null || copyright.isEmpty()){
             return "";

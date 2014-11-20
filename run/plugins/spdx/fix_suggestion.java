@@ -21,7 +21,7 @@ import main.engine;
 import main.param;
 import script.Plugin;
 import spdxlib.EvaluateLicensingQuality;
-import spdxlib.SPDXfile2;
+import spdxlib.SPDXfile;
 import www.WebRequest;
 
 
@@ -56,7 +56,7 @@ public class fix_suggestion extends Plugin{
         // get the file associated to this request
         File file = getFileSPDX(request);
         // get the document associated
-        SPDXfile2 spdx = engine.reports.get(file);
+        SPDXfile spdx = engine.reports.get(file);
                
         // preflight check
         if(spdx == null){

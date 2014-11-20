@@ -24,7 +24,7 @@ import main.engine;
 import script.FileExtension;
 import script.Plugin;
 import script.log;
-import spdxlib.FileInfo2;
+import spdxlib.FileInfo;
 import spdxlib.swing.NodeType;
 import spdxlib.swing.TreeNodeSPDX;
 import utils.www.html;
@@ -143,7 +143,7 @@ public class actions extends Plugin{
         }
        
         // we're talking about tree nodes, get the respective information
-        FileInfo2 fileInfo = (FileInfo2) node.getUserObject();
+        FileInfo fileInfo = (FileInfo) node.getUserObject();
         File targetFile = fileInfo.getFile();
         
         if(targetFile == null){

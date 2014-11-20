@@ -20,10 +20,10 @@ import java.util.HashMap;
 import java.util.Map;
 import main.coreGUI;
 import main.engine;
-import spdxlib.FileInfo2;
+import spdxlib.FileInfo;
 import spdxlib.License;
 import spdxlib.LicenseType;
-import spdxlib.SPDXfile2;
+import spdxlib.SPDXfile;
 import utils.www.html;
 
 
@@ -46,7 +46,7 @@ public final class LicensePopularity {
      * @param link
      * @return 
      */
-    public String processReport(SPDXfile2 report, 
+    public String processReport(SPDXfile report, 
             final String title, final String link){
         String result = "";
         
@@ -56,7 +56,7 @@ public final class LicensePopularity {
             popularityList = null;
         }
         // iterate through each file on this report
-        for(FileInfo2 fileInfo : report.getFiles()){
+        for(FileInfo fileInfo : report.getFiles()){
             // get the licenses within
             processFileInfo(fileInfo);
         }
@@ -96,7 +96,7 @@ public final class LicensePopularity {
      * counting of original files.
      * @param fileInfo 
      */
-    private void processFileInfo(FileInfo2 fileInfo){
+    private void processFileInfo(FileInfo fileInfo){
         // get the list of licenses
         ArrayList<LicenseType> licList = new ArrayList();
         

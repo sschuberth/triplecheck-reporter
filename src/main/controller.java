@@ -51,6 +51,7 @@ public class controller {
      * displayed, there is this controller class that will know and decide when
      * to present the message.
      * @param request The object with details about the request
+     * @param cache
      */
     public static void display(WebRequest request, final boolean cache) {
         // preflight checking, we need an answer to be available

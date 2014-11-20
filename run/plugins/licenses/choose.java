@@ -22,9 +22,9 @@ import main.coreGUI;
 import main.engine;
 import script.Plugin;
 import script.log;
-import spdxlib.FileInfo2;
+import spdxlib.FileInfo;
 import spdxlib.License;
-import spdxlib.SPDXfile2;
+import spdxlib.SPDXfile;
 import spdxlib.swing.TreeNodeSPDX;
 import utils.www.html;
 import www.RequestOrigin;
@@ -128,9 +128,9 @@ public class choose extends Plugin{
         // get the node based on the first entry (there is at minimum one entry)
         TreeNodeSPDX node = TreeviewUtils.getNode(listArray[0]);
         // get the file info object
-        FileInfo2 fileInfo = (FileInfo2) node.getUserObject();
+        FileInfo fileInfo = (FileInfo) node.getUserObject();
         // get the respective spdx
-        SPDXfile2 spdx = fileInfo.getSPDX();
+        SPDXfile spdx = fileInfo.getSPDX();
         // now go through all file info and find licenses
         String result = coreGUI.popularity.processReport(spdx, title, link);
         

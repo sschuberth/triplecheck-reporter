@@ -17,7 +17,7 @@ import java.io.File;
 import main.coreGUI;
 import main.engine;
 import script.Plugin;
-import spdxlib.SPDXfile2;
+import spdxlib.SPDXfile;
 import spdxlib.swing.TreeNodeSPDX;
 import utils.www.html;
 import www.RequestOrigin;
@@ -91,7 +91,7 @@ public class settings extends Plugin{
     private String getFolderString(){
        // get the SPDX node
        TreeNodeSPDX node = (TreeNodeSPDX) swingUtils.getSelectedNode();
-       SPDXfile2 spdx = (SPDXfile2) node.getUserObject();
+       SPDXfile spdx = (SPDXfile) node.getUserObject();
        // get the value used before
        File sourceFolder = spdx.getSourceFolder();
        // if nothing is chosen, just show it as "none"
@@ -127,7 +127,7 @@ public class settings extends Plugin{
         
         // get the SPDX node
         TreeNodeSPDX node = (TreeNodeSPDX) swingUtils.getSelectedNode();
-        SPDXfile2 spdx = (SPDXfile2) node.getUserObject();
+        SPDXfile spdx = (SPDXfile) node.getUserObject();
         // now save the new settings
         spdx.setSourceFolder(result);
        

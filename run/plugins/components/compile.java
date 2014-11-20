@@ -23,7 +23,7 @@ import main.engine;
 import org.apache.commons.io.FileUtils;
 import script.Plugin;
 import script.log;
-import spdxlib.SPDXfile2;
+import spdxlib.SPDXfile;
 import spdxlib.swing.NodeType;
 import spdxlib.swing.TreeNodeSPDX;
 import utils.www.html;
@@ -137,7 +137,7 @@ public class compile extends Plugin{
         log.write(is.INFO, "Exporting documentation");
         // now that we have the correct node, get the spdx object
         TreeNodeSPDX node = swingUtils.getSelectedNode();
-        SPDXfile2 spdx = (SPDXfile2) node.getUserObject();
+        SPDXfile spdx = (SPDXfile) node.getUserObject();
         // now create the folders related to what was requested
         String whatWasAsked = request.getParameter("type");
         String result = "";
@@ -183,7 +183,7 @@ public class compile extends Plugin{
      * @param spdx  An SPDX object
      * @return      An html log with the actions that happened
      */
-    private String exportReport(SPDXfile2 spdx) {
+    private String exportReport(SPDXfile spdx) {
         String result = "";
         // start by creating our compile directory
         File folderExport = new File(engine.getFolderExport(), spdx.getId());
@@ -236,7 +236,7 @@ public class compile extends Plugin{
      * @param spdx  An SPDX object
      * @return      An HTML text with the log of actions
      */
-    private String exportFiles(SPDXfile2 spdx) {
+    private String exportFiles(SPDXfile spdx) {
         String result = "";
         // start by creating our compile directory
         File folderExport = new File(engine.getFolderExport(), spdx.getId());

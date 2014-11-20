@@ -41,9 +41,9 @@ import main.coreGUI;
 import main.engine;
 import script.RunPlugins;
 import script.log;
-import spdxlib.FileInfo2;
+import spdxlib.FileInfo;
 import spdxlib.FileOrigin;
-import spdxlib.SPDXfile2;
+import spdxlib.SPDXfile;
 import spdxlib.swing.NodeType;
 import spdxlib.swing.TreeNodeSPDX;
 import utils.internet;
@@ -61,11 +61,11 @@ public class StudioUI4 extends javax.swing.JFrame {
      * Is the mouse over the back-button?
      */
     private void doMouseOverButton() {
-        if(button.isEnabled()){
-            button.setCursor(new Cursor(Cursor.HAND_CURSOR));
-        }else{
-            button.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
-        }
+//        if(button.isEnabled()){
+//            button.setCursor(new Cursor(Cursor.HAND_CURSOR));
+//        }else{
+//            button.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
+//        }
     }
 
     // what kind of clicks do we have?
@@ -154,8 +154,8 @@ public class StudioUI4 extends javax.swing.JFrame {
         jScrollPane2 = new javax.swing.JScrollPane();
         jPanel3 = new javax.swing.JPanel();
         text = new javax.swing.JEditorPane();
-        button = new javax.swing.JButton();
         search = new javax.swing.JTextField();
+        jLabel1 = new javax.swing.JLabel();
 
         menuItem_Delete.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/cross-script.png"))); // NOI18N
         menuItem_Delete.setText("Delete");
@@ -313,22 +313,6 @@ public class StudioUI4 extends javax.swing.JFrame {
 
         jScrollPane2.setViewportView(jPanel3);
 
-        button.setBackground(java.awt.Color.white);
-        button.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/arrow-180v4.png"))); // NOI18N
-        button.setBorder(null);
-        button.setBorderPainted(false);
-        button.setEnabled(false);
-        button.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                buttonMouseEntered(evt);
-            }
-        });
-        button.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                buttonActionPerformed(evt);
-            }
-        });
-
         search.setFont(new java.awt.Font("Arial", 2, 14)); // NOI18N
         search.setText("Search..");
         search.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -350,25 +334,27 @@ public class StudioUI4 extends javax.swing.JFrame {
             }
         });
 
+        jLabel1.setText(" ");
+
         javax.swing.GroupLayout panelEastLayout = new javax.swing.GroupLayout(panelEast);
         panelEast.setLayout(panelEastLayout);
         panelEastLayout.setHorizontalGroup(
             panelEastLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jScrollPane2)
+            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 509, Short.MAX_VALUE)
             .addGroup(panelEastLayout.createSequentialGroup()
-                .addGap(6, 6, 6)
-                .addComponent(button, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap()
+                .addComponent(search)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(search, javax.swing.GroupLayout.PREFERRED_SIZE, 417, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jLabel1)
+                .addContainerGap())
         );
         panelEastLayout.setVerticalGroup(
             panelEastLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panelEastLayout.createSequentialGroup()
                 .addGap(10, 10, 10)
-                .addGroup(panelEastLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(button, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(search, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(panelEastLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(search, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(6, 6, 6)
                 .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 440, Short.MAX_VALUE))
         );
@@ -531,10 +517,6 @@ public class StudioUI4 extends javax.swing.JFrame {
     private void textKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_textKeyTyped
     }//GEN-LAST:event_textKeyTyped
 
-    private void buttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonActionPerformed
-        doBackButton();
-    }//GEN-LAST:event_buttonActionPerformed
-
     private void searchFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_searchFocusGained
         doSearchMouseClicked();
         coreGUI.searchBoxActive = true;
@@ -588,10 +570,6 @@ public class StudioUI4 extends javax.swing.JFrame {
     private void menuItem_AddToComponentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuItem_AddToComponentActionPerformed
         showDialogAddFilesToComponent();
     }//GEN-LAST:event_menuItem_AddToComponentActionPerformed
-
-    private void buttonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_buttonMouseEntered
-        doMouseOverButton();
-    }//GEN-LAST:event_buttonMouseEntered
 
     
     /**
@@ -675,13 +653,13 @@ public class StudioUI4 extends javax.swing.JFrame {
         //String UID = (String) engine.temp.get(is.reports);
         String UID = TreeviewUtils.getNodeReports().getUID();
         
-        TreeviewUtils.refreshAll(UID);
+        TreeviewUtils.refreshAll(UID, true);
     }
     
     
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton button;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JSplitPane jSplitPane1;
@@ -701,14 +679,24 @@ public class StudioUI4 extends javax.swing.JFrame {
     private javax.swing.JTree tree;
     // End of variables declaration//GEN-END:variables
 
-    public void doSettings() {
+    
+    /**
+     * The settings related to the treeview
+     */
+    public void doSettingsTreeview(){
         // the basic root node that is always needed
         swingUtils.nodeAddRoot(tree);
-       // now add all reports that we can find
+        // now add all reports that we can find
         TreeviewUtils.spdxAddFullTree();
         // get the list of RunPlugins going
         RunPlugins.listPlugins();
         log.write(is.INFO, Messages.ReadyToUse);
+    }
+    
+    public void doSettings() {
+        // setup the treeview
+        doSettingsTreeview();
+        
 
 //        Thread thread = new Thread(){
 //                @Override
@@ -735,7 +723,7 @@ public class StudioUI4 extends javax.swing.JFrame {
         jScrollPane2.setViewportView(text);
 
         // disable the back button
-        button.setEnabled(false);
+        //button.setEnabled(false);
         // select the tree as first topic
         tree.requestFocus();
         
@@ -936,7 +924,7 @@ public class StudioUI4 extends javax.swing.JFrame {
             //utils.files.SaveStringToFile(new File("output.html"), content);
                     
             // should the "go back" button be enabled?
-            button.setEnabled(true);
+            //button.setEnabled(true);
         
             // change the cursor position
             if(caretPosition > -1)
@@ -1041,7 +1029,7 @@ public class StudioUI4 extends javax.swing.JFrame {
         baseFolderPresent = baseFolderPast;
         baseFilePresent = baseFilePast;
         // disable button
-        button.setEnabled(false);
+        //button.setEnabled(false);
     }
 
   
@@ -1390,30 +1378,30 @@ public class StudioUI4 extends javax.swing.JFrame {
         
         // on this operation we need to account that an end-user might choose
         // nodes from different SPDX documents, therefore we need to split these
-        HashMap<String, ArrayList<FileInfo2>> spdxList = new HashMap();
+        HashMap<String, ArrayList<FileInfo>> spdxList = new HashMap();
         // now iterate each node and split them into respective SPDX
         for(TreeNodeSPDX node : nodeList){
-            FileInfo2 fileInfo = (FileInfo2) node.getUserObject();
+            FileInfo fileInfo = (FileInfo) node.getUserObject();
             // we use the id as unique identifier
             final String id = fileInfo.getSPDX().getId();
             if(spdxList.containsKey(id)){
                 spdxList.get(id).add(fileInfo);
             }else{
                 // didn't existed before, create a list for this spdx
-                ArrayList<FileInfo2> list = new ArrayList();
+                ArrayList<FileInfo> list = new ArrayList();
                 list.add(fileInfo);
                 spdxList.put(id, list);
             }
         }
         
         // now that we splitted all the fileInfo, it is time to write them
-        for(ArrayList<FileInfo2> fileInfoList : spdxList.values()){
+        for(ArrayList<FileInfo> fileInfoList : spdxList.values()){
             // get the SPDX object
-            SPDXfile2 spdx = fileInfoList.get(0).getSPDX();
+            SPDXfile spdx = fileInfoList.get(0).getSPDX();
             // write the lines for this list
             spdx.writeLines(fileInfoList, is.tagFileOrigin, value.toString(), true);
             // after writing the changes to disk, it is time to update the nodes
-            for(FileInfo2 fileInfo : fileInfoList){
+            for(FileInfo fileInfo : fileInfoList){
                 fileInfo.setFileOrigin(value);
             }
         }
@@ -1467,15 +1455,15 @@ public class StudioUI4 extends javax.swing.JFrame {
            
         int counter = 0;
         // get the locally selected components
-        HashMap<String, ArrayList<FileInfo2>> spdxList = TreeviewUtils.getSelectedFiles();
+        HashMap<String, ArrayList<FileInfo>> spdxList = TreeviewUtils.getSelectedFiles();
         // now that we splitted all the fileInfo, it is time to write them
-        for(ArrayList<FileInfo2> fileInfoList : spdxList.values()){
+        for(ArrayList<FileInfo> fileInfoList : spdxList.values()){
             // get the SPDX object
-            SPDXfile2 spdx = fileInfoList.get(0).getSPDX();
+            SPDXfile spdx = fileInfoList.get(0).getSPDX();
             // write the lines for this list
             spdx.writeLines(fileInfoList, is.tagFileComponent, componentName, true);
             // after writing the changes to disk, it is time to update the nodes
-            for(FileInfo2 fileInfo : fileInfoList){
+            for(FileInfo fileInfo : fileInfoList){
                 fileInfo.setFileComponent(componentName);
                 counter++;
             }

@@ -26,8 +26,8 @@ import main.coreGUI;
 import main.engine;
 import script.Plugin;
 import script.log;
-import spdxlib.FileInfo2;
-import spdxlib.SPDXfile2;
+import spdxlib.FileInfo;
+import spdxlib.SPDXfile;
 import ssdeep.SpamSumSignature;
 import ssdeep.ssdeep;
 import utils.www.html;
@@ -202,7 +202,7 @@ public class pluginSearch extends Plugin{
         }
                
         
-        for(SPDXfile2 spdx : engine.reports.getList()){
+        for(SPDXfile spdx : engine.reports.getList()){
             String matchTitle = "";
         // first search, find components we have with the same name
             String spdxId = spdx.getId().toLowerCase();
@@ -222,7 +222,7 @@ public class pluginSearch extends Plugin{
                
                // create the file list
                for(Object fileObject : fileList){
-                   FileInfo2 file = (FileInfo2) fileObject;
+                   FileInfo file = (FileInfo) fileObject;
                    // do the details about this file
                    String fileDetails = "";
                
@@ -358,7 +358,7 @@ public class pluginSearch extends Plugin{
      * @param spdx
      * @return 
      */
-    ArrayList processFilters(SPDXfile2 spdx, String originalKeyword){
+    ArrayList processFilters(SPDXfile spdx, String originalKeyword){
         String keyword = originalKeyword.toLowerCase();
         ArrayList result = new ArrayList();
         
@@ -369,7 +369,7 @@ public class pluginSearch extends Plugin{
             String what = keyword.replace("sha1: ", "");
             what = what.replace("sha1:", "");
            for(Object fileObject : spdx.getFiles()){
-               FileInfo2 file = (FileInfo2) fileObject;
+               FileInfo file = (FileInfo) fileObject;
                String test = file.getTagFileChecksumSHA1();
                if(test.contains(what)){
                    result.add(file);
@@ -390,7 +390,7 @@ public class pluginSearch extends Plugin{
             what = what.replace("ssdeep: ", "");
            
             for(Object fileObject : spdx.getFiles()){
-               FileInfo2 file = (FileInfo2) fileObject;
+               FileInfo file = (FileInfo) fileObject;
                // SSDEEP might not be present on this data object
                if(file.getTagFileChecksumSSDEEP() == null){
                    continue;
@@ -413,7 +413,7 @@ public class pluginSearch extends Plugin{
         
         // simply look for names that match the keyword
            for(Object fileObject : spdx.getFiles()){
-               FileInfo2 file = (FileInfo2) fileObject;
+               FileInfo file = (FileInfo) fileObject;
                String fileName = file.getFileName().toLowerCase();
                if(fileName.contains(keyword)){
                    result.add(file);

@@ -16,8 +16,8 @@ import definitions.is;
 import java.io.File;
 import main.engine;
 import script.log;
-import spdxlib.DocumentCreate2;
-import spdxlib.SPDXfile2;
+import spdxlib.DocumentCreate;
+import spdxlib.SPDXfile;
 
 /**
  *
@@ -43,7 +43,7 @@ public class sandbox {
             System.err.println("Not found: " + bigFile.getAbsolutePath());
             return;
         }
-        SPDXfile2 spdx = new SPDXfile2(bigFile);
+        SPDXfile spdx = new SPDXfile(bigFile);
         log.write(is.INFO, "Finished reading spdx");
 //        TreeNodeSPDX root = new TreeNodeSPDX("test");
         //TreeviewUtils.spdxDoTreeFileStructure(root, spdx);
@@ -65,7 +65,7 @@ public class sandbox {
          
          File resultFile = new File("result.spdx");
          System.out.println("Creating SPDX from: " + thisFolder.getAbsolutePath());
-         DocumentCreate2 spdx = new DocumentCreate2();
+         DocumentCreate spdx = new DocumentCreate();
          spdx.create(thisFolder, resultFile);
          
          System.out.println("Processed files: " + spdx.getFilesProcessed());

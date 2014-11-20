@@ -31,10 +31,10 @@ import main.coreGUI;
 import main.engine;
 import main.param;
 import script.log;
-import spdxlib.FileInfo2;
+import spdxlib.FileInfo;
 import spdxlib.License;
 import spdxlib.LicenseType;
-import spdxlib.SPDXfile2;
+import spdxlib.SPDXfile;
 import spdxlib.swing.NodeType;
 import spdxlib.swing.TreeNodeSPDX;
 import www.RequestOrigin;
@@ -91,7 +91,7 @@ public class TreeviewUtils {
 //        // we now are sure that exists no such SPDX indexed yet 
 //        log.write(is.INSTALLING, "Adding new SPDX node");
 //        // add this new SPDX to our list
-//        SPDXfile2 spdx = engine.reports.get(file);
+//        SPDXfile spdx = engine.reports.get(file);
 //        // preflight check
 //        if(spdx == null){
 //            log.write(is.ERROR, "TU79 - SPDX object is null: %1", 
@@ -99,7 +99,7 @@ public class TreeviewUtils {
 //            return;
 //        }
 //        // add this node to our list
-//        TreeNodeSPDX result = spdxAddNode2(spdx, nodeReports);
+//        TreeNodeSPDX result = spdxAddNode(spdx, nodeReports);
 ////        spdxCreateNodeStructure(result);
 //        swingUtils.setSelectedNode(UID);
 //        log.write(is.COMPLETED, "Added SPDX node: %1", file.getName());
@@ -114,7 +114,7 @@ public class TreeviewUtils {
      * @param rootNode
      * @return 
      */
-    public static TreeNodeSPDX spdxAddNode2(final SPDXfile2 spdx, 
+    public static TreeNodeSPDX spdxAddNode(final SPDXfile spdx, 
             final TreeNodeSPDX rootNode) {
         final File file = spdx.file;
         final String fileName = file.getName();
@@ -152,20 +152,25 @@ public class TreeviewUtils {
     /**
     * Something changed on the disk, reload everything from start 
     * @param UID       The node that should be selected after reloading
+     * @param refreshText
     */
-    public static void refreshAll(String UID){
+    public static void refreshAll(final String UID, final boolean refreshText){
         // something went wrong, perhaps we want to output an error message
         if(UID == null){
             log.write(is.ERROR, "SU505 - UID for selected node is null");
             return;
         }
         try{
-        coreGUI.studio.doSettings();
-        // get back to the previoulsy selected node
-        swingUtils.setSelectedNode(UID);
-        // refresh things up
-        coreGUI.studio.getTree().repaint();
-        swingUtils.refreshTextBox();
+            //coreGUI.studio.getTree().removeAll();
+            coreGUI.studio.doSettingsTreeview();
+            //coreGUI.studio.doSettings();
+            // get back to the previoulsy selected node
+            swingUtils.setSelectedNode(UID);
+            // refresh things up
+            coreGUI.studio.getTree().repaint();
+            if(refreshText){
+                swingUtils.refreshTextBox();
+            }
         } catch (Exception e){
             System.err.println("SU526: Exception while refreshing the user "
                     + "interface"
@@ -231,9 +236,9 @@ public class TreeviewUtils {
         TreeNodeSPDX lastNode = null;
         int counter = 0;
         // create a tree based on folder tree on disk
-        for(SPDXfile2 spdx : engine.reports.getList()){
+        for(SPDXfile spdx : engine.reports.getList()){
             try{
-                lastNode = spdxAddNode2(spdx, nodeReports);
+                lastNode = spdxAddNode(spdx, nodeReports);
             }catch (Exception e){
                 System.err.println("TU238, Error processing SPDX: " + spdx.getRelativePath());
                 // sometimes the problem is an empty SPDX file, we can delete it
@@ -349,7 +354,7 @@ public class TreeviewUtils {
 //    /**
 //     * Add the files inside this SPDX document to the treeview node
 //     */
-//    private static void spdxCreateFileSection(SPDXfile2 spdx, TreeNodeSPDX spdxNode){
+//    private static void spdxCreateFileSection(SPDXfile spdx, TreeNodeSPDX spdxNode){
 //        // this code below avoids that we add too many times the Files node
 //        Enumeration list = spdxNode.children();
 //        while(list.hasMoreElements()){
@@ -395,7 +400,7 @@ public class TreeviewUtils {
 //     * @param root
 //     * @param spdx 
 //     */
-//    public static void spdxDoTreeFileStructureOld(TreeNodeSPDX root, SPDXfile2 spdx){
+//    public static void spdxDoTreeFileStructureOld(TreeNodeSPDX root, SPDXfile spdx){
 //        
 //        // where we store all the nodes of our tree
 //        HashMap nodeList = new HashMap();
@@ -404,7 +409,7 @@ public class TreeviewUtils {
 //        nodeList.put(".", root);
 //        
 //        // go through all the files inside the SPDX 
-//        for(FileInfo2 fileInfo : spdx.getFiles()){
+//        for(FileInfo fileInfo : spdx.getFiles()){
 //            // get the path for this file bit
 //            final String path = fileInfo.getFilePath();
 //            // don't add the root node
@@ -419,7 +424,7 @@ public class TreeviewUtils {
 //        
 //        
 //        // now add all the files from the SPDX to our treeview folders
-//        for(FileInfo2 fileInfo : spdx.getFiles()){
+//        for(FileInfo fileInfo : spdx.getFiles()){
 //            // get the path for this file bit
 //            final String path = fileInfo.getFilePath();
 //            
@@ -591,7 +596,7 @@ public class TreeviewUtils {
 //            return;
 //        }
 //        // now read the SPDX document
-//        SPDXfile2 spdx = engine.reports.get(spdxFile);
+//        SPDXfile spdx = engine.reports.get(spdxFile);
 //        // basic parts were done, now add up the needed details
 //        spdxCreateFileSection(spdx, node);
 //        node.update(true);
@@ -601,7 +606,7 @@ public class TreeviewUtils {
 //     * When necessary, add nodes listing the people that have created the SPDX
 //     * document. If these nodes were already created, do nothing
 //     */
-//    private static void addPeople(SPDXfile2 spdx, TreeNodeSPDX spdxNode){
+//    private static void addPeople(SPDXfile spdx, TreeNodeSPDX spdxNode){
 //        Enumeration list = spdxNode.children();
 //        while(list.hasMoreElements()){
 //            TreeNodeSPDX child = (TreeNodeSPDX) list.nextElement();
@@ -803,7 +808,7 @@ public class TreeviewUtils {
      * where it belongs to.
      * @return  An array of SPDX documents and selected files within, null otherwise
      */
-    public static HashMap<String, ArrayList<FileInfo2>> getSelectedFiles(){
+    public static HashMap<String, ArrayList<FileInfo>> getSelectedFiles(){
     // create a list of nodes to process
         ArrayList<TreeNodeSPDX> selectedNodes = swingUtils.getSelectedNodes(coreGUI.studio.getTree());
         ArrayList<TreeNodeSPDX> nodeList = new ArrayList();
@@ -830,17 +835,17 @@ public class TreeviewUtils {
         
         // on this operation we need to account that an end-user might choose
         // nodes from different SPDX documents, therefore we need to split these
-        HashMap<String, ArrayList<FileInfo2>> spdxList = new HashMap();
+        HashMap<String, ArrayList<FileInfo>> spdxList = new HashMap();
         // now iterate each node and split them into respective SPDX
         for(TreeNodeSPDX node : nodeList){
-            FileInfo2 fileInfo = (FileInfo2) node.getUserObject();
+            FileInfo fileInfo = (FileInfo) node.getUserObject();
             // we use the id as unique identifier
             final String id = fileInfo.getSPDX().getId();
             if(spdxList.containsKey(id)){
                 spdxList.get(id).add(fileInfo);
             }else{
                 // didn't existed before, create a list for this spdx
-                ArrayList<FileInfo2> list = new ArrayList();
+                ArrayList<FileInfo> list = new ArrayList();
                 list.add(fileInfo);
                 spdxList.put(id, list);
             }
@@ -874,30 +879,30 @@ public class TreeviewUtils {
         
         // on this operation we need to account that an end-user might choose
         // nodes from different SPDX documents, therefore we need to split these
-        HashMap<String, ArrayList<FileInfo2>> spdxList = new HashMap();
+        HashMap<String, ArrayList<FileInfo>> spdxList = new HashMap();
         // now iterate each node and split them into respective SPDX
         for(TreeNodeSPDX node : nodeList){
-            FileInfo2 fileInfo = (FileInfo2) node.getUserObject();
+            FileInfo fileInfo = (FileInfo) node.getUserObject();
             // we use the id as unique identifier
             final String id = fileInfo.getSPDX().getId();
             if(spdxList.containsKey(id)){
                 spdxList.get(id).add(fileInfo);
             }else{
                 // didn't existed before, create a list for this spdx
-                ArrayList<FileInfo2> thisList = new ArrayList();
+                ArrayList<FileInfo> thisList = new ArrayList();
                 thisList.add(fileInfo);
                 spdxList.put(id, thisList);
             }
         }
         
         // now that we splitted all the fileInfo, it is time to write them
-        for(ArrayList<FileInfo2> fileInfoList : spdxList.values()){
+        for(ArrayList<FileInfo> fileInfoList : spdxList.values()){
             // get the SPDX object
-            SPDXfile2 spdx = fileInfoList.get(0).getSPDX();
+            SPDXfile spdx = fileInfoList.get(0).getSPDX();
             // write the lines for this list
             spdx.writeLines(fileInfoList, is.tagLicenseConcluded, license.getId(), true);
             // after writing the changes to disk, it is time to update the nodes
-            for(FileInfo2 fileInfo : fileInfoList){
+            for(FileInfo fileInfo : fileInfoList){
                 fileInfo.setLicenseConcluded(LicenseType.convertToEnum(license.getId()));
             }
         }
