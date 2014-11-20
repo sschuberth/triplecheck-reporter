@@ -23,14 +23,17 @@ import java.util.Enumeration;
 import java.util.HashMap;
 import javax.swing.JTree;
 import javax.swing.SwingUtilities;
+import javax.swing.tree.DefaultTreeModel;
 import javax.swing.tree.TreePath;
 import javax.swing.tree.TreeSelectionModel;
 import main.controller;
-import main.engine;
 import main.coreGUI;
+import main.engine;
 import main.param;
 import script.log;
 import spdxlib.FileInfo2;
+import spdxlib.License;
+import spdxlib.LicenseType;
 import spdxlib.SPDXfile2;
 import spdxlib.swing.NodeType;
 import spdxlib.swing.TreeNodeSPDX;
@@ -831,5 +834,71 @@ public class TreeviewUtils {
         return spdxList;
     }
     
+    
+    /**
+     * This method will change the declared license for a group of files.
+     * It requires a list of the Id's that will be modified and a registered
+     * license.
+     * @param listUID   A string array where each element is a separate UID
+     * @param license   A license from our list of available licenses
+     */
+    public static void changeDeclaredLicense(String[] listUID, License license){
+        // we have a list of UID, now we need to convert these onto
+        // real objects.
+        
+        // create the list that will host the real nodes
+        ArrayList<TreeNodeSPDX> nodeList = new ArrayList();
+        // now iterate each array member to get the respective object
+        for(String UID : listUID){
+            // get the node
+            TreeNodeSPDX node = TreeviewUtils.getNode(UID);
+            // add to our list
+            nodeList.add(node);
+        }
+        
+        
+        // on this operation we need to account that an end-user might choose
+        // nodes from different SPDX documents, therefore we need to split these
+        HashMap<String, ArrayList<FileInfo2>> spdxList = new HashMap();
+        // now iterate each node and split them into respective SPDX
+        for(TreeNodeSPDX node : nodeList){
+            FileInfo2 fileInfo = (FileInfo2) node.getUserObject();
+            // we use the id as unique identifier
+            final String id = fileInfo.getSPDX().getId();
+            if(spdxList.containsKey(id)){
+                spdxList.get(id).add(fileInfo);
+            }else{
+                // didn't existed before, create a list for this spdx
+                ArrayList<FileInfo2> thisList = new ArrayList();
+                thisList.add(fileInfo);
+                spdxList.put(id, thisList);
+            }
+        }
+        
+        // now that we splitted all the fileInfo, it is time to write them
+        for(ArrayList<FileInfo2> fileInfoList : spdxList.values()){
+            // get the SPDX object
+            SPDXfile2 spdx = fileInfoList.get(0).getSPDX();
+            // write the lines for this list
+            spdx.writeLines(fileInfoList, is.tagLicenseConcluded, license.getId(), true);
+            // after writing the changes to disk, it is time to update the nodes
+            for(FileInfo2 fileInfo : fileInfoList){
+                fileInfo.setLicenseConcluded(LicenseType.convertToEnum(license.getId()));
+            }
+        }
+        
+        // finish by updating the nodes on the treeview
+        for(TreeNodeSPDX node : nodeList){
+            if(node.nodeType != NodeType.file){
+                continue;
+            }
+            DefaultTreeModel model = (DefaultTreeModel) 
+                    coreGUI.studio.getTree().getModel();
+            model.nodeChanged(node);
+        }
+        
+        
+        
+    }
     
 }

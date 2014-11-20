@@ -41,7 +41,7 @@ public class createNew extends Plugin{
         request.changeTemplate("template-remarks", "");
         
         String licenses = "";
-        for (License license : coreGUI.licenses.getList()) {
+        for (License license : engine.licenses.getList()) {
             licenses = licenses.concat("<option>" + license.getId() + "</option>");
         }
         

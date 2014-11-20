@@ -17,6 +17,7 @@ import definitions.Messages;
 import definitions.is;
 import java.io.File;
 import main.coreGUI;
+import main.engine;
 import script.Plugin;
 import script.log;
 import spdxlib.License;
@@ -79,7 +80,7 @@ public class search extends Plugin{
         }
         final String link = "/licenses/search?x=view&lic=";
 
-        String output = coreGUI.licenses.search(searchTerm , "read", link);
+        String output = engine.licenses.search(searchTerm , "read", link);
         coreGUI.studio.editorPane(is.contentHTML, false, 0, output);
     }
     
@@ -90,7 +91,7 @@ public class search extends Plugin{
      */
     public void view(WebRequest request){
         final String param = request.getParameter("lic");
-        License license = coreGUI.licenses.get(param);
+        License license = engine.licenses.get(param);
         final String result = license.getSummaryHTML();
         request.setAnswer(result);
     }

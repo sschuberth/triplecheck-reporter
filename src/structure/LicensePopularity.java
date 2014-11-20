@@ -19,6 +19,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import main.coreGUI;
+import main.engine;
 import spdxlib.FileInfo2;
 import spdxlib.License;
 import spdxlib.LicenseType;
@@ -74,7 +75,7 @@ public final class LicensePopularity {
         for(LicenseType licenseType : popularityList.keySet()){
             try{
             int popValue = popularityList.get(licenseType);
-            License license = coreGUI.licenses.getAsTitle(licenseType.toTitle());
+            License license = engine.licenses.getAsTitle(licenseType.toTitle());
             result += 
                     "(" + popValue + ") "
                     + license.getPrettyText(title, link + license.getId());
@@ -102,7 +103,7 @@ public final class LicensePopularity {
         // we can't assign the arraylist directly or else we change the original
         for(LicenseType thisLicense : fileInfo.getLicenseInfoInFile()){
             licList.add(thisLicense);
-        };
+        }
         
         // do we have a license defined as well?
         if(fileInfo.hasLicenseConcluded()){
@@ -138,7 +139,7 @@ public final class LicensePopularity {
             String temp = "";
             int counter = 0;
             for(LicenseType licenseId : coreGUI.popularity.getList().keySet()){
-              License license = coreGUI.licenses.get(licenseId.toId());
+              License license = engine.licenses.get(licenseId.toId());
               // might be a license but was not indexed, skip this one
               if(license == null){
                   continue;

@@ -48,7 +48,7 @@ public class start {
         engine.warmUp();
         
         // index the licenses
-        coreGUI.licenses = new LicenseControl();
+        engine.licenses = new LicenseControl();
     }
     
     

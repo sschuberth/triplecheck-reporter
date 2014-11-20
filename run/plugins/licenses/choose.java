@@ -70,7 +70,7 @@ public class choose extends Plugin{
         }
         System.out.println("Finding a license");
         final String link = (String) engine.temp.get("TreeviewLicenseSelectedFilesLink");
-        String output = coreGUI.licenses.search(searchTerm , "choose", link);
+        String output = engine.licenses.search(searchTerm , "choose", link);
         coreGUI.studio.editorPane(is.contentHTML, false, 0, output);
     }
        
@@ -98,7 +98,7 @@ public class choose extends Plugin{
         result += getRecentlyUsedLicenses(listUID, "Choose", link);
         
         result += html.h3("Licenses available")
-                + coreGUI.licenses.getListHTML("Choose", link);
+                + engine.licenses.getListHTML("Choose", link);
         
          // give a left-side margin on the output
         result = html.div(3)
@@ -153,11 +153,11 @@ public class choose extends Plugin{
 //        System.out.println(rawListUID);
 //        System.out.println(licenseId);
         // get the respective license object
-        License license = coreGUI.licenses.get(licenseId);
+        License license = engine.licenses.get(licenseId);
         // now create the UID list
         String[] listUID = rawListUID.split(";");
         // finish this up by changing the licenses
-        coreGUI.licenses.changeDeclaredLicense(listUID, license);
+        TreeviewUtils.changeDeclaredLicense(listUID, license);
         
         request.setAnswer("Applied the " + license.getId() 
                 + " to " + utils.text.pluralize(listUID.length, "file"));

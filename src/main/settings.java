@@ -32,7 +32,7 @@ public class settings extends Plugin{
         @Override
         public void run(){
         // process the list of licenses
-        coreGUI.licenses.find();
+        engine.licenses.find();
             
         // do the settings (for e.g. is there a new version?)
         final String text = utils.internet.getTextFile

@@ -58,7 +58,7 @@ public class showComponent extends Plugin{
      */
     public void view(WebRequest request){
         final String param = request.getParameter("lic");
-        License license = coreGUI.licenses.get(param);
+        License license = engine.licenses.get(param);
         final String result = license.getSummaryHTML();
         request.setAnswer(result);
     }
