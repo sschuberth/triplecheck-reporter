@@ -148,12 +148,17 @@ public class create extends Plugin{
         // make sure it will show on the treeview
         TreeviewUtils.refreshAll(spdx.getUID(), false);
         
+        // save these settings to open the source files
+        final String title = definitions.id.SOURCEFOLDER 
+               + spdx.getFile().getName() + ".spdx";
+        engine.settings.write(title, spdx.getFile().getAbsolutePath());
+        
+        
         // create the link to open the new document
         String link = "/spdx/show?x=summary&" + param.spdx + "=" 
                 + spdx.getRelativePath();
         // add the redirect meta tag on the HTML page
         String output = html.redirect(link, 0, "");
-//        String output = html.link("Open report", link);
         request.setAnswer(output);
     }
     
