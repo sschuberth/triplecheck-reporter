@@ -232,7 +232,22 @@ public class TreeviewUtils {
         int counter = 0;
         // create a tree based on folder tree on disk
         for(SPDXfile2 spdx : engine.reports.getList()){
-            lastNode = spdxAddNode2(spdx, nodeReports);
+            try{
+                lastNode = spdxAddNode2(spdx, nodeReports);
+            }catch (Exception e){
+                System.err.println("TU238, Error processing SPDX: " + spdx.getRelativePath());
+                // sometimes the problem is an empty SPDX file, we can delete it
+                File spdxFile = spdx.getFile();
+                // is the file containing zero bytes?
+                if(spdxFile.length() == 0){
+                    // no point in keeping, just delete please
+                    spdxFile.delete();
+                }else{
+                    // something else is happening, call for attention
+                    System.exit(-1);
+                }
+                
+            }
             counter++;
         }
         

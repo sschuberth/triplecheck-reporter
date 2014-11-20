@@ -47,7 +47,6 @@ public class create extends Plugin{
     
     final String 
             id = "Create SPDX",
-            //LastFolderNewSPDX = "LastFolderNewSPDX",
             myFolder = "target",
             batchFolder = "BatchFolderSPDX"
             ;
