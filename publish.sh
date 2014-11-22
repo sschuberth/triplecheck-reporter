@@ -34,6 +34,6 @@ cp ./run/reports/corefx.spdx ./publish/reports/
 
 echo Create the zipped file
 cd ./publish
-zip -9 -r ../triplecheck-1.0.zip *
+zip -9 -r ../triplecheck.zip *
 
 
