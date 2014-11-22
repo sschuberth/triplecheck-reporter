@@ -126,6 +126,85 @@ public class StudioUI4 extends javax.swing.JFrame {
         //doSettings();
     }
 
+    
+    /**
+     * The settings related to the treeview
+     */
+    public void doSettingsTreeview(){
+        // the basic root node that is always needed
+        swingUtils.nodeAddRoot(tree);
+        // now add all reports that we can find
+        TreeviewUtils.spdxAddFullTree();
+        // get the list of RunPlugins going
+        RunPlugins.listPlugins();
+        log.write(is.INFO, Messages.ReadyToUse);
+        
+        
+        // this is needed to ensure we get line-wrapping
+        jScrollPane2.setViewportView(text);
+
+    }
+    
+    public void doSettings() {
+        // setup the treeview
+        doSettingsTreeview();
+        
+
+//        Thread thread = new Thread(){
+//                @Override
+//                public void run(){
+//                    utils.time.wait(1);
+//                 log.write(is.INFO, Messages.ReadyToUse);
+//                }
+//                };
+//            thread.start();
+            
+        // ensure that the search box is the selected component
+        setSearchProvider(this.searchTextDefault);
+        search.requestFocusInWindow();
+
+        // solve a bug we have on the screen
+        this.editorPane(is.contentHTML, true, 0, "");
+
+        // do the front screen
+        callFrontScreen();
+
+        // capture the clicks on HTML content
+        doFormInterception();
+        
+        // disable the back button
+        //button.setEnabled(false);
+        // select the tree as first topic
+        tree.requestFocus();
+        
+        // change colors on the HTML background
+        panelEast.setBackground(coreGUI.backgroundColor);
+        
+        // add a border on the search bar
+        search.setBorder(BorderFactory.createCompoundBorder(
+            search.getBorder(), BorderFactory.createEmptyBorder(5, 12, 5, 5)));
+        
+        // add a border on the HTML box
+        text.setBorder(BorderFactory.createCompoundBorder(
+            text.getBorder(), BorderFactory.createEmptyBorder(5, 12, 5, 12)));
+        
+                
+        // expand the first treeview node by default
+        try{
+        TreeNodeSPDX nodeReports = TreeviewUtils.getNodeReports();
+        if(nodeReports != null){
+              swingUtils.setSelectedNode(nodeReports.getUID());
+        }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+        
+         // change our title
+        setTitle("TripleCheck reporter");
+        
+    }
+
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -677,81 +756,6 @@ public class StudioUI4 extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
 
     
-    /**
-     * The settings related to the treeview
-     */
-    public void doSettingsTreeview(){
-        // the basic root node that is always needed
-        swingUtils.nodeAddRoot(tree);
-        // now add all reports that we can find
-        TreeviewUtils.spdxAddFullTree();
-        // get the list of RunPlugins going
-        RunPlugins.listPlugins();
-        log.write(is.INFO, Messages.ReadyToUse);
-    }
-    
-    public void doSettings() {
-        // setup the treeview
-        doSettingsTreeview();
-        
-
-//        Thread thread = new Thread(){
-//                @Override
-//                public void run(){
-//                    utils.time.wait(1);
-//                 log.write(is.INFO, Messages.ReadyToUse);
-//                }
-//                };
-//            thread.start();
-            
-        // ensure that the search box is the selected component
-        setSearchProvider(this.searchTextDefault);
-        search.requestFocusInWindow();
-
-        // solve a bug we have on the screen
-        this.editorPane(is.contentHTML, true, 0, "");
-
-        // do the front screen
-        callFrontScreen();
-
-        // capture the clicks on HTML content
-        doFormInterception();
-        // this is needed to ensure we get line-wrapping
-        jScrollPane2.setViewportView(text);
-
-        // disable the back button
-        //button.setEnabled(false);
-        // select the tree as first topic
-        tree.requestFocus();
-        
-        // change colors on the HTML background
-        panelEast.setBackground(coreGUI.backgroundColor);
-        
-        // add a border on the search bar
-        search.setBorder(BorderFactory.createCompoundBorder(
-            search.getBorder(), BorderFactory.createEmptyBorder(5, 12, 5, 5)));
-        
-        // add a border on the HTML box
-        text.setBorder(BorderFactory.createCompoundBorder(
-            text.getBorder(), BorderFactory.createEmptyBorder(5, 12, 5, 12)));
-        
-                
-        // expand the first treeview node by default
-        try{
-        //String showProducts = (String) core.temp.get(is.reports);
-        TreeNodeSPDX nodeReports = TreeviewUtils.getNodeReports();
-        if(nodeReports != null){
-              swingUtils.setSelectedNode(nodeReports.getUID());
-        }
-        }catch (Exception e){
-            e.printStackTrace();
-        }
-        
-         // change our title
-        setTitle("TripleCheck reporter");
-        
-    }
-
     public JTree getTree(){
         return tree;
     }
