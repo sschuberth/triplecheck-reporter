@@ -18,7 +18,7 @@ import definitions.is;
 import java.io.File;
 import java.util.ArrayList;
 import main.engine;
-import script.FileExtension;
+import FileExtension.FileExtension;
 import script.log;
 import spdxlib.ContentType;
 import spdxlib.FileCategory;

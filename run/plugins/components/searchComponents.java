@@ -18,7 +18,7 @@ import main.engine;
 import main.coreGUI;
 import script.Plugin;
 import script.log;
-import www.Link;
+import utils.www.Link;
 
 
 /**

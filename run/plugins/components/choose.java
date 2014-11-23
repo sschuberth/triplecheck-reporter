@@ -24,7 +24,7 @@ import main.engine;
 import script.Plugin;
 import script.log;
 import utils.www.html;
-import www.Link;
+import utils.www.Link;
 import www.WebRequest;
 
 /**

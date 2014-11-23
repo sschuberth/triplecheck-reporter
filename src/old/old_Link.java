@@ -10,7 +10,7 @@
  * FileComment: <text> Defines a basic HTML link </text> 
  */
 
-package www;
+package old;
 
 import java.util.ArrayList;
 import utils.www.html;
@@ -21,9 +21,9 @@ import utils.www.html;
  * @author Nuno Brito, 5th of June 2014 in Darmstadt, Germany.
  *  nuno.brito@triplecheck.de | http://nunobrito.eu
  */
-public class Link {
+public class old_Link {
 
-    private ArrayList<Link> links = new ArrayList();
+    private ArrayList<old_Link> links = new ArrayList();
     
     private String 
             title, 
@@ -52,7 +52,7 @@ public class Link {
         }else{
             String result = html.link(title, url + extra);
             
-            for(Link link : links){
+            for(old_Link link : links){
                 result = result.concat(" | " + link.getLink());
             }
             
@@ -64,7 +64,7 @@ public class Link {
      * Sometimes useful to have more than one link per object
      * @param link 
      */
-    public void addLink(Link link){
+    public void addLink(old_Link link){
         links.add(link);
     }
 
@@ -75,7 +75,7 @@ public class Link {
     public void addParameters(String text) {
         this.extra = text;
         if(links.isEmpty() == false){
-            for(Link link : links){
+            for(old_Link link : links){
                 link.addParameters(text);
             }
         }

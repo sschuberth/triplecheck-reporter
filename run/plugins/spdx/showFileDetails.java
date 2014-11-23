@@ -20,7 +20,7 @@ import java.io.File;
 import main.coreGUI;
 import main.engine;
 import main.param;
-import script.FileExtension;
+import FileExtension.FileExtension;
 import script.Plugin;
 import script.log;
 import spdxlib.FileInfo;

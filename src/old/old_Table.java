@@ -10,7 +10,7 @@
  * FileComment: <text> Eases the creation of HTML tables </text> 
  */
 
-package www;
+package old;
 
 
 /**
@@ -18,7 +18,7 @@ package www;
  * @author Nuno Brito, 17th of November 2013 in Darmstadt, Germany.
  *  nuno.brito@triplecheck.de | http://nunobrito.eu
  */
-public class Table {
+public class old_Table {
 
     
     String 
@@ -67,7 +67,7 @@ public class Table {
      * Public constructor, important to define the array
      * @param header 
      */
-    public Table(String[] header){
+    public old_Table(String[] header){
         size = header.length;
         String result = "";
         
@@ -91,7 +91,7 @@ public class Table {
      * @param header 
      * @param length 
      */
-    public Table(String[] header, int[] length){
+    public old_Table(String[] header, int[] length){
         size = header.length;
         String result = "";
         int i = -1;

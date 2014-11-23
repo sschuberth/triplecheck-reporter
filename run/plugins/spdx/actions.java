@@ -21,7 +21,7 @@ import java.io.IOException;
 import javax.swing.SwingUtilities;
 import main.coreGUI;
 import main.engine;
-import script.FileExtension;
+import FileExtension.FileExtension;
 import script.Plugin;
 import script.log;
 import spdxlib.FileInfo;

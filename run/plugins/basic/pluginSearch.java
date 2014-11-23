@@ -30,9 +30,9 @@ import spdxlib.FileInfo;
 import spdxlib.SPDXfile;
 import ssdeep.SpamSumSignature;
 import ssdeep.ssdeep;
+import utils.www.Table;
 import utils.www.html;
 import www.RequestOrigin;
-import www.Table;
 import www.WebRequest;
 
 
