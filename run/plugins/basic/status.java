@@ -35,14 +35,14 @@ public class status extends Plugin{
     @Override
     public void startup(){
         // add our node to the tree right after the "Tools" node is added
-        log.hooks.addAction(Messages.AddingTools, thisFile, "addNode");
+        //log.hooks.addAction(Messages.AddingTools, thisFile, "addNode");
     }
     
     /**
      * Add our toolbox node to the treeview.
      */
     public void addNode(){
-        addTreeNode(id, "application-monitor.png", "main");
+        //addTreeNode(id, "application-monitor.png", "main");
     }
     
      
