@@ -18,7 +18,7 @@
     <windowTitle>TripleCheck</windowTitle>
   </singleInstance>
   <jre>
-    <path>java\jre-8u20</path>
+    <path>misc\java\jre-8u20</path>
     <bundledJre64Bit>false</bundledJre64Bit>
     <minVersion>1.6.0_0</minVersion>
     <maxVersion>1.9.0_0</maxVersion>
