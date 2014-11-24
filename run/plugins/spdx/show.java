@@ -29,7 +29,6 @@ import main.param;
 import script.Plugin;
 import script.log;
 import spdxlib.EvaluateLicensingQuality;
-import spdxlib.FileInfo;
 import spdxlib.SPDXfile;
 import utils.Graphs;
 import utils.www.html;
@@ -449,90 +448,6 @@ public class show extends Plugin{
         request.setAnswer(output);
     }
     
-//     /**
-//     * list some information according to a filter
-//     * @param request
-//     */
-//    public void list(WebRequest request) {
-//        // we need the "file" parameter to tell us what to detail
-//        String spdxTarget = request.getParameter(param.spdx);
-//        // does this file exists?
-//        File file = getFile(spdxTarget, request);
-//        if(file == null){
-//            return;
-//        }
-//        // get what we want to show
-//        String thisFilter = request.getParameter(param.filter);
-//        // value can't be empty
-//        if(thisFilter == null){
-//            request.setAnswer("No filter specified");
-//            return;
-//        }
-//        
-//        // start the processing
-//        //System.err.println("DBG-S569 Reading SPDX");
-//        SPDXfile spdx = engine.reports.get(file);
-//        // create the place holder for the results
-//        ArrayList<FileInfo> list = new ArrayList();
-//        
-//        // get only the files without a declared trigger
-//        if(thisFilter.equalsIgnoreCase(param.noLicense)){
-//             // iterate through all files
-//            for(FileInfo fileInfo : spdx.getFiles()){
-//            // if there is a trigger, no need to continue
-//            if(fileInfo.getLicenseInfoInFileCounter()>0){
-//                continue;
-//            }
-//            list.add(fileInfo);
-//            }
-//        }
-//        // get the unlicensed files
-//        if(thisFilter.equalsIgnoreCase(param.withLicense)){
-//            // iterate through all files
-//            for(FileInfo fileInfo : spdx.getFiles()){
-//            // if there is a trigger, no need to continue
-//            if(fileInfo.getLicenseInfoInFileCounter() == 0){
-//                continue;
-//            }
-//            list.add(fileInfo);
-//            }
-//        }
-//        
-//        // create the HTML data where our info will be placed
-//        String[] columns = new String[]{"File name", "", "Path"};
-//        Table table = new Table(columns);
-//        
-//        
-//        // iterate through all files
-//        for(FileInfo fileInfo : list){
-//            // create a column with our file information
-//            String[] column = new String[]{
-//                fileInfo.toString(),
-//                html.link("Detail", "?x=specific&"
-//                        + param.spdx + "=" + spdxTarget + "&"
-//                        + param.file + "=" + fileInfo.getFileName()
-//                ),
-//                    fileInfo.getFilePath()
-//            };
-//            table.add(column);
-//        }
-//                
-//        // do the output that is displayed to the end-user
-//        String result = "" //swingUtils.getBreadcrumb(node)
-//                + html.div(20)
-//                + html.h2(spdx.getId())
-//                //+ this.doFileSummary(spdx)
-//                + doEvaluation(spdx)
-//                + "Showing " + list.size() + " files from a total of " 
-//                + spdx.getFiles().size() + " files"
-//                + "" + html.br+ html.br
-//                + table.output()
-//                + html._div
-//                ;
-//        
-//        request.setAnswer(result);
-//    }
-   
     
    /**
 * Verifies if a given SPDX document exists inside our archive or or not
