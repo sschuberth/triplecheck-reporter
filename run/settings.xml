@@ -4,6 +4,8 @@
 <comment/>
 <entry key="SOURCEFOLDER---openui5.spdx">/mnt/06B6C215B6C20561/core/code/source/openui5</entry>
 <entry key="toggleScore">0</entry>
-<entry key="target">/mnt/06B6C215B6C20561/core/code/source/7z922</entry>
+<entry key="target">/mnt/06B6C215B6C20561/core/code/source/bacula-7.0.5</entry>
 <entry key="SOURCEFOLDER---7z922.spdx.spdx">/mnt/06B6C215B6C20561/core/code/reporter/run/reports/7z922.spdx</entry>
+<entry key="SOURCEFOLDER---bacula-7.0.5.spdx.spdx">/mnt/06B6C215B6C20561/core/code/reporter/run/reports/bacula-7.0.5.spdx</entry>
+<entry key="SOURCEFOLDER---RosFE-master.spdx.spdx">/mnt/06B6C215B6C20561/core/code/reporter/run/reports/RosFE-master.spdx</entry>
 </properties>
