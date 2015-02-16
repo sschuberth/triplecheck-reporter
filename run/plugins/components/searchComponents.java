@@ -41,7 +41,7 @@ public class searchComponents extends Plugin{
      * a possible match
      */ 
     public void doFindComponents() {
-        String searchTerm = coreGUI.studio.getSearch().getText();
+        String searchTerm = coreGUI.studio.getSearch().getText().toLowerCase();
         // no need to worry about empty searches or less than two characters
         if(searchTerm.length() < 2){
             return;

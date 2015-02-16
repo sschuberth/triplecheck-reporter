@@ -44,11 +44,11 @@ public class showComponent extends Plugin{
            return;
        }
        
-       // can we get the details without further delay?
-       if(type.equals("gc")){
-           comp.loadPage.googleCode(name, license, request);
-           //return;
-       }
+//       // can we get the details without further delay?
+//       if(type.equals("gc")){
+//           old.loadPage.googleCode(name, license, request);
+//           //return;
+//       }
        
     }
     
