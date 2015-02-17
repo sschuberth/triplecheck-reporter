@@ -24,7 +24,7 @@ import www.WebRequest;
 
 /**
  *
- * @author Nuno Brito, 2nd of April 2014 in Darsmtadt, Germany
+ * @author Nuno Brito, 2nd of April 2014 in Darmstadt, Germany
  */
 public class authorship extends Plugin{
      
