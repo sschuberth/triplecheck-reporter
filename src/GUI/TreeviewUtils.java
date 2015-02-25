@@ -116,6 +116,12 @@ public class TreeviewUtils {
      */
     public static TreeNodeSPDX spdxAddNode(final SPDXfile spdx, 
             final TreeNodeSPDX rootNode) {
+        
+        // avoid null spdx objects
+        if(spdx == null || spdx.getNodeAuthorShip() == null){
+            return null;
+        }
+        
         final File file = spdx.file;
         final String fileName = file.getName();
         // create the new node, remove the spdx file extension
@@ -241,6 +247,7 @@ public class TreeviewUtils {
                 lastNode = spdxAddNode(spdx, nodeReports);
             }catch (Exception e){
                 System.err.println("TU238, Error processing SPDX: " + spdx.getRelativePath());
+                e.printStackTrace();
                 // sometimes the problem is an empty SPDX file, we can delete it
                 File spdxFile = spdx.getFile();
                 // is the file containing zero bytes?

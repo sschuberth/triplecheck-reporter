@@ -392,11 +392,11 @@ public class pluginSearch extends Plugin{
             for(Object fileObject : spdx.getFiles()){
                FileInfo file = (FileInfo) fileObject;
                // SSDEEP might not be present on this data object
-               if(file.getTagFileChecksumSSDEEP() == null){
+               if(file.getTagFileChecksumTLSH() == null){
                    continue;
                }
                // get the SSDEEP signature from this file
-               String signature = file.getTagFileChecksumSSDEEP() ;
+               String signature = file.getTagFileChecksumTLSH() ;
                signature = signature.replace("FileChecksum: SSDEEP: ", "");
                // comparing the two signatures
                ssdeep test = new ssdeep();

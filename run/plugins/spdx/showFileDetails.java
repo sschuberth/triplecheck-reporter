@@ -188,8 +188,8 @@ public class showFileDetails extends Plugin{
         }
         
         String resultSSDEEP = "";
-        if(fileInfo.getTagFileChecksumSSDEEP()!= null){
-            String text = fileInfo.getTagFileChecksumSSDEEP();
+        if(fileInfo.getTagFileChecksumTLSH()!= null){
+            String text = fileInfo.getTagFileChecksumTLSH();
             // remove the tag header
             resultSSDEEP = text.replace("FileChecksum: SSDEEP: ", "");
 //            resultSSDEEP = text

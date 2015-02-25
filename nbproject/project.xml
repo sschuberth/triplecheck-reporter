@@ -18,7 +18,7 @@
         </data>
         <references xmlns="http://www.netbeans.org/ns/ant-project-references/1">
             <reference>
-                <foreign-project>engine</foreign-project>
+                <foreign-project>Tokenizator</foreign-project>
                 <artifact-type>jar</artifact-type>
                 <script>build.xml</script>
                 <target>jar</target>
@@ -26,7 +26,7 @@
                 <id>jar</id>
             </reference>
             <reference>
-                <foreign-project>utils</foreign-project>
+                <foreign-project>engine</foreign-project>
                 <artifact-type>jar</artifact-type>
                 <script>build.xml</script>
                 <target>jar</target>
