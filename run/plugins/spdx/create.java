@@ -155,9 +155,7 @@ public class create extends Plugin{
         TreeviewUtils.refreshAll(spdx.getUID(), false);
         
         // save these settings to open the source files
-        final String title = definitions.id.SOURCEFOLDER 
-               + spdx.getFile().getName() + ".spdx";
-        engine.settings.write(title, spdx.getFile().getAbsolutePath());
+        spdx.setSourceFolder(newSPDX.getFolderSource());
         
         // create the link to open the new document
         String link = "/spdx/show?x=summary&" + param.spdx + "=" 
