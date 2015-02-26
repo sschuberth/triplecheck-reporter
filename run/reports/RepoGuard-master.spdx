@@ -1,0 +1,22 @@
+##-------------------------
+## SPDX Document Information
+##-------------------------
+SPDXVersion: SPDX-1.2
+DataLicense: CC-BY-4.0
+
+##-------------------------
+## Creation Information
+##-------------------------
+Creator: nuno
+Creator: Tool: TripleCheck 0.9.6
+Created: 2015-02-25T18:37:21Z
+
+##-------------------------
+## Package Information
+##-------------------------
+PackageName: RepoGuard-master
+PackageLicenseDeclared: NOASSERTION
+
+##-------------------------
+## File Information
+##-------------------------

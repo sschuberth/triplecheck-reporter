@@ -123,11 +123,19 @@ public class create extends Plugin{
         }
         
         // show the number of files processed so far (in a human readable number)
-        String filesProcessed = utils.text.convertToHumanNumbers(newSPDX.getFilesProcessed());        
+        int processedFiles = newSPDX.getFilesProcessed();
+        String filesProcessed = utils.text.convertToHumanNumbers(processedFiles);        
         
         // load the template
         request.setTemplate(templateProgressSPDX);
         
+        // add a message when empty around here
+        if(processedFiles == 0){
+            request.changeTemplate("%f%", "Wait..");
+            filesProcessed = "";
+        }
+        
+        request.changeTemplate("%f%", "files");
         request.changeTemplate("%s%", filesProcessed);
         request.changeTemplate("%actions%", actions);
         
