@@ -899,7 +899,8 @@ public class StudioUI4 extends javax.swing.JFrame {
             int caretPosition, String content, Boolean cache, 
             WebRequest request){
         
-        // we don't need empty content
+        
+         // we don't need empty content
         if(content == null || content.isEmpty()){
             System.err.println("SU857 - Empty content on editor pane");
             return;

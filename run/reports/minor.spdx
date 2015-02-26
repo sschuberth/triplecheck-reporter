@@ -1,0 +1,49 @@
+##-------------------------
+## SPDX Document Information
+##-------------------------
+SPDXVersion: SPDX-1.2
+DataLicense: CC-BY-4.0
+
+##-------------------------
+## Creation Information
+##-------------------------
+Creator: nuno
+Creator: Tool: TripleCheck 0.9.6
+Created: 2015-02-26T18:57:37Z
+
+##-------------------------
+## Package Information
+##-------------------------
+PackageName: minor
+PackageLicenseDeclared: NOASSERTION
+
+##-------------------------
+## File Information
+##-------------------------
+FileName: ./7zAlloc.c
+FileType: SOURCE
+FileChecksum: SHA1: 837a09de1a25b1209118f4a247e46dd1b6450247
+FileChecksum: SHA256: 4e913bf359299423cf32787e706a20bd7f9c06fcbfbce835f515317272080a7c
+FileChecksum: MD5: 9cb6c217b54012c4d3dfd078fdf660ae
+FileSize: 1 Kb (1472 bytes)
+FileLOC: 76
+LicenseInfoInFile: Public Domain
+
+FileName: ./7zAlloc.h
+FileType: SOURCE
+FileChecksum: SHA1: f23822b985b89ebb6a1ea989e9d095426b7ab2d9
+FileChecksum: SHA256: 848c45dca737944d7fbe0a5bbf132e4d68ee77ce9bc32994a409ad3defef4c13
+FileChecksum: MD5: 6b026c1c4dd118ea5287ad2ac7cb3a8a
+FileSize: 326 bytes
+FileLOC: 15
+LicenseInfoInFile: Public Domain
+
+FileName: ./7zBuf.c
+FileType: SOURCE
+FileChecksum: SHA1: c2da556ca12ae9efdbdc7113c9a0821568391a04
+FileChecksum: SHA256: 3b30e2c0f7b15d1c42c22e7bbd02a807fb6d41875335be6da8bb4472eacc3106
+FileChecksum: MD5: 5afb776fdafe809c291a38b3e46a0ba8
+FileSize: 537 bytes
+FileLOC: 36
+LicenseInfoInFile: Public Domain
+

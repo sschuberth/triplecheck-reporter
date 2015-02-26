@@ -112,6 +112,7 @@ public class WebRequest {
      * When we have an answer ready, the next step is storing it inside
      * using this method.
      * @param text The HTML text that will be provided as answer
+     * @param cache
      */
     public void setAnswer(String text, boolean cache){
         // don't allow more than one answer to exist
