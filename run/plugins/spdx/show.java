@@ -357,21 +357,21 @@ public class show extends Plugin{
                 ;
         
         // if we are on Windows, permit to open the folder
-        String openFolder = "";
-        if(utils.misc.isWindows()){
-            openFolder = ""
-                    //+ html.br
-                    + html.link("Open folder in Windows explorer", 
-                        "?x=openFolder&"
-                        + param.file + "=" + file.getAbsolutePath()
-                        + param.spdx + "=" + spdxTarget)
-                    + html.br
-                    ;
-//            try {
-//                Desktop.getDesktop().open(file);
-//            } catch (IOException ex) {
-//            }
-        }
+//        String openFolder = "";
+//        if(utils.misc.isWindows()){
+//            openFolder = ""
+//                    //+ html.br
+//                    + html.link("Open folder in Windows explorer", 
+//                        "?x=openFolder&"
+//                        + param.file + "=" + file.getAbsolutePath()
+//                        + param.spdx + "=" + spdxTarget)
+//                    + html.br
+//                    ;
+////            try {
+////                Desktop.getDesktop().open(file);
+////            } catch (IOException ex) {
+////            }
+//        }
         
         // get the list of files with copyright and licenses
         String concludedLicenses = ""

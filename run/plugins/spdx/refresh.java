@@ -50,7 +50,5 @@ public class refresh extends Plugin{
         
         request.setAnswer(result);       
     }
-    
-    
   
 }
