@@ -56,7 +56,7 @@ public class TestTriggerEPL {
     }
    
      @Test
-     public void findGPL() {
+     public void findGPL() throws Exception {
      
          // initialize the triggers
          start.basicStart(new String[]{});
@@ -76,7 +76,7 @@ public class TestTriggerEPL {
      * @param codeSnippet
      * @param licenseId 
      */
-    private void testLicense(final String title, final String codeSnippet, final String licenseId) {
+    private void testLicense(final String title, final String codeSnippet, final String licenseId) throws Exception {
          String lowerCaseContent = codeSnippet.toLowerCase();
          boolean didNotFind = true;
          for(Trigger thisLicense: engine.triggers.getList()){

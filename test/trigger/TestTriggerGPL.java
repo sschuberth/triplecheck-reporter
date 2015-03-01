@@ -61,7 +61,7 @@ public class TestTriggerGPL {
     }
    
      @Test
-     public void findGPL() {
+     public void findGPL() throws Exception {
      
          // initialize the triggers
          start.basicStart(new String[]{});
@@ -86,7 +86,7 @@ public class TestTriggerGPL {
      * @param codeSnippet
      * @param licenseId 
      */
-    private void testLicense(final String title, final String codeSnippet, final String licenseId) {
+    private void testLicense(final String title, final String codeSnippet, final String licenseId) throws Exception {
          String lowerCaseContent = codeSnippet.toLowerCase();
          boolean didNotFind = true;
          for(Trigger thisLicense: engine.triggers.getList()){
@@ -112,7 +112,7 @@ public class TestTriggerGPL {
      * @param licenseIdToMatch  The license Id that needs to be found
      */
     private void testFile(final String fileToTest, final String licenseIdToMatch,
-            final String licenseID) {
+            final String licenseID) throws Exception {
         File targetFile = new File(engine.getMiscFolder(), "test/licenses/" + fileToTest);
         if(targetFile.exists() == false){
             fail("Failed to find: " + targetFile.getAbsolutePath());

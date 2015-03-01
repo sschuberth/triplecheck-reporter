@@ -57,7 +57,7 @@ public class TestTriggerGPL2 {
     }
    
      @Test
-     public void findGPLv2() {
+     public void findGPLv2() throws Exception {
      
          // add up all the triggers from our folder
          //actions.addTriggers();

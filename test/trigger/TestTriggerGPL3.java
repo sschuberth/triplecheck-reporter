@@ -53,7 +53,7 @@ public class TestTriggerGPL3 {
     }
    
      @Test
-     public void findGPLv3() {
+     public void findGPLv3() throws Exception {
      
          // add up all the triggers from our folder
          //actions.addTriggers();
