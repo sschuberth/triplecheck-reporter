@@ -13,6 +13,7 @@
 
 package script;
 
+import main.script.log;
 import GUI.ListItem;
 import definitions.Messages;
 import definitions.is;

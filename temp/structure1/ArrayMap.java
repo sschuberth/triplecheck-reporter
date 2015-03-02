@@ -11,7 +11,7 @@
  * the performance. </text>
  */
 
-package structure;
+package structure1;
 
 import java.util.ArrayList;
 import java.util.HashMap;

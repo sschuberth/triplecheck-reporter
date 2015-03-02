@@ -15,7 +15,7 @@ package components;
 import GUI.swingUtils;
 import definitions.is;
 import script.Plugin;
-import script.log;
+import main.script.log;
 import spdxlib.SPDXfile;
 import spdxlib.swing.NodeType;
 import spdxlib.swing.TreeNodeSPDX;

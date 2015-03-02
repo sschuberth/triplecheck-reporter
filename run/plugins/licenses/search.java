@@ -19,8 +19,8 @@ import java.io.File;
 import main.coreGUI;
 import main.engine;
 import script.Plugin;
-import script.log;
-import spdxlib.License;
+import main.script.log;
+import license.License;
 import www.RequestOrigin;
 import www.WebRequest;
 

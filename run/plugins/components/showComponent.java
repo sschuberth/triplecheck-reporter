@@ -15,7 +15,7 @@ package components;
 import comp.Component;
 import main.engine;
 import script.Plugin;
-import spdxlib.License;
+import license.License;
 import www.WebRequest;
 
 

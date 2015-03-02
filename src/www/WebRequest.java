@@ -23,7 +23,7 @@ import java.util.logging.Logger;
 import main.controller;
 import org.simpleframework.http.Request;
 import org.simpleframework.http.Response;
-import script.log;
+import main.script.log;
 
 /**
  *

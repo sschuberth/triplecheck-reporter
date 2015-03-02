@@ -17,7 +17,7 @@ import definitions.is;
 import main.engine;
 import main.coreGUI;
 import script.Plugin;
-import script.log;
+import main.script.log;
 import utils.www.Link;
 
 

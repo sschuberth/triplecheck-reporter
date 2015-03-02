@@ -30,7 +30,7 @@ import main.coreGUI;
 import main.engine;
 import net.htmlparser.jericho.HTMLElementName;
 import net.htmlparser.jericho.Source;
-import script.log;
+import main.script.log;
 import spdxlib.FileInfo;
 import spdxlib.SPDXfile;
 import spdxlib.swing.NodeType;

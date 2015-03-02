@@ -18,6 +18,8 @@
 
 package script;
 
+import main.script.log;
+import main.script.PluginVanilla;
 import GUI.swingUtils;
 import definitions.is;
 import java.io.File;

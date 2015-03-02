@@ -13,7 +13,7 @@
  * to the user the most relevant license as a top-list.</text> 
  */
 
-package structure;
+package structure1;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -21,8 +21,8 @@ import java.util.Map;
 import main.coreGUI;
 import main.engine;
 import spdxlib.FileInfo;
-import spdxlib.License;
-import spdxlib.LicenseType;
+import license.License;
+import license.LicenseType;
 import spdxlib.SPDXfile;
 import utils.www.html;
 

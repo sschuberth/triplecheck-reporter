@@ -15,7 +15,7 @@ package basic;
 import definitions.Messages;
 import main.coreGUI;
 import script.Plugin;
-import script.log;
+import main.script.log;
 import utils.www.html;
 import www.RequestOrigin;
 import www.WebRequest;

@@ -22,7 +22,7 @@ import java.util.ArrayList;
 import main.coreGUI;
 import main.engine;
 import script.Plugin;
-import script.log;
+import main.script.log;
 import utils.www.html;
 import utils.www.Link;
 import www.WebRequest;

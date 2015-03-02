@@ -31,7 +31,7 @@ package GUI;
 
 import definitions.is;
 import main.coreGUI;
-import script.log;
+import main.script.log;
 import utils.time;
 
 

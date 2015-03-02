@@ -11,6 +11,7 @@
  */
 package script;
 
+import main.script.log;
 import definitions.is;
 import java.io.File;
 import java.io.IOException;

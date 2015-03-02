@@ -20,7 +20,7 @@ import java.io.File;
 import main.engine;
 import main.param;
 import script.Plugin;
-import script.log;
+import main.script.log;
 import spdxlib.DocumentCreate;
 import spdxlib.SPDXfile;
 import utils.www.html;

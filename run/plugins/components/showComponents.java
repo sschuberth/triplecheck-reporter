@@ -21,7 +21,7 @@ import java.util.ArrayList;
 import main.engine;
 import main.coreGUI;
 import script.Plugin;
-import script.log;
+import main.script.log;
 import spdxlib.swing.TreeNodeSPDX;
 import www.RequestOrigin;
 import www.WebRequest;

@@ -23,7 +23,7 @@ import main.coreGUI;
 import main.engine;
 import FileExtension.FileExtension;
 import script.Plugin;
-import script.log;
+import main.script.log;
 import spdxlib.FileInfo;
 import spdxlib.swing.NodeType;
 import spdxlib.swing.TreeNodeSPDX;

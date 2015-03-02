@@ -22,7 +22,7 @@ import main.engine;
 import main.param;
 import FileExtension.FileExtension;
 import script.Plugin;
-import script.log;
+import main.script.log;
 import spdxlib.FileInfo;
 import spdxlib.SPDXfile;
 import spdxlib.swing.NodeType;

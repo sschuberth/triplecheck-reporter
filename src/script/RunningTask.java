@@ -14,6 +14,7 @@
 
 package script;
 
+import main.script.log;
 import definitions.is;
 import java.util.ArrayList;
 import main.coreGUI;

@@ -14,8 +14,8 @@ package main;
 import GUI.StartupScreen;
 import GUI.StudioUI4;
 import definitions.is;
-import script.log;
-import structure.LicenseControl;
+import main.script.log;
+import license.LicenseControl;
 
 /**
  *

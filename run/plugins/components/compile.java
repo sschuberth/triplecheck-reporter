@@ -22,7 +22,7 @@ import java.util.logging.Logger;
 import main.engine;
 import org.apache.commons.io.FileUtils;
 import script.Plugin;
-import script.log;
+import main.script.log;
 import spdxlib.SPDXfile;
 import spdxlib.swing.NodeType;
 import spdxlib.swing.TreeNodeSPDX;

@@ -19,7 +19,7 @@ import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import main.engine;
 import org.simpleframework.http.Request;
-import script.log;
+import main.script.log;
 import www.RequestOrigin;
 import www.WebRequest;
 

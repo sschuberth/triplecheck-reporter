@@ -17,7 +17,7 @@ import definitions.Messages;
 import definitions.is;
 import main.controller;
 import script.Plugin;
-import script.log;
+import main.script.log;
 import www.RequestOrigin;
 import www.WebRequest;
 

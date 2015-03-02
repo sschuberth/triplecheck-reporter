@@ -21,7 +21,7 @@ import java.io.IOException;
 import java.io.PrintStream;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import script.log;
+import main.script.log;
 import www.RequestOrigin;
 import www.WebRequest;
 import www.WebServer;

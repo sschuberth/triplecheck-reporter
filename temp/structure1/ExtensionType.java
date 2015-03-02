@@ -11,7 +11,7 @@
     the former processing with Beanshell scripts</text> 
  */
 
-package structure;
+package structure1;
 
 import java.util.ArrayList;
 import spdxlib.ContentType;

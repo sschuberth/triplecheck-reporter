@@ -37,7 +37,7 @@ import main.controller;
 import main.coreGUI;
 import main.engine;
 import script.RunPlugins;
-import script.log;
+import main.script.log;
 import spdxlib.FileInfo;
 import spdxlib.FileOrigin;
 import spdxlib.SPDXfile;

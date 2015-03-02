@@ -8,7 +8,7 @@ import definitions.Messages;
 import definitions.definition;
 import main.engine;
 import script.Plugin;
-import script.log;
+import main.script.log;
 import utils.www.html;
 import www.WebRequest;
 import www.WebServer;

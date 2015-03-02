@@ -25,7 +25,7 @@ import main.controller;
 import main.coreGUI;
 import main.engine;
 import script.Plugin;
-import script.log;
+import main.script.log;
 import spdxlib.FileInfo;
 import spdxlib.SPDXfile;
 import utils.hashing.ssdeep.SpamSumSignature;

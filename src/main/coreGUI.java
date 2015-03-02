@@ -15,14 +15,14 @@
 package main;
 
 import GUI.KeyStroke;
+import GUI.LicensePopularity;
 import GUI.StudioUI4;
 import comp.ComponentControl;
 import java.awt.Color;
 import java.io.File;
 import java.util.ArrayList;
 import script.RunningTask;
-import structure.LicensePopularity;
-import structure.ReportsControl;
+import definitions.structure.ReportsControl;
 
 
 public class coreGUI {

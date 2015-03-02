@@ -20,7 +20,7 @@ import javax.swing.tree.DefaultTreeModel;
 import main.coreGUI;
 import main.engine;
 import script.Plugin;
-import script.log;
+import main.script.log;
 import spdxlib.swing.NodeType;
 import spdxlib.swing.TreeNodeSPDX;
 import utils.www.html;
