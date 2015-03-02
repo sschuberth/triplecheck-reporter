@@ -18,7 +18,7 @@ import main.engine;
 import main.start;
 import org.junit.*;
 import static org.junit.Assert.*;
-import script.Trigger;
+import provenance.Trigger;
 
 /**
  *

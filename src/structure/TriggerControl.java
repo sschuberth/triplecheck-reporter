@@ -18,7 +18,7 @@ import definitions.is;
 import java.io.File;
 import java.util.ArrayList;
 import main.engine;
-import script.Trigger;
+import provenance.Trigger;
 import script.log;
 
 /**

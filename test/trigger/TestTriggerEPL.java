@@ -18,7 +18,7 @@ import main.engine;
 import main.start;
 import org.junit.*;
 import static org.junit.Assert.*;
-import script.Trigger;
+import provenance.Trigger;
 
 /**
  *
@@ -81,8 +81,8 @@ public class TestTriggerEPL {
          boolean didNotFind = true;
          for(Trigger thisLicense: engine.triggers.getList()){
             if(thisLicense.isApplicable(codeSnippet, lowerCaseContent)){
-                assertEquals(licenseId, thisLicense.getResult());
-                //System.out.println(thisLicense.getResult());
+                assertEquals(licenseId, thisLicense.getResultSPDX());
+                //System.out.println(thisLicense.getResultSPDX());
                 System.out.println("[OK] Found " + licenseId + " in " + title);
                 didNotFind = false;
             }

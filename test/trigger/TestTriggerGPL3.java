@@ -17,7 +17,7 @@ package trigger;
 import main.engine;
 import org.junit.*;
 import static org.junit.Assert.*;
-import script.Trigger;
+import provenance.Trigger;
 
 /**
  *
