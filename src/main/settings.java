@@ -31,9 +31,6 @@ public class settings extends Plugin{
         Thread thread = new Thread(){
         @Override
         public void run(){
-        // process the list of licenses
-        engine.licenses.find();
-            
         // do the settings (for e.g. is there a new version?)
         final String text = utils.internet.getTextFile
             ("http://triplecheck.de/settings.java");
