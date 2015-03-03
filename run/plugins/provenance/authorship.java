@@ -118,7 +118,7 @@ public class authorship extends Plugin{
         analysis.setExchangeClient(client);
         analysis.setSPDX(spdx);
         analysis.setSourceFolder(folder);
-        
+        // launch the remote analysis
         analysis.launch();
         
         // place this analysis in memory
@@ -126,39 +126,13 @@ public class authorship extends Plugin{
         
         // divert to the status result
         outputAnalysisResult(request);
-//        
-//        // run the packageToAnalyse program, adding a folder
-//        ExchangePackage packageToAnalyse = new ExchangePackage();
-//        packageToAnalyse.setTitle(spdx.getId());
-//        packageToAnalyse.addFolder(folder);
-//        final String output = packageToAnalyse.objectToString();
-//       
-//        
-//        // step 4: send the text file
-//        client.startAnalysis(output);
-//        
-//        // is the server processing data?
-//        final boolean processing = client.shouldWaitForResults();
-//        // do the verification
-//        if(processing == false){
-//            log.write(is.ERROR, "Error AS115: Unable to dispatch our request");
-//            request.setTemplate("originality_error_online.html");
-//            request.closeTemplate();
-//            return;
-//        }else{
-//            System.out.println("Remote server processing: " + client.shouldWaitForResults());
-//        }
-//       
-//        request.setTemplate("originality_progress.html");
-//        request.closeTemplate();
-        
     }
     
     
     public void status(WebRequest request){
         // break the loop if something 
         if(engine.temp.containsKey(id) == false){
-            request.setAnswer("");
+            request.setAnswer("Nothing here..");
             return;
         }
         // divert to the status result
@@ -173,6 +147,13 @@ public class authorship extends Plugin{
     private void outputAnalysisResult(WebRequest request) {
         // get the object being analysed
         RunningAnalysis analysis = (RunningAnalysis) engine.temp.get(id);
+        
+        // are we finally ready?
+        if(analysis.isReady()){
+            request.setAnswer(analysis.getMessage());
+            engine.temp.remove(id);
+            return;
+        }
         
         // show the progress of the analysis
         request.setTemplate("originality_progress.html");

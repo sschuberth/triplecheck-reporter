@@ -28,8 +28,12 @@ public class RunningAnalysis {
     private ExchangeClient client = null;
     private SPDXfile spdx = null;
     private File folder = null;
-    private ExchangePackage packageToAnalyse = null;
+    private ExchangePackage 
+                packageToAnalyse = null,
+                output = null;
     private String message = "";
+    
+    private boolean analysisReady = false;
     
     public RunningAnalysis() {
         message = "Starting a new analysis, please wait..";
@@ -81,7 +85,6 @@ public class RunningAnalysis {
         if(processing == false){
             message = "Error AS115: Unable to dispatch our request";
             log.write(is.ERROR, message);
-            return;
         }else{
             message = "Remote server processing: " + client.shouldWaitForResults();
             log.write(is.INFO, message);
@@ -89,7 +92,51 @@ public class RunningAnalysis {
     }
 
     public String getMessage() {
+        // we need to be connected
+        if(client.isConnected() == false){
+            message = "I'm not connected to the server any longer, please fix";
+            return message;
+        }
+        // all done
         return message;
     }
 
+    /**
+     * Last steps to perform when the analysis was performed
+     */
+    private void concludeAnalysis(){
+        // the analysis is over, we can retrieve the result
+        output = client.getOutput();
+        message = "Analysis concluded!";
+        log.write(is.INFO, message);
+        analysisReady = true;
+    }
+
+    /**
+     * The timed check to see if we are ready or not
+     * @return 
+     */
+    public boolean isReady() {
+        // should we keep waiting
+        if(client.shouldWaitForResults()){
+            message = "Still analysing, please wait..";
+        }else{
+            // no more waiting, we have fresh results ready!
+            concludeAnalysis();
+        }
+        // all done
+        return analysisReady;
+    }
+
+    /**
+     * After the analysis was signalled as ready, call this method to get
+     * the results.
+     * @return 
+     */
+    public ExchangePackage getOutput() {
+        return output;
+    }
+    
+    
+    
 }
