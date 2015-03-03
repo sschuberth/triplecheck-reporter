@@ -16,7 +16,6 @@ import main.engine;
 import script.Plugin;
 import spdxlib.SPDXfile;
 import spdxlib.swing.TreeNodeSPDX;
-import www.RequestOrigin;
 import www.WebRequest;
 
 
@@ -37,6 +36,7 @@ public class originality extends Plugin{
        TreeNodeSPDX node = (TreeNodeSPDX) swingUtils.getSelectedNode().getParent();
        File spdxFile = (File) node.getUserObject();
        SPDXfile spdx = engine.reports.get(spdxFile);
+       
        // get the summary of authorship out of this spdx object
        request.setAnswer(spdx.getId());
     }

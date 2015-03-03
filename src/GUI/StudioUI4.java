@@ -54,17 +54,6 @@ import www.WebRequest;
  */
 public class StudioUI4 extends javax.swing.JFrame {
 
-    /**
-     * Is the mouse over the back-button?
-     */
-    private void doMouseOverButton() {
-//        if(button.isEnabled()){
-//            button.setCursor(new Cursor(Cursor.HAND_CURSOR));
-//        }else{
-//            button.setCursor(new Cursor(Cursor.DEFAULT_CURSOR));
-//        }
-    }
-
     // what kind of clicks do we have?
     enum ClickType {LEFT, RIGHT, NONE}
     // what was the last type of click that was made?
@@ -138,7 +127,6 @@ public class StudioUI4 extends javax.swing.JFrame {
         // get the list of RunPlugins going
         RunPlugins.listPlugins();
         log.write(is.INFO, Messages.ReadyToUse);
-        
         
         // this is needed to ensure we get line-wrapping
         jScrollPane2.setViewportView(text);
