@@ -27,9 +27,11 @@ public class TestRemoteScan {
     private final File 
             folderSource,
             folderOutput,
-            fileSPDX;
+            fileSPDX,
+            fileCachedExchange;
     
     private SPDXfile spdx = null;
+    private ExchangePackage exchangeOutput = null;
     
     public TestRemoteScan(final File folder){
         this.folderSource = folder;
@@ -38,6 +40,7 @@ public class TestRemoteScan {
         createOutputFolder();
         // define the files
         fileSPDX = new File(folderOutput, "output.spdx");
+        fileCachedExchange = new File(folderOutput, "exchange.bin");
     }
     
     /**
@@ -45,7 +48,7 @@ public class TestRemoteScan {
      */
     private void createOutputFolder() {
         // delete the previous files
-        utils.files.deleteDir(folderOutput);
+        //utils.files.deleteDir(folderOutput);
         // now create the empty folder
         if(folderOutput.exists() == false){
             utils.files.mkdirs(folderOutput);
@@ -59,6 +62,34 @@ public class TestRemoteScan {
     public void start() throws Exception{
         // first step, create an SPDX
         createSPDX();
+        // prepare the exchange package with the analysis results
+        createExchangePackage();
+    }
+    
+    public static void main(String[] args) throws Exception{
+        File folder = new File("samples", "files_java");
+        // launch the scanning operation
+        TestRemoteScan scan = new TestRemoteScan(folder);
+        scan.start();
+    }
+
+    /**
+     * Creates an SPDX document that we will use as example
+     */
+    private void createSPDX() {
+        log.write(is.INFO, "Creating SPDX document at %1", fileSPDX.getAbsolutePath());
+        DocumentCreate createSPDX = new DocumentCreate();
+        createSPDX.create(folderSource, fileSPDX);
+        // get the object so that we can merge matches
+        spdx = createSPDX.getSpdx();
+        log.write(is.COMPLETED, "Finished writing SPDX document");
+    }
+
+    /**
+     * Launches the new analysis (this is a time consuming process)
+     * @throws Exception 
+     */
+    private void launchAnalysis() throws Exception {
         // connect to our remote (or local) analysis server
         ExchangeClient client = new ExchangeClient("localhost", 2048);    
         RunningAnalysis analysis = new RunningAnalysis();
@@ -85,27 +116,26 @@ public class TestRemoteScan {
             System.out.println(utils.time.getDateTimeISO() + " Analysis in progress..");
         }
         
-        ExchangePackage output = client.getOutput();
+        exchangeOutput = client.getOutput();
         log.write(is.COMPLETED, "Analysis concluded!");
-    }
-    
-    public static void main(String[] args) throws Exception{
-        File folder = new File("samples", "files_java");
-        // launch the scanning operation
-        TestRemoteScan scan = new TestRemoteScan(folder);
-        scan.start();
+        
+        // save this object for future cache speedup
+        final String text = exchangeOutput.objectToString();
+        utils.files.SaveStringToFile(fileCachedExchange, text);
     }
 
-    /**
-     * Creates an SPDX document that we will use as example
-     */
-    private void createSPDX() {
-        log.write(is.INFO, "Creating SPDX document at %1", fileSPDX.getAbsolutePath());
-        DocumentCreate createSPDX = new DocumentCreate();
-        createSPDX.create(folderSource, fileSPDX);
-        // get the object so that we can merge matches
-        spdx = createSPDX.getSpdx();
-        log.write(is.COMPLETED, "Finished writing SPDX document");
+    private void createExchangePackage() throws Exception {
+        // if no cache exists, launch it
+        if(fileCachedExchange.exists()== false){
+            launchAnalysis();
+        }else{
+            final String readFile = utils.files.readAsString(fileCachedExchange);
+             exchangeOutput = ExchangePackage.stringToObject(readFile);
+             // when something went wrong, do the analysis all over again
+             if(exchangeOutput == null){
+                 launchAnalysis();
+             }
+        }
     }
 
     
