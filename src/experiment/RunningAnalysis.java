@@ -79,8 +79,6 @@ public class RunningAnalysis {
         // step 4: send the text file
         client.startAnalysis(textOutput);
         
-        utils.time.wait(2);
-        
         // is the server processing data?
         final boolean processing = client.shouldWaitForResults();
         // do the verification

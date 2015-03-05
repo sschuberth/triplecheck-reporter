@@ -41,7 +41,9 @@ public class authorship extends Plugin{
     @Override
     public void main(WebRequest request){
        // we only expect to be called from the treeview
-       if(request.requestOrigin != RequestOrigin.GUI_tree){
+       if(request.requestOrigin != RequestOrigin.GUI_tree 
+               && request.requestOrigin != RequestOrigin.GUI){
+           log.write(is.ERROR, "AS46 error: Unexpected request for main script");
            return;
        }
        
@@ -116,22 +118,33 @@ public class authorship extends Plugin{
         analysis.setExchangeClient(client);
         analysis.setSPDX(spdx);
         analysis.setSourceFolder(folder);
-        // launch the remote analysis
-        analysis.launch();
         
         // place this analysis in memory
         engine.temp.put(id, analysis);
         
+        // launch the remote analysis
+        analysis.launch();
+        
         // divert to the status result
-        outputAnalysisResult(request);
+        //outputAnalysisResult(request);
+        // show the progress of theNothing here analysis
+        request.setTemplate("originality_progress.html");
+        // set the message
+        request.changeTemplate("%firstMessage%", analysis.getMessage());
+        // make changes as we see fit
+        request.changeTemplate("%actions%","");
+        request.closeTemplate();
     }
     
-    
+    /**
+     * Is any analysis taking place?
+     * @param request 
+     */
     public void status(WebRequest request){
         // break the loop if something 
         if(engine.temp.containsKey(id) == false){
-            request.redirect("/provenance/authorship.java");
-            log.write(is.DEBUG, "Nothing here..");
+            request.redirect("/provenance/authorship?x=main");
+            log.write(is.DEBUG, "Showing the status window");
             return;
         }
         // divert to the status result
@@ -151,6 +164,11 @@ public class authorship extends Plugin{
         if(analysis != null && analysis.isReady()){
             // conclude the analysis that was ongoing
             concludeAnalysis(request, analysis);
+            return;
+        }
+        
+        if(analysis == null){
+            log.write(is.ERROR, "AS160 error: Not expecting a null analysis object");
             return;
         }
         
