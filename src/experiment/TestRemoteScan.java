@@ -15,8 +15,12 @@ import exchange.ExchangeClient;
 import exchange.ExchangePackage;
 import java.io.File;
 import main.script.log;
+import spdxlib.ChecksumFile;
 import spdxlib.DocumentCreate;
+import spdxlib.FileInfo;
+import spdxlib.RefactorSPDX;
 import spdxlib.SPDXfile;
+import tokenizator.BinaryFile;
 
 /**
  *
@@ -28,6 +32,7 @@ public class TestRemoteScan {
             folderSource,
             folderOutput,
             fileSPDX,
+            fileFinalSPDX,
             fileCachedExchange;
     
     private SPDXfile spdx = null;
@@ -40,6 +45,7 @@ public class TestRemoteScan {
         createOutputFolder();
         // define the files
         fileSPDX = new File(folderOutput, "output.spdx");
+        fileFinalSPDX = new File(folderOutput, "output-final.spdx");
         fileCachedExchange = new File(folderOutput, "exchange.bin");
     }
     
@@ -64,6 +70,10 @@ public class TestRemoteScan {
         createSPDX();
         // prepare the exchange package with the analysis results
         createExchangePackage();
+        // time to merge the results
+        mergeResults();
+        // changes added, write them do disk
+        writeNewSPDX();
     }
     
     public static void main(String[] args) throws Exception{
@@ -81,7 +91,7 @@ public class TestRemoteScan {
         DocumentCreate createSPDX = new DocumentCreate();
         createSPDX.create(folderSource, fileSPDX);
         // get the object so that we can merge matches
-        spdx = createSPDX.getSpdx();
+        spdx = new SPDXfile(fileSPDX);
         log.write(is.COMPLETED, "Finished writing SPDX document");
     }
 
@@ -124,6 +134,10 @@ public class TestRemoteScan {
         utils.files.SaveStringToFile(fileCachedExchange, text);
     }
 
+    /**
+     * Either reads a cached package from disk or starts a new analysis
+     * @throws Exception 
+     */
     private void createExchangePackage() throws Exception {
         // if no cache exists, launch it
         if(fileCachedExchange.exists()== false){
@@ -136,6 +150,57 @@ public class TestRemoteScan {
                  launchAnalysis();
              }
         }
+    }
+
+    /**
+     * Takes the results from a license analysis into an SPDX document. This is
+     * still experimental, so: "dragons beware".
+     */
+    private void mergeResults() {
+        System.out.println("Merging binary matches with SPDX");
+        // see what is new on the analysis
+        for(ChecksumFile checksumFile : exchangeOutput.getBinaryFiles()){
+            // did we got any matches? If no, continue to the next file
+            if(checksumFile.getMatches().isEmpty()){
+                continue;
+            }
+            // good, we have a match
+            addBinaryMatch(checksumFile, spdx);
+        }
+    }
+
+    /**
+     * One of the files inside the SPDX document was identified as non-original.
+     * This doesn't necessarily mean that *this* file is NOT the original one, 
+     * it means that several copies were found around the Internet and that
+     * this kind of fact should be brought up to attention somewhere.
+     * @param checksumFile
+     * @param spdx 
+     */
+    private void addBinaryMatch(ChecksumFile checksumFile, SPDXfile spdx) {
+        // iterate each file on the SPDX, find the applicable matches
+        for(FileInfo file : spdx.getFiles()){
+            // we only care for files that share the same SHA1 checksum
+            if(file.getTagFileChecksumSHA1().contains(checksumFile.SHA1)==false){
+                continue;
+            }
+            // add the information about this match
+            file.addBinaryMatches(checksumFile.getMatches());
+            System.out.println("+" + file.getFileName());
+            for(BinaryFile match : checksumFile.getMatches()){
+                System.out.println("--" + match.getReference());
+            }
+        }
+    }
+
+    /**
+     * Writes a new SPDX document to disk after adding the results from the 
+     * comparison analysis
+     */
+    private void writeNewSPDX() {
+        System.out.println("Writing the new SPDX with merged results");
+        RefactorSPDX refactor = new RefactorSPDX(spdx);
+        refactor.output(fileFinalSPDX);
     }
 
     
