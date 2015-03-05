@@ -211,6 +211,12 @@ public class authorship extends Plugin{
      * @param request 
      */
     public void stop(WebRequest request){
+        // try to get the running analysis
+        RunningAnalysis analysis = (RunningAnalysis) engine.temp.get(id);
+        if(analysis != null){
+            // see if it can be stopped
+            analysis.askToStop();
+        }
         engine.temp.remove(id);
         log.write(is.STOPPED, "Stopped processing the analysis");
         request.setAnswer("Stopped the processing");
