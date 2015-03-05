@@ -80,6 +80,7 @@ public class authorship extends Plugin{
         
         // do we have an analysis running?
         if(engine.temp.containsKey(id)){
+            log.write(is.INFO, "An analysis is already running");
             analysis = (RunningAnalysis) engine.temp.get(id);
             outputAnalysisResult(request);
             return;
@@ -116,7 +117,6 @@ public class authorship extends Plugin{
         // no previous analysis running, let's then create one
         analysis = new RunningAnalysis();
         analysis.setExchangeClient(client);
-        analysis.setSPDX(spdx);
         analysis.setSourceFolder(folder);
         
         // place this analysis in memory
@@ -222,5 +222,12 @@ public class authorship extends Plugin{
         request.setAnswer("Stopped the processing");
     }
     
-    
+    /**
+     * After the analysis was completed, provide the option for the end-user
+     * to see an HTML report.
+     * @param request 
+     */
+    public void viewHTML(WebRequest request){
+        request.setAnswer("Launching the browser");
+    }
 }

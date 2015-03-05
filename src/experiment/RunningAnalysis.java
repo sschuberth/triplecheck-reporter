@@ -26,12 +26,13 @@ import spdxlib.SPDXfile;
 public class RunningAnalysis {
 
     private ExchangeClient client = null;
-    private SPDXfile spdx = null;
     private File folder = null;
     private ExchangePackage 
                 packageToAnalyse = null,
                 output = null;
-    private String message = "";
+    private String 
+            message = "",
+            title = "Analysis";
     
     private boolean analysisReady = false;
     
@@ -43,14 +44,14 @@ public class RunningAnalysis {
         this.client = client;
     }
 
-    public void setSPDX(SPDXfile spdx) {
-        this.spdx = spdx;
-    }
-
     public void setSourceFolder(File folder) {
         this.folder = folder;
     }
 
+    public void setTitle(String title) {
+        this.title = title;
+    }
+    
     /**
      * Launches a thread that will prepare and dispatch the analysis
      */
@@ -70,9 +71,9 @@ public class RunningAnalysis {
     }
     
     private void launchInternally() throws Exception{
-        // run the packageToAnalyse program, adding a folder
+        // run the program, adding a folder
         packageToAnalyse = new ExchangePackage();
-        packageToAnalyse.setTitle(spdx.getId());
+        packageToAnalyse.setTitle(title);
         packageToAnalyse.addFolder(folder);
         final String textOutput = packageToAnalyse.objectToString();
        
