@@ -24,6 +24,7 @@ import main.controller;
 import org.simpleframework.http.Request;
 import org.simpleframework.http.Response;
 import main.script.log;
+import utils.www.html;
 
 /**
  *
@@ -107,6 +108,13 @@ public class WebRequest {
         setAnswer(text, false);
     }
     
+    /**
+     * Immediately redirect the page to some other URL
+     * @param URL 
+     */
+    public void redirect(final String URL){
+        setAnswer(html.redirect(URL, 0, ""));
+    }
     
     /**
      * When we have an answer ready, the next step is storing it inside

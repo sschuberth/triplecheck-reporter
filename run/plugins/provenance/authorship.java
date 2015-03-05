@@ -15,7 +15,6 @@ package provenance;
 import GUI.swingUtils;
 import definitions.is;
 import exchange.ExchangeClient;
-import exchange.ExchangePackage;
 import experiment.RunningAnalysis;
 import java.io.File;
 import main.engine;
@@ -66,7 +65,6 @@ public class authorship extends Plugin{
         
        // all done
        request.closeTemplate();
-       
     }
 
     /**
@@ -132,7 +130,8 @@ public class authorship extends Plugin{
     public void status(WebRequest request){
         // break the loop if something 
         if(engine.temp.containsKey(id) == false){
-            request.setAnswer("Nothing here..");
+            request.redirect("/provenance/authorship.java");
+            log.write(is.DEBUG, "Nothing here..");
             return;
         }
         // divert to the status result
@@ -149,24 +148,50 @@ public class authorship extends Plugin{
         RunningAnalysis analysis = (RunningAnalysis) engine.temp.get(id);
         
         // are we finally ready?
-        if(analysis.isReady()){
-            request.setAnswer(analysis.getMessage());
-            engine.temp.remove(id);
+        if(analysis != null && analysis.isReady()){
+            // conclude the analysis that was ongoing
+            concludeAnalysis(request, analysis);
             return;
         }
         
         // show the progress of the analysis
         request.setTemplate("originality_progress.html");
-        
         // set the message
         request.changeTemplate("%firstMessage%", analysis.getMessage());
-        
         // make changes as we see fit
         request.changeTemplate("%actions%","");
-        
         request.closeTemplate();
     }
     
+    /**
+     * This method gets called when the analysis was concluded and is time
+     * for processing the output.
+     * @param request
+     * @param analysis 
+     */
+    private void concludeAnalysis(WebRequest request, RunningAnalysis analysis){
+        // ask the processing thread to stop
+        if(analysis != null){
+            analysis.askToStop();
+        }
+        
+        engine.temp.remove(id);
+        log.write(is.INFO, "Removed analysis result from memory");
+         // show the progress of the analysis
+        request.setTemplate("originality_complete.html");
+        // set the message
+        request.changeTemplate("%firstMessage%", analysis.getMessage());
+        // make changes as we see fit
+        request.changeTemplate("%actions%","");
+        request.closeTemplate();
+        
+        analysis = null;
+    }
+    
+    /**
+     * Stop the ongoing analysis
+     * @param request 
+     */
     public void stop(WebRequest request){
         engine.temp.remove(id);
         log.write(is.STOPPED, "Stopped processing the analysis");

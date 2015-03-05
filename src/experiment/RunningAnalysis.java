@@ -74,10 +74,12 @@ public class RunningAnalysis {
         packageToAnalyse = new ExchangePackage();
         packageToAnalyse.setTitle(spdx.getId());
         packageToAnalyse.addFolder(folder);
-        final String output = packageToAnalyse.objectToString();
+        final String textOutput = packageToAnalyse.objectToString();
        
         // step 4: send the text file
-        client.startAnalysis(output);
+        client.startAnalysis(textOutput);
+        
+        utils.time.wait(2);
         
         // is the server processing data?
         final boolean processing = client.shouldWaitForResults();
@@ -119,7 +121,7 @@ public class RunningAnalysis {
     public boolean isReady() {
         // should we keep waiting
         if(client.shouldWaitForResults()){
-            message = "Still analysing, please wait..";
+            message = "Analysing, please wait..";
         }else{
             // no more waiting, we have fresh results ready!
             concludeAnalysis();
@@ -135,6 +137,13 @@ public class RunningAnalysis {
      */
     public ExchangePackage getOutput() {
         return output;
+    }
+
+    /**
+     * We had enough processing, let's stop
+     */
+    public void askToStop() {
+        client.askToStop();
     }
     
     
