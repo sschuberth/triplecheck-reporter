@@ -47,13 +47,13 @@ public class summary extends Plugin{
             
             licStart = "<span style=\"font-family: serif; color: rgb(0, 0, 0); "
             + "background-color: rgb(255, 204, 51); font-size: 12px; "
-            + "line-height: 33px;\">&nbsp;License</span><span style=\""
+            + "line-height: 33px;\">&nbsp;License&nbsp;</span><span style=\""
             + "font-family: serif; color: rgb(0, 0, 0); background-color: "
             + "rgb(180, 255, 148); font-size: 12px; line-height: 33px;\">&nbsp;",
     
             autStart = "<span style=\"font-family: serif; color: rgb(0, 0, 0); "
             + "background-color: rgb(255, 204, 51); font-size: 12px; "
-            + "line-height: 33px;\">&nbsp;Author</span><span style=\""
+            + "line-height: 33px;\">&nbsp;Author&nbsp;</span><span style=\""
             + "font-family: serif; color: rgb(0, 0, 0); background-color: "
             + "rgb(180, 255, 148); font-size: 12px; line-height: 33px;\">&nbsp;";
     
@@ -81,7 +81,7 @@ public class summary extends Plugin{
         // and now with the spdx summary, get the list of components
         String result = spdx.summary.components();
         
-        request.changeTemplate("%title%", "Third-party components");
+        request.changeTemplate("%title%", "Components");
         
         // add the text from the summary computation
         request.changeTemplate("%text%", result);

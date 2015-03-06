@@ -27,13 +27,6 @@ import utils.www.html;
 import utils.www.Link;
 import www.WebRequest;
 
-/**
- * View component
- * Choose component
- * 
- * 
- * 
- */
 
 /**
  *
@@ -43,10 +36,16 @@ import www.WebRequest;
 public class choose extends Plugin{
     
     
+    final String
+            descStartSmall = "<br><span style=\"font-family: serif; color: rgb(0, 0, 0); "
+            + "background-color: rgb(180, 255, 148); font-size: 12px; "
+            + "line-height: 33px;\">&nbsp;",
+            descEnd = "&nbsp;</span>";
+    
     @Override
     public void startup(){
         log.hooks.addAction(SearchType.Components_Choose.getHook(), 
-                thisFile, "doFindComponent");    
+                thisFile, "doSearchAndChooseComponent");    
     }
 
    
@@ -66,7 +65,7 @@ public class choose extends Plugin{
      * When a given search term is available, show the licenses that are
      * a possible match
      */ 
-    public void doFindComponent() {
+    public void doSearchAndChooseComponent() {
         final String searchTerm = coreGUI.studio.getSearch().getText();
         // no need to worry about empty searches or less than two characters
         if(searchTerm.length() < 2){
@@ -100,16 +99,27 @@ public class choose extends Plugin{
         // set the default search provider to select components
         coreGUI.studio.setSearchProvider(SearchType.Components_Choose);
         // show a simple template (might be replaced with better in the future)
-        request.setTemplate("chooseComponent.html");
+        request.setTemplate("comp_associated.html");
+        
+        // change the title
+        request.changeTemplate("%title%", "Choose a component");
+        
         
         ArrayList<LinkType> link = new ArrayList();
         link.add(LinkType.Choose);
         
-        String listOfComponents =// html.h3("Local components")
-                //+ 
-                engine.components.getReport(link);
+        String listOfComponents = engine.components.getReport(link);
               
-        request.changeTemplate("[template]", listOfComponents);
+        // main body of content
+        request.changeTemplate("%text%", listOfComponents);
+        // main title of the component
+        request.changeTemplate("<%t1%>", descStartSmall);
+        request.changeTemplate("</%t1%>", descEnd);
+        // description of the item
+        request.changeTemplate("<%d1%>", "<br><i>");
+        request.changeTemplate("</%d1%>", "</i>");
+        
+        
         
         request.closeTemplate();
     }

@@ -34,7 +34,7 @@ public enum SearchType {
         case License_Choose: return "Find licenses..";
         case License_Show: return "Find licenses..";
         case Components_Show: return "Find components..";
-        case Components_Choose: return "Find a component..";
+        case Components_Choose: return "Type a component name to find matches..";
         }
         return "Search";
     }
