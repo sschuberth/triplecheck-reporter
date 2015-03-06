@@ -9,7 +9,7 @@ DataLicense: CC-BY-4.0
 ##-------------------------
 Creator: nuno
 Creator: Tool: TripleCheck 1.0.0
-Created: 2015-03-06T08:50:45Z
+Created: 2015-03-06T09:53:37Z
 
 ##-------------------------
 ## Package Information
@@ -27,6 +27,7 @@ FileChecksum: SHA256: a50e83ed7ea732031b1fc88f43745916e554bd206966c2d8f44434f3d8
 FileChecksum: MD5: 9c92af9076919099d841f20b68e7748b
 FileSize: 5 Kb (5271 bytes)
 FileLOC: 167
+FileOrigin: UNKNOWN
 
 FileName: ./apache/commons/lang/CharUtils.java
 FileType: SOURCE
@@ -37,6 +38,8 @@ FileChecksum: TLSH: 07E2BBB6ADE766330242D138031BD0D5D21E1A1F925BAC90784C7AB0FF49
 FileSize: 18 Kb (19330 bytes)
 FileLOC: 558
 LicenseInfoInFile: Apache-2.0
+FileOrigin: UNKNOWN
+FileMatchBinary: github:adblockplus-adblockplusandroid-d93ee48/src/org/apache/commons/lang/CharUtils.java
 
 FileName: ./apache/commons/lang/StringEscapeUtils.java
 FileType: SOURCE
@@ -47,6 +50,8 @@ FileChecksum: TLSH: 03E2E059ACE313421292E178435FD0A1E65FD21FA3359FE4BD0C8760AF46
 FileSize: 22 Kb (22977 bytes)
 FileLOC: 587
 LicenseInfoInFile: Apache-2.0
+FileOrigin: UNKNOWN
+FileMatchBinary: github:adblockplus-adblockplusandroid-d93ee48/src/org/apache/commons/lang/StringEscapeUtils.java
 
 FileName: ./apache/commons/lang/StringUtils.java
 FileType: SOURCE
@@ -57,4 +62,6 @@ FileChecksum: TLSH: 9814EC167CE60A210656D07A4A4990D0E21E952FCB3AFCF4FC4D1F742F09
 FileSize: 177 Kb (181744 bytes)
 FileLOC: 4525
 LicenseInfoInFile: Apache-2.0
+FileOrigin: UNKNOWN
+FileMatchBinary: github:adblockplus-adblockplusandroid-d93ee48/src/org/apache/commons/lang/StringUtils.java
 

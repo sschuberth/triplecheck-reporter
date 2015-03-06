@@ -179,14 +179,14 @@ public class TestRemoteScan {
      */
     private void addBinaryMatch(ChecksumFile checksumFile, SPDXfile spdx) {
         // iterate each file on the SPDX, find the applicable matches
-        for(FileInfo file : spdx.getFiles()){
+        for(FileInfo fileInfo : spdx.getFiles()){
             // we only care for files that share the same SHA1 checksum
-            if(file.getTagFileChecksumSHA1().contains(checksumFile.SHA1)==false){
+            if(fileInfo.getTagFileChecksumSHA1().contains(checksumFile.SHA1)==false){
                 continue;
             }
             // add the information about this match
-            file.addBinaryMatches(checksumFile.getMatches());
-            System.out.println("+" + file.getFileName());
+            fileInfo.addBinaryMatches(checksumFile.getMatches());
+            System.out.println("+" + fileInfo.getFileName());
             for(BinaryFile match : checksumFile.getMatches()){
                 System.out.println("--" + match.getReference());
             }
