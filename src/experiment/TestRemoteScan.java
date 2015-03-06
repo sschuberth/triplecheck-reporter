@@ -21,6 +21,8 @@ import spdxlib.FileInfo;
 import spdxlib.RefactorSPDX;
 import spdxlib.SPDXfile;
 import tokenizator.BinaryFile;
+import tokenizator.SourceCodeFile;
+import tokenizator.SourceCodeSnippet;
 
 /**
  *
@@ -167,6 +169,16 @@ public class TestRemoteScan {
             // good, we have a match
             addBinaryMatch(checksumFile, spdx);
         }
+        
+        System.out.println("Merging code matches with SPDX");
+        // iterate the source code files
+        for(SourceCodeFile sourceCodeFile : exchangeOutput.getSourceCodeFiles()){
+            if(sourceCodeFile.getNumberOfSnippetsMatched() == 0){
+                continue;
+            }
+            // add this code match
+            addCodeMatch(sourceCodeFile, spdx);
+        }
     }
 
     /**
@@ -185,14 +197,28 @@ public class TestRemoteScan {
                 continue;
             }
             // add the information about this match
-            fileInfo.addBinaryMatches(checksumFile.getMatches());
-            System.out.println("+" + fileInfo.getFileName());
-            for(BinaryFile match : checksumFile.getMatches()){
-                System.out.println("--" + match.getReference());
-            }
+            fileInfo.addMatchBinaries(checksumFile.getMatches());
         }
     }
 
+    /**
+     * Adds a snippet match to a source code file on our SPDX report
+     * @param sourceCodeFile
+     * @param spdx 
+     */
+    private void addCodeMatch(SourceCodeFile sourceCodeFile, SPDXfile spdx) {
+        // iterate each file on the SPDX, find the applicable matches
+        for(FileInfo fileInfo : spdx.getFiles()){
+            // we only care for files that share the same SHA1 checksum
+            if(fileInfo.getTagFileChecksumSHA1()
+                    .contains(sourceCodeFile.getIdentifierHash())==false){
+                continue;
+            }
+            // add the information about this match
+            fileInfo.addMatchSnippets(sourceCodeFile.getSnippetsMatched());
+        }
+    }
+    
     /**
      * Writes a new SPDX document to disk after adding the results from the 
      * comparison analysis
@@ -202,6 +228,7 @@ public class TestRemoteScan {
         RefactorSPDX refactor = new RefactorSPDX(spdx);
         refactor.output(fileFinalSPDX);
     }
+
 
     
 }
