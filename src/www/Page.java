@@ -3,8 +3,7 @@
  * Creator: Person: Nuno Brito (nuno.brito@triplecheck.de)
  * Creator: Organization: TripleCheck (http://triplecheck.de)
  * Created: 2013-12-12T00:00:00Z
- * FileName: Page.java  
- * FileType: SOURCE
+ * LicenseName: AGPL-3.0+
  * FileCopyrightText: <text> Copyright (c) 2013 Nuno Brito, TripleCheck </text>
  * FileComment: <text> Defines a web page that is displayed to the end-user
  * </text> 

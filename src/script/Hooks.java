@@ -1,6 +1,15 @@
 /*
+ * SPDXVersion: SPDX-1.1
+ * Creator: Person: Nuno Brito (nuno.brito@triplecheck.de)
+ * Creator: Organization: TripleCheck (contact@triplecheck.de)
+ * Created: 2013-01-20T00:00:00Z
+ * LicenseName: AGPL-3.0+
+ * FileCopyrightText: <text> Copyright 2013 Nuno Brito, TripleCheck </text>
+ * FileComment: <text> 
+ * 
  * Provides a hook system that allows end users to trigger custom actions
  * whenever a log entry is made that matches a given pattern.
+ * </text> 
  */
 package script;
 
@@ -9,14 +18,13 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.HashMap;
 import main.engine;
-import main.coreGUI;
 
 /**
  *
  * @author Nuno Brito, 12th of January 2013 in Darmstadt, Germany.
  */
 public class Hooks {
-    private HashMap<String, ArrayList<Hook>> hookList = new HashMap();
+    private final HashMap<String, ArrayList<Hook>> hookList = new HashMap();
     
     
     /**
@@ -27,7 +35,7 @@ public class Hooks {
     }
     
     /**
-     * @param hook The log message that triggers this action
+     * @param hookText
      * @param script The file pointer to a script
      * @param method The method that we want to run
      */

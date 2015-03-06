@@ -1,13 +1,18 @@
 /*
- * This class provides support for download huge files (over 2Gb) down to disk.
- * It should be able of supporting resume and verification that the end result
- * matches a specific signature (md5 or simple similar).
+ * SPDXVersion: SPDX-1.1
+ * Creator: Person: Nuno Brito (nuno.brito@triplecheck.de)
+ * Creator: Organization: TripleCheck (contact@triplecheck.de)
+ * Created: 2013-01-20T00:00:00Z
+ * LicenseName: AGPL-3.0+
+ * FileCopyrightText: <text> Copyright 2013 Nuno Brito, TripleCheck </text>
+ * FileComment: <text> 
  * 
  * This class is mostly intended to assist in the effort of downloading a large
  * ISO file from the Internet onto the local disk.
  * 
  * The downloaded parts are immediately flushed to the disk. This should 
  * hopefully avoid issues with memory usage.
+ * </text> 
  */
 package script;
 
@@ -29,13 +34,14 @@ import main.engine;
 public class DownloadBigFile {
 
     // the private variable for this method 
-    private String 
+    private final String 
             sourceURL,
-            contentType,
-            title = "download" // the identifier for this download entry
-            ;
+            title = "download"; // the identifier for this download entry
+            
+    private String
+            contentType;
     
-    private File
+    private final File
             file;
             
     private Boolean
@@ -44,7 +50,7 @@ public class DownloadBigFile {
     private BigInteger
             expectedSize;
     
-    private long
+    private final long
             lastPercent = 0;
     
     public DownloadBigFile(String sourceURL, String targetFile) {

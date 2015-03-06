@@ -3,7 +3,7 @@
  * Creator: Person: Nuno Brito (nuno.brito@triplecheck.de)
  * Creator: Organization: TripleCheck (http://triplecheck.de)
  * Created: 2014-01-16T00:00:00Z
- * LicenseName: EUPL-1.1-without-appendix
+ * LicenseName: AGPL-3.0+
  * LicenseName: GPL-2.0+
  * FileName: frontPage.java  
  * FileType: SOURCE

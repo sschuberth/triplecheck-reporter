@@ -1,6 +1,14 @@
 /*
+ * SPDXVersion: SPDX-1.1
+ * Creator: Person: Nuno Brito (nuno.brito@triplecheck.de)
+ * Creator: Organization: TripleCheck (contact@triplecheck.de)
+ * Created: 2013-01-09T00:00:00Z
+ * LicenseName: AGPL-3.0+
+ * FileCopyrightText: <text> Copyright 2013 Nuno Brito, TripleCheck </text>
+ * FileComment: <text> 
  * Makes possible the web user interface. Allows users to control the program
  * using a web browser.
+ * </text> 
  */
 package webserver;
 

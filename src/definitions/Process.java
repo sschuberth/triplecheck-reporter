@@ -7,7 +7,7 @@
  *
  * Created: 2013-09-15T00:00:00Z
  *
- * LicenseName: EUPL-1.1-without-appendix
+ * LicenseName: AGPL-3.0+
  *
  * FileName: Process.java  
  *

@@ -3,7 +3,7 @@
  * Creator: Person: Nuno Brito (nuno.brito@triplecheck.de)
  * Creator: Organization: TripleCheck (http://triplecheck.de)
  * Created: 2015-03-05T14:23:01Z
- * LicenseName: EUPL-1.1-without-appendix
+ * LicenseName: AGPL-3.0+
  * FileCopyrightText: <text> Copyright (c) 2015 Nuno Brito, TripleCheck </text>
  * FileComment: <text>  </text> 
  */

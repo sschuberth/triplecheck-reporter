@@ -3,7 +3,7 @@
  * Creator: Person: Nuno Brito (nuno.brito@triplecheck.de)
  * Creator: Organization: TripleCheck (contact@triplecheck.de)
  * Created: 2013-01-09T14:04:22Z
- * LicenseName: EUPL-1.1-without-appendix
+ * LicenseName: AGPL-3.0+
  * FileName: WebServer.java  
  * FileType: SOURCE
  * FileCopyrightText: <text> Copyright 2014 Nuno Brito, TripleCheck </text>

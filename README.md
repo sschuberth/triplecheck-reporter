@@ -6,13 +6,18 @@ This tool helps to evaluate your source code quality from a licensing compliance
 The end result is a report written in SPDX format that includes:
 - License and copyright identification (LGPL, GPL, Apache)
 - Lines Of Code (LOC)
-- Checksums (MD5, SHA256, SSDEEP)
+- Checksums (MD5, SHA256, TLSH)
 - Filenames (and types)
 - File size
 
 The most common usages are:
 - Estimate the code size (and complexity) before auditing the licenses
 - See how well your code is identifiable to humans and licensing tools
+
+License
+==================
+
+AGPL version 3.0 or (at your option) any later version.
 
 
 Credits and thanks
@@ -35,9 +40,7 @@ A list of the software, services and people that make triplecheck possible.
 ### Services and sites
 - SPDX -> http://spdx.org (the Linux Foundation SPDX working group)
 - Github -> http://github.com (THE place for sharing code)
+- SearchCode -> http://searchcode.com (great search engine, outstanding developer writing it)
 - Metascan -> https://metascan-online.com/ (for helping with API to detect malware)
 - File Extension Seeker -> http://file-extension.net (great help to identify extensions)
 
-
-### People
-- Gary O'Neal -> http://sourceauditor.com (always available with helpful feedback)

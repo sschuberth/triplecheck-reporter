@@ -3,8 +3,7 @@
  * Creator: Person: Nuno Brito (nuno.brito@triplecheck.de)
  * Creator: Organization: TripleCheck (http://triplecheck.de)
  * Created: 2014-06-01T23:50:00Z
- * LicenseName: EUPL-1.1-without-appendix
- * FileName: authorship.java  
+ * LicenseName: AGPL-3.0+
  * FileType: SOURCE
  * FileCopyrightText: <text> Copyright (c) 2014 Nuno Brito, TripleCheck </text>
  * FileComment: <text> Shows details about the authorship of a project </text> 
