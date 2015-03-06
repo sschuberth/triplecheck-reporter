@@ -187,43 +187,15 @@ public class showFileDetails extends Plugin{
             summary = "S" + summary.substring(3);
         }
         
-        String resultSSDEEP = "";
+        String resultTLSH = "";
         if(fileInfo.getTagFileChecksumTLSH()!= null){
             String text = fileInfo.getTagFileChecksumTLSH();
             // remove the tag header
-            resultSSDEEP = text.replace("FileChecksum: SSDEEP: ", "");
-//            resultSSDEEP = text
-//                        + html.div()
-//                        // only possible when we have SHA256 hashes available
-//                        + html.linkSearch("Find similar files", "SSDEEP: "
-//                            + text)
-//                        //+ html.link("Find similar files111", text)    
-//                        + html._div;
+            resultTLSH = text.replace(is.tagFileChecksum 
+                    + " "
+                    + is.tagFileChecksumTLSH
+                    + ": ", "");
         }
-        
-        
-        // the end result
-//        String result = "";
-        ///html.div()
-//                    + resultIntroduction
-//                    + sourceCodeActions(fileInfo, sourceFolder)
-//                    + html.br
-//                    + html.br
-//                    + swingUtils.addIfNotEmpty("SHA1", resultSHA1)
-//                    + swingUtils.addIfNotEmpty("SHA256", resultSHA256)
-//                    + swingUtils.addIfNotEmpty("MD5",resultMD5)
-//                    //+ html.br
-//                    + swingUtils.addIfNotEmpty("SSDEEP", resultSSDEEP)
-//                    //+ html.br
-////                    + swingUtils.addIfNotEmpty("Look for \""
-////                        +filename
-////                        +"\""
-////                        , resultFilename)
-//                    + lookForExtensionInfo
-//                    + html._div
-//                    + html.br
-//                    + html.br
-//                    ;
       
         String fileComponent = "[none]";
         if(fileInfo.getFileComponent() != null){
@@ -279,7 +251,7 @@ public class showFileDetails extends Plugin{
         result = result.replaceAll("%sha1%", fileInfo.getTagFileChecksumSHA1());
         result = result.replaceAll("%md5%", fileInfo.getTagFileChecksumMD5());
         result = result.replaceAll("%sha256%", fileInfo.getTagFileChecksumSHA256());
-        result = result.replaceAll("%ssdeep%", resultSSDEEP);
+        result = result.replaceAll("%ssdeep%", resultTLSH);
         
         return result;
     }
