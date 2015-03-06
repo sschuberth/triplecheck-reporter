@@ -5429,7 +5429,8 @@ FileChecksum: MD5: e3469ae57e98802996e032d3f4acce0b
 FileChecksum: SSDEEP: 6:RAQzis626zxvw0So930UHQ0Sn5xr5Flz95dn:RAQziN24fVhH2Xz9
 FileSize: 226 bytes
 FileLOC: 6
-FileCopyrightText: <text>Copyright (c) 1999-2011 Igor Pavlov"</text>
+FileCopyrightText: <text>Copyright (c) 1999-2011 Igor Pavlov"
+</text>
 
 FileName: ./CPP/7zip/MyVersionInfo.rc
 FileType: OTHER
@@ -9799,6 +9800,7 @@ FileLOC: 261
 
 FileName: ./DOC/7zC.txt
 FileType: OTHER
+ArtifactOfProjectName: 7z
 FileChecksum: SHA1: cbb8b8d02928798862926298b934a973e92afe4f
 FileChecksum: SHA256: 2be193a011c37839275da6925089a3953c125dfd5b34b4d55e7068d62005dd41
 FileChecksum: MD5: 3d3582e854236c004bc38612eb5ddf05
@@ -9853,7 +9855,8 @@ FileChecksum: SHA256: 2c3c3ef532828bcd42bb3127349625a25291ff5ae7e6f8d42e0fe9b5be
 FileChecksum: MD5: 99f3b5b60d488b7f1a56e14bd13c76fe
 FileChecksum: SSDEEP: 384:ojnBIk+x/vIqk0lkX6sT6AATeINgKP+nHQ41fgcmmItyOQeM9YfWEZJBfuo0:o7BJsPkOTeDnLqFXTflZJBfuo0
 FileSize: 26 Kb (26948 bytes)
-FileCopyrightText: <text>Copyright (C) 1991, 1999 Free Software Foundation, Inc.</text>
+FileCopyrightText: <text>Copyright (C) 1991, 1999 Free Software Foundation, Inc.
+</text>
 LicenseInfoInFile: LGPL-2.1
 
 FileName: ./DOC/history.txt
@@ -9871,7 +9874,8 @@ FileChecksum: SHA256: 096a65c3db4b01e32e69d1b34cc5a33d28c01ca4f7c0d65b94f003b1ed
 FileChecksum: MD5: 745d1768a09336f3f99a236a8784e0ad
 FileChecksum: SSDEEP: 48:aC2W05HRo7dcEu+byAH0Iv7g6z0zJZftn3lyFA:SW0Vq7Du+xRz01xZlwA
 FileSize: 1 Kb (1930 bytes)
-FileCopyrightText: <text>Copyright (C) 1999-2010 Igor Pavlov.</text>
+FileCopyrightText: <text>Copyright (C) 1999-2010 Igor Pavlov.
+</text>
 
 FileName: ./DOC/lzma.txt
 FileType: OTHER
@@ -9898,7 +9902,8 @@ FileChecksum: SHA256: 7f6fa342c855563e8a18034a7ecec5dba0cca48b2ee9fce61bb387d17c
 FileChecksum: MD5: 38a2df4a4e81f8f9dacd5fa7c3bcf2b2
 FileChecksum: SSDEEP: 96:3f+ruQL3Vwzfa0ADbsEti/pJIF7KqW4Bt4fNcSQX97rKXYYhq3IL4/jL:3GSQpwzvGX75fGcLXFBYM4LKL
 FileSize: 5 Kb (5396 bytes)
-FileCopyrightText: <text>Copyright (C) 1999-2010 Igor Pavlov.</text>
+FileCopyrightText: <text>Copyright (C) 1999-2010 Igor Pavlov.
+</text>
 
 FileName: ./DOC/unRarLicense.txt
 FileType: OTHER

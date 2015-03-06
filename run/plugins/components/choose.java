@@ -24,7 +24,6 @@ import main.engine;
 import script.Plugin;
 import main.script.log;
 import utils.www.html;
-import utils.www.Link;
 import www.WebRequest;
 
 
@@ -66,7 +65,20 @@ public class choose extends Plugin{
      * a possible match
      */ 
     public void doSearchAndChooseComponent() {
-        final String searchTerm = coreGUI.studio.getSearch().getText();
+        // get the term that the end-user is looking for
+        String searchTerm = coreGUI.studio.getSearch().getText();
+        //coreGUI.studio.getSearch().setText(searchTerm);
+
+        searchTerm = searchTerm.replace(SearchType.Components_Choose.getSearchBoxText(), "");
+        
+        // no text? show the main page again
+        if(searchTerm.isEmpty()){
+            //coreGUI.studio.getSearch().transferFocus();
+            coreGUI.studio.showDialogAddFilesToComponent();
+            coreGUI.studio.setSearchProvider(SearchType.Components_Choose);
+            return;
+        }
+        
         // no need to worry about empty searches or less than two characters
         if(searchTerm.length() < 2){
             return;
@@ -74,19 +86,27 @@ public class choose extends Plugin{
 
         // place the loading message
         swingUtils.setText(html.textGreyAligned("Looking for matches.."));
+                
+        ArrayList<LinkType> links = new ArrayList();
+        links.add(LinkType.Choose);
+        links.add(LinkType.View);
         
-        Link link = new Link();
-        link.setTitle("choose");
-        link.setUrl("choose/?x=select&name=");
+        String result = engine.components.search(searchTerm, links);
+              
+        // no results found?
+        if(result.isEmpty()){
+            swingUtils.setText(html.textGreyAligned("No results found"));
+            return;
+        }
         
-//        Link linkDetails = new Link();
-//        linkDetails.setTitle("details");
-//        link.setUrl("/components/showComponent?name=");
-//        
-//        // add the link to our list
-//        link.addLink(linkDetails);
         
-        String result = engine.components.search(searchTerm, link);
+        // main title of the component
+        result = result.replace("<%t1%>", descStartSmall);
+        result = result.replace("</%t1%>", descEnd);
+        // description of the item
+        result = result.replace("<%d1%>", "<br><i>");
+        result = result.replace("</%d1%>", "</i>");
+        // all done, output the result
         swingUtils.setText(result);
     }
        
@@ -118,8 +138,6 @@ public class choose extends Plugin{
         // description of the item
         request.changeTemplate("<%d1%>", "<br><i>");
         request.changeTemplate("</%d1%>", "</i>");
-        
-        
         
         request.closeTemplate();
     }
@@ -157,6 +175,7 @@ public class choose extends Plugin{
         if(component == null){
             log.write(is.ERROR, "CH147 - Didn't found component %1 at repository %2",
                     id, path);
+            return;
         }
         // write the component to disk
         component.writeToDisk();

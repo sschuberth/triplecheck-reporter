@@ -13,7 +13,9 @@
 package components;
 
 import GUI.SearchType;
+import comp.LinkType;
 import definitions.is;
+import java.util.ArrayList;
 import main.engine;
 import main.coreGUI;
 import script.Plugin;
@@ -47,12 +49,11 @@ public class searchComponents extends Plugin{
             return;
         }
 
-        // create the link
-        Link link = new Link();
-        link.setTitle("details");
-        link.setUrl("/components/showComponent?name=");
+        // list the links that we want to show
+        ArrayList<LinkType> links = new ArrayList();
+        links.add(LinkType.View);
         
-        String output = engine.components.search(searchTerm , link);
+        String output = engine.components.search(searchTerm , links);
         coreGUI.studio.editorPane(is.contentHTML, false, 0, output, Boolean.TRUE, null);
     }
     

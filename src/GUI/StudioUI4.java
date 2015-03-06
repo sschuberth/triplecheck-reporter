@@ -748,6 +748,10 @@ public class StudioUI4 extends javax.swing.JFrame {
         return tree;
     }
 
+    public JTextField getSearch(){
+        return search;
+    }
+    
     /**
      * React whenever the user wants to start a search
      */
@@ -787,6 +791,8 @@ public class StudioUI4 extends javax.swing.JFrame {
             return;
         }
         
+        // remove whatever text is used by default
+        //search.setText(search.getText().replace(searchTextDefault.getSearchBoxText(), ""));
         
         // there is a bug that allows people to write over the "search" default
         if(search.getText().isEmpty()){
@@ -808,13 +814,6 @@ public class StudioUI4 extends javax.swing.JFrame {
             
     }
     
-    /**
-     * Provides public access to the search box
-     * @return the JTextfield representing the search box
-     */
-    public JTextField getSearch(){
-        return search;
-    }
     
     /**
      * Process the clicks on HTML hyperlinks at the text form
@@ -1427,7 +1426,7 @@ public class StudioUI4 extends javax.swing.JFrame {
      * Showing the dialog that permits to choose a new component for the
      * selected files
      */
-    private void showDialogAddFilesToComponent(){
+    public void showDialogAddFilesToComponent(){
         log.write(is.INFO, "Opening the components dialog");
         File script = new File(engine.getPluginsFolder(), "components/choose.java");
         // now do the parameters
