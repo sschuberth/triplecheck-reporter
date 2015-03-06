@@ -19,6 +19,7 @@ import main.script.log;
 import spdxlib.SPDXfile;
 import spdxlib.swing.NodeType;
 import spdxlib.swing.TreeNodeSPDX;
+import utils.www.html;
 import www.WebRequest;
 
 
@@ -27,6 +28,37 @@ import www.WebRequest;
  * @author Nuno Brito, 3rd of May 2014 in Darmstadt, Germany
  */
 public class summary extends Plugin{
+    
+    final String 
+            headerStart = "<br><span style=\"font-family: serif; color: "
+            + "rgb(255, 255, 255); background-color: rgb(0, 0, 0); font-size: "
+            + "16px; line-height: 33px;\">",
+            
+            headerEnd = "</span><br>",
+            
+            descStartBig = "<span style=\"color: rgb(0, 0, 0); background-color:"
+            + " rgb(255, 204, 51); font-size: 12px; line-height: 16px; "
+            + "font-family: serif;\">",
+            
+            descStartSmall = "<span style=\"font-family: serif; color: rgb(0, 0, 0); "
+            + "background-color: rgb(180, 255, 148); font-size: 12px; "
+            + "line-height: 33px;\">",
+            descEnd = "</span><br>",
+            
+            licStart = "<span style=\"font-family: serif; color: rgb(0, 0, 0); "
+            + "background-color: rgb(255, 204, 51); font-size: 12px; "
+            + "line-height: 33px;\">&nbsp;License</span><span style=\""
+            + "font-family: serif; color: rgb(0, 0, 0); background-color: "
+            + "rgb(180, 255, 148); font-size: 12px; line-height: 33px;\">&nbsp;",
+    
+            autStart = "<span style=\"font-family: serif; color: rgb(0, 0, 0); "
+            + "background-color: rgb(255, 204, 51); font-size: 12px; "
+            + "line-height: 33px;\">&nbsp;Author</span><span style=\""
+            + "font-family: serif; color: rgb(0, 0, 0); background-color: "
+            + "rgb(180, 255, 148); font-size: 12px; line-height: 33px;\">&nbsp;";
+    
+    
+    
     
     /**
      * Display the current list of tasks
@@ -44,12 +76,38 @@ public class summary extends Plugin{
         // now that we have the correct node, get the spdx object
         SPDXfile spdx = (SPDXfile) node.getUserObject();
         
+        request.setTemplate("comp_associated.html");
+        
         // and now with the spdx summary, get the list of components
         String result = spdx.summary.components();
         
-        request.setAnswer(result);       
+        request.changeTemplate("%title%", "Third-party components");
+        
+        // add the text from the summary computation
+        request.changeTemplate("%text%", result);
+        
+        // add the pretty titles
+        request.changeTemplate("<h2>", headerStart);
+        request.changeTemplate("</h2>", headerEnd);
+        // remove the line headers
+        request.changeTemplate(html.line, "");
+        
+        request.changeTemplate("<description>", descStartBig);
+        request.changeTemplate("</description>", descEnd);
+        // add the declared license info
+        request.changeTemplate("<declaredlicense>", licStart);
+        request.changeTemplate("</declaredlicense>", "</span>");
+        request.changeTemplate("<mainauthor>", autStart);
+        request.changeTemplate("</mainauthor>", descEnd);
+        
+        request.changeTemplate("Files: ", "");
+        request.changeTemplate("File: ", "");
+        
+        
+        request.closeTemplate();
+        //request.setAnswer(result);       
     }
     
-    
+  
   
 }

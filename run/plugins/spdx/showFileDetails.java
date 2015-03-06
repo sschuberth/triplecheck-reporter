@@ -251,7 +251,7 @@ public class showFileDetails extends Plugin{
         result = result.replaceAll("%sha1%", fileInfo.getTagFileChecksumSHA1());
         result = result.replaceAll("%md5%", fileInfo.getTagFileChecksumMD5());
         result = result.replaceAll("%sha256%", fileInfo.getTagFileChecksumSHA256());
-        result = result.replaceAll("%ssdeep%", resultTLSH);
+        result = result.replaceAll("%tlsh%", resultTLSH);
         
         return result;
     }
