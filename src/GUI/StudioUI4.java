@@ -903,6 +903,7 @@ public class StudioUI4 extends javax.swing.JFrame {
             // set the new content, first the type and then the text
             text.setContentType(contentType);
             
+            
             try{
                 // now write the text
                 text.setText(content);
@@ -914,7 +915,7 @@ public class StudioUI4 extends javax.swing.JFrame {
                     
             // should the "go back" button be enabled?
             //button.setEnabled(true);
-        
+            
             // change the cursor position
             if(caretPosition > -1)
                 text.setCaretPosition(caretPosition);

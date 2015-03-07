@@ -12,7 +12,6 @@
 
 package components;
 
-import main.coreGUI;
 import main.engine;
 import script.Plugin;
 import license.License;
@@ -28,7 +27,6 @@ public class createNew extends Plugin{
     
     public void createNew(WebRequest request){
         request.setTemplate("createNew.html");
-        
         request.changeTemplate("template-pagetitle", "Create a new component");
         request.changeTemplate("template-id", "");
         request.changeTemplate("template-title", "");
