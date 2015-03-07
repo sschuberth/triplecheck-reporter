@@ -35,6 +35,12 @@ public class showComponents extends Plugin{
      
     String id = "Components";
     
+    final String
+        descStartSmall = "<br><span style=\"font-family: serif; color: rgb(0, 0, 0); "
+        + "background-color: rgb(180, 255, 148); font-size: 12px; "
+        + "line-height: 33px;\">&nbsp;",
+        descEnd = "&nbsp;</span>";
+    
     @Override
     public void startup(){
         // add our node to the tree right after the "Tools" node is added
@@ -71,6 +77,13 @@ public class showComponents extends Plugin{
         link.add(LinkType.View);
         
         String result = engine.components.getReport(link);
+                
+        // main title of the component
+        result = result.replace("<%t1%>", descStartSmall);
+        result = result.replace("</%t1%>", descEnd);
+        // description of the item
+        result = result.replace("<%d1%>", "<br><i>");
+        result = result.replace("</%d1%>", "</i>");
         
         request.setAnswer(result);
     }

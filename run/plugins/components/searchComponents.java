@@ -20,7 +20,6 @@ import main.engine;
 import main.coreGUI;
 import script.Plugin;
 import main.script.log;
-import utils.www.Link;
 
 
 /**
@@ -30,6 +29,12 @@ import utils.www.Link;
 public class searchComponents extends Plugin{
      
     String id = "Components";
+    
+    final String
+    descStartSmall = "<br><span style=\"font-family: serif; color: rgb(0, 0, 0); "
+    + "background-color: rgb(180, 255, 148); font-size: 12px; "
+    + "line-height: 33px;\">&nbsp;",
+    descEnd = "&nbsp;</span>";
     
     @Override
     public void startup(){
@@ -44,6 +49,7 @@ public class searchComponents extends Plugin{
      */ 
     public void doFindComponents() {
         String searchTerm = coreGUI.studio.getSearch().getText().toLowerCase();
+        
         // no need to worry about empty searches or less than two characters
         if(searchTerm.length() < 2){
             return;
@@ -53,8 +59,16 @@ public class searchComponents extends Plugin{
         ArrayList<LinkType> links = new ArrayList();
         links.add(LinkType.View);
         
-        String output = engine.components.search(searchTerm , links);
-        coreGUI.studio.editorPane(is.contentHTML, false, 0, output, Boolean.TRUE, null);
+        String result = engine.components.search(searchTerm , links);
+        
+        // main title of the component
+        result = result.replace("<%t1%>", descStartSmall);
+        result = result.replace("</%t1%>", descEnd);
+        // description of the item
+        result = result.replace("<%d1%>", "<br><i>");
+        result = result.replace("</%d1%>", "</i>");
+
+        coreGUI.studio.editorPane(is.contentHTML, false, 0, result, Boolean.TRUE, null);
     }
     
 }
