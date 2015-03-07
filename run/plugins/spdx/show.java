@@ -17,18 +17,21 @@ package spdx;
 
 import GUI.webUtils;
 import definitions.Messages;
+import definitions.definition;
 import definitions.is;
 import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
+import license.LicenseType;
 import main.coreGUI;
 import main.engine;
 import main.param;
 import script.Plugin;
 import main.script.log;
 import spdxlib.EvaluateLicensingQuality;
+import spdxlib.FileInfo;
 import spdxlib.SPDXfile;
 import utils.Graphs;
 import utils.www.html;
@@ -45,6 +48,8 @@ public class show extends Plugin{
    
     
     String showSPDX = "showSPDX";
+    String spdxTarget = "";
+    File file;
     
     @Override
     public void startup(){
@@ -210,20 +215,20 @@ public class show extends Plugin{
         int[] sizes = new int[]{10,200};
 
         if(files != null)
-        for (File file : files) {
-          if (file.isFile()){
-             String filePath = file.getAbsolutePath();
+        for (File thisFileFound : files) {
+          if (thisFileFound.isFile()){
+             String filePath = thisFileFound.getAbsolutePath();
              // we only want .spdx files
              if(filePath.endsWith("spdx")){
 
                 // remove the local disk path with a generic one
                  String filteredPath = "." 
-                         + file.getAbsolutePath().replace(engine.getProductsFolder()
+                         + thisFileFound.getAbsolutePath().replace(engine.getProductsFolder()
                                  .getAbsolutePath(), "");
 
                  //filteredPath = filteredPath.replace(" ", "%20");
 
-                 String fileLink = html.link(file.getName(), 
+                 String fileLink = html.link(thisFileFound.getName(), 
                                  "?x=summary&spdx="
                                  + filteredPath
                                  + "");
@@ -240,11 +245,11 @@ public class show extends Plugin{
 
           }
           else
-          if ( (file.isDirectory())
+          if ( (thisFileFound.isDirectory())
              &&( maxDeep-1 > 0 ) ){
-                String folderName = file.getName();
+                String folderName = thisFileFound.getName();
                 // do the recursive crawling
-                String temp = findFiles(file, maxDeep-1, request);
+                String temp = findFiles(thisFileFound, maxDeep-1, request);
                 // we don't need empty folders
                 if(temp.length() == 0){
                     continue;
@@ -274,30 +279,38 @@ public class show extends Plugin{
     return result;
     }
     
+    /**
+     * Looks on the parameters of the request, gets the associated SPDX
+     * file (if any)
+     * @param request
+     * @return 
+     */
+    private SPDXfile getSPDX(WebRequest request){
+        // we need the "file" parameter to tell us what to detail
+        spdxTarget = request.getParameter(param.spdx);
+        // does this file exists?
+        file = getFile(spdxTarget, request);
+        if(file == null){
+            return null;
+        }
+      
+        // get the canonical form
+        String fileCanonical = utils.files.getCanonical(file);
+        file = new File(fileCanonical);
+        return engine.reports.get(file);
+    }
     
     /**
      * Show the summary for a given SPDX document
      * @param request
      */
     public void summary(WebRequest request) {
-        // we need the "file" parameter to tell us what to detail
-        String spdxTarget = request.getParameter(param.spdx);
-        // does this file exists?
-        File file = getFile(spdxTarget, request);
-        if(file == null){
-            return;
-        }
-      
-        // get the canonical form
-        String fileCanonical = utils.files.getCanonical(file);
-        file = new File(fileCanonical);
-        
-        // get the SPDX file from the root node
-        SPDXfile spdx = engine.reports.get(file);
+        // get the SPDX file associated with this request
+        SPDXfile spdx = getSPDX(request);
         
         if(spdx == null){
-            log.write(is.ERROR, "SH295 - Didn't found %1", file.getAbsolutePath());
-            request.setAnswer("SH300 - File not found");
+            log.write(is.ERROR, "SH309 - Didn't found the SPDX document");
+            request.setAnswer("SH310 - File not found");
             return;
         }
         
@@ -361,23 +374,6 @@ public class show extends Plugin{
                 + textOverallSize + " in size"
                 ;
         
-        // if we are on Windows, permit to open the folder
-//        String openFolder = "";
-//        if(utils.misc.isWindows()){
-//            openFolder = ""
-//                    //+ html.br
-//                    + html.link("Open folder in Windows explorer", 
-//                        "?x=openFolder&"
-//                        + param.file + "=" + file.getAbsolutePath()
-//                        + param.spdx + "=" + spdxTarget)
-//                    + html.br
-//                    ;
-////            try {
-////                Desktop.getDesktop().open(file);
-////            } catch (IOException ex) {
-////            }
-//        }
-        
         // get the list of files with copyright and licenses
         String concludedLicenses = ""
                 + utils.text.convertToHumanNumbers(spdx.getCountFilesWithCopyright())
@@ -431,11 +427,97 @@ public class show extends Plugin{
         // add the set of actions that we want to enable
         request.changeTemplate("%scoreAction%", scoreAction);
         
+        // example of text that we are replacing: <%t1%>BSD-4-Clause<%t1%>
+        String link1 = "<a href=\"/spdx/show?x=list&"
+                + param.spdx + "=" + spdxTarget
+                + "&id=";
+        String link2 = "\">View</a> ";
+        request.changeTemplate("<%t1%>", link1);
+        request.changeTemplate("</%t1%>", link2);
+        
+        link1 = "| " + link1.replace("x=list", "x=tldr");
+        link2 = "\">TLDR</a> ";
+        request.changeTemplate("<%t2%>", link1);
+        request.changeTemplate("</%t2%>", link2);
+        
+        
         // all done
         request.closeTemplate();
     }
     
-    //           
+
+    /**
+     * Opens a link for end-user to read the details at TLDRlegal
+     * @param request 
+     */
+    public void tldr(WebRequest request) {
+        String id = request.getParameter("id");
+        utils.internet.openURL("https://tldrlegal.com/search?q=" + id);
+        // get the associated request
+        SPDXfile spdx = getSPDX(request);
+        request.redirect("/spdx/show?x=summary&" + param.spdx + "=" + spdxTarget);
+    }
+       
+    /**
+     * Lists the files containing a specific license reference
+     * @param request 
+     */
+    public void list(WebRequest request) {
+        String id = request.getParameter("id");
+        // get the associated request
+        SPDXfile spdx = getSPDX(request);
+        StringBuilder result = new StringBuilder();
+        LicenseType licenseType;
+        int count = 0;
+        
+        try{
+            licenseType = LicenseType.convertToEnum(id);
+        }catch(Exception e){
+            log.write(is.ERROR, utils.text.getExceptionAsText(e));
+            request.setAnswer("SH475 error: Exception occurred.");
+            return;
+        }
+        // iterate the file entries for this project
+        for(FileInfo fileInfo : spdx.getFiles()){
+            if(fileInfo.getLicenseConcluded() == licenseType){
+                addListEntry(result, fileInfo, spdx);
+                count++;
+                continue;
+            }
+            // look inside the file references
+            for(LicenseType thisLicenseType : fileInfo.getLicenseInfoInFile()){
+                if(thisLicenseType == licenseType){
+                    addListEntry(result, fileInfo, spdx);
+                    count++;
+                }
+            }
+        }
+        
+        request.setAnswer(result.toString());
+    } 
+    
+    /**
+     * Adds an entry on the list of matches to a given license reference
+     * @param result
+     * @param fileInfo
+     * @param spdx 
+     */
+    private void addListEntry(StringBuilder result, FileInfo fileInfo, SPDXfile spdx){
+                          
+        String linkFileUID = fileInfo.getUID();
+                    
+        
+        String link = ""
+                + html.linkNode(
+                            "[open]",
+                            linkFileUID)
+                + " "
+                + fileInfo.getFileName() 
+                + "<br>";
+                
+        result.append(link);
+        //result.append(fileInfo.getFileName()).append("<br>");
+    }
     
     /**
      * The web link to show the folder where the SPDX document is located.
@@ -443,9 +525,9 @@ public class show extends Plugin{
      */
     public void openFolder(WebRequest request) {
         String paramString = request.getParameter("file");
-        File file = new File(paramString);
+        File thisFileFound = new File(paramString);
          try {
-                Desktop.getDesktop().open(file.getParentFile());
+                Desktop.getDesktop().open(thisFileFound.getParentFile());
             } catch (IOException ex) {
             }
          

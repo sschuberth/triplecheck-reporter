@@ -62,15 +62,12 @@ public class pluginSearch extends Plugin{
         log.hooks.addAction("Search: %1",
                thisFile, "launchNewSearch");
         
-        // prepare a smart feature that we love!
-//        prepareFileLauncher();
-        
     }
     
    
     /**
      * We use the search bar to launch our internal pages. Might seem hard
-     * to understand what is the fuzz but we love to type something like
+     * to understand what is the fuzz but is great to type something like
      * "server" and see it in front of us right away.
      */
     private void prepareFileLauncher(){
