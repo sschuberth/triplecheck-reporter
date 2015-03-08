@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <link rel="stylesheet" href="lib/metro-bootstrap.min.css">
+   <link href="lib/iconFont.css" rel="stylesheet">
+   <script src="lib/jquery/jquery.min.js"></script>
+   <script src="lib/jquery/jquery.widget.min.js"></script>
+   <script src="lib/metro.min.js"></script>
+   
+ </head>    
+<body class="metro">
+<nav class="navigation-bar dark fixed-top">
+<nav class="navigation-bar-content">
+<a href="http://triplecheck.net" class="element" target="_blank">TripleCheck <sup>2015</sup></a><item class="element-divider">...</item>
+<item class="element">Code report created on 2015-03-08 16:47:39</item>
+</nav>
+</nav>
+<br>
+<br>
+<br>
+<div style="margin-left: 30px;">
+
+<br><div class="example">
+<table class="table striped margin20">
+<thead>
+	<tr>
+		<th class="text-left">Name</th>
+		<th class="text-left">Non-originality</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td class="right"><a href="#./samples/files_java/files_minor.java">./samples/files_java/files_minor.java</a></td>
+		<td class="right">50%</td>
+	</tr>
+	<tr>
+		<td class="right">./samples/files_java/apache/commons/lang/CharUtils.java</td>
+		<td class="right">0%</td>
+	</tr>
+	<tr>
+		<td class="right">./samples/files_java/apache/commons/lang/StringEscapeUtils.java</td>
+		<td class="right">0%</td>
+	</tr>
+	<tr>
+		<td class="right">./samples/files_java/apache/commons/lang/StringUtils.java</td>
+		<td class="right">0%</td>
+	</tr>
+</tbody>
+<tfoot></tfoot>
+</table></div>
+<a name="./samples/files_java/files_minor.java"></a><br><br><br><div class="accordion with-marker span12 place-left " data-role="accordion" data-closeany="false">
+<div class="accordion-frame"> <a class="heading collapsed" href="#">./samples/files_java/files_minor.java (50% non-original)
+</a>
+<div class="content">
+<p><div class="example">
+<div class="accordion with-marker span12 place-left " data-role="accordion" data-closeany="false">
+<div class="accordion-frame"> <a class="heading collapsed" href="#">Lines 39..51:     if (dir.isDirectory()) {        String[] children = dir.list();        for (int i=0</a>
+<div class="content">
+<p>
+
+
+<!-- ======================================================== -->
+<!-- = Java Sourcecode to HTML automatically converted code = -->
+<!-- =   Java2Html Converter 5.0 [2006-02-26] by Markus Gebhard  markus@jave.de   = -->
+<!-- =     Further information: http://www.java2html.de     = -->
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+   <tr>
+  <!-- start source code -->
+   <td nowrap="nowrap" valign="top" align="left">
+    
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>if&nbsp;</b></font><font color="#000000">(</font><font color="#000000">dir.isDirectory</font><font color="#000000">())&nbsp;{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">String</font><font color="#000000">[]&nbsp;</font><font color="#000000">children&nbsp;=&nbsp;dir.list</font><font color="#000000">()</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>for&nbsp;</b></font><font color="#000000">(</font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">i=</font><font color="#990000">0</font><font color="#000000">;&nbsp;i&lt;children.length;&nbsp;i++</font><font color="#000000">)&nbsp;{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>boolean&nbsp;</b></font><font color="#000000">success&nbsp;=&nbsp;deleteDir</font><font color="#000000">(</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">File</font><font color="#000000">(</font><font color="#000000">dir,&nbsp;children</font><font color="#000000">[</font><font color="#000000">i</font><font color="#000000">]))</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>if&nbsp;</b></font><font color="#000000">(</font><font color="#000000">!success</font><font color="#000000">)&nbsp;{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>return&nbsp;false</b></font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>return&nbsp;</b></font><font color="#000000">dir.delete</font><font color="#000000">()</font><font color="#000000">;</font>
+    
+   </td>
+  <!-- end source code -->
+   </tr>
+</table>
+</div>
+<!-- =       END of automatically generated HTML code       = -->
+<!-- ======================================================== -->
+
+</p>
+</div>
+</div>
+</div><table class="table striped margin20">
+<thead>
+	<tr>
+		<th class="text-left">Similarity</th>
+		<th class="text-left">Lines</th>
+		<th class="text-left">Reference</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td class="right">100%</td>
+		<td class="right">1129..1142</td>
+		<td class="right">github:kingargyle-exist-1.4.x-8da367f/src/org/exist/client/ClientFrame.java<br>sha1:78ea40bb0dd097517c74371f5f8adee181c1f55e</td>
+	</tr>
+	<tr>
+		<td class="right">100%</td>
+		<td class="right">90..103</td>
+		<td class="right">github:aguitarfreak-BioGUI-0aa548c/src/HisTree/TreeUI.java<br>sha1:99b19c26130e9f931e02625a56332344d9a776a1</td>
+	</tr>
+	<tr>
+		<td class="right">100%</td>
+		<td class="right">162..173</td>
+		<td class="right">github:ignaciogs-MyMemo-7586b78/src/com/MyMemo/GeneralUtils.java<br>sha1:da8e55db09f9f62b1525b66f986370a8f6498091</td>
+	</tr>
+	<tr>
+		<td class="right">100%</td>
+		<td class="right">72..85</td>
+		<td class="right">github:whitingjr-cxf-9a11313/testutils/src/main/java/org/apache/cxf/testutil/common/TestUtil.java<br>sha1:66ab0324b507d0a486ff37a600665968f8cfc0a0</td>
+	</tr>
+</tbody>
+<tfoot></tfoot>
+</table><div class="accordion with-marker span12 place-left " data-role="accordion" data-closeany="false">
+<div class="accordion-frame"> <a class="heading collapsed" href="#">Lines 159..195:     try {      int port = 9090;      if (args.length > 1) {        port = Integer.valu</a>
+<div class="content">
+<p>
+
+
+<!-- ======================================================== -->
+<!-- = Java Sourcecode to HTML automatically converted code = -->
+<!-- =   Java2Html Converter 5.0 [2006-02-26] by Markus Gebhard  markus@jave.de   = -->
+<!-- =     Further information: http://www.java2html.de     = -->
+<div align="left" class="java">
+<table border="0" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+   <tr>
+  <!-- start source code -->
+   <td nowrap="nowrap" valign="top" align="left">
+    
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>try&nbsp;</b></font><font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">port&nbsp;=&nbsp;</font><font color="#990000">9090</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>if&nbsp;</b></font><font color="#000000">(</font><font color="#000000">args.length&nbsp;&gt;&nbsp;</font><font color="#990000">1</font><font color="#000000">)&nbsp;{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">port&nbsp;=&nbsp;Integer.valueOf</font><font color="#000000">(</font><font color="#000000">args</font><font color="#000000">[</font><font color="#990000">0</font><font color="#000000">])</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">TestHandler&nbsp;testHandler&nbsp;=</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">TestHandler</font><font color="#000000">()</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">ThriftTest.Processor&nbsp;testProcessor&nbsp;=</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">ThriftTest.Processor</font><font color="#000000">(</font><font color="#000000">testHandler</font><font color="#000000">)</font><font color="#000000">;</font><br />
+<font color="#000000">blablabla</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">TServerSocket&nbsp;tServerSocket&nbsp;=</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">TServerSocket</font><font color="#000000">(</font><font color="#000000">port</font><font color="#000000">)</font><font color="#000000">;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">TProtocolFactory&nbsp;tProtocolFactory&nbsp;=</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">TBinaryProtocol.Factory</font><font color="#000000">()</font><font color="#000000">;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">TServer&nbsp;serverEngine;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">serverEngine&nbsp;=&nbsp;</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">TThreadPoolServer</font><font color="#000000">(</font><font color="#000000">testProcessor,&nbsp;tServerSocket,&nbsp;tProtocolFactory</font><font color="#000000">)</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">System.out.println</font><font color="#000000">(</font><font color="#2a00ff">&#34;Starting&nbsp;the&nbsp;server&nbsp;on&nbsp;port&nbsp;&#34;&nbsp;</font><font color="#000000">+&nbsp;port&nbsp;+&nbsp;</font><font color="#2a00ff">&#34;...&#34;</font><font color="#000000">)</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">serverEngine.serve</font><font color="#000000">()</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}&nbsp;</font><font color="#7f0055"><b>catch&nbsp;</b></font><font color="#000000">(</font><font color="#000000">Exception&nbsp;x</font><font color="#000000">)&nbsp;{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">x.printStackTrace</font><font color="#000000">()</font><font color="#000000">;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">}</font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">System.out.println</font><font color="#000000">(</font><font color="#2a00ff">&#34;done.&#34;</font><font color="#000000">)</font><font color="#000000">;</font><br />
+<font color="#ffffff"></font><br />
+<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font>
+    
+   </td>
+  <!-- end source code -->
+   </tr>
+</table>
+</div>
+<!-- =       END of automatically generated HTML code       = -->
+<!-- ======================================================== -->
+
+</p>
+</div>
+</div>
+</div><table class="table striped margin20">
+<thead>
+	<tr>
+		<th class="text-left">Similarity</th>
+		<th class="text-left">Lines</th>
+		<th class="text-left">Reference</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td class="right">97%</td>
+		<td class="right">268..305</td>
+		<td class="right">github:leonhong-thrift-7534e71/lib/java/test/org/apache/thrift/test/TestServer.java<br>sha1:8974f0417b559f21c33fc4a4bda8d8389d642cc6</td>
+	</tr>
+</tbody>
+<tfoot></tfoot>
+</table></div>
+</p>
+</div>
+</div>
+</div><br></div>
+
+</body>
+</html>

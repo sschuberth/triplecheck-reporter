@@ -15,6 +15,7 @@ import exchange.ExchangeClient;
 import exchange.ExchangePackage;
 import java.io.File;
 import main.script.log;
+import output.formats.HTML.OutputToHTML;
 import spdxlib.ChecksumFile;
 import spdxlib.DocumentCreate;
 import spdxlib.FileInfo;
@@ -40,7 +41,7 @@ public class TestRemoteScan {
     private ExchangePackage exchangeOutput = null;
     
     public TestRemoteScan(final File folder){
-        this.folderSource = folder;
+        folderSource = folder;
         // prepare the new folder where we store the results
         folderOutput = new File("sandbox", "test-analysis-cached");
         createOutputFolder();
@@ -248,8 +249,14 @@ public class TestRemoteScan {
         refactor.output(fileFinalSPDX);
     }
 
+    /**
+     * Creates the HTML output that will contain the result for this analysis
+     */
     private void createReportHTML() {
-        System.out.println("Creating HTML report");
+        System.out.println("Creating HTML report at " + folderOutput.getAbsolutePath());
+        OutputToHTML outputHTML = new OutputToHTML(exchangeOutput, folderOutput);
+        outputHTML.setBaseFolder(folderSource);
+        outputHTML.create();
         
     }    
     
