@@ -12,7 +12,7 @@
   <supportUrl></supportUrl>
   <stayAlive>false</stayAlive>
   <manifest></manifest>
-  <icon>./validation3check.ico</icon>
+  <icon>./favicon.ico</icon>
   <singleInstance>
     <mutexName>triplecheck</mutexName>
     <windowTitle>TripleCheck</windowTitle>

@@ -491,6 +491,11 @@ public class show extends Plugin{
                     count++;
                 }
             }
+            // avoid huge lists
+            if(count > 1000){
+                result.append("<br><br> ..Showing only the first 1000 items");
+                break;
+            }
         }
         
         request.setAnswer(result.toString());
@@ -505,8 +510,6 @@ public class show extends Plugin{
     private void addListEntry(StringBuilder result, FileInfo fileInfo, SPDXfile spdx){
                           
         String linkFileUID = fileInfo.getUID();
-                    
-        
         String link = ""
                 + html.linkNode(
                             "[open]",

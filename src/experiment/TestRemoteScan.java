@@ -42,7 +42,7 @@ public class TestRemoteScan {
     public TestRemoteScan(final File folder){
         this.folderSource = folder;
         // prepare the new folder where we store the results
-        folderOutput = new File("test-analysis");
+        folderOutput = new File("sandbox", "test-analysis-cached");
         createOutputFolder();
         // define the files
         fileSPDX = new File(folderOutput, "output.spdx");
@@ -75,13 +75,8 @@ public class TestRemoteScan {
         mergeResults();
         // changes added, write them do disk
         writeNewSPDX();
-    }
-    
-    public static void main(String[] args) throws Exception{
-        File folder = new File("samples", "files_java");
-        // launch the scanning operation
-        TestRemoteScan scan = new TestRemoteScan(folder);
-        scan.start();
+        // create the pretty HTML reports
+        createReportHTML();
     }
 
     /**
@@ -140,16 +135,17 @@ public class TestRemoteScan {
      * @throws Exception 
      */
     private void createExchangePackage() throws Exception {
-        // if no cache exists, launch it
+        // if no cache exists, launch a new remote analysis
         if(fileCachedExchange.exists()== false){
             launchAnalysis();
         }else{
+            // otherwise use what we already have
             final String readFile = utils.files.readAsString(fileCachedExchange);
-             exchangeOutput = ExchangePackage.stringToObject(readFile);
-             // when something went wrong, do the analysis all over again
-             if(exchangeOutput == null){
-                 launchAnalysis();
-             }
+            exchangeOutput = ExchangePackage.stringToObject(readFile);
+            // when something went wrong, do the analysis all over again
+            if(exchangeOutput == null){
+                launchAnalysis();
+            }
         }
     }
 
@@ -252,6 +248,17 @@ public class TestRemoteScan {
         refactor.output(fileFinalSPDX);
     }
 
+    private void createReportHTML() {
+        System.out.println("Creating HTML report");
+        
+    }    
+    
+    public static void main(String[] args) throws Exception{
+        File folder = new File("sandbox", "test-samples");
+        // launch the scanning operation
+        TestRemoteScan scan = new TestRemoteScan(folder);
+        scan.start();
+    }
 
     
 }

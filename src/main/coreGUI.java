@@ -27,7 +27,7 @@ import definitions.structure.ReportsControl;
 
 public class coreGUI {
 
-    public static String version = "0.9.9";
+    public static String version = engine.version;
     
     // default color used as background on the tool
     public static final Color backgroundColor = new Color(0xf8f8f8);

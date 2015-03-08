@@ -19,6 +19,8 @@ License
 
 AGPL version 3.0 or (at your option) any later version.
 
+You find the source code, installation documentation and
+a bug tracker at https://github.com/triplecheck/reporter
 
 Credits and thanks
 ==================
@@ -34,7 +36,6 @@ A list of the software, services and people that make triplecheck possible.
 - Beanshell2 (LGPL) https://code.google.com/p/beanshell2/
 - Jericho HTML parser (EPL and GPL) http://jericho.htmlparser.net/docs/index.html
 - SimpleFramework (LGPL) http://www.simpleframework.org/ 
-- Vogella RSS feed example (EPL) http://www.vogella.com/tutorials/RSSFeed/article.html
 
 
 ### Services and sites
