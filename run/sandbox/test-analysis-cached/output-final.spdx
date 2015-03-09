@@ -9,7 +9,7 @@ DataLicense: CC-BY-4.0
 ##-------------------------
 Creator: nuno
 Creator: Tool: TripleCheck 1.0.0
-Created: 2015-03-08T16:47:39Z
+Created: 2015-03-08T23:22:08Z
 
 ##-------------------------
 ## Package Information
@@ -34,18 +34,6 @@ FileMatchSnippet: 39..51->162..173 100% github:ignaciogs-MyMemo-7586b78/src/com/
 FileMatchSnippet: 39..51->72..85 100% github:whitingjr-cxf-9a11313/testutils/src/main/java/org/apache/cxf/testutil/common/TestUtil.java
 FileMatchSnippet: 159..195->268..305 94% github:leonhong-thrift-7534e71/lib/java/test/org/apache/thrift/test/TestServer.java
 
-FileName: ./apache/commons/lang/StringEscapeUtils.java
-FileType: SOURCE
-FileChecksum: SHA1: 00617958b057d8adef07b66711bb726b0494d0a0
-FileChecksum: SHA256: ae7da1d38b1d028ff5e44e15595aeac9c277c551b5d9b231f223462c95bc5bf5
-FileChecksum: MD5: 6117578daa50430b4e1699174bd33c27
-FileChecksum: TLSH: 03E2E059ACE313421292E178435FD0A1E65FD21FA3359FE4BD0C8760AF4662C06BDEAD
-FileSize: 22 Kb (22977 bytes)
-FileLOC: 587
-LicenseInfoInFile: Apache-2.0
-FileOrigin: EXTERNAL
-FileMatchBinary: github:adblockplus-adblockplusandroid-d93ee48/src/org/apache/commons/lang/StringEscapeUtils.java
-
 FileName: ./apache/commons/lang/CharUtils.java
 FileType: SOURCE
 FileChecksum: SHA1: ae40721e7fac52f1eef26a8131e5fb240291cc29
@@ -57,6 +45,18 @@ FileLOC: 558
 LicenseInfoInFile: Apache-2.0
 FileOrigin: EXTERNAL
 FileMatchBinary: github:adblockplus-adblockplusandroid-d93ee48/src/org/apache/commons/lang/CharUtils.java
+
+FileName: ./apache/commons/lang/StringEscapeUtils.java
+FileType: SOURCE
+FileChecksum: SHA1: 00617958b057d8adef07b66711bb726b0494d0a0
+FileChecksum: SHA256: ae7da1d38b1d028ff5e44e15595aeac9c277c551b5d9b231f223462c95bc5bf5
+FileChecksum: MD5: 6117578daa50430b4e1699174bd33c27
+FileChecksum: TLSH: 03E2E059ACE313421292E178435FD0A1E65FD21FA3359FE4BD0C8760AF4662C06BDEAD
+FileSize: 22 Kb (22977 bytes)
+FileLOC: 587
+LicenseInfoInFile: Apache-2.0
+FileOrigin: EXTERNAL
+FileMatchBinary: github:adblockplus-adblockplusandroid-d93ee48/src/org/apache/commons/lang/StringEscapeUtils.java
 
 FileName: ./apache/commons/lang/StringUtils.java
 FileType: SOURCE

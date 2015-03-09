@@ -9,7 +9,7 @@ DataLicense: CC-BY-4.0
 ##-------------------------
 Creator: nuno
 Creator: Tool: TripleCheck 1.0.0
-Created: 2015-03-08T16:47:37Z
+Created: 2015-03-08T23:22:07Z
 
 ##-------------------------
 ## Package Information
@@ -28,16 +28,6 @@ FileChecksum: MD5: 9c92af9076919099d841f20b68e7748b
 FileSize: 5 Kb (5271 bytes)
 FileLOC: 167
 
-FileName: ./apache/commons/lang/StringEscapeUtils.java
-FileType: SOURCE
-FileChecksum: SHA1: 00617958b057d8adef07b66711bb726b0494d0a0
-FileChecksum: SHA256: ae7da1d38b1d028ff5e44e15595aeac9c277c551b5d9b231f223462c95bc5bf5
-FileChecksum: MD5: 6117578daa50430b4e1699174bd33c27
-FileChecksum: TLSH: 03E2E059ACE313421292E178435FD0A1E65FD21FA3359FE4BD0C8760AF4662C06BDEAD
-FileSize: 22 Kb (22977 bytes)
-FileLOC: 587
-LicenseInfoInFile: Apache-2.0
-
 FileName: ./apache/commons/lang/CharUtils.java
 FileType: SOURCE
 FileChecksum: SHA1: ae40721e7fac52f1eef26a8131e5fb240291cc29
@@ -46,6 +36,16 @@ FileChecksum: MD5: d29322854f467cc918ffadef4827ca79
 FileChecksum: TLSH: 07E2BBB6ADE766330242D138031BD0D5D21E1A1F925BAC90784C7AB0FF49B6216ADFDC
 FileSize: 18 Kb (19330 bytes)
 FileLOC: 558
+LicenseInfoInFile: Apache-2.0
+
+FileName: ./apache/commons/lang/StringEscapeUtils.java
+FileType: SOURCE
+FileChecksum: SHA1: 00617958b057d8adef07b66711bb726b0494d0a0
+FileChecksum: SHA256: ae7da1d38b1d028ff5e44e15595aeac9c277c551b5d9b231f223462c95bc5bf5
+FileChecksum: MD5: 6117578daa50430b4e1699174bd33c27
+FileChecksum: TLSH: 03E2E059ACE313421292E178435FD0A1E65FD21FA3359FE4BD0C8760AF4662C06BDEAD
+FileSize: 22 Kb (22977 bytes)
+FileLOC: 587
 LicenseInfoInFile: Apache-2.0
 
 FileName: ./apache/commons/lang/StringUtils.java

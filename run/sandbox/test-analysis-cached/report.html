@@ -12,16 +12,16 @@
 <nav class="navigation-bar dark fixed-top">
 <nav class="navigation-bar-content">
 <a href="http://triplecheck.net" class="element" target="_blank">TripleCheck <sup>2015</sup></a><item class="element-divider">...</item>
-<item class="element">Code report created on 2015-03-08 16:47:39</item>
+<item class="element">Code report created on 2015-03-08 23:22:08</item>
 </nav>
 </nav>
 <br>
 <br>
 <br>
 <div style="margin-left: 30px;">
-
+<h1>Scan result for ./test-scan</h1>
 <br><div class="example">
-<table class="table striped margin20">
+<h2>List of files</h2><table class="table striped margin20">
 <thead>
 	<tr>
 		<th class="text-left">Name</th>
@@ -30,26 +30,26 @@
 </thead>
 <tbody>
 	<tr>
-		<td class="right"><a href="#./samples/files_java/files_minor.java">./samples/files_java/files_minor.java</a></td>
+		<td class="right"><a href="#./sandbox/test-samples/files_minor.java">./sandbox/test-samples/files_minor.java</a></td>
 		<td class="right">50%</td>
 	</tr>
 	<tr>
-		<td class="right">./samples/files_java/apache/commons/lang/CharUtils.java</td>
+		<td class="right">./sandbox/test-samples/apache/commons/lang/CharUtils.java </td>
 		<td class="right">0%</td>
 	</tr>
 	<tr>
-		<td class="right">./samples/files_java/apache/commons/lang/StringEscapeUtils.java</td>
+		<td class="right">./sandbox/test-samples/apache/commons/lang/StringEscapeUtils.java </td>
 		<td class="right">0%</td>
 	</tr>
 	<tr>
-		<td class="right">./samples/files_java/apache/commons/lang/StringUtils.java</td>
+		<td class="right">./sandbox/test-samples/apache/commons/lang/StringUtils.java </td>
 		<td class="right">0%</td>
 	</tr>
 </tbody>
 <tfoot></tfoot>
 </table></div>
-<a name="./samples/files_java/files_minor.java"></a><br><br><br><div class="accordion with-marker span12 place-left " data-role="accordion" data-closeany="false">
-<div class="accordion-frame"> <a class="heading collapsed" href="#">./samples/files_java/files_minor.java (50% non-original)
+<br><br><br><h2>Partial code matches</h2><a name="./sandbox/test-samples/files_minor.java"></a><div class="accordion with-marker span12 place-left " data-role="accordion" data-closeany="false">
+<div class="accordion-frame"> <a class="heading collapsed" href="#">./sandbox/test-samples/files_minor.java (50% non-original)
 </a>
 <div class="content">
 <p><div class="example">
@@ -69,8 +69,7 @@
   <!-- start source code -->
    <td nowrap="nowrap" valign="top" align="left">
     
-<font color="#ffffff"></font><br />
-<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>if&nbsp;</b></font><font color="#000000">(</font><font color="#000000">dir.isDirectory</font><font color="#000000">())&nbsp;{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>if&nbsp;</b></font><font color="#000000">(</font><font color="#000000">dir.isDirectory</font><font color="#000000">())&nbsp;{</font><br />
 <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">String</font><font color="#000000">[]&nbsp;</font><font color="#000000">children&nbsp;=&nbsp;dir.list</font><font color="#000000">()</font><font color="#000000">;</font><br />
 <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>for&nbsp;</b></font><font color="#000000">(</font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">i=</font><font color="#990000">0</font><font color="#000000">;&nbsp;i&lt;children.length;&nbsp;i++</font><font color="#000000">)&nbsp;{</font><br />
 <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>boolean&nbsp;</b></font><font color="#000000">success&nbsp;=&nbsp;deleteDir</font><font color="#000000">(</font><font color="#7f0055"><b>new&nbsp;</b></font><font color="#000000">File</font><font color="#000000">(</font><font color="#000000">dir,&nbsp;children</font><font color="#000000">[</font><font color="#000000">i</font><font color="#000000">]))</font><font color="#000000">;</font><br />
@@ -97,7 +96,7 @@
 	<tr>
 		<th class="text-left">Similarity</th>
 		<th class="text-left">Lines</th>
-		<th class="text-left">Reference</th>
+		<th class="text-left">References</th>
 	</tr>
 </thead>
 <tbody>
@@ -139,8 +138,7 @@
   <!-- start source code -->
    <td nowrap="nowrap" valign="top" align="left">
     
-<font color="#ffffff"></font><br />
-<font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>try&nbsp;</b></font><font color="#000000">{</font><br />
+<font color="#ffffff">&nbsp;&nbsp;</font><font color="#7f0055"><b>try&nbsp;</b></font><font color="#000000">{</font><br />
 <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>int&nbsp;</b></font><font color="#000000">port&nbsp;=&nbsp;</font><font color="#990000">9090</font><font color="#000000">;</font><br />
 <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#7f0055"><b>if&nbsp;</b></font><font color="#000000">(</font><font color="#000000">args.length&nbsp;&gt;&nbsp;</font><font color="#990000">1</font><font color="#000000">)&nbsp;{</font><br />
 <font color="#ffffff">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font color="#000000">port&nbsp;=&nbsp;Integer.valueOf</font><font color="#000000">(</font><font color="#000000">args</font><font color="#000000">[</font><font color="#990000">0</font><font color="#000000">])</font><font color="#000000">;</font><br />
@@ -186,7 +184,7 @@
 	<tr>
 		<th class="text-left">Similarity</th>
 		<th class="text-left">Lines</th>
-		<th class="text-left">Reference</th>
+		<th class="text-left">References</th>
 	</tr>
 </thead>
 <tbody>

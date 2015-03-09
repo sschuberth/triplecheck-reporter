@@ -254,10 +254,9 @@ public class TestRemoteScan {
      */
     private void createReportHTML() {
         System.out.println("Creating HTML report at " + folderOutput.getAbsolutePath());
-        OutputToHTML outputHTML = new OutputToHTML(exchangeOutput, folderOutput);
+        OutputToHTML outputHTML = new OutputToHTML(exchangeOutput, folderOutput, spdx);
         outputHTML.setBaseFolder(folderSource);
         outputHTML.create();
-        
     }    
     
     public static void main(String[] args) throws Exception{
