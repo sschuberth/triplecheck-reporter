@@ -15,7 +15,8 @@ import exchange.ExchangeClient;
 import exchange.ExchangePackage;
 import java.io.File;
 import main.script.log;
-import output.formats.HTML.OutputToHTML;
+import output.formats.HTML.OutputSPDXToHTML;
+import output.formats.OutputToConsole;
 import spdxlib.ChecksumFile;
 import spdxlib.DocumentCreate;
 import spdxlib.FileInfo;
@@ -254,9 +255,12 @@ public class TestRemoteScan {
      */
     private void createReportHTML() {
         System.out.println("Creating HTML report at " + folderOutput.getAbsolutePath());
-        OutputToHTML outputHTML = new OutputToHTML(exchangeOutput, folderOutput, spdx);
-        outputHTML.setBaseFolder(folderSource);
-        outputHTML.create();
+        OutputSPDXToHTML outputHTML = new OutputSPDXToHTML(folderOutput, spdx);
+        outputHTML.doOutput();
+        
+        // do a console output
+        OutputToConsole console = new OutputToConsole(exchangeOutput);
+        console.create();
     }    
     
     public static void main(String[] args) throws Exception{
