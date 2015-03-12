@@ -15,6 +15,7 @@ import exchange.ExchangeClient;
 import exchange.ExchangePackage;
 import java.io.File;
 import main.script.log;
+import output.ConvertSPDXtoJSON;
 import output.formats.HTML.OutputSPDXToHTML;
 import output.formats.OutputToConsole;
 import spdxlib.ChecksumFile;
@@ -261,6 +262,12 @@ public class TestRemoteScan {
         // do a console output
         OutputToConsole console = new OutputToConsole(exchangeOutput);
         console.create();
+        
+        // do the JSON output
+//        ConvertSPDXtoJSON json = new ConvertSPDXtoJSON(spdx);
+//        String result = json.getMatchesBinary().toString();
+//        System.out.println("-----------------");
+//        System.out.println(result);
     }    
     
     public static void main(String[] args) throws Exception{
