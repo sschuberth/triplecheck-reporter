@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Xenon Boostrap Admin Panel" />
-    <meta name="author" content="Laborator.co" />
+    <meta name="author" content="TripleCheck report" />
     <title>Analysis report</title>
     <link rel="stylesheet" href="assets/gfont.css" id="style-resource-1">
     <link rel="stylesheet" href="assets/css/fonts/linecons/css/linecons.css" id="style-resource-2">
@@ -31,14 +31,14 @@
                 <header class="logo-env">
                     <!-- logo -->
                     <div class="logo">
-                        <h1><a href="dashboard/variant-1/index.html" style="color:white;" class="logo-expanded"><img src="assets/triplecheck-crown-white.png" width="80" alt=""></a></h1>
+                        <h1><a href="dashboard/variant-1/index.html" style="color:white;" class="logo-expanded"><img src="assets/triplecheck-crown-white.png"test alt=""></a></h1>
                     </div>
                 </header>
                 <ul id="main-menu" class="main-menu">
-                    <li> <a href="index.html"><i class="linecons-star"></i><span class="title">Summary</span></a> </li>
-					<li> <a href="page_2.html"><i class="linecons-star"></i><span class="title">Third Party Components</span></a> </li>
-                    <li> <a href="page_3.html"><i class="linecons-star"></i><span class="title">Originality Scan</span></a> </li>
-					<li> <a href="page_4.html"><i class="linecons-star"></i><span class="title">List of Files</span></a> </li>
+                    <li> <a href="index.html"><i class="linecons-doc"></i><span class="title">Summary</span></a> </li>
+		    <li> <a href="page_2.html"><i class="linecons-tag"></i><span class="title">Third Party components</span></a> </li>
+                    <li> <a href="page_3.html"><i class="linecons-search"></i><span class="title">Originality analysis</span></a> </li>
+		    <li> <a href="page_4.html"><i class="linecons-megaphone"></i><span class="title">What can be fixed</span></a> </li>
                 </ul>
             </div>
         </div>
@@ -66,13 +66,19 @@
                                         startValue: 0,
                                         endValue: 100,
                                         values: fileOriginality,
+                                        
                                         label: {
                                             indent: 30,
                                             format: 'fixedPoint',
                                             precision: 1,
                                             customizeText: function(arg) {
-                                                return arg.valueText + ' %';
+                                                return arg.valueText + "%";
                                             }
+                                        },
+                                        legend: {
+                                            legend: true,
+                                            verticalAlignment: "bottom",
+                                            horizontalAlignment: "center"
                                         },
                                         title: {
                                             text: "Originality <br />",
@@ -99,6 +105,10 @@
 					<div class="panel panel-default">
 						<div class="panel-body" style="height:500px;">
 							<div>
+                                                             <div id="bar-5" style="height: 250px; width: 100%;"></div>
+                                            <h1 style="font-size:8em; color:#212121" class="pull-right" id="quality_score">8.2/10</h1>
+                                            <p style="margin-top:0px;" class="pull-right" id="quality_score_details"></p>
+                            
                             <script type="text/javascript">
                                 jQuery(document).ready(function($) {
                                     if (!$.isFunction($.fn.dxChart))
@@ -107,7 +117,7 @@
                                     $("#bar-5").dxChart({
                                         rotated: true,
                                         pointSelectionMode: "multiple",
-                                        dataSource: data1,
+                                        dataSource: quality_percentage,
                                         commonSeriesSettings: {
                                             argumentField: "country",
                                             type: "stackedbar",
@@ -117,7 +127,7 @@
                                                 }
                                             }
                                         },
-                                        series: q_color,
+                                        series: quality_color,
                                         title: {
                                             text: ""
                                         },
@@ -131,9 +141,6 @@
                                     });
                                 });
                             </script>
-                             <div id="bar-5" style="height: 250px; width: 100%;"></div>
-                                            <h1 style="font-size:8em" class="pull-right" id="quality_score">8.2/10</h1>
-                                            <p style="margin-top:0px;" class="pull-right" id="quality_score_details"></p>
                                             </div>
                                         </div>
                                     </div>
