@@ -4,9 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Xenon Boostrap Admin Panel" />
-    <meta name="author" content="Laborator.co" />
-    <title>Report Title</title>
+    <title>What can be fixed</title>
     <link rel="stylesheet" href="assets/gfont.css" id="style-resource-1">
     <link rel="stylesheet" href="assets/css/fonts/linecons/css/linecons.css" id="style-resource-2">
     <link rel="stylesheet" href="assets/css/fonts/fontawesome/css/font-awesome.min.css" id="style-resource-3">
@@ -16,6 +14,7 @@
     <link rel="stylesheet" href="assets/css/xenon-components.css" id="style-resource-7">
     <link rel="stylesheet" href="assets/css/xenon-skins.css" id="style-resource-8">
     <link rel="stylesheet" href="assets/css/custom.css" id="style-resource-9">
+    <script type="text/javascript" src="data/page4_fix_list.js"></script>
     <script src="assets/js/jquery-1.11.1.min.js"></script>
     <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script> <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> <![endif]-->
 </head>
@@ -27,12 +26,12 @@
                 <header class="logo-env">
                     <!-- logo -->
                     <div class="logo">
-                        <h1><a href="dashboard/variant-1/index.html" style="color:white;" class="logo-expanded"><img src="assets/triplecheck-crown-white.png"test alt=""></a></h1>
+                        <h1><a href="http:/triplecheck.net" style="color:white;" class="logo-expanded"><img src="assets/triplecheck-crown-white.png"test alt=""></a></h1>
                     </div>
                 </header>
                 <ul id="main-menu" class="main-menu">
                     <li> <a href="index.html"><i class="linecons-doc"></i><span class="title">Summary</span></a> </li>
-		    <li> <a href="page_2.html"><i class="linecons-tag"></i><span class="title">Third Party components</span></a> </li>
+		    <li> <a href="page_2.html"><i class="linecons-tag"></i><span class="title">Third-party components</span></a> </li>
                     <li> <a href="page_3.html"><i class="linecons-search"></i><span class="title">Originality analysis</span></a> </li>
 		    <li> <a href="page_4.html"><i class="linecons-megaphone"></i><span class="title">What can be fixed</span></a> </li>
                 </ul>
@@ -47,24 +46,25 @@
 </div>
 
 <div class="row">
-        
+        <!--
         <div class="col-sm-12">
             <div class="panel panel-default">
                 <div class="panel-heading">
-                        What can be fixed
+                     What can be fixed
                 </div>
                 <div class="panel-body">
                     <p>A list with what should be fixed from a licensing documentation perspective. Details about the scoring and fix mechanism are explained on this wiki page.</p>
                 </div>
             </div>
         </div>
+        -->
         
         <div class="col-sm-12">
             <div class="panel panel-default">
                 <div class="panel-heading">
                     Copyright
                 </div>
-                <div class="panel-body">
+                <div class="panel-body" id="copyright">
                     <p>
                     No copyright attribution was found for the 4 files listed below.<br />
                     <br />
@@ -82,7 +82,7 @@
                 <div class="panel-heading">
                         License
                 </div>
-                <div class="panel-body">
+                <div class="panel-body" id="licenses">
                         <p>No license reference was found for ./src/org/adblockplus/android/ProxyConfigurationActivity.java </p>
                 </div>
             </div>
@@ -93,12 +93,16 @@
                 <div class="panel-heading">
                         Documentation
                 </div>
-                <div class="panel-body">
+                <div class="panel-body" id="documentation">
                         <p>Please create a file named ./LICENSE </p>
                 </div>
             </div>
         </div>
-    
+    <script type="text/javascript">
+        document.getElementById("copyright").innerHTML = fix_copyright;
+        document.getElementById("licenses").innerHTML = fix_licenses;
+        document.getElementById("documentation").innerHTML = fix_documentation;
+    </script>
 </div>
 
 

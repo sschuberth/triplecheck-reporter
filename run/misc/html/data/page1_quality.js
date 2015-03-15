@@ -2,7 +2,7 @@
 var quality_score = "1.2/10";
 
 // detail what we found
-var quality_score_details = "98 files with copyright declared <br />127 files with declared licenses<br />See what can be fixed";
+var quality_score_details = "98 files with copyright declared <br />127 files with declared licenses<br />See <a href=\"page_4.html\">what can be fixed</a>";
 
 var quality_percentage = [{
             country: "Copyright",
