@@ -20,3 +20,6 @@ var dataFileTypes = [{
         grey: 84
     }
 ];
+
+var fileTypeText = "<p style=\"margin-top:10px;\">116 HTML files \n\
+    <br />76 Java files  <br />13 Javascript files <br />12 C++ files  </p>";
