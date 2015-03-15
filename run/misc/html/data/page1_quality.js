@@ -1,3 +1,9 @@
+// how good is the licensing quality in overall?
+var quality_score = "1.2/10";
+
+// detail what we found
+var quality_score_details = "98 files with copyright declared <br />127 files with declared licenses<br />See what can be fixed";
+
 var data1 = [{
             country: "Copyright",
             gold: 70,
@@ -20,4 +26,4 @@ var q_color = [{
             valueField: "bronze",
             name: "Total",
             color: "#e0e0e0"
-        }]
+        }];
