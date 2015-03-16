@@ -15,7 +15,6 @@ import exchange.ExchangeClient;
 import exchange.ExchangePackage;
 import java.io.File;
 import main.script.log;
-import output.ConvertSPDXtoJSON;
 import output.formats.HTML.OutputSPDXToHTML;
 import output.formats.OutputToConsole;
 import spdxlib.ChecksumFile;
@@ -36,7 +35,6 @@ public class TestRemoteScan {
             folderSource,
             folderOutput,
             fileSPDX,
-            fileFinalSPDX,
             fileCachedExchange;
     
     private SPDXfile spdx = null;
@@ -49,7 +47,6 @@ public class TestRemoteScan {
         createOutputFolder();
         // define the files
         fileSPDX = new File(folderOutput, "output.spdx");
-        fileFinalSPDX = new File(folderOutput, "output-final.spdx");
         fileCachedExchange = new File(folderOutput, "exchange.bin");
     }
     
@@ -248,7 +245,7 @@ public class TestRemoteScan {
     private void writeNewSPDX() {
         System.out.println("Writing the new SPDX with merged results");
         RefactorSPDX refactor = new RefactorSPDX(spdx);
-        refactor.output(fileFinalSPDX);
+        refactor.output(fileSPDX);
     }
 
     /**

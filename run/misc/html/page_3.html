@@ -125,46 +125,42 @@
         var snipCounter = 0;
         // go through each file on our list
         for (var i = 0; i < fileCount; ++i) {
-          if (i in match_similar_list) {
             // create the snippet table
             var snippetCode = ""
+            var file = match_similar_list[i];
             // go through each snippet
-            var snipCount = match_similar_list[i].snippet.length;
+            var snipCount = file.snippet.length;
             for (var x = 0; x < snipCount; ++x) {
-                if (x in match_similar_list[x].snippet){
-                    // increate the unique snippet id
-                    snipCounter++;
-                    var title = match_similar_list[i].snippet[x].title;
-                    var code = match_similar_list[i].snippet[x].code;
-                    // generate the new panel just for this snippet
-                    thisSnippet = panel("snip", snipCounter).replace("%file%", title);
-                    thisSnippet = thisSnippet.replace("%data%", code);
-                
-                    // last iteration, go through the similarity table
-                    var refCount = match_similar_list[i].snippet[x].similarity.length;
-                    var entries = "";
-                    for (var y = 0; y < refCount; ++y) {
-                        // get the current match
-                        var match = match_similar_list[i].snippet[x].similarity[y];
-                        // output a table entry
-                        entries += newTableEntry(match);
-                    }
-                    // create the new table
-                    var thisTable = table();
-                    thisTable = thisTable.replace("%data%", entries);
-                    thisSnippet += thisTable;
-                    
-                    // add up this data to the overall snippet
-                    snippetCode += thisSnippet;
+                // increate the unique snippet id
+                snipCounter++;
+                var title = file.snippet[x].title;
+                var code = file.snippet[x].code;
+                // generate the new panel just for this snippet
+                thisSnippet = panel("snip", snipCounter).replace("%file%", title);
+                thisSnippet = thisSnippet.replace("%data%", code);
+
+                // last iteration, go through the similarity table
+                var refCount = file.snippet[x].similarity.length;
+                var entries = "";
+                for (var y = 0; y < refCount; ++y) {
+                    // get the current match
+                    var match = file.snippet[x].similarity[y];
+                    // output a table entry
+                    entries += newTableEntry(match);
                 }
+                // create the new table
+                var thisTable = table();
+                thisTable = thisTable.replace("%data%", entries);
+                thisSnippet += thisTable;
+                // add up this data to the overall snippet
+                snippetCode += thisSnippet;
             }
         
             // output the current file being processed
-            tempFile = panel("finSim", i).replace("%file%", match_similar_list[i].filename);
+            tempFile = panel("finSim", i).replace("%file%", file.filename);
             tempFile = tempFile.replace("%data%", snippetCode);
             // add up this result to the file list, update the reference links
             output += tempFile;    
-          }
         }
         
         // add the exact matches to our list
@@ -189,7 +185,7 @@
                 matchText += "<br><mark>" + file.file + "</mark><br>";
                 // iterate the references
                 for (var y = 0; y < file.matches.length; ++y) {
-                    matchText += "        <code>" + file.matches[y] + "</code><br>";
+                    matchText += "        <code>&nbsp&nbsp" + file.matches[y] + "</code><br>";
                 }
             }
             // add the data from this match
