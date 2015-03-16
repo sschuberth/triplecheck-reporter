@@ -53,7 +53,7 @@
 <div class="row">
     <!--begin similarity panel -->                    
     <div class="panel panel-default">
-        <div class="panel-heading">
+        <div class="panel-heading" id="match_similar_title">
                 3 files are similar to other files on the web
         </div>
         <div class="panel-body">
@@ -69,118 +69,14 @@
 <!--finish similarity panel -->
 </div>
     
-
-<!-- Do the originality snippets filling -->			  
-    <script type="text/javascript">
-        
-        var output = "";
-        var tempFile = "";
-        
-        // define what we use inside the templates
-        // replace: %file%, %reference%, %data% 
-        var panelFileOld = "<div class=\"panel panel-default\">\n\
-            <div class=\"panel-heading\"><h4 class=\"panel-title\">\n\
-            <a data-toggle=\"collapse\" \n\
-            href=\"#reference1\" class=\"collapsed\"> %file%</a></h4> \n\
-            </div><div id=\"reference1\" class=\"panel-collapse collapse in\">\n\
-            %data%</div></div>";
-        
-        // we get the components list from page2_components.js
-        var len = match_similar_list.length;
-        
-        for (var i = 0; i < len; ++i) {
-          if (i in match_similar_list) {
-            var snippetCode = "Hello!"
-            
-            var panelFile = "<div class=\"panel panel-default\">\n\
-            <div class=\"panel-heading\"><h4 class=\"panel-title\">\n\
-            <a data-toggle=\"collapse\" \n\
-            href=\"#reference"+i.toString()+"\" class=\"collapsed\"> %file%</a></h4> \n\
-            </div><div id=\"reference"+i.toString()+"\" class=\"panel-collapse collapse\">\n\
-            %data%</div></div>";
-       
-            
-            // output the current file being processed
-            tempFile = panelFile.replace("%file%", match_similar_list[i].filename);
-            var newID = "md" + i.toString();
-            tempFile = tempFile.replace("%data%", snippetCode);
-            //tempFile = tempFile.replace("reference1", newID);
-            // add up this result to the file list, update the reference links
-            output += tempFile;    
-          }
-        }
-        // replace the original content with our dynamic version
-        document.getElementById("similarity").innerHTML = output;
-    </script>
-    
 			<!-- 2nd panel starts -->
 <div class="panel panel-default">
-        <div class="panel-heading">
+    <div class="panel-heading" id="match_exact_title">
                 301 files are exact matches to other files on the web
         </div>
     <div class="panel-body">
     <div class="col-md-12">
-    <div class="panel-group panel-group-joined" id="accordion-test">
-        
-        
-       
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a data-toggle="collapse" href="#reference1" class="collapsed">%filename%</a>
-                </h4>
-            </div>
-            <div id="reference1" class="panel-collapse collapse">
-                <div class="panel-body">
-                    %data%
-                </div>
-            </div>
-        </div>
-
-
-        
-        
-        
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion-test" href="#c1" class="collapsed"> 
-                        Item #1</a>
-                </h4> 
-            </div>
-            <div id="c1" class="panel-collapse collapse in">
-                <div class="panel-body">
-                    Bla bla bla...Bla bla bla...Bla bla bla...Bla bla bla...Bla bla bla...Bla bla bla...
-                </div>
-            </div>
-        </div>
-        
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion-test" href="#c2"> Item #2</a>
-                </h4>
-                                        </div>
-            <div id="c2" class="panel-collapse collapse">
-                <div class="panel-body">
-                    Bla bla bla...Bla bla bla...Bla bla bla...Bla bla bla...Bla bla bla...Bla bla bla...
-                </div>
-            </div>
-        </div>
-
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion-test" href="#c3" class="collapsed"> Item #3</a>
-                </h4>
-            </div>
-            <div id="c3" class="panel-collapse collapse">
-                <div class="panel-body">
-                    Bla bla bla...Bla bla bla...Bla bla bla...Bla bla bla...Bla bla bla...Bla bla bla...
-                </div>
-            </div>
-        </div>
-        
+    <div class="panel-group" id="exact">
 
     </div>
     </div>
@@ -189,7 +85,94 @@
 			
 <!-- Finish listing -->				
 </div>
-			
+	
+        <!-- Do the originality snippets filling -->			  
+    <script type="text/javascript">
+        
+        var output = "";
+        var outputExact = "";
+        var tempFile = "";
+        
+        // define a panel that end-user can maximize/minimize
+        function panel(thisId, thisValue){
+            return "<div class=\"panel panel-default\">\n\
+            <div class=\"panel-heading\"><h4 class=\"panel-title\">\n\
+            <a data-toggle=\"collapse\" \n\
+            href=\"#"+ thisId + ""+thisValue.toString()+"\" class=\"collapsed\"> %file%</a></h4> \n\
+            </div><div id=\""+ thisId + ""+thisValue.toString()+"\" class=\"panel-collapse collapse\">\n\
+            %data%</div></div>";
+        }
+        
+        // returns a table in HTML format, we replace the %data% keyword
+        function table(){
+            return "<table class=\"table table-striped\" style=\"color: black;\n\
+            \"><thead><tr><th>Similarity</th><th>Lines</th><th>References</th>\n\
+            </tr></thead><tbody> %data%</tbody><tfoot></tfoot></table>";            
+        }
+        
+        function newTableEntry(match){
+            return "<tr><td class=\"right\">"
+            + match.percent
+            + "</td><td class=\"right\">"
+            + match.lines
+            + "</td><td class=\"right\">"
+            + match.reference
+            +"</td></tr>";
+        }
+        
+        // we get the components list from page2_components.js
+        var fileCount = match_similar_list.length;
+        var snipCounter = 0;
+        // go through each file on our list
+        for (var i = 0; i < fileCount; ++i) {
+          if (i in match_similar_list) {
+            // create the snippet table
+            var snippetCode = ""
+            // go through each snippet
+            var snipCount = match_similar_list[i].snippet.length;
+            for (var x = 0; x < snipCount; ++x) {
+                if (x in match_similar_list[x].snippet){
+                    // increate the unique snippet id
+                    snipCounter++;
+                    var title = match_similar_list[i].snippet[x].title;
+                    var code = match_similar_list[i].snippet[x].code;
+                    // generate the new panel just for this snippet
+                    thisSnippet = panel("snip", snipCounter).replace("%file%", title);
+                    thisSnippet = thisSnippet.replace("%data%", code);
+                
+                    // last iteration, go through the similarity table
+                    var refCount = match_similar_list[i].snippet[x].similarity.length;
+                    var entries = "";
+                    for (var y = 0; y < refCount; ++y) {
+                        // get the current match
+                        var match = match_similar_list[i].snippet[x].similarity[y];
+                        // output a table entry
+                        entries += newTableEntry(match);
+                    }
+                    // create the new table
+                    var thisTable = table();
+                    thisTable = thisTable.replace("%data%", entries);
+                    thisSnippet += thisTable;
+                    
+                    // add up this data to the overall snippet
+                    snippetCode += thisSnippet;
+                }
+            }
+        
+            // output the current file being processed
+            tempFile = panel("finSim", i).replace("%file%", match_similar_list[i].filename);
+            tempFile = tempFile.replace("%data%", snippetCode);
+            // add up this result to the file list, update the reference links
+            output += tempFile;    
+          }
+        }
+        // replace the original content with our dynamic version
+        document.getElementById("similarity").innerHTML = output;
+        document.getElementById("exact").innerHTML = outputExact;
+        // titles for this page
+        document.getElementById("match_similar_title").innerHTML = match_similar_title;
+        document.getElementById("match_exact_title").innerHTML = match_exact_title;
+    </script>
 			
             <!-- Main Footer -->
             <footer class="main-footer sticky footer-type-1">
