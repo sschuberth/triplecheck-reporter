@@ -418,7 +418,7 @@ public class show extends Plugin{
         request.changeTemplate("%languageEvaluation%", spdx.getLanguageEvaluation());
         // list languages and resources that were found
         request.changeTemplate("%packageLicenseDeclared%", packageLicenseDeclared);
-        request.changeTemplate("%licenseEvaluation%", spdx.getLicenseEvaluation());
+        request.changeTemplate("%licenseEvaluation%", spdx.getLicenseEvaluationHTML());
         // add the score given to this project
         request.changeTemplate("%scoreDetails%", qualityDetails);
         request.changeTemplate("%s%", qualityValue);
