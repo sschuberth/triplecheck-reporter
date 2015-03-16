@@ -35,6 +35,29 @@ var match_similar_list = [{
     }
 ];
 
-
-
-
+var match_exact_list = [{
+        type: "source",
+        files: [{
+            file: "./apache/commons/lang/CharUtils.java",
+            matches: [
+                "github:adblockplus-adblockplusandroid-d93ee48/src/org/apache/commons/lang/StringEscapeUtils.java",
+                "github:adblockplus-adblockplusandroid-d93ee48/src/org/apache/commons/lang/StringEscapeUtils.java"
+            ]
+        },
+        {
+            file: "./python/LevelReader.py ",
+            matches: [
+                "github:nomadx-test-pygame-camera-0fa6449/src/LevelReader.py "
+            ]
+        }
+        
+    ]},{
+        type: "archive",
+        files: [{
+            file: "./commons-compiler.jar ",
+            matches: [
+                "github:liferay-liferay-portal-f6e6328/lib/portal/commons-compiler.jar "
+            ]
+        }
+    ]}
+];

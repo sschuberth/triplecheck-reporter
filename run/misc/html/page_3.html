@@ -166,6 +166,39 @@
             output += tempFile;    
           }
         }
+        
+        // add the exact matches to our list
+        for (var i = 0; i < match_exact_list.length; ++i) {
+            var group = match_exact_list[i];
+            // adjust the text to plural or singular
+            var fileText = "files";
+            if(group.files.length === 1){
+                fileText = "file";
+            }
+            // get a unique id for our menu system
+            snipCounter++;
+            // define the title for our panel
+            var title = group.files.length + " "    
+                + group.type + " " + fileText;
+            // generate the initial panel
+            var thisPanel = panel("exact", snipCounter).replace("%file%", title);
+            // iterate the matches
+            var matchText = "";
+            for (var x = 0; x < group.files.length; ++x) {
+                var file = group.files[x];
+                matchText += "<br><mark>" + file.file + "</mark><br>";
+                // iterate the references
+                for (var y = 0; y < file.matches.length; ++y) {
+                    matchText += "        <code>" + file.matches[y] + "</code><br>";
+                }
+            }
+            // add the data from this match
+            thisPanel = thisPanel.replace("%data%", matchText);
+            
+            // all done
+            outputExact += thisPanel;
+        }
+        
         // replace the original content with our dynamic version
         document.getElementById("similarity").innerHTML = output;
         document.getElementById("exact").innerHTML = outputExact;
