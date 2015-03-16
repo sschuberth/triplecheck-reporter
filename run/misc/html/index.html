@@ -43,21 +43,22 @@
             </div>
         </div>
         <div class="main-content">
-<div class="page-title">
-	<div class="title-env">
-		<h1 class="title">Analysis report</h1>
-		<p class="description">This reports contains the analysis in regards to software licensing compliance</p>
-	</div>
-</div>
-			<div class="row">
-				<div class="col-sm-6">
-					<div class="panel panel-default">
-						
-						<div class="panel-body">
-                            <script type="text/javascript">
+            <div class="page-title">
+                    <div class="title-env">
+                            <h1 class="title">Analysis report</h1>
+                            <p class="description">This reports contains the analysis in regards to software licensing compliance</p>
+                    </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                        <div class="panel panel-default">
+
+                                <div class="panel-body">
+
+                        <script type="text/javascript">
 							
-                var xenonPalette = ['#68b828', '#7c38bc', '#0e62c7', '#fcd036', 
-                    '#4fcdfc', '#00b19d', '#ff6264', '#f7aa47'];
+                        var xenonPalette = ['#68b828', '#7c38bc', '#0e62c7', '#fcd036', 
+                            '#4fcdfc', '#00b19d', '#ff6264', '#f7aa47'];
                 
                                 jQuery(document).ready(function($) {
                                     if (!$.isFunction($.fn.dxChart))
@@ -81,13 +82,13 @@
                                             horizontalAlignment: "center"
                                         },
                                         title: {
-                                            text: "Originality <br />",
+                                            text: "Originality <br /><br>",
                                             font: {
                                                 size: 35
                                             }
                                         },
                                         
-                                        palette: xenonPalette
+                                        palette: ['#68b828', '#7c38bc', '#0e62c7', '#fcd036']
                                     });
                                 });
 
@@ -96,14 +97,19 @@
                                     return randInt;
                                 }
                             </script>
-                            <div id="bar-gauge-1" style="height: 440px; width: 100%;"></div>
-                        </div>
+                            <div id="bar-gauge-1" style="height: 370px; width: 100%;"></div>
+                            
+                            <span style="font-weight: bold; color: #68b828;">Unknown</span> files<br>
+                            <span style="font-weight: bold; color: #7c38bc;">Authored</span> or mixed code<br>
+                            <span style="font-weight: bold; color: #0e62c7;">Auto-generated</span> files<br>
+                            <span style="font-weight: bold; color: #fcd036;">External files</span> from a third-party developer
+                            </div>
 					</div>
 				</div>
                             
 				<div class="col-sm-6">
 					<div class="panel panel-default">
-						<div class="panel-body" style="height:500px;">
+						<div class="panel-body" style="height:465px;">
 							<div>
                                                              <div id="bar-5" style="height: 250px; width: 100%;"></div>
                                             <h1 style="font-size:8em; color:#212121" class="pull-right" id="quality_score">8.2/10</h1>
