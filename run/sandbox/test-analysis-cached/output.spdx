@@ -9,7 +9,7 @@ DataLicense: CC-BY-4.0
 ##-------------------------
 Creator: nuno
 Creator: Tool: TripleCheck 1.0.0
-Created: 2015-03-16T18:34:44Z
+Created: 2015-03-16T18:50:47Z
 
 ##-------------------------
 ## Package Information
@@ -20,18 +20,6 @@ PackageLicenseDeclared: NOASSERTION
 ##-------------------------
 ## File Information
 ##-------------------------
-FileName: ./apache/commons/lang/StringEscapeUtils.java
-FileType: SOURCE
-FileChecksum: SHA1: 00617958b057d8adef07b66711bb726b0494d0a0
-FileChecksum: SHA256: ae7da1d38b1d028ff5e44e15595aeac9c277c551b5d9b231f223462c95bc5bf5
-FileChecksum: MD5: 6117578daa50430b4e1699174bd33c27
-FileChecksum: TLSH: 03E2E059ACE313421292E178435FD0A1E65FD21FA3359FE4BD0C8760AF4662C06BDEAD
-FileSize: 22 Kb (22977 bytes)
-FileLOC: 587
-LicenseInfoInFile: Apache-2.0
-FileOrigin: EXTERNAL
-FileMatchBinary: github:adblockplus-adblockplusandroid-d93ee48/src/org/apache/commons/lang/StringEscapeUtils.java
-
 FileName: ./apache/commons/lang/CharUtils.java
 FileType: SOURCE
 FileChecksum: SHA1: ae40721e7fac52f1eef26a8131e5fb240291cc29
@@ -43,6 +31,18 @@ FileLOC: 558
 LicenseInfoInFile: Apache-2.0
 FileOrigin: EXTERNAL
 FileMatchBinary: github:adblockplus-adblockplusandroid-d93ee48/src/org/apache/commons/lang/CharUtils.java
+
+FileName: ./apache/commons/lang/StringEscapeUtils.java
+FileType: SOURCE
+FileChecksum: SHA1: 00617958b057d8adef07b66711bb726b0494d0a0
+FileChecksum: SHA256: ae7da1d38b1d028ff5e44e15595aeac9c277c551b5d9b231f223462c95bc5bf5
+FileChecksum: MD5: 6117578daa50430b4e1699174bd33c27
+FileChecksum: TLSH: 03E2E059ACE313421292E178435FD0A1E65FD21FA3359FE4BD0C8760AF4662C06BDEAD
+FileSize: 22 Kb (22977 bytes)
+FileLOC: 587
+LicenseInfoInFile: Apache-2.0
+FileOrigin: EXTERNAL
+FileMatchBinary: github:adblockplus-adblockplusandroid-d93ee48/src/org/apache/commons/lang/StringEscapeUtils.java
 
 FileName: ./files_minor.java
 FileType: SOURCE
@@ -90,16 +90,6 @@ FileLOC: 29
 FileOrigin: EXTERNAL
 FileMatchBinary: github:geekcomputers-Python-95175a9/password_cracker.py
 
-FileName: ./python/portscanner.py
-FileType: SOURCE
-FileChecksum: SHA1: eebfdc0bb61d5b979ed7dd3efa5dc30ca18643d3
-FileChecksum: SHA256: 62669218b7fce59feac3291050237b705365bff07bcfb0decde98d18ad5e3306
-FileChecksum: MD5: 9356dc0d0467c3c02aa36ea68b2d9c8d
-FileSize: 848 bytes
-FileLOC: 27
-FileOrigin: MODIFIED
-FileMatchSnippet: 18..33->18..33 100% github:geekcomputers-Python-95175a9/portscanner.py
-
 FileName: ./python/powerdown_startup.py
 FileType: SOURCE
 FileChecksum: SHA1: 75ead34ced5d4f575abbb17858cb9219c044331d
@@ -110,16 +100,15 @@ FileLOC: 34
 FileOrigin: EXTERNAL
 FileMatchBinary: github:geekcomputers-Python-95175a9/powerdown_startup.py
 
-FileName: ./TestServer.java
+FileName: ./python/portscanner.py
 FileType: SOURCE
-FileChecksum: SHA1: f946993b14e0290240af387fa311fde02e7a7f7b
-FileChecksum: SHA256: 01f00dfd254344a49497698a5850d166c183142a7f85f47b96a01eeb2c2f3f67
-FileChecksum: MD5: 90c71af6a6e71bae2b56ac0e7a18314d
-FileSize: 7 Kb (8162 bytes)
-FileLOC: 241
+FileChecksum: SHA1: eebfdc0bb61d5b979ed7dd3efa5dc30ca18643d3
+FileChecksum: SHA256: 62669218b7fce59feac3291050237b705365bff07bcfb0decde98d18ad5e3306
+FileChecksum: MD5: 9356dc0d0467c3c02aa36ea68b2d9c8d
+FileSize: 848 bytes
+FileLOC: 27
 FileOrigin: MODIFIED
-FileMatchSnippet: 26..249->44..266 99% github:leonhong-thrift-7534e71/lib/java/test/org/apache/thrift/test/TestServer.java
-FileMatchSnippet: 251..287->268..305 94% github:leonhong-thrift-7534e71/lib/java/test/org/apache/thrift/test/TestServer.java
+FileMatchSnippet: 18..33->18..33 100% github:geekcomputers-Python-95175a9/portscanner.py
 
 FileName: ./commons-compiler.jar
 FileType: ARCHIVE
@@ -131,6 +120,17 @@ FileSize: 29 Kb (30352 bytes)
 FileLOC: 0
 FileOrigin: EXTERNAL
 FileMatchBinary: github:liferay-liferay-portal-f6e6328/lib/portal/commons-compiler.jar
+
+FileName: ./TestServer.java
+FileType: SOURCE
+FileChecksum: SHA1: f946993b14e0290240af387fa311fde02e7a7f7b
+FileChecksum: SHA256: 01f00dfd254344a49497698a5850d166c183142a7f85f47b96a01eeb2c2f3f67
+FileChecksum: MD5: 90c71af6a6e71bae2b56ac0e7a18314d
+FileSize: 7 Kb (8162 bytes)
+FileLOC: 241
+FileOrigin: MODIFIED
+FileMatchSnippet: 26..249->44..266 99% github:leonhong-thrift-7534e71/lib/java/test/org/apache/thrift/test/TestServer.java
+FileMatchSnippet: 251..287->268..305 94% github:leonhong-thrift-7534e71/lib/java/test/org/apache/thrift/test/TestServer.java
 
 FileName: ./KirinDave--powerset_thrift--2008-03-26T21_24_20Z.zip
 FileType: ARCHIVE
