@@ -67,7 +67,7 @@ public class summary extends Plugin{
     @Override
     public void main(WebRequest request){
         TreeNodeSPDX node = swingUtils.getSelectedNode();
-        // only accept components nodes
+        // only accept componentsHTML nodes
         if(node == null || node.nodeType != NodeType.sectionComponents){
             log.write(is.ERROR, "No component node selected");
             return;
@@ -78,8 +78,8 @@ public class summary extends Plugin{
         
         request.setTemplate("comp_associated.html");
         
-        // and now with the spdx summary, get the list of components
-        String result = spdx.summary.components();
+        // and now with the spdx summary, get the list of componentsHTML
+        String result = spdx.summary.componentsHTML();
         
         request.changeTemplate("%title%", "Components");
         

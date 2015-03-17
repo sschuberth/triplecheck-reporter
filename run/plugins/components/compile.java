@@ -45,7 +45,7 @@ public class compile extends Plugin{
     @Override
     public void main(WebRequest request){
         TreeNodeSPDX node = swingUtils.getSelectedNode();
-        // only accept components nodes
+        // only accept componentsHTML nodes
         if(node == null || node.nodeType != NodeType.sectionExport){
             log.write(is.ERROR, "EX40 - Export node was not selected.");
             return;
@@ -64,7 +64,7 @@ public class compile extends Plugin{
         
         
         
-        // and now with the spdx summary, get the list of components
+        // and now with the spdx summary, get the list of componentsHTML
 //        String result = ""
 //                + html.div()
 //                + html.h2("Export the licensing data")
@@ -201,7 +201,7 @@ public class compile extends Plugin{
         }
         
         // get the component report
-        String reportComponents = spdx.summary.components();
+        String reportComponents = spdx.summary.componentsHTML();
         // save it to disk
         File fileComponents = new File(folderReport, "components.html");
         utils.files.SaveStringToFile(fileComponents, reportComponents);
