@@ -9,7 +9,7 @@ DataLicense: CC-BY-4.0
 ##-------------------------
 Creator: nuno
 Creator: Tool: TripleCheck 1.0.0
-Created: 2015-03-16T18:50:47Z
+Created: 2015-03-16T19:01:48Z
 
 ##-------------------------
 ## Package Information
@@ -58,18 +58,6 @@ FileMatchSnippet: 39..51->162..173 100% github:ignaciogs-MyMemo-7586b78/src/com/
 FileMatchSnippet: 39..51->72..85 100% github:whitingjr-cxf-9a11313/testutils/src/main/java/org/apache/cxf/testutil/common/TestUtil.java
 FileMatchSnippet: 159..195->268..305 94% github:leonhong-thrift-7534e71/lib/java/test/org/apache/thrift/test/TestServer.java
 
-FileName: ./apache/commons/lang/StringUtils.java
-FileType: SOURCE
-FileChecksum: SHA1: d337c94d2260f315e62140529349388100114342
-FileChecksum: SHA256: 21d59aeeded48ec2988f42f4bd2159e4b22969a85fc67c2fbcff881d7391f687
-FileChecksum: MD5: f5ec3400aede14e50edc954c2580dbe0
-FileChecksum: TLSH: 9814EC167CE60A210656D07A4A4990D0E21E952FCB3AFCF4FC4D1F742F09B758ABDB89
-FileSize: 177 Kb (181744 bytes)
-FileLOC: 4525
-LicenseInfoInFile: Apache-2.0
-FileOrigin: EXTERNAL
-FileMatchBinary: github:adblockplus-adblockplusandroid-d93ee48/src/org/apache/commons/lang/StringUtils.java
-
 FileName: ./python/LevelReader.py
 FileType: SOURCE
 FileChecksum: SHA1: f39d7d636aff1aa1e66828fede37a5d2d27620f5
@@ -89,16 +77,6 @@ FileSize: 1 Kb (1074 bytes)
 FileLOC: 29
 FileOrigin: EXTERNAL
 FileMatchBinary: github:geekcomputers-Python-95175a9/password_cracker.py
-
-FileName: ./python/powerdown_startup.py
-FileType: SOURCE
-FileChecksum: SHA1: 75ead34ced5d4f575abbb17858cb9219c044331d
-FileChecksum: SHA256: 6eee954a93bf0294562ba70f9878a9c276abf9546609db39829607f2fb9ab23c
-FileChecksum: MD5: ad495fc0c091044459e3cd21e23f2bab
-FileSize: 2 Kb (2131 bytes)
-FileLOC: 34
-FileOrigin: EXTERNAL
-FileMatchBinary: github:geekcomputers-Python-95175a9/powerdown_startup.py
 
 FileName: ./python/portscanner.py
 FileType: SOURCE
@@ -120,6 +98,28 @@ FileSize: 29 Kb (30352 bytes)
 FileLOC: 0
 FileOrigin: EXTERNAL
 FileMatchBinary: github:liferay-liferay-portal-f6e6328/lib/portal/commons-compiler.jar
+
+FileName: ./apache/commons/lang/StringUtils.java
+FileType: SOURCE
+FileChecksum: SHA1: d337c94d2260f315e62140529349388100114342
+FileChecksum: SHA256: 21d59aeeded48ec2988f42f4bd2159e4b22969a85fc67c2fbcff881d7391f687
+FileChecksum: MD5: f5ec3400aede14e50edc954c2580dbe0
+FileChecksum: TLSH: 9814EC167CE60A210656D07A4A4990D0E21E952FCB3AFCF4FC4D1F742F09B758ABDB89
+FileSize: 177 Kb (181744 bytes)
+FileLOC: 4525
+LicenseInfoInFile: Apache-2.0
+FileOrigin: EXTERNAL
+FileMatchBinary: github:adblockplus-adblockplusandroid-d93ee48/src/org/apache/commons/lang/StringUtils.java
+
+FileName: ./python/powerdown_startup.py
+FileType: SOURCE
+FileChecksum: SHA1: 75ead34ced5d4f575abbb17858cb9219c044331d
+FileChecksum: SHA256: 6eee954a93bf0294562ba70f9878a9c276abf9546609db39829607f2fb9ab23c
+FileChecksum: MD5: ad495fc0c091044459e3cd21e23f2bab
+FileSize: 2 Kb (2131 bytes)
+FileLOC: 34
+FileOrigin: EXTERNAL
+FileMatchBinary: github:geekcomputers-Python-95175a9/powerdown_startup.py
 
 FileName: ./TestServer.java
 FileType: SOURCE
