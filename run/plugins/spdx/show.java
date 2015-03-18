@@ -17,7 +17,6 @@ package spdx;
 
 import GUI.webUtils;
 import definitions.Messages;
-import definitions.definition;
 import definitions.is;
 import java.awt.Desktop;
 import java.io.File;

@@ -20,7 +20,7 @@ var quality_percentage = [{
 
 var quality_color = [{
             valueField: "gold",
-            name: "Satisfactory",
+            name: "Available",
             color: "#66bb6a"
         }, 
         {

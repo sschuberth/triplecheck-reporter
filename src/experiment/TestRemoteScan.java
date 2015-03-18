@@ -68,7 +68,8 @@ public class TestRemoteScan {
      */
     public void start() throws Exception{
         // first step, create an SPDX
-        createSPDX();
+        //createSPDX();
+        loadSPDX();
         // prepare the exchange package with the analysis results
         createExchangePackage();
         // time to merge the results
@@ -86,11 +87,15 @@ public class TestRemoteScan {
         log.write(is.INFO, "Creating SPDX document at %1", fileSPDX.getAbsolutePath());
         DocumentCreate createSPDX = new DocumentCreate();
         createSPDX.create(folderSource, fileSPDX);
-        // get the object so that we can merge matches
-        spdx = new SPDXfile(fileSPDX);
         log.write(is.COMPLETED, "Finished writing SPDX document");
     }
 
+    
+    private void loadSPDX(){
+        // get the object so that we can merge matches
+        spdx = new SPDXfile(fileSPDX);
+    }
+    
     /**
      * Launches the new analysis (this is a time consuming process)
      * @throws Exception 
