@@ -268,7 +268,7 @@ public class TestRemoteScan {
     }    
     
     public static void main(String[] args) throws Exception{
-        File folder = new File("sandbox", "test-samples");
+        File folder = new File("../../source/adblockplusandroid-2014-06-01/");
         // launch the scanning operation
         TestRemoteScan scan = new TestRemoteScan(folder);
         scan.start();

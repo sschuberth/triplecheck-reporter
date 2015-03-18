@@ -3,9 +3,130 @@
  * Apply your custom CSS here
  *
 */
-
-body {	
+body {
+    background:#C9CED2;
 }
-
-a {
+.sidebar-menu.fixed {
+    width: 70px;
 }
+.sidebar-menu .logo-env {
+    padding:6px 5px;
+    border:none;
+    background:rgba(255,255,255,0.1)
+}
+.logo h1 {
+    margin:0;
+}
+.logo h1 a img {
+    width:60px;
+}
+.sidebar-menu .main-menu a > span {
+    font-size:10px;
+    display:block;
+    line-height:10px;
+    padding:5px 0 0 !important;
+    text-align:center;
+}
+[class^="linecons-"]:before, [class*=" linecons-"]:before {
+    font-size:180%;
+}
+.sidebar-menu .main-menu {
+    padding-left:0px;
+    padding-right:0px;
+}
+    .sidebar-menu .main-menu a {
+        padding:20px 5px;
+        position:relative;
+    }
+    .sidebar-menu .main-menu li.active > a {
+        color:#00AFF0;
+    }
+    .sidebar-menu .main-menu li.active > a:after {
+        width:0;
+        height:0;
+        border-right:10px solid #C9CED2;
+        border-bottom:25px solid transparent;
+        border-top:25px solid transparent;
+        content:'';
+        position:absolute;
+        right:0;
+        top:10px;
+    }
+        .sidebar-menu .main-menu a > i {
+            display:block;
+            text-align:center;
+            margin:0;
+        }
+.page-container .main-content .page-title {
+    padding: 10px 0;
+    margin-left:0px;
+    margin-top:0px;
+    margin-bottom:20px;
+    background:#EFF3F4;
+    position:fixed;
+    left:70px;
+    width:calc(100% - 70px);
+    z-index:9;
+    top:0;
+}
+    .page-container .main-content .page-title .title-env {
+        padding-left:20px;
+    }
+.page-container .main-content {
+    padding: 90px 20px 0px 30px;
+}
+.panel {
+    border-radius:10px;
+    padding:20px;
+}
+.page-container {
+    overflow:hidden;
+}
+.col-sm-6 .panel{
+    height:510px;
+    margin-bottom:15px;
+    position:relative;
+}
+.panel .panel-body {
+    padding-top:0;
+}
+.col-sm-6 {
+    padding-left:0;
+}
+.faq {
+    padding:0;
+}
+.faq .panel{
+    border-radius:0;
+    margin:0;
+    background:#E5E8EF;
+}
+    .faq .panel .panel-heading {
+        padding:0;
+        border:none;
+        font-size:30px;
+    }
+    .faq .panel .panel-body, .faq .panel .panel-body p {
+        color:#666;
+    }
+        .faq .panel .panel-body strong {
+            font-weight:normal;
+            font-size:24px;
+            display:block;
+            padding:5px 0;
+        }
+.col-sm-6 .panel .panel-body p {
+    position:absolute;
+    bottom:20px;
+    font-size:18px;
+}
+h1.pull-right {
+    position: absolute;
+    bottom: 0px;
+    right: 20px;
+}
+    h1.pull-right:before {
+       /**content:'Score';*/
+        font-size:18px;
+        display:block;
+    }
