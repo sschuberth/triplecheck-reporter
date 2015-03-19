@@ -1,29 +1,32 @@
 // how good is the licensing quality in overall?
-var quality_score = "#score#";
+var quality_score = "1.2/10";
 
 // detail what we found
-var quality_score_details = "#details#";
+var quality_score_details = "98 files with copyright declared <br />127 files with declared licenses<br />See <a href=\"page_4.html\">what can be fixed</a>";
 
 var quality_percentage = [{
             country: "Copyright",
-            gold: cop1,
-            bronze: cop2
+            gold: 70,
+            bronze: 30
         }, {
             country: "License",
-            gold: lic1,
-            bronze: lic2
+            gold: 51,
+            bronze: 49
         }, {
             country: "Documentation",
-            gold: doc1,
-            bronze: doc2
+            doc_color: 16,
+            bronze: 84
         }];
 
 var quality_color = [{
             valueField: "gold",
-            name: "Available",
+            name: "Satisfactory",
             color: "#66bb6a"
-        }, 
-        {
+        }, {
+            valueField: "doc_color",
+            name: "Needs improvement",
+            color: "#ffa726"
+        }, {
             valueField: "bronze",
             name: "Missing",
             color: "#e0e0e0"

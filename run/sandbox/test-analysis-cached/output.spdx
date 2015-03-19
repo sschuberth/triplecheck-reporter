@@ -9,7 +9,7 @@ DataLicense: CC-BY-4.0
 ##-------------------------
 Creator: nuno
 Creator: Tool: TripleCheck 1.0.0
-Created: 2015-03-18T09:25:57Z
+Created: 2015-03-19T16:28:59Z
 
 ##-------------------------
 ## Package Information
@@ -40,7 +40,7 @@ FileSize: 4 Kb (4798 bytes)
 FileLOC: 151
 LicenseInfoInFile: GPL-3.0
 FileLicenseConcluded: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -55,7 +55,7 @@ FileSize: 2 Kb (3070 bytes)
 FileLOC: 95
 LicenseInfoInFile: GPL-3.0
 FileLicenseConcluded: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -70,7 +70,7 @@ FileSize: 1 Kb (1954 bytes)
 FileLOC: 54
 LicenseInfoInFile: GPL-3.0
 FileLicenseConcluded: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: AUTHORED
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -84,7 +84,7 @@ FileSize: 1 Kb (1928 bytes)
 FileLOC: 53
 LicenseInfoInFile: GPL-3.0
 FileLicenseConcluded: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -143,7 +143,7 @@ FileSize: 2 Kb (2140 bytes)
 FileLOC: 45
 LicenseInfoInFile: BSD-3-Clause-Clear
 FileLicenseConcluded: BSD-3-Clause-Clear
-FileCopyrightText:       <text>Copyright 2012 the V8 project authors. All rights reserved.</text>
+FileCopyrightText:         <text>Copyright 2012 the V8 project authors. All rights reserved.</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: V8
@@ -158,7 +158,7 @@ FileSize: 134 Kb (137596 bytes)
 FileLOC: 3654
 LicenseInfoInFile: BSD-3-Clause-Clear
 FileLicenseConcluded: BSD-3-Clause-Clear
-FileCopyrightText:       <text>Copyright 2011 the V8 project authors. All rights reserved.</text>
+FileCopyrightText:         <text>Copyright 2011 the V8 project authors. All rights reserved.</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: V8
@@ -173,7 +173,7 @@ FileSize: 3 Kb (3403 bytes)
 FileLOC: 75
 LicenseInfoInFile: GPL-3.0
 FileLicenseConcluded: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -188,7 +188,7 @@ FileSize: 3 Kb (3491 bytes)
 FileLOC: 112
 LicenseInfoInFile: GPL-3.0
 FileLicenseConcluded: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -203,7 +203,7 @@ FileSize: 3 Kb (3146 bytes)
 FileLOC: 82
 LicenseInfoInFile: GPL-3.0
 FileLicenseConcluded: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -218,7 +218,7 @@ FileSize: 9 Kb (9861 bytes)
 FileLOC: 235
 LicenseInfoInFile: GPL-3.0
 FileLicenseConcluded: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: AUTHORED
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -232,7 +232,7 @@ FileSize: 2 Kb (2401 bytes)
 FileLOC: 74
 LicenseInfoInFile: GPL-3.0
 FileLicenseConcluded: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -259,7 +259,7 @@ FileSize: 2 Kb (2214 bytes)
 FileLOC: 55
 LicenseInfoInFile: GPL-3.0
 FileLicenseConcluded: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -274,7 +274,7 @@ FileSize: 8 Kb (8677 bytes)
 FileLOC: 208
 LicenseInfoInFile: GPL-3.0
 FileLicenseConcluded: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -289,7 +289,7 @@ FileSize: 1 Kb (1574 bytes)
 FileLOC: 43
 LicenseInfoInFile: GPL-3.0
 FileLicenseConcluded: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -304,7 +304,7 @@ FileSize: 5 Kb (6012 bytes)
 FileLOC: 178
 LicenseInfoInFile: GPL-3.0
 FileLicenseConcluded: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -319,7 +319,7 @@ FileSize: 1 Kb (1100 bytes)
 FileLOC: 25
 LicenseInfoInFile: GPL-3.0
 FileLicenseConcluded: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -334,7 +334,7 @@ FileSize: 2 Kb (2770 bytes)
 FileLOC: 80
 LicenseInfoInFile: GPL-3.0
 FileLicenseConcluded: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: AUTHORED
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -407,7 +407,7 @@ FileSize: 2 Kb (2836 bytes)
 FileLOC: 94
 LicenseInfoInFile: GPL-3.0
 FileLicenseConcluded: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -421,7 +421,7 @@ FileChecksum: MD5: 577bf2b7a5f4c08cc25be21dd153f1ad
 FileSize: 1 Kb (1983 bytes)
 FileLOC: 50
 LicenseInfoInFile: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: AUTHORED
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -434,7 +434,7 @@ FileChecksum: MD5: 0abc3ad852698f3fbaa26968eee5e296
 FileSize: 2 Kb (2554 bytes)
 FileLOC: 68
 LicenseInfoInFile: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -448,7 +448,7 @@ FileChecksum: MD5: 134ef120eb48d1b0fc9935cd348573f5
 FileSize: 2 Kb (2615 bytes)
 FileLOC: 74
 LicenseInfoInFile: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: AUTHORED
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -461,7 +461,7 @@ FileChecksum: MD5: 024f52033fd359a262ba28b628f5b15b
 FileSize: 8 Kb (8934 bytes)
 FileLOC: 204
 LicenseInfoInFile: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: AUTHORED
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -474,7 +474,7 @@ FileChecksum: MD5: bb4540277ee68b43e6b6d99015a9fb20
 FileSize: 6 Kb (6157 bytes)
 FileLOC: 169
 LicenseInfoInFile: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -488,7 +488,7 @@ FileChecksum: MD5: d8b676777ce6eab869f86a2280cdabd3
 FileSize: 3 Kb (3314 bytes)
 FileLOC: 91
 LicenseInfoInFile: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -502,7 +502,7 @@ FileChecksum: MD5: ac9ca7a72d2c80d94a00974712fce403
 FileSize: 1 Kb (1338 bytes)
 FileLOC: 43
 LicenseInfoInFile: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -516,7 +516,7 @@ FileChecksum: MD5: 5cb6cd380fd8f7137498afa963e120b6
 FileSize: 2 Kb (2912 bytes)
 FileLOC: 81
 LicenseInfoInFile: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -530,7 +530,7 @@ FileChecksum: MD5: 003beb9274c7f906bb8a7f165ed5a0fb
 FileSize: 6 Kb (6432 bytes)
 FileLOC: 163
 LicenseInfoInFile: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -544,7 +544,7 @@ FileChecksum: MD5: 91039b38a81a2f9dfbdce26d08f9501f
 FileSize: 15 Kb (16163 bytes)
 FileLOC: 493
 LicenseInfoInFile: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: MODIFIED
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -562,7 +562,7 @@ FileChecksum: MD5: 210c7a102875878614270ac66933362a
 FileSize: 8 Kb (8404 bytes)
 FileLOC: 233
 LicenseInfoInFile: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: MODIFIED
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -583,7 +583,7 @@ FileChecksum: MD5: a844e275598a77ca4ac9761748cdb4cc
 FileSize: 1 Kb (1452 bytes)
 FileLOC: 38
 LicenseInfoInFile: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -597,7 +597,7 @@ FileChecksum: MD5: 573d61e3d1a5bf7108880c90e5899b74
 FileSize: 29 Kb (30099 bytes)
 FileLOC: 836
 LicenseInfoInFile: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: MODIFIED
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -611,7 +611,7 @@ FileChecksum: MD5: 3dedd867bc6d39fbb9b844b33b069de3
 FileSize: 1 Kb (1939 bytes)
 FileLOC: 60
 LicenseInfoInFile: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: MODIFIED
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -626,7 +626,7 @@ FileChecksum: MD5: e8048c299cdb2a3fc03dcca91d5e9bd2
 FileSize: 2 Kb (2767 bytes)
 FileLOC: 71
 LicenseInfoInFile: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -640,7 +640,7 @@ FileChecksum: MD5: 572b5e1b8610e79f6b34f8c06010afd6
 FileSize: 6 Kb (7126 bytes)
 FileLOC: 228
 LicenseInfoInFile: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: AUTHORED
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -653,7 +653,7 @@ FileChecksum: MD5: 37edcbb3eee8f027f255ab9df263c674
 FileSize: 911 bytes
 FileLOC: 26
 LicenseInfoInFile: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -667,7 +667,7 @@ FileChecksum: MD5: e89e76de6faee7fdc9329df6dfc8e029
 FileSize: 1 Kb (1767 bytes)
 FileLOC: 43
 LicenseInfoInFile: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: AUTHORED
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -680,7 +680,7 @@ FileChecksum: MD5: 4d0917ffae04c2e4e7ec408c95b71715
 FileSize: 19 Kb (19518 bytes)
 FileLOC: 533
 LicenseInfoInFile: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: MODIFIED
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -705,7 +705,7 @@ FileChecksum: MD5: 3930d498d4af6b6a19e33fef9c0dd767
 FileSize: 3 Kb (3957 bytes)
 FileLOC: 103
 LicenseInfoInFile: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: MODIFIED
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -730,7 +730,7 @@ FileChecksum: MD5: 81df19538f22ccba7461d99bc7bc1343
 FileSize: 2 Kb (2895 bytes)
 FileLOC: 82
 LicenseInfoInFile: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -744,7 +744,7 @@ FileChecksum: MD5: 54ab6eb5b43589a73c2dba551fb97bad
 FileSize: 9 Kb (9477 bytes)
 FileLOC: 257
 LicenseInfoInFile: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: MODIFIED
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -761,7 +761,7 @@ FileChecksum: MD5: 5d9f2a97f0ebc91fbef8f69e0cd4c971
 FileSize: 2 Kb (2803 bytes)
 FileLOC: 85
 LicenseInfoInFile: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -775,7 +775,7 @@ FileChecksum: MD5: f77209efbe868fd35191af2747b62fd2
 FileSize: 4 Kb (4790 bytes)
 FileLOC: 158
 LicenseInfoInFile: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: MODIFIED
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -792,7 +792,7 @@ FileChecksum: MD5: abdb274acc4e61867a6526eeb67f28f0
 FileSize: 2 Kb (2345 bytes)
 FileLOC: 55
 LicenseInfoInFile: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -806,7 +806,7 @@ FileChecksum: MD5: 4d98e74566d04e79bee04bea4c4b3af2
 FileSize: 4 Kb (4901 bytes)
 FileLOC: 160
 LicenseInfoInFile: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: MODIFIED
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -821,7 +821,7 @@ FileChecksum: MD5: b35bc774c234eeca37cada8284989843
 FileSize: 1 Kb (1367 bytes)
 FileLOC: 42
 LicenseInfoInFile: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -835,7 +835,7 @@ FileChecksum: MD5: ceb3c7297bd8aee3dc5f3b021f7e35db
 FileSize: 2 Kb (2507 bytes)
 FileLOC: 76
 LicenseInfoInFile: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -849,7 +849,7 @@ FileChecksum: MD5: c5859bf8e6721009676825cb0e8b3ea1
 FileSize: 11 Kb (11800 bytes)
 FileLOC: 356
 LicenseInfoInFile: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: AUTHORED
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -863,7 +863,7 @@ FileSize: 1 Kb (1667 bytes)
 FileLOC: 54
 LicenseInfoInFile: GPL-3.0
 FileLicenseConcluded: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -878,7 +878,7 @@ FileSize: 4 Kb (4493 bytes)
 FileLOC: 128
 LicenseInfoInFile: GPL-3.0
 FileLicenseConcluded: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: AUTHORED
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -892,7 +892,7 @@ FileSize: 3 Kb (3534 bytes)
 FileLOC: 112
 LicenseInfoInFile: GPL-3.0
 FileLicenseConcluded: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -907,7 +907,7 @@ FileSize: 1 Kb (1610 bytes)
 FileLOC: 59
 LicenseInfoInFile: GPL-3.0
 FileLicenseConcluded: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -922,7 +922,7 @@ FileSize: 2 Kb (2075 bytes)
 FileLOC: 74
 LicenseInfoInFile: GPL-3.0
 FileLicenseConcluded: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -937,7 +937,7 @@ FileSize: 1 Kb (1155 bytes)
 FileLOC: 33
 LicenseInfoInFile: GPL-3.0
 FileLicenseConcluded: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -952,7 +952,7 @@ FileSize: 1 Kb (1634 bytes)
 FileLOC: 54
 LicenseInfoInFile: GPL-3.0
 FileLicenseConcluded: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: AUTHORED
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -966,7 +966,7 @@ FileSize: 2 Kb (2133 bytes)
 FileLOC: 75
 LicenseInfoInFile: GPL-3.0
 FileLicenseConcluded: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -981,7 +981,7 @@ FileSize: 2 Kb (2287 bytes)
 FileLOC: 84
 LicenseInfoInFile: GPL-3.0
 FileLicenseConcluded: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -996,7 +996,7 @@ FileSize: 1 Kb (1649 bytes)
 FileLOC: 55
 LicenseInfoInFile: GPL-3.0
 FileLicenseConcluded: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -1011,7 +1011,7 @@ FileSize: 1 Kb (1725 bytes)
 FileLOC: 58
 LicenseInfoInFile: GPL-3.0
 FileLicenseConcluded: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -1026,7 +1026,7 @@ FileSize: 1 Kb (1675 bytes)
 FileLOC: 55
 LicenseInfoInFile: GPL-3.0
 FileLicenseConcluded: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -1041,7 +1041,7 @@ FileSize: 1 Kb (1887 bytes)
 FileLOC: 64
 LicenseInfoInFile: GPL-3.0
 FileLicenseConcluded: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -1056,7 +1056,7 @@ FileSize: 3 Kb (3297 bytes)
 FileLOC: 123
 LicenseInfoInFile: GPL-3.0
 FileLicenseConcluded: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -1071,7 +1071,7 @@ FileSize: 791 bytes
 FileLOC: 21
 LicenseInfoInFile: GPL-3.0
 FileLicenseConcluded: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -1086,7 +1086,7 @@ FileSize: 4 Kb (4261 bytes)
 FileLOC: 131
 LicenseInfoInFile: GPL-3.0
 FileLicenseConcluded: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -1101,7 +1101,7 @@ FileSize: 2 Kb (2885 bytes)
 FileLOC: 94
 LicenseInfoInFile: GPL-3.0
 FileLicenseConcluded: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -1155,7 +1155,7 @@ FileSize: 3 Kb (3728 bytes)
 FileLOC: 105
 LicenseInfoInFile: MIT
 FileLicenseConcluded: MIT
-FileCopyrightText:       <text>Copyright (c) 2012 the authors listed at the following URL, and/or</text>
+FileCopyrightText:         <text>Copyright (c) 2012 the authors listed at the following URL, and/or</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: boyer
@@ -1170,7 +1170,7 @@ FileSize: 5 Kb (5438 bytes)
 FileLOC: 150
 LicenseInfoInFile: SPL-1.0
 FileLicenseConcluded: SPL-1.0
-FileCopyrightText:       <text>Copyright (c) 1998-2004 Sun Microsystems, Inc.</text>
+FileCopyrightText:         <text>Copyright (c) 1998-2004 Sun Microsystems, Inc.</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: Brazil
@@ -1185,7 +1185,7 @@ FileSize: 18 Kb (19102 bytes)
 FileLOC: 596
 LicenseInfoInFile: SPL-1.0
 FileLicenseConcluded: SPL-1.0
-FileCopyrightText:       <text>Copyright (c) 1998-2005 Sun Microsystems, Inc.</text>
+FileCopyrightText:         <text>Copyright (c) 1998-2005 Sun Microsystems, Inc.</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: Brazil
@@ -1200,7 +1200,7 @@ FileSize: 6 Kb (6807 bytes)
 FileLOC: 229
 LicenseInfoInFile: SPL-1.0
 FileLicenseConcluded: SPL-1.0
-FileCopyrightText:       <text>Copyright (c) 1998-2006 Sun Microsystems, Inc.</text>
+FileCopyrightText:         <text>Copyright (c) 1998-2006 Sun Microsystems, Inc.</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: Brazil
@@ -1215,7 +1215,7 @@ FileSize: 56 Kb (57360 bytes)
 FileLOC: 1683
 LicenseInfoInFile: SPL-1.0
 FileLicenseConcluded: SPL-1.0
-FileCopyrightText:       <text>Copyright (c) 1998-2007 Sun Microsystems, Inc.</text>
+FileCopyrightText:         <text>Copyright (c) 1998-2007 Sun Microsystems, Inc.</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: Brazil
@@ -1230,7 +1230,7 @@ FileSize: 13 Kb (13411 bytes)
 FileLOC: 388
 LicenseInfoInFile: SPL-1.0
 FileLicenseConcluded: SPL-1.0
-FileCopyrightText:       <text>Copyright (c) 1998-2006 Sun Microsystems, Inc.</text>
+FileCopyrightText:         <text>Copyright (c) 1998-2006 Sun Microsystems, Inc.</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: Brazil
@@ -1245,7 +1245,7 @@ FileSize: 24 Kb (25255 bytes)
 FileLOC: 789
 LicenseInfoInFile: SPL-1.0
 FileLicenseConcluded: SPL-1.0
-FileCopyrightText:       <text>Copyright (c) 2001-2006 Sun Microsystems, Inc.</text>
+FileCopyrightText:         <text>Copyright (c) 2001-2006 Sun Microsystems, Inc.</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: Brazil
@@ -1260,7 +1260,7 @@ FileSize: 14 Kb (14829 bytes)
 FileLOC: 540
 LicenseInfoInFile: SPL-1.0
 FileLicenseConcluded: SPL-1.0
-FileCopyrightText:       <text>Copyright (c) 1999-2007 Sun Microsystems, Inc.</text>
+FileCopyrightText:         <text>Copyright (c) 1999-2007 Sun Microsystems, Inc.</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: Brazil
@@ -1275,7 +1275,7 @@ FileSize: 5 Kb (5418 bytes)
 FileLOC: 180
 LicenseInfoInFile: SPL-1.0
 FileLicenseConcluded: SPL-1.0
-FileCopyrightText:       <text>Copyright (c) 2001-2006 Sun Microsystems, Inc.</text>
+FileCopyrightText:         <text>Copyright (c) 2001-2006 Sun Microsystems, Inc.</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: Brazil
@@ -1290,7 +1290,7 @@ FileSize: 5 Kb (5753 bytes)
 FileLOC: 215
 LicenseInfoInFile: SPL-1.0
 FileLicenseConcluded: SPL-1.0
-FileCopyrightText:       <text>Copyright (c) 2000-2004 Sun Microsystems, Inc.</text>
+FileCopyrightText:         <text>Copyright (c) 2000-2004 Sun Microsystems, Inc.</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: Brazil
@@ -1305,7 +1305,7 @@ FileSize: 44 Kb (45484 bytes)
 FileLOC: 1505
 LicenseInfoInFile: SPL-1.0
 FileLicenseConcluded: SPL-1.0
-FileCopyrightText:       <text>Copyright (c) 1999-2004 Sun Microsystems, Inc.</text>
+FileCopyrightText:         <text>Copyright (c) 1999-2004 Sun Microsystems, Inc.</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: Brazil
@@ -1320,7 +1320,7 @@ FileSize: 6 Kb (6820 bytes)
 FileLOC: 241
 LicenseInfoInFile: SPL-1.0
 FileLicenseConcluded: SPL-1.0
-FileCopyrightText:       <text>Copyright (c) 1999-2004 Sun Microsystems, Inc.</text>
+FileCopyrightText:         <text>Copyright (c) 1999-2004 Sun Microsystems, Inc.</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: Brazil
@@ -1335,7 +1335,7 @@ FileSize: 6 Kb (7051 bytes)
 FileLOC: 273
 LicenseInfoInFile: SPL-1.0
 FileLicenseConcluded: SPL-1.0
-FileCopyrightText:       <text>Copyright (c) 1999-2004 Sun Microsystems, Inc.</text>
+FileCopyrightText:         <text>Copyright (c) 1999-2004 Sun Microsystems, Inc.</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: Brazil
@@ -1350,7 +1350,7 @@ FileSize: 5 Kb (5464 bytes)
 FileLOC: 151
 LicenseInfoInFile: SPL-1.0
 FileLicenseConcluded: SPL-1.0
-FileCopyrightText:       <text>Copyright (c) 1999-2004 Sun Microsystems, Inc.</text>
+FileCopyrightText:         <text>Copyright (c) 1999-2004 Sun Microsystems, Inc.</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: Brazil
@@ -1365,7 +1365,7 @@ FileSize: 10 Kb (11159 bytes)
 FileLOC: 418
 LicenseInfoInFile: SPL-1.0
 FileLicenseConcluded: SPL-1.0
-FileCopyrightText:       <text>Copyright (c) 2000-2006 Sun Microsystems, Inc.</text>
+FileCopyrightText:         <text>Copyright (c) 2000-2006 Sun Microsystems, Inc.</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: Brazil
@@ -1380,7 +1380,7 @@ FileSize: 51 Kb (52394 bytes)
 FileLOC: 1717
 LicenseInfoInFile: SPL-1.0
 FileLicenseConcluded: SPL-1.0
-FileCopyrightText:       <text>Copyright (c) 1999-2007 Sun Microsystems, Inc.</text>
+FileCopyrightText:         <text>Copyright (c) 1999-2007 Sun Microsystems, Inc.</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: Brazil
@@ -1395,7 +1395,7 @@ FileSize: 3 Kb (3377 bytes)
 FileLOC: 118
 LicenseInfoInFile: SPL-1.0
 FileLicenseConcluded: SPL-1.0
-FileCopyrightText:       <text>Copyright (c) 1999-2002 Sun Microsystems, Inc.</text>
+FileCopyrightText:         <text>Copyright (c) 1999-2002 Sun Microsystems, Inc.</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: Brazil
@@ -1410,7 +1410,7 @@ FileSize: 12 Kb (12414 bytes)
 FileLOC: 431
 LicenseInfoInFile: SPL-1.0
 FileLicenseConcluded: SPL-1.0
-FileCopyrightText:       <text>Copyright (c) 1999-2004 Sun Microsystems, Inc.</text>
+FileCopyrightText:         <text>Copyright (c) 1999-2004 Sun Microsystems, Inc.</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: Brazil
@@ -1425,7 +1425,7 @@ FileSize: 4 Kb (5083 bytes)
 FileLOC: 147
 LicenseInfoInFile: SPL-1.0
 FileLicenseConcluded: SPL-1.0
-FileCopyrightText:       <text>Copyright (c) 1999-2004 Sun Microsystems, Inc.</text>
+FileCopyrightText:         <text>Copyright (c) 1999-2004 Sun Microsystems, Inc.</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: Brazil
@@ -1440,7 +1440,7 @@ FileSize: 10 Kb (10431 bytes)
 FileLOC: 330
 LicenseInfoInFile: SPL-1.0
 FileLicenseConcluded: SPL-1.0
-FileCopyrightText:       <text>Copyright (c) 1999-2005 Sun Microsystems, Inc.</text>
+FileCopyrightText:         <text>Copyright (c) 1999-2005 Sun Microsystems, Inc.</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: Brazil
@@ -1455,7 +1455,7 @@ FileSize: 10 Kb (10844 bytes)
 FileLOC: 344
 LicenseInfoInFile: SPL-1.0
 FileLicenseConcluded: SPL-1.0
-FileCopyrightText:       <text>Copyright (c) 1999-2004 Sun Microsystems, Inc.</text>
+FileCopyrightText:         <text>Copyright (c) 1999-2004 Sun Microsystems, Inc.</text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: Brazil
@@ -4540,7 +4540,7 @@ FileSize: 4 Kb (4753 bytes)
 FileLOC: 0
 LicenseInfoInFile: GPL-3.0
 FileLicenseConcluded: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: AUTHORED
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -4553,7 +4553,7 @@ FileChecksum: MD5: 776b652a4db2832032a54ecd098923e4
 FileSize: 15 Kb (15749 bytes)
 FileLOC: 467
 LicenseInfoInFile: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: AUTHORED
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -4566,7 +4566,7 @@ FileChecksum: MD5: a68e026d825a8b72aeaa864657573027
 FileSize: 19 Kb (19982 bytes)
 FileLOC: 556
 LicenseInfoInFile: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: AUTHORED
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -4579,7 +4579,7 @@ FileChecksum: MD5: 5488ea712c9e0b47a9f3af920642f7bd
 FileSize: 11 Kb (12073 bytes)
 FileLOC: 393
 LicenseInfoInFile: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: AUTHORED
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -4593,7 +4593,7 @@ FileSize: 2 Kb (2766 bytes)
 FileLOC: 102
 LicenseInfoInFile: MIT
 FileLicenseConcluded: MIT
-FileCopyrightText:       <text>Copyright 2011 Beau Gunderson</text>
+FileCopyrightText:         <text>Copyright 2011 Beau Gunderson</text>
 
 FileOrigin: MODIFIED
 ArtifactOfProjectName: ipv6
@@ -4606,7 +4606,7 @@ FileChecksum: MD5: 2c41d7145c46c2eab010b5980c8998e1
 FileSize: 9 Kb (9956 bytes)
 FileLOC: 315
 LicenseInfoInFile: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: AUTHORED
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -4630,7 +4630,7 @@ FileChecksum: MD5: f726859b85948079989d4e7866894af1
 FileSize: 11 Kb (11391 bytes)
 FileLOC: 344
 LicenseInfoInFile: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: AUTOMIXED
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -4643,7 +4643,7 @@ FileChecksum: MD5: fff3a65a68b223380f6041eaafb6c458
 FileSize: 4 Kb (5057 bytes)
 FileLOC: 169
 LicenseInfoInFile: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: AUTHORED
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -4656,7 +4656,7 @@ FileChecksum: MD5: 70fd991e3734e8aa428db7f0e57f1223
 FileSize: 1 Kb (1639 bytes)
 FileLOC: 51
 LicenseInfoInFile: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: AUTOMIXED
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -4669,7 +4669,7 @@ FileChecksum: MD5: f0d4e4e8a6fa3e4ee2275a5a59007d5f
 FileSize: 9 Kb (10238 bytes)
 FileLOC: 280
 LicenseInfoInFile: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: AUTOMIXED
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -4683,7 +4683,7 @@ FileSize: 13 Kb (13945 bytes)
 FileLOC: 450
 LicenseInfoInFile: MIT
 FileLicenseConcluded: MIT
-FileCopyrightText:       <text>Copyright 2011 Mathias Bynens <http://mathiasbynens.be/></text>
+FileCopyrightText:         <text>Copyright 2011 Mathias Bynens <http://mathiasbynens.be/></text>
 
 FileOrigin: EXTERNAL
 ArtifactOfProjectName: Punycode
@@ -4696,7 +4696,7 @@ FileChecksum: MD5: ac9488bfe21da3bff0aafa6ad7321b9c
 FileSize: 13 Kb (14145 bytes)
 FileLOC: 558
 LicenseInfoInFile: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: AUTHORED
 ArtifactOfProjectName: AdBlockPlusAndroid
@@ -4709,7 +4709,7 @@ FileChecksum: MD5: dc3a99d4375977fd80580e174340e223
 FileSize: 17 Kb (17460 bytes)
 FileLOC: 413
 LicenseInfoInFile: GPL-3.0
-FileCopyrightText:       <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
+FileCopyrightText:         <text>Copyright (C) 2006-2014 Eyeo GmbH</text>
 
 FileOrigin: AUTOMIXED
 ArtifactOfProjectName: AdBlockPlusAndroid

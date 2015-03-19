@@ -15,7 +15,6 @@ import GUI.StartupScreen;
 import GUI.StudioUI4;
 import definitions.is;
 import main.script.log;
-import license.LicenseControl;
 
 /**
  *
@@ -64,7 +63,7 @@ public class start {
         }
         
         // do the startup
-        settings.doStartup();
+        //settings.doStartup();
         
         try{
             coreGUI.studio = new StudioUI4();

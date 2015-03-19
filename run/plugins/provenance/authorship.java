@@ -19,6 +19,7 @@ import java.io.File;
 import main.engine;
 import main.script.log;
 import script.Plugin;
+import spdxlib.RefactorSPDX;
 import spdxlib.SPDXfile;
 import spdxlib.swing.TreeNodeSPDX;
 import www.RequestOrigin;
@@ -32,6 +33,9 @@ import www.WebRequest;
 public class authorship extends Plugin{
      
     final String id = "analysis1";
+    final String
+         idServerLocation = "originality_server_location",
+         idServerPort = "originality_server_port";   
      
     /**
      * Display the current list of tasks
@@ -85,7 +89,7 @@ public class authorship extends Plugin{
             return;
         }
         
-        // get the SPDX node
+       // get the SPDX node
         TreeNodeSPDX node = (TreeNodeSPDX) swingUtils.getSelectedNode().getParent();
         File spdxFile = (File) node.getUserObject();
         final SPDXfile spdx = engine.reports.get(spdxFile);
@@ -101,8 +105,15 @@ public class authorship extends Plugin{
         }
         
         log.write(is.INFO, "Analysing files on folder: %1", folder.getAbsolutePath());
-         // step 3: start the client, say hello
-        ExchangeClient client = new ExchangeClient("localhost", 2048);
+        
+        // read where we want our originality server to be contacted
+        final String serverLocation = settings.read(idServerLocation, "localhost");
+        final int serverPort = settings.readNumber(idServerPort, 2048);
+        log.write(is.INFO, "Contacting originality server at %1:%2", 
+                serverLocation, serverPort + "");
+
+        // step 3: start the client, say hello
+        ExchangeClient client = new ExchangeClient(serverLocation, serverPort);
         
         // only allow to proceed when we are online
         if(client.isConnected() == false){
@@ -114,7 +125,7 @@ public class authorship extends Plugin{
         
         
         // no previous analysis running, let's then create one
-        analysis = new RunningAnalysis();
+        analysis = new RunningAnalysis(spdx);
         analysis.setExchangeClient(client);
         analysis.setSourceFolder(folder);
         
@@ -161,6 +172,8 @@ public class authorship extends Plugin{
         
         // are we finally ready?
         if(analysis != null && analysis.isReady()){
+            // merge the results with our SPDX
+            mergeResultsWithOurSPDX(analysis);
             // conclude the analysis that was ongoing
             concludeAnalysis(request, analysis);
             return;
@@ -228,5 +241,18 @@ public class authorship extends Plugin{
      */
     public void viewHTML(WebRequest request){
         request.setAnswer("Launching the browser");
+    }
+
+    /**
+     * With this code we include inside the original SPDX document the results
+     * from an originality test.
+     * @param analysis 
+     */
+    private void mergeResultsWithOurSPDX(RunningAnalysis analysis) {
+        analysis.mergeResults();
+        SPDXfile spdx = analysis.getSPDX();
+        // save the SPDX memory object downto an SPDX document file on disk
+        RefactorSPDX refactor = new RefactorSPDX(spdx);
+        refactor.output(spdx.getFile());
     }
 }
