@@ -55,10 +55,13 @@ public class start {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        
+        CmdLine cmd = new CmdLine();
+        
         // do the basic start
         basicStart(args);
         // watch out for the case when we launch the command line version
-        if(cmdLine.isCommandLineUsed(args)){
+        if(cmd.isCommandLineUsed(args)){
             return;
         }
         

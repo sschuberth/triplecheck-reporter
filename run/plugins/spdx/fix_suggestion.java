@@ -84,9 +84,9 @@ public class fix_suggestion extends Plugin{
         // get the template loaded
         request.setTemplate("webpage_fix.html");
         // get the fix suggestions
-        request.changeTemplate(fixCopyright, qualityTest.getSuggestionFixCopyright());
-        request.changeTemplate(fixLicense, qualityTest.getSuggestionFixLicense());
-        request.changeTemplate(fixDocumentation, qualityTest.getSuggestionFixDocumentation());
+        request.changeTemplate(fixCopyright, qualityTest.getSuggestionFixCopyrightHTML());
+        request.changeTemplate(fixLicense, qualityTest.getSuggestionFixLicenseHTML());
+        request.changeTemplate(fixDocumentation, qualityTest.getSuggestionFixDocumentationHTML());
        
         // currently we have a rendering performance issue when too many
         // files need to be listed, so we output the page to the browser

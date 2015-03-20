@@ -66,7 +66,7 @@ public class TestRemoteScan {
      */
     public void start() throws Exception{
         // first step, create an SPDX
-        //createSPDX();
+        createSPDX();
         loadSPDX();
         // prepare the exchange package with the analysis results
         createExchangePackage();
@@ -184,7 +184,7 @@ public class TestRemoteScan {
     }    
     
     public static void main(String[] args) throws Exception{
-        File folder = new File("../../source/adblockplusandroid-2014-06-01/");
+        File folder = new File("samples");
         // launch the scanning operation
         TestRemoteScan scan = new TestRemoteScan(folder);
         scan.start();

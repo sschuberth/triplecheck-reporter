@@ -14,8 +14,11 @@ cp -R ./run/components/ ./publish/
 mkdir ./publish/misc/
 # Copying the icons
 cp -R ./run/misc/icons/ ./publish/misc/
+# Copy the HTML templates
+cp -R ./run/misc/html/ ./publish/misc/
 # Copying the java runtime to run on Windows
 cp -R ../misc/java/ ./publish/misc/
+
 # Copy the licenses and other related files
 cp ./LICENSE.txt ./publish/
 cp ./README.md ./publish/
