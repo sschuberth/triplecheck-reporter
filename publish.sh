@@ -17,7 +17,7 @@ cp -R ./run/misc/icons/ ./publish/misc/
 # Copying the java runtime to run on Windows
 cp -R ../misc/java/ ./publish/misc/
 # Copy the licenses and other related files
-cp ./LICENSE ./publish/
+cp ./LICENSE.txt ./publish/
 cp ./README.md ./publish/
 
 # add the example report

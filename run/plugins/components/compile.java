@@ -19,10 +19,13 @@ import java.io.File;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import main.Test;
 import main.engine;
 import org.apache.commons.io.FileUtils;
 import script.Plugin;
 import main.script.log;
+import output.formats.HTML.OutputSPDXToHTML;
+import output.formats.OutputToConsole;
 import spdxlib.SPDXfile;
 import spdxlib.swing.NodeType;
 import spdxlib.swing.TreeNodeSPDX;
@@ -200,12 +203,18 @@ public class compile extends Plugin{
             }
         }
         
-        // get the component report
-        String reportComponents = spdx.summary.componentsHTML();
-        // save it to disk
-        File fileComponents = new File(folderReport, "components.html");
-        utils.files.SaveStringToFile(fileComponents, reportComponents);
-        result += "- Generated an HTML list of components" + html.br;
+//        // get the component report
+//        String reportComponents = spdx.summary.componentsHTML();
+//        // save it to disk
+//        File fileComponents = new File(folderReport, "components.html");
+//        utils.files.SaveStringToFile(fileComponents, reportComponents);
+        
+        // generate the HTML report
+        Test.outputSPDXtoHTML(folderReport, spdx);
+        
+        
+        
+        result += "- Generated an HTML report" + html.br;
        
         // make a copy of the SPDX document to this folder too
         File fileSPDX = new File(folderReport, "files.spdx");
