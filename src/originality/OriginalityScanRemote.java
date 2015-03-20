@@ -8,7 +8,7 @@
  * FileComment: <text>  </text> 
  */
 
-package experiment;
+package originality;
 
 import definitions.is;
 import exchange.ExchangeClient;
@@ -25,7 +25,7 @@ import spdxlib.SPDXfile;
  *
  * @author Nuno Brito, 5th of March 2015 in Darmstadt, Germany
  */
-public class TestRemoteScan {
+public class OriginalityScanRemote {
     
     private final File 
             folderSource,
@@ -38,7 +38,7 @@ public class TestRemoteScan {
     private SPDXfile spdx = null;
     private ExchangePackage exchangeOutput = null;
     
-    public TestRemoteScan(final File folder){
+    public OriginalityScanRemote(final File folder){
         folderSource = folder;
         // prepare the new folder where we store the results
         folderOutput = new File("sandbox", "test-analysis-cached");
@@ -186,7 +186,7 @@ public class TestRemoteScan {
     public static void main(String[] args) throws Exception{
         File folder = new File("samples");
         // launch the scanning operation
-        TestRemoteScan scan = new TestRemoteScan(folder);
+        OriginalityScanRemote scan = new OriginalityScanRemote(folder);
         scan.start();
     }
 

@@ -154,26 +154,48 @@ public class CmdLineTest {
         }
     }
     
-    @Test
-    public void testProjectOriginality() {
-        System.out.println("\nTest the project originality");
+//    @Test
+//    public void testProjectOriginality() {
+//        System.out.println("\nTest the project originality");
+//        String[] params = new String[]{
+//            "originality", 
+//            spdxFile.getPath(),
+//            sourceFolder.getPath()
+//        };
+//        
+//        // test the command
+//        CmdLine cmd = new CmdLine();
+//        cmd.isCommandLineUsed(params);
+//        
+//        // we expect 40 as value
+////        if(cmd.getAnswer().equals("40") == false){
+////            fail("The score is different from what we expected, please check");
+////        }
+//        
+//        // the answer that was provided by our scoring mechanism
+//        System.out.println("Originality:\n" + cmd.getAnswer());
+//    }
+    
+     @Test
+    public void testReportCreate() {
+        System.out.println("\nTest the HTML report functionality");
         String[] params = new String[]{
-            "originality", 
+            "report", 
             spdxFile.getPath(),
-            sourceFolder.getPath()
+            tempFolder.getPath()
         };
         
         // test the command
         CmdLine cmd = new CmdLine();
         cmd.isCommandLineUsed(params);
         
-        // we expect 40 as value
-//        if(cmd.getAnswer().equals("40") == false){
-//            fail("The score is different from what we expected, please check");
-//        }
+        // verify we finished the report as expected.
+        if(cmd.getAnswer().equals(CmdLine.html_created_report) == false){
+            fail("The report wasn't created with success");
+        }
         
         // the answer that was provided by our scoring mechanism
-        System.out.println("Originality:\n" + cmd.getAnswer());
+        System.out.println("HTML report answer:\n" + cmd.getAnswer());
     }
     
 }

@@ -8,7 +8,7 @@
  * FileComment: <text> Encapsulate a running analysis with a remote server </text> 
  */
 
-package experiment;
+package originality;
 
 import definitions.is;
 import exchange.ExchangeClient;

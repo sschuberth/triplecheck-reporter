@@ -14,7 +14,7 @@ package provenance;
 import GUI.swingUtils;
 import definitions.is;
 import exchange.ExchangeClient;
-import experiment.RunningAnalysis;
+import originality.RunningAnalysis;
 import java.io.File;
 import main.engine;
 import main.script.log;
