@@ -154,29 +154,7 @@ public class CmdLineTest {
         }
     }
     
-//    @Test
-//    public void testProjectOriginality() {
-//        System.out.println("\nTest the project originality");
-//        String[] params = new String[]{
-//            "originality", 
-//            spdxFile.getPath(),
-//            sourceFolder.getPath()
-//        };
-//        
-//        // test the command
-//        CmdLine cmd = new CmdLine();
-//        cmd.isCommandLineUsed(params);
-//        
-//        // we expect 40 as value
-////        if(cmd.getAnswer().equals("40") == false){
-////            fail("The score is different from what we expected, please check");
-////        }
-//        
-//        // the answer that was provided by our scoring mechanism
-//        System.out.println("Originality:\n" + cmd.getAnswer());
-//    }
-    
-     @Test
+    @Test
     public void testReportCreate() {
         System.out.println("\nTest the HTML report functionality");
         String[] params = new String[]{
