@@ -22,8 +22,10 @@ import static org.junit.Assert.*;
 
 Syntax for each command line parameter
 
-spdx texfileToBeCreated folderWithFilesToProcess packageURL
-
+spdx LocationFileSPDX folderWithFilesToProcess packageURL
+score LocationFileSPDX
+suggestions LocationFileSPDX
+report LocationFileSPDX LocationReportHTML
 
 */
 
