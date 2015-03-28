@@ -31,11 +31,12 @@
                     <!-- logo -->
                     <div class="logo">
                         <h1><a href="http:/triplecheck.net" style="color: white;" class="logo-expanded">
-                            <img src="assets/triplecheck-crown-white.png" test alt=""></a></h1>
+                            <img src="assets/triplecheck-crown-white.png" alt=""></a></h1>
                     </div>
                 </header>
                 <ul id="main-menu" class="main-menu">
                     <li><a href="index.html"><i class="linecons-doc"></i><span class="title">Summary</span></a> </li>
+                    <li> <a href="page_files.html"><i class="linecons-attach"></i><span class="title">Files</span></a> </li>
                     <li><a href="page_2.html"><i class="linecons-tag"></i><span class="title">Third-party components</span></a> </li>
                     <li class="active"><a href="page_3.html"><i class="linecons-search"></i><span class="title">Originality analysis</span></a> </li>
                     <li><a href="page_4.html"><i class="linecons-megaphone"></i><span class="title">What can be improved</span></a> </li>
@@ -97,18 +98,18 @@
             // define a panel that end-user can maximize/minimize
             function panel(thisId, thisValue) {
                 return "<div class=\"panel panel-default\">\n\
-            <div class=\"panel-heading\"><h4 class=\"panel-title\">\n\
-            <a data-toggle=\"collapse\" \n\
-            href=\"#"+ thisId + "" + thisValue.toString() + "\" class=\"collapsed\"> %file%</a></h4> \n\
-            </div><div id=\""+ thisId + "" + thisValue.toString() + "\" class=\"panel-collapse collapse\">\n\
-            %data%</div></div>";
+                        <div class=\"panel-heading\"><h4 class=\"panel-title\">\n\
+                        <a data-toggle=\"collapse\" \n\
+                        href=\"#"+ thisId + "" + thisValue.toString() + "\" class=\"collapsed\"> %file%</a></h4> \n\
+                        </div><div id=\""+ thisId + "" + thisValue.toString() + "\" class=\"panel-collapse collapse\">\n\
+                        %data%</div></div>";
             }
 
             // returns a table in HTML format, we replace the %data% keyword
             function table() {
                 return "<table class=\"table table-striped\" style=\"color: black;\n\
-            \"><thead><tr><th>Similarity</th><th>Lines</th><th>References</th>\n\
-            </tr></thead><tbody> %data%</tbody><tfoot></tfoot></table>";
+                \"><thead><tr><th>Similarity</th><th>Lines</th><th>References</th>\n\
+                </tr></thead><tbody> %data%</tbody><tfoot></tfoot></table>";
             }
 
             function newTableEntry(match) {
@@ -214,7 +215,6 @@
                     </div>
                 </div>
             </footer>-->
-    </div>
     </div>
     <div class="page-loading-overlay">
         <div class="loader-2"></div>
