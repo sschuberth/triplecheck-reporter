@@ -1,0 +1,117 @@
+##-------------------------
+## SPDX Document Information
+##-------------------------
+SPDXVersion: SPDX-1.2
+DataLicense: CC-BY-4.0
+
+##-------------------------
+## Creation Information
+##-------------------------
+Creator: nuno
+Creator: Tool: TripleCheck 1.0.0
+Created: 2015-04-05T16:02:42Z
+
+##-------------------------
+## Package Information
+##-------------------------
+PackageName: 2015-03-06-Python-Java-Jars
+PackageLicenseDeclared: NOASSERTION
+PackageDownloadLocation: test URL being used here
+
+##-------------------------
+## File Information
+##-------------------------
+FileName: ./apache/commons/lang/StringEscapeUtils.java
+FileType: SOURCE
+FileChecksum: SHA1: 00617958b057d8adef07b66711bb726b0494d0a0
+FileChecksum: SHA256: ae7da1d38b1d028ff5e44e15595aeac9c277c551b5d9b231f223462c95bc5bf5
+FileChecksum: MD5: 6117578daa50430b4e1699174bd33c27
+FileChecksum: TLSH: 03E2E059ACE313421292E178435FD0A1E65FD21FA3359FE4BD0C8760AF4662C06BDEAD
+FileSize: 22 Kb (22977 bytes)
+FileLOC: 587
+LicenseInfoInFile: Apache-2.0
+
+FileName: ./apache/commons/lang/CharUtils.java
+FileType: SOURCE
+FileChecksum: SHA1: ae40721e7fac52f1eef26a8131e5fb240291cc29
+FileChecksum: SHA256: 1f75850f1cacbcf922e8b8389fafcc007f3b15aa97b36d92d058d6873e9f0da6
+FileChecksum: MD5: d29322854f467cc918ffadef4827ca79
+FileChecksum: TLSH: 07E2BBB6ADE766330242D138031BD0D5D21E1A1F925BAC90784C7AB0FF49B6216ADFDC
+FileSize: 18 Kb (19330 bytes)
+FileLOC: 558
+LicenseInfoInFile: Apache-2.0
+
+FileName: ./files_minor.java
+FileType: SOURCE
+FileChecksum: SHA1: 9b3a22dd524e50ed84ec59147be801298716186c
+FileChecksum: SHA256: a50e83ed7ea732031b1fc88f43745916e554bd206966c2d8f44434f3d83cd954
+FileChecksum: MD5: 9c92af9076919099d841f20b68e7748b
+FileSize: 5 Kb (5271 bytes)
+FileLOC: 167
+
+FileName: ./python/LevelReader.py
+FileType: SOURCE
+FileChecksum: SHA1: f39d7d636aff1aa1e66828fede37a5d2d27620f5
+FileChecksum: SHA256: 0241343a8a3fa811e7a81826ee06b3e780ff8335e7e03b4e10f9f4c032cc5f7f
+FileChecksum: MD5: 163bd3be52ba564e45dd90245bd1d929
+FileSize: 789 bytes
+FileLOC: 33
+
+FileName: ./apache/commons/lang/StringUtils.java
+FileType: SOURCE
+FileChecksum: SHA1: d337c94d2260f315e62140529349388100114342
+FileChecksum: SHA256: 21d59aeeded48ec2988f42f4bd2159e4b22969a85fc67c2fbcff881d7391f687
+FileChecksum: MD5: f5ec3400aede14e50edc954c2580dbe0
+FileChecksum: TLSH: 9814EC167CE60A210656D07A4A4990D0E21E952FCB3AFCF4FC4D1F742F09B758ABDB89
+FileSize: 177 Kb (181744 bytes)
+FileLOC: 4525
+LicenseInfoInFile: Apache-2.0
+
+FileName: ./python/password_cracker.py
+FileType: SOURCE
+FileChecksum: SHA1: d3b20f1a01950b6f12291598a0a01dcf872dbef3
+FileChecksum: SHA256: ec7ea800be0f597a1780a61af02b0c5afca51ee9f86b84bce7ba2512856c14d6
+FileChecksum: MD5: b9d5e0f92bfb6651c29015d89c0f9242
+FileSize: 1 Kb (1074 bytes)
+FileLOC: 29
+
+FileName: ./commons-compiler.jar
+FileType: ARCHIVE
+FileChecksum: SHA1: aeee76cd3f0edcd6e2ac767d0f5fa55c6dc345da
+FileChecksum: SHA256: fa8a7e5c0149d79003e5b91aeca53d9e685e13c54b4b321afdb1f6ff0719e11f
+FileChecksum: MD5: a863ebd4fc3e1ad6e09aa1a25f9f1569
+FileChecksum: TLSH: B5E28D68DA5A16A0F23384B24BBB7475765D8E405994B3D24DD8370CFA2EC08375BBDC
+FileSize: 29 Kb (30352 bytes)
+
+FileName: ./python/powerdown_startup.py
+FileType: SOURCE
+FileChecksum: SHA1: 75ead34ced5d4f575abbb17858cb9219c044331d
+FileChecksum: SHA256: 6eee954a93bf0294562ba70f9878a9c276abf9546609db39829607f2fb9ab23c
+FileChecksum: MD5: ad495fc0c091044459e3cd21e23f2bab
+FileSize: 2 Kb (2131 bytes)
+FileLOC: 34
+
+FileName: ./python/portscanner.py
+FileType: SOURCE
+FileChecksum: SHA1: eebfdc0bb61d5b979ed7dd3efa5dc30ca18643d3
+FileChecksum: SHA256: 62669218b7fce59feac3291050237b705365bff07bcfb0decde98d18ad5e3306
+FileChecksum: MD5: 9356dc0d0467c3c02aa36ea68b2d9c8d
+FileSize: 848 bytes
+FileLOC: 27
+
+FileName: ./TestServer.java
+FileType: SOURCE
+FileChecksum: SHA1: f946993b14e0290240af387fa311fde02e7a7f7b
+FileChecksum: SHA256: 01f00dfd254344a49497698a5850d166c183142a7f85f47b96a01eeb2c2f3f67
+FileChecksum: MD5: 90c71af6a6e71bae2b56ac0e7a18314d
+FileSize: 7 Kb (8162 bytes)
+FileLOC: 241
+
+FileName: ./KirinDave--powerset_thrift--2008-03-26T21_24_20Z.zip
+FileType: ARCHIVE
+FileChecksum: SHA1: ddc13aeffc17fa18654a9a529ba63d8374d413ac
+FileChecksum: SHA256: 013662d2b8a6a2f61a8126ff209096749df15caf17367e9326ec77b104c3af1f
+FileChecksum: MD5: 287359face79b6ea0b1c54419a4fc231
+FileChecksum: TLSH: 90158D97921E2673ED0E197F38631112FE3CEB04C3D9C6A5E54976A40E876BC7A3214E
+FileSize: 850 Kb (870870 bytes)
+

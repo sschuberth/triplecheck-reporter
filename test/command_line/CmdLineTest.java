@@ -76,7 +76,7 @@ public class CmdLineTest {
     }
     
     @Test
-    public void testCreateSPDX() {
+    public void testCreateSPDX() throws Exception {
         CmdLine cmd = new CmdLine();
         
         // we need three parameters
@@ -122,7 +122,7 @@ public class CmdLineTest {
     
     
     @Test
-    public void testScoreProject() {
+    public void testScoreProject() throws Exception {
         System.out.println("Test the project scoring");
         String[] params = new String[]{"score", spdxFile.getPath()};
         
@@ -140,7 +140,7 @@ public class CmdLineTest {
     }
     
     @Test
-    public void testImprovementSuggestions() {
+    public void testImprovementSuggestions() throws Exception {
         System.out.println("Test the improvement suggestions");
         String[] params = new String[]{"suggestions", spdxFile.getPath()};
         
@@ -157,7 +157,7 @@ public class CmdLineTest {
     }
     
     @Test
-    public void testReportCreate() {
+    public void testReportCreate() throws Exception {
         System.out.println("\nTest the HTML report functionality");
         String[] params = new String[]{
             "report", 
@@ -176,6 +176,24 @@ public class CmdLineTest {
         
         // the answer that was provided by our scoring mechanism
         System.out.println("HTML report answer:\n" + cmd.getAnswer());
+    }
+    
+    
+    @Test
+    public void testLicenseDetection() throws Exception {
+        System.out.println("Test the license detection");
+        String[] params = new String[]{"detect", spdxFile.getPath()};
+        
+        // test the command
+        CmdLine cmd = new CmdLine();
+        cmd.isCommandLineUsed(params);
+        
+        // the answer that was provided by our scoring mechanism
+        System.out.println("Detection:\n" + cmd.getAnswer());
+        
+//        if(cmd.getAnswer().contains("documentation files missing:") == false){
+//            fail("The result is different from what we expected, please check");
+//        }
     }
     
 }
