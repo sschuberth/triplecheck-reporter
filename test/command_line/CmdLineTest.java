@@ -181,19 +181,21 @@ public class CmdLineTest {
     
     @Test
     public void testLicenseDetection() throws Exception {
+        
+        // define the test file
+        File testFile = new File("../../3mark/archive_licenses/AGPL-3.0.txt");
+        
         System.out.println("Test the license detection");
-        String[] params = new String[]{"detect", spdxFile.getPath()};
+        String[] params = new String[]{"detect", testFile.getAbsolutePath()};
         
         // test the command
         CmdLine cmd = new CmdLine();
         cmd.isCommandLineUsed(params);
         
-        // the answer that was provided by our scoring mechanism
-        System.out.println("Detection:\n" + cmd.getAnswer());
-        
-//        if(cmd.getAnswer().contains("documentation files missing:") == false){
-//            fail("The result is different from what we expected, please check");
-//        }
+        // we are expecting to find AGPL-3.0
+        if(cmd.getAnswer().equals("LICENSE: AGPL-3.0") == false){
+            fail("The license detection result is different from what we expected, please check");
+        }
     }
     
 }
