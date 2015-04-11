@@ -53,8 +53,9 @@ public class start {
     
     /**
      * @param args the command line arguments
+     * @throws java.lang.Exception
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         
         CmdLine cmd = new CmdLine();
         
