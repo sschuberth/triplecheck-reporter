@@ -46,8 +46,6 @@ public class start {
         // get the engine running
         engine.warmUp();
         
-        // index the licenses
-        //engine.licenses = new LicenseControl();
     }
     
     
@@ -65,9 +63,6 @@ public class start {
         if(cmd.isCommandLineUsed(args)){
             return;
         }
-        
-        // do the startup
-        //settings.doStartup();
         
         try{
             coreGUI.studio = new StudioUI4();
