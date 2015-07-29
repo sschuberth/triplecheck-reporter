@@ -16,7 +16,7 @@ package main;
 
 /**
  *
- * @author Nuno Brito, 11th of December 2013 in Darsmtadt, Germany
+ * @author Nuno Brito, 11th of December 2013 in Darmstadt, Germany
  */
 public class param {
 
@@ -25,6 +25,7 @@ public class param {
             withLicense = "withlicense",
             noLicense = "nolicense",
             spdx = "spdx",
+            lang = "language",
             file = "file";
     
 }

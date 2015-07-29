@@ -31,6 +31,7 @@ import script.Plugin;
 import main.script.log;
 import spdxlib.EvaluateLicensingQuality;
 import spdxlib.FileInfo;
+import spdxlib.FileLanguage;
 import spdxlib.SPDXfile;
 import utils.Graphs;
 import utils.www.html;
@@ -439,6 +440,12 @@ public class show extends Plugin{
         request.changeTemplate("<%t2%>", link1);
         request.changeTemplate("</%t2%>", link2);
         
+        // add the link to view the files according to a given programming lang.
+        final String link3 = "<a href=\"/spdx/show?x=filterlang&"
+                + param.spdx + "=" + spdxTarget
+                + "&"+param.lang+"=";
+        request.changeTemplate("<%l1%>", link3);
+        request.changeTemplate("</%l1%>", "\">View</a>");
         
         // all done
         request.closeTemplate();
@@ -457,6 +464,43 @@ public class show extends Plugin{
         request.redirect("/spdx/show?x=summary&" + param.spdx + "=" + spdxTarget);
     }
        
+    /**
+     * Lists the files containing a specific license reference
+     * @param request 
+     */
+    public void filterlang(WebRequest request) {
+        final String lang = request.getParameter(param.lang);
+        // get the associated request
+        SPDXfile spdx = getSPDX(request);
+        StringBuilder result = new StringBuilder();
+        int count = 0;
+        
+        FileLanguage selectedLanguage = FileLanguage.valueOf(lang.toUpperCase());
+        if(selectedLanguage == null){
+            request.setAnswer("Failed to recognize type of language: " + lang);
+            return;
+        }else{
+            log.write(is.INFO, 
+                    "Showing list of files with programming language: %1", lang);
+        }
+        
+        // iterate the file entries for this project
+        for(FileInfo fileInfo : spdx.getFiles()){
+            if(fileInfo.getExtensionObject().getLanguage() == selectedLanguage){
+                addListEntry(result, fileInfo, spdx);
+                count++;
+                continue;
+            }
+            // avoid huge lists
+            if(count > 1000){
+                result.append("<br><br> ..Showing only the first 1000 items");
+                break;
+            }
+        }
+        
+        request.setAnswer(result.toString());
+    }
+    
     /**
      * Lists the files containing a specific license reference
      * @param request 

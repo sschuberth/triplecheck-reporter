@@ -12,6 +12,7 @@ publish/
 run/export/
 run/old/
 run/reports
+run/temp
 run/settings.xml
 run/plugins/spdx/temp.html
 run/plugins/spdx/chart.png
