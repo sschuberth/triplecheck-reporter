@@ -23,12 +23,17 @@ import java.io.File;
 import java.io.IOException;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.xml.bind.DatatypeConverter;
 import license.LicenseType;
 import main.coreGUI;
 import main.engine;
 import main.param;
 import script.Plugin;
 import main.script.log;
+import org.simpleframework.http.Address;
+import org.simpleframework.http.Part;
 import spdxlib.EvaluateLicensingQuality;
 import spdxlib.FileInfo;
 import spdxlib.FileLanguage;
@@ -501,18 +506,31 @@ public class show extends Plugin{
         request.setAnswer(result.toString());
     }
     
+        
+    String textToBase64(String text){
+         return DatatypeConverter.printBase64Binary(text.getBytes());
+    }
+    
+    String base64ToText(String text){
+            byte[] b =DatatypeConverter.parseBase64Binary(text);
+            return new String(b);
+    }
+    
     /**
      * Lists the files containing a specific license reference
      * @param request 
      */
     public void list(WebRequest request) {
-        String id = request.getParameter("id");
+        
+        String idBase64 = request.getParameter("id").replace("!", "=");
+        String id = base64ToText(idBase64);
         // get the associated request
         SPDXfile spdx = getSPDX(request);
         StringBuilder result = new StringBuilder();
         int count = 0;
         
         // iterate the file entries for this project
+        log.write(is.DEBUG, "Finding files with license: %1", id);
         for(FileInfo fileInfo : spdx.getFiles()){
             if(fileInfo.getLicenseInfoInFileSummary().equalsIgnoreCase(id)){
                 addListEntry(result, fileInfo, spdx);
