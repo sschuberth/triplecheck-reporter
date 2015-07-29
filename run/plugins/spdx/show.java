@@ -434,11 +434,9 @@ public class show extends Plugin{
         String link2 = "\">View</a> ";
         request.changeTemplate("<%t1%>", link1);
         request.changeTemplate("</%t1%>", link2);
-        
-        link1 = "| " + link1.replace("x=list", "x=tldr");
-        link2 = "\">TLDR</a> ";
-        request.changeTemplate("<%t2%>", link1);
-        request.changeTemplate("</%t2%>", link2);
+        // second link not being used for the moment
+        request.changeTemplate("<%t2%>", "<!--");
+        request.changeTemplate("</%t2%>", "-->");
         
         // add the link to view the files according to a given programming lang.
         final String link3 = "<a href=\"/spdx/show?x=filterlang&"
@@ -475,7 +473,9 @@ public class show extends Plugin{
         StringBuilder result = new StringBuilder();
         int count = 0;
         
-        FileLanguage selectedLanguage = FileLanguage.valueOf(lang.toUpperCase());
+        int value = Integer.parseInt(lang);
+        // get the index of language specified
+        FileLanguage selectedLanguage = FileLanguage.values()[value];
         if(selectedLanguage == null){
             request.setAnswer("Failed to recognize type of language: " + lang);
             return;
@@ -510,35 +510,24 @@ public class show extends Plugin{
         // get the associated request
         SPDXfile spdx = getSPDX(request);
         StringBuilder result = new StringBuilder();
-        LicenseType licenseType;
         int count = 0;
         
-        try{
-            licenseType = LicenseType.convertToEnum(id);
-        }catch(Exception e){
-            log.write(is.ERROR, utils.text.getExceptionAsText(e));
-            request.setAnswer("SH475 error: Exception occurred.");
-            return;
-        }
         // iterate the file entries for this project
         for(FileInfo fileInfo : spdx.getFiles()){
-            if(fileInfo.getLicenseConcluded() == licenseType){
+            if(fileInfo.getLicenseInfoInFileSummary().equalsIgnoreCase(id)){
                 addListEntry(result, fileInfo, spdx);
                 count++;
                 continue;
-            }
-            // look inside the file references
-            for(LicenseType thisLicenseType : fileInfo.getLicenseInfoInFile()){
-                if(thisLicenseType == licenseType){
-                    addListEntry(result, fileInfo, spdx);
-                    count++;
-                }
             }
             // avoid huge lists
             if(count > 1000){
                 result.append("<br><br> ..Showing only the first 1000 items");
                 break;
             }
+        }
+        // has an error occurred?
+        if(result.toString().isEmpty()){
+            result.append("Something went wrong, no results found");
         }
         
         request.setAnswer(result.toString());
