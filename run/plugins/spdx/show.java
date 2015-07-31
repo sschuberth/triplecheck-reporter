@@ -23,17 +23,12 @@ import java.io.File;
 import java.io.IOException;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import javax.xml.bind.DatatypeConverter;
-import license.LicenseType;
 import main.coreGUI;
 import main.engine;
 import main.param;
 import script.Plugin;
 import main.script.log;
-import org.simpleframework.http.Address;
-import org.simpleframework.http.Part;
 import spdxlib.EvaluateLicensingQuality;
 import spdxlib.FileInfo;
 import spdxlib.FileLanguage;
@@ -420,7 +415,7 @@ public class show extends Plugin{
         // list of concluded licenses
         request.changeTemplate("%concludedLicenses%", concludedLicenses);
         // list languages and resources that were found
-        request.changeTemplate("%languageEvaluation%", spdx.getLanguageEvaluation());
+        request.changeTemplate("%languageEvaluation%", spdx.getLanguageEvaluation(true));
         // list languages and resources that were found
         request.changeTemplate("%packageLicenseDeclared%", packageLicenseDeclared);
         request.changeTemplate("%licenseEvaluation%", spdx.getLicenseEvaluationHTML());
