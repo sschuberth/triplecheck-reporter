@@ -29,7 +29,7 @@ import main.engine;
 import main.param;
 import script.Plugin;
 import main.script.log;
-import spdxlib.EvaluateLicensingQuality;
+import insights.EvaluateLicensingQuality;
 import spdxlib.FileInfo;
 import spdxlib.FileLanguage;
 import spdxlib.SPDXfile;

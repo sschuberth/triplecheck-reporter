@@ -301,13 +301,12 @@ public class showFileDetails extends Plugin{
      * @return      HTML code ready to display for the end user
      */
     private String getCopyrightData(FileInfo fileInfo) {
-        String copyright = fileInfo.getFileCopyrightText();
-        if(copyright == null || copyright.isEmpty()){
+        if(fileInfo.getFileCopyrightText().length == 0){
             return "";
         }
-        // reinforce the break lines with HTML break lines
-        copyright = copyright.replace("\n", html.br);
-        copyright = copyright.substring(0, copyright.length()-1);
+        
+        String copyright = utils.text.arrayToString(fileInfo.getFileCopyrightText(), html.br);
+          
         // all done
         return copyright;
     }

@@ -20,7 +20,7 @@ import main.coreGUI;
 import main.engine;
 import main.param;
 import script.Plugin;
-import spdxlib.EvaluateLicensingQuality;
+import insights.EvaluateLicensingQuality;
 import spdxlib.SPDXfile;
 import www.WebRequest;
 
