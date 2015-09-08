@@ -15,7 +15,7 @@ import exchange.ExchangeClient;
 import exchange.ExchangePackage;
 import java.io.File;
 import main.script.log;
-import output.formats.HTML.OutputSPDXToHTML;
+import output.formats.OutputSPDXToHTML;
 import output.formats.OutputToConsole;
 import spdxlib.DocumentCreate;
 import spdxlib.RefactorSPDX;

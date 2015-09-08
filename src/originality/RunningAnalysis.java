@@ -215,7 +215,7 @@ public class RunningAnalysis {
         for(FileInfo fileInfo : spdx.getFiles()){
             // we only care for files that share the same SHA1 checksum
             if(fileInfo.getTagFileChecksumSHA1()
-                    .contains(sourceCodeFile.getIdentifierHash())==false){
+                    .contains(sourceCodeFile.getSha1Signature())==false){
                 continue;
             }
             // ignore auto-generated files, they don't hold copyright typically

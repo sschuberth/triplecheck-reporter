@@ -24,7 +24,7 @@ import main.engine;
 import org.apache.commons.io.FileUtils;
 import script.Plugin;
 import main.script.log;
-import output.formats.HTML.OutputSPDXToHTML;
+import output.formats.OutputSPDXToHTML;
 import output.formats.OutputToConsole;
 import spdxlib.SPDXfile;
 import spdxlib.swing.NodeType;

@@ -10,7 +10,7 @@
 package main;
 
 import java.io.File;
-import output.formats.HTML.OutputSPDXToHTML;
+import output.formats.OutputSPDXToHTML;
 import spdxlib.SPDXfile;
 
 
