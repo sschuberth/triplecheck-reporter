@@ -54,32 +54,31 @@ public class start {
      * @throws java.lang.Exception
      */
     public static void main(String[] args) throws Exception {
-        
         CmdLine cmd = new CmdLine();
-        
-        // do the basic start
-        basicStart(args);
+
         // watch out for the case when we launch the command line version
-        if(cmd.isCommandLineUsed(args)){
+        if (cmd.isCommandLineUsed(args)) {
             return;
         }
-        
-        try{
+
+        // do the basic start
+        basicStart(args);
+
+        try {
             coreGUI.studio = new StudioUI4();
             coreGUI.studio.doSettings();
 
             // remove the startup screen
-            if(startupScreen != null){
+            if (startupScreen != null) {
                 startupScreen.dispose();
             }
-            
+
             coreGUI.studio.setVisible(true);
             coreGUI.studio.hasFocus();
-        }catch (Exception e){
+        } catch (Exception e) {
             log.write(is.ERROR, "ST60 - Exception occurred: %1", e.getLocalizedMessage());
             e.printStackTrace();
             System.exit(-1981);
         }
     }
-
 }
