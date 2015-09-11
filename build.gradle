@@ -48,4 +48,9 @@ jar {
     manifest {
         attributes 'Main-Class': mainClassName
     }
+
+    // Build a "Fat Jar" containing all dependencies.
+    from {
+        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    }
 }
