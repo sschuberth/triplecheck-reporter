@@ -1,0 +1,50 @@
+apply plugin: 'application'
+
+sourceSets {
+    main {
+        java.srcDirs = [
+            'src'
+        ]
+
+        resources.srcDirs = [
+            'src'
+        ]
+    }
+
+    test {
+        java.srcDirs = [
+            'test'
+        ]
+    }
+}
+
+repositories {
+    jcenter()
+
+    repositories {
+        flatDir {
+            // Copy triplecheck-engine.jar to here.
+            dirs 'lib'
+        }
+    }
+}
+
+dependencies {
+    compile 'org.apache.commons:commons-compress:1.8.1'
+    compile 'org.mapdb:mapdb:1.0.1'
+    compile 'net.htmlparser.jericho:jericho-html:3.3'
+
+    compile 'com.github.triplecheck:triplecheck-engine:0.0.0'
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+mainClassName = 'main.start'
+
+jar {
+    manifest {
+        attributes 'Main-Class': mainClassName
+    }
+}
