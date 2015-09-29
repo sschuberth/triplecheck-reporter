@@ -74,16 +74,20 @@ public class RunPlugins {
         // remove all previously installed plugins
         log.hooks.removeAll();
         // get our available plugin files
-        ArrayList<File> pluginFiles = findPluginFiles(".bsh");
-        for(File file : pluginFiles){
-           processPlugin(file);
+        ArrayList<File> pluginBsh = findPluginFiles(".bsh");
+        if (pluginBsh != null) {
+            for (File file : pluginBsh) {
+                processPlugin(file);
+            }
         }
 
         // process the java-like RunPlugins
         ArrayList<File> pluginJava = findPluginFiles(".java");
-        for(File file : pluginJava){
-            engine.script.runJava(file, is.methodStartUp, is.plugin);
-            log.write(is.INFO, Messages.AddedPlugin, file.getName());
+        if (pluginJava != null) {
+            for (File file : pluginJava) {
+                engine.script.runJava(file, is.methodStartUp, is.plugin);
+                log.write(is.INFO, Messages.AddedPlugin, file.getName());
+            }
         }
     }
     
