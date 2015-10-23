@@ -2,19 +2,19 @@ apply plugin: 'application'
 
 sourceSets {
     main {
-        java.srcDirs = [
-            'src'
-        ]
+        java {
+            srcDir 'src'
+        }
 
-        resources.srcDirs = [
-            'src'
-        ]
+        resources {
+            srcDirs = ['src/GUI', 'src/icons']
+        }
     }
 
     test {
-        java.srcDirs = [
-            'test'
-        ]
+        java {
+            srcDir 'test'
+        }
     }
 }
 
@@ -49,8 +49,11 @@ jar {
         attributes 'Main-Class': mainClassName
     }
 
-    // Build a "Fat Jar" containing all dependencies.
-    from {
-        configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
+    // Build a "Fat Jar" containing all runtime dependencies, excluding unwanted files.
+    from(configurations.runtime.collect { it.isDirectory() ? it : zipTree(it) }) {
+        exclude "LICENSE.txt"
+        exclude "META-INF/*.SF"
+        exclude "META-INF/*.DSA"
+        exclude "META-INF/*.RSA"
     }
 }
